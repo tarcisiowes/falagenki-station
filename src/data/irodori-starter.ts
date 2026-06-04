@@ -2000,13 +2000,234 @@ const lesson11: Section = {
   audios: attachScripts(11, L11_SCRIPTS),
 }
 
-// ---- Lições 12 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson12Group: ExerciseGroup = {
+  id: 'iro-s-l12',
+  title: 'いっしょに飲みに行きませんか？',
+  subtitlePt: 'Avisos de evento, datas, convites e combinar de sair junto',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l12-1', number: 1, prompt: 'Num aviso, 「{夏祭|なつまつ}り」 significa:', choices: [{ n: 1, text: 'festival de verão' }, { n: 2, text: 'ano-novo' }, { n: 3, text: 'casamento' }, { n: 4, text: 'feira de empregos' }], answer: 1, explanationPt: '{夏祭|なつまつ}り = festival de verão (julho–agosto, com {屋台|やたい}/barracas, {盆踊|ぼんおど}り e {花火|はなび}). (Seção 1 · TIPS)' },
+    { id: 'iro-s-l12-2', number: 2, prompt: 'Num aviso de evento, 「{日時|にちじ}」 indica:', choices: [{ n: 1, text: 'data e hora' }, { n: 2, text: 'o lugar' }, { n: 3, text: 'o preço' }, { n: 4, text: 'o nome do organizador' }], answer: 1, explanationPt: '{日時|にちじ} = data e hora. Outros campos do aviso: {場所|ばしょ}/{会場|かいじょう} (local), {入場料|にゅうじょうりょう} (ingresso). (Seção 1)' },
+    { id: 'iro-s-l12-3', number: 3, prompt: '「{入場無料|にゅうじょうむりょう}」 quer dizer:', choices: [{ n: 1, text: 'entrada gratuita' }, { n: 2, text: 'entrada paga' }, { n: 3, text: 'lotado' }, { n: 4, text: 'entrada proibida' }], answer: 1, explanationPt: '{入場無料|にゅうじょうむりょう} = entrada grátis (無料 = de graça). Compare {入場料|にゅうじょうりょう} 〜{円|えん} = taxa de entrada de 〜 ienes. (Seção 1)' },
+    { id: 'iro-s-l12-4', number: 4, prompt: '「{駐車場|ちゅうしゃじょう}」 é:', choices: [{ n: 1, text: 'estacionamento' }, { n: 2, text: 'praça' }, { n: 3, text: 'salão' }, { n: 4, text: 'palco' }], answer: 1, explanationPt: '{駐車場|ちゅうしゃじょう} = estacionamento. Compare {広場|ひろば} (praça), ホール (salão), {会場|かいじょう} (local do evento). (Seção 1)' },
+    { id: 'iro-s-l12-5', number: 5, prompt: 'A leitura correta de 「9{月|がつ}」 é:', choices: [{ n: 1, text: 'くがつ' }, { n: 2, text: 'きゅうがつ' }, { n: 3, text: ' here' }, { n: 4, text: 'くげつ' }], answer: 1, explanationPt: 'Meses irregulares: 4{月|がつ}=しがつ, 7{月|がつ}=しちがつ, 9{月|がつ}=くがつ. “Que mês?” = {何月|なんがつ}. (Seção 1·áudio 12-01)' },
+    { id: 'iro-s-l12-6', number: 6, prompt: 'A leitura correta de 「14{日|にち}」 é:', choices: [{ n: 1, text: 'じゅうよっか' }, { n: 2, text: 'じゅうよんにち' }, { n: 3, text: 'じゅうしにち' }, { n: 4, text: 'じゅうよう' }], answer: 1, explanationPt: '14{日|にち}=じゅうよっか (segue o padrão de 4{日|にち}=よっか e 24{日|にち}=にじゅうよっか). (Seção 1·áudio 12-02)' },
+    { id: 'iro-s-l12-7', number: 7, prompt: 'A leitura correta de 「20{日|にち}」 é:', choices: [{ n: 1, text: 'はつか' }, { n: 2, text: 'にじゅうにち' }, { n: 3, text: 'はつにち' }, { n: 4, text: 'ふつか' }], answer: 1, explanationPt: '20{日|にち}=はつか (leitura especial). Não confundir com 2{日|にち}=ふつか. “Que dia (do mês)?” = {何日|なんにち}. (Seção 1·áudio 12-02)' },
+    { id: 'iro-s-l12-8', number: 8, prompt: '「あさって」 significa:', choices: [{ n: 1, text: 'depois de amanhã' }, { n: 2, text: 'hoje' }, { n: 3, text: 'ontem' }, { n: 4, text: 'amanhã' }], answer: 1, explanationPt: 'Calendário: {今日|きょう} (hoje), {明日|あした} (amanhã), あさって (depois de amanhã). (Seção 2·12-03)' },
+    { id: 'iro-s-l12-9', number: 9, prompt: '「{来週|らいしゅう}」 e 「{今週|こんしゅう}」 são, respectivamente:', choices: [{ n: 1, text: 'próxima semana / esta semana' }, { n: 2, text: 'esta semana / próxima semana' }, { n: 3, text: 'semana passada / esta semana' }, { n: 4, text: 'fim de semana / dia útil' }], answer: 1, explanationPt: '{今週|こんしゅう} = esta semana; {来週|らいしゅう} = próxima semana. (Seção 2·12-03)' },
+    { id: 'iro-s-l12-10', number: 10, prompt: 'Em 「{日曜日|にちようび}（　）タイフェスティバルがあります」, a lacuna (data/hora) é:', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'で' }, { n: 3, text: 'を' }, { n: 4, text: 'が' }], answer: 1, translationPt: 'No domingo há a Festa Tailandesa.', explanationPt: 'A data/hora de um evento leva **に**: {日曜日|にちようび}に, 12{月|がつ}20{日|か}に, 7{時|じ}に. (Nota ➊)' },
+    { id: 'iro-s-l12-11', number: 11, prompt: 'Em 「さくら{公園|こうえん}（　）タイフェスティバルがあります」, o LUGAR do evento leva:', choices: [{ n: 1, text: 'で' }, { n: 2, text: 'に' }, { n: 3, text: 'へ' }, { n: 4, text: 'と' }], answer: 1, translationPt: 'Tem a Festa Tailandesa no Parque Sakura.', explanationPt: 'O lugar onde um evento acontece leva **で**: さくら{公園|こうえん}で. (Nota ➊)' },
+    { id: 'iro-s-l12-12', number: 12, prompt: 'Quais palavras de tempo NÃO levam 「に」?', choices: [{ n: 1, text: '{明日|あした}・{今晩|こんばん}・{来週|らいしゅう}' }, { n: 2, text: '{日曜日|にちようび}・12{月|がつ}20{日|か}' }, { n: 3, text: '7{時|じ}・3{時|じ}' }, { n: 4, text: 'todas precisam sempre de に' }], answer: 1, explanationPt: 'に pode ser omitido na fala; e palavras como {明日|あした} (amanhã), {今晩|こんばん} (hoje à noite) e {来週|らいしゅう} (próxima semana) não usam に. Já {日曜日|にちようび}/{12月|がつ}{20日|はつか}/7{時|じ} levam に. (Nota ➊)' },
+    { id: 'iro-s-l12-13', number: 13, prompt: 'Em 「{忘年会|ぼうねんかい}（　）{行|い}きますか？」 (vai à festa de fim de ano?), a lacuna é:', choices: [{ n: 1, text: 'に — 【evento】に{行|い}く indica o destino/objetivo' }, { n: 2, text: 'で' }, { n: 3, text: 'を' }, { n: 4, text: 'は' }], answer: 1, explanationPt: '【N de ação/evento】に{行|い}きます = ir a (objetivo). Ex.: {買|か}い{物|もの}に, {散歩|さんぽ}に, {映画|えいが}に, パーティーに, {試合|しあい}に. (Nota ➋)' },
+    { id: 'iro-s-l12-14', number: 14, prompt: '“Moro em Tóquio” = 「{東京|とうきょう}（　）{住|す}んでいます」. A partícula é:', choices: [{ n: 1, text: 'に — lugar de permanência/existência' }, { n: 2, text: 'で — lugar de ação' }, { n: 3, text: 'を' }, { n: 4, text: 'へ' }], answer: 1, explanationPt: '**に** marca lugar de permanência ({住|す}む) e de existência (ある/いる): {食堂|しょくどう}にあります. (Quadro ◆ で・に)' },
+    { id: 'iro-s-l12-15', number: 15, prompt: '“Jogo futebol no parque” = 「{公園|こうえん}（　）サッカーをします」. A partícula é:', choices: [{ n: 1, text: 'で — lugar de ação/evento' }, { n: 2, text: 'に — lugar de existência' }, { n: 3, text: 'を' }, { n: 4, text: 'と' }], answer: 1, explanationPt: '**で** marca o lugar onde se faz uma ação ou onde há um evento: {公園|こうえん}でサッカーをします; {中央公園|ちゅうおうこうえん}で{夏祭|なつまつ}りがあります. (Quadro ◆ で・に)' },
+    { id: 'iro-s-l12-16', number: 16, prompt: 'Para CONVIDAR (“vamos juntos?”), muda-se 「{行|い}きます」 para:', choices: [{ n: 1, text: '{行|い}きませんか？ (entonação ascendente)' }, { n: 2, text: '{行|い}きました' }, { n: 3, text: '{行|い}きません。' }, { n: 4, text: '{行|い}きたいです' }], answer: 1, translationPt: 'Não quer ir? / Vamos juntos?', explanationPt: 'Convite = trocar ます da forma-マス por **ませんか？**, com entonação subindo. いっしょに{行|い}きませんか？ (Nota ➌)' },
+    { id: 'iro-s-l12-17', number: 17, prompt: '「また{今度|こんど}{行|い}きましょう」 — 「〜ましょう」 serve para:', choices: [{ n: 1, text: 'propor/combinar fazer algo junto (“vamos ~”)' }, { n: 2, text: 'recusar um convite' }, { n: 3, text: 'perguntar o preço' }, { n: 4, text: 'falar do passado' }], answer: 1, explanationPt: '〜ましょう = vamos ~ (proposta). Usado para confirmar que vão juntos, ou propor outra ocasião ({また今度|こんど}). Também {始|はじ}めましょう, {休|やす}みましょう. (Nota ➍)' },
+    { id: 'iro-s-l12-18', number: 18, prompt: '“Vamos comer yakiniku juntos?” = 「いっしょに{焼肉|やきにく}を（　）{行|い}きませんか？」. A lacuna é:', choices: [{ n: 1, text: '{食|た}べに' }, { n: 2, text: '{食|た}べます' }, { n: 3, text: '{食|た}べて' }, { n: 4, text: '{食|た}べた' }], answer: 1, explanationPt: 'V-に{行|い}く = ir para (fazer algo). Tira ます da forma-マス e põe に: {食|た}べに{行|い}く, {見|み}に{行|い}く, {聞|き}きに{行|い}く. (Nota ➎)' },
+    { id: 'iro-s-l12-19', number: 19, prompt: '「{飲|の}みに{行|い}く」 significa:', choices: [{ n: 1, text: 'sair para beber (ir a um bar/izakaya tomar algo)' }, { n: 2, text: 'ir nadar' }, { n: 3, text: 'ir comer' }, { n: 4, text: 'ir dormir' }], answer: 1, explanationPt: '{飲|の}みに{行|い}く = ir a um estabelecimento beber (álcool). É o título da lição: いっしょに{飲|の}みに{行|い}きませんか？ (Nota ➎)' },
+    { id: 'iro-s-l12-20', number: 20, prompt: '「{忘年会|ぼうねんかい}」 é:', choices: [{ n: 1, text: 'festa de fim de ano (geralmente do trabalho)' }, { n: 2, text: 'festival de verão' }, { n: 3, text: 'churrasco' }, { n: 4, text: 'reunião de negócios' }], answer: 1, explanationPt: '{忘年会|ぼうねんかい} = confraternização de fim de ano. Outros eventos da lição: {交流|こうりゅう}パーティー (festa de intercâmbio), {空手|からて}の{試合|しあい} (luta de caratê). (Seção 2)' },
+    { id: 'iro-s-l12-21', number: 21, prompt: 'Recusar um convite de forma educada: 「{火曜日|かようび}はちょっと……」 significa:', choices: [{ n: 1, text: 'terça-feira para mim não dá muito (recusa suave)' }, { n: 2, text: 'terça está ótimo!' }, { n: 3, text: 'que horas na terça?' }, { n: 4, text: 'claro, terça!' }], answer: 1, explanationPt: '〜はちょっと…… (+ すみません) = recusa indireta e educada. Aceitar = だいじょうぶです. (Seção 3·12-15)' },
+    { id: 'iro-s-l12-22', number: 22, prompt: 'Relacione as reações: もちろん / まだわかりません / {残念|ざんねん}です:', choices: [{ n: 1, text: 'もちろん = claro; まだわかりません = ainda não sei; {残念|ざんねん}です = que pena' }, { n: 2, text: 'もちろん = que pena; まだわかりません = claro; {残念|ざんねん}です = ainda não sei' }, { n: 3, text: 'as três = “sim, vou”' }, { n: 4, text: 'as três = “não sei”' }], answer: 1, explanationPt: 'もちろん (claro), {楽|たの}しみですね (mal posso esperar), まだわかりません (ainda não sei), {残念|ざんねん}です (que pena). (Seção 2·12-03)' },
+    { id: 'iro-s-l12-23', number: 23, prompt: 'Diálogo 12-05: o Gawin vai à Festa Tailandesa?', context: 'A：ガウィンさん、{日曜日|にちようび}に、さくら{公園|こうえん}でタイフェスティバルがありますね。{行|い}きますか？ B：はい、{行|い}きます。', choices: [{ n: 1, text: 'Sim, vai (はい、{行|い}きます)' }, { n: 2, text: 'Não vai' }, { n: 3, text: 'Ainda não sabe' }, { n: 4, text: 'Vai trabalhar' }], answer: 1, explanationPt: 'B responde はい、{行|い}きます (sim, vou). A complementa {楽|たの}しみですね (mal posso esperar).' },
+    { id: 'iro-s-l12-24', number: 24, prompt: 'Diálogo 12-17: por que B recusa o convite de ir beber?', context: 'A：いっしょに{飲|の}みに{行|い}きませんか？ B：いつですか？ A：{今晩|こんばん}です。 B：{今日|きょう}？　すみません、{今日|きょう}はだめです。', choices: [{ n: 1, text: 'Hoje (hoje à noite) não dá para ele' }, { n: 2, text: 'Ele aceita feliz' }, { n: 3, text: 'Amanhã ele não pode' }, { n: 4, text: 'Ele não gosta de beber' }], answer: 1, explanationPt: '{今晩|こんばん} = hoje à noite. B diz {今日|きょう}はだめです (hoje não dá). A encerra com じゃあ、また{今度|こんど} (então, fica para a próxima).' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 12 (聴解スクリプト)
+const L12_SCRIPTS: Record<string, ScriptItem[]> = {
+  '12-05': [
+    {
+      label: '会話① (12-05)',
+      setupJa: '{5人|ごにん}の{人|ひと}が、{職場|しょくば}の{同僚|どうりょう}に、イベントに{行|い}くかどうか{質問|しつもん}しています。',
+      setupPt: 'Cinco pessoas perguntam a um colega de trabalho se vão a um evento.',
+      lines: [
+        { speaker: 'A', ja: 'ガウィンさん、{日曜日|にちようび}に、さくら{公園|こうえん}でタイフェスティバルがありますね。{行|い}きますか？', pt: 'Gawin, no domingo tem a Festa Tailandesa no Parque Sakura, né? Você vai?' },
+        { speaker: 'B', ja: 'はい、{行|い}きます。', pt: 'Sim, vou.' },
+        { speaker: 'A', ja: '{楽|たの}しみですね。', pt: 'Mal posso esperar, né.' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'Pois é.' },
+      ],
+    },
+  ],
+  '12-06': [
+    {
+      label: '会話② (12-06)',
+      lines: [
+        { speaker: 'A', ja: '{内山|うちやま}さん、{来週|らいしゅう}、{夏祭|なつまつ}りがありますね。', pt: 'Uchiyama, na próxima semana tem o festival de verão, né.' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'Pois é.' },
+        { speaker: 'A', ja: '{内山|うちやま}さんは、{行|い}きますか？', pt: 'Você vai, Uchiyama?' },
+        { speaker: 'B', ja: 'いえ、{行|い}きません。{仕事|しごと}です。', pt: 'Não, não vou. Vou trabalhar.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '12-07': [
+    {
+      label: '会話③ (12-07)',
+      lines: [
+        { speaker: 'A', ja: 'マヤさん、8{日|か}に、{交流|こうりゅう}パーティーがありますね。', pt: 'Maya, no dia 8 tem a festa de intercâmbio, né.' },
+        { speaker: 'B', ja: 'へー、そうですか。どこでありますか？', pt: 'Ah é? Onde vai ser?' },
+        { speaker: 'A', ja: '{会社|かいしゃ}のホールです。', pt: 'No salão da empresa.' },
+        { speaker: 'B', ja: 'ふーん。', pt: 'Hum.' },
+        { speaker: 'A', ja: 'マヤさんは、{行|い}きますか？', pt: 'Você vai, Maya?' },
+        { speaker: 'B', ja: 'ああ、まだわかりません。', pt: 'Ah, ainda não sei.' },
+      ],
+    },
+  ],
+  '12-08': [
+    {
+      label: '会話④ (12-08)',
+      lines: [
+        { speaker: 'A', ja: 'アントニオさん、{今週|こんしゅう}の{金曜日|きんようび}、ミルコさんの{空手|からて}の{試合|しあい}に{行|い}きますか？', pt: 'Antônio, nesta sexta você vai à luta de caratê do Mirko?' },
+        { speaker: 'B', ja: 'もちろん、{行|い}きます。', pt: 'Claro que vou.' },
+        { speaker: 'A', ja: '{私|わたし}も{行|い}きます。{楽|たの}しみですね。', pt: 'Eu também vou. Mal posso esperar, né.' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'Pois é.' },
+      ],
+    },
+  ],
+  '12-09': [
+    {
+      label: '会話⑤ (12-09)',
+      lines: [
+        { speaker: 'A', ja: '{梁|リョウ}さん、{明日|あした}の{忘年会|ぼうねんかい}に{行|い}きますか？', pt: 'Liang, você vai à festa de fim de ano amanhã?' },
+        { speaker: 'B', ja: 'ああ、{私|わたし}は{行|い}きません。', pt: 'Ah, eu não vou.' },
+        { speaker: 'A', ja: 'そうですか。{残念|ざんねん}です。', pt: 'Ah é? Que pena.' },
+      ],
+    },
+  ],
+  '12-14': [
+    {
+      label: '会話① (12-14)',
+      setupJa: '{4人|よにん}の{人|ひと}が、{職場|しょくば}の{同僚|どうりょう}を{誘|さそ}っています。',
+      setupPt: 'Quatro pessoas convidam um colega de trabalho.',
+      lines: [
+        { speaker: 'A', ja: '{今週|こんしゅう}、みんなで、ハイキングに{行|い}きます。アリナさんも、いっしょに{行|い}きませんか？', pt: 'Esta semana vamos todos fazer uma trilha. Alina, você não quer vir junto?' },
+        { speaker: 'B', ja: 'どこですか？', pt: 'Onde é?' },
+        { speaker: 'A', ja: '{六甲山|ろっこうさん}です。', pt: 'No monte Rokko.' },
+        { speaker: 'B', ja: 'いいですね。いつですか？', pt: 'Que legal. Quando é?' },
+        { speaker: 'A', ja: '{今度|こんど}の{土曜日|どようび}です。', pt: 'No próximo sábado.' },
+        { speaker: 'B', ja: 'あさってですか？　だいじょうぶです。', pt: 'Depois de amanhã? Tudo certo, posso.' },
+        { speaker: 'A', ja: 'じゃあ、{行|い}きましょう。', pt: 'Então vamos!' },
+      ],
+    },
+  ],
+  '12-15': [
+    {
+      label: '会話② (12-15)',
+      lines: [
+        { speaker: 'A', ja: 'ソリヤさん、みんなで、いっしょに{焼肉|やきにく}を{食|た}べに{行|い}きませんか？　マーヒルさんも、ジョバ{二|ニ}さんも{行|い}きますよ。', pt: 'Soriya, não quer ir comer yakiniku com a gente? O Mahir e o Giovani também vão.' },
+        { speaker: 'B', ja: 'いいですね。いつですか？', pt: 'Que bom. Quando é?' },
+        { speaker: 'A', ja: '14{日|か}です。', pt: 'No dia 14.' },
+        { speaker: 'B', ja: '{来週|らいしゅう}の{火曜日|かようび}ですね。{火曜日|かようび}はちょっと……。すみません。', pt: 'É a terça da próxima semana, né. Terça para mim não dá muito… Desculpa.' },
+        { speaker: 'A', ja: 'そうですか。じゃあ、また{今度|こんど}{行|い}きましょう。', pt: 'Ah é? Então fica para uma próxima.' },
+      ],
+    },
+  ],
+  '12-16': [
+    {
+      label: '会話③ (12-16)',
+      lines: [
+        { speaker: 'A', ja: 'アニタさん、{明日|あした}の{夜|よる}、さくらプラザで{映画|えいが}があります。いっしょに{見|み}に{行|い}きませんか？', pt: 'Anita, amanhã à noite tem um filme no Sakura Plaza. Não quer ir assistir junto?' },
+        { speaker: 'B', ja: '{明日|あした}ですか？　いいですね。{何|なん}の{映画|えいが}ですか？', pt: 'Amanhã? Que legal. Qual é o filme?' },
+        { speaker: 'A', ja: '「{男|おとこ}はつらいよ」です。', pt: 'É “Otoko wa Tsurai yo”.' },
+        { speaker: 'B', ja: 'ふーん。{何時|なんじ}からですか？', pt: 'Hum. A partir de que horas?' },
+        { speaker: 'A', ja: '7{時半|じはん}からです。', pt: 'A partir das 7h30.' },
+        { speaker: 'B', ja: '7{時半|じはん}、だいじょうぶです。', pt: '7h30, tudo certo.' },
+        { speaker: 'A', ja: 'じゃあ、いっしょに{行|い}きましょう。', pt: 'Então vamos juntos.' },
+      ],
+    },
+  ],
+  '12-17': [
+    {
+      label: '会話④ (12-17)',
+      lines: [
+        { speaker: 'A', ja: '{洪|コウ}さん、いっしょに{飲|の}みに{行|い}きませんか？', pt: 'Hong, não quer sair para beber comigo?' },
+        { speaker: 'B', ja: 'いつですか？', pt: 'Quando?' },
+        { speaker: 'A', ja: '{今晩|こんばん}です。', pt: 'Hoje à noite.' },
+        { speaker: 'B', ja: '{今日|きょう}？　すみません、{今日|きょう}はだめです。', pt: 'Hoje? Desculpa, hoje não dá.' },
+        { speaker: 'A', ja: 'そうですか。じゃあ、また{今度|こんど}。', pt: 'Ah é? Então fica para a próxima.' },
+      ],
+    },
+  ],
+}
+
+const lesson12: Section = {
+  id: 'lesson-12',
+  level: 'starter',
+  titleJa: '第12課 いっしょに飲みに行きませんか？',
+  titlePt: 'Lição 12 — Vamos sair para beber juntos?',
+  summaryPt: 'O que eu gosto de fazer · ler um aviso de evento e achar data/hora/lugar (【日時】に【場所】で〜があります), dizer datas (meses e dias, com as leituras especiais), perguntar se alguém vai a um evento (Nに行きます), convidar (V-ませんか？), combinar de fazer junto (V-ましょう) e dizer o objetivo de sair (V-に行きます: 飲みに行く, 食べに行く).',
+  studyNotes: [
+    {
+      title: 'Tópico: O que eu gosto de fazer',
+      bodyPt:
+        '## Can-do\n' +
+        '- Ler um aviso de evento e achar a informação importante (data, hora, lugar).\n' +
+        '- Perguntar e responder se você vai a um evento.\n' +
+        '- Convidar alguém e responder a convites; dizer quando está livre ou não.\n' +
+        '- Responder a uma mensagem de amigo com um convite.',
+    },
+    {
+      title: 'Aviso de evento · datas (Seção 1)',
+      bodyPt:
+        'Num **aviso** ({お知|しらせ}), procure os campos:\n\n' +
+        '- {日時|にちじ} = data e hora · {場所|ばしょ}／{会場|かいじょう} = local · {入場料|にゅうじょうりょう} 〜{円|えん} = ingresso · {入場無料|にゅうじょうむりょう} = entrada grátis.\n' +
+        '- Locais: {広場|ひろば} (praça), ホール (salão), {駐車場|ちゅうしゃじょう} (estacionamento). Tipos: {夏祭|なつまつ}り (festival de verão), {交流|こうりゅう} (intercâmbio), バーベキュー (churrasco), フェスティバル.\n\n' +
+        '**Meses** ({何月|なんがつ}): regulares いちがつ〜じゅうにがつ, mas ⚠️ 4{月|がつ}=**し**がつ, 7{月|がつ}=**しち**がつ, 9{月|がつ}=**く**がつ.\n\n' +
+        '**Dias** ({何日|なんにち}) — leituras especiais de 1 a 10 e mais: 1{日|ついたち}, 2{日|ふつか}, 3{日|みっか}, 4{日|よっか}, 5{日|いつか}, 6{日|むいか}, 7{日|なのか}, 8{日|ようか}, 9{日|ここのか}, 10{日|とおか}, 14{日|にち}=じゅう**よっか**, 20{日|にち}=**はつか**, 24{日|にち}=にじゅう**よっか**. O resto é regular (〜にち).',
+    },
+    {
+      title: 'Quando e onde acontece: 【日時】に【場所】で〜があります (➊)',
+      bodyPt:
+        'Para dizer **quando** e **onde** um evento acontece:\n\n' +
+        '`{日曜日|にちようび}に、さくら{公園|こうえん}でタイフェスティバルがありますね。` = no domingo tem a Festa Tailandesa no Parque Sakura.\n\n' +
+        '- **に** marca a data/hora: `{日曜日|にちようび}に`, `12{月|がつ}20{日|か}に`, `7{時|じ}に`.\n' +
+        '- **で** marca o lugar do evento: `さくら{公園|こうえん}で`.\n\n' +
+        '⚠️ Na fala, o **に** pode ser omitido. E palavras como {明日|あした}, {今晩|こんばん}, {来週|らいしゅう} **não** levam に.',
+    },
+    {
+      title: 'で × に para lugar · Nに行きます (➋)',
+      bodyPt:
+        'A partícula de **lugar** depende do verbo:\n\n' +
+        '| partícula | uso | exemplo |\n|---|---|---|\n' +
+        '| に | permanência / existência | {東京|とうきょう}に{住|す}む · {食堂|しょくどう}にあります |\n' +
+        '| で | ação / evento | {公園|こうえん}でサッカーをします · {中央公園|ちゅうおうこうえん}で{夏祭|なつまつ}りがあります |\n\n' +
+        '**Nに{行|い}きます** = ir a (objetivo). O **に** liga um substantivo de ação/evento ao verbo {行|い}く:\n\n' +
+        '`{明日|あした}の{忘年会|ぼうねんかい}に{行|い}きますか？` · também {買|か}い{物|もの}に, {散歩|さんぽ}に, {映画|えいが}に, パーティーに, {試合|しあい}に.',
+    },
+    {
+      title: 'Convidar: V-ませんか？ (➌)',
+      bodyPt:
+        'Para **convidar** alguém, troque o ます da forma-マス por **ませんか？** (entonação subindo):\n\n' +
+        '`いっしょに{行|い}きませんか？` = vamos juntos? / não quer ir?\n\n' +
+        '- `これから、{昼|ひる}ご{飯|はん}に{行|い}きます。いっしょに{行|い}きませんか？` → {いいですね。}\n' +
+        '- `{日曜日|にちようび}、いっしょに{買|か}い{物|もの}に{行|い}きませんか？` → recusa educada: `すみません。{日曜日|にちようび}はちょっと…。`\n\n' +
+        '💡 Nesta lição o foco é a frase {行|い}きませんか？.',
+    },
+    {
+      title: 'Combinar / propor: V-ましょう (➍)',
+      bodyPt:
+        '**〜ましょう** = vamos ~ (proposta de fazer algo junto). Serve para:\n\n' +
+        '- **Confirmar** que vão juntos após um convite: `いいですね。{行|い}きましょう。`\n' +
+        '- **Propor outra ocasião** quando recusam: `じゃあ、また{今度|こんど}{行|い}きましょう。`\n\n' +
+        'Também incentiva o outro a agir: {始|はじ}めましょう (vamos começar), ちょっと、{休|やす}みましょう (vamos descansar um pouco).',
+    },
+    {
+      title: 'Objetivo com verbo: V-に行きます (➎)',
+      bodyPt:
+        'Para dizer **o que vai fazer** ao ir a algum lugar, use **【V-stem】に{行|い}きます**. Tire o ます da forma-マス e ponha に:\n\n' +
+        '- {食|た}べに{行|い}く (ir comer) · {見|み}に{行|い}く (ir ver) · {聞|き}きに{行|い}く (ir ouvir/assistir).\n' +
+        '- **{飲|の}みに{行|い}く** = sair para beber (ir a um bar/izakaya). → título da lição.\n\n' +
+        '`みんなで、いっしょに{焼肉|やきにく}を{食|た}べに{行|い}きませんか？` = não querem ir comer yakiniku todos juntos?\n\n' +
+        '📌 É como o **Nに{行|い}きます** da nota ➋, mas o N vira uma expressão verbal. Kanji do dia: 〜{年|ねん}, 〜{月|がつ}, 〜{日|にち}, {今日|きょう}, {今週|こんしゅう}, {今度|こんど}.',
+    },
+  ],
+  groups: [lesson12Group],
+  audios: attachScripts(12, L12_SCRIPTS),
+}
+
+// ---- Lições 13 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(12, 'O que eu gosto de fazer', 'いっしょに飲みに行きませんか', 'Vamos sair para beber juntos?', [
-    'Ler um aviso de evento e achar a informação importante.',
-    'Convidar e responder a convites; dizer quando está livre.',
-    'Responder a uma mensagem com um convite.',
-  ]),
   scaffold(13, 'Andar pela cidade', 'このバスは空港に行きますか', 'Este ônibus vai ao aeroporto?', [
     'Perguntar se o trem/ônibus vai aonde você quer.',
     'Entender o anúncio do nome da estação e perguntar.',
@@ -2042,5 +2263,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, ...others],
 }
