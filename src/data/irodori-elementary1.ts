@@ -719,13 +719,168 @@ const lesson3: Section = {
   audios: attachScripts(3, L3_SCRIPTS),
 }
 
-// ---- Lições 4-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 4: 昨日はすごい雨でしたね (tópico 季節と天気) --------------------
+const lesson4Group: ExerciseGroup = {
+  id: 'iro-e1-l4',
+  title: '昨日はすごい雨でしたね',
+  subtitlePt: 'Estações e clima · puxar conversa sobre o tempo (いい天気ですね), entender a previsão do tempo (晴れるでしょう) e ler posts de rede social sobre o clima',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l4-1', number: 1, prompt: '「{今日|きょう}はいい{天気|てんき}ですね」 — que sentido tem o ね no fim (Nota ➊)?', choices: [{ n: 1, text: 'busca/mostra empatia (共感) — “né?, não é?” sobre algo que os dois percebem' }, { n: 2, text: 'indica passado' }, { n: 3, text: 'transforma em ordem' }, { n: 4, text: 'indica dúvida total sobre o fato' }], answer: 1, translationPt: 'Que tempo bom hoje, né?', explanationPt: 'ね no fim pede/mostra empatia (共感). O tempo é assunto fácil para puxar conversa, porque os dois compartilham a mesma percepção. (Nota ➊)' },
+    { id: 'iro-e1-l4-2', number: 2, prompt: 'Esse ね de empatia é diferente do ね do 『{入門|にゅうもん}』 (Starter). Lá, ね servia para:', choices: [{ n: 1, text: 'confirmar algo com o outro — コピー20{枚|まい}ですね (são 20 cópias, certo?)' }, { n: 2, text: 'mostrar empatia sobre o tempo' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'negar o que o outro disse' }], answer: 1, explanationPt: 'No Starter, ね confirmava uma informação (コピー20{枚|まい}ですね). Aqui o uso é outro: empatia/共感. (Nota ➊)' },
+    { id: 'iro-e1-l4-3', number: 3, prompt: 'Falar do tempo de agora vs. do passado (Nota ➋). Como fica o イ-adjetivo {暑|あつ}い no passado?', choices: [{ n: 1, text: '{暑|あつ}いです (agora) → {暑|あつ}かったです (passado)' }, { n: 2, text: '{暑|あつ}いです → {暑|あつ}いでした' }, { n: 3, text: '{暑|あつ}いです → {暑|あつ}くでした' }, { n: 4, text: '{暑|あつ}いです → {暑|あつ}いました' }], answer: 1, translationPt: 'Estava (fazia) calor.', explanationPt: 'Tempo de agora = não-passado (非過去); tempo passado = passado (過去). イA: {暑|あつ}いです→{暑|あつ}かったです. (Nota ➋)' },
+    { id: 'iro-e1-l4-4', number: 4, prompt: 'Ainda no passado (Nota ➋): como ficam o substantivo {雨|あめ} e o ナ-adjetivo {大変|たいへん}?', choices: [{ n: 1, text: '{雨|あめ}でした ／ {大変|たいへん}でした' }, { n: 2, text: '{雨|あめ}かったです ／ {大変|たいへん}かったです' }, { n: 3, text: '{雨|あめ}いでした ／ {大変|たいへん}いでした' }, { n: 4, text: '{雨|あめ}ました ／ {大変|たいへん}ました' }], answer: 1, translationPt: 'Foi chuva (choveu). / Foi difícil.', explanationPt: 'N e ナA: 〜です→〜でした ({雨|あめ}でした, {大変|たいへん}でした). Verbo: 〜ます→〜ました ({降|ふ}ります→{降|ふ}りました). (Nota ➋ · tabela)' },
+    { id: 'iro-e1-l4-5', number: 5, prompt: '「{今|いま}も{少|すこ}し{雨|あめ}が{降|ふ}っています」 (V-ています③) descreve:', choices: [{ n: 1, text: 'o estado/tempo atual (está chovendo agora)' }, { n: 2, text: 'uma profissão' }, { n: 3, text: 'algo que vai acontecer amanhã' }, { n: 4, text: 'um hábito de toda semana' }], answer: 1, translationPt: 'Agora ainda está chovendo um pouco.', explanationPt: 'V-ています③ = estado atual do tempo. (Na L1 era profissão; na L2, hábito.) (Nota ➌)' },
+    { id: 'iro-e1-l4-6', number: 6, prompt: 'Quais expressões de tempo com V-ています convém memorizar (Nota ➌)?', choices: [{ n: 1, text: '{晴|は}れています (está ensolarado) ／ くもっています (nublado) ／ {雨|あめ}・{雪|ゆき}が{降|ふ}っています (chovendo/nevando)' }, { n: 2, text: '{晴|は}れました ／ くもります ／ {降|ふ}るでしょう' }, { n: 3, text: '{晴|は}れるでしょう ／ くもりでした ／ {雨|あめ}です' }, { n: 4, text: '{暑|あつ}いです ／ {寒|さむ}いです ／ いい{天気|てんき}です' }], answer: 1, explanationPt: 'Estado do tempo: {晴|は}れています, くもっています, {雨|あめ}／{雪|ゆき}が{降|ふ}っています, {風|かぜ}が{吹|ふ}いています. (Nota ➌)' },
+    { id: 'iro-e1-l4-7', number: 7, prompt: '「{明日|あした}は{晴|は}れるでしょう」 (〜でしょう, Nota ➍) — o que expressa でしょう aqui?', choices: [{ n: 1, text: 'previsão/probabilidade (típico da previsão do tempo)' }, { n: 2, text: 'certeza absoluta' }, { n: 3, text: 'um convite' }, { n: 4, text: 'uma ordem' }], answer: 1, translationPt: 'Amanhã deve fazer sol (vai abrir o tempo).', explanationPt: '〜でしょう = previsão/suposição, muito usado na previsão do tempo ({天気予報|てんきよほう}). Em conversa é pouco usado. (Nota ➍)' },
+    { id: 'iro-e1-l4-8', number: 8, prompt: 'A que formas でしょう se liga (Nota ➍)?', choices: [{ n: 1, text: 'N／ナA／イA-い／V-る + でしょう — {晴|は}れでしょう, {寒|さむ}いでしょう, {晴|は}れるでしょう, やむでしょう' }, { n: 2, text: 'só a substantivos' }, { n: 3, text: 'só à forma です no passado' }, { n: 4, text: 'só a verbos no passado' }], answer: 1, explanationPt: 'N/ナA/イA: 〜です→〜でしょう ({晴|は}れでしょう, {寒|さむ}いでしょう); verbo na forma de dicionário: {晴|は}れるでしょう, やむでしょう. (Nota ➍)' },
+    { id: 'iro-e1-l4-9', number: 9, prompt: 'Vocabulário do tempo — qual conjunto está certo?', choices: [{ n: 1, text: '{晴|は}れ／いい{天気|てんき} (sol/bom tempo) ／ くもり (nublado) ／ {雨|あめ} (chuva)' }, { n: 2, text: '{晴|は}れ (chuva) ／ くもり (sol) ／ {雨|あめ} (neve)' }, { n: 3, text: '{晴|は}れ (neve) ／ くもり (vento) ／ {雨|あめ} (trovão)' }, { n: 4, text: 'todos significam “vento”' }], answer: 1, explanationPt: '{晴|は}れ／{晴|は}れる／いい{天気|てんき} (sol/limpo), くもり／くもる (nublado), {雨|あめ}／{雨|あめ}が{降|ふ}る (chuva/chover). (Atividade 1)' },
+    { id: 'iro-e1-l4-10', number: 10, prompt: 'Continuando o vocabulário do tempo — qual está certo?', choices: [{ n: 1, text: '{雪|ゆき}／{雪|ゆき}が{降|ふ}る (neve/nevar) ／ {風|かぜ}／{風|かぜ}が{吹|ふ}く (vento/ventar) ／ {雷|かみなり}／{雷|かみなり}が{鳴|な}る (trovão/trovejar)' }, { n: 2, text: '{雪|ゆき} (chuva) ／ {風|かぜ} (sol) ／ {雷|かみなり} (neblina)' }, { n: 3, text: '{雪|ゆき} (vento) ／ {風|かぜ} (trovão) ／ {雷|かみなり} (neve)' }, { n: 4, text: 'todos significam “chuva”' }], answer: 1, explanationPt: '{雪|ゆき}が{降|ふ}る (nevar), {風|かぜ}が{吹|ふ}く (ventar), {雷|かみなり}が{鳴|な}る (trovejar). (Atividade 1)' },
+    { id: 'iro-e1-l4-11', number: 11, prompt: 'As palavras 「だいぶ／{嫌|いや}になる／ゆうべ／{本当|ほんとう}ですね」 significam:', choices: [{ n: 1, text: 'bastante ／ ficar insuportável/chato ／ ontem à noite ／ “é verdade, né”' }, { n: 2, text: 'pouco ／ ficar feliz ／ amanhã ／ “não é bem assim”' }, { n: 3, text: 'talvez ／ melhorar ／ hoje ／ “não sei”' }, { n: 4, text: 'sempre ／ acabar ／ semana passada ／ “com certeza não”' }], answer: 1, explanationPt: 'だいぶ (bastante), {嫌|いや}になる (ficar chato/insuportável), ゆうべ (ontem à noite), {本当|ほんとう}ですね (é verdade, né). (Atividade 2 · vocab)' },
+    { id: 'iro-e1-l4-12', number: 12, prompt: 'Na previsão do tempo, 「1{日|にち}／やむ／ただ／{強|つよ}い／{服装|ふくそう}／お{出|で}かけください」 significam:', choices: [{ n: 1, text: 'o dia todo ／ parar (a chuva) ／ porém ／ forte ／ roupa/traje ／ “saia (de casa)” (cortês)' }, { n: 2, text: 'um dia ／ começar ／ portanto ／ fraco ／ comida ／ “fique em casa”' }, { n: 3, text: 'meio-dia ／ continuar ／ além disso ／ frio ／ guarda-chuva ／ “durma”' }, { n: 4, text: 'à noite ／ cair ／ por isso ／ quente ／ sapato ／ “coma”' }], answer: 1, explanationPt: '1{日|にち} (o dia todo), やむ (a chuva parar), ただ (porém/só que), {強|つよ}い (forte), {服装|ふくそう} (traje/roupa), お{出|で}かけください (saia, por favor). (Atividade 2 · vocab)' },
+    { id: 'iro-e1-l4-13', number: 13, prompt: 'No tema das redes sociais, 「{台風|たいふう}／{外|そと}／{死|し}ぬ／{町|まち}／{触|さわ}る／{冷|つめ}たい」 significam:', choices: [{ n: 1, text: 'tufão ／ (lado de) fora ／ morrer ／ cidade/bairro ／ tocar/encostar ／ gelado/frio (ao toque)' }, { n: 2, text: 'vento ／ dentro ／ dormir ／ campo ／ ver ／ quente' }, { n: 3, text: 'chuva ／ rua ／ correr ／ casa ／ ouvir ／ molhado' }, { n: 4, text: 'neve ／ céu ／ viver ／ loja ／ pegar ／ seco' }], answer: 1, explanationPt: '{台風|たいふう} (tufão), {外|そと} (fora), {死|し}ぬ (morrer), {町|まち} (cidade), {触|さわ}る (tocar), {冷|つめ}たい (gelado). (Atividade 3 · 大切なことば)' },
+    { id: 'iro-e1-l4-14', number: 14, prompt: 'Os kanji 「{天気|てんき}／{今|いま}／{晴|は}れ」 lêem-se:', choices: [{ n: 1, text: 'てんき (tempo/clima) ／ いま (agora) ／ はれ (tempo bom/sol)' }, { n: 2, text: 'てんき ／ こん ／ せい' }, { n: 3, text: 'てんけ ／ いま ／ はれ' }, { n: 4, text: 'あまけ ／ きん ／ ひ' }], answer: 1, explanationPt: '{天気|てんき} (tempo), {今|いま} (agora), {晴|は}れ (tempo bom). (漢字)' },
+    { id: 'iro-e1-l4-15', number: 15, prompt: 'Os kanji 「{昨日|きのう}／{明日|あした}／{毎日|まいにち}」 lêem-se:', choices: [{ n: 1, text: 'きのう (ontem) ／ あした (amanhã) ／ まいにち (todo dia)' }, { n: 2, text: 'さくじつ ／ みょうにち ／ まいひ' }, { n: 3, text: 'きのう ／ あす ／ まいび' }, { n: 4, text: 'こんじつ ／ あした ／ まいにち' }], answer: 1, explanationPt: '{昨日|きのう} (ontem), {明日|あした} (amanhã), {毎日|まいにち} (todo dia). (漢字)' },
+    { id: 'iro-e1-l4-16', number: 16, prompt: 'Os kanji 「{雨|あめ}／{雪|ゆき}／{風|かぜ}／{強|つよ}い」 lêem-se:', choices: [{ n: 1, text: 'あめ (chuva) ／ ゆき (neve) ／ かぜ (vento) ／ つよい (forte)' }, { n: 2, text: 'あめ ／ ゆき ／ ふう ／ きょうい' }, { n: 3, text: 'う ／ せつ ／ かぜ ／ つよい' }, { n: 4, text: 'あめ ／ ゆき ／ かぜ ／ ごうい' }], answer: 1, explanationPt: '{雨|あめ} (chuva), {雪|ゆき} (neve), {風|かぜ} (vento), {強|つよ}い (forte). Kanji da lição: {天気|てんき}・{今|いま}・{晴|は}れ・{昨日|きのう}・{明日|あした}・{毎日|まいにち}・{雨|あめ}・{雪|ゆき}・{風|かぜ}・{強|つよ}い. (漢字)' },
+    { id: 'iro-e1-l4-17', number: 17, prompt: '📌 TIPS — sobre o {台風|たいふう} (tufão) no Japão:', choices: [{ n: 1, text: 'vem do verão ao outono, com vento e chuva fortes; pode parar transporte/escolas — virou costume online comer croquete (コロッケ) em dia de tufão' }, { n: 2, text: 'acontece só no inverno e traz neve' }, { n: 3, text: 'é um festival de primavera' }, { n: 4, text: 'nunca causa danos' }], answer: 1, explanationPt: '{台風|たいふう}: do verão ao outono, vento/chuva fortes, às vezes para transporte e escolas. Curiosidade: comer コロッケ (croquete) em dia de tufão virou “moda” em redes/fóruns. (TIPS)' },
+    { id: 'iro-e1-l4-18', number: 18, prompt: '📌 TIPS — sobre a previsão do tempo ({天気予報|てんきよほう}) no Japão:', choices: [{ n: 1, text: 'além de tempo/temperatura/chuva, traz pólen, raios UV, risco de insolação, dica de roupa, de secar a roupa etc., com ícones' }, { n: 2, text: 'só informa a temperatura' }, { n: 3, text: 'não existe no Japão' }, { n: 4, text: 'só sai em jornal impresso' }], answer: 1, explanationPt: 'A {天気予報|てんきよほう} japonesa dá muita informação extra (pólen, UV, insolação, traje, secagem de roupa, qual nabe combina com o dia), por ícones. (TIPS)' },
+    { id: 'iro-e1-l4-19', number: 19, prompt: 'Diálogo 04-03: como está o tempo e o que A comenta?', context: 'A：おはようございます。{今日|きょう}はいい{天気|てんき}ですね。 B：そうですね。いい{天気|てんき}ですね。 A：だいぶ{暖|あたた}かくなりましたね。 B：{本当|ほんとう}ですね。', choices: [{ n: 1, text: 'Está um bom tempo (sol); A comenta que esquentou bastante' }, { n: 2, text: 'Está chovendo muito todo dia' }, { n: 3, text: 'Está nevando pela primeira vez' }, { n: 4, text: 'Está com calor desde de manhã' }], answer: 1, explanationPt: 'いい{天気|てんき}ですね (empatia, ね) + だいぶ{暖|あたた}かくなりました (〜なりました, mudança no passado). (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l4-20', number: 20, prompt: 'Diálogo 04-04: do que A reclama?', context: 'A：{毎日|まいにち}、よく{降|ふ}りますね。 B：{本当|ほんとう}ですね。 A：{嫌|いや}になりますね。 B：そうですね。', choices: [{ n: 1, text: 'Da chuva: chove muito todo dia e isso já está chato/cansativo' }, { n: 2, text: 'Do calor que faz desde de manhã' }, { n: 3, text: 'Do tufão que parou os trens' }, { n: 4, text: 'Do frio do amanhecer' }], answer: 1, explanationPt: '{毎日|まいにち}、よく{降|ふ}りますね + {嫌|いや}になりますね (fica insuportável/chato). (Atividade 2)' },
+    { id: 'iro-e1-l4-21', number: 21, prompt: 'Diálogo 04-05: sobre o que A e B conversam?', context: 'A：おはようございます。{朝|あさ}から{暑|あつ}いですね。 B：そうですね。ゆうべも{暑|あつ}かったですね。', choices: [{ n: 1, text: 'Do calor: já está quente de manhã, e ontem à noite (ゆうべ) também estava' }, { n: 2, text: 'Do bom tempo ensolarado' }, { n: 3, text: 'Da chuva diária' }, { n: 4, text: 'Da neve' }], answer: 1, explanationPt: '{朝|あさ}から{暑|あつ}いですね (não-passado) + ゆうべも{暑|あつ}かったですね (passado de イA, Nota ➋). (Atividade 2)' },
+    { id: 'iro-e1-l4-22', number: 22, prompt: 'Diálogo 04-06: sobre o tempo de ontem ({昨日|きのう})?', context: 'A：{昨日|きのう}はすごい{雨|あめ}でしたね。 B：ええ、{風|かぜ}もすごかったですね。 A：{大変|たいへん}でしたね。 B：{本当|ほんとう}ですね。', choices: [{ n: 1, text: 'Ontem choveu muito e ventou muito; foi difícil' }, { n: 2, text: 'Ontem fez sol o dia todo' }, { n: 3, text: 'Ontem nevou pela primeira vez' }, { n: 4, text: 'Ontem esfriou de repente' }], answer: 1, explanationPt: '{昨日|きのう}はすごい{雨|あめ}でした (N+でした) + {風|かぜ}もすごかったです (イA passado) + {大変|たいへん}でした. (Atividade 2 · Nota ➋)' },
+    { id: 'iro-e1-l4-23', number: 23, prompt: 'Previsão 04-11: como está o tempo HOJE ({今日|きょう})?', context: '{今日|きょう}は{雨|あめ}の1{日|にち}でした。{今|いま}も{少|すこ}し{降|ふ}っています。', choices: [{ n: 1, text: 'Choveu o dia todo e agora ainda chove um pouco' }, { n: 2, text: 'Fez sol o dia todo' }, { n: 3, text: 'Nevou a manhã inteira' }, { n: 4, text: 'Ventou muito sem chuva' }], answer: 1, explanationPt: '{雨|あめ}の1{日|にち}でした (passado) + {今|いま}も{少|すこ}し{降|ふ}っています (V-ています③, estado atual, Nota ➌). (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l4-24', number: 24, prompt: 'Previsão 04-11: o que se prevê para AMANHÃ ({明日|あした})?', context: 'でも、この{雨|あめ}は{夜中|よなか}にはやんで、{明日|あした}は{晴|は}れるでしょう。ただ、{明日|あした}は1{日|にち}、{風|かぜ}が{強|つよ}くなります。{寒|さむ}い1{日|にち}になります。', choices: [{ n: 1, text: 'A chuva para de madrugada, amanhã deve fazer sol, mas com vento forte o dia todo e frio' }, { n: 2, text: 'Vai chover ainda mais forte' }, { n: 3, text: 'Vai nevar e parar o transporte' }, { n: 4, text: 'Vai fazer muito calor' }], answer: 1, explanationPt: '{夜中|よなか}にはやんで + {明日|あした}は{晴|は}れるでしょう (V-る+でしょう, previsão, Nota ➍) + {風|かぜ}が{強|つよ}くなります + {寒|さむ}い1{日|にち}になります. (Atividade 2)' },
+    { id: 'iro-e1-l4-25', number: 25, prompt: 'Previsão 04-11: que conselho a previsão dá no fim?', context: '{暖|あたた}かい{服装|ふくそう}でお{出|で}かけください。', choices: [{ n: 1, text: 'Saia (de casa) com roupa quente/agasalhada' }, { n: 2, text: 'Não saia de casa de jeito nenhum' }, { n: 3, text: 'Leve guarda-chuva grande' }, { n: 4, text: 'Use roupa leve por causa do calor' }], answer: 1, explanationPt: '{暖|あたた}かい{服装|ふくそう}でお{出|で}かけください = saia agasalhado (porque o dia será frio e ventoso). お〜ください = pedido cortês. (Atividade 2)' },
+    { id: 'iro-e1-l4-26', number: 26, prompt: 'SNS ① ({山田|やまだ}{拓也|たくや}): o que ele posta?', context: '{台風|たいふう}が{来|き}てます。{今日|きょう}は{学校|がっこう}が{休|やす}みになりました。{今|いま}、{外|そと}はすごい{雨|あめ}がふっています。{風|かぜ}もつよいです。{夜|よる}はうちでコロッケを{食|た}べます。', choices: [{ n: 1, text: 'Tem tufão; a escola foi suspensa; lá fora chove e venta forte; à noite vai comer croquete em casa' }, { n: 2, text: 'Está um dia ensolarado e foi à escola normalmente' }, { n: 3, text: 'Viu neve pela primeira vez' }, { n: 4, text: 'Comprou um casaco novo' }], answer: 1, explanationPt: '{台風|たいふう}が{来|き}てます; {学校|がっこう}が{休|やす}みになりました; {外|そと}はすごい{雨|あめ}; コロッケを{食|た}べます (liga ao TIPS do tufão+croquete). (Atividade 3 · leitura)' },
+    { id: 'iro-e1-l4-27', number: 27, prompt: 'SNS ② ({海|うみ}いちご): o que o post diz?', context: '{今|いま}の{気温|きおん}、37{度|ど}。あっっっっつーー！{死|し}ぬー！アイス{食|た}べたい！', choices: [{ n: 1, text: 'Está 37°C, calor insuportável (“tô morrendo!”), quer comer sorvete' }, { n: 2, text: 'Está nevando e muito frio' }, { n: 3, text: 'Está chovendo por causa do tufão' }, { n: 4, text: 'Esfriou e comprou um casaco' }], answer: 1, explanationPt: '{気温|きおん}37{度|ど} + あつーー！+ {死|し}ぬー！(exagero coloquial de “tô morrendo de calor”) + アイス{食|た}べたい. (Atividade 3 · leitura)' },
+    { id: 'iro-e1-l4-28', number: 28, prompt: 'SNS ③ (ナディア・アマンダ): o que ela conta?', context: '{雪|ゆき}がふりました。はじめて{雪|ゆき}を{見|み}ました。{町|まち}がまっしろになりました。とってもきれい！はじめて{雪|ゆき}をさわりました。とても{冷|つめ}たかったです。', choices: [{ n: 1, text: 'Nevou; ela viu e tocou neve pela 1ª vez; a cidade ficou toda branca; estava muito gelada' }, { n: 2, text: 'Fez 37°C e ela quer sorvete' }, { n: 3, text: 'Tem tufão e a escola fechou' }, { n: 4, text: 'Esfriou e ela comprou um casaco' }], answer: 1, explanationPt: '{雪|ゆき}がふりました; はじめて{雪|ゆき}を{見|み}た／さわった; {町|まち}がまっしろになりました (〜になりました); とても{冷|つめ}たかった (イA passado). (Atividade 3)' },
+    { id: 'iro-e1-l4-29', number: 29, prompt: 'SNS ④ (ミケニャア): o que o post diz?', context: 'すずしくなりましたね。{今日|きょう}は{新|あたら}しいコートを{買|か}いました。', choices: [{ n: 1, text: 'O tempo esfriou (ficou fresco); hoje comprou um casaco novo' }, { n: 2, text: 'Está calor de 37°C' }, { n: 3, text: 'Tem tufão e muita chuva' }, { n: 4, text: 'Viu neve pela primeira vez' }], answer: 1, explanationPt: 'すずしくなりました (〜くなりました, ficou fresco) + {新|あたら}しいコートを{買|か}いました. Resposta: 朝ちょっとさむかったよね. (Atividade 3)' },
+    { id: 'iro-e1-l4-30', number: 30, prompt: 'Pergunta de abertura da lição: 「どんな{天気|てんき}が{好|す}きですか？」 quer dizer:', choices: [{ n: 1, text: 'De que tipo de tempo você gosta?' }, { n: 2, text: 'Como está o tempo hoje?' }, { n: 3, text: 'Onde você mora?' }, { n: 4, text: 'Que estações há no seu país?' }], answer: 1, translationPt: 'De que tempo você gosta?', explanationPt: 'どんな{天気|てんき}が{好|す}きですか = de que tipo de tempo você gosta? Tema: {季節|きせつ}と{天気|てんき} (estações e clima). (Abertura)' },
+    { id: 'iro-e1-l4-31', number: 31, prompt: 'A lição 4 tem 3 atividades. Quais são os objetivos (Can-do)?', choices: [{ n: 1, text: '1) cumprimentar falando do tempo; 2) entender a previsão do tempo; 3) ler posts de rede social sobre o clima' }, { n: 2, text: '1) pedir comida; 2) marcar consulta; 3) escrever currículo' }, { n: 3, text: '1) falar de hobbies; 2) contar a família; 3) apresentar-se' }, { n: 4, text: '1) dar direções; 2) comprar passagem; 3) reclamar' }], answer: 1, explanationPt: 'Can-do 11 ({朝|あさ}から{暑|あつ}いですね): saudar falando do tempo; 12 ({明日|あした}は{晴|は}れるでしょう): entender a previsão; 13 ({台風|たいふう}が{来|き}てます): ler posts de SNS sobre o clima. (Estrutura da lição)' },
+    { id: 'iro-e1-l4-32', number: 32, prompt: 'No diálogo 3 (Atividade 1), a resposta empática mais comum a 「いい{天気|てんき}ですね」 é:', choices: [{ n: 1, text: 'そうですね。 / {本当|ほんとう}ですね。 (concordando com empatia)' }, { n: 2, text: 'いいえ、ちがいます。' }, { n: 3, text: 'すみません。' }, { n: 4, text: 'はじめまして。' }], answer: 1, explanationPt: 'A 〜ですね de empatia costuma ser respondida com そうですね／{本当|ほんとう}ですね (concordância). (Atividade 1 · Nota ➊)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 4
+const L4_SCRIPTS: Record<string, ScriptItem[]> = {
+  '04-03': [
+    {
+      label: '会話① (04-03)',
+      setupJa: '{近所|きんじょ}の{人|ひと}や{知|し}り{合|あ}いと{会|あ}ったときに、あいさつをしています。',
+      setupPt: 'As pessoas se cumprimentam ao encontrar um vizinho ou conhecido.',
+      lines: [
+        { speaker: 'A', ja: 'おはようございます。{今日|きょう}はいい{天気|てんき}ですね。', pt: 'Bom dia. Que tempo bom hoje, né?' },
+        { speaker: 'B', ja: 'そうですね。いい{天気|てんき}ですね。', pt: 'É mesmo. Que tempo bom.' },
+        { speaker: 'A', ja: 'だいぶ{暖|あたた}かくなりましたね。', pt: 'Esquentou bastante, né?' },
+        { speaker: 'B', ja: '{本当|ほんとう}ですね。', pt: 'É verdade.' },
+      ],
+    },
+  ],
+  '04-04': [
+    {
+      label: '会話② (04-04)',
+      lines: [
+        { speaker: 'A', ja: '{毎日|まいにち}、よく{降|ふ}りますね。', pt: 'Todo dia chove bastante, né?' },
+        { speaker: 'B', ja: '{本当|ほんとう}ですね。', pt: 'É verdade.' },
+        { speaker: 'A', ja: '{嫌|いや}になりますね。', pt: 'Já está ficando insuportável, né?' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'Pois é.' },
+      ],
+    },
+  ],
+  '04-05': [
+    {
+      label: '会話③ (04-05)',
+      lines: [
+        { speaker: 'A', ja: 'おはようございます。{朝|あさ}から{暑|あつ}いですね。', pt: 'Bom dia. Já está quente desde de manhã, né?' },
+        { speaker: 'B', ja: 'そうですね。ゆうべも{暑|あつ}かったですね。', pt: 'Pois é. Ontem à noite também estava quente.' },
+        { speaker: 'A', ja: 'そうですね。', pt: 'É mesmo.' },
+      ],
+    },
+  ],
+  '04-06': [
+    {
+      label: '会話④ (04-06)',
+      lines: [
+        { speaker: 'A', ja: '{昨日|きのう}はすごい{雨|あめ}でしたね。', pt: 'Ontem choveu muito, né?' },
+        { speaker: 'B', ja: 'ええ、{風|かぜ}もすごかったですね。', pt: 'É, e o vento também estava forte.' },
+        { speaker: 'A', ja: '{大変|たいへん}でしたね。', pt: 'Foi complicado, né?' },
+        { speaker: 'B', ja: '{本当|ほんとう}ですね。', pt: 'É verdade.' },
+      ],
+    },
+  ],
+  '04-11': [
+    {
+      label: '天気予報 (04-11)',
+      setupJa: '{夕方|ゆうがた}、テレビで{天気予報|てんきよほう}を{見|み}ています。',
+      setupPt: 'No fim da tarde, você assiste à previsão do tempo na TV.',
+      lines: [
+        { speaker: 'Previsão', ja: '{今日|きょう}は{雨|あめ}の1{日|にち}でした。{今|いま}も{少|すこ}し{降|ふ}っています。', pt: 'Hoje foi um dia de chuva. Agora ainda chove um pouco.' },
+        { speaker: 'Previsão', ja: 'でも、この{雨|あめ}は{夜中|よなか}にはやんで、{明日|あした}は{晴|は}れるでしょう。', pt: 'Mas essa chuva deve parar de madrugada, e amanhã deve fazer sol.' },
+        { speaker: 'Previsão', ja: 'ただ、{明日|あした}は1{日|にち}、{風|かぜ}が{強|つよ}くなります。', pt: 'Só que amanhã o vento fica forte o dia todo.' },
+        { speaker: 'Previsão', ja: '{寒|さむ}い1{日|にち}になります。{暖|あたた}かい{服装|ふくそう}でお{出|で}かけください。', pt: 'Será um dia frio. Saia agasalhado, por favor.' },
+      ],
+    },
+  ],
+}
+
+const lesson4: Section = {
+  id: 'lesson-4',
+  level: 'elementary1',
+  titleJa: '第4課 昨日はすごい雨でしたね',
+  titlePt: 'Lição 4 — Ontem choveu muito, né',
+  summaryPt: 'Estações e clima · puxar conversa sobre o tempo com 〜ね de empatia (いい天気ですね), distinguir presente e passado (暑いです／暑かったです・雨でした), descrever o tempo atual com V-ています (雨が降っています), entender a previsão do tempo com 〜でしょう (明日は晴れるでしょう) e ler posts de rede social sobre o clima.',
+  studyNotes: [
+    {
+      title: 'Tópico: Estações e clima (季節と天気)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Cumprimentar/puxar conversa falando do tempo.\n' +
+        '- Ouvir a previsão do tempo e entender o conteúdo geral.\n' +
+        '- Ler um post curto de rede social sobre o tempo e entender o conteúdo.\n\n' +
+        '💡 Pergunta de abertura: どんな{天気|てんき}が{好|す}きですか？ (de que tempo você gosta?).',
+    },
+    {
+      title: 'O 〜ね de empatia (共感) (➊)',
+      bodyPt:
+        'No fim da frase, **ね** busca ou mostra **empatia** com o ouvinte — “né?, não é?”:\n\n' +
+        '- `{今日|きょう}はいい{天気|てんき}ですね` (que tempo bom, né?). Resposta: `そうですね。／{本当|ほんとう}ですね。`\n' +
+        '- O tempo é assunto fácil para começar conversa, porque os dois compartilham a mesma percepção.\n\n' +
+        '⚠️ É diferente do **ね de confirmação** do Starter (`コピー20{枚|まい}ですね` = são 20 cópias, certo?).',
+    },
+    {
+      title: 'Presente × passado: 非過去・過去 (➋)',
+      bodyPt:
+        'Tempo de **agora** → não-passado; tempo **passado** → passado:\n\n' +
+        '| | não-passado | passado |\n' +
+        '|---|---|---|\n' +
+        '| **N** | {雨|あめ}です | {雨|あめ}でした |\n' +
+        '| **ナA** | {大変|たいへん}です | {大変|たいへん}でした |\n' +
+        '| **イA** | {暑|あつ}いです | {暑|あつ}かったです |\n' +
+        '| **V** | {降|ふ}ります | {降|ふ}りました |\n\n' +
+        '⚠️ イA no passado é **〜かったです** (não 〜いでした). Revisão do Starter.',
+    },
+    {
+      title: 'O tempo agora: V-ています③ / a previsão: 〜でしょう (➌➍)',
+      bodyPt:
+        '- **V-ています③** = estado atual do tempo: `{今|いま}も{少|すこ}し{雨|あめ}が{降|ふ}っています`. Memorize: {晴|は}れています, くもっています, {雨|あめ}／{雪|ゆき}が{降|ふ}っています, {風|かぜ}が{吹|ふ}いています. (Na L1 era profissão; na L2, hábito.)\n' +
+        '- **〜でしょう** = previsão/suposição, típico da previsão do tempo: `{明日|あした}は{晴|は}れるでしょう`. Liga-se a **N／ナA／イA-い／V-る** ({晴|は}れでしょう, {寒|さむ}いでしょう, {晴|は}れるでしょう, やむでしょう). Em conversa é pouco usado; aqui basta **entender** a previsão.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Tempo:** {晴|は}れ／{晴|は}れる／いい{天気|てんき} (sol), くもり／くもる (nublado), {雨|あめ}／{雨|あめ}が{降|ふ}る (chuva), {雪|ゆき}／{雪|ゆき}が{降|ふ}る (neve), {風|かぜ}／{風|かぜ}が{吹|ふ}く (vento), {雷|かみなり}／{雷|かみなり}が{鳴|な}る (trovão).\n\n' +
+        '**Vocabulário:** だいぶ (bastante), {嫌|いや}になる (ficar chato/insuportável), ゆうべ (ontem à noite), {本当|ほんとう}ですね (é verdade, né), 1{日|にち} (o dia todo), やむ (a chuva parar), ただ (porém), {強|つよ}い (forte), {服装|ふくそう} (traje), お{出|で}かけください (saia, por favor), {台風|たいふう} (tufão), {外|そと} (fora), {死|し}ぬ (morrer), {町|まち} (cidade), {触|さわ}る (tocar), {冷|つめ}たい (gelado), {気温|きおん} (temperatura), コート (casaco), コロッケ (croquete).\n\n' +
+        '**Kanji da lição:** {天気|てんき}, {今|いま}, {晴|は}れ, {昨日|きのう}, {明日|あした}, {毎日|まいにち}, {雨|あめ}, {雪|ゆき}, {風|かぜ}, {強|つよ}い.\n\n' +
+        '📌 **TIPS:** **{台風|たいふう}** (tufão, do verão ao outono; vira costume online comer コロッケ no dia de tufão); **{天気予報|てんきよほう}** (a previsão japonesa traz pólen, UV, insolação, dica de roupa e de secar a roupa etc., por ícones).',
+    },
+  ],
+  groups: [lesson4Group],
+  audios: attachScripts(4, L4_SCRIPTS),
+}
+
+// ---- Lições 5-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(4, 'Estações e clima', '昨日はすごい雨でしたね', 'Ontem choveu muito, né', [
-    'Cumprimentar puxando assunto sobre o tempo/clima.',
-    'Ouvir a previsão do tempo e entender o conteúdo geral.',
-    'Ler um post curto de rede social sobre o tempo e entender o conteúdo.',
-  ]),
   scaffold(5, 'Minha cidade', 'とてもにぎやかで便利です', 'É muito movimentado e prático', [
     'Falar de forma simples suas impressões sobre a cidade onde mora.',
     'Perguntar sobre lugares recomendados da cidade e entender a resposta.',
@@ -818,5 +973,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, ...others],
 }
