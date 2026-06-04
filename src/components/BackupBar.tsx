@@ -2,13 +2,19 @@ import { useRef, useState } from 'react'
 import {
   clearAll,
   downloadBackup,
-  importAnswers,
+  importBackup,
   readBackupFile,
   useAnswers,
 } from '../lib/storage'
+import { useCustom } from '../lib/customStore'
+import { useSrs } from '../lib/reviewStore'
+import { useExams } from '../lib/examStore'
 
 export function BackupBar() {
   const answers = useAnswers()
+  const custom = useCustom()
+  const srs = useSrs()
+  const exams = useExams()
   const fileRef = useRef<HTMLInputElement>(null)
   const [toast, setToast] = useState<string | null>(null)
 
@@ -16,7 +22,7 @@ export function BackupBar() {
 
   function flash(msg: string) {
     setToast(msg)
-    window.setTimeout(() => setToast(null), 2600)
+    window.setTimeout(() => setToast(null), 2800)
   }
 
   async function onFile(e: React.ChangeEvent<HTMLInputElement>) {
@@ -24,9 +30,9 @@ export function BackupBar() {
     if (!file) return
     try {
       const backup = await readBackupFile(file)
-      const n = Object.keys(backup.answers).length
-      importAnswers(backup.answers, 'merge')
-      flash(`Backup carregado: ${n} resposta(s) importada(s).`)
+      importBackup(backup, 'merge')
+      const n = Object.keys(backup.answers ?? {}).length
+      flash(`Backup carregado: ${n} resposta(s), ${backup.custom?.length ?? 0} exercício(s) seu(s).`)
     } catch (err) {
       flash(`Erro ao ler o arquivo: ${(err as Error).message}`)
     } finally {
@@ -34,16 +40,21 @@ export function BackupBar() {
     }
   }
 
+  const anything =
+    count > 0 || custom.length > 0 || Object.keys(srs).length > 0 || exams.length > 0
+
   return (
     <div className="card backup-bar">
       <div className="info">
-        💾 <b>{count}</b> resposta(s) salva(s) neste navegador.
+        💾 <b>{count}</b> resposta(s) · <b>{custom.length}</b> exercício(s) seu(s) ·{' '}
+        <b>{Object.keys(srs).length}</b> carta(s) de revisão · <b>{exams.length}</b> simulado(s).
         <div className="muted" style={{ fontSize: 12 }}>
-          Tudo fica salvo localmente (offline). Gere um backup para não perder ao trocar de dispositivo.
+          Tudo fica salvo localmente (offline). O backup inclui respostas, revisão, exercícios
+          criados e histórico de simulados.
         </div>
       </div>
       <div className="spacer" />
-      <button className="btn primary small" onClick={downloadBackup} disabled={count === 0}>
+      <button className="btn primary small" onClick={downloadBackup} disabled={!anything}>
         ⬇ Baixar backup
       </button>
       <button className="btn small" onClick={() => fileRef.current?.click()}>
@@ -59,14 +70,14 @@ export function BackupBar() {
       <button
         className="btn small ghost"
         onClick={() => {
-          if (confirm('Apagar todas as respostas salvas neste navegador? (faça um backup antes)')) {
+          if (confirm('Apagar todas as RESPOSTAS salvas? (revisão, exercícios e simulados são mantidos. Faça um backup antes.)')) {
             clearAll()
             flash('Respostas apagadas.')
           }
         }}
         disabled={count === 0}
       >
-        🗑 Limpar
+        🗑 Limpar respostas
       </button>
 
       {toast && <div className="toast">{toast}</div>}

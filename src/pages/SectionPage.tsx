@@ -7,6 +7,8 @@ import { StudyNotes } from '../components/StudyNotes'
 import { ExerciseGroupView } from '../components/ExerciseGroupView'
 import { ScriptViewer } from '../components/ScriptViewer'
 import { BackupBar } from '../components/BackupBar'
+import { useCustom } from '../lib/customStore'
+import { mergedGroups } from '../lib/dataAccess'
 
 type Tab = 'estudo' | 'exercicios' | 'audios'
 
@@ -14,16 +16,22 @@ export function SectionPage() {
   const { levelId, sectionId } = useParams()
   const found = getSection(levelId, sectionId)
   const answers = useAnswers()
+  const custom = useCustom()
   const [furigana, setFurigana] = useState(true)
+
+  const groups = useMemo(
+    () => (found ? mergedGroups(found.section, custom) : []),
+    [found, custom],
+  )
 
   const tabs = useMemo<Tab[]>(() => {
     if (!found) return []
     const t: Tab[] = []
     if (found.section.studyNotes.length) t.push('estudo')
-    if (found.section.groups.length) t.push('exercicios')
+    if (groups.length) t.push('exercicios')
     if (found.section.audios?.length) t.push('audios')
     return t
-  }, [found])
+  }, [found, groups.length])
 
   const [tab, setTab] = useState<Tab>('estudo')
 
@@ -86,8 +94,12 @@ export function SectionPage() {
             <span className="muted" style={{ fontSize: 13 }}>
               Marque a alternativa, escreva sua justificativa e clique em <b>Verificar resposta</b>.
             </span>
+            <div className="spacer" style={{ flex: 1 }} />
+            <Link className="btn small" to={`/criar?level=${level.id}&section=${section.id}`}>
+              ✍️ Criar exercício desta área
+            </Link>
           </div>
-          {section.groups.map((g) => (
+          {groups.map((g) => (
             <ExerciseGroupView key={g.id} group={g} furigana={furigana} />
           ))}
         </div>

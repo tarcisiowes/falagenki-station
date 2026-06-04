@@ -16,7 +16,10 @@ export function Layout() {
             <NavLink to="/" end>Início</NavLink>
             <NavLink to="/nivel/N5">N5</NavLink>
             <NavLink to="/nivel/N4">N4</NavLink>
-            <NavLink to="/sobre">Sobre</NavLink>
+            <NavLink to="/revisar">🔁 Revisar</NavLink>
+            <NavLink to="/simulado">⏱ Simulado</NavLink>
+            <NavLink to="/analise">📊 Análise</NavLink>
+            <NavLink to="/criar">✍️ Criar</NavLink>
           </nav>
         </div>
       </header>

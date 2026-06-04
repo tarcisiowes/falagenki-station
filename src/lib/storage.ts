@@ -2,10 +2,13 @@
 // Cada questão guarda: alternativa marcada e/ou anotação escrita pelo usuário.
 
 import { useSyncExternalStore } from 'react'
+import { srsStore, type SrsMap } from './reviewStore'
+import { customStore, type CustomQuestion } from './customStore'
+import { examStore, type ExamAttempt } from './examStore'
 
 const STORAGE_KEY = 'nihongo-br:answers:v1'
 const BACKUP_APP = 'nihongo-br'
-const BACKUP_VERSION = 1
+const BACKUP_VERSION = 2
 
 export interface AnswerRecord {
   /** alternativa marcada (1..4) */
@@ -23,6 +26,12 @@ export interface BackupFile {
   exportedAt: string
   count: number
   answers: AnswerMap
+  /** estado de repetição espaçada (revisão Anki) */
+  srs?: SrsMap
+  /** questões criadas pelo usuário */
+  custom?: CustomQuestion[]
+  /** histórico de simulados */
+  exams?: ExamAttempt[]
 }
 
 // ---- estado em memória + sincronização -----------------------------------
@@ -115,6 +124,34 @@ export function buildBackup(): BackupFile {
     exportedAt: new Date().toISOString(),
     count: Object.keys(state).length,
     answers: state,
+    srs: srsStore.get(),
+    custom: customStore.get(),
+    exams: examStore.get(),
+  }
+}
+
+/** Importa um backup completo (respostas + revisão + questões + simulados). */
+export function importBackup(backup: BackupFile, mode: 'merge' | 'replace' = 'merge') {
+  importAnswers(backup.answers ?? {}, mode)
+
+  if (backup.srs) {
+    srsStore.update((cur) => (mode === 'replace' ? { ...backup.srs } : { ...cur, ...backup.srs }))
+  }
+
+  if (backup.custom) {
+    customStore.update((cur) => {
+      if (mode === 'replace') return [...backup.custom!]
+      const ids = new Set(cur.map((c) => c.id))
+      return [...cur, ...backup.custom!.filter((c) => !ids.has(c.id))]
+    })
+  }
+
+  if (backup.exams) {
+    examStore.update((cur) => {
+      if (mode === 'replace') return [...backup.exams!]
+      const ids = new Set(cur.map((e) => e.id))
+      return [...cur, ...backup.exams!.filter((e) => !ids.has(e.id))]
+    })
   }
 }
 

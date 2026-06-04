@@ -320,3 +320,65 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
   font: inherit; font-size: 14px; font-weight: 600; color: var(--ink-soft);
 }
 .tablist button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* ---- stat cards ---- */
+.stat { padding: 18px 16px; text-align: center; }
+.stat .big { font-size: 30px; font-weight: 900; letter-spacing: -.02em; line-height: 1.1; }
+.stat .lbl { font-size: 12.5px; color: var(--ink-soft); margin-top: 4px; }
+
+/* ---- review (Anki) ---- */
+.review-card { padding: 20px 22px; }
+.review-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; font-size: 13px; }
+.grade-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
+.grade {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 12px; padding: 11px 6px; background: #fff; font: inherit;
+  transition: .12s;
+}
+.grade:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+.grade .gl { font-weight: 700; font-size: 14px; }
+.grade .gi { font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.grade.again { border-color: #f3c2c9; } .grade.again .gl { color: var(--accent-ink); }
+.grade.hard { border-color: #f1dca8; } .grade.hard .gl { color: var(--amber); }
+.grade.good { border-color: #bfe3cc; } .grade.good .gl { color: var(--green); }
+.grade.easy { border-color: #bcd2f3; } .grade.easy .gl { color: var(--blue); }
+.grade.recommend { box-shadow: 0 0 0 2px var(--accent-soft); border-color: var(--accent); }
+@media (max-width: 620px) { .grade-row { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- exam runner ---- */
+.exam-bar {
+  position: sticky; top: 64px; z-index: 10; padding: 12px 16px;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.exam-clock { font-size: 22px; font-weight: 900; font-variant-numeric: tabular-nums; color: var(--ink); }
+.exam-clock.low { color: var(--accent); }
+.exam-nav { display: flex; align-items: center; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+.exam-dots { display: flex; gap: 6px; flex-wrap: wrap; flex: 1; }
+.exam-dots .dot {
+  width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--line); background: #fff;
+  cursor: pointer; font: inherit; font-size: 12px; font-weight: 700; color: var(--ink-soft);
+}
+.exam-dots .dot.done { background: var(--surface-2); color: var(--ink); }
+.exam-dots .dot.cur { border-color: var(--accent); color: var(--accent-ink); background: var(--accent-soft); }
+
+/* ---- exam table ---- */
+.exam-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.exam-table th, .exam-table td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.exam-table th { background: var(--surface-2); font-size: 12px; color: var(--ink-soft); position: sticky; top: 0; }
+.exam-table td { font-variant-numeric: tabular-nums; }
+
+/* ---- create form ---- */
+.field { display: block; margin: 12px 0; }
+.field > span { display: block; font-size: 13px; font-weight: 600; color: var(--ink-soft); margin-bottom: 5px; }
+.field input[type=text], .field textarea, .field select {
+  width: 100%; font: inherit; font-size: 15px; border: 1px solid var(--line); border-radius: 10px;
+  padding: 9px 12px; background: var(--surface-2); font-family: var(--ja-font);
+}
+.field textarea { min-height: 58px; resize: vertical; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: 2px solid var(--accent-soft); border-color: var(--accent); background: #fff; }
+.choice-edit { display: flex; align-items: center; gap: 10px; margin: 7px 0; }
+.choice-edit input[type=radio] { accent-color: var(--accent); width: 18px; height: 18px; flex: none; }
+.choice-edit input[type=text] {
+  flex: 1; font: inherit; font-size: 15px; border: 1px solid var(--line); border-radius: 10px;
+  padding: 8px 12px; background: var(--surface-2); font-family: var(--ja-font);
+}
