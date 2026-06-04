@@ -72,8 +72,8 @@ export interface ScriptItem {
   /** posição aproximada no áudio, em segundos (para "pular para") */
   time?: number
   /** fala de abertura / situação narrada */
-  setupJa: string
-  setupPt: string
+  setupJa?: string
+  setupPt?: string
   lines: ScriptLine[]
   /** pergunta final lida no áudio */
   questionJa?: string

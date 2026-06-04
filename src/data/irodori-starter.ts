@@ -335,13 +335,253 @@ const lesson4: Section = {
   audios: attachScripts(4, { '04-08': L4_DIALOG }),
 }
 
-// ---- Lições 5 a 18 (estrutura por tópico; exercícios em construção) ------
+// ---- Lição 5: Comidas que eu gosto --------------------------------------
+const lesson5Group: ExerciseGroup = {
+  id: 'iro-s-l5',
+  title: 'うどんが好きです',
+  subtitlePt: 'Gostos, recusas e o café da manhã',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l5-1', number: 1, prompt: 'Para dizer que você GOSTA de peixe:', choices: [{ n: 1, text: '魚が好きです' }, { n: 2, text: '魚は好きじゃないです' }, { n: 3, text: '魚を飲みます' }, { n: 4, text: '魚はちょっと…' }], answer: 1, translationPt: 'Gosto de peixe.', explanationPt: '〜が好(す)きです = gosto de 〜. A coisa de que se gosta vem marcada por が. (Nota de gramática ➊)' },
+    { id: 'iro-s-l5-2', number: 2, prompt: 'Para dizer que você NÃO gosta de carne:', choices: [{ n: 1, text: '肉が好きです' }, { n: 2, text: '肉は好きじゃないです' }, { n: 3, text: '肉も好きです' }, { n: 4, text: '肉をください' }], answer: 2, translationPt: 'Não gosto de carne.', explanationPt: '〜は好きじゃないです = não gosto de 〜. A forma negativa de 好きです é 好きじゃないです. (Nota ➊)' },
+    { id: 'iro-s-l5-3', number: 3, prompt: 'Você gosta de peixe E também de carne. A 2ª frase é:', context: '魚が好きです。肉＿＿好きです。', choices: [{ n: 1, text: '肉も好きです' }, { n: 2, text: '肉は好きじゃないです' }, { n: 3, text: '肉が好きじゃないです' }, { n: 4, text: '肉を好きです' }], answer: 1, translationPt: 'Também gosto de carne.', explanationPt: '〜も = também. 肉も好きです = (eu) também gosto de carne. (Diálogo 05-01)' },
+    { id: 'iro-s-l5-4', number: 4, prompt: 'Alguém pergunta se você gosta de wasabi e você quer recusar com delicadeza. Diz:', choices: [{ n: 1, text: 'わさびは、ちょっと……' }, { n: 2, text: 'わさびが大好きです' }, { n: 3, text: 'わさびをお願いします' }, { n: 4, text: 'わさびは、はい' }], answer: 1, translationPt: 'Wasabi… é meio que não (não muito).', explanationPt: '「〜は、ちょっと……」 é uma recusa/educada e suave: deixa subentendido que você não gosta ou prefere não, sem dizer “não” diretamente. (Nota ➋, diálogo 05-14)' },
+    { id: 'iro-s-l5-5', number: 5, prompt: 'Te oferecem chá: 「お茶、飲みますか？」. Para ACEITAR:', choices: [{ n: 1, text: 'はい、お願いします' }, { n: 2, text: 'いえ、けっこうです' }, { n: 3, text: 'すみません、ちがいます' }, { n: 4, text: 'はじめまして' }], answer: 1, translationPt: 'Sim, por favor.', explanationPt: 'はい、お願(ねが)いします = sim, por favor (aceitando). (Nota ➌, diálogo 05-20)' },
+    { id: 'iro-s-l5-6', number: 6, prompt: 'Te oferecem bebida alcoólica e você quer RECUSAR educadamente:', choices: [{ n: 1, text: 'はい、お願いします' }, { n: 2, text: 'いえ、けっこうです' }, { n: 3, text: 'もう いちど お願いします' }, { n: 4, text: 'いただきます' }], answer: 2, translationPt: 'Não, obrigado(a) (está bom assim).', explanationPt: 'いえ、けっこうです = não, obrigado(a)/já está bom — recusa educada de uma oferta. (Nota ➌, diálogo 05-21)' },
+    { id: 'iro-s-l5-7', number: 7, prompt: 'Perguntam 「何、飲みますか？」 (o que você quer beber?). Você escolhe café:', choices: [{ n: 1, text: 'じゃあ、コーヒー、お願いします' }, { n: 2, text: 'コーヒーは好きじゃないです' }, { n: 3, text: 'コーヒーは、ちょっと…' }, { n: 4, text: 'いえ、けっこうです' }], answer: 1, translationPt: 'Então, café, por favor.', explanationPt: 'じゃあ、〜、お願いします = então (nesse caso), 〜, por favor — usado para escolher o que quer. (Nota ➌, diálogo 05-22)' },
+    { id: 'iro-s-l5-8', number: 8, prompt: 'Qual partícula marca o que se come/bebe? 「パン＿＿食べます」', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'が' }, { n: 3, text: 'は' }, { n: 4, text: 'に' }], answer: 1, translationPt: 'Como pão.', explanationPt: 'を marca o objeto direto de verbos como 食べます (comer) e 飲みます (beber). パンを食べます = como pão. (Nota ➍)' },
+    { id: 'iro-s-l5-9', number: 9, prompt: 'Para dizer que você NÃO come café da manhã:', choices: [{ n: 1, text: '朝ご飯は食べません' }, { n: 2, text: '朝ご飯を食べます' }, { n: 3, text: '朝ご飯が好きです' }, { n: 4, text: '朝ご飯を飲みます' }], answer: 1, translationPt: 'Não como café da manhã.', explanationPt: 'A forma negativa de 食べます é 食べません (= não como). Também existe 食べないです, mais coloquial. (Nota ➎)' },
+    { id: 'iro-s-l5-10', number: 10, prompt: '「朝ご飯は、あまり食べません」significa:', choices: [{ n: 1, text: 'Quase não como café da manhã.' }, { n: 2, text: 'Sempre como café da manhã.' }, { n: 3, text: 'Como muito no café da manhã.' }, { n: 4, text: 'Gosto de café da manhã.' }], answer: 1, explanationPt: 'あまり + verbo negativo = “quase não / raramente”. Frequência: いつも (sempre) > よく (frequentemente) > あまり〜ません (quase não). (Nota ➏)' },
+    { id: 'iro-s-l5-11', number: 11, prompt: 'Qual destes é um prato de comida japonesa (日本の食べ物)?', choices: [{ n: 1, text: '天ぷら (tempurá)' }, { n: 2, text: 'コーヒー (café)' }, { n: 3, text: 'ビール (cerveja)' }, { n: 4, text: 'ジュース (suco)' }], answer: 1, explanationPt: 'Comidas japonesas da lição: 刺身, すし, 天ぷら, 牛丼, カレー, ラーメン, うどん, そば, 納豆, 梅干し, わさび. As outras opções são bebidas.' },
+    { id: 'iro-s-l5-12', number: 12, prompt: '「牛乳」(ぎゅうにゅう) é:', choices: [{ n: 1, text: 'leite' }, { n: 2, text: 'suco de laranja' }, { n: 3, text: 'sopa de missô' }, { n: 4, text: 'iogurte' }], answer: 1, explanationPt: '牛乳 = leite. オレンジジュース=suco de laranja; みそ汁=sopa de missô; ヨーグルト=iogurte.' },
+    { id: 'iro-s-l5-13', number: 13, prompt: 'No diálogo do café da manhã (05-32), o que a Stacey come?', context: 'ステーシー：私は、シリアルを食べます。果物も食べます。', choices: [{ n: 1, text: 'Cereal e frutas' }, { n: 2, text: 'Pão, ovo e iogurte' }, { n: 3, text: 'Nada; só bebe leite' }, { n: 4, text: 'Nada; só bebe água' }], answer: 1, explanationPt: 'Stacey diz 「シリアルを食べます。果物も食べます」 = como cereal; também como frutas.' },
+    { id: 'iro-s-l5-14', number: 14, prompt: 'Ainda no diálogo 05-32, o que o Matsuda faz no café da manhã?', context: '松田：私も、食べないです。水を飲みます。', choices: [{ n: 1, text: 'Não come; bebe água' }, { n: 2, text: 'Come pão e bebe leite' }, { n: 3, text: 'Come cereal e frutas' }, { n: 4, text: 'Come ovo e iogurte' }], answer: 1, explanationPt: 'Matsuda diz 「私も、食べないです。水を飲みます」 = eu também não como; bebo água. (食べないです = não como, coloquial)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 5 (聴解スクリプト)
+const L5_SCRIPTS: Record<string, ScriptItem[]> = {
+  '05-01': [
+    {
+      label: '会話 (05-01)',
+      setupJa: 'カムラーさん、マリさん、ルイスさん、{佐々木|さ さ き}さんが、{会社|かいしゃ}の{食堂|しょくどう}で{昼|ひる}ご{飯|はん}を{食|た}べながら{話|はな}しています。',
+      setupPt: 'Khamlar, Mali, Luis e Sasaki conversam enquanto almoçam no refeitório da empresa.',
+      lines: [
+        { speaker: '佐々木', ja: 'カムラーさん、{魚|さかな}、{好|す}きですか？', pt: 'Khamlar, você gosta de peixe?' },
+        { speaker: 'カムラー', ja: 'はい、{好|す}きです。', pt: 'Sim, gosto.' },
+        { speaker: '佐々木', ja: '{肉|にく}は？', pt: 'E carne?' },
+        { speaker: 'カムラー', ja: '{肉|にく}も{好|す}きです。', pt: 'Também gosto de carne.' },
+      ],
+    },
+  ],
+  '05-02': [
+    {
+      label: '会話 (05-02)',
+      lines: [
+        { speaker: '佐々木', ja: 'マリさんは、{魚|さかな}、{好|す}きですか？', pt: 'Mali, você gosta de peixe?' },
+        { speaker: 'マリ', ja: 'はい、{好|す}きです。', pt: 'Sim, gosto.' },
+        { speaker: '佐々木', ja: '{肉|にく}は？', pt: 'E carne?' },
+        { speaker: 'マリ', ja: '{肉|にく}は{好|す}きじゃないです。', pt: 'Carne eu não gosto.' },
+      ],
+    },
+  ],
+  '05-03': [
+    {
+      label: '会話 (05-03)',
+      lines: [
+        { speaker: '佐々木', ja: 'ルイスさんは？', pt: 'E você, Luis?' },
+        { speaker: 'ルイス', ja: '{魚|さかな}は{好|す}きじゃないです。{肉|にく}と{野菜|やさい}が{好|す}きです。', pt: 'Peixe eu não gosto. Gosto de carne e legumes.' },
+      ],
+    },
+  ],
+  '05-04': [
+    {
+      label: '会話 (05-04)',
+      lines: [
+        { speaker: 'ルイス', ja: '{佐々木|さ さ き}さんは？', pt: 'E você, Sasaki?' },
+        { speaker: '佐々木', ja: '{私|わたし}は{魚|さかな}が{好|す}きです。{野菜|やさい}も{好|す}きです。', pt: 'Eu gosto de peixe. Também gosto de legumes.' },
+        { speaker: 'ルイス', ja: '{肉|にく}は？', pt: 'E carne?' },
+        { speaker: '佐々木', ja: '{肉|にく}は{好|す}きじゃないです。', pt: 'Carne eu não gosto.' },
+      ],
+    },
+  ],
+  '05-11': [
+    {
+      label: '会話 (05-11)',
+      setupJa: '{日本|にほん}の{食|た}べ{物|もの}の{好|す}き{嫌|きら}いについて{聞|き}かれています。',
+      setupPt: 'As pessoas são perguntadas sobre comidas japonesas de que gostam ou não.',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}の{食|た}べ{物|もの}、{何|なに}が{好|す}きですか？', pt: 'Que comida japonesa você gosta?' },
+        { speaker: 'B', ja: '{私|わたし}は、うどんが{好|す}きです。', pt: 'Eu gosto de udon.' },
+        { speaker: 'A', ja: 'そばは？', pt: 'E soba?' },
+        { speaker: 'B', ja: 'そばも{好|す}きです。', pt: 'Soba também gosto.' },
+      ],
+    },
+  ],
+  '05-12': [
+    {
+      label: '会話 (05-12)',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}の{食|た}べ{物|もの}、{何|なに}が{好|す}き？', pt: 'Que comida japonesa você gosta? (casual)' },
+        { speaker: 'B', ja: 'えーと、{天|てん}ぷらが{好|す}きです。', pt: 'Hmm… gosto de tempurá.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah é?' },
+        { speaker: 'B', ja: '{牛丼|ぎゅうどん}も、カレーも{好|す}きです。', pt: 'Gyūdon e curry também gosto.' },
+        { speaker: 'A', ja: 'そう。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '05-13': [
+    {
+      label: '会話 (05-13)',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}の{食|た}べ{物|もの}、{何|なに}が{好|す}きですか？', pt: 'Que comida japonesa você gosta?' },
+        { speaker: 'B', ja: '{私|わたし}は、{納豆|なっとう}が{好|す}きです。', pt: 'Eu gosto de nattō.' },
+        { speaker: 'A', ja: 'そうですか。すごい！　{梅干|うめぼ}しは？', pt: 'Ah, é? Que legal! E umeboshi (ameixa em conserva)?' },
+        { speaker: 'B', ja: 'あ、{梅干|うめぼ}しは、ちょっと……。', pt: 'Ah, umeboshi… é meio que não.' },
+      ],
+    },
+  ],
+  '05-14': [
+    {
+      label: '会話 (05-14)',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}の{食|た}べ{物|もの}、{何|なに}が{好|す}きですか？', pt: 'Que comida japonesa você gosta?' },
+        { speaker: 'B', ja: 'すしが{好|す}きです。', pt: 'Gosto de sushi.' },
+        { speaker: 'A', ja: 'わさびは、だいじょうぶですか？', pt: 'E wasabi, tudo bem (você come)?' },
+        { speaker: 'B', ja: 'あ、わさびは、ちょっと……。', pt: 'Ah, wasabi… é meio que não.' },
+      ],
+    },
+  ],
+  '05-20': [
+    {
+      label: '会話 (05-20)',
+      setupJa: 'いろいろな{場面|ばめん}で、{飲|の}み{物|もの}をすすめられています。',
+      setupPt: 'Em diferentes situações, oferecem bebidas às pessoas.',
+      lines: [
+        { speaker: 'A', ja: 'セシルさん、お{茶|ちゃ}、{飲|の}みますか？', pt: 'Cecile, você aceita chá?' },
+        { speaker: 'B', ja: 'あ、はい、お{願|ねが}いします。', pt: 'Ah, sim, por favor.' },
+        { speaker: 'A', ja: 'はい、どうぞ。', pt: 'Aqui está.' },
+        { speaker: 'B', ja: 'ありがとうございます。', pt: 'Obrigada.' },
+      ],
+    },
+  ],
+  '05-21': [
+    {
+      label: '会話 (05-21)',
+      lines: [
+        { speaker: 'A', ja: '{羅|ラ}さん、お{酒|さけ}、{飲|の}む？', pt: 'Ra, você bebe (álcool)? (casual)' },
+        { speaker: 'B', ja: 'いえ、けっこうです。', pt: 'Não, obrigado (está bom assim).' },
+        { speaker: 'A', ja: 'あ、そう。', pt: 'Ah, tá.' },
+        { speaker: 'B', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '05-22': [
+    {
+      label: '会話 (05-22)',
+      lines: [
+        { speaker: 'A', ja: 'イリヤスさん、{何|なに}、{飲|の}む？', pt: 'Ilyas, o que você quer beber? (casual)' },
+        { speaker: 'B', ja: 'じゃあ、コーヒー、お{願|ねが}いします。', pt: 'Então, café, por favor.' },
+        { speaker: 'A', ja: 'はい、コーヒー。', pt: 'Aqui, café.' },
+        { speaker: 'B', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '05-23': [
+    {
+      label: '会話 (05-23)',
+      lines: [
+        { speaker: 'A', ja: 'ルシアさん、{何|なに}、{飲|の}みますか？', pt: 'Lucia, o que você quer beber?' },
+        { speaker: 'B', ja: 'じゃあ、ビール、お{願|ねが}いします。', pt: 'Então, cerveja, por favor.' },
+        { speaker: 'A', ja: 'ビールね。どうぞ。', pt: 'Cerveja, né. Aqui está.' },
+        { speaker: 'B', ja: 'あ、どうも。', pt: 'Ah, obrigada.' },
+      ],
+    },
+  ],
+  '05-32': [
+    {
+      label: '会話 (05-32)',
+      setupJa: 'ステーシーさん、アミラさん、マークさん、{松田|まつだ}さんが、{昼休|ひるやす}みに{話|はな}しています。',
+      setupPt: 'Stacey, Amira, Mark e Matsuda conversam no horário de almoço.',
+      lines: [
+        { speaker: 'アミラ', ja: '{朝|あさ}ご{飯|はん}、いつも、{何|なに}、{食|た}べますか？　ステーシーさんは？', pt: 'No café da manhã, o que você sempre come? E você, Stacey?' },
+        { speaker: 'ステーシー', ja: '{私|わたし}は、シリアルを{食|た}べます。{果物|くだもの}も{食|た}べます。', pt: 'Eu como cereal. Também como frutas.' },
+        { speaker: '松田', ja: 'へー。アミラさんは？', pt: 'Ah é? E você, Amira?' },
+        { speaker: 'アミラ', ja: 'えーと、{私|わたし}は、パンと、{卵|たまご}と、ヨーグルトをよく{食|た}べます。', pt: 'Hmm, eu costumo comer pão, ovo e iogurte.' },
+        { speaker: '松田', ja: 'マークさんは？', pt: 'E você, Mark?' },
+        { speaker: 'マーク', ja: 'あー、{私|わたし}は、{朝|あさ}ご{飯|はん}は、あまり{食|た}べません。{牛乳|ぎゅうにゅう}を{飲|の}みます。{松田|まつだ}さんは？', pt: 'Ah, eu quase não como de manhã. Bebo leite. E você, Matsuda?' },
+        { speaker: '松田', ja: '{私|わたし}も、{食|た}べないです。{水|みず}を{飲|の}みます。', pt: 'Eu também não como. Bebo água.' },
+        { speaker: 'ステーシー・アミラ', ja: 'え～！', pt: 'Quêee?!' },
+      ],
+      questionJa: '4{人|にん}は{朝|あさ}ご{飯|はん}に{何|なに}を{食|た}べますか。{何|なに}を{飲|の}みますか。',
+    },
+  ],
+}
+
+const lesson5: Section = {
+  id: 'lesson-5',
+  level: 'starter',
+  titleJa: '第5課 うどんが好きです',
+  titlePt: 'Lição 5 — Gosto de udon',
+  summaryPt: 'Comidas que eu gosto · gostos e recusas, oferecer bebida e falar do café da manhã.',
+  studyNotes: [
+    {
+      title: 'Tópico: Comidas que eu gosto',
+      bodyPt:
+        '## Can-do\n' +
+        '- Responder sobre comidas de que você gosta e não gosta.\n' +
+        '- Perguntar e responder sobre comida japonesa (gostar / recusar com delicadeza).\n' +
+        '- Responder quando te oferecem uma bebida.\n' +
+        '- Falar sobre o que come no café da manhã.',
+    },
+    {
+      title: 'Gostar e não gostar (➊)',
+      bodyPt:
+        '- **Gostar**: 〜が{好|す}きです. Ex.: `魚が好きです` = gosto de peixe. A coisa de que se gosta vem com **が**.\n' +
+        '- **Não gostar**: 〜は{好|す}きじゃないです. Ex.: `肉は好きじゃないです` = não gosto de carne.\n' +
+        '- **Também**: 〜も. Ex.: `肉も好きです` = também gosto de carne.\n' +
+        '- Perguntar: `〜、好きですか？` / `何が好きですか？` (do que você gosta?).',
+    },
+    {
+      title: 'Recusar com delicadeza (➋)',
+      bodyPt:
+        'Para dizer que não gosta de algo sem ser rude, usa-se **「〜は、ちょっと……」** (deixando a frase no ar).\n\n' +
+        '> わさびは、ちょっと…… = wasabi… é meio que não (= não curto muito).\n\n' +
+        'É uma recusa suave, muito comum no Japão.',
+    },
+    {
+      title: 'Oferecer e responder a bebidas (➌)',
+      bodyPt:
+        '| Situação | Frase | Português |\n|---|---|---|\n' +
+        '| Oferecer | お{茶|ちゃ}、{飲|の}みますか？ | Aceita um chá? |\n' +
+        '| Aceitar | はい、お{願|ねが}いします | Sim, por favor |\n' +
+        '| Recusar | いえ、けっこうです | Não, obrigado(a) |\n' +
+        '| Escolher | じゃあ、コーヒー、お{願|ねが}いします | Então, café, por favor |\n\n' +
+        'Perguntar o que a pessoa quer: `何、飲みますか？` (o que você quer beber?).',
+    },
+    {
+      title: 'Comer / beber e frequência (➍➎➏)',
+      bodyPt:
+        '- **Partícula を**: marca o que se come/bebe. `パンを{食|た}べます` = como pão; `{水|みず}を{飲|の}みます` = bebo água. (➍)\n' +
+        '- **Negativo**: 食べます → {食|た}べません (= não como). Coloquial: 食べないです. (➎)\n' +
+        '- **Frequência** (➏): いつも (sempre) · よく (frequentemente) · あまり〜ません (quase não).\n' +
+        '  - `あまり食べません` = quase não como.',
+    },
+    {
+      title: 'Vocabulário da lição',
+      bodyPt:
+        '**Comida japonesa (日本の食べ物):** {刺身|さしみ} (sashimi), すし (sushi), {天|てん}ぷら (tempurá), {牛丼|ぎゅうどん} (gyūdon), カレー (curry), ラーメン (lámen), うどん (udon), そば (soba), {納豆|なっとう} (nattō), {梅干|うめぼ}し (umeboshi), わさび (wasabi).\n\n' +
+        '**Bebidas (飲み物):** コーヒー (café), {紅茶|こうちゃ} (chá preto), お{茶|ちゃ} (chá verde), {水|みず} (água), ジュース (suco), コーラ (refrigerante cola), ビール (cerveja), お{酒|さけ} (bebida alcoólica/saquê).\n\n' +
+        '**Café da manhã (朝ご飯):** ご{飯|はん} (arroz), パン (pão), {卵|たまご} (ovo), ヨーグルト (iogurte), シリアル (cereal), {果物|くだもの} (frutas), サラダ (salada), みそ{汁|しる} (sopa de missô), スープ (sopa), {牛乳|ぎゅうにゅう} (leite), トマトジュース / オレンジジュース / りんごジュース (sucos de tomate / laranja / maçã).',
+    },
+  ],
+  groups: [lesson5Group],
+  audios: attachScripts(5, L5_SCRIPTS),
+}
+
+// ---- Lições 6 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(5, 'Comidas que eu gosto', 'うどんが好きです', 'Gosto de udon', [
-    'Responder sobre comidas que gosta e não gosta.',
-    'Perguntar e responder sobre comida japonesa.',
-    'Responder a uma oferta de bebida; falar do café da manhã.',
-  ]),
   scaffold(6, 'Comidas que eu gosto', 'チーズバーガーをおねがいします', 'Um cheeseburger, por favor', [
     'Entender um cardápio de fast food.',
     'Fazer um pedido num restaurante e pedir prato/copo.',
@@ -412,5 +652,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, ...others],
 }
