@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useExams, deleteAttempt } from '../lib/examStore'
-import { useSrs } from '../lib/reviewStore'
+import { useExams, deleteAttempt, type ExamAttempt } from '../lib/examStore'
+import { useSrs, gradeCard } from '../lib/reviewStore'
 import { useCustom } from '../lib/customStore'
 import { allFlatQuestions, SEC_PER_QUESTION } from '../lib/dataAccess'
 import { isDue } from '../lib/srs'
@@ -16,6 +16,23 @@ export function StatsPage() {
   const srs = useSrs()
   const custom = useCustom()
   const [open, setOpen] = useState<string | null>(null)
+  const [toast, setToast] = useState<string | null>(null)
+
+  function flash(msg: string) {
+    setToast(msg)
+    window.setTimeout(() => setToast(null), 2600)
+  }
+
+  function sendWrong(attempt: ExamAttempt) {
+    const wrong = attempt.results.filter((r) => !r.correct)
+    wrong.forEach((r) => gradeCard(r.id, 'again'))
+    flash(`${wrong.length} questão(ões) errada(s) enviada(s) para a revisão de hoje.`)
+  }
+
+  function sendOne(id: string, number: number) {
+    gradeCard(id, 'again')
+    flash(`Questão ${number} enviada para a revisão de hoje.`)
+  }
 
   const flat = allFlatQuestions(custom)
   const studied = Object.keys(srs).length
@@ -69,6 +86,14 @@ export function StatsPage() {
                 <span className="muted">méd {(avgMs / 1000).toFixed(1)}s/q · esperado {expPerQ}s</span>
                 <div className="spacer" style={{ flex: 1 }} />
                 <span className="muted" style={{ fontSize: 12 }}>{new Date(e.finishedAt).toLocaleString('pt-BR')}</span>
+                <button
+                  className="btn small primary"
+                  disabled={e.total - e.correct === 0}
+                  onClick={() => sendWrong(e)}
+                  title="Marca as questões erradas como devidas hoje na revisão"
+                >
+                  🔁 Erradas → revisão ({e.total - e.correct})
+                </button>
                 <button className="btn small" onClick={() => setOpen(isOpen ? null : e.id)}>{isOpen ? 'Ocultar' : 'Detalhes'}</button>
                 <button className="btn small ghost" onClick={() => { if (confirm('Excluir este simulado do histórico?')) deleteAttempt(e.id) }}>🗑</button>
               </div>
@@ -77,7 +102,7 @@ export function StatsPage() {
                 <div style={{ overflowX: 'auto', marginTop: 12 }}>
                   <table className="exam-table">
                     <thead>
-                      <tr><th>#</th><th>Resultado</th><th>Marcou</th><th>Correta</th><th>Tempo</th><th>Esperado</th><th>vs esp.</th></tr>
+                      <tr><th>#</th><th>Resultado</th><th>Marcou</th><th>Correta</th><th>Tempo</th><th>Esperado</th><th>vs esp.</th><th>Revisar</th></tr>
                     </thead>
                     <tbody>
                       {e.results.map((r) => {
@@ -91,6 +116,7 @@ export function StatsPage() {
                             <td>{(r.ms / 1000).toFixed(1)}s</td>
                             <td className="muted">{expPerQ}s</td>
                             <td style={{ color: diff > 0 ? 'var(--accent)' : 'var(--green)' }}>{diff > 0 ? '+' : ''}{diff.toFixed(1)}s</td>
+                            <td>{!r.correct && <button className="btn small" onClick={() => sendOne(r.id, r.number)}>🔁 hoje</button>}</td>
                           </tr>
                         )
                       })}
@@ -102,6 +128,8 @@ export function StatsPage() {
           )
         })}
       </div>
+
+      {toast && <div className="toast">{toast}</div>}
     </div>
   )
 }
