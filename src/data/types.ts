@@ -4,9 +4,12 @@
 //   [[alvo]]      -> trecho destacado (sublinhado no exame)
 //   （　）         -> lacuna a preencher
 
-export type LevelId = 'N5' | 'N4'
+export type CourseId = 'jlpt' | 'irodori'
 
-export type SectionId = 'vocabulary' | 'grammar' | 'reading' | 'listening'
+export type LevelId = string
+
+// Seções do JLPT são fixas; o Irodori usa ids de lição ('lesson-1', etc.).
+export type SectionId = 'vocabulary' | 'grammar' | 'reading' | 'listening' | (string & {})
 
 export interface Choice {
   /** número da alternativa no exame (1..4) */
@@ -100,7 +103,16 @@ export interface Section {
 
 export interface Level {
   id: LevelId
+  courseId: CourseId
   titlePt: string
   descriptionPt: string
   sections: Section[]
+}
+
+export interface Course {
+  id: CourseId
+  titlePt: string
+  /** subtítulo curto para o menu */
+  taglinePt: string
+  levels: Level[]
 }

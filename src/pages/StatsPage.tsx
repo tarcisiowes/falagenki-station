@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { BarChart3, CheckCircle2, Repeat, Timer, Trash2, XCircle } from 'lucide-react'
+import { getCourse, getLevel } from '../data'
 import { useExams, deleteAttempt, type ExamAttempt } from '../lib/examStore'
 import { useSrs, gradeCard } from '../lib/reviewStore'
 import { useCustom } from '../lib/customStore'
@@ -13,7 +14,9 @@ function fmtClock(sec: number): string {
 }
 
 export function StatsPage() {
-  const exams = useExams()
+  const { course: courseId = 'jlpt' } = useParams()
+  const course = getCourse(courseId)
+  const allExams = useExams()
   const srs = useSrs()
   const custom = useCustom()
   const [open, setOpen] = useState<string | null>(null)
@@ -23,58 +26,61 @@ export function StatsPage() {
     setToast(msg)
     window.setTimeout(() => setToast(null), 2600)
   }
-
   function sendWrong(attempt: ExamAttempt) {
     const wrong = attempt.results.filter((r) => !r.correct)
     wrong.forEach((r) => gradeCard(r.id, 'again'))
     flash(`${wrong.length} questão(ões) errada(s) enviada(s) para a revisão de hoje.`)
   }
-
   function sendOne(id: string, number: number) {
     gradeCard(id, 'again')
     flash(`Questão ${number} enviada para a revisão de hoje.`)
   }
 
-  const flat = allFlatQuestions(custom)
-  const studied = Object.keys(srs).length
+  if (!course) {
+    return <div className="card" style={{ padding: 24 }}>Curso não encontrado. <Link to="/">Início</Link></div>
+  }
+
+  const flat = allFlatQuestions(custom).filter((f) => f.courseId === courseId)
+  const studied = flat.filter((f) => srs[f.q.id]).length
   const dueToday = flat.filter((f) => srs[f.q.id] && isDue(srs[f.q.id])).length
   const newCount = flat.filter((f) => !srs[f.q.id]).length
 
-  const totalAttempts = exams.length
-  const avgPct = totalAttempts
-    ? Math.round(exams.reduce((s, e) => s + (e.correct / e.total) * 100, 0) / totalAttempts)
+  const exams = allExams.filter((e) => getLevel(e.levelId)?.courseId === courseId)
+  const avgPct = exams.length
+    ? Math.round(exams.reduce((s, e) => s + (e.correct / e.total) * 100, 0) / exams.length)
     : 0
 
   return (
     <div>
       <div className="crumbs">
-        <Link to="/">Início</Link> / <span>Análise</span>
+        <Link to="/">Início</Link> / <span>Análise · {course.titlePt}</span>
       </div>
 
       <div className="hero" style={{ padding: '24px 28px' }}>
-        <div className="ja-big ja"><BarChart3 size={18} /> 分析 — Análise e progresso</div>
-        <h1 style={{ margin: '4px 0' }}>Seu desempenho</h1>
-        <p>Resumo da revisão e histórico dos simulados, com a análise de tempo por questão.</p>
+        <div className="ja-big ja"><BarChart3 size={18} /> 分析 — Análise {course.titlePt}</div>
+        <h1 style={{ margin: '4px 0' }}>Seu desempenho em {course.titlePt}</h1>
+        <p>Resumo da revisão e histórico dos simulados deste curso, com a análise de tempo por questão.</p>
       </div>
 
       <div className="grid cols-4" style={{ marginBottom: 22 }}>
         <div className="card stat"><div className="big">{studied}</div><div className="lbl">Cartas estudadas</div></div>
         <div className="card stat"><div className="big" style={{ color: 'var(--accent)' }}>{dueToday}</div><div className="lbl">A revisar hoje</div></div>
         <div className="card stat"><div className="big">{newCount}</div><div className="lbl">Cartas novas</div></div>
-        <div className="card stat"><div className="big" style={{ color: 'var(--green)' }}>{avgPct}%</div><div className="lbl">Média nos simulados</div></div>
+        <div className="card stat"><div className="big" style={{ color: 'var(--green)' }}>{exams.length ? `${avgPct}%` : '—'}</div><div className="lbl">Média nos simulados</div></div>
       </div>
 
       <div style={{ display: 'flex', gap: 10, marginBottom: 20, flexWrap: 'wrap' }}>
-        <Link to="/revisar" className="btn primary"><Repeat size={15} /> Revisar agora</Link>
-        <Link to="/simulado" className="btn"><Timer size={15} /> Fazer simulado</Link>
+        <Link to={`/revisar/${courseId}`} className="btn primary"><Repeat size={15} /> Revisar agora</Link>
+        {courseId === 'jlpt' && <Link to="/simulado" className="btn"><Timer size={15} /> Fazer simulado</Link>}
       </div>
 
       <h2 style={{ margin: '6px 0 12px' }}>Histórico de simulados</h2>
-      {exams.length === 0 && <p className="muted">Nenhum simulado feito ainda.</p>}
+      {courseId !== 'jlpt' && <p className="muted">O simulado cronometrado existe apenas no JLPT.</p>}
+      {courseId === 'jlpt' && exams.length === 0 && <p className="muted">Nenhum simulado feito ainda.</p>}
       <div className="grid" style={{ gap: 12 }}>
         {exams.map((e) => {
           const pct = Math.round((e.correct / e.total) * 100)
-          const expPerQ = SEC_PER_QUESTION[e.sectionId]
+          const expPerQ = SEC_PER_QUESTION[e.sectionId] ?? 60
           const avgMs = e.results.reduce((s, r) => s + r.ms, 0) / e.total
           const isOpen = open === e.id
           return (
@@ -87,12 +93,7 @@ export function StatsPage() {
                 <span className="muted">méd {(avgMs / 1000).toFixed(1)}s/q · esperado {expPerQ}s</span>
                 <div className="spacer" style={{ flex: 1 }} />
                 <span className="muted" style={{ fontSize: 12 }}>{new Date(e.finishedAt).toLocaleString('pt-BR')}</span>
-                <button
-                  className="btn small primary"
-                  disabled={e.total - e.correct === 0}
-                  onClick={() => sendWrong(e)}
-                  title="Marca as questões erradas como devidas hoje na revisão"
-                >
+                <button className="btn small primary" disabled={e.total - e.correct === 0} onClick={() => sendWrong(e)} title="Marca as erradas como devidas hoje na revisão">
                   <Repeat size={14} /> Erradas → revisão ({e.total - e.correct})
                 </button>
                 <button className="btn small" onClick={() => setOpen(isOpen ? null : e.id)}>{isOpen ? 'Ocultar' : 'Detalhes'}</button>

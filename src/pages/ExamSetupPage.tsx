@@ -29,7 +29,7 @@ export function ExamSetupPage() {
           <b> análise</b>: tempo gasto em cada questão, acertos, erros, médias e o tempo esperado.
         </p>
         <div style={{ marginTop: 10 }}>
-          <Link to="/analise" className="btn small"><BarChart3 size={15} /> Ver histórico e análise</Link>
+          <Link to="/analise/jlpt" className="btn small"><BarChart3 size={15} /> Ver histórico e análise</Link>
         </div>
       </div>
 

@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { CheckCircle2, PartyPopper, Repeat, RotateCcw, XCircle } from 'lucide-react'
 import { JaText } from '../lib/JaText'
+import { getCourse } from '../data'
 import { allFlatQuestions, type FlatQuestion } from '../lib/dataAccess'
 import { customStore } from '../lib/customStore'
 import { srsStore, gradeCard, useSrs } from '../lib/reviewStore'
@@ -9,13 +10,12 @@ import { isDue, previewInterval, type Grade } from '../lib/srs'
 import { useCustom } from '../lib/customStore'
 
 const NEW_LIMIT = 20
-type LevelFilter = 'all' | 'N5' | 'N4'
 
-function buildQueue(filter: LevelFilter): FlatQuestion[] {
+function buildQueue(courseId: string, levelFilter: string): FlatQuestion[] {
   const cust = customStore.get()
   const srs = srsStore.get()
-  let flat = allFlatQuestions(cust)
-  if (filter !== 'all') flat = flat.filter((f) => f.levelId === filter)
+  let flat = allFlatQuestions(cust).filter((f) => f.courseId === courseId)
+  if (levelFilter !== 'all') flat = flat.filter((f) => f.levelId === levelFilter)
   const due = flat.filter((f) => srs[f.q.id] && isDue(srs[f.q.id]))
   const fresh = flat.filter((f) => !srs[f.q.id]).slice(0, NEW_LIMIT)
   return [...due, ...fresh]
@@ -29,32 +29,38 @@ const GRADES: { g: Grade; label: string; cls: string }[] = [
 ]
 
 export function ReviewPage() {
+  const { course: courseId = 'jlpt' } = useParams()
+  const course = getCourse(courseId)
   const srs = useSrs()
   const custom = useCustom()
-  const [filter, setFilter] = useState<LevelFilter>('all')
-  const [queue, setQueue] = useState<FlatQuestion[]>(() => buildQueue('all'))
+  const [filter, setFilter] = useState('all')
+  const [queue, setQueue] = useState<FlatQuestion[]>(() => buildQueue(courseId, 'all'))
   const [furigana, setFurigana] = useState(true)
   const [selected, setSelected] = useState<number | undefined>()
   const [revealed, setRevealed] = useState(false)
   const [done, setDone] = useState(0)
 
-  // contagem total de cartas pendentes (para o resumo quando não há sessão ativa)
   const counts = useMemo(() => {
-    let flat = allFlatQuestions(custom)
+    let flat = allFlatQuestions(custom).filter((f) => f.courseId === courseId)
     if (filter !== 'all') flat = flat.filter((f) => f.levelId === filter)
     const dueN = flat.filter((f) => srs[f.q.id] && isDue(srs[f.q.id])).length
     const newN = flat.filter((f) => !srs[f.q.id]).length
     return { dueN, newN, total: flat.length }
-  }, [srs, custom, filter])
+  }, [srs, custom, filter, courseId])
 
-  function restart(f: LevelFilter) {
+  function restart(f: string) {
     setFilter(f)
-    setQueue(buildQueue(f))
+    setQueue(buildQueue(courseId, f))
     setSelected(undefined)
     setRevealed(false)
     setDone(0)
   }
 
+  if (!course) {
+    return <div className="card" style={{ padding: 24 }}>Curso não encontrado. <Link to="/">Início</Link></div>
+  }
+
+  const levelOptions = ['all', ...course.levels.map((l) => l.id)]
   const current = queue[0]
 
   function answer(g: Grade) {
@@ -62,7 +68,6 @@ export function ReviewPage() {
     gradeCard(current.q.id, g)
     setQueue((q) => {
       const [head, ...rest] = q
-      // "De novo" recoloca a carta no fim da sessão (revisão no mesmo dia)
       return g === 'again' ? [...rest, head] : rest
     })
     setDone((d) => d + 1)
@@ -75,22 +80,22 @@ export function ReviewPage() {
   return (
     <div>
       <div className="crumbs">
-        <Link to="/">Início</Link> / <span>Revisão</span>
+        <Link to="/">Início</Link> / <span>Revisão · {course.titlePt}</span>
       </div>
 
       <div className="hero" style={{ padding: '24px 28px' }}>
-        <div className="ja-big ja"><Repeat size={18} /> 復習 — Revisão estilo Anki</div>
-        <h1 style={{ margin: '4px 0' }}>Revise os exercícios com repetição espaçada</h1>
+        <div className="ja-big ja"><Repeat size={18} /> 復習 — Revisão {course.titlePt}</div>
+        <h1 style={{ margin: '4px 0' }}>Revisão estilo Anki</h1>
         <p>
-          Cada exercício vira uma carta. Você responde, vê a correção e diz o quão difícil foi
-          (<b>De novo / Difícil / Bom / Fácil</b>). Quem você errar (ou marcar “De novo”) volta
-          ainda <b>hoje</b>; o resto é reagendado para os próximos dias.
+          Cada exercício de <b>{course.titlePt}</b> vira uma carta. Você responde, vê a correção e
+          diz o quão difícil foi. Quem você errar (ou marcar “De novo”) volta ainda <b>hoje</b>; o
+          resto é reagendado. As cartas de {course.titlePt} não se misturam com os outros cursos.
         </p>
       </div>
 
       <div className="card" style={{ padding: '12px 16px', marginBottom: 16, display: 'flex', gap: 14, alignItems: 'center', flexWrap: 'wrap' }}>
         <div className="tablist" style={{ margin: 0 }}>
-          {(['all', 'N5', 'N4'] as LevelFilter[]).map((f) => (
+          {levelOptions.map((f) => (
             <button key={f} className={filter === f ? 'active' : ''} onClick={() => restart(f)}>
               {f === 'all' ? 'Todos' : f}
             </button>
@@ -111,7 +116,7 @@ export function ReviewPage() {
           <PartyPopper size={40} color="var(--accent)" />
           <h2 style={{ marginTop: 8 }}>Sessão concluída!</h2>
           <p className="muted">
-            Você revisou <b>{done}</b> carta(s). Não há mais cartas pendentes para “{filter === 'all' ? 'todos os níveis' : filter}” agora.
+            Você revisou <b>{done}</b> carta(s). Não há mais cartas pendentes de {course.titlePt} agora.
           </p>
           <div style={{ display: 'flex', gap: 10, justifyContent: 'center', marginTop: 10 }}>
             <button className="btn primary" onClick={() => restart(filter)}>Revisar de novo</button>
@@ -141,13 +146,7 @@ export function ReviewPage() {
               if (revealed && c.n === current.q.answer) cls += ' correct'
               else if (revealed && selected === c.n && c.n !== current.q.answer) cls += ' wrong'
               return (
-                <button
-                  key={c.n}
-                  className={cls}
-                  disabled={revealed}
-                  onClick={() => setSelected(c.n)}
-                  type="button"
-                >
+                <button key={c.n} className={cls} disabled={revealed} onClick={() => setSelected(c.n)} type="button">
                   <span className="num">{c.n}</span>
                   <JaText text={c.text} furigana={furigana} />
                 </button>
@@ -178,22 +177,13 @@ export function ReviewPage() {
                   const card = srs[current.q.id]
                   const recommended = !correct && g === 'again'
                   return (
-                    <button
-                      key={g}
-                      className={`grade ${cls}${recommended ? ' recommend' : ''}`}
-                      onClick={() => answer(g)}
-                    >
+                    <button key={g} className={`grade ${cls}${recommended ? ' recommend' : ''}`} onClick={() => answer(g)}>
                       <span className="gl">{label}</span>
                       <span className="gi">{previewInterval(card, g)}</span>
                     </button>
                   )
                 })}
               </div>
-              {!correct && (
-                <p className="muted" style={{ fontSize: 12, marginTop: 8 }}>
-                  Como você errou, o recomendado é <b>De novo</b> (volta ainda hoje).
-                </p>
-              )}
             </>
           )}
         </div>

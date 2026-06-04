@@ -1,8 +1,18 @@
-import type { Level, LevelId, Section, SectionId } from './types'
+import type { Course, CourseId, Level, LevelId, Section, SectionId } from './types'
 import { n5 } from './n5'
 import { n4 } from './n4'
+import { irodoriStarter } from './irodori-starter'
 
-export const levels: Level[] = [n5, n4]
+export const levels: Level[] = [n5, n4, irodoriStarter]
+
+export const courses: Course[] = [
+  { id: 'jlpt', titlePt: 'JLPT', taglinePt: 'Exame de proficiência (N5/N4)', levels: [n5, n4] },
+  { id: 'irodori', titlePt: 'Irodori', taglinePt: 'Japonês para a vida no Japão (A1/A2)', levels: [irodoriStarter] },
+]
+
+export function getCourse(id: string | undefined): Course | undefined {
+  return courses.find((c) => c.id === id)
+}
 
 export function getLevel(id: string | undefined): Level | undefined {
   return levels.find((l) => l.id === id)
@@ -19,4 +29,4 @@ export function getSection(
   return { level, section }
 }
 
-export type { Level, LevelId, Section, SectionId }
+export type { Course, CourseId, Level, LevelId, Section, SectionId }

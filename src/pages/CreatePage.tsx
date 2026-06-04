@@ -100,7 +100,7 @@ export function CreatePage() {
           <label className="field">
             <span>Nível</span>
             <select value={levelId} onChange={(e) => setLevelId(e.target.value as LevelId)}>
-              {levels.map((l) => <option key={l.id} value={l.id}>{l.id} — {l.titlePt}</option>)}
+              {levels.filter((l) => l.courseId === 'jlpt').map((l) => <option key={l.id} value={l.id}>{l.id} — {l.titlePt}</option>)}
             </select>
           </label>
           <label className="field">

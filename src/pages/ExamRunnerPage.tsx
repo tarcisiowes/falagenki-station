@@ -211,13 +211,13 @@ export function ExamRunnerPage() {
             className="btn primary"
             onClick={() => {
               attempt.results.filter((r) => !r.correct).forEach((r) => gradeCard(r.id, 'again'))
-              navigate('/revisar')
+              navigate('/revisar/jlpt')
             }}
           >
             <Repeat size={15} /> Enviar erradas para a revisão de hoje
           </button>
           <button className="btn" onClick={() => window.location.reload()}><RotateCcw size={15} /> Refazer simulado</button>
-          <Link to="/analise" className="btn"><BarChart3 size={15} /> Histórico</Link>
+          <Link to="/analise/jlpt" className="btn"><BarChart3 size={15} /> Histórico</Link>
           <Link to="/simulado" className="btn ghost">Voltar</Link>
         </div>
       </div>

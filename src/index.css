@@ -87,6 +87,31 @@ ruby rt { font-size: 0.58em; color: var(--ink-soft); font-weight: 400; }
 .app-header nav a:hover { background: var(--surface-2); text-decoration: none; }
 .app-header nav a.active { color: var(--accent-ink); background: var(--accent-soft); }
 
+/* dropdown de cursos na top bar */
+.nav-dd { position: relative; }
+.nav-dd-btn {
+  display: inline-flex; align-items: center; gap: 6px; border: none; background: transparent;
+  cursor: pointer; font: inherit; font-weight: 600; font-size: 14px; color: var(--ink-soft);
+  padding: 7px 12px; border-radius: 9px;
+}
+.nav-dd-btn:hover { background: var(--surface-2); }
+.nav-dd-menu {
+  position: absolute; top: 100%; left: 0; min-width: 230px; margin-top: 4px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: var(--shadow); padding: 6px; z-index: 30; display: flex; flex-direction: column; gap: 2px;
+}
+.nav-dd-head {
+  font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--ink-soft); padding: 7px 10px 2px;
+}
+.nav-dd-item {
+  display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 8px;
+  font-size: 14px; font-weight: 600; color: var(--ink);
+}
+.nav-dd-item:hover { background: var(--surface-2); text-decoration: none; }
+.nav-dd-item.active { color: var(--accent-ink); background: var(--accent-soft); }
+.nav-dd-sep { height: 1px; background: var(--line); margin: 5px 4px; }
+
 main { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
 
 .app-footer {

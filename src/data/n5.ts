@@ -486,6 +486,7 @@ const listening: Section = {
 
 export const n5: Level = {
   id: 'N5',
+  courseId: 'jlpt',
   titlePt: 'JLPT N5 — Iniciante',
   descriptionPt:
     'O primeiro nível do JLPT. Avalia o japonês básico do dia a dia: hiragana, katakana, kanji elementares e frases simples. Aqui você tem as quatro áreas do exame com exercícios, explicações em português e os áudios oficiais com transcrição.',

@@ -1,9 +1,9 @@
 import { levels, getLevel, getSection } from '../data'
-import type { ExerciseGroup, LevelId, Question, Section, SectionId } from '../data/types'
+import type { CourseId, ExerciseGroup, LevelId, Question, Section, SectionId } from '../data/types'
 import { customToQuestion, type CustomQuestion } from './customStore'
 
 // Tempo-alvo por questão (segundos) usado no simulado e como "esperado" na análise.
-export const SEC_PER_QUESTION: Record<SectionId, number> = {
+export const SEC_PER_QUESTION: Record<string, number> = {
   vocabulary: 45,
   grammar: 60,
   reading: 110,
@@ -12,6 +12,7 @@ export const SEC_PER_QUESTION: Record<SectionId, number> = {
 
 export interface FlatQuestion {
   q: Question
+  courseId: CourseId
   levelId: LevelId
   levelTitlePt: string
   sectionId: SectionId
@@ -72,6 +73,7 @@ export function allFlatQuestions(custom: CustomQuestion[]): FlatQuestion[] {
         for (const q of group.questions) {
           out.push({
             q,
+            courseId: level.courseId,
             levelId: level.id,
             levelTitlePt: level.titlePt,
             sectionId: section.id,
@@ -93,7 +95,7 @@ export function examDurationSec(sectionId: SectionId, count: number): number {
 /** Seções que podem virar simulado (têm questões de texto; áudio fica de fora). */
 export function examableSections(levelId: string, custom: CustomQuestion[]) {
   const level = getLevel(levelId)
-  if (!level) return []
+  if (!level || level.courseId !== 'jlpt') return []
   return level.sections
     .filter((s) => s.id !== 'listening')
     .map((s) => ({ section: s, count: sectionQuestions(levelId, s.id, custom).length }))

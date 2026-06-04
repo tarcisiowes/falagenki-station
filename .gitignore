@@ -16,3 +16,5 @@ yarn-error.log*
 .pnp.js
 
 .vscode/*
+# Irodori source (muito grande p/ git; áudios usados ficam em public/audio/irodori)
+/docs/Irodori/

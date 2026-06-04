@@ -547,6 +547,7 @@ const listening: Section = {
 
 export const n4: Level = {
   id: 'N4',
+  courseId: 'jlpt',
   titlePt: 'JLPT N4 — Básico-intermediário',
   descriptionPt:
     'O segundo nível do JLPT. Amplia o japonês básico: mais kanji, gramática (causativo, passiva, dar/receber) e textos um pouco maiores. As quatro áreas trazem exercícios, explicações em português e os áudios oficiais com transcrição.',

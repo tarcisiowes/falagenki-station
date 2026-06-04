@@ -102,9 +102,11 @@ export function SectionPage() {
               Marque a alternativa, escreva sua justificativa e clique em <b>Verificar resposta</b>.
             </span>
             <div className="spacer" style={{ flex: 1 }} />
-            <Link className="btn small" to={`/criar?level=${level.id}&section=${section.id}`}>
-              <SquarePen size={15} /> Criar exercício desta área
-            </Link>
+            {level.courseId === 'jlpt' && (
+              <Link className="btn small" to={`/criar?level=${level.id}&section=${section.id}`}>
+                <SquarePen size={15} /> Criar exercício desta área
+              </Link>
+            )}
           </div>
           {groups.map((g) => (
             <ExerciseGroupView key={g.id} group={g} furigana={furigana} />
