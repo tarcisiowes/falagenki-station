@@ -2154,14 +2154,231 @@ const lesson10: Section = {
   audios: attachScripts(10, L10_SCRIPTS),
 }
 
-// ---- Lições 11-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 11: 肉と野菜は私が買って行きます (tópico おいしい料理) ----------
+const lesson11Group: ExerciseGroup = {
+  id: 'iro-e1-l11',
+  title: '肉と野菜は私が買って行きます',
+  subtitlePt: 'Comida gostosa · combinar quem leva o quê ({買|か}って{行|い}きます), perguntar/escolher entre opções (N1とN2、どっち／どれ・Nのほうがいい・{何|なん}でもいい) e checar ingredientes/validade ({卵|たまご}を{使|つか}ってますか／いつまでもちますか)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l11-1', number: 1, prompt: '「{肉|にく}と{野菜|やさい}は、{私|わたし}が{買|か}って{行|い}きますよ」 (V-て{行|い}く／{来|く}る) significa (Nota ➊):', choices: [{ n: 1, text: 'fazer V primeiro e ir/vir mantendo esse estado — aqui, COMPRAR e levar (a carne e os legumes)' }, { n: 2, text: 'querer comprar carne e legumes' }, { n: 3, text: 'já ter comprado ontem' }, { n: 4, text: 'pedir que outro compre' }], answer: 1, translationPt: 'A carne e os legumes eu compro e levo.', explanationPt: 'V-て{行|い}く／{来|く}る = realizar V e então ir/vir com aquilo. Liga-se à テ-forma + {行|い}く／{来|く}る. Nesta lição, dividir o que cada um leva ao churrasco. (Nota ➊)' },
+    { id: 'iro-e1-l11-2', number: 2, prompt: 'Exemplos com V-て{行|い}く (levar — ir) (Nota ➊):', choices: [{ n: 1, text: '{持|も}って{行|い}く (levar) ／ {買|か}って{行|い}く (comprar e levar) ／ {作|つく}って{行|い}く (preparar e levar)' }, { n: 2, text: '{持|も}って{来|く}る ／ {買|か}って{来|く}る ／ {作|つく}って{来|く}る' }, { n: 3, text: '{持|も}つ ／ {買|か}う ／ {作|つく}る' }, { n: 4, text: '{持|も}ちたい ／ {買|か}いたい ／ {作|つく}りたい' }], answer: 1, explanationPt: 'Com 〜{行|い}く o ponto de chegada é “lá”: {持|も}って{行|い}く, {買|か}って{行|い}く, {作|つく}って{行|い}く. Ex.: {明日|あした}のパーティー、{私|わたし}はデザートを{持|も}って{行|い}きます. (Nota ➊)' },
+    { id: 'iro-e1-l11-3', number: 3, prompt: 'E com V-て{来|く}る (Nota ➊)? Ex.: 「{国|くに}の{料理|りょうり}を{作|つく}って{来|き}ました」', choices: [{ n: 1, text: 'fiz V em outro lugar e VIM (trouxe): fiz um prato do meu país e trouxe' }, { n: 2, text: 'vou fazer amanhã' }, { n: 3, text: 'quero fazer um prato' }, { n: 4, text: 'alguém fez para mim' }], answer: 1, explanationPt: 'Com 〜{来|く}る o movimento é “para cá”: {作|つく}って{来|き}ました (fiz e trouxe), {飲|の}み{物|もの}を{買|か}って{来|き}ましたよ (comprei bebida e trouxe). (Nota ➊ · 例)' },
+    { id: 'iro-e1-l11-4', number: 4, prompt: '「N1とN2、どっちがいいですか？」 vs 「…どれがいいですか？」 — qual a diferença (Nota ➋)?', choices: [{ n: 1, text: 'どっち para escolher entre 2 opções; どれ para 3 ou mais' }, { n: 2, text: 'どっち para 3+; どれ para 2' }, { n: 3, text: 'são totalmente iguais' }, { n: 4, text: 'どっち só no passado' }], answer: 1, translationPt: 'Qual você prefere, …?', explanationPt: 'どっち／どれ pedem escolha dentro de um conjunto limitado: どっち = 2 opções ({塩|しお}とたれ、どっち), どれ = 3+ (お{茶|ちゃ}、いろいろ…どれ). Comparando, lista-se N1とN2 (às vezes N1とN2と). (Nota ➋)' },
+    { id: 'iro-e1-l11-5', number: 5, prompt: '「どっち」 é (Nota ➋):', choices: [{ n: 1, text: 'a forma casual de どちら (qual)' }, { n: 2, text: 'a forma mais formal de どちら' }, { n: 3, text: 'uma palavra para “onde”' }, { n: 4, text: 'uma palavra para “quando”' }], answer: 1, explanationPt: 'どっち = jeito casual de どちら. Ex. formal: ジュースとお{茶|ちゃ}と、どちらがいいですか？ (Nota ➋)' },
+    { id: 'iro-e1-l11-6', number: 6, prompt: 'Qual usa どれ corretamente (3+ opções) (Nota ➋)?', choices: [{ n: 1, text: 'アイスはチョコとバニラとストロベリー{味|あじ}があります。どれがいいですか？' }, { n: 2, text: '{肉|にく}と{魚|さかな}、どれがいいですか？' }, { n: 3, text: 'チョコとバニラ、どれがいいですか？' }, { n: 4, text: 'これ、どっち{味|あじ}が3つありますか？' }], answer: 1, explanationPt: 'Três sabores (チョコ/バニラ/ストロベリー) → どれ. Com só duas opções ({肉|にく}と{魚|さかな}) usa-se どっち. (Nota ➋ · 例)' },
+    { id: 'iro-e1-l11-7', number: 7, prompt: '「{塩|しお}のほうがいいです」 (Nのほうがいいです) serve para (Nota ➌):', choices: [{ n: 1, text: 'escolher UMA entre DUAS opções (prefiro o sal)' }, { n: 2, text: 'dizer que tanto faz' }, { n: 3, text: 'recusar as duas' }, { n: 4, text: 'pedir as duas' }], answer: 1, translationPt: 'Prefiro com sal.', explanationPt: 'Nのほうがいいです escolhe uma de duas; N é a opção escolhida. Ex.: {肉|にく}と{魚|さかな}、どっち？→{肉|にく}のほうがいいです. (Nota ➌)' },
+    { id: 'iro-e1-l11-8', number: 8, prompt: 'Sobre 「のほうが」 (Nota ➌):', choices: [{ n: 1, text: 'pode ser omitido, virando só 「Nがいいです」 ({肉|にく}がいいです)' }, { n: 2, text: 'nunca pode ser omitido' }, { n: 3, text: 'só se usa com verbos' }, { n: 4, text: 'transforma a frase em pergunta' }], answer: 1, explanationPt: 'のほうが pode cair: 「{肉|にく}のほうがいいです」 = 「{肉|にく}がいいです」. (Nota ➌)' },
+    { id: 'iro-e1-l11-9', number: 9, prompt: '「{何|なん}でもいいです」 (【疑問詞】でもいいです) significa (Nota ➍):', choices: [{ n: 1, text: 'não ter preferência especial — qualquer coisa serve' }, { n: 2, text: 'não querer nada' }, { n: 3, text: 'querer tudo' }, { n: 4, text: 'não entender a pergunta' }], answer: 1, translationPt: 'Qualquer um(a) está bom.', explanationPt: '【疑問詞】+でもいいです indica ausência de preferência. {何|なに}が{食|た}べたい？→{何|なん}でもいいです (qualquer coisa). (Nota ➍)' },
+    { id: 'iro-e1-l11-10', number: 10, prompt: 'Outras formas de 【疑問詞】でも (Nota ➍):', choices: [{ n: 1, text: 'どっちでも (tanto faz) ／ いつでも (a qualquer hora) ／ だれでも (qualquer pessoa) ／ どこでも (em qualquer lugar) ／ いくつでも (quantos forem)' }, { n: 2, text: 'どっちも{だめ|だめ} ／ いつも ／ だれも ／ どこも ／ いくつも' }, { n: 3, text: 'なにか ／ いつか ／ だれか ／ どこか' }, { n: 4, text: 'なにも ／ いつも ／ だれも ／ どこも (todos negativos)' }], answer: 1, explanationPt: '疑問詞+でも: {何|なん}でも, どっちでも, いつでも, だれでも, どこでも, いくつでも. Ex.: いくつ{買|か}いましょうか？→いくつでもいいです. (Nota ➍)' },
+    { id: 'iro-e1-l11-11', number: 11, prompt: 'Vocabulário do churrasco (Atividade 1): 「{肉|にく}／{野菜|やさい}／シーフード／{果物|くだもの}」 e exemplos:', choices: [{ n: 1, text: 'carne ({牛肉|ぎゅうにく}/{豚肉|ぶたにく}/{鶏肉|とりにく}/ソーセージ) ／ legumes ／ frutos do mar ({魚|さかな}/エビ/イカ/ホタテ) ／ frutas (りんご/バナナ)' }, { n: 2, text: 'peixe ／ arroz ／ pão ／ doces' }, { n: 3, text: 'bebida ／ sobremesa ／ molho ／ sal' }, { n: 4, text: 'copo ／ prato ／ hashi ／ saco de lixo' }], answer: 1, explanationPt: '{肉|にく} (carne: {牛肉|ぎゅうにく}/{豚肉|ぶたにく}/{鶏肉|とりにく}/ソーセージ), {野菜|やさい} (legumes), シーフード ({魚|さかな}/エビ/イカ/ホタテ), {果物|くだもの} (りんご/バナナ). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l11-12', number: 12, prompt: 'Mais itens do churrasco (Atividade 1): 「{焼|や}きそば／おにぎり／{焼肉|やきにく}のたれ・ソース／お{菓子|かし}／コップ／お{皿|さら}／わりばし／ごみ{袋|ぶくろ}」 significam:', choices: [{ n: 1, text: 'yakisoba ／ onigiri ／ molho de churrasco/molho ／ salgadinhos/doces ／ copo ／ prato ／ hashi descartável ／ saco de lixo' }, { n: 2, text: 'sopa ／ pão ／ açúcar ／ fruta ／ garrafa ／ panela ／ colher ／ guardanapo' }, { n: 3, text: 'arroz ／ peixe ／ sal ／ bolo ／ taça ／ tigela ／ garfo ／ toalha' }, { n: 4, text: 'macarrão ／ bolinho ／ pimenta ／ bala ／ jarra ／ bandeja ／ faca ／ caixa' }], answer: 1, explanationPt: '{焼|や}きそば (yakisoba), おにぎり (bolinho de arroz), {焼肉|やきにく}のたれ／ソース (molho de churrasco/molho), お{菓子|かし} (doces/salgadinhos), コップ (copo), お{皿|さら} (prato), わりばし (hashi descartável), ごみ{袋|ぶくろ} (saco de lixo). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l11-13', number: 13, prompt: 'Vocabulário (Ativ. 1–2): 「{準備|じゅんび}／{飲|の}み{物|もの}／デザート／{焼|や}く／{売|う}る／{両方|りょうほう}」 significam:', choices: [{ n: 1, text: 'preparação ／ bebida ／ sobremesa ／ grelhar/assar ／ vender ／ ambos/os dois' }, { n: 2, text: 'limpeza ／ comida ／ entrada ／ ferver ／ comprar ／ nenhum' }, { n: 3, text: 'festa ／ água ／ doce ／ cortar ／ guardar ／ metade' }, { n: 4, text: 'reunião ／ chá ／ fruta ／ congelar ／ trocar ／ um' }], answer: 1, explanationPt: '{準備|じゅんび} (preparação), {飲|の}み{物|もの} (bebida), デザート (sobremesa), {焼|や}く (grelhar/assar), {売|う}る (vender: ケーキ、{売|う}ってますよ), {両方|りょうほう} (ambos: {両方|りょうほう}{買|か}いましょう). (Atividades 1–2)' },
+    { id: 'iro-e1-l11-14', number: 14, prompt: 'Vocabulário de alergias (Atividade 3): 「エビ／カニ／{卵|たまご}／ピーナッツ・{落花生|らっかせい}／そば・そば{粉|こ}／{小麦|こむぎ}・{小麦粉|こむぎこ}／{乳製品|にゅうせいひん}」 significam:', choices: [{ n: 1, text: 'camarão ／ caranguejo ／ ovo ／ amendoim ／ trigo-sarraceno (soba)/farinha de soba ／ trigo/farinha de trigo ／ laticínios ({牛乳|ぎゅうにゅう}/バター/チーズ/ヨーグルト)' }, { n: 2, text: 'peixe ／ lula ／ leite ／ castanha ／ arroz ／ milho ／ carne' }, { n: 3, text: 'frango ／ porco ／ queijo ／ noz ／ aveia ／ centeio ／ frutas' }, { n: 4, text: 'polvo ／ ostra ／ manteiga ／ soja ／ macarrão ／ pão ／ ovos' }], answer: 1, explanationPt: 'エビ (camarão), カニ (caranguejo), {卵|たまご} (ovo), ピーナッツ/{落花生|らっかせい} (amendoim), そば/そば{粉|こ} (soba/farinha), {小麦|こむぎ}/{小麦粉|こむぎこ} (trigo/farinha), {乳製品|にゅうせいひん} (laticínios). (Atividade 3 · ことば)' },
+    { id: 'iro-e1-l11-15', number: 15, prompt: 'Vocabulário (Atividade 3): 「{使|つか}ってる／{入|はい}ってる／もつ／{今日中|きょうじゅう}／{消費期限|しょうひきげん}／ハラル／コーナー／{商品|しょうひん}／すべて」 significam:', choices: [{ n: 1, text: 'estar usando (conter) ／ estar dentro (conter) ／ durar/conservar ／ até hoje (no decorrer de hoje) ／ prazo de validade (consumo) ／ halal ／ seção/setor ／ produto ／ tudo/todos' }, { n: 2, text: 'comprar ／ sair ／ estragar ／ amanhã ／ preço ／ vegano ／ caixa ／ folheto ／ nada' }, { n: 3, text: 'cozinhar ／ entrar ／ acabar ／ ontem ／ marca ／ kosher ／ corredor ／ receita ／ alguns' }, { n: 4, text: 'vender ／ cair ／ aquecer ／ semana ／ código ／ orgânico ／ prateleira ／ amostra ／ poucos' }], answer: 1, explanationPt: '{使|つか}ってる ({卵|たまご}を{使|つか}ってますか), {入|はい}ってる (エビが{入|はい}ってますか), もつ (durar/conservar: {明日|あした}までもちますか), {今日中|きょうじゅう}に (no decorrer de hoje), {消費期限|しょうひきげん} (validade de consumo), ハラル (halal — comida permitida a muçulmanos), コーナー (seção), {商品|しょうひん} (produto), すべて (tudo). (Atividade 3 · 大切なことば)' },
+    { id: 'iro-e1-l11-16', number: 16, prompt: 'Rótulo de alimentos (Atividade 4): 「{食品表示|しょくひんひょうじ}／{原材料名|げんざいりょうめい}／アレルギー{物質|ぶっしつ}／{乳成分|にゅうせいぶん}／{大豆|だいず}／{含|ふく}む」 significam:', choices: [{ n: 1, text: 'rótulo/informação do alimento ／ nome dos ingredientes ／ substância alergênica ／ derivado de leite ／ soja ／ conter/incluir' }, { n: 2, text: 'preço ／ marca ／ aditivo ／ açúcar ／ trigo ／ retirar' }, { n: 3, text: 'receita ／ modo de uso ／ corante ／ sal ／ arroz ／ ferver' }, { n: 4, text: 'validade ／ peso ／ conservante ／ óleo ／ farinha ／ misturar' }], answer: 1, explanationPt: '{食品表示|しょくひんひょうじ} (rótulo/informações), {原材料名|げんざいりょうめい} (lista de ingredientes), アレルギー{物質|ぶっしつ} (alérgenos), {乳成分|にゅうせいぶん} (derivado de leite), {大豆|だいず} (soja), {含|ふく}む (conter). Também {消費期限|しょうひきげん} (validade de consumo) vs {賞味期限|しょうみきげん} (validade de sabor). (Atividade 4)' },
+    { id: 'iro-e1-l11-17', number: 17, prompt: 'Os kanji 「{飲|の}み{物|もの}／お{茶|ちゃ}／お{酒|さけ}／{材料|ざいりょう}／{野菜|やさい}」 lêem-se:', choices: [{ n: 1, text: 'のみもの (bebida) ／ おちゃ (chá) ／ おさけ (bebida alcoólica) ／ ざいりょう (ingredientes) ／ やさい (legumes)' }, { n: 2, text: 'のみぶつ ／ おちゃ ／ おしゅ ／ ざいりょう ／ のさい' }, { n: 3, text: 'いんもつ ／ おさ ／ おさけ ／ さいりょう ／ やさい' }, { n: 4, text: 'のみもの ／ おちゃ ／ おさけ ／ ざいりょう ／ やさく' }], answer: 1, explanationPt: '{飲|の}み{物|もの} (bebida), お{茶|ちゃ} (chá), お{酒|さけ} (bebida alcoólica), {材料|ざいりょう} (ingredientes/material), {野菜|やさい} (legumes). (漢字のことば)' },
+    { id: 'iro-e1-l11-18', number: 18, prompt: 'Os kanji 「{牛肉|ぎゅうにく}／{豚肉|ぶたにく}／{皿|さら}」 lêem-se:', choices: [{ n: 1, text: 'ぎゅうにく (carne bovina) ／ ぶたにく (carne suína) ／ さら (prato)' }, { n: 2, text: 'ぎゅうにく ／ とんにく ／ さら' }, { n: 3, text: 'うしにく ／ ぶたにく ／ べい' }, { n: 4, text: 'ぎゅうじく ／ ぶたじく ／ さら' }], answer: 1, explanationPt: '{牛肉|ぎゅうにく} (carne de boi), {豚肉|ぶたにく} (carne de porco), {皿|さら} (prato; お{皿|さら}). (漢字のことば)' },
+    { id: 'iro-e1-l11-19', number: 19, prompt: 'Os kanji 「{売|う}る／{持|も}って{行|い}く」 lêem-se e significam:', choices: [{ n: 1, text: 'うる (vender) ／ もっていく (levar)' }, { n: 2, text: 'ばいる ／ もっていく' }, { n: 3, text: 'うる ／ じこう' }, { n: 4, text: 'かう ／ もってくる' }], answer: 1, explanationPt: '{売|う}る (vender), {持|も}って{行|い}く (levar). Kanji da lição: {飲|の}み{物|もの}・お{茶|ちゃ}・お{酒|さけ}・{材料|ざいりょう}・{野菜|やさい}・{牛肉|ぎゅうにく}・{豚肉|ぶたにく}・{皿|さら}・{売|う}る・{持|も}って{行|い}く. (漢字)' },
+    { id: 'iro-e1-l11-20', number: 20, prompt: '📌 TIPS — バーベキュー (churrasco no Japão):', choices: [{ n: 1, text: 'grelha-se carne com legumes (abóbora, cebola, milho) e frutos do mar; cozinha-se e come-se ao mesmo tempo; yakisoba/yaki-onigiri por último; muitas vezes alugam-se equipamentos em parques/áreas, e há locais que fornecem tudo' }, { n: 2, text: 'só se come depois de tudo pronto e nunca tem legumes' }, { n: 3, text: 'é proibido em parques' }, { n: 4, text: 'só existe em restaurantes fechados' }], answer: 1, explanationPt: 'No churrasco japonês: além de carne, {野菜|やさい} (かぼちゃ/たまねぎ/とうもろこし) e シーフード (エビ/イカ/{貝|かい}); grelha-se e come-se ao mesmo tempo; ao final {焼|や}きそば/{焼|や}きおにぎり; costuma-se alugar equipamento em {公園|こうえん}/キャンプ{場|じょう}; há locais que fornecem tudo (手ぶら). (TIPS)' },
+    { id: 'iro-e1-l11-21', number: 21, prompt: '📌 TIPS — スーパーの{惣菜|そうざい}コーナー (seção de pratos prontos do supermercado):', choices: [{ n: 1, text: 'vende pratos já prontos (frituras, {焼|や}き{鳥|とり}, {煮物|にもの}, saladas) para comer sem cozinhar; útil para quem tem pressa; perto do fechamento há liquidação ({割引|わりびき})' }, { n: 2, text: 'só vende ingredientes crus' }, { n: 3, text: 'só funciona de madrugada' }, { n: 4, text: 'é uma seção de roupas' }], answer: 1, explanationPt: '{惣菜|そうざい}コーナー = pratos prontos ({揚|あ}げ{物|もの}/からあげ/コロッケ, {焼|や}き{鳥|とり}, {煮物|にもの}, サラダ). Bom para quem não tem tempo ou quer equilibrar a dieta; perto do {閉店|へいてん} há {割引|わりびき}セール. (TIPS)' },
+    { id: 'iro-e1-l11-22', number: 22, prompt: 'Diálogo 11-03 (planejando o churrasco): quem leva a carne e os legumes?', context: '{長谷川|はせがわ}：{来週|らいしゅう}のバーベキューですけど、{準備|じゅんび}はどうしますか？だれが{何|なに}を{持|も}って{行|い}きますか？ {楊|ヨウ}：{肉|にく}と{野菜|やさい}は、{私|わたし}が{買|か}って{行|い}きますよ。 マルコ：{私|わたし}も{手伝|てつだ}いましょうか？ {楊|ヨウ}：だいじょうぶです。', choices: [{ n: 1, text: 'Yō compra e leva a carne e os legumes; recusa a ajuda de Marco (だいじょうぶです)' }, { n: 2, text: 'Marco leva a carne; Yō leva bebida' }, { n: 3, text: 'Ninguém leva carne' }, { n: 4, text: 'Hasegawa compra tudo' }], answer: 1, explanationPt: '{肉|にく}と{野菜|やさい}は{私|わたし}が{買|か}って{行|い}きます (V-て{行|い}く, ➊); {手伝|てつだ}いましょうか？ (oferta) → だいじょうぶです. (Atividade 1 · 聴解スクリプト 11-03)' },
+    { id: 'iro-e1-l11-23', number: 23, prompt: 'Diálogo 11-04: Marco fica com as bebidas. Por que ele vai levar também chá?', context: '{楊|ヨウ}：マルコさんは{飲|の}み{物|もの}をお{願|ねが}いします。 マルコ：ビールとワインでいいですか？ ノイ：{私|わたし}はお{酒|さけ}がだめですから……。 マルコ：あ、じゃあ、お{茶|ちゃ}も{買|か}って{行|い}きますね。', choices: [{ n: 1, text: 'Noi não pode beber álcool, então Marco também leva chá' }, { n: 2, text: 'Acabou a cerveja' }, { n: 3, text: 'Ninguém gosta de vinho' }, { n: 4, text: 'Noi pediu mais cerveja' }], answer: 1, explanationPt: 'ノイ：お{酒|さけ}がだめですから… → マルコ：お{茶|ちゃ}も{買|か}って{行|い}きますね (V-て{行|い}く, ➊). (Atividade 1 · 11-04)' },
+    { id: 'iro-e1-l11-24', number: 24, prompt: 'Diálogo 11-05: o que Hasegawa leva, e o que decidem sobre copos e pratos?', context: '{長谷川|はせがわ}：{私|わたし}はおにぎりを{作|つく}って{行|い}きますね。 {楊|ヨウ}：じゃあ、{長谷川|はせがわ}さんはおにぎりをお{願|ねが}いします。 マルコ：コップやお{皿|さら}は、どうしますか？ {長谷川|はせがわ}：それは、バーベキュー{場|じょう}にありますから、だいじょうぶです。', choices: [{ n: 1, text: 'Hasegawa prepara e leva onigiri; copos/pratos não precisam (já há no local do churrasco)' }, { n: 2, text: 'Hasegawa leva copos e pratos' }, { n: 3, text: 'Ninguém leva onigiri' }, { n: 4, text: 'Vão comprar pratos novos' }], answer: 1, explanationPt: 'おにぎりを{作|つく}って{行|い}きます (V-て{行|い}く, ➊); コップ/お{皿|さら} → バーベキュー{場|じょう}にありますから、だいじょうぶ. (Atividade 1 · 11-05)' },
+    { id: 'iro-e1-l11-25', number: 25, prompt: 'Diálogo 11-06: o que Noi leva, e o que surpreende Hasegawa?', context: 'ノイ：{私|わたし}は、{何|なに}を{持|も}って{行|い}きましょうか？ {長谷川|はせがわ}：デザートはどうですか？ ノイ：じゃあ、バナナを{持|も}って{行|い}きます。{焼|や}いて{食|た}べましょう。 {長谷川|はせがわ}：え、バナナ？{焼|や}くんですか？ ノイ：はい。おいしいですよ。', choices: [{ n: 1, text: 'Noi leva banana como sobremesa e propõe grelhar — o que surpreende Hasegawa' }, { n: 2, text: 'Noi leva cerveja' }, { n: 3, text: 'Noi não leva nada' }, { n: 4, text: 'Hasegawa não gosta de sobremesa' }], answer: 1, explanationPt: '{何|なに}を{持|も}って{行|い}きましょうか？ (oferta com V-ましょうか); バナナを{持|も}って{行|い}きます…{焼|や}いて{食|た}べましょう → え、バナナ？{焼|や}くんですか？ (surpresa). (Atividade 1 · 11-06)' },
+    { id: 'iro-e1-l11-26', number: 26, prompt: 'Diálogo 11-10 (supermercado): o que decidem sobre carne e yakitori?', context: '{中村|なかむら}：{何|なに}が{食|た}べたいですか？ {張|チョウ}：{何|なん}でもいいです。 マリアナ：{私|わたし}は{肉|にく}がいいです！ {中村|なかむら}：じゃあ、からあげを{買|か}って{行|い}きましょう。 …{中村|なかむら}：{塩|しお}とたれ、どっちがいいですか？ {張|チョウ}：{塩|しお}のほうがいいです。', choices: [{ n: 1, text: 'Mariana quer carne; compram karaage; para o yakitori, escolhem o de sal (塩のほうがいい)' }, { n: 2, text: 'Compram só legumes; yakitori com molho' }, { n: 3, text: 'Ninguém quer carne' }, { n: 4, text: 'Zhang escolhe o de molho (たれ)' }], answer: 1, explanationPt: '{何|なん}でもいいです (➍); {私|わたし}は{肉|にく}がいいです; {塩|しお}とたれ、どっち (➋) → {塩|しお}のほうがいいです (➌). (Atividade 2 · 聴解スクリプト 11-10)' },
+    { id: 'iro-e1-l11-27', number: 27, prompt: 'Diálogo 11-10: o que decidem sobre bebida e sobremesa?', context: '{中村|なかむら}：お{茶|ちゃ}、いろいろありますね。どれがいいですか？ マリアナ：ウーロン{茶|ちゃ}にしましょう。 {張|チョウ}：お{酒|さけ}もいいですか？ … {中村|なかむら}：チョコレートケーキとチーズケーキ、どっちがいいですか？ {張|チョウ}：{私|わたし}はどっちでもいいです。 マリアナ：じゃあ、{両方|りょうほう}{買|か}いましょう！', choices: [{ n: 1, text: 'Chá: escolhem oolong (どれ→ウーロン茶); também levam cerveja; das duas tortas, Zhang diz “tanto faz” e compram as duas' }, { n: 2, text: 'Não levam bebida; só uma torta' }, { n: 3, text: 'Escolhem só a torta de chocolate' }, { n: 4, text: 'Não compram sobremesa' }], answer: 1, explanationPt: 'お{茶|ちゃ}…どれがいいですか (3+, ➋) → ウーロン{茶|ちゃ}; チョコ vs チーズ、どっち (➋) → どっちでもいいです (➍) → {両方|りょうほう}{買|か}いましょう. (Atividade 2 · 11-10)' },
+    { id: 'iro-e1-l11-28', number: 28, prompt: 'Diálogo 11-17: B pergunta sobre o ovo. Qual a resposta?', context: 'B：あのう、この{料理|りょうり}、{卵|たまご}を{使|つか}ってますか？ A：{卵|たまご}？これは{使|つか}ってませんよ。 B：あ、じゃあ、だいじょうぶです。いただきます！', choices: [{ n: 1, text: 'O prato NÃO leva ovo, então B pode comer' }, { n: 2, text: 'O prato leva ovo; B não pode comer' }, { n: 3, text: 'B é alérgico a camarão' }, { n: 4, text: 'O prato está vencido' }], answer: 1, explanationPt: '{卵|たまご}を{使|つか}ってますか？ → {使|つか}ってませんよ (não usa). B então come. (Atividade 3 · 聴解スクリプト 11-17)' },
+    { id: 'iro-e1-l11-29', number: 29, prompt: 'Diálogo 11-18: B pergunta sobre camarão na pizza. O que acontece?', context: 'B：このピザ、エビが{入|はい}ってますか？ A：エビ、{入|はい}ってるよ。 B：じゃあ、{私|わたし}はだめです。エビのアレルギーですから。', choices: [{ n: 1, text: 'A pizza leva camarão; B não pode comer (é alérgico a camarão)' }, { n: 2, text: 'A pizza não leva camarão; B pode comer' }, { n: 3, text: 'B é alérgico a ovo' }, { n: 4, text: 'A pizza está vencida' }], answer: 1, explanationPt: 'エビが{入|はい}ってますか？ → {入|はい}ってるよ (tem); B：エビのアレルギーですから (alérgico) → だめです. (Atividade 3 · 11-18)' },
+    { id: 'iro-e1-l11-30', number: 30, prompt: 'Diálogos 11-19 e 11-20: validade do sashimi e o ramen é halal?', context: '① A：このお{刺身|さしみ}、{明日|あした}までもちますか？ B：お{刺身|さしみ}は、{今日中|きょうじゅう}に{食|た}べてください。 ② A：このラーメン、ハラルですか？ B：そうですよ。このコーナーの{商品|しょうひん}は、すべてハラルですよ。', choices: [{ n: 1, text: '① O sashimi deve ser comido ainda hoje (não dura até amanhã). ② Sim, é halal — toda a seção é halal' }, { n: 2, text: '① O sashimi dura uma semana. ② Não é halal' }, { n: 3, text: '① Pode comer amanhã. ② Não sabe se é halal' }, { n: 4, text: '① Está estragado. ② É só para hoje' }], answer: 1, explanationPt: '① {明日|あした}までもちますか？ → {今日中|きょうじゅう}に{食|た}べてください (só hoje). ② ハラルですか？ → そうですよ；コーナーの{商品|しょうひん}はすべてハラル. (Atividade 3 · 11-19/11-20)' },
+    { id: 'iro-e1-l11-31', number: 31, prompt: 'Rótulos (Atividade 4): quem pode comer o quê? ① レトルトカレー (乳成分・小麦・大豆・鶏肉・りんご・バナナ); ② エビピラフおにぎり ({卵|たまご}・乳製品・小麦・えび・かに・鶏肉); ③ チョコレート (乳成分・大豆・りんご・バナナ).', context: 'A = alérgico a ovo ({卵|たまご}); B = alérgico a trigo ({小麦|こむぎ}); C = alérgico a camarão (エビ).', choices: [{ n: 1, text: 'A: ①○ ②× ③○ ／ B: ①× ②× ③○ ／ C: ①○ ②× ③○' }, { n: 2, text: 'Todos podem comer tudo' }, { n: 3, text: 'Ninguém pode comer nada' }, { n: 4, text: 'A: ①× ②○ ③× ／ B: ①○ ②○ ③× ／ C: ①× ②○ ③○' }], answer: 1, explanationPt: '① curry tem 小麦 (B×), mas não 卵/エビ (A○, C○). ② onigiri tem 卵・小麦・えび (A×, B×, C×). ③ chocolate só 乳成分/大豆/りんご/バナナ (A○, B○, C○). (Atividade 4 · {食品表示|しょくひんひょうじ})' },
+    { id: 'iro-e1-l11-32', number: 32, prompt: 'Pergunta de abertura da lição: 「だれかの{家|いえ}に{集|あつ}まってパーティーをすることがありますか？そのとき、どんなものを{食|た}べたり{飲|の}んだりしますか？」 quer dizer:', choices: [{ n: 1, text: 'Você às vezes se reúne na casa de alguém para uma festa? Nessas horas, o que costuma comer e beber?' }, { n: 2, text: 'Onde você faz compras?' }, { n: 3, text: 'Quantas vezes por semana você cozinha?' }, { n: 4, text: 'Qual é o seu prato favorito do restaurante?' }], answer: 1, translationPt: 'Você costuma se reunir na casa de alguém para festas? O que come e bebe nessas ocasiões?', explanationPt: '〜することがありますか (costuma…?), {食|た}べたり{飲|の}んだり (fazer coisas como comer e beber). Tema: おいしい{料理|りょうり}. (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 11
+const L11_SCRIPTS: Record<string, ScriptItem[]> = {
+  '11-03': [
+    {
+      label: '会話① (11-03) — 肉と野菜は私が買って行きます',
+      setupJa: '4{人|よにん}は{会社|かいしゃ}の{同僚|どうりょう}です。{休|やす}みの{日|ひ}にバーベキューをすることになりました。その{準備|じゅんび}について{話|はな}しています。',
+      setupPt: 'Os quatro são colegas de trabalho. Vão fazer um churrasco no dia de folga e conversam sobre os preparativos.',
+      lines: [
+        { speaker: '長谷川', ja: '{来週|らいしゅう}のバーベキューですけど、{準備|じゅんび}はどうしますか？だれが{何|なに}を{持|も}って{行|い}きますか？', pt: 'Sobre o churrasco da semana que vem — como fazemos os preparativos? Quem leva o quê?' },
+        { speaker: '楊', ja: '{肉|にく}と{野菜|やさい}は、{私|わたし}が{買|か}って{行|い}きますよ。', pt: 'A carne e os legumes eu compro e levo.' },
+        { speaker: 'マルコ', ja: '{楊|ヨウ}さん、いいですか？{私|わたし}も{手伝|てつだ}いましょうか？', pt: 'Yō, tudo bem? Quer que eu ajude também?' },
+        { speaker: '楊', ja: 'だいじょうぶです。', pt: 'Não precisa, obrigado.' },
+      ],
+    },
+  ],
+  '11-04': [
+    {
+      label: '会話② (11-04) — 飲み物をお願いします',
+      lines: [
+        { speaker: '楊', ja: 'じゃあ、マルコさんは{飲|の}み{物|もの}をお{願|ねが}いします。', pt: 'Então, Marco, fica com as bebidas, por favor.' },
+        { speaker: 'マルコ', ja: 'いいですよ。ビールとワインでいいですか？', pt: 'Pode deixar. Cerveja e vinho está bom?' },
+        { speaker: 'ノイ', ja: 'あのう、すみません。{私|わたし}はお{酒|さけ}がだめですから……。', pt: 'Ahn, desculpa. É que eu não posso beber álcool…' },
+        { speaker: 'マルコ', ja: 'あ、じゃあ、お{茶|ちゃ}も{買|か}って{行|い}きますね。', pt: 'Ah, então levo chá também.' },
+        { speaker: 'ノイ', ja: 'ありがとうございます。', pt: 'Muito obrigada.' },
+      ],
+    },
+  ],
+  '11-05': [
+    {
+      label: '会話③ (11-05) — おにぎりを作って行きます',
+      lines: [
+        { speaker: '長谷川', ja: 'じゃあ、{私|わたし}はおにぎりを{作|つく}って{行|い}きますね。', pt: 'Então eu faço uns onigiris e levo.' },
+        { speaker: '楊', ja: 'いいですねえ。じゃあ、{長谷川|はせがわ}さんはおにぎりをお{願|ねが}いします。', pt: 'Que bom! Então, Hasegawa, fica com os onigiris, por favor.' },
+        { speaker: 'マルコ', ja: 'コップやお{皿|さら}は、どうしますか？', pt: 'E os copos e pratos, como ficam?' },
+        { speaker: '長谷川', ja: 'それは、バーベキュー{場|じょう}にありますから、だいじょうぶです。', pt: 'Isso tem no local do churrasco, então não precisa.' },
+      ],
+    },
+  ],
+  '11-06': [
+    {
+      label: '会話④ (11-06) — バナナを持って行きます',
+      lines: [
+        { speaker: 'ノイ', ja: '{私|わたし}は、{何|なに}を{持|も}って{行|い}きましょうか？', pt: 'E eu, o que eu levo?' },
+        { speaker: '長谷川', ja: 'じゃあ、ノイさん、デザートはどうですか？', pt: 'Então, Noi, que tal a sobremesa?' },
+        { speaker: 'ノイ', ja: 'そうですねえ、じゃあ、バナナを{持|も}って{行|い}きます。{焼|や}いて{食|た}べましょう。', pt: 'Deixa ver… então levo banana. Vamos grelhar e comer.' },
+        { speaker: '長谷川', ja: 'え、バナナ？{焼|や}くんですか？', pt: 'Hã, banana? Vai grelhar?' },
+        { speaker: 'ノイ', ja: 'はい。おいしいですよ。', pt: 'Sim. Fica gostoso!' },
+      ],
+    },
+  ],
+  '11-10': [
+    {
+      label: '会話 (11-10) — どっちがいいですか？',
+      setupJa: '{張|チョウ}さんと{中村|なかむら}さんとマリアナさんは{友|とも}だちです。{家|いえ}でパーティーをするために、スーパーに{買|か}い{物|もの}に{来|き}ています。',
+      setupPt: 'Zhang, Nakamura e Mariana são amigos. Foram ao supermercado fazer compras para uma festa em casa.',
+      lines: [
+        { speaker: '中村', ja: 'じゃあ、{何|なに}を{買|か}って{行|い}きましょうか？', pt: 'Então, o que vamos comprar e levar?' },
+        { speaker: '張', ja: 'そうですねえ……。', pt: 'Hmm, deixa ver…' },
+        { speaker: '中村', ja: '{何|なに}が{食|た}べたいですか？', pt: 'O que você quer comer?' },
+        { speaker: '張', ja: '{何|なん}でもいいです。', pt: 'Qualquer coisa serve.' },
+        { speaker: 'マリアナ', ja: '{私|わたし}は{肉|にく}がいいです！', pt: 'Eu prefiro carne!' },
+        { speaker: '中村', ja: 'じゃあ、からあげを{買|か}って{行|い}きましょう。', pt: 'Então vamos comprar karaage e levar.' },
+        { speaker: 'マリアナ', ja: 'うーん。{焼|や}き{鳥|とり}もいいですねえ。', pt: 'Hmm. Yakitori também seria bom.' },
+        { speaker: '中村', ja: '{焼|や}き{鳥|とり}も{買|か}いますか？{塩|しお}とたれ、どっちがいいですか？', pt: 'Compramos yakitori também? Com sal ou com molho, qual você prefere?' },
+        { speaker: '張', ja: '{塩|しお}のほうがいいです。', pt: 'Prefiro com sal.' },
+        { speaker: '中村', ja: 'じゃあ、{塩|しお}にしましょう。', pt: 'Então vai de sal.' },
+        { speaker: '中村', ja: '{飲|の}み{物|もの}は{何|なに}がいいですか？', pt: 'E de bebida, o que vocês querem?' },
+        { speaker: 'マリアナ', ja: 'お{茶|ちゃ}がいいです。', pt: 'Chá seria bom.' },
+        { speaker: '中村', ja: 'お{茶|ちゃ}、いろいろありますね。どれがいいですか？', pt: 'Chá tem de vários tipos, né. Qual deles?' },
+        { speaker: 'マリアナ', ja: 'ウーロン{茶|ちゃ}にしましょう。', pt: 'Vamos de chá oolong.' },
+        { speaker: '張', ja: 'お{酒|さけ}もいいですか？', pt: 'Pode bebida alcoólica também?' },
+        { speaker: '中村', ja: 'いいですよ。', pt: 'Pode sim.' },
+        { speaker: '張', ja: 'じゃあ、ビール。', pt: 'Então, cerveja.' },
+        { speaker: '中村', ja: 'デザートはどうしますか？', pt: 'E a sobremesa?' },
+        { speaker: 'マリアナ', ja: 'あそこでケーキ、{売|う}ってますよ。{買|か}って{行|い}きましょう。', pt: 'Ali estão vendendo bolo. Vamos comprar e levar.' },
+        { speaker: '中村', ja: 'チョコレートケーキとチーズケーキ、どっちがいいですか？', pt: 'Bolo de chocolate ou cheesecake, qual vocês preferem?' },
+        { speaker: '張', ja: '{私|わたし}はどっちでもいいです。', pt: 'Para mim tanto faz.' },
+        { speaker: 'マリアナ', ja: 'じゃあ、{両方|りょうほう}{買|か}いましょう！', pt: 'Então vamos comprar os dois!' },
+      ],
+    },
+  ],
+  '11-17': [
+    {
+      label: '会話① (11-17) — 卵を使ってますか？',
+      lines: [
+        { speaker: 'A', ja: 'さあ、どうぞ。', pt: 'Vamos, sirva-se.' },
+        { speaker: 'B', ja: 'あのう、この{料理|りょうり}、{卵|たまご}を{使|つか}ってますか？', pt: 'Ahn, este prato leva ovo?' },
+        { speaker: 'A', ja: '{卵|たまご}？これは{使|つか}ってませんよ。', pt: 'Ovo? Este aqui não leva.' },
+        { speaker: 'B', ja: 'あ、じゃあ、だいじょうぶです。いただきます！', pt: 'Ah, então tudo bem. Itadakimasu!' },
+      ],
+    },
+  ],
+  '11-18': [
+    {
+      label: '会話② (11-18) — エビが入ってますか？',
+      lines: [
+        { speaker: 'A', ja: 'よかったら、ピザ、どう？', pt: 'Se quiser, que tal uma pizza?' },
+        { speaker: 'B', ja: 'このピザ、エビが{入|はい}ってますか？', pt: 'Esta pizza leva camarão?' },
+        { speaker: 'A', ja: 'エビ、{入|はい}ってるよ。', pt: 'Tem camarão, sim.' },
+        { speaker: 'B', ja: 'じゃあ、{私|わたし}はだめです。エビのアレルギーですから。', pt: 'Então não dá para mim. É que tenho alergia a camarão.' },
+        { speaker: 'A', ja: 'そうなんだ……。', pt: 'Ah, é mesmo…' },
+      ],
+    },
+  ],
+  '11-19': [
+    {
+      label: '会話③ (11-19) — 明日までもちますか？',
+      lines: [
+        { speaker: 'A', ja: 'すみません。このお{刺身|さしみ}、{明日|あした}までもちますか？', pt: 'Com licença. Este sashimi dura até amanhã?' },
+        { speaker: 'B', ja: 'あ、お{刺身|さしみ}は、{今日中|きょうじゅう}に{食|た}べてください。', pt: 'Ah, o sashimi, coma ainda hoje, por favor.' },
+        { speaker: 'A', ja: 'そうですか。{明日|あした}はだめですか？', pt: 'Entendi. Amanhã não pode?' },
+        { speaker: 'B', ja: 'ちょっと{無理|むり}ですね。', pt: 'Aí já não dá, não.' },
+      ],
+    },
+  ],
+  '11-20': [
+    {
+      label: '会話④ (11-20) — ハラルですか？',
+      lines: [
+        { speaker: 'A', ja: 'すみません。このラーメン、ハラルですか？', pt: 'Com licença. Este ramen é halal?' },
+        { speaker: 'B', ja: 'そうですよ。', pt: 'É sim.' },
+        { speaker: 'A', ja: 'あ、よかった。', pt: 'Ah, que bom.' },
+        { speaker: 'B', ja: 'このコーナーの{商品|しょうひん}は、すべてハラルですよ。', pt: 'Os produtos desta seção são todos halal.' },
+        { speaker: 'A', ja: 'へー、そうなんですか。', pt: 'Nossa, é mesmo?' },
+      ],
+    },
+  ],
+}
+
+const lesson11: Section = {
+  id: 'lesson-11',
+  level: 'elementary1',
+  titleJa: '第11課 肉と野菜は私が買って行きます',
+  titlePt: 'Lição 11 — Eu compro e levo a carne e os legumes',
+  summaryPt: 'Comida gostosa · combinar quem leva o quê a um churrasco ({肉|にく}と{野菜|やさい}は{私|わたし}が{買|か}って{行|い}きます), perguntar/escolher entre opções (N1とN2、どっち／どれ・{塩|しお}のほうがいい・{何|なん}でもいい) e checar ingredientes/validade ({卵|たまご}を{使|つか}ってますか／{明日|あした}までもちますか／ハラルですか).',
+  studyNotes: [
+    {
+      title: 'Tópico: Comida gostosa (おいしい料理)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Conversar sobre quem leva o quê ao fazer, por exemplo, um churrasco ({バーベキュー}).\n' +
+        '- Conversar sobre o que comprar ao fazer, por exemplo, uma festa em casa.\n' +
+        '- Perguntar a um funcionário sobre ingredientes e validade dos alimentos e entender a resposta.\n' +
+        '- Ler o rótulo dos alimentos ({食品表示|しょくひんひょうじ}) e conferir se não contém algo que não pode comer.\n\n' +
+        '💡 Pergunta de abertura: だれかの{家|いえ}に{集|あつ}まってパーティーをすることがありますか？そのとき、どんなものを{食|た}べたり{飲|の}んだりしますか？',
+    },
+    {
+      title: 'Levar/trazer: V-て行きます／来ます (➊)',
+      bodyPt:
+        '**V-て{行|い}く／{来|く}る** = fazer V primeiro e então ir/vir mantendo aquilo (liga-se à テ-forma):\n\n' +
+        '- com 〜{行|い}く (o destino é “lá”): `{肉|にく}と{野菜|やさい}は{私|わたし}が{買|か}って{行|い}きます`, {持|も}って{行|い}く, {作|つく}って{行|い}く.\n' +
+        '- com 〜{来|く}る (o movimento é “para cá”): `{国|くに}の{料理|りょうり}を{作|つく}って{来|き}ました`, {飲|の}み{物|もの}を{買|か}って{来|き}ました.\n\n' +
+        'Útil para dividir quem leva o quê (持ち物の分担) num churrasco/festa.',
+    },
+    {
+      title: 'Escolher: N1とN2どっち／どれ (➋) ／ Nのほうがいい (➌)',
+      bodyPt:
+        '**N1とN2、どっちがいいですか？ ／ S。どれがいいですか？** — pedir escolha num conjunto limitado:\n\n' +
+        '- **どっち** = 2 opções ({塩|しお}とたれ、どっち); **どれ** = 3 ou mais (お{茶|ちゃ}…どれ). どっち = casual de どちら.\n\n' +
+        '**Nのほうがいいです** — escolher uma de duas; N é a escolhida (`{塩|しお}のほうがいいです`). O のほうが pode cair → `Nがいいです` (`{肉|にく}がいいです`).',
+    },
+    {
+      title: 'Sem preferência: 【疑問詞】でもいいです (➍)',
+      bodyPt:
+        '**【疑問詞】+でもいいです** = não ter preferência/pedido especial:\n\n' +
+        '- `{何|なに}が{食|た}べたいですか？` → `{何|なん}でもいいです` (qualquer coisa).\n\n' +
+        'Outras: {何|なん}でも (qualquer coisa), どっちでも (tanto faz), いつでも (a qualquer hora), だれでも (qualquer pessoa), どこでも (em qualquer lugar), いくつでも (quantos forem). > Obs.: a estrutura para perguntar ingredientes ({卵|たまご}を{使|つか}ってますか？) é tratada na **Lição 12 (➎)**.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Churrasco (Ativ. 1):** {肉|にく} ({牛肉|ぎゅうにく}/{豚肉|ぶたにく}/{鶏肉|とりにく}/ソーセージ), {野菜|やさい}, シーフード ({魚|さかな}/エビ/イカ/ホタテ), {果物|くだもの}, {焼|や}きそば, おにぎり, {焼肉|やきにく}のたれ／ソース, お{菓子|かし}, ソフトドリンク, お{酒|さけ}, コップ, お{皿|さら}, わりばし, ごみ{袋|ぶくろ}; {準備|じゅんび}, {飲|の}み{物|もの}, デザート, {焼|や}く. **Compras (Ativ. 2):** {売|う}る, {両方|りょうほう}. **Alergias/ingredientes (Ativ. 3):** エビ, カニ, {卵|たまご}, ピーナッツ/{落花生|らっかせい}, そば, {小麦|こむぎ}, {乳製品|にゅうせいひん}, {使|つか}ってる, {入|はい}ってる, もつ, {今日中|きょうじゅう}, {消費期限|しょうひきげん}, ハラル, コーナー, {商品|しょうひん}, すべて. **Rótulo (Ativ. 4):** {食品表示|しょくひんひょうじ}, {原材料名|げんざいりょうめい}, アレルギー{物質|ぶっしつ}, {乳成分|にゅうせいぶん}, {大豆|だいず}, {含|ふく}む.\n\n' +
+        '**Kanji da lição:** {飲|の}み{物|もの}, お{茶|ちゃ}, お{酒|さけ}, {材料|ざいりょう}, {野菜|やさい}, {牛肉|ぎゅうにく}, {豚肉|ぶたにく}, {皿|さら}, {売|う}る, {持|も}って{行|い}く.\n\n' +
+        '📌 **TIPS:** **バーベキュー** (carne + legumes + frutos do mar; grelha-se e come-se ao mesmo tempo; {焼|や}きそば/{焼|や}きおにぎり no fim; aluga-se equipamento, há locais que fornecem tudo); **スーパーの{惣菜|そうざい}コーナー** (pratos prontos — {揚|あ}げ{物|もの}, {焼|や}き{鳥|とり}, {煮物|にもの}, saladas; bom para quem tem pressa; {割引|わりびき} perto do fechamento).',
+    },
+  ],
+  groups: [lesson11Group],
+  audios: attachScripts(11, L11_SCRIPTS),
+}
+
+// ---- Lições 12-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(11, 'Comida gostosa', '肉と野菜は私が買って行きます', 'Eu levo a carne e os legumes', [
-    'Conversar sobre quem leva o quê ao fazer, por exemplo, um churrasco.',
-    'Conversar sobre o que comprar ao fazer, por exemplo, uma festa em casa.',
-    'Perguntar a um funcionário sobre ingredientes e validade dos alimentos e entender.',
-    'Ler o rótulo dos alimentos e conferir se não contém algo que não pode comer.',
-  ]),
   scaffold(12, 'Comida gostosa', 'お弁当、おいしそうですね', 'O bentô parece delicioso, né', [
     'Dizer a impressão sobre a aparência de um alimento.',
     'Comentar sobre um alimento recomendado depois de prová-lo.',
@@ -2215,5 +2432,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, ...others],
 }
