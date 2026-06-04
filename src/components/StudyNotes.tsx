@@ -1,4 +1,5 @@
 import { Fragment, type ReactNode } from 'react'
+import { BookOpenText } from 'lucide-react'
 import type { StudyNote } from '../data/types'
 import { JaText } from '../lib/JaText'
 
@@ -102,7 +103,7 @@ export function StudyNotes({ notes }: { notes: StudyNote[] }) {
   if (!notes.length) return null
   return (
     <div className="card study">
-      <h2>📚 Explicação do conteúdo</h2>
+      <h2 style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}><BookOpenText size={20} /> Explicação do conteúdo</h2>
       {notes.map((n, i) => (
         <div className="note" key={i}>
           <h3>{n.title}</h3>

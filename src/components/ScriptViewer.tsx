@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { HelpCircle, Play } from 'lucide-react'
 import type { AudioTrack } from '../data/types'
 import { JaText } from '../lib/JaText'
 import { AudioPlayer, type AudioPlayerHandle } from './AudioPlayer'
@@ -51,7 +52,7 @@ export function ScriptViewer({ track }: { track: AudioTrack }) {
                     playerRef.current?.play()
                   }}
                 >
-                  ▶ ouvir trecho
+                  <Play size={13} /> ouvir trecho
                 </button>
               )}
             </div>
@@ -77,7 +78,7 @@ export function ScriptViewer({ track }: { track: AudioTrack }) {
 
             {item.questionJa && (
               <div className="question">
-                <strong>❓ </strong>
+                <HelpCircle size={15} style={{ marginRight: 4 }} />
                 <JaText text={item.questionJa} furigana={furigana} />
                 {revealAns && item.answer !== undefined && (
                   <div className="ans">Resposta correta: {item.answer}</div>

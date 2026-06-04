@@ -1,4 +1,5 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react'
+import { Check, FastForward, Pause, Play, Rewind } from 'lucide-react'
 
 export interface AudioPlayerHandle {
   seekTo: (seconds: number) => void
@@ -85,7 +86,7 @@ export const AudioPlayer = forwardRef<AudioPlayerHandle, Props>(function AudioPl
       />
       <div className="top">
         <button className="pp" onClick={toggle} aria-label={playing ? 'Pausar' : 'Tocar'}>
-          {playing ? '❚❚' : '▶'}
+          {playing ? <Pause size={20} /> : <Play size={20} />}
         </button>
         <div className="seek">
           <div style={{ fontWeight: 700, fontSize: 14, marginBottom: 4 }}>{title}</div>
@@ -120,8 +121,8 @@ export const AudioPlayer = forwardRef<AudioPlayerHandle, Props>(function AudioPl
           ))}
         </div>
 
-        <button className="btn small" onClick={() => nudge(-5)}>« 5s</button>
-        <button className="btn small" onClick={() => nudge(5)}>5s »</button>
+        <button className="btn small" onClick={() => nudge(-5)}><Rewind size={14} /> 5s</button>
+        <button className="btn small" onClick={() => nudge(5)}>5s <FastForward size={14} /></button>
 
         <div className="ab" role="group" aria-label="Repetição A-B">
           <span>Repetir trecho:</span>
@@ -144,7 +145,7 @@ export const AudioPlayer = forwardRef<AudioPlayerHandle, Props>(function AudioPl
             disabled={pointA === null || pointB === null}
             onClick={() => setLoopAB((v) => !v)}
           >
-            {loopAB ? 'Loop ✓' : 'Loop'}
+            {loopAB ? <>Loop <Check size={13} /></> : 'Loop'}
           </button>
           <button
             className="chip"

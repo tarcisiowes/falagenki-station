@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { Download, Save, Trash2, Upload } from 'lucide-react'
 import {
   clearAll,
   downloadBackup,
@@ -46,7 +47,7 @@ export function BackupBar() {
   return (
     <div className="card backup-bar">
       <div className="info">
-        💾 <b>{count}</b> resposta(s) · <b>{custom.length}</b> exercício(s) seu(s) ·{' '}
+        <Save size={15} /> <b>{count}</b> resposta(s) · <b>{custom.length}</b> exercício(s) seu(s) ·{' '}
         <b>{Object.keys(srs).length}</b> carta(s) de revisão · <b>{exams.length}</b> simulado(s).
         <div className="muted" style={{ fontSize: 12 }}>
           Tudo fica salvo localmente (offline). O backup inclui respostas, revisão, exercícios
@@ -55,10 +56,10 @@ export function BackupBar() {
       </div>
       <div className="spacer" />
       <button className="btn primary small" onClick={downloadBackup} disabled={!anything}>
-        ⬇ Baixar backup
+        <Download size={15} /> Baixar backup
       </button>
       <button className="btn small" onClick={() => fileRef.current?.click()}>
-        ⬆ Carregar backup
+        <Upload size={15} /> Carregar backup
       </button>
       <input
         ref={fileRef}
@@ -77,7 +78,7 @@ export function BackupBar() {
         }}
         disabled={count === 0}
       >
-        🗑 Limpar respostas
+        <Trash2 size={15} /> Limpar respostas
       </button>
 
       {toast && <div className="toast">{toast}</div>}

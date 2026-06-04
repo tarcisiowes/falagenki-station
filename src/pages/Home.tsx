@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
+import { BarChart3, FileText, Headphones, NotebookPen, Repeat, Save, SquarePen, Timer } from 'lucide-react'
 import { levels } from '../data'
 import { useAnswers } from '../lib/storage'
 import { levelProgress } from '../lib/progress'
 import { BackupBar } from '../components/BackupBar'
+import { SectionIcon } from '../components/icons'
 import { useSrs } from '../lib/reviewStore'
 import { useCustom } from '../lib/customStore'
 import { allFlatQuestions } from '../lib/dataAccess'
@@ -23,7 +25,7 @@ export function Home() {
   return (
     <div>
       <section className="hero">
-        <div className="ja-big ja">日本語を学ぼう 🇯🇵</div>
+        <div className="ja-big ja">日本語を学ぼう</div>
         <h1>Estude japonês para o JLPT — explicado em português</h1>
         <p>
           Uma plataforma de estudo com os fluxos de cada parte do exame (vocabulário, gramática,
@@ -32,10 +34,10 @@ export function Home() {
           navegador, com backup que você pode baixar e recarregar.
         </p>
         <div className="feature-list">
-          <div className="item"><span className="ic">📝</span><span>Exercícios fiéis ao exame, com campo de resposta e anotação salvos automaticamente.</span></div>
-          <div className="item"><span className="ic">🎧</span><span>Player de áudio com velocidade ajustável, avanço/retrocesso e repetição de trecho (A–B).</span></div>
-          <div className="item"><span className="ic">📄</span><span>Transcrição oficial dos áudios com furigana e tradução em pt-BR.</span></div>
-          <div className="item"><span className="ic">💾</span><span>Backup das respostas em arquivo, para nunca perder seu progresso.</span></div>
+          <div className="item"><span className="ic"><NotebookPen size={18} /></span><span>Exercícios fiéis ao exame, com campo de resposta e anotação salvos automaticamente.</span></div>
+          <div className="item"><span className="ic"><Headphones size={18} /></span><span>Player de áudio com velocidade ajustável, avanço/retrocesso e repetição de trecho (A–B).</span></div>
+          <div className="item"><span className="ic"><FileText size={18} /></span><span>Transcrição oficial dos áudios com furigana e tradução em pt-BR.</span></div>
+          <div className="item"><span className="ic"><Save size={18} /></span><span>Backup das respostas em arquivo, para nunca perder seu progresso.</span></div>
         </div>
       </section>
 
@@ -43,22 +45,22 @@ export function Home() {
 
       <div className="grid cols-4" style={{ marginBottom: 26 }}>
         <Link to="/revisar" className="card section-tile" style={{ background: 'var(--green-soft)' }}>
-          <div className="ic">🔁</div>
+          <div className="ic"><Repeat size={28} /></div>
           <h3>Revisar</h3>
           <p>{dueToday > 0 ? `${dueToday} carta(s) para hoje` : 'Repetição espaçada (Anki)'}</p>
         </Link>
         <Link to="/simulado" className="card section-tile" style={{ background: 'var(--blue-soft)' }}>
-          <div className="ic">⏱</div>
+          <div className="ic"><Timer size={28} /></div>
           <h3>Simulado</h3>
           <p>Treine no tempo da prova</p>
         </Link>
         <Link to="/analise" className="card section-tile" style={{ background: 'var(--amber-soft)' }}>
-          <div className="ic">📊</div>
+          <div className="ic"><BarChart3 size={28} /></div>
           <h3>Análise</h3>
           <p>Acertos, tempos e médias</p>
         </Link>
         <Link to="/criar" className="card section-tile" style={{ background: 'var(--accent-soft)' }}>
-          <div className="ic">✍️</div>
+          <div className="ic"><SquarePen size={28} /></div>
           <h3>Criar</h3>
           <p>Seus exercícios N5/N4</p>
         </Link>
@@ -88,7 +90,9 @@ export function Home() {
               </div>
               <div className="meta">
                 {lv.sections.map((s) => (
-                  <span className="badge gray" key={s.id}>{s.icon} {s.titlePt}</span>
+                  <span className="badge gray" key={s.id} style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
+                    <SectionIcon id={s.id} size={13} /> {s.titlePt}
+                  </span>
                 ))}
               </div>
             </Link>

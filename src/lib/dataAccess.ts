@@ -36,7 +36,7 @@ export function customGroup(
   if (!list.length) return null
   return {
     id: `custom-${levelId}-${sectionId}`,
-    title: '✍️ Meus exercícios',
+    title: 'Meus exercícios',
     subtitlePt: 'Questões que você criou',
     instructionJa: '',
     instructionPt: 'Exercícios adicionados por você (salvos no seu navegador).',

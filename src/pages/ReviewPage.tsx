@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { CheckCircle2, PartyPopper, Repeat, RotateCcw, XCircle } from 'lucide-react'
 import { JaText } from '../lib/JaText'
 import { allFlatQuestions, type FlatQuestion } from '../lib/dataAccess'
 import { customStore } from '../lib/customStore'
@@ -78,7 +79,7 @@ export function ReviewPage() {
       </div>
 
       <div className="hero" style={{ padding: '24px 28px' }}>
-        <div className="ja-big ja">🔁 復習 — Revisão estilo Anki</div>
+        <div className="ja-big ja"><Repeat size={18} /> 復習 — Revisão estilo Anki</div>
         <h1 style={{ margin: '4px 0' }}>Revise os exercícios com repetição espaçada</h1>
         <p>
           Cada exercício vira uma carta. Você responde, vê a correção e diz o quão difícil foi
@@ -102,12 +103,12 @@ export function ReviewPage() {
           <input type="checkbox" checked={furigana} onChange={(e) => setFurigana(e.target.checked)} />
           Furigana
         </label>
-        <button className="btn small" onClick={() => restart(filter)}>↻ Reiniciar sessão</button>
+        <button className="btn small" onClick={() => restart(filter)}><RotateCcw size={14} /> Reiniciar sessão</button>
       </div>
 
       {!current ? (
         <div className="card" style={{ padding: 40, textAlign: 'center' }}>
-          <div style={{ fontSize: 40 }}>🎉</div>
+          <PartyPopper size={40} color="var(--accent)" />
           <h2 style={{ marginTop: 8 }}>Sessão concluída!</h2>
           <p className="muted">
             Você revisou <b>{done}</b> carta(s). Não há mais cartas pendentes para “{filter === 'all' ? 'todos os níveis' : filter}” agora.
@@ -164,7 +165,10 @@ export function ReviewPage() {
           ) : (
             <>
               <div className={`feedback ${correct ? 'ok' : 'no'}`}>
-                <div className="head">{correct ? '✅ Você acertou' : `❌ Errou — correta: ${current.q.answer}`}</div>
+                <div className="head" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                  {correct ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
+                  {correct ? 'Você acertou' : `Errou — correta: ${current.q.answer}`}
+                </div>
                 {current.q.translationPt && <div className="tr">“{current.q.translationPt}”</div>}
                 <div>{current.q.explanationPt}</div>
               </div>

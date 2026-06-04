@@ -10,7 +10,6 @@ const vocabulary: Section = {
   level: 'N5',
   titleJa: 'げんごちしき（もじ・ごい）',
   titlePt: 'Vocabulário e Escrita',
-  icon: '✏️',
   summaryPt:
     'Conhecimento da língua: leitura de kanji, escrita correta (kanji/katakana), escolha da palavra certa e frases de sentido equivalente. 35 questões, 25 minutos no exame.',
   studyNotes: [
@@ -133,7 +132,6 @@ const grammar: Section = {
   level: 'N5',
   titleJa: 'げんごちしき（ぶんぽう）',
   titlePt: 'Gramática',
-  icon: '🧩',
   summaryPt:
     'Conhecimento da língua (gramática): escolha de partículas e formas verbais, montagem de frases (questões com ★) e gramática dentro de um texto. Parte do bloco Gramática + Leitura (50 min).',
   studyNotes: [
@@ -221,7 +219,6 @@ const reading: Section = {
   level: 'N5',
   titleJa: 'どっかい',
   titlePt: 'Leitura',
-  icon: '📖',
   summaryPt:
     'Compreensão de leitura: textos curtos do dia a dia (avisos, bilhetes, redações) e busca de informação em quadros. Faz parte do bloco Gramática + Leitura (50 min).',
   studyNotes: [
@@ -278,7 +275,6 @@ const listening: Section = {
   level: 'N5',
   titleJa: 'ちょうかい',
   titlePt: 'Audição',
-  icon: '🎧',
   summaryPt:
     'Compreensão auditiva. Quatro tipos: compreensão de tarefa, de ponto-chave, expressões em situação e respostas rápidas. Ouça os áudios oficiais com o player e acompanhe a transcrição com tradução. 30 minutos no exame.',
   studyNotes: [

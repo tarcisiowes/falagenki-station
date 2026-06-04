@@ -1,5 +1,7 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { GraduationCap, Headphones, NotebookPen, SquarePen } from 'lucide-react'
+import { SectionIcon } from '../components/icons'
 import { getSection } from '../data'
 import { useAnswers } from '../lib/storage'
 import { sectionProgress } from '../lib/progress'
@@ -48,9 +50,14 @@ export function SectionPage() {
   const p = sectionProgress(section, answers)
 
   const TAB_LABEL: Record<Tab, string> = {
-    estudo: '📚 Estudar',
-    exercicios: `📝 Exercícios${p.total ? ` (${p.answered}/${p.total})` : ''}`,
-    audios: `🎧 Áudios${section.audios?.length ? ` (${section.audios.length})` : ''}`,
+    estudo: 'Estudar',
+    exercicios: `Exercícios${p.total ? ` (${p.answered}/${p.total})` : ''}`,
+    audios: `Áudios${section.audios?.length ? ` (${section.audios.length})` : ''}`,
+  }
+  const TAB_ICON: Record<Tab, ReactNode> = {
+    estudo: <GraduationCap size={15} />,
+    exercicios: <NotebookPen size={15} />,
+    audios: <Headphones size={15} />,
   }
 
   return (
@@ -62,7 +69,7 @@ export function SectionPage() {
 
       <div className="hero" style={{ padding: '26px 30px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <span style={{ fontSize: 36 }}>{section.icon}</span>
+          <SectionIcon id={section.id} size={34} />
           <div>
             <span className="badge">{level.id}</span>
             <h1 style={{ margin: '6px 0 2px' }}>{section.titlePt}</h1>
@@ -77,7 +84,7 @@ export function SectionPage() {
       <div className="tablist">
         {tabs.map((t) => (
           <button key={t} className={activeTab === t ? 'active' : ''} onClick={() => setTab(t)}>
-            {TAB_LABEL[t]}
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>{TAB_ICON[t]} {TAB_LABEL[t]}</span>
           </button>
         ))}
       </div>
@@ -96,7 +103,7 @@ export function SectionPage() {
             </span>
             <div className="spacer" style={{ flex: 1 }} />
             <Link className="btn small" to={`/criar?level=${level.id}&section=${section.id}`}>
-              ✍️ Criar exercício desta área
+              <SquarePen size={15} /> Criar exercício desta área
             </Link>
           </div>
           {groups.map((g) => (

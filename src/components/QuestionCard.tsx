@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { CheckCircle2, NotebookPen, XCircle } from 'lucide-react'
 import type { Question } from '../data/types'
 import { JaText } from '../lib/JaText'
 import { setAnswer, useAnswer } from '../lib/storage'
@@ -44,7 +45,9 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
           </div>
 
           <div className="note-field">
-            <label htmlFor={`${q.id}-note`}>📝 Sua anotação / justificativa (salva automaticamente)</label>
+            <label htmlFor={`${q.id}-note`} style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+              <NotebookPen size={14} /> Sua anotação / justificativa (salva automaticamente)
+            </label>
             <textarea
               id={`${q.id}-note`}
               value={rec?.note ?? ''}
@@ -66,8 +69,9 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
 
           {checked && (
             <div className={`feedback ${isCorrect ? 'ok' : 'no'}`}>
-              <div className="head">
-                {isCorrect ? '✅ Correto!' : `❌ Resposta correta: ${q.answer}`}
+              <div className="head" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                {isCorrect ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
+                {isCorrect ? 'Correto!' : `Resposta correta: ${q.answer}`}
               </div>
               {q.translationPt && <div className="tr">“{q.translationPt}”</div>}
               <div>{q.explanationPt}</div>

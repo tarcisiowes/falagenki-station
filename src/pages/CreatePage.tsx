@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
+import { Pencil, Plus, SquarePen, Trash2 } from 'lucide-react'
 import { levels } from '../data'
 import type { LevelId, SectionId } from '../data/types'
 import { JaText } from '../lib/JaText'
@@ -84,7 +85,7 @@ export function CreatePage() {
       </div>
 
       <div className="hero" style={{ padding: '24px 28px' }}>
-        <div className="ja-big ja">✍️ 問題を作る — Criar exercícios</div>
+        <div className="ja-big ja"><SquarePen size={18} /> 問題を作る — Criar exercícios</div>
         <h1 style={{ margin: '4px 0' }}>Adicione seus próprios exercícios de N5 e N4</h1>
         <p>
           As questões que você criar entram nos <b>Exercícios</b> da seção, na <b>Revisão</b> (Anki)
@@ -152,7 +153,9 @@ export function CreatePage() {
         {error && <div className="feedback no" style={{ marginBottom: 10 }}>{error}</div>}
 
         <div style={{ display: 'flex', gap: 10 }}>
-          <button className="btn primary" onClick={submit}>{editingId ? 'Salvar alterações' : '＋ Adicionar exercício'}</button>
+          <button className="btn primary" onClick={submit}>
+            {editingId ? 'Salvar alterações' : <><Plus size={15} /> Adicionar exercício</>}
+          </button>
           {editingId && <button className="btn" onClick={reset}>Cancelar edição</button>}
         </div>
       </div>
@@ -166,8 +169,8 @@ export function CreatePage() {
               <span className="badge">{c.levelId}</span>
               <span className="badge gray">{SECTIONS.find((s) => s.id === c.sectionId)?.label}</span>
               <div className="spacer" style={{ flex: 1 }} />
-              <button className="btn small" onClick={() => edit(c.id)}>✎ Editar</button>
-              <button className="btn small ghost" onClick={() => { if (confirm('Excluir este exercício?')) deleteCustom(c.id) }}>🗑 Excluir</button>
+              <button className="btn small" onClick={() => edit(c.id)}><Pencil size={14} /> Editar</button>
+              <button className="btn small ghost" onClick={() => { if (confirm('Excluir este exercício?')) deleteCustom(c.id) }}><Trash2 size={14} /> Excluir</button>
             </div>
             <div className="ja" style={{ marginTop: 8 }}><JaText text={c.prompt} /></div>
             <div className="muted" style={{ fontSize: 13, marginTop: 4 }}>

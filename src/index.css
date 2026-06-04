@@ -22,6 +22,10 @@
 
 * { box-sizing: border-box; }
 
+/* ícones lucide: alinhamento vertical com o texto e não encolher em flex */
+svg.lucide { vertical-align: -0.16em; flex: none; }
+.btn svg.lucide, .app-header nav a svg.lucide { vertical-align: middle; }
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -78,6 +82,7 @@ ruby rt { font-size: 0.58em; color: var(--ink-soft); font-weight: 400; }
 .app-header nav { margin-left: auto; display: flex; gap: 6px; align-items: center; }
 .app-header nav a {
   color: var(--ink-soft); font-weight: 600; font-size: 14px; padding: 7px 12px; border-radius: 9px;
+  display: inline-flex; align-items: center; gap: 6px;
 }
 .app-header nav a:hover { background: var(--surface-2); text-decoration: none; }
 .app-header nav a.active { color: var(--accent-ink); background: var(--accent-soft); }

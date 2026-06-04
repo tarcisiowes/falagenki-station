@@ -1,4 +1,5 @@
 import { NavLink, Outlet, Link } from 'react-router-dom'
+import { Repeat, Timer, BarChart3, SquarePen } from 'lucide-react'
 
 export function Layout() {
   return (
@@ -16,10 +17,10 @@ export function Layout() {
             <NavLink to="/" end>Início</NavLink>
             <NavLink to="/nivel/N5">N5</NavLink>
             <NavLink to="/nivel/N4">N4</NavLink>
-            <NavLink to="/revisar">🔁 Revisar</NavLink>
-            <NavLink to="/simulado">⏱ Simulado</NavLink>
-            <NavLink to="/analise">📊 Análise</NavLink>
-            <NavLink to="/criar">✍️ Criar</NavLink>
+            <NavLink to="/revisar"><Repeat size={15} /> Revisar</NavLink>
+            <NavLink to="/simulado"><Timer size={15} /> Simulado</NavLink>
+            <NavLink to="/analise"><BarChart3 size={15} /> Análise</NavLink>
+            <NavLink to="/criar"><SquarePen size={15} /> Criar</NavLink>
           </nav>
         </div>
       </header>

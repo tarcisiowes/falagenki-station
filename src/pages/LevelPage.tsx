@@ -3,6 +3,7 @@ import { getLevel } from '../data'
 import { useAnswers } from '../lib/storage'
 import { sectionProgress } from '../lib/progress'
 import { BackupBar } from '../components/BackupBar'
+import { SectionIcon } from '../components/icons'
 
 const TILE_BG: Record<string, string> = {
   vocabulary: '#fbf0d6',
@@ -51,7 +52,7 @@ export function LevelPage() {
               className="card section-tile"
               style={{ background: TILE_BG[s.id] }}
             >
-              <div className="ic">{s.icon}</div>
+              <div className="ic"><SectionIcon id={s.id} size={28} /></div>
               <h3>{s.titlePt}</h3>
               <div className="ja">{s.titleJa}</div>
               <p>{s.summaryPt}</p>

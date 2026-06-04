@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { BarChart3, CheckCircle2, Repeat, Timer, Trash2, XCircle } from 'lucide-react'
 import { useExams, deleteAttempt, type ExamAttempt } from '../lib/examStore'
 import { useSrs, gradeCard } from '../lib/reviewStore'
 import { useCustom } from '../lib/customStore'
@@ -51,7 +52,7 @@ export function StatsPage() {
       </div>
 
       <div className="hero" style={{ padding: '24px 28px' }}>
-        <div className="ja-big ja">📊 分析 — Análise e progresso</div>
+        <div className="ja-big ja"><BarChart3 size={18} /> 分析 — Análise e progresso</div>
         <h1 style={{ margin: '4px 0' }}>Seu desempenho</h1>
         <p>Resumo da revisão e histórico dos simulados, com a análise de tempo por questão.</p>
       </div>
@@ -64,8 +65,8 @@ export function StatsPage() {
       </div>
 
       <div style={{ display: 'flex', gap: 10, marginBottom: 20, flexWrap: 'wrap' }}>
-        <Link to="/revisar" className="btn primary">🔁 Revisar agora</Link>
-        <Link to="/simulado" className="btn">⏱ Fazer simulado</Link>
+        <Link to="/revisar" className="btn primary"><Repeat size={15} /> Revisar agora</Link>
+        <Link to="/simulado" className="btn"><Timer size={15} /> Fazer simulado</Link>
       </div>
 
       <h2 style={{ margin: '6px 0 12px' }}>Histórico de simulados</h2>
@@ -92,10 +93,10 @@ export function StatsPage() {
                   onClick={() => sendWrong(e)}
                   title="Marca as questões erradas como devidas hoje na revisão"
                 >
-                  🔁 Erradas → revisão ({e.total - e.correct})
+                  <Repeat size={14} /> Erradas → revisão ({e.total - e.correct})
                 </button>
                 <button className="btn small" onClick={() => setOpen(isOpen ? null : e.id)}>{isOpen ? 'Ocultar' : 'Detalhes'}</button>
-                <button className="btn small ghost" onClick={() => { if (confirm('Excluir este simulado do histórico?')) deleteAttempt(e.id) }}>🗑</button>
+                <button className="btn small ghost" onClick={() => { if (confirm('Excluir este simulado do histórico?')) deleteAttempt(e.id) }}><Trash2 size={14} /></button>
               </div>
 
               {isOpen && (
@@ -110,13 +111,19 @@ export function StatsPage() {
                         return (
                           <tr key={r.id}>
                             <td>{r.number}</td>
-                            <td>{r.selected === undefined ? '— em branco' : r.correct ? '✅' : '❌'}</td>
+                            <td>
+                              {r.selected === undefined
+                                ? '— em branco'
+                                : r.correct
+                                  ? <CheckCircle2 size={15} color="var(--green)" />
+                                  : <XCircle size={15} color="var(--accent)" />}
+                            </td>
                             <td>{r.selected ?? '—'}</td>
                             <td>{r.answer}</td>
                             <td>{(r.ms / 1000).toFixed(1)}s</td>
                             <td className="muted">{expPerQ}s</td>
                             <td style={{ color: diff > 0 ? 'var(--accent)' : 'var(--green)' }}>{diff > 0 ? '+' : ''}{diff.toFixed(1)}s</td>
-                            <td>{!r.correct && <button className="btn small" onClick={() => sendOne(r.id, r.number)}>🔁 hoje</button>}</td>
+                            <td>{!r.correct && <button className="btn small" onClick={() => sendOne(r.id, r.number)}><Repeat size={13} /> hoje</button>}</td>
                           </tr>
                         )
                       })}

@@ -10,7 +10,6 @@ const vocabulary: Section = {
   level: 'N4',
   titleJa: 'げんごちしき（もじ・ごい）',
   titlePt: 'Vocabulário e Escrita',
-  icon: '✏️',
   summaryPt:
     'Conhecimento da língua: leitura de kanji, escrita, escolha da palavra certa, frases equivalentes e uso correto da palavra. 35 questões, 30 minutos no exame.',
   studyNotes: [
@@ -137,7 +136,6 @@ const grammar: Section = {
   level: 'N4',
   titleJa: 'げんごちしき（ぶんぽう）',
   titlePt: 'Gramática',
-  icon: '🧩',
   summaryPt:
     'Gramática do N4: partículas e expressões mais complexas, formas como させる (causativo), passiva, 〜なら, 〜のに, montagem de frases (★) e gramática no texto. Bloco Gramática + Leitura (60 min).',
   studyNotes: [
@@ -224,7 +222,6 @@ const reading: Section = {
   level: 'N4',
   titleJa: 'どっかい',
   titlePt: 'Leitura',
-  icon: '📖',
   summaryPt:
     'Leitura do N4: textos curtos, um texto médio (redação com perguntas sobre “por quê”) e busca de informação num folheto com condições. Bloco Gramática + Leitura (60 min).',
   studyNotes: [
@@ -285,7 +282,6 @@ const listening: Section = {
   level: 'N4',
   titleJa: 'ちょうかい',
   titlePt: 'Audição',
-  icon: '🎧',
   summaryPt:
     'Compreensão auditiva do N4. Quatro tipos: compreensão de tarefa, de ponto-chave, expressões em situação e respostas rápidas. Ouça os áudios oficiais e acompanhe a transcrição com tradução. 35 minutos no exame.',
   studyNotes: [

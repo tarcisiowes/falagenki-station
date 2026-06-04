@@ -92,8 +92,6 @@ export interface Section {
   level: LevelId
   titleJa: string
   titlePt: string
-  /** ícone emoji para a navegação */
-  icon: string
   summaryPt: string
   studyNotes: StudyNote[]
   groups: ExerciseGroup[]

@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import {
+  BarChart3, CheckCircle2, ChevronLeft, ChevronRight, Pause, Play, Repeat, RotateCcw, Timer, XCircle,
+} from 'lucide-react'
 import { getSection } from '../data'
 import { JaText } from '../lib/JaText'
 import { useCustom } from '../lib/customStore'
@@ -163,7 +166,7 @@ export function ExamRunnerPage() {
           <div className="muted" style={{ fontSize: 14 }}>
             Tempo médio por questão: <b>{fmtSecs(avgMs)}</b> · Esperado: <b>{expPerQ}s</b> ·{' '}
             Meta de referência: <b>{target}%</b>{' '}
-            {pct >= target ? '— você atingiu a meta 🎉' : '— abaixo da meta, continue praticando'}.
+            {pct >= target ? '— você atingiu a meta' : '— abaixo da meta, continue praticando'}.
           </div>
         </div>
 
@@ -182,7 +185,13 @@ export function ExamRunnerPage() {
                 return (
                   <tr key={r.id}>
                     <td>{r.number}</td>
-                    <td>{r.selected === undefined ? '— em branco' : r.correct ? '✅' : '❌'}</td>
+                    <td>
+                      {r.selected === undefined
+                        ? '— em branco'
+                        : r.correct
+                          ? <CheckCircle2 size={15} color="var(--green)" />
+                          : <XCircle size={15} color="var(--accent)" />}
+                    </td>
                     <td>{r.selected ?? '—'}</td>
                     <td>{r.answer}</td>
                     <td>{fmtSecs(r.ms)}</td>
@@ -205,10 +214,10 @@ export function ExamRunnerPage() {
               navigate('/revisar')
             }}
           >
-            🔁 Enviar erradas para a revisão de hoje
+            <Repeat size={15} /> Enviar erradas para a revisão de hoje
           </button>
-          <button className="btn" onClick={() => window.location.reload()}>↻ Refazer simulado</button>
-          <Link to="/analise" className="btn">📊 Histórico</Link>
+          <button className="btn" onClick={() => window.location.reload()}><RotateCcw size={15} /> Refazer simulado</button>
+          <Link to="/analise" className="btn"><BarChart3 size={15} /> Histórico</Link>
           <Link to="/simulado" className="btn ghost">Voltar</Link>
         </div>
       </div>
@@ -224,18 +233,21 @@ export function ExamRunnerPage() {
   return (
     <div>
       <div className="exam-bar card">
-        <div className={`exam-clock ${low ? 'low' : ''}`}>⏱ {fmtClock(remainingSec)}</div>
+        <div className={`exam-clock ${low ? 'low' : ''}`}><Timer size={20} /> {fmtClock(remainingSec)}</div>
         <div className="muted">questão {idx + 1} / {questions.length} · respondidas {answeredCount}</div>
         <div className="progress accent" style={{ flex: 1, minWidth: 120 }}>
           <i style={{ width: `${(answeredCount / questions.length) * 100}%` }} />
         </div>
-        <button className="btn small" onClick={togglePause}>{paused ? '▶ Retomar' : '⏸ Pausar'}</button>
+        <button className="btn small" onClick={togglePause}>
+          {paused ? <><Play size={14} /> Retomar</> : <><Pause size={14} /> Pausar</>}
+        </button>
         <button className="btn small primary" onClick={finish}>Finalizar</button>
       </div>
 
       {paused && (
         <div className="card" style={{ padding: 30, textAlign: 'center', margin: '14px 0' }}>
-          ⏸ Pausado. O cronômetro está parado. <button className="btn small primary" onClick={togglePause}>Retomar</button>
+          <Pause size={16} /> Pausado. O cronômetro está parado.{' '}
+          <button className="btn small primary" onClick={togglePause}><Play size={14} /> Retomar</button>
         </div>
       )}
 
@@ -268,7 +280,7 @@ export function ExamRunnerPage() {
       )}
 
       <div className="exam-nav">
-        <button className="btn" disabled={idx === 0} onClick={() => goTo(idx - 1)}>« Anterior</button>
+        <button className="btn" disabled={idx === 0} onClick={() => goTo(idx - 1)}><ChevronLeft size={15} /> Anterior</button>
         <div className="exam-dots">
           {questions.map((qq, i) => (
             <button
@@ -281,7 +293,7 @@ export function ExamRunnerPage() {
             </button>
           ))}
         </div>
-        <button className="btn" disabled={idx === questions.length - 1} onClick={() => goTo(idx + 1)}>Próxima »</button>
+        <button className="btn" disabled={idx === questions.length - 1} onClick={() => goTo(idx + 1)}>Próxima <ChevronRight size={15} /></button>
       </div>
     </div>
   )

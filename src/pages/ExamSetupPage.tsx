@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
+import { BarChart3, Play, Timer } from 'lucide-react'
 import { levels } from '../data'
 import { useCustom } from '../lib/customStore'
 import { examableSections, examDurationSec } from '../lib/dataAccess'
+import { SectionIcon } from '../components/icons'
 
 function fmtMin(sec: number): string {
   const m = Math.floor(sec / 60)
@@ -19,7 +21,7 @@ export function ExamSetupPage() {
       </div>
 
       <div className="hero" style={{ padding: '24px 28px' }}>
-        <div className="ja-big ja">⏱ 模擬試験 — Simulado cronometrado</div>
+        <div className="ja-big ja"><Timer size={18} /> 模擬試験 — Simulado cronometrado</div>
         <h1 style={{ margin: '4px 0' }}>Treine no tempo da prova</h1>
         <p>
           Cada seção tem um tempo-alvo baseado no ritmo do exame. Você responde uma questão por vez,
@@ -27,7 +29,7 @@ export function ExamSetupPage() {
           <b> análise</b>: tempo gasto em cada questão, acertos, erros, médias e o tempo esperado.
         </p>
         <div style={{ marginTop: 10 }}>
-          <Link to="/analise" className="btn small">📊 Ver histórico e análise</Link>
+          <Link to="/analise" className="btn small"><BarChart3 size={15} /> Ver histórico e análise</Link>
         </div>
       </div>
 
@@ -47,12 +49,12 @@ export function ExamSetupPage() {
                     to={`/simulado/${level.id}/${section.id}`}
                     className="card section-tile"
                   >
-                    <div className="ic">{section.icon}</div>
+                    <div className="ic"><SectionIcon id={section.id} size={28} /></div>
                     <h3>{section.titlePt}</h3>
                     <p>{count} questões · tempo-alvo {fmtMin(dur)}</p>
                     <div className="prog-label" style={{ marginTop: 12 }}>
                       <span>≈ {Math.round(dur / count)}s por questão (esperado)</span>
-                      <span>▶ iniciar</span>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}><Play size={13} /> iniciar</span>
                     </div>
                   </Link>
                 )
