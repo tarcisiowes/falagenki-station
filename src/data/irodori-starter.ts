@@ -3577,13 +3577,230 @@ const lesson17: Section = {
   audios: attachScripts(17, L17_SCRIPTS),
 }
 
-// ---- Lição 18 (estrutura por tópico; exercícios em construção) ------
-const others: Section[] = [
-  scaffold(18, 'Dias de folga', '温泉に行きたいです', 'Quero ir a um onsen', [
-    'Perguntar e responder o que quer fazer nas folgas.',
-    'Dizer de forma simples o que quer fazer no Japão.',
-  ]),
-]
+const lesson18Group: ExerciseGroup = {
+  id: 'iro-s-l18',
+  title: '温泉に入りたいです',
+  subtitlePt: 'Dias de folga · dizer o que quer fazer na folga e no Japão (〜たいです), encadear frases (あと／それから／それに／でも) e contar uma viagem',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l18-1', number: 1, prompt: 'A forma 「V-たいです」 (ex.: {温泉|おんせん}に{入|はい}りたいです) expressa:', choices: [{ n: 1, text: 'desejo/vontade de fazer algo (quero …)' }, { n: 2, text: 'passado' }, { n: 3, text: 'obrigação' }, { n: 4, text: 'convite' }], answer: 1, translationPt: 'Quero entrar num onsen.', explanationPt: 'V-たいです = querer fazer. Usada para dizer o que quer fazer na folga e no Japão. (Nota ➊)' },
+    { id: 'iro-s-l18-2', number: 2, prompt: 'Como se forma 「V-たいです」 a partir da forma ます?', choices: [{ n: 1, text: 'tirar ます e acrescentar たいです ({買|か}います→{買|か}いたいです)' }, { n: 2, text: 'acrescentar たいです à forma de dicionário' }, { n: 3, text: 'trocar ます por ました' }, { n: 4, text: 'acrescentar てください' }], answer: 1, explanationPt: 'Tira-se ます da forma ます e junta-se たいです. {買|か}います→{買|か}いたいです, {見|み}ます→{見|み}たいです. (Nota ➊)' },
+    { id: 'iro-s-l18-3', number: 3, prompt: 'Com 「〜たい」, a partícula を do objeto costuma mudar para:', choices: [{ n: 1, text: 'が ({炊飯器|すいはんき}を{買|か}います → {炊飯器|すいはんき}が{買|か}いたいです)' }, { n: 2, text: 'は' }, { n: 3, text: 'に' }, { n: 4, text: 'で' }], answer: 1, explanationPt: '⚠️ Como 〜たい é parecido com o イ-adjetivo ほしい, o を do objeto vira が com frequência: {炊飯器|すいはんき}が{買|か}いたいです. (Nota ➊)' },
+    { id: 'iro-s-l18-4', number: 4, prompt: '「どこか{旅行|りょこう}したいです」 — o que significa どこか?', choices: [{ n: 1, text: 'em algum lugar (sem especificar onde)' }, { n: 2, text: 'em lugar nenhum' }, { n: 3, text: 'onde?' }, { n: 4, text: 'em todo lugar' }], answer: 1, translationPt: 'Quero viajar para algum lugar.', explanationPt: 'どこか = algum lugar (quando não se especifica o local). {今度|こんど}の{連休|れんきゅう}、どこか{行|い}きたいです。 (Nota ➋)' },
+    { id: 'iro-s-l18-5', number: 5, prompt: 'Diferença entre 「どこ／どこか／どこにも」:', choices: [{ n: 1, text: 'onde? / em algum lugar / (não) em lugar nenhum (+ verbo neg.)' }, { n: 2, text: 'aqui / ali / lá' }, { n: 3, text: 'quando / quanto / quem' }, { n: 4, text: 'algo / alguém / algum lugar' }], answer: 1, explanationPt: 'どこ (onde?), どこか (algum lugar), どこにも + verbo negativo (a lugar nenhum: {連休|れんきゅう}は、どこにも{行|い}きません). (Nota ➋)' },
+    { id: 'iro-s-l18-6', number: 6, prompt: 'Sobre 「{何|なに}／{何|なに}か／{何|なに}も」:', choices: [{ n: 1, text: 'o quê? / alguma coisa / (não) nada — e {何|なに}か será estudado no {初級|しょきゅう}1' }, { n: 2, text: 'todos significam “o quê?”' }, { n: 3, text: 'quem / alguém / ninguém' }, { n: 4, text: 'onde / algum lugar / lugar nenhum' }], answer: 1, explanationPt: '{何|なに} (o quê?), {何|なに}か (alguma coisa: {何|なに}か{食|た}べたいです), {何|なに}も + neg. (nada: {何|なに}も{食|た}べませんでした). ⚠️ {何|なに}か é só apresentado; estuda-se a fundo no {初級|しょきゅう}1. (Nota ➋)' },
+    { id: 'iro-s-l18-7', number: 7, prompt: 'O conectivo 「あと」 (em 「{雪|ゆき}が{見|み}たいです。あと、{温泉|おんせん}に{入|はい}りたいです」) significa:', choices: [{ n: 1, text: 'e também / além disso (acrescenta outro item) — comum na fala' }, { n: 2, text: 'mas / porém' }, { n: 3, text: 'depois disso (ordem no tempo)' }, { n: 4, text: 'por isso' }], answer: 1, explanationPt: 'あと = e também/além disso; conectivo que indica adição, muito usado na fala. {何|なに}が{食|た}べたい？ → おすしが{食|た}べたいです。あと、ラーメンも。 (Nota ➌)' },
+    { id: 'iro-s-l18-8', number: 8, prompt: 'A partícula 「へ」 em 「{京都|きょうと}へ{行|い}きたいです」:', choices: [{ n: 1, text: 'indica direção (lê-se “e”) e pode ser trocada por に' }, { n: 2, text: 'indica objeto direto' }, { n: 3, text: 'marca o tema da frase' }, { n: 4, text: 'indica lugar onde a ação ocorre' }], answer: 1, explanationPt: 'へ marca direção, vem depois do lugar, escreve-se へ mas lê-se [e]. Usa-se com verbos de movimento ({行|い}く・{来|く}る・{帰|かえ}る). Pode virar に: {京都|きょうと}に{行|い}きたいです. (Nota ➍)' },
+    { id: 'iro-s-l18-9', number: 9, prompt: 'O conectivo 「それから」 (em 「{露天風呂|ろてんぶろ}に{入|はい}りました。それから、{天|てん}ぷらを{食|た}べました」) liga frases:', choices: [{ n: 1, text: 'na ordem do tempo (e depois / em seguida)' }, { n: 2, text: 'em contraste (mas)' }, { n: 3, text: 'somando opiniões iguais (além disso)' }, { n: 4, text: 'explicando a causa' }], answer: 1, explanationPt: 'それから = e depois; conectivo que põe duas ações em ordem cronológica. お{寺|てら}を{見|み}ました。それから、{店|みせ}に{行|い}きました。 (Nota ➎)' },
+    { id: 'iro-s-l18-10', number: 10, prompt: 'O conectivo 「それに」 (em 「{気持|きも}ちよかったです。それに、{景色|けしき}もきれいでした」) significa:', choices: [{ n: 1, text: 'além disso (soma comentários no mesmo sentido / paralelo)' }, { n: 2, text: 'mas / porém (contraste)' }, { n: 3, text: 'e depois (ordem no tempo)' }, { n: 4, text: 'por exemplo' }], answer: 1, explanationPt: 'それに = além disso; indica que as duas frases estão em relação paralela (mesmo sentido). (Nota ➏)' },
+    { id: 'iro-s-l18-11', number: 11, prompt: 'O conectivo 「でも」 (em 「おいしかったです。でも、ちょっと{高|たか}かったです」) indica:', choices: [{ n: 1, text: 'contraste (mas / porém)' }, { n: 2, text: 'adição (além disso)' }, { n: 3, text: 'ordem no tempo (depois)' }, { n: 4, text: 'causa (por isso)' }], answer: 1, explanationPt: 'でも = mas; conectivo que mostra oposição de sentido entre as duas frases. お{風呂|ふろ}はよかったです。でも、{食|た}べ{物|もの}はあまりおいしくなかったです。 (Nota ➏)' },
+    { id: 'iro-s-l18-12', number: 12, prompt: 'Com a partícula 「に」 (ponto de chegada), qual conjunto verbo+partícula está certo?', choices: [{ n: 1, text: '{新幹線|しんかんせん}に{乗|の}る／{温泉|おんせん}に{入|はい}る／{富士山|ふじさん}に{登|のぼ}る／{友|とも}だちに{会|あ}う' }, { n: 2, text: '{新幹線|しんかんせん}を{乗|の}る／{温泉|おんせん}を{入|はい}る' }, { n: 3, text: '{新幹線|しんかんせん}で{乗|の}る／{温泉|おんせん}で{入|はい}る' }, { n: 4, text: '{新幹線|しんかんせん}へ{乗|の}る／{富士山|ふじさん}へ{登|のぼ}る' }], answer: 1, explanationPt: 'Decore verbo + partícula juntos. に (ponto de chegada): 〜に{乗|の}る (embarcar), 〜に{入|はい}る (entrar), 〜に{登|のぼ}る (subir/escalar), 〜に{会|あ}う (encontrar). (Nota ➍ · tabela)' },
+    { id: 'iro-s-l18-13', number: 13, prompt: 'A partícula 「を」 aparece com objeto e também com ponto de saída. Qual exemplo usa を como ponto de saída?', choices: [{ n: 1, text: 'バスを{降|お}ります ({降|お}りる = descer/saltar do ônibus)' }, { n: 2, text: '{炊飯器|すいはんき}を{買|か}います' }, { n: 3, text: '{京都|きょうと}を{行|い}きます' }, { n: 4, text: '{温泉|おんせん}を{入|はい}ります' }], answer: 1, explanationPt: 'を = objeto ({炊飯器|すいはんき}を{買|か}う) e ponto de saída (バスを{降|お}りる). ⚠️ Para “ir a/entrar em” usa-se へ/に, não を. (Nota ➍ · tabela)' },
+    { id: 'iro-s-l18-14', number: 14, prompt: 'As palavras 「もうすぐ／{夏休|なつやす}み／{連休|れんきゅう}／ゴールデンウィーク／{予定|よてい}」 significam:', choices: [{ n: 1, text: 'já já (logo) / férias de verão / feriado prolongado / Golden Week / planos' }, { n: 2, text: 'agora / inverno / fim de semana / Ano-Novo / horário' }, { n: 3, text: 'ontem / outono / segunda / festival / preço' }, { n: 4, text: 'depois / primavera / domingo / aniversário / passeio' }], answer: 1, explanationPt: 'もうすぐ (logo/já já), {夏休|なつやす}み (férias de verão), {連休|れんきゅう} (feriado prolongado), ゴールデンウィーク (Golden Week, feriadão de fim de abril/início de maio), {予定|よてい} (planos). (Seção 1)' },
+    { id: 'iro-s-l18-15', number: 15, prompt: 'As palavras 「お{土産|みやげ}／ぜひ／ほかに／どうして」 significam:', choices: [{ n: 1, text: 'lembrança (souvenir) / com certeza, sem falta / além disso / por quê' }, { n: 2, text: 'presente / talvez / sozinho / como' }, { n: 3, text: 'comida / de novo / primeiro / onde' }, { n: 4, text: 'bagagem / agora / também / quando' }], answer: 1, explanationPt: 'お{土産|みやげ} (lembrança de viagem), ぜひ (com certeza/sem falta: ぜひ{行|い}って), ほかに (além disso), どうして (por quê). (Seção 2)' },
+    { id: 'iro-s-l18-16', number: 16, prompt: 'Na lista a-h de coisas para fazer no Japão, qual conjunto está correto?', choices: [{ n: 1, text: '{富士山|ふじさん}に{登|のぼ}りたい／{新幹線|しんかんせん}に{乗|の}りたい／{雪|ゆき}が{見|み}たい／{温泉|おんせん}に{入|はい}りたい' }, { n: 2, text: '{富士山|ふじさん}を{登|のぼ}りたい／{新幹線|しんかんせん}を{乗|の}りたい' }, { n: 3, text: '{富士山|ふじさん}で{登|のぼ}る／{温泉|おんせん}で{入|はい}る' }, { n: 4, text: '{富士山|ふじさん}へ{乗|の}りたい／{温泉|おんせん}へ{登|のぼ}りたい' }], answer: 1, explanationPt: 'Opções a-h: ディズニーランドに{行|い}きたい, {富士山|ふじさん}に{登|のぼ}りたい, {京都|きょうと}へ{行|い}きたい, {神社|じんじゃ}に{行|い}きたい, {新幹線|しんかんせん}に{乗|の}りたい, {雪|ゆき}が{見|み}たい, どら{焼|や}きが{食|た}べたい, {温泉|おんせん}に{入|はい}りたい. (Seção 2)' },
+    { id: 'iro-s-l18-17', number: 17, prompt: 'As palavras 「{露天風呂|ろてんぶろ}／{景色|けしき}／{鶏|とり}」 significam:', choices: [{ n: 1, text: 'banho ao ar livre (rotenburo) / paisagem / frango' }, { n: 2, text: 'sauna / mapa / peixe' }, { n: 3, text: 'piscina / jardim / carne' }, { n: 4, text: 'banheira / cidade / ovo' }], answer: 1, explanationPt: '{露天風呂|ろてんぶろ} (banho ao ar livre do onsen), {景色|けしき} (paisagem/cenário), {鶏|とり} (frango: {鶏|とり}の{天|てん}ぷら). (Seção 4)' },
+    { id: 'iro-s-l18-18', number: 18, prompt: '「{気持|きも}ちよかったです」 (de {気持|きも}ちいい) significa:', choices: [{ n: 1, text: 'foi gostoso / agradável / revigorante' }, { n: 2, text: 'foi caro' }, { n: 3, text: 'foi cansativo' }, { n: 4, text: 'foi chato' }], answer: 1, explanationPt: '{気持|きも}ちいい = agradável/revigorante; passado {気持|きも}ちよかったです (いい→よかった). {露天風呂|ろてんぶろ}に{入|はい}りました。{気持|きも}ちよかったです。 (Seção 4)' },
+    { id: 'iro-s-l18-19', number: 19, prompt: '「それは、よかったですね」 (resposta a uma boa notícia) significa:', choices: [{ n: 1, text: 'que bom! / que ótimo!' }, { n: 2, text: 'que pena!' }, { n: 3, text: 'tudo bem? (como vai?)' }, { n: 4, text: 'com licença' }], answer: 1, explanationPt: 'それは、よかったですね = que bom!; reação a algo positivo que o outro contou. (Seção 4)' },
+    { id: 'iro-s-l18-20', number: 20, prompt: 'No post de SNS (Seção 3), Chris foi a YOKOHAMA: 「ふねに{乗|の}りました。おもしろかったです」 e termina 「{今度|こんど}は、Landmark Tower にのぼりたいです」. Ele diz que:', choices: [{ n: 1, text: 'andou de barco e da próxima vez quer subir na Landmark Tower' }, { n: 2, text: 'não saiu de casa' }, { n: 3, text: 'foi a um onsen e não gostou' }, { n: 4, text: 'comprou uma arrozeira' }], answer: 1, explanationPt: '{船|ふね}に{乗|の}りました (andei de barco), China Town でごはんを{食|た}べました (comi na China Town), {今度|こんど}は…のぼりたいです (da próxima quero subir). O post conta onde foi, o que fez/como foi e o que quer fazer depois. (Seção 3)' },
+    { id: 'iro-s-l18-21', number: 21, prompt: 'Os kanji 「{温泉|おんせん}／{予定|よてい}／{来週|らいしゅう}」 lêem-se e significam:', choices: [{ n: 1, text: 'おんせん (onsen) / よてい (planos) / らいしゅう (semana que vem)' }, { n: 2, text: 'おんせん / よてい / こんしゅう' }, { n: 3, text: 'ゆせん / よやく / らいげつ' }, { n: 4, text: 'おんせん / ていよ / せんしゅう' }], answer: 1, explanationPt: '{温泉|おんせん} (fonte termal), {予定|よてい} (planos), {来週|らいしゅう} (próxima semana). Kanji da lição. (漢字)' },
+    { id: 'iro-s-l18-22', number: 22, prompt: 'Os kanji 「{会|あ}います／{入|はい}ります／{旅行|りょこう}します」 lêem-se:', choices: [{ n: 1, text: 'あいます (encontrar) / はいります (entrar) / りょこうします (viajar)' }, { n: 2, text: 'かいます / いります / たびこうします' }, { n: 3, text: 'あいます / にゅうります / りょこします' }, { n: 4, text: 'えます / はいります / りょうこうします' }], answer: 1, explanationPt: '{会|あ}います (encontrar-se), {入|はい}ります (entrar), {旅行|りょこう}します (viajar). Ex.: {商店街|しょうてんがい}で{友|とも}だちに{会|あ}いました。 (漢字)' },
+    { id: 'iro-s-l18-23', number: 23, prompt: '🔖 TIPS: 「{君|きみ}の{名|な}は。」 e o 「{須賀神社|すがじんじゃ}」 (que Tawat quer visitar) são:', choices: [{ n: 1, text: 'o anime “Your Name” e um santuário real em Shinjuku que aparece nele' }, { n: 2, text: 'um onsen famoso e sua cidade' }, { n: 3, text: 'um prato típico e seu restaurante' }, { n: 4, text: 'um trem-bala e sua estação' }], answer: 1, explanationPt: '{君|きみ}の{名|な}は。 = “Your Name” (anime de 2016); o {須賀神社|すがじんじゃ}, em {新宿|しんじゅく}, virou ponto turístico por aparecer no filme. (Seção 2 · TIPS)' },
+    { id: 'iro-s-l18-24', number: 24, prompt: '🔖 TIPS: por que Tawat quer comer 「どら{焼|や}き」?', choices: [{ n: 1, text: 'por causa do anime ドラえもん (Doraemon), cujo personagem adora どら{焼|や}き' }, { n: 2, text: 'porque é o doce típico de Hiroshima' }, { n: 3, text: 'porque é barato no konbini' }, { n: 4, text: 'porque viu na Landmark Tower' }], answer: 1, explanationPt: 'どら{焼|や}き = doce japonês (duas panquequinhas com {餡|あん}). Tawat quer por causa do ドラえもん, gato-robô que ama どら{焼|や}き. (Seção 2 · TIPS)' },
+    { id: 'iro-s-l18-25', number: 25, prompt: '🔖 「{別府温泉|べっぷおんせん}」 (onde Shin foi) é:', choices: [{ n: 1, text: 'um famoso conjunto de fontes termais em Beppu (Oita, Kyushu)' }, { n: 2, text: 'um parque de diversões em Tóquio' }, { n: 3, text: 'um santuário em Kyoto' }, { n: 4, text: 'um shopping em Yokohama' }], answer: 1, explanationPt: '{別府温泉|べっぷおんせん} = onsen de Beppu, em {大分|おおいた} (Kyushu), um dos mais famosos do Japão. Shin entrou no {露天風呂|ろてんぶろ} pela 1ª vez. (Seção 4)' },
+    { id: 'iro-s-l18-26', number: 26, prompt: 'Resumo dos conectivos do {入門|にゅうもん} — relacione corretamente:', choices: [{ n: 1, text: 'あと/そして = e também · それから = depois · それに = além disso · でも = mas' }, { n: 2, text: 'あと = mas · でも = e também · それから = porém' }, { n: 3, text: 'それに = depois · それから = além disso · でも = e' }, { n: 4, text: 'todos significam “e”' }], answer: 1, explanationPt: 'Conectivos vistos: あと/そして (e também, adição), それから (e depois, ordem), それに (além disso, paralelo), でも (mas, contraste). (Resumo · Notas ➌➎➏)' },
+    { id: 'iro-s-l18-27', number: 27, prompt: 'Diálogo 18-01: 「もうすぐ{夏休|なつやす}みですね。エジーニョさんはどうしますか？」 — o que Ejinho quer fazer?', context: 'Ｂ：{友|とも}だちが{広島|ひろしま}に{住|す}んでいます。{会|あ}いに{行|い}きたいです。', choices: [{ n: 1, text: 'Ir a Hiroshima visitar um amigo que mora lá ({会|あ}いに{行|い}きたい)' }, { n: 2, text: 'Comprar uma arrozeira em Ikebukuro' }, { n: 3, text: 'Ficar descansando em casa' }, { n: 4, text: 'Viajar para algum lugar ainda indefinido' }], answer: 1, explanationPt: '{友|とも}だちが{広島|ひろしま}に{住|す}んでいます。{会|あ}いに{行|い}きたいです = tenho amigo em Hiroshima, quero ir vê-lo. V-ますstem + に{行|い}く = ir para fazer. (Seção 1)' },
+    { id: 'iro-s-l18-28', number: 28, prompt: 'Diálogo 18-02: 「{今度|こんど}の{休|やす}み、{何|なに}をしますか？」 — o que Tanda responde?', context: 'Ｂ：えーと、{池袋|いけぶくろ}に{買|か}い{物|もの}に{行|い}きます。{炊飯器|すいはんき}が{買|か}いたいです。', choices: [{ n: 1, text: 'Vai a Ikebukuro fazer compras; quer comprar uma arrozeira ({炊飯器|すいはんき}が{買|か}いたい)' }, { n: 2, text: 'Vai visitar um amigo em Hiroshima' }, { n: 3, text: 'Não vai a lugar nenhum' }, { n: 4, text: 'Quer entrar num onsen' }], answer: 1, explanationPt: '{池袋|いけぶくろ}に{買|か}い{物|もの}に{行|い}きます (vou a Ikebukuro fazer compras), {炊飯器|すいはんき}が{買|か}いたいです (quero comprar uma arrozeira — を→が). (Seção 1 · Nota ➊)' },
+    { id: 'iro-s-l18-29', number: 29, prompt: 'Diálogo 18-03: 「{来週|らいしゅう}の{連休|れんきゅう}、どこか{行|い}きますか？」 — o que Chris responde?', context: 'Ｂ：いえ、どこにも{行|い}きません。うちでゆっくりしたいです。', choices: [{ n: 1, text: 'Não vai a lugar nenhum; quer descansar em casa (うちでゆっくりしたい)' }, { n: 2, text: 'Vai viajar para algum lugar' }, { n: 3, text: 'Vai subir o Monte Fuji' }, { n: 4, text: 'Vai comprar uma arrozeira' }], answer: 1, explanationPt: 'どこにも{行|い}きません (não vou a lugar nenhum) + うちでゆっくりしたいです (quero relaxar em casa). (Seção 1 · Nota ➋)' },
+    { id: 'iro-s-l18-30', number: 30, prompt: 'Diálogo 18-04: 「ゴールデンウィークの{予定|よてい}は？」 — o que Nimari responde?', context: 'Ｂ：まだ、わかりません。でも、どこか{旅行|りょこう}したいです。', choices: [{ n: 1, text: 'Ainda não sabe, mas quer viajar para algum lugar (どこか{旅行|りょこう}したい)' }, { n: 2, text: 'Vai ficar em casa o feriado todo' }, { n: 3, text: 'Vai visitar um amigo em Hiroshima' }, { n: 4, text: 'Já tem tudo planejado' }], answer: 1, explanationPt: 'まだ、わかりません (ainda não sei) + でも、どこか{旅行|りょこう}したいです (mas quero viajar para algum lugar). (Seção 1 · Nota ➋)' },
+    { id: 'iro-s-l18-31', number: 31, prompt: 'Diálogo 18-10: o que Tien quer fazer no Japão?', context: 'ティエン：{私|わたし}は、{新幹線|しんかんせん}に{乗|の}りたいです。{京都|きょうと}へ{行|い}きたいです。あと、{富士山|ふじさん}に{登|のぼ}りたいです。', choices: [{ n: 1, text: 'Andar de trem-bala, ir a Kyoto e subir o Monte Fuji' }, { n: 2, text: 'Ver neve e entrar num onsen' }, { n: 3, text: 'Ir à Disneylândia e comer dorayaki' }, { n: 4, text: 'Ir ao santuário Suga' }], answer: 1, explanationPt: '{新幹線|しんかんせん}に{乗|の}りたい (andar de shinkansen), {京都|きょうと}へ{行|い}きたい (ir a Kyoto), あと、{富士山|ふじさん}に{登|のぼ}りたい (e subir o Fuji). Mila quer {雪|ゆき}/温泉; Tawat o santuário Suga e どら{焼|や}き. (Seção 2 · Notas ➌➍)' },
+    { id: 'iro-s-l18-32', number: 32, prompt: 'Diálogo 18-10: por que Tawat quer ir ao 須賀神社 e comer どら焼き?', context: 'タワット：{新宿|しんじゅく}の{須賀神社|すがじんじゃ}に{行|い}きたいです。…あと、どら{焼|や}きが{食|た}べたいです。', choices: [{ n: 1, text: 'Por causa dos animes — o santuário de 「{君|きみ}の{名|な}は。」 e a どら{焼|や}き do ドラえもん' }, { n: 2, text: 'Porque são baratos' }, { n: 3, text: 'Porque ficam perto da casa dele' }, { n: 4, text: 'Porque o Shimizu recomendou' }], answer: 1, explanationPt: 'Tawat é fã de anime: o {須賀神社|すがじんじゃ} aparece em {君|きみ}の{名|な}は。 e a どら{焼|や}き é o doce favorito do ドラえもん. またアニメですか？ (de novo anime?). (Seção 2 · TIPS)' },
+    { id: 'iro-s-l18-33', number: 33, prompt: 'Diálogo 18-14: Shin foi ao 別府温泉. O que ele conta e o que quer fazer depois?', context: 'シン：はじめて{露天風呂|ろてんぶろ}に{入|はい}りました。{気持|きも}ちよかったです。…また{温泉|おんせん}に{行|い}きたいです。{今度|こんど}は、{雪|ゆき}の{露天風呂|ろてんぶろ}に{入|はい}りたいです。', choices: [{ n: 1, text: 'Entrou num rotenburo pela 1ª vez (foi ótimo) e quer voltar para um banho ao ar livre na neve' }, { n: 2, text: 'Achou tudo ruim e não quer voltar' }, { n: 3, text: 'Não foi a lugar nenhum' }, { n: 4, text: 'Só comprou lembranças' }], answer: 1, explanationPt: 'はじめて{露天風呂|ろてんぶろ}に{入|はい}りました。{気持|きも}ちよかったです。それに、{景色|けしき}もきれいでした。それから、{鶏|とり}の{天|てん}ぷらを{食|た}べました…でも、ちょっと{高|たか}かったです。また{温泉|おんせん}に{行|い}きたいです (quer voltar; {今度|こんど}は{雪|ゆき}の{露天風呂|ろてんぶろ}). (Seção 4 · Notas ➎➏)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 18 (聴解スクリプト)
+const L18_SCRIPTS: Record<string, ScriptItem[]> = {
+  '18-01': [
+    {
+      label: '会話① (18-01)',
+      setupJa: '{休|やす}みの{予定|よてい}について{話|はな}しています。',
+      setupPt: 'Conversam sobre os planos para a folga.',
+      lines: [
+        { speaker: 'A', ja: 'もうすぐ{夏休|なつやす}みですね。エジーニョさんはどうしますか？', pt: 'Logo já são as férias de verão, né? Ejinho, o que você vai fazer?' },
+        { speaker: 'B', ja: '{友|とも}だちが{広島|ひろしま}に{住|す}んでいます。{会|あ}いに{行|い}きたいです。', pt: 'Tenho um amigo que mora em Hiroshima. Quero ir visitá-lo.' },
+        { speaker: 'A', ja: 'へー、いいですね。', pt: 'Nossa, que bom.' },
+      ],
+    },
+  ],
+  '18-02': [
+    {
+      label: '会話② (18-02)',
+      lines: [
+        { speaker: 'A', ja: 'タンダーさん、{今度|こんど}の{休|やす}み、{何|なに}をしますか？', pt: 'Tanda, o que você vai fazer na próxima folga?' },
+        { speaker: 'B', ja: 'えーと、{池袋|いけぶくろ}に{買|か}い{物|もの}に{行|い}きます。{炊飯器|すいはんき}が{買|か}いたいです。', pt: 'Hmm, vou fazer compras em Ikebukuro. Quero comprar uma arrozeira.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '18-03': [
+    {
+      label: '会話③ (18-03)',
+      lines: [
+        { speaker: 'A', ja: 'クリスさんは、{来週|らいしゅう}の{連休|れんきゅう}、どこか{行|い}きますか？', pt: 'Chris, no feriadão da semana que vem, você vai a algum lugar?' },
+        { speaker: 'B', ja: 'いえ、どこにも{行|い}きません。うちでゆっくりしたいです。', pt: 'Não, não vou a lugar nenhum. Quero descansar em casa.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '18-04': [
+    {
+      label: '会話④ (18-04)',
+      lines: [
+        { speaker: 'A', ja: 'ニマーリさん、ゴールデンウィークの{予定|よてい}は？', pt: 'Nimari, quais são seus planos para a Golden Week?' },
+        { speaker: 'B', ja: 'まだ、わかりません。でも、どこか{旅行|りょこう}したいです。', pt: 'Ainda não sei. Mas quero viajar para algum lugar.' },
+        { speaker: 'A', ja: 'いいですね。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+  '18-10': [
+    {
+      label: '会話 (18-10)',
+      setupJa: 'ミラさん、ティエンさん、タワットさんは、{同|おな}じ{会社|かいしゃ}の{同僚|どうりょう}で、{日本|にほん}に{来|き}たばかりです。{休|やす}み{時間|じかん}に{同僚|どうりょう}の{清水|しみず}さんがお{土産|みやげ}のお{菓子|かし}を{持|も}って{来|き}ました。',
+      setupPt: 'Mila, Tien e Tawat são colegas da mesma empresa e acabaram de chegar ao Japão. No intervalo, o colega Shimizu traz doces de lembrança.',
+      lines: [
+        { speaker: '清水', ja: 'これ、ディズニーランドのお{土産|みやげ}。みなさん、どうぞ。', pt: 'Estes são lembrancinhas da Disneylândia. Sirvam-se, pessoal.' },
+        { speaker: 'ミラ', ja: 'わあ、{清水|しみず}さん、ありがとうございます。ディズニーランド、{行|い}きたいです。', pt: 'Ah, Shimizu, obrigada. Eu quero ir à Disneylândia.' },
+        { speaker: '清水', ja: 'おもしろいよ。ぜひ{行|い}って。', pt: 'É divertido. Vá sem falta.' },
+        { speaker: '清水', ja: 'ミラさんは、ほかに、{日本|にほん}で{何|なに}がしたい？', pt: 'Mila, o que mais você quer fazer no Japão?' },
+        { speaker: 'ミラ', ja: 'そうですねえ、{雪|ゆき}が{見|み}たいです。あと、{温泉|おんせん}に{入|はい}りたいです。', pt: 'Deixa ver… quero ver neve. E também quero entrar num onsen.' },
+        { speaker: '清水', ja: 'へー、いいね。', pt: 'Nossa, que legal.' },
+        { speaker: '清水', ja: 'ティエンさんは？', pt: 'E você, Tien?' },
+        { speaker: 'ティエン', ja: '{私|わたし}は、{新幹線|しんかんせん}に{乗|の}りたいです。{京都|きょうと}へ{行|い}きたいです。', pt: 'Eu quero andar de trem-bala. Quero ir a Kyoto.' },
+        { speaker: '清水', ja: 'ああ、{京都|きょうと}、いいね。', pt: 'Ah, Kyoto, que bom.' },
+        { speaker: 'ティエン', ja: 'あと、{富士山|ふじさん}に{登|のぼ}りたいです。', pt: 'E também quero subir o Monte Fuji.' },
+        { speaker: '清水', ja: 'すごい！', pt: 'Que demais!' },
+        { speaker: '清水', ja: 'タワットさんは？', pt: 'E você, Tawat?' },
+        { speaker: 'タワット', ja: '{私|わたし}は、{新宿|しんじゅく}の{須賀神社|すがじんじゃ}に{行|い}きたいです。', pt: 'Eu quero ir ao santuário Suga, em Shinjuku.' },
+        { speaker: '清水', ja: 'え？　すが…{神社|じんじゃ}？　どこ？', pt: 'Hã? Suga… santuário? Onde fica?' },
+        { speaker: 'ミラ', ja: 'あ！　アニメの、『{君|きみ}の{名|な}は。』の{神社|じんじゃ}ですか？', pt: 'Ah! É o santuário do anime “Your Name”?' },
+        { speaker: 'タワット', ja: 'はい！', pt: 'Isso!' },
+        { speaker: '清水', ja: 'ふーん。', pt: 'Hmm, sei.' },
+        { speaker: 'タワット', ja: 'あと、どら{焼|や}きが{食|た}べたいです。', pt: 'E também quero comer dorayaki.' },
+        { speaker: '清水', ja: 'どら{焼|や}き？　どうして？', pt: 'Dorayaki? Por quê?' },
+        { speaker: 'ティエン', ja: 'またアニメですか？', pt: 'De novo anime?' },
+        { speaker: 'タワット', ja: 'はい。『ドラえもん』です。', pt: 'Sim. É por causa do Doraemon.' },
+      ],
+    },
+  ],
+  '18-14': [
+    {
+      label: '会話 (18-14)',
+      setupJa: 'シンさんと{川口|かわぐち}さんは、{会社|かいしゃ}の{同僚|どうりょう}です。シンさんは、{川口|かわぐち}さんに{週末|しゅうまつ}にしたことについて{話|はな}しています。',
+      setupPt: 'Shin e Kawaguchi são colegas de trabalho. Shin conta a Kawaguchi o que fez no fim de semana.',
+      lines: [
+        { speaker: '川口', ja: 'シンさん、{週末|しゅうまつ}、{何|なに}をしましたか？', pt: 'Shin, o que você fez no fim de semana?' },
+        { speaker: 'シン', ja: '{友|とも}だちと、{別府温泉|べっぷおんせん}に{行|い}きました。', pt: 'Fui ao onsen de Beppu com amigos.' },
+        { speaker: '川口', ja: 'へー、どうでしたか？', pt: 'Nossa, como foi?' },
+        { speaker: 'シン', ja: 'はじめて{露天風呂|ろてんぶろ}に{入|はい}りました。{気持|きも}ちよかったです。', pt: 'Entrei num banho ao ar livre pela primeira vez. Foi muito gostoso.' },
+        { speaker: '川口', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'シン', ja: 'それに、{景色|けしき}もきれいでした。', pt: 'E além disso, a paisagem também era linda.' },
+        { speaker: '川口', ja: 'それは、よかったですね。', pt: 'Que bom!' },
+        { speaker: 'シン', ja: 'それから、{温泉|おんせん}の{近|ちか}くで、{鶏|とり}の{天|てん}ぷらを{食|た}べました。おいしかったです。でも、ちょっと{高|たか}かったです。', pt: 'Depois, comi tempurá de frango perto do onsen. Estava gostoso. Mas era um pouco caro.' },
+        { speaker: '川口', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'シン', ja: 'また{温泉|おんせん}に{行|い}きたいです。{今度|こんど}は、{雪|ゆき}の{露天風呂|ろてんぶろ}に{入|はい}りたいです。', pt: 'Quero voltar ao onsen. Da próxima vez, quero entrar num banho ao ar livre na neve.' },
+        { speaker: '川口', ja: 'あー、いいですね。', pt: 'Ah, que ótimo.' },
+      ],
+    },
+  ],
+}
+
+const lesson18: Section = {
+  id: 'lesson-18',
+  level: 'starter',
+  titleJa: '第18課 温泉に入りたいです',
+  titlePt: 'Lição 18 — Quero entrar num onsen',
+  summaryPt: 'Dias de folga · dizer o que quer fazer na folga e no Japão com 〜たいです (温泉に入りたいです／炊飯器が買いたいです／どこか旅行したいです), encadear frases com あと／それから／それに／でも, usar as partículas へ／に (direção e ponto de chegada), escrever um post simples de SNS sobre o passeio e falar de uma viagem e suas impressões.',
+  studyNotes: [
+    {
+      title: 'Tópico: Dias de folga (o que quero fazer)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Perguntar e responder o que quer fazer na folga.\n' +
+        '- Dizer de forma simples o que quer fazer no Japão.\n' +
+        '- Dar uma resposta simples quando perguntam o que quer fazer no Japão.\n' +
+        '- Escrever um post curto de rede social sobre o que fez na folga.\n' +
+        '- Falar de forma simples sobre uma viagem e suas impressões.',
+    },
+    {
+      title: 'Desejo: V-たいです (➊)',
+      bodyPt:
+        'Para dizer **o que se quer fazer**:\n\n' +
+        '- Tira-se ます da forma ます e acrescenta-se **たいです**.\n' +
+        '- `{買|か}います → {買|か}いたいです` (quero comprar) · `{見|み}ます → {見|み}たいです` (quero ver) · `{入|はい}ります → {入|はい}りたいです` (quero entrar).\n\n' +
+        '⚠️ Como 〜たい lembra o イ-adjetivo **ほしい**, a partícula **を** do objeto costuma virar **が**:\n' +
+        '`{炊飯器|すいはんき}を{買|か}います` → `{炊飯器|すいはんき}が{買|か}いたいです`.\n\n' +
+        '💡 Usada nesta lição para falar o que quer fazer na folga e no Japão: {温泉|おんせん}に{入|はい}りたいです, {馬|うま}に{乗|の}りたいです.',
+    },
+    {
+      title: 'Interrogativo indefinido: どこか／何か (➋)',
+      bodyPt:
+        '**どこか** = algum lugar (sem especificar onde): `どこか{旅行|りょこう}したいです`.\n\n' +
+        '| | onde/o quê? | indefinido (algum) | negativo (nenhum) |\n|---|---|---|---|\n' +
+        '| lugar | どこ | **どこか** | どこにも + neg. |\n' +
+        '| coisa | {何|なに} | **{何|なに}か** | {何|なに}も + neg. |\n\n' +
+        '- `{連休|れんきゅう}は、どこにも{行|い}きません` (não vou a lugar nenhum).\n' +
+        '- `{何|なに}か{食|た}べたいです` (quero comer alguma coisa) · `{何|なに}も{食|た}べませんでした` (não comi nada).\n\n' +
+        '📌 **{何|なに}か** só é apresentado aqui; será estudado a fundo no **{初級|しょきゅう}1**.',
+    },
+    {
+      title: 'Conectivos de adição: あと／それに (➌➏)',
+      bodyPt:
+        'Para **somar** itens ou comentários:\n\n' +
+        '- **あと** = e também / além disso (acrescenta outro item; comum na fala): `{雪|ゆき}が{見|み}たいです。あと、{温泉|おんせん}に{入|はい}りたいです。`\n' +
+        '- **それに** = além disso (liga frases em **paralelo**, mesmo sentido): `{気持|きも}ちよかったです。それに、{景色|けしき}もきれいでした。`\n\n' +
+        '💡 Conectivos servem para mostrar a relação entre as frases e deixam o texto mais claro.',
+    },
+    {
+      title: 'Partículas de direção/chegada: へ／に (➍)',
+      bodyPt:
+        '**へ** = direção, vem depois do lugar. Escreve-se へ mas **lê-se [e]**. Usa-se com verbos de movimento ({行|い}く・{来|く}る・{帰|かえ}る): `{京都|きょうと}へ{行|い}きたいです`.\n\n' +
+        '➡️ Esse へ **pode ser trocado por に**: {京都|きょうと}に{行|い}きたいです.\n\n' +
+        'Decore **verbo + partícula** como um conjunto:\n\n' +
+        '| partícula | uso | exemplo |\n|---|---|---|\n' +
+        '| を | objeto | {炊飯器|すいはんき}**を**{買|か}う |\n' +
+        '| を | ponto de saída | バス**を**{降|お}りる |\n' +
+        '| へ | direção | {京都|きょうと}**へ**{行|い}く |\n' +
+        '| に | ponto de chegada | {空港|くうこう}**に**{行|い}く |\n' +
+        '| に | (embarcar) | {新幹線|しんかんせん}**に**{乗|の}る |\n' +
+        '| に | (entrar) | {温泉|おんせん}**に**{入|はい}る |\n' +
+        '| に | (subir/escalar) | {富士山|ふじさん}**に**{登|のぼ}る |\n' +
+        '| に | (encontrar) | {友|とも}だち**に**{会|あ}う |',
+    },
+    {
+      title: 'Conectivos de ordem e contraste: それから／でも (➎➏)',
+      bodyPt:
+        '- **それから** = e depois / em seguida (põe duas ações em **ordem no tempo**): `{露天風呂|ろてんぶろ}に{入|はい}りました。それから、{鶏|とり}の{天|てん}ぷらを{食|た}べました。`\n' +
+        '- **でも** = mas / porém (mostra **contraste** de sentido): `おいしかったです。でも、ちょっと{高|たか}かったです。`\n\n' +
+        '🔖 **Resumo dos conectivos do 入門:** あと (e também, L18), そして (e então, L17), それから (e depois, L18), それに (além disso, L18), でも (mas, L18).',
+    },
+    {
+      title: 'Vocabulário, post de SNS e Kanji (Seções 1-3 · TIPS)',
+      bodyPt:
+        '**Folga (Seção 1):** もうすぐ (logo/já já), {夏休|なつやす}み (férias de verão), {連休|れんきゅう} (feriado prolongado), ゴールデンウィーク (Golden Week), {予定|よてい} (planos).\n\n' +
+        '**No Japão (Seção 2):** お{土産|みやげ} (lembrança), ぜひ (com certeza/sem falta), ほかに (além disso), どうして (por quê), {行|い}って (vá!). Quero: ディズニーランド, {富士山|ふじさん}に{登|のぼ}る, {京都|きょうと}, {神社|じんじゃ}, {新幹線|しんかんせん}に{乗|の}る, {雪|ゆき}を{見|み}る, どら{焼|や}き, {温泉|おんせん}に{入|はい}る.\n\n' +
+        '**Viagem (Seção 4):** {露天風呂|ろてんぶろ} (banho ao ar livre), {景色|けしき} (paisagem), {鶏|とり} (frango), それは、よかったですね (que bom!), {気持|きも}ちよかった (foi gostoso).\n\n' +
+        '**SNS (Seção 3):** conta onde foi, o que fez/como foi e o que quer fazer depois. Ex.: {横浜|よこはま}に{行|い}きました。{船|ふね}に{乗|の}りました。おもしろかったです。{今度|こんど}は、のぼりたいです。\n\n' +
+        '**Kanji da lição:** {温泉|おんせん}, {予定|よてい}, {来週|らいしゅう}, {会|あ}います, {入|はい}ります, {旅行|りょこう}します.\n\n' +
+        '📌 **TIPS:** 『{君|きみ}の{名|な}は。』 (anime “Your Name”, 2016) — o {須賀神社|すがじんじゃ}, em {新宿|しんじゅく}, virou ponto turístico por aparecer no filme; ドラえもん (gato-robô que adora どら{焼|や}き); {別府温泉|べっぷおんせん} (famoso onsen em {大分|おおいた}, Kyushu).',
+    },
+  ],
+  groups: [lesson18Group],
+  audios: attachScripts(18, L18_SCRIPTS),
+}
+
+const others: Section[] = []
 
 export const irodoriStarter: Level = {
   id: 'starter',
@@ -3591,5 +3808,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, lesson17, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, lesson17, lesson18, ...others],
 }
