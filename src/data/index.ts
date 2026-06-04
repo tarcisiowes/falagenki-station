@@ -1,0 +1,22 @@
+import type { Level, LevelId, Section, SectionId } from './types'
+import { n5 } from './n5'
+import { n4 } from './n4'
+
+export const levels: Level[] = [n5, n4]
+
+export function getLevel(id: string | undefined): Level | undefined {
+  return levels.find((l) => l.id === id)
+}
+
+export function getSection(
+  levelId: string | undefined,
+  sectionId: string | undefined,
+): { level: Level; section: Section } | undefined {
+  const level = getLevel(levelId)
+  if (!level) return undefined
+  const section = level.sections.find((s) => s.id === sectionId)
+  if (!section) return undefined
+  return { level, section }
+}
+
+export type { Level, LevelId, Section, SectionId }
