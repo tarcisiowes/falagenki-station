@@ -3365,13 +3365,220 @@ const lesson16: Section = {
   audios: attachScripts(16, L16_SCRIPTS),
 }
 
-// ---- Lições 17 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson17Group: ExerciseGroup = {
+  id: 'iro-s-l17',
+  title: '映画を見に行きました',
+  subtitlePt: 'Dias de folga · falar no passado o que fez e suas impressões, ler posts e tabelas de preço, mandar mensagem ao chegar em casa',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l17-1', number: 1, prompt: 'A forma 「〜ました」 (ex.: {映画|えいが}を{見|み}ました) indica:', choices: [{ n: 1, text: 'passado afirmativo (fiz / aconteceu)' }, { n: 2, text: 'futuro' }, { n: 3, text: 'passado negativo' }, { n: 4, text: 'convite' }], answer: 1, explanationPt: '〜ます → 〜ました = passado afirmativo. {見|み}ます → {見|み}ました (vi). (Nota ➊)' },
+    { id: 'iro-s-l17-2', number: 2, prompt: 'A forma 「〜ませんでした」 indica:', choices: [{ n: 1, text: 'passado negativo (não fiz)' }, { n: 2, text: 'presente negativo' }, { n: 3, text: 'passado afirmativo' }, { n: 4, text: 'futuro negativo' }], answer: 1, explanationPt: '〜ません → 〜ませんでした = passado negativo. {行|い}きません → {行|い}きませんでした (não fui). (Nota ➊)' },
+    { id: 'iro-s-l17-3', number: 3, prompt: '「{映画|えいが}を{見|み}に{行|い}きました」 significa:', choices: [{ n: 1, text: 'fui (ao cinema) ver um filme' }, { n: 2, text: 'vou ver um filme' }, { n: 3, text: 'quero ver um filme' }, { n: 4, text: 'não vi o filme' }], answer: 1, translationPt: 'Fui ver um filme.', explanationPt: 'V-ますstem + に{行|い}く = ir (a algum lugar) para fazer algo. {見|み}に{行|い}きました = fui ver. (Seção 1·2)' },
+    { id: 'iro-s-l17-4', number: 4, prompt: '「{何|なに}もしませんでした」 significa:', choices: [{ n: 1, text: 'não fiz nada' }, { n: 2, text: 'fiz tudo' }, { n: 3, text: 'fiz alguma coisa' }, { n: 4, text: 'o que você fez?' }], answer: 1, explanationPt: '{何|なに}も + verbo negativo = nada. {何|なに}もしませんでした = não fiz nada (家でゆっくりしました). (Nota ➋)' },
+    { id: 'iro-s-l17-5', number: 5, prompt: '「どこにも{行|い}きませんでした」 significa:', choices: [{ n: 1, text: 'não fui a lugar nenhum' }, { n: 2, text: 'fui a vários lugares' }, { n: 3, text: 'onde você foi?' }, { n: 4, text: 'fui a algum lugar' }], answer: 1, explanationPt: 'どこにも + {行|い}く negativo = a lugar nenhum. どこにも{行|い}きませんでした. ⚠️ Reforça a negação. (Nota ➋)' },
+    { id: 'iro-s-l17-6', number: 6, prompt: 'O passado de um ナ-adjetivo / da impressão 「まあまあ」 é:', choices: [{ n: 1, text: '〜でした (まあまあでした · {大変|たいへん}でした)' }, { n: 2, text: '〜かったです' }, { n: 3, text: '〜くなかったです' }, { n: 4, text: '〜ました' }], answer: 1, explanationPt: 'ナA passado: 〜です → 〜でした. まあまあでした (foi mais ou menos), {大変|たいへん}でした (foi difícil). (Nota ➌)' },
+    { id: 'iro-s-l17-7', number: 7, prompt: 'O passado do イ-adjetivo 「{楽|たの}しい」 é:', choices: [{ n: 1, text: '{楽|たの}しかったです (tirar い, + かったです)' }, { n: 2, text: '{楽|たの}しいでした' }, { n: 3, text: '{楽|たの}しでした' }, { n: 4, text: '{楽|たの}しません' }], answer: 1, translationPt: 'foi divertido', explanationPt: 'イA passado: 〜いです → 〜かったです. {楽|たの}しい → {楽|たの}しかったです. ⚠️ Nunca 〜いでした. (Nota ➌)' },
+    { id: 'iro-s-l17-8', number: 8, prompt: 'O passado de 「いい」 (bom) é, irregularmente:', choices: [{ n: 1, text: 'よかったです' }, { n: 2, text: 'いいかったです' }, { n: 3, text: 'いかったです' }, { n: 4, text: 'いいでした' }], answer: 1, explanationPt: '⚠️ いい é irregular: passado = よかったです (não いかった). Vem de よい. (Nota ➌)' },
+    { id: 'iro-s-l17-9', number: 9, prompt: 'Para perguntar a impressão de algo passado, usa-se:', choices: [{ n: 1, text: 'どうでしたか？ (como foi?)' }, { n: 2, text: 'いくらでしたか？' }, { n: 3, text: 'どこでしたか？' }, { n: 4, text: 'だれでしたか？' }], answer: 1, explanationPt: 'どう (como) + でしたか = どうでしたか？ (como foi?). {映画|えいが}はどうでしたか？ (Nota ➌)' },
+    { id: 'iro-s-l17-10', number: 10, prompt: 'O passado de um substantivo (N) — 「いい{天気|てんき}」 no passado — é:', choices: [{ n: 1, text: 'いい{天気|てんき}でした (N + でした)' }, { n: 2, text: 'いい{天気|てんき}かったです' }, { n: 3, text: 'いい{天気|てんき}ました' }, { n: 4, text: 'いい{天気|てんき}くなかった' }], answer: 1, explanationPt: 'N passado: 〜です → 〜でした. いい{天気|てんき}でした (estava bom tempo), {母|はは}の{誕生日|たんじょうび}でした. (Nota ➍)' },
+    { id: 'iro-s-l17-11', number: 11, prompt: 'O passado negativo do イ-adjetivo 「{多|おお}い」 (em お{客|きゃく}さんは、あまり{多|おお}く___) é:', choices: [{ n: 1, text: '{多|おお}くなかったです (／{多|おお}くありませんでした)' }, { n: 2, text: '{多|おお}いじゃなかったです' }, { n: 3, text: '{多|おお}いでした' }, { n: 4, text: '{多|おお}かったです' }], answer: 1, translationPt: 'não tinha muitos (clientes)', explanationPt: 'イA neg. passado: 〜くないです → 〜くなかったです. {多|おお}くなかったです. Também {多|おお}くありませんでした. (Nota ➎)' },
+    { id: 'iro-s-l17-12', number: 12, prompt: 'O passado negativo de um N / ナ-adjetivo (ex.: {休|やす}み / {大変|たいへん}) é:', choices: [{ n: 1, text: '〜じゃなかったです (／〜じゃありませんでした)' }, { n: 2, text: '〜くなかったです' }, { n: 3, text: '〜でした' }, { n: 4, text: '〜かったです' }], answer: 1, explanationPt: 'N／ナA neg. passado: 〜じゃないです → 〜じゃなかったです. {休|やす}みじゃなかったです, {大変|たいへん}じゃなかったです. (Nota ➎)' },
+    { id: 'iro-s-l17-13', number: 13, prompt: 'As palavras 「{週末|しゅうまつ}／{土日|どにち}／{昨日|きのう}」 são:', choices: [{ n: 1, text: 'fim de semana / sábado e domingo / ontem' }, { n: 2, text: 'feriado / hoje / amanhã' }, { n: 3, text: 'manhã / tarde / noite' }, { n: 4, text: 'segunda / terça / quarta' }], answer: 1, explanationPt: '{週末|しゅうまつ} (fim de semana), {土日|どにち} (sáb+dom), {昨日|きのう} (ontem), {日曜日|にちようび} (domingo). (Seção 1)' },
+    { id: 'iro-s-l17-14', number: 14, prompt: 'Qual lista só tem atividades de folga (verbos no passado)?', choices: [{ n: 1, text: '{運動|うんどう}しました／{掃除|そうじ}しました／{寝|ね}ました／{飲|の}みに{行|い}きました' }, { n: 2, text: '{安|やす}い／{高|たか}い／きれい' }, { n: 3, text: '{大人|おとな}／{高校生|こうこうせい}／{料金|りょうきん}' }, { n: 4, text: '{入口|いりぐち}／{出口|でぐち}／{非常口|ひじょうぐち}' }], answer: 1, explanationPt: 'Atividades: {運動|うんどう}する (exercitar-se), {掃除|そうじ}する (faxina), {洗濯|せんたく}する (lavar roupa), {寝|ね}る (dormir), {飲|の}みに{行|い}く (sair pra beber), ゆっくりする (descansar), {勉強|べんきょう}する. (Seção 1)' },
+    { id: 'iro-s-l17-15', number: 15, prompt: 'As palavras de impressão 「すばらしい／つまらない／いまいち（な）」 significam:', choices: [{ n: 1, text: 'maravilhoso / chato / meio fraco (não tão bom)' }, { n: 2, text: 'caro / barato / estranho' }, { n: 3, text: 'grande / pequeno / novo' }, { n: 4, text: 'cedo / tarde / rápido' }], answer: 1, explanationPt: 'すばらしい (maravilhoso), つまらない (chato/sem graça), いまいち（な） (meio fraco). Outras: {楽|たの}しい, おもしろい, よかった, まあまあ, {大変|たいへん}. (Seção 2)' },
+    { id: 'iro-s-l17-16', number: 16, prompt: '「ジム／オーケストラ／コンサート／ネットで」 são:', choices: [{ n: 1, text: 'academia / orquestra / show (concerto) / pela internet' }, { n: 2, text: 'piscina / banda / festival / por telefone' }, { n: 3, text: 'parque / coral / cinema / pessoalmente' }, { n: 4, text: 'estádio / DJ / teatro / por carta' }], answer: 1, explanationPt: 'ジム (academia), オーケストラ (orquestra), コンサート (show), ネットで (pela internet). オーケストラのコンサートに{行|い}きました. (Seção 1·2)' },
+    { id: 'iro-s-l17-17', number: 17, prompt: 'No post de SNS, 「{家族|かぞく}で{水族館|すいぞくかん}に{行|い}きました。ペンギン、かわいかった！」 — onde a pessoa foi?', choices: [{ n: 1, text: 'ao aquário, com a família (achou os pinguins fofos)' }, { n: 2, text: 'ao zoológico, sozinha' }, { n: 3, text: 'a um show de orquestra' }, { n: 4, text: 'a um restaurante de sushi' }], answer: 1, explanationPt: '{水族館|すいぞくかん} = aquário; {家族|かぞく}で = com a família; ペンギン (pinguim) かわいかった (foi fofo); クラゲ (água-viva) きれいでした. (Seção 3)' },
+    { id: 'iro-s-l17-18', number: 18, prompt: '「{気持|きも}ちよかったです」 (de {気持|きも}ちいい) significa:', choices: [{ n: 1, text: 'foi gostoso / agradável / revigorante' }, { n: 2, text: 'foi caro' }, { n: 3, text: 'foi chato' }, { n: 4, text: 'foi difícil' }], answer: 1, explanationPt: '{気持|きも}ちいい = agradável/revigorante; passado {気持|きも}ちよかったです (いい→よかった). さくら{公園|こうえん}に{散歩|さんぽ}…{気持|きも}ちよかったです. (Seção 3)' },
+    { id: 'iro-s-l17-19', number: 19, prompt: 'No post 「お{客|きゃく}さんは、あまり{多|おお}くなかったです」 significa:', choices: [{ n: 1, text: 'não tinha muito público (clientes/pessoas)' }, { n: 2, text: 'tinha muita gente' }, { n: 3, text: 'os clientes eram simpáticos' }, { n: 4, text: 'não havia ninguém' }], answer: 1, explanationPt: '{多|おお}い = muitos; あまり〜くなかったです = não muito. お{客|きゃく}さん = público/clientes. でも、とてもよかったです (mas foi muito bom). (Seção 3 · Nota ➎)' },
+    { id: 'iro-s-l17-20', number: 20, prompt: 'No post do aniversário, 「85{歳|さい}！まだまだ{元気|げんき}です」 significa:', choices: [{ n: 1, text: '85 anos! Ainda está cheia de energia/saúde' }, { n: 2, text: '85 anos! Já está bem cansada' }, { n: 3, text: '85 ienes! Ainda é caro' }, { n: 4, text: '85 anos! Vai fazer aniversário' }], answer: 1, explanationPt: 'まだまだ = ainda (bastante); {元気|げんき}（な） = com saúde/energia. お{祝|いわ}い (comemoração), {寿司屋|すしや} (rodízio/restaurante de sushi). おいしかった〜！でもちょっと{高|たか}かった. (Seção 3)' },
+    { id: 'iro-s-l17-21', number: 21, prompt: 'Na tabela de preços (料金表), 「{大人|おとな}／{高校生|こうこうせい}／{小|しょう}・{中学生|ちゅうがくせい}」 são:', choices: [{ n: 1, text: 'adulto / estudante do ensino médio / estudante do fundamental e ginásio' }, { n: 2, text: 'idoso / criança / bebê' }, { n: 3, text: 'homem / mulher / criança' }, { n: 4, text: 'sócio / visitante / grupo' }], answer: 1, explanationPt: '{大人|おとな} (adulto, {一般|いっぱん}・{大学生|だいがくせい}), {高校生|こうこうせい} ({中人|ちゅうにん}), {小|しょう}・{中学生|ちゅうがくせい} ({小人|しょうにん}). チケット/{入館券|にゅうかんけん}. (Seção 4)' },
+    { id: 'iro-s-l17-22', number: 22, prompt: '「{十二歳以上|じゅうにさいいじょう}」 (no preço do onsen) significa:', choices: [{ n: 1, text: '12 anos ou mais (a partir de 12 anos)' }, { n: 2, text: 'menos de 12 anos' }, { n: 3, text: 'exatamente 12 anos' }, { n: 4, text: '12 pessoas ou mais' }], answer: 1, explanationPt: '〜{歳以上|さいいじょう} = de ~ anos para cima. {十二歳以上|じゅうにさいいじょう}{五百円|ごひゃくえん} (12+ = 500 ienes). {料金|りょうきん} = tarifa. (Seção 4)' },
+    { id: 'iro-s-l17-23', number: 23, prompt: '「{食|た}べ{放題|ほうだい}／{飲|の}み{放題|ほうだい}」 (no 焼肉屋) significam:', choices: [{ n: 1, text: 'comer à vontade (rodízio) / beber à vontade' }, { n: 2, text: 'meia porção / sem bebida' }, { n: 3, text: 'leva para viagem / serve no local' }, { n: 4, text: 'reserva / fila' }], answer: 1, explanationPt: '〜{放題|ほうだい} = à vontade. {食|た}べ{放題|ほうだい} (rodízio, ALL YOU CAN EAT), {飲|の}み{放題|ほうだい} (bebida liberada). 90{分|ぷん}{食|た}べ{放題|ほうだい}1,980{円|えん}. (Seção 4)' },
+    { id: 'iro-s-l17-24', number: 24, prompt: 'Na マンガ{喫茶|きっさ} (café de mangá), 「パック／ブース／{個室|こしつ}」 são:', choices: [{ n: 1, text: 'pacote (de horas) / cabine / sala privativa' }, { n: 2, text: 'bebida / lanche / sobremesa' }, { n: 3, text: 'entrada / saída / banheiro' }, { n: 4, text: 'gibi / revista / jornal' }], answer: 1, explanationPt: 'パック = pacote por horas (3{時間|じかん}パック…); ブース = cabine; {個室|こしつ} = sala privativa. {基本料金|きほんりょうきん}30{分|ぷん}/¥250. (Seção 4 · TIPS)' },
+    { id: 'iro-s-l17-25', number: 25, prompt: '「{今|いま}、{家|いえ}に{着|つ}きました」 (mensagem ao amigo) significa:', choices: [{ n: 1, text: 'cheguei em casa agora' }, { n: 2, text: 'vou sair de casa agora' }, { n: 3, text: 'estou esperando em casa' }, { n: 4, text: 'não cheguei em casa' }], answer: 1, explanationPt: '{着|つ}く = chegar; {着|つ}きました = cheguei. {今|いま}、{家|いえ}に{着|つ}きました = acabei de chegar em casa. (Seção 5)' },
+    { id: 'iro-s-l17-26', number: 26, prompt: 'Na mensagem, 「ゴジラ、はじめて{見|み}ました。また、いっしょに{行|い}きましょう」 — はじめて e また são:', choices: [{ n: 1, text: 'pela primeira vez / de novo (outra vez)' }, { n: 2, text: 'sozinho / com pressa' }, { n: 3, text: 'ontem / amanhã' }, { n: 4, text: 'talvez / nunca' }], answer: 1, explanationPt: 'はじめて = pela primeira vez; また = de novo. また、いっしょに{映画|えいが}に{行|い}きましょう = vamos de novo juntos. (Seção 5)' },
+    { id: 'iro-s-l17-27', number: 27, prompt: 'Os kanji de número 「{百|ひゃく}／{千|せん}／{万|まん}」 lêem-se:', choices: [{ n: 1, text: 'ひゃく (100) / せん (1.000) / まん (10.000)' }, { n: 2, text: 'せん / ひゃく / おく' }, { n: 3, text: 'ひゃく / まん / せん' }, { n: 4, text: 'じゅう / ひゃく / せん' }], answer: 1, explanationPt: '{百|ひゃく}=100, {千|せん}=1.000, {万|まん}=10.000. Ex.: 4{千万円|せんまんえん} (40 milhões). Kanji da lição: {百|ひゃく}, {千|せん}, {万|まん}, 〜{円|えん}, {休|やす}み, {映画|えいが}, {日本語|にほんご}, {勉強|べんきょう}します, {買|か}います. (漢字)' },
+    { id: 'iro-s-l17-28', number: 28, prompt: 'Relacionando interrogativos com o uso (resumo da lição): 「いくら／いつ／だれ／どう」 perguntam:', choices: [{ n: 1, text: 'quanto custa / quando / quem / como (estava)' }, { n: 2, text: 'onde / por quê / quantos / qual' }, { n: 3, text: 'quanto / quem / quando / onde' }, { n: 4, text: 'como / quanto / qual / quem' }], answer: 1, explanationPt: 'いくら (quanto custa), いつ (quando), だれ (quem), どう (como). Resumo: いくつ (idade/quantos), どこ, どちら, どんな, {何|なに}/{何|なん}. (Resumo de interrogativos)' },
+    { id: 'iro-s-l17-29', number: 29, prompt: '「ゴジラ」 (TIPS) é:', choices: [{ n: 1, text: 'Godzilla — clássica série japonesa de filmes de monstro (1ª de 1954)' }, { n: 2, text: 'um aquário famoso' }, { n: 3, text: 'um prato típico' }, { n: 4, text: 'um café de mangá' }], answer: 1, explanationPt: 'ゴジラ = Godzilla, série de {怪獣特撮映画|かいじゅうとくさつえいが} (filmes de monstro), 1º de 1954. No diálogo, Bayu foi ver ゴジラ. (TIPS)' },
+    { id: 'iro-s-l17-30', number: 30, prompt: 'Diálogo 17-02: 「{日曜日|にちようび}は、{何|なに}をしましたか？」 — o que a Tida fez?', context: 'Ａ：ティダーさん、{日曜日|にちようび}は、{何|なに}をしましたか？ Ｂ：{日曜日|にちようび}は、ジムで{運動|うんどう}しました。', choices: [{ n: 1, text: 'Foi à academia se exercitar (ジムで{運動|うんどう}しました)' }, { n: 2, text: 'Foi a um show de orquestra' }, { n: 3, text: 'Dormiu até de tarde' }, { n: 4, text: 'Foi às compras' }], answer: 1, explanationPt: 'ジムで{運動|うんどう}しました = me exercitei na academia. (Seção 1)' },
+    { id: 'iro-s-l17-31', number: 31, prompt: 'Diálogo 17-06: 「{週末|しゅうまつ}は、{何|なに}をしましたか？」 — resposta da Andrea?', context: 'Ｂ：{何|なに}もしませんでした。{家|いえ}でゆっくりしました。あ、ネットで、{家族|かぞく}と{話|はな}しました。', choices: [{ n: 1, text: 'Não fez nada de especial; descansou em casa e falou com a família pela internet' }, { n: 2, text: 'Foi viajar com a família' }, { n: 3, text: 'Trabalhou o fim de semana todo' }, { n: 4, text: 'Foi ao cinema' }], answer: 1, explanationPt: '{何|なに}もしませんでした (não fiz nada) + {家|いえ}でゆっくり (relaxei em casa) + ネットで{家族|かぞく}と{話|はな}しました (falei com a família online). (Seção 1)' },
+    { id: 'iro-s-l17-32', number: 32, prompt: 'Diálogo 17-10: Bayu foi ver ゴジラ — como foi, segundo ele?', context: 'マリエル：{映画|えいが}…おもしろかったですか？ バユ：まあまあでした。', choices: [{ n: 1, text: 'Mais ou menos (まあまあでした)' }, { n: 2, text: 'Muito divertido' }, { n: 3, text: 'Péssimo / um desastre' }, { n: 4, text: 'Não foi ao cinema' }], answer: 1, explanationPt: 'まあまあでした = foi mais ou menos. Bayu {映画|えいが}を{見|み}に{行|い}きました、「ゴジラ」を{見|み}ました. (Seção 2)' },
+    { id: 'iro-s-l17-33', number: 33, prompt: 'Diálogo 17-10: 「カノルさんは、どこに{行|い}きましたか？」 — o que Kanol responde?', context: 'カノル：{私|わたし}は、どこにも{行|い}きませんでした。{家|いえ}で{日本語|にほんご}を{勉強|べんきょう}しました。{全員|ぜんいん}：すごーい！', choices: [{ n: 1, text: 'Não foi a lugar nenhum; ficou em casa estudando japonês (todos: que demais!)' }, { n: 2, text: 'Foi ao festival internacional' }, { n: 3, text: 'Foi ver um filme' }, { n: 4, text: 'Fez faxina e lavou roupa' }], answer: 1, explanationPt: 'どこにも{行|い}きませんでした (não fui a lugar nenhum) + {家|いえ}で{日本語|にほんご}を{勉強|べんきょう}しました. Dewi foi ao {国際|こくさい}フェスティバル e achou とてもよかった/{楽|たの}しかった. (Seção 2 · Nota ➋)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 17 (聴解スクリプト)
+const L17_SCRIPTS: Record<string, ScriptItem[]> = {
+  '17-01': [
+    {
+      label: '会話① (17-01)',
+      setupJa: '{休|やす}みにしたことについて、6{人|にん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Seis pessoas falam sobre o que fizeram na folga.',
+      lines: [
+        { speaker: 'A', ja: 'ヘンドラさん、{休|やす}みは、{何|なに}をしましたか？', pt: 'Hendra, o que você fez na folga?' },
+        { speaker: 'B', ja: 'えーと、お{風呂|ふろ}と{台所|だいどころ}を{掃除|そうじ}しました。', pt: 'Hmm, limpei o banheiro e a cozinha.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '17-02': [
+    {
+      label: '会話② (17-02)',
+      lines: [
+        { speaker: 'A', ja: 'ティダーさん、{日曜日|にちようび}は、{何|なに}をしましたか？', pt: 'Tida, o que você fez no domingo?' },
+        { speaker: 'B', ja: '{日曜日|にちようび}は、ジムで{運動|うんどう}しました。', pt: 'No domingo, me exercitei na academia.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+      ],
+    },
+  ],
+  '17-03': [
+    {
+      label: '会話③ (17-03)',
+      lines: [
+        { speaker: 'A', ja: '{曹|ソウ}さん、{週末|しゅうまつ}は、{何|なに}をしましたか？', pt: 'Sou, o que você fez no fim de semana?' },
+        { speaker: 'B', ja: 'オーケストラのコンサートに{行|い}きました。', pt: 'Fui a um concerto de orquestra.' },
+        { speaker: 'A', ja: 'ふーん、いいですね。', pt: 'Hmm, que bom.' },
+      ],
+    },
+  ],
+  '17-04': [
+    {
+      label: '会話④ (17-04)',
+      lines: [
+        { speaker: 'A', ja: 'マイさん、{昨日|きのう}の{休|やす}みは、{何|なに}をしましたか？', pt: 'Mai, o que você fez na folga de ontem?' },
+        { speaker: 'B', ja: '{昨日|きのう}は、さくらモールに{買|か}い{物|もの}に{行|い}きました。{服|ふく}を{買|か}いました。', pt: 'Ontem fui fazer compras no Sakura Mall. Comprei roupa.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '17-05': [
+    {
+      label: '会話⑤ (17-05)',
+      lines: [
+        { speaker: 'A', ja: 'ルディさん、{土日|どにち}は、{何|なに}をしましたか？', pt: 'Rudi, o que você fez no sábado e domingo?' },
+        { speaker: 'B', ja: '{土曜日|どようび}は、{友|とも}だちと、{飲|の}みに{行|い}きました。', pt: 'No sábado, saí pra beber com os amigos.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: '{日曜日|にちようび}は、{昼|ひる}まで{寝|ね}ました。', pt: 'No domingo, dormi até de tarde.' },
+        { speaker: 'A', ja: 'あー。', pt: 'Ahh.' },
+      ],
+    },
+  ],
+  '17-06': [
+    {
+      label: '会話⑥ (17-06)',
+      lines: [
+        { speaker: 'A', ja: 'アンドレアさん、{週末|しゅうまつ}は、{何|なに}をしましたか？', pt: 'Andrea, o que você fez no fim de semana?' },
+        { speaker: 'B', ja: '{何|なに}もしませんでした。{家|いえ}でゆっくりしました。', pt: 'Não fiz nada. Relaxei em casa.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'B', ja: 'あ、ネットで、{家族|かぞく}と{話|はな}しました。', pt: 'Ah, falei com a família pela internet.' },
+        { speaker: 'A', ja: 'ああ、いいですね。', pt: 'Ah, que bom.' },
+      ],
+    },
+  ],
+  '17-10': [
+    {
+      label: '会話 (17-10)',
+      setupJa: 'バユさん、マリエルさん、デウィさん、カノルさんは、{同|おな}じ{職場|しょくば}で{働|はたら}いています。{休日|きゅうじつ}{明|あ}けに、それぞれがしたことについて{話|はな}しています。',
+      setupPt: 'Bayu, Mariel, Dewi e Kanol trabalham no mesmo lugar. Depois da folga, contam o que cada um fez.',
+      lines: [
+        { speaker: 'マリエル', ja: 'バユさん、{休|やす}みは、どうでしたか？', pt: 'Bayu, como foi a folga?' },
+        { speaker: 'バユ', ja: '{映画|えいが}を{見|み}に{行|い}きました。「ゴジラ」を{見|み}ました。', pt: 'Fui ver um filme. Assisti ao “Godzilla”.' },
+        { speaker: 'マリエル', ja: 'おもしろかったですか？', pt: 'Foi bom (interessante)?' },
+        { speaker: 'バユ', ja: 'まあまあでした。', pt: 'Foi mais ou menos.' },
+        { speaker: 'マリエル', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'バユ', ja: 'マリエルさんは？', pt: 'E você, Mariel?' },
+        { speaker: 'マリエル', ja: '{私|わたし}は、{一日中|いちにちじゅう}、{掃除|そうじ}と{洗濯|せんたく}をしました。{大変|たいへん}でした。', pt: 'Eu passei o dia todo fazendo faxina e lavando roupa. Foi cansativo.' },
+        { speaker: 'バユ', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'マリエル', ja: 'デウィさんは？', pt: 'E a Dewi?' },
+        { speaker: 'デウィ', ja: '{私|わたし}は、{友|とも}だちと、{中央公園|ちゅうおうこうえん}の{国際|こくさい}フェスティバルに{行|い}きました。', pt: 'Eu fui com amigos ao festival internacional no Parque Central.' },
+        { speaker: 'マリエル', ja: 'へー、どうでしたか？', pt: 'Nossa, como foi?' },
+        { speaker: 'デウィ', ja: 'とてもよかったです。{楽|たの}しかったです。', pt: 'Foi muito bom. Foi divertido.' },
+        { speaker: 'マリエル', ja: 'カノルさんは、どこに{行|い}きましたか？', pt: 'Kanol, aonde você foi?' },
+        { speaker: 'カノル', ja: '{私|わたし}は、どこにも{行|い}きませんでした。{家|いえ}で{日本語|にほんご}を{勉強|べんきょう}しました。', pt: 'Eu não fui a lugar nenhum. Estudei japonês em casa.' },
+        { speaker: '全員', ja: 'すごーい！', pt: 'Que demais!' },
+      ],
+    },
+  ],
+}
+
+const lesson17: Section = {
+  id: 'lesson-17',
+  level: 'starter',
+  titleJa: '第17課 映画を見に行きました',
+  titlePt: 'Lição 17 — Fui ver um filme',
+  summaryPt: 'Dias de folga · falar no passado o que fez e o que não fez (映画を見に行きました／何もしませんでした／どこにも行きませんでした), dar impressões no passado (楽しかったです／まあまあでした／いい天気でした／あまり多くなかったです), ler posts simples de SNS e tabelas de preço (大人／高校生／食べ放題／パック) e mandar uma mensagem ao chegar em casa (今、家に着きました).',
+  studyNotes: [
+    {
+      title: 'Tópico: Dias de folga (falar do passado)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Responder de forma simples o que fez na folga.\n' +
+        '- Perguntar e responder o que fez e suas impressões.\n' +
+        '- Ler um post simples de rede social e entender o que a pessoa fez.\n' +
+        '- Ler a tabela de preços de um lugar e saber quanto pagar.\n' +
+        '- Mandar uma mensagem curta com suas impressões ao chegar em casa.',
+    },
+    {
+      title: 'Passado dos verbos: V-ました／V-ませんでした (➊)',
+      bodyPt:
+        'Para falar de fatos passados:\n\n' +
+        '| | não-passado | passado |\n|---|---|---|\n' +
+        '| afirmativo | V-ます | **V-ました** |\n' +
+        '| negativo | V-ません／V-ないです | **V-ませんでした** |\n\n' +
+        '- `{映画|えいが}を{見|み}に{行|い}きました` = fui ver um filme · `テレビを{見|み}ました` = assisti TV.\n' +
+        '- `{週末|しゅうまつ}は、{何|なに}もしませんでした` = não fiz nada no fim de semana.\n\n' +
+        '💡 V-ますstem + に{行|い}く/{来|く}る = ir/vir **para fazer** algo: {買|か}い{物|もの}に{行|い}きました, {飲|の}みに{行|い}きました.',
+    },
+    {
+      title: 'Negação enfática: 何も／どこにも + V-ませんでした (➋)',
+      bodyPt:
+        'Reforçam uma frase negativa:\n\n' +
+        '- **{何|なに}も** + verbo negativo = (não) … **nada**: `{何|なに}もしませんでした` (não fiz nada).\n' +
+        '- **どこにも** + {行|い}く negativo = (não foi) **a lugar nenhum**: `どこにも{行|い}きませんでした`.\n\n' +
+        'Ex.: A：{連休|れんきゅう}は、どこに{行|い}きましたか？ B：どこにも{行|い}きませんでした。{家|いえ}で{本|ほん}を{読|よ}みました。',
+    },
+    {
+      title: 'Impressões no passado: ナA-でした／イA-かったです／N-でした (➌➍)',
+      bodyPt:
+        'Para comentar como foi algo:\n\n' +
+        '| tipo | não-passado | passado |\n|---|---|---|\n' +
+        '| ナ-adjetivo | 〜です | **〜でした** ({大変|たいへん}でした) |\n' +
+        '| イ-adjetivo | 〜いです | **〜かったです** ({楽|たの}しかったです) |\n' +
+        '| substantivo (N) | 〜です | **〜でした** (いい{天気|てんき}でした) |\n\n' +
+        '- ⚠️ **いい** é irregular → passado **よかったです** (nunca いかった).\n' +
+        '- ⚠️ Nunca diga 〜いでした; o passado do イ-adjetivo é 〜かったです.\n' +
+        '- Perguntar a impressão: **どうでしたか？** (como foi?). Ex.: {映画|えいが}はどうでしたか？ → まあまあでした。\n\n' +
+        '**Palavras de impressão:** {楽|たの}しい, おもしろい, いい→よかった, まあまあ, {大変|たいへん}（な）, すばらしい, つまらない, いまいち（な）.',
+    },
+    {
+      title: 'Passado negativo de adjetivo/substantivo: 〜じゃなかったです／〜くなかったです (➎)',
+      bodyPt:
+        '| tipo | passado negativo | variante |\n|---|---|---|\n' +
+        '| N | 〜じゃなかったです | 〜じゃありませんでした |\n' +
+        '| ナ-adjetivo | 〜じゃなかったです | 〜じゃありませんでした |\n' +
+        '| イ-adjetivo | 〜くなかったです | 〜くありませんでした |\n\n' +
+        '- `お{客|きゃく}さんは、あまり{多|おお}くなかったです` = não tinha muito público.\n' +
+        '- `{昨日|きのう}は、{休|やす}みじゃなかったです` = ontem não era folga.\n' +
+        '- `あまり{大変|たいへん}じゃなかったです` / `あまりおいしくなかったです`.\n\n' +
+        '💡 **Resumo de interrogativos:** いくつ (idade/quantos), いくら (quanto custa), いつ (quando), だれ (quem), どう (como), どこ (onde), どちら, どんな, {何|なに}/{何|なん}.',
+    },
+    {
+      title: 'Posts, tabelas de preço e mensagem (Seções 3-5 · TIPS)',
+      bodyPt:
+        '**SNS (Seção 3):** {家族|かぞく}で (com a família), {水族館|すいぞくかん} (aquário), ペンギン (pinguim), クラゲ (água-viva), コスモス (flor cosmos), {花|はな}, そして (e então), {気持|きも}ちいい→{気持|きも}ちよかった (revigorante), {多|おお}い (muitos), まだまだ (ainda), {元気|げんき}（な） (com energia), お{祝|いわ}い (comemoração), {寿司屋|すしや} (restaurante de sushi).\n\n' +
+        '**Tabelas de preço (Seção 4):** チケット, {大人|おとな} (adulto), {高校生|こうこうせい}, {小|しょう}・{中学生|ちゅうがくせい}; {料金|りょうきん} (tarifa), 〜{歳以上|さいいじょう} (de ~ anos p/ cima); {食|た}べ{放題|ほうだい} (rodízio), {飲|の}み{放題|ほうだい} (bebida liberada); パック (pacote), ブース (cabine), {個室|こしつ} (sala privativa).\n\n' +
+        '**Mensagem (Seção 5):** {着|つ}く→{着|つ}きました (cheguei), はじめて (pela 1ª vez), また (de novo). `{今|いま}、{家|いえ}に{着|つ}きました。{今日|きょう}は、{楽|たの}しかったです。`\n\n' +
+        '**Kanji da lição:** {百|ひゃく}, {千|せん}, {万|まん}, 〜{円|えん}, {休|やす}み, {映画|えいが}, {日本語|にほんご}, {勉強|べんきょう}します, {買|か}います.\n\n' +
+        '🔖 **TIPS:** ゴジラ (Godzilla, série de filmes de monstro desde 1954); {水族館|すいぞくかん} (aquários por todo o Japão; {美|ちゅ}ら{海|うみ}, {海遊館|かいゆうかん}); マンガ{喫茶|きっさ}／インターネットカフェ (cabines para ler mangá/usar internet, muitas 24h).',
+    },
+  ],
+  groups: [lesson17Group],
+  audios: attachScripts(17, L17_SCRIPTS),
+}
+
+// ---- Lição 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(17, 'Dias de folga', '映画を見に行きました', 'Fui ver um filme', [
-    'Responder o que fez na folga.',
-    'Perguntar e responder sobre o que fez no dia de descanso.',
-    'Ler uma tabela de preços de um local e entender quanto pagar.',
-  ]),
   scaffold(18, 'Dias de folga', '温泉に行きたいです', 'Quero ir a um onsen', [
     'Perguntar e responder o que quer fazer nas folgas.',
     'Dizer de forma simples o que quer fazer no Japão.',
@@ -3384,5 +3591,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, lesson17, ...others],
 }
