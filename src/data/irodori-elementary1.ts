@@ -2377,14 +2377,217 @@ const lesson11: Section = {
   audios: attachScripts(11, L11_SCRIPTS),
 }
 
-// ---- Lições 12-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 12: お弁当、おいしそうですね (tópico おいしい料理) ----------
+const lesson12Group: ExerciseGroup = {
+  id: 'iro-e1-l12',
+  title: 'お弁当、おいしそうですね',
+  subtitlePt: 'Comida gostosa · dar impressão pela aparência (おいし{そう}ですね／{辛|から}{そう}な{料理|りょうり}), comentar ao provar ({甘|あま}くておいしい・{食|た}べてみてください), explicar sabor/ingredientes ({甘|あま}くなくて…／〜が{入|はい}ってます) e perguntar com cuidado ({味|あじ}は、うすくないですか？)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l12-1', number: 1, prompt: '「そのお{弁当|べんとう}、おいしそうですね」 (〜そうです) serve para (Nota ➊):', choices: [{ n: 1, text: 'dar um juízo intuitivo a partir da APARÊNCIA (parece gostoso)' }, { n: 2, text: 'afirmar que já provou e estava gostoso' }, { n: 3, text: 'pedir para provar' }, { n: 4, text: 'dizer que cozinhou aquilo' }], answer: 1, translationPt: 'Esse bentô parece delicioso, né.', explanationPt: '〜そうです expressa impressão intuitiva pela aparência: おいしそう (parece gostoso), {辛|から}そう (parece picante). Pela aparência não se sabe o sabor real — só provando. (Nota ➊)' },
+    { id: 'iro-e1-l12-2', number: 2, prompt: 'Como adjetivos ligam-se a 〜そうです (Nota ➊)?', choices: [{ n: 1, text: 'イA tira o い ({辛|から}い→{辛|から}そう); ナA tira o な ({元気|げんき}な→{元気|げんき}そう)' }, { n: 2, text: 'mantêm o い e o な' }, { n: 3, text: 'usa-se sempre a forma de dicionário + そう' }, { n: 4, text: 'só substantivos podem usar そう' }], answer: 1, explanationPt: 'イA: tira 〜い (おいしい→おいしそう, {辛|から}い→{辛|から}そう). ナA: tira 〜な ({元気|げんき}そう, {大変|たいへん}そう). Esta lição foca イA, mas também vale para ナA. (Nota ➊)' },
+    { id: 'iro-e1-l12-3', number: 3, prompt: '「それ、{辛|から}そうな{料理|りょうり}ですね」 (〜そうなN) — o que esta forma faz (Nota ➋)?', choices: [{ n: 1, text: 'usa 〜そう para qualificar um substantivo (um prato que PARECE picante)' }, { n: 2, text: 'transforma a frase em pergunta' }, { n: 3, text: 'indica passado' }, { n: 4, text: 'nega o adjetivo' }], answer: 1, translationPt: 'Esse prato parece picante, né.', explanationPt: '〜そう também modifica substantivo: 〜そうなN. 「それ、{辛|から}そうな{料理|りょうり}ですね」 = 「その{料理|りょうり}、{辛|から}そうですね」. Ex.: おいしそうなケーキですね. (Nota ➋)' },
+    { id: 'iro-e1-l12-4', number: 4, prompt: '「この{卵焼|たまごや}き、{甘|あま}くて、おいしいですね」 (イA-くて、〜) — o que 〜くて acrescenta aqui (Nota ➌)?', choices: [{ n: 1, text: 'além de listar, o 1º adjetivo dá o MOTIVO do seguinte (é gostoso PORQUE é doce)' }, { n: 2, text: 'indica ordem temporal' }, { n: 3, text: 'faz um pedido' }, { n: 4, text: 'expressa dúvida' }], answer: 1, translationPt: 'Este tamagoyaki é docinho e gostoso.', explanationPt: 'Na Lição 5 vimos 〜くて ligando 2+ adjetivos. Aqui 〜くて também marca motivo: o motivo de おいしい é {甘|あま}い. Ex.: {梅干|うめぼ}しはすっぱくて、{苦手|にがて}です. (Nota ➌)' },
+    { id: 'iro-e1-l12-5', number: 5, prompt: 'E na forma negativa? 「{茶碗蒸|ちゃわんむ}し、{甘|あま}くなくて、おいしいですよ」 (Nota ➌)', choices: [{ n: 1, text: 'イA-くなくて、〜 = é gostoso PORQUE não é doce (motivo negativo)' }, { n: 2, text: 'é gostoso apesar de ser doce' }, { n: 3, text: 'não é gostoso nem doce' }, { n: 4, text: 'quer ficar doce' }], answer: 1, translationPt: 'O chawanmushi não é doce e (por isso) é gostoso.', explanationPt: 'A negativa de 〜くて é 〜くなくて. O motivo de {茶碗蒸|ちゃわんむ}しがおいしい é {甘|あま}くない. Ex.: この{料理|りょうり}は{辛|から}くなくて、{子|こ}どもも{食|た}べることができます. (Nota ➌)' },
+    { id: 'iro-e1-l12-6', number: 6, prompt: '「よかったら、この{卵焼|たまごや}き、{食|た}べてみてください」 (V-てみます) significa (Nota ➍):', choices: [{ n: 1, text: 'experimentar algo novo para ver como é — aqui, oferecer comida (experimente comer)' }, { n: 2, text: 'olhar a comida sem comer' }, { n: 3, text: 'já ter comido antes' }, { n: 4, text: 'recusar a comida' }], answer: 1, translationPt: 'Se quiser, experimente comer este tamagoyaki.', explanationPt: 'V-てみます (V-てみる) = experimentar algo novo para saber como é. Aqui, V-てみてください oferece comida. (Nota ➍)' },
+    { id: 'iro-e1-l12-7', number: 7, prompt: 'Variações de V-てみます (Nota ➍):', choices: [{ n: 1, text: '{行|い}ってみませんか？／{行|い}ってみる？／{行|い}ってみたい／{作|つく}ってみます — e liga-se ao V-てみたいんですが… da Lição 10' }, { n: 2, text: 'só existe a forma 〜てみてください' }, { n: 3, text: '〜てみる é uma negação' }, { n: 4, text: '〜てみる só se usa no passado' }], answer: 1, explanationPt: 'V-てみます tem várias formas: {行|い}ってみませんか？, {行|い}ってみる？, {行|い}ってみたい, {作|つく}ってみます. Relaciona-se a V-てみたいんですが… (Lição 10, querer experimentar pela 1ª vez). Ex.: {今度|こんど}、おすしを{作|つく}ってみます. (Nota ➍)' },
+    { id: 'iro-e1-l12-8', number: 8, prompt: 'Verbos intransitivos (自動詞) vs transitivos (他動詞) (Nota ➎):', choices: [{ n: 1, text: '他動詞 = alguém faz a ação de propósito (ご{飯|はん}を{食|た}べる, ドアを{閉|し}める); 自動詞 = foca o evento, não quem faz ({雨|あめ}が{降|ふ}る, ドアが{閉|し}まる)' }, { n: 2, text: 'são a mesma coisa' }, { n: 3, text: '自動詞 sempre leva を' }, { n: 4, text: '他動詞 nunca tem sujeito' }], answer: 1, explanationPt: '他動詞 (transitivo): ação intencional de alguém, padrão ({人|ひと}が)NをV. 自動詞 (intransitivo): foca o acontecimento, padrão NがV. Pares: {入|はい}る/{入|い}れる, {焼|や}ける/{焼|や}く, {煮|に}える/{煮|に}る. (Nota ➎)' },
+    { id: 'iro-e1-l12-9', number: 9, prompt: '「{鶏肉|とりにく}とか、エビとかが{入|はい}ってます」 vs 「{銀杏|ぎんなん}も{入|い}れますよ」 (Nota ➎):', choices: [{ n: 1, text: '〜が{入|はい}っています (自動詞+ている) descreve objetivamente o que TEM no prato; 〜を{入|い}れます (他動詞) = pôr de propósito' }, { n: 2, text: 'os dois significam exatamente o mesmo' }, { n: 3, text: '{入|はい}っている é mais educado que {入|い}れる' }, { n: 4, text: '{入|い}れる descreve um estado' }], answer: 1, translationPt: 'Tem frango, camarão… / Às vezes também ponho ginkgo.', explanationPt: '自動詞 のテ形+います = estado: 〜が{入|はい}っています (o que o prato contém, objetivo). 他動詞 〜を{入|い}れます = pôr intencionalmente. Ex.: すき{焼|や}きには{牛肉|ぎゅうにく}、{豆腐|とうふ}、ねぎが{入|はい}っています／ときどき、しいたけを{入|い}れます. (Nota ➎)' },
+    { id: 'iro-e1-l12-10', number: 10, prompt: '「{味|あじ}は、うすくないですか？」 (イA-くないですか？) é usada para (Nota ➏):', choices: [{ n: 1, text: 'mostrar PREOCUPAÇÃO e checar se está tudo bem (não está sem graça/fraco demais pra você?)' }, { n: 2, text: 'afirmar que o sabor é forte' }, { n: 3, text: 'reclamar da comida' }, { n: 4, text: 'recusar o prato' }], answer: 1, translationPt: 'O sabor não está fraco demais pra você?', explanationPt: 'イA-くないですか？ checa, com preocupação, se está ok. Aqui pergunta sobre o sabor, com receio de que para quem não está acostumado a comida japonesa pareça {味|あじ}がうすい. (Nota ➏)' },
+    { id: 'iro-e1-l12-11', number: 11, prompt: 'Outros exemplos de イA-くないですか？ (Nota ➏):', choices: [{ n: 1, text: '{難|むずか}しくないですか？ (não está difícil demais?) ／ {寒|さむ}くないですか？ (não está frio demais?) ／ わさび、{辛|から}くないですか？' }, { n: 2, text: 'おいしいです ／ {暑|あつ}いです ／ {辛|から}いです (afirmações)' }, { n: 3, text: '{難|むずか}しいですね ／ {寒|さむ}いですね (concordância)' }, { n: 4, text: '{難|むずか}しくない ／ {寒|さむ}くない (negações simples)' }], answer: 1, explanationPt: '〜くないですか？: {難|むずか}しくないですか？, {寒|さむ}くないですか？, わさび、{辛|から}くないですか？ → だいじょうぶです。わさび、{大好|だいす}きですから. (Nota ➏)' },
+    { id: 'iro-e1-l12-12', number: 12, prompt: 'Vocabulário de sabor (Atividade 1): 「{甘|あま}い／{辛|から}い／すっぱい／しょっぱい／{苦|にが}い」 significam:', choices: [{ n: 1, text: 'doce ／ picante/apimentado ／ azedo ／ salgado ／ amargo' }, { n: 2, text: 'salgado ／ doce ／ amargo ／ azedo ／ picante' }, { n: 3, text: 'quente ／ frio ／ forte ／ fraco ／ insosso' }, { n: 4, text: 'gostoso ／ ruim ／ leve ／ pesado ／ fresco' }], answer: 1, explanationPt: '{甘|あま}い (doce), {辛|から}い (picante), すっぱい (azedo), しょっぱい (salgado), {苦|にが}い (amargo). (Atividade 1 · ことば【味】)' },
+    { id: 'iro-e1-l12-13', number: 13, prompt: 'Mais sobre sabor (Atividade 1): 「{味|あじ}がこい／{味|あじ}がうすい／おいしい／まずい」 significam:', choices: [{ n: 1, text: 'sabor forte/concentrado ／ sabor fraco/sem graça ／ gostoso ／ ruim (sem gosto)' }, { n: 2, text: 'sabor fraco ／ sabor forte ／ ruim ／ gostoso' }, { n: 3, text: 'doce ／ amargo ／ quente ／ frio' }, { n: 4, text: 'salgado ／ azedo ／ caro ／ barato' }], answer: 1, explanationPt: '{味|あじ}がこい (sabor forte/concentrado) ↔ {味|あじ}がうすい (sabor fraco/aguado); おいしい (gostoso) ↔ まずい (ruim). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l12-14', number: 14, prompt: 'Vocabulário (Atividade 2): 「もう1つ／お{腹|なか}がいっぱい／どんどん／{苦手|にがて}（な）／{似|に}ている」 significam:', choices: [{ n: 1, text: 'mais um ／ estar de barriga cheia ／ à vontade/sem parar (coma mais!) ／ não ir bem com/não curtir ／ ser parecido com' }, { n: 2, text: 'só um ／ estar com fome ／ devagar ／ adorar ／ ser diferente' }, { n: 3, text: 'menos um ／ estar satisfeito ／ rápido ／ odiar ／ ser igual' }, { n: 4, text: 'nenhum ／ estar cheio ／ pouco ／ gostar ／ combinar' }], answer: 1, explanationPt: 'もう1つ (mais um), お{腹|なか}がいっぱい (de barriga cheia), どんどん{食|た}べてください (coma à vontade), {苦手|にがて}（な） (não curtir/não ir bem com), {似|に}ている (ser parecido: バインセオに{似|に}ています). (Atividade 2 · 大切なことば)' },
+    { id: 'iro-e1-l12-15', number: 15, prompt: 'Vocabulário (Atividade 3 · 茶碗蒸し): 「だし／プリン／きのこ／{銀杏|ぎんなん}／いいにおい／{入|い}れる」 significam:', choices: [{ n: 1, text: 'caldo (dashi) ／ pudim ／ cogumelo ／ ginkgo (gingko) ／ cheiro bom ／ pôr/colocar' }, { n: 2, text: 'molho ／ bolo ／ legume ／ noz ／ cheiro ruim ／ tirar' }, { n: 3, text: 'sopa ／ gelatina ／ erva ／ semente ／ sabor ／ misturar' }, { n: 4, text: 'sal ／ creme ／ raiz ／ fruta ／ vapor ／ cortar' }], answer: 1, explanationPt: 'だし (caldo japonês), プリン (pudim — 茶碗蒸し parece pudim mas não é doce), きのこ (cogumelo), {銀杏|ぎんなん} (ginkgo), いいにおい (cheiro bom), {入|い}れる (pôr — 他動詞). (Atividade 3 · ことば)' },
+    { id: 'iro-e1-l12-16', number: 16, prompt: 'Vocabulário do modo de preparo (Atividade 4 · カップ焼きそば): 「{調理方法|ちょうりほうほう}／フタ／{取|と}り{出|だ}す／めん／{熱湯|ねっとう}／{注|そそ}ぐ／お{湯|ゆ}／{捨|す}てる／かける／{混|ま}ぜる」 significam:', choices: [{ n: 1, text: 'modo de preparo ／ tampa ／ retirar/tirar ／ macarrão ／ água fervente ／ despejar/verter ／ água quente ／ jogar fora/descartar ／ pôr por cima (polvilhar) ／ misturar' }, { n: 2, text: 'ingredientes ／ copo ／ guardar ／ arroz ／ água gelada ／ ferver ／ chá ／ guardar ／ cortar ／ bater' }, { n: 3, text: 'receita ／ prato ／ abrir ／ molho ／ vapor ／ provar ／ caldo ／ lavar ／ aquecer ／ enrolar' }, { n: 4, text: 'embalagem ／ filme ／ furar ／ tempero ／ gelo ／ secar ／ leite ／ encher ／ servir ／ dobrar' }], answer: 1, explanationPt: '{調理方法|ちょうりほうほう} (modo de preparo), フタ (tampa), {取|と}り{出|だ}す (retirar), めん (macarrão), {熱湯|ねっとう} (água fervente), {注|そそ}ぐ (verter), お{湯|ゆ} (água quente), {捨|す}てる (descartar), かける (polvilhar/pôr por cima), {混|ま}ぜる (misturar). (Atividade 4 · 大切なことば)' },
+    { id: 'iro-e1-l12-17', number: 17, prompt: 'Os kanji 「{卵|たまご}／{料理|りょうり}／お{湯|ゆ}／{調理方法|ちょうりほうほう}／{少|すこ}し」 lêem-se:', choices: [{ n: 1, text: 'たまご (ovo) ／ りょうり (prato/culinária) ／ おゆ (água quente) ／ ちょうりほうほう (modo de preparo) ／ すこし (um pouco)' }, { n: 2, text: 'たまご ／ りょうり ／ おゆ ／ ちょうりほうほう ／ しょうし' }, { n: 3, text: 'らん ／ りょうり ／ おとう ／ ちょうりかた ／ すこし' }, { n: 4, text: 'たまご ／ りょうじ ／ おゆ ／ ちょうりほうほう ／ すくなし' }], answer: 1, explanationPt: '{卵|たまご} (ovo), {料理|りょうり} (prato/culinária), お{湯|ゆ} (água quente), {調理方法|ちょうりほうほう} (modo de preparo), {少|すこ}し (um pouco). (漢字のことば)' },
+    { id: 'iro-e1-l12-18', number: 18, prompt: 'Os kanji 「{味|あじ}／{甘|あま}い／{辛|から}い」 lêem-se:', choices: [{ n: 1, text: 'あじ (sabor) ／ あまい (doce) ／ からい (picante)' }, { n: 2, text: 'み ／ かんい ／ しんい' }, { n: 3, text: 'あじ ／ あまい ／ つらい' }, { n: 4, text: 'み ／ あまい ／ からい' }], answer: 1, explanationPt: '{味|あじ} (sabor), {甘|あま}い (doce), {辛|から}い (picante). Obs.: {辛|から}い (picante) e {辛|つら}い (penoso) usam o mesmo kanji com leituras diferentes. (漢字のことば)' },
+    { id: 'iro-e1-l12-19', number: 19, prompt: 'O kanji 「{苦手|にがて}（な）」 lê-se e significa:', choices: [{ n: 1, text: 'にがて — não ir bem com algo / não curtir (relaciona-se a {苦|にが}い = amargo)' }, { n: 2, text: 'くて — fácil' }, { n: 3, text: 'にがて — favorito' }, { n: 4, text: 'くるて — difícil de achar' }], answer: 1, explanationPt: '{苦手|にがて}（な） = não ir bem com / não gostar muito de (mesmo kanji de {苦|にが}い, amargo). Kanji da lição: {卵|たまご}・{料理|りょうり}・お{湯|ゆ}・{調理方法|ちょうりほうほう}・{少|すこ}し・{味|あじ}・{甘|あま}い・{辛|から}い・{苦手|にがて}（な）. (漢字)' },
+    { id: 'iro-e1-l12-20', number: 20, prompt: '📌 TIPS — お{弁当|べんとう} (Obento):', choices: [{ n: 1, text: 'compra-se em conbini/supermercado/loja de bentô, ou faz-se em casa; sabor E aparência importam — equilibra-se a cor (tomate vermelho, tamagoyaki amarelo, legumes verdes, arroz branco, nori/gergelim preto); há muitos “acessórios de bentô”' }, { n: 2, text: 'só se compra em restaurantes caros' }, { n: 3, text: 'nunca se faz em casa' }, { n: 4, text: 'só pode ter arroz branco' }], answer: 1, explanationPt: 'お{弁当|べんとう}: compra-se ou faz-se em casa; pratos comuns são {卵焼|たまごや}き, からあげ, ハンバーグ, ポテトサラダ. Valoriza-se {見|み}た{目|め} (aparência) e o equilíbrio de cores. Há vários お{弁当|べんとう}グッズ para enfeitar. (TIPS)' },
+    { id: 'iro-e1-l12-21', number: 21, prompt: '📌 TIPS — {卵焼|たまごや}き (Tamago-yaki):', choices: [{ n: 1, text: 'omelete enrolada, prato caseiro clássico (café da manhã e bentô); temperos variam — no Kantō costuma ser docinho (açúcar), no Kansai não-doce (com dashi); pode levar cebolinha, espinafre, shirasu, mentaiko' }, { n: 2, text: 'é uma sobremesa gelada' }, { n: 3, text: 'só se come em restaurantes' }, { n: 4, text: 'é sempre salgado e nunca leva nada dentro' }], answer: 1, explanationPt: '{卵焼|たまごや}き = omelete enrolada, {定番|ていばん} caseiro (café da manhã, bentô). No {関東|かんとう} tende a ser doce (açúcar); no {関西|かんさい}, não-doce (dashi). Variações com ねぎ, ほうれん{草|そう}, しらす, {明太子|めんたいこ}. (TIPS)' },
+    { id: 'iro-e1-l12-22', number: 22, prompt: '📌 TIPS — お{好|この}み{焼|や}き (Okonomiyaki):', choices: [{ n: 1, text: 'panqueca salgada com repolho, carne, frutos do mar etc. na massa de farinha e água; estilo Kansai mistura tudo antes; Hiroshima vai em camadas; em Osaka/Hiroshima o garçom prepara, em Tóquio costuma-se grelhar na chapa da mesa' }, { n: 2, text: 'é um bolo doce de aniversário' }, { n: 3, text: 'é feito só de arroz' }, { n: 4, text: 'nunca leva repolho' }], answer: 1, explanationPt: 'お{好|この}み{焼|や}き = panqueca japonesa (repolho/carne/frutos do mar + massa de {小麦粉|こむぎこ} e água, na {鉄板|てっぱん}). Kansai: mistura antes; Hiroshima: em camadas. Em {大阪|おおさか}/{広島|ひろしま} o funcionário faz; em {東京|とうきょう} grelha-se na mesa. (TIPS)' },
+    { id: 'iro-e1-l12-23', number: 23, prompt: 'Diálogo 12-03: A elogia o bentô de B. O que B responde e A decide?', context: 'A：そのお{弁当|べんとう}、おいしそうですね。 B：あ、これですか？おいしいですよ。{駅前|えきまえ}のコンビニで{買|か}いました。 A：へー。じゃ、{今度|こんど}、{買|か}ってみます。', choices: [{ n: 1, text: 'O bentô “parece gostoso”; B comprou na conbini perto da estação; A vai experimentar comprar ({買|か}ってみます)' }, { n: 2, text: 'B fez o bentô em casa; A não quer' }, { n: 3, text: 'A acha o bentô feio' }, { n: 4, text: 'B vai dar o bentô para A' }], answer: 1, explanationPt: 'おいしそうですね (〜そう, ➊); {駅前|えきまえ}のコンビニで{買|か}いました; {買|か}ってみます (V-てみます, ➍). (Atividade 1 · 聴解スクリプト 12-03)' },
+    { id: 'iro-e1-l12-24', number: 24, prompt: 'Diálogo 12-04: A acha o prato de B picante. É mesmo?', context: 'A：わー、それ、{辛|から}そうな{料理|りょうり}ですね。 B：これですか？{私|わたし}の{国|くに}のカレーです。あまり{辛|から}くないですよ。 A：そうなんですか。', choices: [{ n: 1, text: 'Pela aparência parece picante (辛そうな料理), mas é um curry do país de B e não é muito picante' }, { n: 2, text: 'É picantíssimo' }, { n: 3, text: 'É um doce' }, { n: 4, text: 'B não sabe o que é' }], answer: 1, explanationPt: '{辛|から}そうな{料理|りょうり} (〜そうなN, ➋) pela aparência; mas あまり{辛|から}くないですよ (não muito picante). (Atividade 1 · 12-04)' },
+    { id: 'iro-e1-l12-25', number: 25, prompt: 'Diálogos 12-05 e 12-06: o que A diz sobre a bebida e sobre a tangerina?', context: '③ B：これは、チョコレートバニラクリームラテ。 A：へー、{甘|あま}そうですね。 ④ A：みかん、1つどう？うちの{庭|にわ}でとれたのよ。 B：でも、まだ、ちょっとすっぱそうですね。 A：そんなことないわよ。{甘|あま}いわよ。 B：あ、{本当|ほんとう}だ。{甘|あま}い。', choices: [{ n: 1, text: '③ o latte “parece doce” (甘そう). ④ a tangerina “parece azeda” (すっぱそう), mas na verdade está doce' }, { n: 2, text: '③ o latte é amargo. ④ a tangerina é azeda mesmo' }, { n: 3, text: '③ A não quer o latte. ④ B não come a tangerina' }, { n: 4, text: 'Os dois falam de carne' }], answer: 1, explanationPt: '{甘|あま}そう / すっぱそう = impressão pela aparência (➊). A tangerina ainda meio verde parece azeda, mas そんなことない…{甘|あま}い (na verdade doce — só provando se sabe). (Atividade 1 · 12-05/12-06)' },
+    { id: 'iro-e1-l12-26', number: 26, prompt: 'Diálogo 12-10: A oferece tamagoyaki. O que B faz e acha?', context: 'A：よかったら、この{卵焼|たまごや}き、{食|た}べてみてください。 B：ありがとうございます。……あ、{甘|あま}くておいしいですね。 A：もう1つどうですか？ B：じゃあ、もう1ついただきます。', choices: [{ n: 1, text: 'B experimenta (食べてみてください); acha “docinho e gostoso” (甘くておいしい) e aceita mais um' }, { n: 2, text: 'B recusa provar' }, { n: 3, text: 'B acha salgado demais' }, { n: 4, text: 'B já estava cheio' }], answer: 1, explanationPt: '{食|た}べてみてください (V-てみます, ➍); {甘|あま}くておいしい (motivo com 〜くて, ➌); もう1ついただきます. (Atividade 2 · 聴解スクリプト 12-10)' },
+    { id: 'iro-e1-l12-27', number: 27, prompt: 'Diálogo 12-11: B prova o okonomiyaki. Aceita mais?', context: 'A：お{好|この}み{焼|や}き、どう？おいしい？ B：はい、おいしいです。{私|わたし}の{国|くに}のバインセオに{似|に}ています。 A：もう{少|すこ}し{食|た}べる？ B：あ、だいじょうぶです。もうお{腹|なか}がいっぱいです。', choices: [{ n: 1, text: 'Acha gostoso (parecido com o bánh xèo do país dele); recusa mais, pois já está de barriga cheia' }, { n: 2, text: 'Não gostou' }, { n: 3, text: 'Aceita mais três porções' }, { n: 4, text: 'Nunca tinha comido nada parecido' }], answer: 1, explanationPt: 'バインセオに{似|に}ています (ser parecido); もう{少|すこ}し{食|た}べる？ → だいじょうぶです。もうお{腹|なか}がいっぱい (recusa educada). (Atividade 2 · 12-11)' },
+    { id: 'iro-e1-l12-28', number: 28, prompt: 'Diálogo 12-12: B oferece umeboshi. O que A acha?', context: 'B：これ？{梅干|うめぼ}し。{食|た}べてみる？ A：はい。 B：どう？ A：う、……すみません。すっぱくて、ちょっと{苦手|にがて}です。', choices: [{ n: 1, text: 'A prova, mas acha azedo e diz que não curte muito (すっぱくて、ちょっと苦手)' }, { n: 2, text: 'A adora e pede mais' }, { n: 3, text: 'A recusa provar' }, { n: 4, text: 'A acha doce' }], answer: 1, explanationPt: '{食|た}べてみる？ (V-てみる, ➍); すっぱくて、ちょっと{苦手|にがて}です (motivo com 〜くて, ➌, recusa educada). (Atividade 2 · 12-12)' },
+    { id: 'iro-e1-l12-29', number: 29, prompt: 'Diálogo 12-13: comendo sukiyaki, qual o problema de A com o ovo?', context: 'A：すき{焼|や}き、おいしいですね。 B：よかった。どんどん{食|た}べてください。 …B：{卵|たまご}は{使|つか}わないんですか？ A：あ、{生|なま}の{卵|たまご}はちょっとだめです。すみません。', choices: [{ n: 1, text: 'A gosta do sukiyaki, mas não come ovo CRU (生の卵はちょっとだめ)' }, { n: 2, text: 'A não gosta de sukiyaki' }, { n: 3, text: 'A quer mais ovo cru' }, { n: 4, text: 'B não tem ovo' }], answer: 1, explanationPt: 'どんどん{食|た}べてください (coma à vontade); {生|なま}の{卵|たまご}はちょっとだめです (não come ovo cru). (Atividade 2 · 12-13)' },
+    { id: 'iro-e1-l12-30', number: 30, prompt: 'Diálogo 12-18: o que é o 茶碗蒸し e o que tem dentro?', context: 'ラン：これは{何|なん}ですか？ {森|もり}：{茶碗蒸|ちゃわんむ}し。{卵|たまご}の{料理|りょうり}です。プリンに{似|に}てますけど、{甘|あま}くなくて、おいしいですよ。だしを{使|つか}います。 …ラン：{中|なか}に{何|なに}が{入|はい}ってますか？ {森|もり}：{鶏肉|とりにく}とか、エビとか、きのことかが{入|はい}ってます。ときどき、{銀杏|ぎんなん}も{入|い}れますよ。', choices: [{ n: 1, text: 'É um prato de ovo, parecido com pudim mas não doce (e por isso gostoso); leva dashi, e dentro tem frango, camarão, cogumelo (às vezes ginkgo)' }, { n: 2, text: 'É uma sobremesa bem doce, sem ovo' }, { n: 3, text: 'É uma sopa de carne picante' }, { n: 4, text: 'É feito só de arroz' }], answer: 1, explanationPt: '{卵|たまご}の{料理|りょうり}; プリンに{似|に}てますけど{甘|あま}くなくて、おいしい (〜くなくて motivo, ➌); {鶏肉|とりにく}とか…が{入|はい}ってます (自動詞, ➎), {銀杏|ぎんなん}も{入|い}れます (他動詞). {味|あじ}は、うすくないですか？ (➏). (Atividade 3 · 聴解スクリプト 12-18)' },
+    { id: 'iro-e1-l12-31', number: 31, prompt: 'Atividade 4 (modo de preparo do カップ焼きそば): qual a ordem correta dos passos?', context: 'Passos: tirar os sachês (かやく/ソース/ふりかけ) → pôr a かやく sobre o macarrão → verter água fervente até a linha → esperar 3 min → escorrer a água quente → pôr a ソース e misturar → pôr a ふりかけ.', choices: [{ n: 1, text: 'tirar os sachês → かやく no macarrão → verter água fervente → esperar 3 min → escorrer a água → pôr o molho e misturar → polvilhar o furikake' }, { n: 2, text: 'verter água fervente → esperar → tirar os sachês → comer' }, { n: 3, text: 'pôr o molho → misturar → verter água → esperar' }, { n: 4, text: 'escorrer a água → pôr a かやく → verter água → esperar' }], answer: 1, explanationPt: 'Ordem: ①{取|と}り{出|だ}す os sachês → ②かやくを{入|い}れる → ③{熱湯|ねっとう}を{注|そそ}ぐ → ④3{分|ぷん}{待|ま}つ → ⑤お{湯|ゆ}を{捨|す}てる → ⑥ソースをかけて{混|ま}ぜる → ⑦ふりかけをかける. (Atividade 4 · {作|つく}り{方|かた})' },
+    { id: 'iro-e1-l12-32', number: 32, prompt: 'Pergunta de abertura da lição: 「{日本|にほん}の{食|た}べ{物|もの}を{食|た}べたことがありますか？どうでしたか？」 quer dizer:', choices: [{ n: 1, text: 'Você já comeu comida japonesa? Como foi (o que achou)?' }, { n: 2, text: 'Você gosta de cozinhar comida japonesa?' }, { n: 3, text: 'Onde se compra comida japonesa?' }, { n: 4, text: 'Quantas vezes por semana você come fora?' }], answer: 1, translationPt: 'Você já experimentou comida japonesa? Como foi?', explanationPt: '〜を{食|た}べたことがありますか (experiência, Lição 8); どうでしたか (como foi/o que achou). Tema: おいしい{料理|りょうり}. (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 12
+const L12_SCRIPTS: Record<string, ScriptItem[]> = {
+  '12-03': [
+    {
+      label: '会話① (12-03) — おいしそうですね',
+      setupJa: '{職場|しょくば}の{昼休|ひるやす}みに、ほかの{人|ひと}が{持|も}って{来|き}た{食|た}べ{物|もの}を{見|み}て{話|はな}しています。',
+      setupPt: 'No almoço do trabalho, comentam sobre a comida que outra pessoa trouxe.',
+      lines: [
+        { speaker: 'A', ja: 'そのお{弁当|べんとう}、おいしそうですね。', pt: 'Esse bentô parece delicioso, né.' },
+        { speaker: 'B', ja: 'あ、これですか？おいしいですよ。{駅前|えきまえ}のコンビニで{買|か}いました。', pt: 'Ah, este? É gostoso, sim. Comprei na conbini em frente à estação.' },
+        { speaker: 'A', ja: 'へー。じゃ、{今度|こんど}、{買|か}ってみます。', pt: 'Nossa. Então, da próxima vez, vou experimentar comprar.' },
+      ],
+    },
+  ],
+  '12-04': [
+    {
+      label: '会話② (12-04) — 辛そうな料理ですね',
+      lines: [
+        { speaker: 'A', ja: 'わー、それ、{辛|から}そうな{料理|りょうり}ですね。', pt: 'Uau, esse prato parece picante, né.' },
+        { speaker: 'B', ja: 'これですか？{私|わたし}の{国|くに}のカレーです。あまり{辛|から}くないですよ。', pt: 'Este? É um curry do meu país. Não é muito picante, não.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é mesmo?' },
+      ],
+    },
+  ],
+  '12-05': [
+    {
+      label: '会話③ (12-05) — 甘そうですね',
+      lines: [
+        { speaker: 'A', ja: 'それ、{何|なん}ですか？', pt: 'Isso, o que é?' },
+        { speaker: 'B', ja: 'これ？これは、チョコレートバニラクリームラテ。', pt: 'Isto? É um latte de chocolate, baunilha e creme.' },
+        { speaker: 'A', ja: 'へー、{甘|あま}そうですね。', pt: 'Nossa, parece doce, né.' },
+      ],
+    },
+  ],
+  '12-06': [
+    {
+      label: '会話④ (12-06) — ちょっとすっぱそうですね',
+      lines: [
+        { speaker: 'A', ja: 'みかん、1つどう？うちの{庭|にわ}でとれたのよ。', pt: 'Quer uma tangerina? Foi colhida no nosso quintal.' },
+        { speaker: 'B', ja: 'じゃあ、いただきます。でも、まだ、ちょっとすっぱそうですね。', pt: 'Então, aceito. Mas ainda parece um pouquinho azeda, né.' },
+        { speaker: 'A', ja: 'そんなことないわよ。{甘|あま}いわよ。', pt: 'Que nada. Está doce!' },
+        { speaker: 'B', ja: 'あ、{本当|ほんとう}だ。{甘|あま}い。', pt: 'Ah, é verdade. Está doce.' },
+      ],
+    },
+  ],
+  '12-10': [
+    {
+      label: '会話① (12-10) — 甘くておいしいですね',
+      setupJa: '4{人|よにん}の{人|ひと}が、ほかの{人|ひと}といっしょにご{飯|はん}を{食|た}べています。',
+      setupPt: 'Quatro pessoas estão fazendo uma refeição com outra pessoa.',
+      lines: [
+        { speaker: 'A', ja: 'よかったら、この{卵焼|たまごや}き、{食|た}べてみてください。', pt: 'Se quiser, experimente este tamagoyaki.' },
+        { speaker: 'B', ja: 'ありがとうございます。……あ、{甘|あま}くておいしいですね。', pt: 'Obrigado(a). …Ah, é docinho e gostoso, né.' },
+        { speaker: 'A', ja: 'もう1つどうですか？', pt: 'Que tal mais um?' },
+        { speaker: 'B', ja: 'じゃあ、もう1ついただきます。', pt: 'Então, aceito mais um.' },
+      ],
+    },
+  ],
+  '12-11': [
+    {
+      label: '会話② (12-11) — もうお腹がいっぱいです',
+      lines: [
+        { speaker: 'A', ja: 'お{好|この}み{焼|や}き、どう？おいしい？', pt: 'E o okonomiyaki? Está gostoso?' },
+        { speaker: 'B', ja: 'はい、おいしいです。{私|わたし}の{国|くに}のバインセオに{似|に}ています。', pt: 'Sim, está gostoso. Parece o bánh xèo do meu país.' },
+        { speaker: 'A', ja: 'もう{少|すこ}し{食|た}べる？', pt: 'Quer comer mais um pouco?' },
+        { speaker: 'B', ja: 'あ、だいじょうぶです。もうお{腹|なか}がいっぱいです。', pt: 'Ah, estou bem. Já estou de barriga cheia.' },
+      ],
+    },
+  ],
+  '12-12': [
+    {
+      label: '会話③ (12-12) — すっぱくて、ちょっと苦手です',
+      lines: [
+        { speaker: 'A', ja: 'それ、{何|なん}ですか？', pt: 'Isso, o que é?' },
+        { speaker: 'B', ja: 'これ？{梅干|うめぼ}し。{食|た}べてみる？', pt: 'Isto? Umeboshi. Quer experimentar?' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'B', ja: 'どう？', pt: 'E aí, que tal?' },
+        { speaker: 'A', ja: 'う、……すみません。すっぱくて、ちょっと{苦手|にがて}です。', pt: 'Ai… desculpa. É azedo, não curto muito.' },
+        { speaker: 'B', ja: 'あ、そう。', pt: 'Ah, é?' },
+      ],
+    },
+  ],
+  '12-13': [
+    {
+      label: '会話④ (12-13) — 生の卵はちょっとだめです',
+      lines: [
+        { speaker: 'A', ja: 'すき{焼|や}き、おいしいですね。', pt: 'O sukiyaki está gostoso, né.' },
+        { speaker: 'B', ja: 'よかった。どんどん{食|た}べてください。', pt: 'Que bom. Coma à vontade.' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'B', ja: '{卵|たまご}は{使|つか}わないんですか？', pt: 'Você não usa o ovo?' },
+        { speaker: 'A', ja: 'あ、{生|なま}の{卵|たまご}はちょっとだめです。すみません。', pt: 'Ah, ovo cru eu não como muito bem. Desculpa.' },
+      ],
+    },
+  ],
+  '12-18': [
+    {
+      label: '会話 (12-18) — 卵の料理です（茶碗蒸し）',
+      setupJa: '{森|もり}さんとランさんが、{和食|わしょく}のレストランで{食事|しょくじ}をしています。',
+      setupPt: 'Mori e Lan estão comendo num restaurante de comida japonesa.',
+      lines: [
+        { speaker: 'ラン', ja: 'これは{何|なん}ですか？', pt: 'O que é isto?' },
+        { speaker: '森', ja: '{茶碗蒸|ちゃわんむ}し。{卵|たまご}の{料理|りょうり}です。プリンに{似|に}てますけど、{甘|あま}くなくて、おいしいですよ。だしを{使|つか}います。', pt: 'Chawanmushi. É um prato de ovo. Parece pudim, mas não é doce — é gostoso. Leva dashi.' },
+        { speaker: 'ラン', ja: 'だし？', pt: 'Dashi?' },
+        { speaker: '森', ja: 'えーと、まあ、{日本|にほん}のスープかな。', pt: 'Ahn… é tipo um caldo japonês.' },
+        { speaker: 'ラン', ja: 'へー。{中|なか}に{何|なに}が{入|はい}ってますか？', pt: 'Ah. O que tem dentro?' },
+        { speaker: '森', ja: '{鶏肉|とりにく}とか、エビとか、きのことかが{入|はい}ってます。ときどき、{銀杏|ぎんなん}も{入|い}れますよ。', pt: 'Tem frango, camarão, cogumelo… Às vezes também se põe ginkgo.' },
+        { speaker: 'ラン', ja: 'わあ、いいにおい。いただきます。', pt: 'Uau, que cheiro bom. Itadakimasu.' },
+        { speaker: '森', ja: '{味|あじ}は、うすくないですか？', pt: 'O sabor não está fraco demais pra você?' },
+        { speaker: 'ラン', ja: 'おいしいです。', pt: 'Está gostoso.' },
+        { speaker: '森', ja: 'よかった。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+}
+
+const lesson12: Section = {
+  id: 'lesson-12',
+  level: 'elementary1',
+  titleJa: '第12課 お弁当、おいしそうですね',
+  titlePt: 'Lição 12 — O bentô parece delicioso, né',
+  summaryPt: 'Comida gostosa · comentar a impressão pela aparência (おいし{そう}ですね／{辛|から}{そう}な{料理|りょうり}), dar a impressão ao provar ({甘|あま}くておいしい・{食|た}べてみてください), explicar sabor e ingredientes ({甘|あま}くなくて、おいしい／{鶏肉|とりにく}が{入|はい}ってます／{銀杏|ぎんなん}を{入|い}れます) e perguntar com cuidado ({味|あじ}は、うすくないですか？).',
+  studyNotes: [
+    {
+      title: 'Tópico: Comida gostosa (おいしい料理)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Dizer a impressão sobre a aparência de um alimento.\n' +
+        '- Comentar sobre um alimento recomendado depois de prová-lo.\n' +
+        '- Perguntar e responder sobre sabor, ingredientes etc. de um prato.\n' +
+        '- Ler o modo de preparo de um alimento instantâneo e entender os passos.\n\n' +
+        '💡 Pergunta de abertura: {日本|にほん}の{食|た}べ{物|もの}を{食|た}べたことがありますか？どうでしたか？',
+    },
+    {
+      title: 'Aparência: 〜そうです (➊) ／ 〜そうなN (➋)',
+      bodyPt:
+        '**ナA-／イA- そうです** = juízo intuitivo pela **aparência** (não se confirma o sabor sem provar):\n\n' +
+        '- `おいしそうですね`, `{辛|から}そうですね`, `{甘|あま}そう`, `すっぱそう`. Forma: イA tira 〜い ({辛|から}い→{辛|から}そう); ナA tira 〜な ({元気|げんき}そう, {大変|たいへん}そう).\n\n' +
+        '**ナA-／イA- そうなN** = qualifica substantivo: `{辛|から}そうな{料理|りょうり}` (= `その{料理|りょうり}、{辛|から}そうですね`), `おいしそうなケーキ`.',
+    },
+    {
+      title: 'Motivo: イA-くて／くなくて (➌) ／ Experimentar: V-てみます (➍)',
+      bodyPt:
+        '**イA-くて、〜 ／ イA-くなくて、〜** — o adjetivo anterior dá o **motivo** do seguinte:\n\n' +
+        '- `{甘|あま}くて、おいしい` (gostoso porque é doce); negativo: `{甘|あま}くなくて、おいしい` (gostoso porque não é doce); `すっぱくて、{苦手|にがて}です`.\n\n' +
+        '**V-てみます (V-てみる)** = experimentar algo novo p/ ver como é: `{食|た}べてみてください` (oferta), `{食|た}べてみる？`, `{作|つく}ってみます`. Liga-se a V-てみたいんですが… (Lição 10).',
+    },
+    {
+      title: 'Intransitivo/transitivo (➎) ／ Perguntar com cuidado: 〜くないですか？ (➏)',
+      bodyPt:
+        '**自動詞／他動詞** — pares como {入|はい}る/{入|い}れる, {焼|や}ける/{焼|や}く, {煮|に}える/{煮|に}る:\n\n' +
+        '- 自動詞 (NがV): foca o evento — `〜が{入|はい}っています` descreve **o que o prato contém** (objetivo).\n' +
+        '- 他動詞 (NをV): ação intencional — `〜を{入|い}れます` (pôr de propósito).\n\n' +
+        '**イA-くないですか？** = perguntar com **preocupação**, checando se está ok: `{味|あじ}は、うすくないですか？`, `{難|むずか}しくないですか？`, `{寒|さむ}くないですか？`.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Sabor (Ativ. 1):** {甘|あま}い, {辛|から}い, すっぱい, しょっぱい, {苦|にが}い, {味|あじ}がこい, {味|あじ}がうすい, おいしい, まずい. **Provar/comentar (Ativ. 2):** もう1つ, お{腹|なか}がいっぱい, どんどん, {苦手|にがて}（な）, {似|に}ている. **Prato/ingredientes (Ativ. 3):** {茶碗蒸|ちゃわんむ}し, だし, プリン, きのこ, {銀杏|ぎんなん}, いいにおい, {入|い}れる, {生|なま}の{卵|たまご}. **Modo de preparo (Ativ. 4):** {調理方法|ちょうりほうほう}, フタ, {取|と}り{出|だ}す, めん, {熱湯|ねっとう}, {注|そそ}ぐ, お{湯|ゆ}, {捨|す}てる, かける, {混|ま}ぜる.\n\n' +
+        '**Kanji da lição:** {卵|たまご}, {料理|りょうり}, お{湯|ゆ}, {調理方法|ちょうりほうほう}, {少|すこ}し, {味|あじ}, {甘|あま}い, {辛|から}い, {苦手|にがて}（な）.\n\n' +
+        '📌 **TIPS:** **お{弁当|べんとう}** (compra-se ou faz-se em casa; valoriza sabor E aparência/cores; há お{弁当|べんとう}グッズ); **{卵焼|たまごや}き** (omelete enrolada caseira; {関東|かんとう} doce com açúcar, {関西|かんさい} com dashi); **お{好|この}み{焼|や}き** (panqueca de repolho/carne/frutos do mar; Kansai mistura antes, Hiroshima em camadas).',
+    },
+  ],
+  groups: [lesson12Group],
+  audios: attachScripts(12, L12_SCRIPTS),
+}
+
+// ---- Lições 13-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(12, 'Comida gostosa', 'お弁当、おいしそうですね', 'O bentô parece delicioso, né', [
-    'Dizer a impressão sobre a aparência de um alimento.',
-    'Comentar sobre um alimento recomendado depois de prová-lo.',
-    'Perguntar e responder sobre sabor, ingredientes etc. de um prato.',
-    'Ler o modo de preparo de um alimento instantâneo e entender os passos.',
-  ]),
   scaffold(13, 'Comunicação no trabalho', 'あと10分ぐらいで終わりそうです', 'Parece que termino em uns 10 minutos', [
     'Transmitir ao superior a situação quando há um problema no trabalho.',
     'Responder de forma simples quando perguntam o andamento do trabalho.',
@@ -2432,5 +2635,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, ...others],
 }
