@@ -2226,12 +2226,316 @@ const lesson12: Section = {
   audios: attachScripts(12, L12_SCRIPTS),
 }
 
-// ---- Lições 13 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson13Group: ExerciseGroup = {
+  id: 'iro-s-l13',
+  title: 'このバスは空港に行きますか？',
+  subtitlePt: 'Transporte, destino, estações, meios e tempo de deslocamento',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l13-1', number: 1, prompt: '「{電車|でんしゃ}」 é:', choices: [{ n: 1, text: 'trem' }, { n: 2, text: 'ônibus' }, { n: 3, text: 'táxi' }, { n: 4, text: 'navio' }], answer: 1, explanationPt: 'Meios de transporte ({乗|の}り{物|もの}): {電車|でんしゃ} (trem), バス (ônibus), タクシー (táxi), {地下鉄|ちかてつ} (metrô), {飛行機|ひこうき} (avião), {船|ふね} (navio). (Seção 1)' },
+    { id: 'iro-s-l13-2', number: 2, prompt: '「{地下鉄|ちかてつ}」 é:', choices: [{ n: 1, text: 'metrô' }, { n: 2, text: 'bicicleta' }, { n: 3, text: 'avião' }, { n: 4, text: 'navio' }], answer: 1, explanationPt: '{地下鉄|ちかてつ} = metrô (lit. “ferrovia subterrânea”). Outros: {自転車|じてんしゃ} (bicicleta), バイク (moto), {車|くるま} (carro). (Seções 1 e 3)' },
+    { id: 'iro-s-l13-3', number: 3, prompt: 'Para “pegar/embarcar em um meio de transporte” usa-se o verbo:', choices: [{ n: 1, text: '{乗|の}る → 〜に{乗|の}ります' }, { n: 2, text: '{降|お}りる → 〜に{降|お}ります' }, { n: 3, text: '{歩|ある}く → 〜を{歩|ある}きます' }, { n: 4, text: '{行|い}く → 〜を{行|い}きます' }], answer: 1, explanationPt: '{乗|の}る (embarcar) usa **に**: バスに{乗|の}ります. (Nota ➎)' },
+    { id: 'iro-s-l13-4', number: 4, prompt: 'Em 「このバスは{空港|くうこう}（　）{行|い}きますか？」, a lacuna (destino) é:', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'で' }, { n: 3, text: 'を' }, { n: 4, text: 'は' }], answer: 1, translationPt: 'Este ônibus vai ao aeroporto?', explanationPt: 'O **に** de {空港|くうこう}に marca o **destino** ({目的地|もくてきち}) do veículo. Estrutura: この【veículo】は【lugar】に{行|い}きますか？ (Nota ➊)' },
+    { id: 'iro-s-l13-5', number: 5, prompt: 'O 「この」 de 「このバス」 é um:', choices: [{ n: 1, text: 'demonstrativo: “este(a)” (algo diante de você)' }, { n: 2, text: 'verbo' }, { n: 3, text: 'interrogativo' }, { n: 4, text: 'advérbio de tempo' }], answer: 1, explanationPt: 'この + N = este N (algo à sua frente): このバス, この{電車|でんしゃ}. (Nota ➊)' },
+    { id: 'iro-s-l13-6', number: 6, prompt: 'Dentro do trem, para perguntar “onde estou agora?” e “a próxima é ~?”, usa-se:', choices: [{ n: 1, text: 'ここはどこですか？ (lugar atual) / {次|つぎ}は〜ですか？ (próxima parada)' }, { n: 2, text: 'sempre {次|つぎ}' }, { n: 3, text: 'sempre ここ' }, { n: 4, text: 'どうやって / {何|なに}で' }], answer: 1, explanationPt: 'ここ = onde estou agora; {次|つぎ} = próxima parada/estação. Ex.: {次|つぎ}は、{浦田|うらた}ですか？ (Nota ➋)' },
+    { id: 'iro-s-l13-7', number: 7, prompt: 'No anúncio do trem, 「{終点|しゅうてん}」 significa:', choices: [{ n: 1, text: 'ponto final (última estação)' }, { n: 2, text: 'próxima estação' }, { n: 3, text: 'baldeação' }, { n: 4, text: 'saída' }], answer: 1, explanationPt: '{終点|しゅうてん} = estação final. Outros termos: (お){乗|の}り{換|か}え (baldeação), (お){出口|でぐち} (saída), {右側|みぎがわ} (lado direito). (Seção 2)' },
+    { id: 'iro-s-l13-8', number: 8, prompt: 'A diferença entre 「{快速|かいそく}」 e 「{各駅停車|かくえきていしゃ}（{各停|かくてい}）」 é:', choices: [{ n: 1, text: '{快速|かいそく} = expresso (não para em todas); {各駅停車|かくえきていしゃ} = para em todas as estações' }, { n: 2, text: '{快速|かいそく} para em todas; {各停|かくてい} é expresso' }, { n: 3, text: 'são a mesma coisa' }, { n: 4, text: '{快速|かいそく} é ônibus; {各停|かくてい} é trem' }], answer: 1, explanationPt: '{快速|かいそく} = rápido/expresso (pula estações); {各駅停車|かくえきていしゃ} (各停) = para em todas. No áudio 13-07, o {快速|かいそく} não para em {東新宿|ひがししんじゅく}. (Seção 1)' },
+    { id: 'iro-s-l13-9', number: 9, prompt: '「7{番線|ばんせん}」 indica:', choices: [{ n: 1, text: 'a plataforma/linha nº 7 (de onde sai o trem)' }, { n: 2, text: 'o ônibus nº 7' }, { n: 3, text: '7 horas' }, { n: 4, text: 'a saída 7' }], answer: 1, explanationPt: '〜{番線|ばんせん} = plataforma/via nº ~. Para ônibus: 〜{番|ばん}のバス; para barco: 〜{番|ばん}{乗|の}り{場|ば} (atracadouro nº ~). (Seção 1)' },
+    { id: 'iro-s-l13-10', number: 10, prompt: 'Para dizer o MEIO de transporte (“venho de moto”), usa-se:', choices: [{ n: 1, text: 'バイクで{来|き}ます (partícula で)' }, { n: 2, text: 'バイクに{来|き}ます' }, { n: 3, text: 'バイクを{来|き}ます' }, { n: 4, text: 'バイクへ{来|き}ます' }], answer: 1, explanationPt: 'O meio/método leva **で**: バイクで, {電車|でんしゃ}で, {車|くるま}で. (Nota ➌)' },
+    { id: 'iro-s-l13-11', number: 11, prompt: 'Para dizer “venho a pé”, a forma correta é:', choices: [{ n: 1, text: '{歩|ある}いて{来|き}ます (forma-テ de {歩|ある}く)' }, { n: 2, text: '{歩|ある}きで{来|き}ます' }, { n: 3, text: '{足|あし}で{来|き}ます' }, { n: 4, text: '{歩|ある}くで{来|き}ます' }], answer: 1, explanationPt: 'A pé é exceção: usa a forma-テ {歩|ある}いて{来|き}ます (não で). (Nota ➌)' },
+    { id: 'iro-s-l13-12', number: 12, prompt: 'Para perguntar o MEIO de transporte, usa-se:', choices: [{ n: 1, text: 'どうやって / {何|なに}で（{来|き}ますか／{行|い}きますか）' }, { n: 2, text: 'どのぐらい' }, { n: 3, text: 'いつ' }, { n: 4, text: 'いくら' }], answer: 1, explanationPt: 'どうやって (como?) / {何|なに}で (com o quê?). Para o trajeto a um lugar: どうやって{行|い}きますか？ (Nota ➌)' },
+    { id: 'iro-s-l13-13', number: 13, prompt: 'A partícula 「で」 tem dois usos no Starter. São:', choices: [{ n: 1, text: 'lugar da ação ({公園|こうえん}で) e meio/método (バスで)' }, { n: 2, text: 'destino e tempo' }, { n: 3, text: 'companhia e posse' }, { n: 4, text: 'existência e permanência' }], answer: 1, explanationPt: 'で = lugar de ação ({公園|こうえん}でテニスをします) **e** meio/método ({家|いえ}から{会社|かいしゃ}までバスで{来|き}ます). (Quadro ◆ で)' },
+    { id: 'iro-s-l13-14', number: 14, prompt: 'Para dizer quanto tempo leva (“leva 1h30”), usa-se o verbo:', choices: [{ n: 1, text: 'かかります → 1{時間半|じかんはん}かかります' }, { n: 2, text: 'あります' }, { n: 3, text: 'します' }, { n: 4, text: 'います' }], answer: 1, explanationPt: 'かかります (de かかる) = leva/custa (tempo ou dinheiro). Dá para simplificar com です: 10{分|ぷん}ぐらいです. (Nota ➍)' },
+    { id: 'iro-s-l13-15', number: 15, prompt: 'A diferença entre 「〜{時|じ}」 e 「〜{時間|じかん}」 é:', choices: [{ n: 1, text: '〜{時|じ} = hora do relógio (7{時|じ}=7h); 〜{時間|じかん} = duração (2{時間|じかん}=2 horas)' }, { n: 2, text: 'são iguais' }, { n: 3, text: '〜{時|じ} = duração; 〜{時間|じかん} = hora' }, { n: 4, text: '〜{時|じ} = minutos; 〜{時間|じかん} = horas' }], answer: 1, explanationPt: '〜{時|じ} marca o horário; 〜{時間|じかん} marca a duração. Já 〜{分|ふん} serve para os dois (7{時|じ}10{分|ぷん} e 10{分|ぷん}かかります). (Nota ➍)' },
+    { id: 'iro-s-l13-16', number: 16, prompt: '「どのぐらい、かかりますか？」 pergunta:', choices: [{ n: 1, text: 'quanto tempo leva (どのぐらい = quanto/aprox.)' }, { n: 2, text: 'quanto custa' }, { n: 3, text: 'que horas são' }, { n: 4, text: 'onde fica' }], answer: 1, explanationPt: 'どのぐらい／どのくらい = quanto (tempo). E o ぐらい de 30{分|ぷん}ぐらい = “mais ou menos, cerca de”. (Nota ➍)' },
+    { id: 'iro-s-l13-17', number: 17, prompt: 'Em 「12{番|ばん}のバス（　）{乗|の}ります」 (embarco no ônibus 12), a lacuna é:', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'を' }, { n: 3, text: 'で' }, { n: 4, text: 'へ' }], answer: 1, explanationPt: '{乗|の}る usa **に**: 〜に{乗|の}ります. (Nota ➎)' },
+    { id: 'iro-s-l13-18', number: 18, prompt: 'Em 「バスセンターで、バス（　）{降|お}ります」 (desço do ônibus), a lacuna é:', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'に' }, { n: 3, text: 'で' }, { n: 4, text: 'が' }], answer: 1, explanationPt: '{降|お}りる (descer/saltar) usa **を**: 〜を{降|お}ります. O lugar onde embarca/desce leva で: バスセンターで. (Nota ➎)' },
+    { id: 'iro-s-l13-19', number: 19, prompt: '「{乗|の}り{換|か}える」 significa:', choices: [{ n: 1, text: 'fazer baldeação / trocar de linha' }, { n: 2, text: 'descer' }, { n: 3, text: 'comprar bilhete' }, { n: 4, text: 'esperar' }], answer: 1, explanationPt: '{乗|の}り{換|か}える = trocar de veículo/linha → 〜に{乗|の}り{換|か}えます ({東西線|とうざいせん}に{乗|の}り{換|か}えます). (Seção 4 · Nota ➎)' },
+    { id: 'iro-s-l13-20', number: 20, prompt: '「ここから{新|しん}みなと{駅|えき}まで」 expressa:', choices: [{ n: 1, text: 'de um ponto a outro: から (de) … まで (até)' }, { n: 2, text: 'companhia: com … e …' }, { n: 3, text: 'tempo: das … às …' }, { n: 4, text: 'escolha: ou … ou …' }], answer: 1, explanationPt: '【lugar】から【lugar】まで = de … até … (trecho). Ex.: {空港|くうこう}からホテルまで. (Nota ❻)' },
+    { id: 'iro-s-l13-21', number: 21, prompt: 'A partícula 「に」 tem VÁRIOS usos no Starter. Qual lista está correta?', choices: [{ n: 1, text: 'permanência ({住|す}む), existência (ある/いる), tempo (7{時|じ}に), objetivo ({試合|しあい}に{行|い}く), destino ({空港|くうこう}に{行|い}く)' }, { n: 2, text: 'só destino' }, { n: 3, text: 'só meio de transporte' }, { n: 4, text: 'só tempo' }], answer: 1, explanationPt: 'に é multiuso: {東京|とうきょう}に{住|す}む, {食堂|しょくどう}にいます, 7{時|じ}に{起|お}きます, {忘年会|ぼうねんかい}に{行|い}く, このバスは{空港|くうこう}に{行|い}きます. (Quadro ◆ に)' },
+    { id: 'iro-s-l13-22', number: 22, prompt: 'Placas de estação: relacione 「{東口|ひがしぐち}」 / 「{改札|かいさつ}」 / 「{待合室|まちあいしつ}」:', choices: [{ n: 1, text: '{東口|ひがしぐち} = saída leste; {改札|かいさつ} = catraca/portão de bilhetes; {待合室|まちあいしつ} = sala de espera' }, { n: 2, text: '{東口|ひがしぐち} = catraca; {改札|かいさつ} = saída; {待合室|まちあいしつ} = plataforma' }, { n: 3, text: 'as três = saídas' }, { n: 4, text: '{東口|ひがしぐち} = elevador; {改札|かいさつ} = escada; {待合室|まちあいしつ} = banheiro' }], answer: 1, explanationPt: 'Saídas: {東口|ひがしぐち}/{西口|にしぐち}/{南口|みなみぐち}/{北口|きたぐち}. Mais: {改札|かいさつ} (catraca), {待合室|まちあいしつ} (sala de espera), バス{乗|の}り{場|ば} (ponto de ônibus). (Seção 5)' },
+    { id: 'iro-s-l13-23', number: 23, prompt: 'Diálogo 13-04: o ônibus vai ao {市民病院|しみんびょういん}?', context: 'A：このバスは、{市民病院|しみんびょういん}に{行|い}きますか？ B：このバスは{行|い}きません。{市民病院|しみんびょういん}は23{番|ばん}のバスです。', choices: [{ n: 1, text: 'Não — para o hospital é o ônibus nº 23' }, { n: 2, text: 'Sim, é este mesmo' }, { n: 3, text: 'Sim, é o nº 7' }, { n: 4, text: 'Não há ônibus para lá' }], answer: 1, explanationPt: 'B: este ônibus não vai; o do hospital é o 23{番|ばん}のバス (ônibus nº 23).' },
+    { id: 'iro-s-l13-24', number: 24, prompt: 'Diálogo 13-22: como o Yogi vai ao trabalho e quanto leva?', context: '{片山|かたやま}：ヨギさんは、{家|いえ}から{会社|かいしゃ}まで、どうやって{来|き}ますか？ ヨギ：バイクで{来|き}ます。…10{分|ぷん}ぐらいです。', choices: [{ n: 1, text: 'De moto, uns 10 minutos' }, { n: 2, text: 'De trem, 1h30' }, { n: 3, text: 'A pé, 1 hora' }, { n: 4, text: 'De bicicleta, 20 minutos' }], answer: 1, explanationPt: 'ヨギ: バイクで{来|き}ます (de moto), 10{分|ぷん}ぐらい (~10 min). (Compare: {片山|かたやま} {電車|でんしゃ} 1{時間半|じかんはん}; トゥイ ときどき{歩|ある}いて 1{時間|じかん}.)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 13 (聴解スクリプト)
+const L13_SCRIPTS: Record<string, ScriptItem[]> = {
+  '13-03': [
+    {
+      label: '会話① (13-03)',
+      setupJa: '{5人|ごにん}の{人|ひと}が、{乗|の}り{物|もの}の{行|い}き{先|さき}を{質問|しつもん}しています。',
+      setupPt: 'Cinco pessoas perguntam para onde vai um meio de transporte.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。このバスは、{空港|くうこう}に{行|い}きますか？', pt: 'Com licença. Este ônibus vai ao aeroporto?' },
+        { speaker: 'B', ja: 'ええ、{行|い}きますよ。', pt: 'Vai, sim.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '13-04': [
+    {
+      label: '会話② (13-04)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。このバスは、{市民病院|しみんびょういん}に{行|い}きますか？', pt: 'Ah, com licença. Este ônibus vai ao hospital municipal?' },
+        { speaker: 'B', ja: 'このバスは{行|い}きません。{市民病院|しみんびょういん}は23{番|ばん}のバスです。', pt: 'Este ônibus não vai. Para o hospital municipal é o ônibus nº 23.' },
+        { speaker: 'A', ja: '23{番|ばん}ですね。わかりました。', pt: 'O nº 23, né. Entendi.' },
+      ],
+    },
+  ],
+  '13-05': [
+    {
+      label: '会話③ (13-05)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。この{電車|でんしゃ}は、{大阪駅|おおさかえき}に{行|い}きますか？', pt: 'Com licença. Este trem vai à estação de Osaka?' },
+        { speaker: 'B', ja: '{大阪|おおさか}は{反対側|はんたいがわ}です。7{番線|ばんせん}。', pt: 'Osaka é do lado oposto. Plataforma 7.' },
+        { speaker: 'A', ja: 'え、{何番線|なんばんせん}ですか？', pt: 'Ahn, qual plataforma?' },
+        { speaker: 'B', ja: '7{番線|ばんせん}です。', pt: 'É a plataforma 7.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '13-06': [
+    {
+      label: '会話④ (13-06)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。この{船|ふね}は、{黒島|くろしま}に{行|い}きますか？', pt: 'Com licença. Este navio vai para a ilha Kuroshima?' },
+        { speaker: 'B', ja: 'いえ、{黒島|くろしま}は、この{先|さき}、5{番|ばん}{乗|の}り{場|ば}です。', pt: 'Não, para Kuroshima é mais adiante, no atracadouro nº 5.' },
+        { speaker: 'A', ja: 'あ、わかりました。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '13-07': [
+    {
+      label: '会話⑤ (13-07)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、この{電車|でんしゃ}は、{東新宿|ひがししんじゅく}に{行|い}きますか？', pt: 'Ah, este trem vai para Higashi-Shinjuku?' },
+        { speaker: 'B', ja: 'あ、これは{東新宿|ひがししんじゅく}には{止|と}まりません。{快速|かいそく}ですから。{各停|かくてい}に{乗|の}ってください。', pt: 'Ah, este não para em Higashi-Shinjuku, porque é o expresso. Pegue o trem que para em todas as estações.' },
+        { speaker: 'A', ja: 'かくてい？', pt: 'Kakutei?' },
+        { speaker: 'B', ja: '{各駅停車|かくえきていしゃ}です。{次|つぎ}の{電車|でんしゃ}。', pt: 'O “para em todas as estações”. O próximo trem.' },
+        { speaker: 'A', ja: 'あ、はい。', pt: 'Ah, sim.' },
+      ],
+    },
+  ],
+  '13-11': [
+    {
+      label: '会話① (13-11)',
+      setupJa: '{5人|ごにん}の{人|ひと}が、{電車|でんしゃ}の{中|なか}で{車内放送|しゃないほうそう}を{聞|き}いて、{近|ちか}くの{人|ひと}に{質問|しつもん}しています。',
+      setupPt: 'Cinco pessoas, dentro do trem, ouvem o anúncio e perguntam a alguém ao lado.',
+      lines: [
+        { speaker: 'Anúncio', ja: 'さきやま{新都心|しんとしん}、さきやま{新都心|しんとしん}です。', pt: 'Sakiyama-Shintoshin, estação Sakiyama-Shintoshin.' },
+        { speaker: 'A', ja: 'すみません。ここは、さきやま{新都心|しんとしん}ですか？', pt: 'Com licença. Aqui é Sakiyama-Shintoshin?' },
+        { speaker: 'B', ja: 'はい、そうです。', pt: 'Sim, é isso.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '13-12': [
+    {
+      label: '会話② (13-12)',
+      lines: [
+        { speaker: 'Anúncio', ja: '{黒羽|くろばね}〜、{黒羽|くろばね}です。', pt: 'Kurobane, estação Kurobane.' },
+        { speaker: 'A', ja: 'すみません。ここは、どこですか？', pt: 'Com licença. Que estação é esta?' },
+        { speaker: 'B', ja: 'え？　ああ、{黒羽|くろばね}です。', pt: 'Ahn? Ah, é Kurobane.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '13-13': [
+    {
+      label: '会話③ (13-13)',
+      lines: [
+        { speaker: 'Anúncio', ja: '{終点|しゅうてん}、{本宮|ほんみや}です。お{忘|わす}れ{物|もの}のないよう、お{降|お}りください。', pt: 'Ponto final, estação Honmiya. Por favor, desçam sem esquecer seus pertences.' },
+        { speaker: 'A', ja: 'すみません。{今|いま}、どこですか？', pt: 'Com licença. Onde estamos agora?' },
+        { speaker: 'B', ja: '{本宮|ほんみや}です。{終点|しゅうてん}ですよ。', pt: 'É Honmiya. É o ponto final.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '13-14': [
+    {
+      label: '会話④ (13-14)',
+      lines: [
+        { speaker: 'Anúncio', ja: '{次|つぎ}は{沢口|さわぐち}、{沢口|さわぐち}です。', pt: 'A próxima é Sawaguchi, estação Sawaguchi.' },
+        { speaker: 'A', ja: 'あのう、{次|つぎ}は、どこですか？', pt: 'Ah, qual é a próxima estação?' },
+        { speaker: 'B', ja: '{沢口|さわぐち}です。', pt: 'É Sawaguchi.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '13-15': [
+    {
+      label: '会話⑤ (13-15)',
+      lines: [
+        { speaker: 'Anúncio', ja: '{次|つぎ}は、{南浦田|みなみうらた}です。{武蔵山線|むさしやません}はお{乗|の}り{換|か}えです。お{出口|でぐち}は{右側|みぎがわ}です。', pt: 'A próxima é Minami-Urata. Baldeação para a Linha Musashiyama. A saída é do lado direito.' },
+        { speaker: 'A', ja: 'あのう、すみません。{次|つぎ}は、{浦田|うらた}ですか？', pt: 'Ah, com licença. A próxima é Urata?' },
+        { speaker: 'B', ja: 'いえ、{次|つぎ}は、{南浦田|みなみうらた}です。{浦田|うらた}は、{南浦田|みなみうらた}の{次|つぎ}です。', pt: 'Não, a próxima é Minami-Urata. Urata é depois de Minami-Urata.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '13-22': [
+    {
+      label: '会話① (13-22)',
+      setupJa: '{会社|かいしゃ}の{休|やす}み{時間|じかん}に、ヨギさん、{片山|かたやま}さん、{小西|こにし}さん、トゥイさんの{4人|よにん}が、{通勤手段|つうきんしゅだん}について{話|はな}しています。',
+      setupPt: 'No intervalo do trabalho, Yogi, Katayama, Konishi e Thuy falam sobre como vão ao trabalho.',
+      lines: [
+        { speaker: '片山', ja: 'ヨギさんは、{家|いえ}から{会社|かいしゃ}まで、どうやって{来|き}ますか？', pt: 'Yogi, como você vem de casa ao trabalho?' },
+        { speaker: 'ヨギ', ja: 'バイクで{来|き}ます。', pt: 'Venho de moto.' },
+        { speaker: '片山', ja: 'へー、どのぐらい、かかりますか？', pt: 'Ah, e quanto tempo leva?' },
+        { speaker: 'ヨギ', ja: '10{分|ぷん}ぐらいです。', pt: 'Uns 10 minutos.' },
+        { speaker: '片山', ja: 'そうですか。', pt: 'Ah é.' },
+      ],
+    },
+  ],
+  '13-23': [
+    {
+      label: '会話② (13-23)',
+      lines: [
+        { speaker: 'ヨギ', ja: '{片山|かたやま}さんは？', pt: 'E você, Katayama?' },
+        { speaker: '片山', ja: '{私|わたし}は、{電車|でんしゃ}です。1{時間半|じかんはん}かかります。', pt: 'Eu vou de trem. Leva 1 hora e meia.' },
+        { speaker: 'ヨギ', ja: '{大変|たいへん}ですね。', pt: 'Que sufoco, hein.' },
+      ],
+    },
+  ],
+  '13-24': [
+    {
+      label: '会話③ (13-24)',
+      lines: [
+        { speaker: 'ヨギ', ja: '{小西|こにし}さんは、{家|いえ}から{会社|かいしゃ}まで、{何|なに}で{来|き}ますか？', pt: 'Konishi, com o que você vem de casa ao trabalho?' },
+        { speaker: '小西', ja: '{私|わたし}は、{自転車|じてんしゃ}で{来|き}ます。でも、{雨|あめ}の{日|ひ}は{車|くるま}です。', pt: 'Eu venho de bicicleta. Mas em dia de chuva, de carro.' },
+        { speaker: 'ヨギ', ja: 'どのぐらい、かかりますか？', pt: 'Quanto tempo leva?' },
+        { speaker: '小西', ja: '{自転車|じてんしゃ}で20{分|ぷん}、{車|くるま}で5{分|ふん}です。', pt: 'De bicicleta 20 minutos, de carro 5 minutos.' },
+        { speaker: 'ヨギ', ja: 'そうですか。', pt: 'Ah é.' },
+      ],
+    },
+  ],
+  '13-25': [
+    {
+      label: '会話④ (13-25)',
+      lines: [
+        { speaker: 'ヨギ', ja: 'トゥイさんは？', pt: 'E você, Thuy?' },
+        { speaker: 'トゥイ', ja: 'バスで{来|き}ます。15{分|ふん}ぐらいです。', pt: 'Venho de ônibus. Uns 15 minutos.' },
+        { speaker: 'ヨギ', ja: 'そうですか。', pt: 'Ah é.' },
+        { speaker: 'トゥイ', ja: 'ときどき、{歩|ある}いて{来|き}ます。1{時間|じかん}ぐらいかかります。', pt: 'Às vezes venho a pé. Leva cerca de 1 hora.' },
+        { speaker: '全員', ja: 'へー。／すごいですね。／おー。', pt: 'Nossa. / Que incrível. / Oh.' },
+      ],
+    },
+  ],
+  '13-30': [
+    {
+      label: '会話① (13-30)',
+      setupJa: '{街|まち}で、{3人|さんにん}の{人|ひと}が、{行|い}き{方|かた}を{質問|しつもん}しています。',
+      setupPt: 'Na cidade, três pessoas perguntam como chegar a um lugar.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。おやしお{市場|いちば}まで、どうやって{行|い}きますか？', pt: 'Com licença. Como faço para chegar ao mercado Oyashio?' },
+        { speaker: 'B', ja: 'はい、おやしお{市場|いちば}ですね。ここから{新|しん}みなと{駅|えき}まで、{電車|でんしゃ}に{乗|の}ります。{新|しん}みなと{駅|えき}からマリンシティまで、バスに{乗|の}ります。マリンシティから、{歩|ある}いて5{分|ふん}ぐらいです。', pt: 'Sim, o mercado Oyashio. Daqui até a estação Shin-Minato, pegue o trem. De Shin-Minato até Marine City, pegue o ônibus. De Marine City, são uns 5 minutos a pé.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '13-31': [
+    {
+      label: '会話② (13-31)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{市役所|しやくしょ}まで、どうやって{行|い}きますか？', pt: 'Com licença. Como chego à prefeitura?' },
+        { speaker: 'B', ja: '{市役所|しやくしょ}は……ここから、12{番|ばん}のバスに{乗|の}ります。バスセンターで、バスを{降|お}ります。5{番|ばん}のバスに{乗|の}り{換|か}えます。{市役所|しやくしょ}は{終点|しゅうてん}です。', pt: 'A prefeitura… Daqui, pegue o ônibus nº 12. Desça no terminal de ônibus. Faça baldeação para o ônibus nº 5. A prefeitura é o ponto final.' },
+        { speaker: 'A', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '13-32': [
+    {
+      label: '会話③ (13-32)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。さくらモールまで、どうやって{行|い}きますか？', pt: 'Com licença. Como chego ao shopping Sakura?' },
+        { speaker: 'B', ja: 'さくらモールですか？　えーと、もみじ{駅|えき}からさくら{駅|えき}まで、{南北線|なんぼくせん}に{乗|の}ります。さくら{駅|えき}で、{東西線|とうざいせん}に{乗|の}り{換|か}えます。{新|しん}さくら{駅|えき}で{降|お}ります。{新|しん}さくら{駅|えき}から、バスがあります。', pt: 'Shopping Sakura? Hmm, da estação Momiji até a estação Sakura, pegue a Linha Norte-Sul. Em Sakura, faça baldeação para a Linha Leste-Oeste. Desça na estação Shin-Sakura. De Shin-Sakura tem ônibus.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+}
+
+const lesson13: Section = {
+  id: 'lesson-13',
+  level: 'starter',
+  titleJa: '第13課 このバスは空港に行きますか？',
+  titlePt: 'Lição 13 — Este ônibus vai ao aeroporto?',
+  summaryPt: 'Andar pela cidade · perguntar se um transporte vai aonde você quer (このNは〜に行きますか？), conferir estações e paradas (ここはどこですか／次は〜ですか), dizer o meio de transporte (〜で来ます, 歩いて来ます) e quanto leva (〜かかります), explicar trajetos com 〜に乗ります／〜を降ります／〜に乗り換えます e 〜から〜まで, e ler placas da estação.',
+  studyNotes: [
+    {
+      title: 'Tópico: Andar pela cidade',
+      bodyPt:
+        '## Can-do\n' +
+        '- Perguntar se um trem/ônibus vai aonde você quer e entender a resposta.\n' +
+        '- Ouvir o anúncio do nome da estação e, se não entender, perguntar a alguém.\n' +
+        '- Dizer como vai ao trabalho e quanto tempo leva.\n' +
+        '- Perguntar o caminho até um destino e entender a resposta.\n' +
+        '- Ler placas comuns dentro da estação.',
+    },
+    {
+      title: 'Meios de transporte e verbos (Seções 1 e 3)',
+      bodyPt:
+        '**{乗|の}り{物|もの} (transportes):** {電車|でんしゃ} (trem), バス (ônibus), タクシー (táxi), {地下鉄|ちかてつ} (metrô), {飛行機|ひこうき} (avião), {船|ふね} (navio), {自転車|じてんしゃ} (bicicleta), バイク (moto), {車|くるま} (carro), {歩|ある}いて (a pé).\n\n' +
+        '**Verbos-chave:** {乗|の}る → 〜に{乗|の}ります (embarcar), {降|お}りる → 〜を{降|お}ります (descer), {乗|の}り{換|か}える → 〜に{乗|の}り{換|か}えます (baldear).\n\n' +
+        '**Na estação:** 〜{番線|ばんせん} (plataforma nº), 〜{番|ばん}のバス (ônibus nº), 〜{番|ばん}{乗|の}り{場|ば} (atracadouro nº), {快速|かいそく} (expresso) × {各駅停車|かくえきていしゃ}/{各停|かくてい} (para em todas), {終点|しゅうてん} (ponto final), 〜{線|せん} (linha), (お){乗|の}り{換|か}え, (お){出口|でぐち}, {右側|みぎがわ}, {反対側|はんたいがわ}, {先|さき}, {次|つぎ}.',
+    },
+    {
+      title: 'Destino do transporte: このNは〜に行きますか？ (➊)',
+      bodyPt:
+        'Para conferir se um veículo vai aonde você quer:\n\n' +
+        '`このバスは、{空港|くうこう}に{行|い}きますか？` = este ônibus vai ao aeroporto?\n\n' +
+        '- **この** + N = este N (à sua frente): このバス, この{電車|でんしゃ}, この{船|ふね}.\n' +
+        '- O **に** de {空港|くうこう}に marca o **destino** ({目的地|もくてきち}).\n\n' +
+        'Respostas: ええ、{行|い}きますよ。／いえ、{行|い}きません。／ちょっとわかりません。',
+    },
+    {
+      title: 'Onde estou / qual é a próxima: ここは〜ですか？ (➋)',
+      bodyPt:
+        'Dentro de ônibus e trens, para conferir parada/estação:\n\n' +
+        '- **ここはどこですか？** = onde estou agora? (lugar atual)\n' +
+        '- **{次|つぎ}は、〜ですか？** = a próxima é ~? (próxima parada)\n\n' +
+        'Ex.: `{次|つぎ}は、{浦田|うらた}ですか？` → `いえ、{次|つぎ}は、{南浦田|みなみうらた}です。`\n\n' +
+        '💡 No anúncio você ouve: {終点|しゅうてん} (ponto final), お{乗|の}り{換|か}え (baldeação), お{出口|でぐち}は{右側|みぎがわ}です (saída à direita).',
+    },
+    {
+      title: 'Meio de transporte: 〜で来ます (➌)',
+      bodyPt:
+        'O **meio/método** leva a partícula **で**:\n\n' +
+        '`バイクで{来|き}ます` · `{電車|でんしゃ}で{来|き}ます` · `{車|くるま}で{来|き}ます`.\n\n' +
+        '⚠️ A pé é exceção: usa a **forma-テ** → `{歩|ある}いて{来|き}ます`.\n\n' +
+        '**Perguntar:** どうやって{来|き}ますか？ / {何|なに}で{来|き}ますか？ (como? / com o quê?). Para o trajeto a um lugar: どうやって{行|い}きますか？\n\n' +
+        '📌 A partícula **で** tem 2 usos no Starter: lugar da ação ({公園|こうえん}でテニス) e meio/método (バスで).',
+    },
+    {
+      title: 'Quanto tempo leva: 〜かかります (➍)',
+      bodyPt:
+        'Para falar de **duração**: **【tempo】かかります** (leva ~).\n\n' +
+        '`1{時間半|じかんはん}かかります` · `10{分|ぷん}ぐらいです` (dá para usar です).\n\n' +
+        '- **〜{時|じ}** = hora do relógio (7{時|じ} = 7h); **〜{時間|じかん}** = duração (2{時間|じかん} = 2 horas); **〜{分|ふん}** serve para os dois.\n' +
+        '- **Perguntar:** どのぐらい／どのくらい、かかりますか？ O **ぐらい** = “cerca de, mais ou menos”.\n\n' +
+        '**Minutos:** 1{分|ぷん}いっぷん, 2{分|ふん}にふん, 3{分|ぷん}さんぷん, 4{分|ぷん}よんぷん, 6{分|ぷん}ろっぷん, 8{分|ぷん}はっぷん, 10{分|ぷん}じゅっぷん.',
+    },
+    {
+      title: 'Explicar o trajeto: 〜に乗ります／〜を降ります／〜から〜まで (➎ ❻)',
+      bodyPt:
+        'Para descrever um percurso com transporte:\n\n' +
+        '| ação | partícula | exemplo |\n|---|---|---|\n' +
+        '| embarcar {乗|の}る | **に** | 12{番|ばん}のバスに{乗|の}ります |\n' +
+        '| descer {降|お}りる | **を** | バスを{降|お}ります |\n' +
+        '| baldear {乗|の}り{換|か}える | **に** | {東西線|とうざいせん}に{乗|の}り{換|か}えます |\n' +
+        '| lugar de embarque/desembarque | **で** | バスセンターで{降|お}ります |\n\n' +
+        '**Trecho:** 【lugar】**から**【lugar】**まで** = de … até … → `ここから{新|しん}みなと{駅|えき}まで、{電車|でんしゃ}に{乗|の}ります`.\n\n' +
+        '📌 A partícula **に** é multiuso (Lições 4–13): permanência ({住|す}む), existência (ある/いる), tempo (7{時|じ}に), objetivo ({試合|しあい}に), destino ({空港|くうこう}に). Kanji do dia: {東|ひがし}, {西|にし}, {南|みなみ}, {北|きた}, {会社|かいしゃ}, {来|き}ます, {行|い}きます, {乗|の}ります.',
+    },
+  ],
+  groups: [lesson13Group],
+  audios: attachScripts(13, L13_SCRIPTS),
+}
+
+// ---- Lições 14 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(13, 'Andar pela cidade', 'このバスは空港に行きますか', 'Este ônibus vai ao aeroporto?', [
-    'Perguntar se o trem/ônibus vai aonde você quer.',
-    'Entender o anúncio do nome da estação e perguntar.',
-  ]),
   scaffold(14, 'Andar pela cidade', '大きい建物ですね', 'É um prédio grande, né', [
     'Descrever lugares e construções de forma simples.',
     'Perguntar e indicar caminhos básicos.',
@@ -2263,5 +2567,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, ...others],
 }
