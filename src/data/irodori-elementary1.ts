@@ -1951,14 +1951,211 @@ const lesson9: Section = {
   audios: attachScripts(9, L9_SCRIPTS),
 }
 
-// ---- Lições 10-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 10: 日本語教室に参加したいんですが… (tópico 日本語学習) ----------
+const lesson10Group: ExerciseGroup = {
+  id: 'iro-e1-l10',
+  title: '日本語教室に参加したいんですが…',
+  subtitlePt: 'Aprender japonês · perguntar num guichê sobre um curso (V-てみたいんですが…), falar de frequência (週に1回), oferecer ajuda (V-ましょうか), pedir o sentido de uma palavra (〜はどういう意味ですか) e dizer quando algo se deu (Nのとき)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l10-1', number: 1, prompt: '「{合気道|あいきどう}をやってみたいんですが…」 (V-てみたいんですが…) serve para (Nota ➊):', choices: [{ n: 1, text: 'dizer que quer EXPERIMENTAR algo novo (pela 1ª vez) e perguntar/consultar sobre isso' }, { n: 2, text: 'dizer que já fez aquilo muitas vezes' }, { n: 3, text: 'recusar um convite' }, { n: 4, text: 'dar uma ordem' }], answer: 1, translationPt: 'Eu queria experimentar fazer aikidô…', explanationPt: 'V-てみたいんですが… comunica o desejo de tentar algo novo pela primeira vez e abre espaço para perguntar/consultar o interlocutor. Aqui a pessoa nunca fez aikidô e quer experimentar. (Nota ➊)' },
+    { id: 'iro-e1-l10-2', number: 2, prompt: 'Diferença entre V-たいんですが… (Lição 8) e V-てみたいんですが… (Nota ➊):', choices: [{ n: 1, text: 'V-たいんですが… = quero fazer; V-てみたいんですが… = quero EXPERIMENTAR/tentar (algo novo)' }, { n: 2, text: 'são exatamente iguais' }, { n: 3, text: 'V-てみたい é mais ríspido' }, { n: 4, text: 'V-てみたい é só passado' }], answer: 1, explanationPt: 'Na Lição 8 vimos V-たいんですが… (transmitir um desejo e pedir um favor). V-てみたいんですが… acrescenta a ideia de “experimentar pela primeira vez”: {書道教室|しょどうきょうしつ}に{参加|さんか}してみたいんですが…. (Nota ➊)' },
+    { id: 'iro-e1-l10-3', number: 3, prompt: 'Como se forma V-てみたい (Nota ➊)?', choices: [{ n: 1, text: 'テ-forma do verbo + みたい (やって→やってみたい、{参加|さんか}して→{参加|さんか}してみたい)' }, { n: 2, text: 'forma de dicionário + みたい' }, { n: 3, text: 'forma マス + みたい' }, { n: 4, text: 'forma タ + みたい' }], answer: 1, explanationPt: 'V-てみる liga-se à テ-forma (やって、{参加|さんか}して、{食|た}べて…) + みたい(んですが…). Ex.: 「{書道教室|しょどうきょうしつ}に{参加|さんか}してみたいんですが…」「{体験教室|たいけんきょうしつ}ですか？それとも{毎週|まいしゅう}のコースですか？」 (Nota ➊)' },
+    { id: 'iro-e1-l10-4', number: 4, prompt: '「{日本語|にほんご}クラスは{週|しゅう}に1{回|かい}です」 (【期間】に〜回) expressa (Nota ➋):', choices: [{ n: 1, text: 'frequência: quantas vezes em cada período (1 vez por semana)' }, { n: 2, text: 'a duração total do curso' }, { n: 3, text: 'o horário de início' }, { n: 4, text: 'o preço' }], answer: 1, translationPt: 'A aula de japonês é uma vez por semana.', explanationPt: '【período】に〜{回|かい} indica frequência. Antes de に vêm períodos: {週|しゅう}／〜{週間|しゅうかん}、{月|つき}／〜か{月|げつ}、{年|ねん}／〜{年|ねん}. 〜{回|かい} vem depois do número (1{回|かい}、2{回|かい}…). (Nota ➋)' },
+    { id: 'iro-e1-l10-5', number: 5, prompt: 'Sobre 【期間】に〜回 (Nota ➋), o que também é verdade?', choices: [{ n: 1, text: 'o に às vezes é omitido; com 〜ぐらい indica frequência aproximada ({月|つき}に2{回|かい}、4{年|ねん}に1{回|かい})' }, { n: 2, text: 'o に nunca pode ser omitido' }, { n: 3, text: '〜回 vem sempre antes do número' }, { n: 4, text: 'só funciona com horas' }], answer: 1, explanationPt: 'O に de 【期間】に pode ser omitido; {回|かい}+ぐらい dá frequência aproximada. Ex.: {月|つき}に2{回|かい}、{国際交流会|こくさいこうりゅうかい}があります／オリンピックは4{年|ねん}に1{回|かい}あります. (Nota ➋)' },
+    { id: 'iro-e1-l10-6', number: 6, prompt: '「{教室|きょうしつ}のチラシを{持|も}って{来|き}ましょうか？」 (V-ましょうか？) serve para (Nota ➌):', choices: [{ n: 1, text: 'OFERECER-SE para fazer algo pelo outro (quer que eu traga o folheto?)' }, { n: 2, text: 'pedir permissão para sair' }, { n: 3, text: 'recusar um pedido' }, { n: 4, text: 'perguntar o preço' }], answer: 1, translationPt: 'Quer que eu traga o folheto da aula?', explanationPt: 'V-ましょうか？ oferece ajuda/serviço ao outro. Aqui, oferecer-se para trazer o folheto a quem quer informação. Forma: V-ます → V-ましょうか？ ({持|も}って{来|き}ます→{持|も}って{来|き}ましょうか？). (Nota ➌)' },
+    { id: 'iro-e1-l10-7', number: 7, prompt: 'Exemplo de oferta com V-ましょうか？ (Nota ➌):', choices: [{ n: 1, text: 'よかったら、{手伝|てつだ}いましょうか？ → ありがとうございます。' }, { n: 2, text: '{手伝|てつだ}ってください！ (ordem)' }, { n: 3, text: '{手伝|てつだ}いましたか？' }, { n: 4, text: '{手伝|てつだ}いたいです' }], answer: 1, explanationPt: 'よかったら、{手伝|てつだ}いましょうか？ = se quiser, eu ajudo? — oferta. A resposta típica é o agradecimento: ありがとうございます。 (Nota ➌)' },
+    { id: 'iro-e1-l10-8', number: 8, prompt: '「すみません。「ぼご」は、どういう{意味|いみ}ですか？」 (聞き返し / asking again) é usada para (Nota ➍):', choices: [{ n: 1, text: 'pedir de novo o SENTIDO de uma palavra que não se entendeu' }, { n: 2, text: 'pedir desculpas por um erro' }, { n: 3, text: 'agradecer pela ajuda' }, { n: 4, text: 'encerrar a conversa' }], answer: 1, translationPt: 'Com licença. O que significa “bogo”?', explanationPt: 'Há dois tipos de 聞き返し: ① perguntar o que a pessoa disse, e ② perguntar o sentido. Esta lição trata do ②: cita-se a palavra e usa-se 「〜はどういう{意味|いみ}ですか？」. (Nota ➍)' },
+    { id: 'iro-e1-l10-9', number: 9, prompt: 'Outras formas de “asking again” (Nota ➍):', choices: [{ n: 1, text: '「〜は{何|なん}ですか？」, ou repetir a palavra desconhecida com entonação ascendente (「どうぎ？」)' }, { n: 2, text: 'falar mais alto a própria frase' }, { n: 3, text: 'mudar de assunto' }, { n: 4, text: 'responder “はい” sem entender' }], answer: 1, explanationPt: 'Além de 〜はどういう{意味|いみ}ですか？, dá para usar 〜は{何|なん}ですか？ ou simplesmente repetir a palavra que não se entendeu com entonação subindo (どうぎ？). (Nota ➍)' },
+    { id: 'iro-e1-l10-10', number: 10, prompt: 'No exemplo 「{合気道|あいきどう}の{道着|どうぎ}、{持|も}ってますか？」「どうぎ？」「{合気道|あいきどう}の{服|ふく}です」, o que aconteceu (Nota ➍)?', choices: [{ n: 1, text: 'B não entendeu 「{道着|どうぎ}」 e repetiu com entonação ascendente; A explicou o sentido' }, { n: 2, text: 'B recusou emprestar o dôgi' }, { n: 3, text: 'A pediu desculpas' }, { n: 4, text: 'os dois falaram de comida' }], answer: 1, explanationPt: 'Repetir a palavra com entonação ascendente (「どうぎ？」) é uma forma de 聞き返し; A então explica: 「{合気道|あいきどう}の{服|ふく}です」. (Nota ➍)' },
+    { id: 'iro-e1-l10-11', number: 11, prompt: '「{高校|こうこう}のとき、{少|すこ}し{日本語|にほんご}を{勉強|べんきょう}しました」 (Nのとき、〜) significa (Nota ➎):', choices: [{ n: 1, text: 'indica QUANDO algo aconteceu: quando eu estava no ensino médio, estudei um pouco de japonês' }, { n: 2, text: 'indica onde a pessoa estudou' }, { n: 3, text: 'indica com quem estudou' }, { n: 4, text: 'indica por quanto tempo' }], answer: 1, translationPt: 'Quando eu estava no ensino médio, estudei um pouco de japonês.', explanationPt: 'Nのとき、〜 marca o momento em que a ação da oração seguinte ocorre. {高校|こうこう}のとき = quando (eu) estava no ensino médio. (Nota ➎)' },
+    { id: 'iro-e1-l10-12', number: 12, prompt: 'Como 「とき」 se liga a adjetivos (Nota ➎)?', choices: [{ n: 1, text: 'ナA + な + とき ({暇|ひま}なとき) ／ イA + い + とき ({若|わか}いとき) ／ N + の + とき ({高校|こうこう}のとき)' }, { n: 2, text: 'sempre com の, inclusive adjetivos' }, { n: 3, text: 'adjetivos não podem usar とき' }, { n: 4, text: 'ナA + の + とき' }], answer: 1, explanationPt: 'Esta lição mostra só com substantivo (Nのとき), mas とき também liga a adjetivos: ナA-なとき ({暇|ひま}なとき), イA-いとき ({若|わか}いとき). (Nota ➎)' },
+    { id: 'iro-e1-l10-13', number: 13, prompt: 'Exemplos de 〜とき (Nota ➎):', choices: [{ n: 1, text: '{買|か}い{物|もの}のとき、お{店|みせ}の{人|ひと}と{日本語|にほんご}で{話|はな}します ／ {暇|ひま}なとき、{日本|にほん}のドラマを{見|み}ます ／ {若|わか}いとき、いろいろな{国|くに}のことばを{習|なら}いました' }, { n: 2, text: '{買|か}い{物|もの}とき／{暇|ひま}とき／{若|わか}とき' }, { n: 3, text: '{買|か}い{物|もの}でとき／{暇|ひま}でとき' }, { n: 4, text: '{買|か}い{物|もの}にとき／{暇|ひま}にとき' }], answer: 1, explanationPt: '{買|か}い{物|もの}のとき (N+の), {暇|ひま}なとき (ナA+な), {若|わか}いとき (イA+い). (Nota ➎ · 例)' },
+    { id: 'iro-e1-l10-14', number: 14, prompt: 'Vocabulário (Atividade 2): 「{参加|さんか}する／クラス／{必要|ひつよう}（な）／{最初|さいしょ}／{空|あ}いている／{払|はら}う」 significam:', choices: [{ n: 1, text: 'participar/inscrever-se ／ turma/aula ／ necessário ／ no começo/primeiro ／ ter vaga (estar livre) ／ pagar' }, { n: 2, text: 'sair ／ professor ／ proibido ／ no fim ／ estar cheio ／ receber' }, { n: 3, text: 'faltar ／ sala ／ caro ／ ontem ／ fechar ／ comprar' }, { n: 4, text: 'desistir ／ prova ／ grátis ／ depois ／ abrir ／ devolver' }], answer: 1, explanationPt: '{参加|さんか}する (participar), クラス (turma), {必要|ひつよう}（な） (necessário: {服|ふく}は{必要|ひつよう}ですか？), {最初|さいしょ} (no começo), {空|あ}いている (ter vaga/estar livre: まだ{空|あ}いていますか？), {払|はら}う (pagar: 800{円|えん}{払|はら}ってください). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l10-15', number: 15, prompt: 'Mais vocabulário (Atividade 2): 「{少々|しょうしょう}お{待|ま}ちください／もういっぱいです／{興味|きょうみ}がある／それとも／{用意|ようい}する／{全部|ぜんぶ}」 significam:', choices: [{ n: 1, text: 'aguarde um momento ／ já está lotado/cheio ／ ter interesse ／ ou (então) ／ preparar/providenciar ／ tudo' }, { n: 2, text: 'venha aqui ／ tem vaga ／ não gostar ／ e ／ esquecer ／ nada' }, { n: 3, text: 'sente-se ／ está aberto ／ desistir ／ mas ／ vender ／ metade' }, { n: 4, text: 'desculpe ／ acabou ／ pagar ／ porque ／ comprar ／ um pouco' }], answer: 1, explanationPt: '{少々|しょうしょう}お{待|ま}ちください (aguarde um momento), もういっぱいです (já está cheio/lotado), {興味|きょうみ}がある (ter interesse: {書道|しょどう}に{興味|きょうみ}があります), それとも (ou então), {用意|ようい}する (preparar/providenciar: {全部|ぜんぶ}こちらで{用意|ようい}します), {全部|ぜんぶ} (tudo). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l10-16', number: 16, prompt: 'Vocabulário do cartaz/cursos (Atividade 1): 「{公民館|こうみんかん}／{書道|しょどう}／{合気道|あいきどう}／{体験教室|たいけんきょうしつ}／{費用|ひよう}／{問|と}い{合|あ}わせ」 significam:', choices: [{ n: 1, text: 'centro comunitário ／ caligrafia ／ aikidô ／ aula experimental ／ custo/despesa ／ contato (para informações)' }, { n: 2, text: 'biblioteca ／ pintura ／ judô ／ aula regular ／ horário ／ inscrição' }, { n: 3, text: 'ginásio ／ origami ／ karatê ／ prova ／ desconto ／ endereço' }, { n: 4, text: 'escola ／ chá ／ sumô ／ palestra ／ data ／ telefone' }], answer: 1, explanationPt: '{公民館|こうみんかん} (centro comunitário), {書道|しょどう} (caligrafia), {合気道|あいきどう} (aikidô), {体験教室|たいけんきょうしつ} (aula experimental/avulsa), {費用|ひよう} (custo), {問|と}い{合|あ}わせ (contato p/ informações). Também: {毎月|まいつき}/{第3|だいさん}〜 (toda 3ª…), {日時|にちじ} (data e hora), テキスト{代|だい} (custo do material, 〜{代|だい}). (Atividade 1)' },
+    { id: 'iro-e1-l10-17', number: 17, prompt: 'Os kanji 「{午前|ごぜん}／{午後|ごご}／{教科書|きょうかしょ}／{教室|きょうしつ}」 lêem-se:', choices: [{ n: 1, text: 'ごぜん (de manhã) ／ ごご (de tarde) ／ きょうかしょ (livro didático) ／ きょうしつ (sala/aula)' }, { n: 2, text: 'ごぜん ／ ごご ／ きょうかしょ ／ きょうしゅう' }, { n: 3, text: 'うまえ ／ うしろ ／ おしえがき ／ きょうしつ' }, { n: 4, text: 'ごぜん ／ ごこう ／ きょうかぼん ／ きょうしつ' }], answer: 1, explanationPt: '{午前|ごぜん} (manhã/a.m.), {午後|ごご} (tarde/p.m.), {教科書|きょうかしょ} (livro didático), {教室|きょうしつ} (sala de aula). (漢字のことば)' },
+    { id: 'iro-e1-l10-18', number: 18, prompt: 'Os kanji 「{先生|せんせい}／{全部|ぜんぶ}／〜{回|かい}」 lêem-se:', choices: [{ n: 1, text: 'せんせい (professor) ／ ぜんぶ (tudo) ／ 〜かい (〜vezes)' }, { n: 2, text: 'せんせい ／ ぜんぶ ／ 〜まわり' }, { n: 3, text: 'さきいき ／ ぜんぶん ／ 〜かい' }, { n: 4, text: 'せんせい ／ ぜんぶ ／ 〜ど' }], answer: 1, explanationPt: '{先生|せんせい} (professor), {全部|ぜんぶ} (tudo/o total), 〜{回|かい} (contador de vezes: 1{回|かい}、5{回|かい}). (漢字のことば)' },
+    { id: 'iro-e1-l10-19', number: 19, prompt: 'Os kanji 「{参加|さんか}する／{用意|ようい}する」 lêem-se e significam:', choices: [{ n: 1, text: 'さんかする (participar) ／ よういする (preparar/providenciar)' }, { n: 2, text: 'さんかする ／ ようじする' }, { n: 3, text: 'さんがする ／ よういする' }, { n: 4, text: 'まいかする ／ もちいする' }], answer: 1, explanationPt: '{参加|さんか}する (participar), {用意|ようい}する (preparar/providenciar). Kanji da lição: {午前|ごぜん}・{午後|ごご}・{教科書|きょうかしょ}・{教室|きょうしつ}・{先生|せんせい}・{全部|ぜんぶ}・〜{回|かい}・{参加|さんか}する・{用意|ようい}する. (漢字)' },
+    { id: 'iro-e1-l10-20', number: 20, prompt: '📌 TIPS — {公民館|こうみんかん} (centros comunitários):', choices: [{ n: 1, text: 'espaços públicos do bairro (salas, cozinha etc.) que se alugam barato; oferecem aulas (japonês, culinária), cursos e atividades de grupos locais — ótimos para aprender e conhecer gente' }, { n: 2, text: 'são hotéis caros para turistas' }, { n: 3, text: 'são lojas de conveniência' }, { n: 4, text: 'só funcionam à noite e são particulares' }], answer: 1, explanationPt: '{公民館|こうみんかん} = instalação pública de educação social do bairro (salas japonesas, de reunião, cozinha, oficina…). Aluga-se barato; abriga {日本語教室|にほんごきょうしつ}, {料理教室|りょうりきょうしつ}, cursos e clubes. Bom para estudar e criar laços locais. (TIPS)' },
+    { id: 'iro-e1-l10-21', number: 21, prompt: '📌 TIPS — {料理教室|りょうりきょうしつ} (aulas de culinária):', choices: [{ n: 1, text: 'são populares no Japão; há em centros comunitários e também de empresas de alimentos/gás; variam (aula avulsa, pratos regionais, sazonais) em duração, preço e tipo de comida' }, { n: 2, text: 'só existem em restaurantes de luxo' }, { n: 3, text: 'são sempre gratuitas e diárias' }, { n: 4, text: 'só ensinam pratos estrangeiros' }], answer: 1, explanationPt: 'Aulas de culinária estão entre os passatempos mais populares; ocorrem em {公民館}/centros comunitários ou por empresas de alimentos/gás. Há aula avulsa ({体験教室|たいけんきょうしつ}), de {郷土料理|きょうどりょうり} regional, sazonais — variando em dias, preço e prato. (TIPS)' },
+    { id: 'iro-e1-l10-22', number: 22, prompt: '📌 TIPS — {書道|しょどう} (caligrafia):', choices: [{ n: 1, text: 'arte de escrever kanji com pincel e tinta; ensinada desde o primário (tarefa de {書|か}き{初|ぞ}め no Ano-Novo, concursos na escola); há aulas em centros comunitários para crianças e adultos' }, { n: 2, text: 'é uma dança tradicional' }, { n: 3, text: 'é proibida a estrangeiros' }, { n: 4, text: 'usa-se apenas computador' }], answer: 1, explanationPt: '{書道|しょどう} = escrever caracteres com pincel ({筆|ふで}) e tinta ({墨|すみ}), valorizando a beleza. No Japão entra no currículo desde o {小学校|しょうがっこう} (tarefa de {書|か}き{初|ぞ}め no Ano-Novo, concursos). Muitas aulas em {公民館}, de crianças a adultos. (TIPS)' },
+    { id: 'iro-e1-l10-23', number: 23, prompt: '📌 TIPS — {合気道|あいきどう} (aikidô):', choices: [{ n: 1, text: 'arte marcial japonesa (como judô e karatê), fundada por Ueshiba Morihei; usa a força do oponente para se defender, sem competições e sem exigir muita força — popular entre mulheres e idosos' }, { n: 2, text: 'é um esporte com bola' }, { n: 3, text: 'foi inventada nos EUA' }, { n: 4, text: 'exige muita força física e tem campeonatos' }], answer: 1, explanationPt: '{合気道|あいきどう} = arte marcial ({武道|ぶどう}) ao lado de {柔道|じゅうどう}/{空手|からて}, criada por {植芝盛平|うえしばもりへい} a partir de artes marciais antigas (~1,6 milhão de praticantes no mundo). Técnica de {護身|ごしん} (defesa) usando a força do oponente; sem {試合|しあい}, sem exigir força — popular entre mulheres e idosos. (TIPS)' },
+    { id: 'iro-e1-l10-24', number: 24, prompt: 'Diálogo 10-01 (guichê): quando há aula de japonês e em que horário?', context: 'A：{日本語教室|にほんごきょうしつ}に{参加|さんか}したいんですが……。いつありますか？ B：{水曜日|すいようび}の{教室|きょうしつ}と、{土曜日|どようび}の{教室|きょうしつ}があります。 A：{何時|なんじ}からですか？ B：{水曜日|すいようび}は{夜|よる}の7{時|じ}から8{時半|じはん}、{土曜日|どようび}は{朝|あさ}の10{時|じ}から11{時半|じはん}です。', choices: [{ n: 1, text: 'Há turma de quarta (noite, 19h–20h30) e de sábado (manhã, 10h–11h30)' }, { n: 2, text: 'Só de domingo à tarde' }, { n: 3, text: 'Toda noite, das 18h às 20h' }, { n: 4, text: 'Só de manhã, de segunda a sexta' }], answer: 1, explanationPt: '{水曜日|すいようび}は{夜|よる}の7{時|じ}〜8{時半|じはん}、{土曜日|どようび}は{朝|あさ}の10{時|じ}〜11{時半|じはん}. A escolhe a turma da noite. (Atividade 2 · 聴解スクリプト 10-01)' },
+    { id: 'iro-e1-l10-25', number: 25, prompt: 'Diálogo 10-02 (合気道): a roupa de aikidô é necessária no começo?', context: 'A：{合気道|あいきどう}をやってみたいんですが……。 … A：えーと、{合気道|あいきどう}の{服|ふく}は{必要|ひつよう}ですか？ B：{服|ふく}ですか？　{最初|さいしょ}はTシャツでもだいじょうぶですよ。あとは{先生|せんせい}に{聞|き}いてください。', choices: [{ n: 1, text: 'No começo pode ser de camiseta; o resto, perguntar ao professor' }, { n: 2, text: 'É obrigatório comprar a roupa antes' }, { n: 3, text: 'Não pode treinar de camiseta' }, { n: 4, text: 'A roupa é emprestada pela escola' }], answer: 1, explanationPt: '{最初|さいしょ}はTシャツでもだいじょうぶ (no começo, camiseta serve); あとは{先生|せんせい}に{聞|き}いてください. Note a oferta/consulta 「やってみたいんですが…」 (➊). (Atividade 2 · 10-02)' },
+    { id: 'iro-e1-l10-26', number: 26, prompt: 'Diálogo 10-03 (料理教室): o que B responde sobre dia e preço?', context: 'B：{料理教室|りょうりきょうしつ}ですね。{少々|しょうしょう}お{待|ま}ちください。あ、{金曜日|きんようび}のクラスは、もういっぱいです。{木曜日|もくようび}のクラスでもいいですか？ A：はい。だいじょうぶです。あのう、いくらですか？ B：1{回|かい}800{円|えん}{払|はら}ってください。', choices: [{ n: 1, text: 'A turma de sexta está lotada; oferece a de quinta; custa 800 ienes por aula' }, { n: 2, text: 'A turma de sexta tem vaga; é grátis' }, { n: 3, text: 'Não há turmas disponíveis' }, { n: 4, text: 'Custa 800 ienes por mês' }], answer: 1, explanationPt: '{金曜日|きんようび}はもういっぱい→{木曜日|もくようび}でもいいですか？; 1{回|かい}800{円|えん}{払|はら}ってください (frequência/preço por vez, ➋ + {払|はら}う). (Atividade 2 · 10-03)' },
+    { id: 'iro-e1-l10-27', number: 27, prompt: 'Diálogo 10-04 (書道): A quer a aula experimental — precisa levar material?', context: 'A：{私|わたし}は{書道|しょどう}に{興味|きょうみ}があります。{書道教室|しょどうきょうしつ}に{参加|さんか}してみたいんですが……。 B：{体験教室|たいけんきょうしつ}ですか？　それとも{毎週|まいしゅう}のコースですか？ A：{体験教室|たいけんきょうしつ}です。…{道具|どうぐ}は{必要|ひつよう}ですか？ B：{全部|ぜんぶ}こちらで{用意|ようい}しますから、だいじょうぶですよ。', choices: [{ n: 1, text: 'Quer a aula experimental; não precisa de material — a escola providencia tudo' }, { n: 2, text: 'Quer o curso semanal; precisa comprar tudo' }, { n: 3, text: 'Precisa trazer o próprio pincel e tinta' }, { n: 4, text: 'Não há aula experimental' }], answer: 1, explanationPt: '{参加|さんか}してみたいんですが (➊); {体験教室|たいけんきょうしつ} ou {毎週|まいしゅう}のコース (それとも = ou); {道具|どうぐ}は{全部|ぜんぶ}こちらで{用意|ようい}します (a escola prepara tudo). (Atividade 2 · 10-04)' },
+    { id: 'iro-e1-l10-28', number: 28, prompt: 'Diálogo 10-06 (Sunil↔Yuliya): como é a aula de japonês da Yuliya?', context: 'スニル：{週|しゅう}に{何回|なんかい}ありますか？ ユーリヤ：{私|わたし}のクラスは{週|しゅう}に1{回|かい}です。{火曜日|かようび}の{夜|よる}です。… スニル：いくらですか？ ユーリヤ：ただです。でも、{教科書|きょうかしょ}は{自分|じぶん}で{買|か}います。', choices: [{ n: 1, text: '1 vez por semana, terça à noite; é de graça, mas o livro é por conta própria' }, { n: 2, text: '3 vezes por semana; paga 800 ienes' }, { n: 3, text: 'Só aos sábados de manhã; o livro é grátis' }, { n: 4, text: 'Todo dia; é muito caro' }], answer: 1, explanationPt: '{週|しゅう}に1{回|かい} (frequência, ➋), {火曜日|かようび}の{夜|よる}; ただ (de graça) でも {教科書|きょうかしょ}は{自分|じぶん}で{買|か}います. (Atividade 3 · 聴解スクリプト 10-06)' },
+    { id: 'iro-e1-l10-29', number: 29, prompt: 'Diálogo 10-06: no fim, o que a Yuliya se oferece para fazer?', context: 'ユーリヤ：{今度|こんど}、{教室|きょうしつ}のチラシを{持|も}って{来|き}ましょうか？ スニル：ありがとうございます。じゃあ、お{願|ねが}いします。', choices: [{ n: 1, text: 'Oferece-se para trazer o folheto da aula (V-ましょうか？) e Sunil aceita agradecendo' }, { n: 2, text: 'Pede que Sunil traga o folheto' }, { n: 3, text: 'Recusa-se a ajudar' }, { n: 4, text: 'Pergunta o preço do folheto' }], answer: 1, explanationPt: 'チラシを{持|も}って{来|き}ましょうか？ = oferta (➌). Resposta: ありがとうございます。じゃあ、お{願|ねが}いします (aceita). (Atividade 3 · 10-06)' },
+    { id: 'iro-e1-l10-30', number: 30, prompt: 'Diálogo 10-09 (entrevista 岩本↔プイ): o que acontece com a palavra 「{母語|ぼご}」 e onde Pui já estudou?', context: '{岩本|いわもと}：{母語|ぼご}は？ プイ：すみません。「ぼご」は、どういう{意味|いみ}ですか？ {岩本|いわもと}：…{子|こ}どものときからいつも{使|つか}っていることばです。 プイ：ああ、タイ{語|ご}です。 …プイ：{高校|こうこう}のとき、{少|すこ}し{勉強|べんきょう}しました。それから、{国|くに}の{日本語学校|にほんごがっこう}で{半年|はんとし}、{勉強|べんきょう}しました。', choices: [{ n: 1, text: 'Pui não entendeu “bogo” e perguntou o sentido (➍); estudou um pouco no ensino médio e meio ano numa escola de japonês no seu país' }, { n: 2, text: 'Pui sabia a palavra; nunca estudou japonês' }, { n: 3, text: 'Pui recusou responder; estudou na universidade 3 anos' }, { n: 4, text: 'Pui é professor; estudou só com anime' }], answer: 1, explanationPt: '「ぼご」はどういう{意味|いみ}ですか？ (聞き返し, ➍); {高校|こうこう}のとき{少|すこ}し{勉強|べんきょう}しました (Nのとき, ➎) + {国|くに}の{日本語学校|にほんごがっこう}で{半年|はんとし}. (Atividade 4 · 聴解スクリプト 10-09)' },
+    { id: 'iro-e1-l10-31', number: 31, prompt: 'Atividade 1 (cartaz “ときわだより” do {公民館|こうみんかん}): o que dá para ler nele?', context: 'O folheto lista cursos do centro comunitário: {料理教室|りょうりきょうしつ}, {書道教室|しょどうきょうしつ}, {合気道|あいきどう}の{体験教室|たいけんきょうしつ}, にほんごきょうしつ — cada um com {日時|にちじ} (曜日・時間), {場所|ばしょ}, {費用|ひよう} e {問|と}い{合|あ}わせ.', choices: [{ n: 1, text: 'O dia/horário, o local e o custo de cada curso (e o contato para informações)' }, { n: 2, text: 'Só o nome dos professores' }, { n: 3, text: 'O cardápio do restaurante do bairro' }, { n: 4, text: 'A previsão do tempo' }], answer: 1, explanationPt: 'No cartaz ({公民館}/「ときわだより」) lê-se {日時|にちじ} (曜日・時間), {場所|ばしょ}, {費用|ひよう} (com テキスト{代|だい}/問い合わせ). Objetivo (Can-do 31): captar local, data e horário. (Atividade 1)' },
+    { id: 'iro-e1-l10-32', number: 32, prompt: 'Pergunta de abertura da lição: 「あなたは{習|なら}い{事|ごと}をしたことがありますか？{何|なに}をしたことがありますか？」 quer dizer:', choices: [{ n: 1, text: 'Você já fez algum curso/atividade (de aprendizado)? O que você já fez?' }, { n: 2, text: 'Onde você mora agora?' }, { n: 3, text: 'Quantas vezes por semana você trabalha?' }, { n: 4, text: 'Você gosta de cozinhar?' }], answer: 1, translationPt: 'Você já fez algum curso/atividade? O que você já fez?', explanationPt: '{習|なら}い{事|ごと} = curso/atividade de aprendizado (culinária, caligrafia, esporte…). 〜したことがありますか (experiência, Lição 8). Tema: {日本語学習|にほんごがくしゅう}. (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 10
+const L10_SCRIPTS: Record<string, ScriptItem[]> = {
+  '10-01': [
+    {
+      label: '会話① (10-01) — 日本語教室はいつ？',
+      setupJa: '{受付|うけつけ}で、{習|なら}い{事|ごと}について{質問|しつもん}しています。',
+      setupPt: 'No balcão de atendimento, alguém pergunta sobre um curso.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。', pt: 'Com licença.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Pois não.' },
+        { speaker: 'A', ja: '{日本語教室|にほんごきょうしつ}に{参加|さんか}したいんですが……。いつありますか？', pt: 'Eu queria participar da aula de japonês… Quando tem?' },
+        { speaker: 'B', ja: '{日本語教室|にほんごきょうしつ}ですね？　{水曜日|すいようび}の{教室|きょうしつ}と、{土曜日|どようび}の{教室|きょうしつ}があります。', pt: 'Aula de japonês, né? Tem a turma de quarta e a de sábado.' },
+        { speaker: 'A', ja: '{何時|なんじ}からですか？', pt: 'A partir de que horas?' },
+        { speaker: 'B', ja: '{水曜日|すいようび}は{夜|よる}の7{時|じ}から8{時半|じはん}、{土曜日|どようび}は{朝|あさ}の10{時|じ}から11{時半|じはん}です。', pt: 'Quarta é das 19h às 20h30 (à noite); sábado é das 10h às 11h30 (de manhã).' },
+        { speaker: 'A', ja: 'じゃあ、{夜|よる}のクラスがいいです。', pt: 'Então prefiro a turma da noite.' },
+      ],
+    },
+  ],
+  '10-02': [
+    {
+      label: '会話② (10-02) — 合気道をやってみたいんですが',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{合気道|あいきどう}をやってみたいんですが……。', pt: 'Com licença. Eu queria experimentar fazer aikidô…' },
+        { speaker: 'B', ja: 'あ、{合気道教室|あいきどうきょうしつ}ですね。', pt: 'Ah, a aula de aikidô, né.' },
+        { speaker: 'A', ja: 'まだ、{空|あ}いていますか？', pt: 'Ainda tem vaga?' },
+        { speaker: 'B', ja: 'だいじょうぶですよ。', pt: 'Tem sim, sem problema.' },
+        { speaker: 'A', ja: 'えーと、{合気道|あいきどう}の{服|ふく}は{必要|ひつよう}ですか？', pt: 'Hum… a roupa de aikidô é necessária?' },
+        { speaker: 'B', ja: '{服|ふく}ですか？　{最初|さいしょ}はTシャツでもだいじょうぶですよ。あとは{先生|せんせい}に{聞|き}いてください。', pt: 'A roupa? No começo pode ser de camiseta, tudo bem. O resto, pergunte ao professor.' },
+      ],
+    },
+  ],
+  '10-03': [
+    {
+      label: '会話③ (10-03) — 料理教室に参加したいんですが',
+      lines: [
+        { speaker: 'A', ja: 'すみません。この{料理教室|りょうりきょうしつ}に{参加|さんか}したいんですが……。', pt: 'Com licença. Eu queria participar desta aula de culinária…' },
+        { speaker: 'B', ja: '{料理教室|りょうりきょうしつ}ですね。{少々|しょうしょう}お{待|ま}ちください。あ、{金曜日|きんようび}のクラスは、もういっぱいです。{木曜日|もくようび}のクラスでもいいですか？', pt: 'Aula de culinária, né. Aguarde um momento. Ah, a turma de sexta já está lotada. Pode ser a de quinta?' },
+        { speaker: 'A', ja: 'はい。だいじょうぶです。あのう、いくらですか？', pt: 'Sim, tudo bem. Ah… quanto custa?' },
+        { speaker: 'B', ja: '1{回|かい}800{円|えん}{払|はら}ってください。', pt: 'Pague 800 ienes por aula.' },
+      ],
+    },
+  ],
+  '10-04': [
+    {
+      label: '会話④ (10-04) — 書道教室に参加してみたいんですが',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{私|わたし}は{書道|しょどう}に{興味|きょうみ}があります。{書道教室|しょどうきょうしつ}に{参加|さんか}してみたいんですが……。', pt: 'Com licença. Eu tenho interesse em caligrafia. Queria experimentar a aula de caligrafia…' },
+        { speaker: 'B', ja: '{体験教室|たいけんきょうしつ}ですか？　それとも{毎週|まいしゅう}のコースですか？', pt: 'Aula experimental? Ou o curso semanal?' },
+        { speaker: 'A', ja: '{体験教室|たいけんきょうしつ}です。いつありますか？', pt: 'A aula experimental. Quando tem?' },
+        { speaker: 'B', ja: '{次|つぎ}は5{月|がつ}14{日|にち}の{日曜日|にちようび}です。', pt: 'A próxima é no domingo, dia 14 de maio.' },
+        { speaker: 'A', ja: 'そうですか。{道具|どうぐ}は{必要|ひつよう}ですか？', pt: 'Entendi. Preciso levar material/instrumentos?' },
+        { speaker: 'B', ja: '{全部|ぜんぶ}こちらで{用意|ようい}しますから、だいじょうぶですよ。', pt: 'Nós providenciamos tudo aqui, então não se preocupe.' },
+      ],
+    },
+  ],
+  '10-06': [
+    {
+      label: '会話 (10-06) — 日本語のクラスはどうですか？',
+      setupJa: 'スニルさんとユーリヤさんは{会社|かいしゃ}の{同僚|どうりょう}です。スニルさんがユーリヤさんに、{日本語教室|にほんごきょうしつ}について{質問|しつもん}しています。',
+      setupPt: 'Sunil e Yuliya são colegas de trabalho. Sunil pergunta à Yuliya sobre a aula de japonês.',
+      lines: [
+        { speaker: 'スニル', ja: 'ユーリヤさん、ちょっといいですか？', pt: 'Yuliya, tem um minutinho?' },
+        { speaker: 'ユーリヤ', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'スニル', ja: '{今|いま}、{日本語|にほんご}の{教室|きょうしつ}に{行|い}っていますか？', pt: 'Você está indo a alguma aula de japonês agora?' },
+        { speaker: 'ユーリヤ', ja: 'はい。{本町公民館|もとまちこうみんかん}の{日本語教室|にほんごきょうしつ}で{勉強|べんきょう}しています。', pt: 'Sim. Estudo na aula de japonês do centro comunitário de Motomachi.' },
+        { speaker: 'スニル', ja: '{私|わたし}も、もっと{日本語|にほんご}を{勉強|べんきょう}したいんですが、クラスはどうですか？', pt: 'Eu também queria estudar mais japonês — como é a aula?' },
+        { speaker: 'ユーリヤ', ja: '{楽|たの}しいですよ。', pt: 'É divertida!' },
+        { speaker: 'スニル', ja: '{週|しゅう}に{何回|なんかい}ありますか？', pt: 'Quantas vezes por semana tem?' },
+        { speaker: 'ユーリヤ', ja: '{私|わたし}のクラスは{週|しゅう}に1{回|かい}です。{火曜日|かようび}の{夜|よる}です。', pt: 'Minha turma é uma vez por semana. Terça à noite.' },
+        { speaker: 'スニル', ja: '{何時|なんじ}からですか？', pt: 'A partir de que horas?' },
+        { speaker: 'ユーリヤ', ja: '7{時|じ}から8{時半|じはん}です。{土曜日|どようび}の{午前|ごぜん}のクラスもありますよ。', pt: 'Das 19h às 20h30. Também tem turma de sábado de manhã.' },
+        { speaker: 'スニル', ja: 'いくらですか？', pt: 'Quanto custa?' },
+        { speaker: 'ユーリヤ', ja: 'ただです。でも、{教科書|きょうかしょ}は{自分|じぶん}で{買|か}います。', pt: 'É de graça. Mas o livro a gente compra por conta própria.' },
+        { speaker: 'スニル', ja: 'そうですか。{先生|せんせい}は、どんな{先生|せんせい}ですか？', pt: 'Ah, sei. E os professores, como são?' },
+        { speaker: 'ユーリヤ', ja: 'いろいろな{先生|せんせい}がいます。みんな{親切|しんせつ}ですよ。', pt: 'Há vários professores. Todos são gentis.' },
+        { speaker: 'スニル', ja: 'へー。', pt: 'Nossa…' },
+        { speaker: 'ユーリヤ', ja: '{今度|こんど}、{教室|きょうしつ}のチラシを{持|も}って{来|き}ましょうか？', pt: 'Da próxima vez, quer que eu traga o folheto da aula?' },
+        { speaker: 'スニル', ja: 'ありがとうございます。じゃあ、お{願|ねが}いします。', pt: 'Obrigado. Então, por favor.' },
+      ],
+    },
+  ],
+  '10-09': [
+    {
+      label: '会話 (10-09) — 高校のとき、少し勉強しました',
+      setupJa: 'プイさんは、{日本語教室|にほんごきょうしつ}の{申|もう}し{込|こ}みに{来|き}ています。{日本語教室|にほんごきょうしつ}の{事務|じむ}の{岩本|いわもと}さんと{話|はな}しています。',
+      setupPt: 'Pui veio se inscrever na aula de japonês. Conversa com Iwamoto, da secretaria.',
+      lines: [
+        { speaker: '岩本', ja: 'お{名前|なまえ}は？', pt: 'Seu nome?' },
+        { speaker: 'プイ', ja: 'プイです。', pt: 'Sou o Pui.' },
+        { speaker: '岩本', ja: 'プイさん、お{国|くに}は？', pt: 'Pui, de que país você é?' },
+        { speaker: 'プイ', ja: 'タイです。', pt: 'Da Tailândia.' },
+        { speaker: '岩本', ja: '{母語|ぼご}は？', pt: 'E sua língua materna?' },
+        { speaker: 'プイ', ja: 'すみません。「ぼご」は、どういう{意味|いみ}ですか？', pt: 'Desculpe. O que significa “bogo”?' },
+        { speaker: '岩本', ja: 'あ、「{母語|ぼご}」は、{子|こ}どものときからいつも{使|つか}っていることばです。mother tongueです。', pt: 'Ah, “bogo” é a língua que você usa desde criança. É a mother tongue.' },
+        { speaker: 'プイ', ja: 'ああ、タイ{語|ご}です。', pt: 'Ah, é o tailandês.' },
+        { speaker: '岩本', ja: '{英語|えいご}はできますか？', pt: 'Você fala inglês?' },
+        { speaker: 'プイ', ja: '{少|すこ}し、できます。', pt: 'Um pouco.' },
+        { speaker: '岩本', ja: 'そうですか。{日本語|にほんご}は、{前|まえ}に、どこで{勉強|べんきょう}しましたか？', pt: 'Entendi. E japonês, onde você estudou antes?' },
+        { speaker: 'プイ', ja: '{高校|こうこう}のとき、{少|すこ}し{勉強|べんきょう}しました。それから、{国|くに}の{日本語学校|にほんごがっこう}で{半年|はんとし}、{勉強|べんきょう}しました。', pt: 'Quando estava no ensino médio, estudei um pouco. Depois, estudei meio ano numa escola de japonês no meu país.' },
+        { speaker: '岩本', ja: 'どんなとき、{日本語|にほんご}を{使|つか}いますか？', pt: 'Em que situações você usa japonês?' },
+        { speaker: 'プイ', ja: '{仕事|しごと}のとき、{会社|かいしゃ}の{人|ひと}と{少|すこ}し{話|はな}します。あと、ときどきテレビを{見|み}ます。', pt: 'No trabalho, falo um pouco com o pessoal da empresa. Além disso, às vezes assisto à TV.' },
+        { speaker: '岩本', ja: 'ここでは、どんなことを{勉強|べんきょう}したいですか？', pt: 'Aqui, o que você gostaria de estudar?' },
+        { speaker: 'プイ', ja: 'もっと{会話|かいわ}を{勉強|べんきょう}したいです。{日本人|にほんじん}とたくさん{話|はな}したいです。{日本人|にほんじん}の{友|とも}だちがほしいです。', pt: 'Quero estudar mais conversação. Quero falar bastante com japoneses. Quero ter amigos japoneses.' },
+        { speaker: '岩本', ja: 'そうですか。わかりました。', pt: 'Entendi. Está bem.' },
+      ],
+    },
+  ],
+}
+
+const lesson10: Section = {
+  id: 'lesson-10',
+  level: 'elementary1',
+  titleJa: '第10課 日本語教室に参加したいんですが…',
+  titlePt: 'Lição 10 — Queria participar da aula de japonês…',
+  summaryPt: 'Aprender japonês · perguntar num guichê sobre um curso da comunidade (〜に{参加|さんか}したいんですが／V-てみたいんですが…), falar de frequência ({週|しゅう}に1{回|かい}), oferecer ajuda (チラシを{持|も}って{来|き}ましょうか), pedir o sentido de uma palavra (「ぼご」はどういう{意味|いみ}ですか) e dizer quando algo se deu ({高校|こうこう}のとき).',
+  studyNotes: [
+    {
+      title: 'Tópico: Aprender japonês (日本語学習)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Ver o cartaz de cursos de um centro comunitário ({公民館|こうみんかん}) e captar local, data e horário.\n' +
+        '- Perguntar num guichê sobre um curso de interesse e entender a resposta.\n' +
+        '- Perguntar a um amigo (ou responder) sobre as aulas de japonês da região.\n' +
+        '- Responder a uma entrevista simples sobre histórico e desejos de estudo.\n\n' +
+        '💡 Pergunta de abertura: あなたは{習|なら}い{事|ごと}をしたことがありますか？{何|なに}をしたことがありますか？',
+    },
+    {
+      title: 'Experimentar: V-てみたいんですが… (➊)',
+      bodyPt:
+        '**V-てみたいんですが…** = dizer que quer **experimentar** algo novo (pela 1ª vez) e abrir espaço para perguntar/consultar:\n\n' +
+        '- `{合気道|あいきどう}をやってみたいんですが…` / `{書道教室|しょどうきょうしつ}に{参加|さんか}してみたいんですが…`\n\n' +
+        'Compare com **V-たいんですが…** (Lição 8 — só transmitir desejo + pedir favor). Liga-se à **テ-forma** + みたい. Resposta comum no guichê: `{体験教室|たいけんきょうしつ}ですか？それとも{毎週|まいしゅう}のコースですか？`',
+    },
+    {
+      title: 'Frequência: 【期間】に〜回 (➋) ／ Oferecer: V-ましょうか？ (➌)',
+      bodyPt:
+        '**【período】に〜{回|かい}** = frequência (quantas vezes por período):\n\n' +
+        '- `{日本語|にほんご}クラスは{週|しゅう}に1{回|かい}です`. Períodos antes de に: {週|しゅう}/〜{週間|しゅうかん}, {月|つき}/〜か{月|げつ}, {年|ねん}/〜{年|ねん}. O に pode ser omitido; com 〜ぐらい dá frequência aproximada ({月|つき}に2{回|かい}, 4{年|ねん}に1{回|かい}).\n\n' +
+        '**V-ましょうか？** = **oferecer-se** para fazer algo pelo outro (V-ます→V-ましょうか？):\n\n' +
+        '- `{教室|きょうしつ}のチラシを{持|も}って{来|き}ましょうか？` / `よかったら、{手伝|てつだ}いましょうか？`',
+    },
+    {
+      title: 'Pedir o sentido: 聞き返し (➍) ／ Quando: Nのとき、〜 (➎)',
+      bodyPt:
+        '**聞き返し (asking again)** — pedir de novo o **sentido** de uma palavra (≠ pedir que repitam o que disse):\n\n' +
+        '- `すみません。「ぼご」は、どういう{意味|いみ}ですか？` (também `〜は{何|なん}ですか？`, ou repetir a palavra com entonação ascendente: 「どうぎ？」).\n\n' +
+        '**Nのとき、〜** = indicar **quando** algo se deu: `{高校|こうこう}のとき、{少|すこ}し{勉強|べんきょう}しました`. Liga-se também a adjetivos: ナA-**な**とき ({暇|ひま}なとき), イA-**い**とき ({若|わか}いとき).',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Guichê/cursos (Ativ. 1–2):** {参加|さんか}する, クラス, {必要|ひつよう}（な）, {最初|さいしょ}, {空|あ}いている (ter vaga), {払|はら}う, {少々|しょうしょう}お{待|ま}ちください, もういっぱいです, {興味|きょうみ}がある, それとも (ou então), {用意|ようい}する, {全部|ぜんぶ}, {道具|どうぐ}, {体験教室|たいけんきょうしつ}. **Cartaz (Ativ. 1):** {公民館|こうみんかん}, {日時|にちじ} (曜日・時間), {場所|ばしょ}, {費用|ひよう}, テキスト{代|だい} (〜{代|だい}), {問|と}い{合|あ}わせ, {毎月|まいつき}/{第3|だいさん}〜. **Entrevista (Ativ. 4):** {母語|ぼご}, {意味|いみ}, {前|まえ}に, {半年|はんとし}, {会話|かいわ}.\n\n' +
+        '**Kanji da lição:** {午前|ごぜん}, {午後|ごご}, {教科書|きょうかしょ}, {教室|きょうしつ}, {先生|せんせい}, {全部|ぜんぶ}, 〜{回|かい}, {参加|さんか}する, {用意|ようい}する.\n\n' +
+        '📌 **TIPS:** **{公民館|こうみんかん}** (espaço público do bairro, aluguel barato, abriga aulas/cursos — bom para aprender e fazer laços); **{料理教室|りょうりきょうしつ}** (populares; avulsas, regionais, sazonais; variam em dias/preço); **{書道|しょどう}** (pincel+tinta; ensinado desde o primário, {書|か}き{初|ぞ}め de Ano-Novo); **{合気道|あいきどう}** ({武道|ぶどう} de {植芝盛平|うえしばもりへい}; defesa com a força do oponente, sem competição — popular entre mulheres e idosos).',
+    },
+  ],
+  groups: [lesson10Group],
+  audios: attachScripts(10, L10_SCRIPTS),
+}
+
+// ---- Lições 11-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(10, 'Aprender japonês', '日本語教室に参加したいんですが…', 'Queria participar da aula de japonês…', [
-    'Ver o cartaz de cursos de um centro comunitário e captar local, data e horário.',
-    'Perguntar num guichê sobre um curso de interesse e entender a resposta.',
-    'Perguntar e responder a um amigo sobre as aulas de japonês da região.',
-    'Responder a uma entrevista simples sobre histórico e desejos de estudo.',
-  ]),
   scaffold(11, 'Comida gostosa', '肉と野菜は私が買って行きます', 'Eu levo a carne e os legumes', [
     'Conversar sobre quem leva o quê ao fazer, por exemplo, um churrasco.',
     'Conversar sobre o que comprar ao fazer, por exemplo, uma festa em casa.',
@@ -2018,5 +2215,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, ...others],
 }
