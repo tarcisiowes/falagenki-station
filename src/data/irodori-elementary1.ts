@@ -1457,13 +1457,249 @@ const lesson7: Section = {
   audios: attachScripts(7, L7_SCRIPTS),
 }
 
-// ---- Lições 8-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 8: 野球、したことありますか？ (tópico いっしょに出かける) ------------
+const lesson8Group: ExerciseGroup = {
+  id: 'iro-e1-l8',
+  title: '野球、したことありますか？',
+  subtitlePt: 'Sair junto · convidar perguntando experiência (もう{行|い}きましたか／V-たことがありますか) e propondo (V-に{行|い}きませんか), combinar a ordem das ações (Nの{前|まえ}に／Nのあとで) e dar impressões sobre o que se fez (パンダがかわいかったです)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l8-1', number: 1, prompt: '「{新|あたら}しいアウトレットモール、もう{行|い}きましたか？」 (もうV-ました) — o que もう indica (Nota ➊)?', choices: [{ n: 1, text: 'já / até agora: pergunta se a ação JÁ foi feita' }, { n: 2, text: 'ainda não' }, { n: 3, text: 'nunca' }, { n: 4, text: 'de novo' }], answer: 1, translationPt: 'Você já foi ao novo outlet?', explanationPt: 'もう = já. もうV-ましたか？ pergunta se algo já foi feito, quando se espera que seja natural fazê-lo (ex.: {昼|ひる}ご{飯|はん}、もう{食|た}べましたか？). (Nota ➊)' },
+    { id: 'iro-e1-l8-2', number: 2, prompt: 'Como se responde a 「もうV-ましたか？」 (Nota ➊)?', choices: [{ n: 1, text: 'sim → はい、V-ました; não → いいえ、まだです' }, { n: 2, text: 'sim → いいえ; não → はい' }, { n: 3, text: 'sempre com ありがとう' }, { n: 4, text: 'sempre com まだV-ます' }], answer: 1, explanationPt: 'はい、V-ました (já fiz) / いいえ、まだです (ainda não). Ex.: ポートタワー、もう{登|のぼ}りましたか？→ いいえ……. (Nota ➊)' },
+    { id: 'iro-e1-l8-3', number: 3, prompt: '「プロレスを{見|み}たことがありますか？」 (V-たことがあります) serve para (Nota ➋):', choices: [{ n: 1, text: 'perguntar/dizer sobre uma experiência (já fez alguma vez?)' }, { n: 2, text: 'perguntar a hora' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'falar do futuro' }], answer: 1, translationPt: 'Você já assistiu (alguma vez) a luta livre?', explanationPt: 'V (タ-forma) + ことがあります = ter a experiência de. Resposta: あります (já) / ないです・ありません (nunca). Na fala, o が pode cair: 〜たことあります. (Nota ➋)' },
+    { id: 'iro-e1-l8-4', number: 4, prompt: 'Como se forma a タ-forma a partir da テ-forma (Nota ➋)?', choices: [{ n: 1, text: 'troca-se て／で por た／だ ({見|み}て→{見|み}た, {飲|の}んで→{飲|の}んだ, {行|い}って→{行|い}った)' }, { n: 2, text: 'acrescenta-se ます' }, { n: 3, text: 'tira-se o último som' }, { n: 4, text: 'troca-se る por た sempre' }], answer: 1, explanationPt: 'A タ-forma indica passado/perfeito; faz-se mudando o て／で da テ-forma para た／だ. 1ºgr: 〜って→った, 〜んで→んだ, 〜いて→いた; exceção {行|い}く→{行|い}った. (Nota ➋ · tabela)' },
+    { id: 'iro-e1-l8-5', number: 5, prompt: 'Qual a diferença entre 「もうV-ましたか？」 (➊) e 「V-たことがありますか？」 (➋)?', choices: [{ n: 1, text: 'もうV-ました = quando se espera que a ação seja feita naturalmente; V-たことがあります = só perguntar se tem ou não a experiência' }, { n: 2, text: 'são exatamente iguais' }, { n: 3, text: 'a primeira é futuro, a segunda é presente' }, { n: 4, text: 'a primeira é casual, a segunda é errada' }], answer: 1, explanationPt: 'もうV-ましたか？ pressupõe algo esperado/natural; V-たことがありますか？ simplesmente pergunta se a pessoa já teve aquela experiência. (Notas ➊/➋)' },
+    { id: 'iro-e1-l8-6', number: 6, prompt: '「いっしょに{食|た}べに{行|い}きませんか？」 (V-に{行|い}きませんか) — como se forma o “para fazer” (Nota ➌)?', choices: [{ n: 1, text: 'マス-forma sem ます + に + {行|い}く ({食|た}べに{行|い}く, {飲|の}みに{行|い}く, {見|み}に{行|い}く)' }, { n: 2, text: 'forma de dicionário + に' }, { n: 3, text: 'タ-forma + に' }, { n: 4, text: 'テ-forma + に' }], answer: 1, translationPt: 'Não quer ir comer junto (comigo)?', explanationPt: 'V-ませんか？ é convite (visto no 入門). Tira-se ます da マス-forma e põe-se に+{行|い}く para indicar o objetivo de ir: {食|た}べに{行|い}く, {見|み}に{行|い}く. Casual: V-に{行|い}かない？ (Nota ➌)' },
+    { id: 'iro-e1-l8-7', number: 7, prompt: 'Exemplo de convite (Nota ➌): 「プロレス、いっしょに{見|み}に{行|い}きませんか？」 — boa resposta de aceite:', choices: [{ n: 1, text: 'いいですね。{行|い}きましょう。' }, { n: 2, text: 'いいえ、まだです。' }, { n: 3, text: 'すみません、{遅|おく}れます。' }, { n: 4, text: 'どういたしまして。' }], answer: 1, explanationPt: 'Aceite típico: いいですね。{行|い}きましょう。/ ぜひ。 Casual: {今度|こんど}、{映画|えいが}{見|み}に{行|い}かない？→ ぜひ。 (Nota ➌)' },
+    { id: 'iro-e1-l8-8', number: 8, prompt: '「{食事|しょくじ}の{前|まえ}に、お{金|かね}をおろしたいんですが…」 (Nの{前|まえ}に、〜) significa que (Nota ➍):', choices: [{ n: 1, text: 'a ação acontece ANTES de N (sacar dinheiro antes da refeição)' }, { n: 2, text: 'a ação acontece depois de N' }, { n: 3, text: 'a ação acontece durante N' }, { n: 4, text: 'N não acontece' }], answer: 1, translationPt: 'Antes da refeição, eu queria sacar dinheiro…', explanationPt: 'Nの{前|まえ}に、〜 = antes de N, fazer a ação seguinte. N pode ser {食事|しょくじ}, {買|か}い{物|もの}, {映画|えいが}, {仕事|しごと}, {勉強|べんきょう}, {学校|がっこう}. (Nota ➍)' },
+    { id: 'iro-e1-l8-9', number: 9, prompt: '「{買|か}い{物|もの}のあとで、ゲームコーナーに{行|い}きませんか？」 (Nのあと（で）、〜) significa (Nota ➍):', choices: [{ n: 1, text: 'a ação acontece DEPOIS de N (ir ao fliperama depois das compras)' }, { n: 2, text: 'a ação acontece antes de N' }, { n: 3, text: 'a ação acontece em vez de N' }, { n: 4, text: 'N é cancelado' }], answer: 1, translationPt: 'Depois das compras, não quer ir ao fliperama?', explanationPt: 'Nのあと（で）、〜 = depois de N, fazer a ação seguinte; で pode cair (Nのあと、〜). Ex.: {映画|えいが}の{前|まえ}に、カフェでお{茶|ちゃ}を…/ {仕事|しごと}のあとで、ボウリング…. (Nota ➍)' },
+    { id: 'iro-e1-l8-10', number: 10, prompt: '「ジョギングシューズを{買|か}いたいんですが…」 (V-たいんですが…) serve para (Nota ➎):', choices: [{ n: 1, text: 'comunicar um desejo e, com isso, pedir algo ao outro (ex.: ir junto à loja)' }, { n: 2, text: 'recusar um convite' }, { n: 3, text: 'descrever o passado' }, { n: 4, text: 'dar uma ordem' }], answer: 1, translationPt: 'Eu queria comprar um tênis de corrida, mas…', explanationPt: 'V-たいんですが… transmite o desejo e espera uma reação do outro. A Lição 6 viu Nに{行|い}きたいんですが…; aqui o verbo é qualquer um. Pode continuar a frase: Tシャツを{買|か}いたいんですが、あのお{店|みせ}、{見|み}てもいいですか？ (Nota ➎)' },
+    { id: 'iro-e1-l8-11', number: 11, prompt: 'Vocabulário (Atividade 1): 「{試合|しあい}／やる／メンバー／{足|た}りない／{無理|むり}（な）」 significam:', choices: [{ n: 1, text: 'partida/jogo ／ fazer/praticar ／ membro ／ faltar/não bastar ／ impossível/sem chance' }, { n: 2, text: 'treino ／ assistir ／ técnico ／ sobrar ／ fácil' }, { n: 3, text: 'time ／ ganhar ／ torcida ／ chegar ／ possível' }, { n: 4, text: 'esporte ／ correr ／ juiz ／ pagar ／ caro' }], answer: 1, explanationPt: '{試合|しあい} (partida), やる (fazer/jogar), メンバー (membro/jogador), {足|た}りない (faltar: メンバーが{足|た}りなくて), {無理|むり}（な） (impossível). Também アジア (Ásia), すごく (muito). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l8-12', number: 12, prompt: 'Adjetivos de impressão (Atividade 3): 「すごかった／すばらしかった／おもしろかった／{難|むずか}しかった／{感動|かんどう}した／かわいかった／{楽|たの}しかった」 significam:', choices: [{ n: 1, text: 'foi incrível ／ foi maravilhoso ／ foi interessante ／ foi difícil ／ me emocionei ／ era fofo ／ foi divertido' }, { n: 2, text: 'foi chato ／ foi caro ／ foi fácil ／ foi longe ／ dormi ／ era feio ／ foi cansativo' }, { n: 3, text: 'foi rápido ／ foi barato ／ foi curto ／ foi perto ／ chorei ／ era grande ／ foi tranquilo' }, { n: 4, text: 'todos significam “foi bom”' }], answer: 1, explanationPt: 'すごかった, すばらしかった, おもしろかった, {難|むずか}しかった, {感動|かんどう}した, かわいかった, {楽|たの}しかった — impressões (イA no passado: 〜かった). (Atividade 3)' },
+    { id: 'iro-e1-l8-13', number: 13, prompt: 'Vocabulário da Atividade 3: 「パンダ／サル／{現代|げんだい}／{作品|さくひん}／ホラー{映画|えいが}」 significam:', choices: [{ n: 1, text: 'panda ／ macaco ／ moderno/contemporâneo ／ obra (de arte) ／ filme de terror' }, { n: 2, text: 'urso ／ pássaro ／ antigo ／ livro ／ comédia' }, { n: 3, text: 'gato ／ peixe ／ futuro ／ música ／ desenho' }, { n: 4, text: 'cachorro ／ tigre ／ atual ／ quadro ／ romance' }], answer: 1, explanationPt: 'パンダ (panda), サル (macaco), {現代|げんだい} (contemporâneo), {作品|さくひん} (obra), ホラー{映画|えいが} (filme de terror). (Atividade 3 · ことば)' },
+    { id: 'iro-e1-l8-14', number: 14, prompt: 'Impressões negativas (Atividade 3): 「つまらない／{退屈|たいくつ}（な）／いまいち（な）／よくわかりませんでした」 significam:', choices: [{ n: 1, text: 'sem graça/chato ／ entediante ／ mais ou menos/nada de mais ／ não entendi bem' }, { n: 2, text: 'divertido ／ animado ／ ótimo ／ entendi tudo' }, { n: 3, text: 'caro ／ longe ／ difícil ／ não fui' }, { n: 4, text: 'fácil ／ perto ／ bonito ／ adorei' }], answer: 1, explanationPt: 'つまらない (sem graça), {退屈|たいくつ}（な） (entediante), いまいち（な） (nada de mais), よくわかりませんでした (não entendi bem). (Atividade 3 · flowchart)' },
+    { id: 'iro-e1-l8-15', number: 15, prompt: 'Os kanji 「お{金|かね}／{食事|しょくじ}／〜{店|てん}／{試合|しあい}」 lêem-se:', choices: [{ n: 1, text: 'おかね (dinheiro) ／ しょくじ (refeição) ／ 〜てん (loja, sufixo) ／ しあい (partida)' }, { n: 2, text: 'おきん ／ しょくじ ／ 〜みせ ／ しごう' }, { n: 3, text: 'おかね ／ たべじ ／ 〜てん ／ しあい' }, { n: 4, text: 'おかね ／ しょくじ ／ 〜てん ／ ためし' }], answer: 1, explanationPt: 'お{金|かね} (dinheiro), {食事|しょくじ} (refeição), 〜{店|てん} (sufixo “loja”: スポーツ{店|てん}), {試合|しあい} (partida). (漢字のことば)' },
+    { id: 'iro-e1-l8-16', number: 16, prompt: 'Os kanji 「{博物館|はくぶつかん}／{動物園|どうぶつえん}／{登|のぼ}る」 lêem-se:', choices: [{ n: 1, text: 'はくぶつかん (museu) ／ どうぶつえん (zoológico) ／ のぼる (subir)' }, { n: 2, text: 'はくぶつかん ／ どうぶつえん ／ とうる' }, { n: 3, text: 'はくもつかん ／ どうもつえん ／ のぼる' }, { n: 4, text: 'ばくぶつかん ／ どうぶつその ／ のぼる' }], answer: 1, explanationPt: '{博物館|はくぶつかん} (museu), {動物園|どうぶつえん} (zoológico), {登|のぼ}る (subir; {富士山|ふじさん}に{登|のぼ}る). (漢字のことば)' },
+    { id: 'iro-e1-l8-17', number: 17, prompt: 'Os kanji 「{楽|たの}しい／{難|むずか}しい」 lêem-se:', choices: [{ n: 1, text: 'たのしい (divertido) ／ むずかしい (difícil)' }, { n: 2, text: 'らくしい ／ なんしい' }, { n: 3, text: 'たのしい ／ かたしい' }, { n: 4, text: 'がくしい ／ むずかしい' }], answer: 1, explanationPt: '{楽|たの}しい (divertido), {難|むずか}しい (difícil). Kanji da lição: お{金|かね}・{食事|しょくじ}・〜{店|てん}・{博物館|はくぶつかん}・{動物園|どうぶつえん}・{試合|しあい}・{楽|たの}しい・{難|むずか}しい・{登|のぼ}る. (漢字)' },
+    { id: 'iro-e1-l8-18', number: 18, prompt: '📌 TIPS — {日本|にほん}の{城|しろ} (castelos): quando e como eram construídos?', choices: [{ n: 1, text: 'do período {戦国|せんごく} ao {江戸|えど} (séc. XVI–XIX); marcados por muros altos de pedra ({石垣}), fossos ({堀}) e torre de menagem ({天守閣})' }, { n: 2, text: 'no séc. XX, todos de concreto' }, { n: 3, text: 'na era Heian, de papel' }, { n: 4, text: 'nunca existiram no Japão' }], answer: 1, explanationPt: 'Construídos do {戦国|せんごく}{時代|じだい} ao {江戸|えど}{時代|じだい} (~séc. XVI a XIX); {石垣}, {堀}, {天守閣}. Famosos: {姫路城} (Patrimônio Mundial), {松本城}, {松山城}. (TIPS)' },
+    { id: 'iro-e1-l8-19', number: 19, prompt: '📌 TIPS — {城|しろ}: o que dá para fazer ao visitar um castelo hoje?', choices: [{ n: 1, text: 'subir ao {天守閣} e conhecer a história local pelos materiais expostos; há muitos {城址公園|じょうしこうえん} (parques sobre ruínas de castelo)' }, { n: 2, text: 'só ver de fora, é proibido entrar' }, { n: 3, text: 'morar dentro' }, { n: 4, text: 'nada, estão todos fechados' }], answer: 1, explanationPt: '{天守閣}に{上|のぼ}ったり、{展示|てんじ}{資料|しりょう}でその{土地|とち}の{歴史|れきし}に{触|ふ}れたり. {大阪城}/{名古屋城} têm torre reconstruída em concreto (era 昭和) com elevador. (TIPS)' },
+    { id: 'iro-e1-l8-20', number: 20, prompt: '📌 TIPS — アウトレットモール no Japão: o que é (e o que NÃO é)?', choices: [{ n: 1, text: 'shopping com lojas que vendem produtos direto das fábricas; NÃO é lugar de mercadoria com defeito/baratíssima' }, { n: 2, text: 'lugar que só vende produtos com defeito' }, { n: 3, text: 'um mercado de rua' }, { n: 4, text: 'uma fábrica fechada ao público' }], answer: 1, explanationPt: 'アウトレットモール: lojas de fabricantes (sobretudo de roupa) vendendo direto; ficam em pontos turísticos/subúrbios/beira de rodovia. No Japão NÃO significa produto com defeito barato. (TIPS)' },
+    { id: 'iro-e1-l8-21', number: 21, prompt: '📌 TIPS — プロレス (luta livre profissional) no Japão:', choices: [{ n: 1, text: 'mistura luta e show; popular (cresce o público feminino); grandes ligas em arenas como o Tokyo Dome, e ligas locais em ginásios/estacionamentos, muitas vezes de graça' }, { n: 2, text: 'é proibida no Japão' }, { n: 3, text: 'só acontece no Tokyo Dome e é caríssima' }, { n: 4, text: 'é só para crianças' }], answer: 1, explanationPt: 'プロレス = luta + elemento de espetáculo; muitas {団体|だんたい}: as メジャー usam grandes arenas ({東京}ドーム), as locais usam ginásios/estacionamentos, com entrada muitas vezes gratuita ({観戦|かんせん}{無料|むりょう}). (TIPS)' },
+    { id: 'iro-e1-l8-22', number: 22, prompt: 'Diálogo 08-01: A convida B para o novo outlet. O que B responde?', context: 'A：{新|あたら}しいアウトレットモール、もう{行|い}きましたか？ B：いえ、まだです。 A：{今度|こんど}、みんなで{行|い}きます。いっしょに{行|い}きませんか？ B：ありがとうございます。ぜひ。', choices: [{ n: 1, text: 'Ainda não foi (まだです) e aceita o convite (ぜひ)' }, { n: 2, text: 'Já foi e recusa' }, { n: 3, text: 'Não gosta de outlet' }, { n: 4, text: 'Vai sozinho' }], answer: 1, explanationPt: 'もう{行|い}きましたか？ (➊) → いいえ、まだです; convite いっしょに{行|い}きませんか？ (➌) → ぜひ (aceita). (Atividade 1 · 聴解スクリプト)' },
+    { id: 'iro-e1-l8-23', number: 23, prompt: 'Diálogo 08-02: sobre o restaurante asiático “Palm Kitchen”, o que acontece?', context: 'A：「パームキッチン」っていうアジアレストラン、{行|い}ったことありますか？ B：いいえ、ありません。 A：すごくおいしいですよ。{今度|こんど}、いっしょに{食|た}べに{行|い}きませんか？', choices: [{ n: 1, text: 'B nunca foi; A diz que é muito gostoso e convida para irem comer juntos — B aceita' }, { n: 2, text: 'B já foi e não gostou' }, { n: 3, text: 'A recusa o convite de B' }, { n: 4, text: 'B não pode comer comida asiática' }], answer: 1, explanationPt: '{行|い}ったことありますか？ (➋) → ありません; {食|た}べに{行|い}きませんか？ (➌, マス+に) → いいですね。ぜひ、{行|い}きましょう。 (Atividade 1)' },
+    { id: 'iro-e1-l8-24', number: 24, prompt: 'Diálogo 08-03: sobre a luta livre (プロレス), o que A propõe?', context: 'A：プロレスを{見|み}たことがありますか？ B：いいえ、{見|み}たことないです。 A：{今度|こんど}の{日曜日|にちようび}、{市民|しみん}{体育館|たいいくかん}で{試合|しあい}がありますよ。いっしょに{見|み}に{行|い}きませんか？', choices: [{ n: 1, text: 'B nunca assistiu; há um jogo no ginásio municipal no domingo e A convida para irem ver — B aceita' }, { n: 2, text: 'B já assistiu muitas vezes' }, { n: 3, text: 'A não gosta de luta livre' }, { n: 4, text: 'Não há jogo nenhum' }], answer: 1, explanationPt: '{見|み}たことがありますか？ → {見|み}たことないです; {見|み}に{行|い}きませんか？ (➌) → へー、いいですね。{行|い}きましょう。 (Atividade 1)' },
+    { id: 'iro-e1-l8-25', number: 25, prompt: 'Diálogo 08-04: A convida B para a Port Tower. Por que B hesita?', context: 'A：ポートタワー、もう{登|のぼ}りましたか？ B：いいえ……。 A：じゃあ、{今度|こんど}、{行|い}きませんか？　{景色|けしき}がきれいですよ。 B：すみません。{私|わたし}、{高|たか}いところはちょっと……。', choices: [{ n: 1, text: 'B não subiu ainda, mas tem medo/desconforto de lugares altos ({高|たか}いところはちょっと)' }, { n: 2, text: 'B já subiu e adorou' }, { n: 3, text: 'A torre está fechada' }, { n: 4, text: 'B prefere o museu' }], answer: 1, explanationPt: 'もう{登|のぼ}りましたか？ (➊) → いいえ; recusa indireta {高|たか}いところはちょっと……(não curto lugares altos). (Atividade 1)' },
+    { id: 'iro-e1-l8-26', number: 26, prompt: 'Diálogo 08-05: A pergunta se B já conhece a cidade. Aonde B já foi e aonde não?', context: 'A：もう、この{町|まち}のいろいろなところに{行|い}きましたか？ B：えーと、{博物館|はくぶつかん}とお{城|しろ}には{行|い}きました。 A：{動物園|どうぶつえん}は？ B：まだです。{行|い}きたいです。', choices: [{ n: 1, text: 'Já foi ao museu e ao castelo; ao zoológico ainda não, mas quer ir' }, { n: 2, text: 'Já foi a todos os lugares' }, { n: 3, text: 'Não foi a lugar nenhum' }, { n: 4, text: 'Só foi ao zoológico' }], answer: 1, explanationPt: '{博物館|はくぶつかん}とお{城|しろ}には{行|い}きました; {動物園|どうぶつえん}は まだです。{行|い}きたいです → A：{今度|こんど}いっしょに{行|い}きましょう。 (Atividade 1)' },
+    { id: 'iro-e1-l8-27', number: 27, prompt: 'Diálogo 08-06: A chama B para jogar beisebol. Por quê, e o que B responde?', context: 'A：{野球|やきゅう}、したことある？ B：え、ないです。 A：{今度|こんど}の{日曜日|にちようび}、いっしょにやらない？　メンバーが{足|た}りなくて……。 B：えー、{無理|むり}です。{野球|やきゅう}、ぜんぜんわかりません。', choices: [{ n: 1, text: 'Faltam jogadores (メンバーが{足|た}りなくて); B nunca jogou e diz que é impossível ({無理|むり}), não entende nada de beisebol' }, { n: 2, text: 'B é jogador profissional' }, { n: 3, text: 'Sobram jogadores' }, { n: 4, text: 'B aceita na hora' }], answer: 1, explanationPt: 'したことある？ (➋ casual) → ないです; convite やらない？ (➌ casual) com motivo メンバーが{足|た}りなくて; recusa {無理|むり}です. A insiste: だいじょうぶ. (Atividade 1)' },
+    { id: 'iro-e1-l8-28', number: 28, prompt: 'Diálogo 08-12 (no shopping): qual a ordem que ヒルニ／ソック／アニタ combinam?', context: 'アニタ：{何|なに}か{食|た}べませんか？→フードコート。 ソック：{食事|しょくじ}の{前|まえ}に、お{金|かね}をおろしたいんですが…→ATM。 ヒルニ：ジョギングシューズを{買|か}いたいんですが…→スポーツ{店|てん}。 ソック：{買|か}い{物|もの}のあとで、ゲームコーナー。', choices: [{ n: 1, text: 'Sacar dinheiro (ATM) → comer → comprar tênis → fliperama → (antes, banheiro)' }, { n: 2, text: 'Fliperama primeiro, depois comer' }, { n: 3, text: 'Só vão ao cinema' }, { n: 4, text: 'Vão direto para casa' }], answer: 1, explanationPt: 'Usam Nの{前|まえ}に／Nのあとで (➍) e V-たいんですが (➎): {食事|しょくじ}の{前|まえ}に ATM; depois フードコート; {買|か}い{物|もの}のあとで ゲームコーナー; その{前|まえ}に トイレ. (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l8-29', number: 29, prompt: 'Diálogo 08-12: como ソック pede para sacar dinheiro e ir ao fliperama?', context: 'ソック：あ、{食事|しょくじ}の{前|まえ}に、お{金|かね}をおろしたいんですが……。 …ソック：{買|か}い{物|もの}のあとで、ゲームコーナーに{行|い}きませんか？', choices: [{ n: 1, text: 'お{金|かね}をおろしたいんですが… (➎, desejo) e {買|か}い{物|もの}のあとで…{行|い}きませんか？ (➍+➌)' }, { n: 2, text: 'com もうV-ました' }, { n: 3, text: 'com V-たことがあります' }, { n: 4, text: 'dando uma ordem' }], answer: 1, explanationPt: 'おろしたいんですが… expressa o desejo (➎); {買|か}い{物|もの}のあとで marca a ordem (➍) + {行|い}きませんか？ convida (➌). (Atividade 2)' },
+    { id: 'iro-e1-l8-30', number: 30, prompt: 'Diálogo 08-16: A e B falam do zoológico (どうでしたか). Qual a impressão de B?', context: 'A：{動物園|どうぶつえん}、どうでしたか？ B：{楽|たの}しかったです。パンダがかわいかったです。 A：{私|わたし}はサルがよかったです。 B：ああ、サルもかわいかったですね。また{行|い}きたいです。', choices: [{ n: 1, text: 'Foi divertido; o panda era fofo; quer ir de novo' }, { n: 2, text: 'Foi chato e cansativo' }, { n: 3, text: 'Não viu nenhum animal' }, { n: 4, text: 'Foi difícil de entender' }], answer: 1, explanationPt: '{楽|たの}しかった / パンダがかわいかった (impressões em 〜かった); また{行|い}きたいです. (Atividade 3 · 聴解スクリプト)' },
+    { id: 'iro-e1-l8-31', number: 31, prompt: 'Diálogos 08-17/08-18/08-19: que impressões dão a exposição, a luta livre e o filme?', context: '② {展覧会|てんらんかい}：ちょっと{難|むずか}しかったです。よくわかりませんでした。 ③ プロレス：はじめてでしたけど、とてもおもしろかったです。…すごかったです。 ④ {映画|えいが}：{感動|かんどう}しました。{本当|ほんとう}にすばらしかったです。', choices: [{ n: 1, text: 'Exposição: meio difícil/não entendeu bem; luta livre: muito interessante/incrível; filme: emocionante/maravilhoso' }, { n: 2, text: 'Todos acharam tudo chato' }, { n: 3, text: 'Exposição: fácil; luta: entediante; filme: ruim' }, { n: 4, text: 'Ninguém deu opinião' }], answer: 1, explanationPt: '{展覧会|てんらんかい}: {難|むずか}しかった/よくわかりませんでした; プロレス: おもしろかった/すごかった; {映画|えいが}: {感動|かんどう}した/すばらしかった (→ {今度|こんど}はホラー{映画|えいが}). (Atividade 3)' },
+    { id: 'iro-e1-l8-32', number: 32, prompt: 'Pergunta de abertura da lição: 「{友|とも}だちを{誘|さそ}って、どんなところに{行|い}きますか？」 quer dizer:', choices: [{ n: 1, text: 'A que tipo de lugares você convida seus amigos para ir?' }, { n: 2, text: 'Você gosta de jogar beisebol?' }, { n: 3, text: 'Onde fica o zoológico?' }, { n: 4, text: 'A que horas você acorda?' }], answer: 1, translationPt: 'Convidando os amigos, a que tipo de lugar você vai?', explanationPt: '{友|とも}だちを{誘|さそ}って (convidando amigos), どんなところに{行|い}きますか (a que lugar vai). Tema: いっしょに{出|で}かける. (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 8
+const L8_SCRIPTS: Record<string, ScriptItem[]> = {
+  '08-01': [
+    {
+      label: '会話① (08-01) — もう行きましたか',
+      setupJa: '6{人|にん}の{人|ひと}が、{知|し}り{合|あ}いを{誘|さそ}っています。',
+      setupPt: 'Seis pessoas estão convidando um conhecido para algum lugar.',
+      lines: [
+        { speaker: 'A', ja: '{新|あたら}しいアウトレットモール、もう{行|い}きましたか？', pt: 'Você já foi ao novo outlet?' },
+        { speaker: 'B', ja: 'いえ、まだです。', pt: 'Não, ainda não.' },
+        { speaker: 'A', ja: '{今度|こんど}、みんなで{行|い}きます。いっしょに{行|い}きませんか？', pt: 'Da próxima vez vamos todos juntos. Não quer ir com a gente?' },
+        { speaker: 'B', ja: 'ありがとうございます。ぜひ。', pt: 'Obrigado(a). Com certeza.' },
+      ],
+    },
+  ],
+  '08-02': [
+    {
+      label: '会話② (08-02) — もう行きましたか',
+      lines: [
+        { speaker: 'A', ja: '「パームキッチン」っていうアジアレストラン、{行|い}ったことありますか？', pt: 'Você já foi a um restaurante asiático chamado “Palm Kitchen”?' },
+        { speaker: 'B', ja: 'いいえ、ありません。', pt: 'Não, nunca fui.' },
+        { speaker: 'A', ja: 'すごくおいしいですよ。{今度|こんど}、いっしょに{食|た}べに{行|い}きませんか？', pt: 'É muito gostoso. Da próxima vez, não quer ir comer comigo?' },
+        { speaker: 'B', ja: 'いいですね。ぜひ、{行|い}きましょう。', pt: 'Que bom. Vamos sim, com certeza.' },
+      ],
+    },
+  ],
+  '08-03': [
+    {
+      label: '会話③ (08-03) — もう行きましたか',
+      lines: [
+        { speaker: 'A', ja: 'プロレスを{見|み}たことがありますか？', pt: 'Você já assistiu a luta livre?' },
+        { speaker: 'B', ja: 'いいえ、{見|み}たことないです。', pt: 'Não, nunca assisti.' },
+        { speaker: 'A', ja: '{今度|こんど}の{日曜日|にちようび}、{市民|しみん}{体育館|たいいくかん}で{試合|しあい}がありますよ。いっしょに{見|み}に{行|い}きませんか？', pt: 'Domingo que vem tem um jogo no ginásio municipal. Não quer ir ver comigo?' },
+        { speaker: 'B', ja: 'へー、いいですね。{行|い}きましょう。', pt: 'Nossa, que bom. Vamos.' },
+      ],
+    },
+  ],
+  '08-04': [
+    {
+      label: '会話④ (08-04) — もう行きましたか',
+      lines: [
+        { speaker: 'A', ja: 'ポートタワー、もう{登|のぼ}りましたか？', pt: 'Você já subiu na Port Tower?' },
+        { speaker: 'B', ja: 'いいえ……。', pt: 'Não…' },
+        { speaker: 'A', ja: 'じゃあ、{今度|こんど}、{行|い}きませんか？　{景色|けしき}がきれいですよ。', pt: 'Então, não quer ir da próxima vez? A vista é linda.' },
+        { speaker: 'B', ja: 'すみません。{私|わたし}、{高|たか}いところはちょっと……。', pt: 'Desculpe. Eu… lugares altos não me agradam muito.' },
+      ],
+    },
+  ],
+  '08-05': [
+    {
+      label: '会話⑤ (08-05) — もう行きましたか',
+      lines: [
+        { speaker: 'A', ja: 'もう、この{町|まち}のいろいろなところに{行|い}きましたか？', pt: 'Você já foi a vários lugares desta cidade?' },
+        { speaker: 'B', ja: 'えーと、{博物館|はくぶつかん}とお{城|しろ}には{行|い}きました。', pt: 'Hã, ao museu e ao castelo eu já fui.' },
+        { speaker: 'A', ja: '{動物園|どうぶつえん}は？', pt: 'E ao zoológico?' },
+        { speaker: 'B', ja: 'まだです。{行|い}きたいです。', pt: 'Ainda não. Quero ir.' },
+        { speaker: 'A', ja: 'じゃあ、{今度|こんど}いっしょに{行|い}きましょう。', pt: 'Então, vamos juntos da próxima vez.' },
+      ],
+    },
+  ],
+  '08-06': [
+    {
+      label: '会話⑥ (08-06) — もう行きましたか',
+      lines: [
+        { speaker: 'A', ja: '{野球|やきゅう}、したことある？', pt: 'Você já jogou beisebol?' },
+        { speaker: 'B', ja: 'え、ないです。', pt: 'Hã, nunca.' },
+        { speaker: 'A', ja: '{今度|こんど}の{日曜日|にちようび}、いっしょにやらない？　メンバーが{足|た}りなくて……。', pt: 'Domingo que vem, não joga com a gente? Estão faltando jogadores…' },
+        { speaker: 'B', ja: 'えー、{無理|むり}です。{野球|やきゅう}、ぜんぜんわかりません。', pt: 'Ah, é impossível. Não entendo nada de beisebol.' },
+        { speaker: 'A', ja: 'だいじょうぶ、だいじょうぶ。', pt: 'Relaxa, relaxa.' },
+      ],
+    },
+  ],
+  '08-12': [
+    {
+      label: '会話 (08-12) — このあと、どうしますか？',
+      setupJa: 'ヒルニさんとソックさんとアニタさんは{友|とも}だちです。{休|やす}みの{日|ひ}に、ショッピングモールに{来|き}ています。',
+      setupPt: 'Hiruni, Sok e Anita são amigos. Estão num shopping no dia de folga.',
+      lines: [
+        { speaker: '（ト書き）', ja: '（{歩|ある}きながら）', pt: '(Andando.)' },
+        { speaker: 'アニタ', ja: 'このあと、どうしますか？', pt: 'E agora, o que vamos fazer?' },
+        { speaker: 'ヒルニ', ja: 'お{腹|なか}がすきましたね。{何|なに}か{食|た}べませんか？', pt: 'Deu fome, né. Não querem comer alguma coisa?' },
+        { speaker: 'アニタ', ja: 'じゃあ、フードコートに{行|い}きましょう。', pt: 'Então vamos à praça de alimentação.' },
+        { speaker: 'ソック', ja: 'あ、{食事|しょくじ}の{前|まえ}に、お{金|かね}をおろしたいんですが……。', pt: 'Ah, antes de comer eu queria sacar dinheiro…' },
+        { speaker: 'アニタ', ja: 'あそこにATMがありますよ。', pt: 'Ali tem um caixa eletrônico.' },
+        { speaker: '（ト書き）', ja: '（フードコートで）', pt: '(Na praça de alimentação.)' },
+        { speaker: 'ヒルニ', ja: 'このあと、ジョギングシューズを{買|か}いたいんですが……。', pt: 'Depois eu queria comprar um tênis de corrida…' },
+        { speaker: 'アニタ', ja: 'じゃあ、スポーツ{店|てん}に{行|い}きましょう。', pt: 'Então vamos à loja de esportes.' },
+        { speaker: 'ソック', ja: '{買|か}い{物|もの}のあとで、ゲームコーナーに{行|い}きませんか？', pt: 'Depois das compras, não querem ir ao fliperama?' },
+        { speaker: 'アニタ', ja: 'いいですね。', pt: 'Boa ideia.' },
+        { speaker: '（ト書き）', ja: '-------------------', pt: '———' },
+        { speaker: 'ヒルニ', ja: 'じゃ、{行|い}きましょうか。', pt: 'Então, vamos indo?' },
+        { speaker: 'ソック', ja: 'あ、その{前|まえ}に、ちょっとトイレ。', pt: 'Ah, antes disso, só um instante no banheiro.' },
+      ],
+    },
+  ],
+  '08-16': [
+    {
+      label: '会話① (08-16) — どうでしたか',
+      setupJa: '{行|い}ったところについて、4{人|よにん}の{人|ひと}が{感想|かんそう}を{話|はな}しています。',
+      setupPt: 'Quatro pessoas contam suas impressões sobre lugares aonde foram.',
+      lines: [
+        { speaker: 'A', ja: '{動物園|どうぶつえん}、どうでしたか？', pt: 'E o zoológico, como foi?' },
+        { speaker: 'B', ja: '{楽|たの}しかったです。パンダがかわいかったです。', pt: 'Foi divertido. O panda era uma graça.' },
+        { speaker: 'A', ja: '{私|わたし}はサルがよかったです。', pt: 'Eu gostei foi dos macacos.' },
+        { speaker: 'B', ja: 'ああ、サルもかわいかったですね。また{行|い}きたいです。', pt: 'Ah, os macacos também eram fofos, né. Quero ir de novo.' },
+      ],
+    },
+  ],
+  '08-17': [
+    {
+      label: '会話② (08-17) — どうでしたか',
+      lines: [
+        { speaker: 'A', ja: '{今日|きょう}の{展覧会|てんらんかい}、どうでしたか？', pt: 'E a exposição de hoje, como foi?' },
+        { speaker: 'B', ja: 'うーん。ちょっと{難|むずか}しかったです。', pt: 'Hmm. Foi um pouco difícil.' },
+        { speaker: 'A', ja: 'あー、{現代|げんだい}の{作品|さくひん}はねえ。', pt: 'Ah, as obras contemporâneas, né…' },
+        { speaker: 'B', ja: 'よくわかりませんでした。', pt: 'Não entendi muito bem.' },
+      ],
+    },
+  ],
+  '08-18': [
+    {
+      label: '会話③ (08-18) — どうでしたか',
+      lines: [
+        { speaker: 'A', ja: 'プロレス、どうでしたか？', pt: 'E a luta livre, como foi?' },
+        { speaker: 'B', ja: 'はじめてでしたけど、とてもおもしろかったです。', pt: 'Foi a primeira vez, mas foi muito interessante.' },
+        { speaker: 'A', ja: 'そうですか。それはよかったです。', pt: 'É mesmo? Que bom.' },
+        { speaker: 'B', ja: 'ほんと、すごかったです。また{見|み}たいです。', pt: 'Sério, foi incrível. Quero ver de novo.' },
+      ],
+    },
+  ],
+  '08-19': [
+    {
+      label: '会話④ (08-19) — どうでしたか',
+      lines: [
+        { speaker: 'A', ja: '{映画|えいが}、よかったですね。', pt: 'O filme foi bom, né.' },
+        { speaker: 'B', ja: '{感動|かんどう}しました。{本当|ほんとう}にすばらしかったです。', pt: 'Me emocionei. Foi realmente maravilhoso.' },
+        { speaker: 'A', ja: 'じゃあ、また{行|い}きましょう。', pt: 'Então, vamos de novo.' },
+        { speaker: 'B', ja: '{今度|こんど}は、ホラー{映画|えいが}を{見|み}に{行|い}きましょう。', pt: 'Da próxima, vamos ver um filme de terror.' },
+        { speaker: 'A', ja: 'えー。', pt: 'Eee…' },
+      ],
+    },
+  ],
+}
+
+const lesson8: Section = {
+  id: 'lesson-8',
+  level: 'elementary1',
+  titleJa: '第8課 野球、したことありますか？',
+  titlePt: 'Lição 8 — Você já jogou beisebol?',
+  summaryPt: 'Sair junto · convidar alguém perguntando experiência (もう{行|い}きましたか／プロレスを{見|み}たことがありますか) e propondo (いっしょに{食|た}べに{行|い}きませんか), combinar a ordem das ações (Nの{前|まえ}に／Nのあとで) e dar impressões sobre eventos (パンダがかわいかったです／とてもおもしろかったです).',
+  studyNotes: [
+    {
+      title: 'Tópico: Sair junto (いっしょに出かける)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Convidar para comer, fazer compras ou ir a eventos, perguntando a experiência/interesse do outro.\n' +
+        '- Conversar sobre o que fazer a seguir e aonde ir quando estão juntos na rua.\n' +
+        '- Transmitir suas impressões sobre um evento do qual participaram juntos.\n\n' +
+        '💡 Pergunta de abertura: {友|とも}だちを{誘|さそ}って、どんなところに{行|い}きますか？ (a que lugares você convida os amigos?).',
+    },
+    {
+      title: 'Já fez? / Experiência: もうV-ました ／ V-たことがあります (➊➋)',
+      bodyPt:
+        '**もうV-ましたか？** = já fez? (もう = já). Usa-se quando se espera que a ação seja natural. Resposta: `はい、V-ました` / `いいえ、まだです`.\n\n' +
+        '- `{新|あたら}しいアウトレットモール、もう{行|い}きましたか？`\n\n' +
+        '**V-たことがあります** = ter a experiência de (já fez alguma vez?). Usa a **タ-forma** + ことがあります.\n\n' +
+        '- `プロレスを{見|み}たことがありますか？` → `いいえ、{見|み}たことないです`.\n' +
+        '- タ-forma: troca-se て／で da テ-forma por た／だ ({見|み}て→{見|み}た, {飲|の}んで→{飲|の}んだ, {行|い}って→{行|い}った).\n\n' +
+        'Diferença: もうV-ました (algo esperado/natural) × V-たことがあります (só saber se tem ou não a experiência).',
+    },
+    {
+      title: 'Convidar: V-に行きませんか？ (➌)',
+      bodyPt:
+        'Convite com objetivo. Tira-se **ます** da マス-forma e põe-se **に + {行|い}く**:\n\n' +
+        '- {食|た}べに{行|い}く (ir comer), {飲|の}みに{行|い}く (ir beber), {見|み}に{行|い}く (ir ver).\n' +
+        '- `いっしょに{食|た}べに{行|い}きませんか？` → `いいですね。{行|い}きましょう。`\n\n' +
+        'Casual: `V-に{行|い}かない？` (ex.: {映画|えいが}{見|み}に{行|い}かない？).',
+    },
+    {
+      title: 'Ordem das ações: Nの前に／Nのあと(で) ／ desejo: V-たいんですが… (➍➎)',
+      bodyPt:
+        '**Nの{前|まえ}に、〜** = antes de N; **Nのあと（で）、〜** = depois de N (o で pode cair). N: {食事|しょくじ}, {買|か}い{物|もの}, {映画|えいが}, {仕事|しごと}, {勉強|べんきょう}, {学校|がっこう}…\n\n' +
+        '- `{食事|しょくじ}の{前|まえ}に、お{金|かね}をおろしたいんですが…` / `{買|か}い{物|もの}のあとで、ゲームコーナーに{行|い}きませんか？`\n\n' +
+        '**V-たいんですが…** = comunica um desejo e, com isso, pede algo. A Lição 6 viu Nに{行|い}きたいんですが…; aqui, com qualquer verbo: `ジョギングシューズを{買|か}いたいんですが…`.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Convite (Ativ. 1):** アジア (Ásia), すごく (muito), {試合|しあい} (partida), やる (fazer/jogar), メンバー (jogador), {足|た}りない (faltar), {無理|むり}（な） (impossível). **Lugares (a–h):** {動物園|どうぶつえん}, お{城|しろ}, レストラン, {博物館|はくぶつかん}, アウトレットモール, プロレス, タワー, {野球|やきゅう}.\n\n' +
+        '**Impressões (Ativ. 3):** すごかった, すばらしかった, おもしろかった, {難|むずか}しかった, {感動|かんどう}した, かわいかった, {楽|たの}しかった; (negativas) つまらない, {退屈|たいくつ}（な）, いまいち（な）, よくわかりませんでした. **Outras:** パンダ, サル, {現代|げんだい}, {作品|さくひん}, ホラー{映画|えいが}.\n\n' +
+        '**Kanji da lição:** お{金|かね}, {食事|しょくじ}, 〜{店|てん}, {博物館|はくぶつかん}, {動物園|どうぶつえん}, {試合|しあい}, {楽|たの}しい, {難|むずか}しい, {登|のぼ}る.\n\n' +
+        '📌 **TIPS:** **{日本|にほん}の{城|しろ}** (castelos do {戦国|せんごく} ao {江戸|えど}; {石垣}/{堀}/{天守閣}; {姫路城}/{松本城}/{松山城}; dá para subir ao {天守閣} e ver a história local); **アウトレットモール** (lojas direto da fábrica; NÃO é produto com defeito barato); **プロレス** (luta + show; ligas grandes em arenas e ligas locais em ginásios/estacionamentos, muitas vezes de graça).',
+    },
+  ],
+  groups: [lesson8Group],
+  audios: attachScripts(8, L8_SCRIPTS),
+}
+
+// ---- Lições 9-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(8, 'Sair junto', '野球、したことありますか？', 'Você já jogou beisebol?', [
-    'Convidar para refeição, compras ou eventos, perguntando a experiência/interesse do outro.',
-    'Conversar sobre o que fazer a seguir e aonde ir quando estão juntos na rua.',
-    'Transmitir ao outro suas impressões sobre um evento do qual participaram juntos.',
-  ]),
   scaffold(9, 'Aprender japonês', '読み方を教えてもらえませんか？', 'Pode me ensinar a leitura?', [
     'Falar de forma simples sobre sua experiência aprendendo japonês.',
     'Dar impressões e comentários sobre o estudo de japonês.',
@@ -1535,5 +1771,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, ...others],
 }
