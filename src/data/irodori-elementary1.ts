@@ -528,13 +528,199 @@ const lesson2: Section = {
   audios: attachScripts(2, L2_SCRIPTS),
 }
 
-// ---- Lições 3-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 3: 冬はとても寒くなります (tópico 季節と天気) --------------------
+const lesson3Group: ExerciseGroup = {
+  id: 'iro-e1-l3',
+  title: '冬はとても寒くなります',
+  subtitlePt: 'Estações e clima · descrever mudanças do tempo (暖かくなります), comparar estações (いちばん好きです), dizer do que gosta/não gosta no clima e dar o motivo (すずしいですから)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l3-1', number: 1, prompt: '「{春|はる}は{暖|あたた}かくなります」 (〜なります) expressa:', choices: [{ n: 1, text: 'mudança / “passar a ficar” (vai ficando quente)' }, { n: 2, text: 'uma ordem ao ouvinte' }, { n: 3, text: 'algo que não muda nunca' }, { n: 4, text: 'um desejo' }], answer: 1, translationPt: 'Na primavera fica (mais) quente.', explanationPt: 'なります（なる）indica mudança; aqui, a mudança do clima/estação. (Nota ➊)' },
+    { id: 'iro-e1-l3-2', number: 2, prompt: 'Como se liga なります a um adjetivo-イ como {暖|あたた}かい?', choices: [{ n: 1, text: 'troca い por く: {暖|あたた}かい → {暖|あたた}かくなります' }, { n: 2, text: 'mantém い: {暖|あたた}かいなります' }, { n: 3, text: 'usa に: {暖|あたた}かいになります' }, { n: 4, text: 'usa の: {暖|あたた}かいのなります' }], answer: 1, explanationPt: 'イ-adjetivo: い→く + なります — {暖|あたた}かくなります, すずしくなります, {寒|さむ}くなります. (Nota ➊)' },
+    { id: 'iro-e1-l3-3', number: 3, prompt: 'Com substantivo ou ナ-adjetivo, qual a forma de なります? Ex.: 「{学校|がっこう}が{休|やす}み___なります」', choices: [{ n: 1, text: 'に — N／ナA + に + なります ({休|やす}みになります)' }, { n: 2, text: 'く — {休|やす}みくなります' }, { n: 3, text: 'が — {休|やす}みがなります' }, { n: 4, text: 'を — {休|やす}みをなります' }], answer: 1, translationPt: 'A escola entra de férias.', explanationPt: 'N／ナA usam に: {学校|がっこう}が{休|やす}みになります, {公園|こうえん}がきれいになりました. (Nota ➊)' },
+    { id: 'iro-e1-l3-4', number: 4, prompt: '「{秋|あき}がいちばん{好|す}きです」 — o que いちばん acrescenta?', choices: [{ n: 1, text: '“o mais / mais que tudo” (superlativo) — gosto mais do outono' }, { n: 2, text: 'um número de telefone' }, { n: 3, text: 'negação' }, { n: 4, text: '“primeiro lugar” no sentido literal só' }], answer: 1, translationPt: 'Gosto mais do outono (de todos).', explanationPt: 'いちばん = literalmente “o primeiro”; diante de adjetivo significa “o mais/mais que tudo”. Ex.: 8{月|がつ}がいちばん{暑|あつ}いです. (Nota ➋)' },
+    { id: 'iro-e1-l3-5', number: 5, prompt: '「{暑|あつ}いのが{好|す}きです。{寒|さむ}いのが{苦手|にがて}です」 (イA-いのが好きです／苦手です) — papel de 「の」?', choices: [{ n: 1, text: 'nominaliza o adjetivo (o calor / o frio) — como já vimos com verbos na L2' }, { n: 2, text: 'marca posse' }, { n: 3, text: 'indica lugar' }, { n: 4, text: 'indica passado' }], answer: 1, translationPt: 'Gosto do calor. Não curto o frio.', explanationPt: 'の nominaliza o イ-adjetivo: {暑|あつ}い+の = “o (clima) quente”. {苦手|にがて} = não curto/não sou bom com — mais suave que {好|す}きじゃない. (Nota ➌)' },
+    { id: 'iro-e1-l3-6', number: 6, prompt: 'Qual é a forma negativa usual de 「〜のが{好|す}きです」 (ex.: frio)?', choices: [{ n: 1, text: '{寒|さむ}いのは{好|す}きじゃないです／{好|す}きじゃありません (が → は)' }, { n: 2, text: '{寒|さむ}いのが{好|す}きくないです' }, { n: 3, text: '{寒|さむ}いのを{好|す}きません' }, { n: 4, text: '{寒|さむ}いのが{好|す}きでした' }], answer: 1, explanationPt: 'No negativo, が costuma virar は: {寒|さむ}いのはあまり{好|す}きじゃないです. (Nota ➌)' },
+    { id: 'iro-e1-l3-7', number: 7, prompt: '「もみじの{景色|けしき}がきれいですから。」 — o que から indica no fim da frase?', choices: [{ n: 1, text: 'motivo / razão (“porque…”)' }, { n: 2, text: 'a partir de um ponto no tempo' }, { n: 3, text: 'origem/lugar de onde' }, { n: 4, text: 'uma ordem' }], answer: 1, translationPt: 'Porque a paisagem dos bordos é linda.', explanationPt: 'から no fim da frase dá o motivo. Antes de から vão frases com adjetivo+です (e também frases com verbo). (Nota ➍)' },
+    { id: 'iro-e1-l3-8', number: 8, prompt: '「{暑|あつ}いのが{大好|だいす}きですから、{夏|なつ}が{好|す}きです」 (S1から、S2) — o que から faz aqui?', choices: [{ n: 1, text: 'liga duas frases: S1 é o motivo de S2 (“como…, por isso…”)' }, { n: 2, text: 'só enfeita a frase' }, { n: 3, text: 'indica tempo decorrido' }, { n: 4, text: 'transforma em pergunta' }], answer: 1, translationPt: 'Como adoro o calor, gosto do verão.', explanationPt: 'から também conecta frases: S1から、S2 — S1 é a razão de S2. Liga frases de N, adjetivo e verbo. (Nota ❺)' },
+    { id: 'iro-e1-l3-9', number: 9, prompt: '「{海|うみ}や{山|やま}で{遊|あそ}ぶ」 (N1やN2) — qual a diferença de や para と?', choices: [{ n: 1, text: 'や lista exemplos (mar, montanha… entre outros), não a lista completa' }, { n: 2, text: 'や significa “ou exclusivo”' }, { n: 3, text: 'や só liga adjetivos' }, { n: 4, text: 'や e と são idênticos em tudo' }], answer: 1, translationPt: 'Brincar no mar, na montanha (etc.).', explanationPt: 'や liga substantivos como と, mas dando **exemplos** (pode haver outros: rio, floresta…). Pode-se acrescentar など: N1やN2など. (Nota ➏)' },
+    { id: 'iro-e1-l3-10', number: 10, prompt: '「ぶどうとか{梨|なし}とか」 (N1とか（N2とか）) — quando se usa とか?', choices: [{ n: 1, text: 'para dar exemplos, em tom coloquial (até com um só item: N1とか)' }, { n: 2, text: 'só na escrita formal' }, { n: 3, text: 'para negar' }, { n: 4, text: 'para contar pessoas' }], answer: 1, translationPt: '…uva, pera, essas coisas.', explanationPt: 'とか dá exemplos; mais coloquial que や e cabe mesmo com um só item ({北海道|ほっかいどう}とか). Pode vir após adjetivo/verbo e no meio ou fim da frase. (Nota ➐)' },
+    { id: 'iro-e1-l3-11', number: 11, prompt: 'Vocabulário das estações — qual conjunto está certo?', choices: [{ n: 1, text: '{暑|あつ}い (quente) ／ すずしい (fresco) ／ {寒|さむ}い (frio) ／ {暖|あたた}かい (morno/ameno)' }, { n: 2, text: '{暑|あつ}い (frio) ／ すずしい (quente) ／ {寒|さむ}い (morno) ／ {暖|あたた}かい (fresco)' }, { n: 3, text: '{暑|あつ}い (úmido) ／ すずしい (seco) ／ {寒|さむ}い (chuvoso) ／ {暖|あたた}かい (ventoso)' }, { n: 4, text: 'todos significam “bonito”' }], answer: 1, explanationPt: '{暑|あつ}い (quente, sobre o tempo), すずしい (fresco/agradável), {寒|さむ}い (frio), {暖|あたた}かい (ameno/morno). (Atividade 1)' },
+    { id: 'iro-e1-l3-12', number: 12, prompt: 'As expressões 「じめじめする／{蒸|む}し{暑|あつ}い／{雨|あめ}が{降|ふ}る／{雪|ゆき}が{降|ふ}る」 significam:', choices: [{ n: 1, text: 'estar úmido/abafado ／ quente e abafado ／ chover ／ nevar' }, { n: 2, text: 'estar seco ／ frio e seco ／ ventar ／ trovejar' }, { n: 3, text: 'estar fresco ／ ameno ／ amanhecer ／ anoitecer' }, { n: 4, text: 'florescer ／ cair folhas ／ cantar ／ dormir' }], answer: 1, explanationPt: 'じめじめする (úmido/mofado), {蒸|む}し{暑|あつ}い (calor abafado), {雨|あめ}が{降|ふ}る (chover), {雪|ゆき}が{降|ふ}る (nevar). (Atividade 1)' },
+    { id: 'iro-e1-l3-13', number: 13, prompt: '「{桜|さくら}の{花|はな}が{咲|さ}く／もみじがきれい／セミが{鳴|な}く」 descrevem, respectivamente:', choices: [{ n: 1, text: 'cerejeiras florescem (primavera) ／ bordos bonitos (outono) ／ cigarras cantam (verão)' }, { n: 2, text: 'neva ／ chove ／ venta' }, { n: 3, text: 'verão ／ inverno ／ primavera' }, { n: 4, text: 'comer ／ beber ／ dormir' }], answer: 1, explanationPt: '{桜|さくら}が{咲|さ}く = primavera; もみじ (bordo) que fica きれい = outono; セミ (cigarra) que {鳴|な}く = verão. (Atividade 1)' },
+    { id: 'iro-e1-l3-14', number: 14, prompt: 'As palavras 「{同|おな}じ／40{度|ど}／マイナス／{短|みじか}い」 significam:', choices: [{ n: 1, text: 'igual/mesmo ／ 40 graus ／ negativo (minus) ／ curto' }, { n: 2, text: 'diferente ／ 14 graus ／ positivo ／ longo' }, { n: 3, text: 'parecido ／ 40% ／ metade ／ baixo' }, { n: 4, text: 'novo ／ 40 anos ／ meio ／ alto' }], answer: 1, explanationPt: '{同|おな}じ (igual), 〜{度|ど} (graus), マイナス (negativo, de temperatura), {短|みじか}い (curto). (Atividade 2 · 大切なことば)' },
+    { id: 'iro-e1-l3-15', number: 15, prompt: 'A reação 「そうなんですか」 (no diálogo) expressa:', choices: [{ n: 1, text: 'surpresa/interesse ao saber de algo novo (“Ah, é mesmo?/Que interessante”)' }, { n: 2, text: 'discordância forte' }, { n: 3, text: 'uma ordem' }, { n: 4, text: 'um pedido de desculpas' }], answer: 1, explanationPt: 'そうなんですか reage com surpresa/interesse a uma informação nova; そうですか é mais neutro (“ah, sei”). (Atividade 2 · vocab)' },
+    { id: 'iro-e1-l3-16', number: 16, prompt: 'As palavras 「どうして／ぶどう／{梨|なし}」 significam:', choices: [{ n: 1, text: 'por quê ／ uva ／ pera' }, { n: 2, text: 'como ／ maçã ／ pêssego' }, { n: 3, text: 'quando ／ laranja ／ caqui' }, { n: 4, text: 'onde ／ morango ／ melão' }], answer: 1, explanationPt: 'どうして (por quê), ぶどう (uva), {梨|なし} (pera). どうして pergunta o motivo — respondido com 〜から. (Atividade 3 · vocab)' },
+    { id: 'iro-e1-l3-17', number: 17, prompt: 'Os kanji 「{季節|きせつ}／{春|はる}／{夏|なつ}」 lêem-se:', choices: [{ n: 1, text: 'きせつ (estação do ano) ／ はる (primavera) ／ なつ (verão)' }, { n: 2, text: 'きせつ ／ あき ／ ふゆ' }, { n: 3, text: 'じせつ ／ はる ／ なつ' }, { n: 4, text: 'きせつ ／ はな ／ なつ' }], answer: 1, explanationPt: '{季節|きせつ} (estação do ano), {春|はる} (primavera), {夏|なつ} (verão). (漢字)' },
+    { id: 'iro-e1-l3-18', number: 18, prompt: 'Os kanji 「{秋|あき}／{冬|ふゆ}／{花|はな}」 lêem-se:', choices: [{ n: 1, text: 'あき (outono) ／ ふゆ (inverno) ／ はな (flor)' }, { n: 2, text: 'なつ ／ はる ／ はな' }, { n: 3, text: 'あき ／ ふゆ ／ か' }, { n: 4, text: 'しゅう ／ とう ／ はな' }], answer: 1, explanationPt: '{秋|あき} (outono), {冬|ふゆ} (inverno), {花|はな} (flor). (漢字)' },
+    { id: 'iro-e1-l3-19', number: 19, prompt: 'Os kanji 「{同|おな}じ／{暑|あつ}い／{寒|さむ}い」 lêem-se:', choices: [{ n: 1, text: 'おなじ (igual) ／ あつい (quente) ／ さむい (frio)' }, { n: 2, text: 'どうじ ／ あつい ／ さむい' }, { n: 3, text: 'おなじ ／ しょい ／ かんい' }, { n: 4, text: 'おなじ ／ あつい ／ さぶい' }], answer: 1, explanationPt: '{同|おな}じ (igual/mesmo), {暑|あつ}い (quente), {寒|さむ}い (frio). Kanji da lição: {季節|きせつ}・{春|はる}・{夏|なつ}・{秋|あき}・{冬|ふゆ}・{花|はな}・{同|おな}じ・{暑|あつ}い・{寒|さむ}い. (漢字)' },
+    { id: 'iro-e1-l3-20', number: 20, prompt: '📌 TIPS — sobre o clima do Japão ({日本|にほん}の{気候|きこう}):', choices: [{ n: 1, text: 'varia muito de região para região, pois o país é longo e estreito no sentido norte-sul' }, { n: 2, text: 'é igual em todo o país o ano inteiro' }, { n: 3, text: 'não tem estações definidas' }, { n: 4, text: 'é tropical em todas as regiões' }], answer: 1, explanationPt: 'O Japão é um arquipélago longo (norte-sul), então o clima muda muito conforme a região (Hokkaido frio, Okinawa quente). (TIPS)' },
+    { id: 'iro-e1-l3-21', number: 21, prompt: '📌 TIPS — o que é o 「{梅雨|つゆ}」?', choices: [{ n: 1, text: 'a estação das chuvas (fim de maio a meados de julho), úmida e abafada' }, { n: 2, text: 'um festival de verão' }, { n: 3, text: 'a época das cerejeiras' }, { n: 4, text: 'uma montanha famosa' }], answer: 1, explanationPt: '{梅雨|つゆ} = estação chuvosa do fim de maio a meados de julho; sobe a umidade, mofo e comida estragam mais fácil. Depois dela começa o verão de verdade. (TIPS)' },
+    { id: 'iro-e1-l3-22', number: 22, prompt: '📌 TIPS — o que é 「{花見|はなみ}」?', choices: [{ n: 1, text: 'apreciar as cerejeiras em flor (piquenique sob as {桜|さくら}), típico da primavera' }, { n: 2, text: 'ver a primeira neve do ano' }, { n: 3, text: 'observar a lua de outono' }, { n: 4, text: 'um campeonato de beisebol' }], answer: 1, explanationPt: '{花見|はなみ} = apreciar as {桜|さくら} (cerejeiras), que florescem do fim de março a abril, fazendo piquenique sob as árvores. Coincide com o início do ano letivo/fiscal. (TIPS)' },
+    { id: 'iro-e1-l3-23', number: 23, prompt: '📌 TIPS — sobre o clima de 「{北海道|ほっかいどう}」 (norte) e 「{沖縄|おきなわ}」 (sul):', choices: [{ n: 1, text: 'Hokkaido tem verão fresco e inverno rigoroso com muita neve; Okinawa é subtropical, quente o ano todo' }, { n: 2, text: 'Hokkaido é tropical; Okinawa tem neve no inverno' }, { n: 3, text: 'os dois têm o mesmo clima de Tóquio' }, { n: 4, text: 'nenhum dos dois tem inverno' }], answer: 1, explanationPt: '{北海道|ほっかいどう} (norte): verão fresco, inverno muito frio e com neve. {沖縄|おきなわ} (sul): subtropical, quente o ano todo, com temporada de tufões (jul–out). (TIPS)' },
+    { id: 'iro-e1-l3-24', number: 24, prompt: 'Pergunta de abertura da lição: 「あなたの{国|くに}にはどんな{季節|きせつ}がありますか？」 quer dizer:', choices: [{ n: 1, text: 'Que estações há no seu país?' }, { n: 2, text: 'Qual é a sua comida preferida?' }, { n: 3, text: 'Onde você mora?' }, { n: 4, text: 'Quantos anos você tem?' }], answer: 1, explanationPt: 'どんな{季節|きせつ}がありますか = que estações existem? Tema da lição: estações e clima ({季節|きせつ}と{天気|てんき}). (Abertura)' },
+    { id: 'iro-e1-l3-25', number: 25, prompt: 'Narração 03-03: o que o vídeo diz sobre a primavera ({春|はる})?', context: '{春|はる}は{桜|さくら}の{花|はな}が{咲|さ}きます。{暖|あたた}かくなります。', choices: [{ n: 1, text: 'As cerejeiras florescem e o tempo fica mais quente' }, { n: 2, text: 'Cai muita neve e fica frio' }, { n: 3, text: 'As cigarras cantam e a escola entra de férias' }, { n: 4, text: 'Chove muito e fica abafado' }], answer: 1, explanationPt: '{桜|さくら}の{花|はな}が{咲|さ}きます + {暖|あたた}かくなります (〜くなります, Nota ➊). (Atividade 1 · 聴解スクリプト)' },
+    { id: 'iro-e1-l3-26', number: 26, prompt: 'Narração 03-03: o que diz sobre verão ({夏|なつ}) e inverno ({冬|ふゆ})?', context: '{夏|なつ}は{暑|あつ}いです。セミが{鳴|な}きます。{学校|がっこう}が{休|やす}みになります。… {冬|ふゆ}は{寒|さむ}いです。{雪|ゆき}が{降|ふ}ります。', choices: [{ n: 1, text: 'Verão: calor, cigarras, férias escolares; inverno: frio e neve' }, { n: 2, text: 'Verão: neve; inverno: cerejeiras' }, { n: 3, text: 'Verão: fresco; inverno: abafado' }, { n: 4, text: 'Verão: chuvas; inverno: florada' }], answer: 1, explanationPt: '{夏|なつ}: {暑|あつ}い・セミが{鳴|な}く・{学校|がっこう}が{休|やす}みになります (Nに+なります). {冬|ふゆ}: {寒|さむ}い・{雪|ゆき}が{降|ふ}る. (Atividade 1)' },
+    { id: 'iro-e1-l3-27', number: 27, prompt: 'Diálogo 03-05: como é o clima do país do Joey ({ジョーイ})?', context: 'Ｂ：{一年中|いちねんじゅう}{夏|なつ}です。ずっと{暑|あつ}いです。', choices: [{ n: 1, text: 'É verão o ano inteiro; faz calor o tempo todo' }, { n: 2, text: 'Tem quatro estações bem marcadas' }, { n: 3, text: 'Tem estação chuvosa e seca' }, { n: 4, text: 'O inverno é muito longo' }], answer: 1, explanationPt: '{一年中|いちねんじゅう}{夏|なつ} (verão o ano todo), ずっと{暑|あつ}い. (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l3-28', number: 28, prompt: 'Diálogo 03-06: como é o clima do país da Tam ({タム})?', context: 'Ｂ：{雨季|うき}と{乾季|かんき}があります。{乾季|かんき}はとても{暑|あつ}いです。…でも、{雨季|うき}は{少|すこ}しすずしくなります。', choices: [{ n: 1, text: 'Tem estação chuvosa e seca; a seca é muito quente e a chuvosa fica um pouco mais fresca' }, { n: 2, text: 'É verão o ano todo' }, { n: 3, text: 'Tem inverno com 40 graus negativos' }, { n: 4, text: 'É igual ao Japão, com quatro estações' }], answer: 1, explanationPt: '{雨季|うき}と{乾季|かんき}; {乾季|かんき}=muito quente; {雨季|うき}は{少|すこ}しすずしくなります (〜くなります) + {雨|あめ}がたくさん{降|ふ}ります. (Atividade 2)' },
+    { id: 'iro-e1-l3-29', number: 29, prompt: 'Diálogo 03-07: como é o clima do país do Bayar ({バヤル})?', context: 'Ｂ：{日本|にほん}と{同|おな}じです。{四季|しき}があります。…{夏|なつ}は40{度|ど}、{冬|ふゆ}はマイナス40{度|ど}になります。', choices: [{ n: 1, text: 'Igual ao Japão (quatro estações), mas extremo: verão a 40°C e inverno a −40°C' }, { n: 2, text: 'É verão o ano todo' }, { n: 3, text: 'Só tem estação chuvosa e seca' }, { n: 4, text: 'O inverno dura de outubro a maio' }], answer: 1, explanationPt: '{日本|にほん}と{同|おな}じ・{四季|しき}があります; {夏|なつ}は40{度|ど}、{冬|ふゆ}はマイナス40{度|ど}になります (Nに+なります). (Atividade 2)' },
+    { id: 'iro-e1-l3-30', number: 30, prompt: 'Diálogo 03-08: como é o clima do país do Chin ({陳})?', context: 'Ｂ：{私|わたし}の{国|くに}にも{四季|しき}があります。でも、{夏|なつ}はとても{短|みじか}いです。{冬|ふゆ}がとても{長|なが}いです。10{月|がつ}ごろから5{月|がつ}ごろまで{冬|ふゆ}です。', choices: [{ n: 1, text: 'Tem quatro estações, mas o verão é curto e o inverno longo (de outubro a maio), com muita neve' }, { n: 2, text: 'É verão o ano todo' }, { n: 3, text: 'O verão chega a 40°C' }, { n: 4, text: 'Só tem estação chuvosa e seca' }], answer: 1, explanationPt: '{夏|なつ}は{短|みじか}い・{冬|ふゆ}が{長|なが}い (10{月|がつ}〜5{月|がつ}); {雪|ゆき}がたくさん{降|ふ}る・とても{寒|さむ}い. (Atividade 2)' },
+    { id: 'iro-e1-l3-31', number: 31, prompt: 'Diálogo 03-12: qual estação Aram ({アラム}) prefere e por quê?', context: 'アラム：{秋|あき}がいちばん{好|す}きです。…{私|わたし}は{暑|あつ}いのが{苦手|にがて}ですから。{秋|あき}はすずしいですから{好|す}きです。', choices: [{ n: 1, text: 'O outono — porque não curte o calor e o outono é fresco' }, { n: 2, text: 'O verão — porque adora o calor' }, { n: 3, text: 'O inverno — por causa da neve' }, { n: 4, text: 'A primavera — pelas cerejeiras' }], answer: 1, explanationPt: '{秋|あき}がいちばん{好|す} (いちばん, Nota ➋); {暑|あつ}いのが{苦手|にがて} (イA-いのが苦手, Nota ➌); すずしいですから (motivo, Nota ➍). (Atividade 3 · 聴解スクリプト)' },
+    { id: 'iro-e1-l3-32', number: 32, prompt: 'Diálogo 03-12: a Meri ({メリ}) e o Kawano ({川野}) preferem o quê e por quê?', context: 'メリ：{暑|あつ}いのが{大好|だいす}きですから、{夏|なつ}が{好|す}きです。…川野：{私|わたし}も{秋|あき}が{好|す}きですね。もみじの{景色|けしき}がきれいですから。それに、{果物|くだもの}もおいしいですよね。ぶどうとか{梨|なし}とか。', choices: [{ n: 1, text: 'Meri prefere o verão (adora calor); Kawano prefere o outono (paisagem dos bordos + frutas como uva e pera)' }, { n: 2, text: 'Os dois preferem o inverno' }, { n: 3, text: 'Meri prefere o outono; Kawano, a primavera' }, { n: 4, text: 'Nenhum dos dois tem estação preferida' }], answer: 1, explanationPt: 'メリ: {暑|あつ}いのが{大好|だいす}きですから、{夏|なつ} (S1から、S2, Nota ❺). 川野: {秋|あき}; もみじの{景色|けしき}がきれいですから (Nota ➍); {果物|くだもの}…ぶどうとか{梨|なし}とか (N1とか, Nota ➐). (Atividade 3)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 3
+const L3_SCRIPTS: Record<string, ScriptItem[]> = {
+  '03-03': [
+    {
+      label: 'ナレーション (03-03) · 日本の四季',
+      setupJa: '{日本|にほん}を{紹介|しょうかい}する{映像|えいぞう}を{見|み}ています。',
+      setupPt: 'Você assiste a um vídeo que apresenta o Japão (as quatro estações).',
+      lines: [
+        { speaker: 'Narração', ja: '{春|はる}は{桜|さくら}の{花|はな}が{咲|さ}きます。{暖|あたた}かくなります。', pt: 'Na primavera, as cerejeiras florescem. Fica mais quente.' },
+        { speaker: 'Narração', ja: '{梅雨|つゆ}は{雨|あめ}がたくさん{降|ふ}ります。じめじめしています。', pt: 'Na estação das chuvas (tsuyu) chove muito. Fica úmido e abafado.' },
+        { speaker: 'Narração', ja: '{夏|なつ}は{暑|あつ}いです。セミが{鳴|な}きます。{学校|がっこう}が{休|やす}みになります。', pt: 'No verão faz calor. As cigarras cantam. As escolas entram de férias.' },
+        { speaker: 'Narração', ja: '{秋|あき}はすずしくなります。もみじがきれいです。', pt: 'No outono fica mais fresco. Os bordos (momiji) ficam bonitos.' },
+        { speaker: 'Narração', ja: '{冬|ふゆ}は{寒|さむ}いです。{雪|ゆき}が{降|ふ}ります。', pt: 'No inverno faz frio. Cai neve.' },
+      ],
+    },
+  ],
+  '03-05': [
+    {
+      label: '会話① (03-05) · ジョーイさん',
+      setupJa: '{自分|じぶん}の{国|くに}の{季節|きせつ}や{気候|きこう}について、4{人|よにん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam sobre as estações e o clima de seus países.',
+      lines: [
+        { speaker: 'A', ja: 'ジョーイさんの{国|くに}には、どんな{季節|きせつ}がありますか？', pt: 'Joey, que estações há no seu país?' },
+        { speaker: 'B', ja: '{一年中|いちねんじゅう}{夏|なつ}です。ずっと{暑|あつ}いです。', pt: 'É verão o ano inteiro. Faz calor o tempo todo.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '03-06': [
+    {
+      label: '会話② (03-06) · タムさん',
+      lines: [
+        { speaker: 'A', ja: 'タムさんの{国|くに}には、どんな{季節|きせつ}がありますか？', pt: 'Tam, que estações há no seu país?' },
+        { speaker: 'B', ja: '{雨季|うき}と{乾季|かんき}があります。', pt: 'Há estação chuvosa e estação seca.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'B', ja: '{乾季|かんき}はとても{暑|あつ}いです。', pt: 'A estação seca é muito quente.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: 'でも、{雨季|うき}は{少|すこ}しすずしくなります。{雨|あめ}がたくさん{降|ふ}ります。', pt: 'Mas a estação chuvosa fica um pouco mais fresca. Chove muito.' },
+      ],
+    },
+  ],
+  '03-07': [
+    {
+      label: '会話③ (03-07) · バヤルさん',
+      lines: [
+        { speaker: 'A', ja: 'バヤルさんの{国|くに}には、どんな{季節|きせつ}がありますか？', pt: 'Bayar, que estações há no seu país?' },
+        { speaker: 'B', ja: '{日本|にほん}と{同|おな}じです。{四季|しき}があります。でも、{夏|なつ}はとても{暑|あつ}いです。{冬|ふゆ}はとても{寒|さむ}いです。', pt: 'É igual ao Japão. Tem as quatro estações. Mas o verão é muito quente. O inverno é muito frio.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'B', ja: '{夏|なつ}は40{度|ど}、{冬|ふゆ}はマイナス40{度|ど}になります。', pt: 'No verão chega a 40 graus; no inverno, a 40 graus negativos.' },
+        { speaker: 'A', ja: 'へー、そうなんですか。', pt: 'Nossa, é mesmo?' },
+      ],
+    },
+  ],
+  '03-08': [
+    {
+      label: '会話④ (03-08) · 陳さん',
+      lines: [
+        { speaker: 'A', ja: '{陳|チン}さんの{国|くに}には、どんな{季節|きせつ}がありますか？', pt: 'Chin, que estações há no seu país?' },
+        { speaker: 'B', ja: '{私|わたし}の{国|くに}にも{四季|しき}があります。でも、{夏|なつ}はとても{短|みじか}いです。{冬|ふゆ}がとても{長|なが}いです。10{月|がつ}ごろから5{月|がつ}ごろまで{冬|ふゆ}です。', pt: 'No meu país também há quatro estações. Mas o verão é muito curto. O inverno é muito longo: é inverno de outubro até por volta de maio.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: 'B', ja: '{雪|ゆき}がたくさん{降|ふ}ります。とても{寒|さむ}いです。', pt: 'Cai muita neve. Faz muito frio.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'É mesmo?' },
+      ],
+    },
+  ],
+  '03-12': [
+    {
+      label: '会話 (03-12) · 好きな季節',
+      setupJa: '{川野|かわの}さんとメリさんとアラムさんが、{好|す}きな{季節|きせつ}について{話|はな}しています。',
+      setupPt: 'Kawano, Meri e Aram conversam sobre suas estações preferidas.',
+      lines: [
+        { speaker: '川野', ja: 'アラムさん、{好|す}きな{季節|きせつ}はいつですか？', pt: 'Aram, qual é a sua estação preferida?' },
+        { speaker: 'アラム', ja: 'そうですね。{秋|あき}がいちばん{好|す}きです。', pt: 'Deixa ver… Gosto mais do outono.' },
+        { speaker: '川野', ja: 'どうしてですか？', pt: 'Por quê?' },
+        { speaker: 'アラム', ja: '{私|わたし}は{暑|あつ}いのが{苦手|にがて}ですから。{秋|あき}はすずしいですから{好|す}きです。メリさんは？', pt: 'Porque não curto o calor. Como o outono é fresco, eu gosto. E você, Meri?' },
+        { speaker: 'メリ', ja: '{私|わたし}は{暑|あつ}いのが{大好|だいす}きですから、{夏|なつ}が{好|す}きです。', pt: 'Eu adoro o calor, então gosto do verão.' },
+        { speaker: '川野', ja: 'へー、そうですか。', pt: 'Nossa, é mesmo?' },
+        { speaker: 'メリ', ja: '{海|うみ}や{山|やま}で{遊|あそ}ぶのも{楽|たの}しいです。{川野|かわの}さんは？　どの{季節|きせつ}が{好|す}きですか？', pt: 'Também é divertido brincar no mar e na montanha. E você, Kawano? Que estação prefere?' },
+        { speaker: '川野', ja: '{私|わたし}も{秋|あき}が{好|す}きですね。', pt: 'Eu também gosto do outono.' },
+        { speaker: 'アラム', ja: 'どうしてですか？', pt: 'Por quê?' },
+        { speaker: '川野', ja: 'もみじの{景色|けしき}がきれいですから。', pt: 'Porque a paisagem dos bordos (momiji) é linda.' },
+        { speaker: 'アラム', ja: 'そうですね。', pt: 'É verdade.' },
+        { speaker: '川野', ja: 'それに、{果物|くだもの}もおいしいですよね。ぶどうとか{梨|なし}とか。', pt: 'Além disso, as frutas também são gostosas, né? Uva, pera, essas coisas.' },
+      ],
+    },
+  ],
+}
+
+const lesson3: Section = {
+  id: 'lesson-3',
+  level: 'elementary1',
+  titleJa: '第3課 冬はとても寒くなります',
+  titlePt: 'Lição 3 — O inverno fica muito frio',
+  summaryPt: 'Estações e clima · descrever mudanças do tempo com 〜なります (暖かくなります／休みになります), comparar com いちばん (秋がいちばん好きです), dizer do que gosta/não gosta no clima (暑いのが好きです／苦手です), dar o motivo com から (すずしいですから) e listar exemplos com や／とか (海や山／ぶどうとか梨とか).',
+  studyNotes: [
+    {
+      title: 'Tópico: Estações e clima (季節と天気)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Assistir a um vídeo curto sobre as quatro estações do Japão e entender as características de cada estação.\n' +
+        '- Falar de forma simples sobre as características das estações do seu país.\n' +
+        '- Falar de forma simples sobre sua estação preferida e o motivo.\n\n' +
+        '💡 Pergunta de abertura: あなたの{国|くに}にはどんな{季節|きせつ}がありますか？ (que estações há no seu país?).',
+    },
+    {
+      title: 'Mudança do tempo: 〜なります (➊)',
+      bodyPt:
+        '**なります（なる）** indica **mudança** (“passar a ficar / tornar-se”). Nesta lição, mudanças de clima:\n\n' +
+        '- **イA**: い → **く** + なります — `{暖|あたた}かくなります`, `すずしくなります`, `{寒|さむ}くなります`.\n' +
+        '- **N / ナA**: + **に** + なります — `{学校|がっこう}が{休|やす}みになります`, `{公園|こうえん}がきれいになりました`.\n\n' +
+        'Ex.: A：ちょっと、すずしくなりましたね。 B：そうですね。',
+    },
+    {
+      title: 'Comparar e gostar do clima: いちばん / イA-いのが好きです・苦手です (➋➌)',
+      bodyPt:
+        '- **いちばん + adjetivo** = “o mais / mais que tudo”: `{秋|あき}がいちばん{好|す}きです`, `8{月|がつ}がいちばん{暑|あつ}いです`.\n' +
+        '- **イA-い + の + が{好|す}きです／{苦手|にがて}です**: o **の** nominaliza o adjetivo (como na L2 com verbos): `{暑|あつ}いのが{好|す}きです`, `{寒|さむ}いのが{苦手|にがて}です`.\n' +
+        '- **{苦手|にがて}** = “não curto / não vou muito com” — mais suave que {好|す}きじゃない.\n' +
+        '- ⚠️ Negativo: が → は — `{寒|さむ}いのはあまり{好|す}きじゃないです／じゃありません`.',
+    },
+    {
+      title: 'Dar o motivo: 〜から / S1から、S2 (➍❺)',
+      bodyPt:
+        '**から** indica **motivo/razão**:\n\n' +
+        '- No **fim da frase**: `{秋|あき}が{好|す}きです。もみじの{景色|けしき}がきれいですから。` (responde a どうして？).\n' +
+        '- **Ligando frases** — `S1から、S2` (S1 é o motivo de S2): `{暑|あつ}いのが{大好|だいす}きですから、{夏|なつ}が{好|す}きです`.\n\n' +
+        'Antes de から cabem frases de N, adjetivo (です) e verbo: `{果物|くだもの}がおいしいですから、{秋|あき}が{好|す}きです`.',
+    },
+    {
+      title: 'Listar exemplos: N1やN2 / N1とか（N2とか） (➏➐)',
+      bodyPt:
+        '- **や** liga substantivos dando **exemplos** (não a lista toda): `{海|うみ}や{山|やま}で{遊|あそ}ぶのも{楽|たの}しいです` (pode haver rio, floresta…). Cabe など: N1やN2など.\n' +
+        '- **とか** também dá exemplos, em tom **coloquial**, e vale mesmo com um só item: `ぶどうとか{梨|なし}とか`, `{北海道|ほっかいどう}とか`.\n\n' +
+        'Diferença: や é mais neutro; とか é mais de fala e pode vir após adjetivo/verbo, no meio ou no fim da frase.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Estações/tempo:** {暑|あつ}い (quente), すずしい (fresco), {寒|さむ}い (frio), {暖|あたた}かい (ameno), じめじめする／{蒸|む}し{暑|あつ}い (úmido/abafado), {雨|あめ}が{降|ふ}る (chover), {雪|ゆき}が{降|ふ}る (nevar), {桜|さくら}の{花|はな}が{咲|さ}く (cerejeiras florescem), もみじがきれい (bordos bonitos), セミが{鳴|な}く (cigarras cantam).\n\n' +
+        '**Vocabulário:** {四季|しき} (quatro estações), {梅雨|つゆ} (estação das chuvas), {雨季|うき}／{乾季|かんき} (estação chuvosa/seca), {同|おな}じ (igual), 〜{度|ど} (graus), マイナス (negativo), {短|みじか}い (curto), {長|なが}い (longo), {景色|けしき} (paisagem), {果物|くだもの} (frutas), ぶどう (uva), {梨|なし} (pera), どうして (por quê), そうなんですか (“é mesmo?”), 〜よね (confirmar que o outro concorda).\n\n' +
+        '**Kanji da lição:** {季節|きせつ}, {春|はる}, {夏|なつ}, {秋|あき}, {冬|ふゆ}, {花|はな}, {同|おな}じ, {暑|あつ}い, {寒|さむ}い.\n\n' +
+        '📌 **TIPS:** **{日本|にほん}の{気候|きこう}** (clima varia muito norte↔sul: Tóquio, Niigata/{日本海側|にほんかいがわ}, {北海道|ほっかいどう} frio com neve, {沖縄|おきなわ} subtropical); **{梅雨|つゆ}** (chuvas de fim de maio a meados de julho); **{桜|さくら}と{花見|はなみ}** (apreciar as cerejeiras na primavera).',
+    },
+  ],
+  groups: [lesson3Group],
+  audios: attachScripts(3, L3_SCRIPTS),
+}
+
+// ---- Lições 4-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(3, 'Estações e clima', '冬はとても寒くなります', 'O inverno fica muito frio', [
-    'Assistir a um vídeo curto sobre as quatro estações do Japão e entender as características de cada estação.',
-    'Falar de forma simples sobre as características das estações do seu país.',
-    'Falar de forma simples sobre sua estação preferida e o motivo.',
-  ]),
   scaffold(4, 'Estações e clima', '昨日はすごい雨でしたね', 'Ontem choveu muito, né', [
     'Cumprimentar puxando assunto sobre o tempo/clima.',
     'Ouvir a previsão do tempo e entender o conteúdo geral.',
@@ -632,5 +818,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, ...others],
+  sections: [lesson1, lesson2, lesson3, ...others],
 }
