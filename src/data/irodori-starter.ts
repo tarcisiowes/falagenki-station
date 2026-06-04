@@ -1015,13 +1015,255 @@ const lesson7: Section = {
   audios: attachScripts(7, L7_SCRIPTS),
 }
 
-// ---- Lições 8 a 18 (estrutura por tópico; exercícios em construção) ------
+// ---- Lição 8: No trabalho — cômodos, pessoas e objetos --------------------
+const lesson8Group: ExerciseGroup = {
+  id: 'iro-s-l8',
+  title: '山田さんはどこにいますか',
+  subtitlePt: 'Cômodos da empresa, onde está uma pessoa/objeto e placas',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l8-1', number: 1, prompt: 'No trabalho, 「{会議室|かいぎしつ}」 é a sala de:', choices: [{ n: 1, text: 'reunião' }, { n: 2, text: 'refeições' }, { n: 3, text: 'fumantes' }, { n: 4, text: 'depósito' }], answer: 1, explanationPt: '{会議室|かいぎしつ} = sala de reunião. {食堂|しょくどう} = refeitório; {喫煙所|きつえんじょ} = área de fumantes; {倉庫|そうこ} = depósito.' },
+    { id: 'iro-s-l8-2', number: 2, prompt: 'O 「{給湯室|きゅうとうしつ}」 é o lugar onde se:', choices: [{ n: 1, text: 'prepara chá / água quente (copa)' }, { n: 2, text: 'troca de roupa' }, { n: 3, text: 'recebe visitas' }, { n: 4, text: 'guarda estoque' }], answer: 1, explanationPt: '{給湯室|きゅうとうしつ} = copa (onde se faz chá/café, お{茶|ちゃ}をいれます). {更衣室|こういしつ} = vestiário; {応接室|おうせつしつ} = sala de visitas.' },
+    { id: 'iro-s-l8-3', number: 3, prompt: 'No 「{更衣室|こういしつ}」 (vestiário) as pessoas:', choices: [{ n: 1, text: 'trocam de roupa ({着替|きが}えます)' }, { n: 2, text: 'fazem reunião' }, { n: 3, text: 'almoçam' }, { n: 4, text: 'fumam' }], answer: 1, explanationPt: '{更衣室|こういしつ} = vestiário; ali {着替|きが}えます (troca-se de roupa, ex.: para o uniforme/作業服).' },
+    { id: 'iro-s-l8-4', number: 4, prompt: 'Em 「ここで{打|う}ち{合|あ}わせをします」, a partícula で indica:', choices: [{ n: 1, text: 'o lugar onde a ação acontece' }, { n: 2, text: 'o lugar onde algo existe' }, { n: 3, text: 'o destino' }, { n: 4, text: 'o instrumento' }], answer: 1, explanationPt: '【lugar】で + verbo de ação = onde a ação ocorre. ここで{打|う}ち{合|あ}わせをします = aqui se faz a reunião. (Nota ➊)' },
+    { id: 'iro-s-l8-5', number: 5, prompt: 'Complete: “Aqui a gente come” → ここ＿＿ご{飯|はん}を{食|た}べます:', choices: [{ n: 1, text: 'で' }, { n: 2, text: 'に' }, { n: 3, text: 'を' }, { n: 4, text: 'は' }], answer: 1, translationPt: 'Aqui a gente come.', explanationPt: 'Ação (comer) → partícula で marca o local: ここで食べます. (に é para existência: ここに…があります.) (Nota ➊)' },
+    { id: 'iro-s-l8-6', number: 6, prompt: 'Para perguntar ONDE está uma PESSOA (山田さん):', choices: [{ n: 1, text: '{山田|やまだ}さんは、どこにいますか？' }, { n: 2, text: '{山田|やまだ}さんは、どこにありますか？' }, { n: 3, text: '{山田|やまだ}さんは、なにを？' }, { n: 4, text: '{山田|やまだ}さんが、いますか？' }], answer: 1, translationPt: 'Onde está o Yamada?', explanationPt: 'Pessoas/animais usam o verbo いる: 〜は、どこにいますか？ (ou どこですか？). (Nota ➋)' },
+    { id: 'iro-s-l8-7', number: 7, prompt: '「{食堂|しょくどう}にいます」 pode ser dito de forma curta como:', choices: [{ n: 1, text: '{食堂|しょくどう}です' }, { n: 2, text: '{食堂|しょくどう}をします' }, { n: 3, text: '{食堂|しょくどう}でいます' }, { n: 4, text: '{食堂|しょくどう}があります' }], answer: 1, explanationPt: '〜にいます pode virar simplesmente 〜です: {食堂|しょくどう}です = (está) no refeitório. (Nota ➋)' },
+    { id: 'iro-s-l8-8', number: 8, prompt: 'Para dizer que a pessoa NÃO está ali:', choices: [{ n: 1, text: 'いません／いないです' }, { n: 2, text: 'ありません／ないです' }, { n: 3, text: 'いきません' }, { n: 4, text: 'しません' }], answer: 1, explanationPt: 'いません = negativo de います (para pessoas). いないです = mesmo sentido. (×ありません, que é para coisas.) (Nota ➌)' },
+    { id: 'iro-s-l8-9', number: 9, prompt: 'Qual verbo de existência se usa para PESSOAS/animais e qual para COISAS?', choices: [{ n: 1, text: 'pessoas/animais: います; coisas: あります' }, { n: 2, text: 'pessoas/animais: あります; coisas: います' }, { n: 3, text: 'os dois usam あります' }, { n: 4, text: 'os dois usam います' }], answer: 1, explanationPt: 'います（いる）= coisas que se movem (pessoas, animais). あります（ある）= coisas paradas (objetos). (Quadro ◆ あります・います)' },
+    { id: 'iro-s-l8-10', number: 10, prompt: 'Diferença entre ここ / そこ / あそこ:', choices: [{ n: 1, text: 'ここ = perto de mim; そこ = perto de você; あそこ = longe dos dois' }, { n: 2, text: 'ここ = longe; そこ = perto de mim; あそこ = perto de você' }, { n: 3, text: 'são sinônimos' }, { n: 4, text: 'ここ = perto de você; そこ = longe; あそこ = perto de mim' }], answer: 1, explanationPt: 'ここ (aqui, perto do falante), そこ (aí, perto do ouvinte), あそこ (lá, longe de ambos). (Nota ➍)' },
+    { id: 'iro-s-l8-11', number: 11, prompt: 'A copiadora está bem distante de você e do colega. Você diz que ela está:', choices: [{ n: 1, text: 'あそこです' }, { n: 2, text: 'ここです' }, { n: 3, text: 'そこです' }, { n: 4, text: 'どこです' }], answer: 1, explanationPt: 'Longe dos dois → あそこ. コピー{機|き}はあそこです. (Nota ➍, diálogo 08-19)' },
+    { id: 'iro-s-l8-12', number: 12, prompt: 'Para perguntar ONDE está um OBJETO (はさみ = tesoura):', choices: [{ n: 1, text: 'はさみは、どこにありますか？' }, { n: 2, text: 'はさみは、どこにいますか？' }, { n: 3, text: 'はさみは、だれですか？' }, { n: 4, text: 'はさみを、しますか？' }], answer: 1, translationPt: 'Onde está a tesoura?', explanationPt: 'Objetos usam ある: 〜は、どこにありますか？ (ou どこですか？). (Nota ➍)' },
+    { id: 'iro-s-l8-13', number: 13, prompt: '「{引|ひ}き{出|だ}しの{中|なか}にあります」 significa que está:', choices: [{ n: 1, text: 'dentro da gaveta' }, { n: 2, text: 'em cima da gaveta' }, { n: 3, text: 'embaixo da gaveta' }, { n: 4, text: 'ao lado da gaveta' }], answer: 1, explanationPt: 'N の {中|なか} = dentro de N. {引|ひ}き{出|だ}し = gaveta. Estrutura: N の【posição】にあります. (Nota ➎, diálogo 08-17)' },
+    { id: 'iro-s-l8-14', number: 14, prompt: 'Posições: relacione 「{横|よこ}」:', choices: [{ n: 1, text: 'ao lado' }, { n: 2, text: 'em cima' }, { n: 3, text: 'embaixo' }, { n: 4, text: 'dentro' }], answer: 1, explanationPt: '{横|よこ} = ao lado. {上|うえ} = em cima, {下|した} = embaixo, {中|なか} = dentro. (Seção 3 / Nota ➎)' },
+    { id: 'iro-s-l8-15', number: 15, prompt: 'Qual destes é a 「のり」?', choices: [{ n: 1, text: 'cola' }, { n: 2, text: 'tesoura' }, { n: 3, text: 'fita adesiva larga' }, { n: 4, text: 'lixeira' }], answer: 1, explanationPt: 'のり = cola. はさみ = tesoura; ガムテープ = fita adesiva larga; ごみ{箱|ばこ} = lixeira; FAX = aparelho de fax.' },
+    { id: 'iro-s-l8-16', number: 16, prompt: 'Você vê na porta a placa 「{事務室|じむしつ}」. É:', choices: [{ n: 1, text: 'o escritório (sala administrativa)' }, { n: 2, text: 'a sala de recepção de visitas' }, { n: 3, text: 'a área de fumantes' }, { n: 4, text: 'o vestiário' }], answer: 1, explanationPt: '{事務室|じむしつ} = escritório/sala administrativa (OFFICE). {応接室|おうせつしつ} = sala de visitas; {喫煙所|きつえんじょ} = área de fumantes. (Seção 4)' },
+    { id: 'iro-s-l8-17', number: 17, prompt: 'Diálogo 08-10: onde está o {辻|つじ}?', context: '{辻|つじ}さんは……。あれ？いませんね。たぶん、{倉庫|そうこ}です。', choices: [{ n: 1, text: 'Não está; provavelmente no depósito ({倉庫|そうこ}).' }, { n: 2, text: 'Está no refeitório.' }, { n: 3, text: 'Está na sala de reunião.' }, { n: 4, text: 'Está no banheiro.' }], answer: 1, explanationPt: 'いませんね = (ele) não está. たぶん、{倉庫|そうこ}です = talvez no depósito. たぶん = provavelmente.' },
+    { id: 'iro-s-l8-18', number: 18, prompt: 'Diálogo 08-17: onde está a cola (のり)?', context: 'ここです。{引|ひ}き{出|だ}しの{中|なか}にあります。', choices: [{ n: 1, text: 'Dentro da gaveta.' }, { n: 2, text: 'Em cima da mesa.' }, { n: 3, text: 'Ao lado da copiadora.' }, { n: 4, text: 'Embaixo da mesa.' }], answer: 1, explanationPt: 'ここです。{引|ひ}き{出|だ}しの{中|なか}にあります = aqui, dentro da gaveta. (A tesoura é que fica {机|つくえ}の{上|うえ}; a lixeira, {机|つくえ}の{下|した}.)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 8 (聴解スクリプト)
+const L8_SCRIPTS: Record<string, ScriptItem[]> = {
+  '08-03': [
+    {
+      label: '会話① (08-03)',
+      setupJa: 'はじめての{職場|しょくば}で、{部屋|へや}を{案内|あんない}してもらっています。',
+      setupPt: 'No primeiro dia de trabalho, mostram os cômodos para você.',
+      lines: [
+        { speaker: 'A', ja: 'ここは{男性|だんせい}の{更衣室|こういしつ}です。ここで{着替|きが}えます。', pt: 'Aqui é o vestiário masculino. É aqui que se troca de roupa.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '08-04': [
+    {
+      label: '会話② (08-04)',
+      lines: [
+        { speaker: 'A', ja: 'ここは{給湯室|きゅうとうしつ}です。ここでお{茶|ちゃ}をいれます。', pt: 'Aqui é a copa. É aqui que se prepara o chá.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '08-05': [
+    {
+      label: '会話③ (08-05)',
+      lines: [
+        { speaker: 'A', ja: 'ここは{会議室|かいぎしつ}です。ここで{打|う}ち{合|あ}わせをします。', pt: 'Aqui é a sala de reunião. É aqui que se fazem as reuniões.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '08-06': [
+    {
+      label: '会話④ (08-06)',
+      lines: [
+        { speaker: 'A', ja: 'えっと、ここは{食堂|しょくどう}です。ここでご{飯|はん}を{食|た}べます。', pt: 'Hmm, aqui é o refeitório. É aqui que se faz as refeições.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: 'おいしいですよ。', pt: 'A comida é gostosa, viu?' },
+      ],
+    },
+  ],
+  '08-08': [
+    {
+      label: '会話① (08-08)',
+      setupJa: '{職場|しょくば}で、{人|ひと}を{探|さが}しています。',
+      setupPt: 'No trabalho, procurando uma pessoa.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{山田|やまだ}さんは、どこにいますか？', pt: 'Com licença. Onde está o Yamada?' },
+        { speaker: 'B', ja: '{食堂|しょくどう}にいます。', pt: 'Está no refeitório.' },
+        { speaker: 'A', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '08-09': [
+    {
+      label: '会話② (08-09)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。{永井|ながい}さんは、どこですか？', pt: 'Hmm, com licença. Onde está o Nagai?' },
+        { speaker: 'B', ja: '{永井|ながい}さん？ああ、{会議室|かいぎしつ}にいるよ。', pt: 'O Nagai? Ah, ele está na sala de reunião.' },
+        { speaker: 'A', ja: 'あ、どうも。', pt: 'Ah, obrigado.' },
+      ],
+    },
+  ],
+  '08-10': [
+    {
+      label: '会話③ (08-10)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{辻|つじ}さんは、いますか？', pt: 'Com licença. O Tsuji está?' },
+        { speaker: 'B', ja: '{辻|つじ}さんは……。あれ？いませんね。たぶん、{倉庫|そうこ}です。', pt: 'O Tsuji… Ué? Não está, não. Talvez esteja no depósito.' },
+        { speaker: 'A', ja: 'じゃあ、{探|さが}してみます。', pt: 'Então vou procurar.' },
+      ],
+    },
+  ],
+  '08-11': [
+    {
+      label: '会話④ (08-11)',
+      lines: [
+        { speaker: 'A', ja: 'アマンダさん、いますか？', pt: 'A Amanda está?' },
+        { speaker: 'B', ja: 'えーと、いないですね。', pt: 'Hmm, não está, não.' },
+        { speaker: 'A', ja: 'そうですか。わかりました。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '08-17': [
+    {
+      label: '会話① (08-17)',
+      setupJa: '{職場|しょくば}で、{必要|ひつよう}なものがどこにあるか、{近|ちか}くの{人|ひと}に{質問|しつもん}しています。',
+      setupPt: 'No trabalho, perguntando a alguém por perto onde está o que se precisa.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、のりは、どこにありますか？', pt: 'Hmm, onde está a cola?' },
+        { speaker: 'B', ja: 'ここです。{引|ひ}き{出|だ}しの{中|なか}にあります。はい、どうぞ。', pt: 'Aqui. Está dentro da gaveta. Aqui, pode pegar.' },
+        { speaker: 'A', ja: 'あ、すみません。', pt: 'Ah, obrigado.' },
+      ],
+    },
+  ],
+  '08-18': [
+    {
+      label: '会話② (08-18)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。ガムテープは、どこですか？', pt: 'Com licença. Onde está a fita adesiva?' },
+        { speaker: 'B', ja: 'ガムテープ？あそこです。{箱|はこ}の{中|なか}。', pt: 'A fita? Lá. Dentro da caixa.' },
+        { speaker: 'A', ja: 'ああ、わかりました。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '08-19': [
+    {
+      label: '会話③ (08-19)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。FAXは、どこにありますか？', pt: 'Hmm, com licença. Onde está o fax?' },
+        { speaker: 'B', ja: 'ああ、あそこ。コピー{機|き}の{横|よこ}。', pt: 'Ah, lá. Ao lado da copiadora.' },
+        { speaker: 'A', ja: 'あ、わかりました。ありがとうございます。', pt: 'Ah, entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '08-20': [
+    {
+      label: '会話④ (08-20)',
+      lines: [
+        { speaker: 'A', ja: 'はさみ、ありますか？', pt: 'Tem tesoura?' },
+        { speaker: 'B', ja: 'あ、そこにあります。{机|つくえ}の{上|うえ}です。', pt: 'Ah, está aí. Em cima da mesa.' },
+        { speaker: 'A', ja: 'ああ、ありがとうございます。', pt: 'Ah, obrigado.' },
+      ],
+    },
+  ],
+  '08-21': [
+    {
+      label: '会話⑤ (08-21)',
+      lines: [
+        { speaker: 'A', ja: 'えーと、ごみ{箱|ばこ}は……。', pt: 'Hmm, a lixeira…?' },
+        { speaker: 'B', ja: 'あ、そこそこ。', pt: 'Ah, aí, aí.' },
+        { speaker: 'A', ja: 'え？', pt: 'Hã?' },
+        { speaker: 'B', ja: '{机|つくえ}の{下|した}。', pt: 'Embaixo da mesa.' },
+        { speaker: 'A', ja: 'あ、ありました。', pt: 'Ah, achei.' },
+      ],
+    },
+  ],
+}
+
+const lesson8: Section = {
+  id: 'lesson-8',
+  level: 'starter',
+  titleJa: '第8課 山田さんはどこにいますか？',
+  titlePt: 'Lição 8 — Onde está o Yamada?',
+  summaryPt: 'Casa e trabalho · cômodos da empresa, dizer onde está uma pessoa ou objeto (いる／ある, ここ・そこ・あそこ) e ler placas de salas.',
+  studyNotes: [
+    {
+      title: 'Tópico: Casa e trabalho (no escritório)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Entender uma explicação simples ao ser mostrado um cômodo do trabalho (o que se faz nele).\n' +
+        '- Perguntar e responder onde uma pessoa está.\n' +
+        '- Perguntar e responder onde um objeto/equipamento está.\n' +
+        '- Ler placas na entrada das salas e saber que sala é.',
+    },
+    {
+      title: 'O que se faz no cômodo: 【lugar】で V-ます (➊)',
+      bodyPt:
+        'A partícula **で** marca o **lugar de uma ação**:\n\n' +
+        '- `ここで{着替|きが}えます` = aqui a gente troca de roupa.\n' +
+        '- `ここで{打|う}ち{合|あ}わせをします` = aqui se fazem reuniões.\n' +
+        '- `ここでご{飯|はん}を{食|た}べます` = aqui a gente come.\n\n' +
+        '⚠️ Não confunda: **で** = local da ação; **に** = local onde algo existe.\n\n' +
+        '**Cômodos da empresa:** {更衣室|こういしつ} (vestiário), {食堂|しょくどう} (refeitório), {給湯室|きゅうとうしつ} (copa), {会議室|かいぎしつ} (sala de reunião), {喫煙所|きつえんじょ} (área de fumantes), {倉庫|そうこ} (depósito), {応接室|おうせつしつ} (sala de visitas), {事務室|じむしつ} (escritório).',
+    },
+    {
+      title: 'Onde está uma pessoa: 【pessoa】は【lugar】にいます (➋ ➌)',
+      bodyPt:
+        'Para pessoas/animais usa-se o verbo **いる** (います):\n\n' +
+        '- `{山田|やまだ}さんは、{食堂|しょくどう}にいます` = o Yamada está no refeitório.\n' +
+        '- Pergunta: `〜は、どこにいますか？` ou `〜は、どこですか？`.\n' +
+        '- Resposta curta: 〜にいます = 〜です (`{食堂|しょくどう}です`).\n\n' +
+        '**Negativa (➌):** `いません` / `いないです` = (a pessoa) não está.\n\n' +
+        'Marcas úteis no diálogo: **たぶん** (provavelmente), **〜よ** (informa algo novo: いるよ), **〜ね** (compartilha: いませんね).',
+    },
+    {
+      title: 'Onde está um objeto: ここ・そこ・あそこ (➍)',
+      bodyPt:
+        'Para objetos usa-se o verbo **ある** (あります):\n\n' +
+        '- `はさみは、そこにあります` = a tesoura está aí.\n' +
+        '- Pergunta: `〜は、どこにありますか？` ou `〜は、どこですか？`.\n\n' +
+        '**Demonstrativos de lugar (こそあど):**\n' +
+        '| palavra | significado |\n|---|---|\n' +
+        '| ここ | aqui (perto do **falante**) |\n' +
+        '| そこ | aí (perto do **ouvinte**) |\n' +
+        '| あそこ | lá (longe **dos dois**) |\n' +
+        '| どこ | onde? |\n\n' +
+        '**Objetos de escritório:** のり (cola), ガムテープ (fita adesiva larga), はさみ (tesoura), FAX, ごみ{箱|ばこ} (lixeira). Referências: {引|ひ}き{出|だ}し (gaveta), コピー{機|き} (copiadora), {箱|はこ} (caixa), {机|つくえ} (mesa).',
+    },
+    {
+      title: 'Posição exata: N の【上/中/下/横】にあります (➎)',
+      bodyPt:
+        'Para localizar em relação a outro objeto, use **N の + posição**:\n\n' +
+        '| posição | significado |\n|---|---|\n' +
+        '| {上|うえ} | em cima |\n' +
+        '| {中|なか} | dentro |\n' +
+        '| {下|した} | embaixo |\n' +
+        '| {横|よこ} | ao lado |\n\n' +
+        '- `{引|ひ}き{出|だ}しの{中|なか}にあります` = está dentro da gaveta.\n' +
+        '- `コピー{機|き}の{横|よこ}です` = (está) ao lado da copiadora.\n' +
+        '- `{机|つくえ}の{上|うえ}／{下|した}` = em cima / embaixo da mesa.',
+    },
+    {
+      title: 'Resumo: あります × います',
+      bodyPt:
+        'Dois verbos de existência:\n\n' +
+        '| | あります（ある） | います（いる） |\n|---|---|---|\n' +
+        '| usado para | coisas paradas (objetos) | coisas que se movem (pessoas, animais) |\n' +
+        '| existe | 【lugar】に N が あります | 【lugar】に 人/動物 が います |\n' +
+        '| onde está? | 〜は、どこにありますか？ | 〜は、どこにいますか？ |\n' +
+        '| está em… | 〜は【lugar】にあります | 〜は【lugar】にいます |\n\n' +
+        'Ex.: `ここに{冷蔵庫|れいぞうこ}があります` / `あそこに{猫|ねこ}がいます`.',
+    },
+  ],
+  groups: [lesson8Group],
+  audios: attachScripts(8, L8_SCRIPTS),
+}
+
+// ---- Lições 9 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(8, 'Casa e trabalho', '山田さんはどこですか', 'Onde está o Yamada?', [
-    'Entender explicação ao ser mostrado um cômodo.',
-    'Perguntar e responder onde alguém/algo está.',
-    'Entender placas na entrada de uma sala.',
-  ]),
   scaffold(9, 'Vida cotidiana', '昼ごはんは12時から1時までです', 'O almoço é das 12h à 1h', [
     'Perguntar e responder a que horas acorda e dorme.',
     'Entender um horário/rotina simples no trabalho.',
@@ -1077,5 +1319,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, ...others],
 }
