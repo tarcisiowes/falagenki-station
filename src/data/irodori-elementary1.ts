@@ -1086,13 +1086,212 @@ const lesson5: Section = {
   audios: attachScripts(5, L5_SCRIPTS),
 }
 
-// ---- Lições 6-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 6: 郵便局はどう行ったらいいですか？ (tópico 私の町) -----------------
+const lesson6Group: ExerciseGroup = {
+  id: 'iro-e1-l6',
+  title: '郵便局はどう行ったらいいですか？',
+  subtitlePt: 'Minha cidade · pedir caminho (どう行ったらいいですか／〜に行きたいんですが…), dar instruções ligando ações com V-て、〜てください (まっすぐ行って、信号を左に曲がってください) e corrigir com N1じゃなくて、N2',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l6-1', number: 1, prompt: '「マルイチデパートに{行|い}きたいんですが……」 — para que serve 〜んですが… no fim da frase (Nota ➊)?', choices: [{ n: 1, text: 'explicar a própria situação e pedir ajuda (aqui: que não sabe o caminho)' }, { n: 2, text: 'dar uma ordem firme' }, { n: 3, text: 'recusar um pedido' }, { n: 4, text: 'contar o passado' }], answer: 1, translationPt: 'Queria ir ao Maruichi Depato, mas… (pode me ajudar?)', explanationPt: 'Pôr 〜んですが… no fim deixa a frase mais suave: você explica a situação (quer chegar a um lugar e não sabe como) e, assim, pede ajuda/o caminho. Fala-se baixando a entonação. (Nota ➊)' },
+    { id: 'iro-e1-l6-2', number: 2, prompt: 'Quais são as formas de pedir um caminho ensinadas na lição (Nota ➊)?', choices: [{ n: 1, text: '{駅|えき}はどこですか？／{駅|えき}は、どう{行|い}ったらいいですか？／{駅|えき}に{行|い}きたいんですが…。' }, { n: 2, text: 'só {駅|えき}です。' }, { n: 3, text: '{駅|えき}を{行|い}きました。' }, { n: 4, text: '{駅|えき}が{好|す}きです。' }], answer: 1, explanationPt: 'Três jeitos: 「〜はどこですか？」 (onde fica?), 「〜は、どう{行|い}ったらいいですか？」 (como faço para ir?) e 「〜に{行|い}きたいんですが…」 (queria ir a…, mas…). (Nota ➊)' },
+    { id: 'iro-e1-l6-3', number: 3, prompt: '「この{道|みち}をまっすぐ{行|い}って、2つ{目|め}の{信号|しんごう}を{左|ひだり}に{曲|ま}がってください」 — o que a forma V-て、〜 faz aqui (Nota ➋)?', choices: [{ n: 1, text: 'liga ações em ordem (vá reto E depois vire à esquerda); termina em 〜てください (instrução)' }, { n: 2, text: 'indica motivo' }, { n: 3, text: 'compara dois lugares' }, { n: 4, text: 'expressa desejo' }], answer: 1, translationPt: 'Siga reto por esta rua e, no segundo sinal, vire à esquerda.', explanationPt: 'A テ-forma (Lição 2) liga duas ou mais ações em sequência; em instruções de caminho fecha com 〜てください. (Nota ➋)' },
+    { id: 'iro-e1-l6-4', number: 4, prompt: 'Dá para indicar caminho SEM 〜てください? (Nota ➋)', choices: [{ n: 1, text: 'Sim: 「あの{信号|しんごう}を{右|みぎ}に{曲|ま}がって、そのあと、ずっとまっすぐですよ」' }, { n: 2, text: 'Não, é obrigatório 〜てください' }, { n: 3, text: 'Só com から' }, { n: 4, text: 'Só por escrito' }], answer: 1, explanationPt: 'Pode-se descrever o trajeto sem 〜てください, como 「…{曲|ま}がって、そのあと、ずっとまっすぐですよ」 ou 「…{渡|わた}って、すぐ{右|みぎ}に{曲|ま}がったところにあります」. (Nota ➋)' },
+    { id: 'iro-e1-l6-5', number: 5, prompt: 'Numa carona, qual é a dica para dar o caminho (Nota ➋)?', choices: [{ n: 1, text: 'primeiro dizer a localização geral e, ao se aproximar, usar um prédio/ponto de referência ({白|しろ}くて{大|おお}きな{家|いえ})' }, { n: 2, text: 'dar todas as ruas de uma vez no começo' }, { n: 3, text: 'não falar nada até chegar' }, { n: 4, text: 'só dizer o CEP' }], answer: 1, explanationPt: 'Quem recebe carona dá primeiro a área aproximada ({小島|こじま}{高校|こうこう}の{近|ちか}く) e, ao chegar perto, usa um marco visível ({白|しろ}くて{大|おお}きな{家|いえ}) para orientar. (Nota ➋)' },
+    { id: 'iro-e1-l6-6', number: 6, prompt: '「1つ{目|め}じゃなくて、2つ{目|め}です」 (N1じゃなくて、N2) serve para (Nota ➌):', choices: [{ n: 1, text: 'corrigir: negar N1 e acertar com N2 (“não é o 1º, é o 2º”)' }, { n: 2, text: 'somar N1 e N2' }, { n: 3, text: 'dar dois exemplos iguais' }, { n: 4, text: 'pedir desculpa' }], answer: 1, translationPt: 'Não é o primeiro, é o segundo.', explanationPt: 'N1じゃなくて、N2 corrige o que o outro disse: nega N1 e dá o certo, N2. 〜じゃなくて é a forma de ligação de 〜じゃない（です）. (Nota ➌)' },
+    { id: 'iro-e1-l6-7', number: 7, prompt: 'Outro exemplo de correção (Nota ➌): 「{市立|しりつ}{博物館|はくぶつかん}じゃなくて、{科学|かがく}{博物館|はくぶつかん}です」 significa:', choices: [{ n: 1, text: 'Não é o museu municipal, é o museu de ciências' }, { n: 2, text: 'É o museu municipal e o de ciências' }, { n: 3, text: 'O museu municipal fica perto do de ciências' }, { n: 4, text: 'Não há museu nenhum' }], answer: 1, explanationPt: '{市立|しりつ}{博物館|はくぶつかん} (museu municipal) じゃなくて、{科学|かがく}{博物館|はくぶつかん} (museu de ciências) — corrige a suposição do interlocutor. (Nota ➌)' },
+    { id: 'iro-e1-l6-8', number: 8, prompt: 'Vocabulário 【{町|まち}にあるもの】 (coisas da cidade): qual conjunto está certo?', choices: [{ n: 1, text: '{信号|しんごう} (semáforo) ／ {横断歩道|おうだんほどう} (faixa de pedestres) ／ {角|かど} (esquina) ／ {交差点|こうさてん} (cruzamento)' }, { n: 2, text: '{信号|しんごう} (ponte) ／ {横断歩道|おうだんほどう} (rua) ／ {角|かど} (sinal) ／ {交差点|こうさてん} (esquina)' }, { n: 3, text: '{信号|しんごう} (loja) ／ {横断歩道|おうだんほどう} (banco) ／ {角|かど} (parque) ／ {交差点|こうさてん} (rio)' }, { n: 4, text: 'todos significam “rua”' }], answer: 1, explanationPt: '{信号|しんごう} (semáforo), {横断歩道|おうだんほどう} (faixa de pedestres), {角|かど} (esquina), {交差点|こうさてん} (cruzamento). Também {道|みち} (rua) e {橋|はし} (ponte). (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e1-l6-9', number: 9, prompt: 'Vocabulário 【{道案内|みちあんない}】 (dar direções): 「まっすぐ{行|い}く／{左|ひだり}に{曲|ま}がる／{右|みぎ}に{曲|ま}がる」 significam:', choices: [{ n: 1, text: 'seguir reto ／ virar à esquerda ／ virar à direita' }, { n: 2, text: 'parar ／ voltar ／ atravessar' }, { n: 3, text: 'subir ／ descer ／ entrar' }, { n: 4, text: 'correr ／ andar ／ esperar' }], answer: 1, explanationPt: 'まっすぐ{行|い}く (ir reto), {左|ひだり}に{曲|ま}がる (virar à esquerda), {右|みぎ}に{曲|ま}がる (virar à direita). (Atividade 1 · 道案内)' },
+    { id: 'iro-e1-l6-10', number: 10, prompt: 'Mais 【{道案内|みちあんない}】: 「{道|みち}を{渡|わた}る／{橋|はし}を{渡|わた}る／1つ{目|め}の{角|かど}／2つ{目|め}の{角|かど}」 significam:', choices: [{ n: 1, text: 'atravessar a rua ／ atravessar a ponte ／ a 1ª esquina ／ a 2ª esquina' }, { n: 2, text: 'subir a rua ／ descer a ponte ／ a 1ª loja ／ a 2ª loja' }, { n: 3, text: 'entrar na rua ／ sair da ponte ／ o 1º andar ／ o 2º andar' }, { n: 4, text: 'limpar a rua ／ pintar a ponte ／ a 1ª casa ／ a 2ª casa' }], answer: 1, explanationPt: '{道|みち}を{渡|わた}る / {橋|はし}を{渡|わた}る (atravessar a rua/ponte), 1つ{目|め}・2つ{目|め}・3つ{目|め}の{角|かど} (a 1ª/2ª/3ª esquina). 〜{目|め} = contagem ordinal. (Atividade 1 · 道案内)' },
+    { id: 'iro-e1-l6-11', number: 11, prompt: 'Vocabulário 【{建物|たてもの}・{場所|ばしょ}】: qual conjunto está certo?', choices: [{ n: 1, text: '{銀行|ぎんこう} (banco) ／ コンビニ (loja de conveniência) ／ {神社|じんじゃ} (santuário xintoísta) ／ お{寺|てら} (templo budista)' }, { n: 2, text: '{銀行|ぎんこう} (hospital) ／ コンビニ (escola) ／ {神社|じんじゃ} (banco) ／ お{寺|てら} (parque)' }, { n: 3, text: '{銀行|ぎんこう} (correio) ／ コンビニ (delegacia) ／ {神社|じんじゃ} (ponte) ／ お{寺|てら} (rua)' }, { n: 4, text: 'todos significam “prédio”' }], answer: 1, explanationPt: '{銀行|ぎんこう} (banco), コンビニ (conveniência), {神社|じんじゃ} (santuário xintoísta), お{寺|てら} (templo budista). (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e1-l6-12', number: 12, prompt: 'Mais 【{建物|たてもの}・{場所|ばしょ}】: 「{学校|がっこう}／{駐車場|ちゅうしゃじょう}／{公園|こうえん}／{郵便局|ゆうびんきょく}／{交番|こうばん}／{病院|びょういん}」 significam:', choices: [{ n: 1, text: 'escola ／ estacionamento ／ parque ／ correio ／ posto policial ／ hospital' }, { n: 2, text: 'banco ／ garagem ／ praça ／ banco ／ bombeiros ／ farmácia' }, { n: 3, text: 'loja ／ ponte ／ rio ／ templo ／ prefeitura ／ clínica' }, { n: 4, text: 'igreja ／ rua ／ jardim ／ banco ／ escola ／ mercado' }], answer: 1, explanationPt: '{学校|がっこう} (escola), {駐車場|ちゅうしゃじょう} (estacionamento), {公園|こうえん} (parque), {郵便局|ゆうびんきょく} (correio), {交番|こうばん} (posto policial / koban), {病院|びょういん} (hospital). (Atividade 2)' },
+    { id: 'iro-e1-l6-13', number: 13, prompt: 'Prédios por cor: 「{黒|くろ}いビル／{白|しろ}いビル／{青|あお}いビル」 significam:', choices: [{ n: 1, text: 'prédio preto ／ prédio branco ／ prédio azul' }, { n: 2, text: 'prédio alto ／ prédio baixo ／ prédio largo' }, { n: 3, text: 'prédio novo ／ prédio velho ／ prédio caro' }, { n: 4, text: 'prédio perto ／ prédio longe ／ prédio grande' }], answer: 1, explanationPt: '{黒|くろ}いビル (preto), {白|しろ}いビル (branco), {青|あお}いビル (azul). Cores servem de ponto de referência ao dar direções. (Atividade 2)' },
+    { id: 'iro-e1-l6-14', number: 14, prompt: 'Palavras de apoio (Atividade 1 · vocab): 「ずっと／{市立|しりつ}／すぐ／{曲|ま}がったところ」 significam:', choices: [{ n: 1, text: 'sem virar/sempre reto ／ municipal ／ logo/já ／ no ponto onde virou' }, { n: 2, text: 'nunca ／ particular ／ devagar ／ antes de virar' }, { n: 3, text: 'às vezes ／ nacional ／ longe ／ depois da ponte' }, { n: 4, text: 'rápido ／ estadual ／ perto ／ na esquina seguinte' }], answer: 1, explanationPt: 'ずっと (em frente sem virar), {市立|しりつ} (municipal), すぐ (logo/imediatamente), {曲|ま}がったところ (no lugar onde se vira). (Atividade 1 · 確認)' },
+    { id: 'iro-e1-l6-15', number: 15, prompt: 'Palavras do diálogo por telefone (06-12): 「そちら／{北口|きたぐち}／〜と〜の{間|あいだ}／そうすると／{見|み}える／お{待|ま}ちしております」 significam:', choices: [{ n: 1, text: 'aí (onde você está) ／ saída norte ／ entre ~ e ~ ／ aí então/feito isso ／ ver/ficar visível ／ estaremos esperando (formal)' }, { n: 2, text: 'lá longe ／ saída sul ／ ao lado de ／ por isso ／ ouvir ／ até logo' }, { n: 3, text: 'aqui ／ entrada ／ em frente a ／ no entanto ／ chegar ／ obrigado' }, { n: 4, text: 'cá ／ portão ／ atrás de ／ assim ／ entrar ／ desculpe' }], answer: 1, explanationPt: 'そちら (aí, do lado do interlocutor), {北口|きたぐち} (saída norte), 〜と〜の{間|あいだ} (entre ~ e ~), そうすると (feito isso, aí), {見|み}える (avistar-se), お{待|ま}ちしております (estaremos esperando — keigo). (Atividade 2 · 確認)' },
+    { id: 'iro-e1-l6-16', number: 16, prompt: 'Palavras do diálogo da carona (06-13): 「どの{辺|へん}？／{高校|こうこう}／{送|おく}る／{大|おお}きな／{入|はい}る／ここでいいです」 significam:', choices: [{ n: 1, text: 'por que região? ／ ensino médio ／ levar (de carro) ／ grande ／ virar/entrar ／ aqui está bom (pode parar)' }, { n: 2, text: 'quando? ／ faculdade ／ buscar ／ pequeno ／ sair ／ aqui não pode' }, { n: 3, text: 'quanto? ／ escola ／ esperar ／ alto ／ subir ／ vamos lá' }, { n: 4, text: 'quem? ／ creche ／ mandar carta ／ largo ／ descer ／ está longe' }], answer: 1, explanationPt: 'どの{辺|へん}？ (por que região fica?), {高校|こうこう} (ensino médio), {送|おく}る (levar alguém/dar carona até em casa), {大|おお}きな (grande), {入|はい}る (entrar/virar para dentro), ここでいいです (pode parar aqui). (Atividade 3)' },
+    { id: 'iro-e1-l6-17', number: 17, prompt: 'Os kanji 「{道|みち}／{右|みぎ}／{左|ひだり}／{公園|こうえん}」 lêem-se:', choices: [{ n: 1, text: 'みち (rua) ／ みぎ (direita) ／ ひだり (esquerda) ／ こうえん (parque)' }, { n: 2, text: 'どう ／ みぎ ／ さ ／ こうえん' }, { n: 3, text: 'みち ／ ゆう ／ ひだり ／ おおぞの' }, { n: 4, text: 'どう ／ う ／ ひだり ／ くうえん' }], answer: 1, explanationPt: '{道|みち} (rua), {右|みぎ} (direita), {左|ひだり} (esquerda), {公園|こうえん} (parque). (漢字のことば)' },
+    { id: 'iro-e1-l6-18', number: 18, prompt: 'Os kanji 「{銀行|ぎんこう}／{近|ちか}く／お{寺|てら}／{車|くるま}」 lêem-se:', choices: [{ n: 1, text: 'ぎんこう (banco) ／ ちかく (perto) ／ おてら (templo) ／ くるま (carro)' }, { n: 2, text: 'ぎんこう ／ きんく ／ おじ ／ しゃ' }, { n: 3, text: 'どうこう ／ ちかく ／ おてら ／ くるま' }, { n: 4, text: 'ぎんこう ／ ちかく ／ おでら ／ くろ' }], answer: 1, explanationPt: '{銀行|ぎんこう} (banco), {近|ちか}く (perto), お{寺|てら} (templo), {車|くるま} (carro). (漢字のことば)' },
+    { id: 'iro-e1-l6-19', number: 19, prompt: 'Os kanji 「{神社|じんじゃ}／{送|おく}る」 lêem-se:', choices: [{ n: 1, text: 'じんじゃ (santuário xintoísta) ／ おくる (enviar/levar)' }, { n: 2, text: 'しんしゃ ／ そうる' }, { n: 3, text: 'かみしゃ ／ おくる' }, { n: 4, text: 'じんじゃ ／ はこぶ' }], answer: 1, explanationPt: '{神社|じんじゃ} (santuário xintoísta), {送|おく}る (enviar; levar/dar carona). Kanji da lição: {道|みち}・{右|みぎ}・{左|ひだり}・{公園|こうえん}・{銀行|ぎんこう}・{近|ちか}く・お{寺|てら}・{車|くるま}・{神社|じんじゃ}・{送|おく}る. (漢字)' },
+    { id: 'iro-e1-l6-20', number: 20, prompt: '📌 TIPS — sobre os {信号|しんごう} (semáforos) no Japão:', choices: [{ n: 1, text: 'a luz verde dos carros é chamada de “{青|あお}” (azul); há semáforos só de pedestres, alguns com botão (押しボタン式) que só fica verde se apertado' }, { n: 2, text: 'só existem luzes vermelha e amarela' }, { n: 3, text: 'pedestres nunca têm semáforo próprio' }, { n: 4, text: 'todos os semáforos são automáticos e iguais' }], answer: 1, explanationPt: 'No Japão a luz verde do carro é chamada de {青|あお} (azul). Semáforos de pedestres têm verde e vermelho (o verde piscando = como o amarelo do carro); alguns são de botão (押しボタン式), permanente ou só em certos horários. (TIPS)' },
+    { id: 'iro-e1-l6-21', number: 21, prompt: '📌 TIPS — qual a diferença principal entre お{寺|てら} e {神社|じんじゃ}?', choices: [{ n: 1, text: 'お{寺|てら} é budista; {神社|じんじゃ} é xintoísta (神道)' }, { n: 2, text: 'os dois são cristãos' }, { n: 3, text: 'お{寺|てら} é xintoísta e {神社|じんじゃ} é budista' }, { n: 4, text: 'não há nenhuma diferença' }], answer: 1, explanationPt: 'お{寺|てら} = templo budista (仏教); {神社|じんじゃ} = santuário xintoísta (神道). Ambos têm arquitetura tradicional de madeira e atraem turistas; alguns são Patrimônio Mundial ({法隆寺}, {厳島神社}). (TIPS)' },
+    { id: 'iro-e1-l6-22', number: 22, prompt: '📌 TIPS — o que normalmente se vê numa お{寺|てら} (templo)?', choices: [{ n: 1, text: 'estátuas de Buda ({仏像}), túmulos (お{墓|はか}), monges (お{坊|ぼう}さん), um sino ({鐘}), cheiro de incenso (お{線香|せんこう})' }, { n: 2, text: 'um {鳥居|とりい} (portal) e sacerdotes xintoístas' }, { n: 3, text: 'caixas eletrônicos e lojas' }, { n: 4, text: 'semáforos e faixas de pedestres' }], answer: 1, explanationPt: 'No templo: {仏像} (estátuas de Buda), お{墓|はか} (túmulos), お{坊|ぼう}さん (monges), {鐘} (sino), お{線香|せんこう}のにおい (cheiro de incenso). (TIPS)' },
+    { id: 'iro-e1-l6-23', number: 23, prompt: '📌 TIPS — o que normalmente se vê num {神社|じんじゃ} (santuário)?', choices: [{ n: 1, text: 'um {鳥居|とりい} (portal), {神主|かんぬし}さん／{巫女|みこ}さん (sacerdote/sacerdotisa), pessoas batendo palmas (パンパン) ao rezar (お{参|まい}り)' }, { n: 2, text: 'estátuas de Buda e monges' }, { n: 3, text: 'túmulos e cheiro de incenso' }, { n: 4, text: 'caixas eletrônicos e estacionamento' }], answer: 1, explanationPt: 'No santuário: {鳥居|とりい} (portal), {神主|かんぬし}さん／{巫女|みこ}さん (sacerdote/miko), e quem faz お{参|まい}り bate palmas (パンパン). (TIPS)' },
+    { id: 'iro-e1-l6-24', number: 24, prompt: 'Diálogo 06-05: como B explica onde fica o ponto de ônibus ({バス停|てい})?', context: 'A：すみません。バス{停|てい}はどこですか？ B：{次|つぎ}の{角|かど}を{右|みぎ}に{曲|ま}がってください。 A：{次|つぎ}の{角|かど}を{右|みぎ}ですね。 B：はい。', choices: [{ n: 1, text: 'Vire à direita na próxima esquina' }, { n: 2, text: 'Siga reto até a ponte' }, { n: 3, text: 'Vire à esquerda no segundo sinal' }, { n: 4, text: 'Atravesse a rua e volte' }], answer: 1, explanationPt: '{次|つぎ}の{角|かど}を{右|みぎ}に{曲|ま}がってください (V-てください, Nota ➋). A confirma: {次|つぎ}の{角|かど}を{右|みぎ}ですね. (Atividade 1 · 聴解スクリプト)' },
+    { id: 'iro-e1-l6-25', number: 25, prompt: 'Diálogo 06-06: B explica o caminho até o {郵便局|ゆうびんきょく} e corrige A. O que acontece?', context: 'B：この{道|みち}をまっすぐ{行|い}って、2つ{目|め}の{信号|しんごう}を{左|ひだり}に{曲|ま}がってください。 A：1つ{目|め}の{信号|しんごう}を{左|ひだり}ですね。 B：いえ、1つ{目|め}じゃなくて、2つ{目|め}です。', choices: [{ n: 1, text: 'Reto e virar à esquerda no SEGUNDO sinal — B corrige: não é o 1º, é o 2º' }, { n: 2, text: 'Virar no primeiro sinal mesmo' }, { n: 3, text: 'Atravessar a ponte e virar à direita' }, { n: 4, text: 'Seguir sempre reto sem virar' }], answer: 1, explanationPt: 'まっすぐ{行|い}って、2つ{目|め}の{信号|しんごう}を{左|ひだり}に (V-て, Nota ➋); correção 1つ{目|め}じゃなくて、2つ{目|め}です (Nota ➌). (Atividade 1)' },
+    { id: 'iro-e1-l6-26', number: 26, prompt: 'Diálogo 06-07: como chegar à マルイチデパート?', context: 'A：すみません。マルイチデパートに{行|い}きたいんですが……。 B：ああ、あの{信号|しんごう}を{右|みぎ}に{曲|ま}がって、そのあと、ずっとまっすぐですよ。', choices: [{ n: 1, text: 'Virar à direita naquele sinal e depois seguir sempre reto' }, { n: 2, text: 'Virar à esquerda na primeira esquina' }, { n: 3, text: 'Atravessar a ponte e virar à direita' }, { n: 4, text: 'Voltar e pegar o ônibus' }], answer: 1, explanationPt: 'A pede com 〜に{行|い}きたいんですが… (Nota ➊); B responde sem 〜てください: {曲|ま}がって、そのあと、ずっとまっすぐ (Nota ➋). (Atividade 1)' },
+    { id: 'iro-e1-l6-27', number: 27, prompt: 'Diálogo 06-08: A procura o museu; B confirma qual e dá o caminho. O que acontece?', context: 'B：{博物館|はくぶつかん}？　{市立|しりつ}{博物館|はくぶつかん}ですか？ A：いえ、{市立|しりつ}{博物館|はくぶつかん}じゃなくて{科学|かがく}{博物館|はくぶつかん}です。 B：…ここをまっすぐ{行|い}って、{橋|はし}を{渡|わた}って、すぐ{右|みぎ}に{曲|ま}がったところにあります。', choices: [{ n: 1, text: 'É o museu de CIÊNCIAS (não o municipal): reto, atravessar a ponte e logo virar à direita' }, { n: 2, text: 'É o museu municipal, ao lado da estação' }, { n: 3, text: 'Não existe esse museu na cidade' }, { n: 4, text: 'Virar à esquerda e seguir reto' }], answer: 1, explanationPt: 'Correção {市立|しりつ}…じゃなくて{科学|かがく}{博物館|はくぶつかん} (Nota ➌); caminho まっすぐ{行|い}って、{橋|はし}を{渡|わた}って、…{曲|ま}がったところにあります (V-て + sem てください, Nota ➋). (Atividade 1)' },
+    { id: 'iro-e1-l6-28', number: 28, prompt: 'Diálogo 06-12 (por telefone): a partir da {北口|きたぐち} da estação, qual o início do caminho?', context: 'A：{駅|えき}の{前|まえ}の{道|みち}を{渡|わた}って、{銀行|ぎんこう}とコンビニの{間|あいだ}の{道|みち}をまっすぐ{行|い}ってください。それから、1つ{目|め}の{信号|しんごう}を{右|みぎ}に{曲|ま}がってください。', choices: [{ n: 1, text: 'Atravessar a rua em frente à estação e seguir reto pela rua entre o banco e a conveniência; depois virar à direita no 1º sinal' }, { n: 2, text: 'Pegar o ônibus na saída sul' }, { n: 3, text: 'Virar à esquerda logo na saída' }, { n: 4, text: 'Atravessar a ponte e parar' }], answer: 1, explanationPt: '{道|みち}を{渡|わた}って、{銀行|ぎんこう}とコンビニの{間|あいだ}の{道|みち}をまっすぐ{行|い}って (V-て + 〜と〜の{間|あいだ}); depois 1つ{目|め}の{信号|しんごう}を{右|みぎ}に. (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l6-29', number: 29, prompt: 'Diálogo 06-12: como A indica o destino final (a loja アジア食材バグース)?', context: 'A：その{道|みち}をまっすぐ{行|い}って、2つ{目|め}の{角|かど}を{左|ひだり}に{曲|ま}がってください。…そうすると、{黒|くろ}いビルが{見|み}えます。その{隣|となり}です。', choices: [{ n: 1, text: 'Reto e virar à esquerda na 2ª esquina; aí aparece um prédio preto — é ao lado dele' }, { n: 2, text: 'É dentro da própria estação' }, { n: 3, text: 'É em frente a um prédio branco' }, { n: 4, text: 'É ao lado do banco' }], answer: 1, explanationPt: '2つ{目|め}の{角|かど}を{左|ひだり}に; そうすると、{黒|くろ}いビルが{見|み}えます (そうすると = aí então; {見|み}える); その{隣|となり}です. Fecha com お{待|ま}ちしております. (Atividade 2)' },
+    { id: 'iro-e1-l6-30', number: 30, prompt: 'Diálogo 06-13 (carona): onde {ロー} mora e como ele dá a referência?', context: 'ロー：{小島町|こじまちょう}です。{小島|こじま}{高校|こうこう}の{近|ちか}くです。…ロー：この{先|さき}に、{白|しろ}くて{大|おお}きな{家|いえ}があります。その{角|かど}を{右|みぎ}に{入|はい}ってください。', choices: [{ n: 1, text: 'Em Kojima-cho, perto da Escola Kojima; usa como referência uma casa branca e grande e manda virar à direita naquela esquina' }, { n: 2, text: 'No centro, ao lado da estação' }, { n: 3, text: 'Perto do museu de ciências' }, { n: 4, text: 'Em frente ao correio' }], answer: 1, explanationPt: 'Primeiro a área geral ({小島|こじま}{高校|こうこう}の{近|ちか}く) e, ao chegar perto, o marco visível {白|しろ}くて{大|おお}きな{家|いえ} (イA-くて + ナA/grande); その{角|かど}を{右|みぎ}に{入|はい}って (Nota ➋). (Atividade 3 · 聴解スクリプト)' },
+    { id: 'iro-e1-l6-31', number: 31, prompt: 'Diálogo 06-13: ao chegar, o que {ロー} diz para o carro parar, e como se despedem?', context: 'ロー：あ、ここでいいです。 {斉藤|さいとう}：え、ここ？ ロー：はい。ここです。…ロー：{今日|きょう}は、ありがとうございました。 {斉藤|さいとう}：じゃ、お{疲|つか}れさま。お{休|やす}み。', choices: [{ n: 1, text: '“ここでいいです” (pode parar aqui); depois agradece e se despedem com お{疲|つか}れさま／お{休|やす}みなさい' }, { n: 2, text: 'Pede para continuar até a próxima esquina' }, { n: 3, text: 'Reclama que erraram o caminho' }, { n: 4, text: 'Pede para voltar à estação' }], answer: 1, explanationPt: 'ここでいいです = “aqui está bom (pode parar)”. Despedida entre colegas: お{疲|つか}れさま / お{休|やす}み(なさい) / {失礼|しつれい}します. (Atividade 3)' },
+    { id: 'iro-e1-l6-32', number: 32, prompt: 'Pergunta de abertura da lição: 「ほかの{人|ひと}に{道|みち}を{聞|き}いたり、{聞|き}かれたりしたことがありますか？」 quer dizer:', choices: [{ n: 1, text: 'Você já perguntou o caminho a alguém, ou já foi perguntado?' }, { n: 2, text: 'Você sabe dirigir na sua cidade?' }, { n: 3, text: 'Você mora perto de um templo?' }, { n: 4, text: 'Você gosta de viajar de carro?' }], answer: 1, translationPt: 'Você já pediu informação de caminho a alguém, ou alguém já te pediu?', explanationPt: '{聞|き}いたり、{聞|き}かれたりした (〜たり〜たり, ativa e passiva de {聞|き}く) ことがありますか = já teve a experiência de perguntar/ser perguntado o caminho. Tema: {私|わたし}の{町|まち}. (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 6
+const L6_SCRIPTS: Record<string, ScriptItem[]> = {
+  '06-05': [
+    {
+      label: '会話① (06-05) — バス停',
+      setupJa: '{目的地|もくてきち}への{行|い}き{方|かた}がわかりません。{人|ひと}に{道|みち}を{聞|き}いています。',
+      setupPt: 'A pessoa não sabe como chegar ao destino e pergunta o caminho a alguém.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。バス{停|てい}はどこですか？', pt: 'Com licença. Onde fica o ponto de ônibus?' },
+        { speaker: 'B', ja: '{次|つぎ}の{角|かど}を{右|みぎ}に{曲|ま}がってください。', pt: 'Vire à direita na próxima esquina.' },
+        { speaker: 'A', ja: '{次|つぎ}の{角|かど}を{右|みぎ}ですね。', pt: 'Na próxima esquina, à direita, né.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Isso.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Obrigado(a).' },
+      ],
+    },
+  ],
+  '06-06': [
+    {
+      label: '会話② (06-06) — 郵便局',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{郵便局|ゆうびんきょく}はどう{行|い}ったらいいですか？', pt: 'Com licença. Como faço para ir ao correio?' },
+        { speaker: 'B', ja: 'この{道|みち}をまっすぐ{行|い}って、2つ{目|め}の{信号|しんごう}を{左|ひだり}に{曲|ま}がってください。', pt: 'Siga reto por esta rua e, no segundo sinal, vire à esquerda.' },
+        { speaker: 'A', ja: '1つ{目|め}の{信号|しんごう}を{左|ひだり}ですね。', pt: 'No primeiro sinal, à esquerda, né.' },
+        { speaker: 'B', ja: 'いえ、1つ{目|め}じゃなくて、2つ{目|め}です。', pt: 'Não, não é o primeiro, é o segundo.' },
+        { speaker: 'A', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '06-07': [
+    {
+      label: '会話③ (06-07) — マルイチデパート',
+      lines: [
+        { speaker: 'A', ja: 'すみません。マルイチデパートに{行|い}きたいんですが……。', pt: 'Com licença. Eu queria ir ao Maruichi Depato, mas…' },
+        { speaker: 'B', ja: 'ああ、あの{信号|しんごう}を{右|みぎ}に{曲|ま}がって、そのあと、ずっとまっすぐですよ。', pt: 'Ah, vire à direita naquele sinal e, depois, é sempre reto.' },
+        { speaker: 'A', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado(a).' },
+      ],
+    },
+  ],
+  '06-08': [
+    {
+      label: '会話④ (06-08) — 科学博物館',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{博物館|はくぶつかん}はどこですか？', pt: 'Com licença. Onde fica o museu?' },
+        { speaker: 'B', ja: '{博物館|はくぶつかん}？　{市立|しりつ}{博物館|はくぶつかん}ですか？', pt: 'Museu? O museu municipal?' },
+        { speaker: 'A', ja: 'いえ、{市立|しりつ}{博物館|はくぶつかん}じゃなくて{科学|かがく}{博物館|はくぶつかん}です。', pt: 'Não, não é o municipal, é o museu de ciências.' },
+        { speaker: 'B', ja: 'ああ、{科学|かがく}{博物館|はくぶつかん}は、ここをまっすぐ{行|い}って、{橋|はし}を{渡|わた}って、すぐ{右|みぎ}に{曲|ま}がったところにあります。', pt: 'Ah, o museu de ciências fica indo reto por aqui, atravessando a ponte e logo virando à direita.' },
+        { speaker: 'A', ja: 'えっと、{橋|はし}を{渡|わた}って、{右|みぎ}ですね。', pt: 'Hã, atravessar a ponte e à direita, né.' },
+        { speaker: 'B', ja: 'はい、そうです。', pt: 'Isso, exato.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Obrigado(a).' },
+      ],
+    },
+  ],
+  '06-12': [
+    {
+      label: '会話 (06-12) — 電話で道をたずねる',
+      setupJa: '{今|いま}、{駅|えき}にいます。{店|みせ}に{電話|でんわ}をして、その{店|みせ}への{行|い}き{方|かた}を{聞|き}いています。',
+      setupPt: 'A pessoa está na estação e liga para a loja perguntando como chegar até ela.',
+      lines: [
+        { speaker: 'A（店）', ja: 'はい。アジア{食材|しょくざい}バグースです。', pt: 'Alô. Aqui é a (loja de) ingredientes asiáticos Bagus.' },
+        { speaker: 'B（客）', ja: 'すみません。そちらに{行|い}きたいんですが、どう{行|い}ったらいいですか？{今|いま}、さくら{駅|えき}の{北口|きたぐち}にいます。', pt: 'Com licença. Eu queria ir até aí, como faço para chegar? Estou agora na saída norte da estação Sakura.' },
+        { speaker: 'A（店）', ja: '{駅|えき}の{北口|きたぐち}ですね。{駅|えき}の{前|まえ}の{道|みち}を{渡|わた}って、{銀行|ぎんこう}とコンビニの{間|あいだ}の{道|みち}をまっすぐ{行|い}ってください。', pt: 'Saída norte da estação, né. Atravesse a rua em frente à estação e siga reto pela rua entre o banco e a loja de conveniência.' },
+        { speaker: 'B（客）', ja: 'はい。', pt: 'Certo.' },
+        { speaker: 'A（店）', ja: 'それから、1つ{目|め}の{信号|しんごう}を{右|みぎ}に{曲|ま}がってください。', pt: 'Depois, vire à direita no primeiro sinal.' },
+        { speaker: 'B（客）', ja: '{右|みぎ}ですね。', pt: 'À direita, né.' },
+        { speaker: 'A（店）', ja: 'はい。その{道|みち}をまっすぐ{行|い}って、2つ{目|め}の{角|かど}を{左|ひだり}に{曲|ま}がってください。', pt: 'Isso. Siga reto por essa rua e vire à esquerda na segunda esquina.' },
+        { speaker: 'B（客）', ja: 'はい。', pt: 'Certo.' },
+        { speaker: 'A（店）', ja: 'そうすると、{黒|くろ}いビルが{見|み}えます。その{隣|となり}です。', pt: 'Aí então você vê um prédio preto. É ao lado dele.' },
+        { speaker: 'B（客）', ja: '{黒|くろ}いビルの{隣|となり}ですね。わかりました。ありがとうございます。', pt: 'Ao lado do prédio preto, né. Entendi. Obrigado(a).' },
+        { speaker: 'A（店）', ja: 'お{待|ま}ちしております。', pt: 'Estaremos esperando (você).' },
+      ],
+    },
+  ],
+  '06-13': [
+    {
+      label: '会話 (06-13) — 車で送ってもらう（斉藤・ロー）',
+      setupJa: '{斉藤|さいとう}さんとローさんは、{会社|かいしゃ}の{先輩|せんぱい}と{後輩|こうはい}です。{仕事|しごと}のあと、{斉藤|さいとう}さんがローさんを{車|くるま}で{送|おく}ってくれることになりました。',
+      setupPt: 'Saito e Loh são, respectivamente, veterano e calouro na empresa. Depois do trabalho, Saito vai levar Loh de carro até em casa.',
+      lines: [
+        { speaker: '斉藤', ja: 'ローさん、{今|いま}、{帰|かえ}る？', pt: 'Loh, você está indo embora agora?' },
+        { speaker: 'ロー', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '斉藤', ja: '{家|いえ}はどの{辺|へん}？', pt: 'Sua casa fica por que região?' },
+        { speaker: 'ロー', ja: '{小島町|こじまちょう}です。{小島|こじま}{高校|こうこう}の{近|ちか}くです。', pt: 'É em Kojima-cho. Perto da Escola (de Ensino Médio) Kojima.' },
+        { speaker: '斉藤', ja: 'じゃあ、{車|くるま}で{家|いえ}まで{送|おく}るよ。', pt: 'Então eu te levo de carro até em casa.' },
+        { speaker: 'ロー', ja: 'あー、すみません。ありがとうございます。', pt: 'Ah, desculpe (o incômodo). Muito obrigado.' },
+        { speaker: '（ト書き）', ja: '（{目的地|もくてきち}に{近|ちか}づく）', pt: '(Aproximando-se do destino.)' },
+        { speaker: '斉藤', ja: 'もうすぐ{小島|こじま}{高校|こうこう}だけど……。', pt: 'Já estamos chegando na Escola Kojima…' },
+        { speaker: 'ロー', ja: 'あ、{次|つぎ}の{信号|しんごう}を{左|ひだり}に{曲|ま}がってください。', pt: 'Ah, vire à esquerda no próximo sinal.' },
+        { speaker: '斉藤', ja: '{信号|しんごう}を{左|ひだり}ね。', pt: 'No sinal, à esquerda, né.' },
+        { speaker: '（ト書き）', ja: '（{曲|ま}がる）', pt: '(Vira.)' },
+        { speaker: 'ロー', ja: 'この{先|さき}に、{白|しろ}くて{大|おお}きな{家|いえ}があります。その{角|かど}を{右|みぎ}に{入|はい}ってください。', pt: 'Mais adiante tem uma casa branca e grande. Vire à direita naquela esquina.' },
+        { speaker: '斉藤', ja: 'OK。', pt: 'OK.' },
+        { speaker: '（ト書き）', ja: '（{曲|ま}がる）', pt: '(Vira.)' },
+        { speaker: 'ロー', ja: 'あ、ここでいいです。', pt: 'Ah, pode parar aqui.' },
+        { speaker: '斉藤', ja: 'え、ここ？', pt: 'Ué, aqui?' },
+        { speaker: 'ロー', ja: 'はい。ここです。', pt: 'Sim. É aqui.' },
+        { speaker: '（ト書き）', ja: '（{止|と}まる）', pt: '(Para o carro.)' },
+        { speaker: 'ロー', ja: '{今日|きょう}は、ありがとうございました。', pt: 'Muito obrigado por hoje.' },
+        { speaker: '斉藤', ja: 'じゃ、お{疲|つか}れさま。お{休|やす}み。', pt: 'Então, bom descanso. Boa noite.' },
+        { speaker: 'ロー', ja: 'お{休|やす}みなさい。{失礼|しつれい}します。', pt: 'Boa noite. Com licença (até logo).' },
+      ],
+    },
+  ],
+}
+
+const lesson6: Section = {
+  id: 'lesson-6',
+  level: 'elementary1',
+  titleJa: '第6課 郵便局はどう行ったらいいですか？',
+  titlePt: 'Lição 6 — Como faço para ir ao correio?',
+  summaryPt: 'Minha cidade · pedir caminho ({郵便局|ゆうびんきょく}はどう{行|い}ったらいいですか／マルイチデパートに{行|い}きたいんですが…), dar instruções ligando ações com V-て、〜てください (まっすぐ{行|い}って、{信号|しんごう}を{左|ひだり}に{曲|ま}がってください), corrigir com N1じゃなくて、N2 (1つ{目|め}じゃなくて、2つ{目|め}です) e orientar numa carona usando pontos de referência.',
+  studyNotes: [
+    {
+      title: 'Tópico: Minha cidade (私の町)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Perguntar o caminho a outra pessoa e entender a resposta.\n' +
+        '- Perguntar o caminho por telefone e entender a resposta.\n' +
+        '- Indicar o caminho até o destino, por exemplo quando lhe dão carona.\n\n' +
+        '💡 Pergunta de abertura: ほかの{人|ひと}に{道|みち}を{聞|き}いたり、{聞|き}かれたりしたことがありますか？ (você já pediu informação de caminho, ou já te perguntaram?).',
+    },
+    {
+      title: 'Pedir o caminho: 〜んですが… / どう行ったらいいですか (➊)',
+      bodyPt:
+        'Pôr **〜んですが…** no fim deixa o pedido mais suave: você **explica sua situação** e pede ajuda. Fala-se baixando a entonação no fim.\n\n' +
+        'Três formas de perguntar o caminho:\n\n' +
+        '- `{駅|えき}は**どこ**ですか？` (onde fica a estação?)\n' +
+        '- `{駅|えき}は、**どう{行|い}ったらいいですか**？` (como faço para ir à estação?)\n' +
+        '- `{駅|えき}に**{行|い}きたいんですが**…。` (queria ir à estação, mas… → pode me ajudar?)',
+    },
+    {
+      title: 'Dar o caminho: V-て、〜（てください） (➋)',
+      bodyPt:
+        'A **テ-forma** (Lição 2) liga duas ou mais ações **em ordem**; em direções, costuma fechar com **〜てください**:\n\n' +
+        '- `この{道|みち}をまっすぐ{行|い}っ**て**、2つ{目|め}の{信号|しんごう}を{左|ひだり}に{曲|ま}がっ**てください**`.\n\n' +
+        'Também dá para indicar **sem 〜てください**:\n\n' +
+        '- `あの{信号|しんごう}を{右|みぎ}に{曲|ま}がって、そのあと、ずっとまっすぐですよ`\n' +
+        '- `…{橋|はし}を{渡|わた}って、すぐ{右|みぎ}に{曲|ま}がったところにあります`.\n\n' +
+        '🚗 **Numa carona:** diga primeiro a **área geral** ({小島|こじま}{高校|こうこう}の{近|ちか}く) e, ao chegar perto, um **marco visível** ({白|しろ}くて{大|おお}きな{家|いえ}).',
+    },
+    {
+      title: 'Corrigir: N1じゃなくて、N2 (➌)',
+      bodyPt:
+        'Usa-se para **corrigir** o que o outro disse: **nega N1 e dá o certo, N2**.\n\n' +
+        '- `1つ{目|め}**じゃなくて**、2つ{目|め}です` (não é o 1º, é o 2º).\n' +
+        '- `{市立|しりつ}{博物館|はくぶつかん}**じゃなくて**、{科学|かがく}{博物館|はくぶつかん}です`.\n\n' +
+        '**〜じゃなくて** é a forma de ligação de **〜じゃない（です）**.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Na cidade ({町|まち}にあるもの):** {信号|しんごう} (semáforo), {横断歩道|おうだんほどう} (faixa de pedestres), {角|かど} (esquina), {交差点|こうさてん} (cruzamento), {道|みち} (rua), {橋|はし} (ponte).\n\n' +
+        '**Dar direções ({道案内|みちあんない}):** まっすぐ{行|い}く (ir reto), {左|ひだり}／{右|みぎ}に{曲|ま}がる (virar à esquerda/direita), {道|みち}／{橋|はし}を{渡|わた}る (atravessar a rua/ponte), 1つ{目|め}・2つ{目|め}・3つ{目|め}の{角|かど} (1ª/2ª/3ª esquina).\n\n' +
+        '**Prédios e lugares ({建物|たてもの}・{場所|ばしょ}):** {銀行|ぎんこう} (banco), コンビニ (conveniência), {神社|じんじゃ} (santuário), お{寺|てら} (templo), {学校|がっこう} (escola), {駐車場|ちゅうしゃじょう} (estacionamento), {公園|こうえん} (parque), {郵便局|ゆうびんきょく} (correio), {交番|こうばん} (posto policial), {病院|びょういん} (hospital), {黒|くろ}い／{白|しろ}い／{青|あお}いビル (prédio preto/branco/azul). **Outras:** ずっと, {市立|しりつ}, すぐ, {曲|ま}がったところ; そちら, {北口|きたぐち}, 〜と〜の{間|あいだ}, そうすると, {見|み}える, お{待|ま}ちしております; {高校|こうこう}, {送|おく}る, {大|おお}きな, {入|はい}る.\n\n' +
+        '**Kanji da lição:** {道|みち}, {右|みぎ}, {左|ひだり}, {公園|こうえん}, {銀行|ぎんこう}, {近|ちか}く, お{寺|てら}, {車|くるま}, {神社|じんじゃ}, {送|おく}る.\n\n' +
+        '📌 **TIPS:** **{信号|しんごう}** (a luz verde do carro é chamada de {青|あお}; semáforos de pedestres, alguns com botão 押しボタン式); **お{寺|てら}と{神社|じんじゃ}** (templo budista 仏教 × santuário xintoísta 神道; no templo há {仏像}/お{墓|はか}/お{坊|ぼう}さん/{鐘}/お{線香|せんこう}, no santuário {鳥居|とりい}/{神主|かんぬし}さん・{巫女|みこ}さん/お{参|まい}り com palmas パンパン).',
+    },
+  ],
+  groups: [lesson6Group],
+  audios: attachScripts(6, L6_SCRIPTS),
+}
+
+// ---- Lições 7-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(6, 'Minha cidade', '郵便局はどう行ったらいいですか？', 'Como faço para ir ao correio?', [
-    'Perguntar o caminho a outra pessoa e entender a resposta.',
-    'Perguntar o caminho por telefone e entender a resposta.',
-    'Indicar o caminho até o destino, por exemplo quando lhe dão carona.',
-  ]),
   scaffold(7, 'Sair junto', '道に迷ってちょっと遅れます', 'Me perdi e vou me atrasar um pouco', [
     'Perguntar e entender o horário e local de encontro.',
     'Combinar e decidir o horário e local do encontro.',
@@ -1175,5 +1374,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, ...others],
 }
