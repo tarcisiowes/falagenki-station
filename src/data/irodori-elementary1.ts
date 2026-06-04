@@ -1290,14 +1290,175 @@ const lesson6: Section = {
   audios: attachScripts(6, L6_SCRIPTS),
 }
 
-// ---- Lições 7-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 7: 道に迷ってちょっと遅れます (tópico いっしょに出かける) ------------
+const lesson7Group: ExerciseGroup = {
+  id: 'iro-e1-l7',
+  title: '道に迷ってちょっと遅れます',
+  subtitlePt: 'Sair junto · combinar encontro propondo hora/local (6{時|じ}はどうですか／6{時半|じはん}でもいいですか) e avisar atraso dando o motivo com Nで／V-て (事故で{電車|でんしゃ}が{止|と}まりました／{道|みち}に{迷|まよ}って、ちょっとおくれます)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l7-1', number: 1, prompt: '「6{時|じ}はどうですか？」 (Nはどうですか？) serve para (Nota ➊):', choices: [{ n: 1, text: 'propor algo e ver se o outro concorda (aqui: hora/local de encontro)' }, { n: 2, text: 'perguntar o motivo' }, { n: 3, text: 'recusar um convite' }, { n: 4, text: 'descrever o passado' }], answer: 1, translationPt: 'Que tal às 6 horas?', explanationPt: 'Nはどうですか？ propõe algo e pergunta se está bom. N é uma palavra de tempo ou lugar. Usado aqui para combinar o encontro. (Nota ➊)' },
+    { id: 'iro-e1-l7-2', number: 2, prompt: 'O que pode entrar no N de 「Nはどうですか？」 (Nota ➊)?', choices: [{ n: 1, text: 'palavra de tempo ou lugar (6{時|じ}、ホテルのロビー…)' }, { n: 2, text: 'só verbos' }, { n: 3, text: 'só adjetivos' }, { n: 4, text: 'nada, N é fixo' }], answer: 1, explanationPt: 'Ex.: 「ホテルのロビーはどうですか？」 (que tal o lobby do hotel?). N = tempo ou lugar. (Nota ➊)' },
+    { id: 'iro-e1-l7-3', number: 3, prompt: '「6{時半|じはん}でもいいですか？」 (Nでもいいですか？) serve para (Nota ➋):', choices: [{ n: 1, text: 'propor uma alternativa e perguntar se pode (contraproposta)' }, { n: 2, text: 'confirmar o que já foi decidido' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'agradecer' }], answer: 1, translationPt: 'Pode ser às 6 e meia (no lugar)?', explanationPt: 'Nでもいいですか？ apresenta um plano B e pergunta se convém. Aqui: o outro propôs 6{時|じ}, e a pessoa sugere 6{時半|じはん} por não poder no horário. (Nota ➋)' },
+    { id: 'iro-e1-l7-4', number: 4, prompt: 'Exemplo de contraproposta (Nota ➋): 「「{平和|へいわ}の{鳥|とり}」の{像|ぞう}の{前|まえ}はどうですか？」「ちょっとわかりません。{駅|えき}の{改札|かいさつ}でもいいですか？」', choices: [{ n: 1, text: 'B não conhece o ponto sugerido e propõe a catraca da estação no lugar' }, { n: 2, text: 'B aceita o ponto sugerido' }, { n: 3, text: 'B recusa o encontro' }, { n: 4, text: 'B pergunta a hora' }], answer: 1, explanationPt: 'ちょっとわかりません + {駅|えき}の{改札|かいさつ}でもいいですか？ = não sei (onde fica), pode ser a catraca da estação? (Nota ➋)' },
+    { id: 'iro-e1-l7-5', number: 5, prompt: '「{事故|じこ}で{電車|でんしゃ}が{止|と}まりました」 (Nで、〜) — o que で indica aqui (Nota ➌)?', choices: [{ n: 1, text: 'causa/motivo: o trem parou POR CAUSA de um acidente' }, { n: 2, text: 'lugar onde aconteceu' }, { n: 3, text: 'meio de transporte' }, { n: 4, text: 'companhia (com quem)' }], answer: 1, translationPt: 'Os trens pararam por causa de um acidente.', explanationPt: 'Nで marca a causa/motivo da frase seguinte. A partícula で liga-se a substantivos: {事故|じこ}で = por causa de acidente. (Nota ➌)' },
+    { id: 'iro-e1-l7-6', number: 6, prompt: '「ねぼうして、{今|いま}、{起|お}きました」 (V-て、〜) — o que a テ-forma indica aqui (Nota ➌)?', choices: [{ n: 1, text: 'motivo: acordei agora PORQUE dormi demais' }, { n: 2, text: 'só a ordem das ações' }, { n: 3, text: 'um pedido' }, { n: 4, text: 'uma comparação' }], answer: 1, translationPt: 'Dormi demais e acordei agora.', explanationPt: 'Além de ligar ações em ordem (Lição 2), a テ-forma também pode indicar causa/motivo: ねぼうして = porque dormi demais. (Nota ➌)' },
+    { id: 'iro-e1-l7-7', number: 7, prompt: 'Exemplos de motivo (Nota ➌): 「{渋滞|じゅうたい}で、30{分|ぷん}ぐらい{遅|おく}れます」「{道|みち}に{迷|まよ}って、ちょっと{遅|おく}れます」 significam:', choices: [{ n: 1, text: 'Vou atrasar ~30 min por causa do trânsito ／ Vou atrasar um pouco porque me perdi' }, { n: 2, text: 'Cheguei adiantado ／ Não vou mais' }, { n: 3, text: 'Estou no trânsito ／ Conheço o caminho' }, { n: 4, text: 'Vou de carro ／ Vou a pé' }], answer: 1, explanationPt: '{渋滞|じゅうたい}で (Nで, por congestionamento), {道|みち}に{迷|まよ}って (V-て, por ter se perdido) — ambos dão o motivo do atraso. (Nota ➌)' },
+    { id: 'iro-e1-l7-8', number: 8, prompt: '「それ、{何|なん}ですか？」 usa-se quando (nota do diálogo 07-05):', choices: [{ n: 1, text: 'você não entendeu/não conhece o que o outro disse e pergunta de novo' }, { n: 2, text: 'você quer recusar' }, { n: 3, text: 'você quer agradecer' }, { n: 4, text: 'você quer marcar a hora' }], answer: 1, explanationPt: 'それ、{何|なん}ですか？ = expressão para perguntar de novo o que o interlocutor disse quando não se sabe o que é (no diálogo, o tal 「{平和|へいわ}の{鳥|とり}」の{像|ぞう}). (Atividade 2 · nota)' },
+    { id: 'iro-e1-l7-9', number: 9, prompt: 'Vocabulário (Atividade 1): 「{集合|しゅうごう}（する）／では／{案内|あんない}する／{待|ま}ち{合|あ}わせ」 significam:', choices: [{ n: 1, text: 'reunir-se/encontro ／ então/sendo assim ／ guiar/mostrar ／ encontro marcado' }, { n: 2, text: 'separar ／ porém ／ esperar ／ despedida' }, { n: 3, text: 'começar ／ por isso ／ acompanhar ／ atraso' }, { n: 4, text: 'sair ／ mas ／ avisar ／ reunião' }], answer: 1, explanationPt: '{集合|しゅうごう}（する） (reunir-se, ponto de encontro), では (então), {案内|あんない}する (guiar/conduzir), {待|ま}ち{合|あ}わせ (encontro combinado). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l7-10', number: 10, prompt: 'Mais vocabulário (Atividade 1): 「イベント／{始|はじ}まる／スタッフ／30{分前|ぷんまえ}」 significam:', choices: [{ n: 1, text: 'evento ／ começar ／ equipe/staff ／ 30 minutos antes (〜{前|まえ} = antes de)' }, { n: 2, text: 'festa ／ terminar ／ chefe ／ 30 minutos depois' }, { n: 3, text: 'show ／ abrir ／ cliente ／ meia hora' }, { n: 4, text: 'reunião ／ atrasar ／ visitante ／ pontual' }], answer: 1, explanationPt: 'イベント (evento), {始|はじ}まる (começar), スタッフ (equipe), 30{分前|ぷんまえ} (30 min antes); 〜{前|まえ} = antes de. (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l7-11', number: 11, prompt: 'Vocabulário do diálogo (Atividade 2): 「{平和|へいわ}／{鳥|とり}／{像|ぞう}」 significam:', choices: [{ n: 1, text: 'paz ／ pássaro ／ estátua' }, { n: 2, text: 'guerra ／ peixe ／ prédio' }, { n: 3, text: 'cidade ／ árvore ／ ponte' }, { n: 4, text: 'tempo ／ animal ／ fonte' }], answer: 1, explanationPt: '{平和|へいわ} (paz), {鳥|とり} (pássaro), {像|ぞう} (estátua) — o ponto de encontro era a estátua 「{平和|へいわ}の{鳥|とり}」. (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l7-12', number: 12, prompt: 'Palavras-chave (大切なことば, Atividade 3): 「{事故|じこ}／ねぼうする／{今|いま}から／{急|いそ}ぐ／{先|さき}に」 significam:', choices: [{ n: 1, text: 'acidente ／ dormir demais/perder a hora ／ a partir de agora ／ apressar-se ／ antes/primeiro' }, { n: 2, text: 'problema ／ acordar cedo ／ até agora ／ descansar ／ depois' }, { n: 3, text: 'atraso ／ sonhar ／ logo ／ correr ／ junto' }, { n: 4, text: 'pressa ／ cochilar ／ ontem ／ parar ／ sozinho' }], answer: 1, explanationPt: '{事故|じこ} (acidente), ねぼうする (dormir além da conta), {今|いま}から (a partir de agora), {急|いそ}ぐ (apressar-se), {先|さき}に (antes, na frente). (Atividade 3 · 大切なことば)' },
+    { id: 'iro-e1-l7-13', number: 13, prompt: 'Mais palavras-chave (Atividade 3): 「{道|みち}に{迷|まよ}う／{遅|おく}れる／{着|つ}く／まちがえる／{待|ま}つ／{始|はじ}める」 significam:', choices: [{ n: 1, text: 'perder-se/se perder ／ atrasar-se ／ chegar ／ errar/confundir ／ esperar ／ começar (algo)' }, { n: 2, text: 'achar o caminho ／ adiantar-se ／ sair ／ acertar ／ correr ／ terminar' }, { n: 3, text: 'andar ／ parar ／ voltar ／ lembrar ／ desistir ／ abrir' }, { n: 4, text: 'dirigir ／ esperar ／ entrar ／ avisar ／ chamar ／ fechar' }], answer: 1, explanationPt: '{道|みち}に{迷|まよ}う (perder-se), {遅|おく}れる (atrasar-se), {着|つ}く (chegar), まちがえる (errar/confundir), {待|ま}つ (esperar), {始|はじ}める (começar). (Atividade 3 · 大切なことば)' },
+    { id: 'iro-e1-l7-14', number: 14, prompt: 'Os kanji 「{時間|じかん}／{場所|ばしょ}／{駅|えき}／{受付|うけつけ}」 lêem-se:', choices: [{ n: 1, text: 'じかん (tempo/hora) ／ ばしょ (lugar) ／ えき (estação) ／ うけつけ (recepção/guichê)' }, { n: 2, text: 'じかん ／ ばしょ ／ えき ／ じゅふ' }, { n: 3, text: 'ときま ／ ばしょ ／ えき ／ うけつけ' }, { n: 4, text: 'じかん ／ じょうしょ ／ えき ／ うけづけ' }], answer: 1, explanationPt: '{時間|じかん} (tempo/hora), {場所|ばしょ} (lugar), {駅|えき} (estação), {受付|うけつけ} (recepção). (漢字のことば)' },
+    { id: 'iro-e1-l7-15', number: 15, prompt: 'Os kanji 「{門|もん}／{電車|でんしゃ}／{待|ま}つ／{止|と}まる」 lêem-se:', choices: [{ n: 1, text: 'もん (portão) ／ でんしゃ (trem) ／ まつ (esperar) ／ とまる (parar)' }, { n: 2, text: 'もん ／ でんしゃ ／ たつ ／ しまる' }, { n: 3, text: 'かど ／ でんしゃ ／ まつ ／ とまる' }, { n: 4, text: 'もん ／ でんちゃ ／ まつ ／ どまる' }], answer: 1, explanationPt: '{門|もん} (portão), {電車|でんしゃ} (trem), {待|ま}つ (esperar), {止|と}まる (parar). (漢字のことば)' },
+    { id: 'iro-e1-l7-16', number: 16, prompt: 'Os kanji 「{着|つ}く／{急|いそ}ぐ」 lêem-se:', choices: [{ n: 1, text: 'つく (chegar) ／ いそぐ (apressar-se)' }, { n: 2, text: 'きく ／ きゅうぐ' }, { n: 3, text: 'ちゃくく ／ いそぐ' }, { n: 4, text: 'つく ／ おそぐ' }], answer: 1, explanationPt: '{着|つ}く (chegar), {急|いそ}ぐ (apressar-se). Kanji da lição: {時間|じかん}・{場所|ばしょ}・{駅|えき}・{受付|うけつけ}・{門|もん}・{電車|でんしゃ}・{待|ま}つ・{止|と}まる・{着|つ}く・{急|いそ}ぐ. (漢字)' },
+    { id: 'iro-e1-l7-17', number: 17, prompt: '📌 TIPS — {遅刻|ちこく} (atrasos): como costuma ser a pontualidade no Japão?', choices: [{ n: 1, text: 'é levada muito a sério; chegar 1 min atrasado ao trabalho já conta como atraso, e evita-se fazer o outro esperar (chega-se na hora ou um pouco antes)' }, { n: 2, text: 'atrasos de até 1 hora são normais' }, { n: 3, text: 'ninguém liga para horário' }, { n: 4, text: 'só importa o horário de saída' }], answer: 1, explanationPt: 'Diz-se que os japoneses são “{時間|じかん}に{正確|せいかく}” (pontuais). 1 minuto de atraso no {始業|しぎょう}{時間|じかん} pode contar como {遅刻|ちこく}; chega-se no horário ou um pouco antes para não fazer o outro esperar. (TIPS)' },
+    { id: 'iro-e1-l7-18', number: 18, prompt: '📌 TIPS — {遅刻|ちこく}: se você vai se atrasar (mesmo 5–10 min), qual é a etiqueta?', choices: [{ n: 1, text: 'avisar o outro o quanto antes, para não deixá-lo preocupado nem irritado' }, { n: 2, text: 'não avisar, pois é pouco tempo' }, { n: 3, text: 'só avisar depois de chegar' }, { n: 4, text: 'cancelar o encontro' }], answer: 1, explanationPt: 'Mesmo 5 ou 10 min: a etiqueta é avisar cedo (早目に{連絡|れんらく}). O ponto é não deixar o outro {心配|しんぱい} (preocupado) nem イライラ (irritado). O senso de tempo, porém, varia por geração/região/situação. (TIPS)' },
+    { id: 'iro-e1-l7-19', number: 19, prompt: '📌 TIPS — {電車|でんしゃ}の{運行|うんこう}トラブル: o que pode parar/atrasar os trens japoneses?', choices: [{ n: 1, text: '{人身事故|じんしんじこ} (acidente com pessoa), {急病人|きゅうびょうにん} (passageiro passando mal), problemas com passageiros, {信号|しんごう}{故障|こしょう} (falha de sinal) etc.; há aviso por alto-falante e na internet' }, { n: 2, text: 'os trens japoneses nunca atrasam' }, { n: 3, text: 'só o mau tempo' }, { n: 4, text: 'falta de maquinistas apenas' }], answer: 1, explanationPt: 'A ferrovia anuncia (estação/trem/internet). Causas: {人身事故}, {急病人}, {乗客|じょうきゃく}トラブル, {信号|しんごう}{故障|こしょう}; o tempo de restabelecimento ({復旧|ふっきゅう}) varia. (TIPS)' },
+    { id: 'iro-e1-l7-20', number: 20, prompt: '📌 TIPS — o que é o {遅延証明書|ちえんしょうめいしょ} (certificado de atraso)?', choices: [{ n: 1, text: 'documento emitido pela ferrovia quando o trem atrasa; apresentado à empresa, o atraso não é contado contra você (regras variam por empresa)' }, { n: 2, text: 'uma multa por chegar atrasado' }, { n: 3, text: 'um bilhete de desconto' }, { n: 4, text: 'um aviso de greve' }], answer: 1, explanationPt: 'O {遅延証明書|ちえんしょうめいしょ} prova o atraso do trem; entregue à empresa, você não é tratado como atrasado (手続き varia por empresa). Pode-se pegar na estação ou baixar pela internet. (TIPS)' },
+    { id: 'iro-e1-l7-21', number: 21, prompt: 'Diálogo 07-01: que horas e onde é o encontro?', context: 'A：すみません。{明日|あした}は{何時|なんじ}にどこですか？ B：{明日|あした}は、{朝|あさ}8{時|じ}に{会社|かいしゃ}の{門|もん}の{前|まえ}{集合|しゅうごう}ね。 A：わかりました。8{時|じ}に{門|もん}の{前|まえ}ですね。', choices: [{ n: 1, text: 'Às 8h, em frente ao portão da empresa' }, { n: 2, text: 'Às 10h, na recepção' }, { n: 3, text: 'Às 6h30, na catraca da estação' }, { n: 4, text: 'Às 16h30, no hall' }], answer: 1, explanationPt: '{朝|あさ}8{時|じ}に{会社|かいしゃ}の{門|もん}の{前|まえ}{集合|しゅうごう} → 8h / portão da empresa (d). (Atividade 1 · 聴解スクリプト)' },
+    { id: 'iro-e1-l7-22', number: 22, prompt: 'Diálogo 07-02: que horas e onde?', context: 'A：では、{金曜日|きんようび}の10{時|じ}に{来|き}てください。 B：…{場所|ばしょ}はどこですか？ A：{受付|うけつけ}に{来|き}てください。そのあと、{部屋|へや}に{案内|あんない}します。', choices: [{ n: 1, text: 'Sexta, às 10h, na recepção ({受付|うけつけ})' }, { n: 2, text: 'Sábado, às 8h, no portão' }, { n: 3, text: 'Sexta, às 6h, no hall' }, { n: 4, text: 'Domingo, às 17h, na estação' }], answer: 1, explanationPt: '{金曜日|きんようび}の10{時|じ}; {受付|うけつけ}に{来|き}てください → 10h / recepção (b). Depois 部屋に{案内|あんない}します. (Atividade 1)' },
+    { id: 'iro-e1-l7-23', number: 23, prompt: 'Diálogo 07-03: que horas e onde?', context: 'A：{明日|あした}の{待|ま}ち{合|あ}わせは、{何時|なんじ}にどこにしますか？ B：じゃあ、6{時半|じはん}に、{駅|えき}の{改札|かいさつ}でいい？ A：はい。6{時半|じはん}に{駅|えき}ですね。', choices: [{ n: 1, text: 'Às 6h30, na catraca da estação ({駅|えき}の{改札|かいさつ})' }, { n: 2, text: 'Às 8h, no portão' }, { n: 3, text: 'Às 10h, na recepção' }, { n: 4, text: 'Às 17h, no hall' }], answer: 1, explanationPt: '6{時半|じはん}に{駅|えき}の{改札|かいさつ} → 6h30 / catraca da estação (a). (Atividade 1)' },
+    { id: 'iro-e1-l7-24', number: 24, prompt: 'Diálogo 07-04: o evento começa às 17h; a que horas e onde a equipe (スタッフ) deve ir?', context: 'A：10{日|か}のイベント、{何時|なんじ}からですか？ B：17{時|じ}に{始|はじ}まりますが、スタッフは30{分前|ぷんまえ}にホールに{来|き}てください。 A：えーと、じゃあ4{時半|じはん}ですね。', choices: [{ n: 1, text: 'Às 16h30 (30 min antes das 17h), no hall ({ホール})' }, { n: 2, text: 'Às 17h, na recepção' }, { n: 3, text: 'Às 8h, no portão' }, { n: 4, text: 'Às 6h30, na estação' }], answer: 1, explanationPt: 'Evento 17{時|じ}; スタッフは30{分前|ぷんまえ}にホール → 16h30 (4{時半|じはん}) / hall (c). (Atividade 1)' },
+    { id: 'iro-e1-l7-25', number: 25, prompt: 'Diálogo 07-05: que hora ベト/{李|リ}/{佐藤|さとう} acabam combinando, e por quê?', context: '{佐藤|さとう}：6{時|じ}はどうですか？ {李|リ}：6{時|じ}はちょっと{早|はや}いです。6{時半|じはん}でもいいですか？ ベト：6{時半|じはん}？　いいですよ。', choices: [{ n: 1, text: '6h30 — 6h era cedo demais para o Li, que propôs 6h30 (Nでもいいですか)' }, { n: 2, text: '6h, como o Sato propôs' }, { n: 3, text: '7h, sugerido pela Vet' }, { n: 4, text: '5h30, pedido do Li' }], answer: 1, explanationPt: '6{時|じ}はどうですか (➊) → 6{時|じ}はちょっと{早|はや}い + 6{時半|じはん}でもいいですか (➋). Combinam 6{時半|じはん}. (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l7-26', number: 26, prompt: 'Diálogo 07-05: onde combinam de se encontrar e por quê?', context: '{佐藤|さとう}：{駅前|えきまえ}の「{平和|へいわ}の{鳥|とり}」の{像|ぞう}の{前|まえ}にしましょう。 ベト：え？　それ、{何|なん}ですか？ {李|リ}：{私|わたし}もわかりません。{駅|えき}の{改札|かいさつ}でもいいですか？', choices: [{ n: 1, text: 'Na catraca da estação — ninguém sabia onde ficava a estátua “Heiwa-no-tori”' }, { n: 2, text: 'Em frente à estátua, como o Sato propôs' }, { n: 3, text: 'No portão da empresa' }, { n: 4, text: 'Na recepção do hotel' }], answer: 1, explanationPt: 'Sato propõe a estátua; ベト/{李|リ} não a conhecem (それ、{何|なん}ですか？ / わかりません) e mudam para {駅|えき}の{改札|かいさつ} (➋). Fica 6{時半|じはん} na catraca. (Atividade 2)' },
+    { id: 'iro-e1-l7-27', number: 27, prompt: 'Mensagem ① (Atividade 3 · leitura): por que a pessoa vai se atrasar?', context: 'すみません。{事故|じこ}で{電車|でんしゃ}が{止|と}まりました。／（{相手|あいて}）わかりました／また{連絡|れんらく}します。', choices: [{ n: 1, text: 'O trem parou por causa de um acidente; avisa que dará notícia depois' }, { n: 2, text: 'Dormiu demais e acabou de acordar' }, { n: 3, text: 'Se perdeu no caminho' }, { n: 4, text: 'Errou o horário' }], answer: 1, explanationPt: '{事故|じこ}で{電車|でんしゃ}が{止|と}まりました (Nで, motivo, Nota ➌). Quem espera responde わかりました; また{連絡|れんらく}します. (Atividade 3 · leitura)' },
+    { id: 'iro-e1-l7-28', number: 28, prompt: 'Mensagem ② (Atividade 3): por que a pessoa vai se atrasar e o que pede?', context: 'ごめん！ねぼうして、いま{起|お}きました〜／いまから{急|いそ}いで{行|い}きます　{先|さき}にはじめてください', choices: [{ n: 1, text: 'Dormiu demais e acabou de acordar; vai correndo e pede para começarem sem ela' }, { n: 2, text: 'O trem parou; vai esperar' }, { n: 3, text: 'Se perdeu; já está chegando' }, { n: 4, text: 'Errou o horário; vai ao café' }], answer: 1, explanationPt: 'ねぼうして、いま{起|お}きました (V-て, motivo, Nota ➌); いまから{急|いそ}いで{行|い}きます; {先|さき}にはじめてください. (Atividade 3 · leitura)' },
+    { id: 'iro-e1-l7-29', number: 29, prompt: 'Mensagem ③ (Atividade 3): qual o motivo e a situação?', context: 'すみません。{道|みち}に{迷|まよ}って、ちょっとおくれます。／（{相手|あいて}）だいじょうぶですか？／{大丈夫|だいじょうぶ}です。もうすぐ{着|つ}きます。', choices: [{ n: 1, text: 'Se perdeu e vai atrasar um pouco; está quase chegando' }, { n: 2, text: 'O trem parou por acidente' }, { n: 3, text: 'Dormiu demais' }, { n: 4, text: 'Errou o horário em 30 min' }], answer: 1, explanationPt: '{道|みち}に{迷|まよ}って、ちょっとおくれます (V-て, motivo); もうすぐ{着|つ}きます (já chega). (Atividade 3 · leitura)' },
+    { id: 'iro-e1-l7-30', number: 30, prompt: 'Mensagem ④ (Atividade 3): qual o motivo do atraso e o que o outro responde?', context: 'すみません。{時間|じかん}をまちがえました。30{分|ぷん}おくれます／（{相手|あいて}）え〜！／カフェで{待|ま}ってます', choices: [{ n: 1, text: 'Errou o horário e vai atrasar 30 min; o outro vai esperar no café' }, { n: 2, text: 'O trem parou; o outro foi embora' }, { n: 3, text: 'Se perdeu; o outro está chegando' }, { n: 4, text: 'Dormiu demais; o outro começou sozinho' }], answer: 1, explanationPt: '{時間|じかん}をまちがえました (errei o horário) + 30{分|ぷん}おくれます; resposta カフェで{待|ま}ってます. (Atividade 3 · leitura)' },
+    { id: 'iro-e1-l7-31', number: 31, prompt: 'Na Atividade 4 (escrever a mensagem de atraso), que partes a mensagem-modelo tem?', context: '（{例|れい}）すみません。{時間|じかん}をまちがえて、30{分|ぷん}おくれます。', choices: [{ n: 1, text: 'palavra de desculpa (謝ることば) + motivo (理由) + de quanto é o atraso (時間：どのぐらい？)' }, { n: 2, text: 'só a hora de chegada' }, { n: 3, text: 'só um pedido de desculpas' }, { n: 4, text: 'o endereço do local' }], answer: 1, explanationPt: 'Modelo: すみません ({謝|あやま}ることば) + {時間|じかん}をまちがえて ({理由|りゆう}, V-て motivo) + 30{分|ぷん}おくれます ({時間|じかん}：quanto). (Atividade 4)' },
+    { id: 'iro-e1-l7-32', number: 32, prompt: 'Pergunta de abertura da lição: 「{待|ま}ち{合|あ}わせはどんな{場所|ばしょ}でしますか？あなたは{約束|やくそく}の{時間|じかん}ちょうどに{行|い}きますか？」 quer dizer:', choices: [{ n: 1, text: 'Em que tipo de lugar você marca encontros? Você chega exatamente na hora combinada?' }, { n: 2, text: 'Você gosta de chegar atrasado?' }, { n: 3, text: 'Você anda de trem todo dia?' }, { n: 4, text: 'Onde fica a estação mais próxima?' }], answer: 1, translationPt: 'Em que lugares você costuma marcar encontros? Você chega bem na hora combinada?', explanationPt: '{待|ま}ち{合|あ}わせ (encontro), どんな{場所|ばしょ} (que tipo de lugar), {約束|やくそく}の{時間|じかん}ちょうど (bem na hora combinada). Tema: いっしょに{出|で}かける. (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 7
+const L7_SCRIPTS: Record<string, ScriptItem[]> = {
+  '07-01': [
+    {
+      label: '会話① (07-01) — 何時にどこ',
+      setupJa: '{待|ま}ち{合|あ}わせの{時間|じかん}や{場所|ばしょ}について、4{人|にん}の{人|ひと}が{質問|しつもん}しています。',
+      setupPt: 'Quatro pessoas perguntam sobre o horário e o local de encontro.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{明日|あした}は{何時|なんじ}にどこですか？', pt: 'Com licença. Amanhã é a que horas e onde?' },
+        { speaker: 'B', ja: '{明日|あした}は、{朝|あさ}8{時|じ}に{会社|かいしゃ}の{門|もん}の{前|まえ}{集合|しゅうごう}ね。', pt: 'Amanhã, encontro às 8h da manhã em frente ao portão da empresa, viu.' },
+        { speaker: 'A', ja: 'わかりました。8{時|じ}に{門|もん}の{前|まえ}ですね。', pt: 'Entendi. Às 8h, em frente ao portão, né.' },
+        { speaker: 'B', ja: 'じゃあ、また{明日|あした}。', pt: 'Então, até amanhã.' },
+      ],
+    },
+  ],
+  '07-02': [
+    {
+      label: '会話② (07-02) — 何時にどこ',
+      lines: [
+        { speaker: 'A', ja: 'では、{金曜日|きんようび}の10{時|じ}に{来|き}てください。', pt: 'Então, venha na sexta-feira às 10h.' },
+        { speaker: 'B', ja: '{金曜日|きんようび}の10{時|じ}ですね。えーと、{場所|ばしょ}はどこですか？', pt: 'Sexta-feira às 10h, né. Hã, e onde é o lugar?' },
+        { speaker: 'A', ja: '{受付|うけつけ}に{来|き}てください。そのあと、{部屋|へや}に{案内|あんない}します。', pt: 'Venha à recepção. Depois eu te levo até a sala.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '07-03': [
+    {
+      label: '会話③ (07-03) — 何時にどこ',
+      lines: [
+        { speaker: 'A', ja: '{明日|あした}の{待|ま}ち{合|あ}わせは、{何時|なんじ}にどこにしますか？', pt: 'O encontro de amanhã, a que horas e onde vamos marcar?' },
+        { speaker: 'B', ja: 'じゃあ、6{時半|じはん}に、{駅|えき}の{改札|かいさつ}でいい？', pt: 'Então, às 6h30, na catraca da estação, pode ser?' },
+        { speaker: 'A', ja: 'はい。6{時半|じはん}に{駅|えき}ですね。', pt: 'Sim. Às 6h30, na estação, né.' },
+        { speaker: 'B', ja: 'じゃあ、また。', pt: 'Então, até.' },
+      ],
+    },
+  ],
+  '07-04': [
+    {
+      label: '会話④ (07-04) — 何時にどこ',
+      lines: [
+        { speaker: 'A', ja: 'あのう、10{日|か}のイベント、{何時|なんじ}からですか？', pt: 'Ãhn, o evento do dia 10, a partir de que horas é?' },
+        { speaker: 'B', ja: '17{時|じ}に{始|はじ}まりますが、スタッフは30{分前|ぷんまえ}にホールに{来|き}てください。', pt: 'Começa às 17h, mas a equipe deve chegar ao hall 30 minutos antes.' },
+        { speaker: 'A', ja: 'えーと、じゃあ4{時半|じはん}ですね。わかりました。', pt: 'Hã, então é 4h30 (16h30), né. Entendi.' },
+        { speaker: 'B', ja: 'よろしくお{願|ねが}いします。', pt: 'Conto com você.' },
+      ],
+    },
+  ],
+  '07-05': [
+    {
+      label: '会話 (07-05) — 明日、何時にしますか？',
+      setupJa: 'ベトさんと{李|リ}さんと{佐藤|さとう}さんの3{人|にん}は、{会社|かいしゃ}の{同僚|どうりょう}です。{休|やす}みの{日|ひ}に、いっしょに{食事|しょくじ}に{行|い}くことにしました。',
+      setupPt: 'Vet, Li e Sato são colegas de trabalho. Decidiram sair para comer juntos no dia de folga.',
+      lines: [
+        { speaker: 'ベト', ja: '{明日|あした}、{何時|なんじ}にしますか？', pt: 'Amanhã, que horas marcamos?' },
+        { speaker: '佐藤', ja: '6{時|じ}はどうですか？', pt: 'Que tal às 6h?' },
+        { speaker: '李', ja: '6{時|じ}はちょっと{早|はや}いです。6{時半|じはん}でもいいですか？', pt: 'Às 6h é um pouco cedo. Pode ser às 6h30?' },
+        { speaker: 'ベト', ja: '6{時半|じはん}？　いいですよ。', pt: '6h30? Pode ser.' },
+        { speaker: '佐藤', ja: 'じゃあ、そうしましょう。{待|ま}ち{合|あ}わせして、いっしょに{行|い}きますか？', pt: 'Então vamos assim. Marcamos de nos encontrar e vamos juntos?' },
+        { speaker: '李', ja: 'そうしましょう。どこにしますか？', pt: 'Vamos. Onde marcamos?' },
+        { speaker: '佐藤', ja: 'じゃあ、{駅前|えきまえ}の「{平和|へいわ}の{鳥|とり}」の{像|ぞう}の{前|まえ}にしましょう。', pt: 'Então, vamos em frente à estátua “Heiwa-no-tori”, na frente da estação.' },
+        { speaker: 'ベト', ja: 'え？　それ、{何|なん}ですか？', pt: 'Ué? O que é isso?' },
+        { speaker: '李', ja: '{私|わたし}もわかりません。{駅|えき}の{改札|かいさつ}でもいいですか？', pt: 'Eu também não sei. Pode ser na catraca da estação?' },
+        { speaker: '佐藤', ja: 'じゃあ、そうしましょう。6{時半|じはん}に{駅|えき}の{改札|かいさつ}{集合|しゅうごう}で。', pt: 'Então vamos assim. Encontro às 6h30 na catraca da estação.' },
+        { speaker: 'ベト', ja: 'はい。', pt: 'Certo.' },
+        { speaker: '李', ja: 'わかりました。', pt: 'Entendido.' },
+      ],
+    },
+  ],
+}
+
+const lesson7: Section = {
+  id: 'lesson-7',
+  level: 'elementary1',
+  titleJa: '第7課 道に迷ってちょっと遅れます',
+  titlePt: 'Lição 7 — Me perdi e vou me atrasar um pouco',
+  summaryPt: 'Sair junto · combinar encontro propondo e contrapondo hora/local (6{時|じ}はどうですか／6{時半|じはん}でもいいですか), ler mensagens de aviso de atraso e avisar o atraso dando o motivo com Nで／V-て ({事故|じこ}で{電車|でんしゃ}が{止|と}まりました／{道|みち}に{迷|まよ}って、ちょっとおくれます).',
+  studyNotes: [
+    {
+      title: 'Tópico: Sair junto (いっしょに出かける)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Perguntar e entender o horário e o local de encontro.\n' +
+        '- Combinar e decidir o horário e o local do encontro.\n' +
+        '- Ler uma mensagem do parceiro avisando que vai se atrasar e entender.\n' +
+        '- Escrever uma mensagem avisando que vai se atrasar para o encontro.\n\n' +
+        '💡 Pergunta de abertura: {待|ま}ち{合|あ}わせはどんな{場所|ばしょ}でしますか？あなたは{約束|やくそく}の{時間|じかん}ちょうどに{行|い}きますか？ (em que lugares você marca encontros? chega bem na hora?).',
+    },
+    {
+      title: 'Propor: N はどうですか？ (➊)',
+      bodyPt:
+        'Serve para **propor algo** e ver se o outro concorda. N é uma palavra de **tempo ou lugar**.\n\n' +
+        '- `6{時|じ}はどうですか？` (que tal às 6h?)\n' +
+        '- `ホテルのロビーはどうですか？` (que tal o lobby do hotel?)\n\n' +
+        'Nesta lição, usa-se para combinar a **hora e o local** do encontro.',
+    },
+    {
+      title: 'Contrapropor: N でもいいですか？ (➋)',
+      bodyPt:
+        'Apresenta uma **alternativa** (plano B) e pergunta se convém. N = tempo ou lugar.\n\n' +
+        '- O outro propôs 6{時|じ}; você responde `6{時|じ}はちょっと{早|はや}いです。6{時半|じはん}でもいいですか？`\n' +
+        '- `ちょっとわかりません。{駅|えき}の{改札|かいさつ}でもいいですか？` (não sei onde fica; pode ser a catraca?).',
+    },
+    {
+      title: 'Dar o motivo: N で、〜 ／ V-て、〜 (➌)',
+      bodyPt:
+        'Indica **causa/motivo** da frase seguinte.\n\n' +
+        '- **Substantivo + で**: `{事故|じこ}で{電車|でんしゃ}が{止|と}まりました` (o trem parou por causa de um acidente); `{渋滞|じゅうたい}で、30{分|ぷん}ぐらい{遅|おく}れます`.\n' +
+        '- **Verbo na テ-forma**: `ねぼうして、{今|いま}、{起|お}きました` (acordei agora porque dormi demais); `{道|みち}に{迷|まよ}って、ちょっと{遅|おく}れます`.\n\n' +
+        'Além de ligar ações em ordem (Lição 2), a テ-forma também marca razão/causa.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Encontro (Ativ. 1–2):** {集合|しゅうごう}（する） (reunir-se), では (então), {案内|あんない}する (guiar), {待|ま}ち{合|あ}わせ (encontro), イベント (evento), {始|はじ}まる (começar), スタッフ (equipe), 30{分前|ぷんまえ} (30 min antes); {平和|へいわ} (paz), {鳥|とり} (pássaro), {像|ぞう} (estátua). 「それ、{何|なん}ですか？」 = perguntar de novo o que não entendeu.\n\n' +
+        '**Atraso (大切なことば, Ativ. 3):** {事故|じこ} (acidente), ねぼうする (perder a hora dormindo), {今|いま}から (a partir de agora), {急|いそ}ぐ (apressar-se), {先|さき}に (antes), {始|はじ}める (começar algo), {道|みち}に{迷|まよ}う (perder-se), {遅|おく}れる (atrasar-se), {着|つ}く (chegar), {時間|じかん} (tempo/hora), まちがえる (errar/confundir), {待|ま}つ (esperar).\n\n' +
+        '**Kanji da lição:** {時間|じかん}, {場所|ばしょ}, {駅|えき}, {受付|うけつけ}, {門|もん}, {電車|でんしゃ}, {待|ま}つ, {止|と}まる, {着|つ}く, {急|いそ}ぐ.\n\n' +
+        '📌 **TIPS:** **{遅刻|ちこく}** (pontualidade levada a sério: 1 min de atraso já conta; avise cedo mesmo 5–10 min, para não preocupar/irritar o outro); **{電車|でんしゃ}の{運行|うんこう}トラブル** (atrasos por {人身事故}/{急病人}/{信号|しんごう}{故障|こしょう}; a ferrovia avisa por alto-falante e internet; o **{遅延証明書|ちえんしょうめいしょ}** comprova o atraso do trem para a empresa).',
+    },
+  ],
+  groups: [lesson7Group],
+  audios: attachScripts(7, L7_SCRIPTS),
+}
+
+// ---- Lições 8-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(7, 'Sair junto', '道に迷ってちょっと遅れます', 'Me perdi e vou me atrasar um pouco', [
-    'Perguntar e entender o horário e local de encontro.',
-    'Combinar e decidir o horário e local do encontro.',
-    'Ler uma mensagem do parceiro avisando de atraso e entender.',
-    'Escrever uma mensagem avisando que vai se atrasar para o encontro.',
-  ]),
   scaffold(8, 'Sair junto', '野球、したことありますか？', 'Você já jogou beisebol?', [
     'Convidar para refeição, compras ou eventos, perguntando a experiência/interesse do outro.',
     'Conversar sobre o que fazer a seguir e aonde ir quando estão juntos na rua.',
@@ -1374,5 +1535,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, ...others],
 }
