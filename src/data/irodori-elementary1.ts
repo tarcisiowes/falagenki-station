@@ -1698,14 +1698,261 @@ const lesson8: Section = {
   audios: attachScripts(8, L8_SCRIPTS),
 }
 
-// ---- Lições 9-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 9: 読み方を教えてもらえませんか？ (tópico 日本語学習) ---------------
+const lesson9Group: ExerciseGroup = {
+  id: 'iro-e1-l9',
+  title: '読み方を教えてもらえませんか？',
+  subtitlePt: 'Aprender japonês · dizer por qual meio estudou (アニメで{勉強|べんきょう}しました), comentar pontos fortes/fracos (N1はN2が…／読むのは難しいでも会話は得意), pedir ajuda com 〜てもらえませんか e perguntar “como se…” com V-方',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l9-1', number: 1, prompt: '「アニメで{日本語|にほんご}を{勉強|べんきょう}しました」 — que sentido de で é esse (Nota ➊)?', choices: [{ n: 1, text: 'meio/método: estudou POR MEIO de anime' }, { n: 2, text: 'lugar onde estudou' }, { n: 3, text: 'companhia (com quem)' }, { n: 4, text: 'motivo' }], answer: 1, translationPt: 'Estudei japonês com (por meio de) anime.', explanationPt: 'A partícula で marca lugar ({学校|がっこう}で), mas também meio/método. Já visto no 入門 para transporte (バスで). Aqui: o meio de estudar — {本|ほん}で, ラジオで, ネットで, アプリで. (Nota ➊)' },
+    { id: 'iro-e1-l9-2', number: 2, prompt: 'Para perguntar especificamente o MEIO (não o lugar), qual palavra se usa (Nota ➊)?', choices: [{ n: 1, text: 'どうやって ({日本語|にほんご}を{勉強|べんきょう}しましたか)' }, { n: 2, text: 'どこで' }, { n: 3, text: 'いつ' }, { n: 4, text: 'だれと' }], answer: 1, explanationPt: 'どこで…？ pode ser respondido com lugar OU meio; para perguntar só o meio/método, usa-se どうやって (como/de que forma). (Nota ➊)' },
+    { id: 'iro-e1-l9-3', number: 3, prompt: '「{日本語|にほんご}は{文字|もじ}が{難|むずか}しいです」 (N1はN2が…) — o que cada parte indica (Nota ➋)?', choices: [{ n: 1, text: 'N1 ({日本語|にほんご}) é o tema; N2 ({文字|もじ}) é o aspecto específico avaliado' }, { n: 2, text: 'N1 e N2 são a mesma coisa' }, { n: 3, text: 'N1 é o lugar, N2 o tempo' }, { n: 4, text: 'são dois temas sem relação' }], answer: 1, translationPt: 'No japonês, os caracteres é que são difíceis.', explanationPt: 'N1は (tema) + N2が + adjetivo: detalha qual parte do tema é assim. N2: {文字|もじ}, {文法|ぶんぽう}, {発音|はつおん}, ou um verbo. (Nota ➋)' },
+    { id: 'iro-e1-l9-4', number: 4, prompt: 'E quando o N2 é um verbo? Ex.: 「{日本語|にほんご}は{話|はな}すのが{大変|たいへん}です」 (Nota ➋)', choices: [{ n: 1, text: 'usa-se V (辞書形) + の + が ({話|はな}す→{話|はな}すのが)' }, { n: 2, text: 'usa-se V-ます + が' }, { n: 3, text: 'usa-se V-て + が' }, { n: 4, text: 'usa-se V-た + が' }], answer: 1, translationPt: 'No japonês, falar é que é difícil.', explanationPt: 'Para usar verbo na parte N2が, acrescenta-se の à forma de dicionário: {話|はな}すのが{大変|たいへん}, {読|よ}むのが{難|むずか}しい. (Nota ➋)' },
+    { id: 'iro-e1-l9-5', number: 5, prompt: '「{読|よ}むのは{少|すこ}し{難|むずか}しいです。でも、{会話|かいわ}は{得意|とくい}です」 (N1は〜。でも、N2は〜) serve para (Nota ➌):', choices: [{ n: 1, text: 'contrastar duas características (uma difícil, a outra boa)' }, { n: 2, text: 'dar um motivo' }, { n: 3, text: 'pôr ações em ordem' }, { n: 4, text: 'fazer um pedido' }], answer: 1, translationPt: 'Ler é um pouco difícil; mas conversação eu mando bem.', explanationPt: 'O は marca contraste (N1は〜 / N2は〜). Sem contraste seria {読|よ}むのが…/{会話|かいわ}が…; ao contrastar, が vira は. でも reforça o contraste. (Nota ➌)' },
+    { id: 'iro-e1-l9-6', number: 6, prompt: 'Exemplo de contraste (Nota ➌): 「ひらがなは{好|す}きです。カタカナは{苦手|にがて}です」 significa:', choices: [{ n: 1, text: 'Gosto de hiragana, mas katakana não vai bem' }, { n: 2, text: 'Gosto de hiragana e de katakana' }, { n: 3, text: 'Não gosto de nenhum dos dois' }, { n: 4, text: 'Hiragana e katakana são iguais' }], answer: 1, explanationPt: 'ひらがなは{好|す}き / カタカナは{苦手|にがて} — dois は em contraste. Outro ex.: {英語|えいご}は{文法|ぶんぽう}は{簡単|かんたん}です。でも、{単語|たんご}を{覚|おぼ}えるのは{大変|たいへん}です. (Nota ➌)' },
+    { id: 'iro-e1-l9-7', number: 7, prompt: '「{日本語|にほんご}をチェックしてもらえませんか？」 (V-てもらえませんか) é (Nota ➍):', choices: [{ n: 1, text: 'um jeito mais educado de pedir algo do que V-てください' }, { n: 2, text: 'uma ordem ríspida' }, { n: 3, text: 'uma recusa' }, { n: 4, text: 'uma forma de agradecer' }], answer: 1, translationPt: 'Você poderia checar o meu japonês?', explanationPt: 'V-てもらえませんか？ pede algo com mais polidez que V-てください. Liga-se à テ-forma: {教|おし}えて、{見|み}せて、{貸|か}して、{説明|せつめい}して、{書|か}いて、{言|い}って、{話|はな}して…もらえませんか. (Nota ➍)' },
+    { id: 'iro-e1-l9-8', number: 8, prompt: 'Exemplos de pedido educado (Nota ➍):', choices: [{ n: 1, text: 'この{漢字|かんじ}の{読|よ}み{方|かた}を{教|おし}えてもらえませんか？／ {新|あたら}しい{教科書|きょうかしょ}、ちょっと{見|み}せてもらえませんか？' }, { n: 2, text: 'チェックしてください！ (ordem)' }, { n: 3, text: 'チェックしましたか？' }, { n: 4, text: 'チェックしたいです' }], answer: 1, explanationPt: '{教|おし}えてもらえませんか／{見|み}せてもらえませんか — pedidos educados com 〜てもらえませんか. (Nota ➍)' },
+    { id: 'iro-e1-l9-9', number: 9, prompt: '「この{書類|しょるい}の{書|か}き{方|かた}がよくわかりません」 (V-方) significa (Nota ➎):', choices: [{ n: 1, text: 'a MANEIRA de fazer: {書|か}き{方|かた} = como escrever/preencher' }, { n: 2, text: 'a pessoa que escreve' }, { n: 3, text: 'o lugar de escrever' }, { n: 4, text: 'o momento de escrever' }], answer: 1, translationPt: 'Não entendo bem como preencher este documento.', explanationPt: 'V-方 = maneira de fazer. Forma: マス-forma sem ます + 方. Ex.: {読|よ}み{方|かた} (como ler), し{方|かた}/やり{方|かた} (como fazer), {行|い}き{方|かた} (como ir), {使|つか}い{方|かた} (como usar), {食|た}べ{方|かた} (como comer). (Nota ➎)' },
+    { id: 'iro-e1-l9-10', number: 10, prompt: 'Qual frase usa V-方 corretamente (Nota ➎)?', choices: [{ n: 1, text: 'この{辞書|じしょ}の{使|つか}い{方|かた}を{教|おし}えてください' }, { n: 2, text: 'この{辞書|じしょ}の{使|つか}う{方|かた}を…' }, { n: 3, text: 'この{辞書|じしょ}の{使|つか}って{方|かた}を…' }, { n: 4, text: 'この{辞書|じしょ}の{使|つか}った{方|かた}を…' }], answer: 1, explanationPt: '{使|つか}う→マス stem {使|つか}い+{方|かた} = {使|つか}い{方|かた} (como usar). Outro: {日本語|にほんご}のいい{練習|れんしゅう}のし{方|かた}がありますか？ (Nota ➎)' },
+    { id: 'iro-e1-l9-11', number: 11, prompt: 'Vocabulário (Atividade 1): 「どれぐらい／{上手|じょうず}（な）／2{年間|ねんかん}／{自分|じぶん}で／まだまだです／そんなことないです」 significam:', choices: [{ n: 1, text: 'quanto (tempo) ／ habilidoso/bom ／ por 2 anos (〜{間|かん} = durante) ／ por conta própria ／ ainda longe (modéstia) ／ que isso/não é bem assim' }, { n: 2, text: 'onde ／ ruim ／ 2 meses ／ com amigos ／ acabei ／ é verdade' }, { n: 3, text: 'quando ／ rápido ／ 2 dias ／ na escola ／ comecei ／ obrigado' }, { n: 4, text: 'quem ／ difícil ／ 2 vezes ／ sozinho em casa ／ desisti ／ de nada' }], answer: 1, explanationPt: 'どれぐらい (quanto tempo), {上手|じょうず}（な） (bom/habilidoso), 2{年間|ねんかん} (por 2 anos, 〜{間|かん}=período), {自分|じぶん}で (por conta própria), まだまだです / そんなことないです (respostas modestas a um elogio). (Atividade 1 · 確認)' },
+    { id: 'iro-e1-l9-12', number: 12, prompt: 'Vocabulário sobre estudar (Atividade 2): 「{簡単|かんたん}（な）／{大変|たいへん}（な）／まあまあ（な）／{似|に}ている／{違|ちが}う」 significam:', choices: [{ n: 1, text: 'fácil/simples ／ difícil/trabalhoso ／ mais ou menos ／ parecer-se/ser parecido ／ ser diferente' }, { n: 2, text: 'difícil ／ fácil ／ ótimo ／ ser igual ／ combinar' }, { n: 3, text: 'caro ／ barato ／ pouco ／ copiar ／ mudar' }, { n: 4, text: 'longo ／ curto ／ nada ／ esquecer ／ lembrar' }], answer: 1, explanationPt: '{簡単|かんたん}（な） (fácil), {大変|たいへん}（な） (difícil/cansativo), まあまあ（な） (mais ou menos), {似|に}ている (ser parecido: モンゴル{語|ご}と{似|に}ている), {違|ちが}う (ser diferente: ベトナム{語|ご}とぜんぜん{違|ちが}う). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l9-13', number: 13, prompt: 'Aspectos do japonês (Atividade 2): 「{得意|とくい}（な）／{苦手|にがて}（な）／{文法|ぶんぽう}／{発音|はつおん}／{文字|もじ}／{会話|かいわ}／{覚|おぼ}える」 significam:', choices: [{ n: 1, text: 'mandar bem em ／ não ir bem em/ter dificuldade ／ gramática ／ pronúncia ／ caractere/escrita ／ conversação ／ memorizar' }, { n: 2, text: 'odiar ／ adorar ／ leitura ／ sotaque ／ palavra ／ fala ／ esquecer' }, { n: 3, text: 'fácil ／ difícil ／ frase ／ voz ／ letra ／ diálogo ／ entender' }, { n: 4, text: 'caro ／ barato ／ texto ／ som ／ número ／ aula ／ repetir' }], answer: 1, explanationPt: '{得意|とくい}（な） (bom em), {苦手|にがて}（な） (fraco em), {文法|ぶんぽう} (gramática), {発音|はつおん} (pronúncia), {文字|もじ} (caractere: ひらがな/カタカナ/{漢字|かんじ}), {会話|かいわ} (conversação), {覚|おぼ}える (memorizar). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l9-14', number: 14, prompt: 'Tipos de ajuda (Atividade 3, a–d): 「{漢字|かんじ}を{教|おし}える／{辞書|じしょ}を{貸|か}す／{本|ほん}を{見|み}せる／{日本語|にほんご}をチェックする」 significam:', choices: [{ n: 1, text: 'ensinar o kanji ／ emprestar o dicionário ／ mostrar o livro ／ revisar/checar o japonês' }, { n: 2, text: 'ler o kanji ／ comprar o dicionário ／ esconder o livro ／ traduzir o japonês' }, { n: 3, text: 'apagar o kanji ／ devolver o dicionário ／ rasgar o livro ／ falar japonês' }, { n: 4, text: 'copiar o kanji ／ pegar o dicionário ／ vender o livro ／ escrever em japonês' }], answer: 1, explanationPt: '{漢字|かんじ}を{教|おし}える, {辞書|じしょ}を{貸|か}す, {本|ほん}を{見|み}せる, {日本語|にほんご}をチェックする — tipos de ajuda pedida. (Atividade 3)' },
+    { id: 'iro-e1-l9-15', number: 15, prompt: 'Mais tipos de ajuda (Atividade 3, e–h) + vocab: 「{説明|せつめい}する／{紙|かみ}に{書|か}く／{簡単|かんたん}なことばで{言|い}う／ゆっくり{話|はな}す／{書類|しょるい}／{教科書|きょうかしょ}／{自信|じしん}がありません」 significam:', choices: [{ n: 1, text: 'explicar ／ escrever no papel ／ dizer em palavras simples ／ falar devagar ／ documento ／ livro didático ／ não estou seguro/confiante' }, { n: 2, text: 'perguntar ／ ler o papel ／ falar rápido ／ gritar ／ carta ／ caderno ／ tenho certeza' }, { n: 3, text: 'repetir ／ rasgar ／ traduzir ／ sussurrar ／ jornal ／ revista ／ estou pronto' }, { n: 4, text: 'cancelar ／ guardar ／ resumir ／ cantar ／ recibo ／ dicionário ／ acabei' }], answer: 1, explanationPt: '{説明|せつめい}する, {紙|かみ}に{書|か}く, {簡単|かんたん}なことばで{言|い}う, ゆっくり{話|はな}す; メール, {書類|しょるい} (documento), {教科書|きょうかしょ} (livro didático), {自信|じしん}がありません (não estou confiante). (Atividade 3 · ことば)' },
+    { id: 'iro-e1-l9-16', number: 16, prompt: 'Vocabulário do fórum (Atividade 4): 「{練習|れんしゅう}／{探|さが}す／{何回|なんかい}も／{教室|きょうしつ}／{無料|むりょう}／{先生|せんせい}」 significam:', choices: [{ n: 1, text: 'prática/treino ／ procurar ／ várias vezes ／ aula/turma ／ gratuito ／ professor' }, { n: 2, text: 'prova ／ achar ／ uma vez ／ escola ／ pago ／ aluno' }, { n: 3, text: 'tarefa ／ esconder ／ nunca ／ sala ／ caro ／ diretor' }, { n: 4, text: 'jogo ／ comprar ／ sempre ／ clube ／ barato ／ amigo' }], answer: 1, explanationPt: '{練習|れんしゅう} (treino), {探|さが}す (procurar), {何回|なんかい}も (várias vezes), {教室|きょうしつ} (aula), {無料|むりょう} (gratuito), {先生|せんせい} (professor). (Atividade 4 · 大切なことば)' },
+    { id: 'iro-e1-l9-17', number: 17, prompt: 'Os kanji 「{高校|こうこう}／{大学|だいがく}／{練習|れんしゅう}／{漢字|かんじ}」 lêem-se:', choices: [{ n: 1, text: 'こうこう (ensino médio) ／ だいがく (universidade) ／ れんしゅう (treino) ／ かんじ (kanji)' }, { n: 2, text: 'こうこう ／ だいがく ／ れんしゅう ／ かんもじ' }, { n: 3, text: 'たかこう ／ おおがく ／ れんしゅう ／ かんじ' }, { n: 4, text: 'こうこう ／ だいがく ／ ねんしゅう ／ かんじ' }], answer: 1, explanationPt: '{高校|こうこう} (ensino médio), {大学|だいがく} (universidade), {練習|れんしゅう} (prática), {漢字|かんじ} (kanji). (漢字のことば)' },
+    { id: 'iro-e1-l9-18', number: 18, prompt: 'Os kanji 「{無料|むりょう}／{言|い}う／{書|か}く／{貸|か}す」 lêem-se:', choices: [{ n: 1, text: 'むりょう (gratuito) ／ いう (dizer) ／ かく (escrever) ／ かす (emprestar)' }, { n: 2, text: 'むりょう ／ いう ／ かく ／ かりる' }, { n: 3, text: 'ぶりょう ／ ゆう ／ しょく ／ かす' }, { n: 4, text: 'むりょう ／ いう ／ がく ／ たす' }], answer: 1, explanationPt: '{無料|むりょう} (gratuito), {言|い}う (dizer), {書|か}く (escrever), {貸|か}す (emprestar). (漢字のことば)' },
+    { id: 'iro-e1-l9-19', number: 19, prompt: 'Os kanji 「{教|おし}える／{説明|せつめい}する」 lêem-se:', choices: [{ n: 1, text: 'おしえる (ensinar) ／ せつめいする (explicar)' }, { n: 2, text: 'きょうえる ／ せつめいする' }, { n: 3, text: 'おしえる ／ せきめいする' }, { n: 4, text: 'おそわる ／ せつめいする' }], answer: 1, explanationPt: '{教|おし}える (ensinar), {説明|せつめい}する (explicar). Kanji da lição: {高校|こうこう}・{大学|だいがく}・{練習|れんしゅう}・{漢字|かんじ}・{無料|むりょう}・{言|い}う・{書|か}く・{貸|か}す・{教|おし}える・{説明|せつめい}する. (漢字)' },
+    { id: 'iro-e1-l9-20', number: 20, prompt: '📌 TIPS — estudar japonês com アニメ:', choices: [{ n: 1, text: 'muitos começam a estudar por gostar de anime; dá para assistir on-line (YouTube, serviços pagos), alguns com legenda, e melhorar audição/pronúncia ouvindo japonês natural' }, { n: 2, text: 'é proibido usar anime para estudar' }, { n: 3, text: 'anime não tem áudio em japonês' }, { n: 4, text: 'só serve para crianças' }], answer: 1, explanationPt: 'Anime japonês tem fãs no mundo todo; muitos começam o estudo por causa dele. Hoje se assiste fácil pela internet (legendas, serviços pagos) e treina-se {聴解|ちょうかい}/{発音|はつおん} com o japonês natural. (TIPS)' },
+    { id: 'iro-e1-l9-21', number: 21, prompt: '📌 TIPS — {地域|ちいき}の{日本語|にほんご}{教室|きょうしつ} (aulas comunitárias de japonês):', choices: [{ n: 1, text: 'oferecidas por prefeituras/associações para estrangeiros; gratuitas ou bem baratas (voluntários), 1–2×/semana em centros comunitários; também servem para conhecer gente e obter informação útil' }, { n: 2, text: 'são caríssimas e particulares' }, { n: 3, text: 'só existem em Tóquio' }, { n: 4, text: 'são só on-line e pagas' }], answer: 1, explanationPt: 'Há muitas {日本語|にほんご}{教室|きょうしつ} por {市区町村|しくちょうそん}/{国際交流協会|こくさいこうりゅうきょうかい}; geridas por voluntários (無料 ou bem baratas), 1–2×/semana em {公民館}/centros comunitários; formatos variados (turma, grupo, individual) e ótimas para {交流|こうりゅう} local. (TIPS)' },
+    { id: 'iro-e1-l9-22', number: 22, prompt: 'Diálogo 09-01: onde e por quanto tempo B estudou japonês?', context: 'A：どこで{日本語|にほんご}を{勉強|べんきょう}しましたか？ B：{日本語|にほんご}{学校|がっこう}で{勉強|べんきょう}しました。 A：どれぐらい{勉強|べんきょう}しましたか？ B：1{年|ねん}ぐらいです。', choices: [{ n: 1, text: 'Numa escola de japonês, por cerca de 1 ano' }, { n: 2, text: 'Com anime, por 2 anos' }, { n: 3, text: 'No ensino médio, por 3 anos' }, { n: 4, text: 'Sozinho, com livros' }], answer: 1, explanationPt: '{日本語|にほんご}{学校|がっこう}で (lugar/meio, Nota ➊) ; どれぐらい→1{年|ねん}ぐらい (〜{間|かん}/período). (Atividade 1 · 聴解スクリプト)' },
+    { id: 'iro-e1-l9-23', number: 23, prompt: 'Diálogo 09-02: B é elogiado pelo japonês. Como aprendeu?', context: 'A：{日本語|にほんご}、{上手|じょうず}ね。 B：いえ、まだまだです。 A：どこで{勉強|べんきょう}したの？ B：アニメで{勉強|べんきょう}しました。{日本|にほん}のアニメをたくさん{見|み}ました。', choices: [{ n: 1, text: 'Com anime — assistiu a muitos animes japoneses (responde ao elogio com modéstia: まだまだです)' }, { n: 2, text: 'Numa escola de japonês' }, { n: 3, text: 'No ensino médio' }, { n: 4, text: 'Com um professor particular' }], answer: 1, explanationPt: '{上手|じょうず}ね (elogio) → まだまだです (modéstia); アニメで{勉強|べんきょう}しました (で = meio, Nota ➊). (Atividade 1)' },
+    { id: 'iro-e1-l9-24', number: 24, prompt: 'Diálogo 09-03: onde e por quanto tempo B estudou?', context: 'A：{日本語|にほんご}できますか？ B：はい、{少|すこ}し。 A：どこで{勉強|べんきょう}しましたか？ B：{高校|こうこう}で、2{年間|ねんかん}{勉強|べんきょう}しました。', choices: [{ n: 1, text: 'No ensino médio, por 2 anos' }, { n: 2, text: 'Numa escola de japonês, por 1 ano' }, { n: 3, text: 'Com anime' }, { n: 4, text: 'Sozinho, por 2 anos' }], answer: 1, explanationPt: '{高校|こうこう}で、2{年間|ねんかん}{勉強|べんきょう}しました (lugar で + 〜{間|かん} período). (Atividade 1)' },
+    { id: 'iro-e1-l9-25', number: 25, prompt: 'Diálogo 09-04: como B estudou japonês?', context: 'A：どこで{日本語|にほんご}を{勉強|べんきょう}しましたか？ B：{自分|じぶん}で{勉強|べんきょう}しました。 A：{自分|じぶん}で？ B：はい、{本|ほん}で{勉強|べんきょう}しました。 A：すごいですね。 B：いえ、そんなことないです。', choices: [{ n: 1, text: 'Por conta própria, estudando por livros (e responde ao elogio com そんなことないです)' }, { n: 2, text: 'Numa escola de japonês' }, { n: 3, text: 'No ensino médio' }, { n: 4, text: 'Com anime e rádio' }], answer: 1, explanationPt: '{自分|じぶん}で (por conta própria) + {本|ほん}で{勉強|べんきょう}しました (で = meio, Nota ➊); すごいですね → そんなことないです (modéstia). (Atividade 1)' },
+    { id: 'iro-e1-l9-26', number: 26, prompt: 'Diálogos 09-09/09-10: o que B acha do estudo de japonês?', context: '① B：{大変|たいへん}です。{日本語|にほんご}は{文字|もじ}が{難|むずか}しいです。でも、ひらがなは{好|す}きです。 ② B：とてもおもしろいです。{読|よ}むのは{少|すこ}し{難|むずか}しいです。でも、{会話|かいわ}は{得意|とくい}です。', choices: [{ n: 1, text: '① É difícil; os caracteres são difíceis, mas gosta de hiragana. ② É interessante; ler é meio difícil, mas conversação manda bem' }, { n: 2, text: 'Os dois acham tudo fácil' }, { n: 3, text: 'Os dois desistiram' }, { n: 4, text: 'Os dois só falam de kanji' }], answer: 1, explanationPt: '① {文字|もじ}が{難|むずか}しい (N1はN2が, ➋) + でも、ひらがなは{好|す}き (contraste, ➌). ② {読|よ}むのは{難|むずか}しい。でも、{会話|かいわ}は{得意|とくい} (➋+➌). (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l9-27', number: 27, prompt: 'Diálogos 09-11/09-12: o que B diz sobre a gramática e a pronúncia?', context: '③ B：{日本語|にほんご}は{文法|ぶんぽう}が{簡単|かんたん}です。モンゴル{語|ご}と{似|に}ていますから。でも、{話|はな}すのが{大変|たいへん}です。 ④ B：{発音|はつおん}が{苦手|にがて}です。ベトナム{語|ご}とぜんぜん{違|ちが}いますから。でも、{漢字|かんじ}はおもしろいです。', choices: [{ n: 1, text: '③ A gramática é fácil (parecida com o mongol), mas falar é difícil. ④ A pronúncia é difícil (bem diferente do vietnamita), mas kanji é interessante' }, { n: 2, text: 'Os dois acham a gramática difícil' }, { n: 3, text: 'Os dois adoram a pronúncia' }, { n: 4, text: 'Nenhum fala de gramática' }], answer: 1, explanationPt: '③ {文法|ぶんぽう}が{簡単|かんたん}…{似|に}ています + でも、{話|はな}すのが{大変|たいへん}. ④ {発音|はつおん}が{苦手|にがて}…{違|ちが}います + でも、{漢字|かんじ}はおもしろい (➋/➌, motivo com から). (Atividade 2)' },
+    { id: 'iro-e1-l9-28', number: 28, prompt: 'Diálogos 09-19/09-20: que ajuda cada pessoa pede?', context: '① A：この{漢字|かんじ}がわかりません。{読|よ}み{方|かた}を{教|おし}えてもらえませんか？ ② A：{私|わたし}のメール、{日本語|にほんご}をチェックしてもらえませんか？ちょっと{自信|じしん}がありません。', choices: [{ n: 1, text: '① Pede para ensinarem a leitura do kanji. ② Pede para checarem o japonês do e-mail (não está confiante)' }, { n: 2, text: '① Pede dinheiro. ② Pede para traduzir' }, { n: 3, text: '① Pede um dicionário. ② Pede o livro' }, { n: 4, text: 'Nenhum pede nada' }], answer: 1, explanationPt: '{読|よ}み{方|かた} (V-方, ➎) を{教|おし}えてもらえませんか (➍); {日本語|にほんご}をチェックしてもらえませんか + {自信|じしん}がありません. (Atividade 3 · 聴解スクリプト)' },
+    { id: 'iro-e1-l9-29', number: 29, prompt: 'Diálogos 09-21/09-22: que ajuda cada pessoa pede?', context: '③ A：この{書類|しょるい}の{書|か}き{方|かた}がよくわかりません。もう{一度|いちど}{説明|せつめい}してもらえませんか？ ④ A：それ、{新|あたら}しい{教科書|きょうかしょ}ですか？ちょっと、{見|み}せてもらえませんか？', choices: [{ n: 1, text: '③ Pede para explicarem de novo como preencher o documento. ④ Pede para mostrarem o livro didático novo' }, { n: 2, text: '③ Pede para escreverem por ele. ④ Pede para comprarem o livro' }, { n: 3, text: '③ Pede um dicionário. ④ Pede para guardarem o livro' }, { n: 4, text: 'Nenhum pede ajuda' }], answer: 1, explanationPt: '{書|か}き{方|かた} (V-方, ➎) + もう{一度|いちど}{説明|せつめい}してもらえませんか (➍); {見|み}せてもらえませんか → どうぞ. (Atividade 3)' },
+    { id: 'iro-e1-l9-30', number: 30, prompt: 'Fórum on-line (Atividade 4): o que a pessoa (akutk***) pergunta?', context: 'Q：{日本語|にほんご}を{勉強|べんきょう}しています。{聞|き}くのが{難|むずか}しいです。いい{練習|れんしゅう}のし{方|かた}がありますか？{教|おし}えてください。', choices: [{ n: 1, text: 'Tem dificuldade em ouvir/entender e pergunta se há uma boa forma de praticar (いい{練習|れんしゅう}のし{方|かた})' }, { n: 2, text: 'Pergunta onde comprar livros' }, { n: 3, text: 'Pergunta o preço de uma aula' }, { n: 4, text: 'Pede para corrigirem um texto' }], answer: 1, explanationPt: '{聞|き}くのが{難|むずか}しい (N2が com verbo+の, ➋); いい{練習|れんしゅう}のし{方|かた} (V-方, ➎). (Atividade 4 · leitura do fórum)' },
+    { id: 'iro-e1-l9-31', number: 31, prompt: 'Fórum on-line (Atividade 4): que conselhos as 4 respostas dão?', context: '① ドラマやアニメをたくさん{見|み}る。 ② {日本人|にほんじん}の{友|とも}だちを{作|つく}ってたくさんおしゃべりする。 ③ {教科書|きょうかしょ}の{会話|かいわ}を{電車|でんしゃ}の{中|なか}で{何回|なんかい}もシャドーイングする。 ④ {市|し}や{町|まち}のボランティア{教室|きょうしつ}（{無料|むりょう}）に{毎週|まいしゅう}{行|い}って{先生|せんせい}と{話|はな}す。', choices: [{ n: 1, text: '① ver muitas séries/animes; ② fazer amigos japoneses e conversar muito; ③ fazer shadowing dos diálogos do livro no trem; ④ ir às aulas voluntárias gratuitas e conversar' }, { n: 2, text: 'Todos dizem para parar de estudar' }, { n: 3, text: 'Todos recomendam só ler kanji' }, { n: 4, text: 'Ninguém respondeu' }], answer: 1, explanationPt: 'Conselhos: ドラマ/アニメを{見|み}る; {友|とも}だちを{作|つく}っておしゃべり; {何回|なんかい}もシャドーイング; ボランティア{教室|きょうしつ}（{無料|むりょう}）で{先生|せんせい}と{話|はな}す. (Atividade 4 · leitura)' },
+    { id: 'iro-e1-l9-32', number: 32, prompt: 'Pergunta de abertura da lição: 「{日本語|にほんご}の{勉強|べんきょう}はどうですか？{何|なに}がおもしろいですか？{何|なに}が{難|むずか}しいですか？」 quer dizer:', choices: [{ n: 1, text: 'Como vai seu estudo de japonês? O que você acha interessante? O que acha difícil?' }, { n: 2, text: 'Onde você estuda japonês?' }, { n: 3, text: 'Quem é o seu professor?' }, { n: 4, text: 'Quantas horas você dorme?' }], answer: 1, translationPt: 'Como está indo seu estudo de japonês? O que é interessante? O que é difícil?', explanationPt: '{勉強|べんきょう}はどうですか (como vai o estudo), {何|なに}がおもしろい/{難|むずか}しい. Tema: {日本語|にほんご}{学習|がくしゅう} (aprender japonês). (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 9
+const L9_SCRIPTS: Record<string, ScriptItem[]> = {
+  '09-01': [
+    {
+      label: '会話① (09-01) — どこで勉強しましたか',
+      setupJa: '{日本語|にほんご}の{学習経験|がくしゅうけいけん}について、4{人|よにん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam sobre sua experiência aprendendo japonês.',
+      lines: [
+        { speaker: 'A', ja: 'どこで{日本語|にほんご}を{勉強|べんきょう}しましたか？', pt: 'Onde você estudou japonês?' },
+        { speaker: 'B', ja: '{日本語|にほんご}{学校|がっこう}で{勉強|べんきょう}しました。', pt: 'Estudei numa escola de japonês.' },
+        { speaker: 'A', ja: 'どれぐらい{勉強|べんきょう}しましたか？', pt: 'Por quanto tempo estudou?' },
+        { speaker: 'B', ja: '1{年|ねん}ぐらいです。', pt: 'Mais ou menos 1 ano.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '09-02': [
+    {
+      label: '会話② (09-02) — どこで勉強しましたか',
+      lines: [
+        { speaker: 'A', ja: '{日本語|にほんご}、{上手|じょうず}ね。', pt: 'Seu japonês é bom, hein.' },
+        { speaker: 'B', ja: 'いえ、まだまだです。', pt: 'Que nada, ainda estou longe.' },
+        { speaker: 'A', ja: 'どこで{勉強|べんきょう}したの？', pt: 'Onde você estudou?' },
+        { speaker: 'B', ja: 'アニメで{勉強|べんきょう}しました。{日本|にほん}のアニメをたくさん{見|み}ました。', pt: 'Estudei com anime. Assisti a muitos animes japoneses.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+      ],
+    },
+  ],
+  '09-03': [
+    {
+      label: '会話③ (09-03) — どこで勉強しましたか',
+      lines: [
+        { speaker: 'A', ja: '{日本語|にほんご}できますか？', pt: 'Você fala japonês?' },
+        { speaker: 'B', ja: 'はい、{少|すこ}し。', pt: 'Sim, um pouco.' },
+        { speaker: 'A', ja: 'どこで{勉強|べんきょう}しましたか？', pt: 'Onde estudou?' },
+        { speaker: 'B', ja: '{高校|こうこう}で、2{年間|ねんかん}{勉強|べんきょう}しました。', pt: 'No ensino médio, por 2 anos.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '09-04': [
+    {
+      label: '会話④ (09-04) — どこで勉強しましたか',
+      lines: [
+        { speaker: 'A', ja: 'どこで{日本語|にほんご}を{勉強|べんきょう}しましたか？', pt: 'Onde você estudou japonês?' },
+        { speaker: 'B', ja: '{自分|じぶん}で{勉強|べんきょう}しました。', pt: 'Estudei por conta própria.' },
+        { speaker: 'A', ja: '{自分|じぶん}で？', pt: 'Sozinho(a)?' },
+        { speaker: 'B', ja: 'はい、{本|ほん}で{勉強|べんきょう}しました。', pt: 'Sim, estudei por livros.' },
+        { speaker: 'A', ja: 'すごいですね。', pt: 'Que demais.' },
+        { speaker: 'B', ja: 'いえ、そんなことないです。', pt: 'Que isso, nem tanto.' },
+      ],
+    },
+  ],
+  '09-09': [
+    {
+      label: '会話① (09-09) — 勉強はどうですか',
+      setupJa: '{日本語|にほんご}の{勉強|べんきょう}について、4{人|よにん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam sobre o estudo de japonês.',
+      lines: [
+        { speaker: 'A', ja: '{日本語|にほんご}の{勉強|べんきょう}はどうですか？', pt: 'Como vai o estudo de japonês?' },
+        { speaker: 'B', ja: '{大変|たいへん}です。', pt: 'É puxado.' },
+        { speaker: 'A', ja: 'ああ。', pt: 'Ah…' },
+        { speaker: 'B', ja: '{日本語|にほんご}は{文字|もじ}が{難|むずか}しいです。', pt: 'No japonês, os caracteres são difíceis.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'É mesmo?' },
+        { speaker: 'B', ja: 'でも、ひらがなは{好|す}きです。かわいいですから。', pt: 'Mas eu gosto de hiragana. Porque é fofo.' },
+      ],
+    },
+  ],
+  '09-10': [
+    {
+      label: '会話② (09-10) — 勉強はどうですか',
+      lines: [
+        { speaker: 'A', ja: '{日本語|にほんご}の{勉強|べんきょう}はどうですか？', pt: 'Como vai o estudo de japonês?' },
+        { speaker: 'B', ja: 'とてもおもしろいです。', pt: 'É muito interessante.' },
+        { speaker: 'A', ja: '{難|むずか}しくないですか？', pt: 'Não é difícil?' },
+        { speaker: 'B', ja: '{読|よ}むのは{少|すこ}し{難|むずか}しいです。でも、{会話|かいわ}は{得意|とくい}です。', pt: 'Ler é um pouco difícil. Mas conversação eu mando bem.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '09-11': [
+    {
+      label: '会話③ (09-11) — 勉強はどうですか',
+      lines: [
+        { speaker: 'A', ja: '{日本語|にほんご}の{勉強|べんきょう}はどうですか？　{難|むずか}しくないですか？', pt: 'Como vai o estudo de japonês? Não é difícil?' },
+        { speaker: 'B', ja: 'だいじょうぶです。{難|むずか}しくないです。', pt: 'Tranquilo. Não é difícil.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, é?' },
+        { speaker: 'B', ja: '{日本語|にほんご}は{文法|ぶんぽう}が{簡単|かんたん}です。モンゴル{語|ご}と{似|に}ていますから。', pt: 'No japonês, a gramática é fácil. Porque é parecida com o mongol.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: 'でも、{話|はな}すのが{大変|たいへん}です。', pt: 'Mas falar é puxado.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é assim?' },
+      ],
+    },
+  ],
+  '09-12': [
+    {
+      label: '会話④ (09-12) — 勉強はどうですか',
+      lines: [
+        { speaker: 'A', ja: '{日本語|にほんご}の{勉強|べんきょう}はどうですか？', pt: 'Como vai o estudo de japonês?' },
+        { speaker: 'B', ja: 'まあまあです。', pt: 'Mais ou menos.' },
+        { speaker: 'A', ja: 'まあまあ？', pt: 'Mais ou menos?' },
+        { speaker: 'B', ja: '{私|わたし}は{日本語|にほんご}の{発音|はつおん}が{苦手|にがて}です。ベトナム{語|ご}とぜんぜん{違|ちが}いますから。', pt: 'Eu tenho dificuldade com a pronúncia do japonês. Porque é totalmente diferente do vietnamita.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é assim?' },
+        { speaker: 'B', ja: 'でも、{漢字|かんじ}はおもしろいです。たくさん{覚|おぼ}えたいです。', pt: 'Mas kanji é interessante. Quero memorizar muitos.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, que bom.' },
+      ],
+    },
+  ],
+  '09-19': [
+    {
+      label: '会話① (09-19) — チェックしてもらえませんか',
+      setupJa: '4{人|よにん}の{人|ひと}が、{手伝|てつだ}いを{頼|たの}んでいます。',
+      setupPt: 'Quatro pessoas estão pedindo ajuda a alguém.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。', pt: 'Ãhn, com licença.' },
+        { speaker: 'B', ja: 'はい、{何|なん}ですか？', pt: 'Sim, o que foi?' },
+        { speaker: 'A', ja: 'この{漢字|かんじ}がわかりません。{読|よ}み{方|かた}を{教|おし}えてもらえませんか？', pt: 'Não entendo este kanji. Você poderia me ensinar a leitura?' },
+        { speaker: 'B', ja: 'これですか？　「いとう」です。', pt: 'Este aqui? É “Itō”.' },
+        { speaker: 'A', ja: 'ああ、いとうさんですね。ありがとうございます。', pt: 'Ah, “Itō-san”, né. Obrigado(a).' },
+      ],
+    },
+  ],
+  '09-20': [
+    {
+      label: '会話② (09-20) — チェックしてもらえませんか',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。', pt: 'Ãhn, com licença.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: '{私|わたし}のメール、{日本語|にほんご}をチェックしてもらえませんか？　ちょっと{自信|じしん}がありません。', pt: 'Você poderia checar o japonês do meu e-mail? Estou um pouco inseguro(a).' },
+        { speaker: 'B', ja: 'いいですよ。えーと……。', pt: 'Claro. Deixa ver…' },
+      ],
+    },
+  ],
+  '09-21': [
+    {
+      label: '会話③ (09-21) — チェックしてもらえませんか',
+      lines: [
+        { speaker: 'A', ja: 'すみません。この{書類|しょるい}の{書|か}き{方|かた}がよくわかりません。もう{一度|いちど}{説明|せつめい}してもらえませんか？', pt: 'Com licença. Não entendo bem como preencher este documento. Você poderia explicar mais uma vez?' },
+        { speaker: 'B', ja: 'えーと、これはですねえ……。', pt: 'Hã, então, isto aqui é o seguinte…' },
+      ],
+    },
+  ],
+  '09-22': [
+    {
+      label: '会話④ (09-22) — チェックしてもらえませんか',
+      lines: [
+        { speaker: 'A', ja: 'すみません。', pt: 'Com licença.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: 'それ、{新|あたら}しい{教科書|きょうかしょ}ですか？', pt: 'Isso é o livro didático novo?' },
+        { speaker: 'B', ja: 'そうですよ。', pt: 'É sim.' },
+        { speaker: 'A', ja: 'ちょっと、{見|み}せてもらえませんか？', pt: 'Você poderia me mostrar um pouquinho?' },
+        { speaker: 'B', ja: 'どうぞ。', pt: 'Pois não.' },
+      ],
+    },
+  ],
+}
+
+const lesson9: Section = {
+  id: 'lesson-9',
+  level: 'elementary1',
+  titleJa: '第9課 読み方を教えてもらえませんか？',
+  titlePt: 'Lição 9 — Pode me ensinar a leitura?',
+  summaryPt: 'Aprender japonês · dizer por qual meio estudou (アニメで{勉強|べんきょう}しました), comentar pontos fortes e fracos (N1はN2が…／{読|よ}むのは{難|むずか}しいでも{会話|かいわ}は{得意|とくい}), pedir ajuda educadamente (チェックしてもらえませんか) e perguntar “como se faz” com V-方 ({読|よ}み{方|かた}／{書|か}き{方|かた}).',
+  studyNotes: [
+    {
+      title: 'Tópico: Aprender japonês (日本語学習)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Falar de forma simples sobre sua experiência aprendendo japonês.\n' +
+        '- Dar impressões e comentários sobre o estudo de japonês.\n' +
+        '- Pedir ajuda a outra pessoa quando tem dificuldade com o japonês.\n' +
+        '- Ler um fórum on-line sobre estudo de japonês e entender os métodos recomendados.\n\n' +
+        '💡 Pergunta de abertura: {日本語|にほんご}の{勉強|べんきょう}はどうですか？{何|なに}がおもしろいですか？{何|なに}が{難|むずか}しいですか？',
+    },
+    {
+      title: 'Meio: N で ＜手段＞ (➊)',
+      bodyPt:
+        'A partícula **で** marca o **meio/método** (além de lugar e transporte):\n\n' +
+        '- `アニメで{日本語|にほんご}を{勉強|べんきょう}しました` (estudei por meio de anime); também {本|ほん}で, ラジオで, ネットで, アプリで.\n\n' +
+        'A pergunta `どこで…？` pode ser respondida com lugar ou meio. Para perguntar só o **meio**, use **どうやって** (como).',
+    },
+    {
+      title: 'Detalhar: N1はN2が… ／ contraste: N1は〜。でも、N2は〜 (➋➌)',
+      bodyPt:
+        '**N1はN2が + adjetivo** = o tema é N1; o aspecto avaliado é N2:\n\n' +
+        '- `{日本語|にほんご}は{文字|もじ}が{難|むずか}しいです`. Com verbo, use V (辞書形)+の+が: `{日本語|にほんご}は{話|はな}すのが{大変|たいへん}です`.\n\n' +
+        '**N1は〜。（でも、）N2は〜** = contrasta duas características (o が vira **は**); でも reforça:\n\n' +
+        '- `{読|よ}むのは{難|むずか}しいです。でも、{会話|かいわ}は{得意|とくい}です` / `ひらがなは{好|す}きです。カタカナは{苦手|にがて}です`.',
+    },
+    {
+      title: 'Pedir educado: V-てもらえませんか？ ／ maneira: V-方 (➍➎)',
+      bodyPt:
+        '**V-てもらえませんか？** = pedir algo de forma **mais educada** que V-てください (liga à テ-forma):\n\n' +
+        '- `{日本語|にほんご}をチェックしてもらえませんか？` / `{読|よ}み{方|かた}を{教|おし}えてもらえませんか？` / `{見|み}せてもらえませんか？`\n\n' +
+        '**V-方** = a **maneira de** fazer (マス-forma sem ます + 方):\n\n' +
+        '- `{書|か}き{方|かた}` (como escrever), `{読|よ}み{方|かた}` (como ler), し{方|かた}/やり{方|かた} (como fazer), `{行|い}き{方|かた}` (como ir), `{使|つか}い{方|かた}` (como usar), `{食|た}べ{方|かた}` (como comer).',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Experiência (Ativ. 1):** どれぐらい (quanto tempo), {上手|じょうず}（な） (bom), 2{年間|ねんかん} (〜{間|かん}=período), {自分|じぶん}で (por conta própria), まだまだです / そんなことないです (respostas modestas a elogio).\n\n' +
+        '**Estudar (Ativ. 2):** {簡単|かんたん}（な）, {大変|たいへん}（な）, まあまあ（な）, {似|に}ている, {違|ちが}う, {得意|とくい}（な）, {苦手|にがて}（な）, {文法|ぶんぽう}, {発音|はつおん}, {文字|もじ} (ひらがな/カタカナ/{漢字|かんじ}), {会話|かいわ}, {覚|おぼ}える. **Ajuda (Ativ. 3):** {漢字|かんじ}を{教|おし}える, {辞書|じしょ}を{貸|か}す, {本|ほん}を{見|み}せる, チェックする, {説明|せつめい}する, {紙|かみ}に{書|か}く, {簡単|かんたん}なことばで{言|い}う, ゆっくり{話|はな}す; メール, {書類|しょるい}, {教科書|きょうかしょ}, {自信|じしん}がありません. **Fórum (Ativ. 4):** {練習|れんしゅう}, {探|さが}す, {何回|なんかい}も, {教室|きょうしつ}, {無料|むりょう}, {先生|せんせい}.\n\n' +
+        '**Kanji da lição:** {高校|こうこう}, {大学|だいがく}, {練習|れんしゅう}, {漢字|かんじ}, {無料|むりょう}, {言|い}う, {書|か}く, {貸|か}す, {教|おし}える, {説明|せつめい}する.\n\n' +
+        '📌 **TIPS:** **アニメで{勉強|べんきょう}** (muitos começam pelo anime; on-line, com legendas; treina {聴解|ちょうかい}/{発音|はつおん}); **{地域|ちいき}の{日本語|にほんご}{教室|きょうしつ}** (aulas de prefeituras/associações, gratuitas ou baratas, por voluntários, 1–2×/semana em {公民館}; bom para {交流|こうりゅう} local).',
+    },
+  ],
+  groups: [lesson9Group],
+  audios: attachScripts(9, L9_SCRIPTS),
+}
+
+// ---- Lições 10-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(9, 'Aprender japonês', '読み方を教えてもらえませんか？', 'Pode me ensinar a leitura?', [
-    'Falar de forma simples sobre sua experiência aprendendo japonês.',
-    'Dar impressões e comentários sobre o estudo de japonês.',
-    'Pedir ajuda a outra pessoa quando tem dificuldade com o japonês.',
-    'Ler um fórum on-line sobre estudo de japonês e entender os métodos recomendados.',
-  ]),
   scaffold(10, 'Aprender japonês', '日本語教室に参加したいんですが…', 'Queria participar da aula de japonês…', [
     'Ver o cartaz de cursos de um centro comunitário e captar local, data e horário.',
     'Perguntar num guichê sobre um curso de interesse e entender a resposta.',
@@ -1771,5 +2018,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, ...others],
 }
