@@ -3077,13 +3077,296 @@ const lesson15: Section = {
   audios: attachScripts(15, L15_SCRIPTS),
 }
 
-// ---- Lições 16 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson16Group: ExerciseGroup = {
+  id: 'iro-s-l16',
+  title: 'これ、いくらですか？',
+  subtitlePt: 'Preços, pedir o preço, dizer quantos/quanto quer, caixa da conveniência e entender placas de desconto',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l16-1', number: 1, prompt: '「これ」 (apontando um produto) é:', choices: [{ n: 1, text: 'isto (perto de quem fala)' }, { n: 2, text: 'isso (perto de quem ouve)' }, { n: 3, text: 'aquilo (longe dos dois)' }, { n: 4, text: 'onde' }], answer: 1, explanationPt: 'これ = isto, algo perto do falante. Par com ここ/こちら. (Nota ➊)' },
+    { id: 'iro-s-l16-2', number: 2, prompt: '「それ」 é usado para algo:', choices: [{ n: 1, text: 'perto de quem ouve (o interlocutor)' }, { n: 2, text: 'perto de quem fala' }, { n: 3, text: 'longe dos dois' }, { n: 4, text: 'que não se vê' }], answer: 1, explanationPt: 'それ = isso, algo perto do ouvinte. (Nota ➊)' },
+    { id: 'iro-s-l16-3', number: 3, prompt: '「あれ」 aponta algo:', choices: [{ n: 1, text: 'longe do falante e do ouvinte' }, { n: 2, text: 'perto do falante' }, { n: 3, text: 'perto do ouvinte' }, { n: 4, text: 'na mão do ouvinte' }], answer: 1, explanationPt: 'あれ = aquilo, longe dos dois. Ex.: あのTシャツ → あれは1,990円です. (Nota ➊)' },
+    { id: 'iro-s-l16-4', number: 4, prompt: '「いくら」 significa:', choices: [{ n: 1, text: 'quanto (custa)?' }, { n: 2, text: 'quantos?' }, { n: 3, text: 'quando?' }, { n: 4, text: 'onde?' }], answer: 1, explanationPt: 'いくら = quanto custa? Interrogativo de preço. これ、いくらですか？ (Nota ➊)' },
+    { id: 'iro-s-l16-5', number: 5, prompt: 'Para perguntar o preço apontando algo perto de você, diz-se:', choices: [{ n: 1, text: 'これ、いくらですか？' }, { n: 2, text: 'これ、どこですか？' }, { n: 3, text: 'これ、なんですか？' }, { n: 4, text: 'これ、いつですか？' }], answer: 1, translationPt: 'Quanto custa isto?', explanationPt: '（これ／それ／あれ）（は）いくらですか？ = quanto custa? Diálogos 16-07~10. (Nota ➊ · Seção 1)' },
+    { id: 'iro-s-l16-6', number: 6, prompt: 'Antes de um substantivo (N), usa-se:', choices: [{ n: 1, text: 'この／その／あの ＋ N (não これ／それ／あれ)' }, { n: 2, text: 'これ／それ／あれ ＋ N' }, { n: 3, text: 'ここ／そこ／あそこ ＋ N' }, { n: 4, text: 'こちら／そちら／あちら ＋ N' }], answer: 1, explanationPt: 'Diante de substantivo: **この／その／あの** + N (このお{菓子|かし}, そのカレンダー, あのTシャツ). これ/それ/あれ ficam sozinhos. (Nota ➋)' },
+    { id: 'iro-s-l16-7', number: 7, prompt: '「そのカレンダー、いくらですか？」 significa:', choices: [{ n: 1, text: 'quanto custa esse calendário (aí perto de você)?' }, { n: 2, text: 'quanto custa este calendário (aqui)?' }, { n: 3, text: 'onde fica o calendário?' }, { n: 4, text: 'que calendário é esse?' }], answer: 1, explanationPt: 'そのカレンダー = esse calendário (perto do ouvinte/funcionário). Diálogo 16-11. (Nota ➋)' },
+    { id: 'iro-s-l16-8', number: 8, prompt: 'Para recusar educadamente a compra (“então, deixa pra lá”), diz-se:', choices: [{ n: 1, text: 'じゃあ、いいです。／けっこうです。' }, { n: 2, text: 'じゃあ、ください。' }, { n: 3, text: 'じゃあ、お{願|ねが}いします。' }, { n: 4, text: 'じゃあ、それです。' }], answer: 1, explanationPt: '⚠️ いいです／けっこうです aqui = “não, obrigado” (recusa). Diálogo 16-13: {高|たか}い招き猫 → じゃあ、いいです. (Seção 1)' },
+    { id: 'iro-s-l16-9', number: 9, prompt: '「〜ください」 (ex.: たい{焼|や}き8つ、ください) serve para:', choices: [{ n: 1, text: 'pedir/comprar algo (me dê ~, por favor)' }, { n: 2, text: 'recusar' }, { n: 3, text: 'perguntar o preço' }, { n: 4, text: 'agradecer' }], answer: 1, explanationPt: '〜ください = me dê ~ / quero ~ (pedido em loja). Também 〜をお{願|ねが}いします. (第6課 · Seção 3)' },
+    { id: 'iro-s-l16-10', number: 10, prompt: '「〜ずつ」 (ex.: 2{個|こ}ずつ) significa:', choices: [{ n: 1, text: '~ de cada (mesma quantidade de cada item)' }, { n: 2, text: '~ no total' }, { n: 3, text: 'só ~' }, { n: 4, text: 'mais ou menos ~' }], answer: 1, translationPt: 'dois de cada', explanationPt: '〜ずつ = a mesma quantidade de cada. チョコレートケーキとチーズケーキ、2{個|こ}ずつ ＝ 2 de cada. (Nota ➌)' },
+    { id: 'iro-s-l16-11', number: 11, prompt: 'O contador 「{個|こ}」 — leituras de 1{個|こ}, 6{個|こ}, 10{個|こ}, ?{個|こ} são:', choices: [{ n: 1, text: 'いっこ / ろっこ / じゅっこ / なんこ' }, { n: 2, text: 'いちこ / ろくこ / じゅうこ / なんこ' }, { n: 3, text: 'ひとこ / むっこ / とおこ / いくこ' }, { n: 4, text: 'いっこ / ろくこ / じゅっこ / どんこ' }], answer: 1, explanationPt: 'Contador {個|こ}: 1いっこ, 6ろっこ, 8はっこ／はちこ, 10じゅっこ, ?なんこ. Para objetos pequenos. (Seção 3)' },
+    { id: 'iro-s-l16-12', number: 12, prompt: 'O contador 「つ」 (ひとつ, ふたつ…) conta:', choices: [{ n: 1, text: 'objetos em geral (1 a 10): ひとつ, ふたつ, みっつ… とお' }, { n: 2, text: 'só pessoas' }, { n: 3, text: 'só dias' }, { n: 4, text: 'só dinheiro' }], answer: 1, explanationPt: 'つ = contador genérico até 10: ひとつ, ふたつ, みっつ, よっつ… やっつ, ここのつ, とお. Ex.: たい{焼|や}き8つ. (Seção 3)' },
+    { id: 'iro-s-l16-13', number: 13, prompt: '「g（グラム）」 é a unidade de:', choices: [{ n: 1, text: 'peso (gramas) — ex.: ひき{肉|にく}200g' }, { n: 2, text: 'comprimento' }, { n: 3, text: 'volume' }, { n: 4, text: 'preço' }], answer: 1, explanationPt: 'g＝グラム (gramas). ひき{肉|にく}200グラム、ください. Usado em açougue/peso. (Seção 3)' },
+    { id: 'iro-s-l16-14', number: 14, prompt: '「かしこまりました」 (dito pelo funcionário) equivale a:', choices: [{ n: 1, text: 'わかりました (entendido / certo) — forma polida de loja' }, { n: 2, text: 'ありがとう' }, { n: 3, text: 'すみません' }, { n: 4, text: 'いらっしゃいませ' }], answer: 1, explanationPt: '🔖 かしこまりました ＝ わかりました (polido, usado por funcionários ao aceitar pedido). (Seção 3)' },
+    { id: 'iro-s-l16-15', number: 15, prompt: 'O sufixo 「〜{屋|や}」 (em {肉屋|にくや}, ケーキ{屋|や}) indica:', choices: [{ n: 1, text: 'loja/estabelecimento que vende aquilo ({肉屋|にくや} = açougue)' }, { n: 2, text: 'a pessoa que come' }, { n: 3, text: 'o preço' }, { n: 4, text: 'o andar' }], answer: 1, explanationPt: '〜{屋|や} = loja de ~: {肉屋|にくや} (açougue), ケーキ{屋|や} (confeitaria), おにぎり{屋|や}, たい{焼|や}き{屋|や}, {惣菜屋|そうざいや}. (Seção 3)' },
+    { id: 'iro-s-l16-16', number: 16, prompt: 'No caixa da conveniência, 「こちら、{温|あたた}めますか？」 pergunta:', choices: [{ n: 1, text: 'quer que (eu) esquente isto (no micro-ondas)?' }, { n: 2, text: 'quer um saco?' }, { n: 3, text: 'como vai pagar?' }, { n: 4, text: 'quantos talheres?' }], answer: 1, explanationPt: '{温|あたた}めます（{温|あたた}める）= esquentar. こちら、{温|あたた}めますか？ = esquento isto? Responde はい、お{願|ねが}いします / いえ、けっこうです. (Seção 4)' },
+    { id: 'iro-s-l16-17', number: 17, prompt: '「{袋|ふくろ}」 é:', choices: [{ n: 1, text: 'sacola / saco' }, { n: 2, text: 'colher' }, { n: 3, text: 'canudo' }, { n: 4, text: 'pauzinho' }], answer: 1, explanationPt: '{袋|ふくろ} = sacola. {袋|ふくろ}は、どうしますか？ = quer sacola? Responde お{願|ねが}いします / だいじょうぶです. (Seção 4)' },
+    { id: 'iro-s-l16-18', number: 18, prompt: 'Os talheres/itens 「スプーン／おはし／フォーク／ストロー」 são:', choices: [{ n: 1, text: 'colher / pauzinhos / garfo / canudo' }, { n: 2, text: 'garfo / colher / faca / guardanapo' }, { n: 3, text: 'colher / copo / garfo / sacola' }, { n: 4, text: 'pauzinhos / colher / prato / canudo' }], answer: 1, explanationPt: 'スプーン (colher), おはし (pauzinhos), フォーク (garfo), ストロー (canudo). スプーンは、いくつ、おつけしますか？ (Seção 4)' },
+    { id: 'iro-s-l16-19', number: 19, prompt: '「お{次|つぎ}の{方|かた}、どうぞ」 (funcionário) significa:', choices: [{ n: 1, text: 'o próximo, por favor (chamando o próximo cliente)' }, { n: 2, text: 'volte sempre' }, { n: 3, text: 'pode pagar ali' }, { n: 4, text: 'está esgotado' }], answer: 1, explanationPt: '🔖 お{次|つぎ}の{方|かた}、どうぞ = o próximo da fila, por favor. Linguagem de loja. (Seção 4)' },
+    { id: 'iro-s-l16-20', number: 20, prompt: 'Na fala do funcionário, 「こちら」 equivale a:', choices: [{ n: 1, text: 'これ (isto) — forma mais polida' }, { n: 2, text: 'ここ (aqui)' }, { n: 3, text: 'どちら (qual)' }, { n: 4, text: 'あちら (ali)' }], answer: 1, explanationPt: '🔖 こちら ＝ これ (polido). こちら、{温|あたた}めますか？ = esquento isto? (Seção 4)' },
+    { id: 'iro-s-l16-21', number: 21, prompt: '「（スプーンは、いくつ）おつけしますか？」 significa:', choices: [{ n: 1, text: 'quantos (de algo) o sr./sra. quer que eu coloque/inclua?' }, { n: 2, text: 'quanto custa?' }, { n: 3, text: 'quer esquentar?' }, { n: 4, text: 'como vai pagar?' }], answer: 1, explanationPt: '🔖 おつけしますか？ = devo incluir/adicionar ~? (Shall I add ~?). スプーンは、いくつ、おつけしますか？ (Seção 4)' },
+    { id: 'iro-s-l16-22', number: 22, prompt: '「お{会計|かいけい}、825{円|えん}になります」 significa:', choices: [{ n: 1, text: 'o total fica/dá 825 ienes' }, { n: 2, text: 'são 825 ienes de troco' }, { n: 3, text: 'falta pagar 825 ienes' }, { n: 4, text: '825 ienes de desconto' }], answer: 1, explanationPt: '🔖 お{会計|かいけい}、〜になります = o total é ~. {会計|かいけい} = conta/total. (Seção 4)' },
+    { id: 'iro-s-l16-23', number: 23, prompt: 'Para recusar a sacola, o cliente diz:', choices: [{ n: 1, text: 'だいじょうぶです。 (não precisa)' }, { n: 2, text: 'お{願|ねが}いします。' }, { n: 3, text: 'ください。' }, { n: 4, text: 'いくらですか。' }], answer: 1, explanationPt: 'だいじょうぶです = “tá tudo bem (não precisa)”, recusa educada. Também いえ、けっこうです. {袋|ふくろ}は、どうしますか？→ だいじょうぶです. (Seção 4)' },
+    { id: 'iro-s-l16-24', number: 24, prompt: '「Suicaでお{願|ねが}いします」 — a partícula で indica:', choices: [{ n: 1, text: 'o meio de pagamento (pago com Suica)' }, { n: 2, text: 'o lugar' }, { n: 3, text: 'a companhia' }, { n: 4, text: 'o tempo' }], answer: 1, translationPt: 'Com o Suica, por favor.', explanationPt: '〜でお{願|ねが}いします = com ~, por favor (meio: で). Suicaで／カードで／{現金|げんきん}で. (Seção 4)' },
+    { id: 'iro-s-l16-25', number: 25, prompt: 'São formas de pagamento citadas na lição:', choices: [{ n: 1, text: 'クレジットカード, Edy, PayPay, Suica' }, { n: 2, text: 'スプーン, フォーク, ストロー' }, { n: 3, text: '肉屋, ケーキ屋, おにぎり屋' }, { n: 4, text: '入口, 出口, 非常口' }], answer: 1, explanationPt: 'Pagamento: クレジットカード (cartão de crédito), Edy, PayPay, Suica (IC card). (Seção 4)' },
+    { id: 'iro-s-l16-26', number: 26, prompt: '「こちらにタッチしてください」 (com cartão Suica) pede para:', choices: [{ n: 1, text: 'encostar/aproximar o cartão aqui' }, { n: 2, text: 'assinar aqui' }, { n: 3, text: 'inserir a senha' }, { n: 4, text: 'pegar o troco' }], answer: 1, explanationPt: 'タッチする = encostar (tap). こちらにタッチしてください = encoste (o cartão) aqui. Suica paga transporte e compras. (Seção 4)' },
+    { id: 'iro-s-l16-27', number: 27, prompt: 'No dinheiro japonês, 「{紙幣|しへい}（お{札|さつ}）」 e 「{硬貨|こうか}（{玉|たま}）」 são, respectivamente:', choices: [{ n: 1, text: 'cédulas (notas) e moedas' }, { n: 2, text: 'moedas e cédulas' }, { n: 3, text: 'cartão e cédulas' }, { n: 4, text: 'troco e desconto' }], answer: 1, explanationPt: '{紙幣|しへい}/お{札|さつ} = cédulas (1万・5千・2千・千{円|えん}); {硬貨|こうか} = moedas (500・100・50・10・5・1{円|えん}{玉|だま}). (TIPS)' },
+    { id: 'iro-s-l16-28', number: 28, prompt: '「{招|まね}き{猫|ねこ}」 é:', choices: [{ n: 1, text: 'gatinho da sorte (estatueta com a pata erguida)' }, { n: 2, text: 'um doce' }, { n: 3, text: 'uma loja' }, { n: 4, text: 'um talher' }], answer: 1, explanationPt: '{招|まね}き{猫|ねこ} = maneki-neko, estatueta de gato que “chama” clientes/sorte. Diálogo 16-13, 8,800{円|えん}. (TIPS)' },
+    { id: 'iro-s-l16-29', number: 29, prompt: 'Numa placa, 「{二割引|にわりびき}」 significa:', choices: [{ n: 1, text: '20% de desconto (2 “décimos” de desconto)' }, { n: 2, text: '2% de desconto' }, { n: 3, text: '2 ienes de desconto' }, { n: 4, text: '2 vezes o preço' }], answer: 1, translationPt: 'desconto de 20%', explanationPt: '〜{割引|わりびき} = ~ décimos de desconto. {二割引|にわりびき} = 20% off. {表示価格|ひょうじかかく}より{二割引|にわりびき}: 500{円|えん} → 400{円|えん}. (Seção 5)' },
+    { id: 'iro-s-l16-30', number: 30, prompt: 'Nas placas de desconto, 「{半額|はんがく}」 / 「〜{円均一|えんきんいつ}」 / 「{値下価格|ねさげかかく}」 significam:', choices: [{ n: 1, text: 'metade do preço / tudo a ~ ienes / preço já rebaixado' }, { n: 2, text: 'preço cheio / sem desconto / esgotado' }, { n: 3, text: 'dobro do preço / só hoje / grátis' }, { n: 4, text: 'desconto de 10% / 5% / 1%' }], answer: 1, explanationPt: '{半額|はんがく} = metade do preço (420→210); 〜{円均一|えんきんいつ} = tudo por ~ ienes (50{円均一|えんきんいつ}); {値下価格|ねさげかかく} = preço rebaixado. Também 〜％{引|びき} / 〜{円引|えんびき}. (Seção 5)' },
+    { id: 'iro-s-l16-31', number: 31, prompt: 'Diálogo 16-11: 「そのカレンダー、いくらですか？」 — o que acontece?', context: '{客|きゃく}：すみません。そのカレンダー、いくらですか？ {店員|てんいん}：あ、これは2,040{円|えん}です。 {客|きゃく}：じゃあ、それ、ください。', choices: [{ n: 1, text: 'Custa 2,040 ienes e o cliente decide levar ("それ、ください")' }, { n: 2, text: 'Custa 2,040 ienes mas o cliente recusa' }, { n: 3, text: 'Está esgotado' }, { n: 4, text: 'Custa 230 ienes' }], answer: 1, explanationPt: '2,040{円|えん} → じゃあ、それ、ください (então, esse, por favor) = vai levar. Note それ (perto do funcionário). (Seção 2)' },
+    { id: 'iro-s-l16-32', number: 32, prompt: 'Diálogo 16-13: o {招|まね}き{猫|ねこ} custa 8,800{円|えん} — o que o cliente faz?', context: '{客|きゃく}：あのう、これ、いくらですか？ {店員|てんいん}：ああ、その{招|まね}き{猫|ねこ}は……、えっと、8,800{円|えん}です。 {客|きゃく}：そうですか……。じゃあ、いいです。', choices: [{ n: 1, text: 'Recusa educadamente (じゃあ、いいです = deixa pra lá)' }, { n: 2, text: 'Leva o gato' }, { n: 3, text: 'Pede dois' }, { n: 4, text: 'Pergunta o andar' }], answer: 1, explanationPt: '⚠️ じゃあ、いいです = “então, deixa” (recusa), não “então, sim”. O preço {高|たか}い fez o cliente desistir. (Seção 2)' },
+    { id: 'iro-s-l16-33', number: 33, prompt: 'Diálogo 16-29 (caixa da conveniência): qual a ordem das perguntas do funcionário?', context: '{店員|てんいん}：お{次|つぎ}の{方|かた}、どうぞ。… こちら、{温|あたた}めますか？ → スプーンは、いくつ、おつけしますか？ → {袋|ふくろ}は、どうしますか？ → お{会計|かいけい}、825{円|えん}になります。', choices: [{ n: 1, text: 'esquentar? → talheres? → sacola? → total/pagamento' }, { n: 2, text: 'pagamento → sacola → esquentar → talheres' }, { n: 3, text: 'sacola → esquentar → pagamento → talheres' }, { n: 4, text: 'talheres → pagamento → esquentar → sacola' }], answer: 1, explanationPt: 'Sequência do caixa: {温|あたた}めますか？→ スプーン…おつけしますか？→ {袋|ふくろ}は、どうしますか？→ お{会計|かいけい}…になります → Suicaで → タッチしてください. (Seção 4)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 16 (聴解スクリプト)
+const L16_SCRIPTS: Record<string, ScriptItem[]> = {
+  '16-07': [
+    {
+      label: '会話① (16-07)',
+      setupJa: 'お{客|きゃく}さんが、{商品|しょうひん}の{値段|ねだん}を{聞|き}いています。',
+      setupPt: 'Clientes perguntam o preço de um produto.',
+      lines: [
+        { speaker: 'Cliente', ja: 'あのう、これ、いくらですか？', pt: 'Com licença, quanto custa isto?' },
+        { speaker: 'Funcionário', ja: '300{円|えん}です。', pt: 'São 300 ienes.' },
+      ],
+    },
+  ],
+  '16-08': [
+    {
+      label: '会話② (16-08)',
+      lines: [
+        { speaker: 'Cliente', ja: 'すみません。これ、いくらですか？', pt: 'Com licença. Quanto custa isto?' },
+        { speaker: 'Funcionário', ja: 'これ？　1,980{円|えん}。', pt: 'Isto? 1.980 ienes.' },
+      ],
+    },
+  ],
+  '16-09': [
+    {
+      label: '会話③ (16-09)',
+      lines: [
+        { speaker: 'Cliente', ja: 'すみません。これ、いくらですか？', pt: 'Com licença. Quanto custa isto?' },
+        { speaker: 'Funcionário', ja: 'これですか？　えっと、2,000{円|えん}です。', pt: 'Isto? Hmm, são 2.000 ienes.' },
+      ],
+    },
+  ],
+  '16-10': [
+    {
+      label: '会話④ (16-10)',
+      lines: [
+        { speaker: 'Cliente', ja: 'あのう、すみません。これ、いくらですか？', pt: 'Ah, com licença. Quanto custa isto?' },
+        { speaker: 'Funcionário', ja: 'はい、これですね。えっと、34,500{円|えん}です。', pt: 'Sim, isto, né. Hmm, são 34.500 ienes.' },
+      ],
+    },
+  ],
+  '16-11': [
+    {
+      label: '会話① (16-11)',
+      setupJa: 'お{客|きゃく}さんが、{値段|ねだん}を{聞|き}いて{買|か}い{物|もの}をしています。',
+      setupPt: 'Clientes perguntam o preço e fazem a compra.',
+      lines: [
+        { speaker: 'Cliente', ja: 'すみません。そのカレンダー、いくらですか？', pt: 'Com licença. Quanto custa esse calendário?' },
+        { speaker: 'Funcionário', ja: 'あ、これは2,040{円|えん}です。', pt: 'Ah, este aqui é 2.040 ienes.' },
+        { speaker: 'Cliente', ja: 'じゃあ、それ、ください。', pt: 'Então, esse, por favor.' },
+      ],
+    },
+  ],
+  '16-12': [
+    {
+      label: '会話② (16-12)',
+      lines: [
+        { speaker: 'Cliente', ja: 'このお{菓子|かし}、いくらですか？', pt: 'Quanto custa este doce?' },
+        { speaker: 'Funcionário', ja: '230{円|えん}です。', pt: 'São 230 ienes.' },
+        { speaker: 'Cliente', ja: 'じゃあ、これもお{願|ねが}いします。', pt: 'Então, este também, por favor.' },
+      ],
+    },
+  ],
+  '16-13': [
+    {
+      label: '会話③ (16-13)',
+      lines: [
+        { speaker: 'Cliente', ja: 'あのう、これ、いくらですか？', pt: 'Ah, quanto custa isto?' },
+        { speaker: 'Funcionário', ja: 'ああ、その{招|まね}き{猫|ねこ}は……、えっと、8,800{円|えん}です。', pt: 'Ah, esse maneki-neko… hmm, são 8.800 ienes.' },
+        { speaker: 'Cliente', ja: 'そうですか……。じゃあ、いいです。', pt: 'Ah, sei… então, deixa pra lá.' },
+      ],
+    },
+  ],
+  '16-14': [
+    {
+      label: '会話④ (16-14)',
+      lines: [
+        { speaker: 'Cliente', ja: 'すみません。あのTシャツ、いくらですか？', pt: 'Com licença. Quanto custa aquela camiseta?' },
+        { speaker: 'Funcionário', ja: 'あ、あれは1,990{円|えん}です。', pt: 'Ah, aquela é 1.990 ienes.' },
+        { speaker: 'Cliente', ja: 'じゃあ、あれ、ください。', pt: 'Então, aquela, por favor.' },
+      ],
+    },
+  ],
+  '16-18': [
+    {
+      label: '会話① (16-18)',
+      setupJa: 'お{客|きゃく}さんが、ほしいものと{数|かず}／{量|りょう}を{言|い}って{買|か}い{物|もの}をしています。',
+      setupPt: 'Clientes dizem o item e a quantidade que querem comprar.',
+      lines: [
+        { speaker: 'Funcionário', ja: 'いらっしゃいませ。', pt: 'Bem-vindo(a).' },
+        { speaker: 'Cliente', ja: 'たい{焼|や}き8つ、ください。', pt: 'Oito taiyaki, por favor.' },
+        { speaker: 'Funcionário', ja: 'はい、たい{焼|や}き8つ。ありがとうございます。', pt: 'Certo, oito taiyaki. Obrigado.' },
+      ],
+    },
+  ],
+  '16-19': [
+    {
+      label: '会話② (16-19)',
+      lines: [
+        { speaker: 'Funcionário', ja: 'はい、いらっしゃい。', pt: 'Bem-vindo(a).' },
+        { speaker: 'Cliente', ja: 'えっと、コロッケ4つと、シュウマイ10{個|こ}、ください。', pt: 'Hmm, quatro croquetes e dez shumai, por favor.' },
+        { speaker: 'Funcionário', ja: 'はい、コロッケ4つと、シュウマイ10{個|こ}ね。', pt: 'Certo, quatro croquetes e dez shumai, né.' },
+      ],
+    },
+  ],
+  '16-20': [
+    {
+      label: '会話③ (16-20)',
+      lines: [
+        { speaker: 'Funcionário', ja: 'いらっしゃいませ。', pt: 'Bem-vindo(a).' },
+        { speaker: 'Cliente', ja: 'このひき{肉|にく}200g、ください。', pt: 'Esta carne moída, 200 g, por favor.' },
+        { speaker: 'Funcionário', ja: 'はい、200gですね。', pt: 'Certo, 200 g, né.' },
+      ],
+    },
+  ],
+  '16-21': [
+    {
+      label: '会話④ (16-21)',
+      lines: [
+        { speaker: 'Funcionário', ja: 'いらっしゃいませ。', pt: 'Bem-vindo(a).' },
+        { speaker: 'Cliente', ja: 'チョコレートケーキとチーズケーキ、2{個|こ}ずつお{願|ねが}いします。', pt: 'Bolo de chocolate e cheesecake, dois de cada, por favor.' },
+        { speaker: 'Funcionário', ja: 'はい、2{個|こ}ずつですね。かしこまりました。', pt: 'Certo, dois de cada, né. Entendido.' },
+      ],
+    },
+  ],
+  '16-22': [
+    {
+      label: '会話⑤ (16-22)',
+      lines: [
+        { speaker: 'Funcionário', ja: 'いらっしゃいませ。', pt: 'Bem-vindo(a).' },
+        { speaker: 'Cliente', ja: 'えーと、{昆布|こんぶ}2つ、たらこ1つ、{梅|うめ}3つ、ください。', pt: 'Hmm, dois de kombu, um de tarako, três de ume, por favor.' },
+        { speaker: 'Funcionário', ja: 'はい、{昆布|こんぶ}が2つ、たらこが1つ、{梅|うめ}が3つですね。', pt: 'Certo, dois de kombu, um de tarako, três de ume, né.' },
+      ],
+    },
+  ],
+  '16-29': [
+    {
+      label: '会話 (16-29)',
+      setupJa: 'コンビニで{買|か}い{物|もの}をしています。{今|いま}、レジで{会計|かいけい}をしています。',
+      setupPt: 'A pessoa faz compras na loja de conveniência. Agora está pagando no caixa.',
+      lines: [
+        { speaker: 'Funcionário', ja: 'お{次|つぎ}の{方|かた}、どうぞ。', pt: 'O próximo, por favor.' },
+        { speaker: 'Cliente', ja: 'お{願|ねが}いします。', pt: 'Por favor.' },
+        { speaker: 'Funcionário', ja: 'こちら、{温|あたた}めますか？', pt: 'Quer que eu esquente isto?' },
+        { speaker: 'Cliente', ja: 'はい、お{願|ねが}いします。', pt: 'Sim, por favor.' },
+        { speaker: 'Funcionário', ja: 'スプーンは、いくつ、おつけしますか？', pt: 'Quantas colheres devo colocar?' },
+        { speaker: 'Cliente', ja: 'あ、2つ、お{願|ねが}いします。', pt: 'Ah, duas, por favor.' },
+        { speaker: 'Funcionário', ja: '{袋|ふくろ}は、どうしますか？', pt: 'E quanto à sacola?' },
+        { speaker: 'Cliente', ja: 'だいじょうぶです。', pt: 'Não precisa.' },
+        { speaker: 'Funcionário', ja: 'お{会計|かいけい}、825{円|えん}になります。', pt: 'O total fica em 825 ienes.' },
+        { speaker: 'Cliente', ja: 'Suicaでお{願|ねが}いします。', pt: 'Com o Suica, por favor.' },
+        { speaker: 'Funcionário', ja: 'こちらにタッチしてください。ありがとうございました。', pt: 'Encoste (o cartão) aqui, por favor. Muito obrigado.' },
+      ],
+    },
+  ],
+}
+
+const lesson16: Section = {
+  id: 'lesson-16',
+  level: 'starter',
+  titleJa: '第16課 これ、いくらですか？',
+  titlePt: 'Lição 16 — Quanto custa isto?',
+  summaryPt: 'Nas lojas · perguntar o preço apontando um produto (これ／そのカレンダー、いくらですか？ → ◯◯円です), dizer o item e a quantidade que quer comprar (たい焼き8つ、ください／2個ずつお願いします), responder às perguntas do caixa da conveniência (温めますか？／スプーンは？／袋は？／支払い) e ler placas de desconto (二割引／半額／〜円均一).',
+  studyNotes: [
+    {
+      title: 'Tópico: Nas lojas (preços e compras)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Entender o preço de um produto exposto.\n' +
+        '- Perguntar o preço apontando algo e entender a resposta.\n' +
+        '- Dizer o item e a quantidade/peso que quer comprar.\n' +
+        '- Responder às perguntas do caixa da conveniência (esquentar, talheres, sacola, pagamento).\n' +
+        '- Ler placas de desconto e calcular o preço.',
+    },
+    {
+      title: 'Perguntar o preço: これ／それ／あれ、いくらですか？ (➊)',
+      bodyPt:
+        'Aponte o produto e pergunte o preço:\n\n' +
+        '`これ、いくらですか？` = quanto custa isto?\n\n' +
+        '| | objeto | uso |\n|---|---|---|\n' +
+        '| こ | これ | perto de **quem fala** |\n' +
+        '| そ | それ | perto de **quem ouve** |\n' +
+        '| あ | あれ | **longe** dos dois |\n\n' +
+        '- **いくら** = quanto custa? Resposta: `〜{円|えん}です` (ex.: 300{円|えん}です).\n' +
+        '- Mesma lógica de ここ/そこ/あそこ (→ Lição 8). 💡 Versão casual falada: こっち/そっち/あっち.\n\n' +
+        '⚠️ **じゃあ、いいです／けっこうです** numa compra = **recusa** (“deixa pra lá”), não “sim”.',
+    },
+    {
+      title: 'Demonstrativo antes do substantivo: この／その／あの ＋ N (➋)',
+      bodyPt:
+        'Diante de um substantivo, use **この／その／あの** (não これ/それ/あれ):\n\n' +
+        '`そのカレンダー、いくらですか？` = quanto custa esse calendário?\n\n' +
+        '| こ・そ・あ | objeto | + N | lugar | direção |\n|---|---|---|---|---|\n' +
+        '| こ | これ | この N | ここ | こちら（こっち） |\n' +
+        '| そ | それ | その N | そこ | そちら（そっち） |\n' +
+        '| あ | あれ | あの N | あそこ | あちら（あっち） |\n\n' +
+        'Ex.: あのTシャツ → 店員: あれは1,990{円|えん}です (a referência muda conforme quem fala).',
+    },
+    {
+      title: 'Dizer quanto/quantos: 〜ください e 〜ずつ (➌)',
+      bodyPt:
+        'Diga o item + a quantidade + **ください** / **お{願|ねが}いします**:\n\n' +
+        '- `たい{焼|や}き8つ、ください` · `ひき{肉|にく}200g、ください` · `コロッケ4つと、シュウマイ10{個|こ}、ください`\n\n' +
+        '**〜ずつ** = a mesma quantidade **de cada**: `チョコレートケーキとチーズケーキ、2{個|こ}ずつ` ＝ 2 de cada.\n\n' +
+        '**Contador {個|こ}** (objetos pequenos):\n\n' +
+        '| | leitura | | leitura |\n|---|---|---|---|\n' +
+        '| 1{個|こ} | いっこ | 6{個|こ} | ろっこ |\n' +
+        '| 2{個|こ} | にこ | 7{個|こ} | ななこ |\n' +
+        '| 3{個|こ} | さんこ | 8{個|こ} | はちこ／はっこ |\n' +
+        '| 4{個|こ} | よんこ | 9{個|こ} | きゅうこ |\n' +
+        '| 5{個|こ} | ごこ | 10{個|こ} | じゅっこ |\n' +
+        '| ? | なんこ | g | グラム (peso) |\n\n' +
+        '**Contador つ** (genérico, 1–10): ひとつ, ふたつ, みっつ, よっつ, いつつ, むっつ, ななつ, やっつ, ここのつ, とお.\n\n' +
+        '**Lojas 〜{屋|や}:** {肉屋|にくや} (açougue), ケーキ{屋|や} (confeitaria), おにぎり{屋|や}, たい{焼|や}き{屋|や}, {惣菜屋|そうざいや} (comida pronta). 🔖 **かしこまりました** ＝ わかりました (polido).',
+    },
+    {
+      title: 'No caixa da conveniência: temperatura, talheres, sacola, pagamento (Seção 4)',
+      bodyPt:
+        'O funcionário pergunta, o cliente responde:\n\n' +
+        '| funcionário | aceitar | recusar |\n|---|---|---|\n' +
+        '| こちら、{温|あたた}めますか？ | はい、お{願|ねが}いします | いえ、けっこうです |\n' +
+        '| スプーンは、いくつ、おつけしますか？ | 2つ、お{願|ねが}いします | いえ、けっこうです |\n' +
+        '| {袋|ふくろ}は、どうしますか？ | お{願|ねが}いします | だいじょうぶです |\n\n' +
+        '- **{温|あたた}める** = esquentar · **{袋|ふくろ}** = sacola · talheres: **スプーン** (colher), **おはし** (pauzinhos), **フォーク** (garfo), **ストロー** (canudo).\n' +
+        '- **Pagamento:** お{会計|かいけい}、825{円|えん}になります → **〜でお{願|ねが}いします** (Suicaで／カードで／{現金|げんきん}で). Formas: クレジットカード, Edy, PayPay, Suica. Com IC card: **こちらにタッチしてください** (タッチする = encostar).\n\n' +
+        '🔖 **Linguagem de loja:** お{次|つぎ}の{方|かた}、どうぞ (o próximo) · こちら ＝ これ · おつけしますか？ (devo incluir?) · お{会計|かいけい}、〜になります (o total é ~).',
+    },
+    {
+      title: 'Placas de desconto e dinheiro (Seção 5 · TIPS)',
+      bodyPt:
+        '**Tipos de desconto:**\n\n' +
+        '| placa | sentido | exemplo |\n|---|---|---|\n' +
+        '| 〜{割引|わりびき} | ~ décimos off | {二割引|にわりびき} = 20% off (500→400) |\n' +
+        '| 〜％{引|びき} | ~% off | 10％{引|びき} (19,800→17,820) |\n' +
+        '| 〜{円引|えんびき} | ~ ienes off | 50{円引|えんびき} (430→380) |\n' +
+        '| {半額|はんがく} | metade do preço | 420→210 |\n' +
+        '| {値下価格|ねさげかかく} | preço já rebaixado | 2,979→2,479 |\n' +
+        '| 〜{円均一|えんきんいつ} | tudo por ~ ienes | 50{円均一|えんきんいつ} |\n\n' +
+        '**Dinheiro japonês:** {紙幣|しへい}（お{札|さつ}） = cédulas (1万・5千・2千・千{円|えん}); {硬貨|こうか} = moedas (500・100・50・10・5・1{円|えん}{玉|だま}). 💡 Muitas lojas (fora das cidades grandes) só aceitam {現金|げんきん} (dinheiro); ande sempre com algum.\n\n' +
+        '**Lojas com preço nem sempre visível:** {屋台|やたい} (barraca), {野菜直売所|やさいちょくばいじょ} (venda direta do produtor), フリーマーケット, リサイクルショップ, {土産物屋|みやげものや}.',
+    },
+  ],
+  groups: [lesson16Group],
+  audios: attachScripts(16, L16_SCRIPTS),
+}
+
+// ---- Lições 17 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(16, 'Nas lojas', 'これはいくらですか', 'Quanto custa isto?', [
-    'Entender o preço de um produto.',
-    'Perguntar o preço e entender a resposta.',
-    'Dizer quanto/quantos você quer; entender placas de desconto.',
-  ]),
   scaffold(17, 'Dias de folga', '映画を見に行きました', 'Fui ver um filme', [
     'Responder o que fez na folga.',
     'Perguntar e responder sobre o que fez no dia de descanso.',
@@ -3101,5 +3384,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, ...others],
 }
