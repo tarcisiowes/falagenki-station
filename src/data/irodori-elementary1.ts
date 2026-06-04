@@ -879,13 +879,215 @@ const lesson4: Section = {
   audios: attachScripts(4, L4_SCRIPTS),
 }
 
-// ---- Lições 5-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 5: とてもにぎやかで便利です (tópico 私の町) ----------------------
+const lesson5Group: ExerciseGroup = {
+  id: 'iro-e1-l5',
+  title: 'とてもにぎやかで便利です',
+  subtitlePt: 'Minha cidade · descrever a cidade ligando adjetivos (にぎやかで便利です／緑が多くて静かです), contrastar com けど (不便だけどきれい) e dizer o que dá para fazer num lugar (花を見ることができます)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l5-1', number: 1, prompt: '「とてもにぎやかで、{便利|べんり}です」 — como se ligam dois adjetivos numa frase só (Nota ➊)?', choices: [{ n: 1, text: 'N／ナA → 〜で; イA → 〜くて (にぎやか**で**、{便利|べんり}です)' }, { n: 2, text: 'sempre com から' }, { n: 3, text: 'sempre com けど' }, { n: 4, text: 'sempre com の' }], answer: 1, translationPt: 'É muito movimentado e prático.', explanationPt: 'Para encadear: N e ナA usam 〜で ({田舎|いなか}で…, にぎやかで…); juntam duas frases numa. (Nota ➊)' },
+    { id: 'iro-e1-l5-2', number: 2, prompt: 'E com イ-adjetivo? Ex.: 「{緑|みどり}が{多|おお}い」 + 「{静|しず}かです」', choices: [{ n: 1, text: '{緑|みどり}が{多|おお}**くて**、{静|しず}かです (イA: い→くて)' }, { n: 2, text: '{緑|みどり}が{多|おお}いで、{静|しず}かです' }, { n: 3, text: '{緑|みどり}が{多|おお}いだけど、{静|しず}かです' }, { n: 4, text: '{緑|みどり}が{多|おお}いから、{静|しず}かです' }], answer: 1, translationPt: 'Tem muito verde e é tranquilo.', explanationPt: 'イA liga com 〜くて: {多|おお}い→{多|おお}くて, やさしい→やさしくて ({人|ひと}がやさしくて、{住|す}みやすいです). (Nota ➊)' },
+    { id: 'iro-e1-l5-3', number: 3, prompt: '「{場所|ばしょ}は{不便|ふべん}だけど、きれいですよ」 — o que けど expressa (Nota ➋)?', choices: [{ n: 1, text: 'contraste: um lado negativo, o outro positivo (“é X, mas Y”)' }, { n: 2, text: 'motivo' }, { n: 3, text: 'ordem cronológica' }, { n: 4, text: 'condição' }], answer: 1, translationPt: 'O lugar é mal localizado, mas é bonito.', explanationPt: 'けど liga duas frases em contraste — uma avaliação positiva e outra negativa. (Nota ➋)' },
+    { id: 'iro-e1-l5-4', number: 4, prompt: 'A que formas けど se liga (Nota ➋)?', choices: [{ n: 1, text: 'N／ナA → 〜だけど; イA → 〜いけど ({不便|ふべん}**だ**けど, {古|ふる}**い**けど, {遠|とお}**い**けど)' }, { n: 2, text: 'sempre N+けど, sem だ' }, { n: 3, text: 'só a verbos' }, { n: 4, text: 'イA vira くけど' }], answer: 1, explanationPt: 'N/ナA: 〜だけど ({都会|とかい}だけど…, {静|しず}かだけど…); イA: 〜いけど ({建物|たてもの}は{古|ふる}いけど…, ちょっと{遠|とお}いけど…). (Nota ➋)' },
+    { id: 'iro-e1-l5-5', number: 5, prompt: '「{一年中|いちねんじゅう}、いろいろな{花|はな}を{見|み}ることができます」 (V-ることができます) significa:', choices: [{ n: 1, text: 'dá para / é possível (ver flores o ano todo)' }, { n: 2, text: 'tenho que ver flores' }, { n: 3, text: 'não posso ver flores' }, { n: 4, text: 'quero ver flores' }], answer: 1, translationPt: 'Dá para ver vários tipos de flor o ano todo.', explanationPt: 'V (辞書形) + ことができます = ser possível/poder. Usado para descrever o que dá para fazer num lugar. (Nota ➌)' },
+    { id: 'iro-e1-l5-6', number: 6, prompt: 'できます tem dois usos. Qual é o desta lição (Nota ➌)?', choices: [{ n: 1, text: '② possibilidade pela situação (ex.: {丘|おか}から{海|うみ}を{見渡|みわた}すことができます) — descrição de cidade/ponto turístico' }, { n: 2, text: '① só capacidade pessoal ({日本語|にほんご}ができます)' }, { n: 3, text: 'indicar passado' }, { n: 4, text: 'fazer um pedido' }], answer: 1, explanationPt: 'できます: ① capacidade ({日本語|にほんご}ができます); ② algo possível pela situação ({冬|ふゆ}はスキーができます). Aqui é o ②, p/ descrever lugares: {地元|じもと}の{料理|りょうり}を{食|た}べることができます. (Nota ➌)' },
+    { id: 'iro-e1-l5-7', number: 7, prompt: 'Vocabulário “como é a cidade?” — qual conjunto está certo?', choices: [{ n: 1, text: '{便利|べんり}（な） (prático) ／ {不便|ふべん}（な） (inconveniente) ／ にぎやか（な） (movimentado) ／ {静|しず}か（な） (tranquilo)' }, { n: 2, text: '{便利|べんり} (caro) ／ {不便|ふべん} (barato) ／ にぎやか (vazio) ／ {静|しず}か (barulhento)' }, { n: 3, text: '{便利|べんり} (longe) ／ {不便|ふべん} (perto) ／ にぎやか (velho) ／ {静|しず}か (novo)' }, { n: 4, text: 'todos significam “bonito”' }], answer: 1, explanationPt: '{便利|べんり}（な）, {不便|ふべん}（な）, にぎやか（な）, {静|しず}か（な） — pares opostos sobre a cidade. (Atividade 1)' },
+    { id: 'iro-e1-l5-8', number: 8, prompt: 'Mais vocabulário da cidade: 「{緑|みどり}が{多|おお}い／{緑|みどり}が{少|すく}ない／{人|ひと}がやさしい・{親切|しんせつ}（な）／{人|ひと}が{冷|つめ}たい」 significam:', choices: [{ n: 1, text: 'tem muito verde ／ tem pouco verde ／ gente gentil/atenciosa ／ gente fria' }, { n: 2, text: 'muito caro ／ barato ／ gente alegre ／ gente triste' }, { n: 3, text: 'muita loja ／ pouca loja ／ gente alta ／ gente baixa' }, { n: 4, text: 'muito sol ／ pouca chuva ／ gente rápida ／ gente lenta' }], answer: 1, explanationPt: '{緑|みどり}が{多|おお}い／{少|すく}ない (muito/pouco verde), {人|ひと}がやさしい／{親切|しんせつ}（な） (gentil/atencioso), {人|ひと}が{冷|つめ}たい (frio/distante). (Atividade 1)' },
+    { id: 'iro-e1-l5-9', number: 9, prompt: 'As palavras 「{田舎|いなか}／{都会|とかい}／{景色|けしき}がきれい（な）」 significam:', choices: [{ n: 1, text: 'interior/campo ／ cidade grande ／ paisagem bonita' }, { n: 2, text: 'cidade grande ／ interior ／ paisagem feia' }, { n: 3, text: 'praia ／ montanha ／ rua movimentada' }, { n: 4, text: 'norte ／ sul ／ centro' }], answer: 1, explanationPt: '{田舎|いなか} (interior/zona rural), {都会|とかい} (cidade grande/urbano), {景色|けしき}がきれい（な） (paisagem bonita). (Atividade 1)' },
+    { id: 'iro-e1-l5-10', number: 10, prompt: 'As palavras 「{確|たし}かに／{住|す}みやすい／{店|みせ}」 significam:', choices: [{ n: 1, text: 'de fato/realmente ／ bom de morar/confortável ／ loja' }, { n: 2, text: 'talvez ／ difícil de morar ／ casa' }, { n: 3, text: 'nunca ／ caro ／ rua' }, { n: 4, text: 'sempre ／ perigoso ／ parque' }], answer: 1, explanationPt: '{確|たし}かに (de fato, concordando), {住|す}みやすい (confortável de morar), {店|みせ} (loja/restaurante). (Atividade 1 · vocab)' },
+    { id: 'iro-e1-l5-11', number: 11, prompt: 'Adjetivos para descrever lugares (Atividade 2): qual conjunto está certo?', choices: [{ n: 1, text: '{安|やす}い (barato) ／ おもしろい (interessante) ／ きれい（な） (bonito) ／ {広|ひろ}い (amplo)' }, { n: 2, text: '{安|やす}い (caro) ／ おもしろい (chato) ／ きれい (sujo) ／ {広|ひろ}い (apertado)' }, { n: 3, text: '{安|やす}い (longe) ／ おもしろい (perto) ／ きれい (velho) ／ {広|ひろ}い (novo)' }, { n: 4, text: 'todos significam “famoso”' }], answer: 1, explanationPt: '{安|やす}い (barato), おもしろい (interessante/divertido), きれい（な） (bonito/limpo), {広|ひろ}い (amplo/espaçoso). (Atividade 2)' },
+    { id: 'iro-e1-l5-12', number: 12, prompt: 'Mais adjetivos de lugar (Atividade 2): 「{不便|ふべん}（な）／{遠|とお}い／{古|ふる}い／{人|ひと}が{多|おお}い」 significam:', choices: [{ n: 1, text: 'mal localizado ／ longe ／ velho/antigo ／ tem muita gente' }, { n: 2, text: 'prático ／ perto ／ novo ／ vazio' }, { n: 3, text: 'bonito ／ amplo ／ barato ／ silencioso' }, { n: 4, text: 'famoso ／ tranquilo ／ caro ／ limpo' }], answer: 1, explanationPt: '{不便|ふべん}（な） (mal localizado), {遠|とお}い (longe), {古|ふる}い (velho), {人|ひと}が{多|おお}い (cheio de gente). (Atividade 2)' },
+    { id: 'iro-e1-l5-13', number: 13, prompt: 'As palavras 「どこか／ところ／{建物|たてもの}／おすすめ／ぜひ／{行|い}ってみる／{知|し}っている／{休憩所|きゅうけいじょ}」 significam:', choices: [{ n: 1, text: 'algum lugar ／ lugar ／ prédio/construção ／ recomendação ／ com certeza/sem falta ／ ir experimentar ／ conhecer/saber ／ área de descanso' }, { n: 2, text: 'ninguém ／ tempo ／ rua ／ proibido ／ talvez ／ voltar ／ esquecer ／ banheiro' }, { n: 3, text: 'sempre ／ pessoa ／ carro ／ caro ／ nunca ／ correr ／ perguntar ／ cozinha' }, { n: 4, text: 'aqui ／ hora ／ loja ／ barato ／ rápido ／ parar ／ ver ／ quarto' }], answer: 1, explanationPt: 'どこか (algum lugar), ところ (lugar), {建物|たてもの} (prédio), おすすめ (recomendação), ぜひ (sem falta), {行|い}ってみる (ir experimentar), {知|し}っている/{知|し}る (conhecer), {休憩所|きゅうけいじょ} (área de descanso). (Atividade 2 · vocab)' },
+    { id: 'iro-e1-l5-14', number: 14, prompt: 'No mapa da cidade (Atividade 3), 「{美|うつく}しい／{砂浜|すなはま}／{有名|ゆうめい}（な）／{泳|およ}ぐ／{丘|おか}／{見渡|みわた}す／{夕日|ゆうひ}」 significam:', choices: [{ n: 1, text: 'belo ／ praia (de areia) ／ famoso ／ nadar ／ colina ／ avistar/ter vista de ／ pôr do sol' }, { n: 2, text: 'feio ／ montanha ／ desconhecido ／ correr ／ vale ／ esconder ／ nascer do sol' }, { n: 3, text: 'velho ／ rio ／ caro ／ voar ／ ponte ／ atravessar ／ lua' }, { n: 4, text: 'novo ／ lago ／ barato ／ andar ／ ilha ／ entrar ／ estrela' }], answer: 1, explanationPt: '{美|うつく}しい (belo), {砂浜|すなはま} (praia de areia), {有名|ゆうめい}（な） (famoso), {泳|およ}ぐ (nadar), {丘|おか} (colina), {見渡|みわた}す (avistar do alto), {夕日|ゆうひ} (pôr do sol). (Atividade 3 · 大切なことば)' },
+    { id: 'iro-e1-l5-15', number: 15, prompt: 'Os kanji 「{町|まち}／{店|みせ}／{食堂|しょくどう}」 lêem-se:', choices: [{ n: 1, text: 'まち (cidade/bairro) ／ みせ (loja) ／ しょくどう (refeitório/restaurante popular)' }, { n: 2, text: 'ちょう ／ てん ／ しょくどう' }, { n: 3, text: 'まち ／ みせ ／ しょくほり' }, { n: 4, text: 'むら ／ みせ ／ たべどう' }], answer: 1, explanationPt: '{町|まち} (cidade/bairro), {店|みせ} (loja), {食堂|しょくどう} (refeitório/restaurante). (漢字)' },
+    { id: 'iro-e1-l5-16', number: 16, prompt: 'Os kanji 「{便利|べんり}（な）／{不便|ふべん}（な）／{静|しず}か（な）／{有名|ゆうめい}（な）」 lêem-se:', choices: [{ n: 1, text: 'べんり (prático) ／ ふべん (inconveniente) ／ しずか (tranquilo) ／ ゆうめい (famoso)' }, { n: 2, text: 'べんり ／ ふべん ／ せいか ／ ゆうめい' }, { n: 3, text: 'びんり ／ ふびん ／ しずか ／ ゆうみょう' }, { n: 4, text: 'べんり ／ ふべん ／ しずか ／ ありめい' }], answer: 1, explanationPt: '{便利|べんり}（な）, {不便|ふべん}（な）, {静|しず}か（な）, {有名|ゆうめい}（な）. (漢字)' },
+    { id: 'iro-e1-l5-17', number: 17, prompt: 'Os kanji 「{多|おお}い／{少|すく}ない／{遠|とお}い」 lêem-se:', choices: [{ n: 1, text: 'おおい (muito) ／ すくない (pouco) ／ とおい (longe)' }, { n: 2, text: 'たい ／ しょうない ／ えんい' }, { n: 3, text: 'おおい ／ すこない ／ とおい' }, { n: 4, text: 'おおい ／ すくない ／ えんい' }], answer: 1, explanationPt: '{多|おお}い (muito), {少|すく}ない (pouco), {遠|とお}い (longe). Kanji da lição: {町|まち}・{店|みせ}・{食堂|しょくどう}・{便利|べんり}・{不便|ふべん}・{静|しず}か・{有名|ゆうめい}・{多|おお}い・{少|すく}ない・{遠|とお}い. (漢字)' },
+    { id: 'iro-e1-l5-18', number: 18, prompt: '📌 TIPS — sobre as スポーツクラブ (academias) no Japão:', choices: [{ n: 1, text: 'também chamadas ジム/フィットネスクラブ/スポーツセンター; têm máquinas, estúdio, piscina; mensalidade ~10.000 ienes; há academias 24h só de máquinas e centros públicos baratos' }, { n: 2, text: 'são gratuitas para todos' }, { n: 3, text: 'só existem em Tóquio' }, { n: 4, text: 'funcionam só no verão' }], answer: 1, explanationPt: 'スポーツクラブ (academia): também ジム/フィットネスクラブ/スポーツセンター; máquinas, estúdio, piscina; ~10.000 ienes/mês; há 24h só de máquinas (metade do preço) e centros públicos por algumas centenas de ienes. (TIPS)' },
+    { id: 'iro-e1-l5-19', number: 19, prompt: '📌 TIPS — o que é uma ショッピングモール?', choices: [{ n: 1, text: 'um grande complexo com lojas, supermercado, praça de alimentação, fliperama, cinema etc. — dá para passar o dia todo' }, { n: 2, text: 'um templo budista' }, { n: 3, text: 'uma estação de trem' }, { n: 4, text: 'um banho público' }], answer: 1, explanationPt: 'ショッピングモール: prédio grande com lojas variadas, eletrônicos, drogaria, supermercado, praça de alimentação, fliperama, cinema; lugar para curtir a folga o dia todo. (TIPS)' },
+    { id: 'iro-e1-l5-20', number: 20, prompt: '📌 TIPS — sobre os {入浴施設|にゅうよくしせつ} (estabelecimentos de banho) japoneses:', choices: [{ n: 1, text: 'incluem {銭湯|せんとう} (banho público tradicional, barato), {健康|けんこう}ランド (spa com muitos banhos/saunas, mais caro) e スーパー{銭湯|せんとう} (meio-termo)' }, { n: 2, text: 'são só piscinas ao ar livre' }, { n: 3, text: 'são bibliotecas com banho' }, { n: 4, text: 'não existem mais no Japão' }], answer: 1, explanationPt: '{入浴施設|にゅうよくしせつ}: {銭湯|せんとう} (banho público tradicional, ≤500 ienes), {健康|けんこう}ランド (spa com banhos/saunas/restaurante, 1.000–2.000 ienes) e スーパー{銭湯|せんとう} (intermediário). Muitos têm {休憩所|きゅうけいじょ}/{食堂|しょくどう}. (TIPS)' },
+    { id: 'iro-e1-l5-21', number: 21, prompt: 'Diálogo 05-03: o que B acha da cidade?', context: 'B：そうですねえ……。とてもにぎやかで、{便利|べんり}です。…でも、{緑|みどり}がちょっと{少|すく}ないですね。 A：ああ、{確|たし}かに。', choices: [{ n: 1, text: 'É movimentada e prática, mas tem pouco verde' }, { n: 2, text: 'É tranquila e tem muito verde' }, { n: 3, text: 'É no interior e longe de tudo' }, { n: 4, text: 'A gente é fria e a cidade é feia' }], answer: 1, explanationPt: 'にぎやかで、{便利|べんり}です (ligação 〜で, Nota ➊) + でも、{緑|みどり}が{少|すく}ない. A concorda: {確|たし}かに. (Atividade 1 · 聴解スクリプト)' },
+    { id: 'iro-e1-l5-22', number: 22, prompt: 'Diálogo 05-04: o que B diz da cidade?', context: 'B：えっと、{人|ひと}がやさしくて、{住|す}みやすいです。それに、{景色|けしき}がきれいです。', choices: [{ n: 1, text: 'A gente é gentil, é confortável de morar e a paisagem é bonita' }, { n: 2, text: 'É movimentada mas a gente é fria' }, { n: 3, text: 'Tem pouco verde e é mal localizada' }, { n: 4, text: 'É no interior e tem poucos ônibus' }], answer: 1, explanationPt: '{人|ひと}がやさしくて、{住|す}みやすいです (イA→くて, Nota ➊) + {景色|けしき}がきれいです. (Atividade 1)' },
+    { id: 'iro-e1-l5-23', number: 23, prompt: 'Diálogo 05-05: como B descreve a cidade?', context: 'B：{都会|とかい}ですね。{人|ひと}も{店|みせ}も{多|おお}くて、にぎやかですね。…うーん、でも、{人|ひと}がちょっと{冷|つめ}たいです。', choices: [{ n: 1, text: 'É urbana, com muita gente e lojas (movimentada), mas a gente é meio fria' }, { n: 2, text: 'É tranquila e a gente é gentil' }, { n: 3, text: 'É no interior, com muito verde' }, { n: 4, text: 'É bonita mas mal localizada' }], answer: 1, explanationPt: '{都会|とかい}; {人|ひと}も{店|みせ}も{多|おお}くて、にぎやか (〜くて); でも、{人|ひと}がちょっと{冷|つめ}たい. (Atividade 1)' },
+    { id: 'iro-e1-l5-24', number: 24, prompt: 'Diálogo 05-06: o que B fala da cidade?', context: 'B：{緑|みどり}が{多|おお}くて、{静|しず}かでいいですね。…でも、バスが{少|すく}なくて、ちょっと{不便|ふべん}です。', choices: [{ n: 1, text: 'Tem muito verde e é tranquila (bom), mas há poucos ônibus e é meio mal servida' }, { n: 2, text: 'É movimentada e prática' }, { n: 3, text: 'A gente é fria e a cidade é cheia' }, { n: 4, text: 'É bonita e bem localizada' }], answer: 1, explanationPt: '{緑|みどり}が{多|おお}くて、{静|しず}かで… (〜くて, 〜で) + でも、バスが{少|すく}なくて、{不便|ふべん}です. (Atividade 1)' },
+    { id: 'iro-e1-l5-25', number: 25, prompt: 'Diálogo 05-10: que lugar B recomenda e como ele é?', context: 'B：じゃあ、「{南|みなみ}スポーツセンター」とかはどう？ … {建物|たてもの}は{古|ふる}いけど、{安|やす}くていいわよ。', choices: [{ n: 1, text: 'O “Minami Sports Center” — o prédio é velho, mas é barato e bom' }, { n: 2, text: 'Um shopping novo e caro' }, { n: 3, text: 'Um parque longe e bonito' }, { n: 4, text: 'Um banho público famoso' }], answer: 1, explanationPt: '{南|みなみ}スポーツセンター; {建物|たてもの}は{古|ふる}いけど、{安|やす}くていい (けど contraste, Nota ➋ + 〜くて). (Atividade 2 · 聴解スクリプト)' },
+    { id: 'iro-e1-l5-26', number: 26, prompt: 'Diálogo 05-11: o que é a “マリンモール” e como B a descreve?', context: 'B：ショッピングモール。いろんな{店|みせ}とか、レストランとか、スーパーとかがあるところ。おもしろいけど、{日曜日|にちようび}は{人|ひと}が{多|おお}いかな。', choices: [{ n: 1, text: 'Um shopping (lojas, restaurantes, supermercado); é legal, mas no domingo fica cheio' }, { n: 2, text: 'Uma academia barata e velha' }, { n: 3, text: 'Um templo tranquilo' }, { n: 4, text: 'Uma praia famosa' }], answer: 1, explanationPt: 'ショッピングモール (lojas/restaurantes/supermercado); おもしろいけど、{日曜日|にちようび}は{人|ひと}が{多|おお}い (けど, Nota ➋). A：{一度|いちど}{行|い}ってみます. (Atividade 2)' },
+    { id: 'iro-e1-l5-27', number: 27, prompt: 'Diálogo 05-12: como é a “たちばな{公園|こうえん}”?', context: 'B：ここから{自転車|じてんしゃ}で20{分|ふん}くらい。{場所|ばしょ}は{不便|ふべん}だけど、きれいですよ。…ぜひ{行|い}ってみてください。', choices: [{ n: 1, text: 'Fica a ~20 min de bike; é mal localizada, mas é bonita — vale a pena ir' }, { n: 2, text: 'Fica ao lado da estação e é movimentada' }, { n: 3, text: 'É uma academia 24h' }, { n: 4, text: 'É um shopping cheio aos domingos' }], answer: 1, explanationPt: '{自転車|じてんしゃ}で20{分|ふん}; {場所|ばしょ}は{不便|ふべん}だけど、きれい (ナA→だけど, Nota ➋); ぜひ{行|い}ってみてください. (Atividade 2)' },
+    { id: 'iro-e1-l5-28', number: 28, prompt: 'Diálogo 05-13: o que é a “ゆうゆう{館|かん}” e como B a descreve?', context: 'B：{広|ひろ}くておすすめです。…お{風呂|ふろ}ですよ。{食堂|しょくどう}や{休憩所|きゅうけいじょ}もあって、1{日|にち}ゆっくりできますよ。…ちょっと{遠|とお}いけど、バスがあります。', choices: [{ n: 1, text: 'É um banho público (ofurô) amplo e recomendado; tem refeitório e descanso, dá para passar o dia; é longe mas tem ônibus' }, { n: 2, text: 'É um shopping novo no centro' }, { n: 3, text: 'É um parque com muitas flores' }, { n: 4, text: 'É uma academia barata' }], answer: 1, explanationPt: 'お{風呂|ふろ} (banho); {広|ひろ}くておすすめ; {食堂|しょくどう}や{休憩所|きゅうけいじょ}もあって、1{日|にち}ゆっくりできます (V-ること…/できます); ちょっと{遠|とお}いけど、バスがあります (けど). (Atividade 2)' },
+    { id: 'iro-e1-l5-29', number: 29, prompt: 'Mapa (Atividade 3) — “もみじ{庵|あん}”: o que dá para fazer lá?', context: 'もみじ{庵|あん}：いろは{町|ちょう}の{名物|めいぶつ}「いろはそば」を{食|た}べることができる。{安|やす}くておいしいと{評判|ひょうばん}。', choices: [{ n: 1, text: 'Comer o prato típico “iroha soba”; é barato e bem avaliado' }, { n: 2, text: 'Nadar no mar' }, { n: 3, text: 'Ver o pôr do sol do alto da colina' }, { n: 4, text: 'Ver flores o ano todo' }], answer: 1, explanationPt: '「いろはそば」を{食|た}べることができる (V-ることができる, Nota ➌); {安|やす}くておいしい. (Atividade 3 · leitura)' },
+    { id: 'iro-e1-l5-30', number: 30, prompt: 'Mapa (Atividade 3) — “{花山公園|はなやまこうえん}”: o que se destaca?', context: '{花山公園|はなやまこうえん}：80haの{公園|こうえん}の{中|なか}には、バーベキュー{場|じょう}やサイクリングコースなどがある。{一年中|いちねんじゅう}、いろいろな{花|はな}を{見|み}ることができる。', choices: [{ n: 1, text: 'Parque grande com churrasqueira e ciclovia; dá para ver várias flores o ano todo' }, { n: 2, text: 'Restaurante de soba típico' }, { n: 3, text: 'Praia para nadar no verão' }, { n: 4, text: 'Mirante do pôr do sol' }], answer: 1, explanationPt: 'バーベキュー{場|じょう}・サイクリングコース; {一年中|いちねんじゅう}いろいろな{花|はな}を{見|み}ることができる (V-ることができる, Nota ➌). (Atividade 3)' },
+    { id: 'iro-e1-l5-31', number: 31, prompt: 'Mapa (Atividade 3) — “やしが{浜|はま}” e “{夕日|ゆうひ}の{丘|おか}{展望台|てんぼうだい}”: o que oferecem?', context: 'やしが{浜|はま}：{長|なが}くて{美|うつく}しい{砂浜|すなはま}が{有名|ゆうめい}。{夏|なつ}はたくさんの{人|ひと}が{泳|およ}ぎに{来|く}る。 {夕日|ゆうひ}の{丘|おか}{展望台|てんぼうだい}：{丘|おか}の{上|うえ}から{海|うみ}と{町|まち}を{見渡|みわた}すことができる。{夕日|ゆうひ}が{美|うつく}しい。', choices: [{ n: 1, text: 'A praia: areia longa e bonita, gente vem nadar no verão; o mirante: vista do mar e da cidade do alto, pôr do sol lindo' }, { n: 2, text: 'Os dois são restaurantes de soba' }, { n: 3, text: 'Os dois são academias' }, { n: 4, text: 'Os dois são shoppings' }], answer: 1, explanationPt: 'やしが{浜|はま}: {砂浜|すなはま}・{泳|およ}ぐ; {展望台|てんぼうだい}: {海|うみ}と{町|まち}を{見渡|みわた}すことができる (Nota ➌), {夕日|ゆうひ}が{美|うつく}しい. (Atividade 3)' },
+    { id: 'iro-e1-l5-32', number: 32, prompt: 'Pergunta de abertura da lição: 「あなたの{住|す}んでいる{町|まち}は、どんなところですか？」 quer dizer:', choices: [{ n: 1, text: 'Como é a cidade onde você mora?' }, { n: 2, text: 'De que tempo você gosta?' }, { n: 3, text: 'Qual é o seu hobby?' }, { n: 4, text: 'Que estações há no seu país?' }], answer: 1, translationPt: 'Como é o lugar onde você mora?', explanationPt: '{住|す}んでいる{町|まち}はどんなところ = como é a cidade em que mora? Tema: {私|わたし}の{町|まち} (minha cidade). (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 5
+const L5_SCRIPTS: Record<string, ScriptItem[]> = {
+  '05-03': [
+    {
+      label: '会話① (05-03)',
+      setupJa: '{今|いま}{住|す}んでいる{町|まち}について、4{人|よにん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam sobre a cidade em que moram agora.',
+      lines: [
+        { speaker: 'A', ja: 'この{町|まち}には{慣|な}れましたか？', pt: 'Você já se acostumou com esta cidade?' },
+        { speaker: 'B', ja: 'はい。おかげさまで。', pt: 'Sim, graças a Deus.' },
+        { speaker: 'A', ja: 'どうですか？　この{町|まち}は。', pt: 'E aí, como é esta cidade?' },
+        { speaker: 'B', ja: 'そうですねえ……。とてもにぎやかで、{便利|べんり}です。', pt: 'Deixa ver… É bem movimentada e prática.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, é?' },
+        { speaker: 'B', ja: 'でも、{緑|みどり}がちょっと{少|すく}ないですね。', pt: 'Mas tem pouco verde, né.' },
+        { speaker: 'A', ja: 'ああ、{確|たし}かに。', pt: 'Ah, é mesmo.' },
+      ],
+    },
+  ],
+  '05-04': [
+    {
+      label: '会話② (05-04)',
+      lines: [
+        { speaker: 'A', ja: 'この{町|まち}には{慣|な}れた？', pt: 'Já se acostumou com esta cidade?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: 'どう？　この{町|まち}は。', pt: 'E aí, como é?' },
+        { speaker: 'B', ja: 'えっと、{人|ひと}がやさしくて、{住|す}みやすいです。それに、{景色|けしき}がきれいです。', pt: 'Hã, a gente é gentil e é confortável de morar. Além disso, a paisagem é bonita.' },
+        { speaker: 'A', ja: 'それはよかった。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+  '05-05': [
+    {
+      label: '会話③ (05-05)',
+      lines: [
+        { speaker: 'A', ja: 'どう？　この{町|まち}は。', pt: 'E aí, como é esta cidade?' },
+        { speaker: 'B', ja: '{都会|とかい}ですね。{人|ひと}も{店|みせ}も{多|おお}くて、にぎやかですね。', pt: 'É bem urbana. Tem muita gente e muitas lojas, é movimentada.' },
+        { speaker: 'A', ja: 'そう。', pt: 'É mesmo.' },
+        { speaker: 'B', ja: 'うーん、でも、{人|ひと}がちょっと{冷|つめ}たいです。', pt: 'Hmm, mas a gente é meio fria.' },
+        { speaker: 'A', ja: 'そ、そう。', pt: 'A-ah, é…' },
+      ],
+    },
+  ],
+  '05-06': [
+    {
+      label: '会話④ (05-06)',
+      lines: [
+        { speaker: 'A', ja: 'この{町|まち}はどうですか？', pt: 'Como é esta cidade?' },
+        { speaker: 'B', ja: 'この{町|まち}ですか？　{緑|みどり}が{多|おお}くて、{静|しず}かでいいですね。', pt: 'Esta cidade? Tem muito verde e é tranquila, é boa.' },
+        { speaker: 'A', ja: 'そうですね。', pt: 'Pois é.' },
+        { speaker: 'B', ja: 'でも、バスが{少|すく}なくて、ちょっと{不便|ふべん}です。', pt: 'Mas tem poucos ônibus, é meio mal servida.' },
+        { speaker: 'A', ja: 'あー、そうですよね。', pt: 'Ah, é verdade.' },
+      ],
+    },
+  ],
+  '05-10': [
+    {
+      label: '会話① (05-10)',
+      setupJa: '{町|まち}のおすすめの{場所|ばしょ}について、4{人|よにん}の{人|ひと}が{職場|しょくば}の{人|ひと}に{質問|しつもん}しています。',
+      setupPt: 'Quatro pessoas perguntam a um colega de trabalho sobre lugares recomendados da cidade.',
+      lines: [
+        { speaker: 'A', ja: '{休|やす}みの{日|ひ}にどこか{行|い}きたいんですが、いいところがありますか？', pt: 'Queria ir a algum lugar na folga; tem um lugar bom?' },
+        { speaker: 'B', ja: 'そうね……。スポーツは{好|す}き？', pt: 'Hmm… Você gosta de esporte?' },
+        { speaker: 'A', ja: 'はい。', pt: 'Gosto.' },
+        { speaker: 'B', ja: 'じゃあ、「{南|みなみ}スポーツセンター」とかはどう？', pt: 'Então, que tal o “Minami Sports Center”?' },
+        { speaker: 'A', ja: 'スポーツセンター？', pt: 'Centro esportivo?' },
+        { speaker: 'B', ja: '{建物|たてもの}は{古|ふる}いけど、{安|やす}くていいわよ。', pt: 'O prédio é velho, mas é barato e bom.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '05-11': [
+    {
+      label: '会話② (05-11)',
+      lines: [
+        { speaker: 'A', ja: '{休|やす}みの{日|ひ}にどこか{行|い}きたいんですが、いいところがありますか？', pt: 'Queria ir a algum lugar na folga; tem um lugar bom?' },
+        { speaker: 'B', ja: 'そうだなあ。この{町|まち}の{人|ひと}は「マリンモール」によく{行|い}くよ。', pt: 'Deixa ver… O pessoal daqui costuma ir ao “Marine Mall”.' },
+        { speaker: 'A', ja: 'え、それは{何|なん}ですか？', pt: 'Ah, e o que é isso?' },
+        { speaker: 'B', ja: 'ショッピングモール。いろんな{店|みせ}とか、レストランとか、スーパーとかがあるところ。おもしろいけど、{日曜日|にちようび}は{人|ひと}が{多|おお}いかな。', pt: 'Um shopping. Um lugar com várias lojas, restaurantes, supermercado. É legal, mas no domingo fica cheio.' },
+        { speaker: 'A', ja: 'そうですか。{一度|いちど}{行|い}ってみます。', pt: 'Ah, sei. Vou lá um dia desses.' },
+      ],
+    },
+  ],
+  '05-12': [
+    {
+      label: '会話③ (05-12)',
+      lines: [
+        { speaker: 'A', ja: '{休|やす}みの{日|ひ}にどこか{行|い}きたいんですが、いいところがありますか？', pt: 'Queria ir a algum lugar na folga; tem um lugar bom?' },
+        { speaker: 'B', ja: 'そうですね……。「たちばな{公園|こうえん}」はどうですか？', pt: 'Deixa ver… Que tal o “Parque Tachibana”?' },
+        { speaker: 'A', ja: 'たちばな{公園|こうえん}ですか？', pt: 'Parque Tachibana?' },
+        { speaker: 'B', ja: 'ここから{自転車|じてんしゃ}で20{分|ぷん}くらい。{場所|ばしょ}は{不便|ふべん}だけど、きれいですよ。', pt: 'Fica a uns 20 minutos de bicicleta daqui. É mal localizado, mas é bonito.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: 'ぜひ{行|い}ってみてください。', pt: 'Vá lá, não deixe de ir.' },
+      ],
+    },
+  ],
+  '05-13': [
+    {
+      label: '会話④ (05-13)',
+      lines: [
+        { speaker: 'A', ja: '{休|やす}みの{日|ひ}にどこか{行|い}きたいんですが、いいところがありますか？', pt: 'Queria ir a algum lugar na folga; tem um lugar bom?' },
+        { speaker: 'B', ja: 'ぼくが{好|す}きなのは、「ゆうゆう{館|かん}」ですね。{広|ひろ}くておすすめです。{知|し}ってますか？', pt: 'O que eu gosto é o “Yuyu-kan”. É amplo e recomendo. Você conhece?' },
+        { speaker: 'A', ja: 'いえ、それ、{何|なん}ですか？', pt: 'Não, o que é isso?' },
+        { speaker: 'B', ja: 'お{風呂|ふろ}ですよ。', pt: 'É um banho público (ofurô).' },
+        { speaker: 'A', ja: 'えっ、お{風呂|ふろ}？', pt: 'Hã, banho?' },
+        { speaker: 'B', ja: '{食堂|しょくどう}や{休憩所|きゅうけいじょ}もあって、1{日|にち}ゆっくりできますよ。', pt: 'Tem refeitório e área de descanso também, dá para relaxar o dia todo.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: 'ちょっと{遠|とお}いけど、バスがあります。', pt: 'É meio longe, mas tem ônibus.' },
+      ],
+    },
+  ],
+}
+
+const lesson5: Section = {
+  id: 'lesson-5',
+  level: 'elementary1',
+  titleJa: '第5課 とてもにぎやかで便利です',
+  titlePt: 'Lição 5 — É muito movimentado e prático',
+  summaryPt: 'Minha cidade · descrever a cidade ligando adjetivos com 〜で／〜くて (にぎやかで便利です／緑が多くて静かです), contrastar duas avaliações com けど (場所は不便だけどきれいです), dizer o que é possível fazer num lugar com V-ることができます (花を見ることができます) e ler um mapa-guia da cidade.',
+  studyNotes: [
+    {
+      title: 'Tópico: Minha cidade (私の町)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Falar de forma simples suas impressões sobre a cidade onde mora.\n' +
+        '- Perguntar sobre lugares recomendados da cidade e entender a resposta.\n' +
+        '- Ler o mapa-guia da cidade e captar informações sobre pontos e lojas.\n\n' +
+        '💡 Pergunta de abertura: あなたの{住|す}んでいる{町|まち}は、どんなところですか？ (como é a cidade onde você mora?).',
+    },
+    {
+      title: 'Ligar adjetivos: N で／ナA-で／イA-くて (➊)',
+      bodyPt:
+        'Para juntar duas frases (qualidades) numa só:\n\n' +
+        '- **N / ナA → 〜で**: `この{町|まち}は、とてもにぎやかで、{便利|べんり}です` / `ここは{田舎|いなか}で、のんびりしています`.\n' +
+        '- **イA → 〜くて** (い→くて): `{緑|みどり}が{多|おお}くて、{静|しず}かでいいですね` / `{人|ひと}がやさしくて、{住|す}みやすいです`.\n\n' +
+        'Pode misturar: `バスが{少|すく}なくて、ちょっと{不便|ふべん}です`.',
+    },
+    {
+      title: 'Contraste: N だ／ナA-だ／イA-い + けど (➋)',
+      bodyPt:
+        '**けど** liga duas frases que se **contrastam** (uma avaliação positiva, outra negativa):\n\n' +
+        '- **N / ナA → 〜だけど**: `{場所|ばしょ}は{不便|ふべん}だけど、きれいですよ` / `{都会|とかい}だけど、{緑|みどり}が{多|おお}いですね`.\n' +
+        '- **イA → 〜いけど**: `{建物|たてもの}は{古|ふる}いけど、{安|やす}くていい` / `ちょっと{遠|とお}いけど、バスがあります`.',
+    },
+    {
+      title: 'O que dá para fazer: V-ることができます (➌)',
+      bodyPt:
+        '**できます (できる)** tem dois sentidos:\n\n' +
+        '- ① **capacidade pessoal**: `{私|わたし}は{日本語|にほんご}ができます`.\n' +
+        '- ② **possibilidade pela situação** (foco desta lição, p/ descrever cidade/pontos turísticos): `{冬|ふゆ}はスキーができます`.\n\n' +
+        'Com **verbo**, usa-se **V (辞書形) + ことができます**: `{一年中|いちねんじゅう}、いろいろな{花|はな}を{見|み}ることができます`, `{丘|おか}の{上|うえ}から{海|うみ}と{町|まち}を{見渡|みわた}すことができます`.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Como é a cidade:** {便利|べんり}（な）／{不便|ふべん}（な） (prático/mal servido), にぎやか（な）／{静|しず}か（な） (movimentado/tranquilo), {緑|みどり}が{多|おお}い／{少|すく}ない (muito/pouco verde), {人|ひと}がやさしい・{親切|しんせつ}（な）／{人|ひと}が{冷|つめ}たい (gentil/frio), {田舎|いなか}／{都会|とかい} (interior/cidade grande), {景色|けしき}がきれい（な） (paisagem bonita).\n\n' +
+        '**Lugares (Ativ. 2):** {安|やす}い, おもしろい, きれい（な）, {広|ひろ}い, {古|ふる}い, {遠|とお}い, {人|ひと}が{多|おお}い, どこか, ところ, {建物|たてもの}, おすすめ, ぜひ, {行|い}ってみる, {知|し}っている／{知|し}る, {休憩所|きゅうけいじょ}, スポーツセンター, ショッピングモール. **Mapa (Ativ. 3):** {美|うつく}しい, {砂浜|すなはま}, {有名|ゆうめい}（な）, {泳|およ}ぐ, {丘|おか}, {見渡|みわた}す, {夕日|ゆうひ}.\n\n' +
+        '**Kanji da lição:** {町|まち}, {店|みせ}, {食堂|しょくどう}, {便利|べんり}, {不便|ふべん}, {静|しず}か, {有名|ゆうめい}, {多|おお}い, {少|すく}ない, {遠|とお}い.\n\n' +
+        '📌 **TIPS:** **スポーツクラブ** (academias: ジム/フィットネス/センter; ~10.000 ienes/mês; há 24h e públicas baratas); **ショッピングモール** (passar o dia: lojas, comida, cinema); **{入浴施設|にゅうよくしせつ}** ({銭湯|せんとう}, {健康|けんこう}ランド, スーパー{銭湯|せんとう}).',
+    },
+  ],
+  groups: [lesson5Group],
+  audios: attachScripts(5, L5_SCRIPTS),
+}
+
+// ---- Lições 6-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(5, 'Minha cidade', 'とてもにぎやかで便利です', 'É muito movimentado e prático', [
-    'Falar de forma simples suas impressões sobre a cidade onde mora.',
-    'Perguntar sobre lugares recomendados da cidade e entender a resposta.',
-    'Ler o mapa-guia da cidade e captar informações sobre pontos e lojas.',
-  ]),
   scaffold(6, 'Minha cidade', '郵便局はどう行ったらいいですか？', 'Como faço para ir ao correio?', [
     'Perguntar o caminho a outra pessoa e entender a resposta.',
     'Perguntar o caminho por telefone e entender a resposta.',
@@ -973,5 +1175,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, ...others],
 }
