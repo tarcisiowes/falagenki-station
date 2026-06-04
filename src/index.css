@@ -305,6 +305,23 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
 .script-item .question { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 14.5px; }
 .script-item .ans { margin-top: 6px; font-size: 13px; color: var(--green); font-weight: 700; }
 
+/* resposta marcável na audição */
+.audio-answer {
+  margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line);
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.audio-answer .aa-label { font-size: 13px; font-weight: 600; color: var(--ink-soft); }
+.opt-row { display: flex; gap: 6px; }
+.opt {
+  width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--line); background: #fff;
+  cursor: pointer; font: inherit; font-size: 15px; font-weight: 700; color: var(--ink-soft); transition: .12s;
+}
+.opt:hover { background: var(--surface-2); }
+.opt.selected { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-ink); }
+.opt.correct { border-color: var(--green); background: var(--green-soft); color: var(--green); }
+.opt.wrong { border-color: var(--accent); background: #fdeef0; color: var(--accent-ink); }
+.aa-result { font-size: 13.5px; font-weight: 600; }
+
 /* ---- backup bar ---- */
 .backup-bar { padding: 16px 20px; margin-bottom: 22px; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
 .backup-bar .info { font-size: 13px; color: var(--ink-soft); }
