@@ -1470,13 +1470,292 @@ const lesson9: Section = {
   audios: attachScripts(9, L9_SCRIPTS),
 }
 
-// ---- Lições 10 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson10Group: ExerciseGroup = {
+  id: 'iro-s-l10',
+  title: 'ホチキス貸してください',
+  subtitlePt: 'Entender instruções no trabalho, confirmar, emprestar e checar listas',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l10-1', number: 1, prompt: 'No trabalho alguém diz 「{手伝|てつだ}ってください」. Está pedindo para você:', choices: [{ n: 1, text: 'ajudar' }, { n: 2, text: 'esperar' }, { n: 3, text: 'fechar a janela' }, { n: 4, text: 'jogar fora' }], answer: 1, explanationPt: '{手伝|てつだ}って（ください）= ajude(-me). Verbo {手伝|てつだ}う (ajudar) na forma て. (Seção 1 / Nota ➊)' },
+    { id: 'iro-s-l10-2', number: 2, prompt: 'Registro: ordene de mais formal a mais casual:', choices: [{ n: 1, text: 'V-てください ＞ V-て ＞ V-てくれる？' }, { n: 2, text: 'V-て ＞ V-てください ＞ V-てくれる？' }, { n: 3, text: 'V-てくれる？ ＞ V-てください ＞ V-て' }, { n: 4, text: 'são todos iguais' }], answer: 1, explanationPt: 'V-てください = pedido educado/formal; V-て = casual (com amigos/subordinados); V-てくれる？ = casual com entonação de pergunta. (Nota ➊)' },
+    { id: 'iro-s-l10-3', number: 3, prompt: 'Relacione 「{置|お}いてください」:', choices: [{ n: 1, text: 'coloque/ponha (aqui)' }, { n: 2, text: 'pegue' }, { n: 3, text: 'jogue fora' }, { n: 4, text: 'guarde/arrume' }], answer: 1, explanationPt: '{置|お}いて (de {置|お}く, pôr) = coloque. Ex.: {段|だん}ボール、そこに{置|お}いてください = ponha a caixa aí. (Diálogo 10-02)' },
+    { id: 'iro-s-l10-4', number: 4, prompt: 'Diferença entre 「{持|も}って{行|い}って」 e 「{持|も}って{来|き}て」:', choices: [{ n: 1, text: '{持|も}って{行|い}って = leve (pra lá); {持|も}って{来|き}て = traga (pra cá)' }, { n: 2, text: '{持|も}って{行|い}って = traga; {持|も}って{来|き}て = leve' }, { n: 3, text: 'os dois = segure' }, { n: 4, text: '{持|も}って{行|い}って = compre; {持|も}って{来|き}て = venda' }], answer: 1, explanationPt: '{行|い}く (ir) → levar para longe; {来|く}る (vir) → trazer para perto. {鈴木|すずき}さんに{持|も}って{行|い}って = leve ao Suzuki. (Diálogos 10-03, 10-09)' },
+    { id: 'iro-s-l10-5', number: 5, prompt: '「テーブルの{上|うえ}、{片付|かたづ}けてください」 pede para:', choices: [{ n: 1, text: 'arrumar/organizar a mesa' }, { n: 2, text: 'limpar o chão' }, { n: 3, text: 'pôr a caixa em cima' }, { n: 4, text: 'fechar a janela' }], answer: 1, explanationPt: '{片付|かたづ}けて (de {片付|かたづ}ける) = arrumar, organizar, recolher. (Diálogo 10-04)' },
+    { id: 'iro-s-l10-6', number: 6, prompt: 'Relacione: {捨|す}てて / {並|なら}べて / {閉|し}めて:', choices: [{ n: 1, text: '{捨|す}てて = jogue fora; {並|なら}べて = enfileire; {閉|し}めて = feche' }, { n: 2, text: '{捨|す}てて = enfileire; {並|なら}べて = feche; {閉|し}めて = jogue fora' }, { n: 3, text: 'os três = arrume' }, { n: 4, text: '{捨|す}てて = abra; {並|なら}べて = pegue; {閉|し}めて = leve' }], answer: 1, explanationPt: '{捨|す}てて (jogar fora — ごみ), {並|なら}べて (enfileirar — いす), {閉|し}めて (fechar — {窓|まど}). (Diálogos 10-06/07/08)' },
+    { id: 'iro-s-l10-7', number: 7, prompt: 'Qual destes é 「{段|だん}ボール」?', choices: [{ n: 1, text: 'caixa de papelão' }, { n: 2, text: 'chave de fenda' }, { n: 3, text: 'controle remoto' }, { n: 4, text: 'projetor' }], answer: 1, explanationPt: '{段|だん}ボール = papelão/caixa de papelão. ドライバー = chave de fenda; リモコン = controle remoto; プロジェクタ = projetor; ごみ = lixo; {窓|まど} = janela.' },
+    { id: 'iro-s-l10-8', number: 8, prompt: 'Para CONFIRMAR uma instrução (“30, certo?”), usa-se:', choices: [{ n: 1, text: '30ですね' }, { n: 2, text: '30です' }, { n: 3, text: '30ですか' }, { n: 4, text: '30でした' }], answer: 1, translationPt: '30, certo?', explanationPt: 'N + ですね = repete a informação para confirmar. O 〜ね no fim pede a confirmação do outro. (Nota ➋)' },
+    { id: 'iro-s-l10-9', number: 9, prompt: 'Você não entendeu a quantidade/horário. Como pedir de novo?', choices: [{ n: 1, text: 'すみません。いくつですか？／{何時|なんじ}ですか？' }, { n: 2, text: 'はい、わかりました。' }, { n: 3, text: 'どうぞ。' }, { n: 4, text: 'そうですね。' }], answer: 1, explanationPt: 'いくつですか？ = quantos? / {何時|なんじ}ですか？ = que horas? Pergunta de volta com a palavra interrogativa. (Nota ➋, retoma a Lição 4)' },
+    { id: 'iro-s-l10-10', number: 10, prompt: 'Em 「10{時|じ}までに{片付|かたづ}けてください」, o 「までに」 indica:', choices: [{ n: 1, text: 'o prazo (faça ATÉ as 10h)' }, { n: 2, text: 'o início (a partir das 10h)' }, { n: 3, text: 'a duração' }, { n: 4, text: 'o lugar' }], answer: 1, explanationPt: '〜までに = prazo limite (“até, no máximo até”). Diferente de まで (até, contínuo). (Diálogo 10-12)' },
+    { id: 'iro-s-l10-11', number: 11, prompt: 'Relacione 「あとで」 e 「もしもし」:', choices: [{ n: 1, text: 'あとで = depois/mais tarde; もしもし = alô (ao telefone)' }, { n: 2, text: 'あとで = agora; もしもし = tchau' }, { n: 3, text: 'あとで = alô; もしもし = depois' }, { n: 4, text: 'os dois = obrigado' }], answer: 1, explanationPt: 'あとで = mais tarde; もしもし = alô (atender/iniciar telefonema). (Diálogo 10-14, vocab da Seção 2)' },
+    { id: 'iro-s-l10-12', number: 12, prompt: 'No relógio de 24 horas, 「14:00」 lê-se:', choices: [{ n: 1, text: 'じゅうよじ' }, { n: 2, text: 'じゅうしじ' }, { n: 3, text: 'にじゅうじ' }, { n: 4, text: 'じゅうにじ' }], answer: 1, explanationPt: '14:00 = じゅうよじ (note: 4{時|じ} = よじ). Ex.: 13:00 じゅうさんじ, 19:00 じゅうくじ, 0:00 れいじ. (Tabela 時間 / TIPS 24時間制)' },
+    { id: 'iro-s-l10-13', number: 13, prompt: 'No diálogo 10-14, 「14{時|じ}{半|はん}」 equivale a:', choices: [{ n: 1, text: '{午後|ごご}2{時|じ}{半|はん} (14:30)' }, { n: 2, text: '{午前|ごぜん}4{時|じ}{半|はん}' }, { n: 3, text: '{午後|ごご}4{時|じ}{半|はん}' }, { n: 4, text: '{午前|ごぜん}2{時|じ}{半|はん}' }], answer: 1, explanationPt: 'No áudio: 14{時|じ}{半|はん}。{午後|ごご}2{時|じ}{半|はん}です = 14:30 = 2:30 da tarde.' },
+    { id: 'iro-s-l10-14', number: 14, prompt: 'No bilhete (メモ), 「すぐに」 significa:', choices: [{ n: 1, text: 'imediatamente / agora mesmo' }, { n: 2, text: 'mais tarde' }, { n: 3, text: 'amanhã' }, { n: 4, text: 'devagar' }], answer: 1, explanationPt: 'すぐに = imediatamente. Ex. da memo: すぐに{第|だい}2{会議室|かいぎしつ}に{来|き}てください = venha já à 2ª sala de reunião. (Seção 3)' },
+    { id: 'iro-s-l10-15', number: 15, prompt: 'O contador 「〜{部|ぶ}」 (ex.: 100{部|ぶ}) conta:', choices: [{ n: 1, text: 'cópias/exemplares de um documento' }, { n: 2, text: 'pessoas' }, { n: 3, text: 'horas' }, { n: 4, text: 'andares' }], answer: 1, explanationPt: '〜{部|ぶ} = exemplares/cópias. 100{部|ぶ} = 100 cópias. {第|だい}〜 = nº ~ (ordinal): {第|だい}2 = nº 2. (Seção 3, palavras-chave)' },
+    { id: 'iro-s-l10-16', number: 16, prompt: 'Na memo 「{電話|でんわ}してください」 pede para:', choices: [{ n: 1, text: 'telefonar (ligar de volta)' }, { n: 2, text: 'mandar e-mail' }, { n: 3, text: 'ir pessoalmente' }, { n: 4, text: 'esperar' }], answer: 1, explanationPt: '{電話|でんわ}してください = ligue (por favor). {電話|でんわ}する = telefonar; {折|お}り{返|かえ}し = de volta (retornar a ligação). (Seção 3, memo ③)' },
+    { id: 'iro-s-l10-17', number: 17, prompt: 'Como PEDIR algo emprestado (“me empreste o grampeador”)?', choices: [{ n: 1, text: 'ホチキス、{貸|か}してください。' }, { n: 2, text: 'ホチキス、{借|か}りてください。' }, { n: 3, text: 'ホチキス、ありますね。' }, { n: 4, text: 'ホチキス、どうぞ。' }], answer: 1, translationPt: 'Me empreste o grampeador.', explanationPt: '{貸|か}す = emprestar (dar emprestado). N、{貸|か}してください = me empreste N. ⚠️ {借|か}りる = pegar emprestado (ponto de vista oposto). (Nota ➌)' },
+    { id: 'iro-s-l10-18', number: 18, prompt: 'Como PEDIR PERMISSÃO para usar/pegar algo emprestado?', choices: [{ n: 1, text: '{借|か}りてもいいですか？' }, { n: 2, text: '{貸|か}してもいいですか？' }, { n: 3, text: 'ありませんか？' }, { n: 4, text: 'どうぞですか？' }], answer: 1, translationPt: 'Posso pegar emprestado?', explanationPt: '{借|か}りてもいいですか？ = posso pegar emprestado? (pedido de permissão com o verbo {借|か}りる). (Nota ➌)' },
+    { id: 'iro-s-l10-19', number: 19, prompt: 'Apontando para um objeto, a forma curta de pedir é:', choices: [{ n: 1, text: 'これ、いいですか？' }, { n: 2, text: 'これ、ですね？' }, { n: 3, text: 'これ、ありますか？' }, { n: 4, text: 'これ、までに？' }], answer: 1, translationPt: 'Posso (usar) isto?', explanationPt: 'これ、いいですか？ = posso? — forma abreviada de {借|か}りてもいいですか？ (omite {借|か}りても). Pode-se nomear: のり、いいですか？ (Nota ➌)' },
+    { id: 'iro-s-l10-20', number: 20, prompt: 'Para perguntar se a pessoa TEM o item (“tem um carregador?”):', choices: [{ n: 1, text: 'スマホの{充電器|じゅうでんき}、ありますか？' }, { n: 2, text: 'スマホの{充電器|じゅうでんき}、{貸|か}してね。' }, { n: 3, text: 'スマホの{充電器|じゅうでんき}、ですね。' }, { n: 4, text: 'スマホの{充電器|じゅうでんき}、いくつ？' }], answer: 1, translationPt: 'Você tem carregador de celular?', explanationPt: 'N、ありますか？ = você tem N? Muitas vezes seguido de {借|か}りてもいいですか？. Resposta casual: ありますよ／あるよ. (Nota ➌)' },
+    { id: 'iro-s-l10-21', number: 21, prompt: 'Qual destes é 「{電卓|でんたく}」 (item de escritório)?', choices: [{ n: 1, text: 'calculadora' }, { n: 2, text: 'grampeador' }, { n: 3, text: 'estilete' }, { n: 4, text: 'post-it' }], answer: 1, explanationPt: '{電卓|でんたく} = calculadora. ホチキス = grampeador; カッター = estilete; ふせん = post-it; のり = cola; えんぴつ = lápis. (Seção 4)' },
+    { id: 'iro-s-l10-22', number: 22, prompt: 'Na checklist do restaurante, 「はし」 é:', choices: [{ n: 1, text: 'hashi (palitinhos)' }, { n: 2, text: 'garfo' }, { n: 3, text: 'colher' }, { n: 4, text: 'faca' }], answer: 1, explanationPt: 'はし = hashi (palitinhos). フォーク = garfo; スプーン = colher; ナイフ = faca; {塩|しお} = sal; こしょう = pimenta; {砂糖|さとう} = açúcar. (Seção 5)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 10 (聴解スクリプト)
+const L10_SCRIPTS: Record<string, ScriptItem[]> = {
+  '10-01': [
+    {
+      label: '指示① (10-01)',
+      setupJa: '{職場|しょくば}で、{上司|じょうし}から{指示|しじ}を{受|う}けています。',
+      setupPt: 'No trabalho, recebendo instruções do supervisor.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。ちょっと、{手伝|てつだ}ってください。', pt: 'Com licença. Me dá uma ajudinha?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '10-02': [
+    {
+      label: '指示② (10-02)',
+      lines: [
+        { speaker: 'A', ja: 'えーと、{段|だん}ボール、そこに{置|お}いてください。', pt: 'Hmm, a caixa de papelão, ponha aí, por favor.' },
+        { speaker: 'B', ja: 'はい、わかりました。', pt: 'Sim, entendido.' },
+      ],
+    },
+  ],
+  '10-03': [
+    {
+      label: '指示③ (10-03)',
+      lines: [
+        { speaker: 'B', ja: 'これ、{鈴木|すずき}さんに{持|も}って{行|い}ってください。', pt: 'Isto aqui, leve para o Suzuki, por favor.' },
+        { speaker: 'A', ja: 'はい、わかりました。', pt: 'Sim, entendido.' },
+      ],
+    },
+  ],
+  '10-04': [
+    {
+      label: '指示④ (10-04)',
+      lines: [
+        { speaker: 'A', ja: 'メイさん、テーブルの{上|うえ}、{片付|かたづ}けてください。', pt: 'May, arrume a mesa, por favor.' },
+        { speaker: 'B', ja: 'はい、わかりました。', pt: 'Sim, entendido.' },
+      ],
+    },
+  ],
+  '10-05': [
+    {
+      label: '指示⑤ (10-05)',
+      lines: [
+        { speaker: 'A', ja: 'ちょっと、そこのドライバー、{取|と}って。', pt: 'Ô, me passa aquela chave de fenda aí.' },
+        { speaker: 'B', ja: 'はい、どうぞ。', pt: 'Aqui, pega.' },
+        { speaker: 'A', ja: 'ありがとう。', pt: 'Valeu.' },
+      ],
+    },
+  ],
+  '10-06': [
+    {
+      label: '指示⑥ (10-06)',
+      lines: [
+        { speaker: 'A', ja: 'テレーザさん、ごみ、{捨|す}てて。', pt: 'Tereza, joga o lixo fora.' },
+        { speaker: 'B', ja: 'あ、はい。', pt: 'Ah, tá.' },
+      ],
+    },
+  ],
+  '10-07': [
+    {
+      label: '指示⑦ (10-07)',
+      lines: [
+        { speaker: 'A', ja: 'プルナさん、いす、{並|なら}べて。', pt: 'Purna, enfileira as cadeiras.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Tá.' },
+      ],
+    },
+  ],
+  '10-08': [
+    {
+      label: '指示⑧ (10-08)',
+      lines: [
+        { speaker: 'A', ja: 'イさん。', pt: 'Sr. Lee.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: '{窓|まど}、{閉|し}めてくれる？', pt: 'Fecha a janela pra mim?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '10-09': [
+    {
+      label: '指示⑨ (10-09)',
+      lines: [
+        { speaker: 'A', ja: '（{電話|でんわ}に{出|で}る）はい。', pt: '(atendendo o telefone) Alô.' },
+        { speaker: 'B', ja: 'あ、レザさん。プロジェクタとリモコン、{持|も}って{来|き}てくれる？', pt: 'Ah, Reza. Traz o projetor e o controle pra cá?' },
+        { speaker: 'A', ja: 'はい、わかりました。', pt: 'Sim, entendido.' },
+      ],
+    },
+  ],
+  '10-11': [
+    {
+      label: '確認① (10-11)',
+      setupJa: '{職場|しょくば}で{仕事|しごと}を{頼|たの}まれ、{内容|ないよう}を{確認|かくにん}しています。',
+      setupPt: 'No trabalho, recebendo uma tarefa e confirmando o conteúdo.',
+      lines: [
+        { speaker: 'A', ja: 'これ、コピー、30{枚|まい}お{願|ねが}い。', pt: 'Faz 30 cópias disto, por favor.' },
+        { speaker: 'B', ja: 'はい、30ですね。', pt: 'Sim, 30, certo?' },
+      ],
+    },
+  ],
+  '10-12': [
+    {
+      label: '確認② (10-12)',
+      lines: [
+        { speaker: 'A', ja: '{隣|となり}の{部屋|へや}、10{時|じ}までに{片付|かたづ}けてください。', pt: 'Arrume a sala ao lado até as 10h, por favor.' },
+        { speaker: 'B', ja: 'はい、10{時|じ}ですね。', pt: 'Sim, até as 10h, certo?' },
+      ],
+    },
+  ],
+  '10-13': [
+    {
+      label: '確認③ (10-13)',
+      lines: [
+        { speaker: 'A', ja: '{会議室|かいぎしつ}に、いす、8つ{並|なら}べてくれる？', pt: 'Põe 8 cadeiras na sala de reunião pra mim?' },
+        { speaker: 'B', ja: 'すみません。いくつですか？', pt: 'Desculpa. Quantas?' },
+        { speaker: 'A', ja: '8つです。8。', pt: '8. Oito.' },
+        { speaker: 'B', ja: 'はい、わかりました。', pt: 'Sim, entendido.' },
+      ],
+    },
+  ],
+  '10-14': [
+    {
+      label: '確認④ (10-14)',
+      lines: [
+        { speaker: 'A', ja: 'もしもし、リンさん。', pt: 'Alô, Lin.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: 'あとで、14{時|じ}{半|はん}に{事務室|じむしつ}に{来|き}てください。', pt: 'Mais tarde, venha ao escritório às 14:30.' },
+        { speaker: 'B', ja: 'すみません。{何時|なんじ}ですか？', pt: 'Desculpa. Que horas?' },
+        { speaker: 'A', ja: '14{時|じ}{半|はん}。{午後|ごご}2{時|じ}{半|はん}です。', pt: '14:30. Duas e meia da tarde.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendido.' },
+      ],
+    },
+  ],
+  '10-23': [
+    {
+      label: '貸し借り① (10-23)',
+      setupJa: '{職場|しょくば}で、まわりの{人|ひと}にものを{借|か}りています。',
+      setupPt: 'No trabalho, pedindo coisas emprestadas a quem está por perto.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。ホチキス、{貸|か}してください。', pt: 'Com licença. Me empreste o grampeador.' },
+        { speaker: 'B', ja: 'どうぞ。', pt: 'Pode pegar.' },
+        { speaker: 'A', ja: 'どうも。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '10-24': [
+    {
+      label: '貸し借り② (10-24)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、これ、いいですか？', pt: 'Hmm, posso usar isto?' },
+        { speaker: 'B', ja: 'カッター？いいよ。はい。', pt: 'O estilete? Pode. Toma.' },
+        { speaker: 'A', ja: 'すみません。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '10-25': [
+    {
+      label: '貸し借り③ (10-25)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{電卓|でんたく}、ありますか？', pt: 'Com licença. Tem calculadora?' },
+        { speaker: 'B', ja: '{電卓|でんたく}？あるよ。はい。', pt: 'Calculadora? Tenho. Toma.' },
+        { speaker: 'A', ja: 'じゃあ、ちょっと{借|か}ります。', pt: 'Então, vou pegar emprestado.' },
+      ],
+    },
+  ],
+  '10-26': [
+    {
+      label: '貸し借り④ (10-26)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、スマホの{充電器|じゅうでんき}、ありますか？', pt: 'Hmm, tem carregador de celular?' },
+        { speaker: 'B', ja: 'ありますよ。', pt: 'Tenho, sim.' },
+        { speaker: 'A', ja: 'すみません。{借|か}りてもいいですか？', pt: 'Desculpa. Posso pegar emprestado?' },
+        { speaker: 'B', ja: 'どうぞ。', pt: 'Pode.' },
+      ],
+    },
+  ],
+}
+
+const lesson10: Section = {
+  id: 'lesson-10',
+  level: 'starter',
+  titleJa: '第10課 ホチキス貸してください',
+  titlePt: 'Lição 10 — Me empreste o grampeador',
+  summaryPt: 'Vida cotidiana · entender instruções no trabalho (V-てください／V-て／V-てくれる？), confirmar e perguntar de novo (Nですね, いくつ／何時), ler um bilhete à mão, pedir algo emprestado (貸して／借りてもいい／ありますか) e conferir uma lista de itens.',
+  studyNotes: [
+    {
+      title: 'Tópico: Vida cotidiana (no trabalho)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Entender instruções curtas e simples no trabalho.\n' +
+        '- Confirmar os pontos importantes e pedir para repetir quando não entender.\n' +
+        '- Ler um bilhete simples escrito à mão e entender a tarefa.\n' +
+        '- Pedir algo emprestado a um colega.\n' +
+        '- Olhar uma lista de itens e conferir se está tudo (o que falta).',
+    },
+    {
+      title: 'Instruções e pedidos: V-てください／V-て／V-てくれる？ (➊)',
+      bodyPt:
+        'Usa-se a **forma て** do verbo para instruir/pedir. Três registros:\n\n' +
+        '| forma | registro | exemplo |\n|---|---|---|\n' +
+        '| V-てください | educado/formal | `{手伝|てつだ}ってください` (me ajude) |\n' +
+        '| V-て | casual (amigos/subordinados) | `ドライバー、{取|と}って` (me passa a chave) |\n' +
+        '| V-てくれる？ | casual, com entonação ↗ | `{窓|まど}、{閉|し}めてくれる？` (fecha a janela?) |\n\n' +
+        '👉 Aqui a meta é só **entender ao ouvir** — a conjugação da forma て é estudada no 初級1.\n\n' +
+        '**Verbos de instrução:** {置|お}いて (pôr), {取|と}って (pegar/passar), {並|なら}べて (enfileirar), {片付|かたづ}けて (arrumar), {捨|す}てて (jogar fora), {持|も}って{来|き}て (trazer), {持|も}って{行|い}って (levar), {閉|し}めて (fechar), {手伝|てつだ}って (ajudar). Objetos: {段|だん}ボール, ドライバー, ごみ, {窓|まど}, プロジェクタ, リモコン.',
+    },
+    {
+      title: 'Confirmar e perguntar de novo: Nですね (➋)',
+      bodyPt:
+        '**Confirmar** o que ouviu: repita a informação + **ですね**.\n\n' +
+        '- `30ですね` = 30, certo? · `10{時|じ}ですね` = até as 10h, né?\n\n' +
+        '**Não entendeu** a quantidade/horário? Pergunte de volta (retoma a Lição 4):\n\n' +
+        '- `すみません。いくつですか？` = quantos? · `すみません。{何時|なんじ}ですか？` = que horas?\n\n' +
+        'Vocabulário: コピー (cópia), {隣|となり} (ao lado), 〜までに (até/prazo), あとで (depois), もしもし (alô).\n\n' +
+        '**Relógio de 24h:** 13:00 じゅうさんじ, 14:00 じゅうよじ, 15:00 じゅうごじ, 17:00 じゅうしちじ, 19:00 じゅうくじ, 0:00 れいじ. Ex.: 14{時|じ}{半|はん} = {午後|ごご}2{時|じ}{半|はん}.',
+    },
+    {
+      title: 'Bilhete de tarefa (仕事のメモ)',
+      bodyPt:
+        'Bilhetes deixados na mesa trazem palavras-chave:\n\n' +
+        '- **すぐに** = imediatamente. Ex.: `すぐに{第|だい}2{会議室|かいぎしつ}に{来|き}てください`.\n' +
+        '- **{第|だい}〜** = nº ~ (ordinal): {第|だい}2 = nº 2.\n' +
+        '- **〜{部|ぶ}** = exemplares/cópias: 100{部|ぶ} = 100 cópias.\n' +
+        '- **{電話|でんわ}してください** = ligue (por favor); {折|お}り{返|かえ}し{電話|でんわ} = retornar a ligação.\n\n' +
+        'Marque sempre os **números** do bilhete e veja o que cada um representa (quantidade, horário, sala…).',
+    },
+    {
+      title: 'Pedir emprestado: 貸して／借りてもいい／いい／ある (➌)',
+      bodyPt:
+        'Quatro frases (decore como blocos):\n\n' +
+        '| frase | uso |\n|---|---|\n' +
+        '| N、{貸|か}してください | me empreste N (verbo {貸|か}す = emprestar) |\n' +
+        '| N、{借|か}りてもいいですか？ | posso pegar N emprestado? (permissão, {借|か}りる) |\n' +
+        '| N／これ、いいですか？ | posso? (apontando; forma curta) |\n' +
+        '| N、ありますか？ | você tem N? |\n\n' +
+        '⚠️ **{貸|か}す** (emprestar, dar) × **{借|か}りる** (pegar emprestado, receber) — pontos de vista opostos.\n\n' +
+        'Respostas: どうぞ (pode), いいよ／いいですよ (pode sim), ありますよ／あるよ (tenho). Itens de mesa: はさみ (tesoura), カッター (estilete), のり (cola), ホチキス (grampeador), えんぴつ (lápis), ペン (caneta), {電卓|でんたく} (calculadora), スマホの{充電器|じゅうでんき} (carregador), ふせん (post-it).',
+    },
+    {
+      title: 'Checklist e kanji do dia',
+      bodyPt:
+        '**Conferir uma lista** ({備品|びひん}リスト): ver se os itens estão completos e dizer o que falta ({ない}もの).\n\n' +
+        '- Restaurante: フォーク (garfo), ナイフ (faca), スプーン (colher), はし (hashi), {塩|しお} (sal), こしょう (pimenta), {砂糖|さとう} (açúcar), ミルク (leite).\n' +
+        '- Banheiro de hotel: せっけん (sabonete), シャンプー, コンディショナー, {歯|は}ブラシ (escova de dentes), かみそり (lâmina/barbeador), タオル (toalha), バスタオル (toalha de banho), トイレットペーパー (papel higiênico).\n\n' +
+        '**Kanji:** {朝|あさ} (manhã), {昼|ひる} (meio-dia), {夜|よる} (noite), 〜{時|じ} (hora), 〜{分|ふん} (minuto), 〜{半|はん} (meia), 〜{枚|まい} (contador de folhas/coisas planas).\n\n' +
+        '💡 **和製英語** (inglês “feito no Japão”): ホチキス (grampeador), ガムテープ (fita), ノートパソコン (notebook), コンセント (tomada) — parecem inglês mas só funcionam no Japão.',
+    },
+  ],
+  groups: [lesson10Group],
+  audios: attachScripts(10, L10_SCRIPTS),
+}
+
+// ---- Lições 11 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(10, 'Vida cotidiana', 'ホチキスを貸してください', 'Me empreste o grampeador', [
-    'Entender instruções curtas no trabalho.',
-    'Pedir para repetir os pontos importantes.',
-    'Pedir algo emprestado; ler um bilhete escrito à mão.',
-  ]),
   scaffold(11, 'O que eu gosto de fazer', 'どんなマンガが好きですか', 'De que tipo de mangá você gosta?', [
     'Responder sobre seus hobbies.',
     'Perguntar e responder sobre o que faz nas folgas.',
@@ -1522,5 +1801,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, ...others],
 }
