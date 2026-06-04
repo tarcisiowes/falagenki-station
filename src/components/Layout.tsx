@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import {
   BarChart3, ChevronDown, GraduationCap, Languages, Repeat, SquarePen, Timer,
@@ -16,12 +16,17 @@ function Dropdown({
   children: React.ReactNode
 }) {
   const [open, setOpen] = useState(false)
+  const timer = useRef<number | undefined>(undefined)
+  function enter() {
+    if (timer.current) window.clearTimeout(timer.current)
+    setOpen(true)
+  }
+  function leave() {
+    // pequeno atraso: evita fechar ao cruzar o espaço entre o botão e o menu
+    timer.current = window.setTimeout(() => setOpen(false), 180)
+  }
   return (
-    <div
-      className="nav-dd"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
+    <div className="nav-dd" onMouseEnter={enter} onMouseLeave={leave}>
       <button className="nav-dd-btn" onClick={() => setOpen((o) => !o)} aria-expanded={open}>
         {icon} {label} <ChevronDown size={14} />
       </button>

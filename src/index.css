@@ -96,9 +96,13 @@ ruby rt { font-size: 0.58em; color: var(--ink-soft); font-weight: 400; }
 }
 .nav-dd-btn:hover { background: var(--surface-2); }
 .nav-dd-menu {
-  position: absolute; top: 100%; left: 0; min-width: 230px; margin-top: 4px;
+  position: absolute; top: 100%; left: 0; min-width: 230px; margin-top: 6px;
   background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
   box-shadow: var(--shadow); padding: 6px; z-index: 30; display: flex; flex-direction: column; gap: 2px;
+}
+/* ponte invisível: mantém o hover contínuo entre o botão e o menu */
+.nav-dd-menu::before {
+  content: ''; position: absolute; left: 0; right: 0; top: -8px; height: 8px;
 }
 .nav-dd-head {
   font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;

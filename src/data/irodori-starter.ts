@@ -1,59 +1,13 @@
-import type { AudioTrack, ExerciseGroup, Level, Section, StudyNote } from './types'
+import type { ExerciseGroup, Level, Section, StudyNote } from './types'
+import { STARTER_AUDIO } from './irodori-starter-audio'
 
 // =====================================================================
 //  Irodori — いろどり: Japanese for Life in Japan (Japan Foundation)
 //  Parte "Starter" (入門 / A1): 9 tópicos, 18 lições (課).
-//  Estrutura por módulos (lições). Conteúdo baseado no material oficial;
-//  explicações e traduções em pt-BR são autorais.
+//  Estrutura por módulos (lições), com os áudios oficiais por lição.
+//  Explicações e traduções em pt-BR são autorais.
 // =====================================================================
 
-const L00_AUDIO: AudioTrack[] = [
-  { id: 'iro-s-00-01', title: '00-01 · kyoshitsu1', descriptionPt: 'Expressões de sala de aula', src: '/audio/irodori/starter/00-01_kyoshitsu1.mp3', script: [] },
-  { id: 'iro-s-00-02', title: '00-02 · kyoshitsu2', descriptionPt: 'Expressões de sala de aula', src: '/audio/irodori/starter/00-02_kyoshitsu2.mp3', script: [] },
-  { id: 'iro-s-00-03', title: '00-03 · kyoshitsu3', descriptionPt: 'Expressões de sala de aula', src: '/audio/irodori/starter/00-03_kyoshitsu3.mp3', script: [] },
-  { id: 'iro-s-00-04', title: '00-04 · kyoshitsu4', descriptionPt: 'Expressões de sala de aula', src: '/audio/irodori/starter/00-04_kyoshitsu4.mp3', script: [] },
-  { id: 'iro-s-00-05', title: '00-05 · kyoshitsu5', descriptionPt: 'Expressões de sala de aula', src: '/audio/irodori/starter/00-05_kyoshitsu5.mp3', script: [] },
-]
-
-const L01_AUDIO: AudioTrack[] = [
-  { id: 'iro-s-01-01', title: '01-01 · kiku', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-01_kiku.mp3', script: [] },
-  { id: 'iro-s-01-02', title: '01-02 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-02_kiku1.mp3', script: [] },
-  { id: 'iro-s-01-03', title: '01-03 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-03_kiku2.mp3', script: [] },
-  { id: 'iro-s-01-04', title: '01-04 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-04_kiku3.mp3', script: [] },
-  { id: 'iro-s-01-05', title: '01-05 · kiku4', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-05_kiku4.mp3', script: [] },
-  { id: 'iro-s-01-06', title: '01-06 · hanasu1-1', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-06_hanasu1-1.mp3', script: [] },
-  { id: 'iro-s-01-07', title: '01-07 · hanasu1-2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-07_hanasu1-2.mp3', script: [] },
-  { id: 'iro-s-01-08', title: '01-08 · hanasu2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-08_hanasu2.mp3', script: [] },
-  { id: 'iro-s-01-09', title: '01-09 · hanasu3', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-09_hanasu3.mp3', script: [] },
-  { id: 'iro-s-01-10', title: '01-10 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-10_kiku1.mp3', script: [] },
-  { id: 'iro-s-01-11', title: '01-11 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-11_kiku2.mp3', script: [] },
-  { id: 'iro-s-01-12', title: '01-12 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-12_kiku3.mp3', script: [] },
-  { id: 'iro-s-01-13', title: '01-13 · kiku4', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-13_kiku4.mp3', script: [] },
-  { id: 'iro-s-01-14', title: '01-14 · hanasu1-1', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-14_hanasu1-1.mp3', script: [] },
-  { id: 'iro-s-01-15', title: '01-15 · hanasu1-2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-15_hanasu1-2.mp3', script: [] },
-  { id: 'iro-s-01-16', title: '01-16 · hanasu2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-16_hanasu2.mp3', script: [] },
-  { id: 'iro-s-01-17', title: '01-17 · hanasu3', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-17_hanasu3.mp3', script: [] },
-  { id: 'iro-s-01-18', title: '01-18 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-18_kiku1.mp3', script: [] },
-  { id: 'iro-s-01-19', title: '01-19 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-19_kiku2.mp3', script: [] },
-  { id: 'iro-s-01-20', title: '01-20 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-20_kiku3.mp3', script: [] },
-  { id: 'iro-s-01-21', title: '01-21 · kiku4', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-21_kiku4.mp3', script: [] },
-  { id: 'iro-s-01-22', title: '01-22 · kiku5', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-22_kiku5.mp3', script: [] },
-  { id: 'iro-s-01-23', title: '01-23 · kiku6', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-23_kiku6.mp3', script: [] },
-  { id: 'iro-s-01-24', title: '01-24 · kiku7', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-24_kiku7.mp3', script: [] },
-  { id: 'iro-s-01-25', title: '01-25 · kiku8', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/starter/01-25_kiku8.mp3', script: [] },
-  { id: 'iro-s-01-26', title: '01-26 · hanasu1-1', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-26_hanasu1-1.mp3', script: [] },
-  { id: 'iro-s-01-27', title: '01-27 · hanasu1-2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-27_hanasu1-2.mp3', script: [] },
-  { id: 'iro-s-01-28', title: '01-28 · hanasu1-3', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-28_hanasu1-3.mp3', script: [] },
-  { id: 'iro-s-01-29', title: '01-29 · hanasu2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/starter/01-29_hanasu2.mp3', script: [] },
-  { id: 'iro-s-01-30', title: '01-30 · hiragana1', descriptionPt: 'Hiragana (ひらがな)', src: '/audio/irodori/starter/01-30_hiragana1.mp3', script: [] },
-  { id: 'iro-s-01-31', title: '01-31 · hiragana2', descriptionPt: 'Hiragana (ひらがな)', src: '/audio/irodori/starter/01-31_hiragana2.mp3', script: [] },
-  { id: 'iro-s-01-32', title: '01-32 · hiragana3', descriptionPt: 'Hiragana (ひらがな)', src: '/audio/irodori/starter/01-32_hiragana3.mp3', script: [] },
-  { id: 'iro-s-01-33', title: '01-33 · hiragana4', descriptionPt: 'Hiragana (ひらがな)', src: '/audio/irodori/starter/01-33_hiragana4.mp3', script: [] },
-  { id: 'iro-s-01-34', title: '01-34 · hiragana (alongamento)', descriptionPt: 'Hiragana — vogal longa', src: '/audio/irodori/starter/01-34_hiragana_nobasu.mp3', script: [] },
-  { id: 'iro-s-01-35', title: '01-35 · hiragana (っ)', descriptionPt: 'Hiragana — consoante dupla', src: '/audio/irodori/starter/01-35_hiragana_tsumaru.mp3', script: [] },
-]
-
-// --- helper para os módulos ainda em construção --------------------------
 function canDoNotes(topicPt: string, candos: string[], extra?: string): StudyNote[] {
   return [
     {
@@ -62,7 +16,7 @@ function canDoNotes(topicPt: string, candos: string[], extra?: string): StudyNot
         `Esta lição faz parte do tópico **${topicPt}**.\n\n## O que você vai conseguir fazer (Can-do)\n` +
         candos.map((c) => `- ${c}`).join('\n') +
         (extra ? `\n\n${extra}` : '') +
-        `\n\n> ⏳ Exercícios e transcrição desta lição estão em construção. Os áudios oficiais serão adicionados em breve.`,
+        `\n\n> ⏳ Os exercícios desta lição ainda estão em construção. Os **áudios oficiais já estão disponíveis** na aba “Áudios” para você praticar ouvindo e repetindo (shadowing).`,
     },
   ]
 }
@@ -82,6 +36,7 @@ function scaffold(
     summaryPt: `${topicPt} · ${titlePt}`,
     studyNotes: canDoNotes(topicPt, candos),
     groups: [],
+    audios: STARTER_AUDIO[n],
   }
 }
 
@@ -117,11 +72,11 @@ const lesson0: Section = {
         '| しつもんが あります | Tenho uma pergunta |\n' +
         '| ちょっと まって ください | Espere um momento, por favor |\n' +
         '| だいじょうぶです | Tudo bem / Está ok |\n\n' +
-        'Ouça os áudios `kyoshitsu` para treinar a pronúncia.',
+        'Ouça os áudios `kyoshitsu` (aba Áudios) para treinar a pronúncia.',
     },
   ],
   groups: [lesson0Group],
-  audios: L00_AUDIO,
+  audios: STARTER_AUDIO[0],
 }
 
 // ---- Lição 1: Saudações --------------------------------------------------
@@ -175,27 +130,122 @@ const lesson1: Section = {
     {
       title: 'Hiragana (ひらがな)',
       bodyPt:
-        'O hiragana é o primeiro silabário. Na Lição 1 do Irodori você começa a reconhecê-lo. Use os áudios `hiragana` (na aba Áudios) para ouvir os sons, incluindo:\n\n' +
+        'O hiragana é o primeiro silabário. Na Lição 1 do Irodori você começa a reconhecê-lo. Use os áudios `hiragana` (na aba Áudios), incluindo:\n\n' +
         '- **Vogal longa** (のばす音): おばあさん, こうこう.\n' +
         '- **Consoante dupla** (っ): きって, がっこう.',
     },
   ],
   groups: [lesson1Group],
-  audios: L01_AUDIO,
+  audios: STARTER_AUDIO[1],
 }
 
-// ---- Lições 2 a 18 (estrutura por tópico; conteúdo em construção) --------
+// ---- Lição 2: Pedir esclarecimento + Katakana ---------------------------
+const lesson2Group: ExerciseGroup = {
+  id: 'iro-s-l2-clarify',
+  title: 'よくわからないとき',
+  subtitlePt: 'Quando você não entende',
+  instructionJa: 'よくわからないとき、なんと いいますか。えらんで ください。',
+  instructionPt: 'O que dizer quando você não entende. Escolha a opção correta.',
+  questions: [
+    { id: 'iro-s-l2-1', number: 1, prompt: 'Você não entendeu o que disseram. Para pedir que repitam:', choices: [{ n: 1, text: 'もう いちど おねがいします' }, { n: 2, text: 'はじめまして' }, { n: 3, text: 'さようなら' }, { n: 4, text: 'いただきます' }], answer: 1, translationPt: 'Mais uma vez, por favor.', explanationPt: 'もう いちど おねがいします = (diga) mais uma vez, por favor. Can-do 05.' },
+    { id: 'iro-s-l2-2', number: 2, prompt: 'Para dizer que você NÃO entendeu bem:', choices: [{ n: 1, text: 'わかりました' }, { n: 2, text: 'よく わかりません' }, { n: 3, text: 'だいじょうぶです' }, { n: 4, text: 'ありがとう' }], answer: 2, translationPt: 'Não entendi bem.', explanationPt: 'よく わかりません = não entendo/entendi bem.' },
+    { id: 'iro-s-l2-3', number: 3, prompt: 'Perguntam 「にほんごが わかりますか」. Você fala um pouco. Responde:', choices: [{ n: 1, text: 'はい、すこし わかります' }, { n: 2, text: 'いいえ、ちがいます' }, { n: 3, text: 'こんにちは' }, { n: 4, text: 'おやすみなさい' }], answer: 1, translationPt: 'Sim, entendo um pouco.', explanationPt: 'すこし = um pouco. 「すこし わかります」 = entendo um pouco. Can-do 06.' },
+    { id: 'iro-s-l2-4', number: 4, prompt: 'Para perguntar “Como se diz isto em japonês?”:', choices: [{ n: 1, text: 'これは にほんごで なんですか' }, { n: 2, text: 'これは いくらですか' }, { n: 3, text: 'おなまえは なんですか' }, { n: 4, text: 'いま なんじですか' }], answer: 1, translationPt: 'Como é isto em japonês?', explanationPt: '〜は にほんごで なんですか = como se diz/o que é 〜 em japonês. Can-do 07.' },
+    { id: 'iro-s-l2-5', number: 5, prompt: 'O katakana (カタカナ) é usado principalmente para:', choices: [{ n: 1, text: 'palavras de origem estrangeira (ex.: コーヒー, テレビ)' }, { n: 2, text: 'partículas gramaticais' }, { n: 3, text: 'números' }, { n: 4, text: 'apenas nomes japoneses' }], answer: 1, explanationPt: 'Katakana é usado para empréstimos estrangeiros, nomes estrangeiros e onomatopeias. Na Lição 2 do Irodori você estuda katakana.' },
+    { id: 'iro-s-l2-6', number: 6, prompt: 'Qual destas é uma palavra escrita em KATAKANA?', choices: [{ n: 1, text: 'すし' }, { n: 2, text: 'コーヒー' }, { n: 3, text: 'やま' }, { n: 4, text: 'みず' }], answer: 2, explanationPt: 'コーヒー (café) é empréstimo, escrito em katakana. As outras são palavras japonesas em hiragana.' },
+  ],
+}
+
+const lesson2: Section = {
+  id: 'lesson-2',
+  level: 'starter',
+  titleJa: '第2課 すみません、よくわかりません',
+  titlePt: 'Lição 2 — Desculpe, não entendi bem',
+  summaryPt: 'Começar a falar japonês · pedir para repetir, dizer se fala japonês, perguntar como se diz. Estuda katakana.',
+  studyNotes: [
+    {
+      title: 'Tópico: Começar a falar japonês',
+      bodyPt:
+        '## Can-do\n' +
+        '- Pedir para repetir quando não entender.\n' +
+        '- Responder se você fala japonês (e perguntar o mesmo).\n' +
+        '- Perguntar como se diz algo em japonês e entender a resposta.',
+    },
+    {
+      title: 'Expressões úteis',
+      bodyPt:
+        '| Japonês | Português |\n|---|---|\n' +
+        '| もう いちど おねがいします | Mais uma vez, por favor |\n' +
+        '| よく わかりません | Não entendi bem |\n' +
+        '| ゆっくり おねがいします | Mais devagar, por favor |\n' +
+        '| にほんごが すこし わかります | Entendo um pouco de japonês |\n' +
+        '| 〜は にほんごで なんですか | Como se diz 〜 em japonês? |',
+    },
+    {
+      title: 'Katakana (カタカナ)',
+      bodyPt:
+        'Na Lição 2 você estuda **katakana**, usado para:\n\n' +
+        '- palavras estrangeiras: コーヒー (café), テレビ (TV), パン (pão);\n' +
+        '- nomes estrangeiros: ブラジル, マリア;\n' +
+        '- onomatopeias.\n\nUse os áudios `katakana` na aba Áudios.',
+    },
+  ],
+  groups: [lesson2Group],
+  audios: STARTER_AUDIO[2],
+}
+
+// ---- Lição 3: Apresentar-se ---------------------------------------------
+const lesson3Group: ExerciseGroup = {
+  id: 'iro-s-l3-intro',
+  title: 'じこしょうかい',
+  subtitlePt: 'Autoapresentação',
+  instructionJa: 'じこしょうかいの ばめんです。あう ものを えらんで ください。',
+  instructionPt: 'Situações de autoapresentação. Escolha a opção adequada.',
+  questions: [
+    { id: 'iro-s-l3-1', number: 1, prompt: 'Ao conhecer alguém pela primeira vez, você começa dizendo:', choices: [{ n: 1, text: 'はじめまして' }, { n: 2, text: 'おかえりなさい' }, { n: 3, text: 'いただきます' }, { n: 4, text: 'おつかれさまです' }], answer: 1, translationPt: 'Muito prazer (em conhecê-lo).', explanationPt: 'はじめまして = expressão usada ao se apresentar pela primeira vez. Can-do 08.' },
+    { id: 'iro-s-l3-2', number: 2, prompt: 'Para dizer seu nome (“Sou a Maria / Eu sou a Maria”):', choices: [{ n: 1, text: 'マリアです' }, { n: 2, text: 'マリアが すきです' }, { n: 3, text: 'マリアに いきます' }, { n: 4, text: 'マリアを ください' }], answer: 1, translationPt: 'Sou a Maria.', explanationPt: '〜です depois do nome = “sou/é 〜”. (わたしは マリアです também serve.)' },
+    { id: 'iro-s-l3-3', number: 3, prompt: 'Para PERGUNTAR o nome de alguém de forma educada:', choices: [{ n: 1, text: 'おなまえは？' }, { n: 2, text: 'おげんきですか' }, { n: 3, text: 'いくらですか' }, { n: 4, text: 'なんじですか' }], answer: 1, translationPt: 'Qual é o seu nome?', explanationPt: 'お+なまえ (nome, com prefixo de cortesia) + は？ = “(qual é o) seu nome?”. Can-do 10.' },
+    { id: 'iro-s-l3-4', number: 4, prompt: 'Para perguntar de que país a pessoa é:', choices: [{ n: 1, text: 'おくには どちらですか' }, { n: 2, text: 'なにを たべますか' }, { n: 3, text: 'どこに すんでいますか' }, { n: 4, text: 'いつ きましたか' }], answer: 1, translationPt: 'De que país você é?', explanationPt: 'おくに = (seu) país; どちら = qual/onde (educado). 「おくには どちらですか」 = de que país você é?' },
+    { id: 'iro-s-l3-5', number: 5, prompt: 'Você é do Brasil. Para dizer isso:', choices: [{ n: 1, text: 'ブラジルから きました' }, { n: 2, text: 'ブラジルが すきです' }, { n: 3, text: 'ブラジルを ください' }, { n: 4, text: 'ブラジルに あります' }], answer: 1, translationPt: 'Vim do Brasil. / Sou do Brasil.', explanationPt: '〜から きました = vim de 〜. Também: ブラジルじん です (sou brasileiro/a).' },
+    { id: 'iro-s-l3-6', number: 6, prompt: 'Ao terminar a apresentação, costuma-se dizer:', choices: [{ n: 1, text: 'どうぞ よろしく おねがいします' }, { n: 2, text: 'さようなら' }, { n: 3, text: 'ごめんください' }, { n: 4, text: 'おめでとうございます' }], answer: 1, translationPt: 'Prazer / Conto com você.', explanationPt: 'どうぞ よろしく おねがいします fecha a apresentação (≈ “muito prazer / conto com a sua ajuda”).' },
+  ],
+}
+
+const lesson3: Section = {
+  id: 'lesson-3',
+  level: 'starter',
+  titleJa: '第3課 はじめまして',
+  titlePt: 'Lição 3 — Prazer em conhecer',
+  summaryPt: 'Sobre mim · autoapresentação (nome e país), crachá e formulário.',
+  studyNotes: [
+    {
+      title: 'Tópico: Sobre mim',
+      bodyPt:
+        '## Can-do\n' +
+        '- Fazer uma autoapresentação simples (nome, país).\n' +
+        '- Escrever nome e país num crachá.\n' +
+        '- Perguntar e responder sobre nome e país; preencher um formulário.',
+    },
+    {
+      title: 'Apresentar-se (じこしょうかい)',
+      bodyPt:
+        '| Japonês | Português |\n|---|---|\n' +
+        '| はじめまして | Muito prazer |\n' +
+        '| （わたしは）〜です | (Eu) sou 〜 |\n' +
+        '| 〜から きました | Vim de 〜 |\n' +
+        '| 〜じんです | Sou (nacionalidade) |\n' +
+        '| おなまえは？ | Qual é o seu nome? |\n' +
+        '| おくには どちらですか | De que país você é? |\n' +
+        '| どうぞ よろしく おねがいします | Prazer / Conto com você |\n\n' +
+        '**Exemplo:** はじめまして。マリアです。ブラジルから きました。どうぞ よろしく おねがいします。',
+    },
+  ],
+  groups: [lesson3Group],
+  audios: STARTER_AUDIO[3],
+}
+
+// ---- Lições 4 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(2, 'Começar a falar japonês', 'すみません、よくわかりません', 'Desculpe, não entendi bem', [
-    'Pedir para repetir quando não entender.',
-    'Responder se fala japonês e perguntar o mesmo.',
-    'Perguntar como se diz algo em japonês. (Estuda katakana.)',
-  ]),
-  scaffold(3, 'Sobre mim', 'はじめまして', 'Prazer em conhecer', [
-    'Fazer uma autoapresentação simples (nome, país).',
-    'Escrever nome e país num crachá.',
-    'Perguntar e responder sobre nome e país; preencher formulário.',
-  ]),
   scaffold(4, 'Sobre mim', '東京に住んでいます', 'Moro em Tóquio', [
     'Entender a apresentação de uma família (quem é quem).',
     'Perguntar e responder onde mora e a idade.',
@@ -275,6 +325,6 @@ export const irodoriStarter: Level = {
   courseId: 'irodori',
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
-    'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, ...others],
+    'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
+  sections: [lesson0, lesson1, lesson2, lesson3, ...others],
 }
