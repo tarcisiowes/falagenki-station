@@ -1262,13 +1262,216 @@ const lesson8: Section = {
   audios: attachScripts(8, L8_SCRIPTS),
 }
 
-// ---- Lições 9 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson9Group: ExerciseGroup = {
+  id: 'iro-s-l9',
+  title: '12時から1時まで昼休みです',
+  subtitlePt: 'Horas, rotina do dia no trabalho e combinar um dia disponível',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l9-1', number: 1, prompt: 'Como se pergunta “que horas?”', choices: [{ n: 1, text: '{何時|なんじ}' }, { n: 2, text: '{何曜日|なんようび}' }, { n: 3, text: 'いつ' }, { n: 4, text: 'どこ' }], answer: 1, explanationPt: '{何時|なんじ} = que horas. {何曜日|なんようび} = que dia da semana; いつ = quando; どこ = onde.' },
+    { id: 'iro-s-l9-2', number: 2, prompt: 'Diferença entre 「に」 e 「ごろ」 ao dizer a hora:', choices: [{ n: 1, text: 'に = hora exata; ごろ = aproximadamente, “por volta de”' }, { n: 2, text: 'に = aproximada; ごろ = exata' }, { n: 3, text: 'são iguais' }, { n: 4, text: 'に = de manhã; ごろ = de noite' }], answer: 1, explanationPt: '5{時|じ}に = às 5 em ponto; 11{時|じ}ごろ = por volta das 11. に marca a hora cravada; ごろ, a hora aproximada. (Nota ➊)' },
+    { id: 'iro-s-l9-3', number: 3, prompt: 'Complete: “Acordo às 5 (em ponto)” → 5{時|じ}＿＿{起|お}きます:', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'ごろ' }, { n: 3, text: 'から' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Acordo às 5 (em ponto).', explanationPt: 'Hora exata → に: 5{時|じ}に{起|お}きます. (Nota ➊)' },
+    { id: 'iro-s-l9-4', number: 4, prompt: 'Complete: “Durmo por volta das 11” → 11{時|じ}＿＿{寝|ね}ます:', choices: [{ n: 1, text: 'ごろ' }, { n: 2, text: 'に' }, { n: 3, text: 'まで' }, { n: 4, text: 'を' }], answer: 1, translationPt: 'Durmo por volta das 11.', explanationPt: 'Hora aproximada → ごろ (sem に): 11{時|じ}ごろ{寝|ね}ます. (Nota ➊)' },
+    { id: 'iro-s-l9-5', number: 5, prompt: 'Em 「8{時|じ}{半|はん}」, o 「{半|はん}」 significa:', choices: [{ n: 1, text: 'e meia (8:30)' }, { n: 2, text: 'em ponto (8:00)' }, { n: 3, text: 'oito da noite' }, { n: 4, text: 'quinze para as oito' }], answer: 1, explanationPt: '{半|はん} = e meia (30 minutos). 8{時|じ}{半|はん} = 8:30. Para outros minutos usa-se 〜{分|ふん}/{分|ぷん} (ex.: 8{時|じ}15{分|ふん}).' },
+    { id: 'iro-s-l9-6', number: 6, prompt: 'Relacione: 「{午前|ごぜん}」 e 「{午後|ごご}」:', choices: [{ n: 1, text: '{午前|ごぜん} = manhã/AM; {午後|ごご} = tarde/PM' }, { n: 2, text: '{午前|ごぜん} = PM; {午後|ごご} = AM' }, { n: 3, text: '{午前|ごぜん} = meio-dia; {午後|ごご} = meia-noite' }, { n: 4, text: 'os dois = de noite' }], answer: 1, explanationPt: '{午前|ごぜん} = antes do meio-dia (AM); {午後|ごご} = depois do meio-dia (PM). Ex.: {午後|ごご}2{時|じ} = 14:00.' },
+    { id: 'iro-s-l9-7', number: 7, prompt: 'Como dizer “das 12h à 1h” (início e fim)?', choices: [{ n: 1, text: '12{時|じ}から1{時|じ}まで' }, { n: 2, text: '12{時|じ}に1{時|じ}ごろ' }, { n: 3, text: '12{時|じ}も1{時|じ}も' }, { n: 4, text: '12{時|じ}と1{時|じ}' }], answer: 1, translationPt: 'das 12h à 1h.', explanationPt: 'から = início (de), まで = fim (até). 12{時|じ}から1{時|じ}まで、{昼休|ひるやす}みです. (Nota ➋)' },
+    { id: 'iro-s-l9-8', number: 8, prompt: 'O 「{昼休|ひるやす}み」 é:', choices: [{ n: 1, text: 'o intervalo do almoço' }, { n: 2, text: 'a hora extra' }, { n: 3, text: 'a reunião da manhã' }, { n: 4, text: 'o dia de folga' }], answer: 1, explanationPt: '{昼休|ひるやす}み = pausa do almoço. {休|やす}み{時間|じかん} = intervalo (curto); {残業|ざんぎょう} = hora extra; {朝礼|ちょうれい} = reunião matinal.' },
+    { id: 'iro-s-l9-9', number: 9, prompt: 'O 「{残業|ざんぎょう}」 significa:', choices: [{ n: 1, text: 'hora extra (trabalhar além do horário)' }, { n: 2, text: 'almoço' }, { n: 3, text: 'folga' }, { n: 4, text: 'reunião' }], answer: 1, explanationPt: '{残業|ざんぎょう} = hora extra. No áudio: ときどき、{残業|ざんぎょう}があります = às vezes tem hora extra.' },
+    { id: 'iro-s-l9-10', number: 10, prompt: 'O 「{朝礼|ちょうれい}」 é:', choices: [{ n: 1, text: 'a reunião/cerimônia matinal no início do expediente' }, { n: 2, text: 'a saída antecipada' }, { n: 3, text: 'o atraso' }, { n: 4, text: 'o intervalo da tarde' }], answer: 1, explanationPt: '{朝礼|ちょうれい} = reunião matinal: os funcionários se reúnem no começo do dia para avisos e cumprimentos. (TIPS / áudio 09-09)' },
+    { id: 'iro-s-l9-11', number: 11, prompt: 'Relacione 「はじめに」 e 「ときどき」:', choices: [{ n: 1, text: 'はじめに = primeiro/no começo; ときどき = às vezes' }, { n: 2, text: 'はじめに = às vezes; ときどき = sempre' }, { n: 3, text: 'はじめに = depois; ときどき = nunca' }, { n: 4, text: 'os dois = todo dia' }], answer: 1, explanationPt: 'はじめに = primeiro, para começar; ときどき = às vezes. Ex.: はじめに、{朝礼|ちょうれい}があります / ときどき、{残業|ざんぎょう}があります.' },
+    { id: 'iro-s-l9-12', number: 12, prompt: 'No quadro de horários (スケジュールボード), 「{在|ざい}」 e 「{不在|ふざい}」 indicam:', choices: [{ n: 1, text: '{在|ざい} = presente; {不在|ふざい} = ausente' }, { n: 2, text: '{在|ざい} = ausente; {不在|ふざい} = presente' }, { n: 3, text: '{在|ざい} = atrasado; {不在|ふざい} = de folga' }, { n: 4, text: 'os dois = saiu' }], answer: 1, explanationPt: '{在|ざい} = está presente; {不在|ふざい} = ausente. São colunas do {行動予定表|こうどうよていひょう} (quadro de presença). (Seção 3)' },
+    { id: 'iro-s-l9-13', number: 13, prompt: 'No quadro, 「{早退|そうたい}」 significa:', choices: [{ n: 1, text: 'saiu mais cedo' }, { n: 2, text: 'chegou atrasado' }, { n: 3, text: 'saiu a trabalho (externo)' }, { n: 4, text: 'está de folga' }], answer: 1, explanationPt: '{早退|そうたい} = sair antes do fim do expediente. {遅刻|ちこく} = atraso; {外出|がいしゅつ} = saída externa; {休|やす}み = folga. (Seção 3)' },
+    { id: 'iro-s-l9-14', number: 14, prompt: 'Relacione os verbos de movimento do quadro:', choices: [{ n: 1, text: '{来|き}ます = vir; {戻|もど}ります = voltar (retornar); {帰|かえ}ります = ir embora (pra casa)' }, { n: 2, text: '{来|き}ます = sair; {戻|もど}ります = chegar; {帰|かえ}ります = vir' }, { n: 3, text: 'os três significam “ir”' }, { n: 4, text: '{来|き}ます = voltar; {戻|もど}ります = vir; {帰|かえ}ります = ficar' }], answer: 1, explanationPt: '{来|き}ます (vir/chegar ao trabalho), {戻|もど}ります (voltar ao posto depois de sair), {帰|かえ}ります (ir embora para casa). (Perguntas da Seção 3)' },
+    { id: 'iro-s-l9-15', number: 15, prompt: 'Como dizer que um dia/horário é CONVENIENTE para você?', choices: [{ n: 1, text: '〜がいいです' }, { n: 2, text: '〜はだめです' }, { n: 3, text: '〜はちょっと……' }, { n: 4, text: '〜にいます' }], answer: 1, translationPt: '〜 é bom (pra mim).', explanationPt: '【{日時|にちじ}】がいいです = tal dia/hora me convém. Ex.: {私|わたし}は、{土曜日|どようび}がいいです. Pergunta: いつがいいですか？ / {何時|なんじ}がいいですか？ (Nota ➌)' },
+    { id: 'iro-s-l9-16', number: 16, prompt: 'O dia NÃO serve pra você. Como recusar de forma educada/suave?', choices: [{ n: 1, text: '〜はちょっと……（ou 〜はだめです）' }, { n: 2, text: '〜がいいです' }, { n: 3, text: 'だいじょうぶです' }, { n: 4, text: '〜にしましょう' }], answer: 1, translationPt: '〜 fica meio difícil…', explanationPt: '〜はちょっと…… = recusa suave (“fica meio difícil…”); 〜はだめです = não dá. だいじょうぶです = tá tudo bem / pode ser. (Nota ➌)' },
+    { id: 'iro-s-l9-17', number: 17, prompt: 'Já decidiram o dia. Como dizer “Então vamos no sábado”?', choices: [{ n: 1, text: 'じゃあ、{土曜日|どようび}にしましょう。' }, { n: 2, text: 'じゃあ、{土曜日|どようび}がいいです。' }, { n: 3, text: 'じゃあ、{土曜日|どようび}はだめです。' }, { n: 4, text: 'じゃあ、{土曜日|どようび}にいます。' }], answer: 1, translationPt: 'Então, vamos no sábado.', explanationPt: '〜にしましょう = vamos decidir/marcar para 〜. Fecha a combinação após acertarem o dia.' },
+    { id: 'iro-s-l9-18', number: 18, prompt: 'Ordene os dias: 月→火→水→木→金→土→日 começa em 「{月曜日|げつようび}」 =', choices: [{ n: 1, text: 'segunda-feira' }, { n: 2, text: 'domingo' }, { n: 3, text: 'sábado' }, { n: 4, text: 'quarta-feira' }], answer: 1, explanationPt: '{月|げつ}=segunda, {火|か}=terça, {水|すい}=quarta, {木|もく}=quinta, {金|きん}=sexta, {土|ど}=sábado, {日|にち}=domingo (todos + {曜日|ようび}).' },
+    { id: 'iro-s-l9-19', number: 19, prompt: 'Diálogo 09-13: em que dia o Liam e o Artyom vão à piscina?', context: 'アルチョム：{私|わたし}は、{日曜日|にちようび}がいいです。リアム：{私|わたし}も、だいじょうぶです。じゃあ、{日曜日|にちようび}にしましょう。', choices: [{ n: 1, text: 'domingo ({日曜日|にちようび})' }, { n: 2, text: 'sábado ({土曜日|どようび})' }, { n: 3, text: 'quarta ({水曜日|すいようび})' }, { n: 4, text: 'sexta ({金曜日|きんようび})' }], answer: 1, explanationPt: 'Os dois concordam: {日曜日|にちようび}にしましょう = vamos no domingo.' },
+    { id: 'iro-s-l9-20', number: 20, prompt: 'Diálogo 09-15: a Nia e o Nun não acertam logo o dia do cinema. Em que dia ficou?', context: 'ニア：{土曜日|どようび}がいいです。ヌン：{土曜日|どようび}はちょっと……。ニア：{日曜日|にちようび}はだめです。ヌン：{金曜日|きんようび}の{夜|よる}は？ニア：だいじょうぶです。', choices: [{ n: 1, text: 'sexta à noite ({金曜日|きんようび}の{夜|よる})' }, { n: 2, text: 'sábado ({土曜日|どようび})' }, { n: 3, text: 'domingo ({日曜日|にちようび})' }, { n: 4, text: 'terça ({火曜日|かようび})' }], answer: 1, explanationPt: 'Sábado e domingo não servem para um dos dois; fecham em {金曜日|きんようび}にしましょう (sexta à noite).' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 9 (聴解スクリプト)
+const L9_SCRIPTS: Record<string, ScriptItem[]> = {
+  '09-03': [
+    {
+      label: '会話① (09-03)',
+      setupJa: '{職場|しょくば}の{同僚|どうりょう}が、{起|お}きる{時間|じかん}・{寝|ね}る{時間|じかん}を{話|はな}しています。',
+      setupPt: 'Colegas de trabalho conversam sobre a que horas acordam e dormem.',
+      lines: [
+        { speaker: '村上', ja: 'おはようございます。', pt: 'Bom dia.' },
+        { speaker: 'パウロ・山川', ja: 'おはようございます。', pt: 'Bom dia.' },
+        { speaker: '村上', ja: 'パウロさんも、{山川|やまかわ}さんも、{毎日|まいにち}、{早|はや}いですね。パウロさん、{朝|あさ}、{何時|なんじ}に{起|お}きますか？', pt: 'O Paulo e o Yamakawa, vocês chegam cedo todo dia, né. Paulo, que horas você acorda de manhã?' },
+        { speaker: 'パウロ', ja: '5{時|じ}に{起|お}きます。', pt: 'Acordo às 5.' },
+        { speaker: '山川', ja: '5{時|じ}！{早|はや}いですね。', pt: '5 horas?! Que cedo!' },
+        { speaker: 'パウロ', ja: 'ええ。{毎朝|まいあさ}、ジョギングをします。{夜|よる}は、10{時|じ}{半|はん}に{寝|ね}ます。', pt: 'É. Todo dia de manhã faço cooper. À noite, durmo às 10:30.' },
+        { speaker: '村上', ja: 'そうですか。', pt: 'Ah é?' },
+      ],
+    },
+  ],
+  '09-04': [
+    {
+      label: '会話② (09-04)',
+      lines: [
+        { speaker: '村上', ja: '{山川|やまかわ}さんは？', pt: 'E o Yamakawa?' },
+        { speaker: '山川', ja: '{私|わたし}は、だいたい、7{時|じ}ごろ{起|お}きます。', pt: 'Eu acordo mais ou menos por volta das 7.' },
+        { speaker: '村上', ja: 'そうですか。{夜|よる}は、{何時|なんじ}に{寝|ね}ますか？', pt: 'Ah é? E à noite, que horas você dorme?' },
+        { speaker: '山川', ja: '11{時|じ}ごろ{寝|ね}ます。', pt: 'Durmo por volta das 11.' },
+        { speaker: '村上', ja: 'パウロさんも、{山川|やまかわ}さんも、{夜|よる}、{早|はや}いですね。', pt: 'O Paulo e o Yamakawa, vocês dois dormem cedo, né.' },
+      ],
+    },
+  ],
+  '09-05': [
+    {
+      label: '会話③ (09-05)',
+      lines: [
+        { speaker: 'パウロ', ja: '{村上|むらかみ}さんは、{何時|なんじ}に{寝|ね}ますか？', pt: 'Murakami, que horas você dorme?' },
+        { speaker: '村上', ja: '2{時|じ}ごろです。', pt: 'Lá pelas 2.' },
+        { speaker: '山川', ja: '{午前|ごぜん}2{時|じ}？{遅|おそ}いですね。', pt: '2 da manhã?! Que tarde!' },
+        { speaker: '村上', ja: '{夜|よる}は、ゲームをします。', pt: 'À noite eu jogo videogame.' },
+        { speaker: '山川', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'パウロ', ja: '{朝|あさ}は、{何時|なんじ}に{起|お}きますか？', pt: 'E de manhã, que horas você acorda?' },
+        { speaker: '村上', ja: '8{時|じ}15{分|ふん}です。', pt: 'Às 8:15.' },
+        { speaker: 'パウロ・山川', ja: 'おそーい。', pt: 'Que taaarde!' },
+      ],
+    },
+  ],
+  '09-09': [
+    {
+      label: '説明 (09-09)',
+      setupJa: '{新|あたら}しい{職場|しょくば}で、{担当|たんとう}の{人|ひと}から1{日|にち}のスケジュールの{説明|せつめい}を{聞|き}いています。',
+      setupPt: 'No novo trabalho, o responsável explica o cronograma do dia.',
+      lines: [
+        { speaker: '担当', ja: '1{日|にち}のスケジュールを{説明|せつめい}します。', pt: 'Vou explicar o cronograma do dia.' },
+        { speaker: '担当', ja: '{仕事|しごと}は、{毎朝|まいあさ}9{時|じ}からです。はじめに、{朝礼|ちょうれい}があります。', pt: 'O trabalho começa às 9 toda manhã. Primeiro tem a reunião matinal.' },
+        { speaker: '担当', ja: '{午前|ごぜん}の{仕事|しごと}は、12{時|じ}までです。', pt: 'O trabalho da manhã vai até as 12.' },
+        { speaker: '担当', ja: '12{時|じ}から1{時|じ}まで、{昼休|ひるやす}みです。', pt: 'Das 12h à 1h é o intervalo do almoço.' },
+        { speaker: '担当', ja: '1{時|じ}から、{午後|ごご}の{仕事|しごと}です。', pt: 'A partir da 1h é o trabalho da tarde.' },
+        { speaker: '担当', ja: '3{時|じ}から3{時|じ}{半|はん}まで、{休|やす}み{時間|じかん}です。', pt: 'Das 3h às 3:30 é o intervalo.' },
+        { speaker: '担当', ja: '{仕事|しごと}は、6{時|じ}までです。ときどき、{残業|ざんぎょう}があります。', pt: 'O trabalho vai até as 6. Às vezes tem hora extra.' },
+      ],
+    },
+  ],
+  '09-13': [
+    {
+      label: '会話① (09-13)',
+      setupJa: '{友|とも}だちと、{来週|らいしゅう}いっしょに{出|で}かける{日|ひ}を{相談|そうだん}しています。',
+      setupPt: 'Combinando com um amigo o dia de sair juntos na semana que vem.',
+      lines: [
+        { speaker: 'リアム', ja: 'アルチョムさん、プール、いつ{行|い}きますか？', pt: 'Artyom, quando a gente vai à piscina?' },
+        { speaker: 'アルチョム', ja: 'うーん、{私|わたし}は、{日曜日|にちようび}がいいです。リアムさんは？', pt: 'Hmm, pra mim domingo é bom. E você, Liam?' },
+        { speaker: 'リアム', ja: '{私|わたし}も、だいじょうぶです。', pt: 'Pra mim também tá bom.' },
+        { speaker: 'アルチョム', ja: 'じゃあ、{日曜日|にちようび}にしましょう。', pt: 'Então vamos no domingo.' },
+      ],
+    },
+  ],
+  '09-14': [
+    {
+      label: '会話② (09-14)',
+      lines: [
+        { speaker: 'サイード', ja: 'ムナさん、ご{飯|はん}、いつがいいですか？', pt: 'Muna, quando é bom pra comer?' },
+        { speaker: 'ムナ', ja: '{私|わたし}は、{火曜日|かようび}がいいです。サイードさんは？', pt: 'Pra mim terça é bom. E você, Saeed?' },
+        { speaker: 'サイード', ja: 'すみません。{火曜日|かようび}はちょっと……。{私|わたし}は、{水曜日|すいようび}がいいです。', pt: 'Desculpa, terça fica meio difícil… Pra mim quarta é bom.' },
+        { speaker: 'ムナ', ja: '{水曜日|すいようび}……だいじょうぶです。', pt: 'Quarta… tá bom.' },
+        { speaker: 'サイード', ja: 'じゃあ、{水曜日|すいようび}にしましょう。', pt: 'Então vamos na quarta.' },
+      ],
+    },
+  ],
+  '09-15': [
+    {
+      label: '会話③ (09-15)',
+      lines: [
+        { speaker: 'ヌン', ja: 'ニアさん、{映画|えいが}、いつがいいですか？', pt: 'Nia, quando é bom pro cinema?' },
+        { speaker: 'ニア', ja: '{私|わたし}は、{土曜日|どようび}がいいです。ヌンさんは？', pt: 'Pra mim sábado é bom. E você, Nun?' },
+        { speaker: 'ヌン', ja: 'すみません。{土曜日|どようび}はちょっと……。{私|わたし}は、{日曜日|にちようび}がいいです。', pt: 'Desculpa, sábado fica meio difícil… Pra mim domingo é bom.' },
+        { speaker: 'ニア', ja: 'あー、{私|わたし}は、{日曜日|にちようび}はだめです。すみません。', pt: 'Ah, pra mim domingo não dá. Desculpa.' },
+        { speaker: 'ヌン', ja: 'じゃあ、{金曜日|きんようび}の{夜|よる}は？', pt: 'Então, sexta à noite?' },
+        { speaker: 'ニア', ja: '{金曜日|きんようび}……だいじょうぶです。', pt: 'Sexta… tá bom.' },
+        { speaker: 'ヌン', ja: 'じゃあ、{金曜日|きんようび}にしましょう。', pt: 'Então vamos na sexta.' },
+      ],
+    },
+  ],
+}
+
+const lesson9: Section = {
+  id: 'lesson-9',
+  level: 'starter',
+  titleJa: '第9課 12時から1時まで昼休みです',
+  titlePt: 'Lição 9 — O almoço é das 12h à 1h',
+  summaryPt: 'Vida cotidiana · dizer as horas (に／ごろ), explicar a rotina do dia no trabalho (から〜まで), ler um quadro de presença e combinar um dia disponível (〜がいいです／〜はだめです).',
+  studyNotes: [
+    {
+      title: 'Tópico: Vida cotidiana (horários e rotina)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Perguntar e responder a que horas acorda e dorme.\n' +
+        '- Entender uma explicação simples da rotina do dia no trabalho.\n' +
+        '- Olhar um quadro de presença e entender, em linhas gerais, a agenda dos colegas.\n' +
+        '- Perguntar e responder quando você está disponível para combinar um dia.',
+    },
+    {
+      title: 'Que horas: 【hora】に／【hora】ごろ V-ます (➊)',
+      bodyPt:
+        'Para dizer a que horas algo acontece:\n\n' +
+        '- **に** = hora **exata**: `5{時|じ}に{起|お}きます` = acordo às 5 (em ponto).\n' +
+        '- **ごろ** = hora **aproximada** (“por volta de”): `11{時|じ}ごろ{寝|ね}ます` = durmo por volta das 11. ⚠️ com ごろ **não** se usa に.\n\n' +
+        '**Horas e minutos:** {何時|なんじ} (que horas), 〜{時|じ} (hora), 〜{分|ふん}/{分|ぷん} (minutos), {半|はん} (e meia = 30 min).\n' +
+        '**Partes do dia:** {朝|あさ} (manhã), {昼|ひる} (meio do dia), {夜|よる} (noite), {午前|ごぜん} (AM), {午後|ごご} (PM). Ex.: {午前|ごぜん}2{時|じ} = 2 da madrugada; {午後|ごご}2{時|じ} = 14:00.',
+    },
+    {
+      title: 'Início e fim: 【hora】から【hora】まで (➋)',
+      bodyPt:
+        '**から** = de (início), **まで** = até (fim):\n\n' +
+        '- `12{時|じ}から1{時|じ}まで、{昼休|ひるやす}みです` = das 12h à 1h é o almoço.\n' +
+        '- `{仕事|しごと}は、9{時|じ}からです` = o trabalho é a partir das 9.\n' +
+        '- `{仕事|しごと}は、6{時|じ}までです` = o trabalho vai até as 6.\n\n' +
+        '**Rotina do trabalho:** {朝礼|ちょうれい} (reunião matinal), {仕事|しごと} (trabalho), {昼休|ひるやす}み (almoço), {休|やす}み{時間|じかん} (intervalo), {残業|ざんぎょう} (hora extra). Conectivos: はじめに (primeiro), ときどき (às vezes).',
+    },
+    {
+      title: 'Quadro de presença (スケジュールボード)',
+      bodyPt:
+        'No {行動予定表|こうどうよていひょう} (quadro de presença) aparecem estas palavras:\n\n' +
+        '| palavra | significado |\n|---|---|\n' +
+        '| {在|ざい} | presente |\n' +
+        '| {不在|ふざい} | ausente |\n' +
+        '| {遅刻|ちこく} | atraso |\n' +
+        '| {休|やす}み | folga |\n' +
+        '| {外出|がいしゅつ} | saída externa |\n' +
+        '| {早退|そうたい} | saiu mais cedo |\n\n' +
+        '**Verbos de movimento:** {来|き}ます (vir/chegar), {戻|もど}ります (voltar ao posto), {帰|かえ}ります (ir embora pra casa). Ex.: `{何時|なんじ}に{戻|もど}りますか？` = a que horas volta?',
+    },
+    {
+      title: 'Combinar um dia: 【dia/hora】がいいです (➌)',
+      bodyPt:
+        'Para falar de disponibilidade:\n\n' +
+        '- **〜がいいです** = 〜 me convém (é bom pra mim): `{私|わたし}は、{土曜日|どようび}がいいです`.\n' +
+        '- Pergunta: `いつがいいですか？` (que dia?) / `{何時|なんじ}がいいですか？` (que horas?).\n' +
+        '- Recusar de leve: **〜はちょっと……** (“fica meio difícil…”) ou **〜はだめです** (não dá).\n' +
+        '- Aceitar: **だいじょうぶです** (tá bom / pode ser).\n' +
+        '- Fechar a combinação: **〜にしましょう** = vamos marcar para 〜.',
+    },
+    {
+      title: 'Dias da semana (曜日)',
+      bodyPt:
+        'Pergunta: `{何曜日|なんようび}ですか？` = que dia da semana é?\n\n' +
+        '| kanji | leitura | dia |\n|---|---|---|\n' +
+        '| {月曜日|げつようび} | げつようび | segunda |\n' +
+        '| {火曜日|かようび} | かようび | terça |\n' +
+        '| {水曜日|すいようび} | すいようび | quarta |\n' +
+        '| {木曜日|もくようび} | もくようび | quinta |\n' +
+        '| {金曜日|きんようび} | きんようび | sexta |\n' +
+        '| {土曜日|どようび} | どようび | sábado |\n' +
+        '| {日曜日|にちようび} | にちようび | domingo |\n\n' +
+        'Outras palavras: いつ (quando), {行|い}きます (ir), だめ（な）(não serve), 〜にしましょう (vamos marcar para 〜).',
+    },
+  ],
+  groups: [lesson9Group],
+  audios: attachScripts(9, L9_SCRIPTS),
+}
+
+// ---- Lições 10 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(9, 'Vida cotidiana', '昼ごはんは12時から1時までです', 'O almoço é das 12h à 1h', [
-    'Perguntar e responder a que horas acorda e dorme.',
-    'Entender um horário/rotina simples no trabalho.',
-    'Perguntar quando você está disponível.',
-  ]),
   scaffold(10, 'Vida cotidiana', 'ホチキスを貸してください', 'Me empreste o grampeador', [
     'Entender instruções curtas no trabalho.',
     'Pedir para repetir os pontos importantes.',
@@ -1319,5 +1522,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, ...others],
 }
