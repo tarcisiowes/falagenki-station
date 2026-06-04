@@ -2534,12 +2534,286 @@ const lesson13: Section = {
   audios: attachScripts(13, L13_SCRIPTS),
 }
 
-// ---- Lições 14 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson14Group: ExerciseGroup = {
+  id: 'iro-s-l14',
+  title: '大きな建物ですね',
+  subtitlePt: 'Lugares da cidade, posição, dizer onde você está e dar impressões',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l14-1', number: 1, prompt: '「トイレ」 é:', choices: [{ n: 1, text: 'banheiro' }, { n: 2, text: 'armário com chave' }, { n: 3, text: 'máquina de vendas' }, { n: 4, text: 'área de fumantes' }], answer: 1, explanationPt: 'Lugares de prédio/rua (Seção 1): トイレ (banheiro), コインロッカー (armário), {自動販売機|じどうはんばいき} (máquina de vendas), コンビニ (loja de conveniência), ATM (caixa eletrônico), {喫煙所|きつえんじょ} (área de fumantes).' },
+    { id: 'iro-s-l14-2', number: 2, prompt: '「コインロッカー」 é:', choices: [{ n: 1, text: 'armário com fechadura (a moedas)' }, { n: 2, text: 'banheiro' }, { n: 3, text: 'elevador' }, { n: 4, text: 'escada rolante' }], answer: 1, explanationPt: 'コインロッカー = armário/guarda-volumes a moedas, comum em estações. (Seção 1)' },
+    { id: 'iro-s-l14-3', number: 3, prompt: '「{自動販売機|じどうはんばいき}」 é:', choices: [{ n: 1, text: 'máquina de vendas automática' }, { n: 2, text: 'caixa eletrônico' }, { n: 3, text: 'catraca' }, { n: 4, text: 'balcão de informações' }], answer: 1, explanationPt: '{自動販売機|じどうはんばいき} = máquina de vendas (de {飲|の}み{物|もの}/bebidas, etc.). No Japão há muitas. (Seção 1 · TIPS)' },
+    { id: 'iro-s-l14-4', number: 4, prompt: '「{喫煙所|きつえんじょ}」 é:', choices: [{ n: 1, text: 'área de fumantes' }, { n: 2, text: 'bebedouro' }, { n: 3, text: 'estacionamento' }, { n: 4, text: 'caixa eletrônico' }], answer: 1, explanationPt: '{喫煙所|きつえんじょ} = local destinado a fumar. (Seção 1)' },
+    { id: 'iro-s-l14-5', number: 5, prompt: 'Em 「この{近|ちか}くに、コンビニ（　）ありますか？」, a lacuna é:', choices: [{ n: 1, text: 'は' }, { n: 2, text: 'を' }, { n: 3, text: 'で' }, { n: 4, text: 'へ' }], answer: 1, translationPt: 'Tem uma loja de conveniência aqui perto?', explanationPt: 'Estrutura 【lugar】に N（は）ありますか？ — pergunta se algo existe. この{近|ちか}くに (aqui perto) + N は ありますか？ (Nota ➊)' },
+    { id: 'iro-s-l14-6', number: 6, prompt: '「この{近|ちか}く」 significa:', choices: [{ n: 1, text: 'aqui perto / nas redondezas' }, { n: 2, text: 'lá longe' }, { n: 3, text: 'lá dentro' }, { n: 4, text: 'em frente' }], answer: 1, explanationPt: 'この{近|ちか}く = perto daqui. Usado para perguntar se há コンビニ, ATM etc. nas redondezas. (Nota ➊)' },
+    { id: 'iro-s-l14-7', number: 7, prompt: 'Para perguntar ONDE algo fica de forma mais direta, usa-se:', choices: [{ n: 1, text: '〜は、どこにありますか？ / 〜は、どこですか？' }, { n: 2, text: '〜は、いつですか？' }, { n: 3, text: '〜は、いくらですか？' }, { n: 4, text: '〜は、だれですか？' }], answer: 1, explanationPt: 'どこにありますか？ / どこですか？ = onde fica? Ex.: トイレは、どこですか？ (Nota ➊ · Seção 1)' },
+    { id: 'iro-s-l14-8', number: 8, prompt: 'Respostas vagas de direção como 「あちら／あっち／この{先|さき}／この{奥|おく}」 indicam:', choices: [{ n: 1, text: 'lá / por ali / logo adiante / lá no fundo' }, { n: 2, text: 'horários' }, { n: 3, text: 'preços' }, { n: 4, text: 'nomes de pessoas' }], answer: 1, explanationPt: 'あちら/あっち (por ali), この{先|さき} (logo adiante), この{奥|おく} (lá no fundo). (Seção 1)' },
+    { id: 'iro-s-l14-9', number: 9, prompt: '「あっち」 é a versão casual de:', choices: [{ n: 1, text: 'あちら' }, { n: 2, text: 'こちら' }, { n: 3, text: 'そちら' }, { n: 4, text: 'どちら' }], answer: 1, explanationPt: 'あっち = jeito casual de あちら (over there). Do mesmo modo そっち = そちら. (Seção 1 e 2)' },
+    { id: 'iro-s-l14-10', number: 10, prompt: 'As palavras de posição 「{上|うえ}／{下|した}／{前|まえ}／{後|うし}ろ／{中|なか}／{横|よこ}」 significam:', choices: [{ n: 1, text: 'em cima / embaixo / na frente / atrás / dentro / ao lado' }, { n: 2, text: 'norte / sul / leste / oeste / centro / borda' }, { n: 3, text: 'hoje / amanhã / ontem / agora / depois / antes' }, { n: 4, text: 'primeiro / segundo / terceiro / quarto / quinto / sexto' }], answer: 1, explanationPt: '【位置 posição】: {上|うえ} (em cima), {下|した} (embaixo), {前|まえ} (na frente), {後|うし}ろ (atrás), {中|なか} (dentro), {横|よこ} (ao lado). (Seção 2)' },
+    { id: 'iro-s-l14-11', number: 11, prompt: '「{後|うし}ろ」 é:', choices: [{ n: 1, text: 'atrás' }, { n: 2, text: 'na frente' }, { n: 3, text: 'em cima' }, { n: 4, text: 'ao lado' }], answer: 1, explanationPt: '{後|うし}ろ = atrás (≠ {前|まえ} na frente). (Seção 2)' },
+    { id: 'iro-s-l14-12', number: 12, prompt: '「{横|よこ}」 é:', choices: [{ n: 1, text: 'ao lado' }, { n: 2, text: 'dentro' }, { n: 3, text: 'embaixo' }, { n: 4, text: 'atrás' }], answer: 1, explanationPt: '{横|よこ} = ao lado. Ex.: インフォメーションの{横|よこ}です (ao lado do balcão de informações). (Seção 2)' },
+    { id: 'iro-s-l14-13', number: 13, prompt: 'Para dizer onde você está (ex.: ao telefone), usa-se 「Nの【posição】にいます」. Em 「{今|いま}、{改札|かいさつ}の{前|まえ}（　）います」, a lacuna é:', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'で' }, { n: 3, text: 'を' }, { n: 4, text: 'へ' }], answer: 1, translationPt: 'Agora estou na frente da catraca.', explanationPt: 'いる (pessoa/animal) usa **に** para o local: {改札|かいさつ}の{前|まえ}にいます. Um ponto de referência + posição (〜の{前|まえ}／{横|よこ}／{中|なか}／{後|うし}ろ). (Nota ➋)' },
+    { id: 'iro-s-l14-14', number: 14, prompt: 'A frase 「インフォメーションの{前|まえ}です」 em relação a 「インフォメーションの{前|まえ}にいます」:', choices: [{ n: 1, text: 'têm o mesmo sentido — 〜です é forma simplificada de 〜にいます' }, { n: 2, text: 'são opostas' }, { n: 3, text: 'です é sobre objeto, にいます sobre pessoa' }, { n: 4, text: 'です indica passado' }], answer: 1, explanationPt: '〜です pode substituir 〜にいます ao dizer onde você está: インフォメーションの{前|まえ}です = …{前|まえ}にいます. (Nota ➋)' },
+    { id: 'iro-s-l14-15', number: 15, prompt: '「{改札|かいさつ}」 é:', choices: [{ n: 1, text: 'catraca / portão de bilhetes da estação' }, { n: 2, text: 'escada rolante' }, { n: 3, text: 'balcão de informações' }, { n: 4, text: 'loja de conveniência' }], answer: 1, explanationPt: '{改札|かいさつ} = catraca/portão da estação (já visto na Lição 13). Pontos de referência: {改札|かいさつ}, コンビニ, インフォメーション, エスカレーター. (Seção 2 · Nota ➋)' },
+    { id: 'iro-s-l14-16', number: 16, prompt: '「インフォメーション」 é:', choices: [{ n: 1, text: 'balcão de informações' }, { n: 2, text: 'catraca' }, { n: 3, text: 'escada rolante' }, { n: 4, text: 'estacionamento' }], answer: 1, explanationPt: 'インフォメーション = balcão de informações. Outro ponto comum: エスカレーター (escada rolante). (Seção 2)' },
+    { id: 'iro-s-l14-17', number: 17, prompt: '「もしもし」 é usado:', choices: [{ n: 1, text: 'ao atender/iniciar uma ligação telefônica' }, { n: 2, text: 'ao entrar em casa' }, { n: 3, text: 'ao comer' }, { n: 4, text: 'ao se despedir' }], answer: 1, explanationPt: 'もしもし = “alô” ao telefone. Nesta lição aparece nas ligações de encontro (待ち合わせ). (Seção 2 e 3)' },
+    { id: 'iro-s-l14-18', number: 18, prompt: 'Ao colocar um adjetivo ANTES de um substantivo (impressão), a regra é:', choices: [{ n: 1, text: 'ナ-adjetivo recebe 〜な (にぎやか**な**{通|とお}り); イ-adjetivo recebe 〜い ({広|ひろ}**い**{公園|こうえん})' }, { n: 2, text: 'todos recebem 〜な' }, { n: 3, text: 'todos recebem 〜い' }, { n: 4, text: 'o adjetivo vai depois do substantivo' }], answer: 1, explanationPt: 'Adjetivo antes do N: ナA-な N (にぎやかな{通|とお}り), イA-い N ({広|ひろ}い{公園|こうえん}). (Nota ➌)' },
+    { id: 'iro-s-l14-19', number: 19, prompt: '「きれい」 é qual tipo de adjetivo?', choices: [{ n: 1, text: 'ナ-adjetivo → きれい**な** N (apesar de terminar em い)' }, { n: 2, text: 'イ-adjetivo → きれい**い** N' }, { n: 3, text: 'verbo' }, { n: 4, text: 'substantivo' }], answer: 1, explanationPt: '⚠️ きれい é ナ-adjetivo, não イ-adjetivo: ao modificar N vira きれいな〜 (きれいな{公園|こうえん}). (Nota ➌)' },
+    { id: 'iro-s-l14-20', number: 20, prompt: '「{大|おお}きい」 e 「{小|ちい}さい」, ao modificar um substantivo, são exceções porque:', choices: [{ n: 1, text: 'aceitam DUAS formas: 〜い N e 〜な N ({大|おお}きい／{大|おお}きな{建物|たてもの})' }, { n: 2, text: 'viram ナ-adjetivos sempre' }, { n: 3, text: 'não podem modificar substantivos' }, { n: 4, text: 'só usam a forma negativa' }], answer: 1, explanationPt: '{大|おお}きい e {小|ちい}さい são イ-adjetivos, mas ao modificar N têm 2 formas: {大|おお}きい/{大|おお}きな, {小|ちい}さい/{小|ちい}さな. (Nota ➌ · quadro de adjetivos)' },
+    { id: 'iro-s-l14-21', number: 21, prompt: 'A frase 「にぎやかな{通|とお}りですね」 serve para:', choices: [{ n: 1, text: 'dar sua impressão sobre o lugar (que rua movimentada, né)' }, { n: 2, text: 'perguntar o preço' }, { n: 3, text: 'pedir informação' }, { n: 4, text: 'recusar um convite' }], answer: 1, translationPt: 'Que rua movimentada, né.', explanationPt: '【adjetivo】N ですね = comentar/dar impressão sobre algo. Ex.: {広|ひろ}い{公園|こうえん}ですね, きれいな{水|みず}ですね. (Nota ➌)' },
+    { id: 'iro-s-l14-22', number: 22, prompt: '「〜でしょう？」 (ex.: いいお{寺|てら}でしょう？) é usado para:', choices: [{ n: 1, text: 'buscar a concordância do interlocutor (“não é?”)' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'fazer uma pergunta sobre preço' }, { n: 4, text: 'expressar dúvida sobre si mesmo' }], answer: 1, explanationPt: '〜でしょう？ = expressão para pedir concordância (isn’t it?). Ex.: いいお{寺|てら}でしょう？ (Seção 3 · vocabulário)' },
+    { id: 'iro-s-l14-23', number: 23, prompt: 'Em placas de lojas, relacione 「{営業中|えいぎょうちゅう}」 / 「{準備中|じゅんびちゅう}」 / 「{定休日|ていきゅうび}」:', choices: [{ n: 1, text: '{営業中|えいぎょうちゅう} = aberto; {準備中|じゅんびちゅう} = abrindo em breve; {定休日|ていきゅうび} = dia de folga fixo' }, { n: 2, text: '{営業中|えいぎょうちゅう} = fechado; {準備中|じゅんびちゅう} = aberto; {定休日|ていきゅうび} = 24h' }, { n: 3, text: 'as três = aberto' }, { n: 4, text: '{営業中|えいぎょうちゅう} = perigo; {準備中|じゅんびちゅう} = obras; {定休日|ていきゅうび} = cuidado' }], answer: 1, explanationPt: '{営業中|えいぎょうちゅう} (aberto), {準備中|じゅんびちゅう} (em preparação/abre logo), {定休日|ていきゅうび} (dia de folga). (Seção 4)' },
+    { id: 'iro-s-l14-24', number: 24, prompt: 'Em placas, 「24{時間営業|じかんえいぎょう}」 e 「{年中無休|ねんじゅうむきゅう}」 significam:', choices: [{ n: 1, text: 'aberto 24 horas / aberto o ano todo (sem folga)' }, { n: 2, text: 'fechado à noite / fechado aos domingos' }, { n: 3, text: 'em obras / proibido entrar' }, { n: 4, text: 'feriado / dia de folga' }], answer: 1, explanationPt: '24{時間営業|じかんえいぎょう} = aberto 24h; {年中無休|ねんじゅうむきゅう} = aberto o ano inteiro. Outras placas: {危険|きけん} (perigo), {注意|ちゅうい} (cuidado), {通行止|つうこうどめ} (passagem fechada), {工事中|こうじちゅう} (em obras), {祝|しゅく}（{日|じつ}）/{祭|さい}（{日|じつ}） (feriado). (Seção 4)' },
+    { id: 'iro-s-l14-25', number: 25, prompt: 'Diálogo 14-05: tem loja de conveniência aqui perto?', context: 'A：すみません。この{近|ちか}くに、コンビニはありますか？ B：ええ、この{先|さき}です。', choices: [{ n: 1, text: 'Sim — é logo adiante (この{先|さき})' }, { n: 2, text: 'Não, não tem' }, { n: 3, text: 'Sim, lá no fundo (この{奥|おく})' }, { n: 4, text: 'Não sei' }], answer: 1, explanationPt: 'B responde ええ、この{先|さき}です (sim, é logo adiante). Compare 14-03, onde B diz ちょっと、わからないですね (não sei bem).' },
+    { id: 'iro-s-l14-26', number: 26, prompt: 'Diálogo 14-25: o que é o grande prédio?', context: 'A：あれは、{何|なん}ですか？　{大|おお}きな{建物|たてもの}ですね。 B：ああ、あれは、{札幌|さっぽろ}ドームです。{野球場|やきゅうじょう}です。', choices: [{ n: 1, text: 'O Sapporo Dome — um estádio de beisebol ({野球場|やきゅうじょう})' }, { n: 2, text: 'Um templo ({お寺|てら})' }, { n: 3, text: 'Uma galeria comercial ({商店街|しょうてんがい})' }, { n: 4, text: 'Um parque ({公園|こうえん})' }], answer: 1, explanationPt: 'B: あれは{札幌|さっぽろ}ドームです。{野球場|やきゅうじょう}です (é o Sapporo Dome, um estádio de beisebol). あれ = aquilo (longe dos dois). (Seção 3)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 14 (聴解スクリプト)
+const L14_SCRIPTS: Record<string, ScriptItem[]> = {
+  '14-01': [
+    {
+      label: '会話① (14-01)',
+      setupJa: '{6人|ろくにん}の{人|ひと}が、{街|まち}で、ほかの{人|ひと}に{場所|ばしょ}を{聞|き}いています。',
+      setupPt: 'Seis pessoas, na cidade, perguntam a outras onde fica algo.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。トイレは、どこですか？', pt: 'Com licença. Onde fica o banheiro?' },
+        { speaker: 'B', ja: 'あちらです。', pt: 'É por ali.' },
+        { speaker: 'A', ja: 'どうも。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '14-02': [
+    {
+      label: '会話② (14-02)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、{飲|の}み{物|もの}の{自動販売機|じどうはんばいき}は、どこにありますか？', pt: 'Ah, onde fica a máquina de bebidas?' },
+        { speaker: 'B', ja: 'あっちにありますよ。', pt: 'Tem ali, viu.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '14-03': [
+    {
+      label: '会話③ (14-03)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。コインロッカーは、どこにありますか？', pt: 'Com licença. Onde ficam os armários (guarda-volumes)?' },
+        { speaker: 'B', ja: 'あー、すいません。ちょっと、わからないですね。', pt: 'Ah, desculpe. Não sei bem, não.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, tá.' },
+      ],
+    },
+  ],
+  '14-04': [
+    {
+      label: '会話④ (14-04)',
+      lines: [
+        { speaker: 'A', ja: '{喫煙所|きつえんじょ}は、どこですか？', pt: 'Onde fica a área de fumantes?' },
+        { speaker: 'B', ja: 'あ、このビルにはありません。', pt: 'Ah, neste prédio não tem.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, tá.' },
+      ],
+    },
+  ],
+  '14-05': [
+    {
+      label: '会話⑤ (14-05)',
+      lines: [
+        { speaker: 'A', ja: 'すみません。この{近|ちか}くに、コンビニはありますか？', pt: 'Com licença. Tem uma loja de conveniência aqui perto?' },
+        { speaker: 'B', ja: 'ええ、この{先|さき}です。', pt: 'Sim, é logo adiante.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '14-06': [
+    {
+      label: '会話⑥ (14-06)',
+      lines: [
+        { speaker: 'A', ja: 'あの、この{近|ちか}くに、ATMはありますか？', pt: 'Hmm, tem um caixa eletrônico aqui perto?' },
+        { speaker: 'B', ja: 'この{奥|おく}です。', pt: 'É lá no fundo.' },
+        { speaker: 'A', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '14-13': [
+    {
+      label: '会話① (14-13)',
+      setupJa: '{4人|よにん}の{人|ひと}が、{待|ま}ち{合|あ}わせをしている{相手|あいて}と{電話|でんわ}で{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam ao telefone com quem vão encontrar.',
+      lines: [
+        { speaker: 'A', ja: 'もしもし。', pt: 'Alô.' },
+        { speaker: 'B', ja: 'あ、もしもし、イルマさん、{今|いま}、どこですか？', pt: 'Ah, alô, Irma, onde você está agora?' },
+        { speaker: 'A', ja: '{今|いま}、{改札|かいさつ}の{前|まえ}にいます。', pt: 'Agora estou na frente da catraca.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '14-14': [
+    {
+      label: '会話② (14-14)',
+      lines: [
+        { speaker: 'A', ja: 'あ、ピセットです。', pt: 'Ah, é a Piset.' },
+        { speaker: 'B', ja: 'あ、ピセットさん、{今|いま}、どこにいますか？', pt: 'Ah, Piset, onde você está agora?' },
+        { speaker: 'A', ja: 'えーと、コンビニの{中|なか}にいます。', pt: 'Hmm, estou dentro da loja de conveniência.' },
+        { speaker: 'B', ja: '{中|なか}ですね。{今|いま}、そっちに{行|い}きます。', pt: 'Dentro, né. Já vou aí.' },
+      ],
+    },
+  ],
+  '14-15': [
+    {
+      label: '会話③ (14-15)',
+      lines: [
+        { speaker: 'A', ja: 'もしもし。', pt: 'Alô.' },
+        { speaker: 'B', ja: 'もしもし、リリアンさん？', pt: 'Alô, é a Lilian?' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'B', ja: '{今|いま}、どこ？', pt: 'Onde você está?' },
+        { speaker: 'A', ja: 'えー、{今|いま}、インフォメーションの{横|よこ}です。', pt: 'Hmm, estou ao lado do balcão de informações.' },
+        { speaker: 'B', ja: 'インフォメーションね。わかった。すぐ{行|い}く。', pt: 'Informações, né. Entendi. Já vou.' },
+      ],
+    },
+  ],
+  '14-16': [
+    {
+      label: '会話④ (14-16)',
+      lines: [
+        { speaker: 'A', ja: 'あのう、チェです。', pt: 'Ah, é o Che.' },
+        { speaker: 'B', ja: 'あ、チェさん。{今|いま}、どこにいますか？', pt: 'Ah, Che. Onde você está agora?' },
+        { speaker: 'A', ja: '{今|いま}、エスカレーターの{下|した}にいます。', pt: 'Agora estou embaixo da escada rolante.' },
+        { speaker: 'B', ja: 'エスカレーターの{下|した}ですね。わかりました。ちょっと{待|ま}っててくださいね。', pt: 'Embaixo da escada rolante, né. Entendi. Espera um pouquinho aí.' },
+      ],
+    },
+  ],
+  '14-22': [
+    {
+      label: '会話① (14-22)',
+      setupJa: '{6人|ろくにん}の{人|ひと}が、{町|まち}のいろいろな{場所|ばしょ}を{案内|あんない}してもらっています。',
+      setupPt: 'Seis pessoas estão sendo guiadas por vários lugares da cidade.',
+      lines: [
+        { speaker: 'A', ja: 'ここは、{水元公園|みずもとこうえん}です。', pt: 'Aqui é o Parque Mizumoto.' },
+        { speaker: 'B', ja: '{広|ひろ}い{公園|こうえん}ですね。', pt: 'Que parque grande, né.' },
+        { speaker: 'A', ja: 'そうですね。', pt: 'Pois é.' },
+      ],
+    },
+  ],
+  '14-23': [
+    {
+      label: '会話② (14-23)',
+      lines: [
+        { speaker: 'A', ja: 'ここは、{十条商店街|じゅうじょうしょうてんがい}です。', pt: 'Aqui é a galeria comercial Jūjō.' },
+        { speaker: 'B', ja: 'ああ、にぎやかな{通|とお}りですね。', pt: 'Ah, que rua movimentada, né.' },
+      ],
+    },
+  ],
+  '14-24': [
+    {
+      label: '会話③ (14-24)',
+      lines: [
+        { speaker: 'A', ja: 'この{川|かわ}は、{四万十川|しまんとがわ}です。{有名|ゆうめい}な{川|かわ}です。', pt: 'Este rio é o Shimanto. É um rio famoso.' },
+        { speaker: 'B', ja: 'わあ、きれいな{水|みず}ですね。', pt: 'Uau, que água limpa, né.' },
+      ],
+    },
+  ],
+  '14-25': [
+    {
+      label: '会話④ (14-25)',
+      lines: [
+        { speaker: 'A', ja: 'あれは、{何|なん}ですか？　{大|おお}きな{建物|たてもの}ですね。', pt: 'O que é aquilo? Que prédio grande, né.' },
+        { speaker: 'B', ja: 'ああ、あれは、{札幌|さっぽろ}ドームです。{野球場|やきゅうじょう}です。', pt: 'Ah, aquilo é o Sapporo Dome. É um estádio de beisebol.' },
+        { speaker: 'A', ja: 'へー、{大|おお}きいですね。', pt: 'Nossa, é grande.' },
+      ],
+    },
+  ],
+  '14-26': [
+    {
+      label: '会話⑤ (14-26)',
+      lines: [
+        { speaker: 'A', ja: 'あ、{古|ふる}いお{寺|てら}がありますね。', pt: 'Ah, tem um templo antigo, né.' },
+        { speaker: 'B', ja: '{瑞泉寺|ずいせんじ}です。いいお{寺|てら}でしょう？', pt: 'É o templo Zuisenji. Bonito, não é?' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '14-27': [
+    {
+      label: '会話⑥ (14-27)',
+      lines: [
+        { speaker: 'A', ja: '{見|み}て。あれはセンタービル、あれは{住友|すみとも}ビル、あれは{三井|みつい}ビル。', pt: 'Olha. Aquele é o Center Building, aquele é o Sumitomo, aquele é o Mitsui.' },
+        { speaker: 'B', ja: '{高|たか}いビルがたくさんありますね。', pt: 'Tem muitos prédios altos, né.' },
+        { speaker: 'A', ja: 'そうだね。', pt: 'É mesmo.' },
+      ],
+    },
+  ],
+}
+
+const lesson14: Section = {
+  id: 'lesson-14',
+  level: 'starter',
+  titleJa: '第14課 大きな建物ですね',
+  titlePt: 'Lição 14 — Que prédio grande, né',
+  summaryPt: 'Andar pela cidade · perguntar onde ficam banheiros, ATM etc. (この近くに〜はありますか／〜はどこですか), dizer onde você está pelo telefone usando ponto de referência + posição (改札の前にいます), dar impressões sobre lugares com adjetivo + ですね (にぎやかな通りですね) e ler placas e letreiros da rua (営業中／定休日／24時間営業).',
+  studyNotes: [
+    {
+      title: 'Tópico: Andar pela cidade',
+      bodyPt:
+        '## Can-do\n' +
+        '- Perguntar onde ficam o banheiro, um ATM e outros lugares quando está na rua.\n' +
+        '- Dizer ao telefone onde você está.\n' +
+        '- Dar suas impressões quando alguém mostra a cidade para você.\n' +
+        '- Ler placas de lojas e restaurantes e entender se está aberto ou fechado.',
+    },
+    {
+      title: 'Lugares e instalações da cidade (Seção 1)',
+      bodyPt:
+        '**Lugares:** トイレ (banheiro), コインロッカー (armário/guarda-volumes), {自動販売機|じどうはんばいき} (máquina de vendas), コンビニ (loja de conveniência), ATM (caixa eletrônico), {喫煙所|きつえんじょ} (área de fumantes), ビル (prédio).\n\n' +
+        '**Direções vagas:** あちら／あっち (por ali), この{先|さき} (logo adiante), この{奥|おく} (lá no fundo), {奥|おく} (interior).\n\n' +
+        '**Úteis:** {飲|の}み{物|もの} (bebida), すいません (= すみません, casual).',
+    },
+    {
+      title: 'Perguntar se algo existe: この近くに、Nはありますか？ (➊)',
+      bodyPt:
+        'Estrutura **【lugar】に N（は）ありますか？** — pergunta se algo existe.\n\n' +
+        '`この{近|ちか}くに、コンビニはありますか？` = tem uma loja de conveniência aqui perto?\n\n' +
+        '- この{近|ちか}く = perto daqui (nas redondezas).\n' +
+        '- Forma mais direta de perguntar onde: **〜は、どこにありますか？** / **〜は、どこですか？**\n\n' +
+        'Ex.: トイレは、どこですか？ → あちらです。 / コンビニはありますか？ → ええ、この{先|さき}です。 (ou ちょっと、わからないですね。)',
+    },
+    {
+      title: 'Palavras de posição + dizer onde você está: Nの位置にいます (➋)',
+      bodyPt:
+        '**【位置 posição】:** {上|うえ} (em cima), {下|した} (embaixo), {前|まえ} (na frente), {後|うし}ろ (atrás), {中|なか} (dentro), {横|よこ} (ao lado).\n\n' +
+        'Para dizer onde você está (ex.: ao telefone): **【ponto de referência】の【posição】にいます**.\n\n' +
+        '`{今|いま}、{改札|かいさつ}の{前|まえ}にいます` = agora estou na frente da catraca.\n\n' +
+        '- Pontos de referência comuns: {改札|かいさつ}, コンビニ, インフォメーション, エスカレーター.\n' +
+        '- 💡 **〜です** simplifica **〜にいます**: インフォメーションの{前|まえ}です = …{前|まえ}にいます.\n\n' +
+        '📌 Telefone: もしもし (alô); そっち (aí, casual de そちら); すぐ{行|い}く (já vou); ちょっと{待|ま}っててください (espera um pouco).',
+    },
+    {
+      title: 'Dar impressões: 【adjetivo】N ですね (➌)',
+      bodyPt:
+        'Adjetivo **antes** do substantivo (para comentar/dar impressão):\n\n' +
+        '| tipo | forma | exemplo |\n|---|---|---|\n' +
+        '| ナ-adjetivo | 〜**な** N | にぎやか**な**{通|とお}り |\n' +
+        '| イ-adjetivo | 〜**い** N | {広|ひろ}**い**{公園|こうえん} |\n\n' +
+        '`にぎやかな{通|とお}りですね` (que rua movimentada) · `{広|ひろ}い{公園|こうえん}ですね` (que parque grande) · `きれいな{水|みず}ですね` (que água limpa).\n\n' +
+        '- ⚠️ **きれい** é ナ-adjetivo (apesar do い): きれいな〜.\n' +
+        '- ⚠️ **{大|おお}きい** e **{小|ちい}さい** são exceções: aceitam 〜い N **e** 〜な N → {大|おお}きい/{大|おお}きな{建物|たてもの}, {小|ちい}さい/{小|ちい}さな.\n' +
+        '- A negativa de **いい** é **よくない**.\n\n' +
+        '**Adjetivos (どんなところ):** {古|ふる}い/{新|あたら}しい, {大|おお}きい/{小|ちい}さい, {高|たか}い/{低|ひく}い, にぎやか(な)/{静|しず}か(な), {広|ひろ}い/せまい, きれい(な)/きたない.\n\n' +
+        '**Lugares e vocab:** {商店街|しょうてんがい} (galeria comercial), お{寺|てら} (templo), {野球場|やきゅうじょう} (estádio de beisebol), {公園|こうえん} (parque), {川|かわ} (rio), {通|とお}り (rua), {建物|たてもの} (prédio), {有名|ゆうめい}（な） (famoso), たくさん (muitos), 〜でしょう？ (não é?, pede concordância), {見|み}て (olha), そうだね (é mesmo, casual).',
+    },
+    {
+      title: 'Placas e letreiros da rua (Seção 4)',
+      bodyPt:
+        '**Avisos:** {危険|きけん} (perigo), {注意|ちゅうい} (cuidado), {通行止|つうこうどめ} (passagem fechada), {工事中|こうじちゅう} (em obras), {銀行|ぎんこう} (banco), たばこ (tabaco).\n\n' +
+        '**Funcionamento da loja:** {営業中|えいぎょうちゅう} (aberto), {準備中|じゅんびちゅう} (abre em breve), {定休日|ていきゅうび} (dia de folga fixo), {営業時間|えいぎょうじかん} (horário de funcionamento), 24{時間営業|じかんえいぎょう} (aberto 24h), {年中無休|ねんじゅうむきゅう} (aberto o ano todo), {祝|しゅく}（{日|じつ}）/{祭|さい}（{日|じつ}） (feriado).\n\n' +
+        '💡 Cuidado: コンビニ pode ser 24{時間営業|じかんえいぎょう}, mas o ATM pode ter horário limitado por banco.',
+    },
+  ],
+  groups: [lesson14Group],
+  audios: attachScripts(14, L14_SCRIPTS),
+}
+
+// ---- Lições 15 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(14, 'Andar pela cidade', '大きい建物ですね', 'É um prédio grande, né', [
-    'Descrever lugares e construções de forma simples.',
-    'Perguntar e indicar caminhos básicos.',
-  ]),
   scaffold(15, 'Nas lojas', '電池がほしいです', 'Quero pilhas', [
     'Perguntar onde comprar algo e entender a resposta.',
     'Ler o guia de andares de uma loja.',
@@ -2567,5 +2841,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, ...others],
 }
