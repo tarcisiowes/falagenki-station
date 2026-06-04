@@ -754,13 +754,269 @@ const lesson6: Section = {
   audios: attachScripts(6, L6_SCRIPTS),
 }
 
-// ---- Lições 7 a 18 (estrutura por tópico; exercícios em construção) ------
+// ---- Lição 7: Casa e cômodos -------------------------------------------
+const lesson7Group: ExerciseGroup = {
+  id: 'iro-s-l7',
+  title: '部屋が4つあります',
+  subtitlePt: 'A casa: cômodos, móveis, eletrodomésticos e como ela é',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l7-1', number: 1, prompt: 'Mostrando a casa, a pessoa diz 「ここは{玄関|げんかん}です」. Significa:', choices: [{ n: 1, text: 'Aqui é a entrada (genkan).' }, { n: 2, text: 'Aqui é a cozinha.' }, { n: 3, text: 'Aqui é o banheiro.' }, { n: 4, text: 'Aqui é o quarto.' }], answer: 1, explanationPt: 'ここは【lugar】です = “aqui é 〜”. {玄関|げんかん} = entrada da casa (onde se tira o sapato). (Nota ➊)' },
+    { id: 'iro-s-l7-2', number: 2, prompt: 'Para apresentar “aqui é o quarto do Son”, você diz:', choices: [{ n: 1, text: 'ここはソンさんの{部屋|へや}です' }, { n: 2, text: 'ソンさんは{部屋|へや}です' }, { n: 3, text: 'ここに{部屋|へや}がソンさんです' }, { n: 4, text: '{部屋|へや}はここがあります' }], answer: 1, translationPt: 'Aqui é o quarto do Son.', explanationPt: 'ここは + (coisa/lugar) + です. ここはソンさんの{部屋|へや}です. (Nota ➊, diálogo 07-03)' },
+    { id: 'iro-s-l7-3', number: 3, prompt: '「ここに{階段|かいだん}があります」significa:', choices: [{ n: 1, text: 'Aqui há uma escada.' }, { n: 2, text: 'Aqui não há escada.' }, { n: 3, text: 'A escada é aqui em cima.' }, { n: 4, text: 'Suba a escada, por favor.' }], answer: 1, explanationPt: '【lugar】に N が あります = “em (lugar) há N”. {階段|かいだん} = escada. (Nota ➋)' },
+    { id: 'iro-s-l7-4', number: 4, prompt: 'Ordem correta para “no 1º andar há 4 cômodos”:', choices: [{ n: 1, text: '1{階|かい}に{部屋|へや}が4つあります' }, { n: 2, text: '1{階|かい}が{部屋|へや}に4つあります' }, { n: 3, text: '{部屋|へや}に1{階|かい}が4つあります' }, { n: 4, text: '4つ{部屋|へや}が1{階|かい}にあります' }], answer: 1, translationPt: 'No 1º andar há quatro cômodos.', explanationPt: '【lugar】に N が【número】あります → 1{階|かい}に{部屋|へや}が4つあります. (Nota ➋, diálogo 07-03)' },
+    { id: 'iro-s-l7-5', number: 5, prompt: 'Ao dizer a quantidade, o número (ex.: 4つ) vem:', choices: [{ n: 1, text: 'logo antes de あります' }, { n: 2, text: 'no começo da frase' }, { n: 3, text: 'depois de あります' }, { n: 4, text: 'antes do lugar (に)' }], answer: 1, explanationPt: 'A quantidade fica antes de あります: …{部屋|へや}が **4つ** あります. (Nota ➋)' },
+    { id: 'iro-s-l7-6', number: 6, prompt: 'Em 「ここに{階段|かいだん}があります」, as partículas に e が indicam:', choices: [{ n: 1, text: 'に = onde está; が = o que está' }, { n: 2, text: 'に = o que está; が = onde está' }, { n: 3, text: 'as duas marcam o sujeito' }, { n: 4, text: 'as duas marcam o lugar' }], answer: 1, explanationPt: 'に (ここ**に**) marca o lugar onde algo existe; が ({階段|かいだん}**が**) marca o que existe. (Nota ➋)' },
+    { id: 'iro-s-l7-7', number: 7, prompt: 'Para dizer “não tem torradeira”:', choices: [{ n: 1, text: 'トースターはありません' }, { n: 2, text: 'トースターがあります' }, { n: 3, text: 'トースターをください' }, { n: 4, text: 'トースターにします' }], answer: 1, translationPt: 'Não tem torradeira.', explanationPt: 'ありません = forma negativa de あります (não existe / não tem). (Nota ➌, diálogo 07-07)' },
+    { id: 'iro-s-l7-8', number: 8, prompt: 'Sobre 「ベッドはないです」 e 「ベッドはありません」:', choices: [{ n: 1, text: 'Têm o mesmo sentido (“não tem cama”).' }, { n: 2, text: 'ないです significa “tem”.' }, { n: 3, text: 'ありません é informal e errado.' }, { n: 4, text: 'ないです é uma pergunta.' }], answer: 1, explanationPt: 'ないです = ありません (não tem). ないです vem de ない (negativo de ある) + です. (Nota ➌, diálogo 07-08)' },
+    { id: 'iro-s-l7-9', number: 9, prompt: 'Na resposta negativa, a partícula が de 「Nがあります」 costuma virar:', choices: [{ n: 1, text: 'は (テレビ**は**ありません)' }, { n: 2, text: 'を' }, { n: 3, text: 'に' }, { n: 4, text: 'も' }], answer: 1, explanationPt: 'Em frases negativas, が → は: テレビ**は**ありません / ベッド**は**ないです. (Nota ➌)' },
+    { id: 'iro-s-l7-10', number: 10, prompt: 'Para dizer “está um pouco apertado/pequeno” (sobre a casa):', choices: [{ n: 1, text: 'ちょっとせまいです' }, { n: 2, text: 'ちょっと{広|ひろ}いです' }, { n: 3, text: 'ちょっと{静|しず}かです' }, { n: 4, text: 'ちょっときれいです' }], answer: 1, translationPt: 'Está um pouco apertado.', explanationPt: 'せまい = apertado/pequeno (×{広|ひろ}い = espaçoso). Adjetivo-い + です. (Nota ➍, diálogo 07-15)' },
+    { id: 'iro-s-l7-11', number: 11, prompt: 'Cuidado com きれい (limpo/bonito). Ela é:', choices: [{ n: 1, text: 'adjetivo-な (e se pronuncia kiree)' }, { n: 2, text: 'adjetivo-い (termina em い)' }, { n: 3, text: 'um substantivo' }, { n: 4, text: 'um verbo' }], answer: 1, explanationPt: 'Apesar de terminar em “い” no som, きれい é adjetivo-**な** (kiree), não adjetivo-い. {静|しず}か（な） também é な-adj. (Nota ➍)' },
+    { id: 'iro-s-l7-12', number: 12, prompt: 'Negativa de 「{広|ひろ}いです」 (é espaçoso) é:', choices: [{ n: 1, text: '{広|ひろ}くないです' }, { n: 2, text: '{広|ひろ}いじゃないです' }, { n: 3, text: '{広|ひろ}いくないです' }, { n: 4, text: '{広|ひろ}くです' }], answer: 1, translationPt: 'Não é espaçoso.', explanationPt: 'Adjetivo-い: troca 〜いです por 〜くないです. {広|ひろ}い → {広|ひろ}くないです. (Nota ➎, diálogo 07-22)' },
+    { id: 'iro-s-l7-13', number: 13, prompt: 'Negativa de 「{静|しず}かです」 (é silencioso) é:', choices: [{ n: 1, text: '{静|しず}かじゃないです' }, { n: 2, text: '{静|しず}かくないです' }, { n: 3, text: '{静|しず}かいじゃないです' }, { n: 4, text: '{静|しず}かないです' }], answer: 1, translationPt: 'Não é silencioso.', explanationPt: 'Adjetivo-な: troca です por じゃないです. {静|しず}か → {静|しず}かじゃないです. (Nota ➎, diálogo 07-23)' },
+    { id: 'iro-s-l7-14', number: 14, prompt: 'Complete: 「アパートは、______ {静|しず}かじゃないです」 (não é muito silencioso):', choices: [{ n: 1, text: 'あまり' }, { n: 2, text: 'とても' }, { n: 3, text: 'よく' }, { n: 4, text: 'いつも' }], answer: 1, translationPt: 'O apartamento não é muito silencioso.', explanationPt: 'あまり + negativa = “não muito / pouco”. あまり{静|しず}かじゃないです. (Diálogo 07-23)' },
+    { id: 'iro-s-l7-15', number: 15, prompt: 'Qual é o {冷蔵庫|れいぞうこ}?', choices: [{ n: 1, text: 'Geladeira' }, { n: 2, text: 'Micro-ondas' }, { n: 3, text: 'Panela de arroz' }, { n: 4, text: 'Máquina de lavar' }], answer: 1, explanationPt: '{冷蔵庫|れいぞうこ} = geladeira. {電子|でんし}レンジ = micro-ondas; {炊飯器|すいはんき} = panela de arroz; {洗濯機|せんたくき} = máquina de lavar.' },
+    { id: 'iro-s-l7-16', number: 16, prompt: 'Você mora numa 「{一戸建|いっこだ}て」. É:', choices: [{ n: 1, text: 'uma casa térrea/sobrado individual (uma família)' }, { n: 2, text: 'um quarto num alojamento da empresa' }, { n: 3, text: 'um apartamento num prédio grande' }, { n: 4, text: 'uma casa compartilhada (república)' }], answer: 1, explanationPt: '{一戸建|いっこだ}て = casa individual. {寮|りょう} = alojamento; マンション = apê em prédio; アパート = apê em prédio baixo; シェアハウス = casa compartilhada.' },
+    { id: 'iro-s-l7-17', number: 17, prompt: 'No controle do ar-condicionado, quando está {暑|あつ}い (calor), você aperta:', choices: [{ n: 1, text: '{冷房|れいぼう} (refrigerar)' }, { n: 2, text: '{暖房|だんぼう} (aquecer)' }, { n: 3, text: '{停止|ていし} (parar)' }, { n: 4, text: '{除湿|じょしつ} (desumidificar)' }], answer: 1, explanationPt: '{冷房|れいぼう} = ar frio (para calor); {暖房|だんぼう} = aquecimento (para frio); {停止|ていし} = parar; {除湿|じょしつ} = desumidificar. (Seção 5)' },
+    { id: 'iro-s-l7-18', number: 18, prompt: 'Na máquina de lavar, para LIGAR (electricidade) você aperta o botão:', choices: [{ n: 1, text: '{入|いり} (入れる = ligar)' }, { n: 2, text: '{切|きり} (切る = desligar)' }, { n: 3, text: 'スタート (iniciar)' }, { n: 4, text: 'コース (modo)' }], answer: 1, explanationPt: '{入|いり}（入れる）= ligar; {切|きり}（切る）= desligar; スタート = iniciar a lavagem; コース = escolher o modo. (Seção 5)' },
+    { id: 'iro-s-l7-19', number: 19, prompt: 'Diálogo 07-22: como é o {寮|りょう} (alojamento) do Visal?', context: 'いえ、{広|ひろ}くないです。でも、とても{静|しず}かです。{近|ちか}くに{公園|こうえん}があります。', choices: [{ n: 1, text: 'Não é grande, mas é muito silencioso; tem um parque perto.' }, { n: 2, text: 'É grande e barulhento.' }, { n: 3, text: 'É novo e tem uma escola perto.' }, { n: 4, text: 'É velho e sujo.' }], answer: 1, explanationPt: 'Visal: {広|ひろ}くないです (não é grande), でも{静|しず}かです (mas é silencioso), {近|ちか}くに{公園|こうえん}があります (tem parque perto).' },
+    { id: 'iro-s-l7-20', number: 20, prompt: 'Diálogo 07-08: o quarto do Son tem cama (ベッド)?', context: 'あ、ベッドはないです。ここにふとんがありますよ。', choices: [{ n: 1, text: 'Não tem cama; tem futon.' }, { n: 2, text: 'Tem cama e futon.' }, { n: 3, text: 'Tem cama, mas não tem futon.' }, { n: 4, text: 'Não tem cama nem futon.' }], answer: 1, explanationPt: 'ベッドはないです (não tem cama), ここにふとんがありますよ (aqui tem futon). A TV fica no {食堂|しょくどう} (refeitório).' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 7 (聴解スクリプト)
+const L7_SCRIPTS: Record<string, ScriptItem[]> = {
+  '07-03': [
+    {
+      label: '会話 (07-03)',
+      setupJa: 'ソンさんとタインさんが、これから{住|す}む{会社|かいしゃ}の{寮|りょう}を{中川|なかがわ}さんに{案内|あんない}してもらっています。',
+      setupPt: 'Nakagawa mostra a Son e Thanh o alojamento da empresa onde eles vão morar.',
+      lines: [
+        { speaker: '中川', ja: 'どうぞ。{入|はい}ってください。', pt: 'Entrem, por favor.' },
+        { speaker: 'ソン・タイン', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '中川', ja: 'ここは{玄関|げんかん}です。くつを{脱|ぬ}いでください。', pt: 'Aqui é a entrada. Tirem os sapatos, por favor.' },
+        { speaker: 'ソン・タイン', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '中川', ja: 'ここは{管理人室|かんりにんしつ}です。', pt: 'Aqui é a sala do zelador.' },
+        { speaker: '管理人', ja: 'こんにちは。', pt: 'Boa tarde.' },
+        { speaker: 'ソン', ja: 'お{世話|せわ}になります。', pt: 'Conto com a sua ajuda.' },
+        { speaker: 'タイン', ja: 'よろしくお{願|ねが}いします。', pt: 'Muito prazer, conto com você.' },
+        { speaker: '中川', ja: 'ここはトイレです。', pt: 'Aqui é o banheiro.' },
+        { speaker: 'タイン', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '中川', ja: 'ここは{台所|だいどころ}です。', pt: 'Aqui é a cozinha.' },
+        { speaker: 'ソン', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '中川', ja: 'ここは{食堂|しょくどう}です。ご{飯|はん}を{食|た}べます。', pt: 'Aqui é o refeitório. É onde se faz as refeições.' },
+        { speaker: 'ソン', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: '中川', ja: 'ここはお{風呂|ふろ}です。', pt: 'Aqui é o banho (ofurô).' },
+        { speaker: 'タイン', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '中川', ja: '1{階|かい}に{部屋|へや}が4つあります。ここはソンさんの{部屋|へや}です。', pt: 'No 1º andar há quatro cômodos. Este é o quarto do Son.' },
+        { speaker: 'ソン', ja: 'あ、はい。', pt: 'Ah, sim.' },
+        { speaker: '中川', ja: 'ここに{階段|かいだん}があります。2{階|かい}にタインさんの{部屋|へや}があります。', pt: 'Aqui tem uma escada. No 2º andar fica o quarto do Thanh.' },
+      ],
+    },
+  ],
+  '07-07': [
+    {
+      label: '会話① (07-07) — {台所|だいどころ}で',
+      setupJa: 'これから{住|す}む{寮|りょう}の{設備|せつび}について、ソンさんとタインさんが{中川|なかがわ}さんに{質問|しつもん}しています。',
+      setupPt: 'Na cozinha: Son e Thanh perguntam ao Nakagawa sobre os equipamentos do alojamento.',
+      lines: [
+        { speaker: '中川', ja: 'これ、{冷蔵庫|れいぞうこ}です。みんなで{使|つか}ってください。', pt: 'Esta é a geladeira. Usem todos juntos.' },
+        { speaker: 'ソン', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'タイン', ja: 'あのう、{電子|でんし}レンジはありますか？', pt: 'Hmm, tem micro-ondas?' },
+        { speaker: '中川', ja: 'あります。ここです。', pt: 'Tem. É aqui.' },
+        { speaker: 'ソン', ja: 'すみません。トースターはありますか？', pt: 'Com licença. Tem torradeira?' },
+        { speaker: '中川', ja: 'あ、トースターはありません。', pt: 'Ah, torradeira não tem.' },
+        { speaker: 'ソン', ja: 'そうですか。', pt: 'Ah, entendi.' },
+        { speaker: 'タイン', ja: '{炊飯器|すいはんき}はありますか？', pt: 'Tem panela de arroz?' },
+        { speaker: '中川', ja: 'はい。ここです。', pt: 'Sim. É aqui.' },
+        { speaker: 'タイン', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '07-08': [
+    {
+      label: '会話② (07-08) — {部屋|へや}で',
+      setupPt: 'No quarto: Nakagawa mostra o quarto ao Son.',
+      lines: [
+        { speaker: '中川', ja: 'ここはソンさんの{部屋|へや}です。どうぞ。', pt: 'Aqui é o quarto do Son. Fique à vontade.' },
+        { speaker: 'ソン', ja: 'はい。すみません。ベッドは……？', pt: 'Sim. Com licença, e a cama…?' },
+        { speaker: '中川', ja: 'あ、ベッドはないです。ここにふとんがありますよ。', pt: 'Ah, cama não tem. Mas aqui tem futon, viu?' },
+        { speaker: 'ソン', ja: 'はい、わかりました。', pt: 'Sim, entendi.' },
+        { speaker: 'タイン', ja: 'テレビは……？', pt: 'E a TV…?' },
+        { speaker: '中川', ja: 'あー、ないです。{食堂|しょくどう}にあります。', pt: 'Ah, não tem. Tem no refeitório.' },
+        { speaker: 'タイン', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '07-15': [
+    {
+      label: '会話① (07-15)',
+      lines: [
+        { speaker: 'A', ja: 'オートさんは、どこに{住|す}んでいますか？', pt: 'Oto, onde você mora?' },
+        { speaker: 'B', ja: '{長浜|ながはま}に{住|す}んでいます。', pt: 'Moro em Nagahama.' },
+        { speaker: 'A', ja: '{家|いえ}はどうですか？', pt: 'E como é a casa?' },
+        { speaker: 'B', ja: 'ちょっとせまいです。', pt: 'É um pouco apertada.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '07-16': [
+    {
+      label: '会話② (07-16)',
+      lines: [
+        { speaker: 'A', ja: 'テアさんは、どこに{住|す}んでいますか？', pt: 'Thea, onde você mora?' },
+        { speaker: 'B', ja: '{新町|しんまち}です。', pt: 'Em Shinmachi.' },
+        { speaker: 'A', ja: '{家|いえ}はどうですか？', pt: 'E como é a casa?' },
+        { speaker: 'B', ja: 'とてもきれいです。', pt: 'É muito bonita/limpa.' },
+        { speaker: 'A', ja: 'いいですね。', pt: 'Que bom!' },
+      ],
+    },
+  ],
+  '07-17': [
+    {
+      label: '会話③ (07-17)',
+      lines: [
+        { speaker: 'A', ja: 'アナさんのうちは、{会社|かいしゃ}の{近|ちか}く？', pt: 'Sua casa é perto da empresa, Ana?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: '{家|いえ}はどう？', pt: 'E como é a casa?' },
+        { speaker: 'B', ja: '{静|しず}かです。', pt: 'É silenciosa.' },
+        { speaker: 'A', ja: 'そう。', pt: 'É mesmo.' },
+      ],
+    },
+  ],
+  '07-18': [
+    {
+      label: '会話④ (07-18)',
+      lines: [
+        { speaker: 'A', ja: 'ナディムさんの{家|いえ}は、{南区|みなみく}？', pt: 'Sua casa é no bairro sul (Minami), Nadim?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: '{家|いえ}はどう？', pt: 'E como é a casa?' },
+        { speaker: 'B', ja: 'ちょっと{古|ふる}いです。でも、{広|ひろ}いです。', pt: 'É um pouco velha. Mas é espaçosa.' },
+        { speaker: 'A', ja: 'ふーん。', pt: 'Hmm…' },
+      ],
+    },
+  ],
+  '07-22': [
+    {
+      label: '会話① (07-22)',
+      setupJa: '{前田|まえだ}さん、ビサルさん、アルニさんが、{地域|ちいき}のイベントのあと、どこに{住|す}んでいるか{話|はな}しています。',
+      setupPt: 'Após um evento do bairro, Maeda, Visal e Aruni conversam sobre onde moram.',
+      lines: [
+        { speaker: '前田', ja: 'ビサルさんは、どこに{住|す}んでいますか？', pt: 'Visal, onde você mora?' },
+        { speaker: 'ビサル', ja: '{会社|かいしゃ}の{寮|りょう}に{住|す}んでいます。', pt: 'Moro no alojamento da empresa.' },
+        { speaker: 'アルニ', ja: '{広|ひろ}いですか？', pt: 'É grande?' },
+        { speaker: 'ビサル', ja: 'いえ、{広|ひろ}くないです。', pt: 'Não, não é grande.' },
+        { speaker: 'アルニ', ja: 'そうですか。', pt: 'Ah, entendi.' },
+        { speaker: 'ビサル', ja: 'でも、とても{静|しず}かです。{近|ちか}くに{公園|こうえん}があります。', pt: 'Mas é muito silencioso. Tem um parque perto.' },
+        { speaker: 'アルニ', ja: 'そうですか。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+  '07-23': [
+    {
+      label: '会話② (07-23)',
+      lines: [
+        { speaker: '前田', ja: 'アルニさんは？', pt: 'E você, Aruni?' },
+        { speaker: 'アルニ', ja: '{私|わたし}は、{北町|きたまち}のアパートに{住|す}んでいます。', pt: 'Eu moro num apartamento em Kitamachi.' },
+        { speaker: 'ビサル', ja: 'きれいですか？', pt: 'É bonito/limpo?' },
+        { speaker: 'アルニ', ja: 'はい、きれいです。でも、ちょっと{古|ふる}いです。', pt: 'Sim, é. Mas é um pouco velho.' },
+        { speaker: 'ビサル', ja: 'そうですか。{静|しず}かですか？', pt: 'Ah, entendi. É silencioso?' },
+        { speaker: 'アルニ', ja: 'いえ。{近|ちか}くに{学校|がっこう}があります。あまり{静|しず}かじゃないです。', pt: 'Não. Tem uma escola perto. Não é muito silencioso.' },
+        { speaker: '前田', ja: 'ああ。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '07-24': [
+    {
+      label: '会話③ (07-24)',
+      lines: [
+        { speaker: 'アルニ', ja: '{前田|まえだ}さんは？マンションですか？', pt: 'E você, Maeda? Mora num prédio (mansion)?' },
+        { speaker: '前田', ja: 'うちは{一戸建|いっこだ}て。', pt: 'A minha é uma casa (individual).' },
+        { speaker: 'アルニ', ja: 'すごいですね。', pt: 'Que demais!' },
+        { speaker: '前田', ja: 'でも、{大|おお}きくないです。', pt: 'Mas não é grande.' },
+        { speaker: 'ビサル', ja: 'そうですか。{新|あたら}しいですか？', pt: 'Ah, entendi. É nova?' },
+        { speaker: '前田', ja: 'いえ、{新|あたら}しくないです。とても{古|ふる}いです。', pt: 'Não, não é nova. É bem velha.' },
+        { speaker: 'ビサル', ja: 'そうですか。', pt: 'Ah, sei.' },
+        { speaker: '前田', ja: '{近|ちか}くにお{寺|てら}があります。お{寺|てら}もとても{古|ふる}いです。', pt: 'Tem um templo perto. O templo também é bem antigo.' },
+        { speaker: 'ビサル・アルニ', ja: 'へー。', pt: 'Nossa…' },
+      ],
+    },
+  ],
+}
+
+const lesson7: Section = {
+  id: 'lesson-7',
+  level: 'starter',
+  titleJa: '第7課 部屋が4つあります',
+  titlePt: 'Lição 7 — Tem quatro cômodos',
+  summaryPt: 'Casa e trabalho · cômodos da casa, móveis/eletrodomésticos, dizer como é a casa e ler botões de aparelhos.',
+  studyNotes: [
+    {
+      title: 'Tópico: Casa e trabalho (a moradia)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Entender explicações simples ao ser mostrado uma casa (qual cômodo é o quê, quantos cômodos há).\n' +
+        '- Perguntar e checar se um cômodo tem o que você precisa.\n' +
+        '- Dar uma resposta simples sobre onde mora e como é a casa.\n' +
+        '- Perguntar e responder sobre o tipo de moradia.\n' +
+        '- Ler botões de eletrodomésticos (máquina de lavar, controle do ar-condicionado).',
+    },
+    {
+      title: 'Apresentar um lugar: ここは…です (➊)',
+      bodyPt:
+        'Use **ここは【lugar/coisa】です** = “aqui é 〜” ao mostrar a casa:\n\n' +
+        '- `ここは{玄関|げんかん}です` = aqui é a entrada.\n' +
+        '- `ここはソンさんの{部屋|へや}です` = aqui é o quarto do Son.\n\n' +
+        'ここ = “aqui” (o lugar onde você está agora).\n\n' +
+        '**Cômodos:** {玄関|げんかん} (entrada), お{風呂|ふろ} (banho), トイレ (banheiro), {階段|かいだん} (escada), {居間|いま}／リビング (sala de estar), {庭|にわ} (quintal/jardim), {台所|だいどころ}／キッチン (cozinha), ベランダ／バルコニー (varanda), {部屋|へや} (cômodo/quarto), 1{階|かい} (1º andar/térreo), 2{階|かい} (2º andar). No alojamento: {管理人室|かんりにんしつ} (sala do zelador), {食堂|しょくどう} (refeitório).',
+    },
+    {
+      title: 'Dizer que algo existe + quantos: …に N が（数）あります (➋)',
+      bodyPt:
+        '**【lugar】に N が あります** = “em (lugar) há N”:\n\n' +
+        '- `ここに{階段|かいだん}があります` = aqui tem uma escada.\n\n' +
+        'Para dizer **quantos**, ponha o número logo antes de あります:\n\n' +
+        '- `1{階|かい}に{部屋|へや}が4つあります` = no 1º andar há 4 cômodos.\n' +
+        '- `2{階|かい}に{部屋|へや}が3つあります` = no 2º andar há 3 cômodos.\n\n' +
+        'Partículas: **に** marca onde algo está; **が** marca o que está. Contador 〜つ: ひとつ・ふたつ・みっつ・よっつ…',
+    },
+    {
+      title: 'Não tem: ありません / ないです (➌)',
+      bodyPt:
+        'Forma negativa de あります (= não existe / não tem):\n\n' +
+        '- `トースターはありません` = não tem torradeira.\n' +
+        '- `ベッドはないです` = não tem cama.\n\n' +
+        '**ないです = ありません** (mesmo sentido). ないです vem de ない (negativo de ある) + です.\n\n' +
+        'Na negativa, a partícula **が** vira **は**: テレビ**は**ありません.\n\n' +
+        '**Móveis/eletro:** エアコン (ar-cond.), {冷蔵庫|れいぞうこ} (geladeira), {電子|でんし}レンジ (micro-ondas), {炊飯器|すいはんき} (panela de arroz), トースター (torradeira), ベッド (cama), ふとん (futon), テーブル (mesa), いす (cadeira), {洗濯機|せんたくき} (máq. de lavar), テレビ (TV), Wi-Fi.',
+    },
+    {
+      title: 'Adjetivos: como a casa é, e a negativa (➍ ➎)',
+      bodyPt:
+        'Dois tipos de adjetivo:\n\n' +
+        '**Adjetivo-い** (termina em い): {広|ひろ}い (espaçoso), せまい (apertado), {大|おお}きい (grande), {小|ちい}さい (pequeno), {新|あたら}しい (novo), {古|ふる}い (velho), うるさい (barulhento), きたない (sujo).\n\n' +
+        '**Adjetivo-な**: {静|しず}か（な） (silencioso), きれい（な） (limpo/bonito — atenção: é な-adj, lê-se *kiree*).\n\n' +
+        '**Afirmativa (➍):** adj-い + です → `せまいです`; adj-な + です (tira o な) → `{静|しず}かです`.\n\n' +
+        '**Negativa (➎):**\n' +
+        '- adj-い: 〜いです → **〜くないです** → {広|ひろ}い → `{広|ひろ}くないです`.\n' +
+        '- adj-な: 〜です → **〜じゃないです** → {静|しず}か → `{静|しず}かじゃないです`.\n\n' +
+        '(também existe 〜くありません / 〜じゃありません). Reforço: **あまり** + negativa = “não muito”.',
+    },
+    {
+      title: 'Tipos de moradia e botões de aparelhos',
+      bodyPt:
+        '**Tipos de moradia:** アパート (apê em prédio baixo), マンション (apê em prédio de concreto), {寮|りょう} (alojamento da empresa/escola), シェアハウス (casa compartilhada/república), {一戸建|いっこだ}て (casa individual). Perto de casa: お{寺|てら} (templo), {学校|がっこう} (escola), {公園|こうえん} (parque).\n\n' +
+        '**Máquina de lavar ({洗濯機|せんたくき}):** {入|いり}（入れる）= ligar, {切|きり}（切る）= desligar, スタート = iniciar, コース = modo, {水量|すいりょう} = nível de água, {予約|よやく} = agendar.\n\n' +
+        '**Ar-condicionado (エアコン):** {冷房|れいぼう} = refrigerar (calor), {暖房|だんぼう} = aquecer (frio), {除湿|じょしつ} = desumidificar, {自動|じどう} = automático, {温度|おんど} = temperatura, {停止|ていし} = parar, {風向|かざむき} = direção do ar, {風量|ふうりょう} = intensidade.',
+    },
+  ],
+  groups: [lesson7Group],
+  audios: attachScripts(7, L7_SCRIPTS),
+}
+
+// ---- Lições 8 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(7, 'Casa e trabalho', '部屋が4つあります', 'Tem quatro cômodos', [
-    'Entender explicações simples ao ser mostrado uma casa.',
-    'Perguntar se um cômodo tem o que você precisa.',
-    'Ler botões de um eletrodoméstico (ex.: controle remoto).',
-  ]),
   scaffold(8, 'Casa e trabalho', '山田さんはどこですか', 'Onde está o Yamada?', [
     'Entender explicação ao ser mostrado um cômodo.',
     'Perguntar e responder onde alguém/algo está.',
@@ -821,5 +1077,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, ...others],
 }
