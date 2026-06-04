@@ -1754,13 +1754,254 @@ const lesson10: Section = {
   audios: attachScripts(10, L10_SCRIPTS),
 }
 
-// ---- Lições 11 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson11Group: ExerciseGroup = {
+  id: 'iro-s-l11',
+  title: 'どんなマンガが好きですか？',
+  subtitlePt: 'Hobbies, gostos, o que faz nas folgas e frequência',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l11-1', number: 1, prompt: 'O 「{趣味|しゅみ}」 significa:', choices: [{ n: 1, text: 'hobby / passatempo' }, { n: 2, text: 'trabalho' }, { n: 3, text: 'folga' }, { n: 4, text: 'amigo' }], answer: 1, explanationPt: '{趣味|しゅみ} = hobby. Pergunta: {趣味|しゅみ}は、{何|なん}ですか？ = qual é o seu hobby? (Nota ➊)' },
+    { id: 'iro-s-l11-2', number: 2, prompt: 'Em 「{何|なん}ですか？」 e 「{何|なに}が{好|す}きですか？」, o 「何」 lê-se:', choices: [{ n: 1, text: 'なん antes de ですか／contadores; なに antes de partícula (を／が)' }, { n: 2, text: 'sempre なに' }, { n: 3, text: 'sempre なん' }, { n: 4, text: 'なに antes de ですか; なん antes de partícula' }], answer: 1, explanationPt: '{何|なん}: com ですか e em {何時|なんじ}/{何枚|なんまい} etc. {何|なに}: com partícula — {何|なに}を{食|た}べますか／{何|なに}が{好|す}きですか. (Nota ➊)' },
+    { id: 'iro-s-l11-3', number: 3, prompt: 'Para dizer “gosto de mangá”, qual partícula marca o que se gosta?', choices: [{ n: 1, text: 'が → マンガが{好|す}きです' }, { n: 2, text: 'を → マンガを{好|す}きです' }, { n: 3, text: 'は → マンガは{好|す}きです' }, { n: 4, text: 'で → マンガで{好|す}きです' }], answer: 1, translationPt: 'Gosto de mangá.', explanationPt: '{好|す}き（な）= gostar. O que se gosta leva **が**: マンガが{好|す}きです. (retoma a Lição 5)' },
+    { id: 'iro-s-l11-4', number: 4, prompt: 'O interrogativo 「どんな」 (＋ substantivo) serve para:', choices: [{ n: 1, text: 'perguntar “que tipo de ~?”' }, { n: 2, text: 'perguntar “quantos?”' }, { n: 3, text: 'perguntar “onde?”' }, { n: 4, text: 'perguntar “quando?”' }], answer: 1, explanationPt: 'どんな + N = que tipo de N. Ex.: どんなスポーツが{好|す}きですか？ = que tipo de esporte você gosta? (Nota ➋)' },
+    { id: 'iro-s-l11-5', number: 5, prompt: 'Resposta a 「どんな{映画|えいが}が{好|す}きですか？」:', choices: [{ n: 1, text: 'アクション{映画|えいが}が{好|す}きです。' }, { n: 2, text: '{映画|えいが}が{何|なん}ですか。' }, { n: 3, text: 'はい、{好|す}きです。' }, { n: 4, text: '{映画|えいが}はだめです。' }], answer: 1, translationPt: 'Gosto de filme de ação.', explanationPt: 'どんな pede o gênero/tipo específico: アクション{映画|えいが} (ação), {恋愛映画|れんあいえいが} (romance), ホラー (terror), SF (ficção). (Nota ➋)' },
+    { id: 'iro-s-l11-6', number: 6, prompt: '「スポーツは、あまり{好|す}きじゃないです」 significa:', choices: [{ n: 1, text: 'não gosto muito de esporte' }, { n: 2, text: 'gosto muito de esporte' }, { n: 3, text: 'odeio esporte' }, { n: 4, text: 'adoro esporte' }], answer: 1, explanationPt: 'あまり + negativo = não muito. あまり{好|す}きじゃないです = não gosto muito. (Nota ➌)' },
+    { id: 'iro-s-l11-7', number: 7, prompt: 'O advérbio 「ぜんぜん」 (＋ negativo) significa:', choices: [{ n: 1, text: 'de jeito nenhum / nada' }, { n: 2, text: 'um pouco' }, { n: 3, text: 'às vezes' }, { n: 4, text: 'muito' }], answer: 1, explanationPt: 'ぜんぜん + negativo = nada, de modo algum. Ex.: ぜんぜん{好|す}きじゃないです / ぜんぜんしないね. (Notas ➌ ➍)' },
+    { id: 'iro-s-l11-8', number: 8, prompt: 'Para dizer que GOSTA MUITO de algo:', choices: [{ n: 1, text: '〜が{大好|だいす}きです（ou とても{好|す}きです）' }, { n: 2, text: '〜があまり{好|す}きです' }, { n: 3, text: '〜がぜんぜん{好|す}きです' }, { n: 4, text: '〜が{好|す}きじゃないです' }], answer: 1, translationPt: 'Adoro ~.', explanationPt: '{大好|だいす}き（な）= adorar; とても{好|す}きです = gostar muito (とても visto na Lição 7). (Nota ➌)' },
+    { id: 'iro-s-l11-9', number: 9, prompt: 'A negativa do adjetivo-な 「{好|す}き」 é:', choices: [{ n: 1, text: '{好|す}きじゃないです' }, { n: 2, text: '{好|す}きくないです' }, { n: 3, text: '{好|す}きませんです' }, { n: 4, text: '{好|す}きないです' }], answer: 1, explanationPt: 'Adjetivo-な: 〜じゃないです. {好|す}きじゃないです. (Adjetivo-い faz 〜くないです, ex.: {広|ひろ}くないです.) (Nota ➌)' },
+    { id: 'iro-s-l11-10', number: 10, prompt: 'Advérbios de frequência ALTA usados com V-ます:', choices: [{ n: 1, text: 'いつも／たいてい／よく／ときどき' }, { n: 2, text: 'あまり／ぜんぜん' }, { n: 3, text: 'とても／だめ' }, { n: 4, text: 'すぐに／あとで' }], answer: 1, explanationPt: 'いつも (sempre), たいてい (geralmente), よく (com frequência), ときどき (às vezes) → frequência alta a média, com verbo afirmativo. (Nota ➍)' },
+    { id: 'iro-s-l11-11', number: 11, prompt: '「あまり」「ぜんぜん」 de frequência vêm com:', choices: [{ n: 1, text: 'verbo NEGATIVO (V-ません)' }, { n: 2, text: 'verbo afirmativo (V-ます)' }, { n: 3, text: 'só com substantivos' }, { n: 4, text: 'só com です' }], answer: 1, explanationPt: 'あまり/ぜんぜん + V-ません = baixa frequência. Ex.: テレビは、あまり{見|み}ません / スポーツは、ぜんぜんしないね. (Nota ➍)' },
+    { id: 'iro-s-l11-12', number: 12, prompt: 'Ordene de mais frequente a menos frequente:', choices: [{ n: 1, text: 'いつも ＞ たいてい ＞ よく ＞ ときどき ＞ あまり ＞ ぜんぜん' }, { n: 2, text: 'ときどき ＞ いつも ＞ よく ＞ あまり' }, { n: 3, text: 'ぜんぜん ＞ あまり ＞ いつも' }, { n: 4, text: 'よく ＞ いつも ＞ ぜんぜん ＞ たいてい' }], answer: 1, explanationPt: 'Alta→baixa: いつも → たいてい → よく → ときどき → あまり → ぜんぜん. (Quadro ◆ frequência/grau)' },
+    { id: 'iro-s-l11-13', number: 13, prompt: 'Em 「{夫|おっと}と{公園|こうえん}でテニスをします」, a partícula 「と」 indica:', choices: [{ n: 1, text: 'com quem (companhia): com o marido' }, { n: 2, text: 'o lugar' }, { n: 3, text: 'o instrumento' }, { n: 4, text: 'o objeto direto' }], answer: 1, explanationPt: '【pessoa】と = junto com (companhia). {夫|おっと}と = com o marido. (Nota ➎)' },
+    { id: 'iro-s-l11-14', number: 14, prompt: 'Na mesma frase, a partícula 「で」 (em {公園|こうえん}で) indica:', choices: [{ n: 1, text: 'o lugar da ação: no parque' }, { n: 2, text: 'a companhia' }, { n: 3, text: 'o tempo' }, { n: 4, text: 'o destino' }], answer: 1, explanationPt: '【lugar】で = onde a ação acontece. {公園|こうえん}で = no parque. (Nota ➎, retoma a Lição 8)' },
+    { id: 'iro-s-l11-15', number: 15, prompt: 'No frase em japonês, onde fica o verbo?', choices: [{ n: 1, text: 'sempre no final; os demais elementos (quando/com quem/onde) têm ordem livre' }, { n: 2, text: 'sempre no começo' }, { n: 3, text: 'logo depois do sujeito' }, { n: 4, text: 'a ordem é totalmente fixa' }], answer: 1, explanationPt: 'O verbo vai no fim da frase; quando, com quem, onde podem vir em qualquer ordem antes dele. (Nota ➎)' },
+    { id: 'iro-s-l11-16', number: 16, prompt: 'Qual destes é 「{読書|どくしょ}」 (hobby)?', choices: [{ n: 1, text: 'leitura' }, { n: 2, text: 'culinária' }, { n: 3, text: 'compras' }, { n: 4, text: 'música' }], answer: 1, explanationPt: '{読書|どくしょ} = leitura. {料理|りょうり} = cozinhar; {買|か}い{物|もの} = compras; {音楽|おんがく} = música; マンガ = mangá; アニメ = anime. (Seção 1)' },
+    { id: 'iro-s-l11-17', number: 17, prompt: 'Relacione as atividades de folga: {掃除|そうじ} / {洗濯|せんたく} / {散歩|さんぽ}:', choices: [{ n: 1, text: '{掃除|そうじ} = faxina; {洗濯|せんたく} = lavar roupa; {散歩|さんぽ} = passear/caminhar' }, { n: 2, text: '{掃除|そうじ} = lavar roupa; {洗濯|せんたく} = passear; {散歩|さんぽ} = faxina' }, { n: 3, text: 'os três = cozinhar' }, { n: 4, text: '{掃除|そうじ} = estudar; {洗濯|せんたく} = jogar; {散歩|さんぽ} = ler' }], answer: 1, explanationPt: '{掃除|そうじ}をします (faxina), {洗濯|せんたく}をします (lavar roupa), {散歩|さんぽ}をします (passear). Outros: {勉強|べんきょう}する (estudar), ゆっくりする (relaxar). (Seção 3)' },
+    { id: 'iro-s-l11-18', number: 18, prompt: 'Relacione o gênero 「ミステリー」:', choices: [{ n: 1, text: 'mistério (livro/filme policial)' }, { n: 2, text: 'romance' }, { n: 3, text: 'jazz' }, { n: 4, text: 'ação' }], answer: 1, explanationPt: 'ミステリー = mistério; ファンタジー = fantasia; {恋愛映画|れんあいえいが} = romance; ロック/ジャズ/クラシック = rock/jazz/clássica. (Seção 2)' },
+    { id: 'iro-s-l11-19', number: 19, prompt: 'Diálogo 11-04: qual é o hobby da pessoa B?', context: 'A：{趣味|しゅみ}は、{何|なん}ですか？ B：{趣味|しゅみ}は、{読書|どくしょ}と{映画|えいが}です。', choices: [{ n: 1, text: 'leitura e filmes' }, { n: 2, text: 'esporte e culinária' }, { n: 3, text: 'jogos' }, { n: 4, text: 'música' }], answer: 1, explanationPt: '{読書|どくしょ}と{映画|えいが}です = leitura e cinema.' },
+    { id: 'iro-s-l11-20', number: 20, prompt: 'Diálogo 11-18: como a Nomin passa a folga?', context: 'ノミン：{私|わたし}は、うちでゆっくりします。たいてい、{映画|えいが}を{見|み}ます。ときどき、{日本語|にほんご}を{勉強|べんきょう}します。テレビは、あまり{見|み}ません。', choices: [{ n: 1, text: 'Relaxa em casa: geralmente vê filme, às vezes estuda japonês; quase não vê TV.' }, { n: 2, text: 'Sai para fazer esporte todo dia.' }, { n: 3, text: 'Joga pachinko a noite toda.' }, { n: 4, text: 'Faz compras com amigos.' }], answer: 1, explanationPt: 'たいてい (geralmente) {映画|えいが}, ときどき (às vezes) {日本語|にほんご}の{勉強|べんきょう}, テレビは あまり (quase não) {見|み}ません.' },
+    { id: 'iro-s-l11-21', number: 21, prompt: 'Diálogo 11-19: o que a Morita faz na folga?', context: '{森田|もりた}：{外|そと}でスポーツをします。たいてい、{夫|おっと}と{公園|こうえん}でテニスをします。あと、ときどき、{1人|ひとり}でジョギングをします。', choices: [{ n: 1, text: 'Esporte ao ar livre: tênis com o marido no parque e, às vezes, cooper sozinha.' }, { n: 2, text: 'Fica em casa relaxando.' }, { n: 3, text: 'Vê filmes e estuda.' }, { n: 4, text: 'Vai às compras.' }], answer: 1, explanationPt: '{夫|おっと}と (com o marido) {公園|こうえん}で (no parque) テニス; {1人|ひとり}で (sozinha) ジョギング. Mostra と/で (Nota ➎).' },
+    { id: 'iro-s-l11-22', number: 22, prompt: 'Diálogo 11-20: e o Nishikawa, faz esporte?', context: '{西川|にしかわ}：{休|やす}みの{日|ひ}は、うちでごろごろ……。ときどき、パチンコをするかなあ。スポーツは、ぜんぜんしないね。', choices: [{ n: 1, text: 'Não — fica à toa em casa, às vezes joga pachinko; esporte, nada.' }, { n: 2, text: 'Sim, joga futebol todo fim de semana.' }, { n: 3, text: 'Sim, faz natação.' }, { n: 4, text: 'Sim, corre todo dia.' }], answer: 1, explanationPt: 'ごろごろ (ficar à toa), パチンコ (jogo japonês), スポーツは ぜんぜんしない (esporte, nada). ぜんぜん + negativo. (Nota ➍)' },
+    { id: 'iro-s-l11-23', number: 23, prompt: 'Numa bio de rede social: 「しゅみは{読書|どくしょ}です」. O hobby da pessoa é:', choices: [{ n: 1, text: 'leitura' }, { n: 2, text: 'compras' }, { n: 3, text: 'esporte' }, { n: 4, text: 'música' }], answer: 1, explanationPt: 'Perfil da mayuri: しゅみは{読書|どくしょ}です = hobby é leitura. (Já a yukiko: {音楽|おんがく}・ショッピング・ファッション・スポーツ.) (Seção 4)' },
+    { id: 'iro-s-l11-24', number: 24, prompt: 'O que é 「パチンコ」, citado no diálogo?', choices: [{ n: 1, text: 'um tipo de jogo (de fliperama/pachinko) japonês' }, { n: 2, text: 'um esporte' }, { n: 3, text: 'um prato típico' }, { n: 4, text: 'um instrumento musical' }], answer: 1, explanationPt: 'パチンコ = jogo japonês de salão (tipo pinball/caça-níquel). No áudio: パチンコ？{日本|にほん}のゲーム = é um jogo japonês. ごろごろ = ficar à toa.' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 11 (聴解スクリプト)
+const L11_SCRIPTS: Record<string, ScriptItem[]> = {
+  '11-01': [
+    {
+      label: '会話① (11-01)',
+      setupJa: '{趣味|しゅみ}について、{6人|ろくにん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Seis pessoas falam sobre seus hobbies.',
+      lines: [
+        { speaker: 'A', ja: '{趣味|しゅみ}は、{何|なん}ですか？', pt: 'Qual é o seu hobby?' },
+        { speaker: 'B', ja: 'えーと、ゲームです。', pt: 'Hmm, é videogame.' },
+        { speaker: 'A', ja: 'へー、ゲームですか。', pt: 'Ah é, videogame.' },
+      ],
+    },
+  ],
+  '11-02': [
+    {
+      label: '会話② (11-02)',
+      lines: [
+        { speaker: 'A', ja: '{趣味|しゅみ}は、{何|なん}ですか？', pt: 'Qual é o seu hobby?' },
+        { speaker: 'B', ja: '{趣味|しゅみ}？{買|か}い{物|もの}が{好|す}きです。', pt: 'Hobby? Gosto de fazer compras.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah é?' },
+      ],
+    },
+  ],
+  '11-03': [
+    {
+      label: '会話③ (11-03)',
+      lines: [
+        { speaker: 'A', ja: '{趣味|しゅみ}は、{何|なん}ですか？', pt: 'Qual é o seu hobby?' },
+        { speaker: 'B', ja: 'うーん、アニメが{好|す}きです。', pt: 'Hmm, gosto de anime.' },
+        { speaker: 'A', ja: 'ああ、アニメ。', pt: 'Ah, anime.' },
+      ],
+    },
+  ],
+  '11-04': [
+    {
+      label: '会話④ (11-04)',
+      lines: [
+        { speaker: 'A', ja: '{趣味|しゅみ}は、{何|なん}ですか？', pt: 'Qual é o seu hobby?' },
+        { speaker: 'B', ja: '{趣味|しゅみ}は、{読書|どくしょ}と{映画|えいが}です。', pt: 'Meus hobbies são leitura e cinema.' },
+        { speaker: 'A', ja: '{読書|どくしょ}と{映画|えいが}、いいですね。', pt: 'Leitura e cinema, que legal.' },
+      ],
+    },
+  ],
+  '11-05': [
+    {
+      label: '会話⑤ (11-05)',
+      lines: [
+        { speaker: 'A', ja: '{趣味|しゅみ}は、{何|なん}ですか？', pt: 'Qual é o seu hobby?' },
+        { speaker: 'B', ja: 'スポーツです。あと、{料理|りょうり}も{好|す}きです。', pt: 'Esporte. Ah, e também gosto de cozinhar.' },
+        { speaker: 'A', ja: 'いいですね。', pt: 'Que legal.' },
+      ],
+    },
+  ],
+  '11-06': [
+    {
+      label: '会話⑥ (11-06)',
+      lines: [
+        { speaker: 'A', ja: '{趣味|しゅみ}は、{何|なん}ですか？', pt: 'Qual é o seu hobby?' },
+        { speaker: 'B', ja: 'えーと、{音楽|おんがく}が{好|す}きです。', pt: 'Hmm, gosto de música.' },
+        { speaker: 'A', ja: '{音楽|おんがく}、{私|わたし}もです。', pt: 'Música, eu também.' },
+      ],
+    },
+  ],
+  '11-10': [
+    {
+      label: '会話 (11-10)',
+      setupJa: '{日本語|にほんご}クラスの{休|やす}み{時間|じかん}に、ジュンジュンさんと{趙|チョウ}さんが、お{互|たが}いの{趣味|しゅみ}について{話|はな}しています。',
+      setupPt: 'No intervalo da aula de japonês, Jun Jun e Zhao conversam sobre os hobbies um do outro.',
+      lines: [
+        { speaker: '趙', ja: 'ジュンジュンさんの{趣味|しゅみ}は、{何|なん}ですか？', pt: 'Jun Jun, qual é o seu hobby?' },
+        { speaker: 'ジュンジュン', ja: 'スポーツです。', pt: 'Esporte.' },
+        { speaker: '趙', ja: 'へー、どんなスポーツが{好|す}きですか？', pt: 'Ah, que tipo de esporte você gosta?' },
+        { speaker: 'ジュンジュン', ja: 'バスケットボールと{水泳|すいえい}が{好|す}きです。{趙|チョウ}さんは、スポーツ、{好|す}きですか？', pt: 'Gosto de basquete e natação. E você, Zhao, gosta de esporte?' },
+        { speaker: '趙', ja: 'うーん、スポーツは、あまり{好|す}きじゃないです。', pt: 'Hmm, esporte eu não gosto muito.' },
+        { speaker: 'ジュンジュン', ja: 'そうですか。じゃあ、{何|なに}が{好|す}きですか？', pt: 'Ah é? Então, do que você gosta?' },
+        { speaker: '趙', ja: '{私|わたし}は、マンガが{好|す}きです。', pt: 'Eu gosto de mangá.' },
+        { speaker: 'ジュンジュン', ja: 'どんなマンガが{好|す}きですか？', pt: 'Que tipo de mangá você gosta?' },
+        { speaker: '趙', ja: 'そうですねえ、「ドラゴンボール」が{大好|だいす}きです。', pt: 'Deixa eu ver… adoro “Dragon Ball”.' },
+        { speaker: 'ジュンジュン', ja: 'ああ、いいですね。', pt: 'Ah, que legal.' },
+      ],
+    },
+  ],
+  '11-17': [
+    {
+      label: '会話① (11-17)',
+      setupJa: '{同|おな}じ{職場|しょくば}の{4人|よにん}が、{休|やす}みの{日|ひ}の{過|す}ごし{方|かた}について{話|はな}しています。',
+      setupPt: 'Quatro colegas do mesmo trabalho conversam sobre como passam as folgas.',
+      lines: [
+        { speaker: '森田', ja: 'ミゲルさん、{休|やす}みの{日|ひ}は、いつも、{何|なに}をしますか？', pt: 'Miguel, o que você costuma fazer nas folgas?' },
+        { speaker: 'ミゲル', ja: 'そうですねえ、{私|わたし}は、いつも、{掃除|そうじ}と{洗濯|せんたく}をします。あと、よく、{友|とも}だちと{買|か}い{物|もの}をします。', pt: 'Deixa ver… eu sempre faço faxina e lavo roupa. E também faço compras com amigos com frequência.' },
+        { speaker: '森田', ja: 'そうですか。', pt: 'Ah é?' },
+      ],
+    },
+  ],
+  '11-18': [
+    {
+      label: '会話② (11-18)',
+      lines: [
+        { speaker: '森田', ja: 'ノミンさんは？', pt: 'E você, Nomin?' },
+        { speaker: 'ノミン', ja: '{私|わたし}は、うちでゆっくりします。', pt: 'Eu relaxo em casa.' },
+        { speaker: '森田', ja: 'そう。うちで、{何|なに}をしますか？', pt: 'Ah. E o que você faz em casa?' },
+        { speaker: 'ノミン', ja: 'たいてい、{映画|えいが}を{見|み}ます。ときどき、{日本語|にほんご}を{勉強|べんきょう}します。', pt: 'Geralmente vejo filme. Às vezes estudo japonês.' },
+        { speaker: 'ミゲル', ja: 'へー、えらいですね。テレビは{見|み}ますか？', pt: 'Nossa, que dedicação. Você vê TV?' },
+        { speaker: 'ノミン', ja: 'ああ、テレビは、あまり{見|み}ません。', pt: 'Ah, TV eu quase não vejo.' },
+      ],
+    },
+  ],
+  '11-19': [
+    {
+      label: '会話③ (11-19)',
+      lines: [
+        { speaker: 'ミゲル', ja: '{森田|もりた}さんは、{休|やす}みの{日|ひ}は、{何|なに}をしますか？', pt: 'Morita, o que você faz nas folgas?' },
+        { speaker: '森田', ja: '{外|そと}でスポーツをします。', pt: 'Faço esporte ao ar livre.' },
+        { speaker: 'ノミン', ja: 'スポーツ、いいですね。どんなスポーツをしますか？', pt: 'Esporte, que legal. Que tipo de esporte você faz?' },
+        { speaker: '森田', ja: 'たいてい、{夫|おっと}と{公園|こうえん}でテニスをします。あと、ときどき、{1人|ひとり}でジョギングをします。', pt: 'Geralmente jogo tênis com meu marido no parque. E, às vezes, faço cooper sozinha.' },
+        { speaker: 'ミゲル', ja: 'へー、いいですね。', pt: 'Nossa, que legal.' },
+      ],
+    },
+  ],
+  '11-20': [
+    {
+      label: '会話④ (11-20)',
+      lines: [
+        { speaker: 'ノミン', ja: '{西川|にしかわ}さんは？', pt: 'E você, Nishikawa?' },
+        { speaker: '西川', ja: 'うーん、{休|やす}みの{日|ひ}は、うちでごろごろ……。', pt: 'Hmm, nas folgas eu fico à toa em casa…' },
+        { speaker: 'ノミン', ja: 'ごろごろ？', pt: 'À toa?' },
+        { speaker: '西川', ja: 'ふとんでゆっくり。あー、ときどき、パチンコをするかなあ。', pt: 'Relaxando na cama. Ah, e às vezes jogo pachinko, acho.' },
+        { speaker: 'ミゲル', ja: 'パチンコ？{何|なん}ですか？', pt: 'Pachinko? O que é isso?' },
+        { speaker: '西川', ja: '{日本|にほん}のゲーム。', pt: 'É um jogo japonês.' },
+        { speaker: 'ミゲル', ja: 'そうですか。', pt: 'Ah, entendi.' },
+        { speaker: 'ノミン', ja: 'スポーツは？', pt: 'E esporte?' },
+        { speaker: '西川', ja: 'スポーツは、ぜんぜんしないね。', pt: 'Esporte eu não faço nada.' },
+      ],
+    },
+  ],
+}
+
+const lesson11: Section = {
+  id: 'lesson-11',
+  level: 'starter',
+  titleJa: '第11課 どんなマンガが好きですか？',
+  titlePt: 'Lição 11 — De que tipo de mangá você gosta?',
+  summaryPt: 'O que eu gosto de fazer · falar de hobbies e gostos (〜は何ですか, 〜が好きです, どんなN, 大好き／あまり好きじゃない), contar o que faz nas folgas com advérbios de frequência (いつも〜ぜんぜん) e as partículas と (com quem) / で (onde), e ler um perfil de rede social.',
+  studyNotes: [
+    {
+      title: 'Tópico: O que eu gosto de fazer',
+      bodyPt:
+        '## Can-do\n' +
+        '- Responder de forma simples quando perguntam sobre seus hobbies.\n' +
+        '- Perguntar e responder sobre gostos e hobbies (gênero, obra preferida).\n' +
+        '- Perguntar e responder o que se faz nos dias de folga.\n' +
+        '- Ler um perfil simples de rede social e entender do que a pessoa gosta.',
+    },
+    {
+      title: 'Perguntar com 何: Nは何ですか？ (➊)',
+      bodyPt:
+        'O interrogativo **{何|なん}/{何|なに}** (o quê) pergunta sobre um tópico: `〜は{何|なん}ですか？`.\n\n' +
+        '- `{趣味|しゅみ}は、{何|なん}ですか？` = qual é o seu hobby?\n\n' +
+        '**Leitura do 何:**\n' +
+        '- **なん** com ですか e em compostos: {何時|なんじ}, {何枚|なんまい}, {何歳|なんさい}, {何曜日|なんようび}, {何月|なんがつ}, {何日|なんにち}.\n' +
+        '- **なに** quando vem com partícula: `{何|なに}を{食|た}べますか？`, `{何|なに}が{好|す}きですか？`.\n\n' +
+        '**Gostar:** o que se gosta leva **が** → `マンガが{好|す}きです`. Hobbies: スポーツ, {音楽|おんがく}, {映画|えいが}, {読書|どくしょ}, {買|か}い{物|もの}, {料理|りょうり}, ゲーム, マンガ, アニメ.',
+    },
+    {
+      title: 'Que tipo de: どんなN (➋)',
+      bodyPt:
+        '**どんな + substantivo** = que tipo de ~. Pede o gênero/a obra específica:\n\n' +
+        '- `どんなスポーツが{好|す}きですか？` → バスケットボール, {水泳|すいえい}, サッカー…\n' +
+        '- `どんな{映画|えいが}が{好|す}きですか？` → アクション{映画|えいが}, {恋愛映画|れんあいえいが}, ホラー, SF…\n' +
+        '- `どんな{本|ほん}を{読|よ}みますか？` → ミステリー, ファンタジー…\n\n' +
+        '**Gêneros úteis:** 【música】ロック, ジャズ, クラシック · 【filme】{恋愛|れんあい}, アクション, ホラー · 【livro】ミステリー, ファンタジー.',
+    },
+    {
+      title: 'Grau de gosto: あまり〜じゃないです / 大好き (➌)',
+      bodyPt:
+        'Para dizer **o quanto** se gosta (advérbio + adjetivo):\n\n' +
+        '- **とても{好|す}きです** / **{大好|だいす}きです** = gosto muito / adoro.\n' +
+        '- **あまり{好|す}きじゃないです** = não gosto muito.\n' +
+        '- **ぜんぜん{好|す}きじゃないです** = não gosto nada.\n\n' +
+        '⚠️ あまり e ぜんぜん **exigem o negativo**.\n\n' +
+        '**Negativo dos adjetivos:** adjetivo-な → 〜じゃないです (`{好|す}きじゃないです`); adjetivo-い → 〜くないです (`{広|ひろ}くないです`).',
+    },
+    {
+      title: 'Frequência: いつも〜ぜんぜん (➍)',
+      bodyPt:
+        'Advérbios de **frequência**, com verbo:\n\n' +
+        '| advérbio | frequência | verbo |\n|---|---|---|\n' +
+        '| いつも | sempre | afirmativo |\n' +
+        '| たいてい | geralmente | afirmativo |\n' +
+        '| よく | com frequência | afirmativo |\n' +
+        '| ときどき | às vezes | afirmativo |\n' +
+        '| あまり | quase não | **negativo** |\n' +
+        '| ぜんぜん | nunca/nada | **negativo** |\n\n' +
+        'Ex.: `たいてい、{映画|えいが}を{見|み}ます` · `テレビは、あまり{見|み}ません` · `スポーツは、ぜんぜんしないね`.\n\n' +
+        '💡 O mesmo quadro vale para **grau** (com adjetivo): alto = とても; baixo = あまり/ぜんぜん.',
+    },
+    {
+      title: 'Com quem / onde: 【pessoa】と【lugar】で (➎)',
+      bodyPt:
+        'Duas partículas que situam a ação:\n\n' +
+        '- **と** depois de pessoa = **com quem**: `{夫|おっと}と` (com o marido), `{友|とも}だちと` (com amigos).\n' +
+        '- **で** depois de lugar = **onde**: `{公園|こうえん}で` (no parque), `うちで` (em casa), `{外|そと}で` (lá fora).\n\n' +
+        '`{夫|おっと}と{公園|こうえん}でテニスをします` = jogo tênis com o marido no parque.\n\n' +
+        '📌 **Ordem:** o verbo fica no **fim**; quando/com quem/onde podem vir em qualquer ordem antes dele. Sozinho = `{1人|ひとり}で`.\n\n' +
+        '**Atividades de folga:** {掃除|そうじ}/{洗濯|せんたく}/{料理|りょうり}/{散歩|さんぽ}/{買|か}い{物|もの}/{勉強|べんきょう}/ゲーム/ゆっくりする. Kanji do dia: {読|よ}みます, {聞|き}きます, {見|み}ます, {本|ほん}, {友|とも}だち, {何|なに}.',
+    },
+  ],
+  groups: [lesson11Group],
+  audios: attachScripts(11, L11_SCRIPTS),
+}
+
+// ---- Lições 12 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(11, 'O que eu gosto de fazer', 'どんなマンガが好きですか', 'De que tipo de mangá você gosta?', [
-    'Responder sobre seus hobbies.',
-    'Perguntar e responder sobre o que faz nas folgas.',
-    'Ler um perfil simples de rede social.',
-  ]),
   scaffold(12, 'O que eu gosto de fazer', 'いっしょに飲みに行きませんか', 'Vamos sair para beber juntos?', [
     'Ler um aviso de evento e achar a informação importante.',
     'Convidar e responder a convites; dizer quando está livre.',
@@ -1801,5 +2042,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, ...others],
 }
