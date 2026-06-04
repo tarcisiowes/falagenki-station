@@ -580,13 +580,182 @@ const lesson5: Section = {
   audios: attachScripts(5, L5_SCRIPTS),
 }
 
-// ---- Lições 6 a 18 (estrutura por tópico; exercícios em construção) ------
+// ---- Lição 6: Pedir em restaurantes -------------------------------------
+const lesson6Group: ExerciseGroup = {
+  id: 'iro-s-l6',
+  title: 'チーズバーガーください',
+  subtitlePt: 'Pedir em fast food, refeitório e izakaya',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l6-1', number: 1, prompt: 'Para PEDIR um café no balcão, você diz:', choices: [{ n: 1, text: 'コーヒー、お願いします' }, { n: 2, text: 'コーヒーが好きです' }, { n: 3, text: 'コーヒーは、ちょっと…' }, { n: 4, text: 'コーヒーですか' }], answer: 1, translationPt: 'Um café, por favor.', explanationPt: 'Para pedir: diga o que quer + ください ou お願(ねが)いします. (Nota ➊)' },
+    { id: 'iro-s-l6-2', number: 2, prompt: 'Sobre ください e お願いします ao pedir:', choices: [{ n: 1, text: 'お願いします é mais educado que ください' }, { n: 2, text: 'ください é mais educado que お願いします' }, { n: 3, text: 'São saudações' }, { n: 4, text: 'Significam “não, obrigado”' }], answer: 1, explanationPt: 'Os dois servem para pedir. お願いします (≈ “peço o favor”) é um pouco mais educado que ください. (Nota ➊)' },
+    { id: 'iro-s-l6-3', number: 3, prompt: 'O atendente pergunta 「こちらでおめしあがりですか？」. Significa:', choices: [{ n: 1, text: 'Vai comer aqui (no local)?' }, { n: 2, text: 'Qual o tamanho?' }, { n: 3, text: 'Quer bebida?' }, { n: 4, text: 'Aceita cartão?' }], answer: 1, explanationPt: 'おめしあがり = forma muito educada de “comer”. 「こちらでおめしあがりですか？」 = vai comer aqui? (comer no local × levar)' },
+    { id: 'iro-s-l6-4', number: 4, prompt: 'Você quer LEVAR a comida (não comer no local). Responde:', choices: [{ n: 1, text: 'いえ、テイクアウトで' }, { n: 2, text: 'はい、ここで' }, { n: 3, text: 'はい、お願いします' }, { n: 4, text: 'いえ、けっこうです' }], answer: 1, translationPt: 'Não, para viagem.', explanationPt: 'テイクアウトで = para viagem/levar. Para comer no local: ここで. (Diálogo 06-02)' },
+    { id: 'iro-s-l6-5', number: 5, prompt: '「私は、カレーにします」significa:', choices: [{ n: 1, text: 'Eu vou de curry (escolho curry).' }, { n: 2, text: 'Eu gosto de curry.' }, { n: 3, text: 'Eu não como curry.' }, { n: 4, text: 'Eu faço curry.' }], answer: 1, explanationPt: '〜にします = “decido por / vou de 〜” (escolha). カレーにします = vou de curry. (Nota ➋)' },
+    { id: 'iro-s-l6-6', number: 6, prompt: 'Para perguntar ao colega o que ele vai escolher/pedir:', choices: [{ n: 1, text: '何にしますか？' }, { n: 2, text: '何が好きですか？' }, { n: 3, text: 'いくらですか？' }, { n: 4, text: 'どこですか？' }], answer: 1, translationPt: 'O que você vai querer?', explanationPt: '何(なに)にしますか？ = o que você vai escolher/pedir? Responde-se com 〜にします. (Nota ➋, diálogo 06-08)' },
+    { id: 'iro-s-l6-7', number: 7, prompt: 'Ao contar pratos/itens (1, 2, 3 unidades), usa-se:', choices: [{ n: 1, text: 'ひとつ、ふたつ、みっつ…' }, { n: 2, text: 'いち、に、さん…' }, { n: 3, text: 'いっぴき、にひき…' }, { n: 4, text: 'いちまい、にまい…' }], answer: 1, explanationPt: 'Para contar coisas em geral (pratos, porções) usa-se ひとつ・ふたつ・みっつ…, não いち・に・さん. (Nota ➌)' },
+    { id: 'iro-s-l6-8', number: 8, prompt: 'Ordem correta para pedir “dois edamame”:', choices: [{ n: 1, text: '枝豆 ふたつ、ください' }, { n: 2, text: 'ふたつ 枝豆、ください' }, { n: 3, text: '枝豆 に、ください' }, { n: 4, text: 'ふたつが枝豆です' }], answer: 1, translationPt: 'Dois edamame, por favor.', explanationPt: 'O número vem DEPOIS do item: 枝豆(えだまめ)ふたつ、ください. (Nota ➌, diálogo 06-15)' },
+    { id: 'iro-s-l6-9', number: 9, prompt: 'Para perguntar se o restaurante TEM maionese:', choices: [{ n: 1, text: 'マヨネーズ、ありますか？' }, { n: 2, text: 'マヨネーズ、お願いします' }, { n: 3, text: 'マヨネーズが好きですか？' }, { n: 4, text: 'マヨネーズにします' }], answer: 1, translationPt: 'Vocês têm maionese?', explanationPt: '〜（は）ありますか？ = vocês têm 〜? Usa o verbo あります (existir/haver). (Nota ➍, diálogo 06-15)' },
+    { id: 'iro-s-l6-10', number: 10, prompt: 'Para CHAMAR o atendente (puxar conversa) no restaurante:', choices: [{ n: 1, text: 'すみません' }, { n: 2, text: 'いただきます' }, { n: 3, text: 'おいしいです' }, { n: 4, text: 'けっこうです' }], answer: 1, translationPt: 'Com licença! / Por favor!', explanationPt: 'すみません serve para chamar a atenção do atendente. O atendente atende com はーい / はい。 (Diálogo 06-15)' },
+    { id: 'iro-s-l6-11', number: 11, prompt: 'Você vê uma placa (看板) escrita 「居酒屋」. É um lugar para:', choices: [{ n: 1, text: 'comer petiscos e beber (bar/boteco japonês)' }, { n: 2, text: 'comprar roupas' }, { n: 3, text: 'cortar cabelo' }, { n: 4, text: 'pegar trem' }], answer: 1, explanationPt: '居酒屋(いざかや) = izakaya, bar/boteco japonês com comidas e bebidas. Outras placas: 牛丼 (gyūdon), ラーメン (lámen), そば・うどん, カレー, すし.' },
+    { id: 'iro-s-l6-12', number: 12, prompt: 'No cardápio do fast food, 「セット」 e 「単品」 significam:', choices: [{ n: 1, text: 'combo (com acompanhamento) / item avulso' }, { n: 2, text: 'quente / gelado' }, { n: 3, text: 'grande / pequeno' }, { n: 4, text: 'doce / salgado' }], answer: 1, explanationPt: 'セット = combo (lanche + batata + bebida); {単品|たんぴん} = item avulso (só o lanche). S/M/L = tamanhos pequeno/médio/grande.' },
+    { id: 'iro-s-l6-13', number: 13, prompt: 'No refeitório (06-08), o que o Adi e o Doni escolhem?', context: 'アディ：私は、うどんにします。… ドニ：じゃあ、私もカレーにします。', choices: [{ n: 1, text: 'Adi: udon; Doni: curry' }, { n: 2, text: 'Adi: curry; Doni: udon' }, { n: 3, text: 'Ambos: udon' }, { n: 4, text: 'Ambos: rámen' }], answer: 1, explanationPt: 'Adi diz うどんにします (vou de udon). Doni hesita (うーん…), Hayashi escolhe curry, e Doni decide 私もカレーにします (eu também vou de curry).' },
+    { id: 'iro-s-l6-14', number: 14, prompt: 'No izakaya (06-15), quantos chopes (生ビール) o Robert pede?', context: '生ビール3つと、ウーロン茶1つ。あと、唐揚げ、お願いします。', choices: [{ n: 1, text: 'Três (3つ)' }, { n: 2, text: 'Um (1つ)' }, { n: 3, text: 'Dois (2つ)' }, { n: 4, text: 'Quatro (4つ)' }], answer: 1, explanationPt: 'Robert pede 生(なま)ビール3つ (três chopes) e ウーロン茶1つ (um chá oolong), além de 唐揚げ (frango frito).' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 6 (聴解スクリプト + 会話)
+const L6_SCRIPTS: Record<string, ScriptItem[]> = {
+  '06-01': [
+    {
+      label: '会話 (06-01)',
+      setupJa: 'ハンバーガーの{店|みせ}で、お{客|きゃく}さんが{注文|ちゅうもん}しています。',
+      setupPt: 'Um cliente faz o pedido numa hamburgueria.',
+      lines: [
+        { speaker: '店員', ja: 'いらっしゃいませ。おうかがいします。', pt: 'Bem-vindo(a). Pode pedir.' },
+        { speaker: '客', ja: 'ホットコーヒー、お{願|ねが}いします。', pt: 'Um café quente, por favor.' },
+        { speaker: '店員', ja: 'ホットコーヒーですね。サイズは……。', pt: 'Café quente, certo. E o tamanho…?' },
+        { speaker: '客', ja: 'Sサイズ、お{願|ねが}いします。', pt: 'Tamanho P, por favor.' },
+        { speaker: '店員', ja: 'こちらでおめしあがりですか？', pt: 'Vai consumir aqui?' },
+        { speaker: '客', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '06-02': [
+    {
+      label: '会話 (06-02)',
+      lines: [
+        { speaker: '店員', ja: 'いらっしゃいませ。おうかがいします。', pt: 'Bem-vindo(a). Pode pedir.' },
+        { speaker: '客', ja: 'えー、チーズバーガーと、てりやきバーガーと、フィッシュバーガー、ください。', pt: 'Ah, um cheeseburger, um teriyaki burger e um fish burger, por favor.' },
+        { speaker: '店員', ja: 'こちらでおめしあがりですか？', pt: 'Vai consumir aqui?' },
+        { speaker: '客', ja: 'いえ、テイクアウトで。', pt: 'Não, para viagem.' },
+        { speaker: '店員', ja: 'お{持|も}ち{帰|かえ}りですね。ありがとうございます。', pt: 'Para levar, certo. Obrigado.' },
+      ],
+    },
+  ],
+  '06-03': [
+    {
+      label: '会話 (06-03)',
+      lines: [
+        { speaker: '店員', ja: 'いらっしゃいませ。おうかがいします。', pt: 'Bem-vindo(a). Pode pedir.' },
+        { speaker: '客', ja: 'はい。えーと、これ、ください。', pt: 'Sim. Hmm, este aqui, por favor.' },
+        { speaker: '店員', ja: 'チキンバーガーのセットですね。ドリンクは、{何|なに}になさいますか？', pt: 'O combo de chicken burger, certo. Qual bebida o(a) senhor(a) deseja?' },
+        { speaker: '客', ja: 'じゃあ、ウーロン{茶|ちゃ}、お{願|ねが}いします。', pt: 'Então, chá oolong, por favor.' },
+        { speaker: '店員', ja: 'こちらでおめしあがりですか？', pt: 'Vai consumir aqui?' },
+        { speaker: '客', ja: 'はい。ここで。', pt: 'Sim. Aqui mesmo.' },
+      ],
+    },
+  ],
+  '06-08': [
+    {
+      label: '会話 (06-08)',
+      setupJa: 'アディさん、ドニさん、{林|はやし}さんが、{会社|かいしゃ}の{食堂|しょくどう}で{昼|ひる}ご{飯|はん}を{食|た}べます。',
+      setupPt: 'Adi, Doni e Hayashi vão almoçar no refeitório da empresa.',
+      lines: [
+        { speaker: '林', ja: 'アディさん、{何|なに}にしますか？', pt: 'Adi, o que você vai querer?' },
+        { speaker: 'アディ', ja: '{私|わたし}は、うどんにします。', pt: 'Eu vou de udon.' },
+        { speaker: '林', ja: 'ドニさんは？', pt: 'E você, Doni?' },
+        { speaker: 'ドニ', ja: 'うーん……{林|はやし}さんは、{何|なに}にしますか？', pt: 'Hmm… Hayashi, o que você vai querer?' },
+        { speaker: '林', ja: '{私|わたし}は、カレーにします。', pt: 'Eu vou de curry.' },
+        { speaker: 'ドニ', ja: 'じゃあ、{私|わたし}もカレーにします。', pt: 'Então eu também vou de curry.' },
+        { speaker: 'アディ', ja: 'ここ、いいですか？', pt: 'Posso sentar aqui?' },
+        { speaker: '社員', ja: 'あ、どうぞ。', pt: 'Ah, pode.' },
+        { speaker: '林', ja: 'いただきます。', pt: 'Itadakimasu (bom apetite).' },
+        { speaker: 'アディ・ドニ', ja: 'いただきます。', pt: 'Itadakimasu.' },
+        { speaker: '林', ja: 'うどん、どうですか？', pt: 'E o udon, como está?' },
+        { speaker: 'アディ', ja: 'おいしいです。', pt: 'Está gostoso.' },
+        { speaker: '林', ja: 'そう。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+  '06-15': [
+    {
+      label: '会話 (06-15)',
+      setupJa: 'ロバートさんとアグネスさんが、{友|とも}だちと{居酒屋|いざかや}に{来|き}ています。',
+      setupPt: 'Robert e Agnes estão num izakaya com amigos.',
+      lines: [
+        { speaker: 'ロバート', ja: 'すみません。', pt: 'Com licença!' },
+        { speaker: '店員', ja: 'はーい。', pt: 'Pois não.' },
+        { speaker: 'ロバート', ja: 'えーと、{生|なま}ビール3つと、ウーロン{茶|ちゃ}1つ。あと、{唐揚|からあ}げ、お{願|ねが}いします。', pt: 'Hmm, três chopes e um chá oolong. E também frango frito (karaage), por favor.' },
+        { speaker: '店員', ja: 'はい。', pt: 'Certo.' },
+        { speaker: 'アグネス', ja: 'すみません。あと、{枝豆|えだまめ}2つ、ください。', pt: 'Com licença. E mais dois edamame, por favor.' },
+        { speaker: '店員', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+        { speaker: 'ロバート', ja: 'すみません。', pt: 'Com licença!' },
+        { speaker: '店員', ja: 'はーい。', pt: 'Pois não.' },
+        { speaker: 'ロバート', ja: 'お{水|みず}、ください。あと、マヨネーズ、ありますか？', pt: 'Água, por favor. E vocês têm maionese?' },
+        { speaker: '店員', ja: 'はい、お{持|も}ちします。', pt: 'Sim, já trago.' },
+      ],
+    },
+  ],
+}
+
+const lesson6: Section = {
+  id: 'lesson-6',
+  level: 'starter',
+  titleJa: '第6課 チーズバーガーください',
+  titlePt: 'Lição 6 — Um cheeseburger, por favor',
+  summaryPt: 'Comidas que eu gosto · ler cardápio, fazer pedido em fast food / refeitório / izakaya e pedir o que precisa.',
+  studyNotes: [
+    {
+      title: 'Tópico: Comidas que eu gosto (comer fora)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Ler um cardápio de fast food e entender o que tem.\n' +
+        '- Fazer um pedido num fast food (comer no local ou levar).\n' +
+        '- Perguntar e responder o que vai comer com outras pessoas.\n' +
+        '- Pedir comida e itens (prato, copo, etc.) num restaurante/izakaya.\n' +
+        '- Ler placas de restaurantes e saber que tipo de lugar é.',
+    },
+    {
+      title: 'Fazer um pedido (➊)',
+      bodyPt:
+        'Diga o que quer + **ください** ou **お{願|ねが}いします**:\n\n' +
+        '- `ホットコーヒー、お願いします` = um café quente, por favor.\n' +
+        '- `これ、ください` = quero este (apontando).\n\n' +
+        'Os dois servem; **お願いします é um pouco mais educado** que ください.\n\n' +
+        'Frases do atendente: `いらっしゃいませ` (bem-vindo), `おうかがいします / 何になさいますか？` (pode pedir), `こちらでおめしあがりですか？` (vai comer aqui?). Levar: `テイクアウトで`; comer no local: `ここで`.',
+    },
+    {
+      title: 'Escolher / decidir: 〜にします (➋)',
+      bodyPt:
+        '〜にします = “vou de 〜 / escolho 〜” (uma decisão).\n\n' +
+        '- `何(なに)にしますか？` = o que você vai querer?\n' +
+        '- `私は、うどんにします` = eu vou de udon.\n' +
+        '- `飲み物は？` → `アイスコーヒーにします` = e bebida? — vou de café gelado.',
+    },
+    {
+      title: 'Quantidades: contar coisas (➌)',
+      bodyPt:
+        'Para contar pratos/porções use o contador **〜つ** (e não いち・に・さん):\n\n' +
+        '| | | | |\n|---|---|---|---|\n' +
+        '| 1つ ひとつ | 2つ ふたつ | 3つ みっつ | 4つ よっつ |\n' +
+        '| 5つ いつつ | 6つ むっつ | 7つ ななつ | 8つ やっつ |\n' +
+        '| 9つ ここのつ | 10 とお | ？ いくつ | |\n\n' +
+        'O número vem **depois** do item: `生ビール3つ、お願いします` (✗ 3つ生ビール).',
+    },
+    {
+      title: 'Pedir um item: 〜（は）ありますか？ (➍)',
+      bodyPt:
+        'Para perguntar se o lugar TEM algo: 〜（は）ありますか？ (verbo あります = haver/existir).\n\n' +
+        '- `マヨネーズ、ありますか？` = vocês têm maionese?\n' +
+        '- `取(と)り{皿|ざら}、ありますか？` = tem prato individual?\n\n' +
+        'Para chamar o atendente: **すみません**. Itens úteis: お{水|みず} (água), {取|と}り{皿|ざら} (prato), グラス (copo), （お）はし (hashi), スプーン (colher), おしぼり (toalhinha úmida), ケチャップ / マヨネーズ.',
+    },
+    {
+      title: 'Vocabulário da lição',
+      bodyPt:
+        '**Fast food:** ハンバーガー (hambúrguer), チーズバーガー, てりやきバーガー, フィッシュバーガー, チキンバーガー, ダブルバーガー, フライドポテト (batata frita), デザート (sobremesa), アイスクリーム (sorvete), アップルパイ, ドリンク (bebida), ホット／アイスコーヒー, ウーロン{茶|ちゃ} (chá oolong), {単品|たんぴん} (avulso), セット (combo), S/M/L.\n\n' +
+        '**Izakaya:** {刺身|さしみ} (sashimi), {唐揚|からあ}げ (frango frito), {焼|や}き{鳥|とり} (espetinho de frango), {枝豆|えだまめ} (edamame), {生|なま}ビール (chope), {日本酒|にほんしゅ} (saquê).\n\n' +
+        '**Placas (看板):** {居酒屋|いざかや}, {牛丼|ぎゅうどん}, ラーメン, そば・うどん, カレー, すし.',
+    },
+  ],
+  groups: [lesson6Group],
+  audios: attachScripts(6, L6_SCRIPTS),
+}
+
+// ---- Lições 7 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(6, 'Comidas que eu gosto', 'チーズバーガーをおねがいします', 'Um cheeseburger, por favor', [
-    'Entender um cardápio de fast food.',
-    'Fazer um pedido num restaurante e pedir prato/copo.',
-    'Entender placas/letreiros de restaurantes.',
-  ]),
   scaffold(7, 'Casa e trabalho', '部屋が4つあります', 'Tem quatro cômodos', [
     'Entender explicações simples ao ser mostrado uma casa.',
     'Perguntar se um cômodo tem o que você precisa.',
@@ -652,5 +821,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, ...others],
 }
