@@ -2812,13 +2812,273 @@ const lesson14: Section = {
   audios: attachScripts(14, L14_SCRIPTS),
 }
 
-// ---- Lições 15 a 18 (estrutura por tópico; exercícios em construção) ------
+const lesson15Group: ExerciseGroup = {
+  id: 'iro-s-l15',
+  title: '電池がほしいんですが…',
+  subtitlePt: 'Lojas, onde comprar algo, andares, pedir ajuda a um funcionário e dar impressões sobre produtos',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-s-l15-1', number: 1, prompt: '「{電池|でんち}」 é:', choices: [{ n: 1, text: 'pilha / bateria' }, { n: 2, text: 'lanterna' }, { n: 3, text: 'marmita' }, { n: 4, text: 'guarda-chuva' }], answer: 1, explanationPt: '{電池|でんち} = pilha/bateria. Item-tema da lição (Seção 1).' },
+    { id: 'iro-s-l15-2', number: 2, prompt: '「ほしい」 significa:', choices: [{ n: 1, text: '(eu) quero / tenho vontade de ter' }, { n: 2, text: '(eu) gosto de fazer' }, { n: 3, text: '(eu) sei' }, { n: 4, text: '(eu) tenho' }], answer: 1, explanationPt: 'ほしい = querer (ter algo). Marca o objeto desejado com が, como {好|す}き（な）. (Nota ➊)' },
+    { id: 'iro-s-l15-3', number: 3, prompt: 'Em 「{電池|でんち}（　）ほしいんですが、どこで{買|か}えますか？」, a lacuna é:', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'を' }, { n: 3, text: 'で' }, { n: 4, text: 'に' }], answer: 1, translationPt: 'Eu queria (umas) pilhas, onde dá para comprar?', explanationPt: 'Igual a {好|す}き（な）, ほしい marca o objeto desejado com **が**: {電池|でんち}**が**ほしい. Memorize 〜がほしいんですが como bloco. (Nota ➊)' },
+    { id: 'iro-s-l15-4', number: 4, prompt: 'A expressão 「〜んですが」 (em 〜がほしいんですが) serve para:', choices: [{ n: 1, text: 'explicar sua situação e pedir ajuda/conselho ao interlocutor' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'recusar educadamente' }, { n: 4, text: 'falar do passado' }], answer: 1, explanationPt: '〜んですが explica seu contexto e abre espaço para o outro ajudar/responder. Aqui: dizer o que quer e perguntar onde comprar. (Nota ➊)' },
+    { id: 'iro-s-l15-5', number: 5, prompt: '「どこで{買|か}えますか？」 significa:', choices: [{ n: 1, text: 'onde (eu) posso comprar?' }, { n: 2, text: 'quanto custa?' }, { n: 3, text: 'quando abre?' }, { n: 4, text: 'o que é isto?' }], answer: 1, explanationPt: 'どこで{買|か}えますか？ = onde dá para comprar? Pergunta a LOJA/lugar de compra. (Nota ➊ · Seção 1)' },
+    { id: 'iro-s-l15-6', number: 6, prompt: '「{買|か}えます」 (em どこで{買|か}えますか) é:', choices: [{ n: 1, text: 'forma potencial de {買|か}う (poder comprar) — por ora, decore a frase inteira' }, { n: 2, text: 'forma passada de {買|か}う' }, { n: 3, text: 'forma negativa de {買|か}う' }, { n: 4, text: 'um substantivo' }], answer: 1, explanationPt: '{買|か}えます = forma potencial (poder comprar) de {買|か}う. A formação da forma potencial só é estudada no Shokyū 2; aqui, decore どこで{買|か}えますか？ como frase. (Nota ➊)' },
+    { id: 'iro-s-l15-7', number: 7, prompt: '「ドラッグストア」 é:', choices: [{ n: 1, text: 'drogaria/farmácia (remédios, cosméticos, higiene)' }, { n: 2, text: 'loja de materiais de construção' }, { n: 3, text: 'loja de 100 ienes' }, { n: 4, text: 'loja de eletrônicos' }], answer: 1, explanationPt: 'ドラッグストア = drogaria: remédios sem receita, cosméticos, shampoo, detergente etc.; algumas vendem comida. (Seção 1 · TIPS)' },
+    { id: 'iro-s-l15-8', number: 8, prompt: '「ホームセンター」 é:', choices: [{ n: 1, text: 'loja de materiais de casa/construção (ferramentas, madeira, jardinagem)' }, { n: 2, text: 'drogaria' }, { n: 3, text: 'loja de conveniência' }, { n: 4, text: 'loja de departamentos' }], answer: 1, explanationPt: 'ホームセンター = grande loja de itens para casa/obras: madeira, ferramentas (ドライバー, のこぎり), pregos, jardinagem. Fica em avenidas, com estacionamento grande. (Seção 1 · TIPS)' },
+    { id: 'iro-s-l15-9', number: 9, prompt: '「100{円|えん}ショップ」 é:', choices: [{ n: 1, text: 'loja onde (quase) tudo custa 100 ienes' }, { n: 2, text: 'loja que só vende moedas' }, { n: 3, text: 'banco' }, { n: 4, text: 'restaurante de 100 ienes' }], answer: 1, explanationPt: '100{円|えん}ショップ (ou {100均|ひゃっきん}) = quase tudo a 100 ienes (+ imposto): papelaria, louça, cozinha, limpeza, comida, brinquedos. (Seção 1 · TIPS)' },
+    { id: 'iro-s-l15-10', number: 10, prompt: '「{懐中電灯|かいちゅうでんとう}」 é:', choices: [{ n: 1, text: 'lanterna' }, { n: 2, text: 'pilha' }, { n: 3, text: 'extensão elétrica' }, { n: 4, text: 'secador' }], answer: 1, explanationPt: '{懐中電灯|かいちゅうでんとう} = lanterna. No diálogo 15-06, comprada em ホームセンター. (Seção 1)' },
+    { id: 'iro-s-l15-11', number: 11, prompt: '「{浴衣|ゆかた}」 é:', choices: [{ n: 1, text: 'yukata (quimono leve de verão)' }, { n: 2, text: 'marmita' }, { n: 3, text: 'prendedor de roupa' }, { n: 4, text: 'guarda-chuva' }], answer: 1, explanationPt: '{浴衣|ゆかた} = yukata. No diálogo 15-05, vendido na ショッピングセンター em frente à estação ({駅前|えきまえ}). (Seção 1)' },
+    { id: 'iro-s-l15-12', number: 12, prompt: '「{洗濯|せんたく}ばさみ」 é:', choices: [{ n: 1, text: 'prendedor de roupa' }, { n: 2, text: 'máquina de lavar' }, { n: 3, text: 'sabão em pó' }, { n: 4, text: 'varal' }], answer: 1, explanationPt: '{洗濯|せんたく}ばさみ = prendedor de roupa. No diálogo 15-04, comprado em ドラッグストア. (Seção 1)' },
+    { id: 'iro-s-l15-13', number: 13, prompt: '「（お）{弁当箱|べんとうばこ}」 é:', choices: [{ n: 1, text: 'marmita (caixa de bentô)' }, { n: 2, text: 'lancheira térmica de bebida' }, { n: 3, text: 'leite de coco' }, { n: 4, text: 'pauzinhos' }], answer: 1, explanationPt: '（お）{弁当箱|べんとうばこ} = marmita. No diálogo 15-07, vendida na 100{円|えん}ショップ (junto com おはし/pauzinhos). (Seção 1)' },
+    { id: 'iro-s-l15-14', number: 14, prompt: 'A partícula 「〜とか」 (ex.: ニコニコスーパー**とか**) serve para:', choices: [{ n: 1, text: 'dar um exemplo entre vários (“tipo…”, “…por exemplo”)' }, { n: 2, text: 'indicar negação' }, { n: 3, text: 'marcar o sujeito' }, { n: 4, text: 'indicar passado' }], answer: 1, explanationPt: '〜とか = cita um exemplo dentre outros possíveis (“tipo o Niko Niko Super”). Diálogo 15-08. (Seção 1)' },
+    { id: 'iro-s-l15-15', number: 15, prompt: '「{駅前|えきまえ}」 é:', choices: [{ n: 1, text: 'em frente à estação' }, { n: 2, text: 'dentro da estação' }, { n: 3, text: 'atrás da estação' }, { n: 4, text: 'plataforma' }], answer: 1, explanationPt: '{駅前|えきまえ} = (a área) em frente à estação. {駅前|えきまえ}のショッピングセンター = shopping em frente à estação. (Seção 1)' },
+    { id: 'iro-s-l15-16', number: 16, prompt: 'A leitura de 「3{階|かい}」 e 「{何階|なんかい}」 é, respectivamente:', choices: [{ n: 1, text: 'さんがい / なんがい (o leitor muda para が)' }, { n: 2, text: 'さんかい / なんかい' }, { n: 3, text: 'さんがい / なんかい' }, { n: 4, text: 'みかい / いくかい' }], answer: 1, translationPt: 'terceiro andar / que andar', explanationPt: 'Contador 〜{階|かい}: 3{階|がい}＝さんがい (também さんかい), {何階|なんがい}. Outros: 1いっかい, 6ろっかい, 8はっかい, 10じゅっかい. (Seção 3 · quadro 階数)' },
+    { id: 'iro-s-l15-17', number: 17, prompt: 'Dentro da loja, para saber em que andar fica um item, pergunta-se:', choices: [{ n: 1, text: '〜は、{何階|なんかい}ですか？ / どこですか？ / どこにありますか？' }, { n: 2, text: '〜は、いくらですか？' }, { n: 3, text: '〜は、いつですか？' }, { n: 4, text: '〜は、だれですか？' }], answer: 1, explanationPt: 'Dentro da loja: {何階|なんかい}ですか？ (que andar?) / どこですか？ / どこにありますか？ Também basta 〜がほしいんですが… (Nota ➊ · Seção 3)' },
+    { id: 'iro-s-l15-18', number: 18, prompt: 'Expressões do funcionário 「〜でございます」 e 「〜になります」 equivalem a:', choices: [{ n: 1, text: '〜です (forma mais polida usada por funcionários de loja)' }, { n: 2, text: '〜ました (passado)' }, { n: 3, text: '〜ません (negativo)' }, { n: 4, text: '〜ましょう (convite)' }], answer: 1, explanationPt: '🔖 Linguagem de loja: 〜でございます ＝ 〜になります ＝ 〜です (mais polido). Ex.: 4{階|かい}でございます. (Seção 3)' },
+    { id: 'iro-s-l15-19', number: 19, prompt: '「ご{案内|あんない}します／ご{案内|あんない}いたします」 significa:', choices: [{ n: 1, text: 'eu lhe acompanho / vou te levar até lá' }, { n: 2, text: 'pode pagar aqui' }, { n: 3, text: 'está esgotado' }, { n: 4, text: 'volte sempre' }], answer: 1, explanationPt: 'ご{案内|あんない}します/いたします = “eu te levo/mostro o caminho” (I’ll show you). こちらでございます/あちらでございます = é por aqui/ali. (Seção 3)' },
+    { id: 'iro-s-l15-20', number: 20, prompt: 'Para dar impressão sobre um produto, a estrutura é:', choices: [{ n: 1, text: 'ナ-adjetivo + ですね / イ-adjetivo + いですね (おしゃれですね・{安|やす}いですね)' }, { n: 2, text: 'todos os adjetivos + いですね' }, { n: 3, text: 'adjetivo + ますね' }, { n: 4, text: 'adjetivo + でしたか' }], answer: 1, translationPt: 'que estiloso, né / que barato, né', explanationPt: 'Impressões (Nota ➋): ナA + ですね (おしゃれですね), イA-い + ですね ({安|やす}いですね). ね pede a concordância do outro. (Seção 4)' },
+    { id: 'iro-s-l15-21', number: 21, prompt: '「かわいい！」「すてき！」 (sem ですね) são usados:', choices: [{ n: 1, text: 'como exclamação breve; com ですね quando se fala COM alguém' }, { n: 2, text: 'só para perguntar preço' }, { n: 3, text: 'só no passado' }, { n: 4, text: 'só por funcionários' }], answer: 1, explanationPt: 'かわいい！/すてき！ = exclamação curta. 〜ですね é dirigido ao interlocutor (pede empatia); falando sozinho, não se usa ですね. (Nota ➋)' },
+    { id: 'iro-s-l15-22', number: 22, prompt: '「きれい」 ao modificar um substantivo vira:', choices: [{ n: 1, text: 'きれい**な** N (é ナ-adjetivo, apesar do い)' }, { n: 2, text: 'きれい**い** N' }, { n: 3, text: 'きれい N' }, { n: 4, text: 'きれく N' }], answer: 1, explanationPt: '⚠️ きれい é ナ-adjetivo. Lista どう？: かっこいい, かわいい, {高|たか}い, {安|やす}い, おもしろい (イ-adj) · きれい(な), すてき(な), おしゃれ(な), {変|へん}(な) (ナ-adj). (Seção 4 · Nota ➋)' },
+    { id: 'iro-s-l15-23', number: 23, prompt: '「それに」 significa:', choices: [{ n: 1, text: 'além disso / e ainda' }, { n: 2, text: 'mas / porém' }, { n: 3, text: 'por isso' }, { n: 4, text: 'então' }], answer: 1, explanationPt: 'それに = além disso (acrescenta). Ex.: いいね。それに、{安|やす}いですね (é bom; e ainda, é barato). ⚠️ Contraste: でも = mas ({高|たか}いですね). (Seção 4)' },
+    { id: 'iro-s-l15-24', number: 24, prompt: '「{本当|ほんとう}！」 (resposta a um elogio) significa:', choices: [{ n: 1, text: 'é mesmo! / é verdade!' }, { n: 2, text: 'mentira!' }, { n: 3, text: 'não sei' }, { n: 4, text: 'quanto custa?' }], answer: 1, explanationPt: '{本当|ほんとう}！ = é mesmo!/verdade! (concorda animado). Diálogo 15-26: このバッグ、かわいい！→ {本当|ほんとう}！かわいいですね。 (Seção 4)' },
+    { id: 'iro-s-l15-25', number: 25, prompt: 'Nas placas de loja, 「{入口|いりぐち}／{出口|でぐち}／{化粧室|けしょうしつ}／{非常口|ひじょうぐち}」 são:', choices: [{ n: 1, text: 'entrada / saída / banheiro / saída de emergência' }, { n: 2, text: 'empurre / puxe / abrir / fechar' }, { n: 3, text: 'subida / descida / aberto / fechado' }, { n: 4, text: 'caixa / informações / elevador / escada' }], answer: 1, explanationPt: 'Placas (Seção 5): {入口|いりぐち} (entrada, お{客様|きゃくさま}{入口|いりぐち}), {出口|でぐち}・EXIT (saída), {化粧室|けしょうしつ} (banheiro), {非常口|ひじょうぐち} (saída de emergência).' },
+    { id: 'iro-s-l15-26', number: 26, prompt: 'Nas portas, 「{押|お}（{押|お}す）」 e 「{引|ひ}く」 significam:', choices: [{ n: 1, text: 'empurre (push) / puxe (pull)' }, { n: 2, text: 'puxe / empurre' }, { n: 3, text: 'abrir / fechar' }, { n: 4, text: 'entrada / saída' }], answer: 1, explanationPt: '{押|お}（{押|お}す）= empurre (PUSH), {引|ひ}く = puxe (PULL). Par de opostos em portas. (Seção 5 · Kanji)' },
+    { id: 'iro-s-l15-27', number: 27, prompt: 'No elevador/escada rolante, os pares 「{開|ひら}く／{閉|と}じる」 e 「{上|のぼ}り／{下|くだ}り」 são:', choices: [{ n: 1, text: 'abrir / fechar — e — subida / descida' }, { n: 2, text: 'empurrar / puxar — e — entrada / saída' }, { n: 3, text: 'aberto / fechado — e — perigo / cuidado' }, { n: 4, text: 'subir / descer — e — abrir / fechar' }], answer: 1, explanationPt: '{開|ひら}く (abrir) / {閉|と}じる (fechar) — botões 開/閉 do elevador; {上|のぼ}り (subida) / {下|くだ}り (descida) — エスカレーター. (Seção 5)' },
+    { id: 'iro-s-l15-28', number: 28, prompt: 'Diálogo 15-05: 「{浴衣|ゆかた}がほしいんですが、どこで{買|か}えますか？」 — onde comprar?', context: 'A：{浴衣|ゆかた}がほしいんですが、どこで{買|か}えますか？ B：{駅前|えきまえ}のショッピングセンターで{買|か}えますよ。2{階|かい}にお{店|みせ}があります。', choices: [{ n: 1, text: 'Na ショッピングセンター em frente à estação — a loja fica no 2º andar' }, { n: 2, text: 'Na ドラッグストア' }, { n: 3, text: 'Na 100{円|えん}ショップ' }, { n: 4, text: 'Na ホームセンター' }], answer: 1, explanationPt: 'B: {駅前|えきまえ}のショッピングセンターで{買|か}えますよ。2{階|かい}にお{店|みせ}があります (no shopping em frente à estação; a loja é no 2º andar). (Seção 1)' },
+    { id: 'iro-s-l15-29', number: 29, prompt: 'Diálogo 15-13: 「カメラは、{何階|なんかい}ですか？」 — resposta do funcionário?', context: '{客|きゃく}：あのう、すみません。カメラは、{何階|なんかい}ですか？ {店員|てんいん}：はい、4{階|かい}でございます。', choices: [{ n: 1, text: '4º andar (4{階|かい}でございます)' }, { n: 2, text: '2º andar' }, { n: 3, text: 'lá por ali (あちら)' }, { n: 4, text: 'logo adiante (この{先|さき})' }], answer: 1, explanationPt: 'O {店員|てんいん} responde 4{階|かい}でございます (é no 4º andar) — でございます ＝ です polido. (Seção 3)' },
+    { id: 'iro-s-l15-30', number: 30, prompt: 'Diálogo 15-27: 「このジャケット、いいね。」 — o que B acrescenta?', context: 'A：このジャケット、いいね。 B：そうですね。それに、{安|やす}いですね。', choices: [{ n: 1, text: 'Concorda e acrescenta que, além disso, é barata (それに、{安|やす}いですね)' }, { n: 2, text: 'Diz que é cara (でも、{高|たか}いですね)' }, { n: 3, text: 'Diz que é estranha ({変|へん}ですね)' }, { n: 4, text: 'Pergunta o preço (いくらですか)' }], answer: 1, explanationPt: 'B: そうですね。それに、{安|やす}いですね (concorda e ainda elogia o preço). それに acrescenta um ponto positivo. (Seção 4)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 15 (聴解スクリプト)
+const L15_SCRIPTS: Record<string, ScriptItem[]> = {
+  '15-03': [
+    {
+      label: '会話① (15-03)',
+      setupJa: '{6人|ろくにん}の{人|ひと}が、ほしいものを{買|か}う{場所|ばしょ}を{聞|き}いています。',
+      setupPt: 'Seis pessoas perguntam onde comprar o que querem.',
+      lines: [
+        { speaker: 'A', ja: '{電池|でんち}がほしいんですが、どこで{買|か}えますか？', pt: 'Eu queria umas pilhas, onde dá para comprar?' },
+        { speaker: 'B', ja: '{電池|でんち}？　コンビニで{買|か}えますよ。', pt: 'Pilhas? Dá para comprar na loja de conveniência.' },
+        { speaker: 'A', ja: 'あ、そうですか。', pt: 'Ah, tá.' },
+      ],
+    },
+  ],
+  '15-04': [
+    {
+      label: '会話② (15-04)',
+      lines: [
+        { speaker: 'A', ja: '{洗濯|せんたく}ばさみがほしいんですが、どこで{買|か}えますか？', pt: 'Eu queria prendedores de roupa, onde dá para comprar?' },
+        { speaker: 'B', ja: 'ドラッグストアで{買|か}えますよ。', pt: 'Dá para comprar na drogaria.' },
+        { speaker: 'A', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Muito obrigado.' },
+      ],
+    },
+  ],
+  '15-05': [
+    {
+      label: '会話③ (15-05)',
+      lines: [
+        { speaker: 'A', ja: '{浴衣|ゆかた}がほしいんですが、どこで{買|か}えますか？', pt: 'Eu queria um yukata, onde dá para comprar?' },
+        { speaker: 'B', ja: '{駅前|えきまえ}のショッピングセンターで{買|か}えますよ。2{階|かい}にお{店|みせ}があります。', pt: 'Dá para comprar no shopping em frente à estação. A loja fica no 2º andar.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, tá.' },
+      ],
+    },
+  ],
+  '15-06': [
+    {
+      label: '会話④ (15-06)',
+      lines: [
+        { speaker: 'A', ja: '{懐中電灯|かいちゅうでんとう}がほしいんですが、どこで{買|か}えますか？', pt: 'Eu queria uma lanterna, onde dá para comprar?' },
+        { speaker: 'B', ja: 'ああ、ホームセンターがいいよ。この{近|ちか}くにあるよ。', pt: 'Ah, a loja de materiais para casa é boa. Tem uma aqui perto.' },
+        { speaker: 'A', ja: 'そうですか。ありがとうございます。', pt: 'Ah, tá. Muito obrigado.' },
+      ],
+    },
+  ],
+  '15-07': [
+    {
+      label: '会話⑤ (15-07)',
+      lines: [
+        { speaker: 'A', ja: 'お{弁当箱|べんとうばこ}がほしいんですが、どこで{買|か}えますか？', pt: 'Eu queria uma marmita, onde dá para comprar?' },
+        { speaker: 'B', ja: '100{円|えん}ショップにありますよ。お{弁当箱|べんとうばこ}も、おはしも、あります。', pt: 'Tem na loja de 100 ienes. Tem marmita e também pauzinhos.' },
+        { speaker: 'A', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '15-08': [
+    {
+      label: '会話⑥ (15-08)',
+      lines: [
+        { speaker: 'A', ja: 'ココナッツミルクがほしいんですが、どこで{買|か}えますか？', pt: 'Eu queria leite de coco, onde dá para comprar?' },
+        { speaker: 'B', ja: 'ああ、{大|おお}きいスーパーにあるよ。ニコニコスーパーとか。', pt: 'Ah, tem nos supermercados grandes. No Niko Niko Super, por exemplo.' },
+        { speaker: 'A', ja: 'そうですか。ありがとうございます。', pt: 'Ah, tá. Muito obrigado.' },
+      ],
+    },
+  ],
+  '15-12': [
+    {
+      label: '会話① (15-12)',
+      setupJa: '{4人|よにん}のお{客|きゃく}さんが、{店員|てんいん}に{売|う}り{場|ば}を{聞|き}いています。',
+      setupPt: 'Quatro clientes perguntam ao funcionário onde fica a seção.',
+      lines: [
+        { speaker: 'Cliente', ja: 'すみません。ドライヤーは、どこですか？', pt: 'Com licença. Onde fica o secador?' },
+        { speaker: 'Funcionário', ja: 'ドライヤーですね。2{階|かい}です。', pt: 'Secador, né. É no 2º andar.' },
+        { speaker: 'Cliente', ja: 'あ、どうも。', pt: 'Ah, obrigado.' },
+      ],
+    },
+  ],
+  '15-13': [
+    {
+      label: '会話② (15-13)',
+      lines: [
+        { speaker: 'Cliente', ja: 'あのう、すみません。カメラは、{何階|なんかい}ですか？', pt: 'Ah, com licença. Em que andar fica a câmera?' },
+        { speaker: 'Funcionário', ja: 'はい、4{階|かい}でございます。', pt: 'Sim, é no 4º andar.' },
+        { speaker: 'Cliente', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '15-14': [
+    {
+      label: '会話③ (15-14)',
+      lines: [
+        { speaker: 'Cliente', ja: 'すみません。スマホケースがほしいんですが、どこにありますか？', pt: 'Com licença. Eu queria uma capa de celular, onde fica?' },
+        { speaker: 'Funcionário', ja: 'あちらでございます。ご{案内|あんない}いたします。', pt: 'É por ali. Eu lhe acompanho.' },
+        { speaker: 'Cliente', ja: 'あ、すみません。', pt: 'Ah, obrigado.' },
+      ],
+    },
+  ],
+  '15-15': [
+    {
+      label: '会話④ (15-15)',
+      lines: [
+        { speaker: 'Cliente', ja: 'すみません。{延長|えんちょう}コードがほしいんですが……。', pt: 'Com licença. Eu queria uma extensão elétrica…' },
+        { speaker: 'Funcionário', ja: 'ご{案内|あんない}します。こちらになります。', pt: 'Eu lhe acompanho. É por aqui.' },
+        { speaker: 'Cliente', ja: 'はい、ありがとうございます。', pt: 'Sim, muito obrigado.' },
+      ],
+    },
+  ],
+  '15-24': [
+    {
+      label: '会話① (15-24)',
+      setupJa: 'ショッピングセンターで、{友|とも}だちと{買|か}い{物|もの}をしながら{話|はな}しています。',
+      setupPt: 'Dois amigos conversam enquanto fazem compras no shopping.',
+      lines: [
+        { speaker: 'A', ja: '{見|み}て、この{傘|かさ}。', pt: 'Olha, este guarda-chuva.' },
+        { speaker: 'B', ja: 'おもしろいですね。', pt: 'Que interessante, né.' },
+      ],
+    },
+  ],
+  '15-25': [
+    {
+      label: '会話② (15-25)',
+      lines: [
+        { speaker: 'A', ja: 'どう？　この{帽子|ぼうし}。', pt: 'E aí? Este chapéu.' },
+        { speaker: 'B', ja: 'わあ、かっこいいですね。', pt: 'Uau, que estiloso, né.' },
+      ],
+    },
+  ],
+  '15-26': [
+    {
+      label: '会話③ (15-26)',
+      lines: [
+        { speaker: 'A', ja: 'このバッグ、かわいい！', pt: 'Esta bolsa, que fofa!' },
+        { speaker: 'B', ja: '{本当|ほんとう}！　かわいいですね。', pt: 'É mesmo! Que fofa, né.' },
+      ],
+    },
+  ],
+  '15-27': [
+    {
+      label: '会話④ (15-27)',
+      lines: [
+        { speaker: 'A', ja: 'このジャケット、いいね。', pt: 'Esta jaqueta, é boa, né.' },
+        { speaker: 'B', ja: 'そうですね。それに、{安|やす}いですね。', pt: 'Pois é. E ainda, é barata.' },
+      ],
+    },
+  ],
+  '15-28': [
+    {
+      label: '会話⑤ (15-28)',
+      lines: [
+        { speaker: 'A', ja: 'このコート、すてき！', pt: 'Este casaco, que lindo!' },
+        { speaker: 'B', ja: 'ああ、おしゃれですね。でも、{高|たか}いですね……。', pt: 'Ah, que estiloso, né. Mas é caro…' },
+      ],
+    },
+  ],
+}
+
+const lesson15: Section = {
+  id: 'lesson-15',
+  level: 'starter',
+  titleJa: '第15課 電池がほしいんですが…',
+  titlePt: 'Lição 15 — Eu queria umas pilhas…',
+  summaryPt: 'Nas lojas · dizer o que quer e perguntar onde comprar (電池がほしいんですが、どこで買えますか？), entender em que andar fica um item dentro da loja (カメラは何階ですか？ → 4階でございます), dar impressões sobre produtos enquanto faz compras (おしゃれですね／安いですね) e ler placas e sinais de shopping (入口／出口／化粧室／非常口／押・引く).',
+  studyNotes: [
+    {
+      title: 'Tópico: Nas lojas',
+      bodyPt:
+        '## Can-do\n' +
+        '- Perguntar onde comprar algo e entender a resposta.\n' +
+        '- Ler o guia de andares de uma loja.\n' +
+        '- Perguntar a um funcionário em que andar/onde fica um item.\n' +
+        '- Trocar comentários simples sobre produtos enquanto faz compras.\n' +
+        '- Entender as placas e sinais comuns de uma loja/shopping.',
+    },
+    {
+      title: 'Querer algo e perguntar onde comprar: Nがほしいんですが (➊)',
+      bodyPt:
+        'Estrutura para dizer o que quer e pedir ajuda:\n\n' +
+        '`{電池|でんち}がほしいんですが、どこで{買|か}えますか？` = eu queria umas pilhas, onde dá para comprar?\n\n' +
+        '- **ほしい** (querer) marca o objeto com **が** (igual a {好|す}き（な）): {電池|でんち}**が**ほしい. Decore 〜がほしいんですが como bloco.\n' +
+        '- **〜んですが** explica sua situação e abre espaço para o outro ajudar/responder.\n' +
+        '- **どこで{買|か}えますか？** = onde posso comprar? ({買|か}えます = forma potencial de {買|か}う; por ora, decore a frase).\n\n' +
+        '💡 Dentro da loja, pergunte ao funcionário: **どこですか？／どこにありますか？／{何階|なんかい}ですか？** — ou só **〜がほしいんですが…** já indica sua intenção.',
+    },
+    {
+      title: 'Onde comprar: lojas e itens (Seção 1 · TIPS)',
+      bodyPt:
+        '**Lojas:** コンビニ (conveniência), スーパー (supermercado), 100{円|えん}ショップ (loja de 100 ienes / {100均|ひゃっきん}), ドラッグストア (drogaria), ショッピングセンター／ショッピングモール (shopping), ホームセンター (materiais para casa/obras), デパート (loja de departamentos), {家電量販店|かでんりょうはんてん} (loja de eletrônicos).\n\n' +
+        '**Itens:** {電池|でんち} (pilha), {洗濯|せんたく}ばさみ (prendedor de roupa), {浴衣|ゆかた} (yukata), {懐中電灯|かいちゅうでんとう} (lanterna), （お）{弁当箱|べんとうばこ} (marmita), ココナッツミルク (leite de coco), {延長|えんちょう}コード (extensão elétrica), スマホケース (capa de celular), ドライヤー (secador), カメラ (câmera).\n\n' +
+        '**Úteis:** {駅前|えきまえ} (em frente à estação), お{店|みせ} (loja), 〜とか (…por exemplo / tipo).',
+    },
+    {
+      title: 'Andares e linguagem de loja (Seção 3)',
+      bodyPt:
+        '**Contador 〜{階|かい} (andar):**\n\n' +
+        '| | leitura |\n|---|---|\n' +
+        '| 1{階|かい} | いっかい |\n| 2{階|かい} | にかい |\n| 3{階|かい} | さんがい／さんかい |\n| 4{階|かい} | よんかい |\n| 6{階|かい} | ろっかい |\n| 8{階|かい} | はっかい／はちかい |\n| 10{階|かい} | じゅっかい |\n| ？ | {何階|なんがい}／なんかい |\n\n' +
+        '🔖 **Linguagem do funcionário (mais polida):** 〜でございます ＝ 〜になります ＝ **〜です**.\n\n' +
+        '- `4{階|かい}でございます` = é no 4º andar. · `こちらになります` = é por aqui.\n' +
+        '- **ご{案内|あんない}します／ご{案内|あんない}いたします** = eu lhe acompanho / vou te mostrar.\n' +
+        '- {何階|なんかい} (que andar), こちら (aqui), あちら (ali).',
+    },
+    {
+      title: 'Dar impressões sobre produtos: ナA-ですね／イA-いですね (➋)',
+      bodyPt:
+        'Comentar/dar impressão sobre algo enquanto faz compras:\n\n' +
+        '| tipo | forma | exemplo |\n|---|---|---|\n' +
+        '| ナ-adjetivo | 〜ですね / 〜！ | おしゃれですね · すてき！ |\n' +
+        '| イ-adjetivo | 〜いですね / 〜い！ | {安|やす}いですね · かわいい！ |\n\n' +
+        '- **ね** pede a concordância/empatia do outro. **〜ですね** é dirigido a alguém; falando sozinho, não se usa.\n' +
+        '- かわいい！／すてき！ (sem ですね) = exclamação curta.\n\n' +
+        '**Adjetivos どう？:** かっこいい, かわいい, {高|たか}い, {安|やす}い, おもしろい (イ-adj) · きれい(な), すてき(な), おしゃれ(な), {変|へん}(な) (ナ-adj). ⚠️ **きれい** é ナ-adjetivo (apesar do い).\n\n' +
+        '**Conectores:** **それに** (além disso, +) · **でも** (mas, −) · **{本当|ほんとう}！** (é mesmo!).\n\n' +
+        '**Produtos:** バッグ/かばん, くつ{下|した}, シャツ, ズボン/パンツ, Tシャツ, ワンピース, くつ, ネクタイ, {帽子|ぼうし}, {傘|かさ}, ジャケット, コート.',
+    },
+    {
+      title: 'Placas e sinais de loja/shopping (Seção 5)',
+      bodyPt:
+        '**Entradas/saídas:** {入口|いりぐち} (entrada · お{客様|きゃくさま}{入口|いりぐち}), {出口|でぐち}・EXIT (saída), {化粧室|けしょうしつ} (banheiro), {非常口|ひじょうぐち} (saída de emergência).\n\n' +
+        '**Portas e botões (pares de opostos):** {押|お}（{押|お}す） = empurre (PUSH) ↔ {引|ひ}く = puxe (PULL); {開|ひら}く = abrir ↔ {閉|と}じる = fechar (botões 開/閉 do elevador); {上|のぼ}り = subida ↔ {下|くだ}り = descida (エスカレーター).\n\n' +
+        '**Kanji da lição:** {入口|いりぐち}, {出口|でぐち}, 〜{階|かい}, {押|お}す, {引|ひ}く, {安|やす}い.',
+    },
+  ],
+  groups: [lesson15Group],
+  audios: attachScripts(15, L15_SCRIPTS),
+}
+
+// ---- Lições 16 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(15, 'Nas lojas', '電池がほしいです', 'Quero pilhas', [
-    'Perguntar onde comprar algo e entender a resposta.',
-    'Ler o guia de andares de uma loja.',
-    'Perguntar a um funcionário onde encontrar um item.',
-  ]),
   scaffold(16, 'Nas lojas', 'これはいくらですか', 'Quanto custa isto?', [
     'Entender o preço de um produto.',
     'Perguntar o preço e entender a resposta.',
@@ -2841,5 +3101,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, ...others],
 }
