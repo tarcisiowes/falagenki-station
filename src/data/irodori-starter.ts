@@ -1,5 +1,13 @@
-import type { ExerciseGroup, Level, Section, StudyNote } from './types'
+import type { ExerciseGroup, Level, ScriptItem, Section, StudyNote } from './types'
 import { STARTER_AUDIO } from './irodori-starter-audio'
+
+// Liga transcrições (script) a faixas específicas de uma lição, pelo código (ex.: '04-08').
+function attachScripts(n: number, scripts: Record<string, ScriptItem[]>): typeof STARTER_AUDIO[number] {
+  return (STARTER_AUDIO[n] ?? []).map((t) => {
+    const code = t.id.replace('iro-s-', '')
+    return scripts[code] ? { ...t, script: scripts[code] } : t
+  })
+}
 
 // =====================================================================
 //  Irodori — いろどり: Japanese for Life in Japan (Japan Foundation)
@@ -244,13 +252,91 @@ const lesson3: Section = {
   audios: STARTER_AUDIO[3],
 }
 
-// ---- Lições 4 a 18 (estrutura por tópico; exercícios em construção) ------
+// ---- Lição 4: Família, onde mora, idade ---------------------------------
+const lesson4Group: ExerciseGroup = {
+  id: 'iro-s-l4',
+  title: 'かぞく・すんでいるところ・ねんれい',
+  subtitlePt: 'Família, moradia e idade',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada.',
+  questions: [
+    { id: 'iro-s-l4-1', number: 1, prompt: '「父」(ちち) significa:', choices: [{ n: 1, text: 'pai' }, { n: 2, text: 'mãe' }, { n: 3, text: 'irmão mais velho' }, { n: 4, text: 'filho' }], answer: 1, explanationPt: '父 = ちち (meu pai). 母=はは (mãe), 兄=あに (irmão mais velho), 子ども=filho.' },
+    { id: 'iro-s-l4-2', number: 2, prompt: '「妻」(つま) significa:', choices: [{ n: 1, text: 'marido' }, { n: 2, text: 'esposa' }, { n: 3, text: 'irmã mais nova' }, { n: 4, text: 'avó' }], answer: 2, explanationPt: '妻 = つま (minha esposa). 夫=おっと (marido).' },
+    { id: 'iro-s-l4-3', number: 3, prompt: 'Irmão mais NOVO é:', choices: [{ n: 1, text: '兄 (あに)' }, { n: 2, text: '姉 (あね)' }, { n: 3, text: '弟 (おとうと)' }, { n: 4, text: '妹 (いもうと)' }], answer: 3, explanationPt: '弟=おとうと (irmão mais novo). 兄=mais velho; 姉=irmã mais velha; 妹=irmã mais nova.' },
+    { id: 'iro-s-l4-4', number: 4, prompt: 'Para apresentar “Este é meu marido e (meu) filho”:', choices: [{ n: 1, text: '夫と子どもです' }, { n: 2, text: '父と母です' }, { n: 3, text: '兄と姉です' }, { n: 4, text: '妻と妹です' }], answer: 1, translationPt: 'São meu marido e meu filho.', explanationPt: 'AとBです = “são A e B”. 夫=marido, 子ども=filho.' },
+    { id: 'iro-s-l4-5', number: 5, prompt: 'Para PERGUNTAR a idade de um adulto:', choices: [{ n: 1, text: '何歳ですか / おいくつですか' }, { n: 2, text: 'どこですか' }, { n: 3, text: 'いくらですか' }, { n: 4, text: '何時ですか' }], answer: 1, translationPt: 'Quantos anos você tem?', explanationPt: '何歳(なんさい)ですか e (お)いくつですか perguntam a idade. いくら=preço; 何時=que horas.' },
+    { id: 'iro-s-l4-6', number: 6, prompt: '「4歳です」significa:', choices: [{ n: 1, text: 'São 4 horas.' }, { n: 2, text: 'Custa 4 ienes.' }, { n: 3, text: 'Tem 4 anos.' }, { n: 4, text: 'São 4 pessoas.' }], answer: 3, explanationPt: '〜歳(さい) = contador de idade. 4歳 = quatro anos.' },
+    { id: 'iro-s-l4-7', number: 7, prompt: 'Para perguntar “Onde você mora?”:', choices: [{ n: 1, text: 'どこに住んでいますか' }, { n: 2, text: 'いつ来ましたか' }, { n: 3, text: 'なにを食べますか' }, { n: 4, text: 'だれと行きますか' }], answer: 1, translationPt: 'Onde você mora?', explanationPt: '〜に住(す)んでいます = morar em 〜. どこに住んでいますか = onde você mora?' },
+    { id: 'iro-s-l4-8', number: 8, prompt: 'No diálogo (áudio 04-08), quantos anos tem o Miro e onde mora a família dele?', context: 'ミロ：…25歳です。… Ａ：どこに住んでいますか？ ミロ：赤羽です。… ご家族は？ ミロ：家族は、フィリピンに住んでいます。', choices: [{ n: 1, text: '25 anos; família mora nas Filipinas' }, { n: 2, text: '4 anos; família mora em Akabane' }, { n: 3, text: '25 anos; família mora em Tóquio' }, { n: 4, text: '20 anos; família mora nas Filipinas' }], answer: 1, explanationPt: 'Miro diz 25歳です (25 anos); ele mora em 赤羽 (Akabane) e a família 「フィリピンに住んでいます」 (mora nas Filipinas).' },
+  ],
+}
+
+const L4_DIALOG: ScriptItem[] = [
+  {
+    label: '会話 (04-08)',
+    setupJa: 'ミロさんが、{上田|うえだ}さんの{家|いえ}に{招待|しょうたい}されました。{上田|うえだ}さんの{家族|かぞく}に{会|あ}います。',
+    setupPt: 'Miro foi convidado à casa do Sr. Ueda e conhece a família dele.',
+    lines: [
+      { speaker: 'ミロ', ja: 'ミロです。フィリピンから{来|き}ました。よろしくお{願|ねが}いします。', pt: 'Sou o Miro. Vim das Filipinas. Muito prazer.' },
+      { speaker: '上田', ja: 'ミロさん、うちの{家族|かぞく}です。{妻|つま}と{子|こ}ども。それから、{父|ちち}です。', pt: 'Miro, esta é a minha família. Minha esposa e meu filho. E também meu pai.' },
+      { speaker: '上田', ja: '（{妻|つま}・{父|ちち}）ミロさん、よろしく。', pt: '(esposa e pai) Prazer, Miro.' },
+      { speaker: 'ミロ', ja: 'あのう、お{名前|なまえ}は？', pt: 'Hum… qual é o seu nome?' },
+      { speaker: '上田', ja: '（{子|こ}ども）{伸一|しんいち}です。', pt: '(criança) Sou o Shin’ichi.' },
+      { speaker: 'ミロ', ja: 'しんいち。{何歳|なんさい}ですか？', pt: 'Shin’ichi. Quantos anos você tem?' },
+      { speaker: '上田', ja: '（{妻|つま}）いくつですか？', pt: '(esposa) Quantos anos você tem? (ajudando)' },
+      { speaker: '上田', ja: '（{子|こ}ども）4{歳|さい}です。', pt: '(criança) Tenho 4 anos.' },
+      { speaker: 'ミロ', ja: '4{歳|さい}。そうですか。', pt: '4 anos. Ah, sim.' },
+      { speaker: '上田', ja: '（{父|ちち}）ミロさんは、{何歳|なんさい}？', pt: '(pai) E você, Miro, quantos anos tem?' },
+      { speaker: 'ミロ', ja: '25{歳|さい}です。', pt: 'Tenho 25 anos.' },
+      { speaker: '上田', ja: '（{妻|つま}）どこに{住|す}んでいますか？', pt: '(esposa) Onde você mora?' },
+      { speaker: 'ミロ', ja: '{赤羽|あかばね}です。', pt: 'Em Akabane.' },
+      { speaker: '上田', ja: '（{妻|つま}）そうですか。ご{家族|かぞく}は？', pt: '(esposa) Ah, sim. E a sua família?' },
+      { speaker: 'ミロ', ja: '{家族|かぞく}は、フィリピンに{住|す}んでいます。', pt: 'Minha família mora nas Filipinas.' },
+    ],
+    questionJa: 'ミロさんは{何歳|なんさい}ですか。どこに{住|す}んでいますか。',
+  },
+]
+
+const lesson4: Section = {
+  id: 'lesson-4',
+  level: 'starter',
+  titleJa: '第4課 東京に住んでいます',
+  titlePt: 'Lição 4 — Moro em Tóquio',
+  summaryPt: 'Sobre mim · apresentar a família, dizer onde mora e a idade.',
+  studyNotes: [
+    {
+      title: 'Tópico: Sobre mim',
+      bodyPt:
+        '## Can-do\n' +
+        '- Entender a apresentação de uma família (quem é quem).\n' +
+        '- Perguntar e responder onde mora e a idade.\n' +
+        '- Ler um post curto de um amigo e entender o tema.',
+    },
+    {
+      title: 'A família (家族)',
+      bodyPt:
+        '| Japonês | Português |\n|---|---|\n' +
+        '| 父 (ちち) / 母 (はは) | (meu) pai / mãe |\n' +
+        '| 兄 (あに) / 姉 (あね) | irmão / irmã mais velho(a) |\n' +
+        '| 弟 (おとうと) / 妹 (いもうと) | irmão / irmã mais novo(a) |\n' +
+        '| 夫 (おっと) / 妻 (つま) | marido / esposa |\n' +
+        '| 子ども (こども) | filho(s) / criança |\n\n' +
+        'Apresentar: 「こちら、〜です」 / 「〜と〜です」. Ex.: 妻と子どもです (são minha esposa e meu filho).',
+    },
+    {
+      title: 'Onde mora / idade',
+      bodyPt:
+        '- **Morar**: 〜に {住|す}んでいます. `どこに住んでいますか` = onde você mora? · `東京に住んでいます` = moro em Tóquio.\n' +
+        '- **Idade**: 〜{歳|さい}. `何歳ですか / おいくつですか` = quantos anos? · `25歳です` = tenho 25 anos.\n' +
+        '- Números 1–99 e idades (いっさい, はっさい, じゅっさい, はたち=20 anos) estão no áudio da lição.',
+    },
+  ],
+  groups: [lesson4Group],
+  audios: attachScripts(4, { '04-08': L4_DIALOG }),
+}
+
+// ---- Lições 5 a 18 (estrutura por tópico; exercícios em construção) ------
 const others: Section[] = [
-  scaffold(4, 'Sobre mim', '東京に住んでいます', 'Moro em Tóquio', [
-    'Entender a apresentação de uma família (quem é quem).',
-    'Perguntar e responder onde mora e a idade.',
-    'Ler um post curto de um amigo e entender o tema.',
-  ]),
   scaffold(5, 'Comidas que eu gosto', 'うどんが好きです', 'Gosto de udon', [
     'Responder sobre comidas que gosta e não gosta.',
     'Perguntar e responder sobre comida japonesa.',
@@ -326,5 +412,5 @@ export const irodoriStarter: Level = {
   titlePt: 'Irodori — Starter (入門 · A1)',
   descriptionPt:
     'Primeiro nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A1: cumprimentar e se comunicar de forma simples no dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson0, lesson1, lesson2, lesson3, ...others],
+  sections: [lesson0, lesson1, lesson2, lesson3, lesson4, ...others],
 }
