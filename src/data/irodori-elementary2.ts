@@ -2096,7 +2096,258 @@ const lesson8: Section = {
   audios: attachScripts(8, L8_SCRIPTS),
 }
 
-// ---- Lições 9-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 9: 成人の日は、何をするんですか？ (tópico 年中行事とマナー) --------------
+const lesson9Group: ExerciseGroup = {
+  id: 'iro-e2-l9',
+  title: '成人の日は、何をするんですか？',
+  subtitlePt: 'Conhecer os eventos anuais do Japão (年中行事) · falar do que fez nas férias de ano-novo · apresentar festas do seu país · ler um relato de evento · escrever felicitações de ano-novo',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l9-1', number: 1, prompt: 'O título 「{成人|せいじん}の{日|ひ}は、{何|なに}をするんですか？」 usa 「〜んですか」. Que nuance ele dá?', choices: [{ n: 1, text: 'pergunta pedindo uma explicação sobre algo que se acabou de notar/saber (o que se faz, afinal, no Dia da Maioridade?)' }, { n: 2, text: 'ordem para fazer algo' }, { n: 3, text: 'convite' }, { n: 4, text: 'dúvida sobre o passado' }], answer: 1, translationPt: 'O que se faz no Dia da Maioridade?', explanationPt: '〜んですか pede explicação sobre algo que despertou interesse: {何|なに}をするんですか？／このおすしは、ひな{祭|まつ}りに{食|た}べるんですか？ (文法ノート ❶)' },
+    { id: 'iro-e2-l9-2', number: 2, prompt: 'Que evento anual (年中行事) esta ilustração mostra?', image: `${IMG}/Z_09_1_01_oshoogatsu.png`, imageAlt: 'família comemorando o Ano-Novo japonês', choices: [{ n: 1, text: 'お{正月|しょうがつ} — Ano-Novo (1º de janeiro)' }, { n: 2, text: 'ひな{祭|まつ}り — Festival das Meninas' }, { n: 3, text: 'こどもの{日|ひ} — Dia das Crianças' }, { n: 4, text: 'クリスマス — Natal' }], answer: 1, explanationPt: 'お{正月|しょうがつ} (1月1日) = Ano-Novo japonês. (Atividade 1 · 年中行事)' },
+    { id: 'iro-e2-l9-3', number: 3, prompt: 'Que evento esta ilustração mostra (jovens de 20 anos, muitas de quimono)?', image: `${IMG}/Z_09_1_02_seejinnohi.png`, imageAlt: 'jovens em traje formal no Dia da Maioridade', choices: [{ n: 1, text: '{成人|せいじん}の{日|ひ} — Dia da Maioridade (2ª segunda de janeiro)' }, { n: 2, text: 'お{正月|しょうがつ} — Ano-Novo' }, { n: 3, text: '七夕 — Tanabata' }, { n: 4, text: 'こどもの{日|ひ} — Dia das Crianças' }], answer: 1, explanationPt: '{成人|せいじん}の{日|ひ} (1月第2月曜日) celebra quem fez 20 {歳|さい}. {成人式|せいじんしき}で{着物|きもの}を{着|き}て{写真|しゃしん}を{撮|と}る. (Atividade 1)' },
+    { id: 'iro-e2-l9-4', number: 4, prompt: 'Que evento esta ilustração mostra (bonecas em exposição)?', image: `${IMG}/Z_09_1_03_hinamatsuri.png`, imageAlt: 'bonecas hina expostas em degraus', choices: [{ n: 1, text: 'ひな{祭|まつ}り — Festival das Meninas (3 de março)' }, { n: 2, text: 'こどもの{日|ひ} — Dia das Crianças' }, { n: 3, text: '七夕 — Tanabata' }, { n: 4, text: 'お{正月|しょうがつ} — Ano-Novo' }], answer: 1, explanationPt: 'ひな{祭|まつ}り (3月3日): {人形|にんぎょう}を{飾|かざ}り, ちらしずしや{甘酒|あまざけ}を{食|た}べる/{飲|の}む. (Atividade 1)' },
+    { id: 'iro-e2-l9-5', number: 5, prompt: 'Que evento esta ilustração mostra (carpas de tecido / capacete)?', image: `${IMG}/Z_09_1_04_kodomonohi.png`, imageAlt: 'bandeiras de carpa (koinobori) do Dia das Crianças', choices: [{ n: 1, text: 'こどもの{日|ひ} — Dia das Crianças (5 de maio)' }, { n: 2, text: 'ひな{祭|まつ}り — Festival das Meninas' }, { n: 3, text: 'クリスマス — Natal' }, { n: 4, text: '{成人|せいじん}の{日|ひ} — Dia da Maioridade' }], answer: 1, explanationPt: 'こどもの{日|ひ} (5月5日): こいのぼり (bandeiras de carpa) e capacetes. (Atividade 1)' },
+    { id: 'iro-e2-l9-6', number: 6, prompt: 'Que evento esta ilustração mostra (tiras de papel num galho de bambu)?', image: `${IMG}/Z_09_1_05_tanabata.png`, imageAlt: 'decoração de Tanabata com tanzaku no bambu', choices: [{ n: 1, text: '七夕 — Tanabata (7 de julho)' }, { n: 2, text: 'お{正月|しょうがつ} — Ano-Novo' }, { n: 3, text: 'ひな{祭|まつ}り — Festival das Meninas' }, { n: 4, text: 'クリスマス — Natal' }], answer: 1, explanationPt: '七夕 (7月7日): {短冊|たんざく} (tiras de papel) com {願|ねが}い{事|ごと} (desejos) presas ao {笹|ささ} (bambu). (Atividade 1, 聴解 09-03)' },
+    { id: 'iro-e2-l9-7', number: 7, prompt: 'Que evento esta ilustração mostra (árvore enfeitada, presentes)?', image: `${IMG}/Z_09_1_06_kurisumasu.png`, imageAlt: 'família comemorando o Natal', choices: [{ n: 1, text: 'クリスマス — Natal (25 de dezembro)' }, { n: 2, text: '七夕 — Tanabata' }, { n: 3, text: 'こどもの{日|ひ} — Dia das Crianças' }, { n: 4, text: '{成人|せいじん}の{日|ひ} — Dia da Maioridade' }], answer: 1, explanationPt: 'クリスマス (12月25日). No Japão: フライドチキンやケーキを{食|た}べる, {恋人|こいびと}とデート. (Atividade 1, 聴解 09-06)' },
+    { id: 'iro-e2-l9-8', number: 8, prompt: '聴解 09-05 (成人の日): segundo o diálogo, o que é o 成人の日 e o que se faz nele?', context: 'Ｂ：20{歳|さい}になった{人|ひと}を、お{祝|いわ}いするんだよ。{市|し}のホールで{成人式|せいじんしき}があって、{市長|しちょう}さんの{話|はなし}を{聞|き}いたり……。みんなおしゃれをして、{特|とく}に{女性|じょせい}は{着物|きもの}を{着|き}て{写真|しゃしん}を{撮|と}ったり、{友|とも}だちと{久|ひさ}しぶりに{会|あ}ったりして、{盛|も}り{上|あ}がるんだよ。', choices: [{ n: 1, text: 'Celebra quem completou 20 anos; há a cerimônia (成人式) com discurso do prefeito, e as pessoas se arrumam, vestem quimono, tiram fotos e reencontram amigos.' }, { n: 2, text: 'É uma festa só para crianças pequenas.' }, { n: 3, text: 'É um feriado de fim de ano com fogos.' }, { n: 4, text: 'É um dia de jejum.' }], answer: 1, explanationPt: '20{歳|さい}になった{人|ひと}をお{祝|いわ}いする; {成人式|せいじんしき}・{市長|しちょう}の{話|はなし}; {着物|きもの}を{着|き}て{写真|しゃしん}, {友|とも}だちと{再会|さいかい}. (聴解 09-05)' },
+    { id: 'iro-e2-l9-9', number: 9, prompt: '聴解 09-04 (ひな祭り): o que se come e bebe nesse dia, segundo o diálogo?', context: 'Ａ：ちらしずしですよ。{今日|きょう}はひな{祭|まつ}りだから、{家|いえ}で{作|つく}って{来|き}たんです。…ひな{祭|まつ}りには、{甘酒|あまざけ}を{飲|の}んだりもしますよ。…{甘酒|あまざけ}は、お{酒|さけ}じゃなくて、お{米|こめ}から{作|つく}った{飲|の}み{物|もの}です。アルコールは{入|はい}ってない…。', choices: [{ n: 1, text: 'Come-se chirashizushi e bebe-se amazake — que não é bebida alcoólica, é feita de arroz e não tem álcool.' }, { n: 2, text: 'Come-se frango frito e bebe-se cerveja.' }, { n: 3, text: 'Não se come nada de especial.' }, { n: 4, text: 'Bebe-se só saquê forte.' }], answer: 1, explanationPt: 'ひな{祭|まつ}り: ちらしずし; {甘酒|あまざけ} (お{米|こめ}から{作|つく}った, アルコールなし); {人形|にんぎょう}を{飾|かざ}る. (聴解 09-04)' },
+    { id: 'iro-e2-l9-10', number: 10, prompt: '聴解 09-03 (七夕): o que se faz com o 短冊 (tira de papel)?', context: 'Ｂ：7{月|がつ}7{日|なのか}は七夕っていって、こうして{笹|ささ}の{葉|は}に{飾|かざ}りをつけて{飾|かざ}るんです。…この{紙|かみ}、{短冊|たんざく}っていうんですけど、これに{願|ねが}い{事|ごと}を{書|か}いて、この{笹|ささ}につけるんです。', choices: [{ n: 1, text: 'Escreve-se um desejo (願い事) no tanzaku e prende-se no bambu (笹).' }, { n: 2, text: 'Joga-se o papel fora depois de ler.' }, { n: 3, text: 'Come-se o papel como doce.' }, { n: 4, text: 'Dá-se o papel de presente.' }], answer: 1, explanationPt: '七夕: {短冊|たんざく}に{願|ねが}い{事|ごと}を{書|か}いて{笹|ささ}につける. Ex.: 「{日本語|にほんご}がもっと{上手|じょうず}になりたい」. (聴解 09-03)' },
+    { id: 'iro-e2-l9-11', number: 11, prompt: '聴解 09-06 (クリスマス): segundo o diálogo, como costuma ser o Natal no Japão?', context: 'Ｂ：フライドチキンを{食|た}べたり……。{恋人|こいびと}がいる{人|ひと}は、{恋人|こいびと}とデートしたりとか。{町|まち}のイルミネーションがきれいだしね。…{日本|にほん}では、{必|かなら}ず{家族|かぞく}といっしょに、というのはないなあ。', choices: [{ n: 1, text: 'Come-se frango frito, casais saem em encontros e admira-se a iluminação da cidade; não é necessariamente em família.' }, { n: 2, text: 'É sempre passado em família, como em muitos países.' }, { n: 3, text: 'É um dia de trabalho normal, sem nada.' }, { n: 4, text: 'Só se come bolo de arroz (mochi).' }], answer: 1, explanationPt: 'No Japão: フライドチキン, {恋人|こいびと}とデート, {町|まち}のイルミネーション; {必|かなら}ず{家族|かぞく}と…ではない (diferente de outros países). (聴解 09-06)' },
+    { id: 'iro-e2-l9-12', number: 12, prompt: '「{乗|の}り{物|もの}に3つ[[しか]]{乗|の}れませんでした」 — 「N しか + (verbo negativo)」 significa:', choices: [{ n: 1, text: 'só / apenas (e nada além disso) — só consegui ir em 3 brinquedos' }, { n: 2, text: 'muitos / vários' }, { n: 3, text: 'mais de' }, { n: 4, text: 'nem um' }], answer: 1, explanationPt: 'N しか + verbo NEGATIVO = «só ~» (com tom de pouco/limitado). 3つしか{乗|の}れなかった = só 3 (queria mais). (文法ノート ❷)' },
+    { id: 'iro-e2-l9-13', number: 13, prompt: '「{今年|ことし}は、1{日|にち}[[だけ]]{実家|じっか}に{帰|かえ}りました」 — qual a diferença entre 「だけ」 e 「しか」?', choices: [{ n: 1, text: 'だけ vem com verbo afirmativo e é neutro («só 1 dia»); しか vem com verbo negativo e ressalta que é pouco/insuficiente' }, { n: 2, text: 'são exatamente iguais e intercambiáveis sempre' }, { n: 3, text: 'だけ significa «muito» e しか «pouco»' }, { n: 4, text: 'だけ só se usa com pessoas' }], answer: 1, explanationPt: '1{日|にち}だけ{帰|かえ}りました (afirmativo, neutro) ≈ 1{日|にち}しか{帰|かえ}りませんでした (negativo, «só, e foi pouco»). (文法ノート ❷❸)' },
+    { id: 'iro-e2-l9-14', number: 14, prompt: '「いっしょに{買|か}い{物|もの}をしたりして、{楽|たの}しかったです」 — 「V-たりして、〜」 indica:', choices: [{ n: 1, text: 'citar uma ou mais ações como exemplo do que se fez (fazer compras etc.) e ligar ao resultado/impressão' }, { n: 2, text: 'uma ordem' }, { n: 3, text: 'algo que vai fazer no futuro' }, { n: 4, text: 'uma proibição' }], answer: 1, explanationPt: 'V-たりして = «fazer coisas como ~» (exemplo de atividades), aqui ligado a 「{楽|たの}しかった」. (文法ノート ❹)' },
+    { id: 'iro-e2-l9-15', number: 15, prompt: '「{甥|おい}や{姪|めい}にお{年玉|としだま}をあげ[[なくてはならない]]し、{大変|たいへん}でした」 — 「V-なくてはならない／なくちゃならない」 significa:', choices: [{ n: 1, text: 'tem de / é preciso fazer (não dá para deixar de fazer): tenho de dar otoshidama aos sobrinhos' }, { n: 2, text: 'não precisa fazer' }, { n: 3, text: 'é proibido fazer' }, { n: 4, text: 'é melhor não fazer' }], answer: 1, explanationPt: 'V-なくてはならない (coloquial なくちゃならない) = obrigação. お{年玉|としだま}をあげなくてはならない = tenho de dar. (文法ノート ❺)' },
+    { id: 'iro-e2-l9-16', number: 16, prompt: '「DVDもたくさん[[{見|み}られ]]ました」「{実家|じっか}の{母|はは}の{料理|りょうり}を[[{食|た}べられ]]てよかった」 — essas formas são:', choices: [{ n: 1, text: 'forma potencial (可能形) — consegui ver muitos DVDs / pude comer a comida da minha mãe' }, { n: 2, text: 'forma passiva de sofrimento' }, { n: 3, text: 'forma de pedido' }, { n: 4, text: 'forma causativa' }], answer: 1, explanationPt: 'Potencial: {見|み}る→{見|み}られる, {食|た}べる→{食|た}べられる. ⚠️ Grupo 2 tem a mesma forma do passivo — distingue-se pelo contexto. (文法ノート ❻)' },
+    { id: 'iro-e2-l9-17', number: 17, prompt: '聴解 09-08 (お正月休みの会話 · ナン): o que Nan conta que fez nas férias de Ano-Novo?', context: 'ナン：{東京|とうきょう}に{住|す}んでいる{友|とも}だちのところに{行|い}きました。いっしょにディズニーランドに{行|い}きました…{待|ま}ち{時間|じかん}がとても{長|なが}くて、{乗|の}り{物|もの}に3つしか{乗|の}れませんでした。…{友|とも}だちと{久|ひさ}しぶりに{会|あ}えて、よかったです。いっしょに{買|か}い{物|もの}をしたりして、{楽|たの}しかったです。', choices: [{ n: 1, text: 'Foi à casa de amigos em Tóquio e à Disneylândia; a fila era longa e só conseguiu ir em 3 brinquedos, mas reencontrou os amigos e fez compras — foi divertido.' }, { n: 2, text: 'Ficou em casa o tempo todo descansando.' }, { n: 3, text: 'Voltou para a terra natal por uma semana.' }, { n: 4, text: 'Trabalhou durante todo o feriado.' }], answer: 1, explanationPt: 'ナン: {東京|とうきょう}の{友|とも}だち; ディズニーランド ({乗|の}り{物|もの}3つしか, しか+neg ❷); {久|ひさ}しぶりに{会|あ}えた; {買|か}い{物|もの}したりして (❹) {楽|たの}しかった. (聴解 09-08)' },
+    { id: 'iro-e2-l9-18', number: 18, prompt: '聴解 09-08 (山口): o que Yamaguchi conta sobre o Ano-Novo dele?', context: '山口：ぼくはお{正月|しょうがつ}は、ずっと{家|いえ}でごろごろしてました。…{今年|ことし}は、1{日|にち}{実家|じっか}に{帰|かえ}りました。{親戚|しんせき}が{集|あつ}まって、{甥|おい}や{姪|めい}にお{年玉|としだま}をあげなくてはならないし、{大変|たいへん}でした。でも、{久|ひさ}しぶりに{実家|じっか}の{母|はは}の{料理|りょうり}を{食|た}べられてよかったです。', choices: [{ n: 1, text: 'Ficou em casa descansando; voltou um dia à casa dos pais, onde a parentada se reuniu e ele teve de dar otoshidama aos sobrinhos (foi cansativo), mas pôde comer a comida da mãe.' }, { n: 2, text: 'Viajou ao exterior por uma semana.' }, { n: 3, text: 'Foi à Disneylândia com amigos.' }, { n: 4, text: 'Não fez absolutamente nada.' }], answer: 1, explanationPt: '山口: {家|いえ}でごろごろ; 1{日|にち}{実家|じっか}へ; {親戚|しんせき}{集|あつ}まる, お{年玉|としだま}をあげなくては (❺); {母|はは}の{料理|りょうり}を{食|た}べられて (❻) よかった. (聴解 09-08)' },
+    { id: 'iro-e2-l9-19', number: 19, prompt: 'Que costume de festa/evento esta ilustração mostra (voltar à terra natal com malas)?', image: `${IMG}/Z_09_3_01_inakanikaeru.png`, imageAlt: 'pessoa voltando à terra natal com bagagem', choices: [{ n: 1, text: '{田舎|いなか}に{帰|かえ}る — voltar à terra natal' }, { n: 2, text: '{寺|てら}に{行|い}く — ir ao templo' }, { n: 3, text: 'パーティーをする — fazer uma festa' }, { n: 4, text: '{飾|かざ}りを{飾|かざ}る — pôr enfeites' }], answer: 1, explanationPt: '{田舎|いなか}に{帰|かえ}る = voltar à terra natal (comum em お{正月|しょうがつ}/{春節|しゅんせつ}). (Atividade 3)' },
+    { id: 'iro-e2-l9-20', number: 20, prompt: 'Que costume esta ilustração mostra (pendurar enfeites)?', image: `${IMG}/Z_09_3_02_kazari.png`, imageAlt: 'pessoa pendurando enfeites/decorações', choices: [{ n: 1, text: '{飾|かざ}りを{飾|かざ}る — pôr/pendurar enfeites' }, { n: 2, text: '{田舎|いなか}に{帰|かえ}る — voltar à terra natal' }, { n: 3, text: 'プレゼントをあげる — dar presentes' }, { n: 4, text: '{歌|うた}ったり{踊|おど}ったりする — cantar e dançar' }], answer: 1, explanationPt: '{飾|かざ}りを{飾|かざ}る = pôr enfeites. No {春節|しゅんせつ}: {赤|あか}い{飾|かざ}り ({赤|あか}はおめでたい{色|いろ}). (Atividade 3, 聴解 09-15)' },
+    { id: 'iro-e2-l9-21', number: 21, prompt: 'Que costume esta ilustração mostra (comida especial na mesa)?', image: `${IMG}/Z_09_3_03_tokubetsunaryoori.png`, imageAlt: 'mesa com pratos especiais de festa', choices: [{ n: 1, text: '{特別|とくべつ}な{料理|りょうり}を{食|た}べる — comer pratos especiais' }, { n: 2, text: '{寺|てら}に{行|い}く — ir ao templo' }, { n: 3, text: '{飾|かざ}りを{飾|かざ}る — pôr enfeites' }, { n: 4, text: '{歌|うた}ったり{踊|おど}ったりする — cantar e dançar' }], answer: 1, explanationPt: '{特別|とくべつ}な{料理|りょうり}を{食|た}べる = comer pratos especiais da data (ex.: {餃子|ぎょうざ} no {春節|しゅんせつ}, クトゥパット na レバラン). (Atividade 3)' },
+    { id: 'iro-e2-l9-22', number: 22, prompt: 'Que costume esta ilustração mostra (pessoas cantando e dançando)?', image: `${IMG}/Z_09_3_05_utauodoru.png`, imageAlt: 'pessoas cantando e dançando numa festa', choices: [{ n: 1, text: '{歌|うた}ったり{踊|おど}ったりする — cantar e dançar' }, { n: 2, text: '{田舎|いなか}に{帰|かえ}る — voltar à terra natal' }, { n: 3, text: '{特別|とくべつ}な{料理|りょうり}を{食|た}べる — comer pratos especiais' }, { n: 4, text: 'プレゼントをあげる — dar presentes' }], answer: 1, explanationPt: '{歌|うた}ったり{踊|おど}ったりする = cantar e dançar (V-たり V-たりする). (Atividade 3)' },
+    { id: 'iro-e2-l9-23', number: 23, prompt: 'Que costume esta ilustração mostra (entregar presentes / dinheiro)?', image: `${IMG}/Z_09_3_07_purezentoyaokane.png`, imageAlt: 'dar presentes e dinheiro (otoshidama)', choices: [{ n: 1, text: 'プレゼントやお{金|かね}をあげる — dar presentes ou dinheiro (ex.: お{年玉|としだま})' }, { n: 2, text: '{寺|てら}に{行|い}く — ir ao templo' }, { n: 3, text: '{飾|かざ}りを{飾|かざ}る — pôr enfeites' }, { n: 4, text: '{田舎|いなか}に{帰|かえ}る — voltar à terra natal' }], answer: 1, explanationPt: 'プレゼントやお{金|かね}をあげる. No Japão, お{年玉|としだま} (dinheiro de Ano-Novo) dado às crianças. (Atividade 3, 聴解 09-08)' },
+    { id: 'iro-e2-l9-24', number: 24, prompt: '聴解 09-15 (中国のお正月 · 春節): o que Song explica sobre o 春節?', context: '{宋|そう}：{旧暦|きゅうれき}のお{正月|しょうがつ}は、だいたい2{月|がつ}ごろです。「{春節|しゅんせつ}」といいます。1{週間|しゅうかん}ぐらいお{休|やす}みになるので、{田舎|いなか}に{帰|かえ}る{人|ひと}が{多|おお}いです。…{赤|あか}い{飾|かざ}りを{飾|かざ}ります。{赤|あか}はおめでたい{色|いろ}なんです。あとは、{餃子|ぎょうざ}を{食|た}べたりします。', choices: [{ n: 1, text: 'É o Ano-Novo do calendário lunar (por volta de fevereiro); muita gente volta à terra natal na semana de folga, põem-se enfeites vermelhos (cor auspiciosa) e comem-se gyoza.' }, { n: 2, text: 'É comemorado em abril com guerra de água.' }, { n: 3, text: 'Não tem comida nem decoração especial.' }, { n: 4, text: 'É um feriado de um único dia.' }], answer: 1, explanationPt: '{春節|しゅんせつ}: {旧暦|きゅうれき}のお{正月|しょうがつ}（2{月|がつ}ごろ); {田舎|いなか}に{帰|かえ}る{人|ひと}が{多|おお}い (❼); {赤|あか}い{飾|かざ}り; {餃子|ぎょうざ}. (聴解 09-15)' },
+    { id: 'iro-e2-l9-25', number: 25, prompt: '聴解 09-16 (タイのお正月 · ソンクラーン): o que Tongchai explica?', context: 'トンチャイ：タイのお{正月|しょうがつ}は4{月|がつ}で、「ソンクラーン」といいます。…「{水|みず}かけ{祭|まつ}り」ともいわれています。{町|まち}を{歩|ある}きながら、みんなで{水|みず}をかけ{合|あ}います。…{最近|さいきん}は{外国人|がいこくじん}もたくさん{参加|さんか}しています。', choices: [{ n: 1, text: 'O Ano-Novo tailandês é em abril, chamado Songkran («festa da água»): andando pela cidade, todos jogam água uns nos outros; hoje muitos estrangeiros participam.' }, { n: 2, text: 'É comemorado comendo gyoza em casa.' }, { n: 3, text: 'É um dia de jejum sem festa.' }, { n: 4, text: 'Acontece em dezembro com neve.' }], answer: 1, explanationPt: 'ソンクラーン (4{月|がつ}, {水|みず}かけ{祭|まつ}り): {町|まち}を{歩|ある}きながら (❽) {水|みず}をかけ{合|あ}う; {外国人|がいこくじん}も{参加|さんか}. (聴解 09-16)' },
+    { id: 'iro-e2-l9-26', number: 26, prompt: '「{年|とし}[[によって]]{違|ちが}います」 — 「N によって」 aqui significa:', choices: [{ n: 1, text: 'varia conforme / depende de (a data muda dependendo do ano)' }, { n: 2, text: 'por causa de (motivo)' }, { n: 3, text: 'por meio de (instrumento)' }, { n: 4, text: 'junto com' }], answer: 1, explanationPt: 'N によって = «varia conforme/depende de». {年|とし}によって{違|ちが}います (a data muda conforme o ano); {国|くに}によって{習慣|しゅうかん}が{違|ちが}う. (文法ノート ❾)' },
+    { id: 'iro-e2-l9-27', number: 27, prompt: '「{田舎|いなか}に{帰|かえ}る{人|ひと}が{多|おお}いです」「{海外|かいがい}に{旅行|りょこう}する{人|ひと}もいます」 — essas frases mostram:', choices: [{ n: 1, text: 'uma frase comum modificando 人 (人 que faz ~): «há muita gente que volta à terra natal» / «há também gente que viaja ao exterior»' }, { n: 2, text: 'ordens diretas' }, { n: 3, text: 'comparação de preços' }, { n: 4, text: 'o passado de uma ação única' }], answer: 1, explanationPt: 'S(普通形) + {人|ひと} = «pessoa(s) que ~». 〜{人|ひと}が{多|おお}い (muitos que ~); 〜{人|ひと}もいる (há também quem ~). (文法ノート ❼)' },
+    { id: 'iro-e2-l9-28', number: 28, prompt: '聴解 09-20 (modelo · インドネシアのお祭り): o que se diz sobre a レバラン?', context: 'A：インドネシアでは、レバランがいちばん{大|おお}きいお{祭|まつ}りです。レバランは、{断食|だんじき}{明|あ}けのお{祭|まつ}りです。…{年|とし}によって{違|ちが}います。…{田舎|いなか}に{帰|かえ}って、{家族|かぞく}でお{祝|いわ}いします。{海外|かいがい}に{旅行|りょこう}する{人|ひと}もいます。クトゥパットという{特別|とくべつ}な{料理|りょうり}…を{食|た}べます。', choices: [{ n: 1, text: 'É a maior festa da Indonésia, o fim do jejum (Ramadã); a data varia conforme o ano; volta-se à terra natal para comemorar em família (há quem viaje) e come-se ketupat.' }, { n: 2, text: 'É uma festa de fogos de artifício em julho.' }, { n: 3, text: 'É o Dia da Maioridade japonês.' }, { n: 4, text: 'É um concurso de karaokê.' }], answer: 1, explanationPt: 'Modelo p/ apresentar festa do seu país: レバラン = {断食|だんじき}{明|あ}け; {年|とし}によって{違|ちが}う (❾); {田舎|いなか}に{帰|かえ}って{家族|かぞく}でお{祝|いわ}い (❼); クトゥパット. (聴解 09-20)' },
+    { id: 'iro-e2-l9-29', number: 29, prompt: '聴解 09-22 / Atividade 4 (餅つき大会): o relato lido é sobre qual evento?', image: `${IMG}/Z_09_4_01_mochitsuki.png`, imageAlt: 'evento de socar arroz para fazer mochi (mochitsuki)', choices: [{ n: 1, text: 'um 餅つき大会 — evento comunitário de socar arroz para fazer mochi' }, { n: 2, text: 'um concurso de karaokê' }, { n: 3, text: 'um festival de fogos' }, { n: 4, text: 'um desfile de moda' }], answer: 1, explanationPt: '{餅|もち}つき{大会|たいかい}が{行|おこな}われました (passivo): socar o arroz (つく{人|ひと}と{混|ま}ぜる{人|ひと}). Comentários: はじめてお{餅|もち}を{食|た}べた／{韓国|かんこく}と{日本|にほん}のお{餅|もち}は{似|に}ている. (Atividade 4, 聴解 09-22)' },
+    { id: 'iro-e2-l9-30', number: 30, prompt: 'Vocabulário do tópico: 「{親戚|しんせき}／{甥|おい}・{姪|めい}／お{年玉|としだま}／{久|ひさ}しぶり／{実家|じっか}」 significam:', choices: [{ n: 1, text: 'parentes / sobrinho e sobrinha / dinheiro de Ano-Novo (para crianças) / depois de muito tempo / casa dos pais (terra natal)' }, { n: 2, text: 'vizinhos / filho e filha / mesada / de novo / apartamento' }, { n: 3, text: 'amigos / primos / gorjeta / cedo / escritório' }, { n: 4, text: 'colegas / avós / herança / tarde / hotel' }], answer: 1, explanationPt: '{親戚|しんせき} (parentes), {甥|おい}/{姪|めい} (sobrinho/sobrinha), お{年玉|としだま} (dinheiro de Ano-Novo), {久|ひさ}しぶり (depois de muito tempo), {実家|じっか} (casa dos pais). (聴解 09-08)' },
+    { id: 'iro-e2-l9-31', number: 31, prompt: 'Os kanji 「{今年|ことし}／{昨年|さくねん}／{毎年|まいとし}／{正月|しょうがつ}／{祭|まつ}り」 lêem-se:', choices: [{ n: 1, text: 'ことし (este ano) / さくねん (ano passado) / まいとし (todo ano) / しょうがつ (Ano-Novo) / まつり (festa)' }, { n: 2, text: 'いまとし / さくねん / まいねん / せいげつ / さいり' }, { n: 3, text: 'こんねん / きのねん / ごとし / しょうがつ / さいり' }, { n: 4, text: 'ことし / さくとし / まいとし / まさつき / まつり' }], answer: 1, explanationPt: '{今年|ことし}, {昨年|さくねん}, {毎年|まいとし}, {正月|しょうがつ}, {祭|まつ}り. (漢字のことば)' },
+    { id: 'iro-e2-l9-32', number: 32, prompt: 'Os kanji 「{文化|ぶんか}／〜{式|しき}／{大人|おとな}／{米|こめ}／{特別|とくべつ}（な）」 lêem-se:', choices: [{ n: 1, text: 'ぶんか (cultura) / しき (cerimônia: 成人式・結婚式) / おとな (adulto) / こめ (arroz) / とくべつ (especial)' }, { n: 2, text: 'ぶんか / しき / だいじん / べい / とくべつ' }, { n: 3, text: 'もじか / しき / おとな / こめ / どくべつ' }, { n: 4, text: 'ぶんか / じょう / たいじん / まい / とくべち' }], answer: 1, explanationPt: '{文化|ぶんか}, 〜{式|しき} ({成人式|せいじんしき}, {結婚式|けっこんしき}), {大人|おとな}, {米|こめ}, {特別|とくべつ}（な). (漢字のことば)' },
+    { id: 'iro-e2-l9-33', number: 33, prompt: 'Para apresentar uma festa do seu país (Atividade 3), que perguntas-modelo costumam aparecer?', choices: [{ n: 1, text: '〜には、どんなお{祭|まつ}りがありますか／いつですか／どんなことをするんですか／{何|なに}を{食|た}べますか' }, { n: 2, text: 'いくらですか／どこで{買|か}えますか' }, { n: 3, text: 'だれが{来|き}ますか／なぜ{来|き}ませんか' }, { n: 4, text: 'もう{終|お}わりましたか／まだですか' }], answer: 1, explanationPt: 'Apresentar/perguntar sobre festas: どんなお{祭|まつ}り／いつ／どんなことをするんですか／{何|なに}を{食|た}べますか. Respostas usam ❼〜❾. (会話 09-20)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 9 (聴解スクリプト)
+const L9_SCRIPTS: Record<string, ScriptItem[]> = {
+  '09-03': [
+    {
+      label: '① 七夕 (09-03)',
+      setupJa: '{年中|ねんちゅう}{行事|ぎょうじ}について、{人|ひと}が{説明|せつめい}しています。',
+      setupPt: 'Explicando um evento anual. ① Tanabata.',
+      lines: [
+        { speaker: 'A', ja: 'これ、{何|なん}ですか？', pt: 'O que é isto?' },
+        { speaker: 'B', ja: '七夕の{飾|かざ}りですよ。', pt: 'É um enfeite de Tanabata.' },
+        { speaker: 'A', ja: '七夕ですか？', pt: 'Tanabata?' },
+        { speaker: 'B', ja: '7{月|がつ}7{日|なのか}は七夕っていって、こうして{笹|ささ}の{葉|は}に{飾|かざ}りをつけて{飾|かざ}るんです。', pt: 'Dia 7 de julho é o Tanabata; a gente prende enfeites assim nas folhas de bambu.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: 'あと、この{紙|かみ}、{短冊|たんざく}っていうんですけど、これに{願|ねが}い{事|ごと}を{書|か}いて、この{笹|ささ}につけるんです。パイさんも{書|か}きますか？', pt: 'E este papel, chamado tanzaku — você escreve um desejo nele e prende no bambu. Quer escrever também, Pai?' },
+        { speaker: 'A', ja: 'はい。じゃあ、{私|わたし}は「{日本語|にほんご}がもっと{上手|じょうず}になりたい」と{書|か}きます。', pt: 'Sim. Então vou escrever «quero ficar melhor em japonês».' },
+      ],
+    },
+  ],
+  '09-04': [
+    {
+      label: '② ひな祭り (09-04)',
+      setupPt: '② Festival das Meninas (Hina Matsuri).',
+      lines: [
+        { speaker: 'A', ja: 'みなさん、どうぞ。', pt: 'Pessoal, sirvam-se.' },
+        { speaker: 'B', ja: 'わあ、すごい。いただきます。これは{何|なん}の{料理|りょうり}ですか？', pt: 'Uau, que coisa! Vou comer. Que prato é este?' },
+        { speaker: 'A', ja: 'ちらしずしですよ。{今日|きょう}はひな{祭|まつ}りだから、{家|いえ}で{作|つく}って{来|き}たんです。', pt: 'É chirashizushi. Hoje é Hina Matsuri, então fiz em casa e trouxe.' },
+        { speaker: 'B', ja: 'ああ、ひな{祭|まつ}り、{知|し}っています。{人形|にんぎょう}を{飾|かざ}るんですよね。このおすしは、ひな{祭|まつ}りに{食|た}べるんですか？', pt: 'Ah, Hina Matsuri, eu conheço. É quando se expõem as bonecas, né? Esse sushi se come no Hina Matsuri?' },
+        { speaker: 'A', ja: 'そう。あと、ひな{祭|まつ}りには、{甘酒|あまざけ}を{飲|の}んだりもしますよ。{甘酒|あまざけ}もありますけど、{飲|の}みますか？', pt: 'Isso. E no Hina Matsuri também se bebe amazake. Tem amazake aqui, quer beber?' },
+        { speaker: 'B', ja: 'え、{甘酒|あまざけ}って、お{酒|さけ}ですよね？', pt: 'Hã, amazake é bebida alcoólica, não é?' },
+        { speaker: 'A', ja: '{甘酒|あまざけ}は、お{酒|さけ}じゃなくて、お{米|こめ}から{作|つく}った{飲|の}み{物|もの}です。この{甘酒|あまざけ}は、アルコールは{入|はい}ってないから、だいじょうぶですよ。', pt: 'Amazake não é álcool, é uma bebida feita de arroz. Este aqui não tem álcool, pode ficar tranquilo.' },
+        { speaker: 'B', ja: 'そうなんですか。じゃあ、いただきます。', pt: 'Ah, é? Então vou provar.' },
+      ],
+    },
+  ],
+  '09-05': [
+    {
+      label: '③ 成人の日 (09-05)',
+      setupPt: '③ Dia da Maioridade (Seijin no Hi).',
+      lines: [
+        { speaker: 'A', ja: '{昨日|きのう}、{駅前|えきまえ}に、{着物|きもの}を{着|き}た{若|わか}い{人|ひと}がたくさんいたんですけど、{何|なに}かお{祭|まつ}りですか？', pt: 'Ontem havia muitos jovens de quimono em frente à estação; era alguma festa?' },
+        { speaker: 'B', ja: 'ああ、{昨日|きのう}は{成人|せいじん}の{日|ひ}だったから。', pt: 'Ah, é que ontem foi o Dia da Maioridade.' },
+        { speaker: 'A', ja: '{成人|せいじん}の{日|ひ}？', pt: 'Dia da Maioridade?' },
+        { speaker: 'B', ja: '20{歳|さい}になった{人|ひと}を、お{祝|いわ}いするんだよ。', pt: 'É quando se celebra quem completou 20 anos.' },
+        { speaker: 'A', ja: 'へー、{何|なに}をするんですか？', pt: 'Nossa, e o que se faz?' },
+        { speaker: 'B', ja: '{市|し}のホールで{成人式|せいじんしき}があって、{市長|しちょう}さんの{話|はなし}を{聞|き}いたり……。', pt: 'Há a cerimônia da maioridade no salão da cidade, ouve-se o discurso do prefeito…' },
+        { speaker: 'A', ja: 'それだけなんですか？', pt: 'Só isso?' },
+        { speaker: 'B', ja: 'うん。でも、まあ、みんなおしゃれをして、{特|とく}に{女性|じょせい}は{着物|きもの}を{着|き}て{写真|しゃしん}を{撮|と}ったり、あと{小学校|しょうがっこう}や{中学校|ちゅうがっこう}の{友|とも}だちと{久|ひさ}しぶりに{会|あ}ったりして、{盛|も}り{上|あ}がるんだよ。', pt: 'Sim. Mas todo mundo se arruma; as mulheres, em especial, vestem quimono e tiram fotos, reencontram amigos do primário e do ginásio — fica animado.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, que interessante.' },
+      ],
+    },
+  ],
+  '09-06': [
+    {
+      label: '④ クリスマス (09-06)',
+      setupPt: '④ Natal.',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}では、クリスマスには{何|なに}をしますか？', pt: 'No Japão, o que se faz no Natal?' },
+        { speaker: 'B', ja: 'そうだなあ、フライドチキンを{食|た}べたり……。', pt: 'Hmm, come-se frango frito…' },
+        { speaker: 'A', ja: 'フライドチキンですか？', pt: 'Frango frito?' },
+        { speaker: 'B', ja: 'うん。あと、{恋人|こいびと}がいる{人|ひと}は、{恋人|こいびと}とデートしたりとか。{町|まち}のイルミネーションがきれいだしね。', pt: 'É. E quem tem namorado(a) sai num encontro. A iluminação da cidade fica bonita também.' },
+        { speaker: 'A', ja: 'へー、{私|わたし}の{国|くに}では、{必|かなら}ず{家族|かぞく}といっしょに{過|す}ごしますけど……。', pt: 'Nossa, no meu país a gente passa sempre em família…' },
+        { speaker: 'B', ja: 'うーん、{日本|にほん}では、そういうのはないなあ。{子|こ}どもが{小|ちい}さいときは、いっしょにケーキを{食|た}べたりしたけど、{今|いま}はあまり。', pt: 'É, no Japão não é bem assim. Quando os filhos são pequenos, comem bolo juntos, mas agora nem tanto.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '09-08': [
+    {
+      label: 'お正月休みの会話 (09-08)',
+      setupJa: 'お{正月|しょうがつ}{休|やす}みが{終|お}わって、ナンさん・{三浦|みうら}さん・{山口|やまぐち}さんが{会社|かいしゃ}で{話|はな}しています。',
+      setupPt: 'Acabadas as férias de Ano-Novo, Nan, Miura e Yamaguchi conversam no trabalho.',
+      lines: [
+        { speaker: '山口', ja: 'あけましておめでとうございます。', pt: 'Feliz Ano-Novo!' },
+        { speaker: 'ナン', ja: 'あけましておめでとうございます。', pt: 'Feliz Ano-Novo!' },
+        { speaker: '三浦', ja: 'おめでとうございます。ナンさん、お{正月休|しょうがつやす}みは、どうでしたか？', pt: 'Feliz Ano-Novo. Nan, como foram suas férias de Ano-Novo?' },
+        { speaker: 'ナン', ja: '{東京|とうきょう}に{住|す}んでいる{友|とも}だちのところに{行|い}きました。いっしょにディズニーランドに{行|い}っていて、すごく{遊|あそ}んでいて、びっくりしました。{待|ま}ち{時間|じかん}がとても{長|なが}くて、{乗|の}り{物|もの}に3つしか{乗|の}れませんでした。', pt: 'Fui à casa de uns amigos que moram em Tóquio. Fomos juntos à Disneylândia e nos divertimos muito. Mas a fila era enorme: só consegui ir em 3 brinquedos.' },
+        { speaker: '三浦', ja: 'ああ、それは{大変|たいへん}でしたね。', pt: 'Ah, que trabalheira.' },
+        { speaker: 'ナン', ja: 'はい。でも、{友|とも}だちと{久|ひさ}しぶりに{会|あ}えて、よかったです。いっしょに{買|か}い{物|もの}をしたりして、{楽|たの}しかったです。', pt: 'Sim. Mas reencontrei os amigos depois de muito tempo, foi ótimo. A gente fez compras e tal, foi divertido.' },
+        { speaker: '三浦', ja: 'いい{休|やす}みでしたね。', pt: 'Boas férias, então.' },
+        { speaker: 'ナン', ja: '{三浦|みうら}さんは？', pt: 'E você, Miura?' },
+        { speaker: '三浦', ja: 'ぼくは、お{正月|しょうがつ}はずっと{家|いえ}でごろごろしてました。でも、ゆっくりできてよかったです。DVDもたくさん{見|み}られましたし。', pt: 'Eu passei o Ano-Novo todo de boa em casa. Mas pude descansar, foi bom. Vi muitos DVDs também.' },
+        { speaker: '三浦', ja: '{山口|やまぐち}さんは、{今年|ことし}も{実家|じっか}ですか？', pt: 'Yamaguchi, este ano você também foi para a casa dos pais?' },
+        { speaker: '山口', ja: '{今年|ことし}は、1{日|にち}{帰|かえ}りました。でも、{親戚|しんせき}が{集|あつ}まって、{毎年|まいとし}1{回|かい}{大変|たいへん}になりますよ。{甥|おい}や{姪|めい}にお{年玉|としだま}をあげなくてはならないし、{大変|たいへん}でした。', pt: 'Este ano voltei por um dia. Mas a parentada se reúne, e todo ano é um perrengue. Tenho de dar otoshidama aos sobrinhos — foi cansativo.' },
+        { speaker: 'ナン', ja: 'お{年玉|としだま}って{何|なん}ですか？', pt: 'O que é otoshidama?' },
+        { speaker: '山口', ja: 'お{正月|しょうがつ}に{子|こ}どもにあげるお{金|かね}。', pt: 'É o dinheiro que se dá às crianças no Ano-Novo.' },
+        { speaker: 'ナン', ja: 'ああ……。', pt: 'Ah, sei…' },
+        { speaker: '山口', ja: 'まあ、{久|ひさ}しぶりに、{実家|じっか}の{母|はは}の{料理|りょうり}を{食|た}べられてよかったですけどね。', pt: 'Mas, enfim, pude comer a comida da minha mãe depois de muito tempo, isso foi bom.' },
+      ],
+    },
+  ],
+  '09-15': [
+    {
+      label: '① 中国のお正月（春節）(09-15)',
+      setupJa: '{後藤|ごとう}さんが、{宋|そう}さん・トンチャイさんに、{自分|じぶん}の{国|くに}のお{正月|しょうがつ}について{聞|き}いています。',
+      setupPt: 'Gotō pergunta a Song e a Tongchai sobre o Ano-Novo de seus países. ① China (Festival da Primavera).',
+      lines: [
+        { speaker: '後藤', ja: '{中国|ちゅうごく}では、お{正月|しょうがつ}をお{祝|いわ}いしますか？', pt: 'Na China se comemora o Ano-Novo?' },
+        { speaker: '宋', ja: '{中国|ちゅうごく}は、{旧暦|きゅうれき}のお{正月|しょうがつ}のほうが{大切|たいせつ}です。', pt: 'Na China, o Ano-Novo do calendário lunar é o mais importante.' },
+        { speaker: '後藤', ja: '{旧暦|きゅうれき}？', pt: 'Calendário lunar?' },
+        { speaker: '宋', ja: 'はい。{旧暦|きゅうれき}のお{正月|しょうがつ}は、だいたい2{月|がつ}ごろです。「{春節|しゅんせつ}」といいます。1{週間|しゅうかん}ぐらいお{休|やす}みになるので、{田舎|いなか}に{帰|かえ}る{人|ひと}が{多|おお}いです。', pt: 'Sim. O Ano-Novo lunar é por volta de fevereiro. Chama-se «Festival da Primavera». Como há cerca de uma semana de folga, muita gente volta à terra natal.' },
+        { speaker: '後藤', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: '宋', ja: 'でも、そのラッシュがすごいので、{最近|さいきん}では{海外|かいがい}に{旅行|りょこう}する{人|ひと}もいます。', pt: 'Mas o trânsito/lotação é enorme, então ultimamente há quem viaje ao exterior.' },
+        { speaker: '後藤', ja: '「{春節|しゅんせつ}」は、どんなふうに{祝|いわ}うんですか？', pt: 'E como se comemora o Festival da Primavera?' },
+        { speaker: '宋', ja: '{赤|あか}い{飾|かざ}りを{飾|かざ}ります。{赤|あか}はおめでたい{色|いろ}なんです。あとは、{餃子|ぎょうざ}を{食|た}べたりします。', pt: 'Põem-se enfeites vermelhos. O vermelho é uma cor auspiciosa. E também se comem gyoza.' },
+        { speaker: '後藤', ja: 'そうなんですか。', pt: 'Ah, interessante.' },
+      ],
+    },
+  ],
+  '09-16': [
+    {
+      label: '② タイのお正月（ソンクラーン）(09-16)',
+      setupPt: '② Tailândia (Songkran).',
+      lines: [
+        { speaker: '後藤', ja: 'タイはどうですか？', pt: 'E na Tailândia?' },
+        { speaker: 'トンチャイ', ja: 'タイのお{正月|しょうがつ}は4{月|がつ}で、「ソンクラーン」といいます。', pt: 'O Ano-Novo tailandês é em abril e se chama «Songkran».' },
+        { speaker: '宋', ja: 'あ、{名前|なまえ}は{聞|き}いたことあるかも。', pt: 'Ah, acho que já ouvi esse nome.' },
+        { speaker: 'トンチャイ', ja: '「ソンクラーン」は「{水|みず}かけ{祭|まつ}り」ともいわれています。{町|まち}を{歩|ある}きながら、みんなで{水|みず}をかけ{合|あ}います。', pt: 'O Songkran também é chamado de «festa da água». Andando pela cidade, todos jogam água uns nos outros.' },
+        { speaker: '後藤', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'トンチャイ', ja: 'それがおもしろくて、{最近|さいきん}は{外国人|がいこくじん}もたくさん{参加|さんか}しています。', pt: 'É tão divertido que ultimamente muitos estrangeiros também participam.' },
+        { speaker: '後藤', ja: '{水|みず}をかけ{合|あ}うんですね。おもしろそうですね。', pt: 'Jogam água uns nos outros, então. Parece divertido.' },
+        { speaker: 'トンチャイ', ja: 'はい。{日本|にほん}でも、{東京|とうきょう}で「ソンクラーン」のお{祭|まつ}りがあるそうですよ。', pt: 'Sim. Dizem que no Japão também há uma festa de Songkran em Tóquio.' },
+      ],
+    },
+  ],
+  '09-20': [
+    {
+      label: '会話モデル — インドネシアのお祭り（レバラン）(09-20)',
+      setupJa: '{自分|じぶん}の{国|くに}のお{祭|まつ}りや{行事|ぎょうじ}について{紹介|しょうかい}しています。',
+      setupPt: 'Modelo: apresentar uma festa/evento do próprio país (Indonésia, Lebaran).',
+      lines: [
+        { speaker: 'A', ja: 'インドネシアには、どんなお{祭|まつ}りがありますか？', pt: 'Que festas existem na Indonésia?' },
+        { speaker: 'B', ja: 'インドネシアでは、レバランがいちばん{大|おお}きいお{祭|まつ}りです。レバランは、{断食|だんじき}{明|あ}けのお{祭|まつ}りです。', pt: 'Na Indonésia, a Lebaran é a maior festa. A Lebaran é a festa do fim do jejum (Ramadã).' },
+        { speaker: 'A', ja: 'いつですか？', pt: 'Quando é?' },
+        { speaker: 'B', ja: '{年|とし}によって{違|ちが}います。だいたい、{時期|じき}は{毎年|まいとし}{変|か}わります。', pt: 'Varia conforme o ano. A época muda todos os anos.' },
+        { speaker: 'A', ja: 'どんなことをするんですか？', pt: 'O que se faz?' },
+        { speaker: 'B', ja: '{田舎|いなか}に{帰|かえ}って、{家族|かぞく}でお{祝|いわ}いします。{海外|かいがい}に{旅行|りょこう}する{人|ひと}もいます。', pt: 'Volta-se à terra natal e comemora-se em família. Há também quem viaje ao exterior.' },
+        { speaker: 'A', ja: '{何|なに}を{食|た}べますか？', pt: 'O que se come?' },
+        { speaker: 'B', ja: 'クトゥパットという{特別|とくべつ}な{料理|りょうり}や、クッキーなどのお{菓子|かし}を{食|た}べます。', pt: 'Come-se um prato especial chamado ketupat e doces como biscoitos.' },
+      ],
+    },
+  ],
+}
+
+const lesson9: Section = {
+  id: 'lesson-9',
+  level: 'elementary2',
+  titleJa: '第9課 成人の日は、何をするんですか？',
+  titlePt: 'Lição 9 — O que se faz no Dia da Maioridade?',
+  summaryPt:
+    'Eventos anuais e etiqueta · conhecer os 年中行事 do Japão (お正月／成人の日／ひな祭り／こどもの日／七夕／クリスマス) e o que se faz e come em cada um, falar do que fez nas férias de Ano-Novo (ディズニーランドに行きました／実家に帰りました), apresentar festas do próprio país (レバラン／春節／ソンクラーン) e ler/escrever um relato e mensagens de felicitação de Ano-Novo.',
+  studyNotes: [
+    {
+      title: 'Tópico: Eventos anuais e etiqueta (年中行事とマナー)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ouvir e entender o que se faz e o que se come nos eventos anuais do Japão.\n' +
+        '- Falar de forma simples sobre o que fez nas férias (Ano-Novo etc.) e como foi.\n' +
+        '- Apresentar de forma simples festas e eventos do seu país.\n' +
+        '- Ler um relato sobre um evento da comunidade e entender o conteúdo geral.\n' +
+        '- Escrever e enviar uma mensagem de felicitação de Ano-Novo.\n\n' +
+        '💡 年中行事 (eventos do calendário anual): お{正月|しょうがつ}, {成人|せいじん}の{日|ひ}, ひな{祭|まつ}り, こどもの{日|ひ}, 七夕, クリスマス.',
+    },
+    {
+      title: '〜んです / 〜んですか — explicar e perguntar (➊)',
+      bodyPt:
+        '**〜んですか** pede uma explicação sobre algo que despertou interesse; **〜んです** dá a explicação:\n\n' +
+        '- `{成人|せいじん}の{日|ひ}は、{何|なに}をするんですか？` → `20{歳|さい}になった{人|ひと}を、お{祝|いわ}いするんです`.\n' +
+        '- `このおすしは、ひな{祭|まつ}りに{食|た}べるんですか？`\n\n' +
+        '🔧 Liga-se à forma comum (V/A普通形); com な-adj/nome: 〜なんです. (文法ノート ❶)',
+    },
+    {
+      title: 'しか + negativo / だけ — “só” (➋➌)',
+      bodyPt:
+        'Duas formas de dizer **“só / apenas”**:\n\n' +
+        '- **N しか + verbo NEGATIVO** = só ~ (com tom de pouco/insuficiente): `{乗|の}り{物|もの}に3つしか{乗|の}れませんでした` (só consegui ir em 3 brinquedos).\n' +
+        '- **N だけ** (verbo afirmativo, neutro): `1{日|にち}だけ{帰|かえ}りました` (voltei só 1 dia).\n\n' +
+        '⚠️ しか **sempre** com verbo negativo; だけ é neutro. (文法ノート ❷❸)',
+    },
+    {
+      title: 'V-たりして / V-なくてはならない / 可能形 (➍➎➏)',
+      bodyPt:
+        'Expressões para contar o que se fez nas férias:\n\n' +
+        '- **V-たりして、〜** — citar ações como exemplo: `{買|か}い{物|もの}をしたりして、{楽|たの}しかったです`. (❹)\n' +
+        '- **V-なくてはならない / なくちゃならない** — ter de: `お{年玉|としだま}をあげなくてはならない`. (❺)\n' +
+        '- **可能形 (V-れる/られる)** — conseguir/poder: `DVDもたくさん{見|み}られました`, `{母|はは}の{料理|りょうり}を{食|た}べられてよかった`. ⚠️ No grupo 2, potencial e passivo têm a mesma forma. (❻)',
+    },
+    {
+      title: 'S普通形+人 / V-ながら / Nによって (➐➑➒)',
+      bodyPt:
+        'Para apresentar costumes de cada país:\n\n' +
+        '- **S(普通形) + {人|ひと}** — “pessoa que ~”: `{田舎|いなか}に{帰|かえ}る{人|ひと}が{多|おお}いです` (muitos voltam à terra natal), `{海外|かいがい}に{旅行|りょこう}する{人|ひと}もいます` (há também quem viaje). (❼)\n' +
+        '- **V-ながら、〜** — fazer duas coisas ao mesmo tempo: `{町|まち}を{歩|ある}きながら、{水|みず}をかけ{合|あ}います`. (❽)\n' +
+        '- **N によって** — varia conforme/depende de: `{年|とし}によって{違|ちが}います`. (❾)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**年中行事:** お{正月|しょうがつ}, {成人|せいじん}の{日|ひ}/{成人式|せいじんしき}, ひな{祭|まつ}り ({人形|にんぎょう}・ちらしずし・{甘酒|あまざけ}), こどもの{日|ひ}, 七夕 ({短冊|たんざく}・{願|ねが}い{事|ごと}・{笹|ささ}), クリスマス.\n\n' +
+        '**O que se faz:** {田舎|いなか}に{帰|かえ}る, {飾|かざ}りを{飾|かざ}る, {特別|とくべつ}な{料理|りょうり}を{食|た}べる, パーティーをする, {歌|うた}ったり{踊|おど}ったりする, {寺|てら}に{行|い}く, プレゼントやお{金|かね}をあげる, お{祝|いわ}いする.\n\n' +
+        '**Família/Ano-Novo:** {親戚|しんせき}, {甥|おい}/{姪|めい}, お{年玉|としだま}, {実家|じっか}, {久|ひさ}しぶり, あけましておめでとうございます, {旧暦|きゅうれき}, {断食|だんじき}{明|あ}け.\n\n' +
+        '**Kanji da lição:** {今年|ことし}, {昨年|さくねん}, {毎年|まいとし}, {文化|ぶんか}, {祭|まつ}り, {正月|しょうがつ}, 〜{式|しき}, {大人|おとな}, {米|こめ}, {特別|とくべつ}（な).',
+    },
+  ],
+  groups: [lesson9Group],
+  audios: attachScripts(9, L9_SCRIPTS),
+}
+
+// ---- Lições 10-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -2111,13 +2362,7 @@ const sections: Section[] = [
   lesson7,
   lesson8,
   // Tópico 5 — Eventos anuais e etiqueta (年中行事とマナー)
-  scaffold(9, 'Eventos anuais e etiqueta', '成人の日は、何をするんですか？', 'O que se faz no Dia da Maioridade?', [
-    'Ouvir e entender o que se faz e o que se come nos eventos anuais do Japão.',
-    'Falar de forma simples sobre o que fez nas férias (ano-novo etc.) e como foi.',
-    'Apresentar de forma simples festas e eventos do seu país.',
-    'Ler um artigo sobre um evento da comunidade de que participou e entender o conteúdo geral.',
-    'Escrever e enviar uma mensagem de felicitações de ano-novo.',
-  ]),
+  lesson9,
   scaffold(10, 'Eventos anuais e etiqueta', 'どんな服を着て行けばいいですか？', 'Que roupa devo vestir para ir?', [
     'Perguntar sobre etiqueta e costumes de casamento, funeral etc. no Japão e entender as respostas.',
     'Perguntar e comentar sobre diferenças de etiqueta/costumes entre o Japão e seu país.',
