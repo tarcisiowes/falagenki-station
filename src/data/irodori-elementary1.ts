@@ -2586,15 +2586,261 @@ const lesson12: Section = {
   audios: attachScripts(12, L12_SCRIPTS),
 }
 
-// ---- Lições 13-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 13: あと10分ぐらいで終わりそうです (tópico 仕事の連絡) ----------
+const lesson13Group: ExerciseGroup = {
+  id: 'iro-e1-l13',
+  title: 'あと10分ぐらいで終わりそうです',
+  subtitlePt: 'Comunicação no trabalho · relatar um problema ({電気|でんき}がつかない{んですが}…), prever o andamento ({終|お}わり{そう}です／どのぐらいかかり{そう}ですか), perguntar como usar uma máquina ({使|つか}い{方|かた}を{教|おし}えてもらえませんか／したいときは、どうすればいいですか) e explicar pela condicional ({押|お}す{と}、〜)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l13-1', number: 1, prompt: '「{会議室|かいぎしつ}の{電気|でんき}がつかないんですが…」 (〜んですが…) serve para (Nota ➊):', choices: [{ n: 1, text: 'explicar a própria situação (um problema) e, com isso, pedir que o outro tome providência' }, { n: 2, text: 'elogiar o ambiente de trabalho' }, { n: 3, text: 'recusar uma tarefa' }, { n: 4, text: 'dar uma ordem direta' }], answer: 1, translationPt: 'A luz da sala de reunião não acende…', explanationPt: '〜んですが… explica uma situação/problema para receber instruções do outro. Aqui relata-se um problema no trabalho. (Nota ➊)' },
+    { id: 'iro-e1-l13-2', number: 2, prompt: 'Que formas verbais ligam-se a 〜んですが… nesta lição (Nota ➊)?', choices: [{ n: 1, text: 'forma de dicionário ({音|おと}がする), forma タ ({なくなった}) e forma ナイ ({つかない}) — além de V-たいんですが… das Lições 8/10' }, { n: 2, text: 'só a forma マス' }, { n: 3, text: 'só substantivos' }, { n: 4, text: 'só a forma て' }], answer: 1, explanationPt: 'Nas Lições 8 e 10 vimos só V-たいんですが…／V-てみたいんですが…. Aqui 〜んですが… liga-se à forma de dicionário, タ e ナイ: {変|へん}な{音|おと}がするんですが…／トイレットペーパーがなくなったんですが…／{電気|でんき}がつかないんですが…. (Nota ➊)' },
+    { id: 'iro-e1-l13-3', number: 3, prompt: 'Como se forma a ナイ-form (forma negativa, Nota ➊)?', choices: [{ n: 1, text: 'G1: -u → -anai ({買|か}う→{買|か}わない, {動|うご}く→{動|うご}かない); G2: tira る ({見|み}る→{見|み}ない); G3: する→しない, {来|く}る→{来|こ}ない' }, { n: 2, text: 'sempre acrescenta ません no fim' }, { n: 3, text: 'troca o い final por く' }, { n: 4, text: 'acrescenta だ' }], answer: 1, explanationPt: 'ナイ形: G1 -u→-anai (verbos em -う ganham w: {買|か}う→{買|か}わない); G2 tira る ({食|た}べる→{食|た}べない); G3 irregular (する→しない, {来|く}る→{来|こ}ない). Expressa negação. (Nota ➊)' },
+    { id: 'iro-e1-l13-4', number: 4, prompt: '「どのぐらいかかりそうですか？」「あと10{分|ぷん}ぐらいで{終|お}わりそうです」 (V-そうです) serve para (Nota ➋):', choices: [{ n: 1, text: 'expressar uma PREVISÃO/expectativa — aqui, sobre o andamento do trabalho' }, { n: 2, text: 'descrever a aparência de uma comida' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'pedir desculpas' }], answer: 1, translationPt: 'Quanto tempo deve levar? / Devo terminar em uns 10 minutos.', explanationPt: 'V-そうです = previsão/expectativa. Aqui pergunta-se e responde-se sobre o progresso do trabalho: かかりそうですか／{終|お}わりそうです. (Nota ➋)' },
+    { id: 'iro-e1-l13-5', number: 5, prompt: 'Como V-そうです (previsão) se forma, e qual a diferença para o 〜そうです da Lição 12 (Nota ➋)?', choices: [{ n: 1, text: 'liga-se à forma マス sem ます ({終|お}わります→{終|お}わりそう, できます→できそう); na Lição 12 ligava-se a ADJETIVO (おいしそう) p/ aparência' }, { n: 2, text: 'liga-se à forma de dicionário + そう' }, { n: 3, text: 'é igual ao da Lição 12, sem diferença' }, { n: 4, text: 'só se usa com substantivos' }], answer: 1, explanationPt: 'Aqui そうです liga-se à マス-form sem ます: {終|お}わり+そう, でき+そう. Na Lição 12, そうです ligava-se a adjetivo (おいしそう) para juízo pela aparência. (Nota ➋)' },
+    { id: 'iro-e1-l13-6', number: 6, prompt: 'Em 「あと10{分|ぷん}ぐらいで{終|お}わりそうです」, para que serve o で depois do tempo (Nota ➋)?', choices: [{ n: 1, text: 'indica o INTERVALO de tempo previsto (em uns 10 minutos)' }, { n: 2, text: 'indica o lugar' }, { n: 3, text: 'indica o instrumento' }, { n: 4, text: 'nega o verbo' }], answer: 1, translationPt: 'Devo terminar em uns 10 minutos.', explanationPt: 'で após o tempo marca o intervalo/prazo: 10{分|ぷん}ぐらいで (em uns 10 min). Ex.: あと10{分|ぷん}ぐらいで{終|お}わりそうです. (Nota ➋)' },
+    { id: 'iro-e1-l13-7', number: 7, prompt: '「{両面|りょうめん}コピーしたいときは、どうすればいいですか？」 (V-たいとき、〜) serve para (Nota ➌):', choices: [{ n: 1, text: 'dizer o que se quer fazer e PEDIR CONSELHO sobre como fazê-lo (o que devo fazer para…?)' }, { n: 2, text: 'contar quando um fato aconteceu no passado' }, { n: 3, text: 'recusar ajuda' }, { n: 4, text: 'dar uma ordem ao outro' }], answer: 1, translationPt: 'Quando quero fazer cópia frente e verso, o que devo fazer?', explanationPt: 'V-たいとき、どうすればいいですか？ transmite o desejo e pede conselho. どうすれば aqui é tratado como uma frase fixa (retomada no 初級2). Na Lição 10, 〜とき indicava quando algo ocorreu. (Nota ➌)' },
+    { id: 'iro-e1-l13-8', number: 8, prompt: '「このスタートボタンを{押|お}すと、コピーが{始|はじ}まります」 (V-ると、〜) expressa (Nota ➍):', choices: [{ n: 1, text: 'o RESULTADO que ocorre ao realizar certa ação — aqui, explicar como usar uma máquina' }, { n: 2, text: 'um desejo' }, { n: 3, text: 'uma previsão de tempo' }, { n: 4, text: 'um pedido de desculpas' }], answer: 1, translationPt: 'Ao apertar este botão de start, a cópia começa.', explanationPt: 'V-ると、〜 descreve o que acontece como resultado de uma ação. 〜と liga-se à forma de dicionário. Usado para explicar uso de máquinas/objetos: ボタンを{押|お}すと、カラーになります／{手|て}をかざすと、{水|みず}が{流|なが}れます. (Nota ➍)' },
+    { id: 'iro-e1-l13-9', number: 9, prompt: 'A：「コピー{機|き}、{使|つか}ったことないですか？」 B：「はい、ないです」 — por que B responde はい (Nota ➎)?', choices: [{ n: 1, text: 'a pergunta é NEGATIVA; concordando com ela (de fato nunca usei), responde-se はい + frase negativa' }, { n: 2, text: 'はい sempre significa “sim, já usei”' }, { n: 3, text: 'B se enganou na resposta' }, { n: 4, text: 'はい aqui significa “não sei”' }], answer: 1, translationPt: 'Você nunca usou a copiadora? — Não (isso mesmo), nunca usei.', explanationPt: 'A pergunta negativa 「{使|つか}ったことないですか？」: se o conteúdo está correto (nunca usei), responde-se はい seguido de frase negativa (ないです). Diferente do português, onde se diria “não”. (Nota ➎)' },
+    { id: 'iro-e1-l13-10', number: 10, prompt: 'E para DISCORDAR de uma pergunta negativa como 「{前|まえ}に{使|つか}ったことないですか？」 (Nota ➎)?', choices: [{ n: 1, text: 'responde-se いいえ + frase afirmativa (いいえ、{前|まえ}に{一度|いちど}{使|つか}ったことがあります)' }, { n: 2, text: 'responde-se はい + frase afirmativa' }, { n: 3, text: 'não se pode responder' }, { n: 4, text: 'responde-se sempre だめです' }], answer: 1, translationPt: 'Você nunca usou antes? — Não (errado), já usei uma vez.', explanationPt: 'Se a pergunta negativa está errada (na verdade já usei), responde-se いいえ + afirmativa: いいえ。{私|わたし}は、{前|まえ}に{一度|いちど}{使|つか}ったことがあります. (Nota ➎)' },
+    { id: 'iro-e1-l13-11', number: 11, prompt: 'Vocabulário (Atividade 1): 「コーヒーマシーン／パソコン／とりあえず」 significam:', choices: [{ n: 1, text: 'máquina de café ／ computador (PC) ／ por enquanto/provisoriamente' }, { n: 2, text: 'cafeteria ／ celular ／ definitivamente' }, { n: 3, text: 'xícara de café ／ teclado ／ imediatamente' }, { n: 4, text: 'máquina de café ／ impressora ／ rapidamente' }], answer: 1, explanationPt: 'コーヒーマシーン (máquina de café), パソコン (computador), とりあえず (por enquanto/provisoriamente: とりあえず、{再起動|さいきどう}してみて). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l13-12', number: 12, prompt: 'Atividade 1 — os problemas relatados (a–d) são:', choices: [{ n: 1, text: '{電気|でんき}がつかない (a luz não acende) ／ {変|へん}な{音|おと}がする (faz um barulho estranho) ／ {動|うご}かない (não funciona) ／ トイレットペーパーがなくなる (acabar o papel higiênico)' }, { n: 2, text: 'a luz acende ／ silêncio ／ funciona bem ／ sobra papel' }, { n: 3, text: 'falta café ／ falta água ／ falta luz ／ falta papel' }, { n: 4, text: 'a porta abre ／ a janela fecha ／ o PC liga ／ a máquina para' }], answer: 1, explanationPt: 'a. {電気|でんき}がつかない, b. {変|へん}な{音|おと}がする, c. {動|うご}かない, d. トイレットペーパーがなくなる. São os 4 problemas dos diálogos 13-01~13-04. (Atividade 1)' },
+    { id: 'iro-e1-l13-13', number: 13, prompt: 'Atividade 1 — as instruções dadas (ア–エ) foram:', choices: [{ n: 1, text: '{業者|ぎょうしゃ}に{電話|でんわ}する (ligar para a empresa/técnico) ／ {再起動|さいきどう}する (reiniciar) ／ {管理室|かんりしつ}に{連絡|れんらく}する (avisar a sala de administração) ／ {倉庫|そうこ}から{取|と}って{来|く}る (pegar no estoque)' }, { n: 2, text: 'ir embora ／ chamar a polícia ／ esperar ／ comprar outro' }, { n: 3, text: 'desligar tudo ／ abrir a janela ／ limpar ／ trocar a luz' }, { n: 4, text: 'pedir desculpa ／ tirar folga ／ almoçar ／ descansar' }], answer: 1, explanationPt: 'ア. {業者|ぎょうしゃ}に{電話|でんわ}する, イ. {再起動|さいきどう}する, ウ. {管理室|かんりしつ}に{連絡|れんらく}する, エ. {倉庫|そうこ}から{取|と}って{来|く}る. (Atividade 1)' },
+    { id: 'iro-e1-l13-14', number: 14, prompt: 'Vocabulário (Atividade 2): 「できる」 (como em 「もうすぐできます」) significa, no contexto de trabalho:', choices: [{ n: 1, text: 'ficar pronto / terminar (uma tarefa)' }, { n: 2, text: 'conseguir comprar' }, { n: 3, text: 'poder sair' }, { n: 4, text: 'aprender algo novo' }], answer: 1, explanationPt: 'できる aqui = ficar pronto/terminar (finish): もうすぐできます (já vai ficar pronto). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l13-15', number: 15, prompt: 'Atividade 2 — as respostas sobre o andamento do trabalho (a–d) são:', choices: [{ n: 1, text: 'やり{方|かた}がわかりません (não sei como fazer) ／ だいじょうぶです (está tudo bem) ／ もう{終|お}わりました (já terminei) ／ もうすぐ{終|お}わります (termino logo)' }, { n: 2, text: 'já comprei ／ vou almoçar ／ vou para casa ／ estou de folga' }, { n: 3, text: 'não vou ／ vou esperar ／ vou perguntar ／ vou ligar' }, { n: 4, text: 'está quebrado ／ está sujo ／ está pronto ／ está caro' }], answer: 1, explanationPt: 'a. やり{方|かた}がわかりません, b. だいじょうぶです, c. もう{終|お}わりました, d. もうすぐ{終|お}わります. (Atividade 2)' },
+    { id: 'iro-e1-l13-16', number: 16, prompt: 'Vocabulário (Atividade 3 · copiadora): 「{原稿|げんこう}／セットする／{枚数|まいすう}／{数字|すうじ}／{両面|りょうめん}／{片面|かためん}／{白黒|しろくろ}／できるだけ」 significam:', choices: [{ n: 1, text: 'original (documento) ／ posicionar/colocar ／ número de cópias ／ número(s) ／ frente e verso ／ um lado só ／ preto e branco ／ o máximo possível' }, { n: 2, text: 'cópia ／ tirar ／ folha ／ letra ／ colorido ／ dois lados ／ cor ／ de vez em quando' }, { n: 3, text: 'papel ／ guardar ／ peso ／ senha ／ duplo ／ simples ／ cinza ／ sempre' }, { n: 4, text: 'imagem ／ apagar ／ quantidade ／ código ／ frente ／ verso ／ claro ／ nunca' }], answer: 1, explanationPt: '{原稿|げんこう} (original/documento), セットする (posicionar), {枚数|まいすう} (nº de cópias), {数字|すうじ} (número), {両面|りょうめん} (frente e verso), {片面|かためん} (só um lado), {白黒|しろくろ} (preto e branco), できるだけ (o máximo possível). (Atividade 3 · ことば)' },
+    { id: 'iro-e1-l13-17', number: 17, prompt: 'Atividade 3 (13-17) — na ordem para tirar cópia, quais os 3 passos básicos que {大森|おおもり} explica?', context: '{大森|おおもり}：ここに{原稿|げんこう}をセットして、それから{枚数|まいすう}を{数字|すうじ}で{入|い}れて、それから、このスタートボタンを{押|お}すと、コピーが{始|はじ}まります。', choices: [{ n: 1, text: '① pôr o original (セット) → ② digitar o número de cópias (数字で入れる) → ③ apertar o botão start (スタートボタンを押す)' }, { n: 2, text: '① apertar start → ② pôr o original → ③ digitar o número' }, { n: 3, text: '① escolher cor → ② fechar a tampa → ③ pagar' }, { n: 4, text: '① ligar a máquina → ② esperar → ③ pegar o papel' }], answer: 1, explanationPt: 'Ordem: ①{原稿|げんこう}をセットする → ②{枚数|まいすう}を{数字|すうじ}で{入|い}れる → ③スタートボタンを{押|お}すと、コピーが{始|はじ}まる (V-ると, ➍). (Atividade 3 · 聴解スクリプト 13-17)' },
+    { id: 'iro-e1-l13-18', number: 18, prompt: 'Atividade 3 (13-17) — qual a recomendação FINAL de {大森|おおもり} sobre a cópia colorida?', context: '{大森|おおもり}：でも、カラーコピーは{高|たか}いから、できるだけ{白黒|しろくろ}にしてください。', choices: [{ n: 1, text: 'como a cópia colorida é cara, usar o preto e branco o máximo possível (できるだけ白黒に)' }, { n: 2, text: 'usar sempre cópia colorida' }, { n: 3, text: 'nunca tirar cópia frente e verso' }, { n: 4, text: 'desligar a máquina depois de usar' }], answer: 1, explanationPt: 'A カラーコピー é cara, então できるだけ{白黒|しろくろ}にしてください (faça preto e branco o quanto possível). É o 注意 (cuidado) final do diálogo. (Atividade 3 · 13-17)' },
+    { id: 'iro-e1-l13-19', number: 19, prompt: 'Vocabulário (Atividade 4 · 会話1): 「{資料|しりょう}／{戻|もど}す／{扉|とびら}／{開|あ}ける／{棚|たな}」 significam:', choices: [{ n: 1, text: 'material/documentos ／ devolver/recolocar ／ porta ／ abrir ／ prateleira' }, { n: 2, text: 'reunião ／ guardar ／ janela ／ fechar ／ mesa' }, { n: 3, text: 'arquivo ／ jogar fora ／ gaveta ／ trancar ／ armário' }, { n: 4, text: 'cópia ／ levar ／ parede ／ empurrar ／ chão' }], answer: 1, explanationPt: '{資料|しりょう} (material), {戻|もど}す (devolver), {扉|とびら} (porta), {開|あ}ける (abrir), {棚|たな} (prateleira). (Atividade 4 · 会話1 · ことば)' },
+    { id: 'iro-e1-l13-20', number: 20, prompt: 'Vocabulário (Atividade 4 · 会話2): 「{丸|まる}い／{四角|しかく}い／{列|れつ}／スペース／あける／{入口|いりぐち}」 significam:', choices: [{ n: 1, text: 'redondo(a) ／ quadrado(a) ／ fileira/coluna ／ espaço ／ deixar (espaço) livre ／ entrada' }, { n: 2, text: 'grande ／ pequeno ／ linha ／ lugar ／ fechar ／ saída' }, { n: 3, text: 'comprido ／ curto ／ pilha ／ canto ／ encher ／ porta' }, { n: 4, text: 'largo ／ estreito ／ par ／ vão ／ ocupar ／ corredor' }], answer: 1, explanationPt: '{丸|まる}い (redondo), {四角|しかく}い (quadrado), {列|れつ} (fileira: 3{列|れつ} = 3 fileiras), スペース (espaço), あける (deixar livre), {入口|いりぐち} (entrada). (Atividade 4 · 会話2 · ことば)' },
+    { id: 'iro-e1-l13-21', number: 21, prompt: 'Vocabulário (Atividade 4 · 会話3): 「{会議|かいぎ}／セッティング／コの{字|じ}／{人数分|にんずうぶん}／{部|ぶ}／{頼|たの}む／いいです」 significam:', choices: [{ n: 1, text: 'reunião ／ arrumação/montagem ／ em forma de “U” (コの字) ／ para o número de pessoas ／ cópia/exemplar (contador 〜部) ／ pedir/encarregar ／ “não precisa” (recusa educada)' }, { n: 2, text: 'almoço ／ limpeza ／ em círculo ／ por pessoa ／ parte ／ comprar ／ “tudo bem, pode” ' }, { n: 3, text: 'aula ／ decoração ／ em fila ／ metade ／ página ／ ajudar ／ “sim, claro”' }, { n: 4, text: 'festa ／ preparo ／ em zigue-zague ／ o dobro ／ caixa ／ entregar ／ “de nada”' }], answer: 1, explanationPt: '{会議|かいぎ} (reunião), セッティング (montagem/arrumação), コの{字|じ} (em U), {人数分|にんずうぶん} (para o nº de pessoas), 〜{部|ぶ} (contador de cópias: 1{部|ぶ}), {頼|たの}む (pedir/encarregar), いいです (aqui = “não precisa”, recusa educada). (Atividade 4 · 会話3 · ことば)' },
+    { id: 'iro-e1-l13-22', number: 22, prompt: 'Vocabulário (Atividade 5 · e-mail): 「{件名|けんめい}／{変更|へんこう}／お{知|し}らせ／{都合|つごう}が{悪|わる}い／{注意|ちゅうい}（する）」 significam:', choices: [{ n: 1, text: 'assunto (do e-mail) ／ alteração/mudança ／ aviso/comunicado ／ não dar certo (não poder/estar indisponível) ／ prestar atenção/cuidado' }, { n: 2, text: 'remetente ／ confirmação ／ convite ／ estar ocupado ／ ignorar' }, { n: 3, text: 'data ／ cancelamento ／ pergunta ／ estar livre ／ avisar' }, { n: 4, text: 'destinatário ／ resposta ／ anexo ／ ter pressa ／ corrigir' }], answer: 1, explanationPt: '{件名|けんめい} (assunto), {変更|へんこう} (alteração), お{知|し}らせ (aviso), {都合|つごう}が{悪|わる}い (não dar certo/estar indisponível), {注意|ちゅうい}（する） (prestar atenção). (Atividade 5 · 大切なことば)' },
+    { id: 'iro-e1-l13-23', number: 23, prompt: 'Os kanji 「コピー{機|き}／{数字|すうじ}／{電気|でんき}／{音|おと}／{机|つくえ}／{都合|つごう}」 lêem-se:', choices: [{ n: 1, text: 'コピーき (copiadora) ／ すうじ (número) ／ でんき (luz/eletricidade) ／ おと (som/barulho) ／ つくえ (mesa/escrivaninha) ／ つごう (disponibilidade/conveniência)' }, { n: 2, text: 'コピーき ／ かずじ ／ でんき ／ おん ／ き ／ とごう' }, { n: 3, text: 'コピーき ／ すうじ ／ でんき ／ おと ／ つくえ ／ みやこあい' }, { n: 4, text: 'コピーき ／ すうじ ／ でんけ ／ ね ／ つくえ ／ つごう' }], answer: 1, explanationPt: 'コピー{機|き}, {数字|すうじ}, {電気|でんき}, {音|おと}, {机|つくえ}, {都合|つごう}. (漢字のことば)' },
+    { id: 'iro-e1-l13-24', number: 24, prompt: 'Os kanji 「{悪|わる}い／{動|うご}く／{使|つか}う／{終|お}わる／お{願|ねが}いします」 lêem-se:', choices: [{ n: 1, text: 'わるい (ruim/mau) ／ うごく (mover/funcionar) ／ つかう (usar) ／ おわる (terminar) ／ おねがいします (por favor)' }, { n: 2, text: 'あくい ／ どうく ／ しよう ／ しゅうわる ／ おねがいします' }, { n: 3, text: 'わるい ／ うごく ／ つかう ／ おわる ／ おがんいします' }, { n: 4, text: 'にくい ／ うごく ／ つかう ／ すえわる ／ おねがいします' }], answer: 1, explanationPt: '{悪|わる}い, {動|うご}く, {使|つか}う, {終|お}わる, お{願|ねが}いします. Kanji da lição: コピー{機|き}・{数字|すうじ}・{電気|でんき}・{音|おと}・{机|つくえ}・{都合|つごう}・{悪|わる}い・{動|うご}く・{使|つか}う・{終|お}わる・お{願|ねが}いします. (漢字)' },
+    { id: 'iro-e1-l13-25', number: 25, prompt: 'Diálogo 13-01: A relata um problema. Qual é, e o que B pede?', context: 'A：あのう、トイレットペーパーがなくなったんですが……。 B：あ、そう？じゃあ、{倉庫|そうこ}にあるから、{取|と}って{来|き}てくれる？', choices: [{ n: 1, text: 'Acabou o papel higiênico (なくなった + んですが); B pede para A ir pegar no estoque ({倉庫|そうこ}から{取|と}って{来|く}る)' }, { n: 2, text: 'A luz não acende; B manda reiniciar' }, { n: 3, text: 'O PC travou; B chama o técnico' }, { n: 4, text: 'B vai comprar papel' }], answer: 1, explanationPt: 'トイレットペーパーがなくなったんですが… (forma タ + んですが, ➊); {倉庫|そうこ}にあるから、{取|と}って{来|き}てくれる？ (instrução エ). (Atividade 1 · 聴解スクリプト 13-01)' },
+    { id: 'iro-e1-l13-26', number: 26, prompt: 'Diálogo 13-02: qual o problema e qual a instrução?', context: 'A：すみません、コーヒーマシーンから{変|へん}な{音|おと}がするんですが……。 B：{本当|ほんとう}？じゃあ、{業者|ぎょうしゃ}に{電話|でんわ}してくれる？', choices: [{ n: 1, text: 'A máquina de café faz um barulho estranho ({変|へん}な{音|おと}がする); B manda ligar para o técnico/empresa ({業者|ぎょうしゃ}に{電話|でんわ})' }, { n: 2, text: 'Acabou o café; B manda comprar mais' }, { n: 3, text: 'A luz piscou; B manda avisar a administração' }, { n: 4, text: 'A máquina está limpa; nada a fazer' }], answer: 1, explanationPt: '{変|へん}な{音|おと}がするんですが… (forma de dicionário + んですが, ➊); {業者|ぎょうしゃ}に{電話|でんわ}してくれる？ (instrução ア). (Atividade 1 · 13-02)' },
+    { id: 'iro-e1-l13-27', number: 27, prompt: 'Diálogo 13-03: o PC não funciona. O que B sugere primeiro?', context: 'A：パソコンが{動|うご}かないんですが……。 B：うーん、とりあえず、{再起動|さいきどう}してみて。', choices: [{ n: 1, text: 'Por enquanto (とりあえず), tentar reiniciar o computador ({再起動|さいきどう}してみて)' }, { n: 2, text: 'Comprar um PC novo' }, { n: 3, text: 'Ligar para a administração' }, { n: 4, text: 'Ir pegar papel no estoque' }], answer: 1, translationPt: 'O computador não funciona… — Hum, por ora, tenta reiniciar.', explanationPt: 'パソコンが{動|うご}かないんですが… (forma ナイ + んですが, ➊); とりあえず、{再起動|さいきどう}してみて (V-てみて, Lição 12; instrução イ). (Atividade 1 · 13-03)' },
+    { id: 'iro-e1-l13-28', number: 28, prompt: 'Diálogo 13-09: A pergunta sobre o andamento. Como B prevê o término?', context: 'A：もう{終|お}わりましたか？ B：あ、まだです。 A：どのぐらいかかりそうですか？ B：あと10{分|ぷん}ぐらいで{終|お}わりそうです。', choices: [{ n: 1, text: 'Ainda não terminou; deve terminar em uns 10 minutos (あと10分ぐらいで終わりそうです)' }, { n: 2, text: 'Já terminou tudo' }, { n: 3, text: 'Não sabe fazer' }, { n: 4, text: 'Vai levar o dia inteiro' }], answer: 1, explanationPt: 'まだです (ainda não); どのぐらいかかりそうですか？／あと10{分|ぷん}ぐらいで{終|お}わりそうです (V-そうです previsão + で intervalo, ➋). (Atividade 2 · 聴解スクリプト 13-09)' },
+    { id: 'iro-e1-l13-29', number: 29, prompt: 'Diálogo 13-20 (会話1): onde A deve guardar o {資料|しりょう}?', context: 'A：この{資料|しりょう}、どうしますか？ B：キャビネットに{戻|もど}しといて。 A：ええと、キャビネットのどこですか？ B：{上|うえ}の{右|みぎ}の{扉|とびら}を{開|あ}けて、{棚|たな}のいちばん{下|した}。', choices: [{ n: 1, text: 'No armário (キャビネット): abrir a porta de cima à direita e pôr na prateleira mais de baixo ({上|うえ}の{右|みぎ}の{扉|とびら}…{棚|たな}のいちばん{下|した})' }, { n: 2, text: 'Na gaveta de baixo à esquerda' }, { n: 3, text: 'Em cima da mesa' }, { n: 4, text: 'Jogar fora' }], answer: 1, explanationPt: 'キャビネットに{戻|もど}しといて (戻しておいて); {上|うえ}の{右|みぎ}の{扉|とびら}を{開|あ}けて、{棚|たな}のいちばん{下|した} (abrir a porta superior direita, prateleira mais baixa). (Atividade 4 · 会話1 · 13-20)' },
+    { id: 'iro-e1-l13-30', number: 30, prompt: 'Diálogo 13-21 (会話2): como arrumar as mesas?', context: 'A：テーブルは、どうやって{並|なら}べますか？ B：{丸|まる}いテーブルを9{個|こ}{出|だ}して、3つずつ3{列|れつ}に{並|なら}べてください。…{後|うし}ろにスペースをあけてください。…{入口|いりぐち}の{横|よこ}…に、{四角|しかく}い{長|なが}いテーブルを1つ{置|お}いてください。', choices: [{ n: 1, text: 'Pôr 9 mesas redondas em 3 fileiras de 3, deixar espaço atrás e colocar 1 mesa retangular comprida ao lado da entrada' }, { n: 2, text: 'Empilhar todas as mesas num canto' }, { n: 3, text: 'Usar só uma mesa redonda no centro' }, { n: 4, text: 'Pôr as mesas em círculo na entrada' }], answer: 1, explanationPt: '{丸|まる}いテーブルを9{個|こ}、3つずつ3{列|れつ}; {後|うし}ろにスペースをあける; {入口|いりぐち}の{横|よこ}に{四角|しかく}い{長|なが}いテーブルを1つ. (Atividade 4 · 会話2 · 13-21)' },
+    { id: 'iro-e1-l13-31', number: 31, prompt: 'Diálogo 13-22 (会話3): quem faz o quê na preparação da reunião — e as bebidas?', context: '{上司|じょうし}：アリさんは、{部屋|へや}のセッティング…{机|つくえ}をコの{字|じ}に{並|なら}べて…パソコンとプロジェクタを{準備|じゅんび}…{西村|にしむら}さんは、{資料|しりょう}を{人数分|にんずうぶん}コピーして、{机|つくえ}の{上|うえ}に1{部|ぶ}ずつ{並|なら}べて… {西村|にしむら}：{飲|の}み{物|もの}は{用意|ようい}しますか？ {上司|じょうし}：それは、{外|そと}のお{店|みせ}に{頼|たの}んだから、いいです。', choices: [{ n: 1, text: 'Ali arruma a sala (mesas em U + PC e projetor); Nishimura copia o material para todos e põe 1 por mesa; bebidas não precisam (já foram pedidas na loja de fora)' }, { n: 2, text: 'Ali faz as cópias; Nishimura arruma a sala; bebidas devem ser compradas' }, { n: 3, text: 'Os dois arrumam a sala; ninguém cuida do material' }, { n: 4, text: 'Ali traz as bebidas; Nishimura não faz nada' }], answer: 1, explanationPt: 'アリ→{部屋|へや}のセッティング ({机|つくえ}をコの{字|じ}に{並|なら}べる, パソコンとプロジェクタ); {西村|にしむら}→{資料|しりょう}を{人数分|にんずうぶん}コピー、{机|つくえ}に1{部|ぶ}ずつ; {飲|の}み{物|もの}は{外|そと}のお{店|みせ}に{頼|たの}んだから、いいです (não precisa). (Atividade 4 · 会話3 · 13-22)' },
+    { id: 'iro-e1-l13-32', number: 32, prompt: 'Pergunta de abertura da lição: 「どんな{仕事|しごと}が{得意|とくい}ですか？どんな{仕事|しごと}が{苦手|にがて}ですか？」 quer dizer:', choices: [{ n: 1, text: 'Em que tipo de trabalho você é bom (tem facilidade)? E em qual você não vai bem?' }, { n: 2, text: 'Que horas você começa e termina o trabalho?' }, { n: 3, text: 'Onde fica o seu local de trabalho?' }, { n: 4, text: 'Quantas pessoas trabalham com você?' }], answer: 1, translationPt: 'Que tipo de trabalho você faz bem? E qual você não curte/não vai bem?', explanationPt: '{得意|とくい}（な） = ter facilidade/ser bom em; {苦手|にがて}（な） = não ir bem/não curtir (Lição 12). Tema: {仕事|しごと}の{連絡|れんらく} (comunicação no trabalho). (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 13
+const L13_SCRIPTS: Record<string, ScriptItem[]> = {
+  '13-01': [
+    {
+      label: '① (13-01) — トイレットペーパーがなくなったんですが',
+      setupJa: '{職場|しょくば}で{困|こま}ったことが{起|お}こりました。',
+      setupPt: 'Aconteceu um problema no trabalho.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、トイレットペーパーがなくなったんですが……。', pt: 'Ãh… acabou o papel higiênico…' },
+        { speaker: 'B', ja: 'あ、そう？じゃあ、{倉庫|そうこ}にあるから、{取|と}って{来|き}てくれる？', pt: 'Ah, é? Então, tem no estoque — pode ir pegar?' },
+      ],
+    },
+  ],
+  '13-02': [
+    {
+      label: '② (13-02) — 変な音がするんですが',
+      lines: [
+        { speaker: 'A', ja: 'すみません、コーヒーマシーンから{変|へん}な{音|おと}がするんですが……。', pt: 'Com licença, a máquina de café está fazendo um barulho estranho…' },
+        { speaker: 'B', ja: '{本当|ほんとう}？じゃあ、{業者|ぎょうしゃ}に{電話|でんわ}してくれる？', pt: 'Sério? Então, pode ligar para a empresa (técnico)?' },
+      ],
+    },
+  ],
+  '13-03': [
+    {
+      label: '③ (13-03) — パソコンが動かないんですが',
+      lines: [
+        { speaker: 'A', ja: 'パソコンが{動|うご}かないんですが……。', pt: 'O computador não está funcionando…' },
+        { speaker: 'B', ja: 'うーん、とりあえず、{再起動|さいきどう}してみて。', pt: 'Hum… por enquanto, tenta reiniciar.' },
+      ],
+    },
+  ],
+  '13-04': [
+    {
+      label: '④ (13-04) — 電気がつかないんですが',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません、{会議室|かいぎしつ}の{電気|でんき}がつかないんですが……。', pt: 'Ãh, com licença, a luz da sala de reunião não acende…' },
+        { speaker: 'B', ja: 'じゃあ、{管理室|かんりしつ}に{連絡|れんらく}してください。', pt: 'Então, por favor avise a sala de administração.' },
+      ],
+    },
+  ],
+  '13-07': [
+    {
+      label: '① (13-07) — だいじょうぶです',
+      setupJa: '{仕事|しごと}をしているとき、{上司|じょうし}に{話|はな}しかけられました。',
+      setupPt: 'Enquanto trabalha, o superior puxa conversa.',
+      lines: [
+        { speaker: 'A', ja: 'どう？だいじょうぶ？', pt: 'E aí? Está tudo bem?' },
+        { speaker: 'B', ja: 'はい、だいじょうぶです。', pt: 'Sim, está tudo bem.' },
+        { speaker: 'A', ja: 'そう。わからないこと、ある？', pt: 'Tá. Tem alguma coisa que você não entende?' },
+        { speaker: 'B', ja: 'いえ、ありません。', pt: 'Não, não tenho.' },
+      ],
+    },
+  ],
+  '13-08': [
+    {
+      label: '② (13-08) — このやり方がよくわからないんですが',
+      lines: [
+        { speaker: 'A', ja: 'どうですか？', pt: 'Como está indo?' },
+        { speaker: 'B', ja: 'あのう、すみません。', pt: 'Ãh… com licença.' },
+        { speaker: 'A', ja: 'はい。', pt: 'Pois não.' },
+        { speaker: 'B', ja: 'このやり{方|かた}がよくわからないんですが……。', pt: 'É que eu não entendo bem como se faz isto…' },
+        { speaker: 'A', ja: 'ああ、これはですね……', pt: 'Ah, isto aqui é o seguinte…' },
+      ],
+    },
+  ],
+  '13-09': [
+    {
+      label: '③ (13-09) — あと10分ぐらいで終わりそうです',
+      lines: [
+        { speaker: 'A', ja: 'もう{終|お}わりましたか？', pt: 'Já terminou?' },
+        { speaker: 'B', ja: 'あ、まだです。', pt: 'Ah, ainda não.' },
+        { speaker: 'A', ja: 'どのぐらいかかりそうですか？', pt: 'Quanto tempo deve levar?' },
+        { speaker: 'B', ja: 'あと10{分|ぷん}ぐらいで{終|お}わりそうです。', pt: 'Devo terminar em mais uns 10 minutos.' },
+      ],
+    },
+  ],
+  '13-10': [
+    {
+      label: '④ (13-10) — はい、終わりました',
+      lines: [
+        { speaker: 'A', ja: 'できた？', pt: 'Ficou pronto?' },
+        { speaker: 'B', ja: 'はい、{終|お}わりました。', pt: 'Sim, terminei.' },
+        { speaker: 'A', ja: 'お、{早|はや}いね。', pt: 'Oh, que rápido.' },
+        { speaker: 'B', ja: 'これでいいですか？', pt: 'Está bom assim?' },
+        { speaker: 'A', ja: 'うん、OK。お{疲|つか}れさま。', pt: 'Sim, OK. Bom trabalho.' },
+      ],
+    },
+  ],
+  '13-17': [
+    {
+      label: '会話 (13-17) — コピー機の使い方',
+      setupJa: '{黄|コウ}さんは、{職場|しょくば}で{大森|おおもり}さんにコピー{機|き}の{使|つか}い{方|かた}を{教|おし}えてもらっています。',
+      setupPt: 'Huang está aprendendo com Omori como usar a copiadora no trabalho.',
+      lines: [
+        { speaker: '黄', ja: 'すみません。コピー{機|き}の{使|つか}い{方|かた}を{教|おし}えてもらえませんか？', pt: 'Com licença. Poderia me ensinar como usar a copiadora?' },
+        { speaker: '大森', ja: 'いいですよ。{使|つか}ったこと、ないですか？', pt: 'Pode ser. Você nunca usou?' },
+        { speaker: '黄', ja: 'はい、ないです。', pt: 'Não, nunca.' },
+        { speaker: '大森', ja: 'そうですか。じゃあ、{説明|せつめい}しますね。ここに{原稿|げんこう}をセットして、それから{枚数|まいすう}を{数字|すうじ}で{入|い}れて、それから、このスタートボタンを{押|お}すと、コピーが{始|はじ}まります。', pt: 'Entendi. Então vou explicar. Coloca o original aqui, depois digita o número de cópias, e então, ao apertar este botão de start, a cópia começa.' },
+        { speaker: '黄', ja: 'はい、わかりました。えーと、{両面|りょうめん}コピーしたいときは、どうすればいいですか？', pt: 'Sim, entendi. Hum… quando eu quero copiar frente e verso, o que devo fazer?' },
+        { speaker: '大森', ja: '{原稿|げんこう}が{片面|かためん}のときは、このボタン。{原稿|げんこう}も{両面|りょうめん}のときは、このボタンを{押|お}します。', pt: 'Quando o original é só de um lado, este botão. Quando o original também é frente e verso, aperta este botão.' },
+        { speaker: '黄', ja: 'はい、わかりました。あと、カラーコピーは、できますか？', pt: 'Sim, entendi. E também, dá para fazer cópia colorida?' },
+        { speaker: '大森', ja: 'カラーコピー？このボタンを{押|お}すと、カラーになりますよ。', pt: 'Cópia colorida? Ao apertar este botão, fica colorida.' },
+        { speaker: '黄', ja: 'このボタンですね。', pt: 'É este botão, né.' },
+        { speaker: '大森', ja: 'でも、カラーコピーは{高|たか}いから、できるだけ{白黒|しろくろ}にしてください。', pt: 'Mas a cópia colorida é cara, então use o preto e branco o máximo possível.' },
+        { speaker: '黄', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Muito obrigado.' },
+      ],
+    },
+  ],
+  '13-20': [
+    {
+      label: '会話1 (13-20) — キャビネットに戻す',
+      setupJa: '{職場|しょくば}で、{指示|しじ}を{聞|き}いています。{資料|しりょう}をキャビネットに{戻|もど}します。',
+      setupPt: 'No trabalho, recebendo instruções. Vai devolver o material ao armário.',
+      lines: [
+        { speaker: 'A', ja: 'この{資料|しりょう}、どうしますか？', pt: 'O que faço com este material?' },
+        { speaker: 'B', ja: 'キャビネットに{戻|もど}しといて。', pt: 'Devolve para o armário.' },
+        { speaker: 'A', ja: 'ええと、キャビネットのどこですか？', pt: 'Hum, em que parte do armário?' },
+        { speaker: 'B', ja: '{上|うえ}の{右|みぎ}の{扉|とびら}を{開|あ}けて、{棚|たな}のいちばん{下|した}。', pt: 'Abre a porta de cima à direita, na prateleira mais de baixo.' },
+        { speaker: 'A', ja: 'わかりました。{右|みぎ}のいちばん{下|した}ですね。', pt: 'Entendi. A de baixo, do lado direito, né.' },
+      ],
+    },
+  ],
+  '13-21': [
+    {
+      label: '会話2 (13-21) — テーブルの並べ方',
+      setupJa: 'パーティー{会場|かいじょう}のセッティングをします。',
+      setupPt: 'Vai montar o salão de uma festa.',
+      lines: [
+        { speaker: 'A', ja: 'テーブルは、どうやって{並|なら}べますか？', pt: 'Como arrumo as mesas?' },
+        { speaker: 'B', ja: '{丸|まる}いテーブルを9{個|こ}{出|だ}して、3つずつ3{列|れつ}に{並|なら}べてください。', pt: 'Tira 9 mesas redondas e arruma em 3 fileiras de 3.' },
+        { speaker: 'A', ja: '{横|よこ}に3つ{並|なら}べて3{列|れつ}ですね。', pt: 'Três lado a lado, em 3 fileiras, né.' },
+        { speaker: 'B', ja: 'そうです。で、{後|うし}ろにスペースをあけてください。あと、{入口|いりぐち}の{横|よこ}、{入|はい}って{左|ひだり}に、{四角|しかく}い{長|なが}いテーブルを1つ{置|お}いてください。', pt: 'Isso. E deixe um espaço atrás. Além disso, ao lado da entrada, à esquerda de quem entra, coloque uma mesa retangular comprida.' },
+        { speaker: 'A', ja: 'はい。', pt: 'Certo.' },
+      ],
+    },
+  ],
+  '13-22': [
+    {
+      label: '会話3 (13-22) — 会議の準備',
+      setupJa: '{会議|かいぎ}の{準備|じゅんび}をします。',
+      setupPt: 'Vão preparar a reunião.',
+      lines: [
+        { speaker: 'アリ', ja: '{会議|かいぎ}の{準備|じゅんび}は、どうしますか？', pt: 'Como fazemos a preparação da reunião?' },
+        { speaker: '上司', ja: 'アリさんは、{部屋|へや}のセッティング、{西村|にしむら}さんは、{資料|しりょう}の{準備|じゅんび}をお{願|ねが}いします。アリさんは、{部屋|へや}の{机|つくえ}をコの{字|じ}に{並|なら}べて、それからパソコンとプロジェクタを{準備|じゅんび}してください。{西村|にしむら}さんは、{資料|しりょう}を{人数分|にんずうぶん}コピーして、{机|つくえ}の{上|うえ}に1{部|ぶ}ずつ{並|なら}べてください。', pt: 'Ali, cuida da arrumação da sala; Nishimura, do preparo do material, por favor. Ali, arruma as mesas da sala em forma de U e depois prepara o computador e o projetor. Nishimura, copia o material para o número de pessoas e põe 1 cópia em cada mesa.' },
+        { speaker: '西村', ja: '{飲|の}み{物|もの}は{用意|ようい}しますか？', pt: 'Preparo as bebidas?' },
+        { speaker: '上司', ja: 'それは、{外|そと}のお{店|みせ}に{頼|たの}んだから、いいです。', pt: 'Isso já encomendei numa loja de fora, então não precisa.' },
+      ],
+    },
+  ],
+}
+
+const lesson13: Section = {
+  id: 'lesson-13',
+  level: 'elementary1',
+  titleJa: '第13課 あと10分ぐらいで終わりそうです',
+  titlePt: 'Lição 13 — Parece que termino em uns 10 minutos',
+  summaryPt: 'Comunicação no trabalho · relatar um problema ao superior ({電気|でんき}がつかないんですが…), prever o andamento do trabalho ({終|お}わりそうです／どのぐらいかかりそうですか), perguntar como usar uma máquina ({使|つか}い{方|かた}を{教|おし}えてもらえませんか／したいときは、どうすればいいですか / {押|お}すと、〜) e ler um e-mail de aviso.',
+  studyNotes: [
+    {
+      title: 'Tópico: Comunicação no trabalho (仕事の連絡)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Transmitir ao superior a situação quando há um problema no trabalho.\n' +
+        '- Responder de forma simples quando perguntam o andamento do trabalho.\n' +
+        '- Perguntar como usar uma máquina no trabalho e entender a resposta.\n' +
+        '- Ouvir e entender explicações e instruções sobre como fazer o trabalho.\n' +
+        '- Ler um e-mail simples de aviso no trabalho e entender o conteúdo.\n\n' +
+        '💡 Pergunta de abertura: どんな{仕事|しごと}が{得意|とくい}ですか？どんな{仕事|しごと}が{苦手|にがて}ですか？',
+    },
+    {
+      title: 'Relatar um problema: 〜んですが… (➊)',
+      bodyPt:
+        '**[forma simples]+んですが…** = explicar a própria situação (um problema) para que o outro tome providência:\n\n' +
+        '- forma de dicionário: `{変|へん}な{音|おと}がするんですが…`; forma タ: `トイレットペーパーがなくなったんですが…`; forma ナイ: `{電気|でんき}がつかないんですが…`.\n' +
+        '- Nas Lições 8/10 só vimos V-たいんですが…／V-てみたいんですが…; aqui amplia-se para dicionário, タ e ナイ.\n\n' +
+        '**ナイ形:** G1 -u→-anai ({買|か}う→{買|か}わない, {動|うご}く→{動|うご}かない); G2 tira る ({見|み}る→{見|み}ない); G3 する→しない, {来|く}る→{来|こ}ない.',
+    },
+    {
+      title: 'Prever o andamento: V-そうです (➋)',
+      bodyPt:
+        '**V(マス sem ます)+そうです** = previsão/expectativa (≠ Lição 12, onde そう vinha de adjetivo p/ aparência):\n\n' +
+        '- `{終|お}わりそうです` (parece que vai terminar), `できそうですか？` (acha que consegue?).\n' +
+        '- Para o prazo, usa-se **【tempo】+で**, marcando o intervalo: `あと10{分|ぷん}ぐらいで{終|お}わりそうです`.\n\n' +
+        'Pergunta típica do andamento: `どのぐらいかかりそうですか？`.',
+    },
+    {
+      title: 'Pedir e explicar como usar: V-たいとき、どうすればいいですか？ (➌) ／ V-ると、〜 (➍)',
+      bodyPt:
+        '**V-たいとき、どうすればいいですか？** = dizer o que se quer fazer e pedir conselho: `{両面|りょうめん}コピーしたいときは、どうすればいいですか？`. どうすれば é tratado como frase fixa (retomado no 初級2). Pedido geral: `{使|つか}い{方|かた}を{教|おし}えてもらえませんか？`.\n\n' +
+        '**V-ると、〜** = o resultado de uma ação (explicar uso de máquina/objeto); 〜と liga-se à forma de dicionário: `このボタンを{押|お}すと、コピーが{始|はじ}まります`／`{手|て}をかざすと、{水|みず}が{流|なが}れます`.',
+    },
+    {
+      title: 'Responder a pergunta negativa: はい＋否定文 ／ いいえ＋肯定文 (➎)',
+      bodyPt:
+        'Diferente do português, a resposta segue o **conteúdo** da pergunta, não o sim/não:\n\n' +
+        '- Pergunta negativa correta (concordo): **はい** + frase negativa → `{使|つか}ったことないですか？` → `はい、ないです`.\n' +
+        '- Pergunta negativa errada (discordo): **いいえ** + frase afirmativa → `いいえ。{前|まえ}に{一度|いちど}{使|つか}ったことがあります`.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Problemas/instruções (Ativ. 1):** {電気|でんき}がつかない, {変|へん}な{音|おと}がする, {動|うご}かない, トイレットペーパーがなくなる; {業者|ぎょうしゃ}に{電話|でんわ}する, {再起動|さいきどう}する, {管理室|かんりしつ}に{連絡|れんらく}する, {倉庫|そうこ}から{取|と}って{来|く}る; コーヒーマシーン, パソコン, とりあえず. **Andamento (Ativ. 2):** やり{方|かた}がわかりません, だいじょうぶです, もう{終|お}わりました, もうすぐ{終|お}わります, できる. **Copiadora (Ativ. 3):** {原稿|げんこう}, セットする, {枚数|まいすう}, {数字|すうじ}, {入|い}れる, {両面|りょうめん}, {片面|かためん}, カラー, {白黒|しろくろ}, できるだけ; {拡大|かくだい}, {縮小|しゅくしょう}, ソート, ホチキス{止|ど}め. **Preparar a sala (Ativ. 4):** {資料|しりょう}, {戻|もど}す, {扉|とびら}, {開|あ}ける, {棚|たな}, {丸|まる}い, {四角|しかく}い, {列|れつ}, スペース, あける, {入口|いりぐち}, {会議|かいぎ}, コの{字|じ}, {人数分|にんずうぶん}, 〜{部|ぶ}, {頼|たの}む. **E-mail (Ativ. 5):** {件名|けんめい}, {変更|へんこう}, お{知|し}らせ, {都合|つごう}が{悪|わる}い, {注意|ちゅうい}（する）.\n\n' +
+        '**Kanji da lição:** コピー{機|き}, {数字|すうじ}, {電気|でんき}, {音|おと}, {机|つくえ}, {都合|つごう}, {悪|わる}い, {動|うご}く, {使|つか}う, {終|お}わる, お{願|ねが}いします.\n\n' +
+        '📌 **TIPS — {日本|にほん}のトイレ:** **{和式|わしき}トイレ** (vaso japonês, no chão; raro hoje, ainda visto em prédios antigos/locais públicos); **{温水洗浄|おんすいせんじょう}{便座|べんざ}** (bidê de água morna — botões só em japonês: 「おしり」 lava, 「{止|と}」 para, 「{弱|じゃく}〜{強|きょう}」 força, 「{前|まえ}〜{後|うし}ろ」 posição, 「ビデ」 feminino); **{水|みず}を{流|なが}す** (dar descarga de vários jeitos — botão no painel 大/小, botão na parede 「{洗浄|せんじょう}」「{流|なが}す」, sensor de mão, alavanca de girar/empurrar 大↔小); ⚠ 「{呼出|よびだし}」 é botão de EMERGÊNCIA — não confundir com a descarga.',
+    },
+  ],
+  groups: [lesson13Group],
+  audios: attachScripts(13, L13_SCRIPTS),
+}
+
+// ---- Lições 14-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(13, 'Comunicação no trabalho', 'あと10分ぐらいで終わりそうです', 'Parece que termino em uns 10 minutos', [
-    'Transmitir ao superior a situação quando há um problema no trabalho.',
-    'Responder de forma simples quando perguntam o andamento do trabalho.',
-    'Perguntar como usar uma máquina no trabalho e entender a resposta.',
-    'Ouvir e entender explicações e instruções sobre como fazer o trabalho.',
-    'Ler um e-mail simples de aviso no trabalho e entender o conteúdo.',
-  ]),
   scaffold(14, 'Comunicação no trabalho', '休みを取ってもいいでしょうか？', 'Posso tirar uma folga?', [
     'Avisar por telefone o trabalho sobre folga ou atraso.',
     'Pedir permissão a quem está por perto ao deixar o posto de trabalho.',
@@ -2635,5 +2881,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, ...others],
 }
