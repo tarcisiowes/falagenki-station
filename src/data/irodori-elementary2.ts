@@ -920,20 +920,326 @@ const lesson3: Section = {
   audios: attachScripts(3, L3_SCRIPTS),
 }
 
-// ---- Lições 4-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 4: しょうゆをつけないで食べてください (tópico レストランで) -----------
+const lesson4Group: ExerciseGroup = {
+  id: 'iro-e2-l4',
+  title: 'しょうゆをつけないで食べてください',
+  subtitlePt: 'Recomendar um restaurante · entender e explicar como se come um prato · apresentar um prato do seu país · ler avaliações',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l4-1', number: 1, prompt: '「ラーメンなら、あそこがいちばんおいしいよ」 — 「〜なら」 serve para:', choices: [{ n: 1, text: 'retomar um tema e dar uma sugestão sobre ele (se é (sobre) ramen, então…)' }, { n: 2, text: 'marcar o passado' }, { n: 3, text: 'proibir algo' }, { n: 4, text: 'contar quantidade' }], answer: 1, explanationPt: '〜なら retoma o assunto trazido pelo outro e introduz a recomendação. Antes de なら vem o tema: ラーメンなら, それなら, この{近|ちか}くなら. (文法ノート ❶)' },
+    { id: 'iro-e2-l4-2', number: 2, prompt: 'Qual sequência usa 「なら」 corretamente (responder a um pedido de recomendação)?', context: 'A: この{辺|へん}で、どこかいい{店|みせ}、ありませんか？', choices: [{ n: 1, text: 'それなら、{最近|さいきん}できた「みさきカフェ」はどう？' }, { n: 2, text: 'それから、みさきカフェを{食|た}べた' }, { n: 3, text: 'それより、カフェじゃない' }, { n: 4, text: 'それでも、カフェます' }], answer: 1, explanationPt: 'それなら = se é assim / nesse caso (retoma o pedido e sugere). (文法ノート ❶ · 聴解 04-02)' },
+    { id: 'iro-e2-l4-3', number: 3, prompt: '「しょうゆをつけ**ないで**{食|た}べてください」 / 「つゆに**つけて**{食|た}べてください」 — 「V-て／V-ないで + {食|た}べる」 indica:', choices: [{ n: 1, text: 'o modo de comer — fazendo / sem fazer algo (coma com / sem molho)' }, { n: 2, text: 'o horário da refeição' }, { n: 3, text: 'o preço do prato' }, { n: 4, text: 'o lugar onde comer' }], answer: 1, translationPt: 'Coma sem passar shoyu. / Coma molhando no caldo.', explanationPt: 'V-て{食|た}べる = comer fazendo (つけて/混ぜて/かけて). V-ないで{食|た}べる = comer sem fazer (つけないで/むかないで). (文法ノート ❷)' },
+    { id: 'iro-e2-l4-4', number: 4, prompt: '「{一度|いちど}に、そんなにたくさんお{肉|にく}を{入|い}れないでくださいね」 — 「V-ないでください」 serve para:', choices: [{ n: 1, text: 'pedir para NÃO fazer algo (por favor, não coloque)' }, { n: 2, text: 'pedir para fazer algo' }, { n: 3, text: 'perguntar se pode fazer' }, { n: 4, text: 'contar uma ação passada' }], answer: 1, explanationPt: 'V-ないでください = pedido negativo educado (não faça ~). Casual: 〜ないで／〜ちゃだめ. (文法ノート ❸)' },
+    { id: 'iro-e2-l4-5', number: 5, prompt: '「うどんは、まだ{入|い}れちゃだめ」 — 「〜ちゃだめ」 significa:', choices: [{ n: 1, text: 'não pode fazer ~ ainda (forma casual de proibição)' }, { n: 2, text: 'pode fazer ~ à vontade' }, { n: 3, text: 'tem que fazer ~ agora' }, { n: 4, text: 'já fez ~' }], answer: 1, explanationPt: '〜ちゃだめ (= 〜てはだめ／〜てはいけない) = não pode/não deve. {入|い}れちゃだめ = não pode pôr (ainda). (文法ノート ❸)' },
+    { id: 'iro-e2-l4-6', number: 6, prompt: '「お{肉|にく}と{野菜|やさい}を{食|た}べてから、{入|い}れましょう」 — 「V-てから」 indica:', choices: [{ n: 1, text: 'a ordem das ações (depois de comer ~, então coloque)' }, { n: 2, text: 'a razão' }, { n: 3, text: 'a condição' }, { n: 4, text: 'a proibição' }], answer: 1, explanationPt: 'V-てから = depois de fazer ~ (sequência). {食|た}べてから{入|い}れる = colocar depois de comer. (文法ノート ❹)' },
+    { id: 'iro-e2-l4-7', number: 7, prompt: '「とてもおいしかったです**が**、{私|わたし}には{量|りょう}が{多|おお}かったです」 — o 「が」 aqui liga as frases com sentido de:', choices: [{ n: 1, text: 'mas / porém (contraste — versão mais formal de けど)' }, { n: 2, text: 'porque (motivo)' }, { n: 3, text: 'e então (sequência)' }, { n: 4, text: 'se (condição)' }], answer: 1, explanationPt: '〜が (no fim de frase) = mas/porém, ligando ideias contrastantes; mais formal que 〜けど. (文法ノート ❺)' },
+    { id: 'iro-e2-l4-8', number: 8, prompt: 'Que ação (modo de comer, 食べ方) esta ilustração mostra?', image: `${IMG}/Z_04_2_01_tsukeru.png`, imageAlt: 'hashi molhando um alimento num pratinho de molho', choices: [{ n: 1, text: 'つける — molhar / mergulhar (no molho)' }, { n: 2, text: '{混|ま}ぜる — misturar' }, { n: 3, text: 'むく — descascar' }, { n: 4, text: '{焼|や}く — grelhar' }], answer: 1, explanationPt: 'つける = molhar no molho (たれ／つゆにつける). Oposto na lição: つけないで{食|た}べる. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l4-9', number: 9, prompt: 'Que ação esta ilustração mostra?', image: `${IMG}/Z_04_2_02_mazeru1.png`, imageAlt: 'mãos misturando comida numa tigela com hashi', choices: [{ n: 1, text: '{混|ま}ぜる — misturar' }, { n: 2, text: 'つける — molhar' }, { n: 3, text: 'のせる — colocar por cima' }, { n: 4, text: '{巻|ま}く — enrolar' }], answer: 1, explanationPt: '{混|ま}ぜる = misturar. よく{混|ま}ぜて{食|た}べてください = misture bem e coma. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l4-10', number: 10, prompt: 'Que ação esta ilustração mostra?', image: `${IMG}/Z_04_2_03_kakeru.png`, imageAlt: 'derramar molho/tempero sobre o alimento', choices: [{ n: 1, text: 'かける — derramar / regar por cima' }, { n: 2, text: '{入|い}れる — pôr dentro' }, { n: 3, text: 'むく — descascar' }, { n: 4, text: '{煮|に}る — cozinhar (em caldo)' }], answer: 1, explanationPt: 'かける = jogar/regar por cima ({塩|しお}をかける, ソースをかける). (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l4-11', number: 11, prompt: 'Que ação esta ilustração mostra?', image: `${IMG}/Z_04_2_04_ireru.png`, imageAlt: 'colocar um ingrediente dentro de um recipiente', choices: [{ n: 1, text: '{入|い}れる — pôr dentro / adicionar' }, { n: 2, text: 'かける — regar por cima' }, { n: 3, text: 'のせる — colocar em cima' }, { n: 4, text: 'つける — molhar' }], answer: 1, explanationPt: '{入|い}れる = pôr dentro/adicionar (ミルクを{入|い}れる, お{肉|にく}を{入|い}れる). (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l4-12', number: 12, prompt: 'Que ação esta ilustração mostra (enrolar sushi na alga)?', image: `${IMG}/Z_04_2_05_maku.png`, imageAlt: 'enrolar temaki/sushi na folha de nori, em 3 passos', choices: [{ n: 1, text: '{巻|ま}く — enrolar' }, { n: 2, text: 'のせる — colocar em cima' }, { n: 3, text: 'むく — descascar' }, { n: 4, text: '{混|ま}ぜる — misturar' }], answer: 1, explanationPt: '{巻|ま}く = enrolar. のりで{巻|ま}いて{食|た}べる = enrolar na alga e comer. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l4-13', number: 13, prompt: 'Que ação esta ilustração mostra?', image: `${IMG}/Z_04_2_06_noseru.png`, imageAlt: 'colocar um ingrediente por cima de outro', choices: [{ n: 1, text: 'のせる — colocar/pôr por cima' }, { n: 2, text: '{入|い}れる — pôr dentro' }, { n: 3, text: 'つける — molhar' }, { n: 4, text: '{揚|あ}げる — fritar' }], answer: 1, explanationPt: 'のせる = colocar por cima. のりの{上|うえ}にご{飯|はん}と{刺身|さしみ}をのせる. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l4-14', number: 14, prompt: 'Que ação esta ilustração mostra (com a banana)?', image: `${IMG}/Z_04_2_07_muku.png`, imageAlt: 'descascar uma banana', choices: [{ n: 1, text: 'むく — descascar' }, { n: 2, text: '{切|き}る — cortar' }, { n: 3, text: '{巻|ま}く — enrolar' }, { n: 4, text: 'のせる — colocar em cima' }], answer: 1, explanationPt: 'むく = descascar ({皮|かわ}をむく). {焼|や}きいもは{皮|かわ}をむいて／むかないで{食|た}べる. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l4-15', number: 15, prompt: 'Temperos (調味料): 「{砂糖|さとう}／{塩|しお}／こしょう／スパイス／たれ/{油|あぶら}」 significam:', choices: [{ n: 1, text: 'açúcar / sal / pimenta(-do-reino) / especiaria / molho / óleo' }, { n: 2, text: 'arroz / peixe / ovo / leite / pão / água' }, { n: 3, text: 'doce / salgado / azedo / amargo / picante / suave' }, { n: 4, text: 'colher / faca / prato / copo / panela / fogão' }], answer: 1, explanationPt: '{砂糖|さとう} açúcar, {塩|しお} sal, こしょう pimenta, スパイス especiaria, たれ molho, ソース sauce, {油|あぶら} óleo. (Atividade 4 · 調味料)' },
+    { id: 'iro-e2-l4-16', number: 16, prompt: 'Modos de preparo (調理方法): 「{焼|や}く／{煮|に}る／ゆでる／{蒸|む}す／{揚|あ}げる／{炒|いた}める」 significam:', choices: [{ n: 1, text: 'grelhar/assar / cozinhar em caldo / ferver / cozinhar no vapor / fritar (imerso) / refogar' }, { n: 2, text: 'cortar / lavar / servir / guardar / esquentar / esfriar' }, { n: 3, text: 'misturar / molhar / enrolar / descascar / temperar / provar' }, { n: 4, text: 'comprar / pedir / pagar / reservar / entregar / embrulhar' }], answer: 1, explanationPt: '{焼|や}く (grelhar/assar), {煮|に}る (cozinhar em caldo), ゆでる (ferver em água), {蒸|む}す (vapor), {揚|あ}げる (fritar imerso), {炒|いた}める (refogar). (Atividade 4 · 調理方法)' },
+    { id: 'iro-e2-l4-17', number: 17, prompt: 'Ao pedir recomendação de restaurante, vocabulário útil: 「おすすめ／{看板|かんばん}／この{辺|へん}／{夫婦|ふうふ}／{本物|ほんもの}」 significam:', choices: [{ n: 1, text: 'recomendação / placa (do estabelecimento) / por aqui (esta região) / casal / autêntico (de verdade)' }, { n: 2, text: 'cardápio / garçom / longe / família / falso' }, { n: 3, text: 'reserva / conta / perto / amigo / barato' }, { n: 4, text: 'sobremesa / bebida / cozinha / cliente / caro' }], answer: 1, explanationPt: 'おすすめ (recomendação), {看板|かんばん} (placa), この{辺|へん}／このあたり (por aqui), {夫婦|ふうふ} (casal), {本物|ほんもの} (autêntico). (Atividade 1 · ことば)' },
+    { id: 'iro-e2-l4-18', number: 18, prompt: 'Em avaliações de restaurante (口コミ), os pontos 「{味|あじ}／{量|りょう}／{値段|ねだん}／サービス」 e 「{満足|まんぞく}／リーズナブル／ボリューム」 significam:', choices: [{ n: 1, text: 'sabor / quantidade / preço / serviço — e satisfeito / com preço razoável / volume (porção)' }, { n: 2, text: 'cor / cheiro / peso / cor — e triste / caro / pequeno' }, { n: 3, text: 'mesa / cadeira / luz / som — e rápido / lento / quente' }, { n: 4, text: 'entrada / prato / sobremesa / bebida — e doce / salgado / azedo' }], answer: 1, explanationPt: '{味|あじ} (sabor), {量|りょう} (quantidade), {値段|ねだん} (preço), サービス (serviço). {満足|まんぞく}（な） (satisfeito), リーズナブル（な） (razoável no preço), ボリューム (volume/porção). (Atividade 5 · 口コミ)' },
+    { id: 'iro-e2-l4-19', number: 19, prompt: '聴解 04-01 (recomendar): que loja é recomendada para ramen e por quê?', context: 'Ｂ：ラーメン、おれのおすすめは「{千歩|せんぽ}」かなあ。…ラーメンなら、あそこがいちばんおいしいよ。', choices: [{ n: 1, text: '«Senpo» — para ramen, é a mais gostosa (fica no esquina da galeria comercial).' }, { n: 2, text: '«Misaki Café» — famoso pelas sobremesas.' }, { n: 3, text: 'Um restaurante vietnamita.' }, { n: 4, text: '«Heibee» — comida da região.' }], answer: 1, explanationPt: 'ラーメンなら「{千歩|せんぽ}」がいちばんおいしい (なら, 文法 ❶). {商店街|しょうてんがい}の{角|かど}の{店|みせ}. (聴解 04-01)' },
+    { id: 'iro-e2-l4-20', number: 20, prompt: '聴解 04-02 (recomendar): por que «Misaki Café» é sugerido para ir com a namorada?', context: 'Ｂ：それなら、{最近|さいきん}、{新|あたら}しくできた「みさきカフェ」はどう？ {女性|じょせい}にすごく{人気|にんき}があるのよ。…きれいだし、デザートもすごくおいしいよ。', choices: [{ n: 1, text: 'É novo, faz muito sucesso com as mulheres, é bonito e tem sobremesas ótimas.' }, { n: 2, text: 'É barato e serve ramen.' }, { n: 3, text: 'É um izakaya tradicional.' }, { n: 4, text: 'Fica muito longe.' }], answer: 1, explanationPt: 'それなら…「みさきカフェ」 (なら). {新|あたら}しくできた, {女性|じょせい}に{人気|にんき}, きれいだし、デザートもおいしい (〜し). {地図|ちず}を{送|おく}る. (聴解 04-02)' },
+    { id: 'iro-e2-l4-21', number: 21, prompt: '聴解 04-03 (recomendar): o que se diz do restaurante vietnamita?', context: 'Ｂ：「{庵|あん}」っていう{店|みせ}で、ベトナム{人|じん}の{夫婦|ふうふ}がやっていて、{本物|ほんもの}のベトナム{料理|りょうり}が{食|た}べられるそうです。', choices: [{ n: 1, text: 'Chama-se «An», é tocado por um casal vietnamita e serve comida vietnamita autêntica.' }, { n: 2, text: 'É uma rede famosa de ramen.' }, { n: 3, text: 'Fica dentro da estação.' }, { n: 4, text: 'Só abre nos fins de semana.' }], answer: 1, explanationPt: '「{庵|あん}」, ベトナム{人|じん}の{夫婦|ふうふ}がやっている, {本物|ほんもの}のベトナム{料理|りょうり}. 〜そうです (ouvi dizer). (聴解 04-03)' },
+    { id: 'iro-e2-l4-22', number: 22, prompt: '聴解 04-08/04-09 (como comer): o que dizem do soba misturado e do shumai?', context: '①Ａ：{混|ま}ぜそば…よく{混|ま}ぜて{食|た}べてください。 ②Ａ：このシュウマイは{味|あじ}がついてますから、しょうゆをつけないで{食|た}べてください。', choices: [{ n: 1, text: 'Misture bem o soba; o shumai já é temperado, então coma sem shoyu.' }, { n: 2, text: 'Coma o soba sem mexer; ponha muito shoyu no shumai.' }, { n: 3, text: 'Frite os dois antes.' }, { n: 4, text: 'Descasque e enrole.' }], answer: 1, explanationPt: 'よく{混|ま}ぜて{食|た}べて (混ぜる). {味|あじ}がついてますから、しょうゆをつけないで{食|た}べて (〜ないで). (聴解 04-08/04-09)' },
+    { id: 'iro-e2-l4-23', number: 23, prompt: '聴解 04-10/04-11 (como comer): tempura de legumes e o tomate?', context: '③Ａ：{野菜|やさい}の{天|てん}ぷらは、つゆにつけて。エビはつゆにつけないで、{塩|しお}をかけて{食|た}べてください。 ④Ａ：このトマト、{何|なに}もかけないで、そのまま{食|た}べて。', choices: [{ n: 1, text: 'Legumes: molhe no caldo; camarão: sem caldo, com sal por cima. Tomate: sem nada, ao natural (そのまま).' }, { n: 2, text: 'Tudo com bastante shoyu.' }, { n: 3, text: 'Tudo frito de novo.' }, { n: 4, text: 'Tudo misturado.' }], answer: 1, explanationPt: 'つゆにつけて／つけないで, {塩|しお}をかけて, {何|なに}もかけないで、そのまま (como está). (聴解 04-10/04-11)' },
+    { id: 'iro-e2-l4-24', number: 24, prompt: '聴解 04-12/04-13/04-14: temaki, batata-doce assada e café?', context: '⑤のりの{上|うえ}にご{飯|はん}と{刺身|さしみ}をのせて、{巻|ま}いて{食|た}べます。 ⑥{焼|や}きいも：{私|わたし}は、むかないで{食|た}べます。 ⑦コーヒー：{砂糖|さとう}、お{願|ねが}いします。ミルクは{入|い}れないでください。', choices: [{ n: 1, text: 'Temaki: pôr arroz e sashimi na alga e enrolar. Batata: comer sem descascar. Café: com açúcar, sem leite.' }, { n: 2, text: 'Temaki frito; batata com casca tirada; café puro.' }, { n: 3, text: 'Tudo cru.' }, { n: 4, text: 'Tudo com molho.' }], answer: 1, explanationPt: 'のせて{巻|ま}いて (のせる/巻く), むかないで{食|た}べる (むく), ミルクは{入|い}れないでください. (聴解 04-12〜14)' },
+    { id: 'iro-e2-l4-25', number: 25, prompt: '会話 04-16 (しゃぶしゃぶ): o que Arai avisa sobre colocar a carne?', context: '新井：{一度|いちど}に、そんなにたくさんお{肉|にく}を{入|い}れないでくださいね。…お{肉|にく}を1{枚|まい}ずつ{取|と}って、お{湯|ゆ}の{中|なか}で…しゃぶしゃぶして{食|た}べるんです。', choices: [{ n: 1, text: 'Não colocar muita carne de uma vez; pegar 1 fatia por vez e balançar na água quente.' }, { n: 2, text: 'Colocar toda a carne junta e ferver bastante.' }, { n: 3, text: 'Comer a carne crua.' }, { n: 4, text: 'Fritar a carne primeiro.' }], answer: 1, explanationPt: 'たくさんお{肉|にく}を{入|い}れないでください (proibição, 文法 ❸); 1{枚|まい}ずつ {取|と}って、しゃぶしゃぶして{食|た}べる. (聴解 04-16)' },
+    { id: 'iro-e2-l4-26', number: 26, prompt: '会話 04-16 (しゃぶしゃぶ): quando se pode colocar o udon?', context: '新井：うどんは、まだ{入|い}れちゃだめ。お{肉|にく}と{野菜|やさい}を{食|た}べてから、{入|い}れましょう。', choices: [{ n: 1, text: 'Ainda não pode (入れちゃだめ); colocar depois de comer a carne e os legumes (食べてから).' }, { n: 2, text: 'Colocar o udon primeiro de tudo.' }, { n: 3, text: 'Não colocar udon nunca.' }, { n: 4, text: 'Colocar junto com a carne.' }], answer: 1, explanationPt: 'まだ{入|い}れちゃだめ (proibição casual, ❸); {食|た}べてから{入|い}れましょう (sequência, ❹). たれ: ポン{酢|ず}とごまだれ. (聴解 04-16)' },
+    { id: 'iro-e2-l4-27', number: 27, prompt: '聴解 04-26 (apresentar prato): o que é a フェイジョアーダ?', context: 'これはフェイジョアーダです。ブラジルの{家庭|かてい}{料理|りょうり}です。{豆|まめ}、{豚肉|ぶたにく}、{牛肉|ぎゅうにく}を{煮|に}て{作|つく}ります。ご{飯|はん}といっしょに{食|た}べてください。', choices: [{ n: 1, text: 'Comida caseira brasileira; feita cozinhando feijão, carne de porco e de vaca; come-se com arroz.' }, { n: 2, text: 'Uma sobremesa chinesa frita.' }, { n: 3, text: 'Uma salada indonésia.' }, { n: 4, text: 'Um prato nepalês cozido no vapor.' }], answer: 1, explanationPt: 'フェイジョアーダ = ブラジルの{家庭|かてい}{料理|りょうり}; {豆|まめ}・{豚肉|ぶたにく}・{牛肉|ぎゅうにく}を{煮|に}て{作|つく}る; ご{飯|はん}といっしょに. (聴解 04-26)' },
+    { id: 'iro-e2-l4-28', number: 28, prompt: '聴解 04-27/04-28 (apresentar prato): モモ (Nepal) e ガドガド (Indonésia)?', context: '②モモ：{皮|かわ}の{中|なか}に{野菜|やさい}と{肉|にく}を{入|い}れて、{蒸|む}します。{餃子|ぎょうざ}に{似|に}ています。たれをつけて{食|た}べる。 ③ガドガド：ゆでた{野菜|やさい}やゆで{卵|たまご}…ピーナッツのソースをかけて{食|た}べます。', choices: [{ n: 1, text: 'Momo: massa recheada com legumes e carne, cozida no vapor (parece guioza), com molho. Gado-gado: salada de legumes cozidos e ovo, com molho de amendoim.' }, { n: 2, text: 'Ambos são doces fritos.' }, { n: 3, text: 'Ambos são sopas.' }, { n: 4, text: 'Ambos se comem crus.' }], answer: 1, explanationPt: 'モモ: {皮|かわ}の{中|なか}に{野菜|やさい}と{肉|にく}→{蒸|む}す, {餃子|ぎょうざ}に{似|に}ている, たれをつけて. ガドガド: ゆでた{野菜|やさい}・ゆで{卵|たまご}, ピーナッツソースをかけて. (聴解 04-27/04-28)' },
+    { id: 'iro-e2-l4-29', number: 29, prompt: '聴解 04-29 (apresentar prato): o que é 麻花 (China)?', context: 'これは{中国|ちゅうごく}のお{菓子|かし}で、{麻花|マーホア}といいます。{小麦粉|こむぎこ}に{水|みず}、{砂糖|さとう}などを{入|い}れて、{油|あぶら}で{揚|あ}げます。ちょっと{固|かた}いです。', choices: [{ n: 1, text: 'Um doce chinês feito de farinha de trigo com água e açúcar, frito no óleo; é meio durinho.' }, { n: 2, text: 'Um prato de carne cozida.' }, { n: 3, text: 'Uma salada fresca.' }, { n: 4, text: 'Uma sopa de legumes.' }], answer: 1, explanationPt: '{麻花|マーホア} = お{菓子|かし} chinês; {小麦粉|こむぎこ}＋{水|みず}・{砂糖|さとう}→{油|あぶら}で{揚|あ}げる; {固|かた}い. (聴解 04-29)' },
+    { id: 'iro-e2-l4-30', number: 30, prompt: '会話 04-30 (modelo «apresentar prato do seu país»): que estrutura aparece?', context: 'これは（ネパールの）モモという{料理|りょうり}です。…{餃子|ぎょうざ}に{似|に}ています。{家庭|かてい}{料理|りょうり}です。{皮|かわ}の{中|なか}に{野菜|やさい}と{肉|にく}を{入|い}れて、{蒸|む}します。たれをつけて、{食|た}べます。', choices: [{ n: 1, text: '«これは〜という料理です» + «〜に似ています» + materiais/preparo (〜を入れて、蒸します) + modo de comer (〜をつけて食べます).' }, { n: 2, text: 'só dizer o preço do prato.' }, { n: 3, text: 'pedir a conta.' }, { n: 4, text: 'fazer uma reserva.' }], answer: 1, explanationPt: 'Modelo de apresentação: nome (〜という{料理|りょうり}), semelhança (〜に{似|に}ている), material/preparo, 食べ方. (会話 04-30)' },
+    { id: 'iro-e2-l4-31', number: 31, prompt: '「{餃子|ぎょうざ}に{似|に}ています」 significa:', choices: [{ n: 1, text: 'é/parece (parecido) com guioza' }, { n: 2, text: 'é diferente de guioza' }, { n: 3, text: 'é melhor que guioza' }, { n: 4, text: 'não tem guioza' }], answer: 1, explanationPt: 'N に{似|に}ています = parece-se com N / é semelhante a N. (Atividade 4)' },
+    { id: 'iro-e2-l4-32', number: 32, prompt: '読む (口コミ): qual ponto cada avaliação comenta — as categorias são:', choices: [{ n: 1, text: '{味|あじ} (sabor), {量|りょう} (quantidade), {値段|ねだん} (preço), サービス・その{他|た} (serviço e outros)' }, { n: 2, text: 'cor, cheiro, peso e tamanho' }, { n: 3, text: 'mesa, cadeira, música e luz' }, { n: 4, text: 'entrada, prato principal, sobremesa e bebida' }], answer: 1, explanationPt: 'As avaliações (口コミ) costumam comentar {味|あじ}／{量|りょう}／{値段|ねだん}／サービス. Ex.: ボリューム満点 (porção farta), リーズナブル (preço justo). (Atividade 5 · 読む)' },
+    { id: 'iro-e2-l4-33', number: 33, prompt: 'Os kanji 「{塩|しお}／{油|あぶら}／{量|りょう}／{焼|や}く／{切|き}る／{入|い}れる」 lêem-se:', choices: [{ n: 1, text: 'しお (sal) / あぶら (óleo) / りょう (quantidade) / やく (grelhar) / きる (cortar) / いれる (pôr)' }, { n: 2, text: 'しお / ゆ / りょう / しょう / せつ / にゅう' }, { n: 3, text: 'えん / あぶら / りょう / やく / きる / いれる' }, { n: 4, text: 'しお / あぶら / かず / やく / きる / はいる' }], answer: 1, explanationPt: '{塩|しお}, {油|あぶら}, {量|りょう}, {焼|や}く, {切|き}る, {入|い}れる. Também: 〜{方|かた} (modo de), 〜{屋|や} (loja), {満足|まんぞく}. (漢字のことば)' },
+    { id: 'iro-e2-l4-34', number: 34, prompt: '「{定食屋|ていしょくや}／ラーメン{屋|や}」 — o sufixo 「〜{屋|や}」 significa:', choices: [{ n: 1, text: 'loja / estabelecimento (que vende ou serve aquilo)' }, { n: 2, text: 'pessoa / cliente' }, { n: 3, text: 'preço / conta' }, { n: 4, text: 'cidade / bairro' }], answer: 1, explanationPt: '〜{屋|や} = loja/casa especializada. {定食屋|ていしょくや} (casa de teishoku), ラーメン{屋|や} (casa de ramen), パン{屋|や} (padaria). (漢字 · 大切なことば)' },
+    { id: 'iro-e2-l4-35', number: 35, prompt: '「この{料理|りょうり}の{食|た}べ{方|かた}を{教|おし}えてください」 — 「V-{方|かた}」 (ます-stem + 方) significa:', choices: [{ n: 1, text: 'o modo/jeito de fazer ~ (como comer / como fazer)' }, { n: 2, text: 'a pessoa que faz ~' }, { n: 3, text: 'o lugar de ~' }, { n: 4, text: 'a hora de ~' }], answer: 1, explanationPt: 'V(ますstem)+{方|かた} = modo de fazer: {食|た}べ{方|かた} (modo de comer), {作|つく}り{方|かた} (modo de fazer), {飲|の}み{方|かた}. (漢字 · Atividade 2)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 4 (聴解スクリプト)
+const L4_SCRIPTS: Record<string, ScriptItem[]> = {
+  '04-01': [
+    {
+      label: '① どこかいい店？ — ラーメン (04-01)',
+      setupJa: 'おすすめの{店|みせ}について、{人|ひと}が{質問|しつもん}しています。',
+      setupPt: 'Pedindo recomendação de restaurante. ① ramen.',
+      lines: [
+        { speaker: 'A', ja: 'おいしいラーメンが{食|た}べたいんですけど、どこがいいですか？', pt: 'Quero comer um ramen gostoso. Qual é bom?' },
+        { speaker: 'B', ja: 'ラーメン、おれのおすすめは「{千歩|せんぽ}」かなあ。', pt: 'Ramen… minha recomendação é o «Senpo».' },
+        { speaker: 'A', ja: 'あ、あの{商店街|しょうてんがい}にある{最初|さいしょ}の{角|かど}の{店|みせ}ですか？', pt: 'Ah, aquele da primeira esquina, na galeria comercial?' },
+        { speaker: 'B', ja: 'そうそう。ラーメンなら、あそこがいちばんおいしいよ。', pt: 'Isso. Para ramen, aquele é o mais gostoso.' },
+        { speaker: 'A', ja: 'じゃあ、{今度|こんど}{行|い}ってみます。', pt: 'Então vou lá qualquer dia.' },
+      ],
+    },
+  ],
+  '04-02': [
+    {
+      label: '② 彼女と食事に行く店 — みさきカフェ (04-02)',
+      setupPt: '② lugar para ir comer com a namorada.',
+      lines: [
+        { speaker: 'A', ja: '{今度|こんど}、{彼女|かのじょ}と{食事|しょくじ}に{行|い}きたいんですけど、この{辺|へん}で、どこかいい{店|みせ}、ありませんか？', pt: 'Quero ir comer com minha namorada; tem algum lugar bom por aqui?' },
+        { speaker: 'B', ja: 'そうねえ――。それなら、{最近|さいきん}、{新|あたら}しくできた「みさきカフェ」はどう？ {女性|じょせい}にすごく{人気|にんき}があるのよ。', pt: 'Deixa ver… Nesse caso, que tal o «Misaki Café», que abriu recentemente? Faz muito sucesso com as mulheres.' },
+        { speaker: 'A', ja: 'どんな{店|みせ}ですか？', pt: 'Como é o lugar?' },
+        { speaker: 'B', ja: 'きれいだし、デザートもすごくおいしいよ。', pt: 'É bonito, e as sobremesas são ótimas.' },
+        { speaker: 'A', ja: 'へー、どこにありますか？', pt: 'Nossa, onde fica?' },
+        { speaker: 'B', ja: '{待|ま}って、じゃあ、{今|いま}、{地図|ちず}{送|おく}るね。', pt: 'Espera, vou te mandar o mapa agora.' },
+      ],
+    },
+  ],
+  '04-03': [
+    {
+      label: '③ ベトナム料理 — 庵 (04-03)',
+      setupPt: '③ restaurante vietnamita.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、この{近|ちか}くにベトナム{料理|りょうり}の{店|みせ}、ないですか？', pt: 'Hum, não tem um restaurante vietnamita perto daqui?' },
+        { speaker: 'B', ja: 'うーん、この{近|ちか}くにはないですけど、「{庵|あん}」っていう{店|みせ}で、ベトナム{人|じん}の{夫婦|ふうふ}がやっていて、{本物|ほんもの}のベトナム{料理|りょうり}が{食|た}べられるそうです。', pt: 'Hmm, bem perto não tem, mas tem um chamado «An», tocado por um casal vietnamita; dizem que serve comida vietnamita de verdade.' },
+        { speaker: 'A', ja: 'へー、そうなんですか。{知|し}りませんでした。じゃあ、{今度|こんど}{行|い}ってみます。', pt: 'Nossa, é mesmo? Não sabia. Então vou lá um dia.' },
+      ],
+    },
+  ],
+  '04-04': [
+    {
+      label: '④ 土地の料理 — 平兵衛 (04-04)',
+      setupPt: '④ comida típica da região.',
+      lines: [
+        { speaker: 'A', ja: 'すみません、この{土地|とち}の{料理|りょうり}が{食|た}べたいんですが、この{近|ちか}くに、おすすめの{店|みせ}がありますか？', pt: 'Com licença, quero comer a comida típica daqui; tem algum lugar recomendado por perto?' },
+        { speaker: 'B', ja: 'そうですね、この{近|ちか}くなら、「{平兵衛|へいべえ}」がおすすめです。とり{天|てん}がおいしいし、ほかにもいろいろなメニューがありますよ。', pt: 'Bem, por aqui eu recomendo o «Heibee». O tempura de frango é gostoso, e tem vários outros pratos.' },
+        { speaker: 'A', ja: 'それ、どこですか？', pt: 'Onde fica?' },
+        { speaker: 'B', ja: 'ここから{歩|ある}いて10{分|ぷん}ぐらいの{所|ところ}にあります。', pt: 'Fica a uns 10 minutos a pé daqui.' },
+        { speaker: 'A', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '04-08': [
+    {
+      label: '① 混ぜそば (04-08)',
+      setupJa: '{食|た}べ{方|かた}・{飲|の}み{方|かた}について、{説明|せつめい}を{聞|き}いています。',
+      setupPt: 'Ouvindo explicações de como comer/beber. ① soba misturado.',
+      lines: [
+        { speaker: 'A', ja: '{混|ま}ぜそば、お{待|ま}たせしました！ よく{混|ま}ぜて{食|た}べてください。', pt: 'O soba misturado, desculpe a espera! Misture bem e coma.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Tá.' },
+      ],
+    },
+  ],
+  '04-09': [
+    {
+      label: '② シュウマイ (04-09)',
+      setupPt: '② shumai (já temperado).',
+      lines: [
+        { speaker: 'A', ja: 'このシュウマイは{味|あじ}がついてますから、しょうゆをつけないで{食|た}べてください。', pt: 'Este shumai já vem temperado, então coma sem passar shoyu.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '04-10': [
+    {
+      label: '③ 天ぷら (04-10)',
+      setupPt: '③ tempura (caldo / sal).',
+      lines: [
+        { speaker: 'A', ja: 'こちらの{野菜|やさい}の{天|てん}ぷらは、つゆにつけて{食|た}べてください。エビはつゆにつけないで、{塩|しお}をかけて{食|た}べてください。', pt: 'Este tempura de legumes, coma molhando no caldo. O camarão, coma sem o caldo, com sal por cima.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Tá.' },
+      ],
+    },
+  ],
+  '04-11': [
+    {
+      label: '④ トマト (04-11)',
+      setupPt: '④ tomate (ao natural).',
+      lines: [
+        { speaker: 'A', ja: 'このトマト、{何|なに}もかけないで、そのまま{食|た}べて。', pt: 'Este tomate, coma assim mesmo, sem pôr nada.' },
+        { speaker: 'B', ja: 'はい――。あ、{甘|あま}くておいしい。', pt: 'Tá… Ah, é doce e gostoso.' },
+      ],
+    },
+  ],
+  '04-12': [
+    {
+      label: '⑤ 手巻きずし (04-12)',
+      setupPt: '⑤ temaki-zushi.',
+      lines: [
+        { speaker: 'A', ja: '{手巻|てま}きずしは、のりの{上|うえ}にご{飯|はん}と{刺身|さしみ}をのせて、{巻|ま}いて{食|た}べます。', pt: 'O temaki: coloque arroz e sashimi sobre a alga, enrole e coma.' },
+        { speaker: 'B', ja: 'こうですか。', pt: 'Assim?' },
+      ],
+    },
+  ],
+  '04-13': [
+    {
+      label: '⑥ 焼きいも (04-13)',
+      setupPt: '⑥ batata-doce assada.',
+      lines: [
+        { speaker: 'A', ja: '{焼|や}きいもは、{皮|かわ}をむいて{食|た}べますか？', pt: 'A batata-doce assada, você descasca para comer?' },
+        { speaker: 'B', ja: '{私|わたし}は、むかないで{食|た}べます。', pt: 'Eu como sem descascar.' },
+        { speaker: 'A', ja: 'へー、そうですか。', pt: 'Ah, é?' },
+      ],
+    },
+  ],
+  '04-14': [
+    {
+      label: '⑦ コーヒー (04-14)',
+      setupPt: '⑦ café.',
+      lines: [
+        { speaker: 'A', ja: 'コーヒーに{砂糖|さとう}とミルク、{入|い}れますか？', pt: 'Você põe açúcar e leite no café?' },
+        { speaker: 'B', ja: '{砂糖|さとう}、お{願|ねが}いします。ミルクは{入|い}れないでください。', pt: 'Açúcar, por favor. Leite, não coloque.' },
+      ],
+    },
+  ],
+  '04-16': [
+    {
+      label: '会話 — しゃぶしゃぶの食べ方 (04-16)',
+      setupJa: '{新井|あらい}さんが、はじめてしゃぶしゃぶを{食|た}べるフンさん・ドックさんに、{食|た}べ{方|かた}を{説明|せつめい}しています。',
+      setupPt: 'Arai explica a Fun e Dok, que vão comer shabu-shabu pela primeira vez, como se come.',
+      lines: [
+        { speaker: 'ドック', ja: 'お{肉|にく}、もう{入|い}れてもいいですか？', pt: 'Já posso colocar a carne?' },
+        { speaker: '新井', ja: 'どうぞ。あ！ {一度|いちど}に、そんなにたくさんお{肉|にく}を{入|い}れないでくださいね。', pt: 'Pode. Ah! Não coloque tanta carne de uma vez.' },
+        { speaker: '新井', ja: 'しゃぶしゃぶは、お{肉|にく}を1{枚|まい}ずつ{取|と}って、お{湯|ゆ}の{中|なか}で、こうやって2、3{回|かい}しゃぶしゃぶして{食|た}べるんです。', pt: 'No shabu-shabu, pega-se 1 fatia de carne por vez e, na água quente, balança assim 2, 3 vezes antes de comer.' },
+        { speaker: 'ドック', ja: 'へー、こうですか？', pt: 'Nossa, assim?' },
+        { speaker: '新井', ja: 'そうそう。あ、スープには{塩|しお}が{入|はい}ってますから、たれをつけて{食|た}べてください。', pt: 'Isso. Ah, o caldo já tem sal, então coma passando no molho (tare).' },
+        { speaker: 'フン', ja: 'これは、どれがいいですか？', pt: 'E destes, qual é melhor?' },
+        { speaker: '新井', ja: 'ポン{酢|ず}とごまだれがあります。{私|わたし}はポン{酢|ず}が{好|す}きですけど、{両方|りょうほう}{試|ため}してみてください。', pt: 'Tem ponzu e molho de gergelim. Eu gosto do ponzu, mas experimente os dois.' },
+        { speaker: 'フン', ja: 'うどんを{入|い}れてもいいですか？', pt: 'Posso colocar o udon?' },
+        { speaker: '新井', ja: 'うどんは、まだ{入|い}れちゃだめ。お{肉|にく}と{野菜|やさい}を{食|た}べてから、{入|い}れましょう。', pt: 'O udon, ainda não pode. Vamos colocar depois de comer a carne e os legumes.' },
+        { speaker: 'フン', ja: 'そうなんですか。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '04-26': [
+    {
+      label: '① フェイジョアーダ（ブラジル）(04-26)',
+      setupJa: '{国際|こくさい}{交流|こうりゅう}パーティーで、{自分|じぶん}の{国|くに}の{料理|りょうり}を{紹介|しょうかい}しています。',
+      setupPt: 'Numa festa de intercâmbio, cada um apresenta um prato do seu país. ① Brasil.',
+      lines: [
+        { speaker: 'Narração', ja: 'これはフェイジョアーダです。ブラジルの{家庭|かてい}{料理|りょうり}です。{豆|まめ}、{豚肉|ぶたにく}、{牛肉|ぎゅうにく}を{煮|に}て{作|つく}ります。ブラジル{人|じん}はよく{食|た}べます。ご{飯|はん}といっしょに{食|た}べてください。', pt: 'Esta é a feijoada. É um prato caseiro brasileiro. Faz-se cozinhando feijão, carne de porco e carne de vaca. Os brasileiros comem bastante. Coma junto com arroz.' },
+      ],
+    },
+  ],
+  '04-27': [
+    {
+      label: '② モモ（ネパール）(04-27)',
+      setupPt: '② Nepal.',
+      lines: [
+        { speaker: 'Narração', ja: 'これはモモです。ネパールの{料理|りょうり}です。{皮|かわ}の{中|なか}に、{野菜|やさい}と{肉|にく}を{入|い}れて、{蒸|む}します。{餃子|ぎょうざ}に{似|に}ています。たれをつけて{食|た}べると、おいしいですよ。', pt: 'Este é o momo. É um prato nepalês. Coloca-se legumes e carne dentro da massa e cozinha-se no vapor. Parece guioza. Fica gostoso comendo com molho.' },
+      ],
+    },
+  ],
+  '04-28': [
+    {
+      label: '③ ガドガド（インドネシア）(04-28)',
+      setupPt: '③ Indonésia.',
+      lines: [
+        { speaker: 'Narração', ja: 'これはインドネシアのガドガドというサラダです。ゆでた{野菜|やさい}やゆで{卵|たまご}などが{入|はい}っています。ピーナッツのソースをかけて{食|た}べます。このソースは{甘辛|あまから}いです。', pt: 'Esta é uma salada indonésia chamada gado-gado. Leva legumes cozidos, ovo cozido, etc. Come-se com molho de amendoim por cima. Esse molho é agridoce/apimentado.' },
+      ],
+    },
+  ],
+  '04-29': [
+    {
+      label: '④ 麻花（中国）(04-29)',
+      setupPt: '④ China.',
+      lines: [
+        { speaker: 'Narração', ja: 'これは{中国|ちゅうごく}のお{菓子|かし}で、{麻花|マーホア}といいます。{小麦粉|こむぎこ}に{水|みず}、{砂糖|さとう}などを{入|い}れて、{油|あぶら}で{揚|あ}げます。ちょっと{固|かた}いです。', pt: 'Este é um doce chinês chamado mahua. Mistura-se água e açúcar à farinha de trigo e frita-se no óleo. É um pouco durinho.' },
+      ],
+    },
+  ],
+  '04-30': [
+    {
+      label: '会話 — 自分の国の料理を紹介 (modelo) (04-30)',
+      setupPt: 'Modelo: apresentar um prato do seu país (nome → semelhança → material/preparo → modo de comer).',
+      lines: [
+        { speaker: '客', ja: 'これはネパールのモモという{料理|りょうり}です。{餃子|ぎょうざ}に{似|に}ています。{家庭|かてい}{料理|りょうり}です。', pt: 'Este é um prato nepalês chamado momo. Parece guioza. É comida caseira.' },
+        { speaker: '客', ja: '{皮|かわ}の{中|なか}に、{野菜|やさい}と{肉|にく}を{入|い}れて、{蒸|む}します。たれをつけて、{食|た}べます。', pt: 'Coloca-se legumes e carne dentro da massa e cozinha-se no vapor. Come-se com molho.' },
+      ],
+    },
+  ],
+}
+
+const lesson4: Section = {
+  id: 'lesson-4',
+  level: 'elementary2',
+  titleJa: '第4課 しょうゆをつけないで食べてください',
+  titlePt: 'Lição 4 — Coma sem passar shoyu',
+  summaryPt:
+    'No restaurante · ouvir a indicação de um restaurante recomendado (ラーメンなら…がいちばんおいしい), entender e explicar como se come um prato (つけて／つけないで食べてください・よく混ぜて食べてください), apresentar um prato do seu país (餃子に似ています・皮の中に〜を入れて蒸します) e ler avaliações na internet (味／量／値段／サービス).',
+  studyNotes: [
+    {
+      title: 'Tópico: No restaurante (レストランで)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ouvir a indicação de um restaurante recomendado e entender suas características.\n' +
+        '- Ouvir e entender a explicação de como comer um prato.\n' +
+        '- Perguntar e responder sobre como se come um prato.\n' +
+        '- Apresentar de forma simples um prato do seu país (características, ingredientes, modo de comer).\n' +
+        '- Ler avaliações de restaurantes na internet e extrair informações como sabor e preço.\n\n' +
+        '💡 Pergunta de abertura: ほかの{国|くに}の{人|ひと}に{紹介|しょうかい}したい{料理|りょうり}がありますか？ (há um prato que você quer apresentar a estrangeiros?).',
+    },
+    {
+      title: '〜なら — retomar o tema e sugerir (➊)',
+      bodyPt:
+        '**〜なら** retoma o assunto que o outro trouxe e introduz uma **sugestão/opinião** sobre ele:\n\n' +
+        '- `ラーメンなら、あそこがいちばんおいしいよ` = (se é) ramen, aquele ali é o mais gostoso.\n' +
+        '- `それなら、「みさきカフェ」はどう？` = nesse caso, que tal o «Misaki Café»?\n' +
+        '- `この{近|ちか}くなら、「{平兵衛|へいべえ}」がおすすめです` = (se for) por aqui, recomendo o «Heibee».\n\n' +
+        '💡 Antes de なら vem o **tema** (substantivo ou frase). (文法ノート ❶)',
+    },
+    {
+      title: 'V-て / V-ないで + 食べる — modo de comer (➋)',
+      bodyPt:
+        'Para dizer **como** comer/beber algo:\n\n' +
+        '- **V-て{食|た}べる** (fazendo): `つゆにつけて{食|た}べる`, `よく{混|ま}ぜて{食|た}べる`, `{塩|しお}をかけて{食|た}べる`, `のせて{巻|ま}いて{食|た}べる`.\n' +
+        '- **V-ないで{食|た}べる** (sem fazer): `しょうゆをつけないで{食|た}べる`, `{皮|かわ}をむかないで{食|た}べる`, `{何|なに}もかけないで、そのまま{食|た}べる`.\n\n' +
+        '🍽️ Verbos de preparo na mesa: つける (molhar), {混|ま}ぜる (misturar), かける (regar), {入|い}れる (pôr), {巻|ま}く (enrolar), のせる (pôr em cima), むく (descascar). (文法ノート ❷)',
+    },
+    {
+      title: 'V-ないでください / 〜ちゃだめ — proibir (➌)',
+      bodyPt:
+        'Para pedir que **NÃO** se faça algo:\n\n' +
+        '- **V-ないでください** (educado): `たくさんお{肉|にく}を{入|い}れないでください` (não coloque muita carne).\n' +
+        '- **〜ちゃだめ** (casual, = 〜てはいけない): `うどんは、まだ{入|い}れちゃだめ` (o udon ainda não pode pôr).\n\n' +
+        '(文法ノート ❸)',
+    },
+    {
+      title: 'V-てから — ordem das ações (➍)',
+      bodyPt:
+        '**V-てから** = **depois de** fazer ~ (sequência de ações):\n\n' +
+        '- `お{肉|にく}と{野菜|やさい}を{食|た}べてから、{入|い}れましょう` = vamos colocar depois de comer a carne e os legumes.\n\n' +
+        '(文法ノート ❹)',
+    },
+    {
+      title: '〜が — contraste (➎)',
+      bodyPt:
+        '**〜が** (no fim de uma frase) liga duas ideias em **contraste** (mas/porém) — é mais **formal** que 〜けど:\n\n' +
+        '- `とてもおいしかったですが、{私|わたし}には{量|りょう}が{多|おお}かったです` = estava muito gostoso, mas para mim a porção foi grande.\n' +
+        '- `お{店|みせ}は{新|あたら}しくてきれいですが、お{昼|ひる}は{混|こ}んでいます` = a loja é nova e bonita, mas no almoço fica lotada.\n\n' +
+        '(文法ノート ❺)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Modo de comer (食べ方):** つける, {混|ま}ぜる, かける, {入|い}れる, {巻|ま}く, のせる, むく, そのまま (ao natural).\n\n' +
+        '**Temperos (調味料):** {砂糖|さとう}, {塩|しお}, こしょう, スパイス, ソース, たれ, {油|あぶら}. **Preparo (調理方法):** {焼|や}く (grelhar), {煮|に}る (cozinhar em caldo), ゆでる (ferver), {蒸|む}す (vapor), {揚|あ}げる (fritar), {炒|いた}める (refogar).\n\n' +
+        '**Recomendar/avaliar:** おすすめ, {看板|かんばん}, この{辺|へん}, {夫婦|ふうふ}, {本物|ほんもの}, 〜に{似|に}ている (parecer-se com), {味|あじ}／{量|りょう}／{値段|ねだん}／サービス, {満足|まんぞく}（な）, リーズナブル（な）, ボリューム.\n\n' +
+        '**Kanji da lição:** {塩|しお}, {油|あぶら}, {量|りょう}, 〜{方|かた} (modo de), 〜{屋|や} (loja), {満足|まんぞく}, {切|き}る, {焼|や}く, {入|い}れる.',
+    },
+  ],
+  groups: [lesson4Group],
+  audios: attachScripts(4, L4_SCRIPTS),
+}
+
+// ---- Lições 5-18 (estrutura por tópico; exercícios em construção) ------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
   lesson2,
   // Tópico 2 — No restaurante (レストランで)
   lesson3,
-  scaffold(4, 'No restaurante', 'しょうゆをつけないで食べてください', 'Coma sem passar shoyu', [
-    'Ouvir a indicação de um restaurante recomendado e entender suas características.',
-    'Ouvir e entender a explicação de como comer um prato.',
-    'Perguntar e responder sobre como se come um prato.',
-    'Apresentar de forma simples um prato do seu país — características, ingredientes, modo de comer.',
-    'Ler avaliações de restaurantes na internet e extrair informações como sabor e preço.',
-  ]),
+  lesson4,
   // Tópico 3 — Vamos viajar (旅行に行こう)
   scaffold(5, 'Vamos viajar', '早く予約したほうがいいですよ', 'É melhor reservar logo', [
     'Ouvir uma breve apresentação de pontos turísticos do Japão e entender como são e o que se pode fazer.',
