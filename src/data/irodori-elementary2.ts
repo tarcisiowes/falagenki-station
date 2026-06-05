@@ -1232,7 +1232,243 @@ const lesson4: Section = {
   audios: attachScripts(4, L4_SCRIPTS),
 }
 
-// ---- Lições 5-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 5: 早く予約したほうがいいですよ (tópico 旅行に行こう) -----------------
+const lesson5Group: ExerciseGroup = {
+  id: 'iro-e2-l5',
+  title: '早く予約したほうがいいですよ',
+  subtitlePt: 'Entender a apresentação de um destino turístico · planejar uma viagem com um amigo · pedir e dar conselhos de viagem',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l5-1', number: 1, prompt: '「{海|うみ}で{泳|およ}げます」「ボートに{乗|の}れます」「お{土産|みやげ}が{買|か}えます」 — essas formas (可能形/V-られる) expressam:', choices: [{ n: 1, text: 'o que é possível fazer ali (dá para nadar / pode andar de barco / pode comprar)' }, { n: 2, text: 'o que já foi feito' }, { n: 3, text: 'uma ordem' }, { n: 4, text: 'uma proibição' }], answer: 1, explanationPt: 'Forma potencial: {泳|およ}ぐ→{泳|およ}げる, {乗|の}る→{乗|の}れる, {買|か}う→{買|か}える, {見|み}る→{見|み}られる, {遊|あそ}ぶ→{遊|あそ}べる. (文法ノート ❶)' },
+    { id: 'iro-e2-l5-2', number: 2, prompt: 'Qual é a forma potencial correta de 「{見|み}る／{遊|あそ}ぶ／{行|い}く」?', choices: [{ n: 1, text: '{見|み}られる / {遊|あそ}べる / {行|い}ける' }, { n: 2, text: '{見|み}れる / {遊|あそ}ぶれる / {行|い}くる' }, { n: 3, text: '{見|み}させる / {遊|あそ}ばせる / {行|い}かせる' }, { n: 4, text: '{見|み}ない / {遊|あそ}ばない / {行|い}かない' }], answer: 1, explanationPt: 'II {見|み}る→{見|み}られる; I {遊|あそ}ぶ→{遊|あそ}べる, {行|い}く→{行|い}ける. Ex.: バスで{行|い}けます. (文法ノート ❶)' },
+    { id: 'iro-e2-l5-3', number: 3, prompt: '「{景色|けしき}がきれいなところ」「{遊|あそ}べるところ」 — usar 「ＡＤＪ/V + ところ／{名詞|めいし}」 serve para:', choices: [{ n: 1, text: 'descrever um lugar pela sua característica (um lugar de paisagem bonita / um lugar onde dá para brincar)' }, { n: 2, text: 'dizer a hora' }, { n: 3, text: 'pedir permissão' }, { n: 4, text: 'contar quantidade' }], answer: 1, explanationPt: 'Modificação de substantivo: {景色|けしき}がきれいな{所|ところ}, {遊|あそ}べる{所|ところ}, {自然|しぜん}が{豊|ゆた}かな{町|まち}. (文法ノート ❷)' },
+    { id: 'iro-e2-l5-4', number: 4, prompt: '「{湖|みずうみ}と{富士山|ふじさん}がいっしょに{見|み}られて、すごくきれいだ**そうです**よ」 — 「〜そうです」 (após forma comum) significa:', choices: [{ n: 1, text: 'dizem que ~ / ouvi que ~ (informação ouvida de outra pessoa — 伝聞)' }, { n: 2, text: 'parece que vai ~ (pela aparência)' }, { n: 3, text: 'quero ~' }, { n: 4, text: 'tenho que ~' }], answer: 1, explanationPt: '［forma comum］+ そうです = transmite o que se ouviu (hearsay): きれいだそうです (dizem que é bonito), {雨|あめ}が{降|ふ}るそうです. (文法ノート ❸)' },
+    { id: 'iro-e2-l5-5', number: 5, prompt: '「バスで{安|やす}くて{便利|べんり}だ**って**{先輩|せんぱい}が{言|い}ってました」「うどんがおいしい**って**{聞|き}きました」 — 「〜って」 é:', choices: [{ n: 1, text: 'forma casual de 〜と (citar / relatar o que se ouviu)' }, { n: 2, text: 'uma pergunta' }, { n: 3, text: 'uma negação' }, { n: 4, text: 'uma ordem' }], answer: 1, explanationPt: '〜って = 〜と (citação) na fala. 〜って{言|い}ってました / 〜って{聞|き}きました = (alguém) disse que / ouvi que. (文法ノート ❸)' },
+    { id: 'iro-e2-l5-6', number: 6, prompt: '「{何|なに}で{行|い}っ**たらいいですか**？」「どんなところに{泊|と}まっ**たらいいですか**？」 — 「V-たらいいですか」 serve para:', choices: [{ n: 1, text: 'pedir conselho/orientação (o que é melhor fazer? como devo fazer?)' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'recusar' }, { n: 4, text: 'falar do passado' }], answer: 1, explanationPt: 'V-たらいいですか pergunta o que/como é melhor fazer (pedir conselho): {何|なに}を{食|た}べたらいいですか, {何|なに}を{準備|じゅんび}したらいいですか. (文法ノート ❹)' },
+    { id: 'iro-e2-l5-7', number: 7, prompt: '「{早|はや}く{予約|よやく}し**たほうがいいですよ**」 — 「V-たほうがいい」 serve para:', choices: [{ n: 1, text: 'dar um conselho (é melhor reservar logo)' }, { n: 2, text: 'pedir permissão' }, { n: 3, text: 'dizer o que já foi feito' }, { n: 4, text: 'comparar preços' }], answer: 1, translationPt: 'É melhor reservar logo.', explanationPt: 'V(forma タ)+ほうがいい = aconselhar (é melhor fazer). {上着|うわぎ}を{持|も}って{行|い}ったほうがいいですよ. (文法ノート ❺)' },
+    { id: 'iro-e2-l5-8', number: 8, prompt: '「{日曜日|にちようび}は{行|い}か**ないほうがいい**ですよ」 — 「V-ないほうがいい」 significa:', choices: [{ n: 1, text: 'é melhor NÃO fazer (é melhor não ir no domingo)' }, { n: 2, text: 'é melhor ir no domingo' }, { n: 3, text: 'tem que ir no domingo' }, { n: 4, text: 'pode ir no domingo' }], answer: 1, explanationPt: 'V-ないほうがいい = é melhor não fazer (conselho negativo). {混|こ}むから、{行|い}かないほうがいい. (文法ノート ❺)' },
+    { id: 'iro-e2-l5-9', number: 9, prompt: 'Descrever um lugar (どんなところ): 「{自然|しぜん}が{豊|ゆた}か(な)／{混|こ}んでいる／{古|ふる}い{町|まち}／{海外|かいがい}からの{観光客|かんこうきゃく}に{人気|にんき}がある」 significam:', choices: [{ n: 1, text: 'rico em natureza / lotado (cheio de gente) / cidade antiga / popular entre turistas estrangeiros' }, { n: 2, text: 'pobre / vazio / cidade nova / desconhecido' }, { n: 3, text: 'quente / frio / grande / pequeno' }, { n: 4, text: 'caro / barato / longe / perto' }], answer: 1, explanationPt: '{自然|しぜん}が{豊|ゆた}か (natureza farta), {混|こ}んでいる (lotado), {古|ふる}い{町|まち} (cidade antiga), {観光客|かんこうきゃく}に{人気|にんき}がある (popular com turistas). (Atividade 1 · ことば)' },
+    { id: 'iro-e2-l5-10', number: 10, prompt: 'Tipo de hospedagem — qual é uma POUSADA japonesa tradicional (com onsen, grande)?', image: `${IMG}/Z_05_3_02_ryokan.png`, imageAlt: 'grande pousada japonesa tradicional (ryokan)', choices: [{ n: 1, text: '{旅館|りょかん} — ryokan (pousada tradicional)' }, { n: 2, text: 'ホテル — hotel (estilo ocidental)' }, { n: 3, text: '{民宿|みんしゅく} — pousada familiar pequena' }, { n: 4, text: '{船|ふね} — navio' }], answer: 1, explanationPt: '{旅館|りょかん} = pousada japonesa tradicional (tatame, onsen). ホテル = hotel ocidental. (Atividade 3 · ことばの準備)' },
+    { id: 'iro-e2-l5-11', number: 11, prompt: 'E esta hospedagem pequena, tipo casa de família?', image: `${IMG}/Z_05_3_03_minshuku.png`, imageAlt: 'pequena pousada familiar (minshuku)', choices: [{ n: 1, text: '{民宿|みんしゅく} — pousada familiar (casa pequena)' }, { n: 2, text: '{旅館|りょかん} — pousada tradicional grande' }, { n: 3, text: 'ホテル — hotel' }, { n: 4, text: '{飛行機|ひこうき} — avião' }], answer: 1, explanationPt: '{民宿|みんしゅく} = hospedagem pequena, tocada por uma família ({家族|かぞく}でやってる{小|ちい}さな{宿|やど}); costuma ser mais barata. (Atividade 3 · ことばの準備)' },
+    { id: 'iro-e2-l5-12', number: 12, prompt: 'Que meio de transporte (交通手段) é este?', image: `${IMG}/Z_05_3_06_fune.png`, imageAlt: 'navio / balsa', choices: [{ n: 1, text: '{船|ふね} — navio / barco' }, { n: 2, text: '{電車|でんしゃ} — trem' }, { n: 3, text: '{飛行機|ひこうき} — avião' }, { n: 4, text: '{車|くるま} — carro' }], answer: 1, explanationPt: '{船|ふね} = navio/barco. (Atividade 3 · 交通手段)' },
+    { id: 'iro-e2-l5-13', number: 13, prompt: 'Que meio de transporte é este?', image: `${IMG}/Z_05_3_07_hikooki.png`, imageAlt: 'avião', choices: [{ n: 1, text: '{飛行機|ひこうき} — avião' }, { n: 2, text: '{船|ふね} — navio' }, { n: 3, text: 'バス — ônibus' }, { n: 4, text: '{電車|でんしゃ} — trem' }], answer: 1, explanationPt: '{飛行機|ひこうき} = avião. Outros: バス (ônibus), {電車|でんしゃ} (trem), {車|くるま} (carro). (Atividade 3 · 交通手段)' },
+    { id: 'iro-e2-l5-14', number: 14, prompt: 'Que meio de transporte é este?', image: `${IMG}/Z_05_3_05_densha.png`, imageAlt: 'trem', choices: [{ n: 1, text: '{電車|でんしゃ} — trem' }, { n: 2, text: '{車|くるま} — carro' }, { n: 3, text: '{船|ふね} — navio' }, { n: 4, text: '{飛行機|ひこうき} — avião' }], answer: 1, explanationPt: '{電車|でんしゃ} = trem. {日光|にっこう}までなら、{電車|でんしゃ}で{行|い}けます. (Atividade 3 · 交通手段)' },
+    { id: 'iro-e2-l5-15', number: 15, prompt: 'O que é este item (準備するもの, para a praia)?', image: `${IMG}/Z_05_3_14_mizugi.png`, imageAlt: 'maiô e sunga (trajes de banho)', choices: [{ n: 1, text: '{水着|みずぎ} — traje de banho (maiô/sunga)' }, { n: 2, text: '{帽子|ぼうし} — chapéu' }, { n: 3, text: '{手袋|てぶくろ} — luvas' }, { n: 4, text: 'サングラス — óculos de sol' }], answer: 1, explanationPt: '{水着|みずぎ} = roupa de banho. Para nadar ({泳|およ}ぐ) / snorkeling. (Atividade 3 · 準備するもの)' },
+    { id: 'iro-e2-l5-16', number: 16, prompt: 'O que é este item (準備するもの, para o frio/neve)?', image: `${IMG}/Z_05_3_11_tebukuro.png`, imageAlt: 'par de luvas', choices: [{ n: 1, text: '{手袋|てぶくろ} — luvas' }, { n: 2, text: '{水着|みずぎ} — traje de banho' }, { n: 3, text: 'サングラス — óculos de sol' }, { n: 4, text: 'スキー{板|いた} — esqui (pranchas)' }], answer: 1, explanationPt: '{手袋|てぶくろ} = luvas. Para esqui: {帽子|ぼうし}と{手袋|てぶくろ}は{自分|じぶん}で{買|か}ったほうがいい. (Atividade 3 · 準備するもの)' },
+    { id: 'iro-e2-l5-17', number: 17, prompt: 'O que é este item de esqui?', image: `${IMG}/Z_05_3_09_sukii-ita.png`, imageAlt: 'pranchas de esqui', choices: [{ n: 1, text: 'スキー{板|いた} — esqui (pranchas)' }, { n: 2, text: '{水着|みずぎ} — traje de banho' }, { n: 3, text: '{帽子|ぼうし} — chapéu' }, { n: 4, text: '{船|ふね} — navio' }], answer: 1, explanationPt: 'スキー{板|いた} = pranchas de esqui. スキー{板|いた}とウェアはスキー{場|じょう}で{借|か}りられる. (Atividade 3 · 準備するもの)' },
+    { id: 'iro-e2-l5-18', number: 18, prompt: 'Vocabulário de viagem: 「{行|い}き{先|さき}／{出発|しゅっぱつ}する／レンタサイクル／{温泉|おんせん}／{露天風呂|ろてんぶろ}」 significam:', choices: [{ n: 1, text: 'destino / partir (sair) / aluguel de bicicleta / fonte termal (onsen) / banho ao ar livre' }, { n: 2, text: 'chegada / parar / aluguel de carro / piscina / chuveiro' }, { n: 3, text: 'mapa / esperar / táxi / lago / sauna' }, { n: 4, text: 'bilhete / voltar / metrô / rio / banheira' }], answer: 1, explanationPt: '{行|い}き{先|さき} (destino), {出発|しゅっぱつ}する (partir), レンタサイクル (aluguel de bike), {温泉|おんせん} (fonte termal), {露天風呂|ろてんぶろ} (banho ao ar livre). (Atividades 2-4)' },
+    { id: 'iro-e2-l5-19', number: 19, prompt: '聴解 05-03 (北海道): como é descrita?', context: 'Ｂ：{自然|しぜん}も{豊|ゆた}かだし、{食|た}べ{物|もの}もおいしいし…{特|とく}に{魚|さかな}がおいしくて、{新鮮|しんせん}な…{食|た}べられます。', choices: [{ n: 1, text: 'Rica em natureza, comida gostosa — em especial peixe fresco.' }, { n: 2, text: 'Lotada e quente, boa para nadar.' }, { n: 3, text: 'Cidade antiga com muitos templos.' }, { n: 4, text: 'Capital com muitas lojas.' }], answer: 1, explanationPt: '{北海道|ほっかいどう}: {自然|しぜん}が{豊|ゆた}か, {食|た}べ{物|もの}（{魚|さかな}）がおいしい, {新鮮|しんせん}. (聴解 05-03)' },
+    { id: 'iro-e2-l5-20', number: 20, prompt: '聴解 05-04 (東京): o que se diz?', context: 'Ｂ：やっぱり{人|ひと}が{多|おお}いかな。{電車|でんしゃ}も{混|こ}んでいて…でも、{遊|あそ}ぶところがいろいろあるから、{一日中|いちにちじゅう}{遊|あそ}べるよ。', choices: [{ n: 1, text: 'Tem muita gente, trens lotados, mas há muitas opções de lazer (dá para se divertir o dia todo).' }, { n: 2, text: 'É tranquila e tem natureza farta.' }, { n: 3, text: 'É fria e boa para esquiar.' }, { n: 4, text: 'Tem praias para nadar.' }], answer: 1, explanationPt: '{東京|とうきょう}: {人|ひと}が{多|おお}い, {電車|でんしゃ}が{混|こ}む, {遊|あそ}ぶところが{多|おお}く{一日中|いちにちじゅう}{遊|あそ}べる. (聴解 05-04)' },
+    { id: 'iro-e2-l5-21', number: 21, prompt: '聴解 05-05 (沖縄): o que se pode fazer?', context: 'Ｂ：{暖|あたた}かいから、{春|はる}から{秋|あき}まで{泳|およ}げます。シュノーケリングもできますよ。…{大|おお}きい{水族館|すいぞくかん}があって、きれいな{魚|さかな}が{見|み}られますよ。', choices: [{ n: 1, text: 'É quente; dá para nadar da primavera ao outono, fazer snorkeling, e ver peixes bonitos no grande aquário.' }, { n: 2, text: 'É fria; dá para esquiar.' }, { n: 3, text: 'Tem muitos templos antigos.' }, { n: 4, text: 'É uma metrópole movimentada.' }], answer: 1, explanationPt: '{沖縄|おきなわ}: {暖|あたた}かい, {泳|およ}げる, シュノーケリング, {水族館|すいぞくかん}できれいな{魚|さかな}が{見|み}られる (potencial, ❶). (聴解 05-05)' },
+    { id: 'iro-e2-l5-22', number: 22, prompt: '聴解 05-06 (京都): o que se diz?', context: 'Ｂ：{古|ふる}い{町|まち}で、お{寺|てら}とか{神社|じんじゃ}がたくさん{見|み}られるよ。…いろいろな{日本|にほん}のお{土産|みやげ}が{買|か}えるし、{海外|かいがい}からの{観光客|かんこうきゃく}にもすごく{人気|にんき}があるよね。', choices: [{ n: 1, text: 'Cidade antiga; dá para ver muitos templos e santuários, comprar várias lembranças e é muito popular entre turistas estrangeiros.' }, { n: 2, text: 'Fria e boa para esquiar.' }, { n: 3, text: 'Quente, boa para nadar.' }, { n: 4, text: 'Cheia de prédios altos modernos.' }], answer: 1, explanationPt: '{京都|きょうと}: {古|ふる}い{町|まち}, お{寺|てら}・{神社|じんじゃ}が{見|み}られる, お{土産|みやげ}が{買|か}える, {観光客|かんこうきゃく}に{人気|にんき}. (聴解 05-06)' },
+    { id: 'iro-e2-l5-23', number: 23, prompt: '会話 05-08 (planejar viagem): para onde Diana e Sofia decidem ir e por quê?', context: 'ディアナ：{景色|けしき}がきれいなところがいいです。 ソフィア：{富士山|ふじさん}の{近|ちか}くはどうですか？ きれいな{湖|みずうみ}があります…すごくきれいだそうですよ。', choices: [{ n: 1, text: 'Perto do Monte Fuji — porque Diana quer um lugar de paisagem bonita, e dizem que o lago + Fuji juntos são lindos.' }, { n: 2, text: 'Okinawa, para nadar.' }, { n: 3, text: 'Tóquio, para compras.' }, { n: 4, text: 'Hokkaido, pela comida.' }], answer: 1, explanationPt: '{景色|けしき}がきれいなところ (❷) → {富士山|ふじさん}の{近|ちか}く; きれいだそうです (hearsay ❸). (聴解 05-08)' },
+    { id: 'iro-e2-l5-24', number: 24, prompt: '会話 05-08: o que decidem fazer lá e como vão?', context: 'ソフィア：{湖|みずうみ}でボートに{乗|の}れます。…うどんがおいしいって{聞|き}きました。…バスで{行|い}けますよ。{安|やす}くて{便利|べんり}だって{先輩|せんぱい}が…{新宿|しんじゅく}からです。', choices: [{ n: 1, text: 'Andar de barco no lago e comer udon; vão de ônibus (barato e prático, saindo de Shinjuku).' }, { n: 2, text: 'Esquiar; vão de avião.' }, { n: 3, text: 'Fazer compras; vão de navio.' }, { n: 4, text: 'Ver templos; vão a pé.' }], answer: 1, explanationPt: 'ボートに{乗|の}れる; うどんがおいしいって{聞|き}いた (❸); バスで{行|い}ける, {安|やす}くて{便利|べんり}だって (❸), {新宿|しんじゅく}から{出発|しゅっぱつ}. Diana não anda de bike (自転車{乗|の}れない). (聴解 05-08)' },
+    { id: 'iro-e2-l5-25', number: 25, prompt: '聴解 05-15 (conselho · 日光): o que se aconselha para ir a Nikko ver as folhas de outono?', context: 'Ｂ：{日光|にっこう}までなら、{電車|でんしゃ}で{行|い}けますよ。…{秋|あき}の{日光|にっこう}は、かなり{寒|さむ}いですよ。…{厚|あつ}い{上着|うわぎ}を{持|も}って{行|い}ったほうがいいですよ。', choices: [{ n: 1, text: 'Ir de trem; e como o outono em Nikko é bem frio, é melhor levar um casaco grosso.' }, { n: 2, text: 'Ir de avião; levar traje de banho.' }, { n: 3, text: 'Ir de navio; não levar nada.' }, { n: 4, text: 'Não ir, é perigoso.' }], answer: 1, explanationPt: '{電車|でんしゃ}で{行|い}ける; {寒|さむ}いから{厚|あつ}い{上着|うわぎ}を{持|も}って{行|い}ったほうがいい (❺). (聴解 05-15)' },
+    { id: 'iro-e2-l5-26', number: 26, prompt: '聴解 05-16 (conselho · 京都/旅館): que conselho de hospedagem é dado a Nadia?', context: 'Ｂ：{安|やす}いところがいいなら、{民宿|みんしゅく}もいいよ。…{夏休|なつやす}みの{時期|じき}はすごく{混|こ}むから、{早|はや}く{計画|けいかく}を{立|た}てて、{予約|よやく}したほうがいいよ。', choices: [{ n: 1, text: 'Se quer barato, o minshuku também é bom; e como lota nas férias de verão, é melhor planejar e reservar logo.' }, { n: 2, text: 'Só hotéis caros valem a pena.' }, { n: 3, text: 'Não reservar, ir de última hora.' }, { n: 4, text: 'Acampar é o melhor.' }], answer: 1, explanationPt: '{安|やす}いなら{民宿|みんしゅく}もいい; {混|こ}むから{早|はや}く{予約|よやく}したほうがいい (❺ + título 早く予約したほうがいい). (聴解 05-16)' },
+    { id: 'iro-e2-l5-27', number: 27, prompt: '聴解 05-17 (conselho · 富山): o que se recomenda comer e que aviso é dado?', context: 'Ｂ：{富山|とやま}はやっぱりおすしですね。「{白|しろ}えび」という{店|みせ}…でも、できれば、{日曜日|にちようび}は{行|い}かないほうがいいですよ。…{混|こ}むんですよ。', choices: [{ n: 1, text: 'Sushi (a loja «Shiroebi»); mas é melhor não ir no domingo, porque lota (fila de ~1h).' }, { n: 2, text: 'Ramen; ir só no domingo.' }, { n: 3, text: 'Tempura; nunca tem fila.' }, { n: 4, text: 'Nada de especial.' }], answer: 1, explanationPt: 'おすし「{白|しろ}えび」; {日曜日|にちようび}は{行|い}かないほうがいい (conselho negativo ❺), {混|こ}むから. (聴解 05-17)' },
+    { id: 'iro-e2-l5-28', number: 28, prompt: '聴解 05-18 (conselho · 白馬スキー): o que se deve preparar para esquiar?', context: 'Ｂ：スキー{板|いた}とかウェアはスキー{場|じょう}で{借|か}りられるから、だいじょうぶ…でも、{帽子|ぼうし}と{手袋|てぶくろ}は、{自分|じぶん}で{買|か}ったほうがいいよ。…{高|たか}いから、こっちで{買|か}って…。', choices: [{ n: 1, text: 'Esquis e roupa dá para alugar na estação de esqui; mas chapéu e luvas é melhor comprar por conta (e antes, pois lá é caro).' }, { n: 2, text: 'Levar traje de banho e protetor solar.' }, { n: 3, text: 'Não precisa de nada.' }, { n: 4, text: 'Comprar tudo na estação de esqui.' }], answer: 1, explanationPt: 'スキー{板|いた}・ウェアは{借|か}りられる; {帽子|ぼうし}と{手袋|てぶくろ}は{買|か}ったほうがいい (❺), {高|たか}いからこっちで{買|か}って. (聴解 05-18)' },
+    { id: 'iro-e2-l5-29', number: 29, prompt: '読む (口コミ de viagem): a avaliação de あやの (5★ «きれいな富士山に満足») e a de saji («露天風呂でゆっくり») diferem em quê?', context: 'あやの：{湖|みずうみ}がきれいだし…{写真|しゃしん}をいっぱい{撮|と}りました。 saji：ロープウェイに{乗|の}りました。{天気|てんき}が{悪|わる}くて、{富士山|ふじさん}がぜんぜん{見|み}られませんでした。', choices: [{ n: 1, text: 'Ayano ficou satisfeita (lago bonito, tirou muitas fotos); saji teve tempo ruim e não conseguiu ver o Fuji.' }, { n: 2, text: 'Ambos viram o Fuji perfeitamente.' }, { n: 3, text: 'Nenhum dos dois gostou.' }, { n: 4, text: 'Ambos reclamaram do preço.' }], answer: 1, explanationPt: 'あやの: 満足 (湖きれい, 写真). saji: {天気|てんき}が{悪|わる}くて{富士山|ふじさん}がぜんぜん{見|み}られなかった (まったく〜ない). (Atividade 4 · 読む)' },
+    { id: 'iro-e2-l5-30', number: 30, prompt: 'Vocabulário de avaliação: 「{日帰|ひがえ}り／まったく〜ない／{寄|よ}る／{意外|いがい}に／{楽|たの}しむ」 significam:', choices: [{ n: 1, text: 'bate e volta (sem pernoite) / não ~ de jeito nenhum / passar (dar uma parada) / surpreendentemente / aproveitar' }, { n: 2, text: 'pernoite / sempre / ir embora / como esperado / cansar' }, { n: 3, text: 'viagem longa / às vezes / chegar / talvez / dormir' }, { n: 4, text: 'reserva / nunca / sair / certamente / comprar' }], answer: 1, explanationPt: '{日帰|ひがえ}り (bate-volta), まったく〜ない (nada/de jeito nenhum), {寄|よ}る (dar uma parada), {意外|いがい}に (surpreendentemente), {楽|たの}しむ (aproveitar). (Atividade 4 · 読む)' },
+    { id: 'iro-e2-l5-31', number: 31, prompt: 'Os kanji 「{自然|しぜん}／{交通|こうつう}／{旅館|りょかん}／{計画|けいかく}／{東京|とうきょう}」 lêem-se:', choices: [{ n: 1, text: 'しぜん (natureza) / こうつう (transporte/trânsito) / りょかん (pousada) / けいかく (plano) / とうきょう (Tóquio)' }, { n: 2, text: 'しぜん / こうつう / たびかん / けいかく / とうけい' }, { n: 3, text: 'じねん / こうつう / りょかん / けかく / とうきょう' }, { n: 4, text: 'しぜん / まじわり / りょかん / はかりかく / ひがしきょう' }], answer: 1, explanationPt: '{自然|しぜん}, {交通|こうつう}, {旅館|りょかん}, {計画|けいかく}, {東京|とうきょう}. (漢字のことば)' },
+    { id: 'iro-e2-l5-32', number: 32, prompt: 'Os kanji 「{船|ふね}／{自転車|じてんしゃ}／{遊|あそ}ぶ／{調|しら}べる／{出発|しゅっぱつ}する」 lêem-se:', choices: [{ n: 1, text: 'ふね (navio) / じてんしゃ (bicicleta) / あそぶ (brincar/divertir-se) / しらべる (pesquisar/verificar) / しゅっぱつする (partir)' }, { n: 2, text: 'ふね / じてんしゃ / ゆうぶ / ちょうべる / でぱつする' }, { n: 3, text: 'せん / じどうしゃ / あそぶ / しらべる / すいはつする' }, { n: 4, text: 'ふね / じてんしゃ / あそぶ / しらべる / でほつする' }], answer: 1, explanationPt: '{船|ふね}, {自転車|じてんしゃ}, {遊|あそ}ぶ, {調|しら}べる ({船|ふね}の{時間|じかん}を{調|しら}べる), {出発|しゅっぱつ}する. (漢字のことば)' },
+    { id: 'iro-e2-l5-33', number: 33, prompt: '会話 05-10〜12 / 05-20〜22 (modelos): que estruturas aparecem ao planejar e ao aconselhar viagem?', context: 'Planejar: {行|い}き{先|さき}→すること→{行|い}き{方|かた}. Aconselhar: {何|なに}で{行|い}ったらいいですか？→〜たほうがいいですよ.', choices: [{ n: 1, text: '«景色がきれいなところがいい / バスで行けます / 〜って聞きました» (planejar) e «〜たらいいですか / 〜たほうがいいですよ» (aconselhar).' }, { n: 2, text: 'só perguntar o preço da passagem.' }, { n: 3, text: 'reservar um restaurante.' }, { n: 4, text: 'pedir a conta.' }], answer: 1, explanationPt: 'Modelos: planejar (行き先/すること/行き方) e aconselhar (V-たらいいですか / V-たほうがいい). (会話 05-10〜12 / 05-20〜22)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 5 (聴解スクリプト)
+const L5_SCRIPTS: Record<string, ScriptItem[]> = {
+  '05-03': [
+    {
+      label: '① 北海道 (05-03)',
+      setupJa: '{日本|にほん}の{観光地|かんこうち}について、4{人|にん}の{人|ひと}が{質問|しつもん}しています。',
+      setupPt: 'Quatro pessoas conversam sobre destinos turísticos do Japão. ① Hokkaido.',
+      lines: [
+        { speaker: 'A', ja: '{昨日|きのう}、テレビで{北海道|ほっかいどう}の{番組|ばんぐみ}を{見|み}たんです。きれいなところですね。', pt: 'Ontem vi um programa sobre Hokkaido na TV. É um lugar bonito, né?' },
+        { speaker: 'B', ja: 'ええ、{自然|しぜん}も{豊|ゆた}かだし、{食|た}べ{物|もの}もおいしいし、とてもいいところです。{特|とく}に{魚|さかな}がおいしくて、{新鮮|しんせん}なおすしが{食|た}べられます。', pt: 'Sim, a natureza é farta, a comida é gostosa, é um ótimo lugar. Em especial o peixe é gostoso — dá para comer sushi bem fresco.' },
+        { speaker: 'A', ja: 'へー。いつか{行|い}ってみたいです。', pt: 'Nossa. Quero ir lá um dia.' },
+      ],
+    },
+  ],
+  '05-04': [
+    {
+      label: '② 東京 (05-04)',
+      setupPt: '② Tóquio.',
+      lines: [
+        { speaker: 'A', ja: '{太田|おおた}さん、{前|まえ}に{東京|とうきょう}に{住|す}んでいたそうですね。どんなところですか？', pt: 'Ota, ouvi que você morava em Tóquio. Como é lá?' },
+        { speaker: 'B', ja: 'うーん、やっぱり{人|ひと}が{多|おお}いかな。{電車|でんしゃ}も{混|こ}んでいて、ラッシュのときはすごく{大変|たいへん}です。', pt: 'Hmm, no fim tem muita gente. Os trens ficam lotados, e na hora do rush é bem puxado.' },
+        { speaker: 'B', ja: 'でも、{遊|あそ}ぶところがいろいろあるから、{一日中|いちにちじゅう}{遊|あそ}べるよ。', pt: 'Mas tem muitos lugares para se divertir, dá para curtir o dia todo.' },
+        { speaker: 'A', ja: 'へー、いいね。', pt: 'Nossa, que legal.' },
+      ],
+    },
+  ],
+  '05-05': [
+    {
+      label: '③ 沖縄 (05-05)',
+      setupPt: '③ Okinawa.',
+      lines: [
+        { speaker: 'A', ja: 'いつか{沖縄|おきなわ}に{行|い}ってみたいんです。{海|うみ}がきれいですよね。', pt: 'Quero ir a Okinawa um dia. O mar é lindo, né?' },
+        { speaker: 'B', ja: 'ええ、きれいですよ。それに{暖|あたた}かいから、{春|はる}から{秋|あき}まで{泳|およ}げます。シュノーケリングもできますよ。', pt: 'Sim, é lindo. E como é quente, dá para nadar da primavera ao outono. Dá para fazer snorkeling também.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'É mesmo?' },
+        { speaker: 'B', ja: 'あと、{大|おお}きい{水族館|すいぞくかん}があって、きれいな{魚|さかな}が{見|み}られますよ。', pt: 'Tem também um aquário grande, onde dá para ver peixes bonitos.' },
+        { speaker: 'A', ja: '{行|い}きたいですね。', pt: 'Quero ir!' },
+      ],
+    },
+  ],
+  '05-06': [
+    {
+      label: '④ 京都 (05-06)',
+      setupPt: '④ Kyoto.',
+      lines: [
+        { speaker: 'A', ja: '{北村|きたむら}さん、{京都|きょうと}はどんなところですか？ {一度|いちど}{行|い}ってみたいんです。', pt: 'Kitamura, como é Kyoto? Queria ir uma vez.' },
+        { speaker: 'B', ja: 'そうですね。{古|ふる}い{町|まち}で、お{寺|てら}とか{神社|じんじゃ}がたくさん{見|み}られるよ。', pt: 'Bem, é uma cidade antiga; dá para ver muitos templos e santuários.' },
+        { speaker: 'B', ja: 'あと、いろいろな{日本|にほん}のお{土産|みやげ}が{買|か}えるし、{海外|かいがい}からの{観光客|かんこうきゃく}にもすごく{人気|にんき}があるよね。', pt: 'E dá para comprar várias lembranças japonesas, e é muito popular entre turistas estrangeiros.' },
+        { speaker: 'A', ja: 'そうなんですか。ありがとうございます。', pt: 'É mesmo? Obrigado.' },
+      ],
+    },
+  ],
+  '05-08': [
+    {
+      label: '会話 — 旅行の計画 (05-08)',
+      setupJa: 'ディアナさんとソフィアさんが、{来月|らいげつ}いっしょに{行|い}く1{泊|ぱく}2{日|か}の{旅行|りょこう}の{行|い}き{先|さき}を{相談|そうだん}しています。',
+      setupPt: 'Diana e Sofia decidem o destino de uma viagem de 2 dias e 1 noite no mês que vem.',
+      lines: [
+        { speaker: 'ディアナ', ja: '{行|い}き{先|さき}はどこにしますか？', pt: 'Aonde vamos?' },
+        { speaker: 'ソフィア', ja: 'ディアナさんは、どんなところがいいですか？', pt: 'Diana, que tipo de lugar você prefere?' },
+        { speaker: 'ディアナ', ja: '{私|わたし}は、{景色|けしき}がきれいなところがいいです。', pt: 'Eu prefiro um lugar de paisagem bonita.' },
+        { speaker: 'ソフィア', ja: 'じゃあ、{富士山|ふじさん}の{近|ちか}くはどうですか？ きれいな{湖|みずうみ}があります。{湖|みずうみ}と{富士山|ふじさん}がいっしょに{見|み}られて、すごくきれいだそうですよ。', pt: 'Então, que tal perto do Monte Fuji? Tem um lago bonito. Dizem que ver o lago e o Fuji juntos é lindo.' },
+        { speaker: 'ディアナ', ja: 'いいですね。そこで{何|なに}をしますか？', pt: 'Que bom. O que fazemos lá?' },
+        { speaker: 'ソフィア', ja: '{湖|みずうみ}でボートに{乗|の}れます。あと、レンタサイクルがあります。', pt: 'Dá para andar de barco no lago. E tem aluguel de bicicleta.' },
+        { speaker: 'ディアナ', ja: '{私|わたし}、{自転車|じてんしゃ}{乗|の}れないんですけど――。あ、うどんがおいしいって{聞|き}きました。', pt: 'É que eu não sei andar de bicicleta… Ah, ouvi dizer que o udon é gostoso.' },
+        { speaker: 'ディアナ', ja: 'どうやって{行|い}きますか？', pt: 'Como vamos?' },
+        { speaker: 'ソフィア', ja: 'バスで{行|い}けますよ。{安|やす}くて{便利|べんり}だって{先輩|せんぱい}が{言|い}ってました。{新宿|しんじゅく}からですね。', pt: 'Dá para ir de ônibus. Um veterano disse que é barato e prático. Sai de Shinjuku.' },
+        { speaker: 'ディアナ', ja: 'それなら{便利|べんり}ですね。{楽|たの}しみですね。', pt: 'Assim é prático. Que ansiedade boa!' },
+      ],
+    },
+  ],
+  '05-15': [
+    {
+      label: '① アドバイス — 日光 (05-15)',
+      setupJa: '4{人|にん}の{人|ひと}が、{旅行|りょこう}のアドバイスをもらっています。',
+      setupPt: 'Quatro pessoas pedem conselhos de viagem. ① Nikko (folhas de outono).',
+      lines: [
+        { speaker: 'A', ja: '{今度|こんど}、{日光|にっこう}に{紅葉|こうよう}を{見|み}に{行|い}くんですけど、{何|なに}で{行|い}ったらいいですか？', pt: 'Vou a Nikko ver as folhas de outono. Como é melhor ir?' },
+        { speaker: 'B', ja: '{日光|にっこう}までなら、{電車|でんしゃ}で{行|い}けますよ。{時間|じかん}もあまりかかりません。', pt: 'Até Nikko dá para ir de trem. Não demora muito.' },
+        { speaker: 'B', ja: '{秋|あき}の{日光|にっこう}は、かなり{寒|さむ}いですよ。{厚|あつ}い{上着|うわぎ}を{持|も}って{行|い}ったほうがいいですよ。', pt: 'O outono em Nikko é bem frio. É melhor levar um casaco grosso.' },
+        { speaker: 'A', ja: 'そうなんですか。ありがとうございます。', pt: 'É mesmo? Obrigado.' },
+      ],
+    },
+  ],
+  '05-16': [
+    {
+      label: '② アドバイス — 京都・宿 (05-16)',
+      setupPt: '② Kyoto — onde se hospedar.',
+      lines: [
+        { speaker: 'B', ja: '{日本|にほん}の{旅館|りょかん}に{泊|と}まってみたいんですけど、{高|たか}いですか？', pt: 'Eu queria me hospedar num ryokan japonês; é caro?' },
+        { speaker: 'A', ja: 'うーん、{安|やす}いところもあるし、{高|たか}いところもあるし、いろいろ。', pt: 'Hmm, tem lugares baratos e caros, varia.' },
+        { speaker: 'B', ja: 'どんなところに{泊|と}まったらいいですか？', pt: 'Em que tipo de lugar é melhor ficar?' },
+        { speaker: 'A', ja: '{安|やす}いところがいいなら、{民宿|みんしゅく}もいいよ。{家族|かぞく}でやってる{小|ちい}さな{宿|やど}。', pt: 'Se quer barato, o minshuku também é bom. É uma hospedagem pequena, tocada por uma família.' },
+        { speaker: 'A', ja: 'あ、でも、{夏休|なつやす}みの{時期|じき}はすごく{混|こ}むから、{早|はや}く{計画|けいかく}を{立|た}てて、{予約|よやく}したほうがいいよ。', pt: 'Ah, mas nas férias de verão lota muito, então é melhor planejar logo e reservar.' },
+        { speaker: 'B', ja: 'そうですね。{調|しら}べてみます。', pt: 'É verdade. Vou pesquisar.' },
+      ],
+    },
+  ],
+  '05-17': [
+    {
+      label: '③ アドバイス — 富山 (05-17)',
+      setupPt: '③ Toyama — o que comer.',
+      lines: [
+        { speaker: 'A', ja: '{今度|こんど}、{富山|とやま}に{行|い}くんですけど、{富山|とやま}では、{何|なに}を{食|た}べたらいいですか？', pt: 'Vou a Toyama. O que é melhor comer lá?' },
+        { speaker: 'B', ja: 'そうですね。{富山|とやま}はやっぱりおすしですね。「{白|しろ}えび」という{店|みせ}が、{安|やす}いし、おすすめです。', pt: 'Bem, em Toyama é sushi, sem dúvida. A loja chamada «Shiroebi» é barata e recomendo.' },
+        { speaker: 'A', ja: '「{白|しろ}えび」ですね。{行|い}ってみます。', pt: '«Shiroebi», certo. Vou lá.' },
+        { speaker: 'B', ja: 'でも、できれば、{日曜日|にちようび}は{行|い}かないほうがいいですよ。すごく{混|こ}むんですよ。1{時間|じかん}ぐらい{並|なら}びますよ。', pt: 'Mas, se puder, é melhor não ir no domingo. Lota muito — fica-se na fila uns 1 hora.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+      ],
+    },
+  ],
+  '05-18': [
+    {
+      label: '④ アドバイス — 白馬・スキー (05-18)',
+      setupPt: '④ Hakuba — esqui (o que preparar).',
+      lines: [
+        { speaker: 'B', ja: '{長野|ながの}にスキーに{行|い}ってきたんだ。ナムさんは、スキー、したことある？', pt: 'Fui esquiar em Nagano. Nam, você já esquiou?' },
+        { speaker: 'A', ja: 'ないです。でも、{道具|どうぐ}とか{何|なに}も{持|も}ってないんです。{何|なに}を{準備|じゅんび}したらいいですか？', pt: 'Não. E não tenho nenhum equipamento. O que é melhor preparar?' },
+        { speaker: 'B', ja: 'スキー{板|いた}とかウェアはスキー{場|じょう}で{借|か}りられるから、だいじょうぶだよ。', pt: 'Esquis e roupa dá para alugar na estação de esqui, então tudo bem.' },
+        { speaker: 'B', ja: 'うん、でも、{帽子|ぼうし}と{手袋|てぶくろ}は、{自分|じぶん}で{買|か}ったほうがいいよ。{高|たか}いから、こっちで{買|か}って、{持|も}って{行|い}ったほうがいいと{思|おも}うよ。', pt: 'É, mas chapéu e luvas é melhor comprar por conta. Como lá é caro, acho melhor comprar aqui e levar.' },
+        { speaker: 'A', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+}
+
+const lesson5: Section = {
+  id: 'lesson-5',
+  level: 'elementary2',
+  titleJa: '第5課 早く予約したほうがいいですよ',
+  titlePt: 'Lição 5 — É melhor reservar logo',
+  summaryPt:
+    'Vamos viajar · entender a apresentação de um destino (海で泳げます／きれいな魚が見られます), planejar uma viagem com um amigo (景色がきれいなところがいい／きれいだそうです／バスで行けるって聞きました) e pedir e dar conselhos (何で行ったらいいですか／厚い上着を持って行ったほうがいいですよ／早く予約したほうがいい).',
+  studyNotes: [
+    {
+      title: 'Tópico: Vamos viajar (旅行に行こう)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ouvir uma breve apresentação de pontos turísticos do Japão e entender como são e o que se pode fazer.\n' +
+        '- Discutir planos de viagem com um amigo.\n' +
+        '- Pedir ou dar conselhos sobre uma viagem em planejamento.\n' +
+        '- Ler avaliações em site de viagem e entender o conteúdo geral.\n\n' +
+        '💡 Pergunta de abertura: {日本|にほん}の{観光地|かんこうち}で{行|い}ってみたいところがありますか？ (há um destino turístico do Japão que você quer visitar?).',
+    },
+    {
+      title: 'Forma potencial (可能形) — o que se pode fazer (➊)',
+      bodyPt:
+        'A **forma potencial** diz o que é **possível** fazer:\n\n' +
+        '- `{海|うみ}で{泳|およ}げます`, `ボートに{乗|の}れます`, `お{土産|みやげ}が{買|か}えます`, `きれいな{魚|さかな}が{見|み}られます`, `{一日中|いちにちじゅう}{遊|あそ}べます`.\n\n' +
+        '🔧 Grupo I: う→える ({泳|およ}ぐ→{泳|およ}げる, {行|い}く→{行|い}ける, {買|か}う→{買|か}える, {遊|あそ}ぶ→{遊|あそ}べる). Grupo II: る→られる ({見|み}る→{見|み}られる). (文法ノート ❶)',
+    },
+    {
+      title: 'Modificar substantivo: 〜ところ / 名詞修飾 (➋)',
+      bodyPt:
+        'Coloca-se o adjetivo/verbo (forma comum) **antes** do substantivo para descrevê-lo:\n\n' +
+        '- `{景色|けしき}がきれいな{所|ところ}` (um lugar de paisagem bonita), `{遊|あそ}べる{所|ところ}` (um lugar onde dá para se divertir), `{自然|しぜん}が{豊|ゆた}かな{町|まち}`.\n\n' +
+        '(文法ノート ❷)',
+    },
+    {
+      title: '〜そうです / 〜って — transmitir o que se ouviu (伝聞) (➌)',
+      bodyPt:
+        'Para repassar uma **informação ouvida** de outra pessoa:\n\n' +
+        '- **［forma comum］+ そうです**: `すごくきれいだそうですよ` (dizem que é lindo), `{前|まえ}に{東京|とうきょう}に{住|す}んでいたそうですね`.\n' +
+        '- **〜って** (casual, = 〜と): `{安|やす}くて{便利|べんり}だって{言|い}ってました` (disse que é barato e prático), `おいしいって{聞|き}きました` (ouvi que é gostoso).\n\n' +
+        '(文法ノート ❸)',
+    },
+    {
+      title: 'V-たらいいですか — pedir conselho (➍)',
+      bodyPt:
+        '**V-たらいいですか** pergunta o que/como é **melhor fazer** (pedir orientação):\n\n' +
+        '- `{何|なに}で{行|い}ったらいいですか？` (como é melhor ir?), `どんなところに{泊|と}まったらいいですか？`, `{何|なに}を{準備|じゅんび}したらいいですか？`.\n\n' +
+        '(文法ノート ❹)',
+    },
+    {
+      title: 'V-たほうがいい / V-ないほうがいい — dar conselho (➎)',
+      bodyPt:
+        'Para **aconselhar**:\n\n' +
+        '- **V(タ)+ほうがいい** (é melhor fazer): `{早|はや}く{予約|よやく}したほうがいいですよ`, `{厚|あつ}い{上着|うわぎ}を{持|も}って{行|い}ったほうがいいですよ`.\n' +
+        '- **V-ないほうがいい** (é melhor não): `{日曜日|にちようび}は{行|い}かないほうがいいですよ` (lota muito).\n\n' +
+        '(文法ノート ❺)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Como é o lugar:** {自然|しぜん}が{豊|ゆた}か（な）, {混|こ}んでいる／{混|こ}んでいない, {食|た}べ{物|もの}がおいしい, {寒|さむ}い／{暖|あたた}かい, {古|ふる}い{町|まち}, {観光客|かんこうきゃく}に{人気|にんき}がある.\n\n' +
+        '**Viagem:** {行|い}き{先|さき} (destino), {出発|しゅっぱつ}する, レンタサイクル, {温泉|おんせん}, {露天風呂|ろてんぶろ}. Hospedagem: ホテル, {旅館|りょかん}, {民宿|みんしゅく}. Transporte: バス, {電車|でんしゃ}, {船|ふね}, {飛行機|ひこうき}, {車|くるま}. Preparar: スキー{板|いた}, スキーウェア, {手袋|てぶくろ}, {帽子|ぼうし}, サングラス, {水着|みずぎ}.\n\n' +
+        '**Kanji da lição:** {自然|しぜん}, {交通|こうつう}, {船|ふね}, {自転車|じてんしゃ}, {旅館|りょかん}, {東京|とうきょう}, {計画|けいかく}, {遊|あそ}ぶ, {調|しら}べる, {出発|しゅっぱつ}する.',
+    },
+  ],
+  groups: [lesson5Group],
+  audios: attachScripts(5, L5_SCRIPTS),
+}
+
+// ---- Lições 6-18 (estrutura por tópico; exercícios em construção) ------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -1241,12 +1477,7 @@ const sections: Section[] = [
   lesson3,
   lesson4,
   // Tópico 3 — Vamos viajar (旅行に行こう)
-  scaffold(5, 'Vamos viajar', '早く予約したほうがいいですよ', 'É melhor reservar logo', [
-    'Ouvir uma breve apresentação de pontos turísticos do Japão e entender como são e o que se pode fazer.',
-    'Discutir planos de viagem com um amigo.',
-    'Pedir ou dar conselhos sobre uma viagem em planejamento.',
-    'Ler avaliações em site de viagem e entender o conteúdo geral.',
-  ]),
+  lesson5,
   scaffold(6, 'Vamos viajar', 'いろいろなところに行けて、よかったです', 'Que bom que pude ir a vários lugares', [
     'Ler passagem de trem, avisos no vagão e quadros da estação para extrair informações.',
     'Falar de forma simples sobre seus planos de viagem a alguém que conheceu na viagem.',
