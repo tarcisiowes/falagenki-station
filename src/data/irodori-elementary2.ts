@@ -1678,7 +1678,203 @@ const lesson6: Section = {
   audios: attachScripts(6, L6_SCRIPTS),
 }
 
-// ---- Lições 7-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 7: 雨が降ったら、ホールでやります (tópico 地域のイベント) --------------
+const lesson7Group: ExerciseGroup = {
+  id: 'iro-e2-l7',
+  title: '雨が降ったら、ホールでやります',
+  subtitlePt: 'Ler avisos do bairro · entender perguntas e respostas sobre eventos · entender anúncios da rádio local · perguntar sobre um evento ao qual foi convidado',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l7-1', number: 1, prompt: '「{雨|あめ}が{降|ふ}ったら、{中|なか}のホールでやります」 — 「〜たら」 (condição hipotética) significa:', choices: [{ n: 1, text: 'se ~ (caso aconteça): se chover, fazemos no salão coberto' }, { n: 2, text: 'porque ~' }, { n: 3, text: 'embora ~' }, { n: 4, text: 'enquanto ~' }], answer: 1, translationPt: 'Se chover, será no salão (coberto).', explanationPt: '〜たら hipotético: supõe um fato que talvez aconteça. {雨|あめ}が{降|ふ}ったら, {忙|いそが}しかったら, {分|わ}からなかったら. Forma: passado comum + ら. (文法ノート ❶)' },
+    { id: 'iro-e2-l7-2', number: 2, prompt: '「{盆踊|ぼんおど}りが{終|お}わったら、いっしょに{居酒屋|いざかや}に{行|い}きましょう」 — aqui o 「〜たら」 tem o outro sentido:', choices: [{ n: 1, text: 'depois que ~ (fato que vai acontecer): quando o bon-odori terminar, vamos ao izakaya' }, { n: 2, text: 'se por acaso ~ (duvidoso)' }, { n: 3, text: 'antes de ~' }, { n: 4, text: 'sem ~' }], answer: 1, explanationPt: '〜たら também marca «depois que (algo certo) acontecer»: {終|お}わったら, {駅|えき}に{着|つ}いたら. (Diferente do hipotético da Q1.) (文法ノート ❶)' },
+    { id: 'iro-e2-l7-3', number: 3, prompt: '「コンサートが{開催|かいさい}されます」「{販売会|はんばいかい}が{行|おこな}われます」 — essas formas (受身/passivo) são usadas porque:', choices: [{ n: 1, text: 'o evento é o sujeito do anúncio (estilo formal de avisos/transmissões)' }, { n: 2, text: 'pedem para o ouvinte fazer algo' }, { n: 3, text: 'indicam o passado' }, { n: 4, text: 'expressam dúvida' }], answer: 1, explanationPt: 'Em anúncios formais, o evento vira sujeito: 〜が{開催|かいさい}される (será realizado), 〜が{行|おこな}われる, 〜が{予定|よてい}されている. Passivo 受身①. (文法ノート ❷)' },
+    { id: 'iro-e2-l7-4', number: 4, prompt: '「{盆踊|ぼんおど}りは{簡単|かんたん}だから、だれでも{踊|おど}れますよ」「{浴衣|ゆかた}は1{人|ひと}りで{着|き}られますか？」 — 「{踊|おど}れる／{着|き}られる」 são:', choices: [{ n: 1, text: 'forma potencial — conseguir/poder fazer (qualquer um consegue dançar / consegue vestir sozinho?)' }, { n: 2, text: 'forma passiva' }, { n: 3, text: 'forma de pedido' }, { n: 4, text: 'forma negativa' }], answer: 1, explanationPt: 'Potencial: {踊|おど}る→{踊|おど}れる, {着|き}る→{着|き}られる, {飲|の}む→{飲|の}める. だれでも{踊|おど}れる (qualquer um consegue dançar). (文法ノート ❸)' },
+    { id: 'iro-e2-l7-5', number: 5, prompt: '「{訓練|くんれん}には、{必|かなら}ず{参加|さんか}しなければなりません」 — 「V-なければなりません」 significa:', choices: [{ n: 1, text: 'tem de / é obrigatório fazer (é preciso participar)' }, { n: 2, text: 'não precisa fazer' }, { n: 3, text: 'é melhor não fazer' }, { n: 4, text: 'pode fazer' }], answer: 1, explanationPt: 'V-なければなりません = obrigação (tem de). {必|かなら}ず{参加|さんか}しなければなりません = é obrigatório participar. (Atividade 1 · お知らせ)' },
+    { id: 'iro-e2-l7-6', number: 6, prompt: 'Avisos do bairro: 「{断水|だんすい}／{防災|ぼうさい}{訓練|くんれん}／おみこし／ボランティア」 significam:', choices: [{ n: 1, text: 'corte de água / simulado de prevenção de desastres / mikoshi (santuário portátil) / trabalho voluntário' }, { n: 2, text: 'falta de luz / aula de culinária / desfile de moda / passeio' }, { n: 3, text: 'mudança / reunião / show / feira' }, { n: 4, text: 'reforma / exame / leilão / sorteio' }], answer: 1, explanationPt: '{断水|だんすい} (corte de água, {水道|すいどう}{工事|こうじ}), {防災|ぼうさい}{訓練|くんれん} (simulado de desastre, さくら{小学校|しょうがっこう}{校庭|こうてい}), おみこし (santuário portátil de festa), ボランティア (海岸のごみ拾い). (Atividade 1)' },
+    { id: 'iro-e2-l7-7', number: 7, prompt: 'Que evento (お知らせ) esta ilustração mostra?', image: `${IMG}/Z_07_3_02_konsaato.png`, imageAlt: 'concerto / apresentação musical', choices: [{ n: 1, text: 'コンサート — concerto' }, { n: 2, text: '{花火|はなび}{大会|たいかい} — festival de fogos' }, { n: 3, text: '{野菜|やさい}の{販売会|はんばいかい} — venda de legumes' }, { n: 4, text: 'カラオケ{大会|たいかい} — concurso de karaokê' }], answer: 1, explanationPt: 'コンサート = concerto (ex.: 「ピアノの{夕|ゆう}べ」コンサートが{開催|かいさい}されます). (Atividade 3 · 放送)' },
+    { id: 'iro-e2-l7-8', number: 8, prompt: 'Que evento esta ilustração mostra?', image: `${IMG}/Z_07_3_03_hanabitaikai.png`, imageAlt: 'festival de fogos de artifício', choices: [{ n: 1, text: '{花火|はなび}{大会|たいかい} — festival de fogos de artifício' }, { n: 2, text: 'コンサート — concerto' }, { n: 3, text: '{盆踊|ぼんおど}り — bon-odori' }, { n: 4, text: 'フリーマーケット — feira de pulgas' }], answer: 1, explanationPt: '{花火|はなび}{大会|たいかい} = festival de fogos. {午後|ごご}7{時|じ}30{分|ぷん}から{花火|はなび}{大会|たいかい}が{予定|よてい}されています. (Atividade 3 · 放送)' },
+    { id: 'iro-e2-l7-9', number: 9, prompt: 'Que evento esta ilustração mostra?', image: `${IMG}/Z_07_3_04_yasaihanbai.png`, imageAlt: 'venda de legumes frescos numa banca', choices: [{ n: 1, text: '{野菜|やさい}の{販売会|はんばいかい} — feira/venda de legumes' }, { n: 2, text: 'カラオケ{大会|たいかい} — karaokê' }, { n: 3, text: 'コンサート — concerto' }, { n: 4, text: '{花火|はなび}{大会|たいかい} — fogos' }], answer: 1, explanationPt: '{野菜|やさい}の{販売会|はんばいかい} = venda de legumes. {地元|じもと}の{農家|のうか}が{生産|せいさん}した{新鮮|しんせん}な{夏野菜|なつやさい}の{販売会|はんばいかい}. (Atividade 3 · 放送)' },
+    { id: 'iro-e2-l7-10', number: 10, prompt: 'Que evento esta ilustração mostra?', image: `${IMG}/Z_07_3_05_karaoketaikai.png`, imageAlt: 'concurso de karaokê', choices: [{ n: 1, text: 'カラオケ{大会|たいかい} — concurso de karaokê' }, { n: 2, text: 'ブラスバンドの{演奏|えんそう} — apresentação de banda' }, { n: 3, text: '{野菜|やさい}の{販売会|はんばいかい} — venda de legumes' }, { n: 4, text: '{盆踊|ぼんおど}り — bon-odori' }], answer: 1, explanationPt: 'カラオケ{大会|たいかい} = concurso/festival de karaokê. (Atividade 3 · 放送)' },
+    { id: 'iro-e2-l7-11', number: 11, prompt: 'Que evento esta ilustração mostra (músicos com instrumentos de sopro)?', image: `${IMG}/Z_07_3_06_burasubando.png`, imageAlt: 'banda marcial / fanfarra tocando', choices: [{ n: 1, text: 'ブラスバンドの{演奏|えんそう} — apresentação de banda (metais)' }, { n: 2, text: 'コンサート de piano' }, { n: 3, text: '{花火|はなび}{大会|たいかい} — fogos' }, { n: 4, text: 'カラオケ{大会|たいかい} — karaokê' }], answer: 1, explanationPt: 'ブラスバンドの{演奏|えんそう} = apresentação de banda (instrumentos de sopro/metais). (Atividade 3 · 放送)' },
+    { id: 'iro-e2-l7-12', number: 12, prompt: '聴解 07-01 (ガス点検): o que a pessoa precisa fazer e quando?', context: 'Ｂ：ガス{会社|がいしゃ}の{人|ひと}が{家|いえ}に{来|き}て、ガスをチェックするんですよ。…{来週|らいしゅう}の{月曜日|げつようび}の14{時|じ}から15{時|じ}の{間|あいだ}…その{間|あいだ}は、{家|いえ}にいてください。', choices: [{ n: 1, text: 'É uma inspeção de gás; precisa ficar em casa na próxima segunda, entre 14h e 15h.' }, { n: 2, text: 'Precisa ir à companhia de gás às 15h.' }, { n: 3, text: 'É uma feira de pulgas no domingo.' }, { n: 4, text: 'É um corte de água.' }], answer: 1, explanationPt: 'ガス{点検|てんけん}: {家|いえ}にいてください, {月曜日|げつようび}14〜15{時|じ}の{間|あいだ}, 15{分|ふん}で{終|お}わる. (聴解 07-01)' },
+    { id: 'iro-e2-l7-13', number: 13, prompt: '聴解 07-03 (花火大会): onde e quando é, e o que acontece se chover?', context: 'Ｂ：{中央|ちゅうおう}{海岸|かいがん}。…7{時|じ}に{始|はじ}まって…{雨|あめ}が{降|ふ}ったら、{日曜日|にちようび}にやるよ。{日曜日|にちようび}も{雨|あめ}だったら{中止|ちゅうし}だけど。', choices: [{ n: 1, text: 'Na praia central, começa às 19h; se chover, passa para domingo — e se chover no domingo também, é cancelado.' }, { n: 2, text: 'No salão coberto, sem horário definido.' }, { n: 3, text: 'Cancelado se fizer sol.' }, { n: 4, text: 'Só acontece se chover.' }], answer: 1, explanationPt: '{中央|ちゅうおう}{海岸|かいがん}, 7{時|じ}; {雨|あめ}が{降|ふ}ったら{日曜日|にちようび} (〜たら hipotético), {日曜日|にちようび}も{雨|あめ}だったら{中止|ちゅうし}. (聴解 07-03)' },
+    { id: 'iro-e2-l7-14', number: 14, prompt: '聴解 07-04 (フリーマーケット): quando e onde acontece, e o que vendem?', context: 'Ｂ：{毎月|まいつき}、{第|だい}2{土曜日|どようび}に、{市役所|しやくしょ}の{広場|ひろば}でやってますよ。…{服|ふく}が{多|おお}いけど、{食器|しょっき}とか、おもちゃとか…天気が悪かったら、{中|なか}のホールでやります。', choices: [{ n: 1, text: 'Todo 2º sábado do mês, na praça da prefeitura; vendem roupas, louças, brinquedos etc.; se o tempo estiver ruim, é no salão coberto.' }, { n: 2, text: 'Só em dezembro, na estação.' }, { n: 3, text: 'Vendem só comida.' }, { n: 4, text: 'É cancelado se chover.' }], answer: 1, explanationPt: '{毎月|まいつき}{第|だい}2{土曜日|どようび}, {市役所|しやくしょ}の{広場|ひろば}; {服|ふく}・{食器|しょっき}・おもちゃ; {天気|てんき}が{悪|わる}かったら{中|なか}のホール (〜たら). (聴解 07-04)' },
+    { id: 'iro-e2-l7-15', number: 15, prompt: '聴解 07-06 (放送 · コンサート): que informação o anúncio dá?', context: '7{月|がつ}14{日|か}…「ひかりホール」において、「ピアノの{夕|ゆう}べ」コンサートが{開催|かいさい}されます。{入場|にゅうじょう}{無料|むりょう}。', choices: [{ n: 1, text: 'Dia 14/7 haverá um concerto de piano no Hikari Hall; entrada gratuita.' }, { n: 2, text: 'Haverá um festival de fogos na praia.' }, { n: 3, text: 'Haverá uma feira de legumes.' }, { n: 4, text: 'A água será cortada.' }], answer: 1, explanationPt: 'コンサートが{開催|かいさい}されます (passivo ❷), {入場|にゅうじょう}{無料|むりょう} (entrada grátis). {市役所|しやくしょ}・{市民|しみん}センターで{販売|はんばい}{中|ちゅう}. (聴解 07-06)' },
+    { id: 'iro-e2-l7-16', number: 16, prompt: '聴解 07-09 (放送 · 野菜販売): o que será vendido e por quem?', context: '「あおぞら{広場|ひろば}」において、{地元|じもと}の{農家|のうか}が{生産|せいさん}した{新鮮|しんせん}な{夏野菜|なつやさい}の{販売会|はんばいかい}が{行|おこな}われます。', choices: [{ n: 1, text: 'Venda de legumes de verão frescos, produzidos por agricultores locais, na praça Aozora.' }, { n: 2, text: 'Um concerto de piano gratuito.' }, { n: 3, text: 'Um treino de dança no centro comunitário.' }, { n: 4, text: 'Fogos de artifício.' }], answer: 1, explanationPt: '{地元|じもと}の{農家|のうか}が{生産|せいさん}した{夏野菜|なつやさい}の{販売会|はんばいかい}が{行|おこな}われます (passivo ❷). (聴解 07-09)' },
+    { id: 'iro-e2-l7-17', number: 17, prompt: '会話 07-11 (盆踊りに誘う): o que é o 盆踊り e quem pode participar?', context: '{杉村|すぎむら}：{日本|にほん}の{祭|まつ}りです。{輪|わ}になって、{音楽|おんがく}に{合|あ}わせて、みんなで{踊|おど}るんですよ。{踊|おど}れない{人|ひと}は、だれでも{参加|さんか}できますよ。', choices: [{ n: 1, text: 'É uma festa japonesa: forma-se um círculo e todos dançam ao som da música; qualquer um pode participar (mesmo quem não sabe dançar).' }, { n: 2, text: 'É uma corrida só para profissionais.' }, { n: 3, text: 'É uma prova de canto individual.' }, { n: 4, text: 'É proibido para iniciantes.' }], answer: 1, explanationPt: '{輪|わ}になって{音楽|おんがく}に{合|あ}わせて{踊|おど}る; だれでも{参加|さんか}できる ({踊|おど}れない{人|ひと}も). {簡単|かんたん}だから、だれでも{踊|おど}れる (potencial ❸). (聴解 07-11)' },
+    { id: 'iro-e2-l7-18', number: 18, prompt: '会話 07-11: o que Sugimura propõe sobre a roupa e o horário?', context: '{杉村|すぎむら}：{娘|むすめ}たちの{浴衣|ゆかた}があるから、{貸|か}しましょうか？ …うちに5{時|じ}に{来|き}てください。…{盆踊|ぼんおど}りが{終|お}わったら、いっしょに{居酒屋|いざかや}に{行|い}きましょう。', choices: [{ n: 1, text: 'Empresta um yukata das filhas; combinam de ir à casa dele às 17h; depois do bon-odori, vão juntos ao izakaya.' }, { n: 2, text: 'Cada um leva a própria roupa formal; encontram-se na estação.' }, { n: 3, text: 'Não há roupa especial nem encontro.' }, { n: 4, text: 'Vão embora antes de começar.' }], answer: 1, explanationPt: '{浴衣|ゆかた}を{貸|か}す, うちに5{時|じ}, {終|お}わったら{居酒屋|いざかや}へ (〜たら «depois que», ❶). (聴解 07-11)' },
+    { id: 'iro-e2-l7-19', number: 19, prompt: 'Vocabulário do festival: 「{浴衣|ゆかた}／{寄付|きふ}／{輪|わ}になる／{音楽|おんがく}に{合|あ}わせて／{軍手|ぐんて}」 significam:', choices: [{ n: 1, text: 'yukata (quimono de verão) / doação (contribuição) / formar um círculo / ao som da música / luvas de trabalho' }, { n: 2, text: 'casaco / pagamento / fila / sem música / chapéu' }, { n: 3, text: 'sapato / reserva / fileira / em silêncio / guarda-chuva' }, { n: 4, text: 'máscara / ingresso / par / com pressa / toalha' }], answer: 1, explanationPt: '{浴衣|ゆかた} (yukata), {寄付|きふ} (doação — お{祭|まつ}りの{寄付|きふ}), {輪|わ}になる (formar círculo), {音楽|おんがく}に{合|あ}わせて (ao som), {軍手|ぐんて} (luvas de trabalho, p/ a ボランティア). (Atividades 1/2/4)' },
+    { id: 'iro-e2-l7-20', number: 20, prompt: 'Os kanji 「お{知|し}らせ／{今月|こんげつ}／{水道|すいどう}／{工事|こうじ}／{広場|ひろば}／{場合|ばあい}」 lêem-se:', choices: [{ n: 1, text: 'おしらせ (aviso) / こんげつ (este mês) / すいどう (água encanada) / こうじ (obra) / ひろば (praça) / ばあい (caso/situação)' }, { n: 2, text: 'おしらせ / いまつき / みずどう / こうじ / こうじょう / じょうごう' }, { n: 3, text: 'おちらせ / こんげつ / すいみち / たくじ / ひろば / ばごう' }, { n: 4, text: 'しらせ / きんげつ / すいどう / くじ / ひろじょう / ばあい' }], answer: 1, explanationPt: 'お{知|し}らせ (aviso), {今月|こんげつ}, {水道|すいどう}, {工事|こうじ}, {広場|ひろば}, {場合|ばあい} ({雨|あめ}の{場合|ばあい} = em caso de chuva). (漢字のことば)' },
+    { id: 'iro-e2-l7-21', number: 21, prompt: 'Os kanji 「{中止|ちゅうし}／{条件|じょうけん}／〜{以上|いじょう}／{開|ひら}く／{生産|せいさん}する」 lêem-se:', choices: [{ n: 1, text: 'ちゅうし (cancelamento) / じょうけん (condição) / いじょう (acima de) / ひらく (abrir/realizar) / せいさんする (produzir)' }, { n: 2, text: 'ちゅうし / じょうけん / いか / あく / うむさんする' }, { n: 3, text: 'なかどめ / じょうけん / いじょう / ひらく / せいさんする' }, { n: 4, text: 'ちゅうし / すじけん / いじょう / かいく / なまさんする' }], answer: 1, explanationPt: '{中止|ちゅうし} (cancelar), {条件|じょうけん} (condição), 〜{以上|いじょう} (~ ou mais), {開|ひら}く (abrir/realizar — {花火|はなび}{大会|たいかい}が{開|ひら}かれる), {生産|せいさん}する (produzir). (漢字のことば)' },
+    { id: 'iro-e2-l7-22', number: 22, prompt: '会話 07-13〜15 (modelos «perguntar sobre o evento»): que tipos de pergunta aparecem?', context: 'イベントの{内容|ないよう}（{何|なん}ですか？）／{着|き}る{物|もの}・{持|も}ち{物|もの}（{何|なに}を{着|き}て{行|い}ったらいいですか？）／{集合|しゅうごう}{時間|じかん}（{何時|なんじ}にどこに{行|い}ったらいいですか？）', choices: [{ n: 1, text: 'sobre o conteúdo do evento, o que vestir/levar e o horário/local de encontro (V-たらいいですか).' }, { n: 2, text: 'só sobre o preço do ingresso.' }, { n: 3, text: 'só reclamações.' }, { n: 4, text: 'só pedidos de desculpa.' }], answer: 1, explanationPt: 'Ao ser convidado, pergunta-se {内容|ないよう}, {着|き}る{物|もの}/{持|も}ち{物|もの}, {集合|しゅうごう}{時間|じかん}/{場所|ばしょ} (〜たらいいですか). (会話 07-13〜15)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 7 (聴解スクリプト)
+const L7_SCRIPTS: Record<string, ScriptItem[]> = {
+  '07-01': [
+    {
+      label: '① ガス点検 (07-01)',
+      setupJa: '{地域|ちいき}のチラシなどのお{知|し}らせについて、{人|ひと}が{質問|しつもん}しています。',
+      setupPt: 'Perguntando sobre um aviso recebido. ① inspeção de gás.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。この{紙|かみ}、ポストに{入|はい}ってたんですけど、{何|なん}ですか？', pt: 'Com licença. Este papel estava na caixa de correio; o que é?' },
+        { speaker: 'B', ja: 'ああ、ガス{点検|てんけん}のお{知|し}らせですね。ガス{会社|がいしゃ}の{人|ひと}が{家|いえ}に{来|き}て、ガスをチェックするんですよ。', pt: 'Ah, é um aviso de inspeção de gás. Um funcionário da companhia vem em casa checar o gás.' },
+        { speaker: 'A', ja: 'いつですか？', pt: 'Quando?' },
+        { speaker: 'B', ja: '{来週|らいしゅう}の{月曜日|げつようび}の14{時|じ}から15{時|じ}の{間|あいだ}ですね。その{間|あいだ}は、{家|いえ}にいてください。15{分|ふん}ぐらいで{終|お}わりますから。', pt: 'Na próxima segunda, entre 14h e 15h. Nesse intervalo, fique em casa. Termina em uns 15 minutos.' },
+        { speaker: 'A', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '07-02': [
+    {
+      label: '② お祭りの寄付 (07-02)',
+      setupPt: '② contribuição para a festa.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。この{封筒|ふうとう}と{手紙|てがみ}、{何|なん}ですか？', pt: 'Com licença. Este envelope e esta carta, o que são?' },
+        { speaker: 'B', ja: 'ああ、お{祭|まつ}りの{寄付|きふ}のお{願|ねが}いですね。もうすぐ{祭|まつ}りがあるんですよ。その{祭|まつ}りのために、1{人|ひと}り500{円|えん}、お{金|かね}を{払|はら}うんです。', pt: 'Ah, é um pedido de doação para a festa. Logo vai ter a festa. Para ela, cada pessoa paga 500 ienes.' },
+        { speaker: 'A', ja: 'どうやって{払|はら}いますか？', pt: 'Como se paga?' },
+        { speaker: 'B', ja: 'この{封筒|ふうとう}に500{円|えん}{入|い}れて、{名前|なまえ}と{住所|じゅうしょ}を{書|か}いて、{祭|まつ}りのとき{出|だ}すんです。', pt: 'Coloca-se 500 ienes neste envelope, escreve nome e endereço, e entrega na hora da festa.' },
+        { speaker: 'A', ja: 'みんな、{払|はら}うんですか？', pt: 'Todo mundo paga?' },
+        { speaker: 'B', ja: '{寄付|きふ}ですから、{払|はら}いたい{人|ひと}だけでいいですよ。', pt: 'É doação, então só quem quiser pagar, tudo bem.' },
+      ],
+    },
+  ],
+  '07-03': [
+    {
+      label: '③ 花火大会 (07-03)',
+      setupPt: '③ festival de fogos.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、{土曜日|どようび}の{夜|よる}、{町|まち}で{花火|はなび}{大会|たいかい}があると{聞|き}きました。{場所|ばしょ}はどこですか？', pt: 'Ouvi que vai ter festival de fogos na cidade sábado à noite. Onde é?' },
+        { speaker: 'B', ja: '{中央|ちゅうおう}{海岸|かいがん}。ここから{歩|ある}いて15{分|ふん}ぐらいだけど、わかる？', pt: 'Na praia central. Uns 15 minutos a pé daqui — sabe onde é?' },
+        { speaker: 'A', ja: 'あ、はい。', pt: 'Ah, sim.' },
+        { speaker: 'B', ja: '7{時|じ}に{始|はじ}まって、1{時間|じかん}ぐらいだと{思|おも}うよ。', pt: 'Começa às 19h e dura uns 1 hora, acho.' },
+        { speaker: 'A', ja: 'わかりました。{雨|あめ}のときは、どうなりますか？', pt: 'Entendi. E se chover?' },
+        { speaker: 'B', ja: '{雨|あめ}が{降|ふ}ったら、{日曜日|にちようび}にやるよ。{日曜日|にちようび}も{雨|あめ}だったら{中止|ちゅうし}だけど。', pt: 'Se chover, passa para domingo. Se chover no domingo também, é cancelado.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '07-04': [
+    {
+      label: '④ フリーマーケット (07-04)',
+      setupPt: '④ feira de pulgas (flea market).',
+      lines: [
+        { speaker: 'A', ja: 'あのう、{市役所|しやくしょ}でフリーマーケットがあるそうですね。', pt: 'Ouvi que vai ter uma feira de pulgas na prefeitura.' },
+        { speaker: 'B', ja: 'ええ。{毎月|まいつき}、{第|だい}2{土曜日|どようび}に、{市役所|しやくしょ}の{広場|ひろば}でやってますよ。', pt: 'Sim. Todo 2º sábado do mês, na praça da prefeitura.' },
+        { speaker: 'A', ja: 'どんなものを{売|う}ってますか？', pt: 'O que vendem?' },
+        { speaker: 'B', ja: '{服|ふく}が{多|おお}いけど、{食器|しょっき}とか、おもちゃとか、いろいろあると{思|おも}いますよ。', pt: 'Tem bastante roupa, mas também louças, brinquedos, várias coisas.' },
+        { speaker: 'A', ja: '天気が{悪|わる}かったら、どうなりますか？', pt: 'E se o tempo estiver ruim?' },
+        { speaker: 'B', ja: '{雨|あめ}が{降|ふ}ったら、{中|なか}のホールでやります。', pt: 'Se chover, fazemos no salão coberto.' },
+        { speaker: 'A', ja: 'ありがとうございます。{行|い}ってみます。', pt: 'Obrigado. Vou lá.' },
+      ],
+    },
+  ],
+  '07-06': [
+    {
+      label: '① 放送 — コンサート (07-06)',
+      setupJa: '{町内|ちょうない}{放送|ほうそう}で、イベントのお{知|し}らせが{流|なが}れています。',
+      setupPt: 'Anúncio de evento na transmissão do bairro. ① concerto.',
+      lines: [
+        { speaker: 'Narração', ja: 'さくら{市民|しみん}センターからお{知|し}らせします。7{月|がつ}14{日|か}、{日曜日|にちようび}、さくら{市民|しみん}センターの「ひかりホール」において、「ピアノの{夕|ゆう}べ」コンサートが{開催|かいさい}されます。{入場|にゅうじょう}{無料|むりょう}。{皆様|みなさま}のご{来場|らいじょう}をお{待|ま}ちしています。', pt: 'Comunicado do Centro Cívico Sakura. No dia 14/7, domingo, no «Hikari Hall» do Centro Cívico Sakura, será realizado o concerto «Noite de Piano». Entrada gratuita. Aguardamos a presença de todos.' },
+      ],
+    },
+  ],
+  '07-08': [
+    {
+      label: '③ 放送 — ふるさとまつり (07-08)',
+      setupPt: '③ festival da cidade (furusato matsuri).',
+      lines: [
+        { speaker: 'Narração', ja: '{市役所|しやくしょ}から、「ふるさとまつり」についてお{知|し}らせします。{本日|ほんじつ}、{午後|ごご}1{時|じ}から、「ふるさとまつり」が{開|ひら}かれます。カラオケ{大会|たいかい}やブラスバンドの{演奏|えんそう}などの{楽|たの}しいイベント。{午後|ごご}7{時|じ}30{分|ぷん}からは、{花火|はなび}{大会|たいかい}が{予定|よてい}されています。{皆様|みなさま}、お{誘|さそ}い{合|あ}わせの{上|うえ}、お{出|で}かけください。', pt: 'Da prefeitura, sobre o «Furusato Matsuri». Hoje, a partir das 13h, será realizado o «Furusato Matsuri». Haverá eventos divertidos como concurso de karaokê e apresentação de banda. A partir das 19h30 está previsto um festival de fogos. Venham todos, tragam os amigos.' },
+      ],
+    },
+  ],
+  '07-09': [
+    {
+      label: '④ 放送 — 野菜の販売会 (07-09)',
+      setupPt: '④ venda de legumes.',
+      lines: [
+        { speaker: 'Narração', ja: '{町役場|まちやくば}から、{野菜|やさい}の{販売会|はんばいかい}についてお{知|し}らせします。{明日|あす}、7{月|がつ}28{日|にち}、{日曜日|にちようび}、{午前|ごぜん}8{時|じ}30{分|ぷん}から、「あおぞら{広場|ひろば}」において、{地元|じもと}の{農家|のうか}が{生産|せいさん}した{新鮮|しんせん}な{夏野菜|なつやさい}の{販売会|はんばいかい}が{行|おこな}われます。{皆様|みなさま}のご{来場|らいじょう}をお{待|ま}ちしています。', pt: 'Da prefeitura municipal, sobre a venda de legumes. Amanhã, 28/7, domingo, a partir das 8h30, na praça «Aozora», será realizada a venda de legumes de verão frescos produzidos por agricultores locais. Aguardamos a presença de todos.' },
+      ],
+    },
+  ],
+  '07-11': [
+    {
+      label: '会話 — 盆踊りに誘う (07-11)',
+      setupJa: '{杉村|すぎむら}さんが、{同|おな}じ{会社|かいしゃ}のジーナさん・ラウラさんを{盆踊|ぼんおど}りに{誘|さそ}っています。',
+      setupPt: 'Sugimura convida as colegas de empresa Gina e Laura para o bon-odori.',
+      lines: [
+        { speaker: '杉村', ja: '{今度|こんど}の{土曜日|どようび}、{盆踊|ぼんおど}りがありますけど、{知|し}ってますか？', pt: 'Sábado que vem vai ter bon-odori; vocês conhecem?' },
+        { speaker: 'ジーナ', ja: 'ぼんおどり？ {何|なん}ですか？', pt: 'Bon-odori? O que é?' },
+        { speaker: '杉村', ja: '{日本|にほん}の{祭|まつ}りです。{輪|わ}になって、{音楽|おんがく}に{合|あ}わせて、みんなで{踊|おど}るんですよ。{踊|おど}れない{人|ひと}は、だれでも{参加|さんか}できますよ。', pt: 'É uma festa japonesa. Forma-se um círculo e todos dançam ao som da música. Qualquer um pode participar, mesmo quem não sabe dançar.' },
+        { speaker: 'ジーナ', ja: 'でも、{私|わたし}、{一度|いちど}もやったことないです。', pt: 'Mas eu nunca fiz isso.' },
+        { speaker: '杉村', ja: '{簡単|かんたん}だから、だれでも{踊|おど}れますよ。わからなかったら{教|おし}えるから、だいじょうぶ。', pt: 'É simples, qualquer um consegue dançar. Se não souber, eu ensino, fica tranquila.' },
+        { speaker: 'ジーナ', ja: 'じゃあ、{行|い}ってみます。{何|なに}を{着|き}て{行|い}ったらいいですか？', pt: 'Então vou. O que devo vestir?' },
+        { speaker: '杉村', ja: '{何|なん}でもいいですよ。あ、でも、{娘|むすめ}たちの{浴衣|ゆかた}があるから、{貸|か}しましょうか？', pt: 'Qualquer coisa serve. Ah, mas tenho os yukatas das minhas filhas; quer que eu empreste?' },
+        { speaker: 'ジーナ', ja: 'でも、1{人|ひと}りで{着|き}られますか？', pt: 'Mas eu consigo vestir sozinha?' },
+        { speaker: '杉村', ja: '{私|わたし}が{手伝|てつだ}うから、だいじょうぶ。{盆踊|ぼんおど}りの{前|まえ}に、うちで{浴衣|ゆかた}を{着|き}てから{行|い}きましょう。うちに5{時|じ}に{来|き}てください。', pt: 'Eu ajudo, fica tranquila. Antes do bon-odori, vamos vestir o yukata na minha casa e ir. Venha à minha casa às 17h.' },
+        { speaker: '杉村', ja: '6{時|じ}から{始|はじ}まりますよ。{盆踊|ぼんおど}りが{終|お}わったら、いっしょに{居酒屋|いざかや}に{行|い}きましょう。', pt: 'Começa às 18h. Quando o bon-odori terminar, vamos juntos ao izakaya.' },
+        { speaker: 'ラウラ', ja: '{楽|たの}しみです。', pt: 'Estou ansiosa!' },
+      ],
+    },
+  ],
+}
+
+const lesson7: Section = {
+  id: 'lesson-7',
+  level: 'elementary2',
+  titleJa: '第7課 雨が降ったら、ホールでやります',
+  titlePt: 'Lição 7 — Se chover, será no salão',
+  summaryPt:
+    'Eventos da comunidade · ler avisos do mural do bairro ou da caixa de correio (断水／防災訓練／お祭り／ボランティア), entender perguntas e respostas sobre eventos (雨が降ったら、中のホールでやります), entender anúncios da rádio local (コンサートが開催されます) e, ao ser convidado, perguntar sobre o evento (盆踊り？ 何ですか／何を着て行ったらいいですか).',
+  studyNotes: [
+    {
+      title: 'Tópico: Eventos da comunidade (地域のイベント)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Extrair as informações principais de avisos no mural do bairro ou na caixa de correio.\n' +
+        '- Perguntar sobre eventos e avisos da comunidade e entender as respostas.\n' +
+        '- Ouvir um aviso de evento na transmissão local e entender as informações principais.\n' +
+        '- Ao ser convidado para um evento da comunidade, perguntar sobre ele e entender as respostas.\n\n' +
+        '💡 Pergunta de abertura: {地域|ちいき}のお{祭|まつ}りや{行事|ぎょうじ}に{参加|さんか}したことがありますか？ (você já participou de festas/eventos da comunidade?).',
+    },
+    {
+      title: '〜たら — “se” e “depois que” (➊)',
+      bodyPt:
+        '**〜たら** (forma comum do passado + ら) tem dois usos:\n\n' +
+        '- **condição hipotética** (se ~ acontecer): `{雨|あめ}が{降|ふ}ったら、{中|なか}のホールでやります` (se chover, fazemos no salão). `{忙|いそが}しかったら…`, `わからなかったら、{教|おし}えます`.\n' +
+        '- **fato que vai acontecer** (depois que ~): `{盆踊|ぼんおど}りが{終|お}わったら、{居酒屋|いざかや}に{行|い}きましょう` (quando o bon-odori acabar, vamos ao izakaya). `{駅|えき}に{着|つ}いたら…`.\n\n' +
+        '(文法ノート ❶)',
+    },
+    {
+      title: 'Passivo 受身① — eventos em avisos (➋)',
+      bodyPt:
+        'Em **avisos e transmissões formais**, o evento vira o sujeito (forma passiva):\n\n' +
+        '- `コンサートが{開催|かいさい}されます` (será realizado um concerto), `{販売会|はんばいかい}が{行|おこな}われます`, `{花火|はなび}{大会|たいかい}が{予定|よてい}されています`, `{練習|れんしゅう}が{開|ひら}かれます`.\n\n' +
+        '🔧 〜する→〜される; {行|おこな}う→{行|おこな}われる; {開|ひら}く→{開|ひら}かれる. (文法ノート ❷)',
+    },
+    {
+      title: 'Forma potencial 可能形 + だれでも〜 (➌)',
+      bodyPt:
+        'A **forma potencial** diz o que se consegue fazer:\n\n' +
+        '- `だれでも{踊|おど}れますよ` (qualquer um consegue dançar), `1{人|ひと}りで{着|き}られますか？` (consegue vestir sozinho?), `お{酒|さけ}、{飲|の}めますか？`.\n\n' +
+        '💡 Também: 〜なければなりません (ter de — {必|かなら}ず{参加|さんか}しなければなりません). (文法ノート ❸)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Avisos do bairro:** {断水|だんすい} (corte de água), {水道|すいどう}{工事|こうじ}, {防災|ぼうさい}{訓練|くんれん} (simulado de desastre), {校庭|こうてい}, {雨天|うてん}の{場合|ばあい} (em caso de chuva), {寄付|きふ} (doação), {申|もう}し{込|こ}む (inscrever-se), {持|も}ち{物|もの}, {軍手|ぐんて}.\n\n' +
+        '**Eventos:** コンサート, {花火|はなび}{大会|たいかい}, {野菜|やさい}の{販売会|はんばいかい}, カラオケ{大会|たいかい}, ブラスバンドの{演奏|えんそう}, {盆踊|ぼんおど}り, {浴衣|ゆかた}, おみこし, フリーマーケット, ガス{点検|てんけん}.\n\n' +
+        '**Anúncios:** {開催|かいさい}する／される, {行|おこな}う／{行|おこな}われる, {入場|にゅうじょう}{無料|むりょう}, {集合|しゅうごう}, {中止|ちゅうし}.\n\n' +
+        '**Kanji da lição:** お{知|し}らせ, {今月|こんげつ}, {水道|すいどう}, {工事|こうじ}, {広場|ひろば}, {場合|ばあい}, {中止|ちゅうし}, {条件|じょうけん}, 〜{以上|いじょう}, {開|ひら}く, {生産|せいさん}する.',
+    },
+  ],
+  groups: [lesson7Group],
+  audios: attachScripts(7, L7_SCRIPTS),
+}
+
+// ---- Lições 8-18 (estrutura por tópico; exercícios em construção) ------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -1690,12 +1886,7 @@ const sections: Section[] = [
   lesson5,
   lesson6,
   // Tópico 4 — Eventos da comunidade (地域のイベント)
-  scaffold(7, 'Eventos da comunidade', '雨が降ったら、ホールでやります', 'Se chover, será no salão', [
-    'Extrair as informações principais de avisos no mural do bairro ou na caixa de correio.',
-    'Perguntar sobre eventos e avisos da comunidade e entender as respostas.',
-    'Ouvir um aviso de evento na transmissão local e entender as informações principais.',
-    'Ao ser convidado para um evento da comunidade, perguntar sobre ele e entender as respostas.',
-  ]),
+  lesson7,
   scaffold(8, 'Eventos da comunidade', '屋台はどこかわかりますか？', 'Você sabe onde ficam as barracas?', [
     'Ver a programação de um evento e extrair horários, atrações e informações principais.',
     'No local do evento, perguntar a funcionários sobre horário e lugar e entender as respostas.',
