@@ -3809,16 +3809,220 @@ const lesson17: Section = {
   audios: attachScripts(17, L17_SCRIPTS),
 }
 
-// ---- Lição 18 (estrutura por tópico; exercícios em construção) ---------------
-const others: Section[] = [
-  scaffold(18, 'Convívio', '何かプレゼントをあげませんか？', 'Que tal darmos algum presente?', [
-    'Dar os parabéns por aniversário, casamento etc.',
-    'Conversar sobre o que dar ao escolher um presente para alguém.',
-    'Agradecer e comentar ao receber um presente.',
-    'Ler um post de aniversário que um amigo publicou nas redes e entender.',
-    'Escrever uma mensagem de felicitação ou despedida num cartão.',
-  ]),
-]
+const lesson18Group: ExerciseGroup = {
+  id: 'iro-e1-l18',
+  title: '何かプレゼントをあげませんか？',
+  subtitlePt: 'Convívio · dar os parabéns (おめでとうございます) usando informação ouvida (〜そうです), combinar e escolher um presente (〜にあげる; あげる／くれる／もらう), reportar fala de outro (〜と{言|い}っていました) e a própria opinião (〜と{思|おも}います), além de agradecer ao receber, ler post de aniversário e escrever mensagem de cartão',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l18-1', number: 1, prompt: '「お{子|こ}さんが{生|う}まれたそうですね」 — a estrutura S（普通形）そうです serve para (Nota ➊):', choices: [{ n: 1, text: 'transmitir/confirmar algo que se OUVIU ou LEU de outra fonte (“ouvi dizer que… / soube que…”); aqui confirma uma boa notícia para então dar os parabéns' }, { n: 2, text: 'descrever algo que se VÊ e parece estar prestes a acontecer' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'pedir permissão' }], answer: 1, translationPt: 'Soube que seu bebê nasceu, não é?', explanationPt: '〜そうです (boato/informação ouvida) = transmitir/confirmar o que se ouviu ou leu. Aqui confirma uma notícia feliz (nascimento, casamento) para emendar com おめでとう. (Nota ➊)' },
+    { id: 'iro-e1-l18-2', number: 2, prompt: 'Como S（普通形）そうです (informação ouvida) se liga a cada tipo de frase (Nota ➊)?', choices: [{ n: 1, text: 'sempre com o 普通形: N だそうです ／ ナA だそうです ／ イA いそうです ／ V-る／V-た そうです (ex.: {結婚|けっこん}するそうです, {合格|ごうかく}したそうです)' }, { n: 2, text: 'sempre com a マス-form + そうです' }, { n: 3, text: 'só com substantivos' }, { n: 4, text: 'tirando o い dos イ-adjetivos, como em V-そう' }], answer: 1, translationPt: 'Soube que vai casar mês que vem. Parabéns.', explanationPt: 'Liga-se ao 普通形 de N/ナA/イA/V: {今日|きょう}は{誕生日|たんじょうび}だそうです, {暇|ひま}だそうです, {暑|あつ}いそうです, パーティーに{行|い}くそうです／{行|い}ったそうです. (Nota ➊ · tabela)' },
+    { id: 'iro-e1-l18-3', number: 3, prompt: 'Qual a diferença entre o 〜そうです desta lição e o V-そう da Lição 13 ({終|お}わりそうです)?', choices: [{ n: 1, text: 'aqui 〜そうです = BOATO (o que se ouviu/leu), ligado ao 普通形; na L13 V-そう = APARÊNCIA (o que parece pelo que se vê), ligado à マス-form sem ます' }, { n: 2, text: 'são exatamente a mesma coisa' }, { n: 3, text: 'aqui é aparência e na L13 é boato' }, { n: 4, text: 'aqui é futuro e na L13 é passado' }], answer: 1, explanationPt: 'Boato: {生|う}まれた**そう**です (= ouvi dizer). Aparência (L13): {終|お}わり**そう**です (= parece que vai acabar, V-ます sem ます + そう). Conectam-se diferente: 普通形 vs マス-stem. (Nota ➊)' },
+    { id: 'iro-e1-l18-4', number: 4, prompt: '「アナさんに{何|なに}かプレゼントをあげませんか？」 — 【{人|ひと}】に【{物|もの}】をあげる serve para (Nota ➋):', choices: [{ n: 1, text: 'dizer que alguém DÁ algo a OUTRA pessoa (não a mim); quem recebe leva a partícula に' }, { n: 2, text: 'dizer que alguém me dá algo a mim' }, { n: 3, text: 'dizer que recebi algo' }, { n: 4, text: 'dizer que comprei algo' }], answer: 1, translationPt: 'Que tal darmos algum presente para a Ana?', explanationPt: 'あげる = dar algo a outra pessoa. Quem recebe leva に: アナさん**に**プレゼントをあげる. Ex.: みんなで{何|なに}かあげませんか？ (Nota ➋)' },
+    { id: 'iro-e1-l18-5', number: 5, prompt: 'Diferença entre あげる, くれる e もらう (Nota ➋)?', choices: [{ n: 1, text: 'あげる/くれる têm o DOADOR como sujeito (くれる quando quem recebe sou {私|わたし}); もらう tem quem RECEBE como sujeito' }, { n: 2, text: 'os três são iguais' }, { n: 3, text: 'あげる = receber; くれる/もらう = dar' }, { n: 4, text: 'あげる é para objetos, くれる para pessoas, もらう para animais' }], answer: 1, explanationPt: 'あげる/くれる: sujeito = doador (送り手); usa-se くれる quando o receptor é {私|わたし}. もらう: sujeito = receptor (受け手). (Nota ➋ · 使い分け)' },
+    { id: 'iro-e1-l18-6', number: 6, prompt: 'Pelos exemplos da nota: ①ミゲルさんは、フエンさんにプレゼントを＿＿＿。 ②ミゲルさんは、{私|わたし}にプレゼントを＿＿＿。 ③フエンさんは、ミゲルさんにプレゼントを＿＿＿。', choices: [{ n: 1, text: '① あげました ／ ② くれました ／ ③ もらいました' }, { n: 2, text: '① くれました ／ ② あげました ／ ③ あげました' }, { n: 3, text: '① もらいました ／ ② もらいました ／ ③ くれました' }, { n: 4, text: '① あげました ／ ② もらいました ／ ③ くれました' }], answer: 1, explanationPt: '① Miguel deu à Huyen → あげました. ② Miguel deu a mim → くれました (receptor=私). ③ Huyen recebeu de Miguel → もらいました. ④ {私|わたし}は、ミゲルさんにもらいました. (Nota ➋ · exemplos)' },
+    { id: 'iro-e1-l18-7', number: 7, prompt: '「アナさん、{前|まえ}に、{焼|や}き{鳥|とり}が{大好|だいす}きだと{言|い}っていました」 — S（普通形）と{言|い}っていました serve para (Nota ➌):', choices: [{ n: 1, text: 'transmitir o que OUTRA pessoa disse (citação); o と marca a citação, e o conteúdo vai no 普通形' }, { n: 2, text: 'dar a própria opinião' }, { n: 3, text: 'dar uma ordem direta' }, { n: 4, text: 'descrever algo que se vê' }], answer: 1, translationPt: 'A Ana disse antes que adora yakitori.', explanationPt: '〜と{言|い}っていました = reportar a fala de alguém. と = partícula de citação; o conteúdo citado vai no 普通形. Ex.: またあとで{電話|でんわ}すると{言|い}ってました. (Nota ➌)' },
+    { id: 'iro-e1-l18-8', number: 8, prompt: 'Diferença entre 〜と{言|い}っていました e 〜そうです quanto à FONTE da informação (Nota ➌)?', choices: [{ n: 1, text: '〜と{言|い}っていました: a fonte é limitada ao que você ouviu DIRETAMENTE de alguém; 〜そうです: a fonte pode ser qualquer coisa (TV, jornal, internet etc.)' }, { n: 2, text: 'os dois exigem ter visto na TV' }, { n: 3, text: '〜そうです é só para fala direta; 〜と言っていました é para qualquer fonte' }, { n: 4, text: 'não há diferença de fonte' }], answer: 1, explanationPt: '〜と{言|い}っていました restringe-se ao que se ouviu diretamente de uma pessoa; 〜そうです aceita qualquer fonte (TV, jornal, internet, ouvir falar). (Nota ➌)' },
+    { id: 'iro-e1-l18-9', number: 9, prompt: '「もっと、{思|おも}い{出|で}に{残|のこ}るものがいいと{思|おも}います」 — S（普通形）と{思|おも}います serve para (Nota ➍):', choices: [{ n: 1, text: 'expressar a PRÓPRIA opinião ou avaliação (“acho que…”); o と marca o conteúdo, no 普通形' }, { n: 2, text: 'reportar o que outra pessoa disse' }, { n: 3, text: 'confirmar um boato' }, { n: 4, text: 'pedir um favor' }], answer: 1, translationPt: 'Acho melhor algo mais marcante (que fique na memória).', explanationPt: '〜と{思|おも}います = dar a própria opinião/juízo. と marca o conteúdo (普通形). Ex.: 10{人|にん}ぐらいだと{思|おも}います／{来|こ}ないと{思|おも}います. (Nota ➍)' },
+    { id: 'iro-e1-l18-10', number: 10, prompt: 'A pergunta de abertura 「だれかにプレゼントをするのは、どんなときですか？」 quer dizer:', choices: [{ n: 1, text: 'Em que ocasiões você dá presente a alguém?' }, { n: 2, text: 'Quanto custa um presente?' }, { n: 3, text: 'Quem te deu este presente?' }, { n: 4, text: 'Onde se compra presente?' }], answer: 1, translationPt: 'Em que tipo de ocasião você dá presente a alguém?', explanationPt: 'Tema: {交際|こうさい} (convívio). A abertura introduz situações de presentear: {誕生日|たんじょうび}, {結婚|けっこん}, {出産|しゅっさん}, {合格|ごうかく} etc. (Abertura)' },
+    { id: 'iro-e1-l18-11', number: 11, prompt: 'Vocabulário (Atividade 1 · ocasiões a-d): 「{誕生日|たんじょうび}／{結婚|けっこん}（する）／{出産|しゅっさん}・{子|こ}どもが{生|う}まれる／{合格|ごうかく}（する）」 significam:', choices: [{ n: 1, text: 'aniversário ／ casamento (casar-se) ／ nascimento (nascer um filho) ／ aprovação (passar num exame)' }, { n: 2, text: 'formatura ／ noivado ／ mudança ／ promoção' }, { n: 3, text: 'viagem ／ divórcio ／ batizado ／ reprovação' }, { n: 4, text: 'festa ／ encontro ／ adoção ／ entrevista' }], answer: 1, explanationPt: 'a. {誕生日|たんじょうび} (aniversário), b. {結婚|けっこん}/{結婚|けっこん}する (casamento), c. {出産|しゅっさん}/{子|こ}どもが{生|う}まれる (parto/nascer filho), d. {合格|ごうかく}/{合格|ごうかく}する (aprovação). (Atividade 1)' },
+    { id: 'iro-e1-l18-12', number: 12, prompt: 'Vocabulário (Atividade 2 · 【プレゼント】 a-h): 「フォトフレーム／{時計|とけい}／ネクタイ／アクセサリー／ハンカチ／{花|はな}／ケーキ／ギフトカード」 significam:', choices: [{ n: 1, text: 'porta-retrato ／ relógio ／ gravata ／ acessório (bijuteria) ／ lenço ／ flor ／ bolo ／ cartão-presente (vale)' }, { n: 2, text: 'espelho ／ pulseira ／ cinto ／ colar ／ toalha ／ planta ／ doce ／ dinheiro' }, { n: 3, text: 'quadro ／ despertador ／ cachecol ／ anel ／ guardanapo ／ buquê ／ chocolate ／ ingresso' }, { n: 4, text: 'álbum ／ corrente ／ camisa ／ brinco ／ pano ／ vaso ／ torta ／ selo' }], answer: 1, explanationPt: 'a. フォトフレーム (porta-retrato), b. {時計|とけい} (relógio), c. ネクタイ (gravata), d. アクセサリー (acessório), e. ハンカチ (lenço), f. {花|はな} (flor), g. ケーキ (bolo), h. ギフトカード (cartão-presente). (Atividade 2)' },
+    { id: 'iro-e1-l18-13', number: 13, prompt: 'Vocabulário (Atividade 1 · ことば): 「{男|おとこ}の{子|こ}／{女|おんな}の{子|こ}／{決|き}める／{考|かんが}える／{相手|あいて}／ごちそうする／きっと／{楽|たの}しみですね／お{幸|しあわ}せに」 significam:', choices: [{ n: 1, text: 'menino ／ menina ／ decidir ／ pensar ／ parceiro(a)/cônjuge ／ pagar/oferecer a refeição ／ com certeza ／ “que bom, vai ser legal” ／ “felicidades (sejam felizes)”' }, { n: 2, text: 'irmão ／ irmã ／ escolher ／ esquecer ／ amigo ／ cozinhar ／ talvez ／ “que pena” ／ “boa sorte”' }, { n: 3, text: 'bebê ／ criança ／ marcar ／ lembrar ／ chefe ／ convidar ／ logo ／ “tudo bem” ／ “até logo”' }, { n: 4, text: 'filho ／ filha ／ combinar ／ imaginar ／ vizinho ／ comer ／ quase ／ “obrigado” ／ “parabéns”' }], answer: 1, explanationPt: '{男|おとこ}の{子|こ} (menino), {女|おんな}の{子|こ} (menina), {決|き}める (decidir), {考|かんが}える (pensar), {相手|あいて} (cônjuge/o outro), ごちそうする (pagar a refeição), きっと (com certeza), {楽|たの}しみですね (que bom!), お{幸|しあわ}せに (felicidades). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l18-14', number: 14, prompt: 'Vocabulário (Atividade 2 · ことば): 「{帰国|きこく}（する）／さびしい／{送別会|そうべつかい}／{呼|よ}ぶ／{思|おも}い{出|で}／{残|のこ}る／{予算|よさん}／{参加者|さんかしゃ}／それなら／{選|えら}ぶ」 significam:', choices: [{ n: 1, text: 'voltar ao país ／ sentir saudade/estar triste ／ festa de despedida ／ chamar/convidar ／ lembrança (memória) ／ ficar/permanecer ／ orçamento ／ participantes ／ “nesse caso/então” ／ escolher' }, { n: 2, text: 'viajar ／ feliz ／ reunião ／ ligar ／ presente ／ sair ／ preço ／ convidados ／ “talvez” ／ comprar' }, { n: 3, text: 'mudar de casa ／ cansado ／ festa ／ acordar ／ foto ／ sobrar comida ／ conta ／ funcionários ／ “porém” ／ pegar' }, { n: 4, text: 'chegar ／ animado ／ encontro ／ gritar ／ ideia ／ voltar ／ desconto ／ amigos ／ “além disso” ／ decidir' }], answer: 1, explanationPt: '{帰国|きこく}する (voltar ao país), さびしい (triste/saudade), {送別会|そうべつかい} (festa de despedida), {呼|よ}ぶ (chamar/convidar), {思|おも}い{出|で} (lembrança), {残|のこ}る (ficar), {予算|よさん} (orçamento), {参加者|さんかしゃ} (participantes), それなら (nesse caso), {選|えら}ぶ (escolher). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l18-15', number: 15, prompt: 'Vocabulário (Atividade 3 · ことば): 「あいさつ／{大切|たいせつ}にする／{飾|かざ}る／{忘|わす}れる／お{元気|げんき}で／{乾杯|かんぱい}／お{世話|せわ}になりました」 significam:', choices: [{ n: 1, text: 'discurso/saudação ／ guardar com carinho/cuidar bem ／ exibir/decorar ／ esquecer ／ “se cuide (despedida)” ／ “saúde!” (brinde) ／ “obrigado por tudo” (despedida grata)' }, { n: 2, text: 'pergunta ／ vender ／ pintar ／ lembrar ／ “bom dia” ／ “coma!” ／ “com licença”' }, { n: 3, text: 'apresentação ／ jogar fora ／ pendurar ／ perder ／ “boa noite” ／ “vamos!” ／ “desculpe”' }, { n: 4, text: 'aviso ／ usar ／ limpar ／ achar ／ “até logo” ／ “tchau” ／ “de nada”' }], answer: 1, explanationPt: 'あいさつ (discurso/saudação), {大切|たいせつ}にする (cuidar/dar valor), {飾|かざ}る (exibir/decorar), {忘|わす}れる (esquecer), お{元気|げんき}で (despedida: cuide-se), {乾杯|かんぱい} (brinde: saúde!), お{世話|せわ}になりました (obrigado por tudo, despedida). (Atividade 3 · 大切なことば)' },
+    { id: 'iro-e1-l18-16', number: 16, prompt: 'Os kanji 「{男|おとこ}の{子|こ}／{女|おんな}の{子|こ}／お{祝|いわ}い／{誕生日|たんじょうび}／{結婚|けっこん}／{時計|とけい}」 lêem-se:', choices: [{ n: 1, text: 'おとこのこ ／ おんなのこ ／ おいわい ／ たんじょうび ／ けっこん ／ とけい' }, { n: 2, text: 'だんのこ ／ じょのこ ／ おしゅくい ／ たんせいび ／ けつこん ／ じけい' }, { n: 3, text: 'おとこのこ ／ おんなのこ ／ おいわい ／ せいたんび ／ けっこん ／ ときけい' }, { n: 4, text: 'おとこご ／ おんなご ／ おいわい ／ たんじょうび ／ ゆいこん ／ とけい' }], answer: 1, explanationPt: '{男|おとこ}の{子|こ}, {女|おんな}の{子|こ}, お{祝|いわ}い, {誕生日|たんじょうび}, {結婚|けっこん}, {時計|とけい}. (漢字のことば)' },
+    { id: 'iro-e1-l18-17', number: 17, prompt: 'Os kanji 「{幸|しあわ}せ（な）／{生|う}まれる／{思|おも}う／{選|えら}ぶ／{合格|ごうかく}する」 lêem-se e significam:', choices: [{ n: 1, text: 'しあわせ (feliz) ／ うまれる (nascer) ／ おもう (achar/pensar) ／ えらぶ (escolher) ／ ごうかくする (ser aprovado)' }, { n: 2, text: 'こうせい ／ いきる ／ し ／ せん ／ ごうかくする' }, { n: 3, text: 'しあわせ ／ うまれる ／ おもう ／ せんぶ ／ あいかくする' }, { n: 4, text: 'さいわい ／ なまれる ／ し ／ えらぶ ／ ごうかくする' }], answer: 1, explanationPt: '{幸|しあわ}せ（な） (feliz), {生|う}まれる (nascer), {思|おも}う (achar/pensar), {選|えら}ぶ (escolher), {合格|ごうかく}する (ser aprovado). Kanji da lição: {男|おとこ}の{子|こ}・{女|おんな}の{子|こ}・お{祝|いわ}い・{誕生日|たんじょうび}・{結婚|けっこん}・{時計|とけい}・{幸|しあわ}せ・{生|う}まれる・{思|おも}う・{選|えら}ぶ・{合格|ごうかく}する. (漢字)' },
+    { id: 'iro-e1-l18-18', number: 18, prompt: 'Diálogo 18-01: o que aconteceu, o bebê é menino ou menina, e já tem nome?', context: 'A：お{子|こ}さんが{生|う}まれたそうですね。 …{男|おとこ}の{子|こ}ですか？{女|おんな}の{子|こ}ですか？ B：{女|おんな}の{子|こ}。 A：{名前|なまえ}は{決|き}めましたか？ B：ううん、まだ。これから{考|かんが}える。', choices: [{ n: 1, text: 'Nasceu o bebê (ontem); é menina; o nome ainda não foi decidido — vão pensar' }, { n: 2, text: 'Vão casar; é menino; o nome já está escolhido' }, { n: 3, text: 'Passou no exame; gêmeos; sem nome' }, { n: 4, text: 'Mudaram de casa; menina; nome japonês' }], answer: 1, explanationPt: '{生|う}まれたそうですね (➊ boato); {女|おんな}の{子|こ}; {名前|なまえ}はまだ、これから{考|かんが}える. Fecha com {楽|たの}しみですね. (Atividade 1 · 聴解スクリプト 18-01)' },
+    { id: 'iro-e1-l18-19', number: 19, prompt: 'Diálogo 18-02: como é o(a) parceiro(a) de quem vai casar?', context: 'A：ご{結婚|けっこん}おめでとうございます。…{相手|あいて}は、どんな{人|ひと}ですか？ B：うーんと、まあ、{普通|ふつう}の{人|ひと}。 A：かっこいいですか？ B：んー、ぜんぜん。でも、すごくおもしろい{人|ひと}。 C：いいなあ。お{幸|しあわ}せに。', choices: [{ n: 1, text: 'É uma pessoa “comum”, nada bonita(o), mas muito divertida(o); os amigos desejam お{幸|しあわ}せに' }, { n: 2, text: 'É muito bonita(o) e séria(o)' }, { n: 3, text: 'É rica(o) e famosa(o)' }, { n: 4, text: 'É estrangeira(o) e alta(o)' }], answer: 1, explanationPt: '{相手|あいて} (cônjuge): {普通|ふつう}の{人|ひと}, かっこよくない (ぜんぜん) でも すごくおもしろい{人|ひと}. Cumprimento: ご{結婚|けっこん}おめでとう／お{幸|しあわ}せに. (Atividade 1 · 18-02)' },
+    { id: 'iro-e1-l18-20', number: 20, prompt: 'Diálogo 18-03: que costume de aniversário a pessoa B menciona do país dela?', context: 'A：{今日|きょう}、{私|わたし}の{誕生日|たんじょうび}なんだ。…お{祝|いわ}い、{待|ま}ってますよ。 B：{私|わたし}の{国|くに}では、{誕生日|たんじょうび}の{人|ひと}がみんなにケーキをごちそうしますよ。', choices: [{ n: 1, text: 'No país de B, é o ANIVERSARIANTE que paga/oferece o bolo a todos (ごちそうする)' }, { n: 2, text: 'No país de B, ninguém comemora aniversário' }, { n: 3, text: 'No país de B, só se dá dinheiro' }, { n: 4, text: 'No país de B, o aniversário é em segredo' }], answer: 1, translationPt: 'No meu país, o aniversariante é quem oferece bolo a todo mundo.', explanationPt: 'お{誕生日|たんじょうび}おめでとう; mas no país de B, {誕生日|たんじょうび}の{人|ひと}がみんなにケーキをごちそうします (o aniversariante é que paga). (Atividade 1 · 18-03)' },
+    { id: 'iro-e1-l18-21', number: 21, prompt: 'Diálogo 18-04: B passou no JLPT; o que B oferece e como A responde — e que verbos aparecem?', context: 'A：JLPT、{合格|ごうかく}したそうですね。おめでとうございます。… B：きっと{合格|ごうかく}しますよ。{勉強|べんきょう}の{本|ほん}、あげましょうか？ A：え、いいんですか？ありがとうございます！もらいます！', choices: [{ n: 1, text: 'B oferece dar (あげましょうか) um livro de estudo; A aceita dizendo もらいます (vou receber) — aparecem あげる e もらう (➋)' }, { n: 2, text: 'B pede o livro de A; A recusa' }, { n: 3, text: 'B vende o livro; A paga' }, { n: 4, text: 'Ninguém dá nada' }], answer: 1, explanationPt: '{合格|ごうかく}したそうです (➊); {本|ほん}、あげましょうか？ (oferecer dar, あげる); もらいます！ (vou aceitar, もらう). Contraste あげる/もらう (➋). (Atividade 1 · 18-04)' },
+    { id: 'iro-e1-l18-22', number: 22, prompt: 'Diálogo 18-10 (Eleanor & Zhou combinam o {送別会|そうべつかい} da Ana): onde e o que decidem?', context: 'エレノア：{帰|かえ}る{前|まえ}に、みんなでアナさんの{送別会|そうべつかい}をしませんか？ …{駅前|えきまえ}の「たなべ」はどうですか？ … 周：それなら、デジタルフォトフレームはどうですか？ エレノア：あ、いいですね。', choices: [{ n: 1, text: 'Fazem a festa de despedida no “Tanabe” (yakitori, perto da estação) e dão de presente um porta-retrato digital' }, { n: 2, text: 'Fazem em casa e dão flores' }, { n: 3, text: 'Cancelam a festa e dão dinheiro' }, { n: 4, text: 'Vão a um karaokê e dão um relógio' }], answer: 1, explanationPt: 'Local: {駅前|えきまえ}の「たなべ」 ({焼|や}き{鳥|とり}); presente: デジタルフォトフレーム (~5.000 ienes, ~10 participantes). Eleanor reserva e avisa; Zhou compra. (Atividade 2 · 聴解スクリプト 18-10)' },
+    { id: 'iro-e1-l18-23', number: 23, prompt: 'No 18-10, como Zhou reporta o que a Ana tinha dito sobre comida? (Nota ➌)', context: '周：アナさん、{前|まえ}に、{焼|や}き{鳥|とり}が{大好|だいす}きだと{言|い}ってました。', choices: [{ n: 1, text: 'Usa 〜と{言|い}っていました para citar o que a Ana DISSE diretamente: que adora yakitori' }, { n: 2, text: 'Usa 〜そうです, citando uma reportagem de TV' }, { n: 3, text: 'Usa 〜と{思|おも}います, dando a própria opinião' }, { n: 4, text: 'Usa 〜ようにしています' }], answer: 1, explanationPt: '{焼|や}き{鳥|とり}が{大好|だいす}きだと{言|い}ってました = reporta fala ouvida diretamente da Ana (➌). Por isso escolhem o yakitori “たなべ”. (Atividade 2 · 18-10)' },
+    { id: 'iro-e1-l18-24', number: 24, prompt: 'No 18-10, como Zhou e Eleanor expressam as PRÓPRIAS opiniões sobre o presente e o número de pessoas? (Nota ➍)', context: '周：もっと、{思|おも}い{出|で}に{残|のこ}るものがいいと{思|おも}います。 エレノア：{参加者|さんかしゃ}は10{人|にん}ぐらいだと{思|おも}いますから、5,000{円|えん}ぐらいのものですね。', choices: [{ n: 1, text: 'Usam 〜と{思|おも}います: “acho melhor algo mais marcante” e “acho que serão uns 10 participantes”' }, { n: 2, text: 'Usam 〜と{言|い}っていました, citando outra pessoa' }, { n: 3, text: 'Usam 〜そうです, citando a internet' }, { n: 4, text: 'Usam 〜なければなりません' }], answer: 1, explanationPt: '{思|おも}い{出|で}に{残|のこ}るものがいいと{思|おも}います／{参加者|さんかしゃ}は10{人|にん}ぐらいだと{思|おも}います = opinião própria (➍). (Atividade 2 · 18-10)' },
+    { id: 'iro-e1-l18-25', number: 25, prompt: 'Diálogo 18-13 (a festa de despedida da Ana): o que a Ana diz no discurso e o que recebe?', context: 'アナ：みなさん、いろいろお{世話|せわ}になりました。{日本|にほん}に{来|き}て、はじめはさびしかったけど、いろいろな{国|くに}の{友|とも}だちができて、よかったです。… あ、フォトフレーム！すてきなプレゼントですね。…{大切|たいせつ}にします。', choices: [{ n: 1, text: 'Agradece a todos (お{世話|せわ}になりました), diz que no começo foi solitário mas fez amigos de vários países; ganha um porta-retrato e diz que vai guardar com carinho ({大切|たいせつ}にします)' }, { n: 2, text: 'Reclama da comida e devolve o presente' }, { n: 3, text: 'Diz que vai ficar no Japão e recusa o presente' }, { n: 4, text: 'Não faz discurso e sai cedo' }], answer: 1, explanationPt: 'いろいろお{世話|せわ}になりました; はじめはさびしかったけど、{友|とも}だちができて、よかった; ganha フォトフレーム → {大切|たいせつ}にします、{写真|しゃしん}を{入|い}れて{飾|かざ}ります. (Atividade 3 · 聴解スクリプト 18-13)' },
+    { id: 'iro-e1-l18-26', number: 26, prompt: 'Atividade 2 (お礼を言いましょう) — ao receber um presente, que expressões de agradecimento e impressão se usam?', choices: [{ n: 1, text: 'どうもありがとうございます ／ すてきなプレゼントですね ／ うれしいです ／ ほしかったんです ／ おもしろいですね ／ {大切|たいせつ}にします' }, { n: 2, text: 'いりません ／ つまらないですね ／ かえします ／ きらいです' }, { n: 3, text: 'いくらですか ／ たかいですね ／ やすいですね ／ もういいです' }, { n: 4, text: 'すみません ／ だめです ／ こまります ／ しりません' }], answer: 1, explanationPt: 'Agradecer + impressão: どうもありがとうございます; すてきなプレゼントですね／うれしいです／ほしかったんです／おもしろいですね; {大切|たいせつ}にします (vou cuidar bem). (Atividade 2 · 会話 18-14)' },
+    { id: 'iro-e1-l18-27', number: 27, prompt: 'Que expressões se usam para FELICITAR conforme a ocasião?', choices: [{ n: 1, text: '（お{誕生日|たんじょうび}／ご{結婚|けっこん}／ご{出産|しゅっさん}）おめでとうございます; ao casamento, お{幸|しあわ}せに; a quem espera um bebê, {楽|たの}しみですね' }, { n: 2, text: 'お{大事|だいじ}に para qualquer ocasião feliz' }, { n: 3, text: 'いってらっしゃい ao aniversário' }, { n: 4, text: 'おつかれさま ao nascimento' }], answer: 1, explanationPt: 'おめでとうございます (parabéns, com お/ご + ocasião), お{幸|しあわ}せに (felicidades, casamento), {楽|たの}しみですね (que bom, espera de bebê). (Atividade 1/2)' },
+    { id: 'iro-e1-l18-28', number: 28, prompt: 'Atividade 3 (SNS · post de aniversário da amiga) — quantos anos fez, com quem comemorou, que presentes ganhou e o que a loja ofereceu?', context: 'Post: 「{私|わたし}もとうとう30{代|だい}です！… ブープインさん、ムギーさんといっしょに、カラオケに{行|い}きました！… ブープインさんはスマホケースを、ムギーさんはかわいいキーホルダーをくれました。ケーキはお{店|みせ}からのサービスでした！」', choices: [{ n: 1, text: 'Fez 30 anos (entrou nos 30); foi ao karaokê com Bupin e Mugii; ganhou uma capa de celular e um chaveiro; o bolo foi cortesia da loja' }, { n: 2, text: 'Fez 20 anos; ficou em casa; ganhou flores; pagou o bolo' }, { n: 3, text: 'Fez 40 anos; viajou sozinha; ganhou um relógio; sem bolo' }, { n: 4, text: 'Fez 18 anos; jantou com a família; ganhou livros; ganhou desconto' }], answer: 1, explanationPt: '30{代|だい} (entrou nos 30); カラオケ com ブープイン e ムギー (歌って、踊って); presentes: スマホケース + キーホルダー (くれました, ➋); ケーキはお{店|みせ}からのサービス. (Atividade 4)' },
+    { id: 'iro-e1-l18-29', number: 29, prompt: 'Atividade 5 — o {寄|よ}せ{書|が}き (mensagens coletivas num {色紙|しきし}/cartão) é usado quando?', choices: [{ n: 1, text: 'em despedidas (mudança de emprego, {帰国|きこく}) e em comemorações ({結婚|けっこん} etc.): várias pessoas escrevem mensagens num mesmo {色紙|しきし}/cartão para presentear' }, { n: 2, text: 'apenas para reclamações formais no trabalho' }, { n: 3, text: 'apenas para listas de compras' }, { n: 4, text: 'apenas para contratos oficiais' }], answer: 1, explanationPt: '{寄|よ}せ{書|が}き = várias pessoas escrevem num {色紙|しきし} (papel quadrado grosso, borda dourada) ou cartão, em despedidas/comemorações. Palavras: {家庭|かてい} (lar), いつまでも (para sempre), がんばってください, いなくなる. (Atividade 5 · TIPS)' },
+    { id: 'iro-e1-l18-30', number: 30, prompt: 'Atividade 5 — em mensagens de FELICITAÇÃO de casamento e de DESPEDIDA, exemplos típicos são:', choices: [{ n: 1, text: 'Casamento: ご{結婚|けっこん}おめでとうございます／{末永|すえなが}くお{幸|しあわ}せに／あたたかい{家庭|かてい}を{作|つく}ってください. Despedida: {体|からだ}を{大切|たいせつ}に／お{元気|げんき}で／{国|くに}に{帰|かえ}ってもがんばってください' }, { n: 2, text: 'Casamento: お{大事|だいじ}に. Despedida: おめでとう' }, { n: 3, text: 'Casamento: さようなら. Despedida: いただきます' }, { n: 4, text: 'Casamento: いってきます. Despedida: ただいま' }], answer: 1, explanationPt: 'Casamento: ご{結婚|けっこん}おめでとうございます, {末永|すえなが}くお{幸|しあわ}せに, あたたかい{家庭|かてい}を{作|つく}ってください. Despedida: {体|からだ}を{大切|たいせつ}に, お{元気|げんき}で, がんばってください. (Atividade 5)' },
+    { id: 'iro-e1-l18-31', number: 31, prompt: 'TIPS — sobre o {乾杯|かんぱい} (brinde) e as despedidas お{元気|げんき}で／お{世話|せわ}になりました, é correto que:', choices: [{ n: 1, text: '{乾杯|かんぱい} inicia o evento (espera-se até o brinde para beber; não é preciso virar o copo, basta um gole); お{元気|げんき}で = despedida a quem não se verá por um tempo; お{世話|せわ}になりました = agradecimento de despedida a quem conviveu com você' }, { n: 2, text: '{乾杯|かんぱい} significa “tchau”; お{元気|げんき}で é um brinde' }, { n: 3, text: '{乾杯|かんぱい} obriga a esvaziar o copo de uma vez; お{世話|せわ}になりました é “bom apetite”' }, { n: 4, text: 'os três são cumprimentos de chegada' }], answer: 1, explanationPt: '{乾杯|かんぱい} (杯を乾かす) inicia a festa — espera-se o brinde para beber, mas basta um gole. お{元気|げんき}で (cuide-se, p/ quem não verá por um tempo); お{世話|せわ}になりました (obrigado por tudo, despedida grata). (TIPS / Atividade 3)' },
+    { id: 'iro-e1-l18-32', number: 32, prompt: 'O título 「{何|なに}かプレゼントをあげませんか？」 quer dizer:', choices: [{ n: 1, text: 'Que tal darmos algum presente? (〜にあげる, ➋ + convite 〜ませんか)' }, { n: 2, text: 'Você me deu um presente?' }, { n: 3, text: 'Quanto custa este presente?' }, { n: 4, text: 'Onde você comprou o presente?' }], answer: 1, translationPt: 'Que tal darmos algum presente?', explanationPt: '{何|なに}か (algo) + プレゼントをあげませんか (convite: que tal darmos? — あげる ➋). Tema: {交際|こうさい} (convívio); última lição do Elementary 1. (Título)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 18
+const L18_SCRIPTS: Record<string, ScriptItem[]> = {
+  '18-01': [
+    {
+      label: '① (18-01) — お子さんが生まれたそうですね',
+      setupJa: '4{人|よにん}の{人|ひと}にお{祝|いわ}いを{言|い}っています。',
+      setupPt: 'Quatro pessoas estão sendo cumprimentadas/parabenizadas.',
+      lines: [
+        { speaker: 'A', ja: 'お{子|こ}さんが{生|う}まれたそうですね。', pt: 'Soube que seu bebê nasceu, não é?' },
+        { speaker: 'B', ja: 'うん、ありがとう。{昨日|きのう}、{生|う}まれたんだ。', pt: 'Sim, obrigado. Nasceu ontem.' },
+        { speaker: 'A', ja: 'おめでとうございます。{男|おとこ}の{子|こ}ですか？{女|おんな}の{子|こ}ですか？', pt: 'Parabéns. É menino ou menina?' },
+        { speaker: 'B', ja: '{女|おんな}の{子|こ}。', pt: 'Menina.' },
+        { speaker: 'A', ja: 'そうですか。{名前|なまえ}は{決|き}めましたか？', pt: 'Ah é. Já decidiram o nome?' },
+        { speaker: 'B', ja: 'ううん、まだ。これから{考|かんが}える。', pt: 'Não, ainda não. Vamos pensar a partir de agora.' },
+        { speaker: 'A', ja: '{楽|たの}しみですね。', pt: 'Que bom, vai ser legal.' },
+      ],
+    },
+  ],
+  '18-02': [
+    {
+      label: '② (18-02) — ご結婚おめでとうございます',
+      lines: [
+        { speaker: 'A', ja: 'ご{結婚|けっこん}おめでとうございます。', pt: 'Parabéns pelo casamento.' },
+        { speaker: 'B', ja: 'え、あ、ありがとう。', pt: 'Ah, obrigado(a).' },
+        { speaker: 'C', ja: 'これ、{私|わたし}たちからのプレゼントです。', pt: 'Isto é um presente nosso.' },
+        { speaker: 'B', ja: 'えー、ありがとう。うれしい。', pt: 'Nossa, obrigado(a). Que alegria.' },
+        { speaker: 'A', ja: '{相手|あいて}は、どんな{人|ひと}ですか？', pt: 'Como é o(a) seu(sua) parceiro(a)?' },
+        { speaker: 'B', ja: 'うーんと、まあ、{普通|ふつう}の{人|ひと}。', pt: 'Hmm, bem, uma pessoa comum.' },
+        { speaker: 'A', ja: 'かっこいいですか？', pt: 'É bonito(a)?' },
+        { speaker: 'B', ja: 'んー、ぜんぜん。でも、すごくおもしろい{人|ひと}。', pt: 'Hmm, nem um pouco. Mas é uma pessoa muito divertida.' },
+        { speaker: 'C', ja: 'いいなあ。お{幸|しあわ}せに。', pt: 'Que inveja (boa). Felicidades.' },
+      ],
+    },
+  ],
+  '18-03': [
+    {
+      label: '③ (18-03) — 今日、私の誕生日なんだ',
+      lines: [
+        { speaker: 'A', ja: '{今日|きょう}、{私|わたし}の{誕生日|たんじょうび}なんだ。', pt: 'Hoje é meu aniversário.' },
+        { speaker: 'B', ja: 'へー、お{誕生日|たんじょうび}おめでとうございます。', pt: 'Ah, parabéns pelo aniversário.' },
+        { speaker: 'C', ja: 'はいはい、おめでとう、おめでとう。', pt: 'Isso, isso, parabéns, parabéns.' },
+        { speaker: 'A', ja: 'お{祝|いわ}い、{待|ま}ってますよ。', pt: 'Estou esperando meu presente, hein.' },
+        { speaker: 'C', ja: 'お{祝|いわ}いねえ……。', pt: 'Presente, né…' },
+        { speaker: 'B', ja: '{私|わたし}の{国|くに}では、{誕生日|たんじょうび}の{人|ひと}がみんなにケーキをごちそうしますよ。', pt: 'No meu país, é o aniversariante que oferece bolo a todo mundo.' },
+        { speaker: 'C', ja: 'へー、それはいいねえ。', pt: 'Nossa, isso é ótimo.' },
+        { speaker: 'A', ja: 'えー！', pt: 'O quê?!' },
+      ],
+    },
+  ],
+  '18-04': [
+    {
+      label: '④ (18-04) — JLPT、合格したそうですね',
+      lines: [
+        { speaker: 'A', ja: 'JLPT、{合格|ごうかく}したそうですね。おめでとうございます。', pt: 'Soube que você passou no JLPT. Parabéns.' },
+        { speaker: 'B', ja: 'あ、ありがとうございます。', pt: 'Ah, obrigado(a).' },
+        { speaker: 'A', ja: 'たくさん{勉強|べんきょう}しましたか？', pt: 'Estudou bastante?' },
+        { speaker: 'B', ja: 'はい、たくさんしました。', pt: 'Sim, estudei bastante.' },
+        { speaker: 'A', ja: 'すごいですね。{私|わたし}も{合格|ごうかく}したいです。', pt: 'Que demais. Eu também quero passar.' },
+        { speaker: 'B', ja: 'だいじょうぶ。きっと{合格|ごうかく}しますよ。{勉強|べんきょう}の{本|ほん}、あげましょうか？', pt: 'Tranquilo. Você com certeza vai passar. Quer que eu te dê meu livro de estudo?' },
+        { speaker: 'A', ja: 'え、いいんですか？ありがとうございます！もらいます！', pt: 'Ué, pode mesmo? Muito obrigado(a)! Vou aceitar!' },
+      ],
+    },
+  ],
+  '18-10': [
+    {
+      label: '会話 (18-10) — アナさんの送別会の相談',
+      setupJa: '{周|シュウ}さんとエレノアさんが、アナさんの{送別会|そうべつかい}について{相談|そうだん}しています。',
+      setupPt: 'Zhou e Eleanor conversam sobre a festa de despedida da Ana, que logo volta ao país dela.',
+      lines: [
+        { speaker: 'エレノア', ja: '{周|シュウ}さん、もうすぐアナさんの{帰国|きこく}ですね。', pt: 'Zhou, a Ana logo volta para o país dela, né.' },
+        { speaker: '周', ja: 'さびしくなりますね。', pt: 'Vai dar saudade.' },
+        { speaker: 'エレノア', ja: 'そうですね。さびしくなりますね。それで、{帰|かえ}る{前|まえ}に、みんなでアナさんの{送別会|そうべつかい}をしませんか？', pt: 'Pois é. Vai dar saudade. Então, antes de ela voltar, que tal fazermos uma festa de despedida para a Ana?' },
+        { speaker: '周', ja: 'いいですね。やりましょう。キムさんとかウエンさんもみんな{呼|よ}びましょう。', pt: 'Boa ideia. Vamos fazer. Vamos chamar todo mundo, a Kim, a Wen…' },
+        { speaker: 'エレノア', ja: 'アナさんの{予定|よてい}を{聞|き}いて、{私|わたし}がみんなに{連絡|れんらく}します。{場所|ばしょ}はどこがいいでしょうか？', pt: 'Eu pergunto a agenda da Ana e aviso todo mundo. Qual seria um bom lugar?' },
+        { speaker: '周', ja: 'そうですねえ、アナさん、{前|まえ}に、{焼|や}き{鳥|とり}が{大好|だいす}きだと{言|い}ってました。{駅前|えきまえ}の「たなべ」はどうですか？', pt: 'Hmm, a Ana disse antes que adora yakitori. Que tal o “Tanabe”, perto da estação?' },
+        { speaker: 'エレノア', ja: 'じゃあ、あとで{予約|よやく}しますね。', pt: 'Então eu reservo depois.' },
+        { speaker: '周', ja: 'お{願|ねが}いします。', pt: 'Por favor.' },
+        { speaker: 'エレノア', ja: 'あと、アナさんに{何|なに}かプレゼントをあげませんか？', pt: 'E que tal darmos algum presente para a Ana?' },
+        { speaker: '周', ja: 'そうですね。{何|なに}がいいでしょうか？エレノアさんの{国|くに}では、どんなものをあげますか？', pt: 'Boa. O que seria bom? No seu país, o que se costuma dar?' },
+        { speaker: 'エレノア', ja: '{花|はな}とか？', pt: 'Flores, talvez?' },
+        { speaker: '周', ja: 'うーん、もっと、{思|おも}い{出|で}に{残|のこ}るものがいいと{思|おも}います。{予算|よさん}は？', pt: 'Hmm, acho melhor algo mais marcante, que fique na memória. E o orçamento?' },
+        { speaker: 'エレノア', ja: '{参加者|さんかしゃ}は10{人|にん}ぐらいだと{思|おも}いますから、5,000{円|えん}ぐらいのものですね。', pt: 'Acho que serão uns 10 participantes, então algo de uns 5.000 ienes.' },
+        { speaker: '周', ja: 'それなら、デジタルフォトフレームはどうですか？', pt: 'Nesse caso, que tal um porta-retrato digital?' },
+        { speaker: 'エレノア', ja: 'あ、いいですね。', pt: 'Ah, boa.' },
+        { speaker: '周', ja: 'じゃあ、プレゼントは{私|わたし}が{買|か}いますね。{私|わたし}が{選|えら}んでいいですか？', pt: 'Então eu compro o presente. Posso escolher?' },
+        { speaker: 'エレノア', ja: 'お{願|ねが}いします。', pt: 'Por favor.' },
+      ],
+    },
+  ],
+  '18-13': [
+    {
+      label: '会話 (18-13) — アナさんの送別会',
+      setupJa: '{焼|や}き{鳥|とり}{屋|や}で、アナさんの{送別会|そうべつかい}を{開|ひら}いています。',
+      setupPt: 'Estão fazendo a festa de despedida da Ana num restaurante de yakitori.',
+      lines: [
+        { speaker: 'エレノア', ja: 'それでは、アナさん、お{元気|げんき}で。{乾杯|かんぱい}！', pt: 'Então, Ana, se cuide. Saúde!' },
+        { speaker: '全員', ja: '{乾杯|かんぱい}！', pt: 'Saúde!' },
+        { speaker: 'エレノア', ja: 'じゃあ、アナさん、あいさつをお{願|ねが}いします。', pt: 'Bom, Ana, faça um discurso, por favor.' },
+        { speaker: 'アナ', ja: 'はい。えー、みなさん、いろいろお{世話|せわ}になりました。{日本|にほん}に{来|き}て、はじめはさびしかったけど、いろいろな{国|くに}の{友|とも}だちができて、よかったです。みなさんも、{元気|げんき}でいてください。ありがとうございました。', pt: 'Sim. Eh, pessoal, muito obrigada por tudo. Quando cheguei ao Japão, no começo foi solitário, mas fiz amigos de vários países e foi muito bom. Cuidem-se vocês também. Muito obrigada.' },
+        { speaker: 'エレノア', ja: 'これ、みんなからのプレゼントです。', pt: 'Aqui, um presente de todos nós.' },
+        { speaker: 'アナ', ja: 'えー、ありがとうございます。', pt: 'Nossa, muito obrigada.' },
+        { speaker: '周', ja: 'どうぞ、{開|あ}けてみてください。', pt: 'Pode abrir, por favor.' },
+        { speaker: 'アナ', ja: 'あ、フォトフレーム！すてきなプレゼントですね。うれしいです。{大切|たいせつ}にします。{日本|にほん}でみんなと{撮|と}った{写真|しゃしん}を{入|い}れて、{飾|かざ}ります。みなさんも、{私|わたし}のことを、{忘|わす}れないでください。', pt: 'Ah, um porta-retrato! Que presente lindo. Estou feliz. Vou cuidar bem dele. Vou colocar as fotos que tirei com vocês no Japão e deixar exposto. Vocês também, não se esqueçam de mim.' },
+      ],
+    },
+  ],
+}
+
+const lesson18: Section = {
+  id: 'lesson-18',
+  level: 'elementary1',
+  titleJa: '第18課 何かプレゼントをあげませんか？',
+  titlePt: 'Lição 18 — Que tal darmos algum presente?',
+  summaryPt: 'Convívio ({交際|こうさい}) · dar os parabéns ({誕生日|たんじょうび}／{結婚|けっこん}／{出産|しゅっさん}／{合格|ごうかく}) confirmando o que se ouviu (〜そうです), combinar e escolher um presente (〜にあげる; trio あげる／くれる／もらう), reportar fala de outro (〜と{言|い}っていました) e dar a própria opinião (〜と{思|おも}います), agradecer ao receber, ler post de aniversário e escrever mensagem de cartão/{色紙|しきし}.',
+  studyNotes: [
+    {
+      title: 'Tópico: Convívio (交際)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Dar os parabéns por aniversário, casamento etc.\n' +
+        '- Conversar sobre o que dar ao escolher um presente para alguém.\n' +
+        '- Agradecer e comentar ao receber um presente.\n' +
+        '- Ler um post de aniversário que um amigo publicou nas redes e entender.\n' +
+        '- Escrever uma mensagem de felicitação ou despedida num cartão/{色紙|しきし}.\n\n' +
+        '💡 Pergunta de abertura: だれかにプレゼントをするのは、どんなときですか？ (Em que ocasiões você dá presente a alguém?)\n\n' +
+        '🎓 Esta é a **última lição do Irodori Elementary 1 (初級1 · A2)**.',
+    },
+    {
+      title: 'Informação ouvida: S（普通形）そうです (➊)',
+      bodyPt:
+        '**S（普通形）そうです** = transmitir/confirmar algo que se **ouviu ou leu** (“ouvi dizer que… / soube que…”). Nesta lição, confirma uma boa notícia para então dar os parabéns:\n\n' +
+        '- `お{子|こ}さんが{生|う}まれたそうですね` ／ `JLPT、{合格|ごうかく}したそうですね`.\n' +
+        '- **Liga-se ao 普通形** de N/ナA/イA/V:\n' +
+        '  - N: {誕生日|たんじょうび}**だ**そうです／{誕生日|たんじょうび}**だった**そうです (neg. じゃない／じゃなかった).\n' +
+        '  - ナA: {暇|ひま}**だ**そうです (neg. じゃない／じゃなかった).\n' +
+        '  - イA: {暑|あつ}**い**そうです／{暑|あつ}**かった**そうです (neg. くない／くなかった).\n' +
+        '  - V: {行|い}**く**そうです／{行|い}**った**そうです (neg. {行|い}かない／{行|い}かなかった).\n' +
+        '- ⚠️ **≠ V-そう da Lição 13** ({終|お}わりそう = *aparência*, pelo que se vê, ligado à マス-stem). Aqui é *boato*, ligado ao 普通形.',
+    },
+    {
+      title: 'Dar/receber: あげる ／ くれる ／ もらう (➋)',
+      bodyPt:
+        '**【{人|ひと}】に【{物|もの}】をあげる** = dar algo a outra pessoa (não a mim). Quem recebe leva **に**: `アナさんに{何|なに}かプレゼントをあげませんか？`.\n\n' +
+        'Os três verbos de dar/receber, e quem é o **sujeito**:\n\n' +
+        '| Verbo | Sujeito | Exemplo |\n' +
+        '|---|---|---|\n' +
+        '| あげる | doador (送り手) | ミゲルさんは、フエンさんにプレゼントを**あげました** |\n' +
+        '| くれる | doador, mas só quando quem recebe sou {私|わたし} | ミゲルさんは、{私|わたし}にプレゼントを**くれました** |\n' +
+        '| もらう | quem recebe (受け手) | フエンさんは、ミゲルさんにプレゼントを**もらいました** |\n\n' +
+        'Liga à Lição 17 ([[projectjlpt-overview]]): 〜にもらう／〜がくれる — agora some-se 〜にあげる.',
+    },
+    {
+      title: 'Citar fala (➌) e dar opinião (➍)',
+      bodyPt:
+        '**S（普通形）と{言|い}っていました** = reportar o que **outra pessoa disse** (citação direta). と marca a citação; o conteúdo vai no 普通形:\n' +
+        '- `アナさん、{前|まえ}に、{焼|や}き{鳥|とり}が{大好|だいす}きだと{言|い}っていました`.\n' +
+        '- ⚠️ A fonte é **limitada ao que se ouviu diretamente** de alguém — diferente de 〜そうです, cuja fonte pode ser qualquer coisa (TV, jornal, internet).\n\n' +
+        '**S（普通形）と{思|おも}います** = dar a **própria opinião/avaliação** (“acho que…”). と marca o conteúdo (普通形):\n' +
+        '- `もっと、{思|おも}い{出|で}に{残|のこ}るものがいいと{思|おも}います` ／ `10{人|にん}ぐらいだと{思|おも}います` ／ `{来|こ}ないと{思|おも}います`.',
+    },
+    {
+      title: 'Vocabulário, e-mail/cartão, TIPS e Kanji',
+      bodyPt:
+        '**Ocasiões (Ativ. 1):** {誕生日|たんじょうび}, {結婚|けっこん}（する）, {出産|しゅっさん}/{子|こ}どもが{生|う}まれる, {合格|ごうかく}（する）. **Felicitações:** （お{誕生日|たんじょうび}／ご{結婚|けっこん}）おめでとうございます, お{幸|しあわ}せに, {楽|たの}しみですね. **Presentes (Ativ. 2):** フォトフレーム, {時計|とけい}, ネクタイ, アクセサリー, ハンカチ, {花|はな}, ケーキ, ギフトカード. **{送別会|そうべつかい} (Ativ. 2):** {帰国|きこく}, さびしい, {呼|よ}ぶ, {思|おも}い{出|で}, {残|のこ}る, {予算|よさん}, {参加者|さんかしゃ}, それなら, デジタルフォトフレーム, {選|えら}ぶ. **Festa/agradecer (Ativ. 3):** {乾杯|かんぱい}, お{元気|げんき}で, お{世話|せわ}になりました, あいさつ, {大切|たいせつ}にする, {飾|かざ}る, {忘|わす}れる; すてきなプレゼントですね／うれしいです／ほしかったんです.\n\n' +
+        '**SNS/cartão (Ativ. 4/5):** メッセージ, とうとう, 〜{代|だい} (30{代|だい}=na faixa dos 30), {歌|うた}う, {踊|おど}る, サービス; {寄|よ}せ{書|が}き (mensagens coletivas num {色紙|しきし}), {家庭|かてい}, いつまでも, がんばってください, いなくなる.\n\n' +
+        '**TIPS:** {日本人|にほんじん}の{名前|なまえ} (registrar em 14 dias; 〜{子|こ}/números antes, hoje 1 kanji), {乾杯|かんぱい} (inicia a festa; só um gole basta), カラオケ (カラオケボックス, {1人|ひとり}カラオケ), {寄|よ}せ{書|が}き.\n\n' +
+        '**Kanji da lição:** {男|おとこ}の{子|こ}, {女|おんな}の{子|こ}, お{祝|いわ}い, {誕生日|たんじょうび}, {結婚|けっこん}, {時計|とけい}, {幸|しあわ}せ, {生|う}まれる, {思|おも}う, {選|えら}ぶ, {合格|ごうかく}する.',
+    },
+  ],
+  groups: [lesson18Group],
+  audios: attachScripts(18, L18_SCRIPTS),
+}
 
 export const irodoriElementary1: Level = {
   id: 'elementary1',
@@ -3826,5 +4030,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, lesson17, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, lesson17, lesson18],
 }
