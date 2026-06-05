@@ -26,6 +26,10 @@ export interface Question {
   prompt: string
   /** contexto opcional: situação, passagem, diálogo */
   context?: string
+  /** ilustração de referência (caminho em /images/...), p/ questões baseadas em imagem */
+  image?: string
+  /** texto alternativo da ilustração (acessibilidade) */
+  imageAlt?: string
   choices: Choice[]
   /** alternativa correta (1..4) */
   answer: number

@@ -29,6 +29,22 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
             <JaText text={q.prompt} furigana={furigana} />
           </div>
 
+          {q.image && (
+            <img
+              className="q-illustration"
+              src={q.image}
+              alt={q.imageAlt ?? ''}
+              loading="lazy"
+              style={{
+                display: 'block',
+                maxWidth: '100%',
+                maxHeight: 260,
+                borderRadius: 10,
+                margin: '10px 0',
+              }}
+            />
+          )}
+
           <div className="choices">
             {q.choices.map((c) => {
               let cls = 'choice'
