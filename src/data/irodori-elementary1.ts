@@ -3078,15 +3078,261 @@ const lesson14: Section = {
   audios: attachScripts(14, L14_SCRIPTS),
 }
 
-// ---- Lições 15-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 15: 熱があってのどが痛いんです (tópico 健康な生活) ----------
+const lesson15Group: ExerciseGroup = {
+  id: 'iro-e1-l15',
+  title: '熱があってのどが痛いんです',
+  subtitlePt: 'Vida saudável · explicar sintomas ({熱|ねつ}があって、のどが{痛|いた}いんです), entender instruções do médico ({人|ひと}に{会|あ}わないでください／{辛|から}いものは{食|た}べないでください), o uso do remédio ({熱|ねつ}を{下|さ}げる{薬|くすり}／{食|た}べたあと、{飲|の}んでください／つらいとき{飲|の}んでください) e preencher o {問診票|もんしんひょう}',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l15-1', number: 1, prompt: '「{昨日|きのう}から38{度|ど}の{熱|ねつ}があって、のどがすごく{痛|いた}いんです」 (〜んです②) serve para (Nota ➊):', choices: [{ n: 1, text: 'explicar a própria situação ao outro — aqui, descrever os sintomas ao médico' }, { n: 2, text: 'dar uma ordem ao médico' }, { n: 3, text: 'recusar o atendimento' }, { n: 4, text: 'pedir um favor formal' }], answer: 1, translationPt: 'Estou com 38 graus de febre desde ontem e a garganta dói muito.', explanationPt: '〜んです explica a situação. Na Lição 14 era o motivo de atraso/folga; aqui, os sintomas no hospital. Vários sintomas ligam-se pela テ-form ({熱|ねつ}があって、〜{痛|いた}いんです). (Nota ➊)' },
+    { id: 'iro-e1-l15-2', number: 2, prompt: 'Como 〜んです se liga a cada classe de palavra (Nota ➊)?', choices: [{ n: 1, text: 'N／ナA → なんです ({風邪|かぜ}なんです); イA → いんです (のどが{痛|いた}いんです); V → るんです／たんです／ないんです' }, { n: 2, text: 'todas viram 〜なんです' }, { n: 3, text: 'todas viram 〜いんです' }, { n: 4, text: 'só verbos podem levar んです' }], answer: 1, explanationPt: 'N: {風邪|かぜ}なんです; ナA: {大変|たいへん}なんです; イA: {痛|いた}いんです; V dic.: {熱|ねつ}があるんです; V タ: {足|あし}をくじいたんです; V ナイ: せきが{止|と}まらないんです. (Nota ➊)' },
+    { id: 'iro-e1-l15-3', number: 3, prompt: 'Diferença entre 「どうしましたか？」 e 「どうしたんですか？」 (Nota ➊):', choices: [{ n: 1, text: 'どうしたんですか？ = quando se ESTRANHA algo e se quer explicação; どうしましたか？ = quando perguntar é natural (ex.: médico ao paciente)' }, { n: 2, text: 'são exatamente iguais' }, { n: 3, text: 'どうしましたか？ é mais rude' }, { n: 4, text: 'どうしたんですか？ só se usa por escrito' }], answer: 1, explanationPt: 'どうしたんですか？ pede explicação quando algo parece diferente/preocupante. どうしましたか？ usa-se quando a pergunta é esperada (médico→paciente). (Nota ➊)' },
+    { id: 'iro-e1-l15-4', number: 4, prompt: '「できるだけ{人|ひと}に{会|あ}わないでください」 (V-ないでください) serve para (Nota ➋):', choices: [{ n: 1, text: 'instruir/pedir para NÃO fazer algo; liga-se à ナイ-form do verbo' }, { n: 2, text: 'pedir para fazer algo' }, { n: 3, text: 'expressar um desejo' }, { n: 4, text: 'descrever uma ação passada' }], answer: 1, translationPt: 'Por favor, evite ao máximo encontrar pessoas.', explanationPt: 'V-ないでください = instrução/pedido negativo (não faça). Liga-se à ナイ-form ({会|あ}わない→{会|あ}わないでください). Variações conforme a relação: V-ないで／V-ないでくれる？／V-ないでもらえませんか？. (Nota ➋)' },
+    { id: 'iro-e1-l15-5', number: 5, prompt: '「こちらは、せきを{抑|おさ}える{薬|くすり}です」 (V普通形＋N) — o que o verbo faz aqui (Nota ➌)?', choices: [{ n: 1, text: 'qualifica o substantivo {薬|くすり} (um remédio QUE controla a tosse); o verbo vem antes do N, na forma simples (dicionário)' }, { n: 2, text: 'é o verbo principal da frase' }, { n: 3, text: 'indica passado' }, { n: 4, text: 'transforma em pergunta' }], answer: 1, translationPt: 'Este é um remédio que controla a tosse.', explanationPt: 'V (forma simples) + N qualifica o substantivo: 「これは{薬|くすり}です」＋「この{薬|くすり}は、せきを{抑|おさ}えます」→「これは、せきを{抑|おさ}える{薬|くすり}です」. Usa-se a forma de dicionário ({抑|おさ}える). (Nota ➌)' },
+    { id: 'iro-e1-l15-6', number: 6, prompt: 'Expressões típicas para a função do remédio (Nota ➌):', choices: [{ n: 1, text: '{熱|ねつ}を{下|さ}げる ({薬|くすり}) ／ せき・{鼻水|はなみず}を{抑|おさ}える ／ {胃|い}を{守|まも}る' }, { n: 2, text: '{熱|ねつ}を{上|あ}げる ／ せきを{出|だ}す ／ {胃|い}を{壊|こわ}す' }, { n: 3, text: '{薬|くすり}を{買|か}う ／ {病院|びょういん}に{行|い}く ／ {医者|いしゃ}に{会|あ}う' }, { n: 4, text: '{食|た}べる ／ {飲|の}む ／ {寝|ね}る' }], answer: 1, explanationPt: 'Funções comuns: {熱|ねつ}を{下|さ}げる{薬|くすり} (baixa a febre), せき／{鼻水|はなみず}を{抑|おさ}える{薬|くすり} (controla tosse/coriza), {胃|い}を{守|まも}る{薬|くすり} (protege o estômago). (Nota ➌)' },
+    { id: 'iro-e1-l15-7', number: 7, prompt: '「{寝|ね}る{前|まえ}に{飲|の}んでください」／「{飲|の}んだあと、{運転|うんてん}しないでください」 (V-る{前|まえ}に／V-たあと) indicam (Nota ➍):', choices: [{ n: 1, text: 'a ORDEM das ações; {前|まえ}に liga-se à forma de dicionário, あと à forma タ' }, { n: 2, text: 'o lugar das ações' }, { n: 3, text: 'o motivo das ações' }, { n: 4, text: 'a frequência das ações' }], answer: 1, translationPt: 'Tome antes de dormir. / Depois de tomar, não dirija.', explanationPt: 'V-る{前|まえ}に、〜 (antes de) e V-たあと、〜 (depois de) indicam ordem. {前|まえ}に → forma de dicionário ({寝|ね}る{前|まえ}に); あと → forma タ ({飲|の}んだあと). Na Lição 8 vimos Nの{前|まえ}に／あと. (Nota ➍)' },
+    { id: 'iro-e1-l15-8', number: 8, prompt: '「{痛|いた}くてがまんできないときに、{飲|の}んでください」 (〜とき（に）) e sua formação (Nota ➎):', choices: [{ n: 1, text: 'indica o momento/situação; N のとき ／ ナA なとき ／ イA いとき ／ V る・た・ないとき' }, { n: 2, text: 'indica lugar; sempre com で' }, { n: 3, text: 'indica motivo; sempre com から' }, { n: 4, text: 'só se liga a substantivos' }], answer: 1, translationPt: 'Tome quando a dor ficar insuportável.', explanationPt: '〜とき indica o momento/situação. {風邪|かぜ}のとき, {大変|たいへん}なとき, {痛|いた}いとき, {熱|ねつ}があるとき, くじいたとき, がまんできないとき. Para tópico: 〜ときは、〜. Lição 10 (N/adj), Lição 13 (V-たいとき), aqui amplia para verbos. (Nota ➎)' },
+    { id: 'iro-e1-l15-9', number: 9, prompt: 'Vocabulário de sintomas (Atividade 1): 「のどが{痛|いた}い／お{腹|なか}が{痛|いた}い／{熱|ねつ}がある／せきが{出|で}る／{鼻水|はなみず}が{出|で}る／{吐|は}き{気|け}がする／{食欲|しょくよく}がない／{目|め}がかゆい／{足|あし}をくじいた／{頭|あたま}をぶつけた」 significam:', choices: [{ n: 1, text: 'dor de garganta ／ dor de barriga ／ ter febre ／ ter tosse ／ ter coriza (nariz escorrendo) ／ ter enjoo/náusea ／ sem apetite ／ olho coçando ／ torceu o pé ／ bateu a cabeça' }, { n: 2, text: 'tontura ／ dor nas costas ／ ter frio ／ espirro ／ sangramento ／ fome ／ cansaço ／ olho seco ／ quebrou o braço ／ caiu' }, { n: 3, text: 'enxaqueca ／ azia ／ calafrio ／ chiado ／ catarro ／ sede ／ insônia ／ olho vermelho ／ machucou a mão ／ desmaiou' }, { n: 4, text: 'febre ／ cólica ／ suor ／ rouquidão ／ alergia ／ apetite ／ sono ／ visão turva ／ corte ／ queimadura' }], answer: 1, explanationPt: 'のどが{痛|いた}い, お{腹|なか}が{痛|いた}い, {熱|ねつ}がある, せきが{出|で}る, {鼻水|はなみず}が{出|で}る, {吐|は}き{気|け}がする, {食欲|しょくよく}がない, {目|め}がかゆい, {足|あし}をくじいた ({くじ}く), {頭|あたま}をぶつけた ({ぶつ}ける). (Atividade 1 · 【症状】)' },
+    { id: 'iro-e1-l15-10', number: 10, prompt: 'Vocabulário (Atividade 1): 「おととい／{転|ころ}ぶ／レントゲンを{撮|と}る／1{週間|しゅうかん}／{花粉症|かふんしょう}」 significam:', choices: [{ n: 1, text: 'anteontem ／ cair/tombar ／ tirar um raio-X ／ uma semana ／ alergia a pólen (rinite alérgica)' }, { n: 2, text: 'ontem ／ correr ／ tirar foto ／ um mês ／ gripe' }, { n: 3, text: 'amanhã ／ escorregar ／ medir ／ um dia ／ resfriado' }, { n: 4, text: 'hoje ／ levantar ／ examinar ／ um ano ／ asma' }], answer: 1, explanationPt: 'おととい (anteontem), {転|ころ}ぶ (cair), レントゲンを{撮|と}る (tirar raio-X), 1{週間|しゅうかん} (uma semana), {花粉症|かふんしょう} (alergia a pólen). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l15-11', number: 11, prompt: 'Atividade 2 (会話1, recepção) — em que ordem se falou (a-c)?', context: '{郭|カク}：この{病院|びょういん}、はじめてなんですが…。 {受付|うけつけ}：{保険証|ほけんしょう}はお{持|も}ちですか？ … {受付|うけつけ}：{今日|きょう}はどうされましたか？ {郭|カク}：{熱|ねつ}があるんです。 {受付|うけつけ}：では、こちらの{問診票|もんしんひょう}を{記入|きにゅう}してお{待|ま}ちください。', choices: [{ n: 1, text: 'a. {保険証|ほけんしょう} (carteirinha do seguro) → c. {症状|しょうじょう} (sintoma: {熱|ねつ}がある) → b. {問診票|もんしんひょう} (preencher a ficha)' }, { n: 2, text: 'b. {問診票|もんしんひょう} → a. {保険証|ほけんしょう} → c. {症状|しょうじょう}' }, { n: 3, text: 'c. {症状|しょうじょう} → b. {問診票|もんしんひょう} → a. {保険証|ほけんしょう}' }, { n: 4, text: 'a. {保険証|ほけんしょう} → b. {問診票|もんしんひょう} → c. {症状|しょうじょう}' }], answer: 1, explanationPt: 'Ordem na recepção: pedem o {保険証|ほけんしょう} → perguntam o {症状|しょうじょう} (どうされましたか→{熱|ねつ}があるんです) → mandam preencher o {問診票|もんしんひょう}. (Atividade 2 · 会話1 · 聴解スクリプト 15-10)' },
+    { id: 'iro-e1-l15-12', number: 12, prompt: 'Atividade 2 (会話2, 15-11) — o que o médico mandou FAZER (○) e NÃO fazer (×)?', context: '{医者|いしゃ}：{薬|くすり}を{飲|の}んで、よく{寝|ね}てください。{今週|こんしゅう}は{仕事|しごと}を{休|やす}んで、できるだけ{人|ひと}に{会|あ}わないでください。{食|た}べ{物|もの}は…やわらかいものにしてください。{辛|から}いものは、あまり{食|た}べないでください。', choices: [{ n: 1, text: '○: {薬|くすり}を{飲|の}む, {寝|ね}る, やわらかいものを{食|た}べる ／ ×: {仕事|しごと}に{行|い}く, {人|ひと}に{会|あ}う, {辛|から}いものを{食|た}べる' }, { n: 2, text: '○: {仕事|しごと}に{行|い}く, {辛|から}いものを{食|た}べる ／ ×: {寝|ね}る, {薬|くすり}を{飲|の}む' }, { n: 3, text: 'tudo ○' }, { n: 4, text: 'tudo ×' }], answer: 1, explanationPt: 'FAZER (○): {薬|くすり}を{飲|の}む, よく{寝|ね}る, やわらかいものを{食|た}べる. NÃO (×): {仕事|しごと}に{行|い}く, {人|ひと}に{会|あ}う ({会|あ}わないでください ➋), {辛|から}いものを{食|た}べる. (Atividade 2 · 会話2 · 15-11)' },
+    { id: 'iro-e1-l15-13', number: 13, prompt: 'Atividade 2 (会話3, 15-12) — o que {郭|カク} RECEBE na recepção ao final?', context: '{受付|うけつけ}：こちらは{診察券|しんさつけん}です。…こちらが{処方|しょほう}せんです。{薬局|やっきょく}に{行|い}って、{薬|くすり}をもらってください。', choices: [{ n: 1, text: 'o {診察券|しんさつけん} (cartão de consulta) e o {処方|しょほう}せん (receita) — o remédio se pega na {薬局|やっきょく} (farmácia)' }, { n: 2, text: 'o remédio e o {問診票|もんしんひょう}' }, { n: 3, text: 'só o {保険証|ほけんしょう}' }, { n: 4, text: 'nada' }], answer: 1, explanationPt: 'Na recepção recebe o {診察券|しんさつけん} (próxima vez é só entregá-lo) e o {処方|しょほう}せん (leva à {薬局|やっきょく} para pegar o {薬|くすり}). {会計|かいけい} 3.200円; お{大事|だいじ}に. (Atividade 2 · 会話3 · 15-12)' },
+    { id: 'iro-e1-l15-14', number: 14, prompt: 'Vocabulário (Atividade 2): 「{記入|きにゅう}する／{医者|いしゃ}／38{度|ど}5{分|ぶ}／{口|くち}／インフルエンザ／{検査|けんさ}する／A{型|がた}／{熱|ねつ}が{下|さ}がる／おかゆ／{薬局|やっきょく}／もらう／お{大事|だいじ}に」 significam:', choices: [{ n: 1, text: 'preencher ／ médico ／ 38,5 graus ／ boca ／ gripe (influenza) ／ examinar ／ tipo A ／ a febre baixar ／ canja/mingau de arroz ／ farmácia ／ receber ／ “melhoras!”' }, { n: 2, text: 'assinar ／ enfermeiro ／ 38 graus ／ nariz ／ resfriado ／ medir ／ tipo B ／ a febre subir ／ sopa ／ hospital ／ dar ／ “obrigado”' }, { n: 3, text: 'rasurar ／ paciente ／ 35 graus ／ garganta ／ alergia ／ operar ／ grupo A ／ suar ／ arroz ／ clínica ／ comprar ／ “com licença”' }, { n: 4, text: 'copiar ／ dentista ／ 40 graus ／ olho ／ febre ／ vacinar ／ classe A ／ tossir ／ chá ／ posto ／ pegar ／ “tchau”' }], answer: 1, explanationPt: '{記入|きにゅう}する (preencher), {医者|いしゃ} (médico), 38{度|ど}5{分|ぶ} (38,5°C), {口|くち} (boca), インフルエンザ (gripe/influenza), {検査|けんさ}する (examinar), A{型|がた} (tipo A), {熱|ねつ}が{下|さ}がる (febre baixar), おかゆ (canja), {薬局|やっきょく} (farmácia), もらう (receber), お{大事|だいじ}に (melhoras). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l15-15', number: 15, prompt: 'No diálogo, as formas 「お{持|も}ちですか？」 e 「どうされましたか？」 são:', choices: [{ n: 1, text: 'versões mais educadas (敬語) de 「{持|も}っていますか？」 e 「どうしましたか？」' }, { n: 2, text: 'versões mais informais que o normal' }, { n: 3, text: 'erros de gramática' }, { n: 4, text: 'formas do passado' }], answer: 1, explanationPt: 'お{持|も}ちですか？ = forma educada de {持|も}っていますか？; どうされましたか？ = forma educada de どうしましたか？. Comuns na recepção do hospital. (Atividade 2 · notas do diálogo)' },
+    { id: 'iro-e1-l15-16', number: 16, prompt: 'Atividade 3 — no {問診票|もんしんひょう} (ficha), o que se preenche em cada item (pelo 記入例)?', context: 'Itens: {氏名|しめい}（フリガナ）, {性別|せいべつ}, {生年月日|せいねんがっぴ}, {住所|じゅうしょ}, ①{今日|きょう}はどうしましたか, ②いつから, ③{大|おお}きな{病気|びょうき}, ④アレルギー, ⑤{薬|くすり}, ⑥お{酒|さけ}, ⑦たばこ, ⑧{妊娠|にんしん}.', choices: [{ n: 1, text: 'dados pessoais (nome com leitura, sexo, data de nascimento, endereço) e respostas de saúde: sintoma, desde quando, doenças graves, alergia, remédios em uso, álcool, tabaco, gravidez (só mulheres)' }, { n: 2, text: 'apenas o nome e o telefone' }, { n: 3, text: 'os dados do médico e da farmácia' }, { n: 4, text: 'o preço da consulta e a forma de pagamento' }], answer: 1, explanationPt: 'O {問診票|もんしんひょう} pede dados pessoais ({氏名|しめい}＋フリガナ, {性別|せいべつ}, {生年月日|せいねんがっぴ}, {住所|じゅうしょ}) e respostas: ①sintoma, ②desde quando, ③doenças graves, ④alergia, ⑤remédios, ⑥álcool, ⑦tabaco, ⑧gravidez. (Atividade 3 · 記入例)' },
+    { id: 'iro-e1-l15-17', number: 17, prompt: 'Vocabulário (Atividade 3): 「ふりがな／{性別|せいべつ}／{病気|びょうき}にかかる／{現在|げんざい}／{女性|じょせい}／{妊娠|にんしん}する」 significam:', choices: [{ n: 1, text: 'leitura em hiragana ／ sexo/gênero ／ adoecer/ficar doente ／ atualmente ／ mulher (sexo feminino) ／ engravidar' }, { n: 2, text: 'apelido ／ idade ／ curar-se ／ antigamente ／ homem ／ casar' }, { n: 3, text: 'assinatura ／ tipo sanguíneo ／ vacinar ／ no futuro ／ criança ／ nascer' }, { n: 4, text: 'sobrenome ／ peso ／ internar ／ ontem ／ idoso ／ amamentar' }], answer: 1, explanationPt: 'ふりがな (leitura em hiragana), {性別|せいべつ} (sexo), {病気|びょうき}にかかる (adoecer), {現在|げんざい} (atualmente), {女性|じょせい} (mulher), {妊娠|にんしん}する (engravidar). (Atividade 3 · 大切なことば)' },
+    { id: 'iro-e1-l15-18', number: 18, prompt: 'Atividade 4 — os 4 remédios (a-d) servem para:', choices: [{ n: 1, text: '{熱|ねつ}を{下|さ}げる (baixar a febre) ／ せきを{抑|おさ}える (conter a tosse) ／ {痛|いた}み{止|ど}め (analgésico/contra a dor) ／ くしゃみ・{鼻水|はなみず}を{抑|おさ}える (conter espirro e coriza)' }, { n: 2, text: 'subir a febre ／ provocar tosse ／ causar dor ／ dar espirro' }, { n: 3, text: 'dormir ／ comer ／ digerir ／ relaxar' }, { n: 4, text: 'vitamina ／ antibiótico ／ vacina ／ soro' }], answer: 1, explanationPt: 'a. {熱|ねつ}を{下|さ}げる, b. せきを{抑|おさ}える, c. {痛|いた}み{止|ど}め, d. くしゃみ・{鼻水|はなみず}を{抑|おさ}える. (Atividade 4)' },
+    { id: 'iro-e1-l15-19', number: 19, prompt: 'Atividade 4 — sobre QUANDO tomar e os cuidados (注意点 ア-エ):', choices: [{ n: 1, text: 'ア. {間|あいだ}を6{時間|じかん}ぐらいあける ／ イ. 38{度|ど}5{分|ぶ}{以上|いじょう}のとき ／ ウ. {胃|い}を{守|まも}る{薬|くすり}といっしょに{飲|の}む ／ エ. {運転|うんてん}しない' }, { n: 2, text: 'tomar a cada hora ／ só de manhã ／ com suco ／ pode dirigir' }, { n: 3, text: 'tomar em jejum ／ à noite ／ com leite ／ correr' }, { n: 4, text: 'não tomar ／ só à tarde ／ sem água ／ nadar' }], answer: 1, explanationPt: 'Cuidados: ア. dar ~6h de intervalo entre doses, イ. (解熱剤) quando ≥38,5°C, ウ. tomar com o {薬|くすり} que protege o {胃|い}, エ. não dirigir (causa sono). Horários: 1{日|にち}〜{回|かい}, {食後|しょくご}／{寝|ね}る{前|まえ}, つらいとき, がまんできないとき. (Atividade 4)' },
+    { id: 'iro-e1-l15-20', number: 20, prompt: 'Vocabulário (Atividade 4): 「{食後|しょくご}／{眠|ねむ}い／{解熱剤|げねつざい}／こっち」 significam:', choices: [{ n: 1, text: 'depois da refeição ／ com sono/sonolento ／ antitérmico (remédio para baixar febre) ／ este aqui (informal de こちら)' }, { n: 2, text: 'antes da refeição ／ com fome ／ analgésico ／ aquele' }, { n: 3, text: 'em jejum ／ cansado ／ vitamina ／ lá' }, { n: 4, text: 'durante a refeição ／ acordado ／ antibiótico ／ aqui dentro' }], answer: 1, explanationPt: '{食後|しょくご} (após a refeição), {眠|ねむ}い (sonolento), {解熱剤|げねつざい} (antitérmico — {熱|ねつ}を{下|さ}げる{薬|くすり}), こっち (este aqui, informal de こちら). (Atividade 4 · ことば)' },
+    { id: 'iro-e1-l15-21', number: 21, prompt: 'Atividade 5 (bula, {薬|くすり}の{説明|せつめい}) — 「{用法|ようほう}」 e 「{用量|ようりょう}」 significam:', choices: [{ n: 1, text: 'modo de usar (como/quando tomar) ／ dose (quanto tomar)' }, { n: 2, text: 'preço ／ validade' }, { n: 3, text: 'fabricante ／ composição' }, { n: 4, text: 'efeito ／ contraindicação' }], answer: 1, translationPt: 'Como usar / Quanto usar.', explanationPt: '{用法|ようほう} = modo de uso (como e quando tomar); {用量|ようりょう} = dose (quantidade). Na bula procura-se: A. que remédio é, B. quando e quantos tomar, C. cuidados. (Atividade 5 · 大切なことば)' },
+    { id: 'iro-e1-l15-22', number: 22, prompt: 'Os kanji 「{熱|ねつ}／{薬|くすり}／{病気|びょうき}／{病院|びょういん}／{医者|いしゃ}／{住所|じゅうしょ}」 lêem-se:', choices: [{ n: 1, text: 'ねつ (febre) ／ くすり (remédio) ／ びょうき (doença) ／ びょういん (hospital) ／ いしゃ (médico) ／ じゅうしょ (endereço)' }, { n: 2, text: 'ねつ ／ やく ／ びょうき ／ びょういん ／ いしゃ ／ じゅうしょ' }, { n: 3, text: 'ねっ ／ くすり ／ やまいき ／ びょういん ／ いもの ／ すみしょ' }, { n: 4, text: 'ねつ ／ くすり ／ びょうき ／ びょうけ ／ いしゃ ／ じゅうじょ' }], answer: 1, explanationPt: '{熱|ねつ}, {薬|くすり}, {病気|びょうき}, {病院|びょういん}, {医者|いしゃ}, {住所|じゅうしょ}. (漢字のことば)' },
+    { id: 'iro-e1-l15-23', number: 23, prompt: 'Os kanji 「〜{才|さい}／{痛|いた}い／{眠|ねむ}い／{寝|ね}る／{記入|きにゅう}する」 lêem-se:', choices: [{ n: 1, text: 'さい (anos de idade) ／ いたい (doer/dolorido) ／ ねむい (com sono) ／ ねる (dormir/deitar) ／ きにゅうする (preencher)' }, { n: 2, text: 'さい ／ つうい ／ みんい ／ しんる ／ きにゅうする' }, { n: 3, text: 'ねん ／ いたい ／ ねむい ／ ねる ／ きにゅうする' }, { n: 4, text: 'さい ／ いたい ／ ねむい ／ じゃる ／ きじゅうする' }], answer: 1, explanationPt: '〜{才|さい} (anos de idade), {痛|いた}い (doer), {眠|ねむ}い (com sono), {寝|ね}る (dormir), {記入|きにゅう}する (preencher). Kanji da lição: {熱|ねつ}・{薬|くすり}・{病気|びょうき}・{病院|びょういん}・{医者|いしゃ}・{住所|じゅうしょ}・〜{才|さい}・{痛|いた}い・{眠|ねむ}い・{寝|ね}る・{記入|きにゅう}する. (漢字)' },
+    { id: 'iro-e1-l15-24', number: 24, prompt: 'Diálogo 15-03: qual o sintoma e desde quando?', context: 'A：{今日|きょう}はどうしましたか？ B：お{腹|なか}が{痛|いた}くて、{吐|は}き{気|け}がするんです。 A：いつからですか？ B：おとといからです。', choices: [{ n: 1, text: 'Dor de barriga e enjoo (お{腹|なか}が{痛|いた}くて、{吐|は}き{気|け}がする), desde anteontem (おととい)' }, { n: 2, text: 'Febre e tosse, desde hoje' }, { n: 3, text: 'Dor de garganta, há uma semana' }, { n: 4, text: 'Torceu o pé ontem' }], answer: 1, explanationPt: 'お{腹|なか}が{痛|いた}くて、{吐|は}き{気|け}がするんです (sintomas ligados por テ-form + んです, ➊); おとといからです. (Atividade 1 · 聴解スクリプト 15-03)' },
+    { id: 'iro-e1-l15-25', number: 25, prompt: 'Diálogo 15-04: quais os sintomas de B?', context: 'B：{昨日|きのう}から38{度|ど}の{熱|ねつ}があって、のどがすごく{痛|いた}いんです。 A：ご{飯|はん}は{食|た}べてますか？ B：いえ、{食欲|しょくよく}がなくて……。', choices: [{ n: 1, text: 'Febre de 38° desde ontem, garganta muito dolorida e sem apetite ({食欲|しょくよく}がない)' }, { n: 2, text: 'Só um pouco de coriza' }, { n: 3, text: 'Dor de barriga e enjoo' }, { n: 4, text: 'Olho coçando e espirro' }], answer: 1, explanationPt: '{熱|ねつ}があって、のどが{痛|いた}いんです (➊); {食欲|しょくよく}がなくて (sem apetite, motivo com 〜くて). (Atividade 1 · 15-04)' },
+    { id: 'iro-e1-l15-26', number: 26, prompt: 'Diálogo 15-05: o que aconteceu com B?', context: 'B：{昨日|きのう}、{道|みち}で{転|ころ}んで、{足|あし}をくじいたんです。 A：…ここをこうすると、{痛|いた}いですか？ B：{痛|いた}い！ A：ああ、じゃあ、レントゲン{撮|と}ってみましょうか。', choices: [{ n: 1, text: 'Caiu na rua ontem e torceu o pé ({足|あし}をくじいた); o médico sugere tirar um raio-X (レントゲン)' }, { n: 2, text: 'Está com febre alta' }, { n: 3, text: 'Tem alergia a pólen' }, { n: 4, text: 'Bateu a cabeça' }], answer: 1, explanationPt: '{転|ころ}んで、{足|あし}をくじいたんです (forma タ + んです, ➊); レントゲン{撮|と}ってみましょうか (V-てみましょうか, sugestão). (Atividade 1 · 15-05)' },
+    { id: 'iro-e1-l15-27', number: 27, prompt: 'Diálogo 15-11 (診察室): qual o diagnóstico e a principal orientação?', context: '{医者|いしゃ}：インフルエンザですね。A{型|がた}です。{薬|くすり}を{飲|の}んで、よく{寝|ね}てください。…{今週|こんしゅう}は{仕事|しごと}を{休|やす}んで、できるだけ{人|ひと}に{会|あ}わないでください。', choices: [{ n: 1, text: 'É gripe (influenza) tipo A; tomar o remédio, descansar, faltar ao trabalho esta semana e evitar contato com pessoas ({人|ひと}に{会|あ}わないでください)' }, { n: 2, text: 'É só um resfriado leve; pode trabalhar normalmente' }, { n: 3, text: 'É alergia; tomar anti-histamínico' }, { n: 4, text: 'Torceu o pé; tirar raio-X' }], answer: 1, explanationPt: 'インフルエンザ A{型|がた}; {薬|くすり}を{飲|の}んでよく{寝|ね}て; {仕事|しごと}を{休|やす}んで{人|ひと}に{会|あ}わないでください (➋); {食|た}べ{物|もの}はやわらかいもの; {辛|から}いものは{食|た}べないで. (Atividade 2 · 15-11)' },
+    { id: 'iro-e1-l15-28', number: 28, prompt: 'Diálogo 15-14: para que serve o remédio e quando tomá-lo?', context: 'A：こちらは、せきを{抑|おさ}える{薬|くすり}です。1{日|にち}3{回|かい}、{食後|しょくご}に{飲|の}んでください。…{飲|の}むと、{眠|ねむ}くなります。{飲|の}んだあと、{運転|うんてん}しないでくださいね。', choices: [{ n: 1, text: 'É um remédio que controla a tosse (せきを{抑|おさ}える{薬|くすり}); tomar 3x ao dia depois das refeições; dá sono, então não dirigir depois de tomar' }, { n: 2, text: 'É antitérmico; tomar só quando a febre passar de 38,5°' }, { n: 3, text: 'É analgésico; tomar quando a dor for insuportável' }, { n: 4, text: 'É para alergia; tomar antes de dormir' }], answer: 1, explanationPt: 'せきを{抑|おさ}える{薬|くすり} (V普通形+N, ➌); 1{日|にち}3{回|かい}、{食後|しょくご}に; {飲|の}んだあと、{運転|うんてん}しないでください (V-たあと ➍ + V-ないでください ➋). (Atividade 4 · 15-14)' },
+    { id: 'iro-e1-l15-29', number: 29, prompt: 'Diálogo 15-16: o que é o {解熱剤|げねつざい} e quando tomá-lo?', context: 'A：こちらは{解熱剤|げねつざい}です。{熱|ねつ}を{下|さ}げるお{薬|くすり}です。{熱|ねつ}が{高|たか}くてつらいとき、{飲|の}んでください。38{度|ど}5{分|ぶ}{以上|いじょう}ですね。…6{時間|じかん}ぐらい{間|あいだ}をあけてください。', choices: [{ n: 1, text: 'É um antitérmico (baixa a febre); tomar quando a febre estiver alta e incômoda (≥38,5°), com ~6h de intervalo entre as doses' }, { n: 2, text: 'É para tosse; tomar 3x ao dia' }, { n: 3, text: 'É analgésico; tomar com o remédio do estômago' }, { n: 4, text: 'É para alergia; tomar antes de dormir' }], answer: 1, explanationPt: '{解熱剤|げねつざい} = {熱|ねつ}を{下|さ}げる{薬|くすり} (➌); {熱|ねつ}が{高|たか}くてつらいとき (〜とき ➎), 38{度|ど}5{分|ぶ}{以上|いじょう}; 6{時間|じかん}ぐらい{間|あいだ}をあける. (Atividade 4 · 15-16)' },
+    { id: 'iro-e1-l15-30', number: 30, prompt: 'Diálogo 15-17: quando tomar o {痛|いた}み{止|ど}め e com o quê?', context: 'A：これは{痛|いた}み{止|ど}めです。{痛|いた}くてがまんできないときに、{飲|の}んでください。…{飲|の}むときは、こっちの{胃|い}を{守|まも}る{薬|くすり}といっしょに{飲|の}んでください。', choices: [{ n: 1, text: 'É um analgésico; tomar quando a dor ficar insuportável (がまんできないとき), junto com o remédio que protege o estômago ({胃|い}を{守|まも}る{薬|くすり})' }, { n: 2, text: 'É antitérmico; tomar sozinho' }, { n: 3, text: 'É para tosse; tomar antes das refeições' }, { n: 4, text: 'É para alergia; tomar 3x ao dia' }], answer: 1, explanationPt: '{痛|いた}み{止|ど}め; {痛|いた}くてがまんできないときに (〜とき ➎); こっちの{胃|い}を{守|まも}る{薬|くすり}といっしょに (➌). (Atividade 4 · 15-17)' },
+    { id: 'iro-e1-l15-31', number: 31, prompt: 'Atividade 2 (会話3) — o valor da consulta e o que fazer na próxima vez:', context: '{受付|うけつけ}：お{会計|かいけい}は3,200{円|えん}になります。こちらは{診察券|しんさつけん}です。{次|つぎ}からは、これを{受付|うけつけ}に{出|だ}してください。', choices: [{ n: 1, text: 'A consulta custa 3.200 ienes; o {診察券|しんさつけん} deve ser apresentado na recepção nas próximas vezes' }, { n: 2, text: 'A consulta é grátis; não precisa de cartão' }, { n: 3, text: 'Custa 32.000 ienes e paga-se na farmácia' }, { n: 4, text: 'Deve-se trazer o {問診票|もんしんひょう} toda vez' }], answer: 1, explanationPt: '{会計|かいけい} 3.200{円|えん}; {診察券|しんさつけん} (cartão de consulta) → {次|つぎ}からは{受付|うけつけ}に{出|だ}す. Termina com お{大事|だいじ}に. (Atividade 2 · 会話3 · 15-12)' },
+    { id: 'iro-e1-l15-32', number: 32, prompt: 'Pergunta de abertura da lição: 「{最近|さいきん}、{病院|びょういん}に{行|い}きましたか？どんな{症状|しょうじょう}でしたか？」 quer dizer:', choices: [{ n: 1, text: 'Você foi ao médico recentemente? Quais eram os sintomas?' }, { n: 2, text: 'Onde fica o hospital mais próximo?' }, { n: 3, text: 'Quanto custa uma consulta?' }, { n: 4, text: 'Você tem plano de saúde?' }], answer: 1, translationPt: 'Foi ao hospital recentemente? Que sintomas você tinha?', explanationPt: '{最近|さいきん} (recentemente), どんな{症状|しょうじょう} (que sintomas). Tema: {健康|けんこう}な{生活|せいかつ} (vida saudável). (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 15
+const L15_SCRIPTS: Record<string, ScriptItem[]> = {
+  '15-03': [
+    {
+      label: '① (15-03) — お腹が痛くて、吐き気がするんです',
+      setupJa: '{病院|びょういん}で、4{人|よにん}の{人|ひと}が{医者|いしゃ}と{話|はな}しています。',
+      setupPt: 'No hospital, quatro pessoas conversam com o médico.',
+      lines: [
+        { speaker: 'A', ja: '{今日|きょう}はどうしましたか？', pt: 'O que houve hoje?' },
+        { speaker: 'B', ja: 'お{腹|なか}が{痛|いた}くて、{吐|は}き{気|け}がするんです。', pt: 'Estou com dor de barriga e enjoo.' },
+        { speaker: 'A', ja: 'いつからですか？', pt: 'Desde quando?' },
+        { speaker: 'B', ja: 'おとといからです。', pt: 'Desde anteontem.' },
+      ],
+    },
+  ],
+  '15-04': [
+    {
+      label: '② (15-04) — のどがすごく痛いんです',
+      lines: [
+        { speaker: 'A', ja: '{今日|きょう}はどうしましたか？', pt: 'O que houve hoje?' },
+        { speaker: 'B', ja: '{昨日|きのう}から38{度|ど}の{熱|ねつ}があって、のどがすごく{痛|いた}いんです。', pt: 'Estou com 38 graus de febre desde ontem e a garganta dói muito.' },
+        { speaker: 'A', ja: 'そうですか。ご{飯|はん}は{食|た}べてますか？', pt: 'Entendi. Você está comendo?' },
+        { speaker: 'B', ja: 'いえ、{食欲|しょくよく}がなくて……。', pt: 'Não, estou sem apetite…' },
+      ],
+    },
+  ],
+  '15-05': [
+    {
+      label: '③ (15-05) — 足をくじいたんです',
+      lines: [
+        { speaker: 'A', ja: '{今日|きょう}はどうしましたか？', pt: 'O que houve hoje?' },
+        { speaker: 'B', ja: '{昨日|きのう}、{道|みち}で{転|ころ}んで、{足|あし}をくじいたんです。', pt: 'Ontem caí na rua e torci o pé.' },
+        { speaker: 'A', ja: 'ちょっと{触|さわ}りますよ。ここをこうすると、{痛|いた}いですか？', pt: 'Vou tocar um pouco. Quando faço assim aqui, dói?' },
+        { speaker: 'B', ja: '{痛|いた}い！', pt: 'Dói!' },
+        { speaker: 'A', ja: 'ああ、じゃあ、レントゲン{撮|と}ってみましょうか。', pt: 'Ah, então, vamos tirar um raio-X.' },
+      ],
+    },
+  ],
+  '15-06': [
+    {
+      label: '④ (15-06) — 目がかゆくて、鼻水も出るんです',
+      lines: [
+        { speaker: 'A', ja: 'どうされましたか？', pt: 'O que houve?' },
+        { speaker: 'B', ja: '1{週間|しゅうかん}ぐらい{前|まえ}から、{目|め}がかゆくて、{鼻水|はなみず}も{出|で}るんです。', pt: 'Há mais ou menos uma semana, meus olhos coçam e também escorre o nariz.' },
+        { speaker: 'A', ja: '{花粉症|かふんしょう}がありますか？', pt: 'Você tem alergia a pólen?' },
+        { speaker: 'B', ja: 'わかりません。', pt: 'Não sei.' },
+      ],
+    },
+  ],
+  '15-10': [
+    {
+      label: '会話1 (15-10) — 受付で',
+      setupJa: '{郭|カク}さんは{具合|ぐあい}が{悪|わる}いので、{近所|きんじょ}の{病院|びょういん}に{来|き}ました。',
+      setupPt: 'Guo está passando mal e foi ao hospital do bairro. Na recepção.',
+      lines: [
+        { speaker: '郭', ja: 'すみません。この{病院|びょういん}、はじめてなんですが……。', pt: 'Com licença. É a primeira vez que venho a este hospital…' },
+        { speaker: '受付の人', ja: 'はい、{保険証|ほけんしょう}はお{持|も}ちですか？', pt: 'Sim. Você tem a carteirinha do seguro?' },
+        { speaker: '郭', ja: 'はい。', pt: 'Tenho.' },
+        { speaker: '受付の人', ja: '{今日|きょう}はどうされましたか？', pt: 'O que houve hoje?' },
+        { speaker: '郭', ja: '{熱|ねつ}があるんです。', pt: 'Estou com febre.' },
+        { speaker: '受付の人', ja: 'わかりました。では、こちらの{問診票|もんしんひょう}を{記入|きにゅう}してお{待|ま}ちください。', pt: 'Entendi. Então, preencha esta ficha e aguarde.' },
+      ],
+    },
+  ],
+  '15-11': [
+    {
+      label: '会話2 (15-11) — 診察室で（インフルエンザ）',
+      setupJa: '{診察室|しんさつしつ}で。',
+      setupPt: 'Na sala de consulta.',
+      lines: [
+        { speaker: '医者', ja: '{今日|きょう}はどうしましたか？', pt: 'O que houve hoje?' },
+        { speaker: '郭', ja: '{昨日|きのう}の{夜|よる}から、{熱|ねつ}が38{度|ど}5{分|ぶ}あるんです。', pt: 'Desde ontem à noite estou com 38,5 graus de febre.' },
+        { speaker: '医者', ja: 'そうですか。ちょっとのどを{見|み}せてください。{口|くち}を{開|あ}けて……のどは{痛|いた}くないですか？', pt: 'Entendi. Deixe-me ver a garganta. Abra a boca… A garganta não está doendo?' },
+        { speaker: '郭', ja: 'ちょっと{痛|いた}いです。', pt: 'Está doendo um pouco.' },
+        { speaker: '医者', ja: 'そう。インフルエンザの{検査|けんさ}、してみましょう。', pt: 'Certo. Vamos fazer o teste de gripe.' },
+        { speaker: '医者', ja: '（しばらくして）インフルエンザですね。A{型|がた}です。', pt: '(Depois de um tempo) É gripe (influenza). Tipo A.' },
+        { speaker: '郭', ja: 'ええー！', pt: 'O quê?!' },
+        { speaker: '医者', ja: '{薬|くすり}を{出|だ}しますね。それを{飲|の}んで、よく{寝|ね}てください。{熱|ねつ}はすぐ{下|さ}がります。でも、{今週|こんしゅう}は{仕事|しごと}を{休|やす}んで、できるだけ{人|ひと}に{会|あ}わないでください。', pt: 'Vou receitar um remédio. Tome-o e durma bem. A febre baixa logo. Mas, esta semana, falte ao trabalho e evite ao máximo encontrar pessoas.' },
+        { speaker: '郭', ja: 'そうですか……。わかりました。', pt: 'Ah… Entendi.' },
+        { speaker: '医者', ja: '{食|た}べ{物|もの}は、うどんとか、おかゆとか、やわらかいものにしてください。', pt: 'Quanto à comida, prefira coisas macias, como udon ou canja.' },
+        { speaker: '郭', ja: '{辛|から}いものを{食|た}べてもいいですか？', pt: 'Posso comer comida apimentada?' },
+        { speaker: '医者', ja: 'あー、{辛|から}いものは、あまり{食|た}べないでください。', pt: 'Ah, comida apimentada é melhor não comer muito.' },
+        { speaker: '郭', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '15-12': [
+    {
+      label: '会話3 (15-12) — 受付で（会計・処方せん）',
+      setupJa: '{受付|うけつけ}で。',
+      setupPt: 'Na recepção.',
+      lines: [
+        { speaker: '受付の人', ja: '{郭|カク}さん。', pt: 'Sr. Guo.' },
+        { speaker: '郭', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '受付の人', ja: 'お{会計|かいけい}は3,200{円|えん}になります。こちらは{診察券|しんさつけん}です。{次|つぎ}からは、これを{受付|うけつけ}に{出|だ}してください。', pt: 'A consulta fica 3.200 ienes. Este é o cartão de consulta. Da próxima vez, apresente-o na recepção.' },
+        { speaker: '郭', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '受付の人', ja: 'こちらが{処方|しょほう}せんです。{薬局|やっきょく}に{行|い}って、{薬|くすり}をもらってください。', pt: 'Esta é a receita. Vá à farmácia e pegue o remédio.' },
+        { speaker: '郭', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+        { speaker: '受付の人', ja: 'お{大事|だいじ}に。', pt: 'Melhoras.' },
+      ],
+    },
+  ],
+  '15-14': [
+    {
+      label: '① (15-14) — せきを抑える薬',
+      setupJa: '4{人|よにん}の{人|ひと}が、{病院|びょういん}に{行|い}ったあと、{薬局|やっきょく}で{薬|くすり}の{説明|せつめい}を{受|う}けています。',
+      setupPt: 'Quatro pessoas recebem, na farmácia, a explicação do remédio depois de ir ao hospital.',
+      lines: [
+        { speaker: 'A', ja: 'こちらは、せきを{抑|おさ}える{薬|くすり}です。1{日|にち}3{回|かい}、{食後|しょくご}に{飲|の}んでください。', pt: 'Este é um remédio para conter a tosse. Tome 3 vezes ao dia, após as refeições.' },
+        { speaker: 'B', ja: '{食後|しょくご}？', pt: 'Após as refeições?' },
+        { speaker: 'A', ja: 'ご{飯|はん}を{食|た}べたあとです。', pt: 'É depois de comer.' },
+        { speaker: 'B', ja: 'はい、わかりました。', pt: 'Sim, entendi.' },
+        { speaker: 'A', ja: '{飲|の}むと、{眠|ねむ}くなります。{飲|の}んだあと、{運転|うんてん}しないでくださいね。', pt: 'Ele dá sono. Depois de tomar, não dirija, ok?' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '15-15': [
+    {
+      label: '② (15-15) — アレルギーの薬',
+      lines: [
+        { speaker: 'A', ja: 'これは、アレルギーの{薬|くすり}です。くしゃみや{鼻水|はなみず}を{抑|おさ}えます。', pt: 'Este é um remédio para alergia. Contém o espirro e a coriza.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: '1{日|にち}1{回|かい}、{寝|ね}る{前|まえ}に{飲|の}んでください。', pt: 'Tome 1 vez ao dia, antes de dormir.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '15-16': [
+    {
+      label: '③ (15-16) — 解熱剤',
+      lines: [
+        { speaker: 'A', ja: 'こちらは{解熱剤|げねつざい}です。', pt: 'Este é um antitérmico.' },
+        { speaker: 'B', ja: 'え？', pt: 'Hã?' },
+        { speaker: 'A', ja: '{熱|ねつ}を{下|さ}げるお{薬|くすり}です。{熱|ねつ}が{高|たか}くてつらいとき、{飲|の}んでください。38{度|ど}5{分|ぶ}{以上|いじょう}ですね。', pt: 'É um remédio para baixar a febre. Tome quando a febre estiver alta e incômoda. Acima de 38,5 graus, ok?' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'A', ja: '{薬|くすり}を{飲|の}むときは、6{時間|じかん}ぐらい{間|あいだ}をあけてください。', pt: 'Ao tomar o remédio, dê um intervalo de cerca de 6 horas.' },
+      ],
+    },
+  ],
+  '15-17': [
+    {
+      label: '④ (15-17) — 痛み止め',
+      lines: [
+        { speaker: 'A', ja: 'これは{痛|いた}み{止|ど}めです。{痛|いた}くてがまんできないときに、{飲|の}んでください。', pt: 'Este é um analgésico. Tome quando a dor ficar insuportável.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: 'それと、{飲|の}むときは、こっちの{胃|い}を{守|まも}る{薬|くすり}といっしょに{飲|の}んでください。', pt: 'E, ao tomar, tome junto com este remédio que protege o estômago.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+}
+
+const lesson15: Section = {
+  id: 'lesson-15',
+  level: 'elementary1',
+  titleJa: '第15課 熱があってのどが痛いんです',
+  titlePt: 'Lição 15 — Estou com febre e a garganta dói',
+  summaryPt: 'Vida saudável · explicar sintomas ao médico ({熱|ねつ}があって、のどが{痛|いた}いんです), entender as instruções dele ({人|ひと}に{会|あ}わないでください), o uso do remédio ({熱|ねつ}を{下|さ}げる{薬|くすり}／ご{飯|はん}を{食|た}べたあと、{飲|の}んでください／つらいとき{飲|の}んでください) e preencher o {問診票|もんしんひょう}.',
+  studyNotes: [
+    {
+      title: 'Tópico: Vida saudável (健康な生活)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Explicar de forma simples os próprios sintomas no hospital.\n' +
+        '- Ouvir e entender as instruções do médico.\n' +
+        '- Preencher os campos necessários do {問診票|もんしんひょう} (ficha) na recepção.\n' +
+        '- Ouvir a explicação de um remédio e entender uso e cuidados.\n' +
+        '- Ler a bula de um remédio e entender uso e dose.\n\n' +
+        '💡 Pergunta de abertura: {最近|さいきん}、{病院|びょういん}に{行|い}きましたか？どんな{症状|しょうじょう}でしたか？',
+    },
+    {
+      title: 'Explicar a situação: ～んです② (➊)',
+      bodyPt:
+        '**～んです** explica a situação ao outro — aqui, os **sintomas** ao médico. Liga-se a todas as classes:\n\n' +
+        '- N／ナA → **なんです** ({風邪|かぜ}なんです); イA → **いんです** (のどが{痛|いた}いんです); V → **るんです／たんです／ないんです** ({熱|ねつ}があるんです／{足|あし}をくじいたんです／{止|と}まらないんです).\n' +
+        '- Vários sintomas ligam-se pela テ-form: `{熱|ねつ}があって、のどが{痛|いた}いんです`.\n\n' +
+        '**どうしましたか？** (pergunta esperada: médico→paciente) vs **どうしたんですか？** (estranhar algo e pedir explicação).',
+    },
+    {
+      title: 'Instrução negativa: V-ないでください (➋)',
+      bodyPt:
+        '**V-ないでください** = instrução/pedido para **não** fazer algo (liga-se à ナイ-form):\n\n' +
+        '- `できるだけ{人|ひと}に{会|あ}わないでください`／`{辛|から}いものは{食|た}べないでください`/`{運転|うんてん}しないでください`.\n\n' +
+        'Conforme a relação: V-ないで／V-ないでくれる？／V-ないでもらえませんか？.',
+    },
+    {
+      title: 'Qualificar substantivo: V(普通形)+N (➌)',
+      bodyPt:
+        'O verbo na **forma simples** (dicionário) vem **antes** do substantivo e o qualifica (≠ português, que usa “que…”):\n\n' +
+        '- 「これは{薬|くすり}です」＋「この{薬|くすり}は、せきを{抑|おさ}えます」 → 「これは、せきを{抑|おさ}える{薬|くすり}です」.\n' +
+        '- Funções do remédio: `{熱|ねつ}を{下|さ}げる`, `せき／{鼻水|はなみず}を{抑|おさ}える`, `{胃|い}を{守|まも}る`. (Forma simples não-passado afirmativa = forma de dicionário.)',
+    },
+    {
+      title: 'Ordem e momento: V-る前に／V-たあと (➍) ／ ～とき（に） (➎)',
+      bodyPt:
+        '**V-る{前|まえ}に、〜 ／ V-たあと、〜** = ordem das ações ({前|まえ}に → dicionário; あと → forma タ): `{寝|ね}る{前|まえ}に{飲|の}んでください`／`{飲|の}んだあと、{運転|うんてん}しないでください`. (Lição 8 viu Nの{前|まえ}に／あと.)\n\n' +
+        '**～とき（に）、〜** = momento/situação: N のとき ／ ナA なとき ／ イA いとき ／ V る・た・ないとき. `{痛|いた}くてがまんできないとき{飲|の}んでください`. Para tópico: 〜ときは、〜.',
+    },
+    {
+      title: 'Vocabulário, Kanji e formulários',
+      bodyPt:
+        '**Sintomas (Ativ. 1):** のど／お{腹|なか}が{痛|いた}い, {熱|ねつ}がある, せき／{鼻水|はなみず}が{出|で}る, {吐|は}き{気|け}がする, {食欲|しょくよく}がない, {目|め}がかゆい, {足|あし}をくじく, {頭|あたま}をぶつける; おととい, {転|ころ}ぶ, レントゲンを{撮|と}る, {花粉症|かふんしょう}. **Hospital (Ativ. 2):** {保険証|ほけんしょう}, {問診票|もんしんひょう}, {記入|きにゅう}する, {医者|いしゃ}, {検査|けんさ}する, インフルエンザ, A{型|がた}, {熱|ねつ}が{下|さ}がる, {診察券|しんさつけん}, {処方|しょほう}せん, {薬局|やっきょく}, お{大事|だいじ}に; お{持|も}ちですか／どうされましたか (educado). **Ficha (Ativ. 3):** ふりがな, {性別|せいべつ}, {病気|びょうき}にかかる, {現在|げんざい}, {女性|じょせい}, {妊娠|にんしん}する. **Remédios (Ativ. 4):** {熱|ねつ}を{下|さ}げる, せき／{鼻水|はなみず}を{抑|おさ}える, {痛|いた}み{止|ど}め, {食後|しょくご}, {眠|ねむ}い, {解熱剤|げねつざい}, {胃|い}を{守|まも}る, {間|あいだ}をあける. **Bula (Ativ. 5):** {用法|ようほう}, {用量|ようりょう}.\n\n' +
+        '**Kanji da lição:** {熱|ねつ}, {薬|くすり}, {病気|びょうき}, {病院|びょういん}, {医者|いしゃ}, {住所|じゅうしょ}, 〜{才|さい}, {痛|いた}い, {眠|ねむ}い, {寝|ね}る, {記入|きにゅう}する.',
+    },
+  ],
+  groups: [lesson15Group],
+  audios: attachScripts(15, L15_SCRIPTS),
+}
+
+// ---- Lições 16-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(15, 'Vida saudável', '熱があってのどが痛いんです', 'Estou com febre e a garganta dói', [
-    'Transmitir de forma simples seus sintomas no hospital.',
-    'Ouvir e entender as instruções do médico.',
-    'Preencher os campos necessários de uma ficha no balcão do hospital.',
-    'Ouvir a explicação de um remédio e entender uso e cuidados.',
-    'Ler a bula de um remédio e entender uso e dose.',
-  ]),
   scaffold(16, 'Vida saudável', '食べすぎないようにしています', 'Procuro não comer demais', [
     'Dar conselhos a quem está passando mal, ou ouvir e entender conselhos.',
     'Falar sobre o que faz para cuidar da própria saúde.',
@@ -3114,5 +3360,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, ...others],
 }
