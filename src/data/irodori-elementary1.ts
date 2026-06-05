@@ -3339,14 +3339,219 @@ const lesson15: Section = {
   audios: attachScripts(15, L15_SCRIPTS),
 }
 
-// ---- Lições 16-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 16: 食べすぎないようにしています (tópico 健康な生活) ----------
+const lesson16Group: ExerciseGroup = {
+  id: 'iro-e1-l16',
+  title: '食べすぎないようにしています',
+  subtitlePt: 'Vida saudável · dar conselhos ({ぬるいお{風呂|ふろ}に{入|はい}るといいですよ), excesso (V-すぎる), listar hábitos (ジョギングしたり、ヨガをしたり) e o que se procura fazer (V-る／V-ないようにしています), além de entender notícia/cartaz sobre doença',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l16-1', number: 1, prompt: '「ぬるいお{風呂|ふろ}にゆっくり{入|はい}るといいですよ」 (V-るといいですよ) serve para (Nota ➊):', choices: [{ n: 1, text: 'dar um conselho leve ao outro; liga-se à forma de dicionário do verbo' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'pedir permissão' }, { n: 4, text: 'expressar obrigação' }], answer: 1, translationPt: 'Você devia tomar um banho morno bem tranquilo.', explanationPt: 'V-るといいですよ = sugestão/conselho leve (ligado à forma de dicionário). Ex.: よく{眠|ねむ}れないときは、{静|しず}かな{音楽|おんがく}を{聞|き}くといいですよ. (Nota ➊)' },
+    { id: 'iro-e1-l16-2', number: 2, prompt: '「{昨日|きのう}、{飲|の}みすぎました」 (V-すぎます) significa, e forma-se (Nota ➋):', choices: [{ n: 1, text: 'passar da conta/fazer demais (ger. sentido negativo); liga-se à マス-form sem ます ({飲|の}み＋すぎる)' }, { n: 2, text: 'fazer bem pouco; liga-se à forma de dicionário' }, { n: 3, text: 'querer fazer; liga-se à テ-form' }, { n: 4, text: 'parar de fazer; liga-se à ナイ-form' }], answer: 1, translationPt: 'Ontem eu bebi demais.', explanationPt: 'V-すぎる = exceder o limite (costuma ser negativo). Forma: マス-form sem ます + すぎる: {食|た}べすぎる, {飲|の}みすぎる, {働|はたら}きすぎる, {見|み}すぎる. Ex.: {食|た}べすぎて、お{腹|なか}が{痛|いた}い. (Nota ➋)' },
+    { id: 'iro-e1-l16-3', number: 3, prompt: '「ジョギングしたり、ヨガをしたりしています」 (V1-たり、V2-たり) serve para (Nota ➌):', choices: [{ n: 1, text: 'CITAR ações como exemplos (entre outras coisas, faz isto e aquilo); usa V-た + り' }, { n: 2, text: 'indicar ordem fixa de duas ações' }, { n: 3, text: 'negar duas ações' }, { n: 4, text: 'comparar duas pessoas' }], answer: 1, translationPt: 'Faço corrida, faço ioga em casa, essas coisas.', explanationPt: 'V1-たり、V2-たり（します） cita ações como exemplos representativos. Forma-se com a タ-form + り. O fim pode variar: します／しています／するようにしています. (Nota ➌)' },
+    { id: 'iro-e1-l16-4', number: 4, prompt: '「{野菜|やさい}をたくさん{食|た}べるようにしています」 e 「{食|た}べすぎないようにしています」 (Nota ➍):', choices: [{ n: 1, text: 'descrevem o que se PROCURA fazer (V-る) ou NÃO fazer (V-ない) por esforço/cuidado constante' }, { n: 2, text: 'descrevem uma ordem dada a outra pessoa' }, { n: 3, text: 'descrevem uma ação única no passado' }, { n: 4, text: 'descrevem um desejo momentâneo' }], answer: 1, translationPt: 'Procuro comer bastante verdura. / Procuro não comer demais.', explanationPt: 'V-るようにしています = procuro fazer; V-ないようにしています = procuro não fazer (esforço/hábito). Ex.: {早|はや}く{寝|ね}るようにしています／ストレスをためないようにしています. (Nota ➍)' },
+    { id: 'iro-e1-l16-5', number: 5, prompt: 'Vocabulário (Atividade 1 · 【{顔|かお}と{体|からだ}】): 「{頭|あたま}／{鼻|はな}／{歯|は}／{首|くび}／{目|め}／{耳|みみ}／{口|くち}／{肩|かた}／{胸|むね}／お{腹|なか}／{腰|こし}／{背中|せなか}／{腕|うで}／{手|て}／{指|ゆび}／{足|あし}」 significam:', choices: [{ n: 1, text: 'cabeça ／ nariz ／ dente ／ pescoço ／ olho ／ orelha ／ boca ／ ombro ／ peito ／ barriga ／ lombar(cintura) ／ costas ／ braço ／ mão ／ dedo ／ pé/perna' }, { n: 2, text: 'pé ／ boca ／ língua ／ ombro ／ sobrancelha ／ nariz ／ queixo ／ joelho ／ costela ／ quadril ／ coluna ／ barriga ／ cotovelo ／ punho ／ unha ／ canela' }, { n: 3, text: 'cabelo ／ testa ／ gengiva ／ garganta ／ pálpebra ／ tímpano ／ lábio ／ axila ／ pulmão ／ umbigo ／ rim ／ nuca ／ antebraço ／ palma ／ polegar ／ tornozelo' }, { n: 4, text: 'rosto ／ bochecha ／ molar ／ nuca ／ íris ／ lóbulo ／ dente ／ braço ／ coração ／ estômago ／ bacia ／ ombro ／ pulso ／ dedo ／ mão ／ pé' }], answer: 1, explanationPt: '{頭|あたま} (cabeça), {鼻|はな} (nariz), {歯|は} (dente), {首|くび} (pescoço), {目|め} (olho), {耳|みみ} (orelha), {口|くち} (boca), {肩|かた} (ombro), {胸|むね} (peito), お{腹|なか} (barriga), {腰|こし} (lombar/cintura), {背中|せなか} (costas), {腕|うで} (braço), {手|て} (mão), {指|ゆび} (dedo), {足|あし} (pé/perna). (Atividade 1)' },
+    { id: 'iro-e1-l16-6', number: 6, prompt: 'Atividade 1 — os mal-estares (a-f) são:', choices: [{ n: 1, text: '{肩|かた}がこる (ombro tenso/contraído) ／ {体|からだ}がだるい (corpo mole/sem energia) ／ {頭|あたま}が{痛|いた}い (dor de cabeça) ／ {胃|い}の{調子|ちょうし}が{悪|わる}い (estômago ruim) ／ {二日酔|ふつかよ}い (ressaca) ／ よく{眠|ねむ}れない (não dormir bem)' }, { n: 2, text: 'fome ／ sede ／ frio ／ calor ／ sono ／ cansaço' }, { n: 3, text: 'tosse ／ febre ／ espirro ／ coriza ／ enjoo ／ alergia' }, { n: 4, text: 'dor nas costas ／ cãibra ／ tontura ／ azia ／ insônia ／ resfriado' }], answer: 1, explanationPt: 'a. {肩|かた}がこる, b. {体|からだ}がだるい, c. {頭|あたま}が{痛|いた}い, d. {胃|い}の{調子|ちょうし}が{悪|わる}い, e. {二日酔|ふつかよ}い (ressaca), f. よく{眠|ねむ}れない. (Atividade 1)' },
+    { id: 'iro-e1-l16-7', number: 7, prompt: 'Atividade 1 — os conselhos dados (ア-カ) são:', choices: [{ n: 1, text: 'ゆっくりお{風呂|ふろ}に{入|はい}る (banho tranquilo) ／ お{腹|なか}を{温|あたた}める (aquecer a barriga) ／ {寝|ね}る (dormir) ／ {温|あたた}かい{飲|の}み{物|もの}を{飲|の}む (bebida quente) ／ マッサージする (massagem) ／ {薬|くすり}を{飲|の}む (tomar remédio)' }, { n: 2, text: 'correr ／ pular refeições ／ trabalhar mais ／ beber álcool ／ fumar ／ ficar acordado' }, { n: 3, text: 'tomar sol ／ tomar banho gelado ／ comer doce ／ pular ／ gritar ／ jejuar' }, { n: 4, text: 'nadar ／ esfriar ／ ficar de pé ／ caminhar ／ dançar ／ cantar' }], answer: 1, explanationPt: 'ア. ゆっくりお{風呂|ふろ}に{入|はい}る, イ. お{腹|なか}を{温|あたた}める, ウ. {寝|ね}る, エ. {温|あたた}かい{飲|の}み{物|もの}を{飲|の}む, オ. マッサージする, カ. {薬|くすり}を{飲|の}む. (Atividade 1)' },
+    { id: 'iro-e1-l16-8', number: 8, prompt: 'Vocabulário (Atividade 1): 「{最近|さいきん}／ぬるい／{試|ため}す／けっこう／それはいけませんね／どうしていますか？」 significam:', choices: [{ n: 1, text: 'recentemente ／ morno (água) ／ experimentar/tentar ／ bastante/razoavelmente ／ “que pena, isso não é bom” ／ “como você lida com isso?”' }, { n: 2, text: 'antigamente ／ quente ／ desistir ／ pouco ／ “tudo bem” ／ “o que você faz?”' }, { n: 3, text: 'sempre ／ gelado ／ medir ／ muito ／ “que ótimo” ／ “você está bem?”' }, { n: 4, text: 'logo ／ frio ／ provar ／ quase ／ “não importa” ／ “onde você está?”' }], answer: 1, explanationPt: '{最近|さいきん} (recentemente), ぬるい (morno), {試|ため}す (experimentar: {試|ため}してみます), けっこう (bastante: けっこういいよ), それはいけませんね (que pena/não é bom), どうしていますか？ (como você lida?). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l16-9', number: 9, prompt: 'Vocabulário (Atividade 2 · {運動|うんどう}): 「ジムに{行|い}く／ジョギングする・{走|はし}る／ウォーキングする・{歩|ある}く／プールで{泳|およ}ぐ／ヨガをする」 significam:', choices: [{ n: 1, text: 'ir à academia ／ correr (jogging) ／ caminhar ／ nadar na piscina ／ fazer ioga' }, { n: 2, text: 'ir ao parque ／ pular ／ subir escada ／ tomar banho ／ alongar' }, { n: 3, text: 'ir ao médico ／ andar de bici ／ dançar ／ mergulhar ／ meditar' }, { n: 4, text: 'ir ao trabalho ／ marchar ／ escalar ／ remar ／ lutar' }], answer: 1, explanationPt: 'ジムに{行|い}く (academia), ジョギングする/{走|はし}る (correr), ウォーキングする/{歩|ある}く (caminhar), プールで{泳|およ}ぐ (nadar), ヨガをする (ioga). (Atividade 2 · 【健康のためにしていること】)' },
+    { id: 'iro-e1-l16-10', number: 10, prompt: 'Vocabulário (Atividade 2 · {食生活|しょくせいかつ}/{睡眠|すいみん}): 「{野菜|やさい}を{食|た}べる／{食|た}べすぎない／{飲|の}みすぎない／{早|はや}く{起|お}きる／{早|はや}く{寝|ね}る／たくさん{寝|ね}る」 significam:', choices: [{ n: 1, text: 'comer verdura ／ não comer demais ／ não beber demais ／ acordar cedo ／ dormir cedo ／ dormir bastante' }, { n: 2, text: 'cozinhar ／ comer rápido ／ beber água ／ levantar tarde ／ dormir tarde ／ cochilar' }, { n: 3, text: 'cortar verdura ／ jejuar ／ não fumar ／ acordar tarde ／ deitar ／ acordar' }, { n: 4, text: 'plantar ／ mastigar ／ brindar ／ correr ／ descansar ／ sonhar' }], answer: 1, explanationPt: '{野菜|やさい}を{食|た}べる, {食|た}べすぎない (não comer demais), {飲|の}みすぎない, {早|はや}く{起|お}きる, {早|はや}く{寝|ね}る, たくさん{寝|ね}る. (Atividade 2)' },
+    { id: 'iro-e1-l16-11', number: 11, prompt: 'Vocabulário (Atividade 2): 「だいたい／チキンサラダ／トマトジュース／ダイエットする／{気|き}をつける／なるほど」 significam:', choices: [{ n: 1, text: 'mais ou menos/por volta de ／ salada de frango ／ suco de tomate ／ fazer dieta ／ tomar cuidado/ser cuidadoso ／ “ah, entendi/faz sentido”' }, { n: 2, text: 'sempre ／ salada de fruta ／ suco de laranja ／ engordar ／ relaxar ／ “que pena”' }, { n: 3, text: 'nunca ／ sopa de frango ／ chá ／ emagrecer rápido ／ esquecer ／ “não sei”' }, { n: 4, text: 'às vezes ／ frango assado ／ água ／ comer ／ exagerar ／ “de novo?”' }], answer: 1, explanationPt: 'だいたい (por volta de/aprox.), チキンサラダ (salada de frango), トマトジュース (suco de tomate), ダイエットする (fazer dieta), {気|き}をつける (cuidar/ser cuidadoso), なるほど (entendi/faz sentido). (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l16-12', number: 12, prompt: 'Atividade 3 (16-20, telejornal) — o {食中毒|しょくちゅうどく} por norovírus é apresentado em quais blocos na TV?', context: 'Telas da TV: ①ノロウイルス{急増|きゅうぞう}（{県内|けんない}レストランで{食中毒|しょくちゅうどく}）→ ②{原因|げんいん} → ③{症状|しょうじょう} → ④{予防法|よぼうほう}.', choices: [{ n: 1, text: 'a notícia (aumento de casos) → a causa (原因) → os sintomas (症状) → a prevenção (予防法)' }, { n: 2, text: 'só a previsão do tempo' }, { n: 3, text: 'o preço dos remédios' }, { n: 4, text: 'a história do hospital' }], answer: 1, explanationPt: 'O programa mostra: ① a notícia (surto de {食中毒|しょくちゅうどく} por norovírus), ② {原因|げんいん} (causa), ③ {症状|しょうじょう} (sintomas), ④ {予防法|よぼうほう} (prevenção). (Atividade 3 · 聴解スクリプト 16-20)' },
+    { id: 'iro-e1-l16-13', number: 13, prompt: 'Atividade 3 — adivinhar o sentido de 「{腹痛|ふくつう}／おう{吐|と}／{下痢|げり}／{手洗|てあら}い／{加熱|かねつ}」:', choices: [{ n: 1, text: 'dor abdominal ／ vômito ／ diarreia ／ lavagem das mãos ／ aquecimento/cozimento (do alimento)' }, { n: 2, text: 'dor de cabeça ／ tosse ／ febre ／ banho ／ congelamento' }, { n: 3, text: 'enjoo ／ espirro ／ coriza ／ gargarejo ／ refrigeração' }, { n: 4, text: 'azia ／ soluço ／ suor ／ escovação ／ fervura' }], answer: 1, explanationPt: '{腹痛|ふくつう} (dor de barriga), おう{吐|と} (vômito), {下痢|げり} (diarreia), {手洗|てあら}い (lavar as mãos), {加熱|かねつ} (aquecer/cozinhar bem). (Atividade 3)' },
+    { id: 'iro-e1-l16-14', number: 14, prompt: 'Vocabulário (Atividade 3): 「{増|ふ}える／{発生|はっせい}する／{貝|かい}／{原因|げんいん}／{感染|かんせん}する／{調理|ちょうり}する／{予防|よぼう}する」 significam:', choices: [{ n: 1, text: 'aumentar ／ ocorrer/surgir ／ marisco (concha) ／ causa ／ infectar-se/contaminar-se ／ preparar (cozinhar) ／ prevenir' }, { n: 2, text: 'diminuir ／ acabar ／ peixe ／ efeito ／ curar-se ／ servir ／ tratar' }, { n: 3, text: 'crescer ／ parar ／ carne ／ sintoma ／ vacinar ／ provar ／ contagiar' }, { n: 4, text: 'espalhar ／ aparecer ／ ovo ／ remédio ／ adoecer ／ lavar ／ evitar' }], answer: 1, explanationPt: '{増|ふ}える (aumentar), {発生|はっせい}する (ocorrer), {貝|かい} (marisco), {原因|げんいん} (causa), {感染|かんせん}する (infectar-se), {調理|ちょうり}する (preparar/cozinhar), {予防|よぼう}する (prevenir). (Atividade 3 · ことば)' },
+    { id: 'iro-e1-l16-15', number: 15, prompt: 'Atividade 4 (cartaz da {インフルエンザ}) — quais os sintomas e as formas de prevenção mostradas?', context: 'Cartaz 「インフルエンザに{気|き}をつけよう！」: どんな{症状|しょうじょう}? 38{度|ど}{以上|いじょう}の{発熱|はつねつ}・{全身|ぜんしん}のだるさ・{関節痛|かんせつつう}・せき・のどの{痛|いた}み。{予防|よぼう}: {手洗|てあら}い・マスク・うがい・{予防接種|よぼうせっしゅ}。', choices: [{ n: 1, text: 'Sintomas: febre ≥38°, moleza no corpo, dor nas articulações, tosse, dor de garganta. Prevenção: lavar as mãos, máscara, gargarejo e vacina' }, { n: 2, text: 'Sintomas: dor de barriga e diarreia. Prevenção: cozinhar bem' }, { n: 3, text: 'Sintomas: olho coçando. Prevenção: colírio' }, { n: 4, text: 'Sintomas: torcer o pé. Prevenção: raio-X' }], answer: 1, explanationPt: 'インフルエンザ — {症状|しょうじょう}: 38{度|ど}{以上|いじょう}の{発熱|はつねつ}, {全身|ぜんしん}のだるさ・{関節痛|かんせつつう}, せき・のどの{痛|いた}み. {予防|よぼう}: {手洗|てあら}い, マスク, うがい, {予防接種|よぼうせっしゅ} (「かからない」「うつさない」). (Atividade 4)' },
+    { id: 'iro-e1-l16-16', number: 16, prompt: 'Vocabulário (Atividade 4): 「うつす／マスク／うがい／{予防接種|よぼうせっしゅ}」 significam:', choices: [{ n: 1, text: 'transmitir (passar a doença para outro) ／ máscara ／ gargarejo (bochechar a garganta) ／ vacinação' }, { n: 2, text: 'pegar (a doença) ／ luva ／ escovar ／ exame' }, { n: 3, text: 'copiar ／ lenço ／ enxaguar ／ cirurgia' }, { n: 4, text: 'curar ／ remédio ／ engolir ／ consulta' }], answer: 1, explanationPt: 'うつす (transmitir a doença a outra pessoa — diferente de かかる, “pegar”), マスク (máscara), うがい (gargarejo), {予防接種|よぼうせっしゅ} (vacinação). (Atividade 4 · 大切なことば)' },
+    { id: 'iro-e1-l16-17', number: 17, prompt: 'Os kanji 「{体|からだ}／{顔|かお}／{目|め}／{耳|みみ}／{口|くち}／{頭|あたま}」 lêem-se:', choices: [{ n: 1, text: 'からだ (corpo) ／ かお (rosto) ／ め (olho) ／ みみ (orelha) ／ くち (boca) ／ あたま (cabeça)' }, { n: 2, text: 'たい ／ かお ／ め ／ じ ／ こう ／ ず' }, { n: 3, text: 'からだ ／ がん ／ もく ／ みみ ／ くち ／ あたま' }, { n: 4, text: 'たい ／ かお ／ め ／ みみ ／ くち ／ とう' }], answer: 1, explanationPt: '{体|からだ}, {顔|かお}, {目|め}, {耳|みみ}, {口|くち}, {頭|あたま}. (漢字のことば)' },
+    { id: 'iro-e1-l16-18', number: 18, prompt: 'Os kanji 「{足|あし}／{手|て}／{起|お}きる／{歩|ある}く／{走|はし}る／{運動|うんどう}する」 lêem-se:', choices: [{ n: 1, text: 'あし (pé/perna) ／ て (mão) ／ おきる (acordar/levantar) ／ あるく (caminhar) ／ はしる (correr) ／ うんどうする (fazer exercício)' }, { n: 2, text: 'そく ／ しゅ ／ おきる ／ ほく ／ そうる ／ うんどうする' }, { n: 3, text: 'あし ／ て ／ きる ／ あるく ／ はしる ／ うんどうする' }, { n: 4, text: 'あし ／ て ／ おきる ／ あるく ／ はしる ／ うんどする' }], answer: 1, explanationPt: '{足|あし}, {手|て}, {起|お}きる, {歩|ある}く, {走|はし}る, {運動|うんどう}する. Kanji da lição: {体|からだ}・{顔|かお}・{目|め}・{耳|みみ}・{口|くち}・{頭|あたま}・{足|あし}・{手|て}・{起|お}きる・{歩|ある}く・{走|はし}る・{運動|うんどう}する. (漢字)' },
+    { id: 'iro-e1-l16-19', number: 19, prompt: 'Diálogo 16-03: qual o problema de Puping e o conselho?', context: 'A：プーピンさん、どうしたんですか？ B：{最近|さいきん}よく{眠|ねむ}れなくて、{体|からだ}がだるいんです。 A：それはいけませんね。よく{眠|ねむ}れないときは、ぬるいお{風呂|ふろ}にゆっくり{入|はい}るといいですよ。', choices: [{ n: 1, text: 'Anda sem dormir bem e o corpo está mole; conselho: tomar um banho morno bem tranquilo (ぬるいお{風呂|ふろ}に{入|はい}るといいですよ)' }, { n: 2, text: 'Está com febre; conselho: ir ao hospital' }, { n: 3, text: 'Comeu demais; conselho: tomar remédio' }, { n: 4, text: 'Torceu o pé; conselho: tirar raio-X' }], answer: 1, explanationPt: 'よく{眠|ねむ}れなくて、{体|からだ}がだるいんです (〜んです Lição 15 + motivo 〜くて); ぬるいお{風呂|ふろ}に{入|はい}るといいですよ (V-るといいですよ, ➊). (Atividade 1 · 聴解スクリプト 16-03)' },
+    { id: 'iro-e1-l16-20', number: 20, prompt: 'Diálogo 16-04: o que Jose tem e qual o melhor conselho, segundo Sakai?', context: 'B：{昨日|きのう}、{飲|の}みすぎました。ちょっと{二日酔|ふつかよ}いなんです……。 …A：{二日酔|ふつかよ}いの{薬|くすり}を{飲|の}むかな。けっこういいよ。でも、{寝|ね}るのがいちばんいいけどね。', choices: [{ n: 1, text: 'Está de ressaca (bebeu demais ontem); Sakai toma remédio de ressaca, mas diz que dormir é o melhor de tudo' }, { n: 2, text: 'Está com dor nas costas; o melhor é massagem' }, { n: 3, text: 'Está com febre; o melhor é raio-X' }, { n: 4, text: 'Está com fome; o melhor é comer' }], answer: 1, explanationPt: '{飲|の}みすぎました (V-すぎる, ➋); {二日酔|ふつかよ}いなんです (〜なんです); {薬|くすり}を{飲|の}む… でも、{寝|ね}るのがいちばんいい (dormir é o melhor). (Atividade 1 · 16-04)' },
+    { id: 'iro-e1-l16-21', number: 21, prompt: 'Diálogo 16-05: o que Kubota sente e o conselho?', context: 'A：{久保田|くぼた}さん、{具合|ぐあい}が{悪|わる}そうですね。 B：うん、{肩|かた}がこって、{頭|あたま}が{痛|いた}いのよ。 A：{温|あたた}かい{飲|の}み{物|もの}を{飲|の}むといいですよ。コーヒーとかお{茶|ちゃ}とか。', choices: [{ n: 1, text: 'Está com o ombro tenso e dor de cabeça; conselho: tomar uma bebida quente (café, chá etc.)' }, { n: 2, text: 'Está de ressaca; conselho: dormir' }, { n: 3, text: 'Está com o estômago ruim; conselho: aquecer a barriga' }, { n: 4, text: 'Não dorme bem; conselho: banho morno' }], answer: 1, explanationPt: '{肩|かた}がこって、{頭|あたま}が{痛|いた}い; {温|あたた}かい{飲|の}み{物|もの}を{飲|の}むといいですよ (➊), コーヒーとかお{茶|ちゃ}とか (exemplos). (Atividade 1 · 16-05)' },
+    { id: 'iro-e1-l16-22', number: 22, prompt: 'Diálogo 16-06: o que Nishida tem e quais os conselhos?', context: 'B：{最近|さいきん}、{胃|い}の{調子|ちょうし}が{悪|わる}いんですよ。 A：お{腹|なか}を{温|あたた}めるといいですよ。あと、マッサージも。', choices: [{ n: 1, text: 'O estômago anda ruim; conselhos: aquecer a barriga e também fazer massagem' }, { n: 2, text: 'Está com o ombro tenso; conselho: bebida quente' }, { n: 3, text: 'Está de ressaca; conselho: remédio' }, { n: 4, text: 'Não dorme bem; conselho: ioga' }], answer: 1, explanationPt: '{胃|い}の{調子|ちょうし}が{悪|わる}いんです; お{腹|なか}を{温|あたた}めるといいですよ (➊), あと、マッサージも. B: やってみます. (Atividade 1 · 16-06)' },
+    { id: 'iro-e1-l16-23', number: 23, prompt: 'Diálogo 16-12: o que B faz de exercício, e por que faz ioga antes de dormir?', context: 'B：ジョギングしたり、ときどき{家|いえ}でヨガをしたりしてます。…{寝|ね}る{前|まえ}にヨガをすると、よく{眠|ねむ}れますよ。', choices: [{ n: 1, text: 'Corre e às vezes faz ioga em casa (V-たり…V-たり); faz ioga antes de dormir porque assim dorme melhor' }, { n: 2, text: 'Só nada na piscina' }, { n: 3, text: 'Não faz nenhum exercício' }, { n: 4, text: 'Vai à academia todo dia' }], answer: 1, explanationPt: 'ジョギングしたり、ヨガをしたり (V1-たり、V2-たり, ➌); {寝|ね}る{前|まえ}にヨガをすると、よく{眠|ねむ}れます (V-ると, Lição 13). (Atividade 2 · 16-12)' },
+    { id: 'iro-e1-l16-24', number: 24, prompt: 'Diálogo 16-13: o que essa pessoa procura fazer para se manter saudável?', context: 'B：{毎日|まいにち}、{朝|あさ}{早|はや}く{起|お}きて、{夜|よる}は{早|はや}く{寝|ね}るようにしています。…8{時間|じかん}{以上|いじょう}、{寝|ね}るようにしています。', choices: [{ n: 1, text: 'Procura acordar cedo e dormir cedo todo dia, e dormir mais de 8 horas (V-るようにしています)' }, { n: 2, text: 'Procura trabalhar até tarde' }, { n: 3, text: 'Procura beber bastante' }, { n: 4, text: 'Não faz nada de especial' }], answer: 1, explanationPt: '{朝|あさ}{早|はや}く{起|お}きて、{夜|よる}は{早|はや}く{寝|ね}るようにしています; 8{時間|じかん}{以上|いじょう}{寝|ね}るようにしています (V-るようにしています, ➍). (Atividade 2 · 16-13)' },
+    { id: 'iro-e1-l16-25', number: 25, prompt: 'Diálogo 16-14: o que essa pessoa procura fazer/não fazer na alimentação?', context: 'B：{健康|けんこう}のために、{食|た}べすぎないようにしています。…できるだけ、{野菜|やさい}をたくさん{食|た}べるようにしています。', choices: [{ n: 1, text: 'Procura NÃO comer demais ({食|た}べすぎないように) e comer bastante verdura ({食|た}べるように); está de dieta' }, { n: 2, text: 'Procura comer o máximo possível' }, { n: 3, text: 'Procura pular refeições' }, { n: 4, text: 'Não se preocupa com a comida' }], answer: 1, explanationPt: '{食|た}べすぎないようにしています (V-ないように, ➍ + V-すぎる, ➋); {野菜|やさい}をたくさん{食|た}べるようにしています (V-るように, ➍). Pede チキンサラダとトマトジュース (dieta). (Atividade 2 · 16-14)' },
+    { id: 'iro-e1-l16-26', number: 26, prompt: 'Diálogo 16-15: o que essa pessoa faz e evita pela saúde?', context: 'B：できるだけ{運動|うんどう}するようにしています。ジムに{行|い}ったり、ウォーキングしたりしています。…お{酒|さけ}を{飲|の}みすぎないようにしています。', choices: [{ n: 1, text: 'Procura se exercitar (vai à academia, caminha — V-たり…V-たり) e procura não beber demais (V-ないように)' }, { n: 2, text: 'Procura dormir o dia todo' }, { n: 3, text: 'Procura comer mais doces' }, { n: 4, text: 'Não pratica nenhum esporte' }], answer: 1, explanationPt: '{運動|うんどう}するようにしています (➍); ジムに{行|い}ったり、ウォーキングしたり (➌); お{酒|さけ}を{飲|の}みすぎないようにしています (➍+➋). (Atividade 2 · 16-15)' },
+    { id: 'iro-e1-l16-27', number: 27, prompt: 'Telejornal 16-20: qual a causa, os sintomas e a prevenção do norovírus?', context: 'B：ノロウイルスは、{汚染|おせん}されたカキなどの{貝|かい}を、{生|なま}、または{十分|じゅうぶん}に{加熱|かねつ}しないで{食|た}べることが{原因|げんいん}で{感染|かんせん}します。…{腹痛|ふくつう}、おう{吐|と}、{下痢|げり}などを{起|お}こします。…{予防|よぼう}のポイントは、{手洗|てあら}いと、{食品|しょくひん}の{十分|じゅうぶん}な{加熱|かねつ}です。', choices: [{ n: 1, text: 'Causa: comer marisco (ostra) cru ou mal cozido, ou alimento manuseado com mãos contaminadas; sintomas: dor de barriga, vômito, diarreia; prevenção: lavar as mãos e cozinhar bem os alimentos' }, { n: 2, text: 'Causa: pólen; sintomas: olho coçando; prevenção: colírio' }, { n: 3, text: 'Causa: frio; sintomas: febre; prevenção: agasalho' }, { n: 4, text: 'Causa: estresse; sintomas: insônia; prevenção: descanso' }], answer: 1, explanationPt: 'Causa: {貝|かい} ({生|なま}/{加熱|かねつ} insuficiente) ou mãos contaminadas; {症状|しょうじょう}: {腹痛|ふくつう}, おう{吐|と}, {下痢|げり}; {予防|よぼう}: {手洗|てあら}い e {加熱|かねつ}. (Atividade 3 · 16-20)' },
+    { id: 'iro-e1-l16-28', number: 28, prompt: 'Atividade 2 — a forma 「{気|き}をつけていますか？」 / 「{気|き}をつけています」 quer dizer:', choices: [{ n: 1, text: '“Você toma cuidado com (algo)? / Tomo cuidado com…” — {気|き}をつける = ter cuidado, ser atento a algo' }, { n: 2, text: '“Você liga o ar? / Ligo o ar.”' }, { n: 3, text: '“Você está com pressa?”' }, { n: 4, text: '“Você acordou?”' }], answer: 1, translationPt: 'Você cuida de algo (pela saúde)? — Sim, cuido.', explanationPt: '{気|き}をつける = ter cuidado/ser atento. {健康|けんこう}のために、{何|なに}か{気|き}をつけていますか？ (Você cuida de algo pela saúde?). (Atividade 2/3 · 大切なことば)' },
+    { id: 'iro-e1-l16-29', number: 29, prompt: 'Atividade 3 — para PREVENIR a infecção por norovírus, quando lavar bem as mãos com sabão?', context: '{予防|よぼう}: {食事前|しょくじまえ}、トイレのあと、{調理|ちょうり}の{前後|ぜんご}は、{石|せっ}けんで{手|て}をよく{洗|あら}いましょう。{食品|しょくひん}は{中心部|ちゅうしんぶ}まで{十分|じゅうぶん}に{加熱|かねつ}しましょう。', choices: [{ n: 1, text: 'Antes das refeições, depois do banheiro e antes/depois de cozinhar; e cozinhar o alimento bem até o centro' }, { n: 2, text: 'Só uma vez por dia, de manhã' }, { n: 3, text: 'Apenas depois de comer' }, { n: 4, text: 'Não é preciso lavar as mãos' }], answer: 1, explanationPt: 'Lavar com {石|せっ}けん: {食事前|しょくじまえ}, トイレのあと, {調理|ちょうり}の{前後|ぜんご}; e {加熱|かねつ} do {食品|しょくひん} até o {中心部|ちゅうしんぶ}. (Atividade 3 · 16-20)' },
+    { id: 'iro-e1-l16-30', number: 30, prompt: 'O título da lição 「{食|た}べすぎないようにしています」 quer dizer:', choices: [{ n: 1, text: 'Procuro não comer demais (V-すぎない + ようにしています)' }, { n: 2, text: 'Comi demais ontem' }, { n: 3, text: 'Quero comer muito' }, { n: 4, text: 'Não consigo comer nada' }], answer: 1, translationPt: 'Procuro não comer demais.', explanationPt: '{食|た}べすぎる (comer demais, ➋) na forma negativa + ようにしています (procuro não…, ➍) = “procuro não comer demais”. (Título)' },
+    { id: 'iro-e1-l16-31', number: 31, prompt: 'Atividade 1 — a abertura 「どうしたんですか？／だいじょうぶですか？」 dita a quem parece mal serve para:', choices: [{ n: 1, text: 'puxar conversa demonstrando preocupação com alguém que parece não estar bem (ligado à Lição 15)' }, { n: 2, text: 'recusar ajuda' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'pedir desculpas' }], answer: 1, explanationPt: 'どうしたんですか？／だいじょうぶですか？ = abordar com preocupação quem parece mal ({体調|たいちょう}の{悪|わる}そうな{人|ひと}に{声|こえ}をかける). Liga-se ao どうしたんですか？ da Lição 15. (Atividade 1)' },
+    { id: 'iro-e1-l16-32', number: 32, prompt: 'Pergunta de abertura da lição: 「{健康|けんこう}のために{気|き}をつけていることがありますか？どんなことに{気|き}をつけていますか？」 quer dizer:', choices: [{ n: 1, text: 'Há algo que você cuida pela saúde? Com que tipo de coisas você se cuida?' }, { n: 2, text: 'Você já ficou doente este ano?' }, { n: 3, text: 'Onde você compra remédios?' }, { n: 4, text: 'Quanto custa ir à academia?' }], answer: 1, translationPt: 'Há algo que você faz pela saúde? Com o quê você se cuida?', explanationPt: '{健康|けんこう}のために (pela saúde), {気|き}をつけていること (coisas com que se cuida). Tema: {健康|けんこう}な{生活|せいかつ} (vida saudável). (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 16
+const L16_SCRIPTS: Record<string, ScriptItem[]> = {
+  '16-03': [
+    {
+      label: '① (16-03) — よく眠れなくて、体がだるい',
+      setupJa: '{体|からだ}の{調子|ちょうし}が{悪|わる}い4{人|よにん}の{人|ひと}が、ほかの{人|ひと}のアドバイスを{聞|き}いています。',
+      setupPt: 'Quatro pessoas que estão passando mal ouvem conselhos de alguém.',
+      lines: [
+        { speaker: 'A', ja: 'プーピンさん、どうしたんですか？', pt: 'Puping, o que houve?' },
+        { speaker: 'B', ja: '{最近|さいきん}よく{眠|ねむ}れなくて、{体|からだ}がだるいんです。', pt: 'Ultimamente não durmo bem e o corpo está mole.' },
+        { speaker: 'A', ja: 'それはいけませんね。よく{眠|ねむ}れないときは、ぬるいお{風呂|ふろ}にゆっくり{入|はい}るといいですよ。', pt: 'Que pena, isso não é bom. Quando não dorme bem, é bom tomar um banho morno bem tranquilo.' },
+        { speaker: 'B', ja: 'そうですか。{試|ため}してみます。', pt: 'Ah é? Vou experimentar.' },
+      ],
+    },
+  ],
+  '16-04': [
+    {
+      label: '② (16-04) — 二日酔いなんです',
+      lines: [
+        { speaker: 'A', ja: 'ホセさん、つらそうだね。', pt: 'Jose, você parece mal.' },
+        { speaker: 'B', ja: 'はい、{昨日|きのう}、{飲|の}みすぎました。ちょっと{二日酔|ふつかよ}いなんです……。', pt: 'É, ontem eu bebi demais. Estou meio de ressaca…' },
+        { speaker: 'A', ja: 'えー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: '{酒井|さかい}さんは、{二日酔|ふつかよ}いのときは、どうしていますか？', pt: 'Sakai, quando você está de ressaca, o que faz?' },
+        { speaker: 'A', ja: '{二日酔|ふつかよ}いの{薬|くすり}を{飲|の}むかな。けっこういいよ。', pt: 'Acho que tomo remédio de ressaca. É bem bom.' },
+        { speaker: 'B', ja: 'へー。', pt: 'Ah é.' },
+        { speaker: 'A', ja: 'でも、{寝|ね}るのがいちばんいいけどね。', pt: 'Mas dormir é o melhor de tudo.' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'É mesmo.' },
+      ],
+    },
+  ],
+  '16-05': [
+    {
+      label: '③ (16-05) — 肩がこって、頭が痛い',
+      lines: [
+        { speaker: 'A', ja: '{久保田|くぼた}さん、{具合|ぐあい}が{悪|わる}そうですね。だいじょうぶですか？', pt: 'Kubota, você parece mal. Está tudo bem?' },
+        { speaker: 'B', ja: 'うん、{肩|かた}がこって、{頭|あたま}が{痛|いた}いのよ。', pt: 'É, estou com o ombro tenso e dor de cabeça.' },
+        { speaker: 'A', ja: 'そうですか。{温|あたた}かい{飲|の}み{物|もの}を{飲|の}むといいですよ。コーヒーとかお{茶|ちゃ}とか。', pt: 'Entendi. É bom tomar uma bebida quente. Café, chá, essas coisas.' },
+        { speaker: 'B', ja: 'そう。じゃあ、ちょっとコーヒー{買|か}って{来|く}る。', pt: 'É? Então vou comprar um café.' },
+      ],
+    },
+  ],
+  '16-06': [
+    {
+      label: '④ (16-06) — 胃の調子が悪い',
+      lines: [
+        { speaker: 'A', ja: '{西田|にしだ}さん、どうしたんですか？だいじょうぶですか？', pt: 'Nishida, o que houve? Está tudo bem?' },
+        { speaker: 'B', ja: 'うん、{最近|さいきん}、{胃|い}の{調子|ちょうし}が{悪|わる}いんですよ。', pt: 'É, ultimamente meu estômago anda ruim.' },
+        { speaker: 'A', ja: 'ああ、{大変|たいへん}ですね……。お{腹|なか}を{温|あたた}めるといいですよ。あと、マッサージも。', pt: 'Ah, que chato… É bom aquecer a barriga. E massagem também.' },
+        { speaker: 'B', ja: 'そうなんですか。やってみます。', pt: 'Ah é? Vou tentar.' },
+      ],
+    },
+  ],
+  '16-12': [
+    {
+      label: '① (16-12) — ジョギングしたり、ヨガをしたり',
+      setupJa: '{健康|けんこう}のためにしていることについて、4{人|よにん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam sobre o que fazem pela saúde.',
+      lines: [
+        { speaker: 'A', ja: '{最近|さいきん}、{何|なに}か{運動|うんどう}してますか？', pt: 'Ultimamente você faz algum exercício?' },
+        { speaker: 'B', ja: 'そうですねえ、ジョギングしたり、ときどき{家|いえ}でヨガをしたりしてます。', pt: 'Hmm, faço corrida e às vezes faço ioga em casa.' },
+        { speaker: 'A', ja: 'へー、ヨガ。', pt: 'Nossa, ioga.' },
+        { speaker: 'B', ja: 'ええ。{寝|ね}る{前|まえ}にヨガをすると、よく{眠|ねむ}れますよ。', pt: 'Sim. Quando faço ioga antes de dormir, durmo bem.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah é?' },
+      ],
+    },
+  ],
+  '16-13': [
+    {
+      label: '② (16-13) — 早く起きて、早く寝るようにしています',
+      lines: [
+        { speaker: 'A', ja: 'いつも{元気|げんき}ですね。{何|なに}かしてるんですか？', pt: 'Você está sempre com energia. Faz alguma coisa?' },
+        { speaker: 'B', ja: 'うーん、{特|とく}に……。でも、{毎日|まいにち}、{朝|あさ}{早|はや}く{起|お}きて、{夜|よる}は{早|はや}く{寝|ね}るようにしています。', pt: 'Hmm, nada de especial… Mas procuro acordar cedo e dormir cedo todos os dias.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah é.' },
+        { speaker: 'B', ja: 'いつもだいたい{夜|よる}9{時|じ}に{寝|ね}ます。8{時間|じかん}{以上|いじょう}、{寝|ね}るようにしています。', pt: 'Costumo dormir por volta das 9 da noite. Procuro dormir mais de 8 horas.' },
+        { speaker: 'A', ja: 'いいですね。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+  '16-14': [
+    {
+      label: '③ (16-14) — 食べすぎないようにしています',
+      lines: [
+        { speaker: 'A', ja: 'ぼくはラーメンセット。', pt: 'Eu vou de combo de lámen.' },
+        { speaker: 'B', ja: '{私|わたし}は、チキンサラダとトマトジュースにします。', pt: 'Eu vou de salada de frango e suco de tomate.' },
+        { speaker: 'A', ja: 'あれ、ダイエットしてるの？', pt: 'Ué, está de dieta?' },
+        { speaker: 'B', ja: 'はい、{健康|けんこう}のために、{食|た}べすぎないようにしています。', pt: 'Sim, pela saúde procuro não comer demais.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah é.' },
+        { speaker: 'B', ja: 'できるだけ、{野菜|やさい}をたくさん{食|た}べるようにしています。', pt: 'Procuro comer bastante verdura sempre que dá.' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '16-15': [
+    {
+      label: '④ (16-15) — できるだけ運動するようにしています',
+      lines: [
+        { speaker: 'A', ja: '{健康|けんこう}のために、{何|なに}か{気|き}をつけていますか？', pt: 'Você cuida de algo pela saúde?' },
+        { speaker: 'B', ja: 'はい、できるだけ{運動|うんどう}するようにしています。ジムに{行|い}ったり、ウォーキングしたりしています。', pt: 'Sim, procuro me exercitar o máximo possível. Vou à academia, faço caminhada, essas coisas.' },
+        { speaker: 'A', ja: 'すごいですね。', pt: 'Que legal.' },
+        { speaker: 'B', ja: 'それと、お{酒|さけ}を{飲|の}みすぎないようにしています。', pt: 'E também procuro não beber demais.' },
+        { speaker: 'A', ja: 'なるほど。', pt: 'Faz sentido.' },
+      ],
+    },
+  ],
+  '16-20': [
+    {
+      label: '聞く (16-20) — 食中毒（ノロウイルス）のニュース',
+      setupJa: 'テレビの{情報番組|じょうほうばんぐみ}で、{最近|さいきん}{流行|りゅうこう}している{病気|びょうき}について{話|はな}しています。',
+      setupPt: 'Num programa de TV, falam sobre uma doença que está circulando.',
+      lines: [
+        { speaker: 'A', ja: '{次|つぎ}はノロウイルスの{話題|わだい}です。', pt: 'A seguir, o assunto é o norovírus.' },
+        { speaker: 'B', ja: '{最近|さいきん}、ノロウイルスとみられる{食中毒|しょくちゅうどく}が{増|ふ}えています。{先週|せんしゅう}は、{県内|けんない}のレストランで、ノロウイルスによる{食中毒|しょくちゅうどく}が{発生|はっせい}しました。', pt: 'Recentemente, vêm aumentando casos de intoxicação alimentar que parecem ser por norovírus. Semana passada houve um surto num restaurante do estado.' },
+        { speaker: 'B', ja: 'ノロウイルスは、{汚染|おせん}されたカキなどの{貝|かい}を、{生|なま}、または{十分|じゅうぶん}に{加熱|かねつ}しないで{食|た}べることが{原因|げんいん}で{感染|かんせん}します。また、ウイルスがついた{手|て}で{調理|ちょうり}したものを{食|た}べることでも{感染|かんせん}します。', pt: 'O norovírus contamina ao se comer mariscos como ostras contaminadas crus ou mal cozidos. Também ao comer algo preparado com as mãos contaminadas.' },
+        { speaker: 'B', ja: 'ノロウイルスに{感染|かんせん}すると、{腹痛|ふくつう}、おう{吐|と}、{下痢|げり}などを{起|お}こします。', pt: 'Quem se infecta tem dor de barriga, vômito, diarreia etc.' },
+        { speaker: 'B', ja: 'では、どうしたら{感染|かんせん}を{予防|よぼう}できるでしょうか。{予防|よぼう}のポイントは、{手洗|てあら}いと、{食品|しょくひん}の{十分|じゅうぶん}な{加熱|かねつ}です。{食事前|しょくじまえ}、トイレのあと、{調理|ちょうり}の{前後|ぜんご}は、{石|せっ}けんで{手|て}をよく{洗|あら}いましょう。{食品|しょくひん}は{中心部|ちゅうしんぶ}まで{十分|じゅうぶん}に{加熱|かねつ}しましょう。', pt: 'Então, como prevenir? O ponto é lavar as mãos e cozinhar bem os alimentos. Antes das refeições, depois do banheiro e antes/depois de cozinhar, lave bem as mãos com sabão. Cozinhe o alimento até o centro.' },
+      ],
+    },
+  ],
+}
+
+const lesson16: Section = {
+  id: 'lesson-16',
+  level: 'elementary1',
+  titleJa: '第16課 食べすぎないようにしています',
+  titlePt: 'Lição 16 — Procuro não comer demais',
+  summaryPt: 'Vida saudável · dar conselhos de saúde (ぬるいお{風呂|ふろ}に{入|はい}るといいですよ), excesso (V-すぎる), citar hábitos (ジョギングしたり、ヨガをしたり) e o que se procura fazer ou evitar ({野菜|やさい}を{食|た}べるようにしています／{食|た}べすぎないようにしています), além de entender notícia e cartaz sobre doença.',
+  studyNotes: [
+    {
+      title: 'Tópico: Vida saudável (健康な生活)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Dar conselhos a quem está passando mal, ou ouvir e entender conselhos.\n' +
+        '- Falar sobre o que faz para cuidar da própria saúde.\n' +
+        '- Ver notícia de uma doença em circulação e entender o geral (nome, sintomas, prevenção).\n' +
+        '- Ver um cartaz sobre doença no hospital e entender sintomas e prevenção.\n\n' +
+        '💡 Pergunta de abertura: {健康|けんこう}のために{気|き}をつけていることがありますか？どんなことに{気|き}をつけていますか？',
+    },
+    {
+      title: 'Conselho leve: V-るといいですよ (➊) ／ Excesso: V-すぎます (➋)',
+      bodyPt:
+        '**V-るといいですよ** = conselho/sugestão leve (forma de dicionário): `ぬるいお{風呂|ふろ}に{入|はい}るといいですよ`／`{静|しず}かな{音楽|おんがく}を{聞|き}くといいですよ`.\n\n' +
+        '**V-すぎます (すぎる)** = passar da conta (ger. negativo). Forma: マス-form sem ます + すぎる: `{食|た}べすぎる`, `{飲|の}みすぎる`, `{働|はたら}きすぎる`, `{見|み}すぎる`. Ex.: {食|た}べすぎて、お{腹|なか}が{痛|いた}い.',
+    },
+    {
+      title: 'Citar ações: V1-たり、V2-たり (➌)',
+      bodyPt:
+        '**V1-たり、V2-たり（します）** cita ações como **exemplos** (faz isto, aquilo, entre outras coisas). Forma: タ-form + り:\n\n' +
+        '- `ジョギングしたり、ヨガをしたりしています`／`ジムに{行|い}ったり、ウォーキングをしたりしています`.\n' +
+        '- O fim pode variar: します／しています／するようにしています.',
+    },
+    {
+      title: 'O que se procura fazer: V-る／V-ないようにしています (➍)',
+      bodyPt:
+        '**V-るようにしています** = procuro fazer (esforço/hábito); **V-ないようにしています** = procuro **não** fazer:\n\n' +
+        '- `{野菜|やさい}をたくさん{食|た}べるようにしています`／`{早|はや}く{寝|ね}るようにしています`.\n' +
+        '- `{食|た}べすぎないようにしています`／`ストレスをためないようにしています`.',
+    },
+    {
+      title: 'Vocabulário, Kanji e leituras/cartazes',
+      bodyPt:
+        '**Corpo (Ativ. 1):** {頭|あたま}, {鼻|はな}, {歯|は}, {首|くび}, {目|め}, {耳|みみ}, {口|くち}, {肩|かた}, {胸|むね}, お{腹|なか}, {腰|こし}, {背中|せなか}, {腕|うで}, {手|て}, {指|ゆび}, {足|あし}. **Mal-estar/conselho (Ativ. 1):** {肩|かた}がこる, {体|からだ}がだるい, {頭|あたま}が{痛|いた}い, {胃|い}の{調子|ちょうし}が{悪|わる}い, {二日酔|ふつかよ}い, よく{眠|ねむ}れない; お{風呂|ふろ}に{入|はい}る, お{腹|なか}を{温|あたた}める, {温|あたた}かい{飲|の}み{物|もの}, マッサージ; ぬるい, {試|ため}す, それはいけませんね. **Saúde (Ativ. 2):** ジム, ジョギング, ウォーキング, プールで{泳|およ}ぐ, ヨガ, {野菜|やさい}を{食|た}べる, {食|た}べすぎない, {飲|の}みすぎない, {早|はや}く{起|お}きる/{寝|ね}る, たくさん{寝|ね}る, ダイエットする, {気|き}をつける. **Doença/prevenção (Ativ. 3/4):** {食中毒|しょくちゅうどく}, ノロウイルス, {貝|かい}, {感染|かんせん}する, {調理|ちょうり}する, {予防|よぼう}する, {腹痛|ふくつう}, おう{吐|と}, {下痢|げり}, {手洗|てあら}い, {加熱|かねつ}; インフルエンザ, {発熱|はつねつ}, {関節痛|かんせつつう}, うつす, マスク, うがい, {予防接種|よぼうせっしゅ}.\n\n' +
+        '**Kanji da lição:** {体|からだ}, {顔|かお}, {目|め}, {耳|みみ}, {口|くち}, {頭|あたま}, {足|あし}, {手|て}, {起|お}きる, {歩|ある}く, {走|はし}る, {運動|うんどう}する.',
+    },
+  ],
+  groups: [lesson16Group],
+  audios: attachScripts(16, L16_SCRIPTS),
+}
+
+// ---- Lições 17-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(16, 'Vida saudável', '食べすぎないようにしています', 'Procuro não comer demais', [
-    'Dar conselhos a quem está passando mal, ou ouvir e entender conselhos.',
-    'Falar sobre o que faz para cuidar da própria saúde.',
-    'Ver notícia de uma doença em circulação e entender o geral (nome, sintomas, prevenção).',
-    'Ver um cartaz sobre doença no hospital e entender sintomas e prevenção.',
-  ]),
   scaffold(17, 'Convívio', '兄がくれたお守りです', 'É um amuleto que meu irmão me deu', [
     'Trocar cumprimentos básicos ao visitar a casa de alguém.',
     'Explicar de forma simples o que é uma lembrança ao entregá-la.',
@@ -3368,5 +3573,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, ...others],
 }
