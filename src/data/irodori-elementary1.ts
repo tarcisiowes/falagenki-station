@@ -3550,14 +3550,267 @@ const lesson16: Section = {
   audios: attachScripts(16, L16_SCRIPTS),
 }
 
-// ---- Lições 17-18 (estrutura por tópico; exercícios em construção) ----------
+const lesson17Group: ExerciseGroup = {
+  id: 'iro-e1-l17',
+  title: '兄がくれたお守りです',
+  subtitlePt: 'Convívio · visitar a casa de alguém (ごめんください／おじゃまします), explicar uma lembrança ({私|わたし}が{作|つく}ったN／〜から{持|も}って{来|き}たN — V普通形+N②) e falar de pertences: quem deu (〜にもらう／〜がくれる), além de escrever e-mail de agradecimento',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l17-1', number: 1, prompt: '「ネパールから{持|も}って{来|き}た{飾|かざ}りです」 — a estrutura V (普通形) + N ② serve para (Nota ➊):', choices: [{ n: 1, text: 'EXPLICAR um substantivo qualificando-o com uma oração de verbo (descreve a lembrança que se entrega ou o pertence sobre o qual perguntam)' }, { n: 2, text: 'dar uma ordem ao outro' }, { n: 3, text: 'pedir permissão' }, { n: 4, text: 'expressar obrigação' }], answer: 1, translationPt: 'É um enfeite que eu trouxe do Nepal.', explanationPt: 'V普通形 + N qualifica o substantivo, explicando-o. Aqui descreve uma lembrança que se dá ou um pertence sobre o qual perguntaram: ネパールから{持|も}って{来|き}た{飾|かざ}り. (Nota ➊)' },
+    { id: 'iro-e1-l17-2', number: 2, prompt: '«這是我做的點心» — como se forma e quais os padrões comuns de V普通形+N ao falar de lembranças (Nota ➊)?', choices: [{ n: 1, text: 'verbo na forma comum + N; no passado afirmativo usa-se a タ-form. Padrões: （{私|わたし}）が{作|つく}ったN ／ 〜から{持|も}って{来|き}たN ／ 〜で{買|か}ったN' }, { n: 2, text: 'verbo em マス-form + N; o passado usa ました' }, { n: 3, text: 'verbo em テ-form + N; sempre presente' }, { n: 4, text: 'verbo em ナイ-form + N; sempre negativo' }], answer: 1, translationPt: 'É um doce que eu fiz.', explanationPt: 'Passado afirmativo no 普通形 = タ-form. Padrões usados ao dar lembranças: {私|わたし}が{作|つく}ったN ({作|つく}る→{作|つく}った), 〜から{持|も}って{来|き}たN, 〜で{買|か}ったN. Ex.: これ、{北海道|ほっかいどう}で{買|か}ったバターです. (Nota ➊)' },
+    { id: 'iro-e1-l17-3', number: 3, prompt: 'Qual a diferença entre o V普通形+N da Lição 15 (せきを{抑|おさ}える{薬|くすり}) e o desta lição ({持|も}って{来|き}た{飾|かざ}り)? (Nota ➊)', choices: [{ n: 1, text: 'na L15 o substantivo qualificado ({薬|くすり}) é o SUJEITO da oração explicativa; aqui ({飾|かざ}り) é o OBJETO ({私|わたし}は この{飾|かざ}りを{持|も}って{来|き}ました → {持|も}って{来|き}た{飾|かざ}り)' }, { n: 2, text: 'não há diferença nenhuma' }, { n: 3, text: 'na L15 o verbo era passado; aqui é sempre presente' }, { n: 4, text: 'aqui o verbo vem depois do substantivo' }], answer: 1, explanationPt: 'L15: 「{薬|くすり}」 é o sujeito (o remédio suprime a tosse). L17: 「{飾|かざ}り」 é o objeto ({私|わたし}は この{飾|かざ}りを ネパールから{持|も}って{来|き}ました → ネパールから{持|も}って{来|き}た{飾|かざ}り). (Nota ➊)' },
+    { id: 'iro-e1-l17-4', number: 4, prompt: '「このマグカップ、{誕生日|たんじょうび}に、{友|とも}だちにもらったんです」 — 【{人|ひと}】に【{物|もの}】をもらう serve para (Nota ➋):', choices: [{ n: 1, text: 'dizer que se RECEBEU algo de alguém (quem recebe é o falante); a pessoa de quem se recebe leva a partícula に' }, { n: 2, text: 'dizer que se deu algo a alguém' }, { n: 3, text: 'dizer que se comprou algo' }, { n: 4, text: 'dizer que se perdeu algo' }], answer: 1, translationPt: 'Esta caneca, ganhei de um amigo no meu aniversário.', explanationPt: 'もらう = receber algo de alguém. A pessoa fonte leva に: {友|とも}だちにもらった. Usado para falar de presentes recebidos. (Nota ➋)' },
+    { id: 'iro-e1-l17-5', number: 5, prompt: 'Na frase 「{友|とも}だちにもらったんです」, a partícula 「に」 (Nota ➋):', choices: [{ n: 1, text: 'tem o mesmo sentido de 「から」 (de/from); pode-se dizer 「{友|とも}だちからもらったんです」' }, { n: 2, text: 'marca o destino para onde se vai' }, { n: 3, text: 'marca o objeto direto, como を' }, { n: 4, text: 'marca o lugar onde a ação acontece' }], answer: 1, explanationPt: 'O 「に」 de 〜にもらう indica a fonte e equivale a 「から」: {友|とも}だちにもらった = {友|とも}だちからもらった. (Nota ➋)' },
+    { id: 'iro-e1-l17-6', number: 6, prompt: '「これは、{兄|あに}がくれたお{守|まも}りです」 — 【{人|ひと}】が【{物|もの}】をくれる serve para (Nota ➌):', choices: [{ n: 1, text: 'dizer que OUTRA pessoa deu/dá algo A VOCÊ (ao falante); quem dá leva a partícula が' }, { n: 2, text: 'dizer que você deu algo a outra pessoa' }, { n: 3, text: 'dizer que você recebeu de você mesmo' }, { n: 4, text: 'dizer que você comprou algo' }], answer: 1, translationPt: 'Este é um amuleto que meu irmão (mais velho) me deu.', explanationPt: 'くれる = outra pessoa dá algo a você. Quem dá leva が: {兄|あに}がくれた. O ponto de vista é o de quem RECEBE (o falante). (Nota ➌)' },
+    { id: 'iro-e1-l17-7', number: 7, prompt: 'Em 「{父|ちち}が{誕生日|たんじょうび}にくれました」, o que indica o 「が」 e por que se omite 「{私|わたし}に」? (Nota ➌)', choices: [{ n: 1, text: 'o が marca quem DÁ (o doador, {父|ちち}); 「{私|わたし}に」 (para mim) é omitido porque já se entende sem dizer' }, { n: 2, text: 'o が marca quem recebe; 「{私|わたし}に」 nunca pode ser omitido' }, { n: 3, text: 'o が marca o objeto dado; 「{私|わたし}に」 é proibido' }, { n: 4, text: 'o が marca o lugar; 「{私|わたし}に」 vira から' }], answer: 1, explanationPt: '「{父|ちち}がくれました」 = 「{父|ちち}が{私|わたし}にくれました」. O が mostra o doador; 「{私|わたし}に」 é dispensável porque o destinatário (o falante) já está claro. (Nota ➌)' },
+    { id: 'iro-e1-l17-8', number: 8, prompt: 'Resumindo: qual a diferença entre 「もらう」 e 「くれる」? (Notas ➋➌)', choices: [{ n: 1, text: 'もらう = EU recebo (foco em quem recebe: {人|ひと}にもらう); くれる = o OUTRO me dá (foco em quem dá: {人|ひと}がくれる). Ambos resultam no falante ficando com a coisa' }, { n: 2, text: 'são exatamente iguais e intercambiáveis em qualquer frase' }, { n: 3, text: 'もらう é dar e くれる é receber' }, { n: 4, text: 'もらう é para coisas e くれる é para pessoas' }], answer: 1, explanationPt: '{兄|あに}にもらったお{守|まも}り (recebi do meu irmão — foco em mim) ≈ {兄|あに}がくれたお{守|まも}り (meu irmão me deu — foco nele). Os dois descrevem o mesmo evento por ângulos diferentes. (Notas ➋➌)' },
+    { id: 'iro-e1-l17-9', number: 9, prompt: 'Vocabulário — sua própria família ({自分|じぶん}の{家族|かぞく}): 「{父|ちち}／{母|はは}／{兄|あに}／{姉|あね}／{弟|おとうと}／{妹|いもうと}／{息子|むすこ}／{娘|むすめ}」 significam:', choices: [{ n: 1, text: 'meu pai ／ minha mãe ／ meu irmão mais velho ／ minha irmã mais velha ／ meu irmão mais novo ／ minha irmã mais nova ／ meu filho ／ minha filha' }, { n: 2, text: 'pai ／ mãe ／ filho ／ filha ／ avô ／ avó ／ tio ／ tia' }, { n: 3, text: 'irmão ／ irmã ／ primo ／ prima ／ sobrinho ／ sobrinha ／ neto ／ neta' }, { n: 4, text: 'marido ／ esposa ／ genro ／ nora ／ sogro ／ sogra ／ cunhado ／ cunhada' }], answer: 1, explanationPt: 'Forma humilde (própria família): {父|ちち} (pai), {母|はは} (mãe), {兄|あに} (irmão+ velho), {姉|あね} (irmã+ velha), {弟|おとうと} (irmão+ novo), {妹|いもうと} (irmã+ nova), {息子|むすこ} (filho), {娘|むすめ} (filha). (Atividade 3 · 【{家族|かぞく}】)' },
+    { id: 'iro-e1-l17-10', number: 10, prompt: 'Vocabulário — a família dos outros (ほかの{人|ひと}の{家族|かぞく}): 「お{父|とう}さん／お{母|かあ}さん／お{兄|にい}さん／お{姉|ねえ}さん／{弟|おとうと}さん／{妹|いもうと}さん／{息子|むすこ}さん／{娘|むすめ}さん」 são:', choices: [{ n: 1, text: 'as formas respeitosas para a família DE OUTRA pessoa: pai ／ mãe ／ irmão+ velho ／ irmã+ velha ／ irmão+ novo ／ irmã+ nova ／ filho ／ filha (dela)' }, { n: 2, text: 'formas para a própria família, mais humildes' }, { n: 3, text: 'apelidos carinhosos só para crianças' }, { n: 4, text: 'nomes de parentes distantes' }], answer: 1, explanationPt: 'Para a família dos outros usa-se a forma respeitosa: お{父|とう}さん, お{母|かあ}さん, お{兄|にい}さん, お{姉|ねえ}さん, {弟|おとうと}さん, {妹|いもうと}さん, お{子|こ}さん, {息子|むすこ}さん, {娘|むすめ}さん. (Atividade 3 · 【{家族|かぞく}】)' },
+    { id: 'iro-e1-l17-11', number: 11, prompt: 'Como se usam 「{母|はは}」 vs 「お{母|かあ}さん」 e 「{兄|あに}」 vs 「お{兄|にい}さん」?', context: 'A：これは、ミャンマーの{母|はは}が{作|つく}ったんです。 B：お{母|かあ}さんが{作|つく}ったの？ ／ A：これは、{兄|あに}がくれたお{守|まも}りです。 B：お{兄|にい}さんは、{今|いま}、インドネシア？', choices: [{ n: 1, text: '{母|はは}／{兄|あに} = ao falar da PRÓPRIA família (humilde); お{母|かあ}さん／お{兄|にい}さん = ao falar da família DO OUTRO (respeitoso)' }, { n: 2, text: '{母|はは}／{兄|あに} são para crianças e お{母|かあ}さん／お{兄|にい}さん para adultos' }, { n: 3, text: '{母|はは}／{兄|あに} são respeitosos e お{母|かあ}さん／お{兄|にい}さん humildes' }, { n: 4, text: 'são totalmente intercambiáveis' }], answer: 1, explanationPt: 'A (falando da própria família) usa {母|はは}, {兄|あに}; B (referindo-se à família de A) usa お{母|かあ}さん, お{兄|にい}さん. (形に注目 (2))' },
+    { id: 'iro-e1-l17-12', number: 12, prompt: 'Atividade 1 — quais expressões são ditas por quem VISITA ({訪問|ほうもん}する{人|ひと})?', choices: [{ n: 1, text: 'ごめんください (com licença, ao chegar) ／ おじゃまします (ao entrar) ／ おじゃましました (ao sair)' }, { n: 2, text: 'いらっしゃい ／ ようこそ ／ また{来|き}てね' }, { n: 3, text: 'どうぞ{上|あ}がってください ／ お{茶|ちゃ}をどうぞ' }, { n: 4, text: 'いつでも{遊|あそ}びに{来|き}てください' }], answer: 1, explanationPt: 'Quem visita: ごめんください (anuncia a chegada à porta), おじゃまします (ao entrar), おじゃましました (ao sair). (Atividade 1 · 形に注目)' },
+    { id: 'iro-e1-l17-13', number: 13, prompt: 'Atividade 1 — quais expressões são ditas por quem RECEBE ({訪問|ほうもん}を{受|う}ける{人|ひと}, o anfitrião)?', choices: [{ n: 1, text: 'いらっしゃい (bem-vindo) ／ ようこそ (seja bem-vindo) ／ {上|あ}がってください, いつでも{遊|あそ}びに{来|き}てください' }, { n: 2, text: 'ごめんください ／ おじゃまします ／ おじゃましました' }, { n: 3, text: 'いただきます ／ ごちそうさまでした' }, { n: 4, text: 'はじめまして ／ お{世話|せわ}になっています' }], answer: 1, explanationPt: 'O anfitrião diz: いらっしゃい, ようこそ, さ、{上|あ}がって／どうぞ{上|あ}がってください, また{来|き}てね, いつでも{遊|あそ}びに{来|き}てください. (Atividade 1 · 形に注目)' },
+    { id: 'iro-e1-l17-14', number: 14, prompt: 'Expressões 「お{世話|せわ}になっています」 e 「こちらこそ」 significam:', choices: [{ n: 1, text: '「お{世話|せわ}になっています」 = “obrigado por tudo (que faz por mim/por nós)”, agradecimento a quem convive com você ou com sua família ／ 「こちらこそ」 = “eu é que agradeço / digo o mesmo”, devolve o cumprimento' }, { n: 2, text: '“fui cuidado” ／ “aqui mesmo”' }, { n: 3, text: '“estou ocupado” ／ “deste lado”' }, { n: 4, text: '“sinto muito” ／ “de nada”' }], answer: 1, explanationPt: 'お{世話|せわ}になっています = agradece a quem tem trato com você ou seus parentes ({福田|ふくだ}さんには、いつもお{世話|せわ}になっています). こちらこそ = devolve a saudação/agradecimento. (会話1 · 大切なことば)' },
+    { id: 'iro-e1-l17-15', number: 15, prompt: 'Expressões 「いただきます」, 「ごちそうさまでした」, 「おじゃまします」, 「おじゃましました」 significam:', choices: [{ n: 1, text: 'antes de comer/aceitar algo ／ depois de comer (ou agradecendo a refeição depois) ／ ao entrar na casa de alguém ／ ao sair da casa de alguém' }, { n: 2, text: 'bom dia ／ boa noite ／ até logo ／ obrigado' }, { n: 3, text: 'com licença ／ desculpa ／ por favor ／ tudo bem' }, { n: 4, text: 'parabéns ／ felicidades ／ saúde ／ tchau' }], answer: 1, explanationPt: 'いただきます (antes de comer/ao receber), ごちそうさまでした (após a refeição / agradecendo depois a quem ofereceu), おじゃまします (ao entrar), おじゃましました (ao sair). (会話 · 大切なことば)' },
+    { id: 'iro-e1-l17-16', number: 16, prompt: 'Vocabulário (会話) — 「{上|あ}がる／うちの〜／{奥|おく}さん／{息子|むすこ}／{足|あし}をくずす／{楽|らく}にする／{遊|あそ}びに{来|く}る」 significam:', choices: [{ n: 1, text: 'entrar (subir para dentro de casa) ／ meu/minha〜 ／ esposa (de outro) ／ filho ／ sentar-se à vontade (sem ajoelhar formalmente) ／ ficar à vontade ／ vir visitar/passear' }, { n: 2, text: 'subir escada ／ nosso bairro ／ vovó ／ neto ／ cruzar a perna ／ deitar ／ vir trabalhar' }, { n: 3, text: 'levantar ／ aquela ／ moça ／ bebê ／ esticar a perna ／ relaxar os ombros ／ vir correndo' }, { n: 4, text: 'aumentar ／ minha casa ／ tia ／ irmão ／ dobrar o joelho ／ dormir ／ vir morar' }], answer: 1, explanationPt: '{上|あ}がる (entrar em casa), うちの〜 (meu/nosso〜: うちの{奥|おく}さん), {奥|おく}さん (esposa), {息子|むすこ} (filho), {足|あし}をくずす (sentar à vontade), {楽|らく}にする (ficar à vontade), {遊|あそ}びに{来|く}る (vir visitar). (会話 · 大切なことば)' },
+    { id: 'iro-e1-l17-17', number: 17, prompt: 'Vocabulário (Atividade 2 · 【お{土産|みやげ}】 a-e): 「コーヒー／お{茶|ちゃ}／お{酒|さけ}／{調味料|ちょうみりょう}／お{菓子|かし}」 significam:', choices: [{ n: 1, text: 'café ／ chá ／ bebida alcoólica ／ tempero/condimento ／ doce/guloseima' }, { n: 2, text: 'leite ／ suco ／ água ／ sal ／ pão' }, { n: 3, text: 'chocolate ／ refrigerante ／ vinho ／ açúcar ／ bolo' }, { n: 4, text: 'cerveja ／ café ／ saquê ／ molho ／ biscoito' }], answer: 1, explanationPt: 'a. コーヒー (café), b. お{茶|ちゃ} (chá), c. お{酒|さけ} (álcool), d. {調味料|ちょうみりょう} (tempero), e. お{菓子|かし} (doce). (Atividade 2 · 【お{土産|みやげ}】)' },
+    { id: 'iro-e1-l17-18', number: 18, prompt: 'Vocabulário (Atividade 2 · 【お{土産|みやげ}】 f-j): 「カップ／キーホルダー／ペン／お{守|まも}り／{絵葉書|えはがき}」 significam:', choices: [{ n: 1, text: 'caneca/xícara ／ chaveiro ／ caneta ／ amuleto (de proteção) ／ cartão-postal' }, { n: 2, text: 'copo ／ pulseira ／ lápis ／ colar ／ selo' }, { n: 3, text: 'prato ／ corrente ／ borracha ／ pingente ／ envelope' }, { n: 4, text: 'tigela ／ anel ／ marcador ／ medalha ／ foto' }], answer: 1, explanationPt: 'f. カップ (caneca/xícara), g. キーホルダー (chaveiro), h. ペン (caneta), i. お{守|まも}り (amuleto), j. {絵葉書|えはがき} (cartão-postal). (Atividade 2)' },
+    { id: 'iro-e1-l17-19', number: 19, prompt: 'Vocabulário (Atividade 2 · 【お{土産|みやげ}】 k-o): 「{写真集|しゃしんしゅう}／{飾|かざ}り／{人形|にんぎょう}／Tシャツ／かばん・バッグ」 significam:', choices: [{ n: 1, text: 'álbum de fotos ／ enfeite/adorno ／ boneca/boneco ／ camiseta ／ bolsa' }, { n: 2, text: 'revista ／ quadro ／ brinquedo ／ blusa ／ mala' }, { n: 3, text: 'livro ／ vaso ／ estátua ／ casaco ／ carteira' }, { n: 4, text: 'caderno ／ tapete ／ urso ／ meia ／ mochila' }], answer: 1, explanationPt: 'k. {写真集|しゃしんしゅう} (álbum de fotos), l. {飾|かざ}り (enfeite), m. {人形|にんぎょう} (boneca), n. Tシャツ (camiseta), o. かばん／バッグ (bolsa). (Atividade 2)' },
+    { id: 'iro-e1-l17-20', number: 20, prompt: 'Vocabulário (Atividade 3 · pertences a-d): 「ピアス／かばん／マグカップ／{帽子|ぼうし}」 significam:', choices: [{ n: 1, text: 'brinco ／ bolsa ／ caneca ／ chapéu/gorro' }, { n: 2, text: 'anel ／ carteira ／ copo ／ luva' }, { n: 3, text: 'colar ／ mala ／ prato ／ cachecol' }, { n: 4, text: 'relógio ／ mochila ／ tigela ／ óculos' }], answer: 1, explanationPt: 'a. ピアス (brinco), b. かばん (bolsa), c. マグカップ (caneca), d. {帽子|ぼうし} (chapéu/gorro). (Atividade 3 · 1)' },
+    { id: 'iro-e1-l17-21', number: 21, prompt: 'Atividade 3 — ao perguntar de quem se ganhou (だれにもらいましたか), as opções ア-エ são:', choices: [{ n: 1, text: 'お{母|かあ}さん (da mãe) ／ お{兄|にい}さん (do irmão+ velho) ／ {友|とも}だち (de um amigo) ／ {自分|じぶん}で{買|か}った (comprou você mesmo)' }, { n: 2, text: 'do pai ／ da irmã ／ do chefe ／ achou na rua' }, { n: 3, text: 'do professor ／ do vizinho ／ ganhou em sorteio ／ herdou' }, { n: 4, text: 'do namorado ／ do colega ／ alugou ／ trocou' }], answer: 1, explanationPt: 'ア. お{母|かあ}さん, イ. お{兄|にい}さん, ウ. {友|とも}だち, エ. {自分|じぶん}で{買|か}った. Liga ao 〜にもらう／〜がくれる das Notas ➋➌. (Atividade 3 · 1 (2))' },
+    { id: 'iro-e1-l17-22', number: 22, prompt: 'Os kanji 「{父|ちち}／お{父|とう}さん／{母|はは}／お{母|かあ}さん／{兄|あに}／お{兄|にい}さん／{姉|あね}／お{姉|ねえ}さん」 lêem-se:', choices: [{ n: 1, text: 'ちち ／ おとうさん ／ はは ／ おかあさん ／ あに ／ おにいさん ／ あね ／ おねえさん' }, { n: 2, text: 'ふ ／ おとうさん ／ ぼ ／ おかあさん ／ けい ／ おにいさん ／ し ／ おねえさん' }, { n: 3, text: 'ちち ／ おちちさん ／ はは ／ おははさん ／ あに ／ おあにさん ／ あね ／ おあねさん' }, { n: 4, text: 'とう ／ おとうさん ／ かあ ／ おかあさん ／ にい ／ おにいさん ／ ねえ ／ おねえさん' }], answer: 1, explanationPt: '{父|ちち}／お{父|とう}さん, {母|はは}／お{母|かあ}さん, {兄|あに}／お{兄|にい}さん, {姉|あね}／お{姉|ねえ}さん. (漢字のことば)' },
+    { id: 'iro-e1-l17-23', number: 23, prompt: 'Os kanji 「{弟|おとうと}／{妹|いもうと}／{夫|おっと}／{妻|つま}／{両親|りょうしん}」 lêem-se e significam:', choices: [{ n: 1, text: 'おとうと (irmão+ novo) ／ いもうと (irmã+ nova) ／ おっと (marido) ／ つま (esposa) ／ りょうしん (os pais/casal de pais)' }, { n: 2, text: 'てい (genro) ／ まい (cunhada) ／ ふ (sogro) ／ さい (sogra) ／ りょうしん (parentes)' }, { n: 3, text: 'おとうと ／ いもうと ／ おっと ／ つま ／ ふたおや' }, { n: 4, text: 'だい ／ まい ／ おっと ／ さい ／ りょうおや' }], answer: 1, explanationPt: '{弟|おとうと} (irmão+ novo), {妹|いもうと} (irmã+ nova), {夫|おっと} (marido), {妻|つま} (esposa), {両親|りょうしん} (os pais). Kanji da lição: {父|ちち}・{母|はは}・{兄|あに}・{姉|あね}・{弟|おとうと}・{妹|いもうと}・{夫|おっと}・{妻|つま}・{両親|りょうしん}. (漢字)' },
+    { id: 'iro-e1-l17-24', number: 24, prompt: 'Diálogo de abertura 17-01: quem da família do Fukuda estava em casa e o que Toan levou de lembrança?', context: '会話1: {福田|ふくだ}：うちの{奥|おく}さん。こっちは{息子|むすこ}のタケル。 会話2: トアン：あのう、これ、ベトナムのコーヒーです。どうぞ。', choices: [{ n: 1, text: 'estavam a esposa ({奥|おく}さん) e o filho Takeru ({息子|むすこ}); Toan levou café do Vietnã (ベトナムのコーヒー)' }, { n: 2, text: 'estavam os pais do Fukuda; Toan levou chá' }, { n: 3, text: 'estava só o Fukuda; Toan não levou nada' }, { n: 4, text: 'estava a filha; Toan levou um amuleto' }], answer: 1, explanationPt: 'Em casa: a {奥|おく}さん (esposa) e o {息子|むすこ} Takeru. Lembrança: ベトナムのコーヒー. Toan ainda pede 「{足|あし}をくずしてもいいですか？」 (posso sentar à vontade?). (Atividade 1 · 聴解スクリプト 17-01)' },
+    { id: 'iro-e1-l17-25', number: 25, prompt: 'Diálogo 17-07 (ネパール): o que é a lembrança e para que serve?', context: 'A：ネパールから{持|も}って{来|き}た{飾|かざ}りです。…これは、{魔|ま}よけです。{壁|かべ}にかけると、{悪|わる}いものが{入|はい}って{来|き}ません。', choices: [{ n: 1, text: 'é um enfeite ({飾|かざ}り) trazido do Nepal — um amuleto contra o mal ({魔|ま}よけ); pendurado na parede, impede que coisas ruins entrem' }, { n: 2, text: 'é um tempero usado na culinária tailandesa' }, { n: 3, text: 'é um doce feito de banana' }, { n: 4, text: 'é uma bebida feita de arroz' }], answer: 1, explanationPt: 'ネパールから{持|も}って{来|き}た{飾|かざ}り (V普通形+N, ➊); {魔|ま}よけ; {壁|かべ}にかけると、{悪|わる}いものが{入|はい}って{来|き}ません (V-ると, Lição 13). (Atividade 2 · 17-07)' },
+    { id: 'iro-e1-l17-26', number: 26, prompt: 'Diálogo 17-08 (タイ): o que é a ナンプラー e de que é feita?', context: 'A：ナンプラーです。タイ{料理|りょうり}に{使|つか}う{調味料|ちょうみりょう}です。{魚|さかな}から{作|つく}ります。…いろいろなものにかけると、おいしいですよ。', choices: [{ n: 1, text: 'é um tempero ({調味料|ちょうみりょう}) usado na comida tailandesa, feito de peixe ({魚|さかな}から{作|つく}る); fica gostoso quando se põe sobre várias coisas' }, { n: 2, text: 'é um enfeite contra o mal' }, { n: 3, text: 'é um doce de banana das Filipinas' }, { n: 4, text: 'é um destilado de arroz' }], answer: 1, explanationPt: 'タイ{料理|りょうり}に{使|つか}う{調味料|ちょうみりょう} (V普通形+N, ➊); {魚|さかな}から{作|つく}ります; いろいろなものにかけると、おいしい (V-ると). (Atividade 2 · 17-08)' },
+    { id: 'iro-e1-l17-27', number: 27, prompt: 'Diálogo 17-09 (フィリピン): o que é a トゥロン?', context: 'A：これ、{私|わたし}が{作|つく}ったお{菓子|かし}です。みなさん、{食|た}べてください。…トゥロンといいます。フィリピンではとても{有名|ゆうめい}です。バナナが{入|はい}っています。', choices: [{ n: 1, text: 'é um doce ({私|わたし}が{作|つく}ったお{菓子|かし}) chamado トゥロン, muito famoso nas Filipinas, que leva banana ({入|はい}っています)' }, { n: 2, text: 'é um tempero feito de peixe' }, { n: 3, text: 'é um amuleto pendurado na parede' }, { n: 4, text: 'é um destilado de arroz' }], answer: 1, explanationPt: '{私|わたし}が{作|つく}ったお{菓子|かし} (V普通形+N, ➊); 〜といいます (chama-se〜); フィリピンではとても{有名|ゆうめい}; バナナが{入|はい}っています. (Atividade 2 · 17-09)' },
+    { id: 'iro-e1-l17-28', number: 28, prompt: 'Diálogo 17-10 (カンボジア): o que é a スラーソー e que aviso o doador dá?', context: 'A：これ、スラーソーです。カンボジアのお{酒|さけ}です。…お{米|こめ}から{作|つく}った{焼酎|しょうちゅう}です。…ちょっと{強|つよ}いですから、{飲|の}みすぎないでくださいね。', choices: [{ n: 1, text: 'é uma bebida cambojana — um destilado ({焼酎|しょうちゅう}) feito de arroz (お{米|こめ}から{作|つく}った); o aviso: como é forte, “não beba demais” ({飲|の}みすぎないでください)' }, { n: 2, text: 'é um doce de banana; o aviso: coma logo' }, { n: 3, text: 'é um tempero; o aviso: guarde na geladeira' }, { n: 4, text: 'é um amuleto; o aviso: não molhe' }], answer: 1, explanationPt: 'お{米|こめ}から{作|つく}った{焼酎|しょうちゅう} (V普通形+N, ➊); {飲|の}みすぎないでください (V-すぎる + V-ないでください, Lições 16/15). (Atividade 2 · 17-10)' },
+    { id: 'iro-e1-l17-29', number: 29, prompt: 'Diálogo 17-13 (マグカップ): de onde veio a caneca de panda e quem a deu?', context: 'A：そのパンダのマグカップ、かわいいですね。{中国|ちゅうごく}から{持|も}って{来|き}たんですか？ B：はい。{誕生日|たんじょうび}に、{友|とも}だちにもらったんです。', choices: [{ n: 1, text: 'veio da China; ganhou de um amigo no aniversário ({友|とも}だちにもらった — Nota ➋)' }, { n: 2, text: 'comprou na internet no Japão' }, { n: 3, text: 'a mãe fez para ela' }, { n: 4, text: 'o irmão deu de amuleto' }], answer: 1, explanationPt: '{中国|ちゅうごく}から{持|も}って{来|き}た; {誕生日|たんじょうび}に、{友|とも}だちにもらったんです (〜にもらう, ➋ + 〜んです Lição 15). (Atividade 3 · 17-13)' },
+    { id: 'iro-e1-l17-30', number: 30, prompt: 'Diálogos 17-14 e 17-16: quem fez a bolsa e quem deu o brinco?', context: '17-14 — B：これは、ミャンマーの{母|はは}が{作|つく}ったんです。 17-16 — B：あ、これは、{兄|あに}がくれたお{守|まも}りです。', choices: [{ n: 1, text: 'a bolsa foi feita pela mãe (em Mianmar); o brinco é um amuleto que o irmão+ velho lhe deu ({兄|あに}がくれた — Nota ➌)' }, { n: 2, text: 'a bolsa foi comprada na internet; o brinco ela mesma comprou' }, { n: 3, text: 'a bolsa o pai deu; o brinco a amiga deu' }, { n: 4, text: 'os dois ela trouxe da Mongólia' }], answer: 1, explanationPt: '17-14: ミャンマーの{母|はは}が{作|つく}った (V普通形 + んです); 17-16: {兄|あに}がくれたお{守|まも}り (〜がくれる, ➌). (Atividade 3 · 17-14/17-16)' },
+    { id: 'iro-e1-l17-31', number: 31, prompt: 'Atividade 4 — uma {お礼|れい}のメール (e-mail de agradecimento após visitar a casa de alguém) costuma ter que partes, e o que significam お{宅|たく}／{経験|けいけん}／よろしくお{伝|つた}えください?', choices: [{ n: 1, text: 'abertura de agradecimento (はじめのお{礼|れい}) → episódio concreto ({具体的|ぐたいてき}なエピソード) → fecho ({結|むす}び); お{宅|たく} = a casa (de alguém, respeitoso), {経験|けいけん} = experiência, よろしくお{伝|つた}えください = “mande lembranças (à família)”' }, { n: 2, text: 'só um assunto; お{宅|たく} = loja, {経験|けいけん} = exame, よろしくお{伝|つた}えください = “me ligue”' }, { n: 3, text: 'só endereço; お{宅|たく} = quarto, {経験|けいけん} = viagem, よろしくお{伝|つた}えください = “até logo”' }, { n: 4, text: 'só despedida; お{宅|たく} = escritório, {経験|けいけん} = trabalho, よろしくお{伝|つた}えください = “obrigado”' }], answer: 1, explanationPt: 'Estrutura: はじめのお{礼|れい} (agradecimento inicial), {具体的|ぐたいてき}なエピソード (episódio específico — ex.: {料理|りょうり}がおいしかった), {結|むす}び (fecho). お{宅|たく} (casa, respeitoso), おじゃまする (visitar), {経験|けいけん} (experiência), よろしくお{伝|つた}えください (dê lembranças). (Atividade 4)' },
+    { id: 'iro-e1-l17-32', number: 32, prompt: 'O título 「{兄|あに}がくれたお{守|まも}りです」 e a pergunta de abertura 「{日本|にほん}にお{土産|みやげ}を{持|も}って{行|い}くとしたら、{何|なに}を{持|も}って{行|い}きますか？」 querem dizer:', choices: [{ n: 1, text: 'Título: “É um amuleto que meu irmão me deu” ({兄|あに}がくれた + お{守|まも}り) ／ Abertura: “Se você fosse levar uma lembrança ao Japão, o que levaria?”' }, { n: 2, text: 'Título: “Comprei um amuleto” ／ Abertura: “Quanto custa viajar ao Japão?”' }, { n: 3, text: 'Título: “Meu irmão está no Japão” ／ Abertura: “Você já foi ao Japão?”' }, { n: 4, text: 'Título: “Perdi o amuleto” ／ Abertura: “Onde fica a loja de lembranças?”' }], answer: 1, translationPt: 'É um amuleto que meu irmão me deu. / Se fosse levar uma lembrança ao Japão, o que levaria?', explanationPt: '{兄|あに}がくれた (〜がくれる, ➌) + お{守|まも}り (amuleto). Tema: {交際|こうさい} (convívio). Abertura: 〜としたら (caso/se), {何|なに}を{持|も}って{行|い}きますか. (Título / Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 17
+const L17_SCRIPTS: Record<string, ScriptItem[]> = {
+  '17-01': [
+    {
+      label: '会話1 (17-01) — 玄関で',
+      setupJa: 'トアンさんが{福田|ふくだ}さんに{招待|しょうたい}されて、{福田|ふくだ}さんの{家|いえ}を{訪問|ほうもん}しました。',
+      setupPt: 'Toan foi convidado e visitou a casa do Fukuda.',
+      lines: [
+        { speaker: 'トアン', ja: 'ごめんください。', pt: 'Com licença (tem alguém em casa?).' },
+        { speaker: '福田', ja: 'はい。トアンさん、いらっしゃい。ようこそ。さ、{上|あ}がって。', pt: 'Sim. Toan, bem-vindo. Seja bem-vindo. Vamos, entre.' },
+        { speaker: 'トアン', ja: 'おじゃまします。', pt: 'Com licença (entrando).' },
+        { speaker: '福田（妻）', ja: 'こんにちは。', pt: 'Boa tarde.' },
+        { speaker: '福田', ja: 'うちの{奥|おく}さん。こっちは{息子|むすこ}のタケル。', pt: 'Esta é minha esposa. E este é meu filho, Takeru.' },
+        { speaker: 'タケル', ja: 'こんにちは。', pt: 'Boa tarde.' },
+        { speaker: '福田', ja: 'こちら、トアンさん。', pt: 'E este é o Toan.' },
+        { speaker: 'トアン', ja: 'はじめまして。トアンです。{福田|ふくだ}さんには、いつもお{世話|せわ}になっています。', pt: 'Muito prazer, sou o Toan. O Fukuda sempre cuida bem de mim, obrigado.' },
+        { speaker: '福田（妻）', ja: 'こちらこそ、{夫|おっと}がお{世話|せわ}になっています。', pt: 'Eu é que agradeço — meu marido é quem é bem cuidado por você.' },
+      ],
+    },
+    {
+      label: '会話2 (17-01) — 居間で',
+      setupPt: 'Na sala de estar.',
+      lines: [
+        { speaker: '福田', ja: 'お{茶|ちゃ}をどうぞ。', pt: 'Sirva-se de chá.' },
+        { speaker: 'トアン', ja: 'いただきます。あのう、これ、ベトナムのコーヒーです。どうぞ。', pt: 'Obrigado (aceito). Ah, isto é café do Vietnã. Por favor.' },
+        { speaker: '福田', ja: 'おお、ありがとう。', pt: 'Oh, obrigado.' },
+        { speaker: 'トアン', ja: 'すみません。{足|あし}をくずしてもいいですか？', pt: 'Com licença. Posso me sentar à vontade?' },
+        { speaker: '福田', ja: 'あー、どうぞ。{楽|らく}にしてね。', pt: 'Ah, fique à vontade.' },
+      ],
+    },
+    {
+      label: '会話3 (17-01) — 玄関で',
+      setupPt: 'Na porta de entrada (ao sair).',
+      lines: [
+        { speaker: 'トアン', ja: '{今日|きょう}はごちそうさまでした。{楽|たの}しかったです。', pt: 'Obrigado pela refeição de hoje. Foi muito divertido.' },
+        { speaker: '福田', ja: 'いえいえ、また{来|き}てね。', pt: 'Imagina, volte sempre.' },
+        { speaker: '福田（妻）', ja: 'いつでも{遊|あそ}びに{来|き}てください。', pt: 'Venha nos visitar quando quiser.' },
+        { speaker: 'トアン', ja: 'ありがとうございます。おじゃましました。', pt: 'Muito obrigado. Com licença (saindo).' },
+      ],
+    },
+  ],
+  '17-07': [
+    {
+      label: '① (17-07) — ネパールの魔よけ',
+      setupJa: '4{人|よにん}の{人|ひと}が、{自分|じぶん}の{国|くに}のお{土産|みやげ}やお{菓子|かし}を{渡|わた}しています。',
+      setupPt: 'Quatro pessoas estão entregando lembranças e doces de seus países.',
+      lines: [
+        { speaker: 'A', ja: 'これ、お{土産|みやげ}です。', pt: 'Aqui, uma lembrança.' },
+        { speaker: 'B', ja: 'あ、ありがとうございます。', pt: 'Ah, muito obrigado.' },
+        { speaker: 'A', ja: 'ネパールから{持|も}って{来|き}た{飾|かざ}りです。', pt: 'É um enfeite que trouxe do Nepal.' },
+        { speaker: 'B', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'A', ja: 'これは、{魔|ま}よけです。{壁|かべ}にかけると、{悪|わる}いものが{入|はい}って{来|き}ません。', pt: 'É um amuleto contra o mal. Pendurado na parede, impede que coisas ruins entrem.' },
+        { speaker: 'B', ja: 'そうなんですか。', pt: 'Ah é?' },
+      ],
+    },
+  ],
+  '17-08': [
+    {
+      label: '② (17-08) — タイのナンプラー',
+      lines: [
+        { speaker: 'A', ja: 'あのう、これ、どうぞ。', pt: 'Ah, isto aqui, por favor.' },
+        { speaker: 'B', ja: 'あ、どうも。これ、{何|なに}？', pt: 'Ah, obrigado. O que é isto?' },
+        { speaker: 'A', ja: 'ナンプラーです。タイ{料理|りょうり}に{使|つか}う{調味料|ちょうみりょう}です。{魚|さかな}から{作|つく}ります。', pt: 'É nam pla. Um tempero usado na comida tailandesa. É feito de peixe.' },
+        { speaker: 'B', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'A', ja: 'いろいろなものにかけると、おいしいですよ。', pt: 'Fica gostoso quando se põe sobre várias coisas.' },
+        { speaker: 'B', ja: 'ありがとう。{今度|こんど}、{使|つか}ってみるね。', pt: 'Obrigado. Vou experimentar usar da próxima vez.' },
+      ],
+    },
+  ],
+  '17-09': [
+    {
+      label: '③ (17-09) — フィリピンのトゥロン',
+      lines: [
+        { speaker: 'A', ja: 'これ、{私|わたし}が{作|つく}ったお{菓子|かし}です。みなさん、{食|た}べてください。', pt: 'Este é um doce que eu fiz. Pessoal, sirvam-se.' },
+        { speaker: 'B', ja: 'わー、ありがとう。', pt: 'Uau, obrigado.' },
+        { speaker: 'A', ja: 'トゥロンといいます。フィリピンではとても{有名|ゆうめい}です。バナナが{入|はい}っています。', pt: 'Chama-se turon. É muito famoso nas Filipinas. Tem banana dentro.' },
+        { speaker: 'B', ja: 'へー。いただきます。うん、おいしい！', pt: 'Nossa. Aceito. Hmm, gostoso!' },
+      ],
+    },
+  ],
+  '17-10': [
+    {
+      label: '④ (17-10) — カンボジアのスラーソー',
+      lines: [
+        { speaker: 'A', ja: '{先生|せんせい}、お{酒|さけ}、{好|す}きですよね？', pt: 'Professor, o senhor gosta de bebida, não é?' },
+        { speaker: 'B', ja: 'うん、{大好|だいす}きだけど……。', pt: 'Sim, adoro, mas…' },
+        { speaker: 'A', ja: 'これ、スラーソーです。カンボジアのお{酒|さけ}です。{先生|せんせい}にプレゼントです。', pt: 'Isto é sra sor. Uma bebida do Camboja. É um presente para o senhor.' },
+        { speaker: 'B', ja: 'え、いいの？', pt: 'Ué, pode mesmo?' },
+        { speaker: 'A', ja: 'お{米|こめ}から{作|つく}った{焼酎|しょうちゅう}です。', pt: 'É um destilado feito de arroz.' },
+        { speaker: 'B', ja: 'へー、{焼酎|しょうちゅう}、{大好|だいす}き。ありがとう。', pt: 'Nossa, adoro destilado. Obrigado.' },
+        { speaker: 'A', ja: 'ちょっと{強|つよ}いですから、{飲|の}みすぎないでくださいね。', pt: 'É meio forte, então não beba demais, viu?' },
+      ],
+    },
+  ],
+  '17-13': [
+    {
+      label: '① (17-13) — パンダのマグカップ',
+      setupJa: '{自分|じぶん}の{持|も}ち{物|もの}について、4{人|よにん}の{人|ひと}が{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam sobre seus pertences.',
+      lines: [
+        { speaker: 'A', ja: 'そのパンダのマグカップ、かわいいですね。', pt: 'Essa caneca de panda é fofa.' },
+        { speaker: 'B', ja: 'あ、ありがとうございます。', pt: 'Ah, obrigado.' },
+        { speaker: 'A', ja: '{中国|ちゅうごく}から{持|も}って{来|き}たんですか？', pt: 'Trouxe da China?' },
+        { speaker: 'B', ja: 'はい。{誕生日|たんじょうび}に、{友|とも}だちにもらったんです。', pt: 'Sim. Ganhei de um amigo no meu aniversário.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah é.' },
+      ],
+    },
+  ],
+  '17-14': [
+    {
+      label: '② (17-14) — ミャンマーのかばん',
+      lines: [
+        { speaker: 'A', ja: 'そのかばん、いいね。', pt: 'Essa bolsa é legal.' },
+        { speaker: 'B', ja: 'そうですか？ありがとうございます。', pt: 'Acha? Obrigado.' },
+        { speaker: 'A', ja: '{日本|にほん}で{買|か}ったの？', pt: 'Comprou no Japão?' },
+        { speaker: 'B', ja: 'これは、ミャンマーの{母|はは}が{作|つく}ったんです。', pt: 'Esta minha mãe fez, em Mianmar.' },
+        { speaker: 'A', ja: 'お{母|かあ}さんが{作|つく}ったの？すごいね。', pt: 'Sua mãe que fez? Que incrível.' },
+      ],
+    },
+  ],
+  '17-15': [
+    {
+      label: '③ (17-15) — モンゴルの帽子',
+      lines: [
+        { speaker: 'A', ja: 'その{帽子|ぼうし}、あったかそうだね。', pt: 'Esse gorro parece quentinho.' },
+        { speaker: 'B', ja: 'いいでしょう？これは、モンゴルの{帽子|ぼうし}です。', pt: 'Bom, né? É um gorro da Mongólia.' },
+        { speaker: 'A', ja: 'へー。モンゴルから{持|も}って{来|き}たの？', pt: 'Nossa. Trouxe da Mongólia?' },
+        { speaker: 'B', ja: 'いえ、{日本|にほん}でネットで{買|か}ったんです。', pt: 'Não, comprei pela internet aqui no Japão.' },
+        { speaker: 'A', ja: 'ふーん、おしゃれだね。', pt: 'Hmm, que estiloso.' },
+      ],
+    },
+  ],
+  '17-16': [
+    {
+      label: '④ (17-16) — 兄がくれたお守り',
+      lines: [
+        { speaker: 'A', ja: 'そのピアス、すてきですね。', pt: 'Esse brinco é lindo.' },
+        { speaker: 'B', ja: 'あ、これは、{兄|あに}がくれたお{守|まも}りです。', pt: 'Ah, este é um amuleto que meu irmão me deu.' },
+        { speaker: 'A', ja: 'へー、お{守|まも}りですか。お{兄|にい}さんは、{今|いま}、インドネシア？', pt: 'Nossa, um amuleto. Seu irmão está na Indonésia agora?' },
+        { speaker: 'B', ja: 'はい。{両親|りょうしん}といっしょに、バリに{住|す}んでいます。', pt: 'Sim. Mora em Bali junto com nossos pais.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah é?' },
+      ],
+    },
+  ],
+}
+
+const lesson17: Section = {
+  id: 'lesson-17',
+  level: 'elementary1',
+  titleJa: '第17課 兄がくれたお守りです',
+  titlePt: 'Lição 17 — É um amuleto que meu irmão me deu',
+  summaryPt: 'Convívio ({交際|こうさい}) · trocar cumprimentos ao visitar a casa de alguém (ごめんください／おじゃまします／ごちそうさまでした), explicar uma lembrança qualificando o substantivo ({私|わたし}が{作|つく}ったお{菓子|かし}／ネパールから{持|も}って{来|き}た{飾|かざ}り — V普通形+N②) e falar de pertences — quem deu ({友|とも}だちにもらった／{兄|あに}がくれた) —, além de escrever um e-mail de agradecimento.',
+  studyNotes: [
+    {
+      title: 'Tópico: Convívio (交際)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Trocar cumprimentos básicos ao visitar a casa de alguém.\n' +
+        '- Explicar de forma simples o que é uma lembrança ao entregá-la.\n' +
+        '- Falar sobre os próprios pertences — onde comprou, quem deu etc.\n' +
+        '- Escrever um e-mail simples de agradecimento a quem o recebeu/convidou.\n\n' +
+        '💡 Pergunta de abertura: {日本|にほん}にお{土産|みやげ}を{持|も}って{行|い}くとしたら、{何|なに}を{持|も}って{行|い}きますか？ (Se fosse levar uma lembrança ao Japão, o que levaria?)',
+    },
+    {
+      title: 'Explicar um substantivo: V (普通形) + N ② (➊)',
+      bodyPt:
+        '**V普通形 + N** qualifica um substantivo, explicando-o. Aqui descreve uma **lembrança** que se entrega ou um **pertence** sobre o qual perguntam:\n\n' +
+        '- `ネパールから{持|も}って{来|き}た{飾|かざ}り` (enfeite que trouxe do Nepal) ／ `{私|わたし}が{作|つく}ったお{菓子|かし}` (doce que eu fiz).\n' +
+        '- **Formação:** no passado afirmativo, o 普通形 é a **タ-form**: {作|つく}る→{作|つく}った, {買|か}う→{買|か}った, {持|も}って{来|き}る→{持|も}って{来|き}た.\n' +
+        '- **Padrões comuns ao dar lembranças:** `（{私|わたし}）が{作|つく}ったN` ／ `〜から{持|も}って{来|き}たN` ／ `〜で{買|か}ったN`. Ex.: これ、{北海道|ほっかいどう}で{買|か}ったバターです。\n' +
+        '- **vs. Lição 15:** na L15 o substantivo qualificado era o *sujeito* da oração (せきを{抑|おさ}える{薬|くすり}); aqui ele é o *objeto* ({私|わたし}は この{飾|かざ}りを{持|も}って{来|き}た → {持|も}って{来|き}た{飾|かざ}り).',
+    },
+    {
+      title: 'Quem deu/recebeu: 〜にもらう (➋) ／ 〜がくれる (➌)',
+      bodyPt:
+        '**【{人|ひと}】に【{物|もの}】をもらう** = EU recebo algo de alguém (foco em quem recebe). A pessoa-fonte leva **に**, que equivale a **から**:\n' +
+        '- `{誕生日|たんじょうび}に、{友|とも}だちにもらったんです` = `{友|とも}だちからもらった`.\n\n' +
+        '**【{人|ひと}】が【{物|もの}】をくれる** = o OUTRO me dá algo (foco em quem dá). Quem dá leva **が**:\n' +
+        '- `これは、{兄|あに}がくれたお{守|まも}りです`. 「{兄|あに}がくれた」 = 「{兄|あに}が{私|わたし}にくれた」; o 「{私|わたし}に」 é omitido por já estar claro.\n\n' +
+        '⚠️ もesmo evento, dois ângulos: `{兄|あに}にもらったお{守|まも}り` ≈ `{兄|あに}がくれたお{守|まも}り`. もらう foca quem recebe; くれる foca quem dá.',
+    },
+    {
+      title: 'Família: própria (humilde) vs dos outros (respeitosa)',
+      bodyPt:
+        'Usa-se uma forma **humilde** para a própria família e uma **respeitosa** para a de outros:\n\n' +
+        '| Própria ({自分|じぶん}) | Do outro (ほかの{人|ひと}) |\n' +
+        '|---|---|\n' +
+        '| {父|ちち} | お{父|とう}さん |\n' +
+        '| {母|はは} | お{母|かあ}さん |\n' +
+        '| {兄|あに} | お{兄|にい}さん |\n' +
+        '| {姉|あね} | お{姉|ねえ}さん |\n' +
+        '| {弟|おとうと} | {弟|おとうと}さん |\n' +
+        '| {妹|いもうと} | {妹|いもうと}さん |\n' +
+        '| {子|こ}ども | お{子|こ}さん |\n' +
+        '| {息子|むすこ} | {息子|むすこ}さん |\n' +
+        '| {娘|むすめ} | {娘|むすめ}さん |\n\n' +
+        'Ex.: A：これは、ミャンマーの{母|はは}が{作|つく}ったんです。 B：お{母|かあ}さんが{作|つく}ったの？ (A fala da própria mãe → {母|はは}; B se refere à mãe de A → お{母|かあ}さん).',
+    },
+    {
+      title: 'Visitar uma casa: cumprimentos e vocabulário',
+      bodyPt:
+        '**Quem visita (convidado):** `ごめんください` (à porta, ao chegar), `おじゃまします` (ao entrar), `おじゃましました` (ao sair), `いただきます` (ao aceitar/comer), `ごちそうさまでした` (após a refeição), `お{世話|せわ}になっています` (obrigado por tudo — a quem convive com você/sua família).\n\n' +
+        '**Quem recebe (anfitrião):** `いらっしゃい`／`ようこそ` (bem-vindo), `さ、{上|あ}がって`／`どうぞ{上|あ}がってください` (entre), `{楽|らく}にしてね` (fique à vontade), `また{来|き}てね`／`いつでも{遊|あそ}びに{来|き}てください`.\n\n' +
+        '`こちらこそ` devolve a saudação/agradecimento. Vocabulário: {上|あ}がる (entrar em casa), {奥|おく}さん (esposa), {息子|むすこ} (filho), {足|あし}をくずす (sentar à vontade), {楽|らく}にする (relaxar), {遊|あそ}びに{来|く}る (vir visitar).',
+    },
+    {
+      title: 'Lembranças, pertences, e-mail e Kanji',
+      bodyPt:
+        '**Lembranças (Ativ. 2 · お{土産|みやげ}):** コーヒー, お{茶|ちゃ}, お{酒|さけ}, {調味料|ちょうみりょう}, お{菓子|かし}, カップ, キーホルダー, ペン, お{守|まも}り, {絵葉書|えはがき}, {写真集|しゃしんしゅう}, {飾|かざ}り, {人形|にんぎょう}, Tシャツ, かばん／バッグ; プレゼント, （お）{米|こめ}, 〜といいます. **Pertences (Ativ. 3):** ピアス, かばん, マグカップ, {帽子|ぼうし}; おしゃれ（な）, すてき（な）, {両親|りょうしん}, いいでしょう？. Doadores (ア-エ): お{母|かあ}さん／お{兄|にい}さん／{友|とも}だち／{自分|じぶん}で{買|か}った.\n\n' +
+        '**E-mail de agradecimento (Ativ. 4):** estrutura はじめのお{礼|れい} (agradecimento inicial) → {具体的|ぐたいてき}なエピソード (episódio concreto) → {結|むす}び (fecho). Palavras: お{宅|たく} (casa, respeitoso), おじゃまする (visitar), {経験|けいけん} (experiência), よろしくお{伝|つた}えください (mande lembranças).\n\n' +
+        '**Kanji da lição:** {父|ちち}, {母|はは}, {兄|あに}, {姉|あね}, {弟|おとうと}, {妹|いもうと}, {夫|おっと}, {妻|つま}, {両親|りょうしん} (+ お{父|とう}さん／お{母|かあ}さん／お{兄|にい}さん／お{姉|ねえ}さん).',
+    },
+  ],
+  groups: [lesson17Group],
+  audios: attachScripts(17, L17_SCRIPTS),
+}
+
+// ---- Lição 18 (estrutura por tópico; exercícios em construção) ---------------
 const others: Section[] = [
-  scaffold(17, 'Convívio', '兄がくれたお守りです', 'É um amuleto que meu irmão me deu', [
-    'Trocar cumprimentos básicos ao visitar a casa de alguém.',
-    'Explicar de forma simples o que é uma lembrança ao entregá-la.',
-    'Falar sobre seus pertences — onde comprou, quem deu etc.',
-    'Escrever um e-mail simples de agradecimento a quem o recebeu/ajudou.',
-  ]),
   scaffold(18, 'Convívio', '何かプレゼントをあげませんか？', 'Que tal darmos algum presente?', [
     'Dar os parabéns por aniversário, casamento etc.',
     'Conversar sobre o que dar ao escolher um presente para alguém.',
@@ -3573,5 +3826,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, lesson15, lesson16, lesson17, ...others],
 }
