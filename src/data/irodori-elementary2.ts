@@ -310,16 +310,294 @@ const lesson1: Section = {
   audios: attachScripts(1, L1_SCRIPTS),
 }
 
-// ---- Lições 2-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 2: まじめそうな人ですね (tópico 私の周りの人たち) -------------------
+const lesson2Group: ExerciseGroup = {
+  id: 'iro-e2-l2',
+  title: 'まじめそうな人ですね',
+  subtitlePt: 'Descrever/identificar pessoas pela aparência e pelo jeito · falar de um famoso de quem você gosta',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l2-1', number: 1, prompt: '「{江口|えぐち}さんは、{髪|かみ}が{短|みじか}いです」 — o padrão 「N1 は N2 が ＡＤＪ です」 serve para:', choices: [{ n: 1, text: 'descrever uma característica da pessoa (N1) por meio de uma parte/traço (N2)' }, { n: 2, text: 'comparar dois lugares' }, { n: 3, text: 'pedir um favor' }, { n: 4, text: 'falar do futuro' }], answer: 1, explanationPt: 'N1 = pessoa, N2 = parte do corpo/traço: {髪|かみ}が{長|なが}い／{短|みじか}い, {背|せ}が{高|たか}い／{低|ひく}い. Visto no 初級1 (田中さんは{目|め}が{大|おお}きいです). (文法ノート ❶)' },
+    { id: 'iro-e2-l2-2', number: 2, prompt: 'Para transformar a característica em qualificador de pessoa («a pessoa de cabelo curto»), diz-se:', choices: [{ n: 1, text: '{髪|かみ}が{短|みじか}い{人|ひと} / {背|せ}が{高|たか}い{人|ひと}' }, { n: 2, text: '{人|ひと}は{髪|かみ}が{短|みじか}いです' }, { n: 3, text: '{髪|かみ}の{短|みじか}くて{人|ひと}' }, { n: 4, text: '{短|みじか}い{髪|かみ}を{人|ひと}' }], answer: 1, explanationPt: '〜です vira forma comum + {人|ひと}: {髪|かみ}が{短|みじか}い{人|ひと} (a pessoa de cabelo curto), {背|せ}が{高|たか}い{人|ひと} (a pessoa alta). (文法ノート ❶)' },
+    { id: 'iro-e2-l2-3', number: 3, prompt: '「ナインさんは、{帽子|ぼうし}をかぶっている{人|ひと}です」 — 「V- ている + {人|ひと}」 expressa:', choices: [{ n: 1, text: 'a pessoa que está (de chapéu / fazendo algo) — descreve aparência ou ação' }, { n: 2, text: 'a pessoa que vai fazer algo amanhã' }, { n: 3, text: 'a pessoa que já foi embora' }, { n: 4, text: 'um pedido para usar chapéu' }], answer: 1, explanationPt: 'V-ている na forma comum qualifica {人|ひと}: {帽子|ぼうし}をかぶっている{人|ひと} (a pessoa de chapéu), コピーをしている{人|ひと} (a pessoa tirando cópia). (文法ノート ❷)' },
+    { id: 'iro-e2-l2-4', number: 4, prompt: 'O 「V- ている」 tem dois usos. Quais são?', choices: [{ n: 1, text: '① estado resultante de uma ação ({帽子|ぼうし}をかぶっている = está de chapéu) · ② ação em andamento (コピーをしている = está tirando cópia)' }, { n: 2, text: '① futuro · ② passado' }, { n: 3, text: '① ordem · ② proibição' }, { n: 4, text: '① pergunta · ② resposta' }], answer: 1, explanationPt: '①状態 (resultado de uma ação: vestir → estar vestido — roupa/acessório: {着|き}ている, はいている, かけている). ②動作の進行 (ação em curso: コピーをしている, {本|ほん}を{読|よ}んでいる). (文法ノート ❷)' },
+    { id: 'iro-e2-l2-5', number: 5, prompt: '「{原|はら}さんは、…{本|ほん}を{読|よ}んでいる{人|ひと}ですよ」 — a partícula final 「よ」 serve para:', choices: [{ n: 1, text: 'dar/enfatizar uma informação nova ao ouvinte' }, { n: 2, text: 'pedir desculpa' }, { n: 3, text: 'fazer uma pergunta' }, { n: 4, text: 'negar' }], answer: 1, explanationPt: '文末の「よ」 transmite informação nova que o ouvinte ainda não sabe (visto no 入門). (文法ノート ❸)' },
+    { id: 'iro-e2-l2-6', number: 6, prompt: 'E a partícula final 「ね」 (ex.: 「まじめそうな{人|ひと}ですね」) serve para:', choices: [{ n: 1, text: 'buscar concordância/empatia ou confirmar algo com o ouvinte' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'indicar passado' }, { n: 4, text: 'contar quantidade' }], answer: 1, explanationPt: '「ね」 pede concordância/confirmação ou expressa empatia (入門). Compare: ですよ (informo) × ですね (não é? / concordamos). (文法ノート ❸)' },
+    { id: 'iro-e2-l2-7', number: 7, prompt: '「{演技|えんぎ}が{上手|じょうず}だし、{本当|ほんとう}にかっこいいです」 — 「S し、〜」 serve para:', choices: [{ n: 1, text: 'enumerar razões/motivos de uma opinião (é bom em atuar, E ainda por cima é bonito)' }, { n: 2, text: 'comparar dois lugares' }, { n: 3, text: 'marcar condição (se…)' }, { n: 4, text: 'pedir permissão' }], answer: 1, explanationPt: '〜し lista razões/fundamentos de uma impressão. 【例】かっこいいし、{歌|うた}もダンスも{上手|じょうず}だし (é bonito, e canta e dança bem). (文法ノート ❹)' },
+    { id: 'iro-e2-l2-8', number: 8, prompt: 'Que característica esta pessoa tem?', image: `${IMG}/Z_02_1_01_kamiganagai.png`, imageAlt: 'mulher de cabelo comprido', choices: [{ n: 1, text: '{髪|かみ}が{長|なが}い (cabelo comprido)' }, { n: 2, text: '{髪|かみ}が{短|みじか}い (cabelo curto)' }, { n: 3, text: '{背|せ}が{高|たか}い (alta)' }, { n: 4, text: 'ひげをはやしている (tem barba)' }], answer: 1, explanationPt: '{髪|かみ}が{長|なが}い = (ter) cabelo comprido. (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e2-l2-9', number: 9, prompt: 'Que característica esta pessoa tem?', image: `${IMG}/Z_02_1_02_kamigamijikai.png`, imageAlt: 'mulher de cabelo curto', choices: [{ n: 1, text: '{髪|かみ}が{短|みじか}い (cabelo curto)' }, { n: 2, text: '{髪|かみ}が{長|なが}い (cabelo comprido)' }, { n: 3, text: 'めがねをかけている (usa óculos)' }, { n: 4, text: '{背|せ}が{低|ひく}い (baixa)' }], answer: 1, explanationPt: '{髪|かみ}が{短|みじか}い = (ter) cabelo curto. (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e2-l2-10', number: 10, prompt: 'O que esta ilustração (com a régua de altura) mostra?', image: `${IMG}/Z_02_1_03_segatakai.png`, imageAlt: 'homem alto ao lado de régua de 190 cm', choices: [{ n: 1, text: '{背|せ}が{高|たか}い (ser alto)' }, { n: 2, text: '{背|せ}が{低|ひく}い (ser baixo)' }, { n: 3, text: '{座|すわ}っている (estar sentado)' }, { n: 4, text: '{髪|かみ}が{長|なが}い (cabelo comprido)' }], answer: 1, explanationPt: '{背|せ}が{高|たか}い = ser alto (de estatura). Oposto: {背|せ}が{低|ひく}い. (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e2-l2-11', number: 11, prompt: 'Que ação/estado esta ilustração mostra?', image: `${IMG}/Z_02_1_04_suwaru.png`, imageAlt: 'mulher sentada numa cadeira', choices: [{ n: 1, text: '{座|すわ}っている ({座|すわ}る — estar sentado)' }, { n: 2, text: '{立|た}っている ({立|た}つ — estar em pé)' }, { n: 3, text: 'くつをはいている (calçar sapato)' }, { n: 4, text: '{歩|ある}いている (estar andando)' }], answer: 1, explanationPt: '{座|すわ}っている = estar sentado (de {座|すわ}る, V-ている = estado). (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e2-l2-12', number: 12, prompt: 'Que ação/estado esta ilustração mostra?', image: `${IMG}/Z_02_1_05_tatsu.png`, imageAlt: 'mulher em pé', choices: [{ n: 1, text: '{立|た}っている ({立|た}つ — estar em pé)' }, { n: 2, text: '{座|すわ}っている ({座|すわ}る — estar sentado)' }, { n: 3, text: '{泣|な}いている (estar chorando)' }, { n: 4, text: '{寝|ね}ている (estar deitado/dormindo)' }], answer: 1, explanationPt: '{立|た}っている = estar em pé (de {立|た}つ). (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e2-l2-13', number: 13, prompt: 'O que esta mulher está usando/fazendo? (escolha a descrição correta)', image: `${IMG}/Z_02_1_06_josee.png`, imageAlt: 'mulher de chapéu, vestido amarelo, brincos e sapatos', choices: [{ n: 1, text: '{帽子|ぼうし}をかぶっている・ワンピースを{着|き}ている・ピアスをしている (chapéu, vestido, brincos)' }, { n: 2, text: 'めがねをかけている・ネクタイをしている (óculos e gravata)' }, { n: 3, text: 'ひげをはやしている (tem barba)' }, { n: 4, text: 'ズボンをはいている・シャツを{着|き}ている (calça e camisa)' }], answer: 1, explanationPt: '{帽子|ぼうし}をかぶる (pôr chapéu), ワンピースを{着|き}る (vestir vestido), ピアスをする (pôr brinco), くつをはく (calçar sapato). (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e2-l2-14', number: 14, prompt: 'O que este homem está usando? (escolha a descrição correta)', image: `${IMG}/Z_02_1_07_dansee.png`, imageAlt: 'homem de óculos, barba, camisa branca e gravata azul', choices: [{ n: 1, text: 'めがねをかけている・ひげをはやしている・ネクタイをしている (óculos, barba, gravata)' }, { n: 2, text: 'ワンピースを{着|き}ている・ピアスをしている (vestido e brincos)' }, { n: 3, text: '{帽子|ぼうし}をかぶっている (está de chapéu)' }, { n: 4, text: '{座|すわ}っている (está sentado)' }], answer: 1, explanationPt: 'めがねをかける (usar óculos), ひげをはやす (deixar barba), ネクタイをする (pôr gravata), シャツを{着|き}る, ズボンをはく. (Atividade 1 · ことばの準備)' },
+    { id: 'iro-e2-l2-15', number: 15, prompt: 'Qual verbo combina com cada item de vestuário?', choices: [{ n: 1, text: 'シャツ・ワンピース→{着|き}る / くつ・ズボン→はく / {帽子|ぼうし}→かぶる / めがね→かける / ネクタイ・ピアス→する' }, { n: 2, text: 'tudo usa apenas {着|き}る' }, { n: 3, text: 'シャツ→はく / くつ→かぶる / {帽子|ぼうし}→{着|き}る' }, { n: 4, text: 'めがね→はく / ズボン→かける' }], answer: 1, explanationPt: 'Verbos de vestir: {着|き}る (tronco: camisa/vestido), はく (pernas/pés: calça/sapato), かぶる (cabeça: chapéu), かける (óculos), する (gravata/brinco/acessórios). (Atividade 1)' },
+    { id: 'iro-e2-l2-16', number: 16, prompt: '「{写真|しゃしん}はまじめそうですけど、{本当|ほんとう}はおもしろい{人|ひと}です」 — 「〜そう」 (まじめそう) significa:', choices: [{ n: 1, text: 'aparenta ser ~ / parece ~ (impressão pela aparência)' }, { n: 2, text: 'definitivamente é ~' }, { n: 3, text: 'quer ser ~' }, { n: 4, text: 'foi ~ no passado' }], answer: 1, translationPt: 'Na foto parece sério, mas na verdade é uma pessoa divertida.', explanationPt: '〜そう (visto no 初級1 第12課) = dar a impressão de ~. まじめそう = parece sério; こわそう = parece assustador; うれしそう = parece feliz. (形に注目)' },
+    { id: 'iro-e2-l2-17', number: 17, prompt: 'Os adjetivos de jeito/personalidade 「やさしい／こわい／まじめ（な）／おもしろい」 significam:', choices: [{ n: 1, text: 'gentil / assustador(a) (severo) / sério(a) / divertido(a)' }, { n: 2, text: 'alto / baixo / magro / gordo' }, { n: 3, text: 'caro / barato / novo / velho' }, { n: 4, text: 'norte / sul / leste / oeste' }], answer: 1, explanationPt: 'やさしい gentil, こわい assustador/temível, まじめ（な） sério/aplicado, おもしろい divertido/interessante. Também: うれしい (feliz), さびしい (solitário), {元気|げんき}（な） (animado). (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l2-18', number: 18, prompt: '「{見|み}た{目|め}はこわそうだけど、やさしい{人|ひと}です」 significa:', choices: [{ n: 1, text: 'pela aparência parece assustador, mas é uma pessoa gentil' }, { n: 2, text: 'é assustador e também rude' }, { n: 3, text: 'é bonito e gentil' }, { n: 4, text: 'parece gentil, mas é assustador' }], answer: 1, explanationPt: '{見|み}た{目|め} = aparência. こわそうだけど (parece temível, MAS) + やさしい{人|ひと} (pessoa gentil). 〜けど marca o contraste. (Atividade 2)' },
+    { id: 'iro-e2-l2-19', number: 19, prompt: '聴解 02-03: 「{加藤|かとう}さん」 é identificado como qual pessoa?', context: 'Ｂ：ほら、あそこで、コピーをしてる{人|ひと}です。', choices: [{ n: 1, text: 'A pessoa que está tirando cópia ali.' }, { n: 2, text: 'A pessoa de chapéu vermelho.' }, { n: 3, text: 'A pessoa sentada lendo um livro.' }, { n: 4, text: 'A pessoa alta de óculos.' }], answer: 1, explanationPt: 'コピーをしてる{人|ひと} = a pessoa tirando cópia (V-ている, ação em curso). (聴解 02-03)' },
+    { id: 'iro-e2-l2-20', number: 20, prompt: '聴解 02-04: como 「{江口|えぐち}さん」 é descrito?', context: 'Ｂ：あの{髪|かみ}が{短|みじか}くて、ひげをはやしてる{人|ひと}です。', choices: [{ n: 1, text: 'A pessoa de cabelo curto e com barba.' }, { n: 2, text: 'A pessoa de cabelo comprido.' }, { n: 3, text: 'A pessoa de vestido amarelo.' }, { n: 4, text: 'A pessoa que está sentada.' }], answer: 1, explanationPt: '{髪|かみ}が{短|みじか}くて (cabelo curto, 〜くて liga adjetivos) + ひげをはやしてる (com barba). (聴解 02-04)' },
+    { id: 'iro-e2-l2-21', number: 21, prompt: '聴解 02-05: 「{原|はら}さん」 é qual pessoa?', context: 'Ｂ：ああ、{座|すわ}って、{本|ほん}を{読|よ}んでる{人|ひと}ですよ。Ａ：ああ、あの{男|おとこ}の{人|ひと}ですね。', choices: [{ n: 1, text: 'O homem que está sentado lendo um livro.' }, { n: 2, text: 'A mulher de cabelo comprido.' }, { n: 3, text: 'A pessoa tirando cópia.' }, { n: 4, text: 'A pessoa de chapéu.' }], answer: 1, explanationPt: '{座|すわ}って、{本|ほん}を{読|よ}んでる{人|ひと} (sentado, lendo livro); あの{男|おとこ}の{人|ひと} (aquele homem). (聴解 02-05)' },
+    { id: 'iro-e2-l2-22', number: 22, prompt: '聴解 02-06: como 「ナインさん」 é localizado?', context: 'Ｂ：ナインさん？ あの{帽子|ぼうし}をかぶってる{人|ひと}ですよ。Ａ：ああ、あの{赤|あか}いジャンパーの{人|ひと}ですね。', choices: [{ n: 1, text: 'A pessoa de chapéu, com a jaqueta (jumper) vermelha.' }, { n: 2, text: 'A pessoa de gravata azul.' }, { n: 3, text: 'A pessoa sentada lendo.' }, { n: 4, text: 'A pessoa de cabelo curto e barba.' }], answer: 1, explanationPt: '{帽子|ぼうし}をかぶってる{人|ひと} (de chapéu) + {赤|あか}いジャンパー (jaqueta vermelha). (聴解 02-06)' },
+    { id: 'iro-e2-l2-23', number: 23, prompt: '会話 02-09 (modelo «explicar qual pessoa é»): como se descreve 「{加藤|かとう}さん」?', context: 'Ｂ：あそこでコピーをしている{人|ひと}です。あの{髪|かみ}が{短|みじか}くて、ひげをはやしている{人|ひと}です。', choices: [{ n: 1, text: 'A pessoa que está tirando cópia ali — de cabelo curto e barba.' }, { n: 2, text: 'A pessoa de vestido amarelo e chapéu.' }, { n: 3, text: 'A pessoa alta sentada.' }, { n: 4, text: 'A pessoa de gravata.' }], answer: 1, explanationPt: 'Modelo de identificação juntando ação (コピーをしている) + aparência ({髪|かみ}が{短|みじか}くて、ひげをはやしている). (会話 02-09)' },
+    { id: 'iro-e2-l2-24', number: 24, prompt: '聴解 02-11: o que se diz da pessoa da foto (o(a) namorado(a), {恋人|こいびと})?', context: 'Ｂ：{写真|しゃしん}はまじめそうですけど、{本当|ほんとう}はおもしろい{人|ひと}ですよ。', choices: [{ n: 1, text: 'Na foto parece sério, mas na verdade é uma pessoa divertida.' }, { n: 2, text: 'É um bebê muito fofo.' }, { n: 3, text: 'Parece gentil, mas é severo no trabalho.' }, { n: 4, text: 'Anda muito ocupado ultimamente.' }], answer: 1, explanationPt: '{恋人|こいびと} = namorado(a). まじめそう (parece sério) けど、{本当|ほんとう}はおもしろい (mas na verdade é divertido). (聴解 02-11)' },
+    { id: 'iro-e2-l2-25', number: 25, prompt: '聴解 02-12: por que 「{山本|やまもと}さん」 está feliz e como é o bebê?', context: 'Ｂ：この{間|あいだ}、{孫|まご}が{生|う}まれたんです。…Ａ：{元気|げんき}そうな{赤|あか}ちゃんですね。Ｂ：…{毎日|まいにち}、{夜|よる}{泣|な}いて、{大変|たいへん}ですけどね。', choices: [{ n: 1, text: 'Nasceu o neto ({孫|まご}); o bebê parece saudável, mas chora à noite (é puxado).' }, { n: 2, text: 'Ganhou um prêmio; o bebê é calmo.' }, { n: 3, text: 'Casou; não tem filhos.' }, { n: 4, text: 'Comprou um cachorro.' }], answer: 1, explanationPt: '{孫|まご} = neto(a) (filho do filho). {元気|げんき}そうな{赤|あか}ちゃん (bebê que parece saudável); {夜|よる}{泣|な}いて{大変|たいへん} (chora à noite, é difícil). (聴解 02-12)' },
+    { id: 'iro-e2-l2-26', number: 26, prompt: '聴解 02-13: como é 「{村田|むらた}さん」 (que virou {主任|しゅにん})?', context: 'Ｂ：{見|み}た{目|め}はこわそうだけど、やさしい{人|ひと}だよ。…でも、{仕事|しごと}のときは、きびしいけどね。', choices: [{ n: 1, text: 'Parece assustador, mas é gentil — embora seja rígido no trabalho.' }, { n: 2, text: 'É divertido e nada exigente.' }, { n: 3, text: 'É tímido e quieto.' }, { n: 4, text: 'Está sempre ocupado.' }], answer: 1, explanationPt: '{見|み}た{目|め}はこわそうだけど、やさしい (parece temível, mas é gentil); {仕事|しごと}のときはきびしい (no trabalho é rígido). (聴解 02-13)' },
+    { id: 'iro-e2-l2-27', number: 27, prompt: '聴解 02-14: o que se comenta sobre 「{小川|おがわ}さん」?', context: 'Ａ：{最近|さいきん}、とっても{忙|いそが}しそうですね。Ｂ：{毎日|まいにち}、{遅|おそ}くまで{仕事|しごと}を…{仕事|しごと}がとても{多|おお}いと{言|い}ってました。Ａ：…{心配|しんぱい}ですね。', choices: [{ n: 1, text: 'Anda muito ocupado(a), trabalha até tarde todo dia; tem muito trabalho (preocupante).' }, { n: 2, text: 'Está de férias e descansando.' }, { n: 3, text: 'Mudou de emprego.' }, { n: 4, text: 'Está sempre alegre e tranquilo.' }], answer: 1, explanationPt: '{忙|いそが}しそう (parece ocupado), {遅|おそ}くまで{仕事|しごと} (trabalha até tarde), {心配|しんぱい} (preocupante). (聴解 02-14)' },
+    { id: 'iro-e2-l2-28', number: 28, prompt: '会話 02-16/02-17 (modelos): qual estrutura aparece ao falar de alguém ausente?', context: '①Ｂ：{写真|しゃしん}はまじめそうですけど、{本当|ほんとう}はおもしろい{人|ひと}です。 ②Ｂ：{見|み}た{目|め}はこわそうだけど、やさしい{人|ひと}です。', choices: [{ n: 1, text: '«aparência (〜そう) + けど + como a pessoa realmente é» — contraste entre o que parece e o que é.' }, { n: 2, text: 'só perguntas sobre preço.' }, { n: 3, text: 'instruções de como chegar a um lugar.' }, { n: 4, text: 'pedidos de desculpa.' }], answer: 1, explanationPt: 'Modelo: まじめそう／こわそう (impressão) + けど + {本当|ほんとう}は…／やさしい{人|ひと} (realidade). (会話 02-16/02-17)' },
+    { id: 'iro-e2-l2-29', number: 29, prompt: '聴解 02-18: por que 樋田 (Hida) gosta de 「{安室|あむろ}{奈美恵|なみえ}」 e o que se diz dela?', context: 'Ｂ：…かっこいいし、{歌|うた}もダンスも{上手|じょうず}だし。…テレビで{見|み}て、{好|す}きになりました。（マイク：でも、{引退|いんたい}したよね。）', choices: [{ n: 1, text: 'É bonita e canta e dança bem; gostou ao vê-la na TV. Já se aposentou (引退), mas ele ainda gosta.' }, { n: 2, text: 'É atriz de cinema antigo; gosta por causa de um filme.' }, { n: 3, text: 'É uma colega de trabalho.' }, { n: 4, text: 'Ele não gosta de cantores.' }], answer: 1, explanationPt: '{安室|あむろ}{奈美恵|なみえ} = cantora. かっこいいし、{歌|うた}もダンスも{上手|じょうず}だし (〜し lista razões). {引退|いんたい}する = aposentar-se. きっかけ: テレビで{見|み}て. (聴解 02-18 · 文法 ❹)' },
+    { id: 'iro-e2-l2-30', number: 30, prompt: '聴解 02-18: por que マイク (Mike) gosta de 「{三船|みふね}{敏郎|としろう}」?', context: 'マイク：…{好|す}きになったきっかけは、{映画|えいが}{祭|さい}で「{七人|しちにん}の{侍|さむらい}」という{映画|えいが}を{見|み}たことです。{演技|えんぎ}が{上手|じょうず}だし、{本当|ほんとう}にかっこいいんです。', choices: [{ n: 1, text: 'É um ator japonês famoso; gostou ao ver o filme «Os Sete Samurais» num festival — atua bem e é muito atraente.' }, { n: 2, text: 'É um cantor de J-POP atual.' }, { n: 3, text: 'É um jogador de futebol.' }, { n: 4, text: 'É um youtuber.' }], answer: 1, explanationPt: '{三船|みふね}{敏郎|としろう} = ator. きっかけ: {映画|えいが}{祭|さい}で「{七人|しちにん}の{侍|さむらい}」を{見|み}たこと. {演技|えんぎ}が{上手|じょうず}だし、かっこいい. (聴解 02-18)' },
+    { id: 'iro-e2-l2-31', number: 31, prompt: '会話 02-20 (modelo «falar do famoso favorito»): como se diz o motivo (きっかけ) de ter começado a gostar?', context: 'Ｂ：…{好|す}きになったきっかけは、「{七人|しちにん}の{侍|さむらい}」という{映画|えいが}を{見|み}たことです。／「{七人|しちにん}の{侍|さむらい}」という{映画|えいが}を{見|み}て、{好|す}きになりました。', choices: [{ n: 1, text: '«きっかけは、〜を{見|み}たことです» ou «〜を{見|み}て、{好|す}きになりました» — o que te fez começar a gostar.' }, { n: 2, text: 'só dizendo o preço do ingresso.' }, { n: 3, text: 'pedindo para repetir.' }, { n: 4, text: 'recusando um convite.' }], answer: 1, explanationPt: 'きっかけ = o estopim/motivo inicial. Padrões: 〜きっかけは…ことです / 〜を{見|み}て、{好|す}きになりました. (会話 02-20)' },
+    { id: 'iro-e2-l2-32', number: 32, prompt: 'Vocabulário (Atividade 3) — 「かっこいい／かわいい／{歌|うた}が{上手|じょうず}／{演技|えんぎ}が{上手|じょうず}／ダンスが{上手|じょうず}」 significam:', choices: [{ n: 1, text: 'estiloso(a)/atraente / fofo(a) / canta bem / atua bem / dança bem' }, { n: 2, text: 'feio / velho / lento / fraco / pobre' }, { n: 3, text: 'alto / baixo / magro / gordo / careca' }, { n: 4, text: 'caro / barato / longe / perto / grande' }], answer: 1, explanationPt: 'かっこいい (estiloso/charmoso), かわいい (fofo), {歌|うた}／{演技|えんぎ}／ダンスが{上手|じょうず} (bom em cantar/atuar/dançar). (Atividade 3 · ことばの準備)' },
+    { id: 'iro-e2-l2-33', number: 33, prompt: 'Vocabulário — 「きっかけ／{引退|いんたい}する／{映画|えいが}{祭|さい}／{世界中|せかいじゅう}／ファン」 significam:', choices: [{ n: 1, text: 'estopim/motivo inicial / aposentar-se / festival de cinema / no mundo todo / fã' }, { n: 2, text: 'ingresso / estrear / cinema / cidade / ator' }, { n: 3, text: 'ensaio / cantar / palco / país / diretor' }, { n: 4, text: 'hobby / dançar / show / bairro / plateia' }], answer: 1, explanationPt: 'きっかけ (gatilho/motivo), {引退|いんたい}する (aposentar-se), {映画|えいが}{祭|さい} (festival de cinema), {世界中|せかいじゅう} (no mundo inteiro), ファン (fã). (Atividade 3)' },
+    { id: 'iro-e2-l2-34', number: 34, prompt: '読む (entrevista «{町|まち}のおとなりさん», モウ・モウ・アウンさん): de onde ela é e o que faz no Japão?', context: 'ミャンマーのヤンゴンから{来|き}たモウ・モウ・アウンと{申|もう}します。{先月|せんげつ}、{日本|にほん}に{来|き}たばかりです。{介護|かいご}の{仕事|しごと}をしています。', choices: [{ n: 1, text: 'É de Yangon (Mianmar), chegou no mês passado e trabalha com cuidados a idosos (介護).' }, { n: 2, text: 'É do Vietnã e é guia turística.' }, { n: 3, text: 'É do Japão e estuda birmanês.' }, { n: 4, text: 'É da China e trabalha numa fábrica.' }], answer: 1, explanationPt: 'ヤンゴンから{来|き}た, {先月|せんげつ}{来|き}たばかり (acabou de chegar — 文法 ❷ da L1), {介護|かいご}の{仕事|しごと}. (Atividade 4 · 読む)' },
+    { id: 'iro-e2-l2-35', number: 35, prompt: '読む: como モウさん descreve sua cidade natal, ヤンゴン?', context: 'ミャンマーでいちばん{大|おお}きい{町|まち}です。「シュエダゴン・パゴダ」という{黄金|おうごん}のパゴダが{有名|ゆうめい}です。にぎやかで、おもしろい{町|まち}です。', choices: [{ n: 1, text: 'A maior cidade de Mianmar; famosa por um pagode dourado; animada e interessante.' }, { n: 2, text: 'Uma vila pequena e tranquila no campo.' }, { n: 3, text: 'Uma cidade de planalto com plantações de chá.' }, { n: 4, text: 'Uma ilha turística de praias.' }], answer: 1, explanationPt: 'ミャンマーでいちばん{大|おお}きい{町|まち}; {黄金|おうごん}のパゴダ (pagode dourado) が{有名|ゆうめい}; にぎやか. (Atividade 4 · 読む)' },
+    { id: 'iro-e2-l2-36', number: 36, prompt: '読む: o que モウさん gosta de fazer e o que se surpreendeu no Japão?', context: '{釣|つ}りです。…{休|やす}みの{日|ひ}には、よく{友|とも}だちとキャンプをしたり、ハイキングをしたりします。…{町|まち}が{夜|よる}とても{明|あか}るくて、びっくりしました。', choices: [{ n: 1, text: 'Gosta de pescar, acampar e fazer trilha; surpreendeu-se que a cidade é muito iluminada à noite.' }, { n: 2, text: 'Gosta de cozinhar; surpreendeu-se com o frio.' }, { n: 3, text: 'Gosta de games; surpreendeu-se com o trânsito.' }, { n: 4, text: 'Gosta de cantar; surpreendeu-se com a comida cara.' }], answer: 1, explanationPt: '{釣|つ}り (pesca), キャンプ／ハイキングをしたりします (〜たり〜たり, acampar/trilha). {町|まち}が{夜|よる}{明|あか}るくてびっくり (surpresa com a cidade iluminada à noite). (Atividade 4 · 読む)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 2 (聴解スクリプト)
+const L2_SCRIPTS: Record<string, ScriptItem[]> = {
+  '02-03': [
+    {
+      label: '① どの人ですか？ — 加藤さん (02-03)',
+      setupJa: 'いろいろな{場所|ばしょ}で、{人|ひと}を{探|さが}しています。',
+      setupPt: 'Em vários lugares, alguém procura uma pessoa. ① Procurando Kato.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。{加藤|かとう}さん、いますか？', pt: 'Com licença, o Kato está?' },
+        { speaker: 'B', ja: '{加藤|かとう}さん？ ああ、あそこにいますよ。', pt: 'O Kato? Ah, está ali.' },
+        { speaker: 'A', ja: 'え、どの{人|ひと}ですか？', pt: 'Ah, qual deles?' },
+        { speaker: 'B', ja: 'ほら、あそこで、コピーをしてる{人|ひと}です。', pt: 'Olha, é aquele que está tirando cópia ali.' },
+        { speaker: 'A', ja: 'ああ、わかりました。ありがとうございます。', pt: 'Ah, entendi. Obrigado(a).' },
+      ],
+    },
+  ],
+  '02-04': [
+    {
+      label: '② 江口さん (02-04)',
+      setupPt: '② Procurando Eguchi.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{江口|えぐち}さんはどの{人|ひと}ですか？', pt: 'Com licença, qual é o Eguchi?' },
+        { speaker: 'B', ja: 'あの{髪|かみ}が{短|みじか}くて、ひげをはやしてる{人|ひと}です。', pt: 'É aquele de cabelo curto e com barba.' },
+        { speaker: 'A', ja: 'ああ、わかりました。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '02-05': [
+    {
+      label: '③ 原さん (02-05)',
+      setupPt: '③ Procurando Hara.',
+      lines: [
+        { speaker: 'A', ja: '{原|はら}さん、いますか？', pt: 'A Hara está?' },
+        { speaker: 'B', ja: 'ああ、{座|すわ}って、{本|ほん}を{読|よ}んでる{人|ひと}ですよ。', pt: 'Ah, é aquela pessoa sentada lendo um livro.' },
+        { speaker: 'A', ja: 'ああ、あの{男|おとこ}の{人|ひと}ですね。', pt: 'Ah, aquele homem, né?' },
+        { speaker: 'B', ja: 'ええ。', pt: 'Isso.' },
+      ],
+    },
+  ],
+  '02-06': [
+    {
+      label: '④ ナインさん (02-06)',
+      setupPt: '④ Procurando Nain.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、ナインさんはどの{人|ひと}ですか？', pt: 'Hum, qual é o Nain?' },
+        { speaker: 'B', ja: 'ナインさん？ あの{帽子|ぼうし}をかぶってる{人|ひと}ですよ。', pt: 'O Nain? É aquele de chapéu.' },
+        { speaker: 'A', ja: 'ああ、あの{赤|あか}いジャンパーの{人|ひと}ですね。', pt: 'Ah, aquele da jaqueta vermelha, né?' },
+        { speaker: 'B', ja: 'そうです。', pt: 'Isso mesmo.' },
+      ],
+    },
+  ],
+  '02-09': [
+    {
+      label: '会話 — どの人か説明 (02-09)',
+      setupPt: 'Modelo: explicar a alguém qual é a pessoa procurada.',
+      lines: [
+        { speaker: 'A', ja: '{加藤|かとう}さんは、どの{人|ひと}ですか？', pt: 'Qual deles é o Kato?' },
+        { speaker: 'B', ja: 'あそこでコピーをしている{人|ひと}です。あの{髪|かみ}が{短|みじか}くて、ひげをはやしている{人|ひと}です。', pt: 'É o que está tirando cópia ali. Aquele de cabelo curto e barba.' },
+        { speaker: 'A', ja: 'ああ、わかりました。ありがとうございます。', pt: 'Ah, entendi. Obrigado(a).' },
+      ],
+    },
+  ],
+  '02-11': [
+    {
+      label: '① その写真、だれですか？ — 恋人 (02-11)',
+      setupPt: 'Falando de pessoas. ① Sobre a foto do(a) namorado(a).',
+      lines: [
+        { speaker: 'A', ja: 'その{写真|しゃしん}、だれですか？', pt: 'Quem é nessa foto?' },
+        { speaker: 'B', ja: 'ああ、{恋人|こいびと}です。', pt: 'Ah, é meu/minha namorado(a).' },
+        { speaker: 'A', ja: 'へー。まじめそうな{人|ひと}ですね。', pt: 'Nossa. Parece uma pessoa séria.' },
+        { speaker: 'B', ja: '{写真|しゃしん}はまじめそうですけど、{本当|ほんとう}はおもしろい{人|ひと}ですよ。', pt: 'Na foto parece sério, mas na verdade é uma pessoa divertida.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é mesmo?' },
+      ],
+    },
+  ],
+  '02-12': [
+    {
+      label: '② 山本さん — 孫 (02-12)',
+      setupPt: '② Yamamoto fala do neto recém-nascido.',
+      lines: [
+        { speaker: 'A', ja: '{山本|やまもと}さん、とてもうれしそうですね。', pt: 'Yamamoto, você parece muito feliz.' },
+        { speaker: 'B', ja: 'ああ、この{間|あいだ}、{孫|まご}が{生|う}まれたんです。', pt: 'Ah, outro dia nasceu meu neto.' },
+        { speaker: 'A', ja: 'まご？', pt: 'Neto?' },
+        { speaker: 'B', ja: '{娘|むすめ}の{子|こ}どもです。ほら、{見|み}てください。', pt: 'É o filho da minha filha. Olha, veja.' },
+        { speaker: 'A', ja: 'ああ、{元気|げんき}そうな{赤|あか}ちゃんですね。', pt: 'Ah, que bebê saudável!' },
+        { speaker: 'B', ja: 'ええ、とてもかわいいです。{毎日|まいにち}、{夜|よる}{泣|な}いて、{大変|たいへん}ですけどね。', pt: 'Sim, é muito fofo. Mas chora toda noite, é puxado.' },
+      ],
+    },
+  ],
+  '02-13': [
+    {
+      label: '③ 村田さん (02-13)',
+      setupPt: '③ Sobre Murata, que virou chefe de seção.',
+      lines: [
+        { speaker: 'A', ja: '{今度|こんど}、{主任|しゅにん}になった{村田|むらた}さん、どんな{人|ひと}ですか？', pt: 'O Murata, que agora virou chefe de seção, como é ele?' },
+        { speaker: 'B', ja: '{見|み}た{目|め}はこわそうだけど、やさしい{人|ひと}だよ。', pt: 'Pela aparência parece assustador, mas é uma pessoa gentil.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é mesmo?' },
+        { speaker: 'B', ja: 'でも、{仕事|しごと}のときは、きびしいけどね。', pt: 'Mas no trabalho ele é rígido, viu.' },
+        { speaker: 'A', ja: 'えー！', pt: 'Eita!' },
+      ],
+    },
+  ],
+  '02-14': [
+    {
+      label: '④ 小川さん (02-14)',
+      setupPt: '④ Sobre Ogawa, que anda ocupado.',
+      lines: [
+        { speaker: 'A', ja: '{小川|おがわ}さん、{最近|さいきん}、とっても{忙|いそが}しそうですね。', pt: 'O Ogawa anda muito ocupado ultimamente, né?' },
+        { speaker: 'B', ja: '{毎日|まいにち}、{遅|おそ}くまで{仕事|しごと}をしていますよね。{仕事|しごと}がとても{多|おお}いと{言|い}ってました。', pt: 'Trabalha até tarde todo dia. Ele disse que tem muito trabalho.' },
+        { speaker: 'A', ja: 'そうですか。{心配|しんぱい}ですね。', pt: 'Ah, é? Que preocupante.' },
+      ],
+    },
+  ],
+  '02-16': [
+    {
+      label: '① 写真の人について話す (02-16)',
+      setupPt: 'Modelo ①: falar da pessoa de uma foto.',
+      lines: [
+        { speaker: 'A', ja: 'その{写真|しゃしん}、だれですか？', pt: 'Quem é nessa foto?' },
+        { speaker: 'B', ja: '{恋人|こいびと}です。', pt: 'É meu/minha namorado(a).' },
+        { speaker: 'A', ja: 'まじめそうな{人|ひと}ですね。', pt: 'Parece uma pessoa séria.' },
+        { speaker: 'B', ja: '{写真|しゃしん}はまじめそうですけど、{本当|ほんとう}はおもしろい{人|ひと}です。', pt: 'Na foto parece sério, mas na verdade é divertido.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é mesmo?' },
+      ],
+    },
+  ],
+  '02-17': [
+    {
+      label: '② その場にいない人について話す (02-17)',
+      setupPt: 'Modelo ②: falar de alguém que não está presente.',
+      lines: [
+        { speaker: 'A', ja: '{村田|むらた}さんは、どんな{人|ひと}ですか？', pt: 'Como é o Murata?' },
+        { speaker: 'B', ja: '{見|み}た{目|め}はこわそうだけど、やさしい{人|ひと}です。', pt: 'Pela aparência parece assustador, mas é gentil.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '02-18': [
+    {
+      label: '会話 — 好きな有名人 (02-18)',
+      setupJa: 'マイクさんと{樋田|ひだ}さんが、{好|す}きな{歌手|かしゅ}・{好|す}きな{俳優|はいゆう}について{話|はな}しています。',
+      setupPt: 'Mike e Hida conversam sobre a cantora/o ator favoritos.',
+      lines: [
+        { speaker: 'マイク', ja: '{樋田|ひだ}さん、{日本|にほん}の{歌手|かしゅ}、だれか{知|し}ってる？', pt: 'Hida, você conhece algum cantor japonês?' },
+        { speaker: '樋田', ja: '{私|わたし}は{安室|あむろ}{奈美恵|なみえ}が{好|す}きです。', pt: 'Eu gosto da Amuro Namie.' },
+        { speaker: 'マイク', ja: 'へー、でも、{引退|いんたい}したよね。', pt: 'Ah, mas ela se aposentou, né?' },
+        { speaker: '樋田', ja: 'はい。でも、{今|いま}でも{好|す}きです。かっこいいし、{歌|うた}もダンスも{上手|じょうず}だし。', pt: 'Sim. Mas ainda gosto. Ela é estilosa, e canta e dança bem.' },
+        { speaker: 'マイク', ja: '{安室|あむろ}{奈美恵|なみえ}は、アジアではとても{有名|ゆうめい}なんです。', pt: 'A Amuro Namie é muito famosa na Ásia.' },
+        { speaker: '樋田', ja: '{私|わたし}は、テレビで{見|み}て、{好|す}きになりました。', pt: 'Eu comecei a gostar ao vê-la na TV.' },
+        { speaker: '樋田', ja: 'マイクさんは、だれか{好|す}きな{歌手|かしゅ}、いる？', pt: 'E você, Mike, tem algum cantor favorito?' },
+        { speaker: 'マイク', ja: '{歌手|かしゅ}じゃないですけど、ぼくは{三船|みふね}{敏郎|としろう}が{好|す}きです。', pt: 'Não é cantor, mas eu gosto do Mifune Toshiro.' },
+        { speaker: '樋田', ja: 'えっ、{三船|みふね}{敏郎|としろう}！？ それ、だれですか？', pt: 'Quê, Mifune Toshiro!? Quem é esse?' },
+        { speaker: 'マイク', ja: '{日本|にほん}の{有名|ゆうめい}な{俳優|はいゆう}です。', pt: 'É um ator japonês famoso.' },
+        { speaker: '樋田', ja: 'そんな{古|ふる}い{人|ひと}、よく{知|し}ってるね。', pt: 'Você conhece uma pessoa tão antiga, hein.' },
+        { speaker: 'マイク', ja: 'はい。{好|す}きになったきっかけは、{映画|えいが}{祭|さい}で「{七人|しちにん}の{侍|さむらい}」という{映画|えいが}を{見|み}たことです。{演技|えんぎ}が{上手|じょうず}だし、{本当|ほんとう}にかっこいいんです。', pt: 'Sim. Comecei a gostar quando vi o filme «Os Sete Samurais» num festival de cinema. Ele atua muito bem e é realmente atraente.' },
+        { speaker: '樋田', ja: 'そうなんですか。', pt: 'Ah, é mesmo?' },
+        { speaker: 'マイク', ja: '{今|いま}でも、{世界中|せかいじゅう}にファンがたくさんいます。', pt: 'Até hoje, ele tem muitos fãs no mundo todo.' },
+      ],
+    },
+  ],
+  '02-20': [
+    {
+      label: '会話 — 好きな有名人 (modelo) (02-20)',
+      setupPt: 'Modelo: falar do seu famoso favorito e do que fez você começar a gostar.',
+      lines: [
+        { speaker: 'A', ja: '{好|す}きな{俳優|はいゆう}がいますか？', pt: 'Você tem algum ator favorito?' },
+        { speaker: 'B', ja: '{私|わたし}は{三船|みふね}{敏郎|としろう}が{好|す}きです。{好|す}きになったきっかけは、「{七人|しちにん}の{侍|さむらい}」という{映画|えいが}を{見|み}たことです。{演技|えんぎ}が{上手|じょうず}だし、{本当|ほんとう}にかっこいいです。', pt: 'Eu gosto do Mifune Toshiro. Comecei a gostar quando vi o filme «Os Sete Samurais». Ele atua bem e é muito atraente.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+}
+
+const lesson2: Section = {
+  id: 'lesson-2',
+  level: 'elementary2',
+  titleJa: '第2課 まじめそうな人ですね',
+  titlePt: 'Lição 2 — Parece uma pessoa séria',
+  summaryPt:
+    'As pessoas ao meu redor · identificar/descrever uma pessoa pela aparência e pelo jeito (髪が短い人／帽子をかぶっている人／座って本を読んでいる人), falar de alguém ausente (見た目はこわそうだけど、やさしい人) e falar de um famoso de quem gosta e do que fez você começar a gostar (演技が上手だし／好きになったきっかけは…).',
+  studyNotes: [
+    {
+      title: 'Tópico: As pessoas ao meu redor (私の周りの人たち)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ao procurar alguém, descrever as características da pessoa ou identificá-la ouvindo a descrição.\n' +
+        '- Falar sobre a aparência e o jeito de alguém que não está presente.\n' +
+        '- Falar de forma simples sobre um famoso de quem gosta — por que gosta e como começou a gostar.\n' +
+        '- Ler uma entrevista simples que apresenta uma pessoa e entender o conteúdo.\n\n' +
+        '💡 Pergunta de abertura: あなたのいちばん{仲|なか}のいい{友|とも}だちは、どんな{人|ひと}ですか？ (como é o seu melhor amigo?).',
+    },
+    {
+      title: 'Descrever características: N1 は N2 が ＡＤＪ です (➊)',
+      bodyPt:
+        'Para descrever a **característica física** de uma pessoa, usa-se **N1（pessoa）は N2（parte／traço）が ＡＤＪ です**:\n\n' +
+        '- `{江口|えぐち}さんは、{髪|かみ}が{短|みじか}いです` = o Eguchi tem cabelo curto.\n' +
+        '- {髪|かみ}が{長|なが}い／{短|みじか}い (cabelo comprido/curto), {背|せ}が{高|たか}い／{低|ひく}い (alto/baixo).\n\n' +
+        '🔁 Para **qualificar a pessoa**, ponha a forma comum + {人|ひと}: `{髪|かみ}が{短|みじか}い{人|ひと}` (a pessoa de cabelo curto), `{背|せ}が{高|たか}い{人|ひと}` (a pessoa alta). (Visto no 初級1 第1課.)',
+    },
+    {
+      title: 'V- ている + 人 — aparência e ação (➋)',
+      bodyPt:
+        '**V- ている** (forma comum) descreve um **estado** ou uma **ação em curso**, e pode qualificar {人|ひと}:\n\n' +
+        '- ① **estado** (resultado de uma ação): `{帽子|ぼうし}をかぶっている{人|ひと}` (a pessoa de chapéu). Para roupa/acessório: {着|き}ている (tronco), はいている (pernas/pés), かけている (óculos).\n' +
+        '- ② **ação em curso**: `コピーをしている{人|ひと}` (a pessoa tirando cópia), `{本|ほん}を{読|よ}んでいる{人|ひと}` (a pessoa lendo).\n\n' +
+        '💡 ナインさんは{帽子|ぼうし}をかぶっています → {帽子|ぼうし}をかぶっている{人|ひと} (a forma comum qualifica {人|ひと}). (文法ノート ❷)',
+    },
+    {
+      title: 'Partículas finais よ / ね (➌)',
+      bodyPt:
+        'No fim da frase:\n\n' +
+        '- **よ** — passa uma **informação nova** ao ouvinte: `{座|すわ}って、{本|ほん}を{読|よ}んでいる{人|ひと}ですよ` (é aquele que está lendo sentado — te informo).\n' +
+        '- **ね** — busca **concordância/confirmação** ou expressa empatia: `まじめそうな{人|ひと}ですね` (parece sério, não é?).\n\n' +
+        '(Ambas vistas no 入門.) (文法ノート ❸)',
+    },
+    {
+      title: 'S し、〜 — enumerar razões (➍)',
+      bodyPt:
+        '**〜し** lista **razões/fundamentos** de uma opinião ou impressão:\n\n' +
+        '- `{演技|えんぎ}が{上手|じょうず}だし、{本当|ほんとう}にかっこいいです` = atua bem, e (ainda por cima) é muito atraente.\n' +
+        '- `かっこいいし、{歌|うた}もダンスも{上手|じょうず}だし` = é estiloso, e canta e dança bem.\n\n' +
+        '💡 Liga-se à forma comum (aqui, de adjetivos). Pode encadear vários motivos. (文法ノート ❹)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Aparência:** {髪|かみ}が{長|なが}い／{短|みじか}い, {背|せ}が{高|たか}い／{低|ひく}い, {座|すわ}る／{立|た}つ. **Roupa/acessório (+verbo):** {着|き}る (シャツ・ワンピース), はく (くつ・ズボン), かぶる ({帽子|ぼうし}), かける (めがね), する (ネクタイ・ピアス), はやす (ひげ). **Cores:** {赤|あか}い, {白|しろ}い, {黄色|きいろ}い, {青|あお}い, {黒|くろ}い.\n\n' +
+        '**Jeito/personalidade:** やさしい (gentil), こわい (assustador/severo), まじめ（な） (sério), おもしろい (divertido), うれしい (feliz), さびしい (solitário), {元気|げんき}（な）. Aparência × realidade com **〜そう** (まじめそう, こわそう) + けど.\n\n' +
+        '**Famosos:** かっこいい, かわいい, {歌|うた}／{演技|えんぎ}／ダンスが{上手|じょうず}, {歌手|かしゅ} (cantor), {俳優|はいゆう} (ator), {引退|いんたい}する, きっかけ, {映画|えいが}{祭|さい}, {世界中|せかいじゅう}, ファン.\n\n' +
+        '**Kanji da lição:** {写真|しゃしん}, {歌|うた}, {歌手|かしゅ}, {上手|じょうず}（な）, {明|あか}るい, {長|なが}い, {短|みじか}い, {着|き}る, {立|た}つ, {泣|な}く.',
+    },
+  ],
+  groups: [lesson2Group],
+  audios: attachScripts(2, L2_SCRIPTS),
+}
+
+// ---- Lições 3-18 (estrutura por tópico; exercícios em construção) ------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
-  scaffold(2, 'As pessoas ao meu redor', 'まじめそうな人ですね', 'Parece uma pessoa séria', [
-    'Descrever as características de uma pessoa, ou identificá-la ouvindo suas características, ao procurar alguém.',
-    'Falar sobre a aparência e o jeito de alguém que não está presente.',
-    'Falar de forma simples sobre um famoso de quem gosta — por que gosta e como começou a gostar.',
-    'Ler uma entrevista simples que apresenta uma pessoa e entender o conteúdo.',
-  ]),
+  lesson2,
   // Tópico 2 — No restaurante (レストランで)
   scaffold(3, 'No restaurante', 'アレルギーがあるので、食べられないんです', 'Não posso comer porque tenho alergia', [
     'Ler um cardápio e entender nomes de pratos, preços e serviços.',
