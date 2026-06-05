@@ -1874,7 +1874,229 @@ const lesson7: Section = {
   audios: attachScripts(7, L7_SCRIPTS),
 }
 
-// ---- Lições 8-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 8: 屋台はどこかわかりますか？ (tópico 地域のイベント) --------------
+const lesson8Group: ExerciseGroup = {
+  id: 'iro-e2-l8',
+  title: '屋台はどこかわかりますか？',
+  subtitlePt: 'Ler a programação de um festival · perguntar horário/lugar a funcionários · perguntar requisitos e inscrição · entender anúncios e regras do local · ler e escrever um post sobre o evento',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l8-1', number: 1, prompt: 'O título da lição 「{屋台|やたい}はどこかわかりますか？」 contém um padrão de pergunta embutida. O que ela significa?', choices: [{ n: 1, text: 'Você sabe onde ficam as barracas (de comida)?' }, { n: 2, text: 'As barracas já fecharam?' }, { n: 3, text: 'Quanto custam as barracas?' }, { n: 4, text: 'Quem cuida das barracas?' }], answer: 1, translationPt: 'Você sabe onde ficam as barracas?', explanationPt: '[疑問詞] + frase (forma comum) + か + わかりますか = pergunta embutida: «sabe onde/quando/o que…?». {屋台|やたい}はどこか + わかりますか. (文法ノート ❸)' },
+    { id: 'iro-e2-l8-2', number: 2, prompt: 'Que atração de festival esta ilustração mostra (barraca de comida)?', image: `${IMG}/Z_08_1_01_yatai.png`, imageAlt: 'barraca de takoyaki num festival', choices: [{ n: 1, text: '{屋台|やたい} — barraca (de comida) de rua' }, { n: 2, text: 'ステージ — palco' }, { n: 3, text: 'ファッションショー — desfile de moda' }, { n: 4, text: 'スタンプラリー — caça ao carimbo' }], answer: 1, explanationPt: '{屋台|やたい} = barraca de comida de rua (ex.: たこ{焼|や}き). (Atividade 1 · チラシ)' },
+    { id: 'iro-e2-l8-3', number: 3, prompt: 'Que parte do evento esta ilustração mostra?', image: `${IMG}/Z_08_1_02_suteeji.png`, imageAlt: 'palco montado ao ar livre com cadeiras', choices: [{ n: 1, text: 'ステージ — palco (onde acontecem as apresentações)' }, { n: 2, text: '{屋台|やたい} — barraca de comida' }, { n: 3, text: '{観光|かんこう}{紹介|しょうかい}コーナー — estande de turismo' }, { n: 4, text: 'スタンプラリー — caça ao carimbo' }], answer: 1, explanationPt: 'ステージ = palco. As パフォーマンス (apresentações) acontecem na ステージ. (Atividade 1)' },
+    { id: 'iro-e2-l8-4', number: 4, prompt: '「ステージで、いろいろなパフォーマンスがあります」 — パフォーマンス significa:', image: `${IMG}/Z_08_1_03_pafoomansu.png`, imageAlt: 'pessoas se apresentando num palco', choices: [{ n: 1, text: 'apresentação / performance (música, dança etc.)' }, { n: 2, text: 'inscrição' }, { n: 3, text: 'bilheteria' }, { n: 4, text: 'estacionamento' }], answer: 1, explanationPt: 'パフォーマンス = apresentação/performance no palco. (Atividade 1)' },
+    { id: 'iro-e2-l8-5', number: 5, prompt: 'Que estande esta ilustração mostra (mapas e folhetos de pontos turísticos)?', image: `${IMG}/Z_08_1_04_kankooshookaikoonaa.png`, imageAlt: 'estande com cartazes e folhetos turísticos', choices: [{ n: 1, text: '{観光|かんこう}{紹介|しょうかい}コーナー — estande de divulgação turística' }, { n: 2, text: '{屋台|やたい} — barraca de comida' }, { n: 3, text: 'カラオケ{大会|たいかい} — concurso de karaokê' }, { n: 4, text: 'ステージ — palco' }], answer: 1, explanationPt: '{観光|かんこう}{紹介|しょうかい}コーナー = estande de divulgação turística (apresenta pontos turísticos da região). (Atividade 1)' },
+    { id: 'iro-e2-l8-6', number: 6, prompt: 'Que atividade do palco esta ilustração mostra (pessoa falando ao microfone diante de jurados)?', image: `${IMG}/Z_08_1_05_supiichikontesuto.png`, imageAlt: 'concurso de discurso com participante ao microfone', choices: [{ n: 1, text: 'スピーチコンテスト — concurso de discurso' }, { n: 2, text: 'カラオケ{大会|たいかい} — concurso de karaokê' }, { n: 3, text: 'ファッションショー — desfile de moda' }, { n: 4, text: '{合気道|あいきどう}のデモンストレーション — demonstração de aikidô' }], answer: 1, explanationPt: 'スピーチコンテスト = concurso de discurso. (Atividade 1 / 2)' },
+    { id: 'iro-e2-l8-7', number: 7, prompt: 'Que evento do palco esta ilustração mostra (pessoa cantando ao microfone)?', image: `${IMG}/Z_08_1_06_karaoketaikai.png`, imageAlt: 'concurso de karaokê', choices: [{ n: 1, text: 'カラオケ{大会|たいかい} — concurso de karaokê' }, { n: 2, text: 'スピーチコンテスト — concurso de discurso' }, { n: 3, text: 'パフォーマンス de dança' }, { n: 4, text: 'スタンプラリー — caça ao carimbo' }], answer: 1, explanationPt: 'カラオケ{大会|たいかい} = concurso de karaokê. (Atividade 1 / 3)' },
+    { id: 'iro-e2-l8-8', number: 8, prompt: 'Que demonstração esta ilustração mostra (arte marcial)?', image: `${IMG}/Z_08_1_07_aikidoo.png`, imageAlt: 'demonstração de aikidô', choices: [{ n: 1, text: '{合気道|あいきどう}のデモンストレーション — demonstração de aikidô' }, { n: 2, text: 'ファッションショー — desfile de moda' }, { n: 3, text: '{屋台|やたい} — barraca de comida' }, { n: 4, text: 'カラオケ{大会|たいかい} — karaokê' }], answer: 1, explanationPt: '{合気道|あいきどう}のデモンストレーション = demonstração de aikidô (arte marcial japonesa). (Atividade 1)' },
+    { id: 'iro-e2-l8-9', number: 9, prompt: 'Que atividade esta ilustração mostra (crianças experimentando brincadeiras do mundo)?', image: `${IMG}/Z_08_1_08_asobitaiken.png`, imageAlt: 'experiência de brincadeiras de vários países', choices: [{ n: 1, text: '{世界|せかい}の{遊|あそ}び{体験|たいけん} — experiência de brincadeiras do mundo' }, { n: 2, text: 'スピーチコンテスト — concurso de discurso' }, { n: 3, text: 'ステージ — palco' }, { n: 4, text: '{観光|かんこう}{紹介|しょうかい}コーナー — estande turístico' }], answer: 1, explanationPt: '{世界|せかい}の{遊|あそ}び{体験|たいけん} = experiência de brincadeiras de vários países. {体験|たいけん} = experimentar/vivenciar. (Atividade 1)' },
+    { id: 'iro-e2-l8-10', number: 10, prompt: 'Que apresentação esta ilustração mostra (modelos desfilando)?', image: `${IMG}/Z_08_1_09_fasshonshoo.png`, imageAlt: 'desfile de moda com trajes típicos', choices: [{ n: 1, text: 'ファッションショー — desfile de moda' }, { n: 2, text: 'カラオケ{大会|たいかい} — karaokê' }, { n: 3, text: '{合気道|あいきどう}のデモンストレーション — aikidô' }, { n: 4, text: '{屋台|やたい} — barraca' }], answer: 1, explanationPt: 'ファッションショー = desfile de moda. (Atividade 1)' },
+    { id: 'iro-e2-l8-11', number: 11, prompt: 'Que atividade esta ilustração mostra (juntar carimbos pelos estandes)?', image: `${IMG}/Z_08_1_10_sutanpurarii.png`, imageAlt: 'cartão de caça ao carimbo (stamp rally)', choices: [{ n: 1, text: 'スタンプラリー — caça ao carimbo (visitar estandes para juntar carimbos)' }, { n: 2, text: '{観光|かんこう}{紹介|しょうかい}コーナー — estande turístico' }, { n: 3, text: 'パフォーマンス — apresentação' }, { n: 4, text: '{屋台|やたい} — barraca' }], answer: 1, explanationPt: 'スタンプラリー = caça ao carimbo: percorrer os estandes juntando carimbos. (Atividade 1)' },
+    { id: 'iro-e2-l8-12', number: 12, prompt: '聴解 08-03: 「スピーチコンテストは、もう{始|はじ}まりましたか？」 — qual a resposta do funcionário?', context: 'Ａ：すみません、スピーチコンテストは、もう{始|はじ}まりましたか？／Ｂ：いいえ、まだです。2{時|じ}からですよ。', choices: [{ n: 1, text: 'Ainda não começou; começa às 14h.' }, { n: 2, text: 'Já começou e já terminou.' }, { n: 3, text: 'Foi cancelado.' }, { n: 4, text: 'Começou às 14h e ainda está acontecendo.' }], answer: 1, explanationPt: 'もう{始|はじ}まりましたか？ → いいえ、まだです (ainda não). 2{時|じ}から. もう〜ましたか / まだです. (文法ノート ❶, 聴解 08-03)' },
+    { id: 'iro-e2-l8-13', number: 13, prompt: '聴解 08-04: 「{受|う}け{付|つ}けは、もう{終|お}わりましたか？」 — resposta:', context: 'Ａ：すみません、カラオケ{大会|たいかい}の{受|う}け{付|つ}けは、もう{終|お}わりましたか？／Ｂ：はい、もう{終|お}わりました。', choices: [{ n: 1, text: 'Sim, as inscrições já terminaram (もう終わりました).' }, { n: 2, text: 'Não, ainda nem começaram.' }, { n: 3, text: 'Estão acontecendo agora.' }, { n: 4, text: 'Começam às 14h.' }], answer: 1, explanationPt: 'もう{終|お}わりましたか？ → はい、もう{終|お}わりました (já terminou). {受|う}け{付|つ}け = recepção/inscrição. (文法ノート ❶, 聴解 08-04)' },
+    { id: 'iro-e2-l8-14', number: 14, prompt: '聴解 08-05: 「カンボジア{料理|りょうり}の{屋台|やたい}はどこか、わかりますか？」 — que caminho o funcionário indica?', context: 'Ｂ：カンボジア{料理|りょうり}ですね。この{道|みち}をまっすぐ{行|い}って、つきあたりを{右|みぎ}に{曲|ま}がってください。', choices: [{ n: 1, text: 'Seguir reto e virar à direita no fim da rua.' }, { n: 2, text: 'Voltar e virar à esquerda.' }, { n: 3, text: 'A barraca já fechou.' }, { n: 4, text: 'Subir as escadas e seguir reto.' }], answer: 1, explanationPt: 'どこか、わかりますか (pergunta embutida ❸). この{道|みち}をまっすぐ{行|い}って、つきあたりを{右|みぎ}に{曲|ま}がる. (聴解 08-05)' },
+    { id: 'iro-e2-l8-15', number: 15, prompt: '聴解 08-06: sobre a フリーマーケット, o que a pessoa fica sabendo?', context: 'Ａ：フリーマーケットは、もう{終|お}わりましたか？／Ｂ：今日は、もう{終|お}わりました。／Ａ：{明日|あした}は、{何時|なんじ}からか、わかりますか？／Ｂ：{朝|あさ}10{時|じ}からですよ。', choices: [{ n: 1, text: 'Hoje a feira já acabou; amanhã começa às 10h da manhã.' }, { n: 2, text: 'Hoje começa às 10h.' }, { n: 3, text: 'A feira foi cancelada.' }, { n: 4, text: 'A feira é só à noite.' }], answer: 1, explanationPt: '今日は、もう{終|お}わりました; {明日|あした}は{何時|なんじ}からか、わかりますか → {朝|あさ}10{時|じ}から. Pergunta embutida com {何時|なんじ}…か. (聴解 08-06)' },
+    { id: 'iro-e2-l8-16', number: 16, prompt: '「スピーチコンテストは、まだやっていますか？」 — 「まだ + V-ています」 indica:', choices: [{ n: 1, text: 'ainda está acontecendo / continua em andamento' }, { n: 2, text: 'já terminou' }, { n: 3, text: 'ainda não começou' }, { n: 4, text: 'nunca aconteceu' }], answer: 1, explanationPt: 'まだ + V-ています = ainda está fazendo / continua. (≠ まだ V-ていません = ainda não fez.) (文法ノート ❷)' },
+    { id: 'iro-e2-l8-17', number: 17, prompt: '聴解 08-14 (カラオケ大会の参加条件): quem pode participar do concurso de karaokê?', context: '{係|かかり}の{人|ひと}：{中学生|ちゅうがくせい}{以上|いじょう}の{方|かた}なら、どなたでも{参加|さんか}できます。ただ、プロの{方|かた}はご{遠慮|えんりょ}ください。', choices: [{ n: 1, text: 'Qualquer pessoa do ginásio (中学生) para cima; profissionais não podem.' }, { n: 2, text: 'Só crianças menores de 12 anos.' }, { n: 3, text: 'Só cantores profissionais.' }, { n: 4, text: 'Ninguém pode se inscrever no dia.' }], answer: 1, explanationPt: '{中学生|ちゅうがくせい}{以上|いじょう}なら、どなたでも{参加|さんか}できる; プロの{方|かた}はご{遠慮|えんりょ}ください (profissionais, por favor abstenham-se). ご{遠慮|えんりょ}ください = pedido formal de «não, por favor». (聴解 08-14)' },
+    { id: 'iro-e2-l8-18', number: 18, prompt: '聴解 08-14: além de quem pode participar, que condições o funcionário explica?', context: '{係|かかり}の{人|ひと}：{参加費|さんかひ}は1000{円|えん}です。カラオケがある{曲|きょく}だけです。この{申込書|もうしこみしょ}に{書|か}いてください。{先着順|せんちゃくじゅん}です。', choices: [{ n: 1, text: 'Taxa de 1000 ienes; só músicas que existam no karaokê; preencher a ficha; por ordem de chegada.' }, { n: 2, text: 'Entrada gratuita; qualquer música; sem ficha; por sorteio.' }, { n: 3, text: 'Só para profissionais; 5000 ienes.' }, { n: 4, text: 'Não há inscrição.' }], answer: 1, explanationPt: '{参加費|さんかひ}1000{円|えん}; カラオケにある{曲|きょく}だけ; {申込書|もうしこみしょ}に{記入|きにゅう}; {先着順|せんちゃくじゅん} (por ordem de chegada). (聴解 08-14)' },
+    { id: 'iro-e2-l8-19', number: 19, prompt: '「プロの{方|かた}はご{遠慮|えんりょ}ください」「{写真|しゃしん}は{遠慮|えんりょ}してください」 — ご{遠慮|えんりょ}ください significa:', choices: [{ n: 1, text: 'pedido educado para NÃO fazer algo (abstenha-se, por favor)' }, { n: 2, text: 'por favor, fique à vontade para fazer' }, { n: 3, text: 'é obrigatório fazer' }, { n: 4, text: 'faça mais tarde' }], answer: 1, explanationPt: 'ご{遠慮|えんりょ}ください = «por favor, abstenha-se / evite» (proibição educada). Forma keigo usada em avisos. (Atividade 3 / 4)' },
+    { id: 'iro-e2-l8-20', number: 20, prompt: 'Onde acontece o evento? Esta ilustração representa:', image: `${IMG}/Z_08_4_01_kaijoo.png`, imageAlt: 'vista geral do local do evento (recinto)', choices: [{ n: 1, text: '{会場|かいじょう} — o local/recinto do evento' }, { n: 2, text: '{受付|うけつけ} — recepção' }, { n: 3, text: '{屋台|やたい} — barraca' }, { n: 4, text: 'ステージ — palco' }], answer: 1, explanationPt: '{会場|かいじょう} = local/recinto onde o evento acontece. (Atividade 4 · 場内アナウンス)' },
+    { id: 'iro-e2-l8-21', number: 21, prompt: '聴解 08-20 (場内アナウンス): que regra é anunciada sobre o cigarro?', context: 'アナウンス：{会場内|かいじょうない}は、{禁煙|きんえん}です。たばこは、{決|き}められた{場所|ばしょ}でお{願|ねが}いします。', choices: [{ n: 1, text: 'É proibido fumar no recinto; fume apenas nos locais designados.' }, { n: 2, text: 'Pode fumar em qualquer lugar.' }, { n: 3, text: 'É proibido comer.' }, { n: 4, text: 'É proibido tirar fotos.' }], answer: 1, explanationPt: '{会場内|かいじょうない}は{禁煙|きんえん} (proibido fumar); たばこは{決|き}められた{場所|ばしょ}で. (聴解 08-20)' },
+    { id: 'iro-e2-l8-22', number: 22, prompt: 'Que regra do local esta placa indica?', image: `${IMG}/Z_08_4_04_tabako.png`, imageAlt: 'placa de proibido fumar', choices: [{ n: 1, text: '{禁煙|きんえん} — proibido fumar' }, { n: 2, text: '{写真|しゃしん}{禁止|きんし} — proibido fotografar' }, { n: 3, text: '{飲食|いんしょく}{禁止|きんし} — proibido comer/beber' }, { n: 4, text: '{携帯|けいたい}{電話|でんわ}{禁止|きんし} — proibido celular' }], answer: 1, explanationPt: '{禁煙|きんえん} = proibido fumar. (Atividade 4)' },
+    { id: 'iro-e2-l8-23', number: 23, prompt: '聴解 08-21 (場内アナウンス): que regra sobre foto/vídeo e celular é dada?', context: 'アナウンス：{写真|しゃしん}{撮影|さつえい}はできますが、{動画|どうが}の{撮影|さつえい}はご{遠慮|えんりょ}ください。{携帯|けいたい}{電話|でんわ}はマナーモードにしてください。', choices: [{ n: 1, text: 'Pode tirar fotos, mas não filmar vídeos; deixe o celular no modo silencioso.' }, { n: 2, text: 'Pode filmar, mas não fotografar.' }, { n: 3, text: 'Celulares são proibidos no recinto.' }, { n: 4, text: 'Fotos e vídeos são livres.' }], answer: 1, explanationPt: '{写真|しゃしん}OKだが{動画|どうが}はご{遠慮|えんりょ}ください; {携帯|けいたい}はマナーモードに. (聴解 08-21)' },
+    { id: 'iro-e2-l8-24', number: 24, prompt: 'Que regra esta ilustração indica (foto x vídeo)?', image: `${IMG}/Z_08_4_02_shashindooga.png`, imageAlt: 'foto permitida, vídeo proibido', choices: [{ n: 1, text: '{写真|しゃしん}はOK、{動画|どうが}はだめ — foto pode, vídeo não' }, { n: 2, text: 'tudo proibido' }, { n: 3, text: 'tudo permitido' }, { n: 4, text: 'só vídeo permitido' }], answer: 1, explanationPt: '{写真|しゃしん}{撮影|さつえい}OK、{動画|どうが}{撮影|さつえい}はご{遠慮|えんりょ}ください. (Atividade 4)' },
+    { id: 'iro-e2-l8-25', number: 25, prompt: '聴解 08-22 (場内アナウンス): que regra sobre comida/bebida é anunciada?', context: 'アナウンス：{飲食物|いんしょくぶつ}の{持|も}ち{込|こ}みはご{遠慮|えんりょ}ください。お{食事|しょくじ}は、ロビーでお{願|ねが}いします。', choices: [{ n: 1, text: 'Não traga comida/bebida de fora; faça as refeições no saguão (ロビー).' }, { n: 2, text: 'Pode comer em qualquer lugar.' }, { n: 3, text: 'É proibido comer no evento todo.' }, { n: 4, text: 'Só pode beber água.' }], answer: 1, explanationPt: '{飲食物|いんしょくぶつ}の{持|も}ち{込|こ}みはご{遠慮|えんりょ}ください; お{食事|しょくじ}はロビーで. {持|も}ち{込|こ}み = trazer de fora. (聴解 08-22)' },
+    { id: 'iro-e2-l8-26', number: 26, prompt: 'Que regra esta ilustração indica?', image: `${IMG}/Z_08_4_03_inshoku.png`, imageAlt: 'placa de proibido comer e beber', choices: [{ n: 1, text: '{飲食|いんしょく}{禁止|きんし} — proibido comer e beber (neste lugar)' }, { n: 2, text: '{禁煙|きんえん} — proibido fumar' }, { n: 3, text: '{写真|しゃしん}{禁止|きんし} — proibido fotografar' }, { n: 4, text: '{携帯|けいたい}{禁止|きんし} — proibido celular' }], answer: 1, explanationPt: '{飲食|いんしょく}{禁止|きんし} = proibido comer/beber ali; お{食事|しょくじ}はロビーで. (Atividade 4)' },
+    { id: 'iro-e2-l8-27', number: 27, prompt: '聴解 08-23 (場内アナウンス): que aviso é dado sobre a venda de bolo (ロールケーキ)?', context: 'アナウンス：{本日|ほんじつ}、{大変|たいへん}{人気|にんき}のロールケーキは、{販売|はんばい}を{終了|しゅうりょう}いたしました。お{買|か}い{求|もと}めの{方|かた}は、{列|れつ}に{並|なら}んでお{待|ま}ちください。', choices: [{ n: 1, text: 'A venda do popular rolo de bolo já encerrou; quem quiser comprar deve entrar na fila e aguardar.' }, { n: 2, text: 'O bolo está em promoção.' }, { n: 3, text: 'O bolo é distribuído de graça.' }, { n: 4, text: 'A venda começa às 14h.' }], answer: 1, explanationPt: '{販売|はんばい}を{終了|しゅうりょう}いたしました (a venda encerrou — keigo); {列|れつ}に{並|なら}んでお{待|ま}ちください. (聴解 08-23)' },
+    { id: 'iro-e2-l8-28', number: 28, prompt: '聴解 08-36 (SNSの{投稿|とうこう} · Daniel Martin): o que ele conta sobre o festival?', context: 'ダニエル：{昨日|きのう}、{国際|こくさい}{交流|こうりゅう}フェスティバルに{行|い}ってきました。いろいろな{国|くに}の{屋台|やたい}が{出|で}ていて、とてもおいしかったです。ステージのパフォーマンスも{楽|たの}しかったです。', choices: [{ n: 1, text: 'Foi ao Festival de Intercâmbio Internacional; havia barracas de vários países (muito gostosas) e as apresentações do palco foram divertidas.' }, { n: 2, text: 'Não conseguiu entrar no festival.' }, { n: 3, text: 'O festival foi cancelado pela chuva.' }, { n: 4, text: 'Só assistiu pela TV.' }], answer: 1, explanationPt: 'Post de quem participou: {屋台|やたい}が{出|で}ていて、おいしかった; ステージのパフォーマンスも{楽|たの}しかった. Modelo para a Atividade 6 (escrever seu próprio post). (聴解 08-36)' },
+    { id: 'iro-e2-l8-29', number: 29, prompt: 'Vocabulário do evento: 「{受付|うけつけ}／{申込書|もうしこみしょ}／{参加費|さんかひ}／{先着順|せんちゃくじゅん}／{持|も}ち{込|こ}み」 significam:', choices: [{ n: 1, text: 'recepção/inscrição / ficha de inscrição / taxa de participação / por ordem de chegada / trazer (algo) de fora' }, { n: 2, text: 'saída / recibo / desconto / por sorteio / devolução' }, { n: 3, text: 'palco / ingresso / gorjeta / fila única / empréstimo' }, { n: 4, text: 'mapa / cardápio / troco / reserva / entrega' }], answer: 1, explanationPt: '{受付|うけつけ} (recepção), {申込書|もうしこみしょ} (ficha de inscrição), {参加費|さんかひ} (taxa), {先着順|せんちゃくじゅん} (ordem de chegada), {持|も}ち{込|こ}み (trazer de fora). (Atividades 2/3/4)' },
+    { id: 'iro-e2-l8-30', number: 30, prompt: 'Os kanji 「{来年|らいねん}／{会場|かいじょう}／{世界|せかい}／{体験|たいけん}／{国際|こくさい}{交流|こうりゅう}」 lêem-se:', choices: [{ n: 1, text: 'らいねん (ano que vem) / かいじょう (recinto) / せかい (mundo) / たいけん (experiência) / こくさいこうりゅう (intercâmbio internacional)' }, { n: 2, text: 'らいねん / あいば / せいかい / からだけん / くにさいこうりゅう' }, { n: 3, text: 'きねん / かいじょう / せかい / たいけん / こくさいまじわり' }, { n: 4, text: 'らいげつ / えじょう / よがい / ていけん / こくさいこうりゅう' }], answer: 1, explanationPt: '{来年|らいねん}, {会場|かいじょう}, {世界|せかい}, {体験|たいけん}, {国際|こくさい}{交流|こうりゅう}. (漢字のことば)' },
+    { id: 'iro-e2-l8-31', number: 31, prompt: 'Os kanji 「{禁止|きんし}／{紙|かみ}／{始|はじ}まる／{申|もう}し{込|こ}む／{交流|こうりゅう}」 lêem-se:', choices: [{ n: 1, text: 'きんし (proibição) / かみ (papel) / はじまる (começar) / もうしこむ (inscrever-se) / こうりゅう (intercâmbio)' }, { n: 2, text: 'きんし / し / しまる / さるこむ / こうりゅう' }, { n: 3, text: 'きんとめ / かみ / はじまる / しんこむ / まじりゅう' }, { n: 4, text: 'きんし / がみ / おわる / もうしこむ / ながれ' }], answer: 1, explanationPt: '{禁止|きんし}, {紙|かみ}, {始|はじ}まる, {申|もう}し{込|こ}む, {交流|こうりゅう}. (漢字のことば)' },
+    { id: 'iro-e2-l8-32', number: 32, prompt: 'Resumo do padrão central da lição: para perguntar a um funcionário onde/quando algo acontece, qual estrutura você usa?', choices: [{ n: 1, text: '[疑問詞]…か + わかりますか／教えてください — ex.: 屋台はどこか、わかりますか／何時からか、教えてください' }, { n: 2, text: '〜たいです (querer fazer)' }, { n: 3, text: '〜たことがあります (já fez)' }, { n: 4, text: '〜なければなりません (ter de)' }], answer: 1, explanationPt: 'Pergunta embutida: [疑問詞] + frase comum + か + わかりますか／{教|おし}えてください. {屋台|やたい}はどこか/{何時|なんじ}からか + わかりますか. (文法ノート ❸)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 8 (聴解スクリプト)
+const L8_SCRIPTS: Record<string, ScriptItem[]> = {
+  '08-03': [
+    {
+      label: '① スピーチコンテスト (08-03)',
+      setupJa: 'イベントの{会場|かいじょう}で、{係|かかり}の{人|ひと}に{時間|じかん}や{場所|ばしょ}を{聞|き}いています。',
+      setupPt: 'No local do evento, perguntando horário e lugar a um funcionário. ① concurso de discurso.',
+      lines: [
+        { speaker: 'A', ja: 'すみません、スピーチコンテストは、もう{始|はじ}まりましたか？', pt: 'Com licença, o concurso de discurso já começou?' },
+        { speaker: 'B', ja: 'いいえ、まだです。2{時|じ}からですよ。', pt: 'Não, ainda não. Começa às 14h.' },
+        { speaker: 'A', ja: 'そうですか。ありがとうございます。', pt: 'Ah, sei. Obrigado.' },
+      ],
+    },
+  ],
+  '08-04': [
+    {
+      label: '② カラオケ大会の受け付け (08-04)',
+      setupPt: '② recepção/inscrição do concurso de karaokê.',
+      lines: [
+        { speaker: 'A', ja: 'すみません、カラオケ{大会|たいかい}の{受|う}け{付|つ}けは、もう{終|お}わりましたか？', pt: 'Com licença, as inscrições para o concurso de karaokê já terminaram?' },
+        { speaker: 'B', ja: 'はい、もう{終|お}わりました。', pt: 'Sim, já terminaram.' },
+        { speaker: 'A', ja: 'そうですか。{残念|ざんねん}です。', pt: 'Ah, sei. Que pena.' },
+      ],
+    },
+  ],
+  '08-05': [
+    {
+      label: '③ カンボジア料理の屋台 (08-05)',
+      setupPt: '③ procurando a barraca de comida cambojana.',
+      lines: [
+        { speaker: 'A', ja: 'すみません、カンボジア{料理|りょうり}の{屋台|やたい}はどこか、わかりますか？', pt: 'Com licença, você sabe onde fica a barraca de comida cambojana?' },
+        { speaker: 'B', ja: 'カンボジア{料理|りょうり}ですね。この{道|みち}をまっすぐ{行|い}って、つきあたりを{右|みぎ}に{曲|ま}がってください。', pt: 'Comida cambojana, certo? Siga reto por esta rua e, no fim, vire à direita.' },
+        { speaker: 'A', ja: 'まっすぐ{行|い}って、{右|みぎ}ですね。ありがとうございます。', pt: 'Reto e à direita, então. Obrigado.' },
+      ],
+    },
+  ],
+  '08-06': [
+    {
+      label: '④ フリーマーケット (08-06)',
+      setupPt: '④ feira de pulgas.',
+      lines: [
+        { speaker: 'A', ja: 'すみません、フリーマーケットは、もう{終|お}わりましたか？', pt: 'Com licença, a feira de pulgas já acabou?' },
+        { speaker: 'B', ja: '今日は、もう{終|お}わりました。', pt: 'Por hoje, já acabou.' },
+        { speaker: 'A', ja: '{明日|あした}は、{何時|なんじ}からか、わかりますか？', pt: 'Você sabe a que horas começa amanhã?' },
+        { speaker: 'B', ja: '{朝|あさ}10{時|じ}からですよ。', pt: 'Às 10h da manhã.' },
+        { speaker: 'A', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '08-14': [
+    {
+      label: 'カラオケ大会の参加条件 (08-14)',
+      setupJa: 'ヨスさんが、{係|かかり}の{人|ひと}にカラオケ{大会|たいかい}の{参加|さんか}について{聞|き}いています。',
+      setupPt: 'Yos pergunta ao funcionário sobre como participar do concurso de karaokê.',
+      lines: [
+        { speaker: 'ヨス', ja: 'すみません、このカラオケ{大会|たいかい}は、だれでも{参加|さんか}できますか？', pt: 'Com licença, qualquer um pode participar deste concurso de karaokê?' },
+        { speaker: '係の人', ja: '{中学生|ちゅうがくせい}{以上|いじょう}の{方|かた}なら、どなたでも{参加|さんか}できます。ただ、プロの{方|かた}はご{遠慮|えんりょ}ください。', pt: 'Qualquer pessoa do ginásio para cima pode participar. Só pedimos que profissionais se abstenham.' },
+        { speaker: 'ヨス', ja: 'お{金|かね}はかかりますか？', pt: 'Tem alguma taxa?' },
+        { speaker: '係の人', ja: '{参加費|さんかひ}は1000{円|えん}です。{歌|うた}える{曲|きょく}は、カラオケにある{曲|きょく}だけです。', pt: 'A taxa de participação é 1000 ienes. As músicas permitidas são só as que existem no karaokê.' },
+        { speaker: 'ヨス', ja: 'どうやって{申|もう}し{込|こ}めばいいですか？', pt: 'Como eu faço a inscrição?' },
+        { speaker: '係の人', ja: 'この{申込書|もうしこみしょ}に{名前|なまえ}と{曲名|きょくめい}を{書|か}いてください。{先着順|せんちゃくじゅん}ですから、{早|はや}めにお{願|ねが}いします。', pt: 'Preencha nome e nome da música nesta ficha. É por ordem de chegada, então faça logo, por favor.' },
+        { speaker: 'ヨス', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '08-20': [
+    {
+      label: '① 場内アナウンス — 禁煙 (08-20)',
+      setupJa: 'イベント{会場|かいじょう}で、{場内|じょうない}アナウンスが{流|なが}れています。',
+      setupPt: 'No recinto do evento, anúncios internos. ① proibido fumar.',
+      lines: [
+        { speaker: 'Narração', ja: '{皆様|みなさま}にお{願|ねが}いいたします。{会場内|かいじょうない}は、{禁煙|きんえん}です。たばこは、{決|き}められた{場所|ばしょ}でお{願|ねが}いします。', pt: 'Solicitamos a todos: o recinto é livre de fumo. Por favor, fume apenas nos locais designados.' },
+      ],
+    },
+  ],
+  '08-21': [
+    {
+      label: '② 場内アナウンス — 写真・動画・携帯 (08-21)',
+      setupPt: '② foto, vídeo e celular.',
+      lines: [
+        { speaker: 'Narração', ja: '{皆様|みなさま}にお{願|ねが}いいたします。{写真|しゃしん}の{撮影|さつえい}はできますが、{動画|どうが}の{撮影|さつえい}はご{遠慮|えんりょ}ください。また、{携帯|けいたい}{電話|でんわ}はマナーモードにしてください。', pt: 'Solicitamos a todos: fotos são permitidas, mas pedimos que não filmem vídeos. Além disso, deixem o celular no modo silencioso.' },
+      ],
+    },
+  ],
+  '08-22': [
+    {
+      label: '③ 場内アナウンス — 飲食 (08-22)',
+      setupPt: '③ comida e bebida.',
+      lines: [
+        { speaker: 'Narração', ja: '{皆様|みなさま}にお{願|ねが}いいたします。{飲食物|いんしょくぶつ}の{持|も}ち{込|こ}みはご{遠慮|えんりょ}ください。お{食事|しょくじ}は、ロビーでお{願|ねが}いします。', pt: 'Solicitamos a todos: não tragam comidas e bebidas de fora. As refeições devem ser feitas no saguão.' },
+      ],
+    },
+  ],
+  '08-23': [
+    {
+      label: '④ 場内アナウンス — ロールケーキ販売 (08-23)',
+      setupPt: '④ venda de rolo de bolo (roll cake).',
+      lines: [
+        { speaker: 'Narração', ja: '{本日|ほんじつ}、{大変|たいへん}{人気|にんき}のロールケーキは、{販売|はんばい}を{終了|しゅうりょう}いたしました。お{買|か}い{求|もと}めの{方|かた}は、{列|れつ}に{並|なら}んでお{待|ま}ちください。', pt: 'Hoje, a venda do nosso popular rolo de bolo já se encerrou. Quem desejar comprar, por favor entre na fila e aguarde.' },
+      ],
+    },
+  ],
+  '08-36': [
+    {
+      label: 'SNSの投稿 — ダニエル・マルティン (08-36)',
+      setupJa: 'ダニエルさんが、フェスティバルについてSNSに{投稿|とうこう}しています。',
+      setupPt: 'Daniel posta nas redes sociais sobre o festival.',
+      lines: [
+        { speaker: 'ダニエル', ja: '{昨日|きのう}、{国際|こくさい}{交流|こうりゅう}フェスティバルに{行|い}ってきました。いろいろな{国|くに}の{屋台|やたい}が{出|で}ていて、とてもおいしかったです。ステージのパフォーマンスも{楽|たの}しかったです。{来年|らいねん}もまた{行|い}きたいです。', pt: 'Ontem fui ao Festival de Intercâmbio Internacional. Havia barracas de vários países e estava tudo muito gostoso. As apresentações do palco também foram divertidas. Quero ir de novo no ano que vem.' },
+      ],
+    },
+  ],
+}
+
+const lesson8: Section = {
+  id: 'lesson-8',
+  level: 'elementary2',
+  titleJa: '第8課 屋台はどこかわかりますか？',
+  titlePt: 'Lição 8 — Você sabe onde ficam as barracas?',
+  summaryPt:
+    'Eventos da comunidade · ler a programação de um festival e extrair horários e atrações (屋台／ステージ／パフォーマンス／スピーチコンテスト), perguntar a funcionários no local onde/quando algo acontece (屋台はどこか、わかりますか／もう始まりましたか), perguntar requisitos e como se inscrever (だれでも参加できますか／参加費は？) e entender anúncios e regras do recinto (会場内は禁煙です／動画の撮影はご遠慮ください), além de ler e escrever um post sobre o evento.',
+  studyNotes: [
+    {
+      title: 'Tópico: Eventos da comunidade (地域のイベント)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ver a programação de um evento e extrair horários, atrações e informações principais.\n' +
+        '- No local do evento, perguntar a funcionários sobre horário e lugar e entender as respostas.\n' +
+        '- Perguntar ao responsável sobre requisitos e como se inscrever no evento que quer participar.\n' +
+        '- Ouvir anúncios de orientação e avisos no local do evento e entender o conteúdo geral.\n' +
+        '- Ler e escrever um post simples nas redes sobre o evento de que participou.\n\n' +
+        '💡 Cenário: a 「{国際|こくさい}{交流|こうりゅう}フェスティバル」 (Festival de Intercâmbio Internacional), com {屋台|やたい} (barracas), ステージ (palco) e várias パフォーマンス.',
+    },
+    {
+      title: 'もう〜ました / まだ〜ていません — já / ainda não (➊)',
+      bodyPt:
+        'Para perguntar se algo **já aconteceu**:\n\n' +
+        '- `スピーチコンテストは、もう{始|はじ}まりましたか？` → `はい、もう{始|はじ}まりました` (já começou) / `いいえ、まだです` (ainda não).\n' +
+        '- `{受|う}け{付|つ}けは、もう{終|お}わりましたか？` → `はい、もう{終|お}わりました`.\n\n' +
+        '🔧 **もう** + V-ました = «já»; resposta negativa = **まだです** ou **まだ V-ていません** (ainda não). (文法ノート ❶)',
+    },
+    {
+      title: 'まだ V-ています — ainda está acontecendo (➋)',
+      bodyPt:
+        'Para dizer que algo **continua em andamento**:\n\n' +
+        '- `スピーチコンテストは、まだやっていますか？` → `はい、まだやっています` (ainda está acontecendo).\n\n' +
+        '⚠️ Não confunda: **まだ V-ています** = ainda está fazendo (continua) ≠ **まだ V-ていません** = ainda não fez. (文法ノート ❷)',
+    },
+    {
+      title: 'Pergunta embutida: [疑問詞]…か + わかりますか (➌)',
+      bodyPt:
+        'Para perguntar com jeito «sabe onde/quando/o que…?», embute-se a pergunta com **か**:\n\n' +
+        '- `{屋台|やたい}は[[どこか]]、わかりますか？` (sabe onde ficam as barracas?).\n' +
+        '- `{明日|あした}は、[[{何時|なんじ}からか]]、わかりますか？` (sabe a que horas é amanhã?).\n' +
+        '- `だれが{来|く}るか／{何|なに}があるか、{知|し}っていますか？`\n\n' +
+        '🔧 Estrutura: **[疑問詞] + frase na forma comum + か** + わかりますか／{知|し}っていますか／{教|おし}えてください. (文法ノート ❸)',
+    },
+    {
+      title: 'Avisos do recinto: keigo ご遠慮ください / お願いいたします',
+      bodyPt:
+        'Anúncios do local (場内アナウンス) usam fórmulas educadas:\n\n' +
+        '- `{皆様|みなさま}にお{願|ねが}いいたします` (solicitamos a todos…) abre o aviso.\n' +
+        '- `〜はご{遠慮|えんりょ}ください` = «por favor, abstenha-se de ~» (proibição educada): {動画|どうが}の{撮影|さつえい}／{飲食物|いんしょくぶつ}の{持|も}ち{込|こ}み／プロの{方|かた}.\n' +
+        '- `〜でお{願|ねが}いします` = «façam em ~, por favor»: たばこは{決|き}められた{場所|ばしょ}で.\n' +
+        '- `{会場内|かいじょうない}は{禁煙|きんえん}です`, `{携帯|けいたい}はマナーモードに`.',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Programação/atrações:** {屋台|やたい} (barraca), ステージ (palco), パフォーマンス, {観光|かんこう}{紹介|しょうかい}コーナー, スピーチコンテスト, カラオケ{大会|たいかい}, {合気道|あいきどう}のデモンストレーション, {世界|せかい}の{遊|あそ}び{体験|たいけん}, ファッションショー, スタンプラリー.\n\n' +
+        '**Inscrição:** {受付|うけつけ}, {申込書|もうしこみしょ}, {申|もう}し{込|こ}む, {参加費|さんかひ}, {参加|さんか}{条件|じょうけん}, 〜{以上|いじょう}, {先着順|せんちゃくじゅん}, ご{遠慮|えんりょ}ください.\n\n' +
+        '**Regras do local:** {会場|かいじょう}, {禁煙|きんえん}, {禁止|きんし}, {撮影|さつえい}, {動画|どうが}, {飲食|いんしょく}, {持|も}ち{込|こ}み, マナーモード, {販売|はんばい}{終了|しゅうりょう}, {列|れつ}に{並|なら}ぶ.\n\n' +
+        '**Kanji da lição:** {来年|らいねん}, {会場|かいじょう}, {世界|せかい}, {体験|たいけん}, {国際|こくさい}, {交流|こうりゅう}, {禁止|きんし}, {紙|かみ}, {始|はじ}まる, {申|もう}し{込|こ}む.',
+    },
+  ],
+  groups: [lesson8Group],
+  audios: attachScripts(8, L8_SCRIPTS),
+}
+
+// ---- Lições 9-18 (estrutura por tópico; exercícios em construção) ------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -1887,14 +2109,7 @@ const sections: Section[] = [
   lesson6,
   // Tópico 4 — Eventos da comunidade (地域のイベント)
   lesson7,
-  scaffold(8, 'Eventos da comunidade', '屋台はどこかわかりますか？', 'Você sabe onde ficam as barracas?', [
-    'Ver a programação de um evento e extrair horários, atrações e informações principais.',
-    'No local do evento, perguntar a funcionários sobre horário e lugar e entender as respostas.',
-    'Perguntar ao responsável sobre requisitos e como se inscrever no evento que quer participar.',
-    'Ouvir anúncios de orientação e avisos no local do evento e entender o conteúdo geral.',
-    'Ler um post simples de um amigo que participou do evento e entender o conteúdo.',
-    'Escrever um post simples nas redes sobre o evento de que participou.',
-  ]),
+  lesson8,
   // Tópico 5 — Eventos anuais e etiqueta (年中行事とマナー)
   scaffold(9, 'Eventos anuais e etiqueta', '成人の日は、何をするんですか？', 'O que se faz no Dia da Maioridade?', [
     'Ouvir e entender o que se faz e o que se come nos eventos anuais do Japão.',
