@@ -95,6 +95,8 @@ const lesson1Group: ExerciseGroup = {
     { id: 'iro-e2-l1-34', number: 34, prompt: '会話 01-16 (modelo «出身地について»): a pessoa diz que sua cidade fica onde e a que distância do Japão?', context: 'Ｂ：ベトナムのホーチミン（という{町|まち}）です。…ベトナムの{南|みなみ}にあります。…{飛行機|ひこうき}で6{時間|じかん}{半|はん}ぐらいです。', choices: [{ n: 1, text: 'Ho Chi Minh, no sul do Vietnã; cerca de 6h30 de avião.' }, { n: 2, text: 'Hanói, no norte; 2h de trem.' }, { n: 3, text: 'Cebu, nas Filipinas; 5h de avião.' }, { n: 4, text: 'Tóquio; ao lado.' }], answer: 1, explanationPt: 'Modelo de fala sobre a cidade natal: {出身|しゅっしん} → ベトナムの{南|みなみ} → {飛行機|ひこうき}で6{時間|じかん}{半|はん}. (会話 01-16)' },
     { id: 'iro-e2-l1-35', number: 35, prompt: 'Leitura (SNS) — sobre o post de TARO: o que se entende?', context: 'TARO：…でも、{日本人|にほんじん}じゃありません。タイ{人|じん}です。{今|いま}は、バンコクの{大学|だいがく}で{日本語|にほんご}を{勉強|べんきょう}しています。サッカー、アニメ、ねこが{好|す}きです。', choices: [{ n: 1, text: 'É tailandês, estuda japonês numa universidade em Bangkok; gosta de futebol, anime e gatos.' }, { n: 2, text: 'É japonês e mora em Tóquio.' }, { n: 3, text: 'É nepalês e trabalha num restaurante indiano.' }, { n: 4, text: 'É vietnamita e trabalhava num hotel.' }], answer: 1, explanationPt: 'TARO: タイ{人|じん}, バンコクの{大学|だいがく}で{日本語|にほんご}{勉強|べんきょう}, サッカー・アニメ・ねこが{好|す}き. (Atividade 4 · 読む)' },
     { id: 'iro-e2-l1-36', number: 36, prompt: 'Leitura (SNS) — sobre o post de YAH: qual alternativa está correta?', context: 'YAH：ネパール{人|じん}です。{日本|にほん}に2{年|ねん}{住|す}んでいます。{東京|とうきょう}にあるインド{料理|りょうり}の{店|みせ}で{働|はたら}いています。…しゅみは{食|た}べ{歩|ある}きです。', choices: [{ n: 1, text: 'É nepalês, mora há 2 anos no Japão, trabalha num restaurante indiano em Tóquio; o hobby é sair para comer (food tour).' }, { n: 2, text: 'É tailandês e estuda em Bangkok.' }, { n: 3, text: 'Acabou de chegar ao Japão.' }, { n: 4, text: 'Trabalha como guia turístico no Vietnã.' }], answer: 1, explanationPt: 'YAH: ネパール{人|じん}, {日本|にほん}に2{年|ねん}{住|す}んでいます (V-ています, situação atual), {東京|とうきょう}のインド{料理|りょうり}の{店|みせ}で{働|はたら}いています, しゅみは{食|た}べ{歩|ある}き. (Atividade 4 · 読む)' },
+    { id: 'iro-e2-l1-37', number: 37, prompt: '「{首都|しゅと}ではないけど、とてもにぎやかです」 — o conectivo 「けど」 liga as frases com sentido de:', choices: [{ n: 1, text: 'mas / embora (contraste entre as duas partes)' }, { n: 2, text: 'porque (motivo)' }, { n: 3, text: 'e então (sequência)' }, { n: 4, text: 'se (condição)' }], answer: 1, explanationPt: '〜けど = mas/embora; une frases de sentido oposto (não é capital, MAS é animada). Liga-se à forma comum ou polida. (文法ノート ❺)' },
+    { id: 'iro-e2-l1-38', number: 38, prompt: '「ウランバートルは{首都|しゅと}だから、{都会|とかい}です」 / 「お{茶|ちゃ}の{畑|はたけ}がたくさんあって、のんびりしています」 — 「から」 e 「て」 indicam, respectivamente:', choices: [{ n: 1, text: 'motivo (porque/já que) · encadeamento/causa (e, e por isso)' }, { n: 2, text: 'contraste · condição' }, { n: 3, text: 'tempo · lugar' }, { n: 4, text: 'pergunta · negação' }], answer: 1, explanationPt: '〜から = motivo (como é a capital, é metrópole). 〜て encadeia frases / dá causa (há plantações de chá, e é pacato). (文法ノート ❺)' },
   ],
 }
 
@@ -285,6 +287,15 @@ const lesson1: Section = {
         'No **入門** vimos それ／そこ apontando algo perto do ouvinte. Aqui, それ／そこ retomam **algo já mencionado na conversa** (uso “de contexto”, 文脈指示):\n\n' +
         '- `ジャワ{島|とう}に、ジョグジャカルタという{大|おお}きい{町|まち}があります。ウォノソボは、そこから、バスで4{時間|じかん}ぐらいです` → **そこ** = Yogyakarta (citada antes).\n\n' +
         '【例】A: `{私|わたし}の{町|まち}は、ストロマトライトが{有名|ゆうめい}です` B: `それは{何|なん}ですか？` (o que é isso?).',
+    },
+    {
+      title: 'Unir duas frases: 〜て / 〜から / 〜けど (➎)',
+      bodyPt:
+        'Três conectivos para **juntar duas frases numa só** (2つの{文|ぶん}を1つにする):\n\n' +
+        '- **〜て** — encadeia ou dá causa/motivo: `お{茶|ちゃ}の{畑|はたけ}がたくさんあって、のんびりしています` (há muitas plantações de chá, e é pacato).\n' +
+        '- **〜から** — porque / já que (motivo): `ウランバートルは{首都|しゅと}だから、{都会|とかい}です` (como Ulan Bator é a capital, é uma metrópole).\n' +
+        '- **〜けど** — mas / embora (contraste): `{首都|しゅと}ではないけど、とてもにぎやかです` (não é a capital, mas é muito animada).\n\n' +
+        '💡 〜から e 〜けど ligam-se à forma polida OU comum ({首都|しゅと}だから／{首都|しゅと}だけど) e podem unir frases de sinal oposto (afirmativa + negativa). (文法ノート ❺)',
     },
     {
       title: 'Vocabulário, Kanji e expressões',
