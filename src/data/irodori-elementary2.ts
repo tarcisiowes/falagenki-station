@@ -1468,7 +1468,217 @@ const lesson5: Section = {
   audios: attachScripts(5, L5_SCRIPTS),
 }
 
-// ---- Lições 6-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 6: いろいろなところに行けて、よかったです (tópico 旅行に行こう) ---------
+const lesson6Group: ExerciseGroup = {
+  id: 'iro-e2-l6',
+  title: 'いろいろなところに行けて、よかったです',
+  subtitlePt: 'Ler bilhetes e avisos de trem · falar dos planos de viagem · entender anúncios de estação · falar das impressões da viagem',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l6-1', number: 1, prompt: '「{明日|あした}は、{中禅寺湖|ちゅうぜんじこ}に{行|い}くつもりです」 — 「V-るつもりです」 expressa:', choices: [{ n: 1, text: 'uma intenção/plano (pretendo ir ao lago Chuzenji amanhã)' }, { n: 2, text: 'algo que já aconteceu' }, { n: 3, text: 'uma proibição' }, { n: 4, text: 'um pedido' }], answer: 1, explanationPt: 'V(dicionário)+つもりです = intenção/plano de fazer. {行|い}くつもりです (pretendo ir). (文法ノート ❶)' },
+    { id: 'iro-e2-l6-2', number: 2, prompt: '「ゆばも{食|た}べてみたいです」 — 「V-てみたい」 significa:', choices: [{ n: 1, text: 'quero experimentar/tentar fazer (quero experimentar comer yuba)' }, { n: 2, text: 'já comi' }, { n: 3, text: 'não quero comer' }, { n: 4, text: 'tenho que comer' }], answer: 1, explanationPt: 'V-てみたい = querer experimentar (fazer para ver como é). {食|た}べてみたい, {入|はい}ってみたい. (文法ノート ❶)' },
+    { id: 'iro-e2-l6-3', number: 3, prompt: '「いろいろなところに{行|い}けて、よかったです」 — 「V-て、よかった」 expressa:', choices: [{ n: 1, text: 'satisfação/alegria por ter conseguido fazer algo (que bom que pude ir)' }, { n: 2, text: 'arrependimento' }, { n: 3, text: 'uma ordem' }, { n: 4, text: 'uma dúvida' }], answer: 1, translationPt: 'Que bom que pude ir a vários lugares.', explanationPt: 'V-て + よかった = avaliar positivamente um fato. {行|い}けて（potencial）、よかった; {泳|およ}げて、{楽|たの}しかった. (文法ノート ❷)' },
+    { id: 'iro-e2-l6-4', number: 4, prompt: '「ショーが{見|み}られなくて、{残念|ざんねん}でした」 — 「V-なくて、{残念|ざんねん}」 expressa:', choices: [{ n: 1, text: 'pena/decepção por NÃO ter conseguido fazer algo (foi uma pena não poder ver o show)' }, { n: 2, text: 'alegria' }, { n: 3, text: 'um plano' }, { n: 4, text: 'uma recomendação' }], answer: 1, explanationPt: 'V-なくて + {残念|ざんねん}／{大変|たいへん} = avaliar/reagir a algo que não deu certo. {見|み}られなくて、{残念|ざんねん}. (文法ノート ❷)' },
+    { id: 'iro-e2-l6-5', number: 5, prompt: '「{道|みち}を{歩|ある}いているとき、リスを{見|み}ました」 — 「〜とき」 indica:', choices: [{ n: 1, text: 'o momento/situação em que algo acontece (quando estava andando…)' }, { n: 2, text: 'a razão' }, { n: 3, text: 'a proibição' }, { n: 4, text: 'o destino' }], answer: 1, explanationPt: '［V／ＡＤＪ + とき］= quando. {歩|ある}いているとき (enquanto andava), {着|つ}いたとき, {子|こ}どものとき. (文法ノート ❸)' },
+    { id: 'iro-e2-l6-6', number: 6, prompt: '「さいたま{新都心|しんとしん}に{行|い}きたいんですけど、{何|なん}{番線|ばんせん}に{行|い}けばいいですか？」 — 「V-ばいいですか」 serve para:', choices: [{ n: 1, text: 'perguntar o que/como é melhor fazer (a qual plataforma devo ir?)' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'recusar' }, { n: 4, text: 'falar do passado' }], answer: 1, explanationPt: 'V-ばいいですか pergunta a melhor opção/como proceder: {何番線|なんばんせん}に{行|い}けばいいですか, どこで{乗|の}り{換|か}えればいいですか. (Atividade 3)' },
+    { id: 'iro-e2-l6-7', number: 7, prompt: 'No bilhete de Shinkansen (新幹線の切符), os campos 「{出発駅|しゅっぱつえき}／{行|い}き{先|さき}／{到着時刻|とうちゃくじこく}／{料金|りょうきん}／〜{号車|ごうしゃ}／〜{席|せき}」 significam:', choices: [{ n: 1, text: 'estação de partida / destino / horário de chegada / tarifa / vagão nº / assento' }, { n: 2, text: 'nome / idade / endereço / telefone / data / hora' }, { n: 3, text: 'comida / bebida / preço / serviço / mesa / cadeira' }, { n: 4, text: 'norte / sul / leste / oeste / cima / baixo' }], answer: 1, explanationPt: '{出発駅|しゅっぱつえき} (partida), {行|い}き{先|さき} (destino), {到着時刻|とうちゃくじこく} (chegada), {料金|りょうきん} (tarifa), 〜{号車|ごうしゃ} (vagão), 〜{席|せき} (assento). (Atividade 1 · 切符)' },
+    { id: 'iro-e2-l6-8', number: 8, prompt: 'Em avisos/anúncios de estação: 「{運転|うんてん}{見合|みあ}わせ／{遅|おく}れ／{信号|しんごう}{故障|こしょう}／{人身|じんしん}{事故|じこ}」 significam:', choices: [{ n: 1, text: 'suspensão do serviço / atraso / falha de sinalização / acidente com vítima (atropelamento)' }, { n: 2, text: 'pontualidade / desconto / promoção / reforma' }, { n: 3, text: 'partida / chegada / embarque / desembarque' }, { n: 4, text: 'reserva / cancelamento / reembolso / fila' }], answer: 1, explanationPt: '{運転|うんてん}{見合|みあ}わせ (serviço suspenso), {遅|おく}れ (atraso), {信号|しんごう}{故障|こしょう} (falha de sinal), {人身|じんしん}{事故|じこ} (acidente com pessoa). (Atividades 1 e 3)' },
+    { id: 'iro-e2-l6-9', number: 9, prompt: 'Vocabulário de trem (Atividade 3): 「{指定席|していせき}／{自由席|じゆうせき}／〜{号車|ごうしゃ}／〜{行|ゆ}き／〜{番線|ばんせん}」 significam:', choices: [{ n: 1, text: 'assento reservado / assento livre (não reservado) / vagão nº / com destino a ~ / plataforma nº' }, { n: 2, text: 'janela / corredor / porta / saída / entrada' }, { n: 3, text: 'manhã / tarde / noite / hoje / amanhã' }, { n: 4, text: 'ida / volta / atraso / cancelamento / espera' }], answer: 1, explanationPt: '{指定席|していせき} (reservado), {自由席|じゆうせき} (livre), 〜{号車|ごうしゃ} (vagão), 〜{行|ゆ}き (destino), 〜{番線|ばんせん} (plataforma), 〜{方面|ほうめん} (direção), グリーン{車|しゃ} (vagão verde). (Atividade 3 · ことば)' },
+    { id: 'iro-e2-l6-10', number: 10, prompt: 'Que ação (no trem) esta ilustração mostra?', image: `${IMG}/Z_06_3_12_norikaeru.png`, imageAlt: 'pessoa passando de um trem para outro', choices: [{ n: 1, text: '{乗|の}り{換|か}える — baldear / trocar de trem' }, { n: 2, text: '{見送|みおく}る — despedir-se (ver partir)' }, { n: 3, text: '{到着|とうちゃく}する — chegar' }, { n: 4, text: '{泳|およ}ぐ — nadar' }], answer: 1, explanationPt: '{乗|の}り{換|か}える = baldear/trocar de trem. {岡山|おかやま}{駅|えき}で{乗|の}り{換|か}えます. (Atividade 3 · ことばの準備)' },
+    { id: 'iro-e2-l6-11', number: 11, prompt: 'Que meio de transporte turístico é este (sobe a encosta da montanha)?', image: `${IMG}/Z_06_4_09_keeburukaa.png`, imageAlt: 'bondinho/funicular subindo a montanha', choices: [{ n: 1, text: 'ケーブルカー — bondinho / funicular' }, { n: 2, text: '{船|ふね} — navio' }, { n: 3, text: '{電車|でんしゃ} — trem' }, { n: 4, text: '{飛行機|ひこうき} — avião' }], answer: 1, explanationPt: 'ケーブルカー = funicular (sobe encostas). No 高尾山, a ケーブルカー estava lotada (混んでいて). (Atividade 4)' },
+    { id: 'iro-e2-l6-12', number: 12, prompt: 'Que animal a pessoa viu na montanha?', image: `${IMG}/Z_06_4_12_risu.png`, imageAlt: 'pessoa olhando um esquilo numa árvore', choices: [{ n: 1, text: 'リス — esquilo' }, { n: 2, text: 'ウミネコ — gaivota' }, { n: 3, text: '{魚|さかな} — peixe' }, { n: 4, text: '{猫|ねこ} — gato' }], answer: 1, explanationPt: 'リス = esquilo. {道|みち}を{歩|ある}いているとき、リスを{見|み}ました (〜とき, ❸). (Atividade 4 · 高尾山)' },
+    { id: 'iro-e2-l6-13', number: 13, prompt: 'O que é isto (onde se entra para relaxar nas águas termais)?', image: `${IMG}/Z_06_2_06_onsen.png`, imageAlt: 'banho de águas termais (onsen)', choices: [{ n: 1, text: '{温泉|おんせん} — fonte termal (onsen)' }, { n: 2, text: '{湖|みずうみ} — lago' }, { n: 3, text: '{滝|たき} — cachoeira' }, { n: 4, text: '{海|うみ} — mar' }], answer: 1, explanationPt: '{温泉|おんせん} = fonte termal. {温泉|おんせん}に{入|はい}りたいんですけど…. (Atividade 2)' },
+    { id: 'iro-e2-l6-14', number: 14, prompt: 'Que meio de transporte é este (sobre a água)?', image: `${IMG}/Z_06_4_06_fune.png`, imageAlt: 'barco / navio', choices: [{ n: 1, text: '{船|ふね} — barco / navio' }, { n: 2, text: 'ケーブルカー — funicular' }, { n: 3, text: '{電車|でんしゃ} — trem' }, { n: 4, text: '{車|くるま} — carro' }], answer: 1, explanationPt: '{船|ふね} = barco. {浄土|じょうど}ヶ{浜|はま}で{船|ふね}に{乗|の}れた (potencial). (Atividade 4 · 浄土ヶ浜)' },
+    { id: 'iro-e2-l6-15', number: 15, prompt: 'Impressões de viagem (旅行はどうだった): 「よかった／{楽|たの}しかった／{残念|ざんねん}だった／{感動|かんどう}した／{気持|きも}ちよかった」 significam:', choices: [{ n: 1, text: 'foi bom / foi divertido / foi uma pena / fiquei emocionado / foi gostoso/agradável' }, { n: 2, text: 'foi caro / foi barato / foi longe / foi perto / foi rápido' }, { n: 3, text: 'fiquei com fome / com sono / com frio / com calor / cansado' }, { n: 4, text: 'norte / sul / leste / oeste / centro' }], answer: 1, explanationPt: 'よかった, {楽|たの}しかった, {残念|ざんねん}だった (foi uma pena), {感動|かんどう}した (emocionou), {気持|きも}ちよかった (foi gostoso), びっくりした／{驚|おどろ}いた. (Atividade 4 · ことばの準備)' },
+    { id: 'iro-e2-l6-16', number: 16, prompt: '会話 06-01 (encontro na hospedagem): o que Ed fez hoje e o que pretende fazer?', context: 'エド：{今日|きょう}は、{東照宮|とうしょうぐう}に{行|い}きました。{明日|あした}は、{中禅寺湖|ちゅうぜんじこ}に{行|い}くつもりです。…そばを{食|た}べました。ゆばも{食|た}べてみたいです。', choices: [{ n: 1, text: 'Hoje foi ao Toshogu; amanhã pretende ir ao lago Chuzenji. Comeu soba e quer experimentar yuba.' }, { n: 2, text: 'Hoje foi ao lago; amanhã volta para casa.' }, { n: 3, text: 'Não fez nada e vai embora.' }, { n: 4, text: 'Foi a Tóquio fazer compras.' }], answer: 1, explanationPt: '{東照宮|とうしょうぐう}（hoje）, {中禅寺湖|ちゅうぜんじこ}に{行|い}くつもり (❶), ゆばも{食|た}べてみたい (❶); ゆばは{日光|にっこう}の{名物|めいぶつ}. (聴解 06-01)' },
+    { id: 'iro-e2-l6-17', number: 17, prompt: '聴解 06-07 (anúncio de atraso): o que o anúncio informava, segundo a outra pessoa?', context: 'Ｂ：えっと、{電車|でんしゃ}が30{分|ぷん}{遅|おく}れるそうです。…{信号|しんごう}{故障|こしょう}だって。…{信号|しんごう}が{壊|こわ}れたんです。', choices: [{ n: 1, text: 'O trem vai atrasar uns 30 minutos por falha de sinalização (o sinal quebrou).' }, { n: 2, text: 'O trem chegou adiantado.' }, { n: 3, text: 'O trem foi cancelado por neve.' }, { n: 4, text: 'Mudou de plataforma.' }], answer: 1, explanationPt: '{電車|でんしゃ}が30{分|ぷん}{遅|おく}れる (atraso), {信号|しんごう}{故障|こしょう}（だって, hearsay）= {信号|しんごう}が{壊|こわ}れた. (聴解 06-07)' },
+    { id: 'iro-e2-l6-18', number: 18, prompt: '聴解 06-08 (não entendeu o anúncio, pergunta ao funcionário): como ir a さいたま新都心?', context: '{駅員|えきいん}：{京浜東北線|けいひんとうほくせん}は{運転|うんてん}を{見合|みあ}わせています。さいたま{新都心|しんとしん}なら、{埼京線|さいきょうせん}で…8{番線|ばんせん}から{乗|の}って、{北与野|きたよの}{駅|えき}まで…。', choices: [{ n: 1, text: 'A linha Keihin-Tohoku está suspensa; pegar a linha Saikyo na plataforma 8 até a estação Kita-Yono.' }, { n: 2, text: 'Esperar o próximo trem na mesma plataforma.' }, { n: 3, text: 'Ir a pé até o destino.' }, { n: 4, text: 'Pegar um táxi.' }], answer: 1, explanationPt: '{京浜東北線|けいひんとうほくせん}{運転|うんてん}{見合|みあ}わせ → {埼京線|さいきょうせん}、8{番線|ばんせん}、{北与野|きたよの}{駅|えき}まで. {何番線|なんばんせん}に{行|い}けばいい (〜ば). (聴解 06-08)' },
+    { id: 'iro-e2-l6-19', number: 19, prompt: '聴解 06-10 (impressões · 大阪): o que a pessoa diz?', context: '{大阪城|おおさかじょう}とか{通天閣|つうてんかく}とか、いろいろなところに{行|い}けて、よかったです。…たこ{焼|や}きを{食|た}べました。…あべのハルカスに{登|のぼ}りました。すごく{高|たか}くて、びっくりしました。', choices: [{ n: 1, text: 'Pôde ir a vários lugares (Castelo de Osaka, Tsutenkaku); comeu takoyaki; subiu o Abeno Harukas e se surpreendeu com a altura.' }, { n: 2, text: 'Não conseguiu sair do hotel.' }, { n: 3, text: 'Só viu o aquário.' }, { n: 4, text: 'Achou tudo chato.' }], answer: 1, explanationPt: 'いろいろなところに{行|い}けて、よかった (❷ + título); たこ{焼|や}き; あべのハルカスに{登|のぼ}って びっくり. (聴解 06-10)' },
+    { id: 'iro-e2-l6-20', number: 20, prompt: '聴解 06-11 (impressões · 浄土ヶ浜): o que a pessoa fez e como foi?', context: '{海|うみ}も{空|そら}もすてきでした。{海|うみ}で{泳|およ}げたし、{船|ふね}に{乗|の}れたし、{楽|たの}しかったです。…ウミネコが{近|ちか}くに{来|き}たとき、ちょっとこわかったです。', choices: [{ n: 1, text: 'Mar e céu lindos; pôde nadar e andar de barco (foi divertido); levou um susto quando as gaivotas chegaram perto.' }, { n: 2, text: 'Choveu o tempo todo, não fez nada.' }, { n: 3, text: 'Só foi a um museu.' }, { n: 4, text: 'Esquiou a montanha.' }], answer: 1, explanationPt: '{泳|およ}げた・{船|ふね}に{乗|の}れた (potencial), {楽|たの}しかった; ウミネコが{近|ちか}くに{来|き}たとき (〜とき ❸) こわかった. (聴解 06-11)' },
+    { id: 'iro-e2-l6-21', number: 21, prompt: '聴解 06-12 (impressões · 高尾山): o que aconteceu com o funicular?', context: 'ケーブルカーがすごく{混|こ}んでいて、{大変|たいへん}でした。だから、ケーブルカーはあきらめて、{歩|ある}いて{登|のぼ}りました。{疲|つか}れたけど、{景色|けしき}がきれいで、{気持|きも}ちよかったです。', choices: [{ n: 1, text: 'O funicular estava muito lotado, então desistiu dele e subiu a pé; cansou, mas a paisagem era bonita (agradável).' }, { n: 2, text: 'O funicular estava vazio e foi rápido.' }, { n: 3, text: 'Não subiu a montanha.' }, { n: 4, text: 'Foi de carro até o topo.' }], answer: 1, explanationPt: 'ケーブルカーが{混|こ}んでいて{大変|たいへん} → あきらめて{歩|ある}いて{登|のぼ}った; {景色|けしき}がきれいで{気持|きも}ちよかった. {頂上|ちょうじょう}で{写真|しゃしん}. (聴解 06-12)' },
+    { id: 'iro-e2-l6-22', number: 22, prompt: '聴解 06-13 (impressões · ハウステンボス): o que foi bom e o que foi pena?', context: 'オランダの{町並|まちな}みや{花畑|はなばたけ}がすてきでした。{夜|よる}のイルミネーションを{見|み}ました。…でも、ショーが{見|み}られなくて、{残念|ざんねん}でした。{時間|じかん}がなかったので。', choices: [{ n: 1, text: 'As ruas estilo holandês, os campos de flores e a iluminação noturna foram lindos; mas foi pena não ver o show (faltou tempo).' }, { n: 2, text: 'Não viu nada, choveu.' }, { n: 3, text: 'Viu o show, mas não a iluminação.' }, { n: 4, text: 'Ficou só no hotel.' }], answer: 1, explanationPt: '{町並|まちな}み・{花畑|はなばたけ}・イルミネーションすてき; ショーが{見|み}られなくて、{残念|ざんねん} (❷); {日帰|ひがえ}り. (聴解 06-13)' },
+    { id: 'iro-e2-l6-23', number: 23, prompt: '読む/書く (SNS · じゃこ天): o que a pessoa postou sobre a viagem a Osaka?', context: '{大阪|おおさか}に{行|い}って{来|き}ました。…いろいろなところに{行|い}けて、{楽|たの}しかったです。あと、インスタントラーメンの{博物館|はくぶつかん}で、{自分|じぶん}のラーメンを{作|つく}りました！', choices: [{ n: 1, text: 'Foi a Osaka, pôde ir a vários lugares (divertido), e no museu do lámen instantâneo fez o próprio lámen.' }, { n: 2, text: 'Foi a Okinawa nadar.' }, { n: 3, text: 'Ficou em casa o feriado todo.' }, { n: 4, text: 'Não gostou de Osaka.' }], answer: 1, explanationPt: 'SNS: {大阪|おおさか}, いろいろなところに{行|い}けて{楽|たの}しかった (❷), インスタントラーメンの{博物館|はくぶつかん}で{自分|じぶん}のラーメンを{作|つく}った. (Atividade 5 · 書く)' },
+    { id: 'iro-e2-l6-24', number: 24, prompt: 'Os kanji 「{運転|うんてん}／{事故|じこ}／{故障|こしょう}／{指定|してい}／{週末|しゅうまつ}」 lêem-se:', choices: [{ n: 1, text: 'うんてん (operação/condução) / じこ (acidente) / こしょう (avaria/pane) / してい (designação/reserva) / しゅうまつ (fim de semana)' }, { n: 2, text: 'うんてん / じこ / ふるしょう / さだめ / しゅうまつ' }, { n: 3, text: 'うんでん / ことこ / こしょう / してい / しゅうばん' }, { n: 4, text: 'はこび / じこ / こわれ / していせき / まつ' }], answer: 1, explanationPt: '{運転|うんてん}, {事故|じこ}, {故障|こしょう}, {指定|してい}（{指定席|していせき}）, {週末|しゅうまつ}. (漢字のことば)' },
+    { id: 'iro-e2-l6-25', number: 25, prompt: 'Os kanji 「{絵|え}／{空|そら}／{泳|およ}ぐ／{光|ひか}る／{到着|とうちゃく}する」 lêem-se:', choices: [{ n: 1, text: 'え (desenho/quadro) / そら (céu) / およぐ (nadar) / ひかる (brilhar) / とうちゃくする (chegar)' }, { n: 2, text: 'え / くう / すいぐ / こうる / とうちゃくする' }, { n: 3, text: 'かい / そら / およぐ / ひかる / いたるちゃく' }, { n: 4, text: 'え / そら / えいぐ / ひかる / とうつき' }], answer: 1, explanationPt: '{絵|え}, {空|そら}, {泳|およ}ぐ, {光|ひか}る (きらきら{光|ひか}る), {到着|とうちゃく}する. (漢字のことば)' },
+    { id: 'iro-e2-l6-26', number: 26, prompt: '聴解 06-05/06-06 (anúncios): que informação se extrai?', context: 'アナウンス：…{自由席|じゆうせき}は5{号車|ごうしゃ}〜7{号車|ごうしゃ}、グリーン{車|しゃ}は1{号車|ごうしゃ}…／…もうすぐ{岡山|おかやま}です。{岡山|おかやま}{駅|えき}で{乗|の}り{換|か}えます。', choices: [{ n: 1, text: 'Onde ficam os vagões (assento livre 5–7, vagão verde 1) e onde baldear (em Okayama).' }, { n: 2, text: 'O preço do bilhete.' }, { n: 3, text: 'O cardápio do vagão-restaurante.' }, { n: 4, text: 'O horário de funcionamento das lojas.' }], answer: 1, explanationPt: 'Anúncios dão nº de vagão ({自由席|じゆうせき}/グリーン{車|しゃ}) e onde {乗|の}り{換|か}える ({岡山|おかやま}{駅|えき}). (聴解 06-05/06-06)' },
+    { id: 'iro-e2-l6-27', number: 27, prompt: 'Vocabulário de viagem: 「{名物|めいぶつ}／1{泊|ぱく}／{見送|みおく}る／{頂上|ちょうじょう}／きらきら{光|ひか}る」 significam:', choices: [{ n: 1, text: 'especialidade local / uma diária (1 pernoite) / ver partir (despedir) / cume (topo) / brilhar/cintilar' }, { n: 2, text: 'lembrança / passagem / chegar / base / escurecer' }, { n: 3, text: 'comida / hotel / embarcar / encosta / apagar' }, { n: 4, text: 'mapa / bilhete / atrasar / vale / piscar' }], answer: 1, explanationPt: '{名物|めいぶつ} (especialidade), 〜{泊|はく} (pernoites), {見送|みおく}る (ver partir), {頂上|ちょうじょう} (cume), きらきら{光|ひか}る (cintilar). (Atividades 2/3/4)' },
+    { id: 'iro-e2-l6-28', number: 28, prompt: '会話 06-03 / 06-16〜18 (modelos): que estruturas aparecem ao falar de planos e de impressões de viagem?', context: 'Planos: {今日|きょう}は〜に{行|い}きました／{明日|あした}は〜に{行|い}くつもりです／〜も{食|た}べてみたいです. Impressões: 〜に{行|い}けて、よかったです／〜が{見|み}られなくて、{残念|ざんねん}でした.', choices: [{ n: 1, text: '«今日は〜／明日は〜つもり／〜てみたい» (planos) e «〜て、よかった／〜なくて、残念» (impressões).' }, { n: 2, text: 'só perguntar o preço do bilhete.' }, { n: 3, text: 'reservar um restaurante.' }, { n: 4, text: 'pedir a conta.' }], answer: 1, explanationPt: 'Modelos: planos (今日/明日, つもり, てみたい) e impressões (〜て、よかった / 〜なくて、残念). (会話 06-03 / 06-16〜18)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 6 (聴解スクリプト)
+const L6_SCRIPTS: Record<string, ScriptItem[]> = {
+  '06-01': [
+    {
+      label: '会話 — 旅行先で (06-01)',
+      setupJa: 'エドさんは{日光|にっこう}に{旅行|りょこう}に{来|き}ています。ゲストハウスで、{同|おな}じ{部屋|へや}になった{坂本|さかもと}さんと{話|はな}しています。',
+      setupPt: 'Ed está viajando em Nikko. Conversa com Sakamoto, que ficou no mesmo quarto da guest house.',
+      lines: [
+        { speaker: '坂本', ja: 'こんばんは。{外国|がいこく}の{方|かた}ですね？ {坂本|さかもと}といいます。', pt: 'Boa noite. Você é estrangeiro, né? Meu nome é Sakamoto.' },
+        { speaker: 'エド', ja: '{私|わたし}はエドです。フィリピンですが、{今|いま}は{日本|にほん}に{住|す}んでます。', pt: 'Eu sou o Ed. Sou das Filipinas, mas agora moro no Japão.' },
+        { speaker: '坂本', ja: '{日光|にっこう}は{旅行|りょこう}ですか？ {今日|きょう}は、どこに{行|い}きましたか？', pt: 'Está em Nikko a passeio? O que fez hoje?' },
+        { speaker: 'エド', ja: '{今日|きょう}は、{東照宮|とうしょうぐう}に{行|い}きました。{明日|あした}は、{中禅寺湖|ちゅうぜんじこ}に{行|い}くつもりです。', pt: 'Hoje fui ao Toshogu. Amanhã pretendo ir ao lago Chuzenji.' },
+        { speaker: '坂本', ja: 'ぼくも{今日|きょう}、{中禅寺湖|ちゅうぜんじこ}に{行|い}ってきましたよ。すごくきれいでした。', pt: 'Eu também fui ao lago Chuzenji hoje. Estava lindíssimo.' },
+        { speaker: '坂本', ja: 'おいしいものは、{何|なに}か{食|た}べましたか？', pt: 'Comeu alguma coisa gostosa?' },
+        { speaker: 'エド', ja: 'はい。そばを{食|た}べました。ゆばも{食|た}べてみたいです。', pt: 'Sim. Comi soba. Quero experimentar yuba também.' },
+        { speaker: '坂本', ja: 'あぁ、{日光|にっこう}の{名物|めいぶつ}ですからね。', pt: 'Ah, é a especialidade de Nikko.' },
+        { speaker: 'エド', ja: 'あと、{温泉|おんせん}に{入|はい}りたいんですけど、どこか{入|はい}ったらいいですか？', pt: 'E queria entrar num onsen; onde é bom ir?' },
+        { speaker: '坂本', ja: '{中禅寺湖|ちゅうぜんじこ}のホテルで、お{風呂|ふろ}に{入|はい}れるところがあると{思|おも}いますよ。ちょっと{調|しら}べてみましょうか。', pt: 'Acho que num hotel do lago Chuzenji dá para usar o banho. Quer que eu pesquise?' },
+        { speaker: 'エド', ja: 'はい！ ぜひお{願|ねが}いします。', pt: 'Sim! Por favor.' },
+      ],
+    },
+  ],
+  '06-07': [
+    {
+      label: '会話 — 遅れのアナウンス (06-07)',
+      setupJa: '{駅|えき}のホームで、{高知|こうち}{行|ゆ}きの{電車|でんしゃ}を{待|ま}っています。アナウンスがわからなくて、{周|まわ}りの{人|ひと}に{聞|き}いています。',
+      setupPt: 'Na plataforma, esperando o trem para Kochi. Não entendeu o anúncio e pergunta a alguém.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。{今|いま}のアナウンス、{何|なん}と{言|い}ってましたか？', pt: 'Com licença. O que dizia o anúncio agora?' },
+        { speaker: 'B', ja: 'えっと、{電車|でんしゃ}が30{分|ぷん}{遅|おく}れるそうです。', pt: 'Hum, dizem que o trem vai atrasar 30 minutos.' },
+        { speaker: 'A', ja: 'え、30{分|ぷん}も{遅|おく}れるんですか？', pt: 'Quê, 30 minutos de atraso?' },
+        { speaker: 'B', ja: 'そう。{信号|しんごう}{故障|こしょう}だって{言|い}ってますね。{信号|しんごう}が{壊|こわ}れたんです。', pt: 'É. Disseram que é falha de sinal. O sinal quebrou.' },
+        { speaker: 'A', ja: 'そうなんですね。', pt: 'Ah, entendi.' },
+      ],
+    },
+  ],
+  '06-08': [
+    {
+      label: '会話 — 乗り換えのアナウンス (06-08)',
+      setupJa: '{乗|の}っていた{電車|でんしゃ}が、{途中|とちゅう}の{駅|えき}で{止|と}まってしまいました。アナウンスがわからなかったので、{駅員|えきいん}に{質問|しつもん}しています。',
+      setupPt: 'O trem parou numa estação no meio do caminho. Não entendeu o anúncio e pergunta ao funcionário.',
+      lines: [
+        { speaker: '駅員', ja: '{人身|じんしん}{事故|じこ}の{影響|えいきょう}で、{京浜東北線|けいひんとうほくせん}は{運転|うんてん}を{見合|みあ}わせています。', pt: 'Por causa de um acidente com vítima, a linha Keihin-Tohoku está com o serviço suspenso.' },
+        { speaker: 'A', ja: 'すみません。さいたま{新都心|しんとしん}に{行|い}きたいんですけど、どうしたらいいですか？', pt: 'Com licença. Quero ir a Saitama-Shintoshin; o que faço?' },
+        { speaker: '駅員', ja: 'さいたま{新都心|しんとしん}なら、{埼京線|さいきょうせん}で{行|い}けますよ。8{番線|ばんせん}から{乗|の}って、{北与野|きたよの}{駅|えき}まで{行|い}ってください。', pt: 'Para Saitama-Shintoshin dá para ir pela linha Saikyo. Pegue na plataforma 8 e vá até a estação Kita-Yono.' },
+        { speaker: 'A', ja: '{北与野|きたよの}{駅|えき}ですね。そこから{歩|ある}くんですか？', pt: 'Estação Kita-Yono, certo. De lá vou a pé?' },
+        { speaker: '駅員', ja: 'はい。ご{利用|りよう}ください。', pt: 'Sim. Pode usar essa rota.' },
+      ],
+    },
+  ],
+  '06-10': [
+    {
+      label: '① 大阪 (06-10)',
+      setupJa: '{週末|しゅうまつ}、{近|ちか}くの{地域|ちいき}の{観光地|かんこうち}に{行|い}った4{人|にん}の{人|ひと}が、その{感想|かんそう}を{話|はな}しています。',
+      setupPt: 'Quatro pessoas falam das impressões de um passeio no fim de semana. ① Osaka.',
+      lines: [
+        { speaker: 'A', ja: '{大阪|おおさか}の{旅|たび}、どうでした？', pt: 'E a viagem a Osaka, como foi?' },
+        { speaker: 'B', ja: '{大阪城|おおさかじょう}とか{通天閣|つうてんかく}とか、いろいろなところに{行|い}けて、よかったです。たこ{焼|や}きも{食|た}べました。おいしかったです。', pt: 'Pude ir a vários lugares, como o Castelo de Osaka e o Tsutenkaku — que bom. Comi takoyaki também. Estava gostoso.' },
+        { speaker: 'B', ja: 'あと、あべのハルカスに{登|のぼ}りました。すごく{高|たか}くて、びっくりしました。', pt: 'E subi o Abeno Harukas. É altíssimo, fiquei impressionado.' },
+        { speaker: 'A', ja: 'そうなんですか。{私|わたし}、まだ{行|い}ったことないんですよ。', pt: 'É mesmo? Eu ainda não fui lá.' },
+      ],
+    },
+  ],
+  '06-11': [
+    {
+      label: '② 浄土ヶ浜 (06-11)',
+      setupPt: '② Jodogahama.',
+      lines: [
+        { speaker: 'A', ja: '{週末|しゅうまつ}は{何|なに}をしてたの？', pt: 'O que você fez no fim de semana?' },
+        { speaker: 'B', ja: '{友|とも}だちと{浄土|じょうど}ヶ{浜|はま}に{行|い}って{来|き}ました。{海|うみ}も{空|そら}もすてきでした。{海|うみ}で{泳|およ}げたし、{船|ふね}に{乗|の}れたし、{楽|たの}しかったです。', pt: 'Fui a Jodogahama com amigos. O mar e o céu estavam lindos. Pude nadar no mar e andar de barco — foi divertido.' },
+        { speaker: 'A', ja: 'よかったね。', pt: 'Que bom!' },
+        { speaker: 'B', ja: '{船|ふね}では、{海|うみ}にパンを{投|な}げるんですよ。', pt: 'No barco, a gente joga pão no mar.' },
+        { speaker: 'A', ja: 'ああ、ウミネコね。{楽|たの}しかった？', pt: 'Ah, para as gaivotas, né. Foi divertido?' },
+        { speaker: 'B', ja: 'ウミネコが{近|ちか}くに{来|き}たとき、ちょっとこわかったです。でも、おもしろかったです。', pt: 'Quando as gaivotas chegaram perto, foi meio assustador. Mas foi divertido.' },
+      ],
+    },
+  ],
+  '06-12': [
+    {
+      label: '③ 高尾山 (06-12)',
+      setupPt: '③ Monte Takao.',
+      lines: [
+        { speaker: 'A', ja: '{週末|しゅうまつ}、{高尾山|たかおさん}に{行|い}ったんです。', pt: 'No fim de semana fui ao Monte Takao.' },
+        { speaker: 'B', ja: 'へー、どうでしたか？', pt: 'Nossa, como foi?' },
+        { speaker: 'A', ja: 'ケーブルカーがすごく{混|こ}んでいて、{大変|たいへん}でした。だから、ケーブルカーはあきらめて、{歩|ある}いて{登|のぼ}りました。', pt: 'O funicular estava lotadíssimo, foi puxado. Por isso desisti dele e subi a pé.' },
+        { speaker: 'A', ja: '{疲|つか}れたけど、{景色|けしき}がきれいで、{気持|きも}ちよかったです。{頂上|ちょうじょう}で、{写真|しゃしん}をたくさん{撮|と}りました。', pt: 'Cansei, mas a paisagem era bonita, foi agradável. No topo, tirei muitas fotos.' },
+        { speaker: 'A', ja: 'あ、それから、{道|みち}を{歩|ある}いているとき、リスを{見|み}ました。', pt: 'Ah, e quando estava andando pelo caminho, vi um esquilo.' },
+        { speaker: 'B', ja: 'そうなんですか。{自然|しぜん}が{豊|ゆた}かなんですね。', pt: 'É mesmo? A natureza é farta, né.' },
+      ],
+    },
+  ],
+  '06-13': [
+    {
+      label: '④ ハウステンボス (06-13)',
+      setupPt: '④ Huis Ten Bosch.',
+      lines: [
+        { speaker: 'A', ja: '{連休|れんきゅう}はどうだった？ どこか{行|い}った？', pt: 'Como foi o feriado prolongado? Foi a algum lugar?' },
+        { speaker: 'B', ja: 'はい、{友|とも}だちと2{人|にん}でハウステンボスに{行|い}って{来|き}ました。オランダの{町並|まちな}みや{花畑|はなばたけ}がすてきでした。', pt: 'Sim, fui à Huis Ten Bosch com um amigo. As ruas estilo holandês e os campos de flores estavam lindos.' },
+        { speaker: 'B', ja: 'あと、{夜|よる}のイルミネーションを{見|み}ました。{滝|たき}がきらきら{光|ひか}って、すごくきれいでした。', pt: 'E vi a iluminação noturna. A cascata cintilava, estava lindíssima.' },
+        { speaker: 'A', ja: 'あー、イルミネーション、きれいだよね。', pt: 'Ah, iluminação é linda mesmo.' },
+        { speaker: 'B', ja: 'でも、ショーが{見|み}られなくて、{残念|ざんねん}でした。{時間|じかん}がなかったので。', pt: 'Mas foi pena não conseguir ver o show. Porque faltou tempo.' },
+        { speaker: 'A', ja: '{泊|と}まらなかったの？', pt: 'Não pernoitou?' },
+        { speaker: 'B', ja: 'はい。{日帰|ひがえ}りでした。', pt: 'Não. Foi bate e volta.' },
+      ],
+    },
+  ],
+}
+
+const lesson6: Section = {
+  id: 'lesson-6',
+  level: 'elementary2',
+  titleJa: '第6課 いろいろなところに行けて、よかったです',
+  titlePt: 'Lição 6 — Que bom que pude ir a vários lugares',
+  summaryPt:
+    'Vamos viajar · ler bilhetes de trem, avisos e painéis da estação (出発駅／到着時刻／運転見合わせ), falar de forma simples dos planos de viagem (明日は中禅寺湖に行くつもりです／ゆばも食べてみたいです), entender anúncios e perguntar quando não entender (何番線に行けばいいですか) e falar das impressões da viagem (いろいろなところに行けて、よかったです／ショーが見られなくて、残念でした).',
+  studyNotes: [
+    {
+      title: 'Tópico: Vamos viajar (旅行に行こう)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ler passagem de trem, avisos no vagão e painéis da estação para extrair informações.\n' +
+        '- Falar de forma simples sobre seus planos de viagem a alguém que conheceu na viagem.\n' +
+        '- Entender anúncios na estação/trem e perguntar a quem está perto quando não entender.\n' +
+        '- Falar de forma simples sobre suas impressões da viagem.\n' +
+        '- Escrever um post simples nas redes sobre a experiência e as impressões da viagem.\n\n' +
+        '💡 Pergunta de abertura: どんなところに{旅行|りょこう}に{行|い}ったことがありますか？ どうでしたか？ (onde você já viajou? como foi?).',
+    },
+    {
+      title: 'V-るつもりです / V-てみたいです — planos e vontades (➊)',
+      bodyPt:
+        '- **V(dicionário)+つもりです** = pretendo/planejo fazer: `{中禅寺湖|ちゅうぜんじこ}に{行|い}くつもりです`.\n' +
+        '- **V-てみたいです** = quero experimentar/tentar: `ゆばも{食|た}べてみたいです`, `{温泉|おんせん}に{入|はい}ってみたいです`.\n\n' +
+        '(文法ノート ❶)',
+    },
+    {
+      title: 'V-て / V-なくて + 感想 — reagir ao que aconteceu (➋)',
+      bodyPt:
+        'Liga-se o fato (forma テ / negativo なくて) à **impressão/reação**:\n\n' +
+        '- **V-て、よかった** (que bom que…): `いろいろなところに{行|い}けて、よかったです`, `{海|うみ}で{泳|およ}げて、{楽|たの}しかったです`.\n' +
+        '- **V-なくて、{残念|ざんねん}** (foi pena que não…): `ショーが{見|み}られなくて、{残念|ざんねん}でした`.\n\n' +
+        '💡 Muito usado com a forma potencial ({行|い}けて, {見|み}られなくて). (文法ノート ❷)',
+    },
+    {
+      title: '〜とき — quando (➌)',
+      bodyPt:
+        '**［V／ＡＤＪ + とき］** = quando / no momento em que:\n\n' +
+        '- `{道|みち}を{歩|ある}いているとき、リスを{見|み}ました` (quando andava pelo caminho, vi um esquilo).\n' +
+        '- `ウミネコが{近|ちか}くに{来|き}たとき、こわかったです`.\n\n' +
+        '(文法ノート ❸)',
+    },
+    {
+      title: 'Perguntar quando não se entende: V-ばいいですか',
+      bodyPt:
+        'Quando não entende um anúncio ou não sabe como proceder, pergunte a quem está por perto:\n\n' +
+        '- `さいたま{新都心|しんとしん}に{行|い}きたいんですけど、{何番線|なんばんせん}に{行|い}けばいいですか？`.\n' +
+        '- `{今|いま}のアナウンス、{何|なん}と{言|い}ってましたか？` (o que dizia o anúncio?).\n\n' +
+        '💡 V-ばいいですか pede a melhor forma de proceder.',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Bilhete/painel:** {出発駅|しゅっぱつえき}, {行|い}き{先|さき}, {出発日|しゅっぱつび}, {到着時刻|とうちゃくじこく}, {料金|りょうきん}, 〜{号車|ごうしゃ}, 〜{番線|ばんせん}, {運転|うんてん}{見合|みあ}わせ, {遅|おく}れ.\n\n' +
+        '**Trem:** {指定席|していせき}, {自由席|じゆうせき}, グリーン{車|しゃ}, 〜{行|ゆ}き, 〜{方面|ほうめん}, {発車|はっしゃ}／{到着|とうちゃく}, {乗|の}り{換|か}える, {見送|みおく}る, {信号|しんごう}{故障|こしょう}, {人身|じんしん}{事故|じこ}.\n\n' +
+        '**Viagem/impressões:** {名物|めいぶつ}, 〜{泊|はく}, {頂上|ちょうじょう}, {滝|たき}, きらきら{光|ひか}る, {感動|かんどう}する, {残念|ざんねん}（な）, {気持|きも}ちいい, {日帰|ひがえ}り.\n\n' +
+        '**Kanji da lição:** {運転|うんてん}, {事故|じこ}, {故障|こしょう}, {指定|してい}, {週末|しゅうまつ}, {絵|え}, {空|そら}, {泳|およ}ぐ, {光|ひか}る, {到着|とうちゃく}する.',
+    },
+  ],
+  groups: [lesson6Group],
+  audios: attachScripts(6, L6_SCRIPTS),
+}
+
+// ---- Lições 7-18 (estrutura por tópico; exercícios em construção) ------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -1478,13 +1688,7 @@ const sections: Section[] = [
   lesson4,
   // Tópico 3 — Vamos viajar (旅行に行こう)
   lesson5,
-  scaffold(6, 'Vamos viajar', 'いろいろなところに行けて、よかったです', 'Que bom que pude ir a vários lugares', [
-    'Ler passagem de trem, avisos no vagão e quadros da estação para extrair informações.',
-    'Falar de forma simples sobre seus planos de viagem a alguém que conheceu na viagem.',
-    'Entender anúncios na estação/trem e perguntar a quem está perto quando não entender.',
-    'Falar de forma simples sobre suas impressões da viagem.',
-    'Escrever um post simples nas redes sobre a experiência e impressões da viagem.',
-  ]),
+  lesson6,
   // Tópico 4 — Eventos da comunidade (地域のイベント)
   scaffold(7, 'Eventos da comunidade', '雨が降ったら、ホールでやります', 'Se chover, será no salão', [
     'Extrair as informações principais de avisos no mural do bairro ou na caixa de correio.',
