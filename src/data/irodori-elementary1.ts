@@ -3326,6 +3326,14 @@ const lesson15: Section = {
         '**Sintomas (Ativ. 1):** のど／お{腹|なか}が{痛|いた}い, {熱|ねつ}がある, せき／{鼻水|はなみず}が{出|で}る, {吐|は}き{気|け}がする, {食欲|しょくよく}がない, {目|め}がかゆい, {足|あし}をくじく, {頭|あたま}をぶつける; おととい, {転|ころ}ぶ, レントゲンを{撮|と}る, {花粉症|かふんしょう}. **Hospital (Ativ. 2):** {保険証|ほけんしょう}, {問診票|もんしんひょう}, {記入|きにゅう}する, {医者|いしゃ}, {検査|けんさ}する, インフルエンザ, A{型|がた}, {熱|ねつ}が{下|さ}がる, {診察券|しんさつけん}, {処方|しょほう}せん, {薬局|やっきょく}, お{大事|だいじ}に; お{持|も}ちですか／どうされましたか (educado). **Ficha (Ativ. 3):** ふりがな, {性別|せいべつ}, {病気|びょうき}にかかる, {現在|げんざい}, {女性|じょせい}, {妊娠|にんしん}する. **Remédios (Ativ. 4):** {熱|ねつ}を{下|さ}げる, せき／{鼻水|はなみず}を{抑|おさ}える, {痛|いた}み{止|ど}め, {食後|しょくご}, {眠|ねむ}い, {解熱剤|げねつざい}, {胃|い}を{守|まも}る, {間|あいだ}をあける. **Bula (Ativ. 5):** {用法|ようほう}, {用量|ようりょう}.\n\n' +
         '**Kanji da lição:** {熱|ねつ}, {薬|くすり}, {病気|びょうき}, {病院|びょういん}, {医者|いしゃ}, {住所|じゅうしょ}, 〜{才|さい}, {痛|いた}い, {眠|ねむ}い, {寝|ね}る, {記入|きにゅう}する.',
     },
+    {
+      title: '📌 TIPS — Ir ao hospital no Japão',
+      bodyPt:
+        '**{日本|にほん}の{病院|びょういん}に{行|い}く:** escolhe-se o {診療科|しんりょうか} (especialidade) conforme o sintoma. Pode-se ir a uma クリニック pequena ou a um {総合|そうごう}{病院|びょういん} (mas sem carta de encaminhamento da clínica, cobra-se taxa extra). **Fluxo:** ①{受付|うけつけ} → ②{問診票|もんしんひょう} → ③{待合室|まちあいしつ} (sala de espera) → ④{診察|しんさつ} → ⑤{会計|かいけい} → ⑥{処方|しょほう}せん → ⑦levar à {薬局|やっきょく} e pegar o {薬|くすり} → ⑧pagar na farmácia. A farmácia costuma ser separada do hospital.\n\n' +
+        '**Emergência:** fora do horário/feriado, procurar o {夜間|やかん}/{救急|きゅうきゅう}{窓口|まどぐち}. Em caso grave, chamar ambulância — número **119** (gratuito); pedir: 「{救急車|きゅうきゅうしゃ}を{呼|よ}んでください」. O site do **JNTO** (jnto.go.jp) lista hospitais que atendem em outros idiomas.\n\n' +
+        '**{症状|しょうじょう}と{診療科|しんりょうか}:** {発熱|はつねつ}/のど/せき/{鼻水|はなみず}/{頭痛|ずつう}/{腹痛|ふくつう} → {内科|ないか}; {骨折|こっせつ}/{打撲|だぼく}/ねんざ → {整形外科|せいけいげか}; のど・{鼻|はな}・{耳|みみ} → {耳鼻科|じびか}; じんましん/かぶれ → {皮膚科|ひふか}; {目|め} → {眼科|がんか}; {心|こころ}の{病気|びょうき} → {心療内科|しんりょうないか}; {女性|じょせい}の{病気|びょうき}/{妊娠|にんしん} → {婦人科|ふじんか}・{産婦人科|さんふじんか}; {虫歯|むしば}/{歯|は} → {歯科|しか}.\n\n' +
+        '**{花粉症|かふんしょう}:** alergia ao pólen (スギ etc.) — {目|め}がかゆい, くしゃみ, {鼻水|はなみず}, {鼻|はな}づまり. No Japão, muito pólen de cedro de **março a maio**. Muitos desenvolvem na fase adulta, e alguns estrangeiros têm pela 1ª vez ao chegar ao Japão. Trata-se com remédio do médico ou itens da {薬局|やっきょく}/ドラッグストア (máscara, colírio etc.).',
+    },
   ],
   groups: [lesson15Group],
   audios: attachScripts(15, L15_SCRIPTS),
