@@ -593,19 +593,340 @@ const lesson2: Section = {
   audios: attachScripts(2, L2_SCRIPTS),
 }
 
-// ---- Lições 3-18 (estrutura por tópico; exercícios em construção) ------------
+// ---- Lição 3: アレルギーがあるので、食べられないんです (tópico レストランで) ------
+const lesson3Group: ExerciseGroup = {
+  id: 'iro-e2-l3',
+  title: 'アレルギーがあるので、食べられないんです',
+  subtitlePt: 'Ler um cardápio · dizer o que não pode comer e por quê · pedir no restaurante · reservar por telefone',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l3-1', number: 1, prompt: '「{今日|きょう}は{自転車|じてんしゃ}で{来|き}たので、{飲|の}めないんです」 — 「S1 ので、S2」 serve para:', choices: [{ n: 1, text: 'dar a razão/motivo de algo (vim de bicicleta, por isso não posso beber)' }, { n: 2, text: 'marcar condição (se…)' }, { n: 3, text: 'comparar dois lugares' }, { n: 4, text: 'pedir permissão' }], answer: 1, translationPt: 'Como vim de bicicleta hoje, não posso beber.', explanationPt: '〜ので liga-se à forma comum (来た→{来|き}たので) e a なので com substantivo/ナA (ベジタリアンなので). É um jeito mais educado/suave de dar razão que から. (文法ノート ❶)' },
+    { id: 'iro-e2-l3-2', number: 2, prompt: '「{食|た}べられないんです」 / 「{飲|の}めないんです」 — o 「〜んです」 no fim serve para:', choices: [{ n: 1, text: 'explicar a situação/circunstância (dar o contexto do que se diz)' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'fazer pergunta de sim/não' }, { n: 4, text: 'indicar futuro' }], answer: 1, explanationPt: '〜んです adiciona tom de explicação. {食|た}べられない (potencial negativo de {食|た}べる) + んです = é que não posso comer. Combina com 〜ので: アレルギーがあるので、{食|た}べられないんです. (Atividade 2)' },
+    { id: 'iro-e2-l3-3', number: 3, prompt: '「おすし、わさび、{入|はい}ってますよね」 — a parte 「〜よね」 serve para:', choices: [{ n: 1, text: 'confirmar com o outro algo que você acha que é o caso (tem wasabi, né?)' }, { n: 2, text: 'dar uma informação totalmente nova' }, { n: 3, text: 'pedir desculpa' }, { n: 4, text: 'recusar' }], answer: 1, explanationPt: '〜よね confirma algo que você supõe ser verdade. Compare: 〜ますか？ (não sei) × 〜ますよね？ (acho que sim, confirmo). (文法ノート ❷)' },
+    { id: 'iro-e2-l3-4', number: 4, prompt: 'No restaurante: 「テーブルと{座敷|ざしき}がございますが…」 「テーブルでお{願|ねが}いします」 — o 「N で」 da resposta indica:', choices: [{ n: 1, text: 'a opção escolhida (escolho a mesa / fico com a mesa)' }, { n: 2, text: 'o local de onde se vem' }, { n: 3, text: 'o meio de transporte' }, { n: 4, text: 'a causa' }], answer: 1, explanationPt: '「N で」 comunica a escolha: テーブルで（お{願|ねが}いします）, それで, {普通|ふつう}で（だいじょうぶです）. (文法ノート ❸)' },
+    { id: 'iro-e2-l3-5', number: 5, prompt: '「{人気|にんき}があるのは、お{刺身|さしみ}{定食|ていしょく}です」 — o padrão 「〜のは、N です」 serve para:', choices: [{ n: 1, text: 'destacar/apresentar algo como informação nova (o que faz sucesso é o teishoku de sashimi)' }, { n: 2, text: 'fazer pergunta' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'negar' }], answer: 1, explanationPt: '［V-る／ＡＤＪ］のは、N です destaca N. Usado para recomendar: {人気|にんき}があるのは…／おすすめは…. (文法ノート ❹)' },
+    { id: 'iro-e2-l3-6', number: 6, prompt: 'No cardápio do {定食屋|ていしょくや}: 「{定食|ていしょく}／{日替|ひが}わり／{大盛|おおも}り／おかわり{自由|じゆう}／{平日|へいじつ}のみ」 significam:', choices: [{ n: 1, text: 'prato feito / do dia / porção grande / refil à vontade / só em dias úteis' }, { n: 2, text: 'sobremesa / picante / pequeno / sem refil / fim de semana' }, { n: 3, text: 'bebida / quente / médio / grátis / feriado' }, { n: 4, text: 'entrada / doce / grande / pago / todo dia' }], answer: 1, explanationPt: '{定食|ていしょく} (prato feito, com ごはん+みそ汁), {日替|ひが}わり (que muda a cada dia), {大盛|おおも}り (porção grande), おかわり{自由|じゆう} (refil livre), {平日|へいじつ}のみ (só dias úteis). (Atividade 1 · メニュー)' },
+    { id: 'iro-e2-l3-7', number: 7, prompt: '🧮 「からあげ{定食|ていしょく}（¥580）のご{飯|はん}を{大盛|おおも}り（+¥50）にして、ホットコーヒー（¥150）をつける」 — quanto fica?', choices: [{ n: 1, text: '¥780' }, { n: 2, text: '¥730' }, { n: 3, text: '¥580' }, { n: 4, text: '¥630' }], answer: 1, explanationPt: '580 + 50 (大盛り) + 150 (コーヒー) = ¥780. (Atividade 1 · cálculo de cardápio)' },
+    { id: 'iro-e2-l3-8', number: 8, prompt: 'Que alimento/material é este? (alergias e restrições)', image: `${IMG}/Z_03_2_01_niku.png`, imageAlt: 'porco, vaca e cortes de carne', choices: [{ n: 1, text: '{肉|にく} ({豚肉|ぶたにく}・{牛肉|ぎゅうにく}) — carne (de porco / de vaca)' }, { n: 2, text: '{魚|さかな} — peixe' }, { n: 3, text: '{卵|たまご} — ovo' }, { n: 4, text: 'ナッツ — nozes' }], answer: 1, explanationPt: '{肉|にく} = carne; {豚肉|ぶたにく} (porco), {牛肉|ぎゅうにく} (vaca). (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-9', number: 9, prompt: 'Que alimento é este?', image: `${IMG}/Z_03_2_02_sakana.png`, imageAlt: 'peixe', choices: [{ n: 1, text: '{魚|さかな} — peixe' }, { n: 2, text: '{肉|にく} — carne' }, { n: 3, text: 'エビ・カニ — camarão/caranguejo' }, { n: 4, text: '{卵|たまご} — ovo' }], answer: 1, explanationPt: '{魚|さかな} = peixe (生の{魚|さかな} = peixe cru). (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-10', number: 10, prompt: 'Que alimento é este? (causa comum de alergia)', image: `${IMG}/Z_03_2_03_ebikani.png`, imageAlt: 'camarão e caranguejo', choices: [{ n: 1, text: 'エビ・カニ — camarão e caranguejo' }, { n: 2, text: '{魚|さかな} — peixe' }, { n: 3, text: '{肉|にく} — carne' }, { n: 4, text: 'ナッツ — nozes' }], answer: 1, explanationPt: 'エビ (camarão) ・カニ (caranguejo) — crustáceos, alérgeno comum. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-11', number: 11, prompt: 'Que alimento é este?', image: `${IMG}/Z_03_2_04_tamago.png`, imageAlt: 'ovos', choices: [{ n: 1, text: '{卵|たまご} — ovo' }, { n: 2, text: '{牛乳|ぎゅうにゅう} — leite' }, { n: 3, text: 'ナッツ — nozes' }, { n: 4, text: 'ねぎ — cebolinha' }], answer: 1, explanationPt: '{卵|たまご} = ovo. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-12', number: 12, prompt: 'Que alimento é este? (alérgeno comum)', image: `${IMG}/Z_03_2_05_nattsu.png`, imageAlt: 'amêndoa, castanha de caju e amendoim', choices: [{ n: 1, text: 'ナッツ — nozes / castanhas' }, { n: 2, text: '{卵|たまご} — ovo' }, { n: 3, text: 'わさび — wasabi' }, { n: 4, text: 'ねぎ — cebolinha' }], answer: 1, explanationPt: 'ナッツ = nozes/castanhas (amêndoa, caju, amendoim). (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-13', number: 13, prompt: 'Que condimento japonês é este (raiz ralada, verde, picante)?', image: `${IMG}/Z_03_2_06_wasabi.png`, imageAlt: 'raiz de wasabi e pasta ralada', choices: [{ n: 1, text: 'わさび — wasabi (raiz-forte japonesa)' }, { n: 2, text: 'ねぎ — cebolinha' }, { n: 3, text: 'みりん — mirin' }, { n: 4, text: 'お{酒|さけ} — bebida alcoólica' }], answer: 1, explanationPt: 'わさび = wasabi. Comum no sushi; pede-se «わさび{抜|ぬ}きで» (sem wasabi) para tirar. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-14', number: 14, prompt: 'Que bebida/material é este?', image: `${IMG}/Z_03_2_09_gyuunyuu.png`, imageAlt: 'caixa de leite e copo de leite', choices: [{ n: 1, text: '{牛乳|ぎゅうにゅう} — leite' }, { n: 2, text: 'お{酒|さけ} — bebida alcoólica' }, { n: 3, text: 'コーヒー — café' }, { n: 4, text: '{卵|たまご} — ovo' }], answer: 1, explanationPt: '{牛乳|ぎゅうにゅう} = leite. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-15', number: 15, prompt: 'Outros itens da lista: 「ねぎ／みりん／お{酒|さけ}／コーヒー」 significam:', choices: [{ n: 1, text: 'cebolinha / mirin (saquê doce de cozinha) / bebida alcoólica / café' }, { n: 2, text: 'arroz / sal / água / chá' }, { n: 3, text: 'cenoura / açúcar / suco / leite' }, { n: 4, text: 'alho / vinagre / refrigerante / sopa' }], answer: 1, explanationPt: 'ねぎ (cebolinha), みりん (mirin, condimento), お{酒|さけ} (álcool), コーヒー (café). Itens que alguém pode não poder consumir. (Atividade 2 · ことばの準備)' },
+    { id: 'iro-e2-l3-16', number: 16, prompt: 'Razões para não poder comer/beber: 「{宗教上|しゅうきょうじょう}の{理由|りゆう}／{苦手|にがて}／アレルギー／ベジタリアン」 significam:', choices: [{ n: 1, text: 'motivo religioso / não curtir (ter aversão) / alergia / vegetariano' }, { n: 2, text: 'falta de dinheiro / pressa / dieta / jejum' }, { n: 3, text: 'cansaço / preguiça / medo / vergonha' }, { n: 4, text: 'feriado / festa / viagem / trabalho' }], answer: 1, explanationPt: '{宗教上|しゅうきょうじょう}の{理由|りゆう} (motivo religioso), {苦手|にがて} (não gostar/aversão), アレルギー (alergia), ベジタリアン (vegetariano). (Atividade 2)' },
+    { id: 'iro-e2-l3-17', number: 17, prompt: '「わさび{抜|ぬ}きでお{願|ねが}いします」 — 「〜{抜|ぬ}き」 significa:', choices: [{ n: 1, text: 'sem ~ / tirando o ~ (sem wasabi, por favor)' }, { n: 2, text: 'com bastante ~' }, { n: 3, text: 'ao lado de ~' }, { n: 4, text: 'em vez de ~' }], answer: 1, explanationPt: '〜{抜|ぬ}き = sem (retirando) tal ingrediente. わさび{抜|ぬ}きで = sem wasabi. (Atividade 2)' },
+    { id: 'iro-e2-l3-18', number: 18, prompt: 'Dentro do restaurante (店の中): 「カウンター／{座敷|ざしき}／テーブル／{禁煙|きんえん}／（お）{会計|かいけい}」 significam:', choices: [{ n: 1, text: 'balcão / sala de tatame / mesa / proibido fumar / a conta (caixa)' }, { n: 2, text: 'cozinha / banheiro / entrada / saída / estoque' }, { n: 3, text: 'cardápio / garçom / cliente / gorjeta / reserva' }, { n: 4, text: 'prato / copo / talher / guardanapo / toalha' }], answer: 1, explanationPt: 'カウンター (balcão), {座敷|ざしき} (sala de tatame), テーブル (mesa), {禁煙|きんえん} (proibido fumar; {店内|てんない}{禁煙|きんえん} = não-fumante no estabelecimento), （お）{会計|かいけい}／レジ (conta/caixa). (Atividade 3 · ことばの準備)' },
+    { id: 'iro-e2-l3-19', number: 19, prompt: 'Expressões educadas do funcionário (店の人の丁寧な表現) — qual conjunto está correto?', context: 'Atendimento ao cliente num restaurante.', image: `${IMG}/Z_03_3_04_rejide.png`, imageAlt: 'cliente pagando no caixa do restaurante', choices: [{ n: 1, text: 'よろしいですか？(＝いいですか) ／ 〜がございます(＝あります) ／ お{決|き}まりですか？(＝{決|き}まりましたか) ／ いかがですか？(＝どうですか) ／ かしこまりました(＝わかりました)' }, { n: 2, text: 'são todas formas casuais entre amigos' }, { n: 3, text: 'significam todas “não temos”' }, { n: 4, text: 'são saudações de despedida' }], answer: 1, explanationPt: 'Keigo de atendimento: よろしいですか／ございます／お{決|き}まりですか／いかがですか／かしこまりました／お{客|きゃく}{様|さま}／〜{名様|めいさま}／どうなさいますか. (Atividade 3 · 会話)' },
+    { id: 'iro-e2-l3-20', number: 20, prompt: 'Ao pedir: 「{大盛|おおも}り／{少|すく}なめ／{普通|ふつう}」 (quantidade de arroz) e 「{別々|べつべつ}／ごいっしょ」 (conta) significam:', choices: [{ n: 1, text: 'porção grande / menor / normal — e conta separada / junta' }, { n: 2, text: 'quente / gelado / morno — e à vista / a prazo' }, { n: 3, text: 'doce / salgado / azedo — e aqui / para viagem' }, { n: 4, text: 'cru / cozido / frito — e com / sem gelo' }], answer: 1, explanationPt: 'ご{飯|はん}の{量|りょう}: {大盛|おおも}り (grande), {少|すく}なめ (menos), {普通|ふつう} (normal). {会計|かいけい}: {別々|べつべつ} (separado), ごいっしょ (junto). (Atividade 3)' },
+    { id: 'iro-e2-l3-21', number: 21, prompt: 'Ao reservar por telefone, o funcionário pergunta tipicamente:', choices: [{ n: 1, text: 'お{日|ひ}にち (data), {何名様|なんめいさま} (quantas pessoas), お{時間|じかん} (horário), お{名前|なまえ}とお{電話番号|でんわばんごう} (nome e telefone)' }, { n: 2, text: 'idade, profissão, endereço e salário' }, { n: 3, text: 'comida favorita e hobby' }, { n: 4, text: 'meio de transporte e clima' }], answer: 1, explanationPt: 'Reserva: お{日|ひ}にち→{何名様|なんめいさま}→お{時間|じかん}→お{名前|なまえ}・お{電話番号|でんわばんごう}→{確認|かくにん} (おまちがいないでしょうか). (Atividade 4 · 予約)' },
+    { id: 'iro-e2-l3-22', number: 22, prompt: '「{予約|よやく}したいんですけど…」 — começar assim ao telefone serve para:', choices: [{ n: 1, text: 'introduzir educadamente o pedido (eu gostaria de fazer uma reserva…)' }, { n: 2, text: 'cancelar uma reserva' }, { n: 3, text: 'reclamar da comida' }, { n: 4, text: 'pedir a conta' }], answer: 1, explanationPt: 'V-たいんですけど… = introduz o pedido de forma suave. 〜けど deixa a frase em aberto (educado). (Atividade 4)' },
+    { id: 'iro-e2-l3-23', number: 23, prompt: 'Lendo um cupom (クーポン): 「{半額|はんがく}／10%OFF／{有効期限|ゆうこうきげん}」 significam:', choices: [{ n: 1, text: 'metade do preço / 10% de desconto / data de validade' }, { n: 2, text: 'dobro do preço / 10% de gorjeta / horário de funcionamento' }, { n: 3, text: 'grátis / 10 ienes / endereço' }, { n: 4, text: 'reserva / entrega / cardápio' }], answer: 1, explanationPt: '{半額|はんがく} (metade do preço), 10%OFF (10% de desconto), {有効期限|ゆうこうきげん} (validade — até quando usar). (Atividade 5 · クーポン)' },
+    { id: 'iro-e2-l3-24', number: 24, prompt: '聴解 03-03: por que a pessoa não pode comer carne nem peixe?', context: 'Ｂ：{私|わたし}、ベジタリアンなので、{肉|にく}とか{魚|さかな}はだめなんです。（Ａ：じゃあ、{豆腐|とうふ}{料理|りょうり}はだいじょうぶ？ Ｂ：はい。）', choices: [{ n: 1, text: 'É vegetariana — não come carne nem peixe (mas prato de tofu, tudo bem).' }, { n: 2, text: 'Tem alergia a frutos do mar.' }, { n: 3, text: 'Veio de bicicleta.' }, { n: 4, text: 'É por motivo religioso.' }], answer: 1, explanationPt: 'ベジタリアンなので (なので = razão, com substantivo), {肉|にく}とか{魚|さかな}はだめ. {豆腐|とうふ}{料理|りょうり} (prato de tofu) tudo bem. (聴解 03-03 · 文法 ❶)' },
+    { id: 'iro-e2-l3-25', number: 25, prompt: '聴解 03-04: por que a pessoa não pode beber (álcool/cerveja)?', context: 'Ｂ：あの、{今日|きょう}は{自転車|じてんしゃ}で{来|き}たので、{飲|の}めないんです。…じゃあ、ウーロン{茶|ちゃ}、お{願|ねが}いします。', choices: [{ n: 1, text: 'Veio de bicicleta hoje (não pode beber álcool); pede chá oolong.' }, { n: 2, text: 'É vegetariana.' }, { n: 3, text: 'Tem alergia a ovo.' }, { n: 4, text: 'É menor de idade.' }], answer: 1, explanationPt: '{自転車|じてんしゃ}で{来|き}たので、{飲|の}めない (não pode beber álcool — dirigir bicleta). Pede ソフトドリンク (ウーロン{茶|ちゃ}). (聴解 03-04 · 文法 ❶)' },
+    { id: 'iro-e2-l3-26', number: 26, prompt: '聴解 03-05: por que a pessoa não come camarão (エビ)?', context: 'Ｂ：あ……はい。アレルギーがあるので、{食|た}べられないんです。よかったら、どうぞ。', choices: [{ n: 1, text: 'Tem alergia, então não pode comer (oferece ao outro).' }, { n: 2, text: 'Não gosta do sabor.' }, { n: 3, text: 'É vegetariana.' }, { n: 4, text: 'Já está satisfeita.' }], answer: 1, explanationPt: 'アレルギーがあるので、{食|た}べられない. よかったら、どうぞ = se quiser, fique à vontade. (聴解 03-05 · 文法 ❶)' },
+    { id: 'iro-e2-l3-27', number: 27, prompt: '聴解 03-06: o que a pessoa pede em relação ao wasabi do sushi?', context: 'Ａ：すみません、おすし、わさび、{入|はい}ってますよね。{苦手|にがて}なんです。Ｂ：あ、わさび{抜|ぬ}きもできますよ。', choices: [{ n: 1, text: 'Não gosta de wasabi (苦手) e pede sem wasabi (わさび抜きで).' }, { n: 2, text: 'Quer mais wasabi.' }, { n: 3, text: 'Tem alergia a peixe.' }, { n: 4, text: 'Quer trocar de prato.' }], answer: 1, explanationPt: '{入|はい}ってますよね (confirma, 〜よね), {苦手|にがて}なんです (não curto), わさび{抜|ぬ}きで (sem wasabi). (聴解 03-06 · 文法 ❷)' },
+    { id: 'iro-e2-l3-28', number: 28, prompt: '聴解 03-07: por que a pessoa não pode comer o porco do okonomiyaki?', context: 'Ａ：あの、お{好|この}み{焼|や}きに{豚肉|ぶたにく}、{入|はい}ってますか？ …{宗教上|しゅうきょうじょう}の{理由|りゆう}で{食|た}べられないので、{入|い}れないでください。', choices: [{ n: 1, text: 'Por motivo religioso não pode comer; pede para não colocar (入れないでください).' }, { n: 2, text: 'É alérgica a porco.' }, { n: 3, text: 'É vegetariana.' }, { n: 4, text: 'Não gosta de okonomiyaki.' }], answer: 1, explanationPt: '{宗教上|しゅうきょうじょう}の{理由|りゆう}で{食|た}べられないので、{入|い}れないでください (não coloque, por favor). (聴解 03-07 · 文法 ❶)' },
+    { id: 'iro-e2-l3-29', number: 29, prompt: '会話 03-14 (pedir no restaurante): o que o funcionário pergunta e o que Ishii pede de início?', context: '店員：{何名様|なんめいさま}ですか？…{当店|とうてん}、{全席|ぜんせき}{禁煙|きんえん}ですが…／ご{注文|ちゅうもん}、お{決|き}まりですか？ 石井：おすすめは{何|なん}ですか？', choices: [{ n: 1, text: 'Pergunta nº de pessoas e avisa que é tudo não-fumante; Ishii pergunta a recomendação e pede o teishoku de sashimi (人気がある).' }, { n: 2, text: 'Pergunta o endereço; Ishii pede a conta.' }, { n: 3, text: 'Pergunta a reserva; Ishii vai embora.' }, { n: 4, text: 'Pergunta a sobremesa; Ishii pede só água.' }], answer: 1, explanationPt: '{何名様|なんめいさま}, {全席|ぜんせき}{禁煙|きんえん}, テーブル席; おすすめ→{人気|にんき}があるのはお{刺身|さしみ}{定食|ていしょく} (文法 ❹), ご{飯|はん}{大盛|おおも}り. (聴解 03-14)' },
+    { id: 'iro-e2-l3-30', number: 30, prompt: '会話 03-14: o que Charles (シャール) faz, já que não gosta de peixe cru?', context: 'シャール：{私|わたし}はこの{魚|さかな}が{苦手|にがて}なんですが…ほかに{何|なに}がありますか？ 店員：フライなどはいかがですか？…シャール：じゃあ、それを。', choices: [{ n: 1, text: 'Diz que não curte o peixe e pede a sugestão alternativa (定食 de frito misto), arroz normal e café gelado.' }, { n: 2, text: 'Pede o mesmo que Ishii.' }, { n: 3, text: 'Não pede nada.' }, { n: 4, text: 'Pede uma reserva.' }], answer: 1, explanationPt: 'この{魚|さかな}が{苦手|にがて}なんですが…ほかに{何|なに}が? → ミックスフライ{定食|ていしょく}, ご{飯|はん}{普通|ふつう}, アイスコーヒー. (聴解 03-14)' },
+    { id: 'iro-e2-l3-31', number: 31, prompt: '会話 03-14 (会計): como eles dividem a conta e o que recebem do funcionário?', context: '店員：ごいっしょでよろしいですか？ シャール：{別々|べつべつ}でお{願|ねが}いします。…こちら、クーポンです。{次回|じかい}、お{使|つか}いください。', choices: [{ n: 1, text: 'Pagam separadamente (別々); recebem um cupom para usar na próxima vez.' }, { n: 2, text: 'Pagam juntos; recebem um brinde.' }, { n: 3, text: 'Não pagam.' }, { n: 4, text: 'Pedem entrega.' }], answer: 1, explanationPt: '{別々|べつべつ}でお{願|ねが}いします (separado). お{刺身|さしみ}{定食|ていしょく}800{円|えん}・ミックスフライ{定食|ていしょく}650{円|えん}. クーポンを{次回|じかい}{使|つか}う. (聴解 03-14)' },
+    { id: 'iro-e2-l3-32', number: 32, prompt: '会話 03-19 (reserva por telefone): que dados Nat informa?', context: '店員：お{日|ひ}にちは？／{何名様|なんめいさま}ですか？／お{名前|なまえ}とお{電話番号|でんわばんごう}を… ナット：{来週|らいしゅう}の{水曜日|すいようび}の{夜|よる}／6{人|にん}／7{時|じ}／ナット／090-1234-5678', choices: [{ n: 1, text: 'Quarta-feira da semana que vem à noite (dia 9), 6 pessoas, 19h, nome Nat, telefone 090-1234-5678.' }, { n: 2, text: 'Hoje de manhã, 2 pessoas, sem telefone.' }, { n: 3, text: 'Sábado, 10 pessoas, almoço.' }, { n: 4, text: 'Não conseguiu reservar.' }], answer: 1, explanationPt: 'Reserva: {来週|らいしゅう}の{水曜日|すいようび} (9日) の{夜|よる} 19{時|じ}, 6{名様|めいさま}, ナット, 090-1234-5678. Confirma com おまちがいないでしょうか. (聴解 03-19)' },
+    { id: 'iro-e2-l3-33', number: 33, prompt: '「かしこまりました」 (resposta do funcionário) significa:', choices: [{ n: 1, text: 'entendido / pois não (forma muito educada de わかりました)' }, { n: 2, text: 'não temos isso' }, { n: 3, text: 'está fechado' }, { n: 4, text: 'pode pagar depois' }], answer: 1, explanationPt: 'かしこまりました = forma respeitosa de わかりました, usada por atendentes ao aceitar um pedido. (Atividade 2/3)' },
+    { id: 'iro-e2-l3-34', number: 34, prompt: 'Os kanji 「{注文|ちゅうもん}／{会計|かいけい}／{予約|よやく}／{電話番号|でんわばんごう}」 lêem-se:', choices: [{ n: 1, text: 'ちゅうもん (pedido) / かいけい (conta) / よやく (reserva) / でんわばんごう (telefone)' }, { n: 2, text: 'ちゅうぶん / かいけい / よやく / でんわばんごう' }, { n: 3, text: 'ちゅうもん / あいけい / よあく / でんわごう' }, { n: 4, text: 'すいもん / かいさん / ようやく / でんき' }], answer: 1, explanationPt: '{注文|ちゅうもん} pedido, {会計|かいけい} conta, {予約|よやく} reserva, {電話番号|でんわばんごう} número de telefone. (漢字のことば)' },
+    { id: 'iro-e2-l3-35', number: 35, prompt: 'Os kanji 「ご{飯|はん}／{牛乳|ぎゅうにゅう}／{生|なま}／{禁煙|きんえん}／{自由|じゆう}／〜{様|さま}」 lêem-se:', choices: [{ n: 1, text: 'ごはん (arroz/refeição) / ぎゅうにゅう (leite) / なま (cru) / きんえん (proibido fumar) / じゆう (livre) / さま (sufixo honorífico)' }, { n: 2, text: 'ごはん / ぎゅうにゅう / せい / きんえん / じゆう / よう' }, { n: 3, text: 'ごめし / うしちち / なま / きんけむり / じゆう / さま' }, { n: 4, text: 'ごはん / ぎゅうにく / いき / きんえん / みずから / さま' }], answer: 1, explanationPt: 'ご{飯|はん}, {牛乳|ぎゅうにゅう}, {生|なま} (cru), {禁煙|きんえん}, {自由|じゆう} (おかわり{自由|じゆう}), 〜{様|さま} (お{客|きゃく}{様|さま}). (漢字のことば)' },
+    { id: 'iro-e2-l3-36', number: 36, prompt: '会話 03-09/03-11 (modelos «dizer o que não pode comer»): qual estrutura aparece?', context: '①「{苦手|にがて}なんです／アレルギーがあるので、{食|た}べられないんです」 ②「{宗教上|しゅうきょうじょう}の{理由|りゆう}で{食|た}べられないので、{入|い}れないでください／わさび{抜|ぬ}きでお{願|ねが}いします」', choices: [{ n: 1, text: '«razão (ので/んです) + não posso comer» e, ao pedido, «〜抜きで／入れないでください».' }, { n: 2, text: 'só perguntar o preço.' }, { n: 3, text: 'pedir a conta separada.' }, { n: 4, text: 'reservar mesa.' }], answer: 1, explanationPt: 'Modelos: dizer o motivo + {食|た}べられないんです; ao garçom, pedir わさび{抜|ぬ}きで / {入|い}れないでください. (会話 03-09〜03-12)' },
+    { id: 'iro-e2-l3-37', number: 37, prompt: '会話 03-16〜03-18 (modelos no restaurante): que três cenas eles cobrem?', context: '① {店|みせ}に{入|はい}る ② {注文|ちゅうもん}する ③ {会計|かいけい}する', choices: [{ n: 1, text: 'entrar no restaurante (nº de pessoas, mesa/tatame), pedir (recomendação, quantidade de arroz, bebida) e pagar (junto/separado).' }, { n: 2, text: 'só fazer reserva por telefone.' }, { n: 3, text: 'reclamar e ir embora.' }, { n: 4, text: 'pedir entrega em casa.' }], answer: 1, explanationPt: 'Modelos: ①{入|はい}る (何名様/テーブル) ②{注文|ちゅうもん} (おすすめ/{大盛|おおも}り/飲み物) ③{会計|かいけい} (ごいっしょ/{別々|べつべつ}). (会話 03-16〜03-18)' },
+    { id: 'iro-e2-l3-38', number: 38, prompt: '会話 03-20 (modelo de reserva): qual é a ordem das informações?', context: '① 日にち ② 人数 ③ 時間 ④ 連絡先（名前・電話番号）⑤ 確認', choices: [{ n: 1, text: 'data → nº de pessoas → horário → contato (nome e telefone) → confirmação.' }, { n: 2, text: 'preço → pagamento → entrega.' }, { n: 3, text: 'cardápio → bebida → sobremesa.' }, { n: 4, text: 'endereço → idade → profissão.' }], answer: 1, explanationPt: 'Reserva por telefone: お{日|ひ}にち→{何名様|なんめいさま}→お{時間|じかん}→お{名前|なまえ}・お{電話番号|でんわばんごう}→{確認|かくにん}. (会話 03-20)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 3 (聴解スクリプト)
+const L3_SCRIPTS: Record<string, ScriptItem[]> = {
+  '03-03': [
+    {
+      label: '① わさび抜きでお願いします — ベジタリアン (03-03)',
+      setupJa: 'レストランで、{食|た}べ{物|もの}の{話|はなし}をしています。それぞれ、{食|た}べられない{理由|りゆう}は{何|なに}でしょうか。',
+      setupPt: 'Num restaurante, falam de comida. Por que cada um não pode comer? ① vegetariana.',
+      lines: [
+        { speaker: 'A', ja: '{何|なに}{食|た}べる？ ここのお{刺身|さしみ}、おいしいよ。', pt: 'O que você vai comer? O sashimi daqui é gostoso.' },
+        { speaker: 'B', ja: '{私|わたし}、ベジタリアンなので、{肉|にく}とか{魚|さかな}はだめなんです。', pt: 'Eu sou vegetariana, então carne e peixe não dá.' },
+        { speaker: 'A', ja: 'じゃあ、{豆腐|とうふ}{料理|りょうり}はだいじょうぶ？', pt: 'Então, prato de tofu pode?' },
+        { speaker: 'B', ja: 'はい、だいじょうぶです。', pt: 'Sim, pode.' },
+      ],
+    },
+  ],
+  '03-04': [
+    {
+      label: '② 自転車で来た (03-04)',
+      setupPt: '② Veio de bicicleta — não pode beber álcool.',
+      lines: [
+        { speaker: 'A', ja: 'じゃあ、{先|さき}に{飲|の}み{物|もの}、{注文|ちゅうもん}しましょう。ビールでいいですか？', pt: 'Então, vamos pedir as bebidas primeiro. Cerveja, pode?' },
+        { speaker: 'B', ja: 'あの、{今日|きょう}は{自転車|じてんしゃ}で{来|き}たので、{飲|の}めないんです。', pt: 'Ah, hoje vim de bicicleta, então não posso beber.' },
+        { speaker: 'A', ja: 'そっかそっか。ソフトドリンクのメニューはここですよ。', pt: 'Ah, entendi. O cardápio de refrigerantes é aqui.' },
+        { speaker: 'B', ja: 'そうですね……。じゃあ、ウーロン{茶|ちゃ}、お{願|ねが}いします。', pt: 'Deixa ver… Então, um chá oolong, por favor.' },
+      ],
+    },
+  ],
+  '03-05': [
+    {
+      label: '③ アレルギー (03-05)',
+      setupPt: '③ Tem alergia (a camarão).',
+      lines: [
+        { speaker: 'A', ja: 'あれ？ エビ、{食|た}べないんですか？', pt: 'Ué? Você não come camarão?' },
+        { speaker: 'B', ja: 'あ……はい。アレルギーがあるので、{食|た}べられないんです。よかったら、どうぞ。', pt: 'Ah… é. Tenho alergia, então não posso comer. Se quiser, pode pegar.' },
+        { speaker: 'A', ja: 'そうですか。ほかの{料理|りょうり}はだいじょうぶですか？', pt: 'Ah, sei. Os outros pratos, tudo bem?' },
+        { speaker: 'B', ja: 'ええ。おいしいです。', pt: 'Sim. Estão gostosos.' },
+      ],
+    },
+  ],
+  '03-06': [
+    {
+      label: '④ 苦手 — わさび抜き (03-06)',
+      setupPt: '④ Não gosta de wasabi — pede sem wasabi.',
+      lines: [
+        { speaker: 'A', ja: 'すみません、おすし、わさび、{入|はい}ってますよね。{苦手|にがて}なんです。', pt: 'Com licença, o sushi tem wasabi, né? É que eu não curto.' },
+        { speaker: 'B', ja: 'あ、わさび{抜|ぬ}きもできますよ。', pt: 'Ah, dá para fazer sem wasabi também.' },
+        { speaker: 'A', ja: 'じゃあ、わさび{抜|ぬ}きでお{願|ねが}いします。', pt: 'Então, sem wasabi, por favor.' },
+        { speaker: 'B', ja: 'かしこまりました。', pt: 'Pois não.' },
+      ],
+    },
+  ],
+  '03-07': [
+    {
+      label: '⑤ 宗教上の理由 (03-07)',
+      setupPt: '⑤ Por motivo religioso — pede para não colocar porco.',
+      lines: [
+        { speaker: 'A', ja: 'あの、お{好|この}み{焼|や}きに{豚肉|ぶたにく}、{入|はい}ってますか？', pt: 'Hum, o okonomiyaki tem carne de porco?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Tem.' },
+        { speaker: 'A', ja: 'すみません、{宗教上|しゅうきょうじょう}の{理由|りゆう}で{食|た}べられないので、{入|い}れないでください。', pt: 'Desculpe, por motivo religioso não posso comer, então não coloque, por favor.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '03-09': [
+    {
+      label: '会話 — いっしょに行った人と話す (03-09)',
+      setupPt: 'Modelo: dizer a quem está com você o que não pode comer.',
+      lines: [
+        { speaker: 'A', ja: 'お{料理|りょうり}、おいしいですよ。どうですか？', pt: 'A comida está gostosa. Que tal?' },
+        { speaker: 'B', ja: 'すみません、お{肉|にく}は{苦手|にがて}なんです。{私|わたし}、アレルギーがあるので、{食|た}べられないんです。', pt: 'Desculpe, carne eu não curto. Eu tenho alergia, então não posso comer.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Ah, sei.' },
+      ],
+    },
+  ],
+  '03-11': [
+    {
+      label: '会話 — 店の人と話す（お好み焼き）(03-11)',
+      setupPt: 'Modelo: pedir ao garçom (okonomiyaki com porco).',
+      lines: [
+        { speaker: 'A', ja: 'すみません、お{好|この}み{焼|や}きに{豚肉|ぶたにく}、{入|はい}ってますか？', pt: 'Com licença, o okonomiyaki tem carne de porco?' },
+        { speaker: 'B', ja: 'はい、{入|はい}ってます。', pt: 'Sim, tem.' },
+        { speaker: 'A', ja: '{宗教上|しゅうきょうじょう}の{理由|りゆう}で{食|た}べられないので、{入|い}れないでください。', pt: 'Por motivo religioso não posso comer, então não coloque, por favor.' },
+      ],
+    },
+  ],
+  '03-12': [
+    {
+      label: '会話 — 店の人と話す（おすし）(03-12)',
+      setupPt: 'Modelo: pedir ao garçom (sushi sem wasabi).',
+      lines: [
+        { speaker: 'A', ja: 'すみません、おすし、わさび、{入|はい}ってますよね。', pt: 'Com licença, o sushi tem wasabi, né?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Tem.' },
+        { speaker: 'A', ja: 'わさび{抜|ぬ}きでお{願|ねが}いします。', pt: 'Sem wasabi, por favor.' },
+      ],
+    },
+  ],
+  '03-14': [
+    {
+      label: '会話① 入口で (03-14)',
+      setupJa: 'シャールさんと{石井|いしい}さんは、{会社|かいしゃ}の{昼休|ひるやす}みに、{数人|すうにん}でレストランに{来|き}ました。',
+      setupPt: 'Charles e Ishii vão a um restaurante no horário de almoço. ① na entrada.',
+      lines: [
+        { speaker: '店員', ja: 'いらっしゃいませ。お{客様|きゃくさま}、{何名様|なんめいさま}ですか？', pt: 'Sejam bem-vindos. Quantas pessoas?' },
+        { speaker: '石井', ja: '2{人|にん}です。', pt: 'Duas.' },
+        { speaker: '店員', ja: '2{名様|めいさま}ですね。{当店|とうてん}、{全席|ぜんせき}{禁煙|きんえん}ですが、よろしいですか？', pt: 'Duas pessoas, certo. Nosso restaurante é todo não-fumante, tudo bem?' },
+        { speaker: '石井', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '店員', ja: 'テーブルと{座敷|ざしき}がございますが――。', pt: 'Temos mesa e sala de tatame…' },
+        { speaker: '石井', ja: 'テーブルでお{願|ねが}いします。', pt: 'Mesa, por favor.' },
+        { speaker: '店員', ja: 'こちらへどうぞ。', pt: 'Por aqui, por favor.' },
+      ],
+    },
+    {
+      label: '会話② 席で — 注文 (03-14)',
+      setupPt: '② à mesa, fazendo o pedido.',
+      lines: [
+        { speaker: '店員', ja: 'ご{注文|ちゅうもん}、お{決|き}まりですか？', pt: 'Já escolheram o pedido?' },
+        { speaker: '石井', ja: 'あのう、おすすめは{何|なん}ですか？', pt: 'Hum, qual é a recomendação?' },
+        { speaker: '店員', ja: 'そうですね――。{人気|にんき}があるのは、お{刺身|さしみ}{定食|ていしょく}です。', pt: 'Bem… o que faz sucesso é o teishoku de sashimi.' },
+        { speaker: '石井', ja: 'じゃあ、それにします。ご{飯|はん}{大盛|おおも}りにできますか？', pt: 'Então fico com ele. Pode pôr arroz em porção grande?' },
+        { speaker: '店員', ja: 'はい。お{刺身|さしみ}{定食|ていしょく}、ご{飯|はん}{大盛|おおも}りですね。', pt: 'Sim. Teishoku de sashimi, arroz grande, certo.' },
+        { speaker: 'シャール', ja: '{私|わたし}はこの{魚|さかな}が{苦手|にがて}なんですが――ほかに{何|なに}がありますか？', pt: 'Eu não curto muito esse peixe… tem outra coisa?' },
+        { speaker: '店員', ja: 'そうですね、フライなどはいかがですか？ ミックスフライ{定食|ていしょく}がありますので。', pt: 'Bem, que tal um frito? Temos o teishoku de frito misto.' },
+        { speaker: 'シャール', ja: 'じゃあ、それを。ご{飯|はん}は{普通|ふつう}でいいです。あと、アイスコーヒーもお{願|ねが}いします。', pt: 'Então esse. Arroz normal, tá bom. E um café gelado também, por favor.' },
+        { speaker: '店員', ja: 'いつお{持|も}ちしますか？', pt: 'Quando devo trazer (o café)?' },
+        { speaker: 'シャール', ja: '{先|さき}にお{願|ねが}いします。', pt: 'Antes, por favor.' },
+      ],
+    },
+    {
+      label: '会話③ レジで — 会計 (03-14)',
+      setupPt: '③ no caixa, pagando.',
+      lines: [
+        { speaker: '石井', ja: 'お{会計|かいけい}、お{願|ねが}いします。', pt: 'A conta, por favor.' },
+        { speaker: '店員', ja: 'はい。ごいっしょでよろしいですか？', pt: 'Sim. Vão pagar juntos?' },
+        { speaker: 'シャール', ja: '{別々|べつべつ}でお{願|ねが}いします。', pt: 'Separado, por favor.' },
+        { speaker: '店員', ja: 'かしこまりました。お{刺身|さしみ}{定食|ていしょく}のお{客様|きゃくさま}、800{円|えん}になります。ミックスフライ{定食|ていしょく}のお{客様|きゃくさま}、650{円|えん}になります。……ありがとうございました。こちら、クーポンです。{次回|じかい}、お{使|つか}いください。', pt: 'Pois não. Cliente do teishoku de sashimi, são 800 ienes. Cliente do frito misto, 650 ienes. …Obrigado. Aqui está um cupom. Use na próxima vez.' },
+      ],
+    },
+  ],
+  '03-16': [
+    {
+      label: '会話 — 店に入る (modelo) (03-16)',
+      setupPt: 'Modelo ①: entrar no restaurante.',
+      lines: [
+        { speaker: '店員', ja: 'お{客様|きゃくさま}、{何名様|なんめいさま}ですか？', pt: 'Quantas pessoas?' },
+        { speaker: '客', ja: '2{人|にん}です。', pt: 'Duas.' },
+        { speaker: '店員', ja: 'テーブルと{座敷|ざしき}がございますが――。', pt: 'Temos mesa e sala de tatame…' },
+        { speaker: '客', ja: 'テーブルでお{願|ねが}いします。', pt: 'Mesa, por favor.' },
+        { speaker: '店員', ja: 'こちらへどうぞ。', pt: 'Por aqui, por favor.' },
+      ],
+    },
+  ],
+  '03-17': [
+    {
+      label: '会話 — 注文する (modelo) (03-17)',
+      setupPt: 'Modelo ②: fazer o pedido.',
+      lines: [
+        { speaker: '店員', ja: 'ご{注文|ちゅうもん}、お{決|き}まりですか？ おすすめは{何|なん}ですか？', pt: 'Já escolheram? — Qual é a recomendação?' },
+        { speaker: '店員', ja: '{人気|にんき}があるのは、お{刺身|さしみ}{定食|ていしょく}です。', pt: 'O que faz sucesso é o teishoku de sashimi.' },
+        { speaker: '客', ja: 'じゃあ、それにします。／この{魚|さかな}が{苦手|にがて}なんですが、ほかに{何|なに}がありますか？', pt: 'Então fico com ele. / Não curto esse peixe; tem outra coisa?' },
+        { speaker: '店員', ja: 'ミックスフライ{定食|ていしょく}はいかがですか？ ご{飯|はん}の{量|りょう}は、どうなさいますか？', pt: 'Que tal o teishoku de frito misto? E a quantidade de arroz?' },
+        { speaker: '客', ja: 'ご{飯|はん}、{大盛|おおも}りでお{願|ねが}いします。あと、アイスコーヒーもお{願|ねが}いします。', pt: 'Arroz em porção grande, por favor. E um café gelado também.' },
+      ],
+    },
+  ],
+  '03-18': [
+    {
+      label: '会話 — 会計する (modelo) (03-18)',
+      setupPt: 'Modelo ③: pagar a conta.',
+      lines: [
+        { speaker: '客', ja: 'お{会計|かいけい}、お{願|ねが}いします。', pt: 'A conta, por favor.' },
+        { speaker: '店員', ja: 'ごいっしょでよろしいですか？', pt: 'Vão pagar juntos?' },
+        { speaker: '客', ja: 'はい。／{別々|べつべつ}でお{願|ねが}いします。', pt: 'Sim. / Separado, por favor.' },
+      ],
+    },
+  ],
+  '03-19': [
+    {
+      label: '会話 — 電話で予約 (03-19)',
+      setupJa: 'ナットさんがレストランに{電話|でんわ}をして、{予約|よやく}をしています。',
+      setupPt: 'Nat liga para um restaurante para fazer uma reserva.',
+      lines: [
+        { speaker: '店員', ja: 'はい、お{電話|でんわ}ありがとうございます。「レストランさくら」でございます。', pt: 'Alô, obrigado pela ligação. Aqui é o «Restaurante Sakura».' },
+        { speaker: 'ナット', ja: 'あのう、{予約|よやく}をしたいんですけど――。', pt: 'Hum, eu gostaria de fazer uma reserva…' },
+        { speaker: '店員', ja: 'ご{予約|よやく}ですね。お{日|ひ}にちは、お{決|き}まりですか？', pt: 'Uma reserva, certo. A data já está decidida?' },
+        { speaker: 'ナット', ja: '{来週|らいしゅう}の{水曜日|すいようび}の{夜|よる}です。', pt: 'Quarta-feira da semana que vem, à noite.' },
+        { speaker: '店員', ja: '9{日|か}ですね。{何名様|なんめいさま}ですか？', pt: 'Dia 9, certo. Quantas pessoas?' },
+        { speaker: 'ナット', ja: '6{人|にん}です。', pt: 'Seis.' },
+        { speaker: '店員', ja: 'お{時間|じかん}は？', pt: 'E o horário?' },
+        { speaker: 'ナット', ja: '7{時|じ}ぐらい、だいじょうぶですか？', pt: 'Por volta das 7, pode ser?' },
+        { speaker: '店員', ja: '9{日|か}の{水曜日|すいようび}、19{時|じ}ですね。お{名前|なまえ}とお{電話番号|でんわばんごう}をお{願|ねが}いします。', pt: 'Quarta, dia 9, às 19h, certo. Seu nome e telefone, por favor.' },
+        { speaker: 'ナット', ja: 'ナットです。{電話番号|でんわばんごう}は、090-1234-5678です。', pt: 'Nat. O telefone é 090-1234-5678.' },
+        { speaker: '店員', ja: 'それでは、ナット{様|さま}、9{日|か}の{水曜日|すいようび}、19{時|じ}から6{名様|めいさま}で、おまちがいないでしょうか？', pt: 'Então, sr. Nat, quarta dia 9, a partir das 19h, 6 pessoas — está tudo certo?' },
+        { speaker: 'ナット', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '店員', ja: 'それでは、お{待|ま}ちしております。ご{予約|よやく}ありがとうございました。', pt: 'Então, ficamos no aguardo. Obrigado pela reserva.' },
+      ],
+    },
+  ],
+  '03-20': [
+    {
+      label: '会話 — 電話で予約 (modelo) (03-20)',
+      setupPt: 'Modelo: fazer uma reserva por telefone (data → pessoas → horário → contato → confirmação).',
+      lines: [
+        { speaker: '客', ja: 'あのう、{予約|よやく}したいんですけど……。', pt: 'Hum, eu gostaria de fazer uma reserva…' },
+        { speaker: '店員', ja: 'ご{予約|よやく}ですね。お{日|ひ}にちは、お{決|き}まりですか？', pt: 'Uma reserva, certo. A data já está decidida?' },
+        { speaker: '客', ja: '{来週|らいしゅう}の{水曜日|すいようび}の{夜|よる}です。', pt: 'Quarta-feira da semana que vem, à noite.' },
+        { speaker: '店員', ja: '{何名様|なんめいさま}ですか？', pt: 'Quantas pessoas?' },
+        { speaker: '客', ja: '6{人|にん}です。', pt: 'Seis.' },
+        { speaker: '店員', ja: 'お{時間|じかん}は？ お{名前|なまえ}とお{電話番号|でんわばんごう}をお{願|ねが}いします。', pt: 'E o horário? Seu nome e telefone, por favor.' },
+        { speaker: '客', ja: '7{時|じ}です。ナットです。090-1234-5678です。', pt: 'Às 7. Nat. 090-1234-5678.' },
+        { speaker: '店員', ja: 'それでは、9{日|か}の{水曜日|すいようび}、19{時|じ}から6{名様|めいさま}で、おまちがいないでしょうか？', pt: 'Então, quarta dia 9, a partir das 19h, 6 pessoas — está tudo certo?' },
+      ],
+    },
+  ],
+}
+
+const lesson3: Section = {
+  id: 'lesson-3',
+  level: 'elementary2',
+  titleJa: '第3課 アレルギーがあるので、食べられないんです',
+  titlePt: 'Lição 3 — Não posso comer porque tenho alergia',
+  summaryPt:
+    'No restaurante · ler um cardápio de 定食屋 (定食／日替わり／大盛り／おかわり自由), dizer o que não pode comer e por quê (アレルギーがあるので食べられないんです／わさび抜きでお願いします), pedir no restaurante (人気があるのは…／テーブルで／別々で) e fazer uma reserva por telefone.',
+  studyNotes: [
+    {
+      title: 'Tópico: No restaurante (レストランで)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ler um cardápio e entender nomes de pratos, preços e serviços.\n' +
+        '- Dizer a quem come com você ou ao garçom o que você não pode comer e por quê.\n' +
+        '- Transmitir ao garçom pedidos de assento, conta etc.\n' +
+        '- Fazer uma reserva em restaurante por telefone.\n' +
+        '- Ver um cupom de restaurante e extrair as informações necessárias.\n\n' +
+        '💡 Pergunta de abertura: {食|た}べられないものか、{苦手|にがて}な{食|た}べ{物|もの}はありますか？ (há algo que você não pode comer ou não gosta?).',
+    },
+    {
+      title: 'S1 ので、S2 — dar a razão (➊)',
+      bodyPt:
+        '**〜ので** liga duas frases marcando **causa/motivo**:\n\n' +
+        '- `{今日|きょう}は{自転車|じてんしゃ}で{来|き}たので、{飲|の}めないんです` = como vim de bicicleta, não posso beber.\n' +
+        '- `アレルギーがあるので、{食|た}べられないんです` = como tenho alergia, não posso comer.\n\n' +
+        '🔧 Liga-se à **forma comum**: {来|き}た→{来|き}たので, ある→あるので. Com substantivo/ナA usa-se **なので**: `ベジタリアンなので`.\n\n' +
+        '💡 É um modo mais **educado/suave** de dar motivo do que 〜から. Combina muito com 〜んです (explicar). (文法ノート ❶)',
+    },
+    {
+      title: 'S よね — confirmar (➋)',
+      bodyPt:
+        '**〜よね** confirma com o interlocutor algo que **você supõe ser verdade**:\n\n' +
+        '- `おすし、わさび、{入|はい}ってますよね` = o sushi tem wasabi, né? (acho que tem, confirmo).\n\n' +
+        '↔️ Compare: `{入|はい}ってますか？` (não sei se tem) × `{入|はい}ってますよね？` (acho que tem). (文法ノート ❷)',
+    },
+    {
+      title: 'N で — comunicar a escolha (➌)',
+      bodyPt:
+        'Quando lhe oferecem opções, responde-se com **「N で」** para dizer o que escolheu:\n\n' +
+        '- `テーブルと{座敷|ざしき}がございますが…` → `テーブルでお{願|ねが}いします` (escolho a mesa).\n' +
+        '- `それで`（{決|き}めます）, `{普通|ふつう}で`（だいじょうぶです）.\n\n' +
+        '💡 Costuma vir com お{願|ねが}いします／だいじょうぶです／いいです, mas pode aparecer sozinho. (文法ノート ❸)',
+    },
+    {
+      title: '〜のは、N です — destacar / recomendar (➍)',
+      bodyPt:
+        'O padrão **「［V-る／ＡＤＪ］のは、N です」** destaca N como **informação nova**:\n\n' +
+        '- `{人気|にんき}があるのは、お{刺身|さしみ}{定食|ていしょく}です` = o que faz sucesso é o teishoku de sashimi.\n\n' +
+        '💡 Muito usado para **recomendar** ({人気|にんき}があるのは…／おすすめは…). (文法ノート ❹)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Cardápio:** {定食|ていしょく} (prato feito), {日替|ひが}わり (do dia), {大盛|おおも}り／{少|すく}なめ／{普通|ふつう} (porção grande/menor/normal), おかわり{自由|じゆう} (refil livre), {平日|へいじつ}のみ, ホット／アイス.\n\n' +
+        '**Não posso comer:** {肉|にく}（{豚肉|ぶたにく}・{牛肉|ぎゅうにく}）, {魚|さかな}, エビ・カニ, {卵|たまご}, ナッツ, わさび, ねぎ, みりん, {牛乳|ぎゅうにゅう}, お{酒|さけ}, コーヒー. Razões: {宗教上|しゅうきょうじょう}の{理由|りゆう}, {苦手|にがて}, アレルギー, ベジタリアン. 〜{抜|ぬ}き (sem ~).\n\n' +
+        '**No restaurante:** カウンター, {座敷|ざしき}, テーブル, {禁煙|きんえん}, （お）{会計|かいけい}／レジ, {注文|ちゅうもん}, {予約|よやく}, おすすめ, {人気|にんき}, {別々|べつべつ}／ごいっしょ, クーポン, {半額|はんがく}, {有効期限|ゆうこうきげん}. Keigo do funcionário: お{客様|きゃくさま}, 〜{名様|めいさま}, よろしいですか, ございます, お{決|き}まりですか, いかがですか, どうなさいますか, かしこまりました.\n\n' +
+        '**Kanji da lição:** {注文|ちゅうもん}, {会計|かいけい}, {予約|よやく}, {電話番号|でんわばんごう}, 〜{様|さま}, ご{飯|はん}, {牛乳|ぎゅうにゅう}, {生|なま}, {禁煙|きんえん}, {自由|じゆう}.',
+    },
+  ],
+  groups: [lesson3Group],
+  audios: attachScripts(3, L3_SCRIPTS),
+}
+
+// ---- Lições 4-18 (estrutura por tópico; exercícios em construção) ------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
   lesson2,
   // Tópico 2 — No restaurante (レストランで)
-  scaffold(3, 'No restaurante', 'アレルギーがあるので、食べられないんです', 'Não posso comer porque tenho alergia', [
-    'Ler um cardápio e entender nomes de pratos, preços e serviços.',
-    'Dizer a quem come com você ou ao garçom o que você não pode comer e por quê.',
-    'Transmitir ao garçom seus pedidos de assento, comanda etc.',
-    'Fazer uma reserva em restaurante por telefone.',
-    'Ver um cupom de restaurante e extrair as informações necessárias.',
-  ]),
+  lesson3,
   scaffold(4, 'No restaurante', 'しょうゆをつけないで食べてください', 'Coma sem passar shoyu', [
     'Ouvir a indicação de um restaurante recomendado e entender suas características.',
     'Ouvir e entender a explicação de como comer um prato.',
