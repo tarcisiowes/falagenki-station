@@ -2839,14 +2839,247 @@ const lesson13: Section = {
   audios: attachScripts(13, L13_SCRIPTS),
 }
 
-// ---- Lições 14-18 (estrutura por tópico; exercícios em construção) ----------
+// ---- Lição 14: 休みを取ってもいいでしょうか？ (tópico 仕事の連絡) ----------
+const lesson14Group: ExerciseGroup = {
+  id: 'iro-e1-l14',
+  title: '休みを取ってもいいでしょうか？',
+  subtitlePt: 'Comunicação no trabalho · avisar atraso/folga ({道|みち}が{混|こ}んでいて…／それで、{遅|おく}れます), pedir permissão (トイレに{行|い}ってきてもいいですか／{早退|そうたい}してもいいでしょうか) e justificar com obrigação/motivo ({役所|やくしょ}に{行|い}かなければならないんです／{友|とも}だちが{来|く}るんです)',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e1-l14-1', number: 1, prompt: '「{道|みち}が{混|こ}んでいて、ぜんぜん{動|うご}きません」 — para que serve 〜で／〜くて／〜て aqui (Nota ➊)?', choices: [{ n: 1, text: 'unir duas frases numa só, em que a 1ª dá o MOTIVO/CAUSA da 2ª' }, { n: 2, text: 'só listar ações na ordem do tempo' }, { n: 3, text: 'fazer um pedido' }, { n: 4, text: 'transformar em pergunta' }], answer: 1, translationPt: 'O trânsito está parado e (por isso) não anda nada.', explanationPt: '〜で／〜くて／〜て une duas orações; conforme o sentido, a 1ª expressa o motivo/causa da 2ª. Também serve para justificar e pedir desculpa. (Nota ➊)' },
+    { id: 'iro-e1-l14-2', number: 2, prompt: 'Como o motivo (Nota ➊) muda conforme a classe da palavra?', choices: [{ n: 1, text: 'N+で ({事故|じこ}で) ／ ナA+で ({仕事|しごと}が{大変|たいへん}で) ／ イA+くて ({具合|ぐあい}が{悪|わる}くて) ／ V+テ-form ({熱|ねつ}があって)' }, { n: 2, text: 'todas usam apenas 〜くて' }, { n: 3, text: 'todas usam apenas 〜で' }, { n: 4, text: 'só substantivos podem dar motivo' }], answer: 1, explanationPt: 'Substantivo: Nで ({事故|じこ}で); ナA: 〜で ({大変|たいへん}で); イA: 〜くて ({悪|わる}くて); verbo: テ-form ({熱|ねつ}があって、{会社|かいしゃ}を{休|やす}みました). Na Lição 7 só vimos N e V. (Nota ➊)' },
+    { id: 'iro-e1-l14-3', number: 3, prompt: 'Em 「{道|みち}が{混|こ}んでいて」 e 「{昨日|きのう}は、{休|やす}んですみませんでした」, o que se observa (Nota ➊)?', choices: [{ n: 1, text: 'V-ている vira V-ていて ({混|こ}んでいる→{混|こ}んでいて); e 〜て serve para justificar ao pedir desculpa ({休|やす}んで＋すみません)' }, { n: 2, text: 'são erros de conjugação' }, { n: 3, text: 'V-ている nunca muda' }, { n: 4, text: '〜て não pode aparecer com すみません' }], answer: 1, translationPt: 'O trânsito está parado… / Desculpe por ter faltado ontem.', explanationPt: '{混|こ}んでいる→{混|こ}んでいて (V-ている→V-ていて). E 〜て liga o motivo ao pedido de desculpa: {休|やす}んで、すみませんでした／{遅|おそ}くなって、{申|もう}し{訳|わけ}ありません. (Nota ➊)' },
+    { id: 'iro-e1-l14-4', number: 4, prompt: '「これから{病院|びょういん}に{行|い}きます。それで、{少|すこ}し{遅刻|ちこく}します」 — o que faz それで (Nota ➋)?', choices: [{ n: 1, text: 'é o conectivo “por isso/então”: a frase 1 (S1) é o motivo da frase 2 (S2)' }, { n: 2, text: 'significa “mas/porém”' }, { n: 3, text: 'significa “depois disso”, sem relação de causa' }, { n: 4, text: 'introduz uma pergunta' }], answer: 1, translationPt: 'Vou ao hospital agora. Por isso, vou me atrasar um pouco.', explanationPt: 'それで liga duas frases: S1 (motivo) → それで → S2 (consequência). Ex.: {家|いえ}に{財布|さいふ}を{忘|わす}れました。これから{取|と}りに{帰|かえ}ります。それで、{少|すこ}し{遅|おく}れます. (Nota ➋)' },
+    { id: 'iro-e1-l14-5', number: 5, prompt: '「トイレに{行|い}ってきてもいいですか？」 (V-てもいいですか？) serve para (Nota ➌):', choices: [{ n: 1, text: 'pedir permissão; liga-se à テ-form. Permissão: どうぞ／わかりました／いいです(よ)' }, { n: 2, text: 'recusar um pedido' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'expressar obrigação' }], answer: 1, translationPt: 'Posso ir ao banheiro?', explanationPt: 'V-てもいいですか？ pede permissão, sobre a テ-form. Aceita-se com どうぞ／わかりました／いいですよ; recusa-se com あとにして／あとにしてもらえませんか. (Nota ➌)' },
+    { id: 'iro-e1-l14-6', number: 6, prompt: '「{明日|あした}の{午後|ごご}、{早退|そうたい}してもいいでしょうか？」 (V-てもいいでしょうか？) é (Nota ➍):', choices: [{ n: 1, text: 'um jeito mais EDUCADO de pedir permissão — troca 〜ですか？ por 〜でしょうか？' }, { n: 2, text: 'uma ordem ao superior' }, { n: 3, text: 'uma recusa educada' }, { n: 4, text: 'uma pergunta sobre o futuro do tempo' }], answer: 1, translationPt: 'Eu poderia sair mais cedo amanhã à tarde?', explanationPt: 'V-てもいいでしょうか？ = pedir permissão com mais polidez. Vem de 〜てもいいですか？ trocando o final 〜ですか？ por 〜でしょうか？. (Nota ➍)' },
+    { id: 'iro-e1-l14-7', number: 7, prompt: '「{役所|やくしょ}に{行|い}かなければならないんです」 (V-なければなりません) expressa (Nota ➎):', choices: [{ n: 1, text: 'algo que é PRECISO fazer, independente da vontade (tenho que ir); forma-se trocando 〜ない da ナイ-form por 〜なければなりません' }, { n: 2, text: 'algo que se pode ou não fazer' }, { n: 3, text: 'uma proibição' }, { n: 4, text: 'um desejo' }], answer: 1, translationPt: 'É que eu tenho que ir à prefeitura.', explanationPt: 'V-なければなりません = obrigação (preciso fazer). Da ナイ-form, troca-se 〜ない por 〜なければなりません ({行|い}かない→{行|い}かなければなりません). Forma simples: 〜なければならない. (Nota ➎)' },
+    { id: 'iro-e1-l14-8', number: 8, prompt: '「{東京|とうきょう}から、{国|くに}の{友|とも}だちが{来|く}るんです」 (〜んです①) serve para (Nota ➏):', choices: [{ n: 1, text: 'explicar a situação/motivo ao outro; difere de 〜んですが… por NÃO terminar com が…' }, { n: 2, text: 'fazer um pedido formal' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'negar um fato' }], answer: 1, translationPt: 'É que um amigo do meu país vem de Tóquio.', explanationPt: '〜んです explica a situação/motivo (aqui, o motivo de pedir folga). Diferente de 〜んですが… (que pede resposta), 〜んです não tem が… no fim. Liga-se à forma de dicionário ou a 〜なければならない. (Nota ➏)' },
+    { id: 'iro-e1-l14-9', number: 9, prompt: 'Atividade 1 — os motivos dos avisos (a–f) são:', choices: [{ n: 1, text: '{道|みち}が{混|こ}んでいる (trânsito parado) ／ せきがひどい (tosse forte) ／ {熱|ねつ}がある (estar com febre) ／ {財布|さいふ}を{忘|わす}れた (esqueceu a carteira) ／ {病院|びょういん}に{行|い}く (ir ao hospital) ／ {家|いえ}に{帰|かえ}る (voltar para casa)' }, { n: 2, text: 'almoçar ／ dormir ／ viajar ／ comprar ／ estudar ／ trabalhar' }, { n: 3, text: 'chuva ／ neve ／ calor ／ frio ／ vento ／ sol' }, { n: 4, text: 'reunião ／ folga ／ feriado ／ atraso ／ hora extra ／ pausa' }], answer: 1, explanationPt: 'a. {道|みち}が{混|こ}んでいる, b. せきがひどい, c. {熱|ねつ}がある, d. {財布|さいふ}を{忘|わす}れた, e. {病院|びょういん}に{行|い}く, f. {家|いえ}に{帰|かえ}る. (Atividade 1)' },
+    { id: 'iro-e1-l14-10', number: 10, prompt: 'Atividade 1 — a tarefa pede marcar A ou B para cada ligação. O que são A e B?', choices: [{ n: 1, text: 'A = {遅刻|ちこく} (vai se atrasar) ／ B = {休|やす}む (vai faltar/tirar o dia)' }, { n: 2, text: 'A = sair mais cedo ／ B = hora extra' }, { n: 3, text: 'A = férias ／ B = demissão' }, { n: 4, text: 'A = comprar ／ B = vender' }], answer: 1, explanationPt: 'Marca-se A para {遅刻|ちこく} (atraso) e B para {休|やす}む (faltar). Os 4 telefonemas (14-01~04) são avisos de atraso ou de falta ao trabalho. (Atividade 1)' },
+    { id: 'iro-e1-l14-11', number: 11, prompt: 'Vocabulário (Atividade 1): 「これから／{遅|おそ}くなる／みなさん／{伝|つた}える／{遅刻|ちこく}する／あとで／{申|もう}し{訳|わけ}ありません」 significam:', choices: [{ n: 1, text: 'agora/a partir de agora ／ atrasar-se ／ todos/o pessoal ／ transmitir/avisar ／ atrasar-se ／ mais tarde ／ desculpe (formal)' }, { n: 2, text: 'antes ／ adiantar-se ／ ninguém ／ esquecer ／ faltar ／ agora ／ obrigado' }, { n: 3, text: 'depois ／ chegar cedo ／ chefe ／ ligar ／ sair ／ ontem ／ de nada' }, { n: 4, text: 'hoje ／ correr ／ cliente ／ ouvir ／ descansar ／ amanhã ／ com licença' }], answer: 1, explanationPt: 'これから (a partir de agora), {遅|おそ}くなる (atrasar), みなさん (todos), {伝|つた}える (avisar/transmitir), {遅刻|ちこく}する (chegar atrasado), あとで (mais tarde), {申|もう}し{訳|わけ}ありません (desculpe — formal). (Atividade 1 · ことば)' },
+    { id: 'iro-e1-l14-12', number: 12, prompt: 'Atividade 2 — as permissões pedidas (a–d) são:', choices: [{ n: 1, text: 'お{祈|いの}りに{行|い}く (ir rezar) ／ たばこを{吸|す}う (fumar) ／ {飲|の}み{物|もの}を{買|か}う (comprar bebida) ／ トイレに{行|い}く (ir ao banheiro)' }, { n: 2, text: 'almoçar ／ dormir ／ telefonar ／ sair cedo' }, { n: 3, text: 'rezar ／ comer ／ vender ／ entrar' }, { n: 4, text: 'descansar ／ beber ／ comprar ／ voltar' }], answer: 1, explanationPt: 'a. お{祈|いの}りに{行|い}く, b. たばこを{吸|す}う, c. {飲|の}み{物|もの}を{買|か}う, d. トイレに{行|い}く. (Atividade 2)' },
+    { id: 'iro-e1-l14-13', number: 13, prompt: 'Vocabulário (Atividade 2): 「{休憩|きゅうけい}（する）／{戻|もど}る」 significam:', choices: [{ n: 1, text: 'fazer uma pausa/descanso ／ voltar/retornar' }, { n: 2, text: 'trabalhar ／ sair' }, { n: 3, text: 'almoçar ／ entrar' }, { n: 4, text: 'dormir ／ chegar' }], answer: 1, explanationPt: '{休憩|きゅうけい}（する） (fazer pausa), {戻|もど}る (voltar): 15{分|ふん}で{戻|もど}ります. (Atividade 2 · ことば)' },
+    { id: 'iro-e1-l14-14', number: 14, prompt: 'Atividade 3 — as permissões pedidas ao superior (a–c) são:', choices: [{ n: 1, text: '{遅刻|ちこく}する (chegar atrasado) ／ {早退|そうたい}する (sair mais cedo) ／ {休|やす}みを{取|と}る (tirar folga)' }, { n: 2, text: 'fazer hora extra ／ almoçar ／ viajar' }, { n: 3, text: 'pedir demissão ／ mudar de equipe ／ faltar' }, { n: 4, text: 'comprar ／ vender ／ entregar' }], answer: 1, explanationPt: 'a. {遅刻|ちこく}する, b. {早退|そうたい}する, c. {休|やす}みを{取|と}る. Também se marca 〇 (permitiu) ou × (não permitiu). (Atividade 3)' },
+    { id: 'iro-e1-l14-15', number: 15, prompt: 'Vocabulário (Atividade 3): 「{社長|しゃちょう}／{役所|やくしょ}／{用事|ようじ}／{済|す}む／{主任|しゅにん}／{来月|らいげつ}／できたら」 significam:', choices: [{ n: 1, text: 'presidente/diretor ／ prefeitura/repartição pública ／ compromisso/afazer ／ ficar resolvido/terminar ／ encarregado (chefe de equipe) ／ mês que vem ／ se possível' }, { n: 2, text: 'cliente ／ banco ／ reunião ／ começar ／ gerente ／ semana que vem ／ talvez' }, { n: 3, text: 'colega ／ hospital ／ folga ／ falhar ／ diretor ／ ano que vem ／ de jeito nenhum' }, { n: 4, text: 'chefe ／ escola ／ tarefa ／ adiar ／ secretário ／ hoje ／ com certeza' }], answer: 1, explanationPt: '{社長|しゃちょう} (presidente), {役所|やくしょ} (repartição pública), {用事|ようじ} (compromisso/afazer), {済|す}む (resolver-se): {用事|ようじ}は{済|す}みましたか, {主任|しゅにん} (encarregado), {来月|らいげつ} (mês que vem), できたら (se possível). (Atividade 3 · ことば)' },
+    { id: 'iro-e1-l14-16', number: 16, prompt: 'Atividade 3 — as frases-chave 「ちょっと、いいでしょうか？」 e 「{別|べつ}にかまいません」 significam:', choices: [{ n: 1, text: '“Com licença, posso falar/incomodar um instante?” ／ “Por mim, tudo bem / não tem problema.”' }, { n: 2, text: '“Estou ocupado.” ／ “Não pode de jeito nenhum.”' }, { n: 3, text: '“Que horas são?” ／ “Não sei.”' }, { n: 4, text: '“Obrigado.” ／ “De nada.”' }], answer: 1, explanationPt: 'ちょっと、いいでしょうか？ = pedir um momento de atenção (interromper educadamente). {別|べつ}にかまいません = “tudo bem, não há problema” (conceder permissão). (Atividade 3)' },
+    { id: 'iro-e1-l14-17', number: 17, prompt: 'Vocabulário (Atividade 4 · {休暇届|きゅうかとどけ}): 「{休暇届|きゅうかとどけ}／{出|だ}す／フォーム／{所属|しょぞく}／チーム／{総務|そうむ}／{氏名|しめい}／ハンコ／{期間|きかん}」 significam:', choices: [{ n: 1, text: 'pedido de folga/licença ／ entregar/submeter ／ formulário ／ lotação/setor ／ equipe ／ administração geral ／ nome (completo) ／ carimbo pessoal ／ período' }, { n: 2, text: 'atestado ／ guardar ／ ficha ／ cargo ／ time ／ vendas ／ apelido ／ assinatura ／ data' }, { n: 3, text: 'recibo ／ assinar ／ planilha ／ andar ／ grupo ／ RH ／ sobrenome ／ selo postal ／ prazo' }, { n: 4, text: 'contrato ／ enviar ／ modelo ／ filial ／ turma ／ contabilidade ／ código ／ digital ／ duração' }], answer: 1, explanationPt: '{休暇届|きゅうかとどけ} (pedido de folga), {出|だ}す (entregar), フォーム (formulário), {所属|しょぞく} (lotação/setor), チーム (equipe), {総務|そうむ} (administração geral), {氏名|しめい} (nome completo), ハンコ (carimbo), {期間|きかん} (período). (Atividade 4 · ことば)' },
+    { id: 'iro-e1-l14-18', number: 18, prompt: 'Vocabulário (Atividade 4): 「{理由|りゆう}／{普通|ふつう}／{私用|しよう}／{休|やす}み{中|ちゅう}／{連絡先|れんらくさき}／{備考|びこう}／いる」 significam:', choices: [{ n: 1, text: 'motivo ／ comum/normal ／ assunto particular ／ durante a folga ／ contato ／ observações ／ ser necessário/precisar' }, { n: 2, text: 'data ／ especial ／ trabalho ／ depois da folga ／ endereço ／ título ／ existir (pessoa)' }, { n: 3, text: 'período ／ raro ／ uso público ／ antes da folga ／ telefone ／ resumo ／ entrar' }, { n: 4, text: 'nome ／ urgente ／ feriado ／ na folga ／ e-mail ／ anexo ／ haver' }], answer: 1, explanationPt: '{理由|りゆう} (motivo), {普通|ふつう} (normal/comum), {私用|しよう} (assunto particular), {休|やす}み{中|ちゅう} (durante a folga; 〜中=durante), {連絡先|れんらくさき} (contato), {備考|びこう} (observações), いる (ser necessário/precisar). (Atividade 4 · ことば)' },
+    { id: 'iro-e1-l14-19', number: 19, prompt: 'Os kanji 「{用事|ようじ}／{氏名|しめい}／{理由|りゆう}／{連絡先|れんらくさき}／{別|べつ}に」 lêem-se:', choices: [{ n: 1, text: 'ようじ (afazer/compromisso) ／ しめい (nome completo) ／ りゆう (motivo) ／ れんらくさき (contato) ／ べつに (em especial/em particular)' }, { n: 2, text: 'ようじ ／ うじな ／ りよし ／ れんらくさき ／ わかに' }, { n: 3, text: 'もちごと ／ しめい ／ りゆう ／ つれらくさき ／ べつに' }, { n: 4, text: 'ようじ ／ しめい ／ りゆう ／ れんらくさき ／ ほかに' }], answer: 1, explanationPt: '{用事|ようじ}, {氏名|しめい}, {理由|りゆう}, {連絡先|れんらくさき}, {別|べつ}に. (漢字のことば)' },
+    { id: 'iro-e1-l14-20', number: 20, prompt: 'Os kanji 「{早|はや}く／{吸|す}う／{取|と}る／{帰|かえ}る／{伝|つた}える」 lêem-se:', choices: [{ n: 1, text: 'はやく (cedo/rápido) ／ すう (inalar/fumar) ／ とる (tirar/pegar) ／ かえる (voltar para casa) ／ つたえる (transmitir/avisar)' }, { n: 2, text: 'はやく ／ きゅう ／ しゅる ／ きする ／ でんえる' }, { n: 3, text: 'そうく ／ すう ／ とる ／ かえる ／ つたえる' }, { n: 4, text: 'はやく ／ すう ／ とる ／ おかえる ／ つだえる' }], answer: 1, explanationPt: '{早|はや}く, {吸|す}う, {取|と}る, {帰|かえ}る, {伝|つた}える. Kanji da lição: {用事|ようじ}・{氏名|しめい}・{理由|りゆう}・{連絡先|れんらくさき}・{別|べつ}に・{早|はや}く・{吸|す}う・{取|と}る・{帰|かえ}る・{伝|つた}える. (漢字)' },
+    { id: 'iro-e1-l14-21', number: 21, prompt: 'Diálogo 14-01: por que Anisa liga para o trabalho?', context: 'アニサ：すみません。{家|いえ}に{財布|さいふ}を{忘|わす}れました。これから{取|と}りに{帰|かえ}ります。それで、{少|すこ}し{遅|おく}れます。', choices: [{ n: 1, text: 'Esqueceu a carteira em casa; vai voltar para pegá-la e, por isso, vai se atrasar um pouco ({遅|おく}れます)' }, { n: 2, text: 'Está doente e vai faltar o dia todo' }, { n: 3, text: 'Vai ao hospital por causa de tosse' }, { n: 4, text: 'Quer sair mais cedo' }], answer: 1, explanationPt: '{財布|さいふ}を{忘|わす}れました…{取|と}りに{帰|かえ}ります。それで、{少|すこ}し{遅|おく}れます (motivo + それで, ➋). Depois: {遅|おそ}くなって、{申|もう}し{訳|わけ}ありません. (Atividade 1 · 聴解スクリプト 14-01)' },
+    { id: 'iro-e1-l14-22', number: 22, prompt: 'Diálogo 14-02: qual o problema de Miguel?', context: 'ミゲル：{今|いま}、バスの{中|なか}です。{道|みち}が{混|こ}んでいて、ぜんぜん{動|うご}きません。…{今日|きょう}は{遅|おそ}くなりそうです。みなさんに{伝|つた}えてください。', choices: [{ n: 1, text: 'Está no ônibus; o trânsito está parado ({混|こ}んでいて{動|うご}かない) e hoje deve chegar atrasado — pede que avisem a todos' }, { n: 2, text: 'Está com febre e vai faltar' }, { n: 3, text: 'Esqueceu a carteira' }, { n: 4, text: 'Quer sair mais cedo para rezar' }], answer: 1, explanationPt: '{道|みち}が{混|こ}んでいて (motivo, V-ていて, ➊); {遅|おそ}くなりそうです (V-そうです previsão, Lição 13); みなさんに{伝|つた}えてください. (Atividade 1 · 14-02)' },
+    { id: 'iro-e1-l14-23', number: 23, prompt: 'Diálogo 14-04: por que Wang ({王|オウ}) vai faltar?', context: '{王|オウ}：{熱|ねつ}があります。それで、{今日|きょう}は1{日|にち}、{休|やす}みたいんですが……。 {田村|たむら}：そうですか。わかりました。ゆっくり{休|やす}んでください。', choices: [{ n: 1, text: 'Está com febre; por isso quer tirar o dia de folga ({休|やす}みたいんですが…) — e é autorizado' }, { n: 2, text: 'Vai se atrasar por causa do trânsito' }, { n: 3, text: 'Quer sair mais cedo para ir à prefeitura' }, { n: 4, text: 'Esqueceu a carteira em casa' }], answer: 1, explanationPt: '{熱|ねつ}があります。それで、{今日|きょう}は1{日|にち}{休|やす}みたいんですが… (motivo + それで, ➋; V-たいんですが…). 田村: ゆっくり{休|やす}んでください. No dia seguinte: {休|やす}んですみませんでした. (Atividade 1 · 14-04)' },
+    { id: 'iro-e1-l14-24', number: 24, prompt: 'Diálogo 14-09: A pede para sair e comprar uma bebida. Qual a resposta?', context: 'A：あのう、ちょっと{飲|の}み{物|もの}を{買|か}ってきてもいいですか？ B：え、{今|いま}？あとにして。', choices: [{ n: 1, text: 'O pedido é NEGADO: “Agora? Deixa para depois” (あとにして)' }, { n: 2, text: 'É autorizado na hora (どうぞ)' }, { n: 3, text: 'B também quer uma bebida' }, { n: 4, text: 'B manda comprar duas' }], answer: 1, translationPt: 'Posso ir comprar uma bebida? — O quê, agora? Deixa para depois.', explanationPt: 'V-てもいいですか？ (➌) pedindo permissão; resposta de RECUSA: あとにして (deixe para depois). (Atividade 2 · 14-09)' },
+    { id: 'iro-e1-l14-25', number: 25, prompt: 'Diálogo 14-11: A pede para ir rezar. O que combina?', context: 'A：あのう、すみません。{今|いま}、お{祈|いの}りに{行|い}ってもいいですか？15{分|ふん}で{戻|もど}ります。 B：わかりました。', choices: [{ n: 1, text: 'Pede permissão para ir rezar agora e avisa que volta em 15 minutos (15{分|ふん}で{戻|もど}ります); é autorizado' }, { n: 2, text: 'Pede para fumar e é recusado' }, { n: 3, text: 'Pede para ir ao banheiro e B diz “depois”' }, { n: 4, text: 'Vai faltar o dia todo' }], answer: 1, explanationPt: 'お{祈|いの}りに{行|い}ってもいいですか？ (➌); 15{分|ふん}で{戻|もど}ります (で = intervalo, Lição 13); わかりました (permissão). (Atividade 2 · 14-11)' },
+    { id: 'iro-e1-l14-26', number: 26, prompt: 'Diálogo 14-14: Bank pede ao {社長|しゃちょう} para sair mais cedo. Qual o motivo, e a resposta?', context: 'バンク：{明日|あした}の{午後|ごご}、{早退|そうたい}してもいいでしょうか？ちょっと、{役所|やくしょ}に{行|い}かなければならないんです。 {社長|しゃちょう}：わかりました。だいじょうぶですよ。', choices: [{ n: 1, text: 'Pede educadamente para sair cedo amanhã à tarde porque tem que ir à prefeitura ({役所|やくしょ}に{行|い}かなければならない); é autorizado' }, { n: 2, text: 'Quer faltar a semana toda; é recusado' }, { n: 3, text: 'Está com febre e vai ao hospital' }, { n: 4, text: 'Quer almoçar mais cedo' }], answer: 1, explanationPt: '{早退|そうたい}してもいいでしょうか？ (pedido educado, ➍); {役所|やくしょ}に{行|い}かなければならないんです (obrigação ➎ + んです ➏). Depois: {早|はや}く{帰|かえ}ってすみませんでした. (Atividade 3 · 聴解スクリプト 14-14)' },
+    { id: 'iro-e1-l14-27', number: 27, prompt: 'Diálogo 14-15: Monika pede folga ao {主任|しゅにん}. Por quê, e qual a resposta?', context: 'モニカ：{来月|らいげつ}20{日|か}の{月曜日|げつようび}、{休|やす}みを{取|と}ってもいいでしょうか？{東京|とうきょう}から、{国|くに}の{友|とも}だちが{来|く}るんです。…{町|まち}を{案内|あんない}したくて……。 {主任|しゅにん}：……あ、{別|べつ}にかまいませんよ。', choices: [{ n: 1, text: 'Pede folga na segunda dia 20 do mês que vem porque um amigo do país dela vem de Tóquio ({友|とも}だちが{来|く}るんです) e quer mostrar a cidade; é autorizado ({別|べつ}にかまいません)' }, { n: 2, text: 'Quer sair mais cedo por estar doente' }, { n: 3, text: 'Vai à prefeitura resolver um documento' }, { n: 4, text: 'O pedido é recusado' }], answer: 1, explanationPt: '{休|やす}みを{取|と}ってもいいでしょうか？ (➍); {友|とも}だちが{来|く}るんです ({来|く}る + んです, ➏); {案内|あんない}したくて (motivo com 〜て, ➊). {主任|しゅにん}: {別|べつ}にかまいませんよ (permissão). (Atividade 3 · 14-15)' },
+    { id: 'iro-e1-l14-28', number: 28, prompt: 'Diálogo 14-19: ao preencher o {休暇届|きゅうかとどけ}, o que escrever em 「{理由|りゆう}」 numa folga comum, e até quando entregar?', context: 'A：「{理由|りゆう}」ですが、{普通|ふつう}の{休|やす}みのときは、「{私用|しよう}」と{書|か}いてください。…「{私|わたし}」という{漢字|かんじ}に、「{用事|ようじ}」の「{用|よう}」です。…{休|やす}みの{前|まえ}の{日|ひ}までに{出|だ}してください。', choices: [{ n: 1, text: 'Escrever 「{私用|しよう}」 (= {私|わたし} + o {用|よう} de {用事|ようじ}); e entregar até o dia anterior à folga' }, { n: 2, text: 'Deixar o motivo em branco e entregar no próprio dia' }, { n: 3, text: 'Escrever o nome da doença e entregar depois' }, { n: 4, text: 'Escrever 「{総務|そうむ}」 e entregar no fim do mês' }], answer: 1, explanationPt: 'Em {理由|りゆう}, numa folga comum, escreve-se {私用|しよう} ({私|わたし}＋{用事|ようじ}の{用|よう}). Entrega-se {休|やす}みの{前|まえ}の{日|ひ}までに (até a véspera). 所属→nome do setor, 氏名→nome+ハンコ, 期間→datas. (Atividade 4 · 聴解スクリプト 14-19)' },
+    { id: 'iro-e1-l14-29', number: 29, prompt: 'Atividade 4 — na ordem do formulário {休暇届|きゅうかとどけ}, o que vai em cada campo?', context: 'Campos do formulário: {所属|しょぞく} → {氏名|しめい}（＋ハンコ）→ {期間|きかん} → {理由|りゆう} → {連絡先|れんらくさき} → {備考|びこう}.', choices: [{ n: 1, text: '{所属|しょぞく}=setor／equipe; {氏名|しめい}=nome (com carimbo ao lado); {期間|きかん}=de quando a quando / quantos dias; {理由|りゆう}={私用|しよう}; {連絡先|れんらくさき}=contato na folga; {備考|びこう}=normalmente nada' }, { n: 2, text: '{所属|しょぞく}=nome; {氏名|しめい}=setor; {期間|きかん}=motivo; {理由|りゆう}=datas; {連絡先|れんらくさき}=observações; {備考|びこう}=carimbo' }, { n: 3, text: 'Todos os campos pedem o telefone' }, { n: 4, text: 'Só se preenche o nome e a data' }], answer: 1, explanationPt: 'Ordem: {所属|しょぞく} (nome do setor/{総務|そうむ}) → {氏名|しめい} (nome + ハンコ ao lado) → {期間|きかん} (de quando a quando, nº de dias) → {理由|りゆう} ({私用|しよう}) → {連絡先|れんらくさき} (contato durante a folga) → {備考|びこう} (numa folga comum, nada). (Atividade 4 · 14-19)' },
+    { id: 'iro-e1-l14-30', number: 30, prompt: '📌 TIPS — {印鑑|いんかん}／ハンコ (carimbo pessoal) no Japão:', choices: [{ n: 1, text: 'usado em muitas situações (documentos na repartição, abrir conta, receber entregas, {確認印|かくにんいん} no trabalho); há lojas que vendem sobrenomes comuns por algumas centenas de ienes; para nome estrangeiro encomenda-se (a partir de ~2.000 ienes); às vezes a assinatura basta, mas nem sempre' }, { n: 2, text: 'é proibido para estrangeiros' }, { n: 3, text: 'só pode ser feito em kanji' }, { n: 4, text: 'substitui o passaporte' }], answer: 1, explanationPt: 'ハンコ é usado em vários momentos (役所, banco, entregas, {確認印|かくにんいん}). Sobrenomes japoneses comuns custam algumas centenas de ienes; nomes estrangeiros são encomendados (~2.000円+), podendo ser em alfabeto/katakana/kanji. Às vezes サイン (assinatura) basta, mas depende do órgão. (TIPS)' },
+    { id: 'iro-e1-l14-31', number: 31, prompt: '📌 TIPS — {有給休暇|ゆうきゅうきゅうか} (férias remuneradas):', choices: [{ n: 1, text: 'desde 1/abr/2019 é obrigatório tirar; com 6+ meses na empresa e 80%+ de presença ganham-se 10 dias/ano; a empresa deve garantir ao menos 5 dias usados por ano; vale também para contratados/part-time conforme tempo e horas' }, { n: 2, text: 'só executivos têm direito' }, { n: 3, text: 'é descontado do salário' }, { n: 4, text: 'estrangeiros não têm direito a folga remunerada' }], answer: 1, explanationPt: '{有給休暇|ゆうきゅうきゅうか}: obrigatório desde 1/4/2019. Com 6+ meses de casa e ≥80% de presença → 10 dias/ano; a empresa deve assegurar ≥5 dias gozados/ano. Vale para {契約社員|けいやくしゃいん}/{派遣|はけん}/parte conforme tempo e horas. O {厚生労働省|こうせいろうどうしょう} atende em vários idiomas. (TIPS)' },
+    { id: 'iro-e1-l14-32', number: 32, prompt: 'Pergunta de abertura da lição: 「どんなときに{仕事|しごと}を{休|やす}みますか？」 quer dizer:', choices: [{ n: 1, text: 'Em que situações/ocasiões você falta ao trabalho?' }, { n: 2, text: 'Quantos dias de folga você tem por ano?' }, { n: 3, text: 'A que horas você começa a trabalhar?' }, { n: 4, text: 'Onde você trabalha?' }], answer: 1, translationPt: 'Em que tipo de ocasião você tira folga do trabalho?', explanationPt: 'どんなときに〜 = em que ocasião/situação. Tema: {仕事|しごと}の{連絡|れんらく} (avisar atraso, folga, pedir permissão, preencher {休暇届|きゅうかとどけ}). (Abertura)' },
+  ],
+}
+
+// Transcrições oficiais (聴解スクリプト) da Lição 14
+const L14_SCRIPTS: Record<string, ScriptItem[]> = {
+  '14-01': [
+    {
+      label: '① (14-01) — 少し遅れます（財布を忘れた）',
+      setupJa: '4{人|よにん}の{人|ひと}が、{遅刻|ちこく}や{休|やす}みの{連絡|れんらく}をするために、{職場|しょくば}に{電話|でんわ}をかけています。',
+      setupPt: 'Quatro pessoas ligam para o trabalho para avisar atraso ou falta.',
+      lines: [
+        { speaker: '会社の人', ja: 'はい、{北浦和|きたうらわ}フーズです。', pt: 'Alô, aqui é a Kitaurawa Foods.' },
+        { speaker: 'アニサ', ja: 'もしもし、あのう、アニサです。', pt: 'Alô, ãh, é a Anisa.' },
+        { speaker: '会社の人', ja: 'ああ、アニサさん。', pt: 'Ah, Anisa.' },
+        { speaker: 'アニサ', ja: 'すみません。{家|いえ}に{財布|さいふ}を{忘|わす}れました。これから{取|と}りに{帰|かえ}ります。それで、{少|すこ}し{遅|おく}れます。', pt: 'Desculpe. Esqueci a carteira em casa. Vou voltar agora para pegá-la. Por isso, vou me atrasar um pouco.' },
+        { speaker: '会社の人', ja: 'ああ、わかりました。', pt: 'Ah, entendi.' },
+        { speaker: 'アニサ', ja: '（あとで）おはようございます。{遅|おそ}くなって、{申|もう}し{訳|わけ}ありません。', pt: '(Mais tarde) Bom dia. Desculpe pelo atraso.' },
+      ],
+    },
+  ],
+  '14-02': [
+    {
+      label: '② (14-02) — 道が混んでいて（遅くなりそう）',
+      lines: [
+        { speaker: 'ミゲル', ja: 'もしもし、ミゲルです。', pt: 'Alô, é o Miguel.' },
+        { speaker: '会社の人', ja: 'あ、ミゲルさん。', pt: 'Ah, Miguel.' },
+        { speaker: 'ミゲル', ja: '{今|いま}、バスの{中|なか}です。{道|みち}が{混|こ}んでいて、ぜんぜん{動|うご}きません。', pt: 'Estou no ônibus agora. O trânsito está parado e não anda nada.' },
+        { speaker: '会社の人', ja: 'そうですか。', pt: 'Ah, é?' },
+        { speaker: 'ミゲル', ja: 'すみませんが、{今日|きょう}は{遅|おそ}くなりそうです。みなさんに{伝|つた}えてください。', pt: 'Desculpe, mas hoje devo me atrasar. Por favor, avise a todos.' },
+        { speaker: '会社の人', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '14-03': [
+    {
+      label: '③ (14-03) — せきがひどくて（病院に行く）',
+      lines: [
+        { speaker: 'フエン', ja: 'えっと、フエンです。あのう、{昨日|きのう}からせきがひどくて、これから{病院|びょういん}に{行|い}きます。それで、{少|すこ}し{遅刻|ちこく}します。', pt: 'Ãh, é a Fuen. É que estou com uma tosse forte desde ontem e vou ao hospital agora. Por isso, vou me atrasar um pouco.' },
+        { speaker: '会社の人', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'フエン', ja: 'またあとで、{連絡|れんらく}します。', pt: 'Depois eu aviso de novo.' },
+      ],
+    },
+  ],
+  '14-04': [
+    {
+      label: '④ (14-04) — 熱があって（1日休みたい）',
+      lines: [
+        { speaker: '王', ja: 'おはようございます。{王|オウ}です。', pt: 'Bom dia. É o Wang.' },
+        { speaker: '田村', ja: '{田村|たむら}です。{王|オウ}さん、どうしましたか？', pt: 'Aqui é o Tamura. Wang, o que houve?' },
+        { speaker: '王', ja: '{熱|ねつ}があります。それで、{今日|きょう}は1{日|にち}、{休|やす}みたいんですが……。', pt: 'Estou com febre. Por isso, hoje eu queria tirar o dia de folga…' },
+        { speaker: '田村', ja: 'そうですか。わかりました。ゆっくり{休|やす}んでください。', pt: 'Ah, é? Entendi. Descanse bastante.' },
+        { speaker: '王', ja: '（{次|つぎ}の{日|ひ}）{昨日|きのう}は、{休|やす}んですみませんでした。', pt: '(No dia seguinte) Desculpe por ter faltado ontem.' },
+      ],
+    },
+  ],
+  '14-08': [
+    {
+      label: '① (14-08) — トイレに行ってきてもいいですか',
+      setupJa: '4{人|よにん}の{人|ひと}が、{職場|しょくば}で、{周|まわ}りの{人|ひと}に{話|はな}しかけています。',
+      setupPt: 'Quatro pessoas falam com um colega no trabalho.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、ちょっとトイレに{行|い}ってきてもいいですか？', pt: 'Ãh, posso ir rapidinho ao banheiro?' },
+        { speaker: 'B', ja: 'どうぞ。', pt: 'Pode ir.' },
+      ],
+    },
+  ],
+  '14-09': [
+    {
+      label: '② (14-09) — 飲み物を買ってきてもいいですか（あとにして）',
+      lines: [
+        { speaker: 'A', ja: 'あのう、ちょっと{飲|の}み{物|もの}を{買|か}ってきてもいいですか？', pt: 'Ãh, posso ir comprar uma bebida rapidinho?' },
+        { speaker: 'B', ja: 'え、{今|いま}？あとにして。', pt: 'O quê, agora? Deixa para depois.' },
+      ],
+    },
+  ],
+  '14-10': [
+    {
+      label: '③ (14-10) — たばこを吸ってきてもいいですか（いいよ）',
+      lines: [
+        { speaker: 'A', ja: 'じゃあ、{今|いま}から{休憩|きゅうけい}。', pt: 'Então, pausa a partir de agora.' },
+        { speaker: 'B', ja: 'ちょっと{外|そと}でたばこを{吸|す}ってきてもいいですか？', pt: 'Posso ir fumar um cigarro lá fora?' },
+        { speaker: 'A', ja: 'ああ、いいよ。', pt: 'Ah, pode.' },
+      ],
+    },
+  ],
+  '14-11': [
+    {
+      label: '④ (14-11) — お祈りに行ってもいいですか（15分で戻ります）',
+      lines: [
+        { speaker: 'A', ja: 'あのう、すみません。{今|いま}、お{祈|いの}りに{行|い}ってもいいですか？15{分|ふん}で{戻|もど}ります。', pt: 'Ãh, com licença. Posso ir rezar agora? Volto em 15 minutos.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '14-14': [
+    {
+      label: '会話① (14-14) — 早退してもいいでしょうか（役所）',
+      setupJa: '{休|やす}みを{取|と}ったり{早退|そうたい}したりするために、{上司|じょうし}に{相談|そうだん}しています。',
+      setupPt: 'As pessoas conversam com o superior para tirar folga ou sair mais cedo.',
+      lines: [
+        { speaker: 'バンク', ja: '{社長|しゃちょう}、ちょっと、いいでしょうか？', pt: 'Presidente, posso falar um instante?' },
+        { speaker: '社長', ja: 'はい、バンクさん、{何|なん}ですか？', pt: 'Sim, Bank, o que foi?' },
+        { speaker: 'バンク', ja: 'あのう、{明日|あした}の{午後|ごご}、{早退|そうたい}してもいいでしょうか？ちょっと、{役所|やくしょ}に{行|い}かなければならないんです。', pt: 'Ãh, eu poderia sair mais cedo amanhã à tarde? É que tenho que ir à prefeitura.' },
+        { speaker: '社長', ja: 'わかりました。だいじょうぶですよ。', pt: 'Entendi. Sem problema.' },
+        { speaker: 'バンク', ja: 'ありがとうございます。', pt: 'Muito obrigado.' },
+        { speaker: 'バンク', ja: '（{早退|そうたい}した{次|つぎ}の{日|ひ}）{昨日|きのう}は、{早|はや}く{帰|かえ}ってすみませんでした。', pt: '(No dia seguinte) Desculpe por ter saído mais cedo ontem.' },
+        { speaker: '社長', ja: '{用事|ようじ}は{済|す}みましたか？', pt: 'Resolveu o que precisava?' },
+        { speaker: 'バンク', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '14-15': [
+    {
+      label: '会話② (14-15) — 休みを取ってもいいでしょうか（友だちが来る）',
+      lines: [
+        { speaker: 'モニカ', ja: '{主任|しゅにん}、あのう、すみません。', pt: 'Chefe, ãh, com licença.' },
+        { speaker: '主任', ja: 'ああ、モニカさん、どうしましたか？', pt: 'Ah, Monika, o que houve?' },
+        { speaker: 'モニカ', ja: 'ええと、{来月|らいげつ}20{日|か}の{月曜日|げつようび}、{休|やす}みを{取|と}ってもいいでしょうか？{東京|とうきょう}から、{国|くに}の{友|とも}だちが{来|く}るんです。できたら、{町|まち}を{案内|あんない}したくて……。', pt: 'Hum, eu poderia tirar folga na segunda, dia 20 do mês que vem? É que um amigo do meu país vem de Tóquio. Se possível, eu queria mostrar a cidade a ele…' },
+        { speaker: '主任', ja: 'そうですか。ちょっと{待|ま}ってくださいね。……あ、{別|べつ}にかまいませんよ。', pt: 'Ah, é? Espere um instante. …Ah, por mim, tudo bem.' },
+        { speaker: 'モニカ', ja: 'ありがとうございます。', pt: 'Muito obrigada.' },
+        { speaker: 'モニカ', ja: '（{休|やす}んだ{次|つぎ}の{日|ひ}）{昨日|きのう}は、お{休|やす}み、ありがとうございました。', pt: '(No dia seguinte) Obrigada pela folga de ontem.' },
+        { speaker: '主任', ja: 'ああ。{楽|たの}しかったですか？', pt: 'Ah. Foi divertido?' },
+        { speaker: 'モニカ', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '14-19': [
+    {
+      label: '会話 (14-19) — 休暇届の書き方',
+      setupJa: '{会社|かいしゃ}の{人|ひと}に、{休暇届|きゅうかとどけ}の{書|か}き{方|かた}を{聞|き}いています。',
+      setupPt: 'A pessoa pergunta a um colega como preencher o pedido de folga.',
+      lines: [
+        { speaker: 'A', ja: 'お{休|やす}みを{取|と}るときには、{休暇届|きゅうかとどけ}を{出|だ}してください。このフォームです。', pt: 'Quando for tirar folga, entregue o pedido de folga. É este formulário.' },
+        { speaker: 'B', ja: 'えっと、どこに{何|なに}を{書|か}きますか？', pt: 'Hum, o que escrevo em cada lugar?' },
+        { speaker: 'A', ja: 'いちばん{上|うえ}の「{所属|しょぞく}」のところには、{自分|じぶん}の{所属|しょぞく}チームの{名前|なまえ}を{書|か}いてください。', pt: 'No campo “lotação”, lá em cima, escreva o nome da sua equipe.' },
+        { speaker: 'B', ja: 'じゃあ、{私|わたし}は「{総務|そうむ}」ですね。', pt: 'Então, no meu caso é “administração geral”, né.' },
+        { speaker: 'A', ja: 'はい。それから、その{下|した}の「{氏名|しめい}」のところに{名前|なまえ}を{書|か}きます。それから、{名前|なまえ}の{横|よこ}にハンコを{押|お}してください。あ、ハンコ、{持|も}ってますか？', pt: 'Sim. Depois, no campo “nome”, abaixo, escreva o nome. E ao lado do nome, carimbe. Ah, você tem carimbo?' },
+        { speaker: 'B', ja: 'はい、{作|つく}りました。', pt: 'Tenho, mandei fazer.' },
+        { speaker: 'A', ja: 'そうですか。で、「{期間|きかん}」のところは、いつからいつまで{何日間|なんにちかん}{休|やす}みたいかを{書|か}きます。', pt: 'Que bom. No campo “período”, escreve de quando até quando e quantos dias quer de folga.' },
+        { speaker: 'A', ja: 'その{下|した}の「{理由|りゆう}」ですが、{普通|ふつう}の{休|やす}みのときは、「{私用|しよう}」と{書|か}いてください。', pt: 'No campo “motivo”, abaixo, numa folga comum escreva “assunto particular” (shiyō).' },
+        { speaker: 'B', ja: 'しよう？', pt: 'Shiyō?' },
+        { speaker: 'A', ja: '「{私|わたし}」という{漢字|かんじ}に、「{用事|ようじ}」の「{用|よう}」です。それから、ここに{休|やす}み{中|ちゅう}の{連絡先|れんらくさき}を{書|か}いてください。', pt: 'O kanji de “watashi” com o “yō” de “yōji”. Depois, escreva aqui o contato durante a folga.' },
+        { speaker: 'B', ja: 'えーと、いちばん{下|した}は{何|なん}ですか？', pt: 'Hum, e o de baixo de tudo, o que é?' },
+        { speaker: 'A', ja: '「{備考|びこう}」のところは、{普通|ふつう}の{休|やす}みのときは、{何|なに}もいりません。', pt: 'O campo “observações”, numa folga comum, não precisa de nada.' },
+        { speaker: 'B', ja: 'わかりました。いつまでに{出|だ}しますか？', pt: 'Entendi. Até quando preciso entregar?' },
+        { speaker: 'A', ja: '{休|やす}みの{前|まえ}の{日|ひ}までに{出|だ}してください。', pt: 'Entregue até o dia anterior à folga.' },
+      ],
+    },
+  ],
+}
+
+const lesson14: Section = {
+  id: 'lesson-14',
+  level: 'elementary1',
+  titleJa: '第14課 休みを取ってもいいでしょうか？',
+  titlePt: 'Lição 14 — Posso tirar uma folga?',
+  summaryPt: 'Comunicação no trabalho · avisar atraso/falta por telefone com o motivo ({道|みち}が{混|こ}んでいて…／それで、{遅|おく}れます), pedir permissão (トイレに{行|い}ってきてもいいですか／{早退|そうたい}してもいいでしょうか) e justificar com obrigação ou situação ({役所|やくしょ}に{行|い}かなければならないんです／{友|とも}だちが{来|く}るんです), além de preencher o {休暇届|きゅうかとどけ}.',
+  studyNotes: [
+    {
+      title: 'Tópico: Comunicação no trabalho (仕事の連絡)',
+      bodyPt:
+        '## Can-do\n' +
+        '- Avisar o trabalho por telefone sobre folga ou atraso.\n' +
+        '- Pedir permissão a quem está por perto ao deixar o posto de trabalho.\n' +
+        '- Pedir permissão com antecedência quando quer tirar folga.\n' +
+        '- Perguntar como preencher um formulário (pedido de folga) e entender a resposta.\n\n' +
+        '💡 Pergunta de abertura: どんなときに{仕事|しごと}を{休|やす}みますか？',
+    },
+    {
+      title: 'Motivo: Nで／ナA-で／イA-くて／V-て (➊) ／ S1。それで、S2 (➋)',
+      bodyPt:
+        '**[motivo]で／くて／て、[consequência]** une duas frases, a 1ª como **causa/motivo** da 2ª:\n\n' +
+        '- N: `{事故|じこ}で`; ナA: `{大変|たいへん}で`; イA: `{具合|ぐあい}が{悪|わる}くて`; V (テ-form): `{熱|ねつ}があって`. V-ている→V-ていて (`{道|みち}が{混|こ}んでいて`). Também justifica ao pedir desculpa: `{休|やす}んで、すみませんでした`.\n\n' +
+        '**S1。それで、S2** — o conectivo それで (“por isso/então”) marca S1 como motivo de S2: `{病院|びょういん}に{行|い}きます。それで、{少|すこ}し{遅刻|ちこく}します`.',
+    },
+    {
+      title: 'Pedir permissão: V-てもいいですか？ (➌) ／ V-てもいいでしょうか？ (➍)',
+      bodyPt:
+        '**V-てもいいですか？** = pedir permissão (sobre a テ-form): `トイレに{行|い}ってきてもいいですか？`. Concede-se com `どうぞ／わかりました／いいですよ`; recusa-se com `あとにして／あとにしてもらえませんか`.\n\n' +
+        '**V-てもいいでしょうか？** = versão mais **educada** (troca 〜ですか？ por 〜でしょうか？): `{明日|あした}の{午後|ごご}、{早退|そうたい}してもいいでしょうか？`.',
+    },
+    {
+      title: 'Obrigação e motivo: V-なければなりません (➎) ／ ～んです① (➏)',
+      bodyPt:
+        '**V-なければなりません** = obrigação (preciso fazer, independe da vontade). Da ナイ-form, troca-se 〜ない por 〜なければなりません ({行|い}かない→{行|い}かなければなりません); forma simples 〜なければならない.\n\n' +
+        '**～んです①** = explicar a situação/motivo, **sem** o が… final (≠ 〜んですが…): `{友|とも}だちが{来|く}るんです`／`{役所|やくしょ}に{行|い}かなければならないんです`.',
+    },
+    {
+      title: 'Vocabulário, Kanji e TIPS',
+      bodyPt:
+        '**Atraso/falta (Ativ. 1):** {道|みち}が{混|こ}んでいる, せきがひどい, {熱|ねつ}がある, {財布|さいふ}を{忘|わす}れた, {病院|びょういん}に{行|い}く, {家|いえ}に{帰|かえ}る; これから, {遅|おそ}くなる, みなさん, {伝|つた}える, {遅刻|ちこく}する, あとで, {申|もう}し{訳|わけ}ありません. **Permissão ao colega (Ativ. 2):** お{祈|いの}りに{行|い}く, たばこを{吸|す}う, {飲|の}み{物|もの}を{買|か}う, トイレに{行|い}く; {休憩|きゅうけい}（する）, {戻|もど}る. **Permissão ao superior (Ativ. 3):** {遅刻|ちこく}する, {早退|そうたい}する, {休|やす}みを{取|と}る; {社長|しゃちょう}, {役所|やくしょ}, {用事|ようじ}, {済|す}む, {主任|しゅにん}, {来月|らいげつ}, できたら; ちょっと、いいでしょうか？／{別|べつ}にかまいません. **{休暇届|きゅうかとどけ} (Ativ. 4):** {出|だ}す, フォーム, {所属|しょぞく}, チーム, {総務|そうむ}, {氏名|しめい}, ハンコ, {期間|きかん}, {理由|りゆう}, {普通|ふつう}, {私用|しよう}, {休|やす}み{中|ちゅう}, {連絡先|れんらくさき}, {備考|びこう}, いる.\n\n' +
+        '**Kanji da lição:** {用事|ようじ}, {氏名|しめい}, {理由|りゆう}, {連絡先|れんらくさき}, {別|べつ}に, {早|はや}く, {吸|す}う, {取|と}る, {帰|かえ}る, {伝|つた}える.\n\n' +
+        '📌 **TIPS — {日本|にほん}の{生活|せいかつ}:** **{印鑑|いんかん}／ハンコ** (carimbo pessoal usado em documentos, banco, entregas, {確認印|かくにんいん}; sobrenome comum por centenas de ienes, nome estrangeiro encomendado a partir de ~2.000円; às vezes a assinatura basta); **{有給休暇|ゆうきゅうきゅうか}** (férias remuneradas obrigatórias desde 1/4/2019 — 6+ meses e ≥80% de presença = 10 dias/ano; empresa deve garantir ≥5 dias/ano; vale para contratados/part-time; {厚生労働省|こうせいろうどうしょう} atende em vários idiomas).',
+    },
+  ],
+  groups: [lesson14Group],
+  audios: attachScripts(14, L14_SCRIPTS),
+}
+
+// ---- Lições 15-18 (estrutura por tópico; exercícios em construção) ----------
 const others: Section[] = [
-  scaffold(14, 'Comunicação no trabalho', '休みを取ってもいいでしょうか？', 'Posso tirar uma folga?', [
-    'Avisar por telefone o trabalho sobre folga ou atraso.',
-    'Pedir permissão a quem está por perto ao deixar o posto de trabalho.',
-    'Pedir permissão com antecedência quando quer tirar folga.',
-    'Perguntar como preencher um formulário (pedido de folga) e entender a resposta.',
-  ]),
   scaffold(15, 'Vida saudável', '熱があってのどが痛いんです', 'Estou com febre e a garganta dói', [
     'Transmitir de forma simples seus sintomas no hospital.',
     'Ouvir e entender as instruções do médico.',
@@ -2881,5 +3114,5 @@ export const irodoriElementary1: Level = {
   titlePt: 'Irodori — Elementary 1 (初級1 · A2)',
   descriptionPt:
     'Segundo nível do Irodori (いろどり: Japonês para a vida no Japão, da Japan Foundation). Nível A2: manter conversas curtas e básicas sobre temas do dia a dia. São 9 tópicos em 18 lições (課), organizadas por módulos, com os áudios oficiais. As explicações são em português.',
-  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, ...others],
+  sections: [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11, lesson12, lesson13, lesson14, ...others],
 }
