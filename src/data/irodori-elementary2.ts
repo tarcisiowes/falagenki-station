@@ -2347,7 +2347,283 @@ const lesson9: Section = {
   audios: attachScripts(9, L9_SCRIPTS),
 }
 
-// ---- Lições 10-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 10: どんな服を着て行けばいいですか？ (tópico 年中行事とマナー) --------------
+const lesson10Group: ExerciseGroup = {
+  id: 'iro-e2-l10',
+  title: 'どんな服を着て行けばいいですか？',
+  subtitlePt: 'Perguntar etiqueta e costumes (casamento, funeral, visita ao hospital) · comparar costumes Japão × seu país · contar um episódio intercultural · ler posts sobre diferenças de etiqueta',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l10-1', number: 1, prompt: 'O título 「どんな{服|ふく}を{着|き}て{行|い}けばいいですか？」 usa 「V-ばいいですか」. O que se pede com isso?', choices: [{ n: 1, text: 'um conselho sobre o que fazer / como agir (que roupa devo vestir para ir?)' }, { n: 2, text: 'permissão para faltar' }, { n: 3, text: 'o preço de uma roupa' }, { n: 4, text: 'uma ordem' }], answer: 1, translationPt: 'Que roupa devo vestir para ir?', explanationPt: 'V-ばいいですか pede orientação sobre o que/como fazer. {着|き}て{行|い}けばいいですか／いくら{持|も}って{行|い}けばいいですか. (文法ノート ❶)' },
+    { id: 'iro-e2-l10-2', number: 2, prompt: 'Que ocasião esta ilustração representa?', image: `${IMG}/Z_10_1_01_osooshiki.png`, imageAlt: 'cena de funeral com altar budista', choices: [{ n: 1, text: 'お{葬式|そうしき} — um funeral' }, { n: 2, text: '{結婚式|けっこんしき} — um casamento' }, { n: 3, text: 'お{見舞|みま}い — visita a um doente' }, { n: 4, text: '{新築|しんちく}{祝|いわ}い — festa de casa nova' }], answer: 1, explanationPt: 'お{葬式|そうしき} = funeral. (Atividade 1 · 会話1)' },
+    { id: 'iro-e2-l10-3', number: 3, prompt: '聴解 10-01 (お葬式): que roupa se deve usar num funeral, segundo o diálogo?', context: 'Ｂ：{普通|ふつう}は、{黒|くろ}いスーツに、{黒|くろ}いネクタイですね。シャツは{白|しろ}いやつ。…{黒|くろ}いスーツに、ネクタイを{着|つ}ければいいですよ。', choices: [{ n: 1, text: 'Terno preto, gravata preta e camisa branca (roupa escura/discreta).' }, { n: 2, text: 'Terno claro e gravata colorida.' }, { n: 3, text: 'Roupa casual, jeans.' }, { n: 4, text: 'Quimono branco.' }], answer: 1, explanationPt: 'Funeral: {黒|くろ}いスーツ + {黒|くろ}いネクタイ + {白|しろ}いシャツ ({地味|じみ}/{暗|くら}い{色|いろ}). (聴解 10-01)' },
+    { id: 'iro-e2-l10-4', number: 4, prompt: 'O que é o objeto desta ilustração, levado a um funeral?', image: `${IMG}/Z_10_1_07_koodenbukuro.png`, imageAlt: 'envelope especial para dinheiro de pêsames', choices: [{ n: 1, text: '{香典袋|こうでんぶくろ} — envelope especial para o dinheiro de pêsames (お{香典|こうでん})' }, { n: 2, text: 'お{年玉|としだま}の{袋|ふくろ} — envelope de dinheiro de Ano-Novo' }, { n: 3, text: '{招待状|しょうたいじょう} — convite' }, { n: 4, text: 'レシート — recibo' }], answer: 1, explanationPt: '{香典袋|こうでんぶくろ} = envelope próprio (お{葬式用|そうしきよう}) para a お{香典|こうでん} (dinheiro de pêsames). (聴解 10-01)' },
+    { id: 'iro-e2-l10-5', number: 5, prompt: '聴解 10-01: o que se faz com a お{香典|こうでん} (dinheiro de pêsames)?', context: 'Ａ：「お{香典|こうでん}」っていって、お{金|かね}を{持|も}って{行|い}くんだけど、だいたい3,000{円|えん}ぐらい…。「{香典袋|こうでんぶくろ}」っていう、お{葬式用|そうしきよう}の{封筒|ふうとう}を{買|か}って、それに{入|い}れて、{封筒|ふうとう}には{自分|じぶん}の{名前|なまえ}を{書|か}いて。', choices: [{ n: 1, text: 'Levam-se cerca de 3.000 ienes num envelope próprio de funeral (香典袋), com o seu nome escrito nele.' }, { n: 2, text: 'Entrega-se o dinheiro solto na mão.' }, { n: 3, text: 'Não se leva dinheiro nenhum.' }, { n: 4, text: 'Paga-se por aplicativo.' }], answer: 1, explanationPt: 'お{香典|こうでん}: ~3,000{円|えん}, no {香典袋|こうでんぶくろ}, com {自分|じぶん}の{名前|なまえ}. (聴解 10-01)' },
+    { id: 'iro-e2-l10-6', number: 6, prompt: 'Que ocasião esta ilustração representa?', image: `${IMG}/Z_10_1_10_kekkonshiki.png`, imageAlt: 'cerimônia/festa de casamento', choices: [{ n: 1, text: '{結婚式|けっこんしき} — um casamento' }, { n: 2, text: 'お{葬式|そうしき} — um funeral' }, { n: 3, text: 'お{見舞|みま}い — visita a um doente' }, { n: 4, text: '{成人式|せいじんしき} — cerimônia da maioridade' }], answer: 1, explanationPt: '{結婚式|けっこんしき} = casamento; a festa é o {披露宴|ひろうえん}, anunciada no {招待状|しょうたいじょう}. (Atividade 1 · 会話2)' },
+    { id: 'iro-e2-l10-7', number: 7, prompt: '聴解 10-02 (結婚式パーティー): que roupa convém para a festa de casamento num restaurante?', context: 'Ｂ：レストランのパーティーね。だったら、カジュアルだけど、ちょっとおしゃれな{感|かん}じのワンピースとかがいいよね。', choices: [{ n: 1, text: 'Um vestido (one-piece) elegante, não muito casual.' }, { n: 2, text: 'Terno preto e gravata preta (como em funeral).' }, { n: 3, text: 'Jeans e camiseta.' }, { n: 4, text: 'Quimono de luto.' }], answer: 1, explanationPt: '{披露宴|ひろうえん} em restaurante: おしゃれな{感|かん}じのワンピース (カジュアルすぎない). (聴解 10-02)' },
+    { id: 'iro-e2-l10-8', number: 8, prompt: 'Por que NÃO se deve usar este vestido (branco) numa festa de casamento?', image: `${IMG}/Z_10_1_12_shiroiwanpiisu.png`, imageAlt: 'vestido branco', choices: [{ n: 1, text: 'Porque o branco é a cor da noiva (花嫁の色) — convidadas evitam branco.' }, { n: 2, text: 'Porque branco é cor de luto.' }, { n: 3, text: 'Porque é muito caro.' }, { n: 4, text: 'Porque é casual demais.' }], answer: 1, explanationPt: '{白|しろ}い{服|ふく}はだめ — {白|しろ}は{花嫁|はなよめ}の{色|いろ} (cor da noiva). (聴解 10-02)' },
+    { id: 'iro-e2-l10-9', number: 9, prompt: 'Que situação esta ilustração representa?', image: `${IMG}/Z_10_1_15_omimai.png`, imageAlt: 'pessoa visitando alguém internado no hospital', choices: [{ n: 1, text: 'お{見舞|みま}い — visitar alguém doente/internado' }, { n: 2, text: 'お{葬式|そうしき} — funeral' }, { n: 3, text: '{結婚式|けっこんしき} — casamento' }, { n: 4, text: '{新築|しんちく}{祝|いわ}い — festa de casa nova' }], answer: 1, explanationPt: 'お{見舞|みま}い = visita a quem está doente/internado ({入院|にゅういん}). Ex.: {同僚|どうりょう}が{足|あし}の{骨|ほね}を{折|お}って{入院|にゅういん}した. (Atividade 1 · 会話3)' },
+    { id: 'iro-e2-l10-10', number: 10, prompt: '聴解 10-03: por que um vaso de planta (鉢植え) NÃO é bom presente de お見舞い?', image: `${IMG}/Z_10_1_16_hachiue.png`, imageAlt: 'planta num vaso (hachiue)', choices: [{ n: 1, text: 'Porque «criar raiz» (根が張る) lembra «ficar de cama/acamado» (寝付く) — má associação para um doente.' }, { n: 2, text: 'Porque flores são proibidas em hospitais sempre.' }, { n: 3, text: 'Porque é caro demais.' }, { n: 4, text: 'Porque murcha rápido.' }], answer: 1, explanationPt: '{鉢植|はちう}え→「{根|ね}が{張|は}る」→「{寝付|ねつ}く」(ficar acamado) — imagem ruim p/ doente, por isso 持って行っちゃだめ. (聴解 10-03)' },
+    { id: 'iro-e2-l10-11', number: 11, prompt: '聴解 10-03: então qual é o melhor jeito de escolher um presente de お見舞い?', context: 'Ａ：{花束|はなたば}や{果物|くだもの}もだめな{病院|びょういん}もありますね。{最近|さいきん}、{病院|びょういん}は{厳|きび}しいんですよ。Ｂ：じゃあ、どうすればいいですか？ Ａ：{本人|ほんにん}にほしいものを{聞|き}くのがいちばんですよ。', choices: [{ n: 1, text: 'Perguntar à própria pessoa (本人) o que ela quer — alguns hospitais até proíbem flores/frutas.' }, { n: 2, text: 'Levar sempre um vaso de planta.' }, { n: 3, text: 'Não visitar.' }, { n: 4, text: 'Levar bebida alcoólica.' }], answer: 1, explanationPt: '{本人|ほんにん}にほしいものを{聞|き}くのがいちばん (hoje muitos {病院|びょういん} são {厳|きび}しい — proíbem {花束|はなたば}/{果物|くだもの}). (聴解 10-03)' },
+    { id: 'iro-e2-l10-12', number: 12, prompt: 'Que presentes de お見舞い costumam ser bem-vindos (quando o hospital permite)?', image: `${IMG}/Z_10_1_17_hanataba.png`, imageAlt: 'buquê de flores', choices: [{ n: 1, text: '{花束|はなたば} (buquê) ou {果物|くだもの}・お{菓子|かし} (frutas/doces) — diferente do {鉢植|はちう}え' }, { n: 2, text: 'um vaso de planta com raiz' }, { n: 3, text: 'dinheiro de pêsames' }, { n: 4, text: 'bebida alcoólica' }], answer: 1, explanationPt: '{花束|はなたば} (cortado, ≠ {鉢植|はちう}え) ou {果物|くだもの}/お{菓子|かし}, quando o {病院|びょういん} permite. (Atividade 1)' },
+    { id: 'iro-e2-l10-13', number: 13, prompt: 'Que ocasião esta ilustração representa (festa numa casa nova)?', image: `${IMG}/Z_10_1_19_shinchikuiwai.png`, imageAlt: 'festa de inauguração de casa nova', choices: [{ n: 1, text: '{新築|しんちく}{祝|いわ}い — festa de inauguração de casa nova' }, { n: 2, text: 'お{葬式|そうしき} — funeral' }, { n: 3, text: '{成人式|せいじんしき} — cerimônia da maioridade' }, { n: 4, text: 'お{見舞|みま}い — visita a doente' }], answer: 1, explanationPt: '{新築|しんちく}{祝|いわ}い = festa de casa nova. No diálogo, a ilha tem um costume especial de beber: a 「オトーリ」. (Atividade 1 · 会話4)' },
+    { id: 'iro-e2-l10-14', number: 14, prompt: '聴解 10-04 (新築祝い · 「オトーリ」): como funciona esse costume de beber e como se recusa?', context: 'Ｂ：「オトーリ」っていって、はじめにだれかがあいさつしてから、{小|ちい}さいコップにお{酒|さけ}を{入|い}れて{飲|の}みます。そのあと、そのコップを、{順番|じゅんばん}に{全員|ぜんいん}が{飲|の}んでは、{次|つぎ}の{人|ひと}にまわします。…Ｂ：「もう{飲|の}めません」って{言|い}えば、だいじょうぶですよ。', choices: [{ n: 1, text: 'Passa-se um copo de saquê em ordem por todos, repetidamente; para recusar, basta dizer «もう飲めません».' }, { n: 2, text: 'Cada um bebe sozinho o quanto quiser, sem regra.' }, { n: 3, text: 'É proibido beber álcool.' }, { n: 4, text: 'Bebe-se só uma vez e acabou.' }], answer: 1, explanationPt: 'オトーリ: あいさつ→{小|ちい}さいコップを{順番|じゅんばん}に{全員|ぜんいん}が{飲|の}んでまわす, くり{返|かえ}す; 「もう{飲|の}めません」で{断|ことわ}れる. (聴解 10-04)' },
+    { id: 'iro-e2-l10-15', number: 15, prompt: 'Como se pede educadamente uma orientação de etiqueta a alguém?', context: '「{結婚|けっこん}パーティーには、どんな{服|ふく}を{着|き}て{行|い}けばいいか、{教|おし}えてもらえませんか？」', choices: [{ n: 1, text: '[疑問詞]…V-ばいいか + 教えてもらえませんか — “poderia me dizer que ~ devo ~?”' }, { n: 2, text: '〜たことがありますか (já fez?)' }, { n: 3, text: '〜てもいいですか (posso?)' }, { n: 4, text: '〜つもりです (pretendo)' }], answer: 1, explanationPt: 'Pergunta embutida + pedido educado: 「どんな{服|ふく}を{着|き}て{行|い}けばいいか、{教|おし}えてもらえませんか？」. (文法ノート ❶)' },
+    { id: 'iro-e2-l10-16', number: 16, prompt: '「{信号|しんごう}が{赤|あか}のときは、{横断歩道|おうだんほどう}を{渡|わた}っ[[てはいけません]]よ」 — 「V-てはいけません／ちゃだめ」 indica:', choices: [{ n: 1, text: 'proibição — não se pode/não deve fazer (não pode atravessar no sinal vermelho)' }, { n: 2, text: 'obrigação — tem de fazer' }, { n: 3, text: 'permissão — pode fazer' }, { n: 4, text: 'conselho — é melhor fazer' }], answer: 1, explanationPt: 'V-てはいけません (coloquial 〜ちゃだめ) = proibição. {赤信号|あかしんごう}を{渡|わた}ってはいけません. (文法ノート ❷)' },
+    { id: 'iro-e2-l10-17', number: 17, prompt: '聴解 10-08 (マナー · 信号): qual é a diferença de costume que aparece no diálogo?', context: 'Ｂ：{私|わたし}の{国|くに}では、{車|くるま}がいないときは、みんな{渡|わた}ります。Ａ：{赤信号|あかしんごう}を{渡|わた}るの？ それはよくないですよ。…{子|こ}どもがまねをしないように、ルールは{守|まも}らなくちゃ。', choices: [{ n: 1, text: 'No país de B atravessam no vermelho se não vem carro; em A dizem que as regras devem ser seguidas para as crianças não imitarem.' }, { n: 2, text: 'Nos dois países é proibido atravessar a rua.' }, { n: 3, text: 'Os carros é que devem parar sempre.' }, { n: 4, text: 'Ninguém liga para o sinal.' }], answer: 1, explanationPt: '{赤信号|あかしんごう}を{渡|わた}ってはいけない (❷); {子|こ}どもがまねをしないように、ルールを{守|まも}らなくちゃ (❹ ように + ❸ なくちゃ). (聴解 10-08)' },
+    { id: 'iro-e2-l10-18', number: 18, prompt: '聴解 10-09 (マナー · トイレ): que diferença de costume sobre o papel higiênico aparece?', image: `${IMG}/Z_10_2_04_toirettopeepaa.png`, imageAlt: 'papel higiênico no vaso sanitário', choices: [{ n: 1, text: 'No Japão joga-se o papel usado no vaso (流す); no país de A jogam no lixo para o vaso não entupir (つまらないように).' }, { n: 2, text: 'No Japão joga-se o papel no lixo.' }, { n: 3, text: 'Não se usa papel higiênico.' }, { n: 4, text: 'O papel é reciclado.' }], answer: 1, explanationPt: '{日本|にほん}: 使った{紙|かみ}もトイレに{流|なが}す; A国: トイレがつまらないように{紙|かみ}はごみ{箱|ばこ}に{捨|す}てる (❹ ように). (聴解 10-09)' },
+    { id: 'iro-e2-l10-19', number: 19, prompt: '聴解 10-10 (マナー · バス): que costume sobre celular no ônibus aparece?', context: 'Ａ：でも、だれも{電話|でんわ}で{話|はな}さないですね。どうしてですか？ Ｂ：え、バスの{中|なか}では、{話|はな}しちゃだめだよね。Ａ：{私|わたし}の{国|くに}では、みんな{普通|ふつう}に{電話|でんわ}で{話|はな}しています。', choices: [{ n: 1, text: 'No Japão não se fala ao telefone no ônibus (話しちゃだめ); no país de A todos falam normalmente.' }, { n: 2, text: 'No Japão é obrigatório falar alto.' }, { n: 3, text: 'É proibido usar ônibus.' }, { n: 4, text: 'Só se pode mandar mensagem em pé.' }], answer: 1, explanationPt: 'バスの{中|なか}で{電話|でんわ}で{話|はな}しちゃだめ (❷); A国ではみんな{話|はな}している → {不思議|ふしぎ}/{習慣|しゅうかん}の{違|ちが}い. (聴解 10-10)' },
+    { id: 'iro-e2-l10-20', number: 20, prompt: '「{食器|しょっき}は{自分|じぶん}で{片付|かたづ}け[[なくちゃ]]」 — 「V-なくちゃ／なくちゃならない」 significa:', choices: [{ n: 1, text: 'tem de fazer (forma coloquial de 〜なくてはならない): tenho de recolher a louça sozinho' }, { n: 2, text: 'não precisa fazer' }, { n: 3, text: 'é proibido fazer' }, { n: 4, text: 'pode deixar para depois' }], answer: 1, explanationPt: 'V-なくちゃ(ならない) = 〜なくてはならない coloquial (obrigação). {自分|じぶん}で{片付|かたづ}けなくちゃ. (文法ノート ❸)' },
+    { id: 'iro-e2-l10-21', number: 21, prompt: '聴解 10-11 (マナー · フードコート): que diferença sobre recolher a louça aparece, e por quê?', context: 'Ｂ：{食|た}べ{終|お}わったあとは、{自分|じぶん}で{片付|かたづ}けるんですか？ Ａ：フードコートは、そうだね。Ｂ：{私|わたし}の{国|くに}では、それは{掃除|そうじ}の{人|ひと}の{仕事|しごと}です。…Ａ：{次|つぎ}の{人|ひと}がすぐに{席|せき}に{座|すわ}れるように、かな？', choices: [{ n: 1, text: 'No Japão, na praça de alimentação cada um recolhe a própria louça — para o próximo poder se sentar logo (席に座れるように); no país de B isso é trabalho da limpeza.' }, { n: 2, text: 'Ninguém recolhe a louça em lugar nenhum.' }, { n: 3, text: 'A louça é descartável.' }, { n: 4, text: 'Come-se em pé.' }], answer: 1, explanationPt: 'フードコートでは{自分|じぶん}で{片付|かたづ}ける (❸ なくちゃ); {次|つぎ}の{人|ひと}が{席|せき}に{座|すわ}れるように (❹). B国では{掃除|そうじ}の{人|ひと}の{仕事|しごと}. (聴解 10-11)' },
+    { id: 'iro-e2-l10-22', number: 22, prompt: '「{子|こ}どもがまねをしない[[ように]]、ルールを{守|まも}る」「{次|つぎ}の{人|ひと}が{席|せき}に{座|すわ}れる[[ように]]」 — 「V-ように、〜」 expressa:', choices: [{ n: 1, text: 'finalidade/objetivo — para que (algo aconteça/não aconteça): seguir as regras para as crianças não imitarem' }, { n: 2, text: 'causa passada' }, { n: 3, text: 'comparação' }, { n: 4, text: 'condição hipotética' }], answer: 1, explanationPt: 'V(辞書形/ない形) + ように、〜 = «para que ~». まねをしないように／つまらないように／{座|すわ}れるように. (文法ノート ❹)' },
+    { id: 'iro-e2-l10-23', number: 23, prompt: 'Que episódio (異文化体験) esta ilustração ajuda a contar?', image: `${IMG}/Z_10_3_03_juusuonomu.png`, imageAlt: 'pessoa bebendo um suco no supermercado antes de pagar', choices: [{ n: 1, text: 'beber um suco do mercado ANTES de pagar — no Japão isso é mal visto (泥棒と同じイメージ)' }, { n: 2, text: 'pagar antes de pegar o produto' }, { n: 3, text: 'devolver um produto' }, { n: 4, text: 'pedir desconto' }], answer: 1, explanationPt: 'No 聴解 10-15, Roy bebe a {juice|ジュース} antes de pagar e é {怒|おこ}られる/{注意|ちゅうい}される: no Japão é como ser {泥棒|どろぼう} (ladrão). (Atividade 3 · 会話)' },
+    { id: 'iro-e2-l10-24', number: 24, prompt: '聴解 10-15 (異文化体験): como a situação do suco é vista no Japão e no país da Linda?', context: 'Ａ（{小林|こばやし}）：{日本|にほん}では、お{金|かね}を{払|はら}う{前|まえ}にジュースを{飲|の}むのは、{泥棒|どろぼう}と{同|おな}じイメージだなあ。… リンダ：{私|わたし}の{国|くに}でも、よくありません。{小|ちい}さい{子|こ}どもには、{先|さき}にお{菓子|かし}の{袋|ふくろ}を{開|あ}けて、あとからお{金|かね}を{払|はら}います。', choices: [{ n: 1, text: 'No Japão é mal visto (como roubo); no país de Linda também não é bom, mas com crianças pequenas abrem o doce antes e pagam depois.' }, { n: 2, text: 'Nos dois países é totalmente normal.' }, { n: 3, text: 'Nos dois países é crime grave punido com prisão.' }, { n: 4, text: 'Só no Japão é permitido.' }], answer: 1, explanationPt: '{日本|にほん}: {払|はら}う{前|まえ}に{飲|の}む=泥棒イメージ; リンダの{国|くに}: よくないが{子|こ}どもには{先|さき}にお{菓子|かし}。{同|おな}じ{普通|ふつう}でも{国|くに}によって{違|ちが}う. (聴解 10-15)' },
+    { id: 'iro-e2-l10-25', number: 25, prompt: '聴解 10-14 (Atividade 2 · 習慣の違い): como se conversa sobre uma diferença de costume?', context: 'Ａ：{日本|にほん}では、バスの{中|なか}で、だれも{電話|でんわ}で{話|はな}さないですね。Ｂ：そうですね。Ａ：どうしてですか？ {私|わたし}の{国|くに}では、みんな{電話|でんわ}で{話|はな}しています。Ｂ：どうしてかなあ……。Ａ：{不思議|ふしぎ}ですね。', choices: [{ n: 1, text: 'Aponta-se o costume japonês, compara-se com o do próprio país e comenta-se que é curioso (不思議ですね).' }, { n: 2, text: 'Discute-se o preço da passagem.' }, { n: 3, text: 'Pede-se desculpa por falar alto.' }, { n: 4, text: 'Marca-se um encontro.' }], answer: 1, explanationPt: 'Comparar costumes: 「{日本|にほん}では〜ですね」「{私|わたし}の{国|くに}では〜」「{不思議|ふしぎ}ですね」. (会話 10-14)' },
+    { id: 'iro-e2-l10-26', number: 26, prompt: '「{同|おな}じ{普通|ふつう}でも、{国|くに}によって{違|ちが}うんですね」 — a lição mostra que costumes e etiqueta:', choices: [{ n: 1, text: 'variam de país para país (国によって違う) — o que é normal num lugar pode ser estranho em outro' }, { n: 2, text: 'são iguais no mundo todo' }, { n: 3, text: 'mudam conforme o preço' }, { n: 4, text: 'só existem no Japão' }], answer: 1, explanationPt: '{国|くに}によって{習慣|しゅうかん}・マナーが{違|ちが}う. Tema central: comparar e respeitar diferenças (異文化). (Atividade 3)' },
+    { id: 'iro-e2-l10-27', number: 27, prompt: 'Vocabulário de cerimônias: 「{地味|じみ}（な）／お{香典|こうでん}／{披露宴|ひろうえん}／{招待状|しょうたいじょう}／{花嫁|はなよめ}」 significam:', choices: [{ n: 1, text: 'discreto/sóbrio / dinheiro de pêsames / banquete de recepção (casamento) / convite / noiva' }, { n: 2, text: 'chamativo / gorjeta / despedida / recibo / madrinha' }, { n: 3, text: 'caro / mesada / reunião / cartão de visita / dama de honra' }, { n: 4, text: 'simples / herança / velório / panfleto / sogra' }], answer: 1, explanationPt: '{地味|じみ}（な) (sóbrio), お{香典|こうでん} (pêsames), {披露宴|ひろうえん} (banquete), {招待状|しょうたいじょう} (convite), {花嫁|はなよめ} (noiva). (Atividade 1)' },
+    { id: 'iro-e2-l10-28', number: 28, prompt: 'Vocabulário de visita ao hospital: 「お{見舞|みま}い／{同僚|どうりょう}／{骨|ほね}を{折|お}る／{入院|にゅういん}する／{鉢植|はちう}え」 significam:', choices: [{ n: 1, text: 'visita a doente / colega de trabalho / quebrar um osso / internar-se / planta em vaso' }, { n: 2, text: 'mudança / vizinho / torcer o pé / sair do hospital / buquê' }, { n: 3, text: 'festa / chefe / cortar / consultar / fruta' }, { n: 4, text: 'velório / parente / machucar / operar / doce' }], answer: 1, explanationPt: 'お{見舞|みま}い (visita), {同僚|どうりょう} (colega), {骨|ほね}を{折|お}る (quebrar osso), {入院|にゅういん}する (internar), {鉢植|はちう}え (planta em vaso). (会話3)' },
+    { id: 'iro-e2-l10-29', number: 29, prompt: 'Vocabulário de regras/maneiras: 「ルールを{守|まも}る／{貼|は}り{紙|がみ}／つまる／{臭|くさ}い／{席|せき}」 significam:', choices: [{ n: 1, text: 'seguir as regras / cartaz colado (aviso) / entupir / fedido / assento' }, { n: 2, text: 'quebrar as regras / placa de neon / encher / cheiroso / palco' }, { n: 3, text: 'criar regras / outdoor / esvaziar / barulhento / fila' }, { n: 4, text: 'ignorar regras / convite / vazar / molhado / saída' }], answer: 1, explanationPt: 'ルールを{守|まも}る (seguir regras), {貼|は}り{紙|がみ} (aviso colado), つまる (entupir), {臭|くさ}い (fedido), {席|せき} (assento). (Atividade 2)' },
+    { id: 'iro-e2-l10-30', number: 30, prompt: 'Os kanji 「{服|ふく}／{袋|ふくろ}／{自分|じぶん}／{店長|てんちょう}／{全員|ぜんいん}」 lêem-se:', choices: [{ n: 1, text: 'ふく (roupa) / ふくろ (saco/envelope) / じぶん (si mesmo) / てんちょう (gerente da loja) / ぜんいん (todos)' }, { n: 2, text: 'ふく / たい / じぶん / てんちょう / ぜんいん' }, { n: 3, text: 'ふく / ふくろ / じぶん / みせちょう / ぜんいん' }, { n: 4, text: 'ぼう / ふくろ / じふん / てんなが / ぜんいん' }], answer: 1, explanationPt: '{服|ふく}, {袋|ふくろ}, {自分|じぶん}, {店長|てんちょう}, {全員|ぜんいん}. (漢字のことば)' },
+    { id: 'iro-e2-l10-31', number: 31, prompt: 'Os kanji 「{習慣|しゅうかん}／{普通|ふつう}／{暗|くら}い／{怒|おこ}る／{入院|にゅういん}する」 lêem-se:', choices: [{ n: 1, text: 'しゅうかん (costume) / ふつう (normal) / くらい (escuro) / おこる (ficar bravo) / にゅういんする (internar-se)' }, { n: 2, text: 'しゅうかん / ふつう / あんい / いかる / にゅういんする' }, { n: 3, text: 'れんしゅう / ふつう / くらい / どる / にゅういん' }, { n: 4, text: 'しゅうかん / ぼつう / くらい / おこる / じゅいん' }], answer: 1, explanationPt: '{習慣|しゅうかん}, {普通|ふつう}, {暗|くら}い, {怒|おこ}る ({怒|おこ}られる = ser repreendido), {入院|にゅういん}する. (漢字のことば)' },
+    { id: 'iro-e2-l10-32', number: 32, prompt: 'Resumo: para perguntar a alguém como se comportar num evento (etiqueta), o padrão central da lição é:', choices: [{ n: 1, text: 'どんな{服|ふく}を{着|き}て{行|い}けばいいですか／{何|なに}を{持|も}って{行|い}けばいいか、{教|おし}えてもらえませんか (V-ばいいですか)' }, { n: 2, text: 'もう{始|はじ}まりましたか (já começou?)' }, { n: 3, text: '〜たことがあります (já fiz)' }, { n: 4, text: '〜によって{違|ちが}います (varia conforme)' }], answer: 1, explanationPt: 'Padrão central: V-ばいいですか / [疑問詞]…ばいいか + {教|おし}えてもらえませんか (pedir orientação de etiqueta). (文法ノート ❶)' },
+  ],
+}
+
+// Transcrições oficiais dos diálogos da Lição 10 (聴解スクリプト)
+const L10_SCRIPTS: Record<string, ScriptItem[]> = {
+  '10-01': [
+    {
+      label: '会話1 — お葬式 (10-01)',
+      setupJa: '{日本|にほん}のマナーや{習慣|しゅうかん}について{質問|しつもん}しています。① お{葬式|そうしき}。',
+      setupPt: 'Perguntando sobre etiqueta/costumes japoneses. ① Funeral.',
+      lines: [
+        { speaker: 'A', ja: '{明日|あした}の{磯村|いそむら}さんのお{葬式|そうしき}、{行|い}く？', pt: 'Você vai ao funeral do Sr. Isomura amanhã?' },
+        { speaker: 'B', ja: 'はい。それで、あの、お{葬式|そうしき}には、どんな{服|ふく}を{着|き}て{行|い}けばいいですか？', pt: 'Vou. E, ahn, que roupa devo vestir para um funeral?' },
+        { speaker: 'A', ja: '{普通|ふつう}は、{黒|くろ}いスーツに、{黒|くろ}いネクタイですね。シャツは{白|しろ}いやつ。{持|も}ってる？', pt: 'Normalmente, terno preto com gravata preta. A camisa, uma branca. Você tem?' },
+        { speaker: 'B', ja: 'シャツはありますが、{黒|くろ}いスーツにネクタイはないです……。', pt: 'Camisa eu tenho, mas terno preto e gravata, não…' },
+        { speaker: 'A', ja: 'ネクタイは、100{円|えん}ショップでも{買|か}えるよ。{黒|くろ}いスーツに、ネクタイを{着|つ}ければいいよ。', pt: 'Gravata dá para comprar até em loja de 100 ienes. É só pôr a gravata com o terno preto.' },
+        { speaker: 'B', ja: '{探|さが}してみます。あと、{何|なに}を{持|も}って{行|い}けばいいですか？', pt: 'Vou procurar. E o que mais devo levar?' },
+        { speaker: 'A', ja: '「お{香典|こうでん}」っていって、お{金|かね}を{持|も}って{行|い}くんだけど、だいたい3,000{円|えん}ぐらいかな。「{香典袋|こうでんぶくろ}」っていう、お{葬式用|そうしきよう}の{封筒|ふうとう}を{買|か}って、それに{入|い}れて、{封筒|ふうとう}には{自分|じぶん}の{名前|なまえ}を{書|か}いて。', pt: 'Leva-se dinheiro, a chamada «okōden», uns 3.000 ienes. Compra-se um envelope próprio de funeral, o «kōdenbukuro», põe-se o dinheiro dentro e escreve-se o seu nome no envelope.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '10-02': [
+    {
+      label: '会話2 — 結婚式のパーティー (10-02)',
+      setupPt: '② Festa de casamento.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、ちょっといいですか？', pt: 'Ahn, posso falar um instante?' },
+        { speaker: 'B', ja: 'はい、{何|なに}？', pt: 'Sim, o que é?' },
+        { speaker: 'A', ja: '{今度|こんど}、{友|とも}だちの{結婚式|けっこんしき}のパーティーがあるんですけど……。それで、どんな{服|ふく}を{着|き}て{行|い}けばいいか、{教|おし}えてもらえませんか？', pt: 'Vou a uma festa de casamento de um amigo… Poderia me dizer que roupa devo vestir?' },
+        { speaker: 'B', ja: '{結婚式|けっこんしき}のパーティーって、{披露宴|ひろうえん}？ ホテルでやるの？', pt: 'Festa de casamento, é o banquete (hirōen)? É num hotel?' },
+        { speaker: 'A', ja: 'えっと、これは{招待状|しょうたいじょう}で……。', pt: 'Hmm, está aqui no convite…' },
+        { speaker: 'B', ja: 'ああ、レストランのパーティーね。だったら、カジュアルだけど、ちょっとおしゃれな{感|かん}じのワンピースとかがいいよね。', pt: 'Ah, é festa num restaurante. Então, casual mas um vestido com um toque elegante fica bom.' },
+        { speaker: 'A', ja: 'ワンピースですね。', pt: 'Um vestido, então.' },
+        { speaker: 'B', ja: 'でも、{白|しろ}い{服|ふく}はだめ。{白|しろ}は、{花嫁|はなよめ}の{色|いろ}だからね。', pt: 'Mas roupa branca, não. O branco é a cor da noiva.' },
+        { speaker: 'A', ja: 'へー、そうなんですね。ありがとうございます。', pt: 'Nossa, é mesmo. Obrigada.' },
+      ],
+    },
+  ],
+  '10-03': [
+    {
+      label: '会話3 — お見舞い (10-03)',
+      setupPt: '③ Visita a um doente (omimai).',
+      lines: [
+        { speaker: 'A', ja: 'まあ、きれいなお{花|はな}ですね。', pt: 'Que flores bonitas!' },
+        { speaker: 'B', ja: 'はい、{今|いま}からお{見舞|みま}いに{行|い}くんです。', pt: 'Sim, vou agora visitar alguém no hospital.' },
+        { speaker: 'A', ja: 'お{見舞|みま}い？', pt: 'Visita a um doente?' },
+        { speaker: 'B', ja: '{会社|かいしゃ}の{同僚|どうりょう}が、{足|あし}の{骨|ほね}を{折|お}って、{入院|にゅういん}してるんです。', pt: 'Um colega de trabalho quebrou a perna e está internado.' },
+        { speaker: 'A', ja: 'あら、{大変|たいへん}ですね。でも、お{見舞|みま}いなら、その{花|はな}はよくないですよ。', pt: 'Ai, que pena. Mas, para uma visita ao hospital, essas flores não são boas.' },
+        { speaker: 'B', ja: 'え、どうしてですか？', pt: 'Hã, por quê?' },
+        { speaker: 'A', ja: '{鉢植|はちう}えの{花|はな}は、「{根|ね}が{張|は}る」→「{寝付|ねつ}く」イメージになるから、お{見舞|みま}いには{持|も}って{行|い}っちゃだめなんです。', pt: 'Planta em vaso lembra «criar raiz», que vira «ficar acamado» — por isso não se leva em visita ao hospital.' },
+        { speaker: 'B', ja: 'そうなんですか。じゃあ、{花束|はなたば}ならいいですか？', pt: 'Ah, é? Então um buquê pode?' },
+        { speaker: 'A', ja: 'うーん、{最近|さいきん}は、{花|はな}は{全部|ぜんぶ}だめな{病院|びょういん}も{多|おお}いですよ。', pt: 'Hmm, ultimamente há muitos hospitais que proíbem todo tipo de flor.' },
+        { speaker: 'B', ja: 'じゃあ、お{菓子|かし}や{果物|くだもの}はいいですか？', pt: 'E doces ou frutas, podem?' },
+        { speaker: 'A', ja: 'そうね、それもだめな{病院|びょういん}もありますね。{最近|さいきん}、{病院|びょういん}は{厳|きび}しいんですよ。', pt: 'Pois é, há hospitais que também não deixam. Hoje em dia os hospitais são rígidos.' },
+        { speaker: 'B', ja: 'じゃあ、どうすればいいですか？', pt: 'Então o que eu faço?' },
+        { speaker: 'A', ja: '{本人|ほんにん}にほしいものを{聞|き}くのがいちばんですよ。', pt: 'O melhor é perguntar à própria pessoa o que ela quer.' },
+      ],
+    },
+  ],
+  '10-04': [
+    {
+      label: '会話4 — 新築祝い・「オトーリ」 (10-04)',
+      setupPt: '④ Festa de casa nova; o costume de beber «otōri».',
+      lines: [
+        { speaker: 'A', ja: 'あのう、{明日|あした}の{下地|しもじ}さんのうちのパーティー、{砂川|すながわ}さんも{行|い}きますか？', pt: 'Ahn, você também vai à festa na casa do Sr. Shimoji amanhã, Sr. Sunagawa?' },
+        { speaker: 'B', ja: 'ああ、{下地|しもじ}さんの{家|いえ}の{新築|しんちく}{祝|いわ}い。{行|い}きますよ。タンさんも？', pt: 'Ah, a festa de casa nova do Shimoji. Vou, sim. Você também vai, Tan?' },
+        { speaker: 'A', ja: 'はい。パーティーでは、{何|なに}をするんですか？', pt: 'Vou. O que se faz na festa?' },
+        { speaker: 'B', ja: 'みんなでお{酒|さけ}を{飲|の}んで、{料理|りょうり}を{食|た}べて、ときどき{歌|うた}ったり、{踊|おど}ったり……。', pt: 'Todo mundo bebe, come, de vez em quando canta, dança…' },
+        { speaker: 'A', ja: 'そうですか。{楽|たの}しそうですね。', pt: 'Ah, parece divertido.' },
+        { speaker: 'B', ja: 'あの、この{島|しま}には、お{酒|さけ}を{飲|の}むとき、{特別|とくべつ}な{習慣|しゅうかん}があるんですよ。', pt: 'Olha, nesta ilha há um costume especial na hora de beber.' },
+        { speaker: 'A', ja: '{特別|とくべつ}な{習慣|しゅうかん}？', pt: 'Um costume especial?' },
+        { speaker: 'B', ja: 'はい。「オトーリ」っていって、はじめにだれかがあいさつしてから、{小|ちい}さいコップにお{酒|さけ}を{入|い}れて{飲|の}みます。そのあと、そのコップを、{順番|じゅんばん}に{全員|ぜんいん}が{飲|の}んでは、{次|つぎ}の{人|ひと}にまわします。またみんなで{順番|じゅんばん}にお{酒|さけ}を{飲|の}んで……ってくり{返|かえ}します。', pt: 'Sim. É a «otōri»: primeiro alguém faz um discurso, depois põe-se saquê num copinho e bebe-se. Em seguida o copo passa, em ordem, por todos, e cada um repassa ao próximo. E todos bebem de novo, em ordem… repetindo isso.' },
+        { speaker: 'A', ja: 'それは、たくさんお{酒|さけ}を{飲|の}まなければなりませんね。', pt: 'Então a gente tem de beber bastante, né.' },
+        { speaker: 'B', ja: 'いえ、「もう{飲|の}めません」って{言|い}えば、だいじょうぶですよ。', pt: 'Não; é só dizer «não consigo mais beber» que está tudo bem.' },
+      ],
+    },
+  ],
+  '10-08': [
+    {
+      label: 'マナー① — 信号・横断歩道 (10-08)',
+      setupJa: '{日本|にほん}と{自分|じぶん}の{国|くに}のマナーの{違|ちが}いについて{話|はな}しています。',
+      setupPt: 'Conversando sobre diferenças de etiqueta entre o Japão e o próprio país. ① Sinal/faixa de pedestres.',
+      lines: [
+        { speaker: 'A', ja: 'あ、だめだめ。まだ{信号|しんごう}は{赤|あか}ですよ。', pt: 'Ei, não, não. O sinal ainda está vermelho.' },
+        { speaker: 'B', ja: 'え、でも{車|くるま}はいませんよ。', pt: 'Hã, mas não vem carro nenhum.' },
+        { speaker: 'A', ja: '{信号|しんごう}が{赤|あか}のときは、{横断歩道|おうだんほどう}を{渡|わた}ってはいけませんよ。', pt: 'Quando o sinal está vermelho, não se pode atravessar a faixa.' },
+        { speaker: 'B', ja: 'そうなんですか。{私|わたし}の{国|くに}では、{車|くるま}がいないときは、みんな{渡|わた}ります。', pt: 'Ah, é? No meu país, quando não vem carro, todo mundo atravessa.' },
+        { speaker: 'A', ja: '{赤信号|あかしんごう}を{渡|わた}るの？ それはよくないですよ。', pt: 'Atravessar no vermelho? Isso não é bom.' },
+        { speaker: 'B', ja: 'どうしてですか？ {車|くるま}は{来|き}ていません。', pt: 'Por quê? Não vem carro.' },
+        { speaker: 'A', ja: 'うーん、でも、{子|こ}どもがまねをしないように、ルールは{守|まも}らなくちゃ。', pt: 'Hmm, mas a gente tem de seguir as regras, para as crianças não imitarem.' },
+        { speaker: 'B', ja: '{日本人|にほんじん}は、まじめですね……。', pt: 'Os japoneses são bem certinhos, hein…' },
+      ],
+    },
+  ],
+  '10-09': [
+    {
+      label: 'マナー② — トイレの紙 (10-09)',
+      setupPt: '② Papel higiênico no banheiro.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、いいですか？', pt: 'Ahn, posso perguntar?' },
+        { speaker: 'B', ja: '{何|なに}？', pt: 'O quê?' },
+        { speaker: 'A', ja: 'トイレに、「トイレットペーパーはトイレに{流|なが}してください」っていう{貼|は}り{紙|がみ}があったんですが……。', pt: 'No banheiro tinha um aviso colado dizendo «jogue o papel higiênico no vaso»…' },
+        { speaker: 'B', ja: 'うん。', pt: 'Sim.' },
+        { speaker: 'A', ja: '{使|つか}った{紙|かみ}も、トイレに{流|なが}していいんですか？', pt: 'O papel usado também pode jogar no vaso?' },
+        { speaker: 'B', ja: 'もちろん。そうしなかったら、どうするの？', pt: 'Claro. Se não, o que você faria?' },
+        { speaker: 'A', ja: '{私|わたし}の{国|くに}では、トイレがつまらないように、{紙|かみ}はごみ{箱|ばこ}に{捨|す}てます。', pt: 'No meu país, para o vaso não entupir, a gente joga o papel no lixo.' },
+        { speaker: 'B', ja: 'へー、そうなの。でも、それじゃあ{臭|くさ}くない？', pt: 'Nossa, é? Mas assim não fica fedido?' },
+        { speaker: 'A', ja: 'そうですね、ときどき{臭|くさ}いです。{流|なが}せるのは、いいですね。', pt: 'É, às vezes fica. Poder jogar no vaso é bom mesmo.' },
+      ],
+    },
+  ],
+  '10-10': [
+    {
+      label: 'マナー③ — バスの中の電話 (10-10)',
+      setupPt: '③ Falar ao telefone no ônibus.',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}では、バスの{中|なか}で、みんなスマホを{見|み}ていますね。', pt: 'No Japão, no ônibus, todo mundo fica olhando o celular.' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'É verdade.' },
+        { speaker: 'A', ja: 'でも、だれも{電話|でんわ}で{話|はな}さないですね。どうしてですか？', pt: 'Mas ninguém fala ao telefone. Por quê?' },
+        { speaker: 'B', ja: 'え、バスの{中|なか}では、{話|はな}しちゃだめだよね。', pt: 'Ué, no ônibus não se pode falar ao telefone, né.' },
+        { speaker: 'A', ja: '{私|わたし}の{国|くに}では、みんな{普通|ふつう}に{電話|でんわ}で{話|はな}しています。', pt: 'No meu país, todo mundo fala ao telefone normalmente.' },
+        { speaker: 'B', ja: 'へー、うるさくない？', pt: 'Nossa, não fica barulhento?' },
+        { speaker: 'A', ja: 'でも、こうして2{人|り}で{話|はな}すのはいいんですよね？ どうして{電話|でんわ}だけ、いけませんか？', pt: 'Mas conversar entre duas pessoas, assim, pode, né? Por que só ao telefone não pode?' },
+        { speaker: 'B', ja: '{確|たし}かにねえ。どうしてかなあ……。', pt: 'É, realmente. Por que será…' },
+        { speaker: 'A', ja: '{不思議|ふしぎ}ですね。', pt: 'Que curioso.' },
+      ],
+    },
+  ],
+  '10-11': [
+    {
+      label: 'マナー④ — 食器を片付ける (10-11)',
+      setupPt: '④ Recolher a própria louça (praça de alimentação).',
+      lines: [
+        { speaker: 'A', ja: 'あ、{食器|しょっき}は{自分|じぶん}で{片付|かたづ}けなくちゃ。', pt: 'Ah, a gente tem de recolher a própria louça.' },
+        { speaker: 'B', ja: 'あ、はい……。{食|た}べ{終|お}わったあとは、{自分|じぶん}で{片付|かたづ}けるんですか？', pt: 'Ah, sim… Depois de comer, a gente mesmo recolhe?' },
+        { speaker: 'A', ja: 'フードコートは、そうだね。', pt: 'Na praça de alimentação, é assim.' },
+        { speaker: 'B', ja: '{私|わたし}の{国|くに}では、それは{掃除|そうじ}の{人|ひと}の{仕事|しごと}です。', pt: 'No meu país, isso é trabalho da equipe de limpeza.' },
+        { speaker: 'A', ja: 'へー、そうなの？', pt: 'Nossa, é?' },
+        { speaker: 'B', ja: 'どうして{日本|にほん}では、{掃除|そうじ}の{人|ひと}が{片付|かたづ}けませんか？', pt: 'Por que no Japão a limpeza não recolhe?' },
+        { speaker: 'A', ja: 'うーん、{次|つぎ}の{人|ひと}がすぐに{席|せき}に{座|すわ}れるように、かな？', pt: 'Hmm, para o próximo poder se sentar logo, talvez?' },
+        { speaker: 'B', ja: 'そうですか……。めんどくさいですね。', pt: 'Ah, sei… Dá trabalho, hein.' },
+      ],
+    },
+  ],
+  '10-14': [
+    {
+      label: '会話モデル — 習慣の違い (10-14)',
+      setupJa: '{習慣|しゅうかん}やマナーの{違|ちが}いについて{話|はな}しています。',
+      setupPt: 'Modelo: conversar sobre diferenças de costume/etiqueta.',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}では、バスの{中|なか}で、だれも{電話|でんわ}で{話|はな}さないですね。', pt: 'No Japão, ninguém fala ao telefone no ônibus.' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'É verdade.' },
+        { speaker: 'A', ja: 'どうしてですか？ {私|わたし}の{国|くに}では、みんな{電話|でんわ}で{話|はな}しています。', pt: 'Por quê? No meu país, todos falam ao telefone.' },
+        { speaker: 'B', ja: 'どうしてかなあ……。', pt: 'Por que será…' },
+        { speaker: 'A', ja: '{不思議|ふしぎ}ですね。', pt: 'Que curioso.' },
+      ],
+    },
+  ],
+  '10-15': [
+    {
+      label: '会話 — 異文化体験（レジの前でジュース）(10-15)',
+      setupJa: 'ロイさんが、{小林|こばやし}さん・リンダさんに、{昨日|きのう}の{出来事|できごと}について{話|はな}しています。',
+      setupPt: 'Roy conta a Kobayashi e Linda um episódio do dia anterior (beber suco antes de pagar).',
+      lines: [
+        { speaker: 'ロイ', ja: '{昨日|きのう}、スーパーでレジに{並|なら}びました。すごく{混|こ}んでいました。のどが{渇|かわ}いたから、かごのジュースを{飲|の}みました。そのあと、レジでお{金|かね}を{払|はら}うとき「これも{飲|の}みました」と{言|い}って、{空|から}のボトルを{出|だ}しました。そうしたら、レジの{人|ひと}にすごく{怒|おこ}られました。', pt: 'Ontem fiquei na fila do caixa no mercado. Estava muito cheio. Como fiquei com sede, bebi um suco do carrinho. Depois, ao pagar, falei «bebi isto também» e entreguei a garrafa vazia. Aí o caixa ficou muito bravo comigo.' },
+        { speaker: '小林', ja: 'え、お{金|かね}を{払|はら}わないで、ジュース{飲|の}んだの？', pt: 'Hã, você bebeu o suco sem ter pago?' },
+        { speaker: 'ロイ', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '小林', ja: 'ああ、それはだめだよ。ちゃんとお{金|かね}を{払|はら}ってから{飲|の}まなきゃ。', pt: 'Ah, isso não pode. Tem de pagar direitinho antes de beber.' },
+        { speaker: 'ロイ', ja: 'はい。お{店|みせ}の{店長|てんちょう}さんに「{今日|きょう}から{気|き}をつけて」と{注意|ちゅうい}されました。', pt: 'É. O gerente da loja me advertiu: «a partir de hoje, tome cuidado».' },
+        { speaker: '小林', ja: '{日本|にほん}では、お{金|かね}を{払|はら}う{前|まえ}にジュースを{飲|の}むのは、{泥棒|どろぼう}と{同|おな}じイメージだなあ。', pt: 'No Japão, beber o suco antes de pagar passa a mesma imagem de um ladrão.' },
+        { speaker: 'ロイ', ja: 'そうなんですか。でも、{私|わたし}の{国|くに}では{普通|ふつう}です。', pt: 'Ah, é? Mas no meu país é normal.' },
+        { speaker: '小林', ja: 'へー、そうなの？ リンダさんの{国|くに}では、どう？', pt: 'Nossa, é? E no seu país, Linda?' },
+        { speaker: 'リンダ', ja: '{私|わたし}の{国|くに}でも、よくありません。{小|ちい}さい{子|こ}どもには、{先|さき}にお{菓子|かし}の{袋|ふくろ}を{開|あ}けて、{子|こ}どもにあげて、あとからお{金|かね}を{払|はら}います。', pt: 'No meu país também não é bom. Mas, com crianças pequenas, abre-se o pacote de doce antes, dá-se à criança e paga-se depois.' },
+        { speaker: 'ロイ', ja: 'そうですよね。{日本|にほん}はきびしいですね。', pt: 'Pois é. O Japão é rígido.' },
+        { speaker: '小林', ja: 'そうかなあ。{私|わたし}は、すごくびっくりしたけど。', pt: 'Será? Eu fiquei foi muito espantado.' },
+        { speaker: 'リンダ', ja: '{同|おな}じ{普通|ふつう}でも、{国|くに}によって{違|ちが}うんですね。', pt: 'Mesmo sendo «normal», varia de país para país, né.' },
+        { speaker: 'ロイ', ja: 'そうですね。{難|むずか}しいですね。', pt: 'É verdade. É complicado.' },
+      ],
+    },
+  ],
+}
+
+const lesson10: Section = {
+  id: 'lesson-10',
+  level: 'elementary2',
+  titleJa: '第10課 どんな服を着て行けばいいですか？',
+  titlePt: 'Lição 10 — Que roupa devo vestir para ir?',
+  summaryPt:
+    'Eventos anuais e etiqueta · perguntar sobre etiqueta e costumes de funeral, casamento e visita ao hospital (どんな服を着て行けばいいですか／何を持って行けばいいか教えてもらえませんか), comparar costumes do Japão e do seu país (バスの中で電話で話しちゃだめ／国によって違う) e contar um episódio de experiência intercultural (払う前にジュースを飲む).',
+  studyNotes: [
+    {
+      title: 'Tópico: Eventos anuais e etiqueta (年中行事とマナー)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Perguntar sobre etiqueta e costumes de casamento, funeral etc. no Japão e entender as respostas.\n' +
+        '- Perguntar e comentar sobre diferenças de etiqueta/costumes entre o Japão e seu país.\n' +
+        '- Falar de forma simples sobre um episódio de experiência intercultural.\n' +
+        '- Ler posts na internet sobre diferenças de etiqueta/costumes e entender o conteúdo geral.\n\n' +
+        '💡 Situações: お{葬式|そうしき} (funeral), {結婚式|けっこんしき} (casamento), お{見舞|みま}い (visita ao hospital), {新築|しんちく}{祝|いわ}い (casa nova) e regras do dia a dia (信号, トイレ, バス, フードコート).',
+    },
+    {
+      title: 'V-ばいいですか — pedir orientação (➊)',
+      bodyPt:
+        '**V-ばいいですか** pergunta o que/como se deve fazer:\n\n' +
+        '- `どんな{服|ふく}を{着|き}て{行|い}けばいいですか？`, `{何|なに}を{持|も}って{行|い}けばいいですか？`, `どうすればいいですか？`.\n' +
+        '- Pergunta embutida + pedido educado: `どんな{服|ふく}を{着|き}て{行|い}けばいいか、{教|おし}えてもらえませんか？`.\n\n' +
+        '🔧 Forma ば: grupo 1 -u→-eば ({行|い}く→{行|い}けば), grupo 2 -る→-れば ({着|き}る→{着|き}れば — aqui {着|つ}ければ), irreg. する→すれば, {来|く}る→{来|く}れば. (文法ノート ❶)',
+    },
+    {
+      title: 'Proibição e obrigação: V-てはいけません / V-なくちゃ (➋➌)',
+      bodyPt:
+        '- **V-てはいけません / V-ちゃだめ** = proibição (não pode/não deve): `{赤信号|あかしんごう}を{渡|わた}ってはいけません`, `バスの{中|なか}で{話|はな}しちゃだめ`.\n' +
+        '- **V-なくちゃ / V-なくちゃならない** = obrigação coloquial (tem de): `{食器|しょっき}は{自分|じぶん}で{片付|かたづ}けなくちゃ`, `ルールは{守|まも}らなくちゃ`.\n\n' +
+        '🔧 なくちゃ vem de 〜なくては(ならない); ちゃだめ vem de 〜てはだめ. (文法ノート ❷❸)',
+    },
+    {
+      title: 'V-ように、〜 — finalidade (➍)',
+      bodyPt:
+        '**V(辞書形/ない形) + ように、〜** indica a finalidade/objetivo (“para que ~”):\n\n' +
+        '- `{子|こ}どもがまねをしないように、ルールを{守|まも}る` (seguir as regras para as crianças não imitarem).\n' +
+        '- `トイレがつまらないように、{紙|かみ}はごみ{箱|ばこ}に{捨|す}てる`, `{次|つぎ}の{人|ひと}が{席|せき}に{座|すわ}れるように`.\n\n' +
+        '💡 Costuma vir com verbos de potencial ou negativos antes de ように. (文法ノート ❹)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Cerimônias:** お{葬式|そうしき}, {香典|こうでん}/{香典袋|こうでんぶくろ}, {地味|じみ}（な), {結婚式|けっこんしき}/{披露宴|ひろうえん}, {招待状|しょうたいじょう}, {花嫁|はなよめ}, ワンピース, お{見舞|みま}い, {同僚|どうりょう}, {骨|ほね}を{折|お}る, {鉢植|はちう}え, {花束|はなたば}, {本人|ほんにん}, {新築|しんちく}{祝|いわ}い.\n\n' +
+        '**Regras/maneiras:** ルールを{守|まも}る, {貼|は}り{紙|がみ}, {信号|しんごう}, {横断歩道|おうだんほどう}を{渡|わた}る, つまる, {臭|くさ}い, {席|せき}, {掃除|そうじ}, {泥棒|どろぼう}, {怒|おこ}られる, {注意|ちゅうい}される, {不思議|ふしぎ}, {習慣|しゅうかん}.\n\n' +
+        '**Kanji da lição:** {服|ふく}, {袋|ふくろ}, {自分|じぶん}, {店長|てんちょう}, {全員|ぜんいん}, {習慣|しゅうかん}, {普通|ふつう}, {暗|くら}い, {怒|おこ}る, {入院|にゅういん}する.',
+    },
+  ],
+  groups: [lesson10Group],
+  audios: attachScripts(10, L10_SCRIPTS),
+}
+
+// ---- Lições 11-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -2363,12 +2639,7 @@ const sections: Section[] = [
   lesson8,
   // Tópico 5 — Eventos anuais e etiqueta (年中行事とマナー)
   lesson9,
-  scaffold(10, 'Eventos anuais e etiqueta', 'どんな服を着て行けばいいですか？', 'Que roupa devo vestir para ir?', [
-    'Perguntar sobre etiqueta e costumes de casamento, funeral etc. no Japão e entender as respostas.',
-    'Perguntar e comentar sobre diferenças de etiqueta/costumes entre o Japão e seu país.',
-    'Falar de forma simples sobre um episódio de experiência intercultural.',
-    'Ler posts na internet sobre diferenças de etiqueta/costumes e entender o conteúdo geral.',
-  ]),
+  lesson10,
   // Tópico 6 — Comprar bem (上手な買い物)
   scaffold(11, 'Comprar bem', 'ポイントカードを忘れてしまいました', 'Esqueci o cartão de pontos', [
     'Numa loja de roupas, dizer cor, tamanho etc. e comprar o que quer.',
