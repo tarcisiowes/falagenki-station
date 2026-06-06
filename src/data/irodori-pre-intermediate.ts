@@ -966,6 +966,67 @@ const lesson17Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 18: 働かせていただければ、うれしいです (tópico 日本で働く) ----
+const lesson18Group: ExerciseGroup = {
+  id: 'iro-pi-l18',
+  title: '第18課 働かせていただければ、うれしいです',
+  subtitlePt: 'Trabalho atual · comunicados de reunião · vagas · entrevista de emprego',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l18-1', number: 1, prompt: 'Qual é o tópico da Lição 18?', choices: [{ n: 1, text: '日本で働く (trabalhar no Japão)' }, { n: 2, text: '旅行の楽しみ' }, { n: 3, text: '毎日の食事' }, { n: 4, text: '人とのつき合い' }], answer: 1, explanationPt: 'A Lição 18 fecha o tópico 日本で働く.' },
+    { id: 'iro-pi-l18-2', number: 2, prompt: '「働かせていただければ、うれしいです」 significa:', choices: [{ n: 1, text: 'Ficaria feliz se me permitissem trabalhar aqui.' }, { n: 2, text: 'Vou explicar o trabalho do salão.' }, { n: 3, text: 'Tenho só dois dias de folga por mês.' }, { n: 4, text: 'Consegui tirar muitas fotos boas.' }], answer: 1, explanationPt: 'V-させていただければ expressa receber permissão de modo humilde e polido.' },
+    { id: 'iro-pi-l18-3', number: 3, prompt: 'Pergunta de abertura: 将来について考えましょう。これからの人生で、どこで、どんな仕事をしたいですか？', choices: [{ n: 1, text: 'Pense no futuro: na sua vida daqui para frente, onde e que tipo de trabalho quer fazer?' }, { n: 2, text: 'Que tipo de quarto prefere em hotel?' }, { n: 3, text: 'Você já foi a Yamaguchi?' }, { n: 4, text: 'Que mangá você recomenda?' }], answer: 1, explanationPt: 'A lição leva para trabalho, carreira, vagas e entrevista.' },
+    { id: 'iro-pi-l18-4', number: 4, prompt: 'Can-do 59: 「どんなお仕事をしているんですか？」 trabalha:', choices: [{ n: 1, text: 'ouvir falas simples sobre o trabalho de outras pessoas e entender o que fazem e o que acham disso' }, { n: 2, text: 'ler regras de aparência' }, { n: 3, text: 'pedir mudança de quarto' }, { n: 4, text: 'escrever mensagem de viagem' }], answer: 1, explanationPt: 'A atividade 1 acontece em uma aula de japonês da comunidade.' },
+    { id: 'iro-pi-l18-5', number: 5, prompt: 'Gabarito 18-01 a 18-04: quais trabalhos correspondem a ミー, 竹内, 千葉 e ラジャン?', image: `${IMG}/ZZ_18_1_01_shigoto.png`, imageAlt: 'trabalhos de quatro pessoas', choices: [{ n: 1, text: 'ミー=d, 竹内=a, 千葉=c, ラジャン=b' }, { n: 2, text: 'ミー=a, 竹内=b, 千葉=c, ラジャン=d' }, { n: 3, text: 'ミー=c, 竹内=d, 千葉=a, ラジャン=b' }, { n: 4, text: 'todos fazem o mesmo trabalho' }], answer: 1, explanationPt: 'O gabarito da atividade 1 marca d, a, c, b.' },
+    { id: 'iro-pi-l18-6', number: 6, prompt: '18-01: ミー veio ao Japão usando qual sistema?', choices: [{ n: 1, text: '特定技能' }, { n: 2, text: '年金' }, { n: 3, text: 'アルバイト' }, { n: 4, text: '派遣' }], answer: 1, explanationPt: 'ミー diz 特定技能という制度を使って日本に来ました.' },
+    { id: 'iro-pi-l18-7', number: 7, prompt: '18-01: o que ミー acha do trabalho no hotel?', image: `${IMG}/ZZ_18_1_05_hoteru.png`, imageAlt: 'trabalho em hotel', choices: [{ n: 1, text: 'às vezes fica confusa porque o serviço japonês difere do vietnamita, mas acha que combina com ela' }, { n: 2, text: 'quer sair porque o salário é baixo' }, { n: 3, text: 'não fala com clientes' }, { n: 4, text: 'trabalha em turno noturno de loja de conveniência' }], answer: 1, explanationPt: 'Ela diz とまどうことがあります, mas gosta de conversar com clientes e acha o trabalho 自分に向いている.' },
+    { id: 'iro-pi-l18-8', number: 8, prompt: '18-02: que trabalho 竹内 fazia?', image: `${IMG}/ZZ_18_1_02_kaishain.png`, imageAlt: 'trabalho de funcionário de empresa', choices: [{ n: 1, text: 'companhia comercial, exportação e importação' }, { n: 2, text: 'chef de cozinha nepalesa' }, { n: 3, text: 'hotel com visto de habilidade específica' }, { n: 4, text: 'loja de conveniência à noite' }], answer: 1, explanationPt: '竹内 diz 商社で輸出や輸入の仕事をしていました.' },
+    { id: 'iro-pi-l18-9', number: 9, prompt: '18-02: o que 竹内 achava do trabalho?', choices: [{ n: 1, text: 'era ocupado e difícil, mas permitia viagens a vários países e era充実／やりがい' }, { n: 2, text: 'não havia nenhum desafio' }, { n: 3, text: 'era só de noite e com poucos clientes' }, { n: 4, text: 'não usava japonês' }], answer: 1, explanationPt: 'Ele diz 忙しくて大変, mas 出張でいろんな国にも行けました e やりがいがありました.' },
+    { id: 'iro-pi-l18-10', number: 10, prompt: '18-03: 千葉 trabalha onde e quando?', image: `${IMG}/ZZ_18_1_04_konbini.png`, imageAlt: 'trabalho em convenience store', choices: [{ n: 1, text: 'em uma loja de conveniência, 2 dias por semana, turno da noite' }, { n: 2, text: 'em hotel, manhã e tarde' }, { n: 3, text: 'em fábrica, turno fixo' }, { n: 4, text: 'em ryokan, morando no dormitório' }], answer: 1, explanationPt: 'Ela diz コンビニです。週に2日、夜のシフトに入ってます.' },
+    { id: 'iro-pi-l18-11', number: 11, prompt: '18-03: antes de começar, o que 千葉 tinha ouvido sobre o turno da noite?', choices: [{ n: 1, text: 'que era puxado/difícil' }, { n: 2, text: 'que era proibido' }, { n: 3, text: 'que exigia entrevista formal' }, { n: 4, text: 'que não tinha salário' }], answer: 1, explanationPt: 'アルバイトを始める前は、夜のシフトはつらいって聞いていた.' },
+    { id: 'iro-pi-l18-12', number: 12, prompt: '18-03: por que 千葉 gosta do turno da noite?', choices: [{ n: 1, text: 'há poucos clientes e o salário por hora é cerca de 300 ienes maior que de dia' }, { n: 2, text: 'pode conversar com turistas de vários países' }, { n: 3, text: 'não precisa ir à loja' }, { n: 4, text: 'não precisa fazer nada' }], answer: 1, explanationPt: '夜はお客さんも少ない and 昼に働くよりも300円くらい高い.' },
+    { id: 'iro-pi-l18-13', number: 13, prompt: '18-04: ラジャン trabalha como:', image: `${IMG}/ZZ_18_1_03_shehu.png`, imageAlt: 'chef', choices: [{ n: 1, text: 'chef em restaurante de comida nepalesa' }, { n: 2, text: 'funcionário de trading company' }, { n: 3, text: 'atendente de hotel' }, { n: 4, text: 'operador de fábrica' }], answer: 1, explanationPt: 'Ele diz ネパール料理のお店でシェフをしています.' },
+    { id: 'iro-pi-l18-14', number: 14, prompt: '18-04: o que ラジャン acha interessante?', choices: [{ n: 1, text: 'pesquisar como fazer comida ainda mais gostosa' }, { n: 2, text: 'preencher cartão de ponto' }, { n: 3, text: 'ler vagas de emprego' }, { n: 4, text: 'usar personal card' }], answer: 1, explanationPt: 'どうすればもっとおいしい料理が作れるか研究するのが、本当におもしろいんです.' },
+    { id: 'iro-pi-l18-15', number: 15, prompt: '「夜のシフトはつらいって聞いていたんですけど」 usa V-ていた para:', choices: [{ n: 1, text: 'algo que aconteceu antes de um ponto passado: ele tinha ouvido antes de começar o bico' }, { n: 2, text: 'regra escrita de trabalho' }, { n: 3, text: 'pedido polido ao chefe' }, { n: 4, text: 'forma honorífica de cliente' }], answer: 1, explanationPt: 'A nota ➊ explica V-ていた como anterior a certo ponto no passado.' },
+    { id: 'iro-pi-l18-16', number: 16, prompt: 'Can-do 60: 「定例の連絡会議を始めます」 trabalha:', choices: [{ n: 1, text: 'ouvir comunicados e relatórios de trabalho em reuniões ou朝礼 e entender o conteúdo geral' }, { n: 2, text: 'ler vaga de trabalho' }, { n: 3, text: 'falar em entrevista' }, { n: 4, text: 'dar instrução de atraso' }], answer: 1, explanationPt: 'A atividade 2 reúne comunicados de hotel, fábrica e empresa de TI.' },
+    { id: 'iro-pi-l18-17', number: 17, prompt: '18-06: que clientes chegam ao hotel?', image: `${IMG}/ZZ_18_2_01_choorei.png`, imageAlt: 'reunião matinal de hotel', choices: [{ n: 1, text: 'grupo de 35 pessoas por volta de 13h e cliente que usa cadeira de rodas à tarde' }, { n: 2, text: 'apenas uma família com bebê' }, { n: 3, text: 'engenheiros de TI' }, { n: 4, text: 'candidatos de emprego' }], answer: 1, explanationPt: 'O gabarito marca 13時ごろ, 35名 e 車いすのお客様.' },
+    { id: 'iro-pi-l18-18', number: 18, prompt: '18-06: o que a recepção deve preparar para o grupo?', choices: [{ n: 1, text: 'chaves dos quartos e documentos necessários para atendimento fluido' }, { n: 2, text: 'cartões individuais da fábrica' }, { n: 3, text: 'relatório detalhado de dados' }, { n: 4, text: 'currículos com foto' }], answer: 1, explanationPt: '事前にお部屋のキーや必要な書類を準備して、スムーズに対応.' },
+    { id: 'iro-pi-l18-19', number: 19, prompt: '18-06: para o cliente em cadeira de rodas, o que verificar?', choices: [{ n: 1, text: 'elevador e rotas de deslocamento dentro do hotel' }, { n: 2, text: 'salário mensal' }, { n: 3, text: 'se o aplicativo foi entregue' }, { n: 4, text: 'se o turno é noturno' }], answer: 1, explanationPt: 'エレベーターや館内の移動経路に問題がないか確認します.' },
+    { id: 'iro-pi-l18-20', number: 20, prompt: '18-07: o sistema de出勤管理 muda de quê para quê?', image: `${IMG}/ZZ_18_2_02_miitingu.png`, imageAlt: 'reunião na fábrica', choices: [{ n: 1, text: 'de assinatura em出勤簿 para sistema com cartão individual' }, { n: 2, text: 'de email para fax' }, { n: 3, text: 'de entrevista presencial para online' }, { n: 4, text: 'de turno de dia para turno de noite' }], answer: 1, explanationPt: 'O gabarito marca 古いシステム = 出勤簿にサイン; 新しいシステム = 個人カードを使った管理システム.' },
+    { id: 'iro-pi-l18-21', number: 21, prompt: '18-07: no novo sistema, o que o funcionário faz ao entrar/sair?', choices: [{ n: 1, text: 'passa/encosta o cartão individual no terminal dedicado' }, { n: 2, text: 'liga para o gerente' }, { n: 3, text: 'escreve 電車遅延' }, { n: 4, text: 'entrega currículo com foto' }], answer: 1, explanationPt: '出社時と退社時に個人カードを専用の端末にかざします.' },
+    { id: 'iro-pi-l18-22', number: 22, prompt: '18-07: quando começa o novo sistema?', choices: [{ n: 1, text: 'na próxima segunda-feira' }, { n: 2, text: 'no dia 15, sexta-feira' }, { n: 3, text: 'daqui a seis meses' }, { n: 4, text: 'hoje à tarde' }], answer: 1, explanationPt: '来週月曜日から運用を開始します.' },
+    { id: 'iro-pi-l18-23', number: 23, prompt: '18-08: qual é o objetivo da reunião de TI?', image: `${IMG}/ZZ_18_2_03_teireikaigi.png`, imageAlt: 'reunião periódica de empresa de TI', choices: [{ n: 1, text: 'relatar o progresso dos projetos atuais' }, { n: 2, text: 'anunciar uma vaga de ryokan' }, { n: 3, text: 'ensinar atendimento telefônico' }, { n: 4, text: 'explicar regras de aparência' }], answer: 1, explanationPt: 'O gabarito marca b: 現在のプロジェクトの進捗状況の報告.' },
+    { id: 'iro-pi-l18-24', number: 24, prompt: '18-08: o prazo final do 漢字クイズアプリ é:', choices: [{ n: 1, text: 'sexta-feira, dia 15 da próxima semana' }, { n: 2, text: 'segunda-feira da próxima semana' }, { n: 3, text: 'hoje às 13h' }, { n: 4, text: 'fim do mês' }], answer: 1, explanationPt: '最終の納品の締め切りは来週の15日金曜日.' },
+    { id: 'iro-pi-l18-25', number: 25, prompt: '18-08: se o prazo talvez atrase, o que fazer?', choices: [{ n: 1, text: 'avisar imediatamente o líder para pensarem juntos em uma medida' }, { n: 2, text: 'não avisar ninguém' }, { n: 3, text: 'entregar certificado de atraso' }, { n: 4, text: 'trocar de emprego' }], answer: 1, explanationPt: '万が一、遅れそうな場合は、すぐに私に知らせてください.' },
+    { id: 'iro-pi-l18-26', number: 26, prompt: '18-08: qual foi o resultado do 日本語おしゃべりアプリ?', choices: [{ n: 1, text: 'resultado muito bom; downloads no exterior superaram bastante a meta' }, { n: 2, text: 'foi cancelado por problemas' }, { n: 3, text: 'não houve downloads' }, { n: 4, text: 'ainda não foi lançado' }], answer: 1, explanationPt: '非常によい結果; 海外でのダウンロード数が予想以上に多く、目標を大幅に上回りました.' },
+    { id: 'iro-pi-l18-27', number: 27, prompt: '「個人カードは、全員に既に配布されているはずです」 usa はずだ para:', choices: [{ n: 1, text: 'julgamento com forte convicção baseada em motivo/evidência' }, { n: 2, text: 'pedido humilde de permissão' }, { n: 3, text: 'regra escrita' }, { n: 4, text: 'cumprimento de telefone' }], answer: 1, explanationPt: 'S（普通形）はずだ indica “deve ser/é de se esperar que” com base em evidência.' },
+    { id: 'iro-pi-l18-28', number: 28, prompt: 'Can-do 61: 「求人情報」 trabalha:', choices: [{ n: 1, text: 'ler vagas e encontrar informações como trabalho, salário e local' }, { n: 2, text: 'contar um problema de viagem' }, { n: 3, text: 'falar com superior em面談' }, { n: 4, text: 'dar instruções no supermercado' }], answer: 1, explanationPt: 'A atividade 3 lê 求人情報.' },
+    { id: 'iro-pi-l18-29', number: 29, prompt: 'Na atividade de 求人情報, quais trabalhos são ①, ② e ③?', image: `${IMG}/ZZ_18_3_01_kyuujinjoohoo.png`, imageAlt: 'informações de vagas', choices: [{ n: 1, text: '①=e コンビニ, ②=b 製造, ③=h 旅館' }, { n: 2, text: '①=h 旅館, ②=e コンビニ, ③=b 製造' }, { n: 3, text: '①=a 販売, ②=c トラック, ③=d 建設' }, { n: 4, text: 'todos são emprego de hotel' }], answer: 1, explanationPt: 'O gabarito marca ① e, ② b, ③ h. Pelo conjunto de imagens, e é コンビニ, b é 製造 e h é 旅館.' },
+    { id: 'iro-pi-l18-30', number: 30, prompt: '求人①: pessoas sem experiência podem se candidatar?', choices: [{ n: 1, text: 'sim' }, { n: 2, text: 'não' }, { n: 3, text: 'só com japonês avançado' }, { n: 4, text: 'não aparece' }], answer: 1, explanationPt: 'O gabarito de ① 1 é できる.' },
+    { id: 'iro-pi-l18-31', number: 31, prompt: '求人①: salário por hora é:', choices: [{ n: 1, text: '1.200 ienes; entre 22h e 5h, 1.500 ienes' }, { n: 2, text: '300.000 ienes por mês' }, { n: 3, text: '10.000 ienes por mês com alimentação' }, { n: 4, text: 'sem salário' }], answer: 1, explanationPt: '1時間につき1,200円、22時から5時までは1,500円.' },
+    { id: 'iro-pi-l18-32', number: 32, prompt: '求人②: salário e turno são:', image: `${IMG}/ZZ_18_3_03_seizoo.png`, imageAlt: 'trabalho de manufatura', choices: [{ n: 1, text: '300.000 ienes ou mais por mês, com bônus; 8-17 ou 20-5 do dia seguinte' }, { n: 2, text: '1.200 ienes por hora e mínimo 3h' }, { n: 3, text: 'dormitório por 10.000 ienes' }, { n: 4, text: 'sem turno noturno' }], answer: 1, explanationPt: 'O gabarito indica 月給300,000円以上, 賞与, 8時から17時 ou 20時から翌日5時.' },
+    { id: 'iro-pi-l18-33', number: 33, prompt: '求人③: moradia e refeição são:', image: `${IMG}/ZZ_18_3_09_ryokan.png`, imageAlt: 'trabalho em ryokan', choices: [{ n: 1, text: 'pode morar no dormitório por 10.000 ienes/mês; há refeições de manhã, almoço e noite' }, { n: 2, text: 'não há alojamento nem refeições' }, { n: 3, text: 'só café da manhã' }, { n: 4, text: 'moradia gratuita sem comida' }], answer: 1, explanationPt: 'O gabarito de ③ 1 diz 1か月10,000円で寮に住むことができる e 朝昼夜の食事が出る.' },
+    { id: 'iro-pi-l18-34', number: 34, prompt: '求人③: horário e folga são:', choices: [{ n: 1, text: '8 horas entre 7h e 22h; folgas decididas por consulta em sistema de turnos' }, { n: 2, text: 'sempre 20h-5h' }, { n: 3, text: '3 horas por dia fixas' }, { n: 4, text: 'sem folga' }], answer: 1, explanationPt: '7時から22時の間で8時間; シフト制なので相談して決める.' },
+    { id: 'iro-pi-l18-35', number: 35, prompt: 'Can-do 62: 「ゲストハウスで働いた経験を活かしたいと思いました」 trabalha:', choices: [{ n: 1, text: 'falar com algum detalhe sobre habilidades e capacidades em entrevista de emprego' }, { n: 2, text: 'ler regras de uniforme' }, { n: 3, text: 'ouvir comunicado de hotel' }, { n: 4, text: 'falar de viagem a Tottori' }], answer: 1, explanationPt: 'A atividade 4 é uma entrevista online para mudança de emprego.' },
+    { id: 'iro-pi-l18-36', number: 36, prompt: '18-10: qual é a situação da entrevista?', image: `${IMG}/ZZ_18_4_02_intabyuu.png`, imageAlt: 'entrevista online', choices: [{ n: 1, text: 'アリニ, que trabalha em hotel, pensa em mudar para um ryokan e é entrevistada online por 二瓶 da ながさわ旅館' }, { n: 2, text: '千葉 pede aumento no convenience store' }, { n: 3, text: 'ラジャン abre um restaurante novo' }, { n: 4, text: 'ミー atende telefone na fábrica' }], answer: 1, explanationPt: 'O enunciado explica essa situação antes da escuta.' },
+    { id: 'iro-pi-l18-37', number: 37, prompt: '18-10: ordem das respostas de アリニ na entrevista:', choices: [{ n: 1, text: 'trabalho atual → japonês → razão do trabalho atual → razão da mudança → o que pode fazer se mudar' }, { n: 2, text: 'japonês → salário → folgas → hobbies → família' }, { n: 3, text: 'razão da mudança → trabalho atual → japonês → salário → hobbies' }, { n: 4, text: 'não há ordem no gabarito' }], answer: 1, explanationPt: 'O gabarito marca as ordens 1, 2, 3, 4, 5 nesses temas.' },
+    { id: 'iro-pi-l18-38', number: 38, prompt: '18-10: que trabalho アリニ faz no hotel?', choices: [{ n: 1, text: 'principalmente front desk: check-in/check-out, reserva e atendimento ao cliente' }, { n: 2, text: 'cozinha e lavagem de louça' }, { n: 3, text: 'motorista de caminhão' }, { n: 4, text: 'desenvolvimento de app' }], answer: 1, explanationPt: '最近はフロントが多い; チェックイン, チェックアウト, 予約の管理, お客様対応.' },
+    { id: 'iro-pi-l18-39', number: 39, prompt: '18-10: o que アリニ diz sobre japonês?', choices: [{ n: 1, text: 'consegue fazer quase todo o trabalho em japonês, mas ainda tem dificuldade com reclamações' }, { n: 2, text: 'não consegue usar japonês no trabalho' }, { n: 3, text: 'fala apenas inglês' }, { n: 4, text: 'consegue responder todas as reclamações sem problema' }], answer: 1, explanationPt: 'ほとんどの仕事が日本語でできるが、クレーム対応はまだ難しい.' },
+    { id: 'iro-pi-l18-40', number: 40, prompt: '18-10: por que ela quis trabalhar em hotel no Japão?', choices: [{ n: 1, text: 'queria aproveitar a experiência de ter trabalhado em guest house na Indonésia' }, { n: 2, text: 'foi obrigada pela empresa' }, { n: 3, text: 'queria só salário maior' }, { n: 4, text: 'não tinha experiência com clientes' }], answer: 1, explanationPt: '日本でも、ゲストハウスで働いた経験を活かしたいと思いました.' },
+    { id: 'iro-pi-l18-41', number: 41, prompt: '18-10: por que アリニ quer mudar do Liberty Hotel?', choices: [{ n: 1, text: 'é business hotel com muitos clientes a trabalho, sente distância dos clientes; ryokan dá mais chance de conversar e combina mais com ela' }, { n: 2, text: 'porque não quer falar com clientes' }, { n: 3, text: 'porque o hotel vai fechar' }, { n: 4, text: 'porque quer trabalhar em fábrica' }], answer: 1, explanationPt: 'Ela contrasta business hotel com 日本の旅館 e diz que ryokan parece mais adequado a ela.' },
+    { id: 'iro-pi-l18-42', number: 42, prompt: '18-10: que capacidade アリニ diz ter se trabalhar no ryokan?', choices: [{ n: 1, text: '心遣い para agradar os clientes, observando-os bem e pensando no que os faria felizes' }, { n: 2, text: 'programar aplicativos' }, { n: 3, text: 'dirigir caminhão' }, { n: 4, text: 'fazer turnos noturnos' }], answer: 1, explanationPt: 'お客様に喜んでもらえる心遣いができると思います.' },
+    { id: 'iro-pi-l18-43', number: 43, prompt: '18-10: qual exemplo de 心遣い aparece?', choices: [{ n: 1, text: 'em dia de chuva, acompanhou com guarda-chuva cliente que chegou de táxi até a entrada' }, { n: 2, text: 'preparou um app de kanji' }, { n: 3, text: 'deu folga mensal a todos' }, { n: 4, text: 'organizou produtos por validade' }], answer: 1, explanationPt: '雨の日にタクシーでお着きになったお客様; 傘をさして、お車から玄関までいっしょに行った.' },
+    { id: 'iro-pi-l18-44', number: 44, prompt: '18-11: 「お着きになった」「いらっしゃった」 são:', choices: [{ n: 1, text: '尊敬語, usados para ações do cliente' }, { n: 2, text: '謙譲語, usados para ações da pessoa que fala' }, { n: 3, text: 'formas casuais' }, { n: 4, text: 'proibições escritas' }], answer: 1, explanationPt: 'Respectful expressions elevam as ações de pessoas de posição superior, como clientes.' },
+    { id: 'iro-pi-l18-45', number: 45, prompt: '18-11: 「いただいて」「働かせていただければ」「喜んでいただきました」 são:', choices: [{ n: 1, text: '謙譲語, usados para ações/benefícios do falante em relação ao outro' }, { n: 2, text: '尊敬語 de ações do cliente' }, { n: 3, text: 'passiva de incômodo' }, { n: 4, text: 'onomatopeias' }], answer: 1, explanationPt: 'いただく e させていただく são formas humildes.' },
+    { id: 'iro-pi-l18-46', number: 46, prompt: 'Kanji da lição: 輸出／作成／未経験／順調／報告 leem-se:', choices: [{ n: 1, text: 'ゆしゅつ／さくせい／みけいけん／じゅんちょう／ほうこく' }, { n: 2, text: 'ゆうで／つくせい／みけんけい／じゅうちょう／ほこく' }, { n: 3, text: 'しゅつゆ／さくなり／むけいけん／じゅんしらべ／ほうごく' }, { n: 4, text: 'ゆしゅつ／さっせい／みけいけん／じゅんちょう／ほうがく' }], answer: 1, explanationPt: 'São itens de 漢字のことば da Lição 18.' },
+    { id: 'iro-pi-l18-47', number: 47, prompt: 'Kanji da lição: 努力／非常に／充実する／答える／向いている leem-se:', choices: [{ n: 1, text: 'どりょく／ひじょうに／じゅうじつする／こたえる／むいている' }, { n: 2, text: 'のりょく／ひつねに／じゅうみつする／とうえる／むかっている' }, { n: 3, text: 'どりき／ひじょうに／じゅうじつする／こたえる／こういている' }, { n: 4, text: 'どりょく／ひつねに／じゅつする／こえる／むいている' }], answer: 1, explanationPt: '向いている significa ser adequado/combinar com a pessoa.' },
+    { id: 'iro-pi-l18-48', number: 48, prompt: 'TIPS: 年金 no Japão, em linhas gerais:', choices: [{ n: 1, text: 'pessoas de 20 a 59 anos entram no sistema; estrangeiros que moram e trabalham no Japão também precisam entrar' }, { n: 2, text: 'só japoneses podem entrar no sistema' }, { n: 3, text: 'não existe pensão para trabalhadores' }, { n: 4, text: 'é opcional para todo mundo' }], answer: 1, explanationPt: 'A TIPS explica 国民年金, 厚生年金, 10 anos, 脱退一時金 e acordos de seguridade social.' },
+    { id: 'iro-pi-l18-49', number: 49, prompt: 'TIPS: qual combinação de雇用形態 está correta?', choices: [{ n: 1, text: 'アルバイト/パート tendem a ser por hora; 正社員 é contrato sem prazo fixo; 派遣社員 é contratado pela agência' }, { n: 2, text: '正社員 sempre é temporário sem benefícios' }, { n: 3, text: '派遣社員 recebe da empresa onde trabalha diretamente em todos os casos' }, { n: 4, text: 'アルバイト sempre tem bônus e promoção' }], answer: 1, explanationPt: 'A TIPS compara アルバイト, パート, 正社員, 契約社員／嘱託社員 e 派遣社員.' },
+    { id: 'iro-pi-l18-50', number: 50, prompt: 'TIPS: ほうれんそう significa:', image: `${IMG}/ZZ_18_tips_01_hoorensoo.png`, imageAlt: 'hou-ren-sou: reportar, comunicar, consultar', choices: [{ n: 1, text: '報告・連絡・相談, princípio de comunicação no trabalho' }, { n: 2, text: 'um tipo de turno noturno' }, { n: 3, text: 'um imposto de aposentadoria' }, { n: 4, text: 'uma entrevista de emprego' }], answer: 1, explanationPt: '報告 = informar progresso/resultado; 連絡 = compartilhar informação necessária; 相談 = pedir conselho quando não pode decidir sozinho.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -4605,6 +4666,194 @@ const L17_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L18_SCRIPTS: Record<string, ScriptItem[]> = {
+  '18-01': [
+    {
+      label: '① どんなお仕事をしているんですか？ - ミー (18-01)',
+      setupPt: 'Na aula de japonês da comunidade, Sandy pergunta aos colegas que tipo de trabalho eles fazem.',
+      lines: [
+        { speaker: '竹内', ja: 'サンディさん、最近はどうですか？', pt: 'Sandy, como vão as coisas ultimamente?' },
+        { speaker: 'サンディ', ja: '子どもが小学校に入ったし、何かパートで仕事をしたいなって思ってるんです。', pt: 'Meu filho entrou na escola fundamental, então estou pensando em fazer algum trabalho de meio período.' },
+        { speaker: '竹内', ja: 'そうなんですね。', pt: 'Entendi.' },
+        { speaker: 'サンディ', ja: 'そういえば、みなさん、どんなお仕事をしているんですか？', pt: 'A propósito, que tipo de trabalho vocês fazem?' },
+        { speaker: '竹内', ja: 'ミーさんは半年前に日本に来たんですよね？', pt: 'Mi, você veio ao Japão há meio ano, não foi?' },
+        { speaker: 'ミー', ja: 'はい。特定技能という制度を使って日本に来ました。ホテルで働いています。', pt: 'Sim. Vim ao Japão usando o sistema chamado Tokutei Gino. Trabalho em um hotel.' },
+        { speaker: 'サンディ', ja: 'そうですか、仕事はどうですか？', pt: 'Entendi. Como é o trabalho?' },
+        { speaker: 'ミー', ja: 'ずいぶん慣れました。でも、日本のサービスはベトナムとちょっと違っていて、ときどき、とまどうことがあります。', pt: 'Já me acostumei bastante. Mas o atendimento no Japão é um pouco diferente do Vietnã, então às vezes fico sem saber como agir.' },
+        { speaker: 'サンディ', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'ミー', ja: 'まあ、お客様と話をするのが好きなので、ホテルの仕事は自分に向いていると思います。', pt: 'Bem, como gosto de conversar com os clientes, acho que o trabalho de hotel combina comigo.' },
+        { speaker: 'サンディ', ja: 'いいですね。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+  '18-02': [
+    {
+      label: '② どんなお仕事をしているんですか？ - 竹内 (18-02)',
+      setupPt: 'Sandy pergunta a Takeuchi sobre o trabalho dele antes da aposentadoria.',
+      lines: [
+        { speaker: 'サンディ', ja: '竹内さんは？', pt: 'E você, Takeuchi?' },
+        { speaker: '竹内', ja: '私は、8年前に退職しました。今は年金暮らしです。', pt: 'Eu me aposentei há oito anos. Agora vivo de aposentadoria.' },
+        { speaker: 'サンディ', ja: 'どんな仕事をしてたんですか？', pt: 'Que tipo de trabalho você fazia?' },
+        { speaker: '竹内', ja: '普通の会社員です。商社で輸出や輸入の仕事をしていました。', pt: 'Era um funcionário comum de empresa. Trabalhava com exportação e importação em uma trading company.' },
+        { speaker: 'サンディ', ja: 'そうなんですか。', pt: 'Entendi.' },
+        { speaker: '竹内', ja: '仕事をしているときは忙しくて、大変だなって思ってました。でも、出張でいろんな国にも行けましたし、毎日、充実していて、やりがいがありましたよ。', pt: 'Quando eu trabalhava, era ocupado e eu achava difícil. Mas pude ir a vários países a trabalho, e todos os dias eram produtivos e gratificantes.' },
+        { speaker: 'サンディ', ja: 'そうなんですね。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '18-03': [
+    {
+      label: '③ どんなお仕事をしているんですか？ - 千葉 (18-03)',
+      setupPt: 'Sandy pergunta a Chiba sobre o trabalho de meio período.',
+      lines: [
+        { speaker: 'サンディ', ja: '千葉さんは学生でしたよね？アルバイトとかしてますか？', pt: 'Chiba, você é estudante, não é? Faz algum bico?' },
+        { speaker: '千葉', ja: 'はい、私はコンビニです。週に2日、夜のシフトに入ってます。', pt: 'Sim, trabalho em uma loja de conveniência. Entro no turno da noite dois dias por semana.' },
+        { speaker: 'サンディ', ja: '大変そうですね。', pt: 'Parece difícil.' },
+        { speaker: '千葉', ja: 'んー、アルバイトを始める前は、夜のシフトはつらいって聞いていたんですけど、そんなことないですよ。夜はお客さんも少ないですし、けっこう気に入ってます。', pt: 'Hmm, antes de começar o bico, eu tinha ouvido que o turno da noite era pesado, mas não é bem assim. À noite há poucos clientes, e eu até gosto bastante.' },
+        { speaker: 'サンディ', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: '千葉', ja: 'それに、夜のシフトは時給もまあまあいいんです。', pt: 'Além disso, o salário por hora do turno da noite é razoavelmente bom.' },
+        { speaker: 'サンディ', ja: 'そうなんですか。', pt: 'É mesmo?' },
+        { speaker: '千葉', ja: '昼に働くよりも300円くらい高いんですよ。', pt: 'É cerca de 300 ienes mais alto do que trabalhar de dia.' },
+        { speaker: 'サンディ', ja: 'へー、そうなんですね。', pt: 'Nossa, entendi.' },
+      ],
+    },
+  ],
+  '18-04': [
+    {
+      label: '④ どんなお仕事をしているんですか？ - ラジャン (18-04)',
+      setupPt: 'Sandy pergunta a Rajan sobre o trabalho como chef.',
+      lines: [
+        { speaker: 'サンディ', ja: 'ラジャンさんは？', pt: 'E você, Rajan?' },
+        { speaker: 'ラジャン', ja: 'ネパール料理のお店でシェフをしています。もう20年経ちました。', pt: 'Sou chef em um restaurante de comida nepalesa. Já se passaram 20 anos.' },
+        { speaker: 'サンディ', ja: '長いですね。', pt: 'É bastante tempo.' },
+        { speaker: 'ラジャン', ja: 'そうですね。けっこう苦労しましたよ。でも、周りの人に助けてもらって、今はお店も順調です。', pt: 'Sim. Passei por bastante dificuldade. Mas recebi ajuda das pessoas ao redor e agora o restaurante vai bem.' },
+        { speaker: 'サンディ', ja: 'そうだったんですね。', pt: 'Entendi.' },
+        { speaker: 'ラジャン', ja: 'どうすればもっとおいしい料理が作れるか研究するのが、本当におもしろいんです。', pt: 'É realmente interessante pesquisar como fazer pratos ainda mais gostosos.' },
+        { speaker: 'サンディ', ja: 'いいですね。', pt: 'Que bom.' },
+        { speaker: '千葉', ja: 'じゃあ、サンディさんの仕事が決まったら、ラジャンさんのお店にみんなで行きましょう！', pt: 'Então, quando o trabalho da Sandy for decidido, vamos todos ao restaurante do Rajan!' },
+        { speaker: 'ラジャン', ja: 'はい、ぜひ！サービスしますよ。', pt: 'Sim, venham com certeza! Eu faço um agrado para vocês.' },
+      ],
+    },
+  ],
+  '18-05': [
+    {
+      label: '形に注目 - V-ていた (18-05)',
+      lines: [
+        { speaker: '千葉', ja: 'アルバイトを始める前は、夜のシフトはつらいって聞いていたんですけど、そんなことないですよ。', pt: 'Antes de começar o bico, eu tinha ouvido que o turno da noite era pesado, mas não é bem assim.' },
+      ],
+    },
+  ],
+  '18-06': [
+    {
+      label: '① 定例の連絡会議を始めます - ホテルの朝礼 (18-06)',
+      setupPt: 'Em uma assembleia matinal no hotel, o gerente comunica pontos de atenção do dia.',
+      lines: [
+        { speaker: '支配人', ja: 'おはようございます、みなさん。今日も1日、よろしくお願いします。では、今日のスケジュールと注意点をお伝えします。えー、まず、昼過ぎ、13時ごろに、団体のお客様がいらっしゃいます。35名の団体様なので、フロントが混雑することが予想されます。フロント担当の方は、事前にお部屋のキーや必要な書類を準備して、スムーズに対応できるようにしておいてください。ベルスタッフの皆さんも、お荷物のお手伝いが必要になるかと思いますので、すぐに対応できるよう、準備をお願いします。次に、夕方には車いすをご利用のお客様が到着されます。バリアフリーのお部屋を予約されているので、エレベーターや館内の移動経路に問題がないか、確認しておいてください。お客様が安全に滞在できるよう、細心の注意を払いましょう。以上、何か不明な点や問題があれば、すぐに私か担当マネージャーまで連絡してください。従業員全体で協力し合って、お客様に最高のサービスを提供できるよう、今日も1日がんばりましょう。', pt: 'Bom dia, pessoal. Conto com todos por mais um dia. Vou transmitir a programação de hoje e os pontos de atenção. Primeiro, depois do meio-dia, por volta das 13h, chegará um grupo de clientes. Como é um grupo de 35 pessoas, prevê-se que a recepção fique congestionada. Quem está responsável pela recepção deve preparar com antecedência as chaves dos quartos e os documentos necessários para atender com fluidez. A equipe de carregadores também provavelmente precisará ajudar com a bagagem, então preparem-se para responder imediatamente. Em seguida, à tarde chegará um cliente que usa cadeira de rodas. Como ele reservou um quarto acessível, verifiquem se não há problemas no elevador nem nas rotas de circulação dentro do prédio. Vamos prestar a máxima atenção para que o cliente possa se hospedar com segurança. É isso. Se houver algo que não esteja claro ou algum problema, comuniquem imediatamente a mim ou ao gerente responsável. Vamos cooperar como equipe para oferecer o melhor serviço aos clientes e nos esforçar também hoje.' },
+      ],
+    },
+  ],
+  '18-07': [
+    {
+      label: '② 定例の連絡会議を始めます - 工場の連絡 (18-07)',
+      setupPt: 'Na fábrica, o gerente explica o novo sistema de registro de ponto.',
+      lines: [
+        { speaker: '工場長', ja: 'みなさん、お疲れさまです。今日は、来週からの出勤時の新しいシステムについてお知らせします。現在、出勤時にサインをしていただいている出勤簿のシステムですが、来週から個人カードを使った管理システムに変更されます。この新しいシステムでは、出社時と退社時にそれぞれ個人カードを専用の端末にかざしていただくと、出勤時間や退勤時間が自動的に記録されるようになります。新しいシステムは、来週月曜日から運用を開始します。個人カードは、全員に既に配布されているはずですが、まだ受け取っていない方や、カードに不具合がある方がいらっしゃいましたら、総務まで早めにお知らせください。新しいシステムでは、出勤簿にサインする手間が省け、出勤時間の管理がより正確で効率的になりますので、みなさんのご理解とご協力をお願いします。', pt: 'Pessoal, obrigado pelo trabalho. Hoje vou avisar sobre o novo sistema de registro de entrada a partir da semana que vem. O sistema atual, em que vocês assinam a folha de presença ao chegar, será trocado na semana que vem por um sistema de controle usando cartão individual. Nesse novo sistema, ao chegar e ao sair da empresa, vocês encostam o cartão individual no terminal exclusivo, e os horários de entrada e saída passam a ser registrados automaticamente. A operação do novo sistema começará na próxima segunda-feira. Os cartões individuais já devem ter sido distribuídos a todos, mas quem ainda não recebeu, ou quem tiver algum problema no cartão, avise o setor administrativo o quanto antes. Com o novo sistema, não será preciso assinar a folha de presença, e o controle de horário será mais preciso e eficiente. Peço a compreensão e colaboração de todos.' },
+      ],
+    },
+  ],
+  '18-08': [
+    {
+      label: '③ 定例の連絡会議を始めます - IT企業の会議 (18-08)',
+      setupPt: 'Em uma reunião periódica de uma empresa de TI, o líder de equipe confere o andamento dos projetos.',
+      lines: [
+        { speaker: 'チームリーダー', ja: 'それでは、定例の連絡会議を始めます。えー、進行中のプロジェクトについて、確認します。まず、現在開発中の『漢字クイズアプリ』ですが、最終の納品の締め切りは来週の15日金曜日です。進捗は順調だと聞いていますが、大丈夫ですね。', pt: 'Então, vamos começar a reunião periódica de comunicação. Vou confirmar os projetos em andamento. Primeiro, sobre o app de quiz de kanji que está em desenvolvimento, o prazo final de entrega é sexta-feira, dia 15 da semana que vem. Ouvi que o progresso está em ordem. Está tudo bem, certo?' },
+        { speaker: '社員1', ja: '15日ですね。問題はないはずですが、もし、トラブルなどがあって、もう少し時間が必要になりそうな場合は、どうすればいいですか？', pt: 'Dia 15, certo. Não deve haver problema, mas se houver algum problema técnico e parecer que vamos precisar de um pouco mais de tempo, o que devemos fazer?' },
+        { speaker: 'チームリーダー', ja: 'えー、まあ万が一、遅れそうな場合は、すぐに私に知らせてください。何か対応策をいっしょに考えましょう。「ほう・れん・そう」、報告、連絡、相談を心がけてください。', pt: 'Bem, se por acaso parecer que vai atrasar, me avise imediatamente. Vamos pensar juntos em alguma medida. Tenham sempre em mente ho-ren-so: relatar, comunicar e consultar.' },
+        { speaker: '社員1', ja: '了解です。', pt: 'Entendido.' },
+        { speaker: 'チームリーダー', ja: '次に、先月リリースした『日本語おしゃべりアプリ』ですが、非常によい結果が出ています。特に、海外でのダウンロード数が予想以上に多く、目標を大幅に上回りました。みなさんの努力に感謝しています。データ分析チームには、詳細なレポートの作成をお願いする予定です。', pt: 'Em seguida, sobre o app de conversa em japonês lançado no mês passado, os resultados estão muito bons. Especialmente o número de downloads no exterior foi maior que o esperado e superou muito a meta. Agradeço o esforço de todos. Pretendo pedir à equipe de análise de dados a criação de um relatório detalhado.' },
+        { speaker: '社員2', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'チームリーダー', ja: '今月からは、アプリの広報も、進めていきたいと思います。みなさん、よろしくお願いします。何か質問や意見があれば、遠慮なく知らせてください。', pt: 'A partir deste mês, também quero avançar com a divulgação do app. Conto com todos. Se houver perguntas ou opiniões, avisem sem cerimônia.' },
+      ],
+    },
+  ],
+  '18-09': [
+    {
+      label: '形に注目 - S（普通形）はずだ (18-09)',
+      lines: [
+        { speaker: '工場長', ja: '個人カードは、全員に既に配布されているはずですが、まだ受け取っていない方や、カードに不具合がある方がいらっしゃいましたら、総務まで早めにお知らせください。', pt: 'Os cartões individuais já devem ter sido distribuídos a todos, mas quem ainda não recebeu, ou quem tiver algum problema no cartão, avise o setor administrativo o quanto antes.' },
+        { speaker: '社員1', ja: '問題はないはずですが、もし、トラブルなどがあって、もう少し時間が必要になりそうな場合は、どうすればいいですか？', pt: 'Não deve haver problema, mas se houver algum problema técnico e parecer que vamos precisar de um pouco mais de tempo, o que devemos fazer?' },
+      ],
+    },
+  ],
+  '18-10': [
+    {
+      label: '会話 - オンライン面接 (18-10)',
+      setupPt: 'Arini participa de uma entrevista online com Nihei, da Nagasawa Ryokan.',
+      lines: [
+        { speaker: '二瓶', ja: 'あ、こんにちはー。聞こえますか？', pt: 'Ah, olá. Você consegue me ouvir?' },
+        { speaker: 'アリニ', ja: 'はい。聞こえます。', pt: 'Sim. Consigo ouvir.' },
+        { speaker: '二瓶', ja: 'あ、ながさわ旅館の二瓶です。今日はよろしくお願いしますね。', pt: 'Sou Nihei, da Nagasawa Ryokan. Conto com você hoje.' },
+        { speaker: 'アリニ', ja: 'アリニと申します。今日は、お時間をいただいて、ありがとうございます。', pt: 'Meu nome é Arini. Obrigada por me conceder seu tempo hoje.' },
+        { speaker: '二瓶', ja: 'ながさわ旅館では、新しい人を採用したいと考えています。今日は、正式な採用面接ではないんですけど、アリニさんのお話をいろいろ聞かせてくださいね。', pt: 'Na Nagasawa Ryokan, estamos pensando em contratar uma nova pessoa. Hoje não é uma entrevista formal de contratação, mas deixe-me ouvir várias coisas sobre você.' },
+        { speaker: 'アリニ', ja: 'はい。よろしくお願いします。', pt: 'Sim. Conto com você.' },
+        { speaker: '二瓶', ja: 'アリニさんは、リバティホテルにお勤めだって聞いてますが、今、どんな仕事をしているか、教えてもらえますか？', pt: 'Ouvi que você trabalha no Liberty Hotel. Poderia me dizer que tipo de trabalho faz agora?' },
+        { speaker: 'アリニ', ja: 'はい。えっと、最近は、フロントが多いです。チェックインとかチェックアウトの仕事をしています。あと、予約の管理とかお客様対応もします。', pt: 'Sim. Ultimamente, trabalho mais na recepção. Faço check-in e check-out. Além disso, também cuido da gestão de reservas e do atendimento aos clientes.' },
+        { speaker: '二瓶', ja: 'そうですか。日本語のことで、困ることはありませんか？', pt: 'Entendo. Você tem alguma dificuldade com o japonês?' },
+        { speaker: 'アリニ', ja: '今は、あまりないです。フロントで、お客様からいろいろ質問されることもありますが、今はだいたい日本語で答えられるようになりました。でも、クレームに対応するのは、まだ難しいです。', pt: 'Agora, não muito. Na recepção, às vezes os clientes fazem várias perguntas, mas agora já consigo responder quase tudo em japonês. Mas lidar com reclamações ainda é difícil.' },
+        { speaker: '二瓶', ja: 'あー、クレーム対応は難しいですよね。それで、あのー、アリニさんは日本に来て、なぜホテルで働こうと思ったんですか？', pt: 'Ah, lidar com reclamações é difícil mesmo. Então, Arini, por que você veio ao Japão e pensou em trabalhar em hotel?' },
+        { speaker: 'アリニ', ja: 'はい。私は、インドネシアにいたときも、小さいゲストハウスで働いていたんです。仕事はとてもおもしろかったし、お客様と話すのも楽しかったです。それで、日本でも、ゲストハウスで働いた経験を活かしたいと思いました。', pt: 'Sim. Quando eu estava na Indonésia, também trabalhava em uma pequena guest house. O trabalho era muito interessante, e também era divertido conversar com os clientes. Por isso, pensei que queria aproveitar no Japão a experiência de ter trabalhado em uma guest house.' },
+        { speaker: '二瓶', ja: 'そうなんですね。それで、今、リバティホテルから転職を考えているのは、なぜですか？', pt: 'Entendi. E por que agora você está pensando em mudar de emprego saindo do Liberty Hotel?' },
+        { speaker: 'アリニ', ja: 'はい、あのー、日本に来る前に、日本のホテルはホスピタリティがあるって聞いていました。でも、今働いているリバティホテルは、ビジネスホテルです。仕事で利用されるお客様が多いし、お客様とちょっと遠い感じがします。それで、日本の旅館に泊まったとき、ホテルより旅館のほうがお客様とお話しする機会があって、もっと私に向いていると思いました。', pt: 'Sim, antes de vir ao Japão, eu tinha ouvido que os hotéis japoneses tinham hospitalidade. Mas o Liberty Hotel onde trabalho agora é um hotel de negócios. Há muitos clientes que o usam a trabalho, e sinto uma certa distância em relação aos clientes. Então, quando fiquei hospedada em um ryokan japonês, percebi que em ryokan há mais oportunidades de conversar com os clientes do que em hotéis, e achei que combinava mais comigo.' },
+        { speaker: '二瓶', ja: 'なるほど。', pt: 'Entendi.' },
+        { speaker: 'アリニ', ja: 'それで、そんな話を竹内さんにしたら、ながさわ旅館を紹介してくださったんです。今は、ぜひ、ながさわ旅館で働きたいと思っています。', pt: 'Então, quando contei isso ao Takeuchi, ele me apresentou a Nagasawa Ryokan. Agora, eu realmente quero trabalhar na Nagasawa Ryokan.' },
+        { speaker: '二瓶', ja: 'そうですか。これも、ご縁ですね。では、もし、ながさわ旅館で働くことになったら、アリニさんは、どんなことができると思いますか？', pt: 'Entendi. Isso também é um bom encontro do destino. Então, se você vier a trabalhar na Nagasawa Ryokan, que tipo de coisa acha que consegue fazer?' },
+        { speaker: 'アリニ', ja: 'はい。えー、お客様に喜んでもらえる心遣いができると思います。私は、お客様をよく見て、どうすればお客様に喜んでもらえるかを考えてサービスしています。例えば、この間は、雨の日にタクシーでお着きになったお客様がいらっしゃったんです。それで、私は傘をさして、お車から玄関までいっしょに行ったんですが、とても喜んでいただきました。', pt: 'Sim. Acho que consigo ter a atenção cuidadosa que deixa os clientes felizes. Eu observo bem os clientes e presto serviço pensando em como deixá-los satisfeitos. Por exemplo, outro dia, em um dia de chuva, houve um cliente que chegou de táxi. Então abri um guarda-chuva e fui com ele do carro até a entrada; ele ficou muito satisfeito.' },
+        { speaker: '二瓶', ja: 'そうですか。', pt: 'Entendi.' },
+        { speaker: '二瓶', ja: 'えっと、今日お話しして、アリニさんは、うちの旅館に合っていると思いました。こちらでもう少し検討して、また改めてご連絡してもいいですか？', pt: 'Bem, depois de conversar hoje, achei que você combina com o nosso ryokan. Podemos avaliar mais um pouco aqui e entrar em contato novamente depois?' },
+        { speaker: 'アリニ', ja: 'ありがとうございます。ぜひお願いします。ながさわ旅館のウェブサイトも見ましたけど、すごくすてきな雰囲気の旅館だと思いました。働かせていただければ、うれしいです。', pt: 'Muito obrigada. Sim, por favor. Também vi o site da Nagasawa Ryokan e achei que era um ryokan com uma atmosfera muito bonita. Ficaria feliz se me permitissem trabalhar aqui.' },
+      ],
+    },
+  ],
+  '18-11': [
+    {
+      label: '形に注目 - 尊敬語と謙譲語 (18-11)',
+      lines: [
+        { speaker: '例', ja: '仕事で利用されるお客様が多いし、お客様とちょっと遠い感じがします。', pt: 'Há muitos clientes que o usam a trabalho, e sinto uma certa distância em relação aos clientes.' },
+        { speaker: '例', ja: '例えば、この間は、雨の日にタクシーでお着きになったお客様がいらっしゃったんです。', pt: 'Por exemplo, outro dia houve um cliente que chegou de táxi em um dia de chuva.' },
+        { speaker: '例', ja: 'アリニさんは、リバティホテルにお勤めだって聞いてますが、今、どんな仕事をしているか、教えてもらえますか？', pt: 'Ouvi que você trabalha no Liberty Hotel. Poderia me dizer que tipo de trabalho faz agora?' },
+        { speaker: '例', ja: '日本の旅館に泊まったとき、ホテルより旅館のほうがお客様とお話しする機会があって、もっと私に向いていると思いました。', pt: 'Quando fiquei hospedada em um ryokan japonês, achei que ryokan tinha mais oportunidades de conversar com clientes que hotel, e que combinava mais comigo.' },
+        { speaker: '例', ja: 'こちらでもう少し検討して、また改めてご連絡してもいいですか？', pt: 'Podemos avaliar mais um pouco aqui e entrar em contato novamente depois?' },
+        { speaker: '例', ja: '今日は、お時間をいただいて、ありがとうございます。', pt: 'Obrigada por me conceder seu tempo hoje.' },
+        { speaker: '例', ja: '竹内さんが、ながさわ旅館を紹介してくださったんです。', pt: 'Takeuchi me apresentou a Nagasawa Ryokan.' },
+        { speaker: '例', ja: 'とても喜んでいただきました。', pt: 'Ele ficou muito satisfeito.' },
+        { speaker: '例', ja: '働かせていただければ、うれしいです。', pt: 'Ficaria feliz se me permitissem trabalhar aqui.' },
+      ],
+    },
+  ],
+  '18-12': [
+    {
+      label: '話すモデル - 面接で自分の経験を話す (18-12)',
+      setupPt: 'Modelo para falar em entrevista sobre trabalho atual, japonês, experiência e o que pode fazer.',
+      lines: [
+        { speaker: '面接官', ja: '今日はよろしくお願いします。', pt: 'Conto com você hoje.' },
+        { speaker: 'アリニ', ja: 'アリニと申します。よろしくお願いします。', pt: 'Meu nome é Arini. Conto com você.' },
+        { speaker: '面接官', ja: 'まず、アリニさんが、今、どんな仕事をしているか、教えてください。', pt: 'Primeiro, Arini, conte que tipo de trabalho você faz agora.' },
+        { speaker: 'アリニ', ja: 'フロントで仕事をしています。チェックインとか、チェックアウトの仕事をしています。あと、予約の管理とか、お客様対応もします。', pt: 'Trabalho na recepção. Faço check-in e check-out. Além disso, também cuido da gestão de reservas e do atendimento aos clientes.' },
+        { speaker: '面接官', ja: '日本語は、どのぐらいできますか？', pt: 'Quanto japonês você consegue usar?' },
+        { speaker: 'アリニ', ja: 'ほとんどの仕事が日本語でできますが、できないことも少しあります。お客様からの質問は、だいたい日本語で答えられます。でも、クレームの対応は、まだ難しいです。', pt: 'Consigo fazer quase todo o trabalho em japonês, mas ainda há algumas coisas que não consigo. Consigo responder em japonês à maioria das perguntas dos clientes. Mas lidar com reclamações ainda é difícil.' },
+        { speaker: '面接官', ja: 'アリニさんは、なぜホテルで働こうと思ったんですか？', pt: 'Arini, por que você pensou em trabalhar em hotel?' },
+        { speaker: 'アリニ', ja: '自分の経験を活かしたいと思ったんです。私は、インドネシアにいたときも、小さいゲストハウスで働いていたんです。仕事はとてもおもしろかったし、お客様と話すのも楽しかったです。', pt: 'Pensei que queria aproveitar minha experiência. Quando eu estava na Indonésia, também trabalhava em uma pequena guest house. O trabalho era muito interessante, e conversar com os clientes também era divertido.' },
+        { speaker: '面接官', ja: '今、転職を考えているのは、なぜですか？', pt: 'Por que você está pensando em mudar de emprego agora?' },
+        { speaker: 'アリニ', ja: 'もっと自分に向いている職場で働きたいと思ったからです。リバティホテルはビジネスホテルです。仕事で利用されるお客様が多いし、お客様と遠い感じがします。でも、日本の旅館はお客様とお話しする機会が多いので、私に向いていると思いました。', pt: 'Porque pensei que queria trabalhar em um local que combinasse mais comigo. O Liberty Hotel é um hotel de negócios. Há muitos clientes que o usam a trabalho, e sinto distância em relação aos clientes. Mas em um ryokan japonês há muitas oportunidades de conversar com os clientes, então achei que combinava comigo.' },
+        { speaker: '面接官', ja: 'では、もし、うちで働くことになったら、アリニさんは、どんなことができると思いますか？', pt: 'Então, se você vier a trabalhar aqui, que tipo de coisa acha que consegue fazer?' },
+        { speaker: 'アリニ', ja: 'お客様に喜んでもらえる心遣いができると思います。私は、お客様をよく見て、どうすればお客様に喜んでもらえるかを考えています。例えば、この間、雨の日にタクシーでお着きになったお客様がいらっしゃったんです。それで、私は傘をさして、お車から玄関までいっしょに行ったんですが、とても喜んでいただきました。', pt: 'Acho que consigo ter a atenção cuidadosa que deixa os clientes felizes. Eu observo bem os clientes e penso em como deixá-los satisfeitos. Por exemplo, outro dia, em um dia de chuva, houve um cliente que chegou de táxi. Então abri um guarda-chuva e fui com ele do carro até a entrada; ele ficou muito satisfeito.' },
+        { speaker: '面接官', ja: 'そうですか。わかりました。今日、お話しして、アリニさんは、うちに合っていると思いました。また改めてご連絡しますね。', pt: 'Entendi. Compreendi. Depois de conversar hoje, achei que você combina conosco. Entraremos em contato novamente depois.' },
+        { speaker: 'アリニ', ja: 'ありがとうございます。ぜひお願いします。', pt: 'Muito obrigada. Sim, por favor.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -6465,6 +6714,104 @@ const lesson17: Section = {
   audios: attachScripts(17, L17_SCRIPTS),
 }
 
+const lesson18: Section = {
+  id: 'lesson-18',
+  level: 'pre-intermediate',
+  titleJa: '第18課 働かせていただければ、うれしいです',
+  titlePt: 'Lição 18 - Ficaria feliz se me permitissem trabalhar aqui',
+  summaryPt:
+    'Trabalhar no Japão · entender falas sobre profissões, comunicados de trabalho e vagas, além de falar sobre experiência e habilidades em entrevista.',
+  studyNotes: [
+    {
+      title: 'Tópico: Trabalhar no Japão (日本で働く)',
+      bodyPt:
+        'Pergunta de abertura: 将来について考えましょう。これからの人生で、どこで、どんな仕事をしたいですか？\n\n' +
+        '## Can-do\n' +
+        '- Ouvir comentários simples sobre o trabalho de outras pessoas e entender que tipo de trabalho fazem e o que pensam sobre ele.\n' +
+        '- Ouvir comunicados e relatórios um pouco detalhados sobre trabalho em reuniões ou assembleias e entender o conteúdo geral.\n' +
+        '- Ler anúncios de vaga e localizar informações necessárias, como conteúdo do trabalho, salário e local.\n' +
+        '- Falar com algum detalhe sobre habilidades e capacidades em entrevistas de emprego.',
+    },
+    {
+      title: 'Atividade 1: どんなお仕事をしているんですか？',
+      bodyPt:
+        'Sandy pergunta aos colegas da aula de japonês sobre o trabalho deles. O gabarito liga as pessoas às imagens e às ocupações assim:\n\n' +
+        '| Pessoa | Imagem | Trabalho | Ponto principal |\n|---|---|---|---|\n' +
+        '| ミー | d | ホテル | Veio pelo sistema 特定技能; às vezes se confunde porque o serviço japonês é diferente do Vietnã, mas acha que hotel combina com ela. |\n' +
+        '| 竹内 | a | 会社員／商社 | Já se aposentou; trabalhava com exportação e importação. Era ocupado, mas充実していて、やりがいがありました. |\n' +
+        '| 千葉 | c | コンビニのアルバイト | Trabalha no turno da noite duas vezes por semana; antes tinha ouvido que seria pesado, mas gosta e ganha cerca de 300 ienes a mais por hora. |\n' +
+        '| ラジャン | b | ネパール料理のシェフ | Trabalha há 20 anos; passou por dificuldades, mas agora o restaurante vai bem e gosta de pesquisar como fazer comida mais gostosa. |',
+    },
+    {
+      title: 'Gramática ➊: V-ていた',
+      bodyPt:
+        '**V-ていた** olha para uma situação anterior a um ponto no passado. Na frase da lição, 千葉 fala do que tinha ouvido antes de começar o bico:\n\n' +
+        '- `アルバイトを始める前は、夜のシフトはつらいって聞いていたんですけど、そんなことないですよ。`\n\n' +
+        'A forma é útil para contrastar expectativa passada e experiência real: antes eu tinha ouvido/pensava X; depois descobri Y.',
+    },
+    {
+      title: 'Atividade 2: 定例の連絡会議を始めます',
+      bodyPt:
+        'A atividade trabalha três comunicados de trabalho em contextos diferentes.\n\n' +
+        '| Faixa | Local | Conteúdo principal | Ações pedidas |\n|---|---|---|---|\n' +
+        '| 18-06 | ホテルの朝礼 | Chegada de grupo de 35 pessoas às 13h e chegada de cliente que usa cadeira de rodas | preparar chaves e documentos; apoiar bagagem; checar elevador e rotas internas; avisar gerente ou responsável se houver problema |\n' +
+        '| 18-07 | 工場 | Troca do 出勤簿 com assinatura para sistema de cartão individual | encostar o cartão no terminal ao entrar e sair; avisar 総務 se não recebeu o cartão ou se há defeito |\n' +
+        '| 18-08 | IT企業 | Relatório de progresso dos projetos atuais | app de quiz de kanji deve ser entregue dia 15; se houver atraso, avisar o líder; equipe de análise fará relatório detalhado do app de conversa |',
+    },
+    {
+      title: 'Gramática ➋: S（普通形）はずだ',
+      bodyPt:
+        '**S（普通形）はずだ** expressa uma convicção forte baseada em informação, evidência ou expectativa razoável.\n\n' +
+        '- `問題はないはずですが...` = Não deve haver problema, mas...\n' +
+        '- `個人カードは、全員に既に配布されているはずですが...` = Os cartões individuais já devem ter sido distribuídos a todos, mas...\n\n' +
+        'A estrutura permite abrir espaço para exceções mesmo quando a expectativa é clara.',
+    },
+    {
+      title: 'Atividade 3: 求人情報',
+      bodyPt:
+        'A leitura compara anúncios de vagas. O gabarito identifica os trabalhos como ① コンビニ, ② 製造 e ③ 旅館.\n\n' +
+        '| Vaga | Experiência | Salário | Horário | Candidatura / entrevista |\n|---|---|---|---|---|\n' +
+        '| ① コンビニ | 未経験可 | 1,200円 por hora; 22:00-5:00 = 1,500円 | mínimo 3 horas por dia | candidatura pela web; roupa livre na entrevista |\n' +
+        '| ② 製造 | 未経験可, mas experiência favorece | 月給30万円以上 + bônus | 8:00-17:00 ou 20:00-翌5:00 | levar caneta esferográfica, lápis e borracha |\n' +
+        '| ③ 旅館 | informação de moradia e refeições é destaque | 寮 1万円/月; refeições manhã, almoço e noite | 7:00-22:00, 8 horas por dia; turno por consulta | levar 履歴書 com foto |',
+    },
+    {
+      title: 'Atividade 4: ゲストハウスで働いた経験を活かしたいと思いました',
+      bodyPt:
+        'A entrevista online organiza cinco temas: trabalho atual, quanto japonês consegue usar, motivo de ter escolhido hotel, motivo de querer mudar de emprego e o que poderá fazer se mudar.\n\n' +
+        '| Tema | Resposta de アリニ |\n|---|---|\n' +
+        '| 今、どんな仕事をしているか | Trabalha no front desk: check-in, check-out, gestão de reservas e atendimento ao cliente. |\n' +
+        '| どのぐらい日本語ができるか | Consegue fazer quase todo o trabalho em japonês; perguntas dos clientes geralmente consegue responder; reclamações ainda são difíceis. |\n' +
+        '| 今の仕事をしようと思った理由 | Queria aproveitar a experiência de ter trabalhado em uma pequena guest house na Indonésia. |\n' +
+        '| 転職しようと思っている理由 | Quer trabalhar em um local que combine mais com ela; hotel de negócios parece distante dos clientes, ryokan dá mais chance de conversar. |\n' +
+        '| 転職したら、どんなことができるか | Consegue ter 心遣い para deixar clientes felizes; exemplo do cliente que chegou de táxi em dia de chuva e foi acompanhado com guarda-chuva até a entrada. |',
+    },
+    {
+      title: 'Gramática ➌: 尊敬語と謙譲語',
+      bodyPt:
+        'A lição revisa expressões respeitosas e humildes em contexto de entrevista e atendimento.\n\n' +
+        '**尊敬語** eleva ações da outra pessoa, especialmente clientes, superiores ou interlocutores: `利用される`, `お着きになった`, `いらっしゃった`, `お勤めだ`, `紹介してくださった`.\n\n' +
+        '**謙譲語** abaixa as ações do próprio lado para mostrar respeito: `お話しする`, `ご連絡する`, `いただく`, `喜んでいただきました`, `働かせていただければ`.\n\n' +
+        'Frase central da lição: `働かせていただければ、うれしいです。` Usa `V-させていただく` para pedir permissão de modo humilde: ficaria feliz se me permitissem trabalhar.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {輸出|ゆしゅつ}, {作成|さくせい}, {未経験|みけいけん}, {順調|じゅんちょう}, {報告|ほうこく}, {努力|どりょく}, {非常|ひじょう}に, {充実|じゅうじつ}する, {答|こた}える, {向|む}いている.\n\n' +
+        '**Vocabulário-chave:** 特定技能, パート, 年金暮らし, 商社, 輸入, 夜のシフト, 時給, 研究する, 定例, 朝礼, 団体, 車いす, バリアフリー, 出勤簿, 個人カード, 端末, 総務, 進捗, 納品, 締め切り, 対応策, ほうれんそう, 求人情報, 寮, 履歴書, 採用, 転職, 心遣い, ご縁.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**年金:** sistema de aposentadoria/pensão no Japão. A fala de 竹内 usa `年金暮らし` para dizer que vive de aposentadoria.\n\n' +
+        '**さまざまな雇用形態:** a lição compara アルバイト, パート, 正社員, 契約社員／嘱託社員 e 派遣社員. Também lembra que o status de residência pode limitar horas e tipo de trabalho, como estudantes com limite de 28 horas semanais.\n\n' +
+        '**ほうれんそう（報告・連絡・相談）:** princípio de comunicação no trabalho. `報告` é relatar andamento ou resultado; `連絡` é comunicar fatos necessários; `相談` é consultar antes que um problema cresça.',
+    },
+  ],
+  groups: [lesson18Group],
+  audios: attachScripts(18, L18_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -6492,6 +6839,7 @@ const sections: Section[] = [
   lesson16,
   // Tópico 9 - Trabalhar no Japão (日本で働く)
   lesson17,
+  lesson18,
 ]
 
 export const irodoriPreIntermediate: Level = {
