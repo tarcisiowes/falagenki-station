@@ -3437,30 +3437,65 @@ const lesson15Group: ExerciseGroup = {
 const L15_SCRIPTS: Record<string, ScriptItem[]> = {
   '15-03': [
     {
-      label: '① 環境のために — エアコンの温度 (15-03) · resumo',
-      setupJa: '{環境|かんきょう}のために{気|き}をつけていることを{話|はな}しています。',
-      setupPt: 'Resumo: a pessoa procura deixar o ar-condicionado em 28°C, para economizar energia.',
+      label: '① エアコンの温度 (15-03)',
+      setupJa: '2. {水|みず}がもったいないですよ —— {環境|かんきょう}のために{気|き}をつけていることについて{話|はな}しています。① エアコンの{温度|おんど}。',
+      setupPt: 'Conversando sobre o que se faz pelo meio ambiente. ① a temperatura do ar-condicionado.',
       lines: [
-        { speaker: 'A', ja: 'エアコンの{温度|おんど}は、28{度|ど}に{設定|せってい}するようにしてます。{節電|せつでん}のためです。', pt: 'Procuro deixar o ar-condicionado em 28°C. É para economizar energia.' },
+        { speaker: 'A', ja: '{今日|きょう}、{暑|あつ}いですね。エアコンついてますか？', pt: 'Hoje está quente, né. O ar-condicionado está ligado?' },
+        { speaker: 'B', ja: 'ついてますよ。でも、うちの{会社|かいしゃ}、エアコンの{温度|おんど}は、28{度|ど}に{設定|せってい}するようにしてますから。', pt: 'Está, sim. Mas, na nossa empresa, procuramos deixar o ar-condicionado em 28°C.' },
+        { speaker: 'A', ja: 'え、どうしてですか？', pt: 'Hã, por quê?' },
+        { speaker: 'B', ja: '{節電|せつでん}のためですよ。{設定|せってい}{温度|おんど}を{下|さ}げると、{電気|でんき}をたくさん{使|つか}いますからね。', pt: 'É para economizar energia. Quando se abaixa a temperatura, gasta-se muita eletricidade.' },
+        { speaker: 'A', ja: 'そうなんですか。でも、{暑|あつ}いんですが、{下|さ}げちゃだめですか？', pt: 'Ah, é? Mas está quente; não pode abaixar?' },
+        { speaker: 'B', ja: 'まあ、{少|すこ}しなら{下|さ}げてもいいですよ。でも、エアコンが{苦手|にがて}な{人|ひと}もいるから、ほかの{人|ひと}にも{聞|き}いてみてください。', pt: 'Bem, um pouco pode abaixar. Mas tem gente que não se dá bem com ar-condicionado, então pergunte aos outros também.' },
+        { speaker: 'A', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '15-04': [
+    {
+      label: '② 会議室の電気・両面コピー (15-04)',
+      setupPt: '② luz da sala de reunião e cópia frente e verso.',
+      lines: [
+        { speaker: 'A', ja: '{孫|ソン}さん、{池田|いけだ}さん、{会議|かいぎ}お{疲|つか}れさまでした。', pt: 'Son, Ikeda, bom trabalho na reunião.' },
+        { speaker: 'B・C', ja: 'お{疲|つか}れさまでした。', pt: 'Bom trabalho.' },
+        { speaker: 'A', ja: '{会議室|かいぎしつ}の{電気|でんき}がついたままでしたよ。{電気|でんき}がもったいないから、{使|つか}い{終|お}わったら、{消|け}してくださいね。', pt: 'As luzes da sala de reunião ficaram acesas. É desperdício de energia, então, quando terminar de usar, apague, por favor.' },
+        { speaker: 'C', ja: 'あ、すみません。', pt: 'Ah, desculpe.' },
+        { speaker: 'B', ja: 'すみません。{今度|こんど}から{気|き}をつけます。', pt: 'Desculpe. Da próxima vez vou prestar atenção.' },
+        { speaker: 'A', ja: 'あと、{会議|かいぎ}の{資料|しりょう}なんですけど、{紙|かみ}の{節約|せつやく}のために、{今度|こんど}から{両面|りょうめん}コピーでお{願|ねが}いします。', pt: 'E quanto ao material da reunião: para economizar papel, da próxima vez façam cópia frente e verso, por favor.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'C', ja: 'わかりました。', pt: 'Entendido.' },
+      ],
+    },
+  ],
+  '15-05': [
+    {
+      label: '③ 水を止める（皿洗い）(15-05)',
+      setupPt: '③ fechar a torneira (ao lavar a louça).',
+      lines: [
+        { speaker: '一同', ja: 'ごちそうさまでした。おいしかった。', pt: 'Obrigado pela comida. Estava gostoso.' },
+        { speaker: 'A', ja: 'じゃあ、{片付|かたづ}けましょう。{缶|かん}はこの{袋|ふくろ}にまとめて。', pt: 'Então vamos arrumar. As latas, junte neste saco.' },
+        { speaker: 'B', ja: 'ぼく、お{皿|さら}{洗|あら}います。', pt: 'Eu lavo a louça.' },
+        { speaker: 'C', ja: 'あ、じゃあ、いっしょにお{願|ねが}いします。', pt: 'Ah, então faço junto, por favor.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'C', ja: 'あ、{水|みず}、{出|だ}したままですよ。{水|みず}がもったいないですよ。', pt: 'Ei, a água ficou aberta. É desperdício de água.' },
+        { speaker: 'B', ja: 'え、まだ{洗|あら}ってますよ。', pt: 'Hã, ainda estou lavando.' },
+        { speaker: 'C', ja: '{洗剤|せんざい}をつけて{洗|あら}うときは、{水|みず}を{止|と}めたほうがいいですよ。{水|みず}を{使|つか}うのは、あとからまとめてすすぐときだけ。', pt: 'Quando você passa o detergente e esfrega, é melhor fechar a água. Use água só depois, na hora de enxaguar tudo de uma vez.' },
+        { speaker: 'B', ja: 'へー、そうなんですか。', pt: 'Nossa, é mesmo?' },
       ],
     },
   ],
   '15-06': [
     {
-      label: '④ 環境のために — マイストロー (15-06) · resumo',
-      setupPt: 'Resumo: a pessoa anda com canudo próprio (my straw), porque é bom para reduzir o lixo.',
+      label: '④ マイストロー (15-06)',
+      setupPt: '④ canudo reutilizável (my straw).',
       lines: [
-        { speaker: 'A', ja: 'マイストローを{持|も}ち{歩|ある}くようにしてます。ごみを{減|へ}らすのにいいんです。', pt: 'Procuro andar com meu próprio canudo. É bom para reduzir o lixo.' },
-      ],
-    },
-  ],
-  '15-08': [
-    {
-      label: '会話モデル — 環境のために気をつけていること (15-08) · resumo',
-      setupPt: 'Resumo: ao ser perguntada o que faz pelo meio ambiente, a pessoa cita seus hábitos (ar em 28°C por economia; canudo próprio para reduzir lixo) usando 〜ようにする / 〜のにいい.',
-      lines: [
-        { speaker: 'A', ja: '{環境|かんきょう}のために、{何|なに}か{気|き}をつけていますか？', pt: 'Você cuida de alguma coisa pelo meio ambiente?' },
-        { speaker: 'B', ja: 'エアコンの{温度|おんど}は28{度|ど}に{設定|せってい}するようにしてます。{節電|せつでん}のためです。', pt: 'Procuro deixar o ar-condicionado em 28°C. É para economizar energia.' },
+        { speaker: 'A', ja: 'あれ？　スーさん、そのストロー、{自分|じぶん}で{持|も}って{来|き}たの？', pt: 'Ué? Su, esse canudo, você trouxe de casa?' },
+        { speaker: 'B', ja: 'はい。マイストローです。いつも、これを{持|も}ち{歩|ある}くようにしてるんです。', pt: 'Sim. É o meu canudo. Procuro andar sempre com ele.' },
+        { speaker: 'A', ja: 'え、どうして？', pt: 'Hã, por quê?' },
+        { speaker: 'B', ja: '{環境|かんきょう}のためです。あと、マイボトルも{持|も}ってますよ。ほら、これ。ペットボトルの{飲|の}み{物|もの}を{買|か}わないようにしてるんです。', pt: 'É pelo meio ambiente. E também tenho minha garrafa. Olha, esta. Procuro não comprar bebidas em garrafa PET.' },
+        { speaker: 'A', ja: 'そうなの。', pt: 'Ah, é?' },
+        { speaker: 'B', ja: 'ごみを{減|へ}らすのにいいんです。', pt: 'É bom para reduzir o lixo.' },
+        { speaker: 'A', ja: 'へー。マイボトルとかマイバッグは、よく{見|み}るけど、マイストローははじめて{見|み}た。', pt: 'Nossa. Garrafa e sacola reutilizáveis a gente vê bastante, mas canudo reutilizável foi a primeira vez que vi.' },
       ],
     },
   ],
@@ -3547,43 +3582,206 @@ const lesson16Group: ExerciseGroup = {
 
 // Resumos das faixas de áudio da Lição 16 (situação + falas-chave citadas; não verbatim)
 const L16_SCRIPTS: Record<string, ScriptItem[]> = {
+  // 1. 緊急地震速報です
+  '16-02': [
+    {
+      label: '① 台風のニュース (16-02)',
+      setupJa: '1. {緊急|きんきゅう}{地震|じしん}{速報|そくほう}です —— {災害|さいがい}のニュースや{放送|ほうそう}が{流|なが}れています。① {台風|たいふう}。',
+      setupPt: 'Notícias e anúncios de desastre. ① tufão.',
+      lines: [
+        { speaker: 'ニュース', ja: '{台風|たいふう}15{号|ごう}は、{明日|あす}9{日|ここのか}{土曜日|どようび}、{夕方|ゆうがた}から{夜|よる}にかけて{関東|かんとう}{地方|ちほう}に{上陸|じょうりく}する{見込|みこ}みです。{関東|かんとう}や{伊豆|いず}{諸島|しょとう}、{東海|とうかい}では、{風|かぜ}が{強|つよ}くなり、{局地的|きょくちてき}に{非常|ひじょう}に{激|はげ}しい{雨|あめ}が{降|ふ}るでしょう。{川|かわ}の{水|みず}が{増|ふ}えて、{非常|ひじょう}に{危険|きけん}です。{川|かわ}の{近|ちか}くには{近|ちか}づかないでください。{様子|ようす}を{見|み}るために{外|そと}に{出|で}るのは、{絶対|ぜったい}にやめましょう。{安全|あんぜん}な{建物|たてもの}の{中|なか}で、{最新|さいしん}の{情報|じょうほう}を{確認|かくにん}するようにしてください。', pt: 'O tufão nº 15 deve atingir a região de Kanto amanhã, sábado dia 9, do fim da tarde para a noite. Em Kanto, nas ilhas Izu e em Tokai, o vento ficará forte e haverá chuva muito intensa em pontos isolados. A água dos rios vai subir, é muito perigoso. Não se aproxime dos rios. Jamais saia para ver como está. Procure conferir as informações mais recentes dentro de um prédio seguro.' },
+      ],
+    },
+  ],
+  '16-03': [
+    {
+      label: '② 火災の館内放送 (16-03)',
+      setupPt: '② anúncio interno de incêndio.',
+      lines: [
+        { speaker: '放送', ja: 'お{客様|きゃくさま}にお{知|し}らせいたします。ただいま、2{階|かい}で{火災|かさい}が{発生|はっせい}しました。{係員|かかりいん}の{指示|しじ}に{従|したが}い、{西側|にしがわ}の{出口|でぐち}から{駐車場|ちゅうしゃじょう}に{避難|ひなん}してください。{小|ちい}さなお{子|こ}さまやお{年寄|としよ}りを{優先|ゆうせん}に{避難|ひなん}してください。あわてないで、{落|お}ち{着|つ}いて{行動|こうどう}してください。くり{返|かえ}します。ただいま、……', pt: 'Atenção, clientes. Neste momento, ocorreu um incêndio no 2º andar. Sigam as instruções dos funcionários e evacuem pela saída oeste em direção ao estacionamento. Deem prioridade na evacuação a crianças pequenas e idosos. Não entrem em pânico, ajam com calma. Repetimos. Neste momento…' },
+      ],
+    },
+  ],
+  '16-04': [
+    {
+      label: '③ 緊急地震速報 (16-04)',
+      setupPt: '③ alerta de terremoto.',
+      lines: [
+        { speaker: '放送', ja: '{緊急|きんきゅう}{地震|じしん}{速報|そくほう}です。{強|つよ}い{揺|ゆ}れに{警戒|けいかい}してください。{緊急|きんきゅう}{地震|じしん}{速報|そくほう}です。{強|つよ}い{揺|ゆ}れに{警戒|けいかい}してください。{緊急|きんきゅう}{地震|じしん}{速報|そくほう}が{出|で}ました。{京都|きょうと}、{大阪|おおさか}、{滋賀|しが}、{兵庫|ひょうご}、{福井|ふくい}、{三重|みえ}、{奈良|なら}、{和歌山|わかやま}、{香川|かがわ}に{緊急|きんきゅう}{地震|じしん}{速報|そくほう}が{出|で}ました。けがをしないように、{身|み}を{守|まも}ってください。{倒|たお}れやすい{家具|かぐ}などからは{離|はな}れてください。テーブルや{机|つくえ}の{下|した}に{隠|かく}れてください。', pt: 'Alerta de terremoto. Atenção a tremores fortes. Alerta de terremoto. Atenção a tremores fortes. Foi emitido um alerta de terremoto. Foi emitido alerta para Kyoto, Osaka, Shiga, Hyogo, Fukui, Mie, Nara, Wakayama e Kagawa. Para não se ferir, proteja-se. Afaste-se de móveis que possam tombar. Abrigue-se embaixo de uma mesa ou escrivaninha.' },
+        { speaker: '放送', ja: '……えー、{先|さき}ほど7{時|じ}41{分|ぷん}ごろ、{近畿|きんき}{地方|ちほう}で{強|つよ}い{揺|ゆ}れを{感|かん}じました。{震源|しんげん}が{海底|かいてい}ですと、{津波|つなみ}のおそれがあります。{海岸|かいがん}から{離|はな}れてください。', pt: '…Ahn, há pouco, por volta das 7h41, sentiu-se um forte tremor na região de Kinki. Se o epicentro for no fundo do mar, há risco de tsunami. Afaste-se do litoral.' },
+      ],
+    },
+  ],
+  // 2. 避難訓練を始めます
   '16-07': [
     {
-      label: '防災訓練1 — 地震 (16-07) · resumo',
-      setupJa: '{職場|しょくば}で、{地震|じしん}の{避難|ひなん}{訓練|くんれん}をしています。',
-      setupPt: 'Resumo: simulado de terremoto no trabalho. No tremor: abrir a porta, pôr capacete, abaixar-se; depois evacuar pela escada (sem elevador), reunir-se no pátio e fazer a chamada.',
+      label: '防災訓練1 — 地震 (16-07)',
+      setupJa: '2. {避難|ひなん}{訓練|くんれん}を{始|はじ}めます —— {職場|しょくば}で{地震|じしん}の{避難|ひなん}{訓練|くんれん}をしています。',
+      setupPt: 'Simulado de evacuação por terremoto no trabalho.',
       lines: [
-        { speaker: '放送', ja: '{震度|しんど}5の{地震|じしん}が{発生|はっせい}しました。', pt: 'Ocorreu um terremoto de intensidade 5.' },
-        { speaker: 'A', ja: 'そこのドアを{開|あ}けて！ {全員|ぜんいん}、ヘルメットをかぶって！ {姿勢|しせい}を{低|ひく}くして！', pt: 'Abram aquela porta! Todos, ponham o capacete! Abaixem-se!' },
+        { speaker: '放送', ja: '（{避難|ひなん}{訓練|くんれん}を{開始|かいし}する）{訓練|くんれん}、{訓練|くんれん}。{震度|しんど}5の{地震|じしん}が{発生|はっせい}しました。', pt: '(início do simulado) Simulado, simulado. Ocorreu um terremoto de intensidade 5.' },
+        { speaker: 'A', ja: 'はい、そこのドアを{開|あ}けて！　{全員|ぜんいん}、ヘルメットをかぶって！　{姿勢|しせい}を{低|ひく}くして！', pt: 'Isso, abram aquela porta! Todos, ponham o capacete! Abaixem-se!' },
+        { speaker: '数人', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '放送', ja: '（{避難|ひなん}を{開始|かいし}する）{揺|ゆ}れがおさまりました。{避難|ひなん}を{開始|かいし}してください。', pt: '(início da evacuação) O tremor parou. Iniciem a evacuação.' },
+        { speaker: 'A', ja: '{中庭|なかにわ}に{避難|ひなん}します！　{走|はし}らないで！', pt: 'Vamos evacuar para o pátio! Não corram!' },
+        { speaker: '全員', ja: 'はい。', pt: 'Sim.' },
         { speaker: 'A', ja: 'エレベーターは{使|つか}わないで。{階段|かいだん}で{下|お}りて。', pt: 'Não usem o elevador. Desçam pela escada.' },
+        { speaker: 'B', ja: 'みんな！　{走|はし}るな！', pt: 'Pessoal! Não corram!' },
+        { speaker: 'C', ja: '（{外|そと}に{集合|しゅうごう}する）{急|いそ}げ！　こっちに{集|あつ}まれ！', pt: '(reunião na rua) Depressa! Juntem-se aqui!' },
+        { speaker: 'A', ja: '{走|はし}って{走|はし}って！', pt: 'Andem rápido, rápido!' },
+        { speaker: 'C', ja: '（{人数|にんずう}を{確認|かくにん}する）チームごとに{並|なら}んで{点呼|てんこ}！　{全員|ぜんいん}いるか、{報告|ほうこく}してください！', pt: '(conferência) Cada equipe em fila, façam a chamada! Reportem se está todo mundo!' },
+        { speaker: 'A', ja: 'はい、みんな{並|なら}んで！', pt: 'Isso, todos em fila!' },
       ],
     },
   ],
   '16-08': [
     {
-      label: '防災訓練2 — 火事 (16-08) · resumo',
-      setupPt: 'Resumo: simulado de incêndio no trabalho. Confirmado o fogo: ligar para o 119, fazer o combate inicial com o extintor e verificar se não há ninguém preso.',
+      label: '防災訓練2 — 火事 (16-08)',
+      setupPt: 'Simulado de incêndio no trabalho — distribuição de tarefas.',
       lines: [
-        { speaker: '上司', ja: '{火災|かさい}を{確認|かくにん}したら、119{番|ばん}に{連絡|れんらく}してください。{初期|しょき}{消火|しょうか}をお{願|ねが}いします。', pt: 'Ao confirmar o incêndio, liguem para o 119. Façam o combate inicial ao fogo, por favor.' },
+        { speaker: '上司', ja: 'これから、{火事|かじ}の{避難|ひなん}{訓練|くんれん}を{始|はじ}めます。まず、やり{方|かた}を{説明|せつめい}します。{火災|かさい}{報知器|ほうちき}が{鳴|な}ったら、{青木|あおき}さん、{橋本|はしもと}さん、エルデネさんは、3{人|にん}で{火|ひ}の{場所|ばしょ}を{確認|かくにん}してください。', pt: 'Agora vamos começar o simulado de incêndio. Primeiro, explico o procedimento. Quando o alarme de incêndio tocar, Aoki, Hashimoto e Erdene, vocês três confirmem o local do fogo.' },
+        { speaker: '青木・橋本・エルデネ', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '上司', ja: '{火|ひ}が{確認|かくにん}できたら、{青木|あおき}さんは、119{番|ばん}に{連絡|れんらく}してください。{橋本|はしもと}さんは、みんなに{知|し}らせてください。', pt: 'Confirmado o fogo, Aoki, ligue para o 119. Hashimoto, avise todo mundo.' },
+        { speaker: '青木・橋本', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '上司', ja: 'エルデネさんは、{初期|しょき}{消火|しょうか}をお{願|ねが}いします。{消火器|しょうかき}で{火|ひ}を{消|け}してください。', pt: 'Erdene, faça o combate inicial ao fogo. Apague o fogo com o extintor.' },
+        { speaker: 'エルデネ', ja: 'はい、わかりました。', pt: 'Sim, entendido.' },
+        { speaker: '上司', ja: 'ソーさんは、{避難|ひなん}するとき、{逃|に}げ{遅|おく}れた{人|ひと}がいないか、{部屋|へや}を{一|ひと}つ{一|ひと}つ{見|み}て{回|まわ}ってください。', pt: 'Saw, na hora da evacuação, percorra as salas uma a uma para ver se não ficou ninguém para trás.' },
+        { speaker: 'ソー', ja: 'はい、わかりました。', pt: 'Sim, entendido.' },
       ],
     },
   ],
   '16-09': [
     {
-      label: '防災訓練3 — 煙体験 (16-09) · resumo',
-      setupJa: '{地域|ちいき}の{防災|ぼうさい}{訓練|くんれん}で、{煙体験|けむりたいけん}のやり{方|かた}の{説明|せつめい}を{聞|き}いています。',
-      setupPt: 'Resumo: simulado de fumaça. Abaixar o corpo, cobrir a boca com lenço, não respirar a fumaça, avançar para a saída e ir avisando uns aos outros.',
+      label: '防災訓練3 — 煙体験 (16-09)',
+      setupJa: '{地域|ちいき}の{防災|ぼうさい}{訓練|くんれん}で、{煙|けむり}{体験|たいけん}のやり{方|かた}の{説明|せつめい}を{聞|き}いています。',
+      setupPt: 'Explicação de como fazer a simulação de fumaça, num simulado da comunidade.',
       lines: [
-        { speaker: '説明', ja: '{姿勢|しせい}を{低|ひく}くして{進|すす}んでください。できるだけ{煙|けむり}を{吸|す}わないようにしてください。', pt: 'Avancem abaixados. Procurem não respirar a fumaça o máximo possível.' },
+        { speaker: '説明', ja: 'では、{煙|けむり}{体験|たいけん}を{行|おこな}います。えー、このテントの{中|なか}は、{煙|けむり}が{充満|じゅうまん}しています。この{中|なか}に{入|はい}って、{火事|かじ}のとき、{煙|けむり}の{中|なか}をどうやって{逃|に}げるか、{体験|たいけん}していただきます。こちらの{入口|いりぐち}から{入|はい}って、{中|なか}を{進|すす}んで、{向|む}こうの{出口|でぐち}まで{歩|ある}きますが、そのときに{注意点|ちゅういてん}があります。まず、{煙|けむり}は{上|うえ}に{行|い}くので、しゃがんで、できるだけ{姿勢|しせい}を{低|ひく}くして{進|すす}んでください。あと、タオルやハンカチを{口|くち}に{当|あ}てて、できるだけ{煙|けむり}を{吸|す}わないようにしてください。それから、{中|なか}は{煙|けむり}で{前|まえ}が{見|み}えません。ほかの{人|ひと}と{声|こえ}をかけ{合|あ}って、{壁|かべ}や{床|ゆか}に{手|て}を{当|あ}てながら{進|すす}んでください。', pt: 'Bem, vamos fazer a simulação de fumaça. Ahn, dentro desta tenda está cheio de fumaça. Vocês vão entrar e vivenciar como escapar pela fumaça num incêndio. Entram por esta entrada, avançam por dentro e caminham até a saída do outro lado, mas há cuidados a tomar. Primeiro, como a fumaça sobe, agachem-se e avancem o mais abaixados possível. Além disso, cubram a boca com uma toalha ou lenço e procurem não respirar a fumaça. E lá dentro não dá para enxergar à frente por causa da fumaça. Avancem se comunicando com os outros e apoiando a mão na parede ou no chão.' },
       ],
     },
   ],
   '16-10': [
     {
-      label: '防災訓練4 — 消火器の使い方 (16-10) · resumo',
-      setupPt: 'Resumo: como usar o extintor — tirar o pino de segurança, apontar a mangueira para a base do fogo, apertar a alavanca e jorrar (a alguns metros de distância).',
+      label: '防災訓練4 — 消火器の使い方 (16-10)',
+      setupPt: 'Como usar o extintor de incêndio.',
       lines: [
-        { speaker: '説明', ja: '{安全|あんぜん}ピンを{抜|ぬ}いて、ホースを{火|ひ}に{向|む}けて、レバーを{握|にぎ}って{噴射|ふんしゃ}します。', pt: 'Tire o pino de segurança, aponte a mangueira para o fogo, aperte a alavanca e jorre.' },
+        { speaker: '説明', ja: 'えっと、{消火器|しょうかき}ですが、この{黄色|きいろ}いのが{安全|あんぜん}ピンといいます。それで、これがレバー、これがホースですね。{使|つか}い{方|かた}ですが、まず{安全|あんぜん}ピンを{抜|ぬ}きます。それから、ホースをはずして、ホースの{先|さき}を{持|も}って{火|ひ}に{向|む}けます。ホースは{途中|とちゅう}ではなくて、{必|かなら}ず{先|さき}を{持|も}ってください。それからレバーを{強|つよ}く{握|にぎ}って、{噴射|ふんしゃ}します。こうやって、{左右|さゆう}に{動|うご}かしてください。このとき{大切|たいせつ}なのは、{火|ひ}の{下|した}のほうを{狙|ねら}うことです。{上|うえ}のほうに{向|む}けても、{火|ひ}は{消|き}えません。{火|ひ}から4mから6mぐらい{離|はな}れたところから{噴射|ふんしゃ}してください。{噴射|ふんしゃ}は20{秒|びょう}ぐらいで{終|お}わります。{遠|とお}すぎると、{火|ひ}を{消|け}せないので{注意|ちゅうい}してください。', pt: 'Então, sobre o extintor: esta parte amarela se chama pino de segurança. E isto aqui é a alavanca, e isto é a mangueira. Quanto ao uso: primeiro, tire o pino de segurança. Depois, solte a mangueira, segure a ponta dela e aponte para o fogo. Não segure a mangueira no meio — segure sempre pela ponta. Em seguida, aperte a alavanca com força e jorre. Faça assim, movendo de um lado para o outro. O importante nessa hora é mirar a base do fogo. Mesmo apontando para cima, o fogo não se apaga. Jorre de uma distância de uns 4 a 6 metros do fogo. O jato dura uns 20 segundos. Se ficar longe demais, não consegue apagar, então tome cuidado.' },
+      ],
+    },
+  ],
+  // 3. 地震が起こったときは…
+  '16-12': [
+    {
+      label: '地震が起こったときは… ① 説明 (16-12)',
+      setupJa: '3. {地震|じしん}が{起|お}こったときは… —— {消防署|しょうぼうしょ}の{人|ひと}が{説明|せつめい}しています。',
+      setupPt: 'O que fazer quando ocorre um terremoto — explicação de um bombeiro.',
+      lines: [
+        { speaker: '消防署の人', ja: '{地震|じしん}が{起|お}こったときは、{落|お}ち{着|つ}いて{行動|こうどう}することがとても{大切|たいせつ}です。{震度|しんど}5の{地震|じしん}では、{歩|ある}くのが{難|むずか}しくなりますし、{震度|しんど}6では、{立|た}っていられなくなります。{大|おお}きな{地震|じしん}が{来|き}ても、あわてて{動|うご}かないでください。{揺|ゆ}れを{感|かん}じたら、{机|つくえ}などの{下|した}に{隠|かく}れて、{上|うえ}から{落|お}ちてくるものや{倒|たお}れてくるものから{身|み}を{守|まも}りましょう。', pt: 'Quando ocorre um terremoto, é muito importante agir com calma. Num terremoto de intensidade 5, fica difícil andar; e num de intensidade 6, não se consegue ficar em pé. Mesmo que venha um grande terremoto, não se mexa apressado. Ao sentir o tremor, abrigue-se embaixo de uma mesa e proteja-se de coisas que caem de cima ou que tombam.' },
+        { speaker: '消防署の人', ja: 'また、できれば、{部屋|へや}のドアを{開|あ}けるようにしてください。{地震|じしん}で{建物|たてもの}がゆがんで、ドアが{開|あ}かなくなると、{外|そと}に{逃|に}げられなくなるからです。でも、{揺|ゆ}れが{強|つよ}いときは、{無理|むり}をしないでください。{身|み}を{守|まも}ることがいちばん{大切|たいせつ}です。', pt: 'Além disso, se possível, procure abrir a porta do cômodo. Porque, se o prédio se deformar com o terremoto e a porta travar, você não consegue mais fugir para fora. Mas, quando o tremor está forte, não force. Proteger-se é o mais importante.' },
+        { speaker: '消防署の人', ja: 'あと、{例|たと}えば、ガスコンロやストーブなど、{火|ひ}を{使|つか}っているときに{地震|じしん}が{起|お}こることもあります。{火|ひ}から{離|はな}れたところにいるときは、あわてて{火|ひ}を{消|け}しに{行|い}く{必要|ひつよう}はありません。{火|ひ}を{消|け}すのは、{揺|ゆ}れがおさまってからにしてください。', pt: 'E também, por exemplo, o terremoto pode acontecer enquanto você usa fogo, como no fogão a gás ou no aquecedor. Se você estiver longe do fogo, não precisa correr afobado para apagá-lo. Apague o fogo só depois que o tremor passar.' },
+      ],
+    },
+  ],
+  '16-13': [
+    {
+      label: '地震が起こったときは… ② 質問 (16-13)',
+      setupPt: 'Perguntas dos participantes (e se sair fogo / se estiver na rua).',
+      lines: [
+        { speaker: '消防署の人', ja: '{何|なに}か{質問|しつもん}はありますか？', pt: 'Alguma pergunta?' },
+        { speaker: '参加者1', ja: 'はい。あの、{火|ひ}が{出|で}たら、どうすればいいですか？', pt: 'Sim. Ahn, se sair fogo, o que devo fazer?' },
+        { speaker: '消防署の人', ja: 'はい、えーと、{火|ひ}が{小|ちい}さかったら、{消火器|しょうかき}で{消|け}してください。でも、{火|ひ}が{天井|てんじょう}に{届|とど}くぐらい{大|おお}きかったら、もう{危|あぶ}ないです。{消|け}すのはあきらめて、{逃|に}げてください。', pt: 'Sim, ahn, se o fogo for pequeno, apague com o extintor. Mas, se o fogo for grande a ponto de chegar ao teto, já é perigoso. Desista de apagar e fuja.' },
+        { speaker: '参加者1', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+        { speaker: '消防署の人', ja: 'ほかにありますか？', pt: 'Mais alguma?' },
+        { speaker: '参加者2', ja: 'はい。えーと、{外|そと}にいるときに{大|おお}きな{地震|じしん}が{来|き}たら、どうすればいいですか？', pt: 'Sim. Ahn, se vier um grande terremoto enquanto estou na rua, o que faço?' },
+        { speaker: '消防署の人', ja: 'はい、{町中|まちなか}など、{屋外|おくがい}にいる{場合|ばあい}は、{姿勢|しせい}を{低|ひく}くして、かばんなどで{頭|あたま}を{守|まも}ってください。ガラスや{看板|かんばん}が{落|お}ちてきたり、{壁|かべ}が{倒|たお}れてきたりすることがありますから、できるだけ、{建物|たてもの}から{離|はな}れてください。', pt: 'Sim, se estiver ao ar livre, como no meio da cidade, abaixe-se e proteja a cabeça com a bolsa ou algo assim. Vidros e placas podem cair, e paredes podem tombar, então afaste-se o máximo possível dos prédios.' },
+        { speaker: '参加者2', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  // 4. 避難所はどこですか？
+  '16-20': [
+    {
+      label: '① 停電・充電 (16-20)',
+      setupJa: '4. {避難所|ひなんじょ}はどこですか？ —— {災害|さいがい}のとき、{近|ちか}くの{人|ひと}に{聞|き}いて{情報|じょうほう}を{得|え}ています。① {停電|ていでん}。',
+      setupPt: 'Em caso de desastre, perguntando a quem está por perto. ① falta de luz.',
+      lines: [
+        { speaker: 'A', ja: 'はい。', pt: 'Alô.' },
+        { speaker: 'B', ja: 'あ、もしもし、ディパクさん？　{台風|たいふう}すごかったね。だいじょうぶ？', pt: 'Ah, alô, Dipak? O tufão foi forte, hein. Você está bem?' },
+        { speaker: 'A', ja: 'はい、なんとか……。でも、{停電|ていでん}してます。', pt: 'Sim, mais ou menos… Mas está sem luz.' },
+        { speaker: 'B', ja: 'え、{大変|たいへん}だね。{懐中電灯|かいちゅうでんとう}とか、ある？', pt: 'Nossa, que situação. Você tem lanterna, essas coisas?' },
+        { speaker: 'A', ja: 'あります。でも、スマホの{充電|じゅうでん}ができなくて、{心配|しんぱい}です。', pt: 'Tenho. Mas não consigo carregar o celular, estou preocupado.' },
+        { speaker: 'B', ja: 'あー、そうだよねえ……。', pt: 'Ah, pois é…' },
+        { speaker: 'A', ja: '{原田|はらだ}さん、{充電|じゅうでん}できるところ、{知|し}りませんか？', pt: 'Harada, você sabe de algum lugar para carregar?' },
+        { speaker: 'B', ja: 'そうだなあ、{携帯電話|けいたいでんわ}のショップで{充電|じゅうでん}できると{思|おも}うよ。', pt: 'Hmm, acho que dá para carregar numa loja de celular.' },
+        { speaker: 'A', ja: '{携帯|けいたい}のお{店|みせ}？', pt: 'Loja de celular?' },
+        { speaker: 'B', ja: 'うん。でも、{店|みせ}が{開|あ}いているかどうか、わからないけど……。', pt: 'É. Mas não sei se a loja vai estar aberta…' },
+        { speaker: 'A', ja: 'じゃあ、{明日|あした}の{朝|あさ}、{行|い}ってみます。ありがとうございます。', pt: 'Então vou lá amanhã de manhã. Obrigado.' },
+      ],
+    },
+  ],
+  '16-21': [
+    {
+      label: '② 避難所はどこ (16-21)',
+      setupPt: '② onde fica o abrigo.',
+      lines: [
+        { speaker: 'A', ja: 'あ、こんにちは。', pt: 'Ah, boa tarde.' },
+        { speaker: 'B', ja: 'ああ、こんにちは。', pt: 'Ah, boa tarde.' },
+        { speaker: 'A', ja: '{出|で}かけるんですか？　{台風|たいふう}ですけど……。', pt: 'Vai sair? Mas está com tufão…' },
+        { speaker: 'B', ja: 'ええ、{避難|ひなん}するんです。{今回|こんかい}の{台風|たいふう}、すごく{大|おお}きくて、{心配|しんぱい}だから……。', pt: 'Sim, vou me abrigar. Este tufão é muito grande, estou preocupada…' },
+        { speaker: 'A', ja: 'そうですか。{私|わたし}も{避難|ひなん}したほうがいいですか？', pt: 'Ah, é? Eu também é melhor me abrigar?' },
+        { speaker: 'B', ja: 'まだ{避難|ひなん}しなくちゃいけないレベルじゃないけど、{私|わたし}は{年寄|としよ}りの{一人|ひとり}{暮|ぐ}らしだから……。', pt: 'Ainda não é um nível em que se tenha de evacuar, mas eu sou idosa e moro sozinha, então…' },
+        { speaker: 'A', ja: 'そうですか……。あの、{避難所|ひなんじょ}はどこですか？', pt: 'Entendo… Ahn, onde fica o abrigo?' },
+        { speaker: 'B', ja: '{酒井|さかい}{小学校|しょうがっこう}ですよ。', pt: 'É na Escola Primária Sakai.' },
+        { speaker: 'A', ja: '{小学校|しょうがっこう}？　あの、バラ{公園|こうえん}の{隣|となり}の{小学校|しょうがっこう}ですか？', pt: 'Escola primária? Aquela ao lado do Parque Bara?' },
+        { speaker: 'B', ja: 'そうそう。', pt: 'Isso, isso.' },
+        { speaker: 'A', ja: 'あの、{避難|ひなん}するときは、{何|なに}か{持|も}って{行|い}ったほうがいいですか？', pt: 'Ahn, na hora de ir ao abrigo, é melhor levar alguma coisa?' },
+        { speaker: 'B', ja: '{食|た}べ{物|もの}とか{飲|の}み{物|もの}とか、{持|も}って{行|い}ったほうがいいと{思|おも}いますよ。あと、できれば{毛布|もうふ}とか。', pt: 'Acho melhor levar comida e bebida. E, se der, um cobertor também.' },
+        { speaker: 'A', ja: 'そうですか。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '16-22': [
+    {
+      label: '③ 非常食・スーパー (16-22)',
+      setupPt: '③ comida de emergência / supermercado (depois do tufão).',
+      lines: [
+        { speaker: 'A', ja: 'はい。', pt: 'Alô.' },
+        { speaker: 'B', ja: 'こんにちは。', pt: 'Boa tarde.' },
+        { speaker: 'A', ja: 'あ、{社長|しゃちょう}。', pt: 'Ah, é o senhor, chefe.' },
+        { speaker: 'B', ja: '{台風|たいふう}、だいじょうぶだった？　{大変|たいへん}だったよね。', pt: 'O tufão, você ficou bem? Foi pesado, né.' },
+        { speaker: 'A', ja: 'はい、ちょっとびっくりしました。でも、{電気|でんき}も{水道|すいどう}も{戻|もど}ったので、{今|いま}はだいじょうぶです。ただ……。', pt: 'Sim, levei um susto. Mas a luz e a água voltaram, então agora está tudo bem. Só que…' },
+        { speaker: 'B', ja: 'どうしたの？', pt: 'O que houve?' },
+        { speaker: 'A', ja: 'お{店|みせ}が{開|あ}いていないので、{食|た}べるものがなくて、{困|こま}ってます。', pt: 'Como as lojas estão fechadas, não tenho o que comer, estou numa enrascada.' },
+        { speaker: 'B', ja: 'そんなことだろうと{思|おも}った。これ、{会社|かいしゃ}にあった{非常食|ひじょうしょく}。はい。', pt: 'Imaginei que fosse isso. Toma, esta é a comida de emergência que tinha na empresa.' },
+        { speaker: 'A', ja: 'ありがとうございます！', pt: 'Muito obrigado!' },
+        { speaker: 'B', ja: 'あ、そうそう、{泉町|いずみちょう}のスーパー、{今日|きょう}からやってるそうだよ。', pt: 'Ah, isso, dizem que o supermercado de Izumicho está aberto a partir de hoje.' },
+        { speaker: 'A', ja: 'え、そうなんですか？', pt: 'Ah, é mesmo?' },
+        { speaker: 'B', ja: 'まだ{売|う}ってるものは{少|すく}ないと{思|おも}うから、{早|はや}めに{行|い}ったほうがいいよ。', pt: 'Acho que ainda tem pouca coisa à venda, então é melhor ir cedo.' },
+        { speaker: 'A', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '16-23': [
+    {
+      label: '④ 断水・給水車 (16-23)',
+      setupPt: '④ falta de água / caminhão-pipa.',
+      lines: [
+        { speaker: 'A', ja: 'あ、キンさん、こんばんは。', pt: 'Ah, Kin, boa noite.' },
+        { speaker: 'B', ja: 'あ、こんばんは。まだ、{水|みず}、{出|で}ませんか？', pt: 'Ah, boa noite. A água ainda não voltou?' },
+        { speaker: 'A', ja: '{断水|だんすい}、まだ{続|つづ}きそうだよ。だいじょうぶ？　{水|みず}、まだある？', pt: 'O corte de água parece que vai continuar. Você está bem? Ainda tem água?' },
+        { speaker: 'B', ja: 'あと{少|すこ}ししかないです。どうしたらいいですか？', pt: 'Só tem mais um pouco. O que eu faço?' },
+        { speaker: 'A', ja: '{明日|あした}の8{時|じ}に、{公民館|こうみんかん}の{前|まえ}に{給水車|きゅうすいしゃ}が{来|く}るって。{行|い}ってみて。', pt: 'Amanhã às 8h vai chegar um caminhão-pipa em frente ao centro comunitário. Dá uma passada lá.' },
+        { speaker: 'B', ja: 'え、{何|なに}が{来|く}るんですか？', pt: 'Hã, o que vai chegar?' },
+        { speaker: 'A', ja: '{給水車|きゅうすいしゃ}。{水|みず}がもらえるんだよ。', pt: 'O caminhão-pipa. Dá para pegar água.' },
+        { speaker: 'B', ja: 'そうなんですか。{助|たす}かります。', pt: 'Ah, é? Isso ajuda muito.' },
+        { speaker: 'A', ja: '{水|みず}を{入|い}れる{容器|ようき}、{忘|わす}れないでね。ポリタンクとか、なければペットボトルとか。', pt: 'Não esqueça um recipiente para a água. Um galão, ou, se não tiver, garrafas PET.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: 'あとね、お{風呂|ふろ}も{入|はい}りたいよね。', pt: 'E também, você deve estar querendo tomar banho, né.' },
+        { speaker: 'B', ja: '{入|はい}れるんですか？', pt: 'Dá para tomar banho?' },
+        { speaker: 'A', ja: 'うん。{市役所|しやくしょ}の{近|ちか}くに{総合|そうごう}{福祉|ふくし}センターっていうところがあるんだけど、そこに{仮設|かせつ}のお{風呂|ふろ}ができたんだって。', pt: 'Sim. Perto da prefeitura tem um lugar chamado Centro de Assistência Social; dizem que montaram um banho provisório lá.' },
+        { speaker: 'B', ja: 'え、そうですか！', pt: 'Ah, é mesmo?!' },
+        { speaker: 'A', ja: 'だれでも、ただで{入|はい}れるよ。でも、きっとみんな{行|い}くから、{並|なら}ぶかもしれないね。', pt: 'Qualquer um pode usar, de graça. Mas com certeza todo mundo vai, então talvez tenha fila.' },
+        { speaker: 'B', ja: 'そうですねえ……。', pt: 'Pois é…' },
       ],
     },
   ],
@@ -3729,17 +3927,6 @@ const L17_SCRIPTS: Record<string, ScriptItem[]> = {
         { speaker: 'B', ja: 'あと、{好|す}きなセリフをまねして{覚|おぼ}えます。', pt: 'E também imito as falas que gosto e decoro.' },
         { speaker: 'A', ja: 'それは、いいアイディアですね。', pt: 'Que boa ideia.' },
         { speaker: 'B', ja: 'でも、ドラマと{同|おな}じ{話|はな}し{方|かた}をすると、ときどき{笑|わら}われます！', pt: 'Mas quando falo do mesmo jeito que no dorama, às vezes riem de mim!' },
-      ],
-    },
-  ],
-  '17-10': [
-    {
-      label: '会話 — 仕事や日本語について（ティラ×中田）(17-10) · resumo',
-      setupJa: 'ティラさんが、{昼休|ひるやす}みに、{上司|じょうし}の{中田|なかた}さんと{食堂|しょくどう}で{話|はな}しています。',
-      setupPt: 'Resumo: no almoço, Tila conta ao chefe Nakata como mudou no trabalho (antes não sabia como fazer, agora entende bastante) e no japonês (passou a entender quase tudo e a falar mais que antes).',
-      lines: [
-        { speaker: 'ティラ', ja: 'はじめは、やり{方|かた}がわからないことが{多|おお}かったですが、{今|いま}は、だいぶわかるようになりました。', pt: 'No começo havia muita coisa que eu não sabia fazer, mas agora passei a entender bastante.' },
-        { speaker: 'ティラ', ja: '{前|まえ}より{話|はな}せるようになりました。', pt: 'Passei a falar mais do que antes.' },
       ],
     },
   ],
