@@ -399,6 +399,55 @@ const lesson7Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 8: 隣、いいですか？ (tópico 出会う) ----
+const lesson8Group: ExerciseGroup = {
+  id: 'iro-pi-l8',
+  title: '隣、いいですか？',
+  subtitlePt: 'Falar com desconhecidos · responder conversa casual · primeira impressão',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l8-1', number: 1, prompt: 'Qual é o tópico continuado nesta lição?', choices: [{ n: 1, text: '出会う (encontros / conhecer pessoas)' }, { n: 2, text: '毎日の食事' }, { n: 3, text: '私と日本語' }, { n: 4, text: '自然を楽しむ' }], answer: 1, explanationPt: 'A Lição 8 continua o tópico 出会う, agora com foco em falar com pessoas que você ainda não conhece.' },
+    { id: 'iro-pi-l8-2', number: 2, prompt: 'Pergunta de abertura: 知らない人に話しかけたり、話しかけられたりすることがありますか？', choices: [{ n: 1, text: 'Você costuma falar com desconhecidos ou ser abordado por desconhecidos?' }, { n: 2, text: 'Você cozinha todos os dias?' }, { n: 3, text: 'Você sabe jogar shogi?' }, { n: 4, text: 'Você vai ao mercado?' }], answer: 1, explanationPt: 'A abertura prepara situações de conversa casual com pessoas encontradas pela primeira vez.' },
+    { id: 'iro-pi-l8-3', number: 3, prompt: 'Can-do 24: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'iniciar conversa com alguém que está encontrando pela primeira vez' }, { n: 2, text: 'ler artigo de culinária com micro-ondas' }, { n: 3, text: 'pedir delivery por aplicativo' }, { n: 4, text: 'explicar imposto da cidade natal' }], answer: 1, explanationPt: 'A atividade 1 trabalha como falar primeiro com alguém de quem você ficará próximo, como colega de trabalho ou membro de círculo.' },
+    { id: 'iro-pi-l8-4', number: 4, prompt: '聴解 08-01: no primeiro dia de trabalho, a frase usada para iniciar conversa é:', image: `${IMG}/ZZ_08_1_01_shokuba.png`, imageAlt: 'primeiro dia no local de trabalho', choices: [{ n: 1, text: 'あの、今日、入社の方ですか？' }, { n: 2, text: '隣、いいですか？' }, { n: 3, text: '今日から参加するんですが……' }, { n: 4, text: '田中さんのお友だちですか？' }], answer: 1, translationPt: 'Com licença, você é alguém que entrou na empresa hoje?', explanationPt: 'O gabarito marca esta fala para a cena ① 初出勤の職場で.' },
+    { id: 'iro-pi-l8-5', number: 5, prompt: '聴解 08-01: depois de iniciar conversa, como ela continua?', choices: [{ n: 1, text: 'perguntando sobre a outra pessoa e falando de si mesma' }, { n: 2, text: 'falando de conhecidos em comum' }, { n: 3, text: 'comentando um objeto da outra pessoa' }, { n: 4, text: 'pedindo desculpas por uma regra de banho' }], answer: 1, explanationPt: 'O answer key marca ① = d: perguntar sobre a outra pessoa e falar sobre si.' },
+    { id: 'iro-pi-l8-6', number: 6, prompt: '聴解 08-01: ファルハナ e カイン dizem que:', choices: [{ n: 1, text: 'ファルハナ veio da Malásia; カイン veio de Myanmar e chegou ao Japão há duas semanas' }, { n: 2, text: 'ambas são colegas de escola de Tanaka' }, { n: 3, text: 'ambas estão em um círculo de shogi' }, { n: 4, text: 'ambas são turistas em uma fonte termal' }], answer: 1, explanationPt: 'ファルハナ se apresenta como da Malásia; ユユカイン diz que veio de Myanmar e chegou ao Japão há duas semanas.' },
+    { id: 'iro-pi-l8-7', number: 7, prompt: '聴解 08-02: na festa de casamento, 王志強 inicia a conversa dizendo:', image: `${IMG}/ZZ_08_1_02_kekkonpaatii.png`, imageAlt: 'festa de casamento de colega', choices: [{ n: 1, text: 'こんにちは。田中さんのお友だちですか？' }, { n: 2, text: 'あの、今日、入社の方ですか？' }, { n: 3, text: 'ここのお風呂には、よく来るんですか？' }, { n: 4, text: '観光客ですか？' }], answer: 1, translationPt: 'Olá. Você é amigo do Tanaka?', explanationPt: 'A cena é 同僚の結婚パーティーで; 王 é colega de empresa de Tanaka.' },
+    { id: 'iro-pi-l8-8', number: 8, prompt: '聴解 08-02: como a conversa continua?', choices: [{ n: 1, text: 'falando e perguntando sobre um conhecido em comum, 田中さん' }, { n: 2, text: 'falando sobre objetos da outra pessoa' }, { n: 3, text: 'recomendando fonte termal' }, { n: 4, text: 'pedindo ajuda com primeira impressão' }], answer: 1, explanationPt: 'O gabarito marca ② = b: falar ou perguntar sobre conhecidos em comum.' },
+    { id: 'iro-pi-l8-9', number: 9, prompt: '聴解 08-02: segundo 浅野, como 田中 era no ensino médio?', choices: [{ n: 1, text: 'falava muito, era barulhento, levava bronca dos professores, mas era animador e popular' }, { n: 2, text: 'era silencioso e não tinha amigos' }, { n: 3, text: 'jogava shogi profissionalmente' }, { n: 4, text: 'trabalhava em Ishikawa' }], answer: 1, explanationPt: 'Ele diz que 田中 era como agora: よくしゃべってうるさかった, mas ムードメーカー e 人気者.' },
+    { id: 'iro-pi-l8-10', number: 10, prompt: '聴解 08-03: no círculo de shogi, アルトゥル começa com:', image: `${IMG}/ZZ_08_1_03_saakuru.png`, imageAlt: 'círculo de shogi', choices: [{ n: 1, text: 'すみません。今日から参加するんですが……' }, { n: 2, text: '隣、いいですか？' }, { n: 3, text: '観光客ですか？' }, { n: 4, text: '田中さんのお友だちですか？' }], answer: 1, translationPt: 'Com licença. Vou participar a partir de hoje...', explanationPt: 'A frase permite avisar que é novo no círculo e abrir espaço para a outra pessoa responder.' },
+    { id: 'iro-pi-l8-11', number: 11, prompt: '聴解 08-03: depois de se apresentar, アルトゥル fala principalmente:', choices: [{ n: 1, text: 'que está nervoso porque é a primeira vez que participa de um círculo assim' }, { n: 2, text: 'sobre um amigo em comum' }, { n: 3, text: 'sobre um estojo da Hello Kitty' }, { n: 4, text: 'sobre as regras de banho' }], answer: 1, explanationPt: 'O answer key marca ③ = a: falar seus próprios sentimentos para a outra pessoa.' },
+    { id: 'iro-pi-l8-12', number: 12, prompt: '聴解 08-04: na nova classe de japonês, a pessoa inicia com:', image: `${IMG}/ZZ_08_1_04_nihongogakkoo.png`, imageAlt: 'nova classe de japonês', choices: [{ n: 1, text: 'あのう、隣、いいですか？' }, { n: 2, text: '今日、入社の方ですか？' }, { n: 3, text: 'ここのお風呂には、よく来るんですか？' }, { n: 4, text: '田中さんって、どんな感じだったんですか？' }], answer: 1, translationPt: 'Com licença, posso sentar ao seu lado?', explanationPt: 'Esta é a frase que dá título à lição.' },
+    { id: 'iro-pi-l8-13', number: 13, prompt: '聴解 08-04: como a conversa continua?', choices: [{ n: 1, text: 'comentando o smartphone case da Hello Kitty da outra pessoa' }, { n: 2, text: 'perguntando sobre um colega de empresa' }, { n: 3, text: 'falando de fonte termal' }, { n: 4, text: 'lendo artigo online' }], answer: 1, explanationPt: 'O gabarito marca ④ = c: comentar ou perguntar sobre os pertences da outra pessoa.' },
+    { id: 'iro-pi-l8-14', number: 14, prompt: '聴解 08-04: リエン e ジャスミン são de onde?', choices: [{ n: 1, text: 'リエン é do Vietnã; ジャスミン é do Uzbequistão' }, { n: 2, text: 'ambas são da Malásia' }, { n: 3, text: 'ambas são da Indonésia' }, { n: 4, text: 'リエン é de Myanmar; ジャスミン é do Japão' }], answer: 1, explanationPt: 'リエン fala que Hello Kitty também é popular no Vietnã; depois diz seu nome. ジャスミン se apresenta como do Uzbequistão.' },
+    { id: 'iro-pi-l8-15', number: 15, prompt: 'Vocabulário da atividade 1: 新郎／新婦／同級生／部署／叱る significam:', choices: [{ n: 1, text: 'noivo / noiva / colega de classe / departamento / repreender' }, { n: 2, text: 'banho / cemitério / toalha / água quente / turista' }, { n: 3, text: 'postura / sorriso / roupa / cabelo / limpeza' }, { n: 4, text: 'shogi / peça / tabuleiro / rei / concentração' }], answer: 1, explanationPt: 'Essas palavras aparecem principalmente na conversa 08-02 sobre a festa de casamento.' },
+    { id: 'iro-pi-l8-16', number: 16, prompt: 'Can-do 25: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'responder e conversar de modo simples quando uma pessoa desconhecida começa a falar' }, { n: 2, text: 'escrever mensagem de cancelamento' }, { n: 3, text: 'ler cardápio de restaurante' }, { n: 4, text: 'fazer autoapresentação em círculo' }], answer: 1, explanationPt: 'A atividade 2 é o diálogo de フランキー em uma fonte termal, respondendo a um morador local.' },
+    { id: 'iro-pi-l8-17', number: 17, prompt: '会話 08-09: por que フランキー recebe uma advertência?', image: `${IMG}/ZZ_08_2_01_jimotonohito.png`, imageAlt: 'morador local falando em banho público', choices: [{ n: 1, text: 'porque colocou a toalha dentro da água quente' }, { n: 2, text: 'porque falou alto demais no trem' }, { n: 3, text: 'porque chegou atrasado ao trabalho' }, { n: 4, text: 'porque esqueceu o uniforme' }], answer: 1, explanationPt: 'O gabarito registra: お湯の中にタオルを入れたこと.' },
+    { id: 'iro-pi-l8-18', number: 18, prompt: '会話 08-09: quem é フランキー?', choices: [{ n: 1, text: 'estudante internacional, mora no dormitório da CPU大学, é da Indonésia e mora no Japão há cerca de 2 anos' }, { n: 2, text: 'colega de empresa de Tanaka' }, { n: 3, text: 'morador local que vai todo dia ao banho' }, { n: 4, text: 'membro novo de círculo de shogi' }], answer: 1, explanationPt: 'O answer key preenche: 留学生; 大学の寮; 出身 インドネシア; 日本に2年ぐらい.' },
+    { id: 'iro-pi-l8-19', number: 19, prompt: '会話 08-09: por que フランキー vai ao banho público?', choices: [{ n: 1, text: 'porque gosta de onsen, e o banho do dormitório não é onsen' }, { n: 2, text: 'porque quer jogar shogi lá' }, { n: 3, text: 'porque trabalha no local' }, { n: 4, text: 'porque é gratuito fazer aula de japonês' }], answer: 1, explanationPt: 'Ele diz: 寮にもお風呂がありますが、温泉ではないので; 日本に来て、温泉がとても好きになりました.' },
+    { id: 'iro-pi-l8-20', number: 20, prompt: '会話 08-09: que fonte termal é recomendada?', choices: [{ n: 1, text: '鶴の湯: 露天風呂 perto de uma 霊園, gratuita, com água muito boa' }, { n: 2, text: 'CPUの湯: banho do dormitório, pago' }, { n: 3, text: '石川の湯: dentro da empresa' }, { n: 4, text: 'キティの湯: na escola de japonês' }], answer: 1, explanationPt: 'O gabarito marca 露天風呂, 無料 e お湯もすごくいい.' },
+    { id: 'iro-pi-l8-21', number: 21, prompt: '「これからは、気をつけなさい」 usa Vなさい para:', choices: [{ n: 1, text: 'dar uma ordem, instrução ou advertência de alguém em posição superior para alguém abaixo' }, { n: 2, text: 'fazer um pedido muito polido a um cliente' }, { n: 3, text: 'expressar desejo suave' }, { n: 4, text: 'dizer que algo é desnecessário' }], answer: 1, translationPt: 'De agora em diante, tome cuidado.', explanationPt: 'A nota gramatical explica que Vなさい é usado por pais, professores ou pessoas mais velhas ao orientar/repreender.' },
+    { id: 'iro-pi-l8-22', number: 22, prompt: '「ここには、よくいらっしゃるんですか？」 usa いらっしゃる como:', choices: [{ n: 1, text: 'forma respeitosa de 来る／行く／いる' }, { n: 2, text: 'forma casual de 話す' }, { n: 3, text: 'negação de 来る' }, { n: 4, text: 'imperativo forte' }], answer: 1, translationPt: 'O senhor costuma vir aqui?', explanationPt: '尊敬語 é usado para ações/estados de pessoas superiores, recém-conhecidas ou sobre quem se fala com respeito; não para si mesmo.' },
+    { id: 'iro-pi-l8-23', number: 23, prompt: 'Qual par de verbos respeitosos está correto?', choices: [{ n: 1, text: '言う → おっしゃる; 食べる／飲む → 召し上がる' }, { n: 2, text: '言う → いらっしゃる; 食べる → ご存じだ' }, { n: 3, text: '見る → なさる; する → くださる' }, { n: 4, text: '知っている → 召し上がる; 来る → おっしゃる' }], answer: 1, explanationPt: 'A tabela também lista 見る → ご覧になる, くれる → くださる, 知っている → ご存じだ, する → なさる.' },
+    { id: 'iro-pi-l8-24', number: 24, prompt: 'Can-do 26: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ler um artigo online sobre comunicação e entender o conteúdo geral' }, { n: 2, text: 'pedir informação sobre fonte termal' }, { n: 3, text: 'falar sobre rotina alimentar' }, { n: 4, text: 'preencher formulário de mudança' }], answer: 1, explanationPt: 'A atividade 3 lê um artigo online sobre 第一印象.' },
+    { id: 'iro-pi-l8-25', number: 25, prompt: 'Leitura: 「第一印象を良く見せるための4つのポイント」 trata de:', choices: [{ n: 1, text: 'como melhorar a primeira impressão ao conhecer alguém' }, { n: 2, text: 'como cozinhar com micro-ondas' }, { n: 3, text: 'como comprar em supermercado comercial' }, { n: 4, text: 'como usar uma fonte termal gratuita' }], answer: 1, explanationPt: 'O gabarito resume o conteúdo: 第一印象を良くするためにはどうすればいいか.' },
+    { id: 'iro-pi-l8-26', number: 26, prompt: 'Leitura: os títulos ①-④ correspondem a:', choices: [{ n: 1, text: '①アイコンタクトを取る ②笑顔を忘れない ③姿勢を良くする ④服装や清潔感に気をつける' }, { n: 2, text: '①服装 ②姿勢 ③笑顔 ④アイコンタクト' }, { n: 3, text: '①温泉 ②霊園 ③将棋 ④キティちゃん' }, { n: 4, text: '①仕事 ②結婚 ③サークル ④学校' }], answer: 1, explanationPt: 'O answer key marca ① c, ② d, ③ a, ④ b.' },
+    { id: 'iro-pi-l8-27', number: 27, prompt: 'Ponto 1 do artigo: sobre アイコンタクト, qual afirmação é correta?', choices: [{ n: 1, text: 'não é bom ficar olhando fixamente por muito tempo nem evitar totalmente olhar nos olhos' }, { n: 2, text: 'o ideal é encarar sempre sem desviar' }, { n: 3, text: 'o ideal é nunca encontrar o olhar da pessoa' }, { n: 4, text: 'não há relação com comunicação' }], answer: 1, explanationPt: 'O gabarito marca × para “olhar fixamente” e × para “melhor não encontrar o olhar”.' },
+    { id: 'iro-pi-l8-28', number: 28, prompt: 'Ponto 2 do artigo: sobre 笑顔, qual afirmação é correta?', choices: [{ n: 1, text: 'fazer um sorriso ajuda a própria pessoa a relaxar, mas não precisa rir o maior possível' }, { n: 2, text: 'não se deve sorrir' }, { n: 3, text: 'é obrigatório rir alto' }, { n: 4, text: 'sorriso só vale para fotos' }], answer: 1, explanationPt: 'O gabarito marca 〇 para relaxar ao sorrir e × para “rir o maior possível”.' },
+    { id: 'iro-pi-l8-29', number: 29, prompt: 'Ponto 3 do artigo: 背筋を伸ばす e 猫背 indicam que:', choices: [{ n: 1, text: 'boa postura melhora a impressão; postura curvada dá impressão ruim' }, { n: 2, text: 'postura não importa' }, { n: 3, text: 'postura curvada melhora a impressão' }, { n: 4, text: 'é melhor evitar roupas limpas' }], answer: 1, explanationPt: 'As duas afirmações do gabarito para o ponto 3 são 〇.' },
+    { id: 'iro-pi-l8-30', number: 30, prompt: 'Ponto 4 do artigo: sobre roupa e cabelo, qual afirmação segue o texto?', choices: [{ n: 1, text: 'não precisa usar roupa cara; cabelo bem cuidado e aparência limpa ajudam' }, { n: 2, text: 'é melhor usar a roupa mais cara possível' }, { n: 3, text: 'cabelo bagunçado causa sempre boa impressão' }, { n: 4, text: 'limpeza não importa' }], answer: 1, explanationPt: 'O gabarito marca × para roupa cara e 〇 para cuidar bem do cabelo.' },
+    { id: 'iro-pi-l8-31', number: 31, prompt: '「この人、感じが良さそうだな」と思わせる usa causativo para:', choices: [{ n: 1, text: 'causar naturalmente um pensamento, sentimento ou impressão em outra pessoa' }, { n: 2, text: 'dar uma ordem direta' }, { n: 3, text: 'dizer que algo não precisa ser feito' }, { n: 4, text: 'mostrar respeito por alguém' }], answer: 1, translationPt: 'Fazer a pessoa pensar: “Essa pessoa parece simpática”.', explanationPt: 'A nota ➌ apresenta 思わせる, 持たせる e 感じさせる como causativos ligados a emoções, sentimentos e pensamentos.' },
+    { id: 'iro-pi-l8-32', number: 32, prompt: '「無理に大きな笑顔を作らなくてもいいです」 significa:', choices: [{ n: 1, text: 'não é preciso forçar um sorriso grande' }, { n: 2, text: 'é obrigatório fazer um sorriso grande' }, { n: 3, text: 'não se pode sorrir' }, { n: 4, text: 'não é preciso cumprimentar' }], answer: 1, explanationPt: 'V-なくてもいい／だいじょうぶです expressa que não é necessário fazer algo.' },
+    { id: 'iro-pi-l8-33', number: 33, prompt: 'Kanji da lição: 第一印象／関心／背筋 lêem-se:', choices: [{ n: 1, text: 'だいいちいんしょう／かんしん／せすじ' }, { n: 2, text: 'だいいちいんぞう／せきしん／はいきん' }, { n: 3, text: 'いんしょうだいち／かんこころ／せなかすじ' }, { n: 4, text: 'だいいちしょう／かんじん／せすじ' }], answer: 1, explanationPt: 'Esses kanji aparecem no artigo sobre primeira impressão.' },
+    { id: 'iro-pi-l8-34', number: 34, prompt: 'Kanji da lição: 清潔（な）／効果的（な）／伸ばす lêem-se:', choices: [{ n: 1, text: 'せいけつ／こうかてき／のばす' }, { n: 2, text: 'しょうけつ／こうけき／しんばす' }, { n: 3, text: 'せいけつ／こかてき／のべる' }, { n: 4, text: 'きよけつ／こうかてき／のばす' }], answer: 1, explanationPt: '清潔 e 効果的 são adjetivos ナ; 伸ばす aparece em 背筋を伸ばす.' },
+    { id: 'iro-pi-l8-35', number: 35, prompt: 'Kanji da lição: 逆／与える／この辺／整う lêem-se:', choices: [{ n: 1, text: 'ぎゃく／あたえる／このへん／ととのう' }, { n: 2, text: 'さか／あげる／このあたり／せいう' }, { n: 3, text: 'ぎゃく／よえる／このへん／そろう' }, { n: 4, text: 'げき／あたえる／このべん／ととのえる' }], answer: 1, explanationPt: 'この辺 aparece na pergunta sobre boas fontes termais próximas.' },
+    { id: 'iro-pi-l8-36', number: 36, prompt: 'TIPS: 将棋 é:', choices: [{ n: 1, text: 'um jogo de tabuleiro japonês parecido com xadrez, jogado em tabuleiro 9×9 com objetivo de capturar o rei' }, { n: 2, text: 'uma regra de banho em onsen' }, { n: 3, text: 'um tipo de restaurante' }, { n: 4, text: 'um personagem da Sanrio' }], answer: 1, explanationPt: 'A TIPS explica que o shogi tem longa história no Japão, jogadores profissionais e aulas para iniciantes em centros comunitários.' },
+    { id: 'iro-pi-l8-37', number: 37, prompt: 'TIPS: ハローキティ／キティちゃん, segundo o texto, é:', choices: [{ n: 1, text: 'personagem da Sanrio criada em 1974, símbolo de cultura kawaii e popular em muitos países' }, { n: 2, text: 'um time de beisebol' }, { n: 3, text: 'uma fonte termal gratuita' }, { n: 4, text: 'uma técnica de primeira impressão' }], answer: 1, explanationPt: 'A TIPS menciona a fita vermelha, produtos variados e o perfil da personagem nascida nos arredores de Londres.' },
+    { id: 'iro-pi-l8-38', number: 38, prompt: 'TIPS: お墓／霊園 no Japão são descritos como:', choices: [{ n: 1, text: 'túmulos podem ficar em templos ou cemitérios; 霊園 são áreas amplas, muitas vezes como parques, com muitos túmulos' }, { n: 2, text: 'lugares onde não há túmulos' }, { n: 3, text: 'sempre dentro de estações de trem' }, { n: 4, text: 'lojas de produtos de personagem' }], answer: 1, explanationPt: 'A TIPS explica cremação, túmulos tradicionais, templos, cemitérios e que alguns grandes cemitérios têm túmulos de pessoas famosas.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -1826,6 +1875,214 @@ const L7_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L8_SCRIPTS: Record<string, ScriptItem[]> = {
+  '08-01': [
+    {
+      label: '① 初出勤の職場で (08-01)',
+      setupPt: 'No primeiro dia de trabalho, ファルハナ inicia conversa com ユユカイン.',
+      lines: [
+        { speaker: 'A', ja: 'あの、{今日|きょう}、{入社|にゅうしゃ}の{方|かた}ですか？', pt: 'Com licença, você é alguém que entrou na empresa hoje?' },
+        { speaker: 'B', ja: 'あ、はい。', pt: 'Ah, sim.' },
+        { speaker: 'A', ja: '{私|わたし}もです。マレーシアから{来|き}たファルハナです。よろしくお{願|ねが}いします。', pt: 'Eu também. Sou a Farhana, vim da Malásia. Prazer.' },
+        { speaker: 'B', ja: '{私|わたし}はミャンマーから{来|き}ました。ユユカインといいます。カインと{呼|よ}んでください。よろしくお{願|ねが}いします。', pt: 'Eu vim de Myanmar. Meu nome é Yu Yu Kain. Pode me chamar de Kain. Prazer.' },
+        { speaker: 'A', ja: 'カインさんは、{前|まえ}はどこで{仕事|しごと}していたんですか？', pt: 'Kain, onde você trabalhava antes?' },
+        { speaker: 'B', ja: '{私|わたし}は、2{週間前|しゅうかんまえ}に{日本|にほん}に{来|き}たばかりなんです。', pt: 'Eu acabei de chegar ao Japão há duas semanas.' },
+        { speaker: 'A', ja: 'ああ、そうですか。{私|わたし}は、3{年前|ねんまえ}に{日本|にほん}に{来|き}て、{先月|せんげつ}まで{石川県|いしかわけん}で{働|はたら}いていたんです。', pt: 'Ah, entendi. Eu vim ao Japão há três anos e trabalhei em Ishikawa até o mês passado.' },
+        { speaker: 'B', ja: 'そうなんですか。', pt: 'Ah, é?' },
+      ],
+    },
+  ],
+  '08-02': [
+    {
+      label: '② 同僚の結婚パーティーで (08-02)',
+      setupPt: 'Em uma festa de casamento de colega, 王志強 conversa com 浅野 sobre 田中.',
+      lines: [
+        { speaker: 'A', ja: 'こんにちは。{田中|たなか}さんのお{友|とも}だちですか？ {私|わたし}は、{田中|たなか}さんの{会社|かいしゃ}の{同僚|どうりょう}の{王志強|オウシキョウ}です。', pt: 'Olá. Você é amigo do Tanaka? Eu sou Wang Zhiqiang, colega de empresa do Tanaka.' },
+        { speaker: 'B', ja: 'あ、こんにちは。ぼくは、{浅野|あさの}といいます。{新郎|しんろう}と{新婦|しんぷ}の{高校|こうこう}のときの{同級生|どうきゅうせい}です。', pt: 'Ah, olá. Meu nome é Asano. Sou colega de classe do noivo e da noiva da época do ensino médio.' },
+        { speaker: 'A', ja: 'え、{高校|こうこう}のときのお{友|とも}だちなんですか。', pt: 'Hã, vocês eram amigos do ensino médio?' },
+        { speaker: 'B', ja: 'はい、{田中|たなか}くんとは{高校|こうこう}3{年間|ねんかん}ずっと{同|おな}じクラスだったんですよ。', pt: 'Sim. Eu e o Tanaka ficamos na mesma turma durante os três anos do ensino médio.' },
+        { speaker: 'A', ja: 'へー、そうなんですか。', pt: 'Nossa, é mesmo?' },
+        { speaker: 'B', ja: '{王|オウ}さんは、{会社|かいしゃ}の{方|かた}なんですね。', pt: 'Então você é da empresa, Wang.' },
+        { speaker: 'A', ja: 'ええ。{同|おな}じ{部署|ぶしょ}で、いろいろお{世話|せわ}になってます。あの、{田中|たなか}さんって、{高校生|こうこうせい}のとき、どんな{感|かん}じだったんですか？', pt: 'Sim. Somos do mesmo departamento, e ele me ajuda em várias coisas. Diga, como era o Tanaka no ensino médio?' },
+        { speaker: 'B', ja: 'うーん、{今|いま}と{同|おな}じで、よくしゃべってうるさかったですね。よく{先生|せんせい}にも{叱|しか}られてました。でも、ムードメーカーで{人気者|にんきもの}でしたよ。', pt: 'Hmm, igual a agora: falava muito e era barulhento. Os professores viviam dando bronca nele. Mas ele animava o ambiente e era popular.' },
+        { speaker: 'A', ja: 'そうなんですね。{会社|かいしゃ}でもにぎやかで、{職場|しょくば}の{雰囲気|ふんいき}を{良|よ}くしてくれていますよ。{確|たし}かに、ちょっとうるさいなって{思|おも}うときもありますけど。', pt: 'Entendi. Na empresa ele também é animado e melhora o clima do local de trabalho. É verdade que às vezes acho que ele é um pouco barulhento.' },
+        { speaker: 'B', ja: 'ははは。', pt: 'Ha ha ha.' },
+      ],
+    },
+  ],
+  '08-03': [
+    {
+      label: '③ はじめて参加するサークルで (08-03)',
+      setupPt: 'アルトゥル entra pela primeira vez em um círculo de shogi e fala com 塚原.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{今日|きょう}から{参加|さんか}するんですが……。', pt: 'Com licença. Vou participar a partir de hoje...' },
+        { speaker: 'B', ja: 'あ、はじめての{方|かた}？', pt: 'Ah, é a primeira vez?' },
+        { speaker: 'A', ja: 'はい。アルトゥルといいます。', pt: 'Sim. Meu nome é Artur.' },
+        { speaker: 'B', ja: 'アルトゥルさんですね。{人|ひと}が{増|ふ}えてうれしいです。{私|わたし}は{塚原|つかはら}です。', pt: 'Artur, certo? Fico feliz que tenha mais gente. Eu sou Tsukahara.' },
+        { speaker: 'A', ja: '{塚原|つかはら}さん……。よろしくお{願|ねが}いします。あの、{私|わたし}、こういうサークルに{参加|さんか}するのははじめてで、すごく{緊張|きんちょう}してます。{将棋|しょうぎ}は{好|す}きなんですけど、{始|はじ}めたばかりだし……。', pt: 'Tsukahara... Prazer. Bem, é a primeira vez que participo de um círculo assim, então estou muito nervoso. Eu gosto de shogi, mas acabei de começar...' },
+        { speaker: 'B', ja: 'だいじょうぶ、だいじょうぶ。リラックスして、{楽|たの}しくやりましょう。', pt: 'Tudo bem, tudo bem. Relaxe e vamos nos divertir.' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '08-04': [
+    {
+      label: '④ 日本語学校の新しいクラスで (08-04)',
+      setupPt: 'Na nova classe de japonês, ジャスミン pede para sentar ao lado de リエン e comenta a Hello Kitty.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、{隣|となり}、いいですか？', pt: 'Com licença, posso sentar ao seu lado?' },
+        { speaker: 'B', ja: 'あ、どうぞ。', pt: 'Ah, claro.' },
+        { speaker: 'A', ja: 'ありがとう。あ、そのスマホケース、キティちゃんだ。かわいい。キティちゃん、{好|す}きなんですか？', pt: 'Obrigada. Ah, esse case de celular é da Kitty-chan. Que fofo. Você gosta da Kitty-chan?' },
+        { speaker: 'B', ja: 'うん、{大好|だいす}きです。ほかにも、ペンケースとか、ハンカチとか、いろいろ{持|も}ってますよ。ほら。', pt: 'Sim, adoro. Também tenho várias outras coisas, como estojo e lenço. Olha.' },
+        { speaker: 'A', ja: 'あー、ほんとだ。{私|わたし}もキティちゃん、{好|す}きなんです。{日本|にほん}で{買|か}ったんですか？', pt: 'Ah, é verdade. Eu também gosto da Kitty-chan. Você comprou no Japão?' },
+        { speaker: 'B', ja: '{日本|にほん}で{買|か}ったり、ベトナムで{買|か}ったり。ベトナムでも、キティちゃん、{人気|にんき}なんですよ。', pt: 'Comprei algumas coisas no Japão e outras no Vietnã. Kitty-chan também é popular no Vietnã.' },
+        { speaker: 'A', ja: 'へー、そうなんだ。ベトナム{出身|しゅっしん}なんですか？', pt: 'Nossa, é mesmo? Você é do Vietnã?' },
+        { speaker: 'B', ja: 'はい。ファム・ティ・リエンっていいます。リエンと{呼|よ}んでください。よろしく。', pt: 'Sim. Meu nome é Pham Thi Lien. Pode me chamar de Lien. Prazer.' },
+        { speaker: 'A', ja: '{私|わたし}は、ウズベキスタン{出身|しゅっしん}で、ジャスミンっていいます。よろしく。', pt: 'Eu sou do Uzbequistão e me chamo Jasmine. Prazer.' },
+      ],
+    },
+  ],
+  '08-05': [
+    {
+      label: '話すモデル① - 初出勤の職場で (08-05)',
+      setupPt: 'Modelo para iniciar conversa no primeiro dia de trabalho.',
+      lines: [
+        { speaker: 'A', ja: 'あの、{今日|きょう}、{入社|にゅうしゃ}の{方|かた}ですか？', pt: 'Com licença, você é alguém que entrou na empresa hoje?' },
+        { speaker: 'B', ja: 'あ、はい。', pt: 'Ah, sim.' },
+        { speaker: 'A', ja: '{私|わたし}もです。マレーシアから{来|き}たファルハナです。よろしくお{願|ねが}いします。', pt: 'Eu também. Sou a Farhana, vim da Malásia. Prazer.' },
+        { speaker: 'B', ja: '{私|わたし}はミャンマーから{来|き}ました。ユユカインといいます。カインと{呼|よ}んでください。よろしくお{願|ねが}いします。', pt: 'Eu vim de Myanmar. Meu nome é Yu Yu Kain. Pode me chamar de Kain. Prazer.' },
+        { speaker: 'A', ja: 'カインさんは、{前|まえ}はどこで{仕事|しごと}していたんですか？', pt: 'Kain, onde você trabalhava antes?' },
+        { speaker: 'B', ja: '{私|わたし}は、2{週間前|しゅうかんまえ}に{日本|にほん}に{来|き}たばかりなんです。', pt: 'Eu acabei de chegar ao Japão há duas semanas.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '08-06': [
+    {
+      label: '話すモデル② - 結婚パーティーで (08-06)',
+      setupPt: 'Modelo para continuar conversa falando de conhecido em comum.',
+      lines: [
+        { speaker: 'A', ja: 'こんにちは。{田中|たなか}さんのお{友|とも}だちですか？ {私|わたし}は、{会社|かいしゃ}の{同僚|どうりょう}の{王志強|オウシキョウ}です。', pt: 'Olá. Você é amigo do Tanaka? Eu sou Wang Zhiqiang, colega de empresa.' },
+        { speaker: 'B', ja: '{私|わたし}は{浅野|あさの}です。{新郎|しんろう}と{新婦|しんぷ}の{高校|こうこう}のときの{同級生|どうきゅうせい}です。', pt: 'Eu sou Asano. Sou colega de classe do noivo e da noiva da época do ensino médio.' },
+        { speaker: 'A', ja: 'え、{高校|こうこう}のときのお{友|とも}だちなんですか。', pt: 'Hã, vocês eram amigos do ensino médio?' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: '{田中|たなか}さんって、{高校生|こうこうせい}のとき、どんな{感|かん}じだったんですか？', pt: 'Como era o Tanaka no ensino médio?' },
+        { speaker: 'B', ja: 'うーん、{今|いま}と{同|おな}じで、よくしゃべってうるさかったですね。よく{先生|せんせい}にも{叱|しか}られてました。でも、ムードメーカーで{人気者|にんきもの}でしたよ。', pt: 'Hmm, igual a agora: falava muito e era barulhento. Os professores viviam dando bronca nele. Mas ele animava o ambiente e era popular.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é?' },
+      ],
+    },
+  ],
+  '08-07': [
+    {
+      label: '話すモデル③ - サークルで (08-07)',
+      setupPt: 'Modelo para falar de seus sentimentos ao entrar em um círculo pela primeira vez.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。{今日|きょう}から{参加|さんか}するんですが……。', pt: 'Com licença. Vou participar a partir de hoje...' },
+        { speaker: 'B', ja: 'あ、はじめての{方|かた}ですか？ {私|わたし}は{塚原|つかはら}といいます。', pt: 'Ah, é a primeira vez? Eu me chamo Tsukahara.' },
+        { speaker: 'A', ja: 'アルトゥルといいます。よろしくお{願|ねが}いします。', pt: 'Meu nome é Artur. Prazer.' },
+        { speaker: 'A', ja: '{私|わたし}、こういうサークルに{参加|さんか}するのははじめてで、すごく{緊張|きんちょう}してます。', pt: 'É a primeira vez que participo de um círculo assim, então estou muito nervoso.' },
+        { speaker: 'B', ja: 'だいじょうぶ、だいじょうぶ。リラックスして、{楽|たの}しくやりましょう。', pt: 'Tudo bem, tudo bem. Relaxe e vamos nos divertir.' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '08-08': [
+    {
+      label: '話すモデル④ - 日本語学校で (08-08)',
+      setupPt: 'Modelo para iniciar conversa comentando um pertence da outra pessoa.',
+      lines: [
+        { speaker: 'A', ja: 'あのう、{隣|となり}、いいですか？', pt: 'Com licença, posso sentar ao seu lado?' },
+        { speaker: 'B', ja: 'あ、どうぞ。', pt: 'Ah, claro.' },
+        { speaker: 'A', ja: 'ありがとう。あ、そのスマホケース、キティちゃんだ。キティちゃん、{好|す}きなんですか？', pt: 'Obrigada. Ah, esse case de celular é da Kitty-chan. Você gosta da Kitty-chan?' },
+        { speaker: 'B', ja: 'うん、{大好|だいす}きです。ほかにも、ペンケースとか、ハンカチとか、いろいろ{持|も}ってますよ。', pt: 'Sim, adoro. Também tenho várias outras coisas, como estojo e lenço.' },
+        { speaker: 'A', ja: 'あー、ほんとだ。', pt: 'Ah, é verdade.' },
+      ],
+    },
+  ],
+  '08-09': [
+    {
+      label: '会話 - ここのお風呂には、よく来るんですか？ (08-09)',
+      setupPt: 'フランキー está em uma fonte termal e um morador local inicia conversa após avisá-lo sobre a toalha.',
+      lines: [
+        { speaker: '地元の人', ja: 'あー、こらこら。タオルをお{湯|ゆ}につけちゃだめですよ！', pt: 'Ei, ei. Não pode colocar a toalha na água quente!' },
+        { speaker: 'フランキー', ja: 'え、タオル？', pt: 'Hã, a toalha?' },
+        { speaker: '地元の人', ja: 'そう。タオル。お{湯|ゆ}の{中|なか}に{入|い}れちゃだめ。', pt: 'Isso. A toalha. Não pode colocar dentro da água.' },
+        { speaker: 'フランキー', ja: 'すみません。{知|し}りませんでした。', pt: 'Desculpe. Eu não sabia.' },
+        { speaker: '地元の人', ja: 'これからは、{気|き}をつけなさい。', pt: 'De agora em diante, tome cuidado.' },
+        { speaker: 'フランキー', ja: 'はい……。', pt: 'Sim...' },
+        { speaker: '地元の人', ja: '{観光客|かんこうきゃく}ですか？', pt: 'Você é turista?' },
+        { speaker: 'フランキー', ja: '{私|わたし}は、{留学生|りゅうがくせい}です。CPU{大学|だいがく}の{寮|りょう}に{住|す}んでいます。', pt: 'Sou estudante internacional. Moro no dormitório da Universidade CPU.' },
+        { speaker: '地元の人', ja: 'ああ。どこから{来|き}たんですか？', pt: 'Ah. De onde você veio?' },
+        { speaker: 'フランキー', ja: '{出身|しゅっしん}は、インドネシアです。', pt: 'Sou da Indonésia.' },
+        { speaker: '地元の人', ja: 'インドネシア。どのぐらい{日本|にほん}に{住|す}んでるんですか？', pt: 'Indonésia. Há quanto tempo mora no Japão?' },
+        { speaker: 'フランキー', ja: 'だいたい、2{年|ねん}ぐらいです。', pt: 'Mais ou menos dois anos.' },
+        { speaker: '地元の人', ja: 'へー、{日本語|にほんご}うまいですね。', pt: 'Nossa, seu japonês é bom.' },
+        { speaker: 'フランキー', ja: 'いえ、そんなことないです。', pt: 'Não, não é nada disso.' },
+        { speaker: '地元の人', ja: 'ここのお{風呂|ふろ}には、よく{来|く}るんですか？', pt: 'Você vem bastante a este banho?' },
+        { speaker: 'フランキー', ja: 'はい、{寮|りょう}にもお{風呂|ふろ}がありますが、{温泉|おんせん}ではないので。', pt: 'Sim. Também há banho no dormitório, mas não é fonte termal.' },
+        { speaker: '地元の人', ja: '{温泉|おんせん}が{好|す}きなんですか？', pt: 'Você gosta de fontes termais?' },
+        { speaker: 'フランキー', ja: 'はい、{日本|にほん}に{来|き}て、{温泉|おんせん}がとても{好|す}きになりました。', pt: 'Sim. Depois que vim ao Japão, passei a gostar muito de fontes termais.' },
+        { speaker: '地元の人', ja: 'ははは、それはいいですね。', pt: 'Ha ha ha. Isso é bom.' },
+        { speaker: 'フランキー', ja: 'はじめは、ほかの{人|ひと}の{前|まえ}で{裸|はだか}になるのは{勇気|ゆうき}がいりました。でも、{今|いま}はだいじょうぶです。', pt: 'No começo, precisava de coragem para ficar nu na frente de outras pessoas. Mas agora tudo bem.' },
+        { speaker: '地元の人', ja: 'へー、そうなんですね。', pt: 'Nossa, entendi.' },
+        { speaker: 'フランキー', ja: 'あのう、この{辺|へん}で、いちばんいい{温泉|おんせん}は、どこですか？', pt: 'Com licença, por aqui, qual é a melhor fonte termal?' },
+        { speaker: '地元の人', ja: 'そうだなあ、いろいろあるけど、いちばん{好|す}きなのは、{鶴|つる}の{湯|ゆ}かな。', pt: 'Vejamos, há várias, mas acho que a que eu mais gosto é Tsurunoyu.' },
+        { speaker: 'フランキー', ja: '{鶴|つる}の{湯|ゆ}ですか？ どこにありますか？', pt: 'Tsurunoyu? Onde fica?' },
+        { speaker: '地元の人', ja: '{国道|こくどう}を{山|やま}のほうに{行|い}ったところの、{霊園|れいえん}のそばにある{露天風呂|ろてんぶろ}。{無料|むりょう}で{入|はい}れるし、お{湯|ゆ}もすごくいいですよ。', pt: 'É um banho ao ar livre perto de um cemitério, seguindo pela estrada nacional em direção à montanha. Dá para entrar de graça, e a água é muito boa.' },
+        { speaker: 'フランキー', ja: 'そうですか。あの、すみません、「れいえん」は{何|なん}ですか？', pt: 'Entendi. Desculpe, o que é “reien”?' },
+        { speaker: '地元の人', ja: '{霊園|れいえん}は、お{墓|はか}のある{公園|こうえん}みたいなところかな。{場所|ばしょ}は、{観光案内所|かんこうあんないじょ}で{聞|き}けば、{教|おし}えてくれると{思|おも}いますよ。', pt: 'Reien é algo como um parque onde há túmulos. Se perguntar no centro de informações turísticas, acho que eles informam o lugar.' },
+        { speaker: 'フランキー', ja: '{今度|こんど}ぜひ{行|い}ってみます。ありがとうございました。', pt: 'Da próxima vez, com certeza vou experimentar ir. Muito obrigado.' },
+        { speaker: 'フランキー', ja: 'ここには、よくいらっしゃるんですか？', pt: 'O senhor costuma vir aqui?' },
+        { speaker: '地元の人', ja: 'ほとんど{毎日|まいにち}{来|き}てますよ。', pt: 'Venho quase todos os dias.' },
+        { speaker: 'フランキー', ja: 'じゃあ、また{会|あ}うかもしれませんね。またいろいろ{教|おし}えてください。', pt: 'Então talvez nos encontremos de novo. Por favor, me ensine várias coisas outra vez.' },
+      ],
+    },
+  ],
+  '08-10': [
+    {
+      label: '形に注目 - Vなさい (08-10)',
+      lines: [
+        { speaker: '地元の人', ja: 'これからは、{気|き}をつけなさい。', pt: 'De agora em diante, tome cuidado.' },
+      ],
+    },
+  ],
+  '08-11': [
+    {
+      label: '形に注目 - 尊敬の動詞 (08-11)',
+      lines: [
+        { speaker: '地元の人', ja: 'ここのお{風呂|ふろ}には、よく{来|く}るんですか？', pt: 'Você vem bastante a este banho?' },
+        { speaker: 'フランキー', ja: 'ここには、よくいらっしゃるんですか？', pt: 'O senhor costuma vir aqui?' },
+      ],
+    },
+  ],
+  '08-12': [
+    {
+      label: '話すモデル - はじめて会った人と話す (08-12)',
+      setupPt: 'Modelo para responder perguntas de uma pessoa desconhecida e também puxar um assunto.',
+      lines: [
+        { speaker: '地元の人', ja: '{観光客|かんこうきゃく}ですか？', pt: 'Você é turista?' },
+        { speaker: 'フランキー', ja: '{私|わたし}は、{留学生|りゅうがくせい}です。', pt: 'Sou estudante internacional.' },
+        { speaker: '地元の人', ja: 'どこから{来|き}たんですか？', pt: 'De onde você veio?' },
+        { speaker: 'フランキー', ja: '{出身|しゅっしん}は、インドネシアです。', pt: 'Sou da Indonésia.' },
+        { speaker: '地元の人', ja: 'どのぐらい{日本|にほん}に{住|す}んでるんですか？', pt: 'Há quanto tempo mora no Japão?' },
+        { speaker: 'フランキー', ja: 'だいたい、2{年|ねん}ぐらいです。', pt: 'Mais ou menos dois anos.' },
+        { speaker: '地元の人', ja: 'へー、{日本語|にほんご}うまいですね。', pt: 'Nossa, seu japonês é bom.' },
+        { speaker: 'フランキー', ja: 'いえ、そんなことないです。', pt: 'Não, não é nada disso.' },
+        { speaker: '地元の人', ja: 'ここのお{風呂|ふろ}には、よく{来|く}るんですか？', pt: 'Você vem bastante a este banho?' },
+        { speaker: 'フランキー', ja: 'はい、{寮|りょう}にもお{風呂|ふろ}がありますが、{温泉|おんせん}ではないので。', pt: 'Sim. Também há banho no dormitório, mas não é fonte termal.' },
+        { speaker: '地元の人', ja: '{温泉|おんせん}が{好|す}きなんですか？', pt: 'Você gosta de fontes termais?' },
+        { speaker: 'フランキー', ja: 'はい、{日本|にほん}に{来|き}て、{温泉|おんせん}がとても{好|す}きになりました。', pt: 'Sim. Depois que vim ao Japão, passei a gostar muito de fontes termais.' },
+        { speaker: '地元の人', ja: 'それはいいですね。', pt: 'Isso é bom.' },
+        { speaker: 'フランキー', ja: 'この{辺|へん}で、いちばんいい{温泉|おんせん}は、どこですか？', pt: 'Por aqui, qual é a melhor fonte termal?' },
+        { speaker: '地元の人', ja: 'いちばん{好|す}きなのは、{鶴|つる}の{湯|ゆ}です。', pt: 'A que eu mais gosto é Tsurunoyu.' },
+        { speaker: 'フランキー', ja: '{鶴|つる}の{湯|ゆ}ですか？ どこにありますか？', pt: 'Tsurunoyu? Onde fica?' },
+        { speaker: '地元の人', ja: '{霊園|れいえん}のそばにある{露天風呂|ろてんぶろ}です。{無料|むりょう}で{入|はい}れるし、お{湯|ゆ}もすごくいいですよ。', pt: 'É um banho ao ar livre perto de um cemitério. Dá para entrar de graça, e a água é muito boa.' },
+        { speaker: 'フランキー', ja: '{今度|こんど}ぜひ{行|い}ってみます。ありがとうございました。', pt: 'Da próxima vez, com certeza vou experimentar ir. Muito obrigado.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -2532,6 +2789,121 @@ const lesson7: Section = {
   audios: attachScripts(7, L7_SCRIPTS),
 }
 
+const lesson8: Section = {
+  id: 'lesson-8',
+  level: 'pre-intermediate',
+  titleJa: '第8課 隣、いいですか？',
+  titlePt: 'Lição 8 - Posso sentar ao seu lado?',
+  summaryPt:
+    'Encontros · iniciar conversa com pessoas desconhecidas, responder a conversa casual e ler um artigo sobre como causar boa primeira impressão.',
+  studyNotes: [
+    {
+      title: 'Tópico: Encontros (出会う)',
+      bodyPt:
+        'Pergunta de abertura: {知|し}らない{人|ひと}に{話|はな}しかけたり、{話|はな}しかけられたりすることがありますか？\n\n' +
+        '## Can-do\n' +
+        '- Iniciar conversa com alguém que se encontra pela primeira vez, como futuro colega de trabalho ou novo colega de círculo.\n' +
+        '- Responder e conversar de modo simples quando uma pessoa desconhecida começa a falar.\n' +
+        '- Ler um artigo online sobre comunicação e entender o conteúdo geral.',
+    },
+    {
+      title: 'Atividade 1: iniciar conversa',
+      bodyPt:
+        'Quatro pessoas falam com alguém que estão encontrando pela primeira vez. A lição mostra uma frase de abertura e uma forma de continuar a conversa.\n\n' +
+        '| Faixa | Cena | Frase inicial | Como continua |\n|---|---|---|---|\n' +
+        '| 08-01 | {初出勤|はつしゅっきん}の{職場|しょくば}で | `あの、{今日|きょう}、{入社|にゅうしゃ}の{方|かた}ですか？` | pergunta sobre a outra pessoa e fala de si |\n' +
+        '| 08-02 | {同僚|どうりょう}の{結婚|けっこん}パーティーで | `{田中|たなか}さんのお{友|とも}だちですか？` | fala de um conhecido em comum |\n' +
+        '| 08-03 | はじめて{参加|さんか}するサークルで | `{今日|きょう}から{参加|さんか}するんですが……` | fala dos próprios sentimentos |\n' +
+        '| 08-04 | {日本語学校|にほんごがっこう}の{新|あたら}しいクラスで | `{隣|となり}、いいですか？` | comenta um pertence da outra pessoa |',
+    },
+    {
+      title: 'Modelos de conversa',
+      bodyPt:
+        'Os modelos 08-05 a 08-08 organizam a prática em duas etapas: falar primeiro e depois continuar.\n\n' +
+        '- **話しかける／自己紹介をする:** usar uma frase curta de abertura e dizer nome/origem quando natural.\n' +
+        '- **話を続ける:** perguntar algo sobre a pessoa, falar de um conhecido em comum, dizer que está nervoso ou comentar algo visível como um smartphone case.\n\n' +
+        'A prática final pede escolher uma cena e pensar livremente em como falar primeiro e como manter a conversa.',
+    },
+    {
+      title: 'Atividade 2: conversa no banho público',
+      bodyPt:
+        'フランキー está em uma fonte termal quando um morador local o avisa que não deve colocar a toalha dentro da água.\n\n' +
+        '| Ponto | Conteúdo |\n|---|---|\n' +
+        '| Advertência | `タオルをお{湯|ゆ}につけちゃだめですよ` |\n' +
+        '| Perfil | {留学生|りゅうがくせい}, mora no {寮|りょう} da CPU{大学|だいがく}, veio da Indonésia, está no Japão há cerca de 2 anos |\n' +
+        '| Motivo de ir ao banho | gosta de {温泉|おんせん}; o banho do dormitório não é onsen |\n' +
+        '| Recomendação | {鶴|つる}の{湯|ゆ}: {霊園|れいえん}のそばにある{露天風呂|ろてんぶろ}, gratuito, com água muito boa |',
+    },
+    {
+      title: 'Gramática ➊: Vなさい',
+      bodyPt:
+        '**Vなさい** é usado para dar ordem, instrução ou advertência. Costuma vir de alguém em posição superior para alguém abaixo, como pais para filhos, professores para alunos ou pessoa mais velha para jovem.\n\n' +
+        '- `これからは、{気|き}をつけなさい。`\n' +
+        '- `お{風呂|ふろ}で{泳|およ}ぐのは、やめなさい。`\n' +
+        '- `お{風呂|ふろ}に{入|はい}る{前|まえ}に、ちゃんと{体|からだ}を{洗|あら}いなさい。`\n\n' +
+        'Forma: verbo na forma マス sem ます + なさい. Em força, fica entre V-て e o imperativo.',
+    },
+    {
+      title: 'Gramática ➋: verbos respeitosos',
+      bodyPt:
+        '**尊敬語** é usado para ações ou estados de pessoas superiores, recém-conhecidas ou mencionadas com respeito. Não se usa para falar de si.\n\n' +
+        '- `ここのお{風呂|ふろ}には、よく{来|く}るんですか？`\n' +
+        '- `ここには、よくいらっしゃるんですか？`\n\n' +
+        '| Verbo comum | Verbo respeitoso |\n|---|---|\n' +
+        '| いる／行く／来る | いらっしゃる |\n' +
+        '| 言う | おっしゃる |\n' +
+        '| 食べる／飲む | 召し上がる |\n' +
+        '| 見る | ご覧になる |\n' +
+        '| くれる | くださる |\n' +
+        '| 知っている | ご存じだ |\n' +
+        '| する | なさる |',
+    },
+    {
+      title: 'Atividade 3: artigo sobre primeira impressão',
+      bodyPt:
+        'O artigo se chama **{第一印象|だいいちいんしょう}を{良|よ}く{見|み}せるための4つのポイント**. Antes de ler tudo, a atividade treina localizar título, corpo do artigo, partes que são anúncio e onde tocar para continuar lendo.\n\n' +
+        '| Ponto | Título | Ideia principal |\n|---|---|---|\n' +
+        '| 1 | アイコンタクトを{取|と}る | olhar para a pessoa é importante, mas não ficar encarando fixamente nem evitar contato visual |\n' +
+        '| 2 | {笑顔|えがお}を{忘|わす}れない | um sorriso leve ajuda a pessoa a parecer agradável e também relaxa quem sorri |\n' +
+        '| 3 | {姿勢|しせい}を{良|よ}くする | esticar as costas melhora a impressão; 猫背 passa impressão ruim |\n' +
+        '| 4 | {服装|ふくそう}や{清潔感|せいけつかん}に{気|き}をつける | não precisa roupa cara; aparência limpa e cabelo cuidado ajudam |',
+    },
+    {
+      title: 'Gramática ➌: causativo V-（さ）せる',
+      bodyPt:
+        'Nesta lição, o causativo expressa que algo causa naturalmente uma emoção, sentimento ou impressão em outra pessoa.\n\n' +
+        '- `{唇|くちびる}の{両端|りょうはし}を{軽|かる}く{上|あ}げるだけで、「この{人|ひと}、{感|かん}じが{良|よ}さそうだな」と{思|おも}わせることができます。`\n' +
+        '- `{背筋|せすじ}を{伸|の}ばして{相手|あいて}に{安心感|あんしんかん}を{持|も}たせることで、{印象|いんしょう}が{良|よ}くなるでしょう。`\n' +
+        '- `{清潔|せいけつ}で{整|ととの}った{服装|ふくそう}や、{手入|てい}れをされた{髪型|かみがた}は、{相手|あいて}に「きちんとした{人|ひと}だな」と{感|かん}じさせることができます。`\n\n' +
+        'A nota também cita がっかりさせる, 悲しませる, 怒らせる e 楽しませる.',
+    },
+    {
+      title: 'Gramática ➍: V-なくてもいい／大丈夫',
+      bodyPt:
+        '**V-なくてもいいです／だいじょうぶです** indica que não é necessário fazer algo.\n\n' +
+        '- `{無理|むり}に{大|おお}きな{笑顔|えがお}を{作|つく}らなくてもいいです。`\n' +
+        '- `{高価|こうか}な{服|ふく}は{着|き}なくても{大丈夫|だいじょうぶ}です。`\n' +
+        '- `そんなに{緊張|きんちょう}しなくてもいいですよ。`\n\n' +
+        'Forma: verbo na forma ナイ sem ない + なくても + いいです／だいじょうぶです.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {第一印象|だいいちいんしょう}, {関心|かんしん}, {背筋|せすじ}, {逆|ぎゃく}, この{辺|へん}, {清潔|せいけつ}（な）, {効果的|こうかてき}（な）, {伸|の}ばす, {与|あた}える, {整|ととの}う.\n\n' +
+        '**Vocabulário-chave:** {新郎|しんろう}, {新婦|しんぷ}, {同級生|どうきゅうせい}, {部署|ぶしょ}, しゃべる, {叱|しか}る, ムードメーカー, {人気者|にんきもの}, {緊張|きんちょう}する, {将棋|しょうぎ}, リラックスする, {観光客|かんこうきゃく}, {裸|はだか}, {国道|こくどう}, {霊園|れいえん}, {露天風呂|ろてんぶろ}, {観光案内所|かんこうあんないじょ}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**将棋:** jogo de tabuleiro japonês parecido com xadrez, em tabuleiro 9×9. Dois jogadores movem peças alternadamente e buscam capturar o “rei” do adversário. Há jogadores profissionais, partidas transmitidas e aulas para iniciantes em centros comunitários.\n\n' +
+        '**ハローキティ（キティちゃん）:** personagem da Sanrio criada em 1974, conhecida pela fita vermelha. Aparece em muitos produtos e é apresentada como símbolo da cultura kawaii.\n\n' +
+        '**お墓・霊園:** no Japão, restos cremados são colocados em túmulos. Muitos túmulos ficam em templos, e 霊園 são áreas amplas com muitos túmulos, frequentemente organizadas como parques e às vezes com túmulos de pessoas famosas.',
+    },
+  ],
+  groups: [lesson8Group],
+  audios: attachScripts(8, L8_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -2544,6 +2916,7 @@ const sections: Section[] = [
   lesson6,
   // Tópico 4 - Encontros (出会う)
   lesson7,
+  lesson8,
 ]
 
 export const irodoriPreIntermediate: Level = {
