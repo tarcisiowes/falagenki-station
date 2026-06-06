@@ -50,7 +50,7 @@ export function Layout() {
           <Link to="/" className="brand">
             <span className="logo">あ</span>
             <span>
-              Nihongo BR
+              駅のfalaGENKI
               <small>Japonês para brasileiros</small>
             </span>
           </Link>
@@ -61,7 +61,7 @@ export function Layout() {
               <span className="nav-dd-head">Níveis</span>
               {jlpt.levels.map((l) => (
                 <NavLink key={l.id} to={`/nivel/${l.id}`} className="nav-dd-item">
-                  {l.id} — {l.titlePt.replace(/^JLPT\s*/, '')}
+                  {l.id} — {l.titlePt.replace(/^JLPT\s*/, '').replace(new RegExp(`^${l.id}\\s*—\\s*`), '')}
                 </NavLink>
               ))}
               <div className="nav-dd-sep" />
@@ -93,7 +93,7 @@ export function Layout() {
         <Outlet />
       </main>
       <footer className="app-footer">
-        Nihongo BR · Material baseado nos exames de exemplo da JLPT (N5/N4) e no curso Irodori da
+        駅のfalaGENKI · Material baseado nos exames de exemplo da JLPT (N5/N4) e no curso Irodori da
         Japan Foundation. Conteúdo para estudo, com explicações em português do Brasil. Suas
         respostas ficam salvas apenas no seu navegador.
       </footer>
