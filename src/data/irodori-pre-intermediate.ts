@@ -448,6 +448,57 @@ const lesson8Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 9: 日本語の勉強を始めたきっかけって、何だったの？ (tópico 私と日本語) ----
+const lesson9Group: ExerciseGroup = {
+  id: 'iro-pi-l9',
+  title: '日本語の勉強を始めたきっかけって、何だったの？',
+  subtitlePt: 'Metas de japonês · dialetos · experiências de aprendizagem',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l9-1', number: 1, prompt: 'Qual é o tópico desta lição?', choices: [{ n: 1, text: '私と日本語 (eu e a língua japonesa)' }, { n: 2, text: '出会う' }, { n: 3, text: '毎日の食事' }, { n: 4, text: '自然を楽しむ' }], answer: 1, explanationPt: 'A Lição 9 abre o tópico 私と日本語: metas, motivações, dialetos e experiências de aprendizagem.' },
+    { id: 'iro-pi-l9-2', number: 2, prompt: 'Pergunta de abertura: あなたは、どうして日本語の勉強を始めましたか？', choices: [{ n: 1, text: 'Por que você começou a estudar japonês?' }, { n: 2, text: 'Onde você conheceu seus amigos?' }, { n: 3, text: 'Você fala com desconhecidos?' }, { n: 4, text: 'Você cozinha para si?' }], answer: 1, explanationPt: 'A pergunta prepara a fala sobre きっかけ, metas e experiências com japonês.' },
+    { id: 'iro-pi-l9-3', number: 3, prompt: 'Can-do 27: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'falar a um amigo, de modo simples, sobre metas de aprendizagem de japonês e seus motivos' }, { n: 2, text: 'ler placa de emergência' }, { n: 3, text: 'pedir comida por tablet' }, { n: 4, text: 'escrever formulário de mudança' }], answer: 1, explanationPt: 'A atividade 1 apresenta quatro conversas sobre 日本語学習の目標.' },
+    { id: 'iro-pi-l9-4', number: 4, prompt: '聴解 09-01: アディ fala em qual situação e com qual meta?', image: `${IMG}/ZZ_09_1_01_mendan.png`, imageAlt: 'entrevista na aula de japonês', choices: [{ n: 1, text: '面談 em aula de japonês; quer usar japonês melhor no trabalho' }, { n: 2, text: 'sala de descanso no trabalho; quer entender dramas' }, { n: 3, text: 'vizinhança; quer passar no JLPT' }, { n: 4, text: 'universidade; quer entender dialeto' }], answer: 1, explanationPt: 'O gabarito marca meta c: 仕事で上手に日本語を使う.' },
+    { id: 'iro-pi-l9-5', number: 5, prompt: '聴解 09-01: por que アディ quer melhorar o japonês de trabalho?', choices: [{ n: 1, text: 'porque falar ao telefone no trabalho é difícil e ele errou ao encerrar uma ligação' }, { n: 2, text: 'porque perdeu dois pontos no JLPT' }, { n: 3, text: 'porque quer fazer dublagem de anime' }, { n: 4, text: 'porque não entende placas em dialeto' }], answer: 1, explanationPt: 'Ele disse 「失礼します」 como 「じゃあね」 ao desligar o telefone e ficou envergonhado.' },
+    { id: 'iro-pi-l9-6', number: 6, prompt: '聴解 09-01: 木山 e アディ usam que estilo?', choices: [{ n: 1, text: 'ambos 丁寧体, porque é uma entrevista e se encontram pela primeira vez' }, { n: 2, text: 'ambos 普通体, porque são amigos próximos' }, { n: 3, text: '木山 普通体 e アディ 丁寧体, porque 木山 é colega de faculdade' }, { n: 4, text: 'não há diferença de estilo' }], answer: 1, explanationPt: 'O gabarito explica que, por ser 面談 e primeiro encontro, ambos usam 丁寧体.' },
+    { id: 'iro-pi-l9-7', number: 7, prompt: '聴解 09-02: ラメシュ tem qual meta?', image: `${IMG}/ZZ_09_1_04_shokuba.png`, imageAlt: 'sala de descanso no trabalho', choices: [{ n: 1, text: 'entender completamente dramas japoneses' }, { n: 2, text: 'passar no JLPT' }, { n: 3, text: 'se comunicar melhor com vizinhos' }, { n: 4, text: 'usar japonês ao telefone' }], answer: 1, explanationPt: 'O answer key marca ② = d: 日本のドラマを全部理解する.' },
+    { id: 'iro-pi-l9-8', number: 8, prompt: '聴解 09-02: ラメシュ diz que:', choices: [{ n: 1, text: 'estuda há 20 anos, ainda há muito que não entende, e quer recomendações de dramas enquanto estiver no Japão' }, { n: 2, text: 'acabou de chegar há duas semanas' }, { n: 3, text: 'não gosta de dramas japoneses' }, { n: 4, text: 'não quer mais estudar' }], answer: 1, explanationPt: 'Ele gosta de dramas, sente frustração por não captar algumas falas e pede recomendações a 鵜澤.' },
+    { id: 'iro-pi-l9-9', number: 9, prompt: '聴解 09-02: o uso de estilos entre ラメシュ e 鵜澤 é:', choices: [{ n: 1, text: 'ラメシュ usa 普通体 e 鵜澤 丁寧体, porque ラメシュ é mais velho' }, { n: 2, text: 'ambos usam 丁寧体 por serem desconhecidos' }, { n: 3, text: 'ambos usam 普通体 por serem colegas de universidade' }, { n: 4, text: 'ambos usam dialeto de Okinawa' }], answer: 1, explanationPt: 'O gabarito indica essa diferença por idade/posição relativa.' },
+    { id: 'iro-pi-l9-10', number: 10, prompt: '「日本にいる間に、いろいろなドラマを見たい」 usa ～間に para:', choices: [{ n: 1, text: 'dizer algo que quer fazer durante o período em que uma ação/estado continua' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'perguntar se é dialeto' }, { n: 4, text: 'expressar desnecessidade' }], answer: 1, translationPt: 'Enquanto eu estiver no Japão, quero assistir a vários dramas.', explanationPt: 'A nota ➊ explica V-る／V-ている／Nの + 間に.' },
+    { id: 'iro-pi-l9-11', number: 11, prompt: '聴解 09-03: 高 quer:', image: `${IMG}/ZZ_09_1_07_kinjo.png`, imageAlt: 'conversa na vizinhança', choices: [{ n: 1, text: 'conseguir se comunicar mais com outras pessoas' }, { n: 2, text: 'entender anime sem dublagem' }, { n: 3, text: 'passar no JLPT' }, { n: 4, text: 'usar japonês em telefonema de trabalho' }], answer: 1, explanationPt: 'O gabarito marca ③ = a: ほかの人ともっとコミュニケーションをとる.' },
+    { id: 'iro-pi-l9-12', number: 12, prompt: '聴解 09-03: qual motivo 高 dá?', choices: [{ n: 1, text: 'às vezes não entende o que as pessoas ao redor dizem e ainda não entende bem dialetos' }, { n: 2, text: 'a pronúncia é difícil' }, { n: 3, text: 'não gosta de estudar sozinho' }, { n: 4, text: 'não consegue comprar passagens' }], answer: 1, explanationPt: 'A lacuna do gabarito é 周りの人のセリフ／言っていることがわからないときがある.' },
+    { id: 'iro-pi-l9-13', number: 13, prompt: '聴解 09-04: プラー recusa o convite porque:', image: `${IMG}/ZZ_09_1_10_daigaku.png`, imageAlt: 'sala de aula da universidade', choices: [{ n: 1, text: 'vai estudar para o JLPT da semana seguinte' }, { n: 2, text: 'tem trabalho de cuidado' }, { n: 3, text: 'vai a uma fonte termal' }, { n: 4, text: 'vai participar de círculo de shogi' }], answer: 1, explanationPt: 'Ele diz que, no exame anterior, faltaram 2 pontos; desta vez quer passar com certeza.' },
+    { id: 'iro-pi-l9-14', number: 14, prompt: '聴解 09-04: プラー e ありな usam:', choices: [{ n: 1, text: '普通体, porque são amigos' }, { n: 2, text: '丁寧体, porque é uma entrevista' }, { n: 3, text: '尊敬語, porque falam com cliente' }, { n: 4, text: 'somente dialeto de Osaka' }], answer: 1, explanationPt: 'O gabarito indica 普通体 para ambos por serem 友だち同士.' },
+    { id: 'iro-pi-l9-15', number: 15, prompt: '丁寧体 e 普通体 devem ser escolhidos conforme:', choices: [{ n: 1, text: 'relação com a pessoa e situação de fala' }, { n: 2, text: 'apenas a hora do dia' }, { n: 3, text: 'apenas o tema gramatical' }, { n: 4, text: 'o número de kanji na frase' }], answer: 1, explanationPt: 'A nota ➋ revisa que o objetivo em 初中級 é alternar os estilos conforme relação e contexto.' },
+    { id: 'iro-pi-l9-16', number: 16, prompt: 'Can-do 28: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'perguntar sobre palavras de dialeto que não entendeu ao conversar com moradores locais' }, { n: 2, text: 'falar em detalhe sobre currículo' }, { n: 3, text: 'ler artigo de primeira impressão' }, { n: 4, text: 'cancelar compromisso por mensagem' }], answer: 1, explanationPt: 'A atividade 2 apresenta diálogos em 秋田, 大阪, 福岡 e 沖縄.' },
+    { id: 'iro-pi-l9-17', number: 17, prompt: '聴解 09-09: em 秋田, a fala 「そんた服ばり着てさみぐねぇの？」 significa:', choices: [{ n: 1, text: 'Você não está com frio usando só essa roupa?' }, { n: 2, text: 'Você quer consertar essa roupa?' }, { n: 3, text: 'Você vai voltar comigo?' }, { n: 4, text: 'Isso é muito gostoso?' }], answer: 1, explanationPt: 'A pessoa de Akita reformula em japonês comum: そんな服だけ着て寒くないの.' },
+    { id: 'iro-pi-l9-18', number: 18, prompt: '聴解 09-09: o viajante reage dizendo 「方言でしょうか……」. Essa estratégia é:', choices: [{ n: 1, text: 'apontar/confirmar que é dialeto' }, { n: 2, text: 'repetir uma parte ou tudo que ouviu' }, { n: 3, text: 'adivinhar pelo japonês comum' }, { n: 4, text: 'recusar conversa' }], answer: 1, explanationPt: 'No gabarito, A = ウ: 方言であることを指摘する.' },
+    { id: 'iro-pi-l9-19', number: 19, prompt: '聴解 09-10: em 大阪, 「そこの台車、なおしといて」 quer dizer:', image: `${IMG}/ZZ_09_2_01_kaisha.png`, imageAlt: 'carrinho de carga no trabalho', choices: [{ n: 1, text: 'guarde/arrume esse carrinho ali' }, { n: 2, text: 'conserte o carrinho quebrado' }, { n: 3, text: 'traga o carrinho para cá' }, { n: 4, text: 'não use o carrinho' }], answer: 1, explanationPt: 'Na conversa, なおす em Kansai significa 片付ける／しまう; ユパカー entende primeiro como 修理する.' },
+    { id: 'iro-pi-l9-20', number: 20, prompt: '聴解 09-10: ユパカー usa quais estratégias?', choices: [{ n: 1, text: 'repete 「直す？」, confirma se está quebrado e depois aponta que deve ser dialeto' }, { n: 2, text: 'finge que entendeu' }, { n: 3, text: 'muda de assunto para JLPT' }, { n: 4, text: 'usa 尊敬語' }], answer: 1, explanationPt: 'O gabarito marca B = イ／エ e C = ウ.' },
+    { id: 'iro-pi-l9-21', number: 21, prompt: '聴解 09-11: em 福岡, 「あんた、どっから来んしゃったと？」 quer dizer:', choices: [{ n: 1, text: 'Você veio de onde?' }, { n: 2, text: 'Você vai voltar agora?' }, { n: 3, text: 'Está com frio?' }, { n: 4, text: 'Você quer guardar isto?' }], answer: 1, explanationPt: 'O amigo explica: 「あなた、どこから来たんですか？」.' },
+    { id: 'iro-pi-l9-22', number: 22, prompt: '聴解 09-12: em 沖縄, 「そろそろ、帰りましょうねー」 nessa fala significa:', choices: [{ n: 1, text: 'eu vou voltar/ir embora agora' }, { n: 2, text: 'vamos todos embora juntos' }, { n: 3, text: 'a loja está proibida' }, { n: 4, text: 'isso é muito gostoso' }], answer: 1, explanationPt: 'O マスター explica que ～しましょうね não convida outras pessoas; significa 自分がしますね.' },
+    { id: 'iro-pi-l9-23', number: 23, prompt: '聴解 09-12: 「でーじ」 significa:', choices: [{ n: 1, text: 'とても (muito)' }, { n: 2, text: '方言 (dialeto)' }, { n: 3, text: '閉店 (fechamento)' }, { n: 4, text: '修理 (conserto)' }], answer: 1, explanationPt: 'A pessoa pergunta 「でーじ」はどういう意味ですか？ e o マスター responde: とっても.' },
+    { id: 'iro-pi-l9-24', number: 24, prompt: 'Vocabulário de dialeto: 台車／直す／しまう／修理する／閉店 significam:', choices: [{ n: 1, text: 'carrinho de carga / consertar ou guardar conforme região / guardar / consertar / horário de fechar' }, { n: 2, text: 'anime / dublagem / meta / prova / cuidador' }, { n: 3, text: 'limpeza / postura / sorriso / cabelo / roupa' }, { n: 4, text: 'vizinho / praça / criança / panfleto / evento' }], answer: 1, explanationPt: 'Essas palavras aparecem nas conversas em 大阪 e 沖縄.' },
+    { id: 'iro-pi-l9-25', number: 25, prompt: 'Can-do 29: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'falar com algum detalhe sobre sua experiência de aprendizagem de japonês, incluindo episódios concretos' }, { n: 2, text: 'ler placa em dialeto' }, { n: 3, text: 'pedir recomendação de supermercado' }, { n: 4, text: 'fazer autoapresentação em círculo' }], answer: 1, explanationPt: 'A atividade 3 trabalha きっかけ, 経験 e 将来したいこと.' },
+    { id: 'iro-pi-l9-26', number: 26, prompt: 'ことばの準備: 日本語の勉強を始めたきっかけ inclui:', choices: [{ n: 1, text: 'anime/mangá, cultura tradicional, interesse no japonês, disciplina obrigatória, intercâmbio, trabalho, viagem, morar no Japão, família que fala japonês' }, { n: 2, text: 'somente fontes termais e cemitérios' }, { n: 3, text: 'somente lojas de comida' }, { n: 4, text: 'somente regras de banho' }], answer: 1, explanationPt: 'O vocabulário a-i cobre essas nove razões.' },
+    { id: 'iro-pi-l9-27', number: 27, prompt: '聴解 09-19: クロード começou a estudar japonês porque:', choices: [{ n: 1, text: 'amava anime japonês e queria entender as falas em japonês' }, { n: 2, text: 'queria trabalhar com cuidado no Japão' }, { n: 3, text: 'o trabalho do marido foi decidido no Japão' }, { n: 4, text: 'precisava usar dialeto de Osaka' }], answer: 1, explanationPt: 'O gabarito marca きっかけ a; ele via dublagem e queria entender セリフ em japonês.' },
+    { id: 'iro-pi-l9-28', number: 28, prompt: '聴解 09-19: quais experiências クロード relata?', choices: [{ n: 1, text: 'entrou no anime club, fez dublagem/aterêko, depois veio estudar anime em escola técnica no Japão' }, { n: 2, text: 'trabalhou como cuidador e teve dificuldades culturais' }, { n: 3, text: 'veio sem estudar japonês e mostrou fotos no celular' }, { n: 4, text: 'passou no JLPT por dois pontos' }], answer: 1, explanationPt: 'As experiências do gabarito são カ e ウ: アニメ部に入った e 日本に留学した.' },
+    { id: 'iro-pi-l9-29', number: 29, prompt: '聴解 09-20: ハスミン começou por qual motivo?', choices: [{ n: 1, text: 'queria trabalhar com 介護 no Japão porque uma parente era cuidadora no Japão' }, { n: 2, text: 'gostava de anime' }, { n: 3, text: 'veio pelo trabalho do marido' }, { n: 4, text: 'queria entender placas de Okinawa' }], answer: 1, explanationPt: 'O gabarito marca きっかけ f e especifica 親戚: 日本で介護士.' },
+    { id: 'iro-pi-l9-30', number: 30, prompt: '聴解 09-20: ハスミン relata que:', choices: [{ n: 1, text: 'estudou japonês e regras do Japão, achou letras difíceis, sofreu no trabalho, mas recebeu apoio de veteranos' }, { n: 2, text: 'não estudou nada e só usou fotos' }, { n: 3, text: 'entrou em anime club' }, { n: 4, text: 'foi reprovado no JLPT por 2 pontos' }], answer: 1, explanationPt: 'O gabarito lista 日本語クラス, 日本のルール, 文字が難しい, 苦労, 失敗, 先輩に悩みを聞いてもらった.' },
+    { id: 'iro-pi-l9-31', number: 31, prompt: '聴解 09-21: エレン começou a viver no Japão porque:', choices: [{ n: 1, text: 'o trabalho do marido foi decidido no Japão e ela veio morar junto' }, { n: 2, text: 'queria criar anime' }, { n: 3, text: 'queria ser cuidadora' }, { n: 4, text: 'foi aprovada no JLPT' }], answer: 1, explanationPt: 'O gabarito marca きっかけ h: 日本で生活することになった.' },
+    { id: 'iro-pi-l9-32', number: 32, prompt: '聴解 09-21: depois de vir ao Japão, エレン:', choices: [{ n: 1, text: 'teve dificuldades sem japonês, mostrava fotos no celular, começou a frequentar escola de japonês e a vida ficou mais fácil' }, { n: 2, text: 'abriu uma escola de japonês' }, { n: 3, text: 'entrou em anime club' }, { n: 4, text: 'trabalhou em Ishikawa' }], answer: 1, explanationPt: 'O gabarito registra スマホで写真を見せた, 日本語学校に通いはじめた e 生活しやすくなった.' },
+    { id: 'iro-pi-l9-33', number: 33, prompt: '「勉強しはじめた」「働きはじめました」「通いはじめました」 usam Vはじめる para:', choices: [{ n: 1, text: 'indicar o começo de uma ação ou estado' }, { n: 2, text: 'indicar que algo não é necessário' }, { n: 3, text: 'dar ordem' }, { n: 4, text: 'mostrar respeito' }], answer: 1, explanationPt: 'Forma: verbo na forma マス sem ます + はじめる.' },
+    { id: 'iro-pi-l9-34', number: 34, prompt: 'Qual expressão de esperança corresponde a 「介護の仕事を続けようと思ってます」?', choices: [{ n: 1, text: '意向形 + と思っています' }, { n: 2, text: 'Vなさい' }, { n: 3, text: 'V-なくてもいい' }, { n: 4, text: '尊敬語' }], answer: 1, translationPt: 'Penso em continuar trabalhando com cuidado.', explanationPt: 'A nota ➍ reúne Vたい, volicional + と思う, e V-ば + と思う/うれしい/いいな.' },
+    { id: 'iro-pi-l9-35', number: 35, prompt: 'Kanji da lição: 方言／目標／知識 lêem-se:', choices: [{ n: 1, text: 'ほうげん／もくひょう／ちしき' }, { n: 2, text: 'かたこと／めじるし／しりしき' }, { n: 3, text: 'ほうごん／もくてき／ちけん' }, { n: 4, text: 'ほうげん／めひょう／ちしき' }], answer: 1, explanationPt: '方言 = dialeto; 目標 = meta; 知識 = conhecimento.' },
+    { id: 'iro-pi-l9-36', number: 36, prompt: 'Kanji da lição: 介護／吹き替え／足りる lêem-se:', choices: [{ n: 1, text: 'かいご／ふきかえ／たりる' }, { n: 2, text: 'かいこ／ふきがえ／あしりる' }, { n: 3, text: 'けいご／ふきかえ／たりる' }, { n: 4, text: 'かいご／すいかえ／たれる' }], answer: 1, explanationPt: '吹き替え é dublagem; 足りる aparece em 2点足りなくて.' },
+    { id: 'iro-pi-l9-37', number: 37, prompt: 'Kanji da lição: 最初／失敗する／悩み／理解する lêem-se:', choices: [{ n: 1, text: 'さいしょ／しっぱいする／なやみ／りかいする' }, { n: 2, text: 'さいはつ／しつはいする／のうみ／りげする' }, { n: 3, text: 'さいしょ／しっぱいする／なみ／りかいする' }, { n: 4, text: 'もさい／しっぱいする／なやみ／りかいする' }], answer: 1, explanationPt: 'Esses kanji aparecem nas experiências de estudo e trabalho.' },
+    { id: 'iro-pi-l9-38', number: 38, prompt: 'Leitura: placas em dialeto. Qual par lugar-significado segue o gabarito?', choices: [{ n: 1, text: '①空き地 = やめなさい; ③手洗い場 = 手を洗っていきなさい; ⑦お祭りの屋台 = とてもおいしい' }, { n: 2, text: '①駅 = また来てね; ⑦道路 = あぶないよ' }, { n: 3, text: '⑤屋台 = 飲んだら乗るな' }, { n: 4, text: '②大学 = JLPTに合格する' }], answer: 1, explanationPt: 'O gabarito também marca ②道路 = あぶないよ, ④道路 = 飲んだら乗るな, ⑤商店街 = ようこそ, ⑥駅 = また来てね.' },
+    { id: 'iro-pi-l9-39', number: 39, prompt: 'TIPS: 日本語の試験 inclui:', choices: [{ n: 1, text: 'JLPT, JFT-Basic e outros testes como EJU, BJT, OPI/OPIc, cada um com finalidades diferentes' }, { n: 2, text: 'apenas um teste único obrigatório para todos' }, { n: 3, text: 'somente prova oral informal' }, { n: 4, text: 'somente teste para crianças japonesas' }], answer: 1, explanationPt: 'A TIPS recomenda escolher testes conforme objetivo e reunir informação em sites, professores e colegas.' },
+    { id: 'iro-pi-l9-40', number: 40, prompt: 'TIPS: sobre 日本の方言, qual afirmação está correta?', choices: [{ n: 1, text: 'há diferenças regionais de vocabulário e pronúncia; muita gente alterna dialeto e japonês comum conforme situação' }, { n: 2, text: 'dialetos não existem mais' }, { n: 3, text: 'todos os dialetos são iguais ao japonês de Tóquio' }, { n: 4, text: 'dialetos são usados só em exames' }], answer: 1, explanationPt: 'O texto apresenta exemplos de Tohoku, Kansai, Kyushu/Hakata e Okinawa, e recomenda perguntar 「どういう意味ですか？」 quando não entender.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -2083,6 +2134,342 @@ const L8_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L9_SCRIPTS: Record<string, ScriptItem[]> = {
+  '09-01': [
+    {
+      label: '① 日本語教室の面談で (09-01)',
+      setupPt: '木山 pergunta a アディ sobre a meta de estudo de japonês.',
+      lines: [
+        { speaker: '木山', ja: 'こんにちは、{木山|きやま}です。えーと、アディさんは、ここで、どんなことを{勉強|べんきょう}したいですか？ {目標|もくひょう}を{教|おし}えてもらえますか？', pt: 'Olá, sou Kiyama. Bem, Adi, o que você quer estudar aqui? Pode me contar sua meta?' },
+        { speaker: 'アディ', ja: 'あの、{仕事|しごと}でもっと{上手|じょうず}に{日本語|にほんご}が{使|つか}えるようになることです。', pt: 'Bem, é conseguir usar japonês melhor no trabalho.' },
+        { speaker: '木山', ja: '{仕事|しごと}ですか。', pt: 'No trabalho?' },
+        { speaker: 'アディ', ja: 'はい。{最近|さいきん}、{職場|しょくば}の{電話|でんわ}を{取|と}っているんですけど、すごく{難|むずか}しいんです。', pt: 'Sim. Recentemente tenho atendido telefone no trabalho, mas é muito difícil.' },
+        { speaker: '木山', ja: 'ああ、{電話|でんわ}、{難|むずか}しいですよね。', pt: 'Ah, telefone é difícil mesmo.' },
+        { speaker: 'アディ', ja: 'はい。{電話|でんわ}だと、{緊張|きんちょう}して、うまく{話|はな}せないんです。この{間|あいだ}も、{電話|でんわ}を{切|き}るときに、「{失礼|しつれい}します」を「じゃあね」って{言|い}っちゃって、すごくはずかしかったです。', pt: 'Sim. Ao telefone fico nervoso e não consigo falar bem. Outro dia, ao desligar, acabei dizendo “tchau” em vez de “com licença/obrigado”, e fiquei muito envergonhado.' },
+        { speaker: '木山', ja: 'そうですか。じゃあ、{仕事|しごと}で{上手|じょうず}に{日本語|にほんご}が{使|つか}えるように、いっしょにがんばりましょう。', pt: 'Entendi. Então vamos nos esforçar juntos para que você consiga usar japonês bem no trabalho.' },
+        { speaker: 'アディ', ja: 'はい。よろしくお{願|ねが}いします。', pt: 'Sim. Conto com você.' },
+      ],
+    },
+  ],
+  '09-02': [
+    {
+      label: '② 職場の休憩室で (09-02)',
+      setupPt: '鵜澤 pergunta a ラメシュ sobre metas de japonês; ラメシュ quer entender dramas.',
+      lines: [
+        { speaker: '鵜澤', ja: 'ラメシュさんって、いつから{日本語|にほんご}{勉強|べんきょう}してるんですか？', pt: 'Ramesh, desde quando você estuda japonês?' },
+        { speaker: 'ラメシュ', ja: '{日本|にほん}に{来|く}る{前|まえ}から。だから、もう20{年|ねん}、{勉強|べんきょう}してるよ。', pt: 'Desde antes de vir ao Japão. Então já estudo há 20 anos.' },
+        { speaker: '鵜澤', ja: 'へー、20{年|ねん}。', pt: 'Nossa, 20 anos.' },
+        { speaker: 'ラメシュ', ja: 'でも、{日本語|にほんご}は、まだまだわからないことがたくさんあるよ。', pt: 'Mas ainda há muita coisa em japonês que não entendo.' },
+        { speaker: '鵜澤', ja: 'そうなんですか。{何|なに}か{目標|もくひょう}とか、あるんですか？', pt: 'É mesmo? Você tem alguma meta?' },
+        { speaker: 'ラメシュ', ja: 'うーん、{日本|にほん}のドラマを{全部理解|ぜんぶりかい}できるようになることかな。', pt: 'Hmm, talvez conseguir entender completamente dramas japoneses.' },
+        { speaker: '鵜澤', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'ラメシュ', ja: '{日本|にほん}のドラマが{好|す}きだから、よく{見|み}るんだけど、{聞|き}き{取|と}れないセリフがあるのが{悔|くや}しいんだよね。', pt: 'Gosto de dramas japoneses e assisto bastante, mas fico frustrado quando há falas que não consigo captar.' },
+        { speaker: '鵜澤', ja: 'そうなんですか。', pt: 'Entendi.' },
+        { speaker: 'ラメシュ', ja: '{日本|にほん}にいる{間|あいだ}に、いろいろなドラマを{見|み}たいから、{鵜澤|うざわ}くんもおすすめのドラマがあったら、ぜひ{教|おし}えて。', pt: 'Enquanto estou no Japão, quero assistir a vários dramas; se você tiver algum drama para recomendar, me diga.' },
+        { speaker: '鵜澤', ja: 'はい。', pt: 'Claro.' },
+      ],
+    },
+  ],
+  '09-03': [
+    {
+      label: '③ 家の近所で (09-03)',
+      setupPt: '高 conversa com 西尾 sobre estudar japonês depois do trabalho.',
+      lines: [
+        { speaker: '西尾', ja: 'あら、{高|コウ}さん、こんばんは。', pt: 'Ah, Gao, boa noite.' },
+        { speaker: '高', ja: 'あ、{西尾|にしお}さん。こんばんは。', pt: 'Ah, Nishio, boa noite.' },
+        { speaker: '西尾', ja: '{仕事|しごと}の{帰|かえ}り？ {遅|おそ}くまで、ご{苦労|くろう}さま。', pt: 'Voltando do trabalho? Obrigada pelo esforço até tarde.' },
+        { speaker: '高', ja: 'ありがとうございます。でも、{今日|きょう}は{仕事|しごと}のあとに{日本語|にほんご}の{勉強|べんきょう}をしていたんです。', pt: 'Obrigado. Mas hoje, depois do trabalho, eu estava estudando japonês.' },
+        { speaker: '西尾', ja: '{日本語|にほんご}の{勉強|べんきょう}？ {日本語学校|にほんごがっこう}とか？', pt: 'Estudo de japonês? Em escola de japonês?' },
+        { speaker: '高', ja: 'いえ、{知|し}り{合|あ}いの{日本人|にほんじん}に{教|おし}えてもらっているんです。{代|か}わりに、{私|わたし}は{中国語|ちゅうごくご}を{教|おし}えています。', pt: 'Não, um conhecido japonês está me ensinando. Em troca, eu ensino chinês.' },
+        { speaker: '西尾', ja: 'そうなの。がんばるわね。', pt: 'É mesmo? Você se esforça.' },
+        { speaker: '高', ja: 'ほかの{人|ひと}と、もっとコミュニケーションがとれるようになりたいんです。{周|まわ}りの{人|ひと}の{言|い}っていることが、わからないときがあるので……。{方言|ほうげん}も、まだよくわからないんです。', pt: 'Quero conseguir me comunicar mais com outras pessoas. Às vezes não entendo o que as pessoas ao meu redor dizem... E ainda não entendo muito bem dialetos.' },
+        { speaker: '西尾', ja: 'そう。{何|なに}か{困|こま}ったことがあったら、{遠慮|えんりょ}なく{言|い}ってね。', pt: 'Entendi. Se tiver algum problema, fale sem cerimônia.' },
+        { speaker: '高', ja: 'はい。ありがとうございます。', pt: 'Sim. Muito obrigado.' },
+      ],
+    },
+  ],
+  '09-04': [
+    {
+      label: '④ 大学の教室で (09-04)',
+      setupPt: 'ありな convida プラー para comer, mas ele vai estudar para o JLPT.',
+      lines: [
+        { speaker: 'ありな', ja: 'ねえねえ、プラー。', pt: 'Ei, Plah.' },
+        { speaker: 'プラー', ja: 'あ、ありな。', pt: 'Ah, Arina.' },
+        { speaker: 'ありな', ja: 'これから、みんなでご{飯|はん}{食|た}べに{行|い}くけど、いっしょにどう？', pt: 'Agora vamos comer com todo mundo. Quer ir junto?' },
+        { speaker: 'プラー', ja: 'あ、ごめん。{今日|きょう}は{早|はや}く{帰|かえ}って{勉強|べんきょう}するから……。', pt: 'Ah, desculpa. Hoje vou voltar cedo e estudar...' },
+        { speaker: 'ありな', ja: 'えー、そうなの？', pt: 'Sério?' },
+        { speaker: 'プラー', ja: 'うん、{来週|らいしゅう}、JLPTがあるから。', pt: 'Sim, porque semana que vem tenho o JLPT.' },
+        { speaker: 'ありな', ja: 'JLPTって、{日本語|にほんご}の{試験|しけん}だったっけ？', pt: 'JLPT era o exame de japonês, né?' },
+        { speaker: 'プラー', ja: 'そう。{前回|ぜんかい}は、あまり{勉強|べんきょう}しないで{受|う}けたら、2{点|てん}{足|た}りなくて{合格|ごうかく}できなくて……。だから、{次|つぎ}は、{絶対合格|ぜったいごうかく}したいんだ。', pt: 'Isso. Da vez passada fiz sem estudar muito e faltaram dois pontos para passar... Então da próxima vez quero passar com certeza.' },
+        { speaker: 'ありな', ja: '2{点|てん}……。それは{惜|お}しかったね。', pt: 'Dois pontos... Foi por pouco.' },
+        { speaker: 'プラー', ja: '{試験|しけん}が{終|お}わったら、また{誘|さそ}って。', pt: 'Quando o exame acabar, me chama de novo.' },
+        { speaker: 'ありな', ja: 'うん。{次|つぎ}は、きっと{合格|ごうかく}できるよ。がんばってね。', pt: 'Sim. Da próxima vez, com certeza você vai passar. Força.' },
+        { speaker: 'プラー', ja: 'ありがとう。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '09-05': [
+    {
+      label: '形に注目 - V-る間に (09-05)',
+      lines: [
+        { speaker: 'ラメシュ', ja: '{日本|にほん}にいる{間|あいだ}に、いろいろなドラマを{見|み}たいから、{鵜澤|うざわ}くんもおすすめのドラマがあったら、ぜひ{教|おし}えて。', pt: 'Enquanto estou no Japão, quero assistir a vários dramas; se você tiver recomendações, me diga.' },
+      ],
+    },
+  ],
+  '09-06': [
+    {
+      label: '形に注目 - 丁寧体・普通体 (09-06)',
+      lines: [
+        { speaker: 'ラメシュ', ja: 'でも、{日本語|にほんご}は、まだまだわからないことがたくさんあるよ。', pt: 'Mas ainda há muita coisa em japonês que não entendo.' },
+        { speaker: 'ラメシュ', ja: '{日本|にほん}のドラマが{好|す}きだから、よく{見|み}るんだけど、{聞|き}き{取|と}れないセリフがあるのが{悔|くや}しいんだよね。', pt: 'Gosto de dramas japoneses, mas é frustrante haver falas que não consigo captar.' },
+        { speaker: 'ありな', ja: '{次|つぎ}は、きっと{合格|ごうかく}できるよ。', pt: 'Da próxima vez, com certeza você vai passar.' },
+      ],
+    },
+  ],
+  '09-07': [
+    {
+      label: '話すモデル - 丁寧体で目標を話す (09-07)',
+      lines: [
+        { speaker: 'A', ja: '{日本語学習|にほんごがくしゅう}の{目標|もくひょう}を{教|おし}えてもらえますか？', pt: 'Pode me contar sua meta de aprendizagem de japonês?' },
+        { speaker: 'B', ja: '{仕事|しごと}でもっと{上手|じょうず}に{日本語|にほんご}が{使|つか}えるようになることです。', pt: 'É conseguir usar japonês melhor no trabalho.' },
+        { speaker: 'A', ja: 'そうですか。じゃあ、いっしょにがんばりましょう。', pt: 'Entendi. Então vamos nos esforçar juntos.' },
+      ],
+    },
+  ],
+  '09-08': [
+    {
+      label: '話すモデル - 普通体で目標を話す (09-08)',
+      lines: [
+        { speaker: 'A', ja: '{日本語学習|にほんごがくしゅう}の{目標|もくひょう}って、ある？', pt: 'Você tem uma meta de aprendizagem de japonês?' },
+        { speaker: 'B', ja: '{試験|しけん}に{合格|ごうかく}したいんだ。', pt: 'Quero passar no exame.' },
+        { speaker: 'B', ja: 'この{間|あいだ}は、2{点|てん}{足|た}りなくて{合格|ごうかく}できなくて……。だから、{次|つぎ}は、{絶対合格|ぜったいごうかく}したいんだ。', pt: 'Da outra vez faltaram dois pontos e não consegui passar... Por isso, da próxima vez quero passar com certeza.' },
+        { speaker: 'A', ja: 'がんばってね。', pt: 'Força.' },
+      ],
+    },
+  ],
+  '09-09': [
+    {
+      label: '① 秋田で (09-09)',
+      setupPt: 'Um morador local fala em dialeto de Akita sobre roupa e frio.',
+      lines: [
+        { speaker: '地元の人', ja: 'おや、そんた{服|ふく}ばり{着|き}てさみぐねぇの？', pt: 'Ei, você não está com frio usando só essa roupa?' },
+        { speaker: '旅行者', ja: 'え、すみません、{何|なん}ですか？', pt: 'Hã, desculpe, o quê?' },
+        { speaker: '地元の人', ja: 'そんた{服|ふく}ばり{着|き}てさみぐねぇの？', pt: 'Você não está com frio usando só essa roupa?' },
+        { speaker: '旅行者', ja: 'あの、すみません、ちょっとわかりません……{方言|ほうげん}でしょうか……。', pt: 'Desculpe, não entendi muito bem... É dialeto?' },
+        { speaker: '地元の人', ja: 'あーわがらながった？ そんな{服|ふく}だけ{着|き}て{寒|さむ}くないのって{言|い}ったのです。', pt: 'Ah, você não entendeu? Eu disse: você não está com frio usando só essa roupa?' },
+        { speaker: '旅行者', ja: 'あ、はい、{寒|さむ}いです。{私|わたし}の{国|くに}は、{一年中|いちねんじゅう}{夏|なつ}なので、{冬|ふゆ}の{服|ふく}、{持|も}ってないんです。', pt: 'Ah, sim, estou com frio. No meu país é verão o ano todo, então não tenho roupa de inverno.' },
+      ],
+    },
+  ],
+  '09-10': [
+    {
+      label: '② 大阪で (09-10)',
+      setupPt: 'No trabalho, ユパカー interpreta 「なおす」 como “consertar”, mas em Kansai é “guardar”.',
+      lines: [
+        { speaker: '上司', ja: 'ユパカーさん、そこの{台車|だいしゃ}、なおしといてくれる？', pt: 'Yupaka, pode guardar aquele carrinho ali?' },
+        { speaker: 'ユパカー', ja: 'え、{直|なお}す？ {壊|こわ}れてるんですか？', pt: 'Hã, consertar? Está quebrado?' },
+        { speaker: '上司', ja: 'あー、ちゃう、ちゃう、{壊|こわ}れてへん。えっと……{片付|かたづ}けといて、しまっといて、ゆう{意味|いみ}。', pt: 'Ah, não, não. Não está quebrado. Quer dizer... deixar arrumado, guardar.' },
+        { speaker: 'ユパカー', ja: 'あ、わかりました。{私|わたし}が{壊|こわ}れた{台車|だいしゃ}を{修理|しゅうり}するのかと{思|おも}って、ちょっとびっくりしました。', pt: 'Ah, entendi. Pensei que eu fosse consertar um carrinho quebrado e levei um susto.' },
+        { speaker: '上司', ja: 'もしかして、「なおす」て、{方言|ほうげん}？', pt: 'Será que “naosu” é dialeto?' },
+        { speaker: 'ユパカー', ja: 'はい、たぶん{方言|ほうげん}だと{思|おも}います。{教科書|きょうかしょ}の{日本語|にほんご}では、「{直|なお}す」は「{修理|しゅうり}する」という{意味|いみ}です。', pt: 'Sim, acho que provavelmente é dialeto. No japonês dos livros, “naosu” significa “consertar”.' },
+      ],
+    },
+  ],
+  '09-11': [
+    {
+      label: '③ 福岡で (09-11)',
+      setupPt: 'Um morador de Fukuoka pergunta de onde o viajante veio.',
+      lines: [
+        { speaker: '地元の人', ja: 'あんた、どっから{来|き}んしゃったと？', pt: 'Você veio de onde?' },
+        { speaker: '旅行客', ja: 'え、すみません……きんしゃ？（{友|とも}だちに）どういう{意味|いみ}？', pt: 'Hã, desculpe... kinsha? (para o amigo) O que significa?' },
+        { speaker: '友だち', ja: 'えっと、「あなた、どこから{来|き}たんですか？」って。', pt: 'Bem, quer dizer “você veio de onde?”.' },
+        { speaker: '旅行客', ja: 'どこから……ええと、{私|わたし}は{東京|とうきょう}から{来|き}ました。{出身|しゅっしん}は、ポーランドです。', pt: 'De onde... Bem, vim de Tóquio. Sou da Polônia.' },
+        { speaker: '地元の人', ja: 'はー、ポーランドげな！ {遠|とお}かねー！', pt: 'Nossa, Polônia! É longe, hein!' },
+      ],
+    },
+  ],
+  '09-12': [
+    {
+      label: '④ 沖縄で (09-12)',
+      setupPt: 'Em Okinawa, uma expressão com しましょうね e a palavra でーじ confundem o viajante.',
+      lines: [
+        { speaker: '帰る客', ja: 'マスター、そろそろ、{帰|かえ}りましょうねー。', pt: 'Mestre, vou indo agora.' },
+        { speaker: 'マスター', ja: 'はーい、ありがとねー。', pt: 'Certo, obrigado.' },
+        { speaker: '旅行客', ja: 'え？ あ、もう{閉店|へいてん}ですか？ {私|わたし}も{帰|かえ}ったほうがいいですか？ ……あれ、1{人|ひとり}で{帰|かえ}っちゃった。', pt: 'Hã? Já está fechando? É melhor eu ir embora também? ...Ué, ele foi embora sozinho.' },
+        { speaker: 'マスター', ja: '{沖縄|おきなわ}ではね、「なになにしましょうね」っていうのは、ほかの{人|ひと}を{誘|さそ}ってるんじゃなくて、「{自分|じぶん}がしますね」って{意味|いみ}で{使|つか}うわけよー。', pt: 'Em Okinawa, “vamos fazer tal coisa, né” não é convite para outras pessoas; é usado no sentido de “eu vou fazer”.' },
+        { speaker: '旅行客', ja: 'そうなんですか。みんないっしょに{帰|かえ}りましょうって{言|い}われてるんだと{思|おも}いました。おもしろいですね。', pt: 'É mesmo? Achei que ele estava dizendo “vamos todos embora juntos”. Que interessante.' },
+        { speaker: 'マスター', ja: 'そうだね。でーじおもしろいねー。', pt: 'Pois é. É muito interessante.' },
+        { speaker: '旅行客', ja: 'でーじ？ 「でーじ」はどういう{意味|いみ}ですか？', pt: 'Deeji? O que significa “deeji”?' },
+        { speaker: 'マスター', ja: 'でーじは、「とっても」っていう{意味|いみ}さー。', pt: 'Deeji significa “muito”.' },
+      ],
+    },
+  ],
+  '09-13': [
+    { label: '話すモデル - 方言がわからない① (09-13)', lines: [{ speaker: 'A', ja: 'そこの{台車|だいしゃ}、なおしといて。', pt: 'Guarde aquele carrinho ali.' }, { speaker: 'B', ja: 'え、どういう{意味|いみ}ですか？', pt: 'Hã, o que significa?' }, { speaker: 'A', ja: 'えっと、{片付|かたづ}けといて、しまっといて、ゆう{意味|いみ}。', pt: 'Bem, significa deixar arrumado, guardar.' }] },
+  ],
+  '09-14': [
+    { label: '話すモデル - 方言がわからない② (09-14)', lines: [{ speaker: 'A', ja: 'そこの{台車|だいしゃ}、なおしといて。', pt: 'Guarde aquele carrinho ali.' }, { speaker: 'B', ja: 'え、なおしといて？', pt: 'Hã, “naoshitoite”?' }, { speaker: 'A', ja: 'えっと、{片付|かたづ}けといて、しまっといて、ゆう{意味|いみ}。', pt: 'Bem, significa deixar arrumado, guardar.' }] },
+  ],
+  '09-15': [
+    { label: '話すモデル - 方言がわからない③ (09-15)', lines: [{ speaker: 'A', ja: 'そこの{台車|だいしゃ}、なおしといて。', pt: 'Guarde aquele carrinho ali.' }, { speaker: 'B', ja: 'すみません、ちょっとわかりません……{方言|ほうげん}でしょうか……。', pt: 'Desculpe, não entendi muito bem... É dialeto?' }, { speaker: 'A', ja: 'えっと、{片付|かたづ}けといて、しまっといて、ゆう{意味|いみ}。', pt: 'Bem, significa deixar arrumado, guardar.' }] },
+  ],
+  '09-16': [
+    { label: '話すモデル - 方言がわからない④ (09-16)', lines: [{ speaker: 'A', ja: 'そこの{台車|だいしゃ}、なおしといて。', pt: 'Guarde aquele carrinho ali.' }, { speaker: 'B', ja: 'え、{壊|こわ}れてるんですか？', pt: 'Hã, está quebrado?' }, { speaker: 'A', ja: 'えっと、{片付|かたづ}けといて、しまっといて、ゆう{意味|いみ}。', pt: 'Bem, significa deixar arrumado, guardar.' }] },
+  ],
+  '09-17': [
+    {
+      label: 'ことばの準備 - 日本語の勉強を始めたきっかけ (09-17)',
+      lines: [
+        { speaker: '語彙', ja: '{日本|にほん}のアニメやマンガが{好|す}き。', pt: 'Gosta de anime ou mangá japonês.' },
+        { speaker: '語彙', ja: '{日本|にほん}の{伝統文化|でんとうぶんか}に{興味|きょうみ}がある。', pt: 'Tem interesse em cultura tradicional japonesa.' },
+        { speaker: '語彙', ja: '{日本語|にほんご}に{興味|きょうみ}がある。', pt: 'Tem interesse na língua japonesa.' },
+        { speaker: '語彙', ja: '{学校|がっこう}の{必修科目|ひっしゅうかもく}だった。', pt: 'Era disciplina obrigatória na escola.' },
+        { speaker: '語彙', ja: '{日本|にほん}に{留学|りゅうがく}したい。', pt: 'Quer estudar no Japão.' },
+        { speaker: '語彙', ja: '{日本|にほん}で{仕事|しごと}がしたい／{仕事|しごと}で{必要|ひつよう}。', pt: 'Quer trabalhar no Japão / é necessário para o trabalho.' },
+        { speaker: '語彙', ja: '{日本旅行|にほんりょこう}がしたい。', pt: 'Quer viajar ao Japão.' },
+        { speaker: '語彙', ja: '{日本|にほん}で{生活|せいかつ}することになった。', pt: 'Passou a viver no Japão.' },
+        { speaker: '語彙', ja: '{家族|かぞく}／{親戚|しんせき}に{日本語|にほんご}を{話|はな}す{人|ひと}がいる。', pt: 'Há alguém na família/parente que fala japonês.' },
+      ],
+    },
+  ],
+  '09-18': [
+    {
+      label: 'ことばの確認 - きっかけ (09-18)',
+      setupPt: 'Ouça e escolha a ilustração correspondente. A ordem segue o gabarito.',
+      lines: [
+        { speaker: '語彙', ja: '{日本語|にほんご}に{興味|きょうみ}がある。', pt: 'Tem interesse na língua japonesa.' },
+        { speaker: '語彙', ja: '{家族|かぞく}／{親戚|しんせき}に{日本語|にほんご}を{話|はな}す{人|ひと}がいる。', pt: 'Há familiar/parente que fala japonês.' },
+        { speaker: '語彙', ja: '{日本|にほん}で{仕事|しごと}がしたい／{仕事|しごと}で{必要|ひつよう}。', pt: 'Quer trabalhar no Japão / precisa no trabalho.' },
+        { speaker: '語彙', ja: '{日本|にほん}のアニメやマンガが{好|す}き。', pt: 'Gosta de anime ou mangá japonês.' },
+        { speaker: '語彙', ja: '{学校|がっこう}の{必修科目|ひっしゅうかもく}だった。', pt: 'Era disciplina obrigatória.' },
+        { speaker: '語彙', ja: '{日本|にほん}の{伝統文化|でんとうぶんか}に{興味|きょうみ}がある。', pt: 'Tem interesse em cultura tradicional japonesa.' },
+        { speaker: '語彙', ja: '{日本旅行|にほんりょこう}がしたい。', pt: 'Quer viajar ao Japão.' },
+        { speaker: '語彙', ja: '{日本|にほん}に{留学|りゅうがく}したい。', pt: 'Quer estudar no Japão.' },
+        { speaker: '語彙', ja: '{日本|にほん}で{生活|せいかつ}することになった。', pt: 'Passou a viver no Japão.' },
+      ],
+    },
+  ],
+  '09-19': [
+    {
+      label: '① クロードさん - アニメがきっかけ (09-19)',
+      setupPt: 'クロード fala sobre começar por anime, fazer dublagem em clube e estudar produção de anime no Japão.',
+      lines: [
+        { speaker: 'A', ja: 'クロードさんが{日本語|にほんご}の{勉強|べんきょう}を{始|はじ}めたきっかけって、{何|なん}だったの？', pt: 'Claude, o que fez você começar a estudar japonês?' },
+        { speaker: 'B', ja: '{日本|にほん}のアニメが{大好|だいす}きだったから。{最初|さいしょ}は{吹|ふ}き{替|か}えで{見|み}てたんだけど、{日本語|にほんご}でセリフがわかるようになりたくて、{勉強|べんきょう}しはじめたんだ。', pt: 'Porque eu adorava anime japonês. No começo eu assistia dublado, mas quis entender as falas em japonês e comecei a estudar.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'B', ja: '{最初|さいしょ}は、アニメを{見|み}ながら、セリフをまねして、いっしょに{言|い}ったりとか。すごく{楽|たの}しかったよ。', pt: 'No começo eu imitava as falas enquanto assistia anime e falava junto. Era muito divertido.' },
+        { speaker: 'A', ja: 'ふーん。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'それで、{高校生|こうこうせい}のとき、アニメ{部|ぶ}に{入|はい}ったんだ。アニメ{部|ぶ}で、{友|とも}だちといっしょに{日本|にほん}のアニメのアテレコをやったんだよ。そうしたら、すごく{盛|も}り{上|あ}がったんだ。', pt: 'Então, no ensino médio, entrei no clube de anime. No clube, fizemos dublagem de anime japonês com amigos. Aí ficou muito animado.' },
+        { speaker: 'A', ja: 'アテレコって、アニメに{合|あ}わせてセリフを{言|い}うんだよね？', pt: 'Atereko é falar as falas sincronizando com o anime, né?' },
+        { speaker: 'B', ja: 'そうそう。みんなすごく{喜|よろこ}んでくれて、うれしかったなあ。', pt: 'Isso. Todos ficaram muito felizes, e eu fiquei contente.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'B', ja: 'それから{留学|りゅうがく}で{日本|にほん}に{来|き}たんだ。{今|いま}、{専門学校|せんもんがっこう}でアニメ{制作|せいさく}の{勉強|べんきょう}をしてる。{学校|がっこう}で、{仲間|なかま}がたくさんできて、{毎日|まいにち}{楽|たの}しいよ。', pt: 'Depois vim ao Japão para estudar. Agora estudo produção de anime numa escola técnica. Fiz muitos colegas na escola, e todos os dias são divertidos.' },
+        { speaker: 'A', ja: 'いいね。', pt: 'Que bom.' },
+        { speaker: 'B', ja: '{将来|しょうらい}は、{勉強|べんきょう}したことを{活|い}かして、アニメとかゲームとかのキャラクターをデザインする{仕事|しごと}ができればと{思|おも}ってるんだ。', pt: 'No futuro, espero poder usar o que estudei para trabalhar desenhando personagens de anime e jogos.' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '09-20': [
+    {
+      label: '② ハスミンさん - 介護の仕事 (09-20)',
+      setupPt: 'ハスミン fala sobre estudar japonês para trabalhar com cuidado no Japão.',
+      lines: [
+        { speaker: 'A', ja: 'ハスミンさんは、フィリピンで{日本語|にほんご}を{勉強|べんきょう}したの？', pt: 'Hasmin, você estudou japonês nas Filipinas?' },
+        { speaker: 'B', ja: 'はい。{日本|にほん}で{介護|かいご}の{仕事|しごと}をしたいと{思|おも}ったんです。{親戚|しんせき}が{日本|にほん}で{介護士|かいごし}をしていたので……。', pt: 'Sim. Eu queria trabalhar com cuidado no Japão. Uma parente trabalhava como cuidadora no Japão...' },
+        { speaker: 'A', ja: 'そう。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'それで、{日本語|にほんご}クラスに{入|はい}って、{日本語|にほんご}とか、{日本|にほん}のルールとかを{勉強|べんきょう}しました。', pt: 'Então entrei em uma turma de japonês e estudei japonês e regras do Japão.' },
+        { speaker: 'A', ja: '{日本語|にほんご}、{難|むずか}しかった？', pt: 'Japonês foi difícil?' },
+        { speaker: 'B', ja: 'うーん、{発音|はつおん}はあまり{難|むずか}しくなかったですね。でも、{文字|もじ}が{難|むずか}しかったです。{寮|りょう}で、よく{友|とも}だちといっしょに{勉強|べんきょう}しました。', pt: 'Hmm, a pronúncia não foi muito difícil. Mas as letras foram difíceis. No dormitório, eu estudava bastante com amigos.' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'そのあと、{日本|にほん}に{来|き}て、{働|はたら}きはじめました。でも、ことばとか{文化|ぶんか}とか、わからないことがたくさんあって{苦労|くろう}しました。{仕事|しごと}で{失敗|しっぱい}して、よく{落|お}ち{込|こ}みました。', pt: 'Depois vim ao Japão e comecei a trabalhar. Mas havia muita coisa que eu não entendia, como língua e cultura, e tive dificuldades. Eu errava no trabalho e ficava desanimada.' },
+        { speaker: 'A', ja: 'そう。{大変|たいへん}だったね。', pt: 'Entendi. Deve ter sido difícil.' },
+        { speaker: 'B', ja: 'はい。でも、{先輩|せんぱい}がやさしくて、よく{仕事|しごと}の{悩|なや}みを{聞|き}いてもらいました。', pt: 'Sim. Mas os veteranos eram gentis e ouviam minhas preocupações do trabalho.' },
+        { speaker: 'A', ja: 'そっかー。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '{仕事|しごと}は{大変|たいへん}だけど、たくさん{勉強|べんきょう}して、{介護|かいご}の{仕事|しごと}を{続|つづ}けようと{思|おも}ってます。それで、フィリピンに{帰|かえ}ったら、{自分|じぶん}の{知識|ちしき}や{経験|けいけん}をほかの{介護士|かいごし}に{伝|つた}えたいと{思|おも}います。', pt: 'O trabalho é difícil, mas penso em estudar bastante e continuar o trabalho de cuidado. Depois, quando voltar às Filipinas, quero transmitir meus conhecimentos e experiências a outros cuidadores.' },
+        { speaker: 'A', ja: 'そうなんだ。がんばってね。', pt: 'Entendi. Força.' },
+      ],
+    },
+  ],
+  '09-21': [
+    {
+      label: '③ エレンさん - 日本で生活することになった (09-21)',
+      setupPt: 'エレン veio ao Japão pelo trabalho do marido e passou a estudar depois das dificuldades.',
+      lines: [
+        { speaker: 'A', ja: 'エレンさんは、いつから{日本語|にほんご}を{勉強|べんきょう}してるんですか？', pt: 'Ellen, desde quando você estuda japonês?' },
+        { speaker: 'B', ja: '{日本|にほん}に{来|き}てからなんですよ。{夫|おっと}の{日本|にほん}での{仕事|しごと}が{決|き}まって、{私|わたし}もいっしょに{日本|にほん}で{生活|せいかつ}することになって……。', pt: 'Desde que vim ao Japão. O trabalho do meu marido no Japão foi decidido, e eu também passei a viver no Japão com ele...' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'É mesmo?' },
+        { speaker: 'B', ja: 'ええ。でも、そのときは、{英語|えいご}ができればだいじょうぶって{言|い}われたので、{日本語|にほんご}の{勉強|べんきょう}はしなかったんです。', pt: 'Sim. Mas, na época, me disseram que bastava saber inglês, então não estudei japonês.' },
+        { speaker: 'A', ja: 'えー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: '{日本語|にほんご}を{勉強|べんきょう}しないで{日本|にほん}に{来|き}たから、はじめは、{困|こま}ることがたくさんありました。', pt: 'Como vim ao Japão sem estudar japonês, no começo tive muitas dificuldades.' },
+        { speaker: 'A', ja: 'え、そうだったんですか。', pt: 'Ah, foi assim?' },
+        { speaker: 'B', ja: '{日本語|にほんご}ができなかったから、スーパーで{買|か}いたいものがどこにあるか{聞|き}きたいときは、{店|みせ}の{人|ひと}にスマホで{写真|しゃしん}を{見|み}せたりしてました。', pt: 'Como eu não sabia japonês, quando queria perguntar no supermercado onde ficava algo que queria comprar, eu mostrava foto no celular para os funcionários.' },
+        { speaker: 'A', ja: 'それは、{大変|たいへん}でしたね。', pt: 'Isso deve ter sido difícil.' },
+        { speaker: 'B', ja: 'はい。それで、{日本語学校|にほんごがっこう}に{通|かよ}いはじめました。', pt: 'Sim. Então comecei a frequentar uma escola de japonês.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'B', ja: '{日本語|にほんご}ができるようになって、{生活|せいかつ}しやすくなりました。{買|か}い{物|もの}も、いろいろな{手続|てつづ}きも、{困|こま}らなくなったし。', pt: 'Depois que passei a conseguir usar japonês, a vida ficou mais fácil. Compras e vários trâmites também deixaram de ser problema.' },
+        { speaker: 'A', ja: 'よかったですね。', pt: 'Que bom.' },
+        { speaker: 'B', ja: 'はい。これからは、いろんな{人|ひと}と{知|し}り{合|あ}ったり、{新|あたら}しい{趣味|しゅみ}を{見|み}つけたりして、もっと{日本|にほん}の{生活|せいかつ}を{楽|たの}しみたいと{思|おも}ってます。', pt: 'Sim. Daqui em diante, quero conhecer várias pessoas, encontrar novos hobbies e aproveitar mais a vida no Japão.' },
+        { speaker: 'A', ja: 'それは、{楽|たの}しみですね。', pt: 'Isso será algo bom de esperar.' },
+      ],
+    },
+  ],
+  '09-22': [
+    {
+      label: '形に注目 - Vはじめる (09-22)',
+      lines: [
+        { speaker: 'クロード', ja: '{最初|さいしょ}は{吹|ふ}き{替|か}えで{見|み}てたんだけど、{日本語|にほんご}でセリフがわかるようになりたくて、{勉強|べんきょう}しはじめたんだ。', pt: 'No começo eu assistia dublado, mas quis entender as falas em japonês e comecei a estudar.' },
+      ],
+    },
+  ],
+  '09-23': [
+    {
+      label: '形に注目 - Vはじめる (09-23)',
+      lines: [
+        { speaker: 'ハスミン', ja: 'そのあと、{日本|にほん}に{来|き}て、{働|はたら}きはじめました。', pt: 'Depois vim ao Japão e comecei a trabalhar.' },
+        { speaker: 'エレン', ja: 'それで、{日本語学校|にほんごがっこう}に{通|かよ}いはじめました。', pt: 'Então comecei a frequentar uma escola de japonês.' },
+      ],
+    },
+  ],
+  '09-24': [
+    {
+      label: '形に注目 - 希望を言う (09-24)',
+      lines: [
+        { speaker: 'クロード', ja: '{将来|しょうらい}は、{勉強|べんきょう}したことを{活|い}かして、アニメとかゲームとかのキャラクターをデザインする{仕事|しごと}ができればと{思|おも}ってるんだ。', pt: 'No futuro, espero poder usar o que estudei para desenhar personagens de anime e jogos.' },
+        { speaker: 'ハスミン', ja: '{仕事|しごと}は{大変|たいへん}だけど、たくさん{勉強|べんきょう}して、{介護|かいご}の{仕事|しごと}を{続|つづ}けようと{思|おも}ってます。', pt: 'O trabalho é difícil, mas penso em estudar bastante e continuar o trabalho de cuidado.' },
+        { speaker: 'ハスミン', ja: 'フィリピンに{帰|かえ}ったら、{自分|じぶん}の{知識|ちしき}や{経験|けいけん}をほかの{介護士|かいごし}に{伝|つた}えたいと{思|おも}います。', pt: 'Quando voltar às Filipinas, quero transmitir meus conhecimentos e experiências a outros cuidadores.' },
+      ],
+    },
+  ],
+  '09-25': [
+    {
+      label: '話すモデル - 学習経験を話す① (09-25)',
+      setupPt: 'Modelo em 普通体 sobre anime como motivação.',
+      lines: [
+        { speaker: 'A', ja: 'どうして{日本語|にほんご}の{勉強|べんきょう}を{始|はじ}めたの？', pt: 'Por que você começou a estudar japonês?' },
+        { speaker: 'B', ja: '{日本|にほん}のアニメが{大好|だいす}きだったから。{最初|さいしょ}は{吹|ふ}き{替|か}えで{見|み}てたんだけど、{日本語|にほんご}でセリフがわかるようになりたかったんだ。セリフをまねして、いっしょに{言|い}ったりしてたよ。', pt: 'Porque eu adorava anime japonês. No começo via dublado, mas queria entender as falas em japonês. Imitava as falas e dizia junto.' },
+        { speaker: 'B', ja: 'それで、{高校生|こうこうせい}のとき、アニメ{部|ぶ}に{入|はい}ったんだ。{日本|にほん}のアニメのアテレコをやって、すごく{盛|も}り{上|あ}がったんだ。', pt: 'Então, no ensino médio, entrei no clube de anime. Fizemos dublagem de anime japonês e ficou muito animado.' },
+        { speaker: 'B', ja: 'それから{日本|にほん}に{留学|りゅうがく}したんだ。{今|いま}、{専門学校|せんもんがっこう}でアニメ{制作|せいさく}の{勉強|べんきょう}をしてる。', pt: 'Depois vim estudar no Japão. Agora estudo produção de anime em uma escola técnica.' },
+        { speaker: 'B', ja: '{将来|しょうらい}は、{勉強|べんきょう}したことを{活|い}かして、アニメとかゲームとかのキャラクターをデザインする{仕事|しごと}ができればと{思|おも}ってるんだ。', pt: 'No futuro, espero poder trabalhar desenhando personagens de anime e jogos, usando o que estudei.' },
+      ],
+    },
+  ],
+  '09-26': [
+    {
+      label: '話すモデル - 学習経験を話す② (09-26)',
+      setupPt: 'Modelo em 丁寧体 sobre vir ao Japão e começar escola de japonês.',
+      lines: [
+        { speaker: 'A', ja: '{日本語|にほんご}の{勉強|べんきょう}を{始|はじ}めたきっかけって、{何|なん}だったんですか？', pt: 'O que fez você começar a estudar japonês?' },
+        { speaker: 'B', ja: '{夫|おっと}の{仕事|しごと}が{決|き}まって、いっしょに{日本|にほん}で{生活|せいかつ}することになったんです。', pt: 'O trabalho do meu marido foi decidido, e passamos a viver juntos no Japão.' },
+        { speaker: 'B', ja: 'でも、{英語|えいご}ができればだいじょうぶって{言|い}われたので、そのときは、{日本語|にほんご}の{勉強|べんきょう}はしなかったんです。', pt: 'Mas me disseram que bastava saber inglês, então na época não estudei japonês.' },
+        { speaker: 'B', ja: '{日本語|にほんご}を{勉強|べんきょう}しないで{日本|にほん}に{来|き}て、{困|こま}りました。{日本語|にほんご}ができなかったから、スーパーで{買|か}いたいものがどこにあるか{聞|き}きたいときは、{店|みせ}の{人|ひと}にスマホで{写真|しゃしん}を{見|み}せてました。', pt: 'Vim ao Japão sem estudar japonês e tive dificuldades. Como não sabia japonês, quando queria perguntar onde ficava algo no supermercado, mostrava foto no celular ao funcionário.' },
+        { speaker: 'B', ja: 'それで、{日本語学校|にほんごがっこう}に{通|かよ}いはじめました。{日本語|にほんご}ができるようになって、{生活|せいかつ}しやすくなりました。', pt: 'Então comecei a frequentar escola de japonês. Quando passei a conseguir usar japonês, a vida ficou mais fácil.' },
+        { speaker: 'B', ja: 'これからは、いろんな{人|ひと}と{知|し}り{合|あ}ったり、{新|あたら}しい{趣味|しゅみ}を{見|み}つけたりして、もっと{日本|にほん}の{生活|せいかつ}を{楽|たの}しみたいと{思|おも}ってます。', pt: 'Daqui em diante, quero conhecer várias pessoas, encontrar novos hobbies e aproveitar mais a vida no Japão.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -2904,6 +3291,126 @@ const lesson8: Section = {
   audios: attachScripts(8, L8_SCRIPTS),
 }
 
+const lesson9: Section = {
+  id: 'lesson-9',
+  level: 'pre-intermediate',
+  titleJa: '第9課 日本語の勉強を始めたきっかけって、何だったの？',
+  titlePt: 'Lição 9 - O que fez você começar a estudar japonês?',
+  summaryPt:
+    'Eu e o japonês · falar de metas de aprendizagem, perguntar sobre dialetos, contar experiências de estudo e ler placas em dialeto.',
+  studyNotes: [
+    {
+      title: 'Tópico: Eu e o japonês (私と日本語)',
+      bodyPt:
+        'Pergunta de abertura: あなたは、どうして日本語の勉強を始めましたか？\n\n' +
+        '## Can-do\n' +
+        '- Falar a um amigo, de modo simples, sobre metas de aprendizagem de japonês e os motivos dessas metas.\n' +
+        '- Perguntar sobre palavras de dialeto que não entendeu ao conversar com moradores locais.\n' +
+        '- Falar com algum detalhe sobre sua experiência de aprendizagem de japonês, incluindo episódios concretos.\n' +
+        '- Ler placas ou avisos escritos em dialeto e entender o significado geral.',
+    },
+    {
+      title: 'Atividade 1: metas de aprendizagem',
+      bodyPt:
+        'Quatro pessoas falam sobre 日本語学習の目標. A lição também observa se a conversa usa 丁寧体 ou 普通体, porque a escolha muda conforme relação e situação.\n\n' +
+        '| Faixa | Pessoa e cena | Meta | Motivo |\n|---|---|---|---|\n' +
+        '| 09-01 | アディ, em 面談 na aula | 仕事で上手に日本語を使う | telefonemas no trabalho são difíceis; ele já encerrou uma ligação com uma fala informal demais |\n' +
+        '| 09-02 | ラメシュ, no trabalho | 日本のドラマを全部理解する | gosta de dramas e quer aproveitar recomendações enquanto está no Japão |\n' +
+        '| 09-03 | 高, na vizinhança | ほかの人ともっとコミュニケーションをとる | às vezes não entende falas ao redor, especialmente 方言 |\n' +
+        '| 09-04 | プラー, na universidade | 日本語能力試験に合格する | no exame anterior faltaram 2 pontos, então quer passar desta vez |\n\n' +
+        'Resumo dos estilos: 09-01 é 丁寧体 de ambos por ser primeiro encontro; 09-02 mistura ラメシュ em 普通体 e 鵜沢 em 丁寧体 por idade/posição; 09-03 mistura 高 em 丁寧体 e 西尾 em 普通体 por morador mais velho falando com vizinho; 09-04 é 普通体 entre amigos.',
+    },
+    {
+      title: 'Gramática ➊: V-る間に',
+      bodyPt:
+        '**V-る間に／V-ている間に／Nの間に** expressa algo que a pessoa quer fazer ou que acontece durante o período em que uma ação, estado ou situação continua.\n\n' +
+        '- `日本にいる間に、いろいろなドラマを見たい。` = enquanto estiver no Japão, quero assistir a vários dramas.\n' +
+        '- `通勤の間に、スマホで日本語のニュースを読んでいます。` = durante o trajeto para o trabalho, leio notícias em japonês no celular.\n\n' +
+        'O foco é o período limitado. A ação de dentro pode acontecer uma ou várias vezes antes de esse período acabar.',
+    },
+    {
+      title: 'Gramática ➋: 丁寧体・普通体',
+      bodyPt:
+        'A lição revisa a troca entre **丁寧体** e **普通体**. 丁寧体 é usado com desconhecidos, pessoas de posição superior ou em situações formais; 普通体 aparece entre amigos, familiares, pessoas próximas ou quando alguém mais velho fala de modo casual.\n\n' +
+        '| Tipo | 丁寧体 | 普通体 |\n|---|---|---|\n' +
+        '| verbo | 勉強しています／わかりました | 勉強している／わかった |\n' +
+        '| adjetivo イ | 難しいです | 難しい |\n' +
+        '| adjetivo ナ | 好きです | 好きだ／好き |\n' +
+        '| substantivo | 友だちです | 友だちだ／友だち |\n\n' +
+        'No uso real, não basta escolher pela gramática: a relação com a pessoa e o momento da conversa decidem o tom.',
+    },
+    {
+      title: 'Atividade 2: dialetos',
+      bodyPt:
+        'As conversas mostram como reagir quando uma palavra local não é entendida. A estratégia não é fingir que entendeu; é confirmar, repetir e pedir explicação.\n\n' +
+        '| Faixa | Região | Palavra/frase | Sentido no contexto | Estratégia usada |\n|---|---|---|---|---|\n' +
+        '| 09-09 | 秋田 | そんな服ばり着てさみぐねぇの？ | Você não está com frio usando só essa roupa? | apontar que parece 方言 |\n' +
+        '| 09-10 | 大阪 | その台車、なおしといて | guarde/arrume esse carrinho | repetir, confirmar e perguntar se é 方言 |\n' +
+        '| 09-11 | 福岡 | どっから来んしゃったと？ | De onde você veio? | repetir a parte que não entendeu |\n' +
+        '| 09-12 | 沖縄 | そろそろ、帰りましょうねー／でーじ | vou embora agora / muito | adivinhar, perguntar e confirmar |\n\n' +
+        'A atividade de fala treina frases como `方言でしょうか？`, `どういう意味ですか？` e `もう一度言ってください`.',
+    },
+    {
+      title: 'Atividade 3: experiências de aprendizagem',
+      bodyPt:
+        'Três pessoas contam por que começaram japonês, que experiências tiveram e o que querem fazer no futuro.\n\n' +
+        '| Faixa | Pessoa | きっかけ | Experiência | Futuro |\n|---|---|---|---|---|\n' +
+        '| 09-19 | クロード | queria aprender língua estrangeira e japonês parecia interessante | estudou sozinho com apps e vídeos; no Japão percebeu que precisava falar de verdade | quer conversar naturalmente no trabalho e na vida diária |\n' +
+        '| 09-20 | ハスミン | gostava de anime e mangá | entendia palavras, mas não conseguia explicar bem; melhorou ao usar japonês com colegas | quer entender obras sem tradução e falar sobre elas |\n' +
+        '| 09-21 | エレン | teve contato com japonês por trabalho/família e pela vida no Japão | teve dificuldades, erros e momentos de melhora | quer continuar estudando e usar japonês com mais confiança |\n\n' +
+        'O objetivo não é só dizer uma razão curta; a fala inclui episódios concretos para dar detalhe à experiência.',
+    },
+    {
+      title: 'Gramática ➌: Vはじめる',
+      bodyPt:
+        '**Vはじめる** indica que uma ação começa. Usa-se a forma マス sem ます + はじめる.\n\n' +
+        '- `日本語を勉強しはじめました。` = comecei a estudar japonês.\n' +
+        '- `日本で働きはじめてから、電話の日本語が難しいと思いました。` = depois que comecei a trabalhar no Japão, achei o japonês de telefone difícil.\n' +
+        '- `日本語学校に通いはじめました。` = comecei a frequentar escola de japonês.\n\n' +
+        'O padrão aponta o início de um hábito, atividade ou situação que continua depois.',
+    },
+    {
+      title: 'Gramática ➍: expressões de esperança',
+      bodyPt:
+        'A lição organiza várias formas de falar do que se quer fazer no futuro ou do que seria bom conseguir.\n\n' +
+        '| Forma | Uso | Exemplo |\n|---|---|---|\n' +
+        '| Vたい | desejo direto | `日本語でドラマを全部理解したいです。` |\n' +
+        '| Vようと思う | intenção | `これからも勉強を続けようと思います。` |\n' +
+        '| V-ばと思う | esperança suave | `もっと自然に話せればと思います。` |\n' +
+        '| V-ばうれしい／いいな | seria bom/ficaria feliz se | `字幕なしで見られればうれしいです。` |\n\n' +
+        'Em português, essas formas soam como “quero...”, “penso em...”, “espero conseguir...” ou “ficaria feliz se...”.',
+    },
+    {
+      title: 'Atividade 4: placas em dialeto',
+      bodyPt:
+        'A leitura final apresenta placas ou avisos locais escritos em 方言. A meta é captar o sentido geral mesmo sem conhecer todas as formas.\n\n' +
+        '| Placa | Local | Sentido |\n|---|---|---|\n' +
+        '| ① | 空き地 | やめなさい: pare/não faça isso |\n' +
+        '| ② | 道路 | あぶないよ: cuidado, é perigoso |\n' +
+        '| ③ | 手洗い場 | 手を洗っていきなさい: lave as mãos antes de ir |\n' +
+        '| ④ | 道路 | 飲んだら乗るな: se beber, não dirija |\n' +
+        '| ⑤ | 商店街のアーケード | ようこそ: bem-vindo |\n' +
+        '| ⑥ | 駅 | また来てね: volte novamente |\n' +
+        '| ⑦ | お祭りの屋台 | とてもおいしい: muito gostoso |\n\n' +
+        'A atividade reforça que dialetos aparecem em falas cotidianas, placas de região, lojas e eventos locais.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {方言|ほうげん}, {目標|もくひょう}, {知識|ちしき}, {最初|さいしょ}, {悩|なや}み, {介護|かいご}, {吹|ふ}き{替|か}え, {足|た}りる, {失敗|しっぱい}する, {理解|りかい}する.\n\n' +
+        '**Vocabulário-chave:** {勉強|べんきょう}を{始|はじ}める, きっかけ, {日本語能力試験|にほんごのうりょくしけん}, {通勤|つうきん}, {周|まわ}りの{人|ひと}, {全部|ぜんぶ}, {合格|ごうかく}する, {字幕|じまく}, {翻訳|ほんやく}, {地元|じもと}, {台車|だいしゃ}, {直|なお}す, {修理|しゅうり}する, {閉店|へいてん}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**日本語の試験:** a TIPS apresenta o JLPT como prova amplamente usada para medir proficiência em japonês, com níveis de N5 a N1. Também cita o JFT-Basic, usado para verificar se a pessoa consegue se comunicar em japonês básico em situações da vida diária, e outros exames conforme objetivo de estudo, trabalho ou residência.\n\n' +
+        '**日本の方言:** dialetos japoneses variam por região em pronúncia, vocabulário e forma gramatical. O material cita diferenças de regiões como 東北, 関西, 九州 e 沖縄. Quando não entender, é natural perguntar o significado ou confirmar se a palavra é 方言.',
+    },
+  ],
+  groups: [lesson9Group],
+  audios: attachScripts(9, L9_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -2917,6 +3424,8 @@ const sections: Section[] = [
   // Tópico 4 - Encontros (出会う)
   lesson7,
   lesson8,
+  // Tópico 5 - Eu e o japonês (私と日本語)
+  lesson9,
 ]
 
 export const irodoriPreIntermediate: Level = {
