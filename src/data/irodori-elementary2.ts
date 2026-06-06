@@ -3123,7 +3123,116 @@ const lesson14: Section = {
   audios: attachScripts(14, L14_SCRIPTS),
 }
 
-// ---- Lições 15-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 15: 会議室の電気がついたままでした (tópico 自然と環境) --------------
+const lesson15Group: ExerciseGroup = {
+  id: 'iro-e2-l15',
+  title: '会議室の電気がついたままでした',
+  subtitlePt: 'Entender cartazes de ações ecológicas · falar do que faz pelo meio ambiente · entender como separar/descartar o lixo · perguntar como jogar o lixo',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l15-1', number: 1, prompt: 'O título 「{会議室|かいぎしつ}の{電気|でんき}がついた[[まま]]でした」 — 「V-たまま」 indica:', choices: [{ n: 1, text: 'um estado que continua sem mudar, quando já deveria ter terminado (as luzes ficaram acesas)' }, { n: 2, text: 'algo que vai acontecer' }, { n: 3, text: 'uma ação repetida' }, { n: 4, text: 'uma ordem' }], answer: 1, translationPt: 'As luzes da sala de reunião ficaram acesas.', explanationPt: 'V(た形) + まま = estado que permanece sem mudança (devia ter sido desfeito). {電気|でんき}がついたまま, {窓|まど}が{開|あ}いたまま. (文法ノート ❶)' },
+    { id: 'iro-e2-l15-2', number: 2, prompt: '「エアコンをつけた[[まま]]、{寝|ね}てしまいました」「そのままでいいです」 — 「まま」 expressa:', choices: [{ n: 1, text: 'permanecer no mesmo estado (dormi com o ar-condicionado ligado / pode deixar como está)' }, { n: 2, text: 'mudar de estado' }, { n: 3, text: 'fazer algo de propósito' }, { n: 4, text: 'algo proibido' }], answer: 1, explanationPt: 'まま = sem alterar o estado. エアコンをつけたまま{寝|ね}る, そのまま{食|た}べる (comer sem cozinhar/temperar). V-たまま、〜 também liga a próxima ação nesse estado. (文法ノート ❶)' },
+    { id: 'iro-e2-l15-3', number: 3, prompt: 'Que ação ecológica esta cena (sala de reunião) lembra evitar?', image: `${IMG}/Z_15_2_08_kaigishitsu.png`, imageAlt: 'sala de reunião com luzes/ar-condicionado', choices: [{ n: 1, text: 'deixar {電気|でんき} (luz) ou エアコン ligados sem uso — lembre de {消|け}す (apagar) ao sair' }, { n: 2, text: 'abrir as janelas sempre' }, { n: 3, text: 'usar mais papel' }, { n: 4, text: 'aumentar o ar-condicionado' }], answer: 1, explanationPt: '{節電|せつでん}: {部屋|へや}の{電気|でんき}を{消|け}す, エアコンをつけたまま{帰|かえ}らない. (Seção 1 · エコの貼り紙)' },
+    { id: 'iro-e2-l15-4', number: 4, prompt: 'Cartazes de economia no trabalho: 「{節電中|せつでんちゅう}／クールビズ{実施中|じっしちゅう}／{両面|りょうめん}{印刷|いんさつ}しよう／レジ{袋|ぶくろ}{有料化|ゆうりょうか}」 significam:', choices: [{ n: 1, text: 'economizando energia / Cool Biz em vigor / vamos imprimir frente e verso / sacola plástica passa a ser paga' }, { n: 2, text: 'manutenção / festa em curso / proibido imprimir / sacola grátis' }, { n: 3, text: 'corte de luz / reforma / só impressão colorida / desconto' }, { n: 4, text: 'aquecimento ligado / reunião / não economize / sacola obrigatória' }], answer: 1, explanationPt: '{節電中|せつでんちゅう}, クールビズ, {両面|りょうめん}{印刷|いんさつ}, レジ{袋|ぶくろ}{有料化|ゆうりょうか} (→マイバッグ). 3{階|かい}までは{階段|かいだん}で. (Seção 1)' },
+    { id: 'iro-e2-l15-5', number: 5, prompt: '聴解 15-03 (環境のために): o que a pessoa faz com o ar-condicionado, e por quê?', context: 'エアコンの{温度|おんど}は、28{度|ど}に{設定|せってい}するようにしてます。{節電|せつでん}のためです。', choices: [{ n: 1, text: 'Procura deixar o ar-condicionado em 28°C, para economizar energia (節電).' }, { n: 2, text: 'Deixa o ar em 16°C para gelar.' }, { n: 3, text: 'Nunca usa ar-condicionado.' }, { n: 4, text: 'Liga o ar e sai.' }], answer: 1, explanationPt: 'エアコンを28{度|ど}に{設定|せってい}するようにする (procuro fazer ~); {節電|せつでん}のため. (聴解 15-03)' },
+    { id: 'iro-e2-l15-6', number: 6, prompt: '「28{度|ど}に{設定|せってい}する[[ようにしてます]]」「ペットボトルを{買|か}わない[[ようにしてます]]」 — 「V-ようにする」 indica:', choices: [{ n: 1, text: 'esforçar-se para fazer (ou não fazer) algo como hábito' }, { n: 2, text: 'conseguir fazer pela primeira vez' }, { n: 3, text: 'pedir um favor' }, { n: 4, text: 'algo que já terminou' }], answer: 1, explanationPt: 'V(辞書形/ない形) + ようにする = empenhar-se para (não) fazer algo habitualmente. {設定|せってい}するように, {買|か}わないように. (revisão · Elementary 1 L16)' },
+    { id: 'iro-e2-l15-7', number: 7, prompt: '「マイストローは、ごみを{減|へ}らす[[のにいい]]んです」 — 「V-るのにいい」 significa:', choices: [{ n: 1, text: 'é bom/útil PARA fazer algo (a canudo reutilizável é boa para reduzir o lixo)' }, { n: 2, text: 'é proibido fazer' }, { n: 3, text: 'é difícil de fazer' }, { n: 4, text: 'já foi feito' }], answer: 1, explanationPt: 'V(辞書形) + のに + いい/{使|つか}う/{役立|やくだ}つ = adequado/útil para ~. ごみを{減|へ}らすのにいい, {荷物|にもつ}を{包|つつ}むのに{使|つか}う. (文法ノート ❷)' },
+    { id: 'iro-e2-l15-8', number: 8, prompt: 'Que objeto reutilizável esta ilustração mostra (bom para reduzir lixo)?', image: `${IMG}/Z_15_2_10_maisutoroo.png`, imageAlt: 'canudo reutilizável (my straw)', choices: [{ n: 1, text: 'マイストロー — canudo reutilizável (próprio)' }, { n: 2, text: 'レジ{袋|ぶくろ} — sacola plástica' }, { n: 3, text: 'ペットボトル — garrafa PET' }, { n: 4, text: '{乾電池|かんでんち} — pilha' }], answer: 1, explanationPt: 'マイストロー/マイバッグ (próprio) = bom para reduzir lixo (ごみを{減|へ}らすのにいい). (Seção 2/3)' },
+    { id: 'iro-e2-l15-9', number: 9, prompt: 'O lixo no Japão é separado por tipo. Que categoria recebe um {果物|くだもの}の{皮|かわ} (casca de fruta)?', image: `${IMG}/Z_15_3_01_kudamononokawa.png`, imageAlt: 'casca de fruta (resto de comida)', choices: [{ n: 1, text: '{燃|も}えるごみ（{可燃|かねん}ごみ） — lixo queimável' }, { n: 2, text: '{資源|しげん}ごみ — reciclável' }, { n: 3, text: '{燃|も}えないごみ（{不燃|ふねん}ごみ） — não queimável' }, { n: 4, text: '{粗大|そだい}ごみ — lixo volumoso' }], answer: 1, explanationPt: '{果物|くだもの}の{皮|かわ} (resto de comida) = {燃|も}えるごみ ({可燃|かねん}). (Seção 2 · ごみの{分別|ぶんべつ})' },
+    { id: 'iro-e2-l15-10', number: 10, prompt: 'Em que categoria entra um {割|わ}れたコップ (copo quebrado), e que cuidado se tem?', image: `${IMG}/Z_15_3_02_waretakoppu.png`, imageAlt: 'copo de vidro quebrado', choices: [{ n: 1, text: '{燃|も}えないごみ（{不燃|ふねん}） — envolver no papel e escrever 「{危険|きけん}」 (perigo)' }, { n: 2, text: '{資源|しげん}ごみ — reciclável' }, { n: 3, text: '{燃|も}えるごみ — queimável' }, { n: 4, text: '{粗大|そだい}ごみ — volumoso' }], answer: 1, explanationPt: '{割|わ}れたコップ/ガラス = {燃|も}えないごみ; {紙|かみ}に{包|つつ}んで「{危険|きけん}」と{書|か}く. (Seção 2)' },
+    { id: 'iro-e2-l15-11', number: 11, prompt: 'Em que categoria entra um {牛乳|ぎゅうにゅう}パック (caixa de leite) lavado e seco?', image: `${IMG}/Z_15_3_03_gyuunyuupakku.png`, imageAlt: 'caixa de leite vazia', choices: [{ n: 1, text: '{資源|しげん}ごみ — reciclável (abrir, lavar, secar e amarrar)' }, { n: 2, text: '{燃|も}えるごみ — queimável' }, { n: 3, text: '{燃|も}えないごみ — não queimável' }, { n: 4, text: '{粗大|そだい}ごみ — volumoso' }], answer: 1, explanationPt: '{牛乳|ぎゅうにゅう}パック = {資源|しげん}ごみ: {開|ひら}いて、{洗|あら}って、{乾|かわ}かして、ひもでしばる. (Seção 2)' },
+    { id: 'iro-e2-l15-12', number: 12, prompt: 'Em que categoria entra uma ペットボトル (garrafa PET), e como prepará-la?', image: `${IMG}/Z_15_3_05_pettobotoru.png`, imageAlt: 'garrafa PET vazia', choices: [{ n: 1, text: '{資源|しげん}ごみ — tirar rótulo e tampa e amassar (つぶす)' }, { n: 2, text: '{燃|も}えるごみ — queimável' }, { n: 3, text: '{粗大|そだい}ごみ — volumoso' }, { n: 4, text: '{危険|きけん}ごみ — perigoso' }], answer: 1, explanationPt: 'ペットボトル = {資源|しげん}ごみ: ラベルとキャップをはずして、つぶす. (Seção 2)' },
+    { id: 'iro-e2-l15-13', number: 13, prompt: 'Como se descarta {料理|りょうり}に{使|つか}った{油|あぶら} (óleo de cozinha usado)?', image: `${IMG}/Z_15_3_06_abura.png`, imageAlt: 'óleo de cozinha usado numa panela', choices: [{ n: 1, text: '{燃|も}えるごみ — embeber num pano/papel ou solidificar (固める) e jogar, sem despejar na pia' }, { n: 2, text: 'jogar direto na pia' }, { n: 3, text: '{資源|しげん}ごみ — reciclável' }, { n: 4, text: '{粗大|そだい}ごみ — volumoso' }], answer: 1, explanationPt: '{油|あぶら} = {燃|も}えるごみ: {布|ぬの}や{紙|かみ}にしみこませる、または{固|かた}める. (Seção 2)' },
+    { id: 'iro-e2-l15-14', number: 14, prompt: 'Em que categoria entra uma {乾電池|かんでんち} (pilha usada)?', image: `${IMG}/Z_15_3_07_kandenchi.png`, imageAlt: 'pilhas usadas', choices: [{ n: 1, text: '{燃|も}えないごみ／{有害|ゆうがい}ごみ — não queimável / perigoso (coletado à parte)' }, { n: 2, text: '{燃|も}えるごみ — queimável' }, { n: 3, text: '{資源|しげん}ごみ — papel reciclável' }, { n: 4, text: '{粗大|そだい}ごみ — volumoso' }], answer: 1, explanationPt: '{乾電池|かんでんち} = {燃|も}えないごみ/{有害|ゆうがい}ごみ (recolhido separadamente). (Seção 2)' },
+    { id: 'iro-e2-l15-15', number: 15, prompt: 'Como se joga fora um {自転車|じてんしゃ} (bicicleta velha)?', image: `${IMG}/Z_15_3_08_jitensha.png`, imageAlt: 'bicicleta velha (lixo volumoso)', choices: [{ n: 1, text: '{粗大|そだい}ごみ — ligar para o centro de coleta e marcar o dia de jogar' }, { n: 2, text: '{燃|も}えるごみ — queimável' }, { n: 3, text: '{資源|しげん}ごみ — reciclável de papel' }, { n: 4, text: 'pode deixar em qualquer lugar' }], answer: 1, explanationPt: '{自転車|じてんしゃ} = {粗大|そだい}ごみ: {受付|うけつけ}センターに{電話|でんわ}して、{捨|す}てる{日|ひ}を{決|き}める. (Seção 2)' },
+    { id: 'iro-e2-l15-16', number: 16, prompt: 'As 4 grandes categorias de lixo da lição são:', image: `${IMG}/Z_15_2_05_bunbetsu.png`, imageAlt: 'separação do lixo em categorias', choices: [{ n: 1, text: '{燃|も}えるごみ（{可燃|かねん}） / {燃|も}えないごみ（{不燃|ふねん}） / {資源|しげん}ごみ / {粗大|そだい}ごみ' }, { n: 2, text: 'comida / roupa / papel / metal' }, { n: 3, text: 'grande / pequeno / caro / barato' }, { n: 4, text: 'casa / rua / escritório / loja' }], answer: 1, explanationPt: '{分別|ぶんべつ}: A {資源|しげん}ごみ, B {可燃|かねん}（{燃|も}えるごみ), C {不燃|ふねん}（{燃|も}えないごみ), D {粗大|そだい}ごみ. (Seção 2)' },
+    { id: 'iro-e2-l15-17', number: 17, prompt: 'Vocabulário de descarte: 「{分|わ}ける／つぶす／{水|みず}を{切|き}る／しばる／ラベル」 significam:', choices: [{ n: 1, text: 'separar / amassar / escorrer a água / amarrar / rótulo' }, { n: 2, text: 'juntar / lavar / encher / soltar / tampa' }, { n: 3, text: 'cortar / secar / molhar / dobrar / etiqueta de preço' }, { n: 4, text: 'queimar / enterrar / despejar / colar / saco' }], answer: 1, explanationPt: '{分|わ}ける (separar), つぶす (amassar), {水|みず}を{切|き}る (escorrer), しばる (amarrar), ラベル (rótulo). Também: {種類|しゅるい}, {中身|なかみ}, {危険|きけん}, しみこませる, {固|かた}める. (Seção 2)' },
+    { id: 'iro-e2-l15-18', number: 18, prompt: 'Vocabulário de meio ambiente: 「{節電|せつでん}／{節水|せっすい}／リサイクル／もったいない／マイバッグ」 significam:', choices: [{ n: 1, text: 'economia de energia / economia de água / reciclagem / que desperdício! / sacola reutilizável (própria)' }, { n: 2, text: 'gasto de luz / poluição / lixo / muito bom / mochila' }, { n: 3, text: 'apagão / enchente / coleta / caro / bolsa de mão' }, { n: 4, text: 'aquecedor / torneira / fábrica / barato / carrinho' }], answer: 1, explanationPt: '{節電|せつでん}, {節水|せっすい}, リサイクル, もったいない (que desperdício), マイバッグ. Também: {両面|りょうめん}{印刷|いんさつ}, {水|みず}を{止|と}める. (Seção 1/2)' },
+    { id: 'iro-e2-l15-19', number: 19, prompt: 'Os kanji 「{温度|おんど}／{危険|きけん}／〜{種類|しゅるい}／{消|け}す／{捨|す}てる」 lêem-se:', choices: [{ n: 1, text: 'おんど (temperatura) / きけん (perigo) / しゅるい (tipo/espécie) / けす (apagar) / すてる (jogar fora)' }, { n: 2, text: 'おんど / きけん / しゅるい / きす / すてる' }, { n: 3, text: 'うんど / きけん / たねるい / けす / すてる' }, { n: 4, text: 'おんど / あぶけん / しゅるい / けす / ほてる' }], answer: 1, explanationPt: '{温度|おんど}, {危険|きけん}, {種類|しゅるい}, {消|け}す, {捨|す}てる. (漢字のことば)' },
+    { id: 'iro-e2-l15-20', number: 20, prompt: 'Os kanji 「{出|だ}す／{分|わ}ける／{燃|も}える／{決|き}める／{設定|せってい}する」 lêem-se:', choices: [{ n: 1, text: 'だす (pôr para fora/jogar) / わける (separar) / もえる (queimar) / きめる (decidir) / せっていする (configurar/ajustar)' }, { n: 2, text: 'だす / ぶんける / もえる / けめる / せっていする' }, { n: 3, text: 'でる / わける / ねんえる / きめる / せってい' }, { n: 4, text: 'だす / わける / もえる / きめる / せつじょうする' }], answer: 1, explanationPt: '{出|だ}す ({ごみ|ごみ}を{出|だ}す), {分|わ}ける, {燃|も}える, {決|き}める ({捨|す}てる{日|ひ}を{決|き}める), {設定|せってい}する. (漢字のことば)' },
+    { id: 'iro-e2-l15-21', number: 21, prompt: 'Resumo: nesta lição, para falar de meio ambiente e lixo, aprende-se principalmente:', choices: [{ n: 1, text: 'V-たまま (電気がついたまま), V-ようにする (節電するように), V-るのにいい (減らすのにいい) + 分別 do lixo' }, { n: 2, text: '〜てもらえますか / Nのために' }, { n: 3, text: '〜てある / だけじゃなくて' }, { n: 4, text: 'もう〜ました / まだ〜ていません' }], answer: 1, explanationPt: 'Núcleo da L15: V-たまま (❶), V-るのにいい (❷), ようにする (revisão) e separar o lixo ({分別|ぶんべつ}).' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 15 (situação + falas-chave citadas; não verbatim)
+const L15_SCRIPTS: Record<string, ScriptItem[]> = {
+  '15-03': [
+    {
+      label: '① 環境のために — エアコンの温度 (15-03) · resumo',
+      setupJa: '{環境|かんきょう}のために{気|き}をつけていることを{話|はな}しています。',
+      setupPt: 'Resumo: a pessoa procura deixar o ar-condicionado em 28°C, para economizar energia.',
+      lines: [
+        { speaker: 'A', ja: 'エアコンの{温度|おんど}は、28{度|ど}に{設定|せってい}するようにしてます。{節電|せつでん}のためです。', pt: 'Procuro deixar o ar-condicionado em 28°C. É para economizar energia.' },
+      ],
+    },
+  ],
+  '15-06': [
+    {
+      label: '④ 環境のために — マイストロー (15-06) · resumo',
+      setupPt: 'Resumo: a pessoa anda com canudo próprio (my straw), porque é bom para reduzir o lixo.',
+      lines: [
+        { speaker: 'A', ja: 'マイストローを{持|も}ち{歩|ある}くようにしてます。ごみを{減|へ}らすのにいいんです。', pt: 'Procuro andar com meu próprio canudo. É bom para reduzir o lixo.' },
+      ],
+    },
+  ],
+  '15-08': [
+    {
+      label: '会話モデル — 環境のために気をつけていること (15-08) · resumo',
+      setupPt: 'Resumo: ao ser perguntada o que faz pelo meio ambiente, a pessoa cita seus hábitos (ar em 28°C por economia; canudo próprio para reduzir lixo) usando 〜ようにする / 〜のにいい.',
+      lines: [
+        { speaker: 'A', ja: '{環境|かんきょう}のために、{何|なに}か{気|き}をつけていますか？', pt: 'Você cuida de alguma coisa pelo meio ambiente?' },
+        { speaker: 'B', ja: 'エアコンの{温度|おんど}は28{度|ど}に{設定|せってい}するようにしてます。{節電|せつでん}のためです。', pt: 'Procuro deixar o ar-condicionado em 28°C. É para economizar energia.' },
+      ],
+    },
+  ],
+}
+
+const lesson15: Section = {
+  id: 'lesson-15',
+  level: 'elementary2',
+  titleJa: '第15課 会議室の電気がついたままでした',
+  titlePt: 'Lição 15 — As luzes da sala de reunião ficaram acesas',
+  summaryPt:
+    'Natureza e meio ambiente · entender cartazes de ações ecológicas no trabalho (節電中／両面印刷しよう／レジ袋有料化), falar do que se faz pelo meio ambiente (28度に設定するようにしてます／節電のため), entender como separar e descartar o lixo (燃えるごみ／資源ごみ／粗大ごみ) e perguntar como jogar cada tipo.',
+  studyNotes: [
+    {
+      title: 'Tópico: Natureza e meio ambiente (自然と環境)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ver um cartaz sobre atividades ecológicas afixado no trabalho etc. e entender os pontos de atenção.\n' +
+        '- Falar do que faz pelo meio ambiente, ou ouvir e entender o que os outros fazem.\n' +
+        '- Ler a explicação de como separar/descartar o lixo e entender quando jogar cada tipo.\n' +
+        '- Perguntar como descartar o lixo e entender a resposta.\n\n' +
+        '💡 エコ: {節電|せつでん}, {節水|せっすい}, リサイクル, {分別|ぶんべつ}, マイバッグ/マイストロー, {両面|りょうめん}{印刷|いんさつ}, クールビズ.',
+    },
+    {
+      title: 'V-たまま — estado que permanece (➊)',
+      bodyPt:
+        '**V(た形) + まま** descreve um estado que **continua sem mudar**, geralmente quando já deveria ter sido desfeito:\n\n' +
+        '- `{会議室|かいぎしつ}の{電気|でんき}がついたままでした` (as luzes ficaram acesas), `{窓|まど}が{開|あ}いたまま`, `{水|みず}を{出|だ}したまま`.\n' +
+        '- `エアコンをつけたまま{寝|ね}てしまった` (V-たまま、〜 = fazer a próxima ação nesse estado).\n' +
+        '- `そのままでいいです` (pode deixar como está). (文法ノート ❶)',
+    },
+    {
+      title: 'V-るのにいい / V-ようにする (➋ + revisão)',
+      bodyPt:
+        '- **V(辞書形) + のにいい/{使|つか}う/{役立|やくだ}つ** — adequado/útil PARA fazer algo: `マイストローは、ごみを{減|へ}らすのにいいんです`, `{風呂敷|ふろしき}は{荷物|にもつ}を{包|つつ}むのに{使|つか}う`. (❷)\n' +
+        '- **V-ようにする** (revisão) — empenhar-se em (não) fazer algo como hábito: `28{度|ど}に{設定|せってい}するようにする`, `ペットボトルを{買|か}わないようにする`.',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Ações eco:** {節電|せつでん}, {節水|せっすい}, {電気|でんき}を{消|け}す, {水|みず}を{止|と}める, {両面|りょうめん}{印刷|いんさつ}, マイバッグ/マイストロー, リサイクル, もったいない, {温度|おんど}を{設定|せってい}する, クールビズ.\n\n' +
+        '**Lixo/分別:** {燃|も}えるごみ（{可燃|かねん}), {燃|も}えないごみ（{不燃|ふねん}), {資源|しげん}ごみ, {粗大|そだい}ごみ, {分|わ}ける, {種類|しゅるい}, つぶす, {水|みず}を{切|き}る, しばる, ひも, {中身|なかみ}, ラベル, {危険|きけん}, しみこませる, {固|かた}める, {包|つつ}む.\n\n' +
+        '**Kanji da lição:** {温度|おんど}, {危険|きけん}, 〜{種類|しゅるい}, {消|け}す, {捨|す}てる, {出|だ}す, {分|わ}ける, {燃|も}える, {決|き}める, {設定|せってい}する.',
+    },
+  ],
+  groups: [lesson15Group],
+  audios: attachScripts(15, L15_SCRIPTS),
+}
+
+// ---- Lições 16-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -3147,12 +3256,7 @@ const sections: Section[] = [
   lesson13,
   lesson14,
   // Tópico 8 — Natureza e meio ambiente (自然と環境)
-  scaffold(15, 'Natureza e meio ambiente', '会議室の電気がついたままでした', 'As luzes da sala de reunião ficaram acesas', [
-    'Ver um cartaz sobre atividades ecológicas afixado no trabalho etc. e entender os pontos de atenção.',
-    'Falar do que faz pelo meio ambiente, ou ouvir e entender o que os outros fazem.',
-    'Ler a explicação de como separar/descartar o lixo e entender quando jogar cada tipo.',
-    'Perguntar como descartar o lixo e entender a resposta.',
-  ]),
+  lesson15,
   scaffold(16, 'Natureza e meio ambiente', '地震が来ても、あわてて動かないでください', 'Mesmo com terremoto, não se desespere', [
     'Ouvir notícias/anúncios de desastre e entender o que houve e o que fazer.',
     'Ouvir explicações e instruções de simulado de prevenção e entender o procedimento e os cuidados.',
