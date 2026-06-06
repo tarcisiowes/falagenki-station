@@ -727,6 +727,67 @@ const lesson13Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 14: 友人のことで悩んでいます (tópico 人とのつき合い) ----
+const lesson14Group: ExerciseGroup = {
+  id: 'iro-pi-l14',
+  title: '友人のことで悩んでいます',
+  subtitlePt: 'Problemas com amigos · pessoas próximas · conselhos · sites de consulta',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l14-1', number: 1, prompt: 'Qual é o tópico da Lição 14?', choices: [{ n: 1, text: '人とのつき合い (relações e convivência com pessoas)' }, { n: 2, text: '旅行の楽しみ' }, { n: 3, text: '自然と環境' }, { n: 4, text: '健康な生活' }], answer: 1, explanationPt: 'A Lição 14 continua o tópico 人とのつき合い, agora com problemas de convivência, pessoas próximas e conselhos.' },
+    { id: 'iro-pi-l14-2', number: 2, prompt: '「友人のことで悩んでいます」 significa:', choices: [{ n: 1, text: 'Estou preocupado/com problemas por causa de um amigo.' }, { n: 2, text: 'Estou planejando viajar com um amigo.' }, { n: 3, text: 'Parabéns pelo casamento do meu amigo.' }, { n: 4, text: 'Meu amigo está internado.' }], answer: 1, explanationPt: 'Nのことで indica o assunto da preocupação; aqui, o assunto é 友人.' },
+    { id: 'iro-pi-l14-3', number: 3, prompt: 'Pergunta de abertura: 人間関係の悩みはありますか？ そのとき、だれに相談しますか？', choices: [{ n: 1, text: 'Você tem preocupações em relações pessoais? Quando tem, com quem consulta?' }, { n: 2, text: 'Você já chamou ambulância?' }, { n: 3, text: 'Que comida japonesa você quer provar?' }, { n: 4, text: 'Onde você quer morar?' }], answer: 1, explanationPt: 'A lição parte de problemas de relacionamento e de como conversar ou pedir conselho sobre eles.' },
+    { id: 'iro-pi-l14-4', number: 4, prompt: 'Can-do 45: 「口もきいてくれないんですよ」 trabalha:', choices: [{ n: 1, text: 'ouvir pequenos problemas de amigos e entendê-los' }, { n: 2, text: 'ler um contrato de aluguel' }, { n: 3, text: 'fazer discurso formal' }, { n: 4, text: 'pedir comida no restaurante' }], answer: 1, explanationPt: 'O Can-do oficial é ouvir e entender pequenos problemas ou reclamações de amigos.' },
+    { id: 'iro-pi-l14-5', number: 5, prompt: '14-01: qual é o problema com 美咲?', image: `${IMG}/ZZ_14_1_01_kinsenkankaku.png`, imageAlt: 'diferença de senso financeiro', choices: [{ n: 1, text: 'o senso de dinheiro não combina; ela escolhe restaurantes caros' }, { n: 2, text: 'ela fala muito em reuniões' }, { n: 3, text: 'ela não conversa com os pais' }, { n: 4, text: 'ela leva legumes demais' }], answer: 1, explanationPt: 'B diz 金銭感覚が合わなくて e dá o exemplo de restaurantes sempre caros.' },
+    { id: 'iro-pi-l14-6', number: 6, prompt: '14-01: o que a pessoa pretende fazer?', choices: [{ n: 1, text: 'dizer claramente o que pensa' }, { n: 2, text: 'parar de ser amiga' }, { n: 3, text: 'não fazer nada' }, { n: 4, text: 'levar comida para a empresa' }], answer: 1, explanationPt: 'Depois do conselho 1回、はっきり伝えたほうがいいんじゃない？, ela responde 今度、言ってみようかな.' },
+    { id: 'iro-pi-l14-7', number: 7, prompt: '14-02: qual é a reclamação sobre 峯松さん?', image: `${IMG}/ZZ_14_1_02_hanashiganagai.png`, imageAlt: 'fala longa em reunião', choices: [{ n: 1, text: 'a fala dele é longa e a reunião se estende' }, { n: 2, text: 'ele sempre escolhe lojas caras' }, { n: 3, text: 'ele está em fase rebelde' }, { n: 4, text: 'ele não divide tarefas domésticas' }], answer: 1, explanationPt: 'A conversa diz 会議も延びる e que ele chegou a falar 15 minutos sozinho.' },
+    { id: 'iro-pi-l14-8', number: 8, prompt: '14-02: o que a pessoa decide sobre esse problema?', choices: [{ n: 1, text: 'não sabe o que seria melhor fazer' }, { n: 2, text: 'vai dizer tudo claramente na hora' }, { n: 3, text: 'vai parar de falar com ele' }, { n: 4, text: 'vai jogar fora os legumes' }], answer: 1, explanationPt: 'Ela diz que é difícil pedir 簡潔に話してください e termina com どうしたらいいんでしょうね.' },
+    { id: 'iro-pi-l14-9', number: 9, prompt: '14-03: qual é o problema de 小田さん?', image: `${IMG}/ZZ_14_1_03_hankooki.png`, imageAlt: 'filho em fase rebelde', choices: [{ n: 1, text: 'o filho está em 反抗期, não escuta os pais e não conversa' }, { n: 2, text: 'a colega fala muito em reunião' }, { n: 3, text: 'a amiga escolhe restaurantes caros' }, { n: 4, text: 'a dona da casa dá muitos legumes' }], answer: 1, explanationPt: 'Ela diz 中学2年生です。最近、反抗期で困ってるんです e 口もきいてくれない.' },
+    { id: 'iro-pi-l14-10', number: 10, prompt: '14-03: que conselho アーロン dá?', choices: [{ n: 1, text: 'deixar um pouco quieto e não se meter em detalhes pequenos' }, { n: 2, text: 'dizer tudo, inclusive detalhes pequenos, com firmeza' }, { n: 3, text: 'nunca dizer nada, mesmo quando for grave' }, { n: 4, text: 'terminar a amizade' }], answer: 1, explanationPt: 'アーロン diz 放っておきました e 細かいことはあまり口出ししないようにしました.' },
+    { id: 'iro-pi-l14-11', number: 11, prompt: '14-04: qual é o problema com a 大家さん?', image: `${IMG}/ZZ_14_1_04_yasaigaooi.png`, imageAlt: 'legumes demais', choices: [{ n: 1, text: 'ela traz legumes que cultiva, mas a quantidade é grande demais' }, { n: 2, text: 'ela não paga aluguel' }, { n: 3, text: 'ela demora para responder mensagens' }, { n: 4, text: 'ela fala por 15 minutos em reunião' }], answer: 1, explanationPt: 'B diz que a 大家さん traz legumes, mas 量が多い e uma pessoa só não consegue comer tudo.' },
+    { id: 'iro-pi-l14-12', number: 12, prompt: '14-04: o que B pretende fazer?', choices: [{ n: 1, text: 'levar os legumes para a empresa para colegas receberem' }, { n: 2, text: 'jogar tudo fora' }, { n: 3, text: 'dizer que não quer receber nada' }, { n: 4, text: 'mudar de casa imediatamente' }], answer: 1, explanationPt: 'B pergunta 会社に持って来たら、もらってくれますか？ e decide 次は会社に持って来ます.' },
+    { id: 'iro-pi-l14-13', number: 13, prompt: 'Can-do 46: 「私にとって、大切な親友なんです」 trabalha:', choices: [{ n: 1, text: 'falar com algum detalhe sobre personalidade, relação e como conheceu uma pessoa próxima' }, { n: 2, text: 'dar instrução de evacuação' }, { n: 3, text: 'pedir presente de aniversário' }, { n: 4, text: 'preencher formulário oficial' }], answer: 1, explanationPt: 'A atividade 2 fala de pessoas próximas: que tipo de presença são, que personalidade têm e episódios que mostram isso.' },
+    { id: 'iro-pi-l14-14', number: 14, prompt: '14-07: sobre quem a pessoa fala e que presença essa pessoa tem?', image: `${IMG}/ZZ_14_2_01_shinyuu.png`, imageAlt: 'amiga próxima', choices: [{ n: 1, text: 'uma amiga; 大切な親友で、何でも話せる' }, { n: 2, text: 'parceiro; いっしょにいて安心できる人' }, { n: 3, text: 'senior da empresa; 目標の人' }, { n: 4, text: 'colega; pessoa difícil' }], answer: 1, explanationPt: 'O gabarito marca 友だち e ウ: 大切な親友で、何でも話せる.' },
+    { id: 'iro-pi-l14-15', number: 15, prompt: '14-07: quais traços descrevem essa amiga?', choices: [{ n: 1, text: '社交的, 好奇心が強い, 飽きっぽい' }, { n: 2, text: 'やさしい, 趣味が合う, 頑固' }, { n: 3, text: '頼りになる, まじめ' }, { n: 4, text: '自分勝手, 人の話を聞かない' }], answer: 1, explanationPt: 'O gabarito marca e, j, p: 社交的, 好奇心が強い, 飽きっぽい.' },
+    { id: 'iro-pi-l14-16', number: 16, prompt: '14-07: qual episódio mostra que ela é 社交的?', choices: [{ n: 1, text: 'fala ativamente até com pessoas desconhecidas no trem' }, { n: 2, text: 'tem muitos amigos de outros países' }, { n: 3, text: 'nunca muda de opinião' }, { n: 4, text: 'traz presentes no aniversário' }], answer: 1, explanationPt: 'O gabarito marca ア: 知らない人にどんどん話しかける.' },
+    { id: 'iro-pi-l14-17', number: 17, prompt: '14-07: qual episódio mostra 飽きっぽい?', choices: [{ n: 1, text: 'começou flower arrangement, perdeu o interesse rápido e parou' }, { n: 2, text: 'fez tudo conforme o plano' }, { n: 3, text: 'cuidou quando alguém teve febre' }, { n: 4, text: 'ajudou numa reclamação de cliente' }], answer: 1, explanationPt: 'A fala diz que ela começou フラワーアレンジメント, mas logo perdeu o interesse e deixou.' },
+    { id: 'iro-pi-l14-18', number: 18, prompt: '14-08: sobre quem エレン fala?', image: `${IMG}/ZZ_14_2_02_anshin.png`, imageAlt: 'pessoa com quem se sente segura', choices: [{ n: 1, text: 'sobre o parceiro, uma pessoa com quem se sente segura' }, { n: 2, text: 'sobre uma amiga do ensino médio' }, { n: 3, text: 'sobre um senior da empresa' }, { n: 4, text: 'sobre a dona do apartamento' }], answer: 1, explanationPt: 'O gabarito marca パートナー e ア: いっしょにいて、安心できる人.' },
+    { id: 'iro-pi-l14-19', number: 19, prompt: '14-08: quais traços descrevem o parceiro?', choices: [{ n: 1, text: 'やさしい, 趣味が合う, 頑固' }, { n: 2, text: '社交的, 好奇心が強い, 飽きっぽい' }, { n: 3, text: '頼りになる, まじめ' }, { n: 4, text: 'せっかち, 人見知り' }], answer: 1, explanationPt: 'O gabarito marca a, l, r: やさしい, 趣味が合う, 頑固.' },
+    { id: 'iro-pi-l14-20', number: 20, prompt: '14-08: qual episódio mostra que o parceiro é やさしい?', choices: [{ n: 1, text: 'quando ela teve febre por resfriado, ele faltou ao trabalho para cuidar dela' }, { n: 2, text: 'sempre dá presente no aniversário' }, { n: 3, text: 'fala com desconhecidos no trem' }, { n: 4, text: 'estuda para ajudar no trabalho' }], answer: 1, explanationPt: 'O gabarito marca イ: かぜをひいたとき、仕事を休んで看病してくれた.' },
+    { id: 'iro-pi-l14-21', number: 21, prompt: '14-08: onde エレン conheceu o parceiro?', choices: [{ n: 1, text: 'em um マッチングアプリ recomendado por uma amiga' }, { n: 2, text: 'na reunião da empresa' }, { n: 3, text: 'no ensino médio' }, { n: 4, text: 'no site de consultas' }], answer: 1, explanationPt: 'Ela diz マッチングアプリです。友だちにすすめられて始めたんですよ.' },
+    { id: 'iro-pi-l14-22', number: 22, prompt: '14-09: quem é a pessoa descrita por ハンス?', image: `${IMG}/ZZ_14_2_03_mokuhyoo.png`, imageAlt: 'pessoa que é meta/exemplo', choices: [{ n: 1, text: 'um senior da empresa e líder da equipe; para ele, é 目標の人' }, { n: 2, text: 'parceiro romântico; é 安心できる人' }, { n: 3, text: 'amiga de viagem; é 親友' }, { n: 4, text: 'roommate; é トピ主' }], answer: 1, explanationPt: 'O gabarito marca 会社の先輩 e イ: 目標の人.' },
+    { id: 'iro-pi-l14-23', number: 23, prompt: '14-09: quais traços descrevem esse senior?', choices: [{ n: 1, text: '頼りになる e まじめ' }, { n: 2, text: 'やさしい e 頑固' }, { n: 3, text: '社交的 e 飽きっぽい' }, { n: 4, text: '子どもっぽい e 自分勝手' }], answer: 1, explanationPt: 'O gabarito marca k e g: 頼りになる e まじめ.' },
+    { id: 'iro-pi-l14-24', number: 24, prompt: '14-09: qual episódio mostra 頼りになる?', choices: [{ n: 1, text: 'quando havia divergência com colega japonês, ele criou tempo para os três conversarem' }, { n: 2, text: 'ajudou numa reclamação de cliente' }, { n: 3, text: 'nunca pede desculpas numa briga' }, { n: 4, text: 'fala com pessoas desconhecidas no trem' }], answer: 1, explanationPt: 'O gabarito marca ア: 同僚と意見が合わないとき、話す時間を作ってくれた.' },
+    { id: 'iro-pi-l14-25', number: 25, prompt: '「私にとって、大切な親友なんです」 usa Nにとって para:', choices: [{ n: 1, text: 'dizer como algo ou alguém é visto do ponto de vista de N' }, { n: 2, text: 'dizer uma ação futura decidida' }, { n: 3, text: 'pedir desculpas formalmente' }, { n: 4, text: 'listar exemplos de comportamento' }], answer: 1, explanationPt: 'Nにとって é seguido de uma frase que explica que presença a pessoa/coisa tem para N.' },
+    { id: 'iro-pi-l14-26', number: 26, prompt: '「ちょっと頑固なところがあるんです」 descreve:', choices: [{ n: 1, text: 'uma tendência ou lado da personalidade, sem definir a pessoa inteira' }, { n: 2, text: 'um pedido de conselho sobre presente' }, { n: 3, text: 'uma chamada de emergência' }, { n: 4, text: 'um endereço de moradia' }], answer: 1, explanationPt: 'ナA-な／イA-い + ところがある expressa que a pessoa tem esse lado ou tendência.' },
+    { id: 'iro-pi-l14-27', number: 27, prompt: 'Estratégia 14-12: para enfatizar uma característica, o material mostra expressões como:', choices: [{ n: 1, text: '非常に, たいへん, 本当に, とても, すごく, めちゃくちゃ, 超' }, { n: 2, text: 'だけ, しか, なら, でしょう' }, { n: 3, text: '救急車, 消防署, 警察' }, { n: 4, text: '部屋, 家賃, 築年数' }], answer: 1, explanationPt: 'A estratégia contrasta expressões formais e informais de ênfase e alongamentos como とーっても e すっごく.' },
+    { id: 'iro-pi-l14-28', number: 28, prompt: 'Can-do 47: 「遠距離恋愛になってから、うまくいってないんだ」 trabalha:', choices: [{ n: 1, text: 'consultar amigos sobre problemas e dar conselhos concretos' }, { n: 2, text: 'escrever convite de casamento' }, { n: 3, text: 'descrever personagem de mangá' }, { n: 4, text: 'fazer pedido no balcão da prefeitura' }], answer: 1, explanationPt: 'A atividade 3 alterna consulta de problema e respostas com conselho, razão e método concreto.' },
+    { id: 'iro-pi-l14-29', number: 29, prompt: '14-14: qual é o problema de テフン?', image: `${IMG}/ZZ_14_3_01_nayamisoodan1.png`, imageAlt: 'consulta sobre namoro a distância', choices: [{ n: 1, text: 'o namoro virou à distância e não está indo bem' }, { n: 2, text: 'o roommate não paga aluguel' }, { n: 3, text: 'a dona da casa dá muitos legumes' }, { n: 4, text: 'o filho está em fase rebelde' }], answer: 1, explanationPt: 'Ele diz 恋人と遠距離恋愛になってから、うまくいってないんだ.' },
+    { id: 'iro-pi-l14-30', number: 30, prompt: '14-14: o que mudou recentemente no contato com o parceiro?', choices: [{ n: 1, text: 'a frequência de contato diminuiu' }, { n: 2, text: 'eles passaram a morar juntos' }, { n: 3, text: 'ele recebeu muitas mensagens todos os dias' }, { n: 4, text: 'a família do parceiro veio ao Japão' }], answer: 1, explanationPt: 'O gabarito completa: 最近は、連絡をとることが少なくなった.' },
+    { id: 'iro-pi-l14-31', number: 31, prompt: '14-14: qual exemplo concreto aparece?', choices: [{ n: 1, text: 'mensagens demoram a virar lidas, não recebem resposta, e ligações recebem "estou ocupado, depois"' }, { n: 2, text: 'o parceiro sempre vem ao Japão todo fim de semana' }, { n: 3, text: 'o parceiro manda presentes caros todo mês' }, { n: 4, text: 'o parceiro publicou uma consulta em site' }], answer: 1, explanationPt: 'O gabarito marca 既読にならない, 返事をくれない e 忙しいからまたあとで.' },
+    { id: 'iro-pi-l14-32', number: 32, prompt: '14-14: o que deixa テフン triste?', choices: [{ n: 1, text: 'sente que só ele inicia contato' }, { n: 2, text: 'o amigo fala demais em reunião' }, { n: 3, text: 'o parceiro escolhe restaurantes caros' }, { n: 4, text: 'o roommate não separa lixo' }], answer: 1, explanationPt: 'Ele diz 自分からばかり連絡しているのが、ちょっと悲しい.' },
+    { id: 'iro-pi-l14-33', number: 33, prompt: '14-15: qual conselho アレックス dá?', image: `${IMG}/ZZ_14_3_02_nayamisoodan2.png`, imageAlt: 'amigo dando conselho', choices: [{ n: 1, text: 'entrar em contato mais ativamente' }, { n: 2, text: 'terminar o relacionamento' }, { n: 3, text: 'voltar para a Coreia' }, { n: 4, text: 'procurar outro roommate' }], answer: 1, explanationPt: 'O gabarito marca d: もっと積極的に連絡したほうがいい.' },
+    { id: 'iro-pi-l14-34', number: 34, prompt: '14-15: por que アレックス pensa assim?', choices: [{ n: 1, text: 'quando o tempo sem se ver continua, os sentimentos se afastam; manter conexão é importante' }, { n: 2, text: 'quem não responde nunca gostou de verdade' }, { n: 3, text: 'a pessoa deveria morar sozinha' }, { n: 4, text: 'o aluguel está caro' }], answer: 1, explanationPt: 'Ele diz 会えない時間が続くと気持ちが離れていく e つながりをキープすることが大切.' },
+    { id: 'iro-pi-l14-35', number: 35, prompt: '14-15: qual método concreto アレックス sugere?', choices: [{ n: 1, text: 'fazer videochamada, mesmo por 10 minutos antes de dormir' }, { n: 2, text: 'parar totalmente de mandar mensagens' }, { n: 3, text: 'escrever em site de相談' }, { n: 4, text: 'pedir legumes aos colegas' }], answer: 1, explanationPt: 'Ele sugere ビデオ通話; ver o rosto um do outro dá 安心.' },
+    { id: 'iro-pi-l14-36', number: 36, prompt: '14-16: qual conselho ゲンメイ dá?', choices: [{ n: 1, text: 'terminar o relacionamento' }, { n: 2, text: 'mandar mais mensagens' }, { n: 3, text: 'chamar o parceiro para morar no Japão' }, { n: 4, text: 'pedir desculpas primeiro' }], answer: 1, explanationPt: 'O gabarito marca a: 別れたほうがいい.' },
+    { id: 'iro-pi-l14-37', number: 37, prompt: '14-16: qual razão ゲンメイ usa?', choices: [{ n: 1, text: 'se a pessoa realmente se importa, mesmo ocupada acharia tempo para responder ou falar' }, { n: 2, text: 'videochamada nunca funciona' }, { n: 3, text: 'relacionamentos à distância são proibidos' }, { n: 4, text: 'é melhor focar no trabalho' }], answer: 1, explanationPt: 'Ele argumenta que, se a pessoa se importa, cria tempo para メッセージに返信したり、電話で話したり.' },
+    { id: 'iro-pi-l14-38', number: 38, prompt: '14-16: que método concreto ゲンメイ propõe?', choices: [{ n: 1, text: 'parar uma vez de entrar em contato; se não vier contato do outro lado, procurar outra pessoa' }, { n: 2, text: 'fazer videochamada todos os dias' }, { n: 3, text: 'mandar presente pelo correio' }, { n: 4, text: 'falar com a dona do imóvel' }], answer: 1, explanationPt: 'Ele diz いちど連絡をとるのをやめてみる e, se não vier nada, ほかの人を探したほうがいい.' },
+    { id: 'iro-pi-l14-39', number: 39, prompt: '「毎日メッセージをやりとりしていたのに、最近は...」 usa のに para:', choices: [{ n: 1, text: 'mostrar um resultado diferente do esperado a partir da frase anterior' }, { n: 2, text: 'dizer o ponto de vista de uma pessoa' }, { n: 3, text: 'descrever uma tendência de personalidade' }, { n: 4, text: 'dar uma lista de tarefas' }], answer: 1, explanationPt: 'S（普通形）のに liga uma expectativa anterior a um resultado contrário ou frustrante.' },
+    { id: 'iro-pi-l14-40', number: 40, prompt: 'Em 「テフンから連絡しているのに、返事がない」, qual é a relação entre as partes?', choices: [{ n: 1, text: 'mesmo havendo contato de テフン, não vem resposta, o que contraria a expectativa' }, { n: 2, text: 'porque há contato, sempre há resposta' }, { n: 3, text: 'não há relação entre as frases' }, { n: 4, text: 'é apenas uma comparação de personalidade' }], answer: 1, explanationPt: 'A nota explica que のに marca a diferença entre o esperado e o resultado real.' },
+    { id: 'iro-pi-l14-41', number: 41, prompt: 'Can-do 48: 「相談サイトの投稿」 trabalha:', choices: [{ n: 1, text: 'ler artigo/post sobre relações pessoais e entender aproximadamente o conteúdo' }, { n: 2, text: 'ouvir discurso formal em cerimônia' }, { n: 3, text: 'escrever mensagem de aniversário' }, { n: 4, text: 'descrever uma paisagem turística' }], answer: 1, explanationPt: 'A atividade 4 lê uma postagem e respostas em um site de相談.' },
+    { id: 'iro-pi-l14-42', number: 42, prompt: 'Na postagem de Aoyama, qual problema possível aparece no título segundo o gabarito?', image: `${IMG}/ZZ_14_4_01_soojishinai.png`, imageAlt: 'roommate não segue regras', choices: [{ n: 1, text: 'amigo não arruma o quarto, não paga aluguel, ou o som da TV é alto' }, { n: 2, text: 'colega vai casar e precisa de discurso' }, { n: 3, text: 'pessoa caiu de bicicleta no cruzamento' }, { n: 4, text: 'cliente quer comprar presente' }], answer: 1, explanationPt: 'O gabarito lista exemplos como 友人が部屋を片付けない, 家賃を払わない e テレビの音がうるさい.' },
+    { id: 'iro-pi-l14-43', number: 43, prompt: 'Na leitura, as partes ①-③ da postagem correspondem a:', choices: [{ n: 1, text: '① histórico de começar room share, ② comportamento do roommate, ③ o que quer consultar' }, { n: 2, text: '① conselho, ② despedida, ③ agradecimento' }, { n: 3, text: '① can-do, ② gramática, ③ kanji' }, { n: 4, text: '① notícia, ② comentário, ③ presente' }], answer: 1, explanationPt: 'O gabarito marca ① c, ② b, ③ a.' },
+    { id: 'iro-pi-l14-44', number: 44, prompt: 'Qual atitude do roommate incomoda Aoyama?', image: `${IMG}/ZZ_14_4_03_katazukenai.png`, imageAlt: 'roommate não arruma', choices: [{ n: 1, text: 'não segue regras e vive como se morasse sozinho' }, { n: 2, text: 'é muito社交的 e curioso' }, { n: 3, text: 'responde mensagens rápido demais' }, { n: 4, text: 'não quer usar matching app' }], answer: 1, explanationPt: 'O gabarito completa ルールを守らない e 一人暮らしのように生活する.' },
+    { id: 'iro-pi-l14-45', number: 45, prompt: 'O que Aoyama quer consultar?', choices: [{ n: 1, text: 'como conseguir conviver bem com A no room share' }, { n: 2, text: 'que presente comprar para o parceiro' }, { n: 3, text: 'como ligar para emergência' }, { n: 4, text: 'onde viajar em Kagoshima' }], answer: 1, explanationPt: 'O gabarito resume: どうしたら、Aとうまく共同生活できるか.' },
+    { id: 'iro-pi-l14-46', number: 46, prompt: 'Nos comentários do site, qual título entra em A e B?', choices: [{ n: 1, text: 'A: ほかのルームメイトを探したら？ / B: お金で解決' }, { n: 2, text: 'A: 一人暮らししましょう / B: 話し合ったほうがいいです' }, { n: 3, text: 'A: お金で解決 / B: ほかのルームメイトを探したら？' }, { n: 4, text: 'A: 韓国に帰ったほうがいい / B: 別れたほうがいい' }], answer: 1, explanationPt: 'O gabarito marca A = ロ e B = ニ.' },
+    { id: 'iro-pi-l14-47', number: 47, prompt: '「ルームシェアをしている友人のことで悩んでいます」 usa Nのことで para:', choices: [{ n: 1, text: 'indicar o assunto sobre o qual a pessoa está preocupada ou consultando' }, { n: 2, text: 'dizer uma tendência de personalidade' }, { n: 3, text: 'enfatizar um adjetivo' }, { n: 4, text: 'marcar contradição com のに' }], answer: 1, explanationPt: 'Nのことで aparece com 悩んでいる, 困っている, 怒っている, 心配している e 相談する.' },
+    { id: 'iro-pi-l14-48', number: 48, prompt: 'Kanji da lição: 仲良し／恋愛／既読／好奇心／積極的 leem-se:', choices: [{ n: 1, text: 'なかよし／れんあい／きどく／こうきしん／せっきょくてき' }, { n: 2, text: 'なかりょうし／こいあい／すでどく／すききしん／せきごくてき' }, { n: 3, text: 'ちゅうりょうし／れんあい／きよみ／こうきこころ／せっきょくまと' }, { n: 4, text: 'なかよし／れんあい／きどく／こうぎしん／せっきょくてき' }], answer: 1, explanationPt: 'São palavras de 漢字のことば da Lição 14.' },
+    { id: 'iro-pi-l14-49', number: 49, prompt: 'Kanji da lição: 悲しい／尊敬する／実は／例えば leem-se:', choices: [{ n: 1, text: 'かなしい／そんけいする／じつは／たとえば' }, { n: 2, text: 'ひしい／そんきょうする／みは／れいえば' }, { n: 3, text: 'かなしい／そんけいする／じつは／たといば' }, { n: 4, text: 'かなし／そんけい／じっは／ためえば' }], answer: 1, explanationPt: 'Esses kanji aparecem no bloco 漢字のことば da lição.' },
+    { id: 'iro-pi-l14-50', number: 50, prompt: 'TIPS: おすそわけ é:', image: `${IMG}/ZZ_14_tips_01_suso.png`, imageAlt: 'osusowake, compartilhar uma parte com outros', choices: [{ n: 1, text: 'dividir uma pequena parte do que se tem em excesso, por gentileza e sem esperar retorno' }, { n: 2, text: 'um app para procurar parceiro' }, { n: 3, text: 'um site de consulta online' }, { n: 4, text: 'um tipo de reunião longa' }], answer: 1, explanationPt: 'A TIPS explica お裾分け como compartilhar legumes, frutas, comida enviada pela família ou lembranças quando se tem muito.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -3589,6 +3650,287 @@ const L13_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L14_SCRIPTS: Record<string, ScriptItem[]> = {
+  '14-01': [
+    {
+      label: '① 友だちとの金銭感覚 (14-01)',
+      setupPt: 'A pessoa fala sobre uma amiga próxima cujo senso de dinheiro não combina com o dela.',
+      lines: [
+        { speaker: 'A', ja: '{由香|ゆか}ちゃんってさ、{美咲|みさき}ちゃんと{本当|ほんとう}に{仲良|なかよ}しだよね。', pt: 'Yuka, você é muito amiga da Misaki, né?' },
+        { speaker: 'B', ja: 'まあね。{気|き}も{合|あ}うし、いっしょにいて{楽|たの}しいからね。', pt: 'É. A gente se dá bem e é divertido estar com ela.' },
+        { speaker: 'A', ja: 'いいね。', pt: 'Que bom.' },
+        { speaker: 'B', ja: 'んー、でも、ちょっと{合|あ}わないところもあって。', pt: 'Hmm, mas também tem um ponto que não combina muito.' },
+        { speaker: 'A', ja: 'そうなの？', pt: 'É mesmo?' },
+        { speaker: 'B', ja: 'うん、{金銭感覚|きんせんかんかく}が{合|あ}わなくて……。', pt: 'Sim, nosso senso de dinheiro não combina...' },
+        { speaker: 'A', ja: '{金銭感覚|きんせんかんかく}？', pt: 'Senso de dinheiro?' },
+        { speaker: 'B', ja: '{例|たと}えば、ご{飯|はん}を{食|た}べるとき、{美咲|みさき}が{選|えら}ぶお{店|みせ}がいつも{高|たか}くて。この{間|あいだ}も「{今度|こんど}、ここにいっしょに{行|い}こうよ」って{言|い}われたお{店|みせ}が{高|たか}くてびっくり。', pt: 'Por exemplo, quando vamos comer, as lojas que a Misaki escolhe são sempre caras. Outro dia também, ela disse "vamos aqui juntas da próxima vez", e fiquei surpresa porque a loja era cara.' },
+        { speaker: 'A', ja: '1{回|かい}、はっきり{伝|つた}えたほうがいいんじゃない？', pt: 'Não seria melhor dizer claramente uma vez?' },
+        { speaker: 'B', ja: 'そうだね。{今度|こんど}、{言|い}ってみようかな。', pt: 'É. Da próxima vez, talvez eu tente dizer.' },
+      ],
+    },
+  ],
+  '14-02': [
+    {
+      label: '② 同僚の話が長い (14-02)',
+      lines: [
+        { speaker: 'A', ja: 'はあー。', pt: 'Ah...' },
+        { speaker: 'B', ja: 'どうしたんですか？', pt: 'O que houve?' },
+        { speaker: 'A', ja: 'んー、{今|いま}、{会議|かいぎ}だったんですけど、{峯松|みねまつ}さんの{話|はなし}が{長|なが}くて。', pt: 'Hmm, eu estava em reunião agora, mas a fala do Minematsu foi longa...' },
+        { speaker: 'B', ja: 'あー。', pt: 'Ah...' },
+        { speaker: 'A', ja: '{会議|かいぎ}も{延|の}びるし、{困|こま}っちゃいますよね。この{前|まえ}は、1{人|ひとり}で15{分|ふん}も{話|はな}し{続|つづ}けたんですよ。', pt: 'A reunião também se prolonga, e isso complica. Outro dia, ele falou sozinho por 15 minutos.' },
+        { speaker: 'B', ja: 'すごいですよね。', pt: 'É impressionante, né.' },
+        { speaker: 'A', ja: 'しかも、{長|なが}いだけじゃなくて、{今|いま}それ{関係|かんけい}ある？って{話|はなし}も{始|はじ}めちゃうんですよ。', pt: 'E não é só longo; ele começa assuntos tipo "isso tem relação agora?".' },
+        { speaker: 'B', ja: '{困|こま}りますよね。', pt: 'Complica, né.' },
+        { speaker: 'A', ja: '{簡潔|かんけつ}に{話|はな}してくださいとか、{言|い}いにくいですしね。', pt: 'E é difícil dizer "por favor, fale de forma concisa".' },
+        { speaker: 'B', ja: 'そうですね。', pt: 'É mesmo.' },
+        { speaker: 'A', ja: 'どうしたらいいんでしょうね。', pt: 'O que seria melhor fazer?' },
+      ],
+    },
+  ],
+  '14-03': [
+    {
+      label: '③ 子どもの反抗期 (14-03)',
+      lines: [
+        { speaker: 'A', ja: '{小田|おだ}さんのお{子|こ}さん、{何年生|なんねんせい}でしたっけ？', pt: 'Oda, seu filho estava em que ano mesmo?' },
+        { speaker: 'B', ja: '{中学|ちゅうがく}2{年生|ねんせい}です。{最近|さいきん}、{反抗期|はんこうき}で{困|こま}ってるんです。', pt: 'Segundo ano do ginásio. Ultimamente estou tendo problema porque ele está na fase rebelde.' },
+        { speaker: 'A', ja: '{反抗期|はんこうき}？', pt: 'Fase rebelde?' },
+        { speaker: 'B', ja: 'はい。{親|おや}の{言|い}うことをぜんぜん{聞|き}かないし、ちょっとしたことですぐ{怒|おこ}るんです。', pt: 'Sim. Ele não escuta nada do que os pais dizem, e fica irritado por qualquer coisinha.' },
+        { speaker: 'A', ja: 'あー。', pt: 'Ah...' },
+        { speaker: 'B', ja: '{話|はな}しかけても、{口|くち}もきいてくれないんですよ。', pt: 'Mesmo quando falo com ele, ele nem conversa comigo.' },
+        { speaker: 'A', ja: 'あー、うちの{子|こ}も、そういう{時期|じき}がありました。', pt: 'Ah, meu filho também teve uma fase assim.' },
+        { speaker: 'B', ja: 'アーロンさんのところは、どうやって{乗|の}り{切|き}りましたか？', pt: 'Aaron, como vocês superaram isso na sua casa?' },
+        { speaker: 'A', ja: 'そうですね。うちは、{放|ほう}っておきました。あと、{細|こま}かいことはあまり{口出|くちだ}ししないようにしました。{本当|ほんとう}にだめなことは、だめだと{言|い}いましたけど。', pt: 'Vejamos. Na nossa casa, deixamos um pouco quieto. Além disso, procuramos não nos meter muito em detalhes pequenos. Mas quando algo era realmente errado, dizíamos que era errado.' },
+        { speaker: 'B', ja: 'なるほど。あまり{細|こま}かいことは{言|い}わないほうがいいんですね。そうしてみます。', pt: 'Entendi. É melhor não falar demais sobre detalhes pequenos, né. Vou tentar fazer assim.' },
+      ],
+    },
+  ],
+  '14-04': [
+    {
+      label: '④ 大家さんの野菜 (14-04)',
+      lines: [
+        { speaker: 'A', ja: '{引|ひ}っ{越|こ}し{先|さき}、どうですか？ {慣|な}れましたか？', pt: 'Como está a casa nova? Já se acostumou?' },
+        { speaker: 'B', ja: 'はい。{大家|おおや}さんが{親切|しんせつ}で{助|たす}かってます。でも、ちょっと{困|こま}っていることもあって。', pt: 'Sim. A dona é gentil e isso ajuda. Mas também tem uma coisa que está me causando problema.' },
+        { speaker: 'A', ja: '{何|なん}ですか？', pt: 'O quê?' },
+        { speaker: 'B', ja: '{大家|おおや}さんが{自分|じぶん}で{作|つく}った{野菜|やさい}を{持|も}って{来|き}てくれるんですけど、ちょっと{量|りょう}が{多|おお}いんです。1{人|ひとり}じゃ{食|た}べ{切|き}れなくて。', pt: 'A dona traz legumes que ela mesma cultiva, mas a quantidade é meio grande. Sozinha, não consigo comer tudo.' },
+        { speaker: 'A', ja: 'ああ……。', pt: 'Ah...' },
+        { speaker: 'B', ja: '{腐|くさ}らせたら{悪|わる}いし、でも、たくさんはいらないって{言|い}うと{失礼|しつれい}ですよね。', pt: 'Seria ruim deixar estragar, mas também seria rude dizer que não preciso de tanto, né.' },
+        { speaker: 'A', ja: 'それは{言|い}いにくいですね。', pt: 'Isso é difícil de dizer.' },
+        { speaker: 'B', ja: 'あっ、{会社|かいしゃ}に{持|も}って{来|き}たら、もらってくれますか？', pt: 'Ah, se eu trouxer para a empresa, vocês aceitariam?' },
+        { speaker: 'A', ja: 'もちろんです。みんなも{喜|よろこ}ぶと{思|おも}いますよ。', pt: 'Claro. Acho que todos ficariam felizes.' },
+        { speaker: 'B', ja: 'じゃ、{次|つぎ}は{会社|かいしゃ}に{持|も}って{来|き}ますね。', pt: 'Então, da próxima vez vou trazer para a empresa.' },
+      ],
+    },
+  ],
+  '14-05': [
+    {
+      label: 'ことば1 - どんな人？ (14-05)',
+      lines: [
+        { speaker: '語彙', ja: 'やさしい／おもしろい／{楽|たの}しい／{明|あか}るい／{社交的|しゃこうてき}／{親切|しんせつ}／まじめ／{几帳面|きちょうめん}／{頭|あたま}がいい／{好奇心|こうきしん}が{強|つよ}い／{頼|たよ}りになる／{趣味|しゅみ}が{合|あ}う', pt: 'Gentil; interessante; divertido; alegre; sociável; atencioso; sério; meticuloso; inteligente; curioso; confiável; ter gostos em comum.' },
+      ],
+    },
+  ],
+  '14-06': [
+    {
+      label: 'ことば2 - どんな人？ (14-06)',
+      lines: [
+        { speaker: '語彙', ja: 'こわい／きびしい／{子|こ}どもっぽい／{飽|あ}きっぽい／{自分勝手|じぶんかって}／{頑固|がんこ}／{優柔不断|ゆうじゅうふだん}／めんどくさがり／せっかち／{人見知|ひとみし}り／{人|ひと}の{話|はなし}を{聞|き}かない／{気|き}が{合|あ}わない', pt: 'Assustador; severo; infantil; enjoa rápido; egoísta; teimoso; indeciso; preguiçoso para fazer coisas; impaciente; tímido com desconhecidos; não escuta os outros; não combina.' },
+      ],
+    },
+  ],
+  '14-07': [
+    {
+      label: '① 高校時代の友だち (14-07)',
+      lines: [
+        { speaker: 'A', ja: 'これ、よかったら、どうぞ。{長野|ながの}のお{土産|みやげ}です。', pt: 'Se quiser, pegue. É lembrança de Nagano.' },
+        { speaker: 'B', ja: 'あ、ありがとうございます。{長野|ながの}に{行|い}って{来|き}たんですか？', pt: 'Ah, obrigada. Você foi a Nagano?' },
+        { speaker: 'A', ja: 'はい。{高校時代|こうこうじだい}の{友|とも}だちが{日本|にほん}に{来|き}てるんです。それで、{週末|しゅうまつ}、いっしょに{旅行|りょこう}に{行|い}きました。', pt: 'Sim. Uma amiga da época do ensino médio está no Japão. Então, no fim de semana, viajamos juntas.' },
+        { speaker: 'B', ja: 'へー、{高校時代|こうこうじだい}の{友|とも}だちと。', pt: 'Nossa, com uma amiga do ensino médio.' },
+        { speaker: 'A', ja: 'ええ、{私|わたし}にとって、{大切|たいせつ}な{親友|しんゆう}なんです。{彼女|かのじょ}には、{何|なん}でも{話|はな}せるし。', pt: 'Sim, para mim ela é uma amiga muito importante. Posso falar qualquer coisa com ela.' },
+        { speaker: 'B', ja: 'いい{友|とも}だちなんですね。どんな{人|ひと}なんですか？', pt: 'Parece uma boa amiga. Que tipo de pessoa ela é?' },
+        { speaker: 'A', ja: 'そうですね、{本当|ほんとう}に{社交的|しゃこうてき}な{人|ひと}です。{電車|でんしゃ}の{中|なか}でも、{知|し}らない{人|ひと}にどんどん{話|はな}しかけるし。', pt: 'Vejamos, ela é uma pessoa realmente sociável. Mesmo no trem, ela fala ativamente com pessoas que não conhece.' },
+        { speaker: 'B', ja: 'すごいですねー。', pt: 'Nossa, que impressionante.' },
+        { speaker: 'A', ja: 'はい。あと、すごく{好奇心|こうきしん}が{強|つよ}いんです。{最近|さいきん}も、{仕事|しごと}が{休|やす}みの{日|ひ}は、いろいろな{習|なら}い{事|ごと}に{通|かよ}ってるって{言|い}ってました。', pt: 'Sim. Além disso, ela é muito curiosa. Recentemente ela disse que, nos dias de folga do trabalho, frequenta vários cursos.' },
+        { speaker: 'B', ja: 'へー、{習|なら}い{事|ごと}。', pt: 'Nossa, cursos.' },
+        { speaker: 'A', ja: 'はい。でも、ちょっと{飽|あ}きっぽいところがあるんですよ。{最近|さいきん}、フラワーアレンジメントを{習|なら}いはじめて、でも、すぐに{興味|きょうみ}がなくなって、やめちゃったそうです。', pt: 'Sim. Mas ela tem um lado que se cansa rápido das coisas. Recentemente começou flower arrangement, mas parece que logo perdeu o interesse e parou.' },
+        { speaker: 'B', ja: 'ははは。', pt: 'Ha ha ha.' },
+        { speaker: 'A', ja: '{今|いま}は{私|わたし}が{日本|にほん}に{住|す}んでいるので、なかなか{会|あ}えなくて、ちょっとさびしいですね。{今回|こんかい}、{久|ひさ}しぶりに{会|あ}って、すごく{楽|たの}しかったです。', pt: 'Agora eu moro no Japão, então não conseguimos nos ver muito e fico um pouco triste. Desta vez, encontrei ela depois de muito tempo e foi muito divertido.' },
+        { speaker: 'B', ja: 'そうですか。よかったですね。', pt: 'Entendi. Que bom.' },
+      ],
+    },
+  ],
+  '14-08': [
+    {
+      label: '② パートナー (14-08)',
+      lines: [
+        { speaker: 'A', ja: '{湯本|ゆもと}さん、ちょっとすみません。{再来週|さらいしゅう}の{日曜日|にちようび}、サークル、お{休|やす}みします。', pt: 'Yumoto, desculpe. No domingo depois da semana que vem, vou faltar ao círculo.' },
+        { speaker: 'B', ja: '{了解|りょうかい}。でも、エレンさんがお{休|やす}みって、めずらしいね。', pt: 'Entendido. Mas é raro você faltar, Ellen.' },
+        { speaker: 'A', ja: 'はい。その{日|ひ}は、パートナーの{誕生日|たんじょうび}なんです。', pt: 'Sim. Nesse dia é aniversário do meu parceiro.' },
+        { speaker: 'B', ja: 'へー、パートナー。どんな{人|ひと}？', pt: 'Ah, parceiro. Que tipo de pessoa?' },
+        { speaker: 'A', ja: 'そうですねえ……いっしょにいて、{安心|あんしん}できる{人|ひと}です。', pt: 'Vejamos... é uma pessoa com quem posso ficar tranquila.' },
+        { speaker: 'B', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'A', ja: 'はい。すっごくやさしい{人|ひと}なんです。この{間|あいだ}、{私|わたし}がかぜをひいて{熱|ねつ}を{出|だ}したときは、{仕事|しごと}を{休|やす}んで{看病|かんびょう}してくれました。', pt: 'Sim. Ele é uma pessoa muito gentil. Outro dia, quando fiquei resfriada e tive febre, ele faltou ao trabalho para cuidar de mim.' },
+        { speaker: 'B', ja: 'やさしいねー。', pt: 'Que gentil.' },
+        { speaker: 'A', ja: 'それに、{趣味|しゅみ}も{合|あ}うから、いっしょにいて、とっても{楽|たの}しいです。2{人|ふたり}とも、かわいいカフェが{好|す}きなんです。あと、{小説|しょうせつ}も{好|す}きなので、{好|す}きな{小説|しょうせつ}の{話|はなし}をするのが{楽|たの}しいです。', pt: 'Além disso, nossos gostos combinam, então é muito divertido estar junto. Nós dois gostamos de cafés bonitos. Também gostamos de romances, então é divertido falar sobre os romances de que gostamos.' },
+        { speaker: 'B', ja: 'へー、そうなんだ。{気|き}が{合|あ}うんだ。', pt: 'Nossa, entendi. Vocês combinam.' },
+        { speaker: 'A', ja: 'はい。ただ、ちょっと{頑固|がんこ}なところがあるんです。けんかしたときは、{絶対謝|ぜったいあやま}らないんです。', pt: 'Sim. Mas ele tem um lado um pouco teimoso. Quando brigamos, ele nunca pede desculpas.' },
+        { speaker: 'B', ja: 'そうなんだ。どこで{知|し}り{合|あ}ったの？', pt: 'Entendi. Onde vocês se conheceram?' },
+        { speaker: 'A', ja: 'マッチングアプリです。{友|とも}だちにすすめられて{始|はじ}めたんですよ。はじめて{会|あ}うときは、すごくドキドキしましたけど、すてきな{人|ひと}に{出会|であ}えてよかったです。', pt: 'Em um app de matching. Uma amiga recomendou e eu comecei a usar. Na primeira vez que nos encontramos, fiquei muito nervosa, mas fico feliz por ter conhecido uma pessoa tão legal.' },
+        { speaker: 'B', ja: 'よかったね。', pt: 'Que bom.' },
+      ],
+    },
+  ],
+  '14-09': [
+    {
+      label: '③ 会社の先輩 (14-09)',
+      lines: [
+        { speaker: 'A', ja: 'マリーナさん、{最近元気|さいきんげんき}ないけど、どうしたの？', pt: 'Marina, ultimamente você está meio sem ânimo. O que houve?' },
+        { speaker: 'B', ja: 'んー、{最近|さいきん}、ちょっと{仕事|しごと}がうまくいかなくて……。', pt: 'Hmm, ultimamente o trabalho não está indo muito bem...' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'ハンスさんは、{仕事|しごと}がうまくいかないとき、どうしてる？', pt: 'Hans, o que você faz quando o trabalho não vai bem?' },
+        { speaker: 'A', ja: 'うーん、{先輩|せんぱい}に{相談|そうだん}するかな。', pt: 'Hmm, acho que consulto um senior.' },
+        { speaker: 'B', ja: 'へー。{先輩|せんぱい}って、どんな{人|ひと}？ {日本人|にほんじん}の{先輩|せんぱい}？', pt: 'Ah. Que tipo de pessoa é esse senior? É japonês?' },
+        { speaker: 'A', ja: 'いや、フィリピン{出身|しゅっしん}。チームのリーダーで、ぼくにとって{目標|もくひょう}の{人|ひと}。', pt: 'Não, é das Filipinas. É líder da equipe e, para mim, é uma pessoa que serve de meta.' },
+        { speaker: 'B', ja: '{同|おな}じ{国|くに}の{人|ひと}なんだ。', pt: 'É do mesmo país que você.' },
+        { speaker: 'A', ja: 'うん。とても{頼|たよ}りになる{人|ひと}だよ。この{間|あいだ}も、{日本人|にほんじん}の{同僚|どうりょう}と{意見|いけん}が{合|あ}わなくて{困|こま}っていたら、3{人|にん}で{話|はな}す{時間|じかん}を{作|つく}ってくれたんだ。', pt: 'Sim. Ele é muito confiável. Outro dia, quando eu estava tendo problema por não concordar com um colega japonês, ele criou tempo para nós três conversarmos.' },
+        { speaker: 'B', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'A', ja: 'それに、すごいまじめ。{小|ちい}さな{仕事|しごと}も、{丁寧|ていねい}にやるから、{尊敬|そんけい}してる。', pt: 'Além disso, é muito sério. Ele faz até trabalhos pequenos com cuidado, então eu o respeito.' },
+        { speaker: 'B', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'A', ja: '{実|じつ}は、はじめて{会|あ}ったときは、ちょっと{話|はな}しかけにくい{人|ひと}だなって{思|おも}ったんだ。でも、{今|いま}は{印象|いんしょう}が{変|か}わったなあ。', pt: 'Na verdade, quando o conheci pela primeira vez, achei que seria um pouco difícil falar com ele. Mas agora minha impressão mudou.' },
+        { speaker: 'B', ja: 'そっか。{私|わたし}も{仕事|しごと}のこと、ちょっと{先輩|せんぱい}に{相談|そうだん}してみようかな。', pt: 'Entendi. Talvez eu também tente consultar um senior sobre o trabalho.' },
+      ],
+    },
+  ],
+  '14-10': [
+    {
+      label: '形に注目1 - Nにとって (14-10)',
+      lines: [
+        { speaker: 'A', ja: '{私|わたし}にとって、{大切|たいせつ}な{親友|しんゆう}なんです。', pt: 'Para mim, ela é uma amiga muito importante.' },
+        { speaker: 'A', ja: 'チームのリーダーで、ぼくにとって{目標|もくひょう}の{人|ひと}。', pt: 'É líder da equipe e, para mim, uma pessoa que serve de meta.' },
+      ],
+    },
+  ],
+  '14-11': [
+    {
+      label: '形に注目2 - ところがある (14-11)',
+      lines: [
+        { speaker: 'A', ja: 'ちょっと{飽|あ}きっぽいところがあるんですよ。', pt: 'Ela tem um lado que se cansa um pouco rápido das coisas.' },
+        { speaker: 'A', ja: 'ちょっと{頑固|がんこ}なところがあるんです。', pt: 'Ele tem um lado um pouco teimoso.' },
+      ],
+    },
+  ],
+  '14-12': [
+    {
+      label: 'ストラテジー - 強調して言う (14-12)',
+      lines: [
+        { speaker: '例', ja: 'すごく{好奇心|こうきしん}が{強|つよ}いんです。', pt: 'Ela é muito curiosa.' },
+        { speaker: '例', ja: 'とても{頼|たよ}りになる{人|ひと}だよ。', pt: 'É uma pessoa muito confiável.' },
+        { speaker: '例', ja: '{本当|ほんとう}に{社交的|しゃこうてき}な{人|ひと}です。', pt: 'É uma pessoa realmente sociável.' },
+        { speaker: '例', ja: 'すっごくやさしい{人|ひと}なんです。', pt: 'É uma pessoa muito, muito gentil.' },
+        { speaker: '例', ja: '{趣味|しゅみ}も{合|あ}うから、いっしょにいて、とっても{楽|たの}しいです。', pt: 'Como nossos gostos combinam, é muito divertido estar junto.' },
+        { speaker: '例', ja: 'すごいまじめ。', pt: 'É muito sério.' },
+      ],
+    },
+  ],
+  '14-13': [
+    {
+      label: '話すモデル - 身近な人について話す (14-13)',
+      lines: [
+        { speaker: 'A', ja: '{週末|しゅうまつ}、{高校時代|こうこうじだい}の{友|とも}だちと{旅行|りょこう}に{行|い}ってきました。', pt: 'No fim de semana, fui viajar com uma amiga da época do ensino médio.' },
+        { speaker: 'B', ja: '{高校時代|こうこうじだい}の{友|とも}だちですか。', pt: 'Amiga do ensino médio?' },
+        { speaker: 'A', ja: '{私|わたし}にとって、{大切|たいせつ}な{親友|しんゆう}なんです。{彼女|かのじょ}には、{何|なん}でも{話|はな}せます。', pt: 'Para mim, ela é uma amiga muito importante. Posso falar qualquer coisa com ela.' },
+        { speaker: 'B', ja: 'へー。どんな{人|ひと}なんですか？', pt: 'Nossa. Que tipo de pessoa ela é?' },
+        { speaker: 'A', ja: '{本当|ほんとう}に{社交的|しゃこうてき}な{人|ひと}です。{電車|でんしゃ}の{中|なか}でも、{知|し}らない{人|ひと}にどんどん{話|はな}しかけます。', pt: 'Ela é realmente sociável. Mesmo no trem, fala ativamente com pessoas desconhecidas.' },
+        { speaker: 'A', ja: 'あと、すごく{好奇心|こうきしん}が{強|つよ}いんです。{仕事|しごと}が{休|やす}みの{日|ひ}は、いろいろな{習|なら}い{事|ごと}に{通|かよ}ってるって{言|い}ってました。', pt: 'Além disso, é muito curiosa. Disse que, nos dias de folga, frequenta vários cursos.' },
+        { speaker: 'A', ja: 'でも、ちょっと{飽|あ}きっぽいところがあるんですよ。フラワーアレンジメントを{習|なら}いはじめて、でも、すぐに{興味|きょうみ}がなくなって、やめちゃったそうです。', pt: 'Mas tem um lado que enjoa rápido. Começou flower arrangement, mas parece que logo perdeu o interesse e parou.' },
+        { speaker: 'B', ja: 'そうなんですか。', pt: 'É mesmo?' },
+        { speaker: 'A', ja: '{最近|さいきん}は、なかなか{会|あ}えなくて、ちょっとさびしいです。', pt: 'Ultimamente não conseguimos nos ver muito, então fico um pouco triste.' },
+        { speaker: 'B', ja: 'そうですか。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '14-14': [
+    {
+      label: '会話1 - 遠距離恋愛の悩み (14-14)',
+      lines: [
+        { speaker: 'アレックス', ja: 'テフンのところ、{最近|さいきん}、どう？ {韓国|かんこく}の{相方|あいかた}さんは{元気|げんき}？', pt: 'Taehun, como estão as coisas? Seu parceiro na Coreia está bem?' },
+        { speaker: 'テフン', ja: 'うーん、{実|じつ}はさ、そのことで、ちょっと{悩|なや}んでて……。', pt: 'Hmm, na verdade, estou meio preocupado com isso...' },
+        { speaker: 'ゲンメイ', ja: 'え、どうしたの？', pt: 'Hã, o que houve?' },
+        { speaker: 'テフン', ja: 'うん。おれ、{韓国|かんこく}から{日本|にほん}に{来|き}てもう1{年|ねん}だけど、{恋人|こいびと}と{遠距離恋愛|えんきょりれんあい}になってから、うまくいってないんだ。{最近|さいきん}は、{連絡|れんらく}をとることが{少|すく}なくなって……。', pt: 'Sim. Já faz um ano que vim da Coreia para o Japão, mas desde que meu namoro virou à distância, não está indo bem. Ultimamente temos nos falado menos...' },
+        { speaker: 'アレックス', ja: 'そうなんだ……。', pt: 'Entendi...' },
+        { speaker: 'テフン', ja: '{最初|さいしょ}のころは、{毎日|まいにち}メッセージをやりとりしていたのに、{最近|さいきん}はメッセージ{送|おく}っても、なかなか{既読|きどく}にならなかったり、{返事|へんじ}をくれなかったり。{電話|でんわ}しても、「{忙|いそが}しいからまたあとで」って{言|い}われることが{増|ふ}えたんだ。おれが{日本|にほん}に{来|き}て{半年|はんとし}ぐらいのときに、いちど{韓国|かんこく}から{日本|にほん}に{会|あ}いに{来|き}てくれたんだけど、{会|あ}ったのはそれが{最後|さいご}だし。', pt: 'No começo, trocávamos mensagens todos os dias, mas ultimamente, mesmo quando mando mensagem, demora para aparecer como lida, ou não recebo resposta. Quando ligo, aumentaram as vezes em que dizem "estou ocupado, depois". Quando fazia uns seis meses que eu tinha vindo ao Japão, ele veio da Coreia me ver uma vez, mas essa foi a última vez que nos vimos.' },
+        { speaker: 'アレックス', ja: 'そっか、{不安|ふあん}だよね。', pt: 'Entendi. Isso dá ansiedade, né.' },
+        { speaker: 'テフン', ja: 'なんか、{最近|さいきん}は、{自分|じぶん}からばかり{連絡|れんらく}してるのが、ちょっと{悲|かな}しいんだよね。', pt: 'Sabe, ultimamente fico meio triste porque parece que só eu entro em contato.' },
+        { speaker: 'ゲンメイ', ja: 'ああ……。', pt: 'Ah...' },
+        { speaker: 'テフン', ja: 'このままじゃ、よくないと{思|おも}うんだけど、どうすればいいのかな……。', pt: 'Acho que continuar assim não é bom, mas o que eu faço?' },
+      ],
+    },
+  ],
+  '14-15': [
+    {
+      label: '会話2 ① アレックスのアドバイス (14-15)',
+      lines: [
+        { speaker: 'アレックス', ja: 'うーん、それなら、もっと{積極的|せっきょくてき}に{連絡|れんらく}したほうがいいんじゃない？ {連絡|れんらく}が{減|へ}ると、どんどん{距離|きょり}が{広|ひろ}がっちゃうと{思|おも}うよ。', pt: 'Hmm, nesse caso, não seria melhor entrar em contato de forma mais ativa? Acho que, se o contato diminui, a distância entre vocês vai aumentando.' },
+        { speaker: 'テフン', ja: 'そうかな……。', pt: 'Será...?' },
+        { speaker: 'アレックス', ja: 'うん。{会|あ}えない{時間|じかん}が{続|つづ}くと、どうしても{気持|きも}ちが{離|はな}れていくから、つながりをキープすることが{大切|たいせつ}だと{思|おも}うな。', pt: 'Sim. Quando o tempo sem se ver continua, os sentimentos acabam se afastando, então acho importante manter a conexão.' },
+        { speaker: 'テフン', ja: 'そうだよね。', pt: 'É verdade.' },
+        { speaker: 'アレックス', ja: 'ビデオ{通話|つうわ}するのはどう？ {例|たと}えば、{食事|しょくじ}しながらでもいいし、{寝|ね}る{前|まえ}の10{分|ぷん}だけでもいいし。オンラインでも、お{互|たが}いの{顔|かお}が{見|み}えると{安心|あんしん}するしね。', pt: 'Que tal fazer videochamada? Pode ser enquanto comem, por exemplo, ou só 10 minutos antes de dormir. Mesmo online, ver o rosto um do outro dá tranquilidade.' },
+        { speaker: 'テフン', ja: 'ビデオ{通話|つうわ}かー。いいかもね。', pt: 'Videochamada, hein. Pode ser uma boa.' },
+      ],
+    },
+  ],
+  '14-16': [
+    {
+      label: '会話2 ② ゲンメイのアドバイス (14-16)',
+      lines: [
+        { speaker: 'ゲンメイ', ja: 'いや、ぼくはさ、もう{別|わか}れたほうがいいと{思|おも}うんだけど。', pt: 'Não, eu acho que seria melhor terminar.' },
+        { speaker: 'テフン', ja: 'えっ……。', pt: 'Hã...' },
+        { speaker: 'ゲンメイ', ja: 'だってさ、テフンから{連絡|れんらく}しているのに、{返事|へんじ}がないのは、おかしいよ。もしテフンのことを{大切|たいせつ}に{思|おも}ってるなら、どんなに{忙|いそが}しくても、メッセージに{返信|へんしん}したり、{電話|でんわ}で{話|はな}したりする{時間|じかん}ぐらい{作|つく}れるでしょ？ それができてないってことは、もうだめってことなんじゃない？', pt: 'Porque, se você está entrando em contato e não há resposta, é estranho. Se a pessoa se importa com você, por mais ocupada que esteja, dá para criar pelo menos tempo para responder mensagem ou falar por telefone, não dá? Se não consegue fazer isso, não quer dizer que já acabou?' },
+        { speaker: 'テフン', ja: 'うーん、でも……。', pt: 'Hmm, mas...' },
+        { speaker: 'ゲンメイ', ja: 'いちど、テフンから{連絡|れんらく}とるのをやめてみるといいかもね。それで、{向|む}こうからも{何|なん}にも{連絡|れんらく}がなければ、もうそれまでだってことだし。そうなったらさ、もう{相方|あいかた}さんのことは{忘|わす}れて、{日本|にほん}でほかの{人|ひと}を{探|さが}したほうがいいよ。', pt: 'Talvez seja bom parar uma vez de entrar em contato. Se daí também não vier nenhum contato do outro lado, isso mostra que é isso. Se acontecer, esqueça seu parceiro e procure outra pessoa no Japão.' },
+        { speaker: 'テフン', ja: 'そんなあ……。', pt: 'Ah, não...' },
+        { speaker: 'アレックス', ja: 'もー、ちょっとちょっとー！', pt: 'Ei, calma aí!' },
+        { speaker: 'テフン', ja: 'あー、ほんと{悩|なや}む！', pt: 'Ah, isso me preocupa de verdade!' },
+      ],
+    },
+  ],
+  '14-17': [
+    {
+      label: '形に注目 - Sのに (14-17)',
+      lines: [
+        { speaker: 'テフン', ja: '{最初|さいしょ}のころは、{毎日|まいにち}メッセージをやりとりしていたのに、{最近|さいきん}はメッセージ{送|おく}っても、なかなか{既読|きどく}にならなかったり、{返事|へんじ}をくれなかったり。', pt: 'No começo trocávamos mensagens todos os dias, mas ultimamente, mesmo quando mando mensagem, demora para aparecer como lida ou não recebo resposta.' },
+        { speaker: 'ゲンメイ', ja: 'テフンから{連絡|れんらく}しているのに、{返事|へんじ}がないのは、おかしいよ。', pt: 'Mesmo você entrando em contato, não ter resposta é estranho.' },
+      ],
+    },
+  ],
+  '14-18': [
+    {
+      label: '話すモデル1 - 友だちに悩みを相談する (14-18)',
+      lines: [
+        { speaker: 'A', ja: '{実|じつ}はさ、ちょっと{悩|なや}んでて……。', pt: 'Na verdade, estou meio preocupado...' },
+        { speaker: 'B', ja: 'え、どうしたの？', pt: 'Hã, o que houve?' },
+        { speaker: 'A', ja: '{恋人|こいびと}と{遠距離恋愛|えんきょりれんあい}になってから、うまくいってないんだ。{最近|さいきん}は、{連絡|れんらく}をとることが{少|すく}なくなって……。', pt: 'Desde que meu namoro virou à distância, não está indo bem. Ultimamente temos nos falado menos...' },
+        { speaker: 'B', ja: 'そうなんだ……。', pt: 'Entendi...' },
+        { speaker: 'A', ja: '{最初|さいしょ}のころは、{毎日|まいにち}メッセージをやりとりしていたのに、{最近|さいきん}はメッセージを{送|おく}っても、{既読|きどく}にならなかったり、{返事|へんじ}をくれなかったり。{電話|でんわ}しても、「{忙|いそが}しいからまたあとで」って{言|い}われるんだ。いちど{日本|にほん}に{会|あ}いに{来|き}てくれたんだけど、{会|あ}ったのはそれが{最後|さいご}だし。', pt: 'No começo, trocávamos mensagens todos os dias, mas ultimamente, mesmo quando mando mensagem, demora para aparecer como lida ou não recebo resposta. Mesmo quando ligo, dizem "estou ocupado, depois". Veio uma vez ao Japão me ver, mas essa foi a última vez que nos vimos.' },
+        { speaker: 'B', ja: 'そっか、{不安|ふあん}だよね。', pt: 'Entendi. Isso dá ansiedade, né.' },
+        { speaker: 'A', ja: '{自分|じぶん}からばかり{連絡|れんらく}しているのが、{悲|かな}しいんだよね。このままじゃ、よくないと{思|おも}うんだけど、どうすればいいのかな……。', pt: 'Fico triste porque parece que só eu entro em contato. Acho que continuar assim não é bom, mas o que eu faço?' },
+      ],
+    },
+  ],
+  '14-19': [
+    {
+      label: '話すモデル2 - 悩みにアドバイスする (14-19)',
+      lines: [
+        { speaker: 'B', ja: 'それなら、もっと{積極的|せっきょくてき}に{連絡|れんらく}したほうがいいんじゃない？', pt: 'Nesse caso, não seria melhor entrar em contato de forma mais ativa?' },
+        { speaker: 'A', ja: 'そうかな……。', pt: 'Será...?' },
+        { speaker: 'B', ja: '{会|あ}えない{時間|じかん}が{続|つづ}くと、どうしても{気持|きも}ちが{離|はな}れていくから、つながりをキープすることが{大切|たいせつ}だと{思|おも}う。', pt: 'Quando o tempo sem se ver continua, os sentimentos acabam se afastando, então acho importante manter a conexão.' },
+        { speaker: 'A', ja: 'そうだよね。', pt: 'É verdade.' },
+        { speaker: 'B', ja: 'ビデオ{通話|つうわ}するのはどう？ お{互|たが}いの{顔|かお}が{見|み}えると{安心|あんしん}するし。', pt: 'Que tal fazer videochamada? Ver o rosto um do outro dá tranquilidade.' },
+        { speaker: 'A', ja: 'いいかもね。', pt: 'Pode ser uma boa.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -5025,6 +5367,120 @@ const lesson13: Section = {
   audios: attachScripts(13, L13_SCRIPTS),
 }
 
+const lesson14: Section = {
+  id: 'lesson-14',
+  level: 'pre-intermediate',
+  titleJa: '第14課 友人のことで悩んでいます',
+  titlePt: 'Lição 14 - Estou preocupado por causa de um amigo',
+  summaryPt:
+    'Relações com pessoas · entender pequenos problemas de convivência, falar sobre pessoas próximas, consultar amigos sobre preocupações e ler postagens de sites de consulta.',
+  studyNotes: [
+    {
+      title: 'Tópico: Relações com pessoas (人とのつき合い)',
+      bodyPt:
+        'Pergunta de abertura: {人間関係|にんげんかんけい}の{悩|なや}みはありますか？ そのとき、だれに{相談|そうだん}しますか？\n\n' +
+        '## Can-do\n' +
+        '- Ouvir e entender pequenos problemas de amigos.\n' +
+        '- Falar com algum detalhe sobre pessoas próximas: personalidade, relação e como se conheceram.\n' +
+        '- Consultar amigos sobre problemas ou ouvir problemas e dar conselhos concretos.\n' +
+        '- Ler uma postagem sobre relações pessoais e entender aproximadamente o conteúdo.',
+    },
+    {
+      title: 'Atividade 1: 口もきいてくれないんですよ',
+      bodyPt:
+        'Quatro conversas trazem problemas pequenos de convivência ou relacionamento.\n\n' +
+        '| Faixa | Problema | O que a pessoa pretende fazer |\n|---|---|---|\n' +
+        '| 14-01 | 友だちと金銭感覚が合わない | 思っていることを伝える |\n' +
+        '| 14-02 | 同僚の話が長い | どうしたらいいかわからない |\n' +
+        '| 14-03 | 子どもが反抗期 | 細かいことを言わないようにする |\n' +
+        '| 14-04 | 大家さんが野菜を持って来るが、量が多い | 会社に持って来る |\n\n' +
+        'Vocabulário útil: {仲良|なかよ}し, {気|き}が{合|あ}う, {金銭感覚|きんせんかんかく}, {延|の}びる, {話|はな}し{続|つづ}ける, {簡潔|かんけつ}, {反抗期|はんこうき}, {放|ほう}っておく, {口出|くちだ}しする, {食|た}べ{切|き}れない, {腐|くさ}る, {失礼|しつれい}.',
+    },
+    {
+      title: 'Atividade 2: 私にとって、大切な親友なんです',
+      bodyPt:
+        'A atividade organiza fala sobre pessoas próximas em quatro camadas: quem é a pessoa, que presença tem, que tipo de personalidade possui e qual é a relação com ela.\n\n' +
+        '| Faixa | Pessoa | Presença | Personalidade |\n|---|---|---|---|\n' +
+        '| 14-07 | 友だち | 大切な親友で、何でも話せる | 社交的, 好奇心が強い, 飽きっぽい |\n' +
+        '| 14-08 | パートナー | いっしょにいて、安心できる人 | やさしい, 趣味が合う, 頑固 |\n' +
+        '| 14-09 | 会社の先輩 | 目標の人 | 頼りになる, まじめ |\n\n' +
+        'Episódios do gabarito: a amiga fala com desconhecidos e perde interesse rápido em flower arrangement; o parceiro cuidou de エレン quando ela teve febre; o senior criou tempo para resolver divergência com colega e faz trabalhos pequenos com cuidado.',
+    },
+    {
+      title: 'Gramática ➊➋: ponto de vista e personalidade',
+      bodyPt:
+        '**Nにとって** indica de que ponto de vista alguém ou algo está sendo avaliado.\n\n' +
+        '- `{私|わたし}にとって、{大切|たいせつ}な{親友|しんゆう}なんです。`\n' +
+        '- `チームのリーダーで、ぼくにとって{目標|もくひょう}の{人|ひと}。`\n\n' +
+        '**ナA-な／イA-い + ところがある** descreve uma tendência ou um lado da personalidade, muitas vezes um traço inesperado ou negativo, sem reduzir a pessoa inteira a esse traço.\n\n' +
+        '- `ちょっと{頑固|がんこ}なところがあるんです。`\n' +
+        '- `ちょっと{飽|あ}きっぽいところがあるんですよ。`',
+    },
+    {
+      title: 'Estratégia: 強調して言う',
+      bodyPt:
+        'A faixa 14-12 mostra formas de enfatizar características.\n\n' +
+        '| Mais formal | Neutro | Informal/intenso |\n|---|---|---|\n' +
+        '| 非常に, たいへん | 本当に, とても, すごく | すごい, めちゃくちゃ, めっちゃ, 超 |\n\n' +
+        'Também aparecem alongamentos naturais de fala: `とても → とっても → とーっても`, `すごく → すっごく／すごーく／すんごく`.\n\n' +
+        'Exemplos: `すごく好奇心が強いんです`, `とても頼りになる人だよ`, `本当に社交的な人です`, `すっごくやさしい人なんです`.',
+    },
+    {
+      title: 'Atividade 3: 遠距離恋愛になってから、うまくいってないんだ',
+      bodyPt:
+        'テフン consulta amigos sobre o namoro à distância.\n\n' +
+        '| Ponto | Conteúdo do gabarito |\n|---|---|\n' +
+        '| どんな悩み？ | 恋人と遠距離恋愛になった; うまくいっていない; 最近は連絡をとることが少なくなった |\n' +
+        '| 具体的なエピソード | mensagens não viram 既読, não recebe 返事, ao telefonar ouve 忙しいからまたあとで; a última vez que se viram foi quando o parceiro veio ao Japão |\n' +
+        '| どう思っている？ | 自分からばかり連絡しているのが悲しい; このままじゃよくないと思う |\n\n' +
+        'Conselhos: アレックス sugere もっと積極的に連絡したほうがいい e videochamada; ゲンメイ sugere 別れたほうがいい e parar uma vez de iniciar contato.',
+    },
+    {
+      title: 'Gramática ➌: S（普通形）のに',
+      bodyPt:
+        '**S（普通形）のに** indica que o resultado da segunda parte contraria o que se esperaria da primeira.\n\n' +
+        '- `{最初|さいしょ}のころは、{毎日|まいにち}メッセージをやりとりしていたのに、{最近|さいきん}はメッセージを{送|おく}っても、なかなか{既読|きどく}にならなかったり、{返事|へんじ}をくれなかったり。`\n' +
+        '- `テフンから{連絡|れんらく}しているのに、{返事|へんじ}がないのは、おかしいよ。`\n\n' +
+        'Para substantivos e adjetivos ナ, a forma fica `Nなのに` e `ナA-なのに`.',
+    },
+    {
+      title: 'Atividade 4: 相談サイトの投稿',
+      bodyPt:
+        'A leitura final é uma postagem de相談サイト sobre room share e respostas de outros usuários.\n\n' +
+        '| Parte | Conteúdo |\n|---|---|\n' +
+        '| ① | ルームシェアを始めた経緯 |\n' +
+        '| ② | ルームメイトの行動 |\n' +
+        '| ③ | ほかの人に相談したいこと |\n\n' +
+        'O gabarito resume o problema: o roommate não segue regras e vive como se morasse sozinho. Aoyama quer consultar como conseguir viver bem em共同生活 com A.\n\n' +
+        'Títulos das respostas: A = `ほかのルームメイトを探したら？`; B = `お金で解決`.',
+    },
+    {
+      title: 'Gramática ➍: Nのことで',
+      bodyPt:
+        '**Nのことで** indica o tópico ou assunto de uma preocupação, consulta, irritação ou problema.\n\n' +
+        '- `ルームシェアをしている{友人|ゆうじん}のことで{悩|なや}んでいます。`\n' +
+        '- `{最近|さいきん}、{反抗期|はんこうき}の{子|こ}どものことで{困|こま}っています。`\n' +
+        '- `{先生|せんせい}は、{学生|がくせい}たちのことで{怒|おこ}っているようです。`\n\n' +
+        'Além de `悩んでいる`, aparece com verbos como `困っている`, `怒っている`, `心配している` e `相談する`.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {仲良|なかよ}し, {恋愛|れんあい}, {既読|きどく}, {好奇心|こうきしん}, {積極的|せっきょくてき}, {悲|かな}しい, {尊敬|そんけい}する, {実|じつ}は, {例|たと}えば.\n\n' +
+        '**Vocabulário-chave:** {金銭感覚|きんせんかんかく}, {反抗期|はんこうき}, {口|くち}をきく, {放|ほう}っておく, {口出|くちだ}しする, {食|た}べ{切|き}れない, フラワーアレンジメント, {再来週|さらいしゅう}, {熱|ねつ}を{出|だ}す, マッチングアプリ, {了解|りょうかい}, {相方|あいかた}, {不安|ふあん}, {減|へ}る, {広|ひろ}がる, だって, ルームシェア, {勝手|かって}, {態度|たいど}, {配慮|はいりょ}する, {価値観|かちかん}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**おすそわけ:** compartilhar uma pequena parte de algo que se tem em excesso, como legumes, frutas, comida enviada pela família ou lembranças. É feito como gentileza, sem esperar retorno.\n\n' +
+        '**マッチングアプリ:** apps para procurar parceiros românticos, casamento, amigos ou pessoas com hobbies em comum. A TIPS recomenda escolher app conforme objetivo, não passar dados pessoais cedo, encontrar-se em local público e desconfiar de pedidos de dinheiro, investimento ou negócios.\n\n' +
+        '**相談サイト:** sites onde qualquer pessoa pode postar dúvidas ou preocupações e receber opiniões. A lição cita 発言小町, Yahoo!知恵袋 e 教えて!goo como exemplos de serviços de consulta online.',
+    },
+  ],
+  groups: [lesson14Group],
+  audios: attachScripts(14, L14_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -5046,6 +5502,7 @@ const sections: Section[] = [
   lesson12,
   // Tópico 7 - Relações com pessoas (人とのつき合い)
   lesson13,
+  lesson14,
 ]
 
 export const irodoriPreIntermediate: Level = {
