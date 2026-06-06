@@ -289,6 +289,62 @@ const lesson5Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 6: 毎日、自炊してます (tópico 毎日の食事) ----
+const lesson6Group: ExerciseGroup = {
+  id: 'iro-pi-l6',
+  title: '毎日、自炊してます',
+  subtitlePt: 'Mercados recomendados · leitura sobre micro-ondas · falar da alimentação diária',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l6-1', number: 1, prompt: 'Qual é o tópico desta lição?', choices: [{ n: 1, text: '毎日の食事 (refeições do dia a dia)' }, { n: 2, text: '出会う' }, { n: 3, text: '旅行に行こう' }, { n: 4, text: '地域のイベント' }], answer: 1, explanationPt: 'A Lição 6 continua o tópico 毎日の食事, agora com compras de comida, preparo em casa e rotina alimentar.' },
+    { id: 'iro-pi-l6-2', number: 2, prompt: 'Pergunta de abertura: 毎日の食事は、自分で作りますか？ 外食が多いですか？', choices: [{ n: 1, text: 'Você prepara suas refeições todos os dias? Come fora com frequência?' }, { n: 2, text: 'Você tem algum restaurante recomendado?' }, { n: 3, text: 'Como você conheceu seus amigos?' }, { n: 4, text: 'Onde fica o correio?' }], answer: 1, explanationPt: 'A abertura prepara as atividades sobre 自炊, 外食, delivery, refeitório e compras.' },
+    { id: 'iro-pi-l6-3', number: 3, prompt: 'Can-do 18: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ouvir comentários simples sobre supermercados recomendados e entender os motivos' }, { n: 2, text: 'pedir comida por tablet' }, { n: 3, text: 'ler um contrato de aluguel' }, { n: 4, text: 'escrever uma mensagem de cancelamento' }], answer: 1, explanationPt: 'A atividade 1 pergunta onde comprar verduras/legumes e que lojas são recomendadas.' },
+    { id: 'iro-pi-l6-4', number: 4, prompt: '聴解 06-01: ヤオイチ é que tipo de loja?', image: `${IMG}/ZZ_06_1_02_yasuisuupaa.png`, imageAlt: 'supermercado barato em frente à estação', choices: [{ n: 1, text: '駅前の安いスーパー' }, { n: 2, text: '業務用のスーパー' }, { n: 3, text: '昔からあるお惣菜屋' }, { n: 4, text: '朝市をやっている道の駅' }], answer: 1, explanationPt: 'ヤオイチ fica em frente à estação e é descrito como スーパー barato.' },
+    { id: 'iro-pi-l6-5', number: 5, prompt: '聴解 06-01: por que ヤオイチ é recomendado?', choices: [{ n: 1, text: 'tem muitos tipos de verduras/frutas e é barato; dia 29 é dia da carne' }, { n: 2, text: 'serve comida no dormitório' }, { n: 3, text: 'vende apenas pratos prontos' }, { n: 4, text: 'só abre de manhã' }], answer: 1, explanationPt: '野菜と果物の種類が多くて安い; todo dia 29 é 肉の日 e a carne fica mais barata.' },
+    { id: 'iro-pi-l6-6', number: 6, prompt: '聴解 06-02: 旬彩屋 é:', image: `${IMG}/ZZ_06_1_04_osoozaiya.png`, imageAlt: 'loja antiga de pratos prontos', choices: [{ n: 1, text: '昔からあるお惣菜屋' }, { n: 2, text: '駅前の安いスーパー' }, { n: 3, text: '会社の食堂' }, { n: 4, text: 'デリバリー専門店' }], answer: 1, explanationPt: '旬彩屋 é uma loja antiga de お惣菜, recomendada para quem acha trabalhoso preparar comida todos os dias.' },
+    { id: 'iro-pi-l6-7', number: 7, prompt: '聴解 06-02: quais pontos positivos de 旬彩屋 são citados?', choices: [{ n: 1, text: 'tem variedade japonesa, ocidental e chinesa; é feito à mão e gostoso' }, { n: 2, text: 'vende tudo por quilo em caixas grandes' }, { n: 3, text: 'os agricultores vendem diretamente' }, { n: 4, text: 'a carne fica barata no dia 29' }], answer: 1, explanationPt: 'B diz: 和・洋・中いろいろ種類があるから飽きない; 手作りでおいしい.' },
+    { id: 'iro-pi-l6-8', number: 8, prompt: '聴解 06-03: Ｃプライス é descrito como:', image: `${IMG}/ZZ_06_1_03_gyoomuyoosuupaa.png`, imageAlt: 'supermercado de uso comercial', choices: [{ n: 1, text: '業務用のスーパー' }, { n: 2, text: '朝市' }, { n: 3, text: 'もんじゃ焼きのお店' }, { n: 4, text: 'タイ料理の居酒屋' }], answer: 1, explanationPt: 'Ｃプライス é um supermercado de uso comercial, mostrado na TV e usado também por clientes comuns.' },
+    { id: 'iro-pi-l6-9', number: 9, prompt: '聴解 06-03: qual vantagem de Ｃプライス aparece no diálogo?', choices: [{ n: 1, text: 'cada item vem em grande quantidade, fica barato e há muitos congelados' }, { n: 2, text: 'não precisa acordar cedo' }, { n: 3, text: 'tem balcão de comida tailandesa' }, { n: 4, text: 'os pratos são todos por 600円' }], answer: 1, explanationPt: '一つ一つの量が多いから、その分安い. Também há muitos 冷凍食品.' },
+    { id: 'iro-pi-l6-10', number: 10, prompt: '聴解 06-04: こばとの里 é:', image: `${IMG}/ZZ_06_1_01_michinoeki.png`, imageAlt: 'michi no eki com feira da manhã', choices: [{ n: 1, text: '朝市をやっている道の駅' }, { n: 2, text: '駅前の安いスーパー' }, { n: 3, text: '昔からあるお惣菜屋' }, { n: 4, text: '業務用のスーパー' }], answer: 1, explanationPt: 'こばとの里 é um 道の駅 que faz 朝市 todo domingo.' },
+    { id: 'iro-pi-l6-11', number: 11, prompt: '聴解 06-04: por que こばとの里 é recomendado para verduras/legumes?', choices: [{ n: 1, text: '農家の人 vendem diretamente; é barato, fresco e gostoso' }, { n: 2, text: 'tem muitos pratos de delivery' }, { n: 3, text: 'vende carne barata no dia 29' }, { n: 4, text: 'só vende produtos importados' }], answer: 1, explanationPt: '農家の人が直接売っているから安くて新鮮. Se não souber como comer, pode perguntar ao agricultor.' },
+    { id: 'iro-pi-l6-12', number: 12, prompt: 'Em こばとの里, qual cuidado aparece no diálogo?', choices: [{ n: 1, text: 'ir de manhã; se não for 午前中, os vegetais podem esgotar' }, { n: 2, text: 'reservar pelo aplicativo' }, { n: 3, text: 'pedir com a picância tailandesa' }, { n: 4, text: 'levar um tablet de pedido' }], answer: 1, explanationPt: 'B diz que, por ser 朝市, 午前中に行かないと野菜が売り切れちゃう.' },
+    { id: 'iro-pi-l6-13', number: 13, prompt: 'Vocabulário da atividade 1: 玉ねぎ／面倒（な）／帰り／その分／早起きする significam:', choices: [{ n: 1, text: 'cebola / trabalhoso / volta para casa / por isso, na mesma medida / acordar cedo' }, { n: 2, text: 'cenoura / barato / ida / ontem / cozinhar demais' }, { n: 3, text: 'macarrão / picante / pedido / subtotal / fritar' }, { n: 4, text: 'carne / doce / cancelamento / imposto / misturar' }], answer: 1, explanationPt: 'São os itens de confirmação antes de ouvir 06-01 a 06-04 novamente.' },
+    { id: 'iro-pi-l6-14', number: 14, prompt: '「餃子とかうどんとか、まとめて買っておくと便利ですよ」 usa V-ておく para:', choices: [{ n: 1, text: 'fazer algo antes, com um objetivo futuro' }, { n: 2, text: 'negar uma ação' }, { n: 3, text: 'comparar com algo parecido' }, { n: 4, text: 'pedir desculpa formalmente' }], answer: 1, translationPt: 'É prático comprar gyoza, udon etc. em quantidade e deixar preparado/guardado.', explanationPt: 'V-ておく indica fazer algo de antemão. Na fala, 買っておく também pode soar como 買っとく.' },
+    { id: 'iro-pi-l6-15', number: 15, prompt: 'Can-do 19: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ler um artigo online sobre alimentação e entender o conteúdo geral' }, { n: 2, text: 'fazer pedido em restaurante familiar' }, { n: 3, text: 'pedir conserto de ar-condicionado' }, { n: 4, text: 'dar conselho para fazer amigos' }], answer: 1, explanationPt: 'A atividade 2 lê um artigo sobre 電子レンジ調理法 para pessoas que moram sozinhas.' },
+    { id: 'iro-pi-l6-16', number: 16, prompt: 'No artigo, o trecho marcado com ★ apresenta:', image: `${IMG}/ZZ_06_2_01_nettonokiji.png`, imageAlt: 'pessoa lendo artigo no smartphone', choices: [{ n: 1, text: 'pontos convenientes da culinária com micro-ondas e receitas recomendadas' }, { n: 2, text: 'um ranking de restaurantes tailandeses' }, { n: 3, text: 'um aviso de emergência' }, { n: 4, text: 'um pedido por tablet' }], answer: 1, explanationPt: 'O título do artigo é: こんなに便利！ 電子レンジ調理法 おすすめレシピも紹介！' },
+    { id: 'iro-pi-l6-17', number: 17, prompt: 'No artigo, 「便利なポイント1」 é:', image: `${IMG}/ZZ_06_2_03_araimono.png`, imageAlt: 'menos louça para lavar', choices: [{ n: 1, text: '時短＆洗い物ラクラク' }, { n: 2, text: '失敗なしで安心' }, { n: 3, text: '一人分にちょうどいい' }, { n: 4, text: '少ない油でヘルシー' }], answer: 1, explanationPt: 'O ponto 1 diz que o tempo de preparo é curto e há menos louça porque se pode usar recipiente próprio para micro-ondas.' },
+    { id: 'iro-pi-l6-18', number: 18, prompt: 'No artigo, 「便利なポイント2」 é:', image: `${IMG}/ZZ_06_2_02_kanetsuchuu.png`, imageAlt: 'cozinhar sem ficar olhando o fogo', choices: [{ n: 1, text: '失敗なしで安心' }, { n: 2, text: '時短＆洗い物ラクラク' }, { n: 3, text: '少ない油でヘルシー' }, { n: 4, text: '一人分にちょうどいい' }], answer: 1, explanationPt: 'Como não usa fogo, mesmo deixando de olhar durante o aquecimento, tudo bem; é seguro para iniciantes.' },
+    { id: 'iro-pi-l6-19', number: 19, prompt: 'No artigo, 「便利なポイント3」 é:', image: `${IMG}/ZZ_06_2_04_hitoribun.png`, imageAlt: 'preparo de uma porção', choices: [{ n: 1, text: '一人分にちょうどいい' }, { n: 2, text: '業務用で安い' }, { n: 3, text: '直接売っている' }, { n: 4, text: '本場の辛さ' }], answer: 1, explanationPt: 'O artigo diz que dá para preparar bem uma pequena quantidade, ideal para quem mora sozinho.' },
+    { id: 'iro-pi-l6-20', number: 20, prompt: 'No artigo, 「便利なポイント4」 é:', image: `${IMG}/ZZ_06_2_05_abura.png`, imageAlt: 'cozinhar com pouco óleo', choices: [{ n: 1, text: '少ない油でヘルシー' }, { n: 2, text: '朝市で新鮮' }, { n: 3, text: 'お酒にも合う' }, { n: 4, text: '手作りでおいしい' }], answer: 1, explanationPt: 'O micro-ondas cozinha com a água dos alimentos, então usa pouco óleo e também menos tempero.' },
+    { id: 'iro-pi-l6-21', number: 21, prompt: 'Gabarito da leitura: a característica ① combina com quais ilustrações?', choices: [{ n: 1, text: 'b e e: menos louça e menor tempo de preparo' }, { n: 2, text: 'a apenas' }, { n: 3, text: 'c apenas' }, { n: 4, text: 'd e f apenas' }], answer: 1, explanationPt: 'O answer key marca ① = b, e; ② = a; ③ = c; ④ = d, f.' },
+    { id: 'iro-pi-l6-22', number: 22, prompt: '「コンビニや外食に頼りがちな一人暮らし」 usa Vがち para:', choices: [{ n: 1, text: 'indicar tendência/frequência alta, geralmente com nuance negativa' }, { n: 2, text: 'fazer algo de antemão' }, { n: 3, text: 'perguntar se algo é bom' }, { n: 4, text: 'dar ordem direta' }], answer: 1, translationPt: 'Uma pessoa que mora sozinha e tende a depender de lojas de conveniência e comer fora.', explanationPt: 'Vがち liga-se à forma masu sem ます: 頼る → 頼りがち, 偏る → 偏りがち.' },
+    { id: 'iro-pi-l6-23', number: 23, prompt: 'Can-do 20: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'falar com algum detalhe a um amigo sobre o que come diariamente e com que toma cuidado' }, { n: 2, text: 'ler cardápio de fast food' }, { n: 3, text: 'explicar regras de lixo' }, { n: 4, text: 'pedir cartão de residência' }], answer: 1, explanationPt: 'A atividade 3 pergunta sobre 毎日の食事 e organiza fala por rotina, motivos, opinião e cuidados.' },
+    { id: 'iro-pi-l6-24', number: 24, prompt: 'Vocabulário 【毎日の食事】: 自炊をする／外食をする／デリバリーを頼む correspondem a:', choices: [{ n: 1, text: 'cozinhar para si / comer fora / pedir delivery' }, { n: 2, text: 'trabalhar em turnos / lavar louça / ir ao mercado' }, { n: 3, text: 'fritar / ferver / temperar' }, { n: 4, text: 'pedido por tablet / subtotal / histórico' }], answer: 1, explanationPt: 'A lista também inclui 家族が作ってくれる, 交代で作る, 社食, 寮の食堂, テイクアウト e お惣菜／お弁当を買う.' },
+    { id: 'iro-pi-l6-25', number: 25, prompt: '聴解 06-08: エドガー costuma fazer o quê no jantar?', image: `${IMG}/ZZ_06_3_04_gaishoku.png`, imageAlt: 'comer fora', choices: [{ n: 1, text: '外食が多く、quando fica tarde no trabalho pede デリバリー' }, { n: 2, text: 'sempre come na cantina do dormitório' }, { n: 3, text: 'sempre cozinha comida japonesa' }, { n: 4, text: 'só compra obentô' }], answer: 1, explanationPt: 'O gabarito marca d e h: 外食 e デリバリー／出前.' },
+    { id: 'iro-pi-l6-26', number: 26, prompt: '聴解 06-08: por que エドガー não cozinha, embora queira?', choices: [{ n: 1, text: 'fica cansado por causa do trabalho' }, { n: 2, text: 'não tem micro-ondas' }, { n: 3, text: 'não gosta de comida japonesa' }, { n: 4, text: 'mora no dormitório sem cozinha' }], answer: 1, explanationPt: 'Ele diz: 自分で作りたいんですけど、仕事で疲れちゃって、料理できないんです.' },
+    { id: 'iro-pi-l6-27', number: 27, prompt: '聴解 06-08: o que エドガー come com frequência?', choices: [{ n: 1, text: '定食, ラーメン; no delivery, ピザ e 丼物' }, { n: 2, text: '肉じゃが e 炊き込みご飯' }, { n: 3, text: 'hambúrguer todos os dias' }, { n: 4, text: 'somente peixe grelhado' }], answer: 1, explanationPt: 'Ele lista 定食とかラーメン; quando pede delivery, ピザとか丼物.' },
+    { id: 'iro-pi-l6-28', number: 28, prompt: '聴解 06-08: com o que エドガー se preocupa e o que faz?', choices: [{ n: 1, text: 'preocupa-se com dinheiro e nutrição; tenta pensar no equilíbrio e bebe suco de vegetais de manhã' }, { n: 2, text: 'preocupa-se com acordar cedo; vai sempre ao 朝市' }, { n: 3, text: 'preocupa-se com picância; pede sabor tailandês' }, { n: 4, text: 'preocupa-se com convites; escreve SNS' }], answer: 1, explanationPt: 'O answer key marca opinião イ e cuidado: 栄養のバランスを考える; 朝は野菜ジュースを飲んでいる.' },
+    { id: 'iro-pi-l6-29', number: 29, prompt: '聴解 06-09: リサ costuma comer onde?', image: `${IMG}/ZZ_06_3_06_shokudoo.png`, imageAlt: 'cantina de dormitório', choices: [{ n: 1, text: '寮の食堂で食べている' }, { n: 2, text: '外食をしている' }, { n: 3, text: '家族が作ってくれる' }, { n: 4, text: 'テイクアウトをする' }], answer: 1, explanationPt: 'Ela mora no dormitório da empresa e come quase todos os dias no refeitório do dormitório, de manhã e à noite.' },
+    { id: 'iro-pi-l6-30', number: 30, prompt: '聴解 06-09: como é a refeição da noite no dormitório?', choices: [{ n: 1, text: 'pode escolher carne ou peixe e vem prato de vegetais' }, { n: 2, text: 'sempre é fast food' }, { n: 3, text: 'só há ramen' }, { n: 4, text: 'cada um compra congelados' }], answer: 1, explanationPt: '肉か魚が選べる; também há 野菜の料理.' },
+    { id: 'iro-pi-l6-31', number: 31, prompt: '聴解 06-09: por que リサ acaba comendo carne quase todos os dias?', choices: [{ n: 1, text: 'porque não gosta muito de peixe' }, { n: 2, text: 'porque peixe é proibido no dormitório' }, { n: 3, text: 'porque delivery não entrega peixe' }, { n: 4, text: 'porque está fazendo dieta vegetariana' }], answer: 1, explanationPt: 'Ela diz: 魚がちょっと苦手なので、毎日、肉ばかり食べてます.' },
+    { id: 'iro-pi-l6-32', number: 32, prompt: '聴解 06-09: como リサ avalia sua alimentação e com o que toma cuidado?', choices: [{ n: 1, text: 'a rotina regular ajuda, mas precisa tomar cuidado para não comer demais' }, { n: 2, text: 'acha caro e nutricionalmente desequilibrado' }, { n: 3, text: 'gosta porque pode comer o que quer e cuida para não desperdiçar' }, { n: 4, text: 'não tem opinião' }], answer: 1, explanationPt: 'O gabarito marca ア: 規則正しい食生活ができて助かる; cuidado: 食べすぎには注意しなくちゃ.' },
+    { id: 'iro-pi-l6-33', number: 33, prompt: '聴解 06-10: レー costuma fazer o quê?', image: `${IMG}/ZZ_06_3_01_jisui.png`, imageAlt: 'cozinhar para si', choices: [{ n: 1, text: '毎日、自炊している' }, { n: 2, text: '会社の社食で食べている' }, { n: 3, text: '家族が作ってくれる' }, { n: 4, text: '必ず外食している' }], answer: 1, explanationPt: 'レー mora sozinha e diz: ええ。毎日、自炊してます.' },
+    { id: 'iro-pi-l6-34', number: 34, prompt: '聴解 06-10: o que mudou no que レー cozinha?', choices: [{ n: 1, text: 'antes fazia mais pratos do próprio país; recentemente também faz comida japonesa' }, { n: 2, text: 'parou de cozinhar e passou a pedir pizza' }, { n: 3, text: 'só come carne porque não gosta de peixe' }, { n: 4, text: 'só compra pratos prontos' }], answer: 1, explanationPt: '前は自分の国の料理が多かった; 最近は日本食も作っている.' },
+    { id: 'iro-pi-l6-35', number: 35, prompt: '聴解 06-10: como レー aprende receitas e que pratos cita?', choices: [{ n: 1, text: 'pesquisa receitas na internet; cita 肉じゃが e 炊き込みご飯' }, { n: 2, text: 'pergunta a agricultores; cita きりたんぽ' }, { n: 3, text: 'lê o cardápio do tablet; cita パフェ' }, { n: 4, text: 'aprende no refeitório; cita hambúrguer' }], answer: 1, explanationPt: 'Ela diz que consegue pesquisar muitas receitas na internet e faz olhando isso: 肉じゃがとか炊き込みご飯とか.' },
+    { id: 'iro-pi-l6-36', number: 36, prompt: '聴解 06-10: como レー avalia 自炊 e com que toma cuidado?', choices: [{ n: 1, text: 'gosta porque pode comer o que quer; cuida para não cozinhar demais e desperdiçar' }, { n: 2, text: 'acha caro; bebe suco de vegetais' }, { n: 3, text: 'acha que ajuda na rotina; cuida para não comer demais' }, { n: 4, text: 'não gosta de cozinhar' }], answer: 1, explanationPt: 'O gabarito marca ウ: 好きなものを食べられるのがいい; cuidado: 作りすぎて、むだにしないように.' },
+    { id: 'iro-pi-l6-37', number: 37, prompt: '「外食って、やっぱりお金がかかるじゃないですか」 usa Sじゃないですか para:', choices: [{ n: 1, text: 'confirmar algo que se assume que muitas pessoas sabem ou concordam' }, { n: 2, text: 'negar que comer fora custe dinheiro' }, { n: 3, text: 'perguntar pela primeira vez se é caro' }, { n: 4, text: 'dar uma ordem' }], answer: 1, translationPt: 'Comer fora custa dinheiro, né?', explanationPt: 'S（普通形）じゃないですか é usado com entonação descendente. Também aparece em ネットでいろいろレシピを調べられるじゃないですか.' },
+    { id: 'iro-pi-l6-38', number: 38, prompt: 'Na prática de fala 06-12, a conversa sobre 食事 segue qual estrutura?', choices: [{ n: 1, text: 'como lida com as refeições → motivo/detalhes/comidas → opinião → cuidados' }, { n: 2, text: 'preço → endereço → telefone → reserva' }, { n: 3, text: 'pedido → cancelamento → pagamento → gorjeta' }, { n: 4, text: 'convite → recusa → desculpa → despedida' }], answer: 1, explanationPt: 'A página organiza a fala em quatro partes: 毎日の食事はどうしている？, razões/detalhes, opinião e 気をつけていること.' },
+    { id: 'iro-pi-l6-39', number: 39, prompt: 'Kanji da lição: 冷凍食品／果物／農家 lêem-se:', choices: [{ n: 1, text: 'れいとうしょくひん／くだもの／のうか' }, { n: 2, text: 'れいぞうしょくひん／かもの／のうけ' }, { n: 3, text: 'れいとうたべもの／くだぶつ／のうや' }, { n: 4, text: 'ひえしょくひん／かぶつ／のうか' }], answer: 1, explanationPt: '冷凍食品 = alimentos congelados; 果物 = frutas; 農家 = agricultor/família agricultora.' },
+    { id: 'iro-pi-l6-40', number: 40, prompt: 'Kanji da lição: 直接／健康／栄養 lêem-se:', choices: [{ n: 1, text: 'ちょくせつ／けんこう／えいよう' }, { n: 2, text: 'じきせつ／けんきょう／さかえよう' }, { n: 3, text: 'ちょくせつ／けんこ／えいよ' }, { n: 4, text: 'なおせつ／けんこう／えいよう' }], answer: 1, explanationPt: 'Esses kanji aparecem nas frases sobre agricultores vendendo diretamente e pensar no equilíbrio nutricional.' },
+    { id: 'iro-pi-l6-41', number: 41, prompt: 'Kanji da lição: 鍋／調味料／新鮮（な）／頼む lêem-se:', choices: [{ n: 1, text: 'なべ／ちょうみりょう／しんせん／たのむ' }, { n: 2, text: 'かね／ちょうみりょう／あたらせん／らいむ' }, { n: 3, text: 'なべ／しらみりょう／しんせん／よりむ' }, { n: 4, text: 'なべ／ちょうあじりょう／しんざん／たのむ' }], answer: 1, explanationPt: '鍋 = panela/hot pot; 調味料 = temperos; 新鮮 = fresco; 頼む = pedir/solicitar.' },
+    { id: 'iro-pi-l6-42', number: 42, prompt: 'TIPS: 語呂合わせ é:', image: `${IMG}/ZZ_06_tips_01_nakuyouguisu.png`, imageAlt: 'ilustração para memorizar 794 como nakuyo uguisu Heian-kyo', choices: [{ n: 1, text: 'criar palavras/frases lendo números como sons japoneses' }, { n: 2, text: 'um tipo de micro-ondas' }, { n: 3, text: 'uma feira de agricultores' }, { n: 4, text: 'um prato regional de Chiba' }], answer: 1, explanationPt: 'A lição usa 29 como にく em 肉の日. Outros exemplos: 11/22 いい夫婦の日, 8/31 野菜の日, 794 鳴くようぐいす平安京.' },
+    { id: 'iro-pi-l6-43', number: 43, prompt: 'TIPS: 業務用のスーパー no Japão são supermercados que:', choices: [{ n: 1, text: 'vendem ingredientes para restaurantes em grandes quantidades, mas pessoas comuns também podem comprar' }, { n: 2, text: 'só funcionam como cantina de dormitório' }, { n: 3, text: 'vendem apenas comida pronta para viagem' }, { n: 4, text: 'não vendem congelados nem temperos' }], answer: 1, explanationPt: 'A TIPS explica que produtos vêm em quantidades maiores e tendem a ser mais baratos; há congelados, temperos, secos, enlatados e produtos internacionais.' },
+    { id: 'iro-pi-l6-44', number: 44, prompt: 'TIPS: 出前・デリバリー, segundo o texto, significa:', choices: [{ n: 1, text: 'pedir comida de restaurante para ser entregue em casa' }, { n: 2, text: 'cozinhar com micro-ondas' }, { n: 3, text: 'doar imposto à cidade natal' }, { n: 4, text: 'comparar pratos parecidos' }], answer: 1, explanationPt: '出前 tradicional já existia em lojas de soba/sushi; hoje apps e serviços como Uber Eats e 出前館 são comuns nas cidades.' },
+    { id: 'iro-pi-l6-45', number: 45, prompt: 'Sobre delivery moderno no Japão, qual afirmação segue a TIPS?', choices: [{ n: 1, text: 'é conveniente, mas tende a custar mais por taxas de entrega/serviço' }, { n: 2, text: 'é sempre mais barato que comer no local' }, { n: 3, text: 'só permite pedir pizza' }, { n: 4, text: 'não existe em family restaurants' }], answer: 1, explanationPt: 'O texto cita hambúrguer, pizza, bento, sushi, 丼物, curry e ramen, e observa que costuma ficar mais caro que comer no restaurante.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -1356,6 +1412,208 @@ const L5_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L6_SCRIPTS: Record<string, ScriptItem[]> = {
+  '06-01': [
+    {
+      label: '① ヤオイチ (06-01)',
+      setupPt: 'Uma pessoa pergunta a 安倍 onde comprar verduras e legumes; 安倍 recomenda ヤオイチ.',
+      lines: [
+        { speaker: 'A', ja: '{安倍|あべ}さん、{最近|さいきん}、{野菜|やさい}も{肉|にく}も{高|たか}いですよね。{昨日|きのう}、{玉|たま}ねぎを{買|か}ったら{高|たか}くてびっくりして。', pt: 'Abe, ultimamente verduras e carne estão caras, né? Ontem comprei cebola e levei um susto de tão cara.' },
+        { speaker: 'B', ja: '{高|たか}いですよね。でも、「ヤオイチ」だったら、そんなに{高|たか}くないですよ。', pt: 'Estão caras mesmo. Mas no Yaiochi não é tão caro assim.' },
+        { speaker: 'A', ja: 'ヤオイチ？', pt: 'Yaiochi?' },
+        { speaker: 'B', ja: '{駅前|えきまえ}にある{安|やす}いスーパーです。', pt: 'É um supermercado barato em frente à estação.' },
+        { speaker: 'A', ja: 'あっ、そういえばありますね。', pt: 'Ah, agora que você falou, tem mesmo.' },
+        { speaker: 'B', ja: '{野菜|やさい}と{果物|くだもの}の{種類|しゅるい}が{多|おお}くて、とにかく{安|やす}いですよ。', pt: 'Tem muitos tipos de verduras, legumes e frutas, e acima de tudo é barato.' },
+        { speaker: 'A', ja: 'そうですか。{肉|にく}や{魚|さかな}はどうですか？', pt: 'É mesmo? E carne e peixe?' },
+        { speaker: 'B', ja: 'んー、いつもは{普通|ふつう}だけど、{安|やす}くなる{日|ひ}がありますよ。{毎月|まいつき}29{日|にち}は「{肉|にく}の{日|ひ}」で{肉|にく}が{安|やす}くなるんです。お{肉|にく}を{買|か}うなら、この{日|ひ}がおすすめ。', pt: 'Hmm, normalmente é preço comum, mas há dias em que fica barato. Todo dia 29 é “dia da carne”, e a carne fica mais barata. Se for comprar carne, recomendo esse dia.' },
+        { speaker: 'A', ja: 'じゃあ、{今度|こんど}の29{日|にち}に{行|い}ってみます。', pt: 'Então vou experimentar ir no próximo dia 29.' },
+      ],
+    },
+  ],
+  '06-02': [
+    {
+      label: '② 旬彩屋 (06-02)',
+      setupPt: 'Uma pessoa diz que preparar comida todos os dias está trabalhoso; a outra recomenda 旬彩屋.',
+      lines: [
+        { speaker: 'A', ja: '{最近|さいきん}、{仕事|しごと}が{忙|いそが}しくて、{毎日|まいにち}ご{飯|はん}を{作|つく}るのが{面倒|めんどう}で……。', pt: 'Ultimamente o trabalho está corrido, e preparar comida todos os dias está dando trabalho...' },
+        { speaker: 'B', ja: 'ご{飯|はん}を{作|つく}るの{大変|たいへん}ですよね。{私|わたし}はよくお{惣菜屋|そうざいや}さんで{買|か}ってます。「{旬彩屋|しゅんさいや}」、{知|し}ってますか？', pt: 'Preparar comida dá trabalho mesmo. Eu costumo comprar em loja de pratos prontos. Você conhece Shunsaiya?' },
+        { speaker: 'A', ja: '{旬彩屋|しゅんさいや}……はじめて、{聞|き}きました。', pt: 'Shunsaiya... é a primeira vez que ouço falar.' },
+        { speaker: 'B', ja: '{昔|むかし}からあるお{惣菜屋|そうざいや}さんです。{和|わ}・{洋|よう}・{中|ちゅう}いろいろ{種類|しゅるい}があるから{飽|あ}きないし、おすすめですよ。', pt: 'É uma loja de pratos prontos antiga. Tem comida japonesa, ocidental, chinesa e vários tipos, então não enjoa; recomendo.' },
+        { speaker: 'A', ja: 'へー、いいですね。', pt: 'Ah, que bom.' },
+        { speaker: 'B', ja: '{手作|てづく}りでおいしいし、よく{行|い}ってます。', pt: 'É feito à mão e gostoso, então vou bastante.' },
+        { speaker: 'A', ja: 'お{店|みせ}、どこにありますか？', pt: 'Onde fica a loja?' },
+        { speaker: 'B', ja: 'ちょっと{待|ま}ってくださいね。{今|いま}、スマホで{見|み}せます。……ほら、ここです。', pt: 'Espere um pouquinho. Vou mostrar no smartphone. ...Olha, é aqui.' },
+        { speaker: 'A', ja: 'ありがとうございます。{今日|きょう}の{帰|かえ}りに{行|い}ってみます。', pt: 'Obrigado. Vou passar lá na volta hoje.' },
+      ],
+    },
+  ],
+  '06-03': [
+    {
+      label: '③ Ｃプライス (06-03)',
+      setupPt: 'Uma pessoa pergunta sobre o supermercado comercial Ｃプライス.',
+      lines: [
+        { speaker: 'A', ja: '{小久保|こくぼ}さん、「Ｃプライス」って{知|し}ってますか？ {昨日|きのう}、テレビでやってたんですけど……。', pt: 'Kokubo, você conhece o C Price? Apareceu ontem na TV...' },
+        { speaker: 'B', ja: 'あー、{業務用|ぎょうむよう}のスーパーですよね。よく{行|い}きますよ。', pt: 'Ah, é aquele supermercado de uso comercial, né? Eu vou bastante.' },
+        { speaker: 'A', ja: 'へー、やっぱり{安|やす}いですか？', pt: 'Ah, é barato mesmo?' },
+        { speaker: 'B', ja: 'そうですね。{一|ひと}つ{一|ひと}つの{量|りょう}が{多|おお}いから、その{分|ぶん}{安|やす}くて、いいですよ。', pt: 'Sim. Como a quantidade de cada item é grande, fica barato nessa proporção, então é bom.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'É mesmo?' },
+        { speaker: 'B', ja: 'あと、{冷凍食品|れいとうしょくひん}がたくさんあるんです。{餃子|ぎょうざ}とかうどんとか、まとめて{買|か}っておくと{便利|べんり}ですよ。', pt: 'Além disso, tem muitos congelados. É prático comprar gyoza, udon e coisas assim em quantidade e deixar guardado.' },
+        { speaker: 'A', ja: 'いいですね。', pt: 'Que bom.' },
+        { speaker: 'B', ja: 'ほかにも、レトルト{食品|しょくひん}とか{飲|の}み{物|もの}もたくさんあるし、おすすめですよ。', pt: 'Também tem muitos alimentos prontos em embalagem, bebidas e outras coisas. Recomendo.' },
+        { speaker: 'A', ja: 'じゃあ、{今度|こんど}、{仕事|しごと}が{休|やす}みの{日|ひ}に{行|い}ってみようかな。', pt: 'Então acho que vou experimentar ir num dia de folga do trabalho.' },
+      ],
+    },
+  ],
+  '06-04': [
+    {
+      label: '④ こばとの里 (06-04)',
+      setupPt: '雨宮 recomenda o 道の駅 こばとの里 para comprar verduras e legumes.',
+      lines: [
+        { speaker: 'A', ja: '{雨宮|あめみや}さん、{野菜|やさい}、いつもどこで{買|か}ってますか？', pt: 'Amemiya, onde você costuma comprar verduras e legumes?' },
+        { speaker: 'B', ja: '{野菜|やさい}だと「こばとの{里|さと}」が{多|おお}いですね。', pt: 'Para verduras e legumes, costumo ir ao Kobato no Sato.' },
+        { speaker: 'A', ja: 'こばとの{里|さと}って、{道|みち}の{駅|えき}でしたっけ？', pt: 'Kobato no Sato era um michi no eki, né?' },
+        { speaker: 'B', ja: 'そうそう。{毎週|まいしゅう}{日曜日|にちようび}に{朝市|あさいち}をやってて、いろいろな{野菜|やさい}が{買|か}えるんですよ。', pt: 'Isso. Todo domingo tem feira da manhã, e dá para comprar vários tipos de verduras e legumes.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'B', ja: '{農家|のうか}の{人|ひと}が{直接|ちょくせつ}{売|う}ってるから{安|やす}いし、{新鮮|しんせん}でおいしいですよ。', pt: 'Como os agricultores vendem diretamente, é barato, fresco e gostoso.' },
+        { speaker: 'B', ja: 'どうやって{食|た}べればいいかわからないときは、{農家|のうか}の{人|ひと}に{聞|き}くとおいしい{食|た}べ{方|かた}を{教|おし}えてくれるんです。', pt: 'Quando você não sabe como comer algo, se perguntar aos agricultores, eles ensinam uma forma gostosa de comer.' },
+        { speaker: 'A', ja: 'それはいいですね。', pt: 'Isso é bom.' },
+        { speaker: 'B', ja: 'でも、{朝市|あさいち}だから{午前中|ごぜんちゅう}に{行|い}かないと{野菜|やさい}が{売|う}り{切|き}れちゃうんです。', pt: 'Mas como é feira da manhã, se você não for durante a manhã, os vegetais acabam.' },
+        { speaker: 'A', ja: 'じゃあ、{行|い}くときは{早起|はやお}きしなきゃいけませんね。', pt: 'Então, quando for, preciso acordar cedo.' },
+      ],
+    },
+  ],
+  '06-05': [
+    {
+      label: '形に注目 - V-ておく (06-05)',
+      lines: [
+        { speaker: 'B', ja: '{餃子|ぎょうざ}とかうどんとか、まとめて{買|か}っておくと{便利|べんり}ですよ。', pt: 'É prático comprar gyoza, udon e coisas assim em quantidade e deixar guardado.' },
+      ],
+    },
+  ],
+  '06-06': [
+    {
+      label: 'ことばの準備 - 毎日の食事 (06-06)',
+      setupPt: 'Vocabulário para falar de como a pessoa resolve as refeições do dia a dia.',
+      lines: [
+        { speaker: '語彙', ja: '{自炊|じすい}をする／{自分|じぶん}で{作|つく}る。', pt: 'Cozinhar para si / preparar por conta própria.' },
+        { speaker: '語彙', ja: '{家族|かぞく}が{作|つく}ってくれる。', pt: 'A família prepara para mim.' },
+        { speaker: '語彙', ja: '{家族|かぞく}／{友|とも}だちと{交代|こうたい}で{作|つく}る。', pt: 'Preparar revezando com a família/amigos.' },
+        { speaker: '語彙', ja: '{外食|がいしょく}をする。', pt: 'Comer fora.' },
+        { speaker: '語彙', ja: '{社食|しゃしょく}で{食|た}べる。', pt: 'Comer no refeitório da empresa.' },
+        { speaker: '語彙', ja: '{寮|りょう}の{食堂|しょくどう}で{食|た}べる。', pt: 'Comer no refeitório do dormitório.' },
+        { speaker: '語彙', ja: 'テイクアウトをする。', pt: 'Pegar comida para levar.' },
+        { speaker: '語彙', ja: 'デリバリー／{出前|でまえ}を{頼|たの}む。', pt: 'Pedir delivery/entrega.' },
+        { speaker: '語彙', ja: 'お{惣菜|そうざい}／お{弁当|べんとう}を{買|か}う。', pt: 'Comprar pratos prontos/obentô.' },
+      ],
+    },
+  ],
+  '06-07': [
+    {
+      label: 'ことばの確認 - 毎日の食事 (06-07)',
+      setupPt: 'Ouça e escolha a ilustração correspondente. A ordem segue o gabarito da atividade.',
+      lines: [
+        { speaker: '語彙', ja: '{家族|かぞく}が{作|つく}ってくれる。', pt: 'A família prepara para mim.' },
+        { speaker: '語彙', ja: '{寮|りょう}の{食堂|しょくどう}で{食|た}べる。', pt: 'Comer no refeitório do dormitório.' },
+        { speaker: '語彙', ja: '{家族|かぞく}／{友|とも}だちと{交代|こうたい}で{作|つく}る。', pt: 'Preparar revezando com a família/amigos.' },
+        { speaker: '語彙', ja: 'お{惣菜|そうざい}／お{弁当|べんとう}を{買|か}う。', pt: 'Comprar pratos prontos/obentô.' },
+        { speaker: '語彙', ja: '{外食|がいしょく}をする。', pt: 'Comer fora.' },
+        { speaker: '語彙', ja: '{社食|しゃしょく}で{食|た}べる。', pt: 'Comer no refeitório da empresa.' },
+        { speaker: '語彙', ja: 'デリバリー／{出前|でまえ}を{頼|たの}む。', pt: 'Pedir delivery/entrega.' },
+        { speaker: '語彙', ja: '{自炊|じすい}をする／{自分|じぶん}で{作|つく}る。', pt: 'Cozinhar para si / preparar por conta própria.' },
+      ],
+    },
+  ],
+  '06-08': [
+    {
+      label: '① エドガーさん - 外食とデリバリー (06-08)',
+      setupPt: 'エドガー fala sobre jantar fora, pedir delivery e se preocupar com dinheiro e nutrição.',
+      lines: [
+        { speaker: 'A', ja: 'エドガーさん、{今日|きょう}、エンジさんといっしょにご{飯|はん}を{食|た}べに{行|い}くんだけど、いっしょにどう？', pt: 'Edgar, hoje vou comer com Enji. Quer ir junto?' },
+        { speaker: 'B', ja: 'あ、いいですね。{行|い}きます。', pt: 'Ah, boa. Eu vou.' },
+        { speaker: 'A', ja: 'エドガーさんは、いつも{夕飯|ゆうはん}はどうしてるの？', pt: 'Edgar, o que você costuma fazer no jantar?' },
+        { speaker: 'B', ja: '{夜|よる}は{外食|がいしょく}が{多|おお}いですね。あと、{仕事|しごと}で{遅|おそ}くなるときは、デリバリーを{頼|たの}んで{家|いえ}で{食|た}べたりします。', pt: 'À noite, como fora com frequência. E quando fico até tarde por causa do trabalho, peço delivery e como em casa.' },
+        { speaker: 'A', ja: 'へー、そうなの。', pt: 'Ah, é?' },
+        { speaker: 'B', ja: 'はい。{自分|じぶん}で{作|つく}りたいんですけど、{仕事|しごと}で{疲|つか}れちゃって、{料理|りょうり}できないんです。', pt: 'Sim. Eu queria cozinhar, mas fico cansado do trabalho e não consigo cozinhar.' },
+        { speaker: 'A', ja: 'どんなものを{食|た}べてるの？', pt: 'Que tipo de coisa você come?' },
+        { speaker: 'B', ja: 'うーん、よく{食|た}べるのは、{定食|ていしょく}とかラーメンとかですね。デリバリーのときは、ピザとか{丼物|どんぶりもの}とかが{多|おお}いです。', pt: 'Hmm, o que como bastante é refeição pronta tipo teishoku e ramen. Quando é delivery, costuma ser pizza ou donburi.' },
+        { speaker: 'A', ja: 'ふーん。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'でも、{外食|がいしょく}って、やっぱりお{金|かね}がかかるじゃないですか。それに、{栄養|えいよう}が{偏|かたよ}るから、ちょっと{気|き}になってます。', pt: 'Mas comer fora custa dinheiro, né? Além disso, a nutrição fica desequilibrada, então isso me preocupa um pouco.' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'だから、できるだけ{栄養|えいよう}のバランスも{考|かんが}えるようにしてます。{朝|あさ}は{野菜|やさい}ジュースを{飲|の}んでますよ。', pt: 'Então tento pensar no equilíbrio nutricional o máximo possível. De manhã, tomo suco de vegetais.' },
+        { speaker: 'A', ja: 'うん、{健康|けんこう}には{気|き}をつけなくちゃね。', pt: 'Sim, temos que cuidar da saúde.' },
+      ],
+    },
+  ],
+  '06-09': [
+    {
+      label: '② リサさん - 寮の食堂 (06-09)',
+      setupPt: 'リサ mora no dormitório da empresa e fala sobre comer no refeitório.',
+      lines: [
+        { speaker: 'A', ja: 'リサさんって、{会社|かいしゃ}の{寮|りょう}に{住|す}んでるんだよね。{毎日|まいにち}のご{飯|はん}は、{寮|りょう}で{食|た}べてるの？', pt: 'Risa, você mora no dormitório da empresa, né? Você come no dormitório todos os dias?' },
+        { speaker: 'B', ja: 'はい。{朝|あさ}と{夜|よる}は、ほとんど{毎日|まいにち}、{寮|りょう}の{食堂|しょくどう}で{食|た}べてます。', pt: 'Sim. De manhã e à noite, como quase todos os dias no refeitório do dormitório.' },
+        { speaker: 'A', ja: 'そうなんだ。どんなご{飯|はん}が{出|で}るの？', pt: 'Ah. Que tipo de refeição servem?' },
+        { speaker: 'B', ja: '{夜|よる}は{肉|にく}か{魚|さかな}が{選|えら}べるんです。{肉|にく}は、{照|て}り{焼|や}きチキンとか、ハンバーグとか。{魚|さかな}は、{焼|や}き{魚|ざかな}とかフライとか。それと、{野菜|やさい}の{料理|りょうり}がついてます。', pt: 'À noite dá para escolher carne ou peixe. Carne pode ser frango teriyaki, hambúrguer e coisas assim. Peixe pode ser grelhado ou frito. E vem um prato de vegetais.' },
+        { speaker: 'A', ja: 'へー、{健康的|けんこうてき}だね。うらやましい。', pt: 'Nossa, é saudável. Que inveja.' },
+        { speaker: 'B', ja: 'でも、{私|わたし}、{魚|さかな}がちょっと{苦手|にがて}なので、{毎日|まいにち}、{肉|にく}ばかり{食|た}べてますけど。', pt: 'Mas eu não gosto muito de peixe, então acabo comendo carne quase todos os dias.' },
+        { speaker: 'A', ja: 'ははは。', pt: 'Ha ha ha.' },
+        { speaker: 'B', ja: 'あと、ときどきファストフードも{食|た}べたくなるんですよね。そういうときは、ハンバーガーを{買|か}って{食|た}べたりしてます。', pt: 'Além disso, às vezes também dá vontade de comer fast food. Nesses momentos, compro hambúrguer e como.' },
+        { speaker: 'A', ja: 'そういうときもあるよね。', pt: 'Acontece mesmo.' },
+        { speaker: 'B', ja: 'はい。でも、{寮|りょう}の{食事|しょくじ}のおかげで、{規則正|きそくただ}しい{食生活|しょくせいかつ}ができて、{助|たす}かります。', pt: 'Sim. Mas, graças às refeições do dormitório, consigo manter uma rotina alimentar regular, e isso ajuda.' },
+        { speaker: 'A', ja: 'ああ、いいねー。', pt: 'Ah, que bom.' },
+        { speaker: 'B', ja: 'おいしくて、ついたくさん{食|た}べちゃうから、{食|た}べすぎには{注意|ちゅうい}しなくちゃと{思|おも}ってます。', pt: 'Como é gostoso, acabo comendo bastante sem pensar, então acho que preciso tomar cuidado para não comer demais.' },
+        { speaker: 'A', ja: 'そっかー。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '06-10': [
+    {
+      label: '③ レーさん - 自炊 (06-10)',
+      setupPt: 'レー fala sobre cozinhar todos os dias, pesquisar receitas e evitar desperdício.',
+      lines: [
+        { speaker: 'A', ja: 'レーさんって、{一人暮|ひとりぐ}らしですよね？ ご{飯|はん}は、{自分|じぶん}で{作|つく}ってるんですか？', pt: 'Rei, você mora sozinha, né? Você prepara suas refeições?' },
+        { speaker: 'B', ja: 'ええ。{毎日|まいにち}、{自炊|じすい}してます。{前|まえ}は{自分|じぶん}の{国|くに}の{料理|りょうり}を{作|つく}ることが{多|おお}かったんですけど、{最近|さいきん}は{日本食|にほんしょく}も{作|つく}ってるんですよ。', pt: 'Sim. Cozinho para mim todos os dias. Antes eu fazia mais comidas do meu país, mas recentemente também faço comida japonesa.' },
+        { speaker: 'A', ja: 'へー、そうなんですか。', pt: 'Nossa, é mesmo?' },
+        { speaker: 'B', ja: 'ええ、{私|わたし}、{料理|りょうり}が{好|す}きなんです。ネットでいろいろレシピを{調|しら}べられるじゃないですか。それを{見|み}ながら{作|つく}ってます。{肉|にく}じゃがとか{炊|た}き{込|こ}みご{飯|はん}とか。', pt: 'Sim, eu gosto de cozinhar. Dá para pesquisar várias receitas na internet, né? Vou fazendo olhando isso. Nikujaga, takikomi gohan e coisas assim.' },
+        { speaker: 'A', ja: '{肉|にく}じゃがですかー。', pt: 'Nikujaga, hein.' },
+        { speaker: 'B', ja: 'あと、{日本食|にほんしょく}だけじゃなくて、ほかの{国|くに}の{料理|りょうり}にもいろいろ{挑戦|ちょうせん}してみたいと{思|おも}ってます。', pt: 'Além de comida japonesa, também quero experimentar preparar várias comidas de outros países.' },
+        { speaker: 'A', ja: 'すごいですねー。', pt: 'Que incrível.' },
+        { speaker: 'B', ja: 'いやいやいや。{自炊|じすい}って、{自分|じぶん}の{好|す}きなものを{食|た}べられるのがいいですよね。', pt: 'Que nada. O bom de cozinhar para si é poder comer o que gosta.' },
+        { speaker: 'A', ja: '{毎日|まいにち}おいしいご{飯|はん}が{食|た}べられて{幸|しあわ}せですね。', pt: 'Você pode comer comida gostosa todos os dias, que felicidade.' },
+        { speaker: 'B', ja: 'ただ、1{人|ひとり}だと、{作|つく}る{量|りょう}が{多|おお}くなっちゃうんですよね。{作|つく}りすぎて、むだにしないように{気|き}をつけてます。', pt: 'Mas, quando é para uma pessoa só, a quantidade que se faz acaba ficando grande. Tomo cuidado para não fazer demais e desperdiçar.' },
+        { speaker: 'A', ja: 'なるほど。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '06-11': [
+    {
+      label: '形に注目 - Sじゃないですか (06-11)',
+      lines: [
+        { speaker: 'B', ja: '{外食|がいしょく}って、やっぱりお{金|かね}がかかるじゃないですか。', pt: 'Comer fora custa dinheiro, né?' },
+        { speaker: 'B', ja: 'ネットでいろいろレシピを{調|しら}べられるじゃないですか。', pt: 'Dá para pesquisar várias receitas na internet, né?' },
+      ],
+    },
+  ],
+  '06-12': [
+    {
+      label: '話すモデル - 毎日の食事について (06-12)',
+      setupPt: 'Modelo para falar com algum detalhe sobre as refeições do dia a dia.',
+      lines: [
+        { speaker: 'A', ja: '{毎日|まいにち}の{食事|しょくじ}は、どうしてるんですか？', pt: 'Como você faz com as refeições do dia a dia?' },
+        { speaker: 'B', ja: '{夜|よる}は{外食|がいしょく}が{多|おお}いですね。あと、{仕事|しごと}で{遅|おそ}くなるときは、デリバリーを{頼|たの}んで{家|いえ}で{食|た}べたりします。', pt: 'À noite, como fora com frequência. E quando fico até tarde por causa do trabalho, peço delivery e como em casa.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '{自分|じぶん}で{作|つく}りたいんですけど、{仕事|しごと}で{疲|つか}れちゃって、{料理|りょうり}できないんです。', pt: 'Eu queria cozinhar, mas fico cansado do trabalho e não consigo cozinhar.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'É mesmo?' },
+        { speaker: 'B', ja: 'よく{食|た}べるのは、{定食|ていしょく}とかラーメンとかですね。デリバリーのときは、ピザとか{丼物|どんぶりもの}とかが{多|おお}いです。', pt: 'O que como bastante é teishoku ou ramen. Quando é delivery, costuma ser pizza ou donburi.' },
+        { speaker: 'A', ja: 'ふーん。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'でも、{外食|がいしょく}って、やっぱりお{金|かね}がかかるじゃないですか。それに、{栄養|えいよう}が{偏|かたよ}るから、ちょっと{気|き}になってます。', pt: 'Mas comer fora custa dinheiro, né? Além disso, a nutrição fica desequilibrada, então isso me preocupa um pouco.' },
+        { speaker: 'A', ja: 'そうですね。', pt: 'É verdade.' },
+        { speaker: 'B', ja: 'だから、{栄養|えいよう}のバランスも{考|かんが}えるようにしてます。{朝|あさ}は{野菜|やさい}ジュースを{飲|の}んでます。', pt: 'Então tento pensar no equilíbrio nutricional. De manhã, tomo suco de vegetais.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -1860,6 +2118,107 @@ const lesson5: Section = {
   audios: attachScripts(5, L5_SCRIPTS),
 }
 
+const lesson6: Section = {
+  id: 'lesson-6',
+  level: 'pre-intermediate',
+  titleJa: '第6課 毎日、自炊してます',
+  titlePt: 'Lição 6 - Cozinho para mim todos os dias',
+  summaryPt:
+    'Refeições do dia a dia · entender recomendações de mercados, ler artigo sobre preparo no micro-ondas e falar com detalhe sobre a própria alimentação.',
+  studyNotes: [
+    {
+      title: 'Tópico: Refeições do dia a dia (毎日の食事)',
+      bodyPt:
+        'Pergunta de abertura: {毎日|まいにち}の{食事|しょくじ}は、{自分|じぶん}で{作|つく}りますか？ {外食|がいしょく}が{多|おお}いですか？\n\n' +
+        '## Can-do\n' +
+        '- Ouvir comentários simples de amigos sobre supermercados ou lojas recomendadas e entender os motivos.\n' +
+        '- Ler um artigo online sobre alimentação e entender o conteúdo geral.\n' +
+        '- Falar com algum detalhe sobre refeições diárias: o que come, por que faz assim, opinião e cuidados.',
+    },
+    {
+      title: 'Atividade 1: onde comprar alimentos',
+      bodyPt:
+        'Quatro pessoas perguntam sobre lojas recomendadas para comida do dia a dia.\n\n' +
+        '| Faixa | Loja | Tipo | Pontos principais |\n|---|---|---|---|\n' +
+        '| 06-01 | ヤオイチ | {駅前|えきまえ}の{安|やす}いスーパー | verduras/frutas variadas e baratas; todo dia 29 é {肉|にく}の{日|ひ} |\n' +
+        '| 06-02 | {旬彩屋|しゅんさいや} | {昔|むかし}からあるお{惣菜屋|そうざいや} | pratos japoneses, ocidentais e chineses; feito à mão e gostoso |\n' +
+        '| 06-03 | Ｃプライス | {業務用|ぎょうむよう}のスーパー | grandes quantidades, preço baixo, muitos {冷凍食品|れいとうしょくひん} |\n' +
+        '| 06-04 | こばとの{里|さと} | {朝市|あさいち}をやっている{道|みち}の{駅|えき} | agricultores vendem diretamente; barato, fresco; é melhor ir de manhã |',
+    },
+    {
+      title: 'Gramática ➊: V-ておく',
+      bodyPt:
+        '**V-ておく** indica fazer algo com antecedência para algum objetivo futuro.\n\n' +
+        '- `{餃子|ぎょうざ}とかうどんとか、まとめて{買|か}っておくと{便利|べんり}ですよ。`\n' +
+        '- `お{弁当|べんとう}、{注文|ちゅうもん}しておきますね。`\n' +
+        '- `{今日|きょう}は{午後|ごご}から{忙|いそが}しくなるから、お{昼|ひる}、{早|はや}めに{食|た}べておこう。`\n\n' +
+        'Usa-se com verbos volitivos, ligados à forma テ. Na fala, 買っておく pode soar como 買っとく e 飲んでおく como 飲んどく.',
+    },
+    {
+      title: 'Atividade 2: artigo sobre micro-ondas',
+      bodyPt:
+        'O artigo lido no SNS se chama **こんなに{便利|べんり}！ {電子|でんし}レンジ{調理法|ちょうりほう} おすすめレシピも{紹介|しょうかい}！**. Ele apresenta pontos convenientes da culinária com micro-ondas para quem mora sozinho e tende a depender de コンビニ ou 外食.\n\n' +
+        '| Ponto | Título | Ideia |\n|---|---|---|\n' +
+        '| 1 | {時短|じたん}＆{洗|あら}い{物|もの}ラクラク | preparo curto e menos louça; não precisa lavar panela ou frigideira |\n' +
+        '| 2 | {失敗|しっぱい}なしで{安心|あんしん} | não usa fogo; durante o aquecimento, pode desviar o olhar |\n' +
+        '| 3 | {一人分|ひとりぶん}にちょうどいい | dá para fazer quantidades pequenas, sem preparar demais |\n' +
+        '| 4 | {少|すく}ない{油|あぶら}でヘルシー | cozinha com a água dos alimentos, usando pouco óleo e menos tempero |',
+    },
+    {
+      title: 'Gramática ➋: Vがち',
+      bodyPt:
+        '**Vがち** mostra tendência ou frequência alta, muitas vezes com impressão negativa.\n\n' +
+        '- `コンビニや{外食|がいしょく}に{頼|たよ}りがちな{一人暮|ひとりぐ}らし。`\n' +
+        '- `{自炊|じすい}してますけど、{栄養|えいよう}が{偏|かたよ}りがちです。`\n' +
+        '- `{忙|いそが}しいときは、{冷凍食品|れいとうしょくひん}に{頼|たよ}りがちです。`\n\n' +
+        'Forma: verbo na forma マス sem ます + がち. Ex.: 頼ります → 頼りがち.',
+    },
+    {
+      title: 'Atividade 3: falar da alimentação diária',
+      bodyPt:
+        'Três pessoas falam de como lidam com as refeições.\n\n' +
+        '| Faixa | Pessoa | Rotina | Opinião/cuidados |\n|---|---|---|---|\n' +
+        '| 06-08 | エドガー | {夜|よる}は{外食|がいしょく}が{多|おお}い; quando trabalha até tarde, pede デリバリー | custa dinheiro e a nutrição fica desequilibrada; tenta pensar no {栄養|えいよう}のバランス e toma {野菜|やさい}ジュース de manhã |\n' +
+        '| 06-09 | リサ | come no {寮|りょう}の{食堂|しょくどう}; no jantar escolhe carne ou peixe e vem prato de vegetais | a rotina regular ajuda; como é gostoso, toma cuidado para não comer demais |\n' +
+        '| 06-10 | レー | {毎日|まいにち}、{自炊|じすい}; antes fazia comida do próprio país, recentemente também faz 日本食 | gosta porque come o que quer; cuida para não preparar demais e desperdiçar |',
+    },
+    {
+      title: 'Gramática ➌: Sじゃないですか',
+      bodyPt:
+        '**S（普通形）じゃないですか** confirma algo partindo da ideia de que muita gente sabe ou concorda. A entonação de じゃないですか desce.\n\n' +
+        '- `{外食|がいしょく}って、やっぱりお{金|かね}がかかるじゃないですか。`\n' +
+        '- `ネットでいろいろレシピを{調|しら}べられるじゃないですか。`\n' +
+        '- `ラーメンって、カロリーが{高|たか}いじゃないですか。`\n\n' +
+        'Nomes e adjetivos ナ ficam como **Nじゃないですか** e **ナA-じゃないですか**. A partícula **って** costuma introduzir o tópico.',
+    },
+    {
+      title: 'Prática de fala',
+      bodyPt:
+        'A fala-modelo organiza a conversa assim:\n\n' +
+        '1. `{毎日|まいにち}の{食事|しょくじ}は、どうしてるんですか？`\n' +
+        '2. motivo, detalhes da refeição e comidas frequentes;\n' +
+        '3. opinião sobre a própria alimentação;\n' +
+        '4. coisas com que toma cuidado.\n\n' +
+        'A tarefa final pede anotar sua própria rotina alimentar e depois falar sem olhar as anotações, se conseguir.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {冷凍食品|れいとうしょくひん}, {果物|くだもの}, {農家|のうか}, {直接|ちょくせつ}, {健康|けんこう}, {栄養|えいよう}, {鍋|なべ}, {調味料|ちょうみりょう}, {新鮮|しんせん}（な）, {頼|たの}む.\n\n' +
+        '**Vocabulário-chave:** {玉|たま}ねぎ, {面倒|めんどう}（な）, {帰|かえ}り, その{分|ぶん}, {早起|はやお}きする, {調理法|ちょうりほう}, レシピ, {食費|しょくひ}, バランス, {時短|じたん}, {洗|あら}い{物|もの}, {手間|てま}, {一人分|ひとりぶん}, ヘルシー, {夕飯|ゆうはん}, {照|て}り{焼|や}きチキン, {焼|や}き{魚|ざかな}, うらやましい, {肉|にく}じゃが, {炊|た}き{込|こ}みご{飯|はん}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**語呂合わせ:** números podem ser lidos como sons japoneses para criar palavras/frases. A lição usa 29 = にく em {肉|にく}の{日|ひ}. Outros exemplos: 11/22 いい{夫婦|ふうふ}の{日|ひ}, 8/31 {野菜|やさい}の{日|ひ}, 794 = {鳴|な}くよ うぐいす {平安京|へいあんきょう}.\n\n' +
+        '**業務用のスーパー:** vendem alimentos para restaurantes e izakaya, mas clientes comuns também compram. Itens vêm em quantidades maiores e costumam ser mais baratos; há congelados, temperos, produtos secos, enlatados e ingredientes internacionais.\n\n' +
+        '**出前・デリバリー:** pedir comida de restaurante para casa. O 出前 tradicional ainda existe em alguns restaurantes; hoje apps e serviços como Uber Eats e 出前館 são comuns. É prático, mas tende a custar mais por taxas de entrega e serviço.',
+    },
+  ],
+  groups: [lesson6Group],
+  audios: attachScripts(6, L6_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -1869,6 +2228,7 @@ const sections: Section[] = [
   lesson4,
   // Tópico 3 - Refeições do dia a dia (毎日の食事)
   lesson5,
+  lesson6,
 ]
 
 export const irodoriPreIntermediate: Level = {
