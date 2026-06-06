@@ -2623,7 +2623,137 @@ const lesson10: Section = {
   audios: attachScripts(10, L10_SCRIPTS),
 }
 
-// ---- Lições 11-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 11: ポイントカードを忘れてしまいました (tópico 上手な買い物) --------------
+const lesson11Group: ExerciseGroup = {
+  id: 'iro-e2-l11',
+  title: 'ポイントカードを忘れてしまいました',
+  subtitlePt: 'Comprar roupa/sapato dizendo cor e tamanho · avisar quem está por perto quando há um problema · ao perder algo, descrever objeto e lugar · entender anúncios internos de um shopping',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l11-1', number: 1, prompt: 'O título 「ポイントカードを{忘|わす}れて[[しまいました]]」 usa 「V-てしまいました」. Que nuance ela dá aqui?', choices: [{ n: 1, text: 'arrependimento / algo indesejado que aconteceu (acabei esquecendo o cartão de pontos)' }, { n: 2, text: 'algo que se quer muito fazer' }, { n: 3, text: 'uma ordem educada' }, { n: 4, text: 'algo que vai acontecer no futuro' }], answer: 1, translationPt: 'Acabei esquecendo o cartão de pontos.', explanationPt: 'V-てしまいました marca conclusão com pesar/arrependimento. {忘|わす}れてしまいました = «acabei esquecendo» (sem querer). (文法ノート ❻)' },
+    { id: 'iro-e2-l11-2', number: 2, prompt: 'Vocabulário de cores: 「{赤|あか}／{青|あお}／{緑|みどり}／{黄色|きいろ}／{黒|くろ}／{白|しろ}／グレー／{茶色|ちゃいろ}」 são, na ordem:', choices: [{ n: 1, text: 'vermelho / azul / verde / amarelo / preto / branco / cinza / marrom' }, { n: 2, text: 'rosa / azul / roxo / laranja / preto / branco / bege / marrom' }, { n: 3, text: 'vermelho / verde / azul / amarelo / cinza / branco / preto / bege' }, { n: 4, text: 'laranja / azul / verde / amarelo / preto / branco / cinza / vermelho' }], answer: 1, explanationPt: '{赤|あか} (vermelho), {青|あお} (azul), {緑|みどり} (verde), {黄色|きいろ} (amarelo), {黒|くろ} (preto), {白|しろ} (branco), グレー (cinza), {茶色|ちゃいろ} (marrom); também ベージュ, ピンク, カーキ. (Atividade 1)' },
+    { id: 'iro-e2-l11-3', number: 3, prompt: 'O que esta ilustração mostra (tabela de tamanhos de roupa)?', image: `${IMG}/Z_11_1_01_fukunosaizu.png`, imageAlt: 'tamanhos de roupa S, M, L, XL', choices: [{ n: 1, text: '{服|ふく}のサイズ — tamanhos de roupa (S / M / L / XL / フリー)' }, { n: 2, text: 'cores de roupa' }, { n: 3, text: 'preços' }, { n: 4, text: 'tamanhos de sapato' }], answer: 1, explanationPt: '{服|ふく}のサイズ: S / M / L / XL / フリー (tamanho único). (Atividade 1)' },
+    { id: 'iro-e2-l11-4', number: 4, prompt: 'O que esta ilustração mostra (números como 24cm, 24,5cm, 25cm)?', image: `${IMG}/Z_11_1_02_kutsunosaizu.png`, imageAlt: 'tamanhos de sapato em centímetros', choices: [{ n: 1, text: 'くつのサイズ — tamanhos de sapato (em cm)' }, { n: 2, text: 'tamanhos de roupa' }, { n: 3, text: 'preços dos sapatos' }, { n: 4, text: 'cores de sapato' }], answer: 1, explanationPt: 'No Japão o número do calçado é em cm: 24cm, 24.5cm, 25cm. (Atividade 1)' },
+    { id: 'iro-e2-l11-5', number: 5, prompt: 'O que a pessoa está fazendo nesta ilustração, antes de comprar a roupa?', image: `${IMG}/Z_11_1_04_shichaku.png`, imageAlt: 'pessoa experimentando roupa num provador', choices: [{ n: 1, text: '{試着|しちゃく}する — experimentar/provar a roupa (no 試着室)' }, { n: 2, text: 'pagar na caixa' }, { n: 3, text: 'devolver a roupa' }, { n: 4, text: 'lavar a roupa' }], answer: 1, explanationPt: '{試着|しちゃく}する = provar a roupa, no {試着室|しちゃくしつ} (provador). 「{着|き}てみてもいいですか？」. (Atividade 1/2)' },
+    { id: 'iro-e2-l11-6', number: 6, prompt: '「このセーター、{着|き}て[[みてもいいですか]]？」 — 「V-てみてもいいですか」 serve para:', choices: [{ n: 1, text: 'pedir permissão para experimentar/tentar fazer algo (posso provar esta blusa?)' }, { n: 2, text: 'recusar uma oferta' }, { n: 3, text: 'reclamar de um produto' }, { n: 4, text: 'pedir desconto' }], answer: 1, explanationPt: 'V-てみる (tentar) + てもいいですか (posso?) = «posso experimentar ~?». {着|き}てみてもいいですか. Resposta da loja: 「どうぞ」/「ご{試着|しちゃく}できますよ」. (文法ノート ❶)' },
+    { id: 'iro-e2-l11-7', number: 7, prompt: '聴解 11-03 (洋服売り場): que informações a vendedora dá ao cliente?', context: '{店員|てんいん}：いらっしゃいませ。ただいま、{全品|ぜんぴん}10%オフです。…よろしければ、ご{試着|しちゃく}もできますよ。', choices: [{ n: 1, text: 'Todos os itens estão com 10% de desconto e o cliente pode experimentar (試着).' }, { n: 2, text: 'A loja vai fechar.' }, { n: 3, text: 'Não há descontos hoje.' }, { n: 4, text: 'Só se pode pagar em dinheiro.' }], answer: 1, explanationPt: 'ただいま{全品|ぜんぴん}10%オフ; よろしければご{試着|しちゃく}できます (keigo da loja: ごゆっくりごらんください, ご{案内|あんない}いたします). (聴解 11-03)' },
+    { id: 'iro-e2-l11-8', number: 8, prompt: '「この{色|いろ}はちょっと{派手|はで}[[すぎます]]」 — 「A-すぎます」 significa:', choices: [{ n: 1, text: 'demais / excessivamente (esta cor é chamativa demais)' }, { n: 2, text: 'um pouco / mais ou menos' }, { n: 3, text: 'nada / de jeito nenhum' }, { n: 4, text: 'o suficiente / na medida' }], answer: 1, explanationPt: 'A-すぎる = «~ demais». {派手|はで}（な)→{派手|はで}すぎます; {大|おお}きい→{大|おお}きすぎます; {高|たか}い→{高|たか}すぎます. ⚠️ tira-se o い/な antes de すぎる. (文法ノート ❷)' },
+    { id: 'iro-e2-l11-9', number: 9, prompt: '「もうちょっと{大|おお}きい[[の]]、ありますか？」「{黒|くろ}い[[の]]、ありますか？」 — esse 「の」:', choices: [{ n: 1, text: 'substitui o substantivo já conhecido (= «um maior», «um preto») para não repetir セーター etc.' }, { n: 2, text: 'marca posse' }, { n: 3, text: 'transforma o verbo em pergunta' }, { n: 4, text: 'indica razão' }], answer: 1, explanationPt: '[adjetivo] + の = «um(a) ~» (pronome que substitui o nome). {大|おお}きいの, {黒|くろ}いの, ほかの{色|いろ}の. (文法ノート ❸)' },
+    { id: 'iro-e2-l11-10', number: 10, prompt: 'Para comprar uma roupa, a sequência de frases-modelo da lição é (試着 → サイズ/色 → 決める):', choices: [{ n: 1, text: '「{着|き}てみてもいいですか？」→「Mサイズ／{黒|くろ}、ありますか？」「もうちょっと{大|おお}きいの、ありますか？」→「このベージュにします」' }, { n: 2, text: '「もう{始|はじ}まりましたか？」→「いくらですか？」→「{帰|かえ}ります」' }, { n: 3, text: '「どうしましたか？」→「{薬|くすり}をください」→「お{大事|だいじ}に」' }, { n: 4, text: '「いただきます」→「ごちそうさま」→「また{来|き}ます」' }], answer: 1, explanationPt: 'Fluxo de compra: ① {試着|しちゃく}「{着|き}てみてもいいですか？」② サイズ/色「Mサイズ、ありますか／もうちょっと{大|おお}きいの」③ {決|き}める「これにします」. (Atividade 3)' },
+    { id: 'iro-e2-l11-11', number: 11, prompt: 'O que esta ilustração representa (mapa de um grande centro de compras)?', image: `${IMG}/Z_11_2_01_shoppingumooru.png`, imageAlt: 'mapa de shopping mall com setores', choices: [{ n: 1, text: 'ショッピングモール — um shopping/centro de compras (com {駐輪場|ちゅうりんじょう}, インフォメーション, フードコート etc.)' }, { n: 2, text: 'uma estação de trem' }, { n: 3, text: 'um hospital' }, { n: 4, text: 'uma escola' }], answer: 1, explanationPt: 'ショッピングモール: {駐輪場|ちゅうりんじょう} (bicicletário), {入口|いりぐち}, インフォメーション, レジ, フードコート, サービスカウンター. (Atividade · Seção 2)' },
+    { id: 'iro-e2-l11-12', number: 12, prompt: 'O que aconteceu nesta cena (problema durante as compras)?', image: `${IMG}/Z_11_2_04_jitensha.png`, imageAlt: 'pessoa procurando a bicicleta que sumiu do bicicletário', choices: [{ n: 1, text: '{自転車|じてんしゃ}を{盗|ぬす}まれた／{移動|いどう}された — a bicicleta foi roubada ou removida do bicicletário' }, { n: 2, text: 'a bicicleta foi consertada' }, { n: 3, text: 'comprou uma bicicleta nova' }, { n: 4, text: 'emprestou a bicicleta' }], answer: 1, explanationPt: '{自転車|じてんしゃ}を{盗|ぬす}まれた (passivo) ou あっちの{駐輪場|ちゅうりんじょう}に{移動|いどう}された. (Atividade · Seção 2, 聴解 11-14)' },
+    { id: 'iro-e2-l11-13', number: 13, prompt: '「{自転車|じてんしゃ}を{盗|ぬす}[[まれ]]ました」「バッグを[[とら]]れました」 — essa forma (受身/passivo) é usada porque:', choices: [{ n: 1, text: 'a pessoa SOFREU a ação de outro (alguém roubou a bicicleta/a bolsa dela)' }, { n: 2, text: 'a pessoa fez a ação ela mesma' }, { n: 3, text: 'é uma ordem' }, { n: 4, text: 'é algo que vai acontecer' }], answer: 1, explanationPt: 'Passivo 受身②: NをV-(ら)れる, quando se sofre a ação de alguém. {盗|ぬす}む→{盗|ぬす}まれる, とる→とられる, {移動|いどう}する→{移動|いどう}される. (文法ノート ❹)' },
+    { id: 'iro-e2-l11-14', number: 14, prompt: '「もしかしたら、バッグを[[とられたかもしれません]]」 — 「かもしれません」 significa:', choices: [{ n: 1, text: 'talvez / pode ser que (talvez tenham levado a bolsa)' }, { n: 2, text: 'com certeza / definitivamente' }, { n: 3, text: 'não é possível' }, { n: 4, text: 'já aconteceu, sem dúvida' }], answer: 1, explanationPt: '〜かもしれません = «talvez / pode ser». Combina com もしかしたら (quem sabe). とられたかもしれません. (文法ノート ❺)' },
+    { id: 'iro-e2-l11-15', number: 15, prompt: 'O que esta ilustração mostra (objeto comum de ser esquecido na hora de pagar)?', image: `${IMG}/Z_11_2_05_pointokaado.png`, imageAlt: 'cartão de pontos (point card)', choices: [{ n: 1, text: 'ポイントカード — cartão de pontos (também: {会員証|かいいんしょう})' }, { n: 2, text: '{招待状|しょうたいじょう} — convite' }, { n: 3, text: '{香典袋|こうでんぶくろ} — envelope de pêsames' }, { n: 4, text: '{財布|さいふ} — carteira' }], answer: 1, explanationPt: 'ポイントカード (cartão de pontos), também {会員証|かいいんしょう}. 「ポイントカードはお{持|も}ちですか？」→「{忘|わす}れてしまいました」. (聴解 11-19)' },
+    { id: 'iro-e2-l11-16', number: 16, prompt: '聴解 11-17 (トラブル · バッグ): o que a pessoa percebe e o que decide fazer?', context: 'Ａ：さっき、ここにバッグを{置|お}いたんですけど、ないんです。…もしかしたら、とられたかもしれません。Ｂ：インフォメーションに{行|い}ってみますか？', choices: [{ n: 1, text: 'Percebe que a bolsa que deixou ali sumiu (talvez levada) e decide ir à informação.' }, { n: 2, text: 'Encontra a bolsa na fila do caixa.' }, { n: 3, text: 'Compra uma bolsa nova.' }, { n: 4, text: 'Deixa a bolsa de propósito.' }], answer: 1, explanationPt: 'さっき{置|お}いたバッグがない→とられたかもしれません (❺)→インフォメーションに{行|い}く. (聴解 11-17)' },
+    { id: 'iro-e2-l11-17', number: 17, prompt: 'Quando você está com um amigo e algo seu some, como avisa (Atividade 3 ①)?', context: '「さっき、ここに[[バッグ]]を{置|お}いたんですけど、ないんです。もしかしたら、とられたかもしれません。」', choices: [{ n: 1, text: 'Descreve o objeto e o lugar onde o deixou, e diz que talvez tenha sido levado.' }, { n: 2, text: 'Pede para o amigo pagar a conta.' }, { n: 3, text: 'Vai embora sem falar nada.' }, { n: 4, text: 'Pede desconto à loja.' }], answer: 1, explanationPt: 'Avisar uma perda: o que ({objeto|もの}) + onde ({場所|ばしょ}) + とられた/なくなったかもしれません. (Atividade 3 ①)' },
+    { id: 'iro-e2-l11-18', number: 18, prompt: 'O que esta pessoa está sentindo nesta cena (mal-estar no shopping)?', image: `${IMG}/Z_11_2_03_onakagaitai.png`, imageAlt: 'pessoa passando mal, com dor de barriga', choices: [{ n: 1, text: '{急|きゅう}にお{腹|なか}が{痛|いた}くなった — passou mal de repente (dor de barriga)' }, { n: 2, text: 'está com fome' }, { n: 3, text: 'está com frio' }, { n: 4, text: 'está feliz' }], answer: 1, explanationPt: '{体調不良|たいちょうふりょう}: {急|きゅう}にお{腹|なか}が{痛|いた}くなった. Pede ajuda: 「{救急車|きゅうきゅうしゃ}を{呼|よ}んでください」/「ソファに{座|すわ}ってください」. (聴解 11-18)' },
+    { id: 'iro-e2-l11-19', number: 19, prompt: '聴解 11-18 (トラブル · 体調不良): o que a pessoa diz e o que lhe oferecem?', context: 'Ａ：すみません、{急|きゅう}にお{腹|なか}が{痛|いた}くなって……。Ｂ：こちらのソファに{座|すわ}ってください。だいじょうぶですか？', choices: [{ n: 1, text: 'Diz que passou mal de repente (dor de barriga); oferecem que se sente no sofá e perguntam se está bem.' }, { n: 2, text: 'Pede para experimentar uma roupa.' }, { n: 3, text: 'Quer trocar um produto.' }, { n: 4, text: 'Pergunta o preço.' }], answer: 1, explanationPt: '{急|きゅう}にお{腹|なか}が{痛|いた}くなって→こちらのソファに{座|すわ}ってください/{救急車|きゅうきゅうしゃ}を{呼|よ}ぶ. (聴解 11-18)' },
+    { id: 'iro-e2-l11-20', number: 20, prompt: '聴解 11-19 (トラブル · ポイントカード): o que acontece no caixa?', context: 'Ａ：ポイントカードはお{持|も}ちですか？ Ｂ：すみません、ポイントカード、{忘|わす}れてしまいました。Ａ：{次回|じかい}お{持|も}ちください。', choices: [{ n: 1, text: 'O caixa pergunta pelo cartão de pontos; a pessoa esqueceu e pedem que traga da próxima vez.' }, { n: 2, text: 'A pessoa ganha um cartão novo na hora.' }, { n: 3, text: 'O cartão foi roubado.' }, { n: 4, text: 'O caixa cancela a compra.' }], answer: 1, explanationPt: 'ポイントカードはお{持|も}ちですか→{忘|わす}れてしまいました (❻)→{次回|じかい}お{持|も}ちください. (聴解 11-19)' },
+    { id: 'iro-e2-l11-21', number: 21, prompt: 'Vocabulário de problemas: 「{盗|ぬす}む／{停|と}める／{移動|いどう}する／{急|きゅう}に／さっき」 significam:', choices: [{ n: 1, text: 'roubar / estacionar (a bici) / mover/remover / de repente / há pouco (agora há pouco)' }, { n: 2, text: 'comprar / lavar / guardar / devagar / depois' }, { n: 3, text: 'achar / consertar / trocar / sempre / ontem' }, { n: 4, text: 'devolver / pagar / emprestar / nunca / amanhã' }], answer: 1, explanationPt: '{盗|ぬす}む (roubar), {停|と}める (estacionar), {移動|いどう}する (mover), {急|きゅう}に (de repente), さっき (há pouco). (Atividade · Seção 2)' },
+    { id: 'iro-e2-l11-22', number: 22, prompt: 'Vocabulário do shopping: 「{駐輪場|ちゅうりんじょう}／インフォメーション／サービスカウンター／{会員証|かいいんしょう}／{財布|さいふ}」 significam:', choices: [{ n: 1, text: 'bicicletário / balcão de informações / balcão de atendimento / carteirinha de sócio / carteira (de dinheiro)' }, { n: 2, text: 'estacionamento de carro / saída / caixa / ingresso / bolsa' }, { n: 3, text: 'praça de alimentação / entrada / provador / recibo / chave' }, { n: 4, text: 'banheiro / elevador / vitrine / convite / sacola' }], answer: 1, explanationPt: '{駐輪場|ちゅうりんじょう} (bicicletário), インフォメーション, サービスカウンター, {会員証|かいいんしょう} (carteirinha), {財布|さいふ} (carteira). (Seção 2)' },
+    { id: 'iro-e2-l11-23', number: 23, prompt: 'Os kanji 「{色|いろ}／{赤|あか}／{青|あお}／{黒|くろ}／{白|しろ}」 lêem-se:', choices: [{ n: 1, text: 'いろ (cor) / あか (vermelho) / あお (azul) / くろ (preto) / しろ (branco)' }, { n: 2, text: 'いろ / せき / せい / こく / はく' }, { n: 3, text: 'しょく / あか / あお / くろ / しろ' }, { n: 4, text: 'いろ / あか / みどり / くろ / しろ' }], answer: 1, explanationPt: '{色|いろ}, {赤|あか}, {青|あお}, {黒|くろ}, {白|しろ}. (漢字のことば)' },
+    { id: 'iro-e2-l11-24', number: 24, prompt: 'Os kanji 「{女性|じょせい}／{男性|だんせい}／{急|きゅう}に／{営業|えいぎょう}する／{案内|あんない}する」 lêem-se:', choices: [{ n: 1, text: 'じょせい (mulher) / だんせい (homem) / きゅうに (de repente) / えいぎょうする (funcionar/abrir — comércio) / あんないする (guiar/orientar)' }, { n: 2, text: 'じょせい / だんせい / いそぎに / えいぎょうする / あんないする' }, { n: 3, text: 'おんなせい / おとこせい / きゅうに / えいぎょう / あんない' }, { n: 4, text: 'じょせい / だんせい / きゅうに / えいごうする / あんしんする' }], answer: 1, explanationPt: '{女性|じょせい}, {男性|だんせい}, {急|きゅう}に, {営業|えいぎょう}する ({夜|よる}11{時|じ}まで{営業|えいぎょう}), {案内|あんない}する (レジまでご{案内|あんない}). (漢字のことば)' },
+    { id: 'iro-e2-l11-25', number: 25, prompt: 'Resumo: como se avisa educadamente, no shopping, que algo seu sumiu ou que você esqueceu o cartão?', choices: [{ n: 1, text: '「〜を{盗|ぬす}まれました／とられたかもしれません」「ポイントカード、{忘|わす}れてしまいました」 (passivo + かもしれません + てしまいました)' }, { n: 2, text: '「もう{始|はじ}まりましたか？」' }, { n: 3, text: '「{着|き}てみてもいいですか？」' }, { n: 4, text: '「{年|とし}によって{違|ちが}います」' }], answer: 1, explanationPt: 'Avisar problema: 受身 ({盗|ぬす}まれる) + かもしれません + てしまいました. (文法ノート ❹❺❻)' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 11 (situação + falas-chave citadas; não verbatim)
+const L11_SCRIPTS: Record<string, ScriptItem[]> = {
+  '11-03': [
+    {
+      label: '会話 — 洋服売り場（セーター）(11-03) · resumo',
+      setupJa: '{客|きゃく}が{洋服|ようふく}{売|う}り{場|ば}でセーターを{選|えら}び、{店員|てんいん}に{試着|しちゃく}・サイズ・{色|いろ}を{聞|き}いています。',
+      setupPt: 'Resumo: cliente escolhe uma blusa; vendedora avisa do desconto e oferece o provador; cliente pede outra cor (a atual é chamativa demais) e um tamanho maior. Decide ficar com a peça.',
+      lines: [
+        { speaker: '店員', ja: 'ただいま、{全品|ぜんぴん}10%オフです。よろしければ、ご{試着|しちゃく}もできますよ。', pt: 'No momento, todos os itens com 10% de desconto. Se quiser, pode experimentar.' },
+        { speaker: '客', ja: 'この{色|いろ}はちょっと{派手|はで}すぎます。ほかの{色|いろ}、ありませんか？ もうちょっと{大|おお}きいの、ありますか？', pt: 'Esta cor é chamativa demais. Não tem outra cor? E um tamanho um pouco maior?' },
+      ],
+    },
+  ],
+  '11-17': [
+    {
+      label: 'トラブル① — バッグがない (11-17) · resumo',
+      setupJa: 'いっしょに{来|き}た{人|ひと}に、なくなったものを{伝|つた}えています。',
+      setupPt: 'Resumo: a pessoa nota que a bolsa que deixou ali sumiu — talvez tenham levado — e decidem ir ao balcão de informações.',
+      lines: [
+        { speaker: 'A', ja: 'さっき、ここにバッグを{置|お}いたんですけど、ないんです。もしかしたら、とられたかもしれません。', pt: 'Agora há pouco deixei a bolsa aqui e ela sumiu. Talvez tenham levado.' },
+        { speaker: 'B', ja: 'インフォメーションに{行|い}ってみますか？', pt: 'Vamos tentar ir ao balcão de informações?' },
+      ],
+    },
+  ],
+  '11-18': [
+    {
+      label: 'トラブル② — 体調不良 (11-18) · resumo',
+      setupPt: 'Resumo: a pessoa passa mal de repente (dor de barriga); oferecem que se sente no sofá e cogita-se chamar uma ambulância.',
+      lines: [
+        { speaker: 'A', ja: 'すみません、{急|きゅう}にお{腹|なか}が{痛|いた}くなって……。', pt: 'Com licença, de repente comecei a sentir dor de barriga…' },
+        { speaker: 'B', ja: 'こちらのソファに{座|すわ}ってください。{救急車|きゅうきゅうしゃ}を{呼|よ}びますか？', pt: 'Sente-se neste sofá, por favor. Quer que eu chame uma ambulância?' },
+      ],
+    },
+  ],
+  '11-19': [
+    {
+      label: 'トラブル③ — ポイントカードを忘れた (11-19) · resumo',
+      setupPt: 'Resumo: no caixa, o cliente percebe que esqueceu o cartão de pontos; pedem que o traga na próxima vez.',
+      lines: [
+        { speaker: '店員', ja: 'ポイントカードはお{持|も}ちですか？', pt: 'Está com o cartão de pontos?' },
+        { speaker: '客', ja: 'すみません、ポイントカード、{忘|わす}れてしまいました。', pt: 'Desculpe, acabei esquecendo o cartão de pontos.' },
+        { speaker: '店員', ja: '{次回|じかい}お{持|も}ちください。', pt: 'Traga da próxima vez, por favor.' },
+      ],
+    },
+  ],
+}
+
+const lesson11: Section = {
+  id: 'lesson-11',
+  level: 'elementary2',
+  titleJa: '第11課 ポイントカードを忘れてしまいました',
+  titlePt: 'Lição 11 — Acabei esquecendo o cartão de pontos',
+  summaryPt:
+    'Comprar bem · numa loja de roupas, dizer cor e tamanho e experimentar (着てみてもいいですか／もうちょっと大きいの、ありますか), avisar quem está por perto quando surge um problema nas compras (自転車を盗まれました／急にお腹が痛くなって), ao perder algo descrever o objeto e o lugar (とられたかもしれません) e entender anúncios e avisos internos do shopping.',
+  studyNotes: [
+    {
+      title: 'Tópico: Comprar bem (上手な買い物)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Numa loja de roupas, dizer cor, tamanho etc. e comprar o que quer.\n' +
+        '- Avisar quem está por perto quando houver um problema durante as compras.\n' +
+        '- Ao perder algo, descrever o objeto e o lugar onde o perdeu.\n' +
+        '- Ouvir anúncios internos de um shopping etc. e entender o conteúdo geral.\n\n' +
+        '💡 Cenário: uma ショッピングモール (shopping), com {洋服|ようふく}{売|う}り{場|ば}, {試着室|しちゃくしつ}, {駐輪場|ちゅうりんじょう}, インフォメーション e サービスカウンター.',
+    },
+    {
+      title: 'V-てみてもいいですか / A-すぎます / A+の (➊➋➌)',
+      bodyPt:
+        'Na loja de roupas:\n\n' +
+        '- **V-てみてもいいですか** — pedir para experimentar: `{着|き}てみてもいいですか？` (resposta: どうぞ／ご{試着|しちゃく}できますよ). (❶)\n' +
+        '- **A-すぎます** — “~ demais”: `{派手|はで}すぎます`, `{大|おお}きすぎます`, `{高|たか}すぎます` (tira-se い/な antes de すぎる). (❷)\n' +
+        '- **[adjetivo] + の** — “um(a) ~” (substitui o nome): `もうちょっと{大|おお}きいの、ありますか？`, `{黒|くろ}いの`. (❸)',
+    },
+    {
+      title: 'Passivo 受身② / かもしれません / V-てしまいました (➍➎➏)',
+      bodyPt:
+        'Para avisar um problema durante as compras:\n\n' +
+        '- **Passivo 受身② (Nを V-(ら)れる)** — sofrer a ação de alguém: `{自転車|じてんしゃ}を{盗|ぬす}まれました`, `バッグをとられました`, `{駐輪場|ちゅうりんじょう}に{移動|いどう}されました`. (❹)\n' +
+        '- **〜かもしれません** — talvez/pode ser (com もしかしたら): `とられたかもしれません`. (❺)\n' +
+        '- **V-てしまいました** — conclusão com pesar/sem querer: `ポイントカード、{忘|わす}れてしまいました`. (❻)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Cores:** {赤|あか}, {青|あお}, {緑|みどり}, {黄色|きいろ}, {黒|くろ}, {白|しろ}, ベージュ, ピンク, {茶色|ちゃいろ}, グレー, カーキ.\n\n' +
+        '**Loja/compra:** サイズ (S/M/L/XL/フリー), 〜cm, {試着|しちゃく}する, {試着室|しちゃくしつ}, {全品|ぜんぴん}, 〜オフ, {派手|はで}（な), {地味|じみ}（な), {営業|えいぎょう}する, レジ.\n\n' +
+        '**Problemas:** {盗|ぬす}む/{盗|ぬす}まれる, とられる, {停|と}める, {移動|いどう}する, {急|きゅう}に, {体調不良|たいちょうふりょう}, {救急車|きゅうきゅうしゃ}, {駐輪場|ちゅうりんじょう}, インフォメーション, ポイントカード/{会員証|かいいんしょう}, {財布|さいふ}, {忘|わす}れる.\n\n' +
+        '**Kanji da lição:** {色|いろ}, {赤|あか}, {青|あお}, {黒|くろ}, {白|しろ}, {女性|じょせい}, {男性|だんせい}, {急|きゅう}に, {営業|えいぎょう}する, {案内|あんない}する.',
+    },
+  ],
+  groups: [lesson11Group],
+  audios: attachScripts(11, L11_SCRIPTS),
+}
+
+// ---- Lições 12-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -2641,12 +2771,7 @@ const sections: Section[] = [
   lesson9,
   lesson10,
   // Tópico 6 — Comprar bem (上手な買い物)
-  scaffold(11, 'Comprar bem', 'ポイントカードを忘れてしまいました', 'Esqueci o cartão de pontos', [
-    'Numa loja de roupas, dizer cor, tamanho etc. e comprar o que quer.',
-    'Avisar quem está por perto quando houver um problema durante as compras.',
-    'Ao perder algo, descrever o objeto e o lugar onde o perdeu.',
-    'Ouvir anúncios internos de um shopping etc. e entender o conteúdo geral.',
-  ]),
+  lesson11,
   scaffold(12, 'Comprar bem', 'この掃除機は軽くて動かしやすいですよ', 'Este aspirador é leve e fácil de manusear', [
     'Quando quer comprar algo, consultar alguém sobre o que comprar e onde.',
     'Usar um app/site de brechó (flea market) para comprar eletroeletrônicos e outros itens.',
