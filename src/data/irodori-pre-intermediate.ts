@@ -666,6 +666,67 @@ const lesson12Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 13: ご結婚おめでとうございます (tópico 人とのつき合い) ----
+const lesson13Group: ExerciseGroup = {
+  id: 'iro-pi-l13',
+  title: 'ご結婚おめでとうございます',
+  subtitlePt: 'Mensagens · atualizações de conhecidos · presentes · discursos formais',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l13-1', number: 1, prompt: 'Qual é o tópico da Lição 13?', choices: [{ n: 1, text: '人とのつき合い (relações e convivência com pessoas)' }, { n: 2, text: 'こんなときどうする？' }, { n: 3, text: '私と日本語' }, { n: 4, text: '毎日の食事' }], answer: 1, explanationPt: 'A Lição 13 abre o tópico 人とのつき合い, tratando de mensagens, notícias de conhecidos, presentes e discursos.' },
+    { id: 'iro-pi-l13-2', number: 2, prompt: '「ご結婚おめでとうございます」 significa:', choices: [{ n: 1, text: 'Parabéns pelo casamento.' }, { n: 2, text: 'Sinto muito pelo funeral.' }, { n: 3, text: 'Obrigado pela aposentadoria.' }, { n: 4, text: 'Feliz ano novo.' }], answer: 1, explanationPt: '結婚 é casamento; おめでとうございます é parabéns em forma polida.' },
+    { id: 'iro-pi-l13-3', number: 3, prompt: 'Pergunta de abertura: 最近、あなたやあなたの知り合いに、何か大きなライフイベントがありましたか？', choices: [{ n: 1, text: 'Você ou alguém que você conhece teve algum grande evento de vida recentemente?' }, { n: 2, text: 'Você sabe chamar ambulância?' }, { n: 3, text: 'Você já encontrou uma carteira?' }, { n: 4, text: 'Você gosta de cozinhar?' }], answer: 1, explanationPt: 'O material dá exemplos como 誕生, 入学, 就職 e 結婚.' },
+    { id: 'iro-pi-l13-4', number: 4, prompt: 'Can-do 41: a atividade 「お誕生日おめでとう！」 pede que o aluno consiga:', choices: [{ n: 1, text: 'enviar mensagem de aniversário a um amigo por app e trocar atualizações recentes' }, { n: 2, text: 'ligar para 110' }, { n: 3, text: 'ler cardápio por tablet' }, { n: 4, text: 'explicar regras de ingresso' }], answer: 1, explanationPt: 'A atividade é escrita em aplicativo de mensagem, com felicitação, 近況 e promessa de encontro.' },
+    { id: 'iro-pi-l13-5', number: 5, prompt: 'No exemplo de mensagem, como está サナ, segundo o gabarito?', choices: [{ n: 1, text: 'está bem; ainda não se acostumou ao novo trabalho, mas vai levando, e o trabalho é interessante' }, { n: 2, text: 'está internada por doença' }, { n: 3, text: 'vai se aposentar depois de 43 anos' }, { n: 4, text: 'comprou um massageador' }], answer: 1, explanationPt: 'O gabarito resume: 元気。新しい職場の環境にはまだ慣れていないが、なんとかやっている。仕事はおもしろい.' },
+    { id: 'iro-pi-l13-6', number: 6, prompt: 'No exemplo de mensagem, que promessa ficou combinada?', choices: [{ n: 1, text: '食事の約束 (combinar uma refeição)' }, { n: 2, text: 'ligar para a polícia' }, { n: 3, text: 'comprar 防災リュック' }, { n: 4, text: 'fazer discurso de casamento' }], answer: 1, explanationPt: 'O gabarito marca 食事の約束.' },
+    { id: 'iro-pi-l13-7', number: 7, prompt: 'A ordem ①-⑤ da mensagem do exemplo é:', choices: [{ n: 1, text: 'felicitar → trocar atualizações → convidar → ajustar planos → encerrar' }, { n: 2, text: 'encerrar → convidar → felicitar → ajustar planos → atualizações' }, { n: 3, text: 'somente felicitar, sem resposta' }, { n: 4, text: 'dar conselho de presente → discurso → funeral' }], answer: 1, explanationPt: 'Answer key: ① a お祝いを言う, ② d 近況, ③ b 誘う, ④ e 予定を調整する, ⑤ c 締める.' },
+    { id: 'iro-pi-l13-8', number: 8, prompt: 'Can-do 42: 「猫を飼いはじめたんだって」 trabalha:', choices: [{ n: 1, text: 'ouvir atualizações de amigos/conhecidos e comentar com frases curtas' }, { n: 2, text: 'dar conselho formal de presente em detalhes' }, { n: 3, text: 'fazer discurso de aposentadoria' }, { n: 4, text: 'preencher dados de residência' }], answer: 1, explanationPt: 'A atividade apresenta quatro atualizações e comentários como 驚いた, よかった, 大変だ e 心配だ.' },
+    { id: 'iro-pi-l13-9', number: 9, prompt: '13-01: qual notícia sobre ダイアナさん aparece?', image: `${IMG}/ZZ_13_2_02_kookoo.png`, imageAlt: 'formatura do ensino médio', choices: [{ n: 1, text: 'a filha dela já vai se formar no ensino médio e entrar na universidade' }, { n: 2, text: 'ela comprou um gato' }, { n: 3, text: 'ela vai abrir uma loja no Camboja' }, { n: 4, text: 'ela foi internada' }], answer: 1, explanationPt: 'A conversa fala de 高校卒業 e この春から大学生になる.' },
+    { id: 'iro-pi-l13-10', number: 10, prompt: '13-01: quais comentários aparecem?', choices: [{ n: 1, text: '驚いた e よかった' }, { n: 2, text: 'もったいない e うらやましい' }, { n: 3, text: '心配だ somente' }, { n: 4, text: '大変だ somente' }], answer: 1, explanationPt: 'B se surpreende com o crescimento da filha e depois diz よかったですね.' },
+    { id: 'iro-pi-l13-11', number: 11, prompt: '13-02: o que aconteceu com 篠原さん?', image: `${IMG}/ZZ_13_2_05_petto.png`, imageAlt: 'animal de estimação', choices: [{ n: 1, text: 'começou a criar um gato' }, { n: 2, text: 'saiu da empresa' }, { n: 3, text: 'foi para o hospital' }, { n: 4, text: 'fez uma festa de casamento' }], answer: 1, explanationPt: 'A fala é: 猫を飼いはじめたんだって.' },
+    { id: 'iro-pi-l13-12', number: 12, prompt: '13-02: por que B diz que é 大変?', choices: [{ n: 1, text: 'porque precisa dar comida, cuidar do banheiro e pensar em pet hotel quando viajar' }, { n: 2, text: 'porque precisa aprender francês' }, { n: 3, text: 'porque vai fazer vestibular' }, { n: 4, text: 'porque precisa trocar de visto' }], answer: 1, explanationPt: 'A conversa cita エサ, トイレの世話 e ペットホテル.' },
+    { id: 'iro-pi-l13-13', number: 13, prompt: '13-03: qual notícia sobre ダーリットさん está correta?', image: `${IMG}/ZZ_13_2_01_kaisha.png`, imageAlt: 'sair da empresa', choices: [{ n: 1, text: 'vai sair da empresa e voltar ao Camboja para abrir uma loja com os pais' }, { n: 2, text: 'vai ser internado por uma semana' }, { n: 3, text: 'vai entrar na universidade' }, { n: 4, text: 'vai adotar um gato' }], answer: 1, explanationPt: 'O gabarito marca a, d: 会社を辞める e お店を始める.' },
+    { id: 'iro-pi-l13-14', number: 14, prompt: '13-03: quais comentários B faz?', choices: [{ n: 1, text: 'もったいない e うらやましい' }, { n: 2, text: '驚いた e よかった' }, { n: 3, text: '心配だ e 早く元気に' }, { n: 4, text: '大変だ e すごい' }], answer: 1, explanationPt: 'B acha desperdício porque ele tinha virado líder, mas inveja poder morar com a família.' },
+    { id: 'iro-pi-l13-15', number: 15, prompt: '13-04: qual notícia sobre 骨川さん aparece?', image: `${IMG}/ZZ_13_2_03_nyuuin.png`, imageAlt: 'internação hospitalar', choices: [{ n: 1, text: 'foi internado por doença, provavelmente por cerca de uma semana' }, { n: 2, text: 'vai se casar no próximo mês' }, { n: 3, text: 'perdeu um presente no trem' }, { n: 4, text: 'comprou um restaurante' }], answer: 1, explanationPt: 'A fala diz 病気でしばらく入院するらしい e 1週間ぐらいで退院するって聞いた.' },
+    { id: 'iro-pi-l13-16', number: 16, prompt: '「お店を始めるらしいですよ」 usa らしい para:', choices: [{ n: 1, text: 'transmitir uma informação julgada a partir do que ouviu/viu, sem certeza total' }, { n: 2, text: 'pedir conselho sobre plano próprio' }, { n: 3, text: 'dar parabéns formal' }, { n: 4, text: 'pedir permissão para falar' }], answer: 1, explanationPt: 'S（普通形）らしい conecta-se à forma comum; para N e ナA usa Nらしい／ナAらしい.' },
+    { id: 'iro-pi-l13-17', number: 17, prompt: 'Can-do 43: 「何かプレゼントしようと思うんですが…」 trabalha:', choices: [{ n: 1, text: 'aconselhar com algum detalhe que presente dar em aniversário ou data comemorativa' }, { n: 2, text: 'ouvir discurso de funeral' }, { n: 3, text: 'responder à inspeção de bagagem' }, { n: 4, text: 'ligar para 119' }], answer: 1, explanationPt: '豊口 consulta colegas sobre presente de aniversário para o parceiro.' },
+    { id: 'iro-pi-l13-18', number: 18, prompt: '13-07: 木下さん recomenda:', image: `${IMG}/ZZ_13_3_03_akusesarii.png`, imageAlt: 'acessório', choices: [{ n: 1, text: 'アクセサリー, porque algo que fica em forma material é bom' }, { n: 2, text: 'マッサージ器, porque tem aquecedor' }, { n: 3, text: 'レストランで食事, porque cria lembrança' }, { n: 4, text: 'ペットホテル, porque é caro' }], answer: 1, explanationPt: 'Answer key: presente b, razão ア: 形に残るものがいい.' },
+    { id: 'iro-pi-l13-19', number: 19, prompt: '木下さん dá quais pontos concretos sobre アクセサリー?', choices: [{ n: 1, text: 'há itens que não são tão caros; observe o que a pessoa usa normalmente; se estiver inseguro, escolha junto na loja' }, { n: 2, text: 'use no pescoço enquanto vê TV; escolha com aquecedor' }, { n: 3, text: 'reserve antes e peça mensagem no prato' }, { n: 4, text: 'leve para o hospital e pague na alta' }], answer: 1, explanationPt: 'O gabarito marca preço e escolha conforme gosto.' },
+    { id: 'iro-pi-l13-20', number: 20, prompt: '13-08: カンさん recomenda:', image: `${IMG}/ZZ_13_3_04_massaajiki.png`, imageAlt: 'massageador', choices: [{ n: 1, text: 'マッサージ器, algo que a pessoa não compra para si, mas fica feliz em ganhar' }, { n: 2, text: 'アクセサリー, por ser barato' }, { n: 3, text: 'フレンチ no アークタワー' }, { n: 4, text: 'uma mensagem no app' }], answer: 1, explanationPt: 'Ele usa como razão 自分では買わないけど、もらうとうれしいものがいい.' },
+    { id: 'iro-pi-l13-21', number: 21, prompt: 'Sobre o マッサージ器, o conselho específico é:', choices: [{ n: 1, text: 'usar no pescoço; ajuda ombros e pescoço; pode usar vendo TV; recomenda função de aquecedor' }, { n: 2, text: 'reservar antes e escrever no prato' }, { n: 3, text: 'olhar joias usadas normalmente' }, { n: 4, text: 'evitar porque não fica de lembrança' }], answer: 1, explanationPt: 'O gabarito marca uso concreto e função recomendada.' },
+    { id: 'iro-pi-l13-22', number: 22, prompt: '13-09: ナレシュさん recomenda:', image: `${IMG}/ZZ_13_3_02_resutoran.png`, imageAlt: 'restaurante', choices: [{ n: 1, text: 'fazer uma refeição em restaurante, porque vira uma boa lembrança' }, { n: 2, text: 'comprar massageador com aquecedor' }, { n: 3, text: 'comprar acessório junto na loja' }, { n: 4, text: 'adotar um gato' }], answer: 1, explanationPt: 'Answer key: presente a, razão イ: いい思い出になる.' },
+    { id: 'iro-pi-l13-23', number: 23, prompt: 'Que restaurante ナレシュ recomenda e qual serviço cita?', choices: [{ n: 1, text: 'um francês no アークタワー com boa vista; reservando antes, dá para pôr mensagem no prato' }, { n: 2, text: 'um restaurante de empresa em Ginza sem reserva' }, { n: 3, text: 'um pet hotel com quarto individual' }, { n: 4, text: 'um hospital com intérprete médico' }], answer: 1, explanationPt: 'A conversa cita 景色がよくて e プレートにメッセージを入れてもらえる.' },
+    { id: 'iro-pi-l13-24', number: 24, prompt: '「何かプレゼントしようと思うんですが」 é usado para:', choices: [{ n: 1, text: 'abrir uma consulta sobre algo que a pessoa está planejando fazer' }, { n: 2, text: 'relatar boato sem certeza' }, { n: 3, text: 'agradecer em discurso formal' }, { n: 4, text: 'descrever internação' }], answer: 1, explanationPt: 'V-(よ)うと思うんですが liga forma volitiva + と思うんですが e é seguido por pedido de conselho.' },
+    { id: 'iro-pi-l13-25', number: 25, prompt: '「アクセサリーとか、いいんじゃない？」 expressa:', choices: [{ n: 1, text: 'sugestão/conselho: algo como acessório seria bom' }, { n: 2, text: 'negação forte' }, { n: 3, text: 'pedido de desculpa formal' }, { n: 4, text: 'chamada de emergência' }], answer: 1, explanationPt: 'Nとか、いいんじゃないですか？ sugere algo que quem fala acha bom.' },
+    { id: 'iro-pi-l13-26', number: 26, prompt: '「レストランで食事するのもいいんじゃないですか？」 usa:', choices: [{ n: 1, text: 'S（普通形）のがいいんじゃないですか？ para sugerir uma ação' }, { n: 2, text: 'Sらしい para transmitir boato' }, { n: 3, text: 'V-てくださる para agradecer' }, { n: 4, text: 'おVです para respeito' }], answer: 1, explanationPt: 'Quando a sugestão é uma ação, entra uma frase nominalizada com の.' },
+    { id: 'iro-pi-l13-27', number: 27, prompt: 'Can-do 44: 「スピーチをさせていただきます」 trabalha:', choices: [{ n: 1, text: 'ouvir discursos formais de cerimônias e entender pontos principais' }, { n: 2, text: 'escrever convite de aniversário' }, { n: 3, text: 'pedir ambulância' }, { n: 4, text: 'ler e-mail suspeito' }], answer: 1, explanationPt: 'A atividade traz discursos em casamento, funeral e aposentadoria.' },
+    { id: 'iro-pi-l13-28', number: 28, prompt: '13-13: em qual situação é o discurso 1?', image: `${IMG}/ZZ_13_4_01_kekkonpaatii.png`, imageAlt: 'festa de casamento', choices: [{ n: 1, text: 'festa de casamento de 星野 e アルナ' }, { n: 2, text: 'funeral de professora' }, { n: 3, text: 'aposentadoria de 平野' }, { n: 4, text: 'mensagem de aniversário de サナ' }], answer: 1, explanationPt: '新井 fala: ご結婚、おめでとうございます e representa os amigos.' },
+    { id: 'iro-pi-l13-29', number: 29, prompt: 'No discurso 1, qual é a relação de 新井 com o casal?', choices: [{ n: 1, text: 'amigo da época da universidade' }, { n: 2, text: 'professor de japonês' }, { n: 3, text: 'chefe da empresa' }, { n: 4, text: 'parente do noivo' }], answer: 1, explanationPt: 'Ele diz que é 新郎新婦の大学時代の友人.' },
+    { id: 'iro-pi-l13-30', number: 30, prompt: 'Como o discurso 1 descreve 新郎 e 新婦?', choices: [{ n: 1, text: '新郎: quieto, calmo e inteligente; 新婦: sempre alegre, clara e como o sol' }, { n: 2, text: 'ambos eram professores aposentados' }, { n: 3, text: '新郎 era doente; 新婦 era estudante' }, { n: 4, text: 'ambos abriram loja no Camboja' }], answer: 1, explanationPt: 'O gabarito marca 新郎：静かで冷静で、頭がよい; 新婦：元気で明るくて太陽のような人.' },
+    { id: 'iro-pi-l13-31', number: 31, prompt: 'Qual episódio de universidade aparece no discurso 1?', choices: [{ n: 1, text: 'em um evento de Halloween, os dois vieram fantasiados de ninja por coincidência' }, { n: 2, text: 'os dois compraram um massageador' }, { n: 3, text: 'ambos foram internados uma semana' }, { n: 4, text: 'ambos saíram da empresa no mesmo dia' }], answer: 1, explanationPt: '新井 liga o episódio à expressão 運命の赤い糸.' },
+    { id: 'iro-pi-l13-32', number: 32, prompt: 'Qual foi a frase de proposta/casamento no discurso 1?', choices: [{ n: 1, text: '結婚したら問題ないよね？' }, { n: 2, text: '救急車をお願いします' }, { n: 3, text: 'アクセサリーとか、いいんじゃない？' }, { n: 4, text: 'もっと教えていただきたかったです' }], answer: 1, explanationPt: 'A situação foi o problema de visto/trabalho de アルナ; 星野 respondeu que, se casassem, não haveria problema.' },
+    { id: 'iro-pi-l13-33', number: 33, prompt: '13-14: em qual situação é o discurso 2?', image: `${IMG}/ZZ_13_4_02_osooshiki.png`, imageAlt: 'funeral', choices: [{ n: 1, text: 'funeral de uma professora de japonês' }, { n: 2, text: 'casamento de amigos' }, { n: 3, text: 'aposentadoria de funcionário' }, { n: 4, text: 'aniversário por aplicativo' }], answer: 1, explanationPt: 'フオン fala em nome dos estudantes no funeral da professora.' },
+    { id: 'iro-pi-l13-34', number: 34, prompt: 'No discurso 2, como a professora é descrita?', choices: [{ n: 1, text: 'sempre gentil e alegre' }, { n: 2, text: 'fria e silenciosa' }, { n: 3, text: 'líder de empresa' }, { n: 4, text: 'pessoa que mora no Camboja' }], answer: 1, explanationPt: 'Answer key: いつもやさしくて、明るい人.' },
+    { id: 'iro-pi-l13-35', number: 35, prompt: 'O que marcou as aulas da professora no discurso 2?', choices: [{ n: 1, text: 'ela fazia os alunos ouvirem e falarem muito japonês, melhorando a conversação' }, { n: 2, text: 'ela só explicava gramática sem falar' }, { n: 3, text: 'ela ensinava a comprar presentes' }, { n: 4, text: 'ela treinava chamadas de emergência' }], answer: 1, explanationPt: '先生は、日本語をたくさん聞かせて、たくさん話させました; por isso a conversação melhorou.' },
+    { id: 'iro-pi-l13-36', number: 36, prompt: 'Qual era o sonho da professora?', choices: [{ n: 1, text: 'mudar-se para uma ilha do sul e viver devagar perto do mar' }, { n: 2, text: 'trabalhar 43 anos na mesma empresa' }, { n: 3, text: 'abrir restaurante francês' }, { n: 4, text: 'entrar na universidade' }], answer: 1, explanationPt: 'O sonho era 定年退職したら、南の島に引っ越して、海の近くでのんびり暮らす.' },
+    { id: 'iro-pi-l13-37', number: 37, prompt: '13-15: em qual situação é o discurso 3?', image: `${IMG}/ZZ_13_4_03_taishoku.png`, imageAlt: 'aposentadoria', choices: [{ n: 1, text: 'discurso de aposentadoria de 平野' }, { n: 2, text: 'discurso de casamento' }, { n: 3, text: 'funeral de professora' }, { n: 4, text: 'conselho de presente' }], answer: 1, explanationPt: 'O apresentador pede a 平野 uma última palavra; ele se aposenta naquele dia.' },
+    { id: 'iro-pi-l13-38', number: 38, prompt: 'Há quanto tempo 平野 trabalhou na JF工業?', choices: [{ n: 1, text: '43 anos' }, { n: 2, text: '22 anos' }, { n: 3, text: '5 anos' }, { n: 4, text: '1 semana' }], answer: 1, explanationPt: 'Ele entrou aos 22 anos e diz que trabalhou 43年間 na empresa.' },
+    { id: 'iro-pi-l13-39', number: 39, prompt: 'O que 平野 chama de すばらしい世の中?', choices: [{ n: 1, text: 'pessoas de diferentes países trabalharem juntas e construírem a sociedade juntas' }, { n: 2, text: 'dar presente caro todo ano' }, { n: 3, text: 'usar pet hotel ao viajar' }, { n: 4, text: 'ficar internado em quarto individual' }], answer: 1, explanationPt: 'Ele fala de 外国の人と、国を越えていっしょに働いて、いっしょに社会を作っていく.' },
+    { id: 'iro-pi-l13-40', number: 40, prompt: 'Depois da aposentadoria, 平野 pretende:', choices: [{ n: 1, text: 'obter qualificação de professor de japonês e fazer voluntariado em aula comunitária de apoio ao japonês' }, { n: 2, text: 'abrir loja no Camboja com os pais' }, { n: 3, text: 'comprar massageador com aquecedor' }, { n: 4, text: 'mudar para o hospital' }], answer: 1, explanationPt: 'Ele diz que estuda para tirar 日本語教師の資格 e quer ser voluntário em 地域の日本語サポート教室.' },
+    { id: 'iro-pi-l13-41', number: 41, prompt: '「教えてくださいました／教えていただきたかったです」 expressam:', choices: [{ n: 1, text: 'gratidão por uma ação recebida de alguém superior ou respeitado' }, { n: 2, text: 'boato sem certeza' }, { n: 3, text: 'sugestão de presente' }, { n: 4, text: 'decisão de comprar algo' }], answer: 1, explanationPt: 'V-てくださる é respeitoso de V-てくれる; V-ていただく é humilde de V-てもらう.' },
+    { id: 'iro-pi-l13-42', number: 42, prompt: '「スピーチをさせていただきます」 usa:', choices: [{ n: 1, text: 'V-(さ)せていただく para dizer educadamente o que a própria pessoa fará' }, { n: 2, text: 'おVです para perguntar se alguém procura algo' }, { n: 3, text: 'イA-がる para dor de outra pessoa' }, { n: 4, text: 'Nでしたっけ para confirmar memória' }], answer: 1, explanationPt: 'É comum em contextos formais e de negócios: 自己紹介させていただきます, ごあいさつさせていただきます.' },
+    { id: 'iro-pi-l13-43', number: 43, prompt: 'Kanji da lição: 運命／糸／恋人／太陽 leem-se:', choices: [{ n: 1, text: 'うんめい／いと／こいびと／たいよう' }, { n: 2, text: 'うんみょう／し／れんじん／たいひ' }, { n: 3, text: 'うんめい／いと／こいにん／たよう' }, { n: 4, text: 'めいうん／いと／こいびと／たいよう' }], answer: 1, explanationPt: 'Aparecem no discurso de casamento: 運命の赤い糸 e 太陽のような人.' },
+    { id: 'iro-pi-l13-44', number: 44, prompt: 'Kanji da lição: 反対／若い／就職する／退職する／覚えている leem-se:', choices: [{ n: 1, text: 'はんたい／わかい／しゅうしょくする／たいしょくする／おぼえている' }, { n: 2, text: 'はんだい／じゃくい／しゅうじょくする／たいじょくする／かくえている' }, { n: 3, text: 'はんたい／わかい／しゅうしょくする／たいしょくする／さめている' }, { n: 4, text: 'ぎゃくたい／わかい／しゅうしょく／たいしょく／おぼえている' }], answer: 1, explanationPt: 'São itens de 漢字のことば da Lição 13.' },
+    { id: 'iro-pi-l13-45', number: 45, prompt: 'TIPS: 入院 no Japão inclui qual ponto correto?', choices: [{ n: 1, text: 'levar itens pessoais, seguir explicações médicas, pagar na alta e verificar seguro/高額療養費制度 se aplicável' }, { n: 2, text: 'sempre ficar apenas uma noite em qualquer cirurgia' }, { n: 3, text: 'não há quartos compartilhados' }, { n: 4, text: 'nunca há intérprete médico' }], answer: 1, explanationPt: 'A TIPS fala de preparação, duração, 大部屋/個室, vida no hospital, pagamento e possibilidade de 医療通訳.' },
+    { id: 'iro-pi-l13-46', number: 46, prompt: 'TIPS: no sistema educacional japonês, qual afirmação está alinhada ao texto?', choices: [{ n: 1, text: '小学校 6 anos + 中学校 3 anos somam 9 anos de educação obrigatória; muitos seguem para 高校' }, { n: 2, text: '高校 é obrigatório para todos por lei' }, { n: 3, text: 'universidade japonesa dura sempre 2 anos' }, { n: 4, text: 'não existe ensino técnico' }], answer: 1, explanationPt: 'A TIPS também cita 大学, 短大, 専門学校, 高専 e 大学院.' },
+    { id: 'iro-pi-l13-47', number: 47, prompt: 'TIPS: ペット no Japão exige atenção porque:', choices: [{ n: 1, text: 'muitos prédios não permitem animais; é preciso confirmar regras antes de criar um pet' }, { n: 2, text: 'todos os apartamentos permitem gatos e cachorros' }, { n: 3, text: 'pet hotel é sempre grátis' }, { n: 4, text: 'só é permitido criar pássaros' }], answer: 1, explanationPt: 'Criar pet onde é proibido pode gerar problemas como mudança imediata ou custos de limpeza.' },
+    { id: 'iro-pi-l13-48', number: 48, prompt: 'TIPS: 「羽を伸ばす」 quer dizer:', image: `${IMG}/ZZ_13_tips_01_haneonobasu.png`, imageAlt: 'expressão 羽を伸ばす', choices: [{ n: 1, text: 'relaxar livremente depois de estar ocupado ou se preocupando com outros' }, { n: 2, text: 'piorar uma situação ruim' }, { n: 3, text: 'um pet morrer e ir ao céu' }, { n: 4, text: 'formar-se na universidade' }], answer: 1, explanationPt: 'É uma expressão metafórica apresentada na TIPS de 比喩的表現.' },
+    { id: 'iro-pi-l13-49', number: 49, prompt: 'TIPS: 「火に油を注ぐ」 significa:', image: `${IMG}/ZZ_13_tips_03_hiniabura.png`, imageAlt: 'expressão 火に油を注ぐ', choices: [{ n: 1, text: 'piorar ainda mais uma situação que já estava ruim' }, { n: 2, text: 'descansar após prova' }, { n: 3, text: 'ficar obcecado por um hobby' }, { n: 4, text: 'mandar mensagem de parabéns' }], answer: 1, explanationPt: 'Exemplo do texto: dizer algo que deixa uma pessoa já irritada ainda mais irritada.' },
+    { id: 'iro-pi-l13-50', number: 50, prompt: 'TIPS: 「虹の橋を渡る」 é uma forma suave de dizer que:', image: `${IMG}/ZZ_13_tips_04_nijinohashi.png`, imageAlt: 'expressão 虹の橋を渡る', choices: [{ n: 1, text: 'um pet ou animal importante morreu' }, { n: 2, text: 'alguém entrou na universidade' }, { n: 3, text: 'alguém recebeu um presente' }, { n: 4, text: 'alguém mudou de empresa' }], answer: 1, explanationPt: 'A TIPS também cita 星になった, 天使になった e 旅立った como expressões indiretas parecidas.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -3286,6 +3347,248 @@ const L12_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L13_SCRIPTS: Record<string, ScriptItem[]> = {
+  '13-01': [
+    {
+      label: '① ダイアナさんの娘さん - 高校卒業・大学進学 (13-01)',
+      lines: [
+        { speaker: 'A', ja: 'エリサさん、ダイアナさん{覚|おぼ}えてる？', pt: 'Elisa, você se lembra da Diana?' },
+        { speaker: 'B', ja: 'はい、{覚|おぼ}えてますよ。', pt: 'Sim, lembro.' },
+        { speaker: 'A', ja: 'この{前|まえ}、{偶然|ぐうぜん}、ダイアナさんと{駅|えき}で{会|あ}ったんですよ。', pt: 'Outro dia, encontrei Diana por acaso na estação.' },
+        { speaker: 'B', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'A', ja: '{娘|むすめ}さんといっしょだったんだけど、もう{高校卒業|こうこうそつぎょう}だって。', pt: 'Ela estava com a filha, e parece que ela já vai se formar no ensino médio.' },
+        { speaker: 'B', ja: 'えー、もうそんなに{大|おお}きくなったんですね。{子|こ}どもの{成長|せいちょう}って{早|はや}くて{驚|おどろ}きますね。', pt: 'Nossa, ela já cresceu tanto. O crescimento das crianças é rápido e surpreende.' },
+        { speaker: 'A', ja: 'ほんとに。この{春|はる}から{大学生|だいがくせい}になるそうですよ。{入学式|にゅうがくしき}は{来週|らいしゅう}って{言|い}ってました。', pt: 'É verdade. Parece que nesta primavera ela vai ser universitária. Ela disse que a cerimônia de entrada é semana que vem.' },
+        { speaker: 'B', ja: 'よかったですね。', pt: 'Que bom.' },
+        { speaker: 'A', ja: 'そうですね。', pt: 'É.' },
+      ],
+    },
+  ],
+  '13-02': [
+    {
+      label: '② 篠原さん - 猫を飼いはじめた (13-02)',
+      lines: [
+        { speaker: 'A', ja: 'ねえねえ、ウダーニさん、{篠原|しのはら}さんって{最近|さいきん}ご{機嫌|きげん}だよね。', pt: 'Ei, Udani, o Shinohara anda de bom humor ultimamente, né?' },
+        { speaker: 'B', ja: 'そうだね。{何|なに}か、いいことあったのかな？', pt: 'É. Será que aconteceu algo bom?' },
+        { speaker: 'A', ja: 'それがね、{猫|ねこ}を{飼|か}いはじめたんだって。{早|はや}く{帰|かえ}って{猫|ねこ}に{会|あ}いたいって{言|い}ってたよ。', pt: 'Então, parece que ele começou a criar um gato. Disse que quer voltar logo para ver o gato.' },
+        { speaker: 'B', ja: 'へー、でも、ペットを{飼|か}うのって{大変|たいへん}だよね。エサをあげたり、トイレの{世話|せわ}をしたり。', pt: 'Nossa, mas criar pet dá trabalho, né. Dar comida, cuidar da caixa de areia...' },
+        { speaker: 'A', ja: 'うん、まあね。', pt: 'Sim, é.' },
+        { speaker: 'B', ja: 'それに、{篠原|しのはら}さんって{一人暮|ひとりぐ}らしだよね？ {旅行|りょこう}に{行|い}くときはどうするのかな？', pt: 'Além disso, Shinohara mora sozinho, né? O que será que faz quando viaja?' },
+        { speaker: 'A', ja: 'んー、{旅行|りょこう}のときは、ペットホテルを{使|つか}うんじゃないかな。', pt: 'Hmm, acho que usa hotel para pets quando viaja.' },
+        { speaker: 'B', ja: 'それもお{金|かね}がかかって{大変|たいへん}だね。', pt: 'Isso também custa dinheiro e dá trabalho.' },
+      ],
+    },
+  ],
+  '13-03': [
+    {
+      label: '③ ダーリットさん - 会社を辞めてお店を始める (13-03)',
+      lines: [
+        { speaker: 'A', ja: 'ティハさん、{聞|き}きましたか？ ダーリットさん、{会社|かいしゃ}、{辞|や}めるって。', pt: 'Tiha, você ouviu? Dalit vai sair da empresa.' },
+        { speaker: 'B', ja: 'えー、すごくがんばって、ようやくリーダーになったのに、もったいないですね。', pt: 'Nossa, ele se esforçou tanto e finalmente virou líder. Que desperdício.' },
+        { speaker: 'A', ja: '{私|わたし}もそう{思|おも}うんですけど。', pt: 'Eu também penso assim.' },
+        { speaker: 'B', ja: 'ですよね。でも、どうして{辞|や}めちゃうんですか？', pt: 'Pois é. Mas por que ele vai sair?' },
+        { speaker: 'A', ja: 'カンボジアに{帰|かえ}って、{両親|りょうしん}といっしょにお{店|みせ}を{始|はじ}めるらしいですよ。', pt: 'Parece que vai voltar ao Camboja e abrir uma loja com os pais.' },
+        { speaker: 'B', ja: 'そうなんですか。{家族|かぞく}といっしょに{暮|く}らせて、ちょっとうらやましいな。', pt: 'Entendi. Dá até inveja de poder morar com a família.' },
+      ],
+    },
+  ],
+  '13-04': [
+    {
+      label: '④ 骨川さん - 入院した (13-04)',
+      lines: [
+        { speaker: 'A', ja: 'フェリペさん、{骨川|ほねかわ}さんのこと、{聞|き}きましたか？ {入院|にゅういん}したんだって。', pt: 'Felipe, você ouviu sobre Honekawa? Parece que foi internado.' },
+        { speaker: 'B', ja: '{入院|にゅういん}ですか……。{心配|しんぱい}ですね。どうしたんですか？', pt: 'Internado...? Que preocupação. O que aconteceu?' },
+        { speaker: 'A', ja: 'んー、{私|わたし}もよく{知|し}らないんだけど、{病気|びょうき}でしばらく{入院|にゅういん}するらしいですよ。', pt: 'Hmm, eu também não sei bem, mas parece que vai ficar internado por um tempo por doença.' },
+        { speaker: 'B', ja: 'そうですか。{大|おお}きな{病気|びょうき}とかじゃなければいいですね。', pt: 'Entendi. Tomara que não seja uma doença grave.' },
+        { speaker: 'A', ja: '1{週間|しゅうかん}ぐらいで{退院|たいいん}するって{聞|き}いたから、{大|おお}きな{病気|びょうき}じゃないとは{思|おも}うんですけど。', pt: 'Ouvi que ele deve sair do hospital em cerca de uma semana, então acho que não é algo grave.' },
+        { speaker: 'B', ja: '{早|はや}く{元気|げんき}になるといいですね。', pt: 'Tomara que melhore logo.' },
+      ],
+    },
+  ],
+  '13-05': [
+    {
+      label: '形に注目 - Sらしい (13-05)',
+      lines: [
+        { speaker: 'A', ja: 'カンボジアに{帰|かえ}って、{両親|りょうしん}といっしょにお{店|みせ}を{始|はじ}めるらしいですよ。', pt: 'Parece que vai voltar ao Camboja e abrir uma loja com os pais.' },
+        { speaker: 'A', ja: '{私|わたし}もよく{知|し}らないんだけど、{病気|びょうき}でしばらく{入院|にゅういん}するらしいですよ。', pt: 'Eu também não sei bem, mas parece que vai ficar internado por um tempo por doença.' },
+      ],
+    },
+  ],
+  '13-06': [
+    {
+      label: '話すモデル - 近況を聞いてコメントする (13-06)',
+      lines: [
+        { speaker: 'A', ja: '{聞|き}きましたか？ ダーリットさん、{会社|かいしゃ}、{辞|や}めるって。', pt: 'Você ouviu? Dalit vai sair da empresa.' },
+        { speaker: 'B', ja: 'えー、すごく{仕事|しごと}がんばって、ようやくリーダーになったのに、もったいないですね。', pt: 'Nossa, ele trabalhou tanto e finalmente virou líder. Que desperdício.' },
+        { speaker: 'B', ja: 'どうして{辞|や}めちゃうんですか？', pt: 'Por que ele vai sair?' },
+        { speaker: 'A', ja: 'カンボジアに{帰|かえ}って、{両親|りょうしん}といっしょにお{店|みせ}を{始|はじ}めるらしいですよ。', pt: 'Parece que vai voltar ao Camboja e abrir uma loja com os pais.' },
+        { speaker: 'B', ja: 'そうなんですか。{家族|かぞく}といっしょに{暮|く}らせて、うらやましいな。', pt: 'Entendi. Que inveja poder morar com a família.' },
+      ],
+    },
+  ],
+  '13-07': [
+    {
+      label: '① 木下さん - アクセサリー (13-07)',
+      lines: [
+        { speaker: '豊口', ja: '{来月|らいげつ}、{恋人|こいびと}の{誕生日|たんじょうび}なので、{何|なに}かプレゼントしようと{思|おも}うんですが、{何|なに}がいいか{迷|まよ}ってるんです。{木下|きのした}さん、{何|なに}がいいと{思|おも}いますか？', pt: 'Mês que vem é aniversário do meu parceiro, então estou pensando em dar algum presente, mas estou em dúvida. Kinoshita, o que você acha bom?' },
+        { speaker: '木下', ja: 'そうねえ。{何歳|なんさい}ぐらい？ {豊口|とよぐち}さんと{同|おな}じぐらい？', pt: 'Vejamos. Mais ou menos quantos anos? Da sua idade?' },
+        { speaker: '豊口', ja: 'そうです。', pt: 'Isso.' },
+        { speaker: '木下', ja: 'そっかー。じゃあ、{例|たと}えばアクセサリーとか、いいんじゃない？', pt: 'Entendi. Então, algo como acessório seria bom, não acha?' },
+        { speaker: '豊口', ja: 'アクセサリーですか。', pt: 'Acessório?' },
+        { speaker: '木下', ja: 'お{花|はな}とかもいいけど、やっぱり{形|かたち}に{残|のこ}るもののほうがいいと{思|おも}うよ。', pt: 'Flores também são boas, mas acho melhor algo que fique como objeto.' },
+        { speaker: '豊口', ja: 'うーん。でも、ちょっと{高|たか}そうですね。', pt: 'Hmm. Mas parece meio caro.' },
+        { speaker: '木下', ja: 'そんなに{高|たか}くないものもあるよ。でも、{好|この}みがあるから、{普段使|ふだんつか}っているものをよく{見|み}てみたら？ {好|この}みがわかると{思|おも}うよ。', pt: 'Também há coisas que não são tão caras. Mas como há preferências, que tal observar bem o que a pessoa costuma usar? Acho que dá para entender o gosto.' },
+        { speaker: '豊口', ja: '{難|むずか}しいですね……。', pt: 'É difícil...' },
+        { speaker: '木下', ja: '{心配|しんぱい}だったら、いっしょにお{店|みせ}に{行|い}って、{選|えら}んだほうがいいかも。', pt: 'Se estiver inseguro, talvez seja melhor ir à loja junto e escolher.' },
+        { speaker: '豊口', ja: 'うーん。', pt: 'Hmm.' },
+      ],
+    },
+  ],
+  '13-08': [
+    {
+      label: '② カンさん - マッサージ器 (13-08)',
+      lines: [
+        { speaker: '木下', ja: 'カンさんは、どう{思|おも}う？ {年|とし}も{近|ちか}いんだし。', pt: 'Kang, o que você acha? Você tem idade próxima.' },
+        { speaker: 'カン', ja: 'そうですね。マッサージ{器|き}は、どうですか？', pt: 'Vejamos. Que tal um massageador?' },
+        { speaker: '豊口', ja: 'マッサージ{器|き}？', pt: 'Massageador?' },
+        { speaker: 'カン', ja: 'はい。プレゼントって、{自分|じぶん}では{買|か}わないけど、もらうとうれしいものがいいと{思|おも}うんですよ。マッサージ{器|き}、いいと{思|おも}いませんか？', pt: 'Sim. Acho que presente deve ser algo que a pessoa não compra para si, mas fica feliz em receber. Não acha que massageador é bom?' },
+        { speaker: '豊口', ja: 'あー、{確|たし}かに、{最近仕事|さいきんしごと}が{忙|いそが}しくて、{疲|つか}れてるみたいです。', pt: 'Ah, é verdade. Ultimamente o trabalho parece estar corrido e ele parece cansado.' },
+        { speaker: 'カン', ja: '{私|わたし}も、マッサージ{器|き}{持|も}ってますよ。{首|くび}にかけて{使|つか}うやつですけど、{肩|かた}とか{首|くび}がすっきりしますよ。テレビを{見|み}ながらマッサージできるし、すごくいいです。', pt: 'Eu também tenho um massageador. É daqueles que usa no pescoço, e ombros e pescoço ficam aliviados. Dá para massagear vendo TV, é muito bom.' },
+        { speaker: '豊口', ja: 'へー、いいですね。', pt: 'Nossa, parece bom.' },
+        { speaker: 'カン', ja: 'ヒーターがついているやつがおすすめですよ。', pt: 'Recomendo um que tenha aquecedor.' },
+        { speaker: 'ナレシュ', ja: 'えー、{誕生日|たんじょうび}にマッサージ{器|き}？ それは、どうかなあ……。', pt: 'Hã, massageador no aniversário? Não sei...' },
+        { speaker: 'カン', ja: 'そう？ え、じゃあ、ナレシュさんは、{何|なに}がいいと{思|おも}う？', pt: 'Acha? Então, Naresh, o que você acha que seria bom?' },
+      ],
+    },
+  ],
+  '13-09': [
+    {
+      label: '③ ナレシュさん - レストランで食事 (13-09)',
+      lines: [
+        { speaker: 'ナレシュ', ja: '{形|かたち}に{残|のこ}るものもいいけど、レストランで{食事|しょくじ}するのもいいんじゃないですか？', pt: 'Algo que fique também é bom, mas uma refeição em restaurante também seria boa, não acha?' },
+        { speaker: 'カン', ja: 'あー、それもいいねえ。', pt: 'Ah, isso também é bom.' },
+        { speaker: 'ナレシュ', ja: '{雰囲気|ふんいき}がいいレストランで、2{人|ふたり}でゆっくり{食事|しょくじ}したら、どうですか？ きっといい{思|おも}い{出|で}になりますよ。', pt: 'Que tal comerem com calma em um restaurante com boa atmosfera? Com certeza vira uma boa lembrança.' },
+        { speaker: '木下', ja: '{特別|とくべつ}な{日|ひ}って{感|かん}じがして、いいよね。', pt: 'Dá sensação de dia especial, é bom.' },
+        { speaker: 'ナレシュ', ja: 'アークタワーにあるレストラン、{知|し}ってますか？ フレンチなんですけど、{景色|けしき}がよくて、おすすめです。{事前|じぜん}に{予約|よやく}すれば、プレートにメッセージを{入|い}れてもらえますよ。', pt: 'Conhece o restaurante no Ark Tower? É francês, tem vista boa e eu recomendo. Se reservar antes, dá para pedir que coloquem uma mensagem no prato.' },
+        { speaker: '豊口', ja: 'うーん。でも、{誕生日|たんじょうび}は、ぼくが{家|いえ}で{料理|りょうり}を{作|つく}ろうと{思|おも}ってるんです。{料理|りょうり}、けっこう{自信|じしん}あるんですよ。', pt: 'Hmm. Mas no aniversário estou pensando em cozinhar em casa. Tenho bastante confiança na minha comida.' },
+        { speaker: 'ナレシュ', ja: 'そうなんですか。すごいですねー。', pt: 'É mesmo? Que legal.' },
+        { speaker: '豊口', ja: 'うーん。プレゼント、どうしようかなあ……。', pt: 'Hmm. O que faço de presente...' },
+      ],
+    },
+  ],
+  '13-10': [
+    {
+      label: '形に注目 - V-(よ)うと思うんですが (13-10)',
+      lines: [
+        { speaker: '豊口', ja: '{来月|らいげつ}、{恋人|こいびと}の{誕生日|たんじょうび}なので、{何|なに}かプレゼントしようと{思|おも}うんですが、{何|なに}がいいか{迷|まよ}ってるんです。', pt: 'Mês que vem é aniversário do meu parceiro, então estou pensando em dar algum presente, mas estou em dúvida sobre o que seria bom.' },
+      ],
+    },
+  ],
+  '13-11': [
+    {
+      label: '形に注目 - いいんじゃないですか？ (13-11)',
+      lines: [
+        { speaker: '木下', ja: '{例|たと}えばアクセサリーとか、いいんじゃない？', pt: 'Algo como acessório seria bom, não acha?' },
+        { speaker: 'ナレシュ', ja: '{形|かたち}に{残|のこ}るものもいいけど、レストランで{食事|しょくじ}するのもいいんじゃないですか？', pt: 'Algo que fique também é bom, mas uma refeição em restaurante também seria boa, não acha?' },
+      ],
+    },
+  ],
+  '13-12': [
+    {
+      label: '話すモデル - プレゼントのアドバイス (13-12)',
+      lines: [
+        { speaker: 'A', ja: '{来月|らいげつ}、{恋人|こいびと}の{誕生日|たんじょうび}なんです。{何|なに}かプレゼントしようと{思|おも}うんですが、{何|なに}がいいと{思|おも}いますか？', pt: 'Mês que vem é aniversário do meu parceiro. Estou pensando em dar algum presente. O que você acha bom?' },
+        { speaker: 'B', ja: 'アクセサリーがいいんじゃない？', pt: 'Acessório seria bom, não acha?' },
+        { speaker: 'A', ja: 'アクセサリーですか。', pt: 'Acessório?' },
+        { speaker: 'B', ja: 'やっぱり{形|かたち}に{残|のこ}るもののほうがいいと{思|おも}うよ。そんなに{高|たか}くないものもあるよ。', pt: 'Acho melhor algo que fique como objeto. Também há coisas que não são tão caras.' },
+        { speaker: 'B', ja: 'でも、{好|この}みがあるから、{普段使|ふだんつか}っているものをよく{見|み}てみたら？ {心配|しんぱい}だったら、いっしょにお{店|みせ}に{行|い}って、{選|えら}んだほうがいいかも。', pt: 'Mas como há preferências, observe bem o que a pessoa costuma usar. Se estiver inseguro, talvez seja melhor ir à loja junto e escolher.' },
+      ],
+    },
+  ],
+  '13-13': [
+    {
+      label: 'スピーチ1 - 結婚式で (13-13)',
+      setupPt: '新井 faz um discurso em nome dos amigos no casamento de 星野 e アルナ.',
+      lines: [
+        { speaker: '新井', ja: '{星野|ほしの}くん、アルナさん、ご{結婚|けっこん}、おめでとうございます。お2{人|ふたり}のご{結婚|けっこん}を、{本当|ほんとう}にうれしく{思|おも}います。{私|わたし}は、{新郎新婦|しんろうしんぷ}の{大学時代|だいがくじだい}の{友人|ゆうじん}の、{新井|あらい}と{申|もう}します。{本日|ほんじつ}は、{友人|ゆうじん}を{代表|だいひょう}して、お{祝|いわ}いのスピーチをさせていただきます。', pt: 'Hoshino, Aruna, parabéns pelo casamento. Fico muito feliz pelo casamento de vocês. Sou Arai, amigo dos noivos da época da universidade. Hoje, em nome dos amigos, farei um discurso de felicitação.' },
+        { speaker: '新井', ja: '{私|わたし}たちは、{大学|だいがく}の{国際交流|こくさいこうりゅう}サークルで{知|し}り{合|あ}いました。{留学生|りゅうがくせい}だったアルナさんは、いつも{元気|げんき}で、{明|あか}るくて、{太陽|たいよう}のような{人|ひと}でした。{反対|はんたい}に、{星野|ほしの}くんは、{静|しず}かで{冷静|れいせい}ですが、{頭|あたま}がよくて、サークルの{運営|うんえい}を{任|まか}せられました。', pt: 'Nós nos conhecemos no clube de intercâmbio internacional da universidade. Aruna, que era estudante internacional, era sempre energética, alegre, como o sol. Hoshino, ao contrário, era quieto e calmo, mas inteligente, e cuidava da administração do clube.' },
+        { speaker: '新井', ja: 'ハロウィーンのイベントで、2{人|ふたり}とも{忍者|にんじゃ}の{仮装|かそう}をしてきました。「いっしょに{準備|じゅんび}したの？」と{聞|き}いたら、{本当|ほんとう}に{偶然|ぐうぜん}だったそうで、{驚|おどろ}きました。でも、このときから「{運命|うんめい}の{赤|あか}い{糸|いと}」で{結|むす}ばれていたのかもしれませんね。', pt: 'Num evento de Halloween, os dois vieram fantasiados de ninja. Perguntei se tinham preparado juntos, e parecia ter sido realmente por acaso, o que me surpreendeu. Mas talvez desde esse momento eles já estivessem ligados pelo fio vermelho do destino.' },
+        { speaker: '新井', ja: '{大学卒業後|だいがくそつぎょうご}は、{星野|ほしの}くんは{会社|かいしゃ}に{就職|しゅうしょく}し、アルナさんは{大学院|だいがくいん}に{進学|しんがく}しました。アルナさんの{仕事|しごと}がなかなか{決|き}まらず、ビザの{問題|もんだい}が{出|で}たとき、{星野|ほしの}くんが「{結婚|けっこん}したら{問題|もんだい}ないよね？」と{答|こた}えたのだそうです。それが2{人|ふたり}のプロポーズのことばだと{聞|き}いています。', pt: 'Depois da formatura, Hoshino entrou em uma empresa e Aruna foi para a pós-graduação. Quando o trabalho de Aruna demorou a sair e surgiu o problema do visto, Hoshino respondeu: "Se nos casarmos, não tem problema, né?". Ouvi que essas foram as palavras de proposta dos dois.' },
+        { speaker: '新井', ja: '{国際結婚|こくさいけっこん}は、お{互|たが}いの{文化|ぶんか}や{習慣|しゅうかん}が{違|ちが}うので、いろいろぶつかることもあるかもしれません。でも、アルナさんの{明|あか}るさ、{星野|ほしの}くんの{冷静|れいせい}な{判断力|はんだんりょく}があれば、{乗|の}り{切|き}っていけると{思|おも}います。これからお2{人|ふたり}で、{幸|しあわ}せな{家庭|かてい}を{作|つく}っていってください。ご{清聴|せいちょう}ありがとうございました。', pt: 'Num casamento internacional, culturas e costumes diferentes podem causar atritos. Mas com a alegria de Aruna e o julgamento calmo de Hoshino, acredito que vocês conseguirão superar. Construam uma família feliz juntos. Obrigado por ouvirem.' },
+      ],
+    },
+  ],
+  '13-14': [
+    {
+      label: 'スピーチ2 - お葬式で (13-14)',
+      setupPt: 'フオン faz um discurso no funeral de sua professora de japonês.',
+      lines: [
+        { speaker: 'フオン', ja: '{先生|せんせい}、{早|はや}すぎますよ！ もっともっと、{先生|せんせい}に{教|おし}えていただきたかったです。もう{先生|せんせい}の{授業|じゅぎょう}が{受|う}けられないなんて、まだ{信|しん}じられません……。', pt: 'Professora, foi cedo demais! Eu queria aprender muito, muito mais com a senhora. Ainda não consigo acreditar que não teremos mais suas aulas...' },
+        { speaker: 'フオン', ja: '{先生|せんせい}は、いつもやさしくて、{明|あか}るい{人|ひと}でした。{日本|にほん}に{来|き}たばかりで、まだ{日本語|にほんご}が{上手|じょうず}ではない{私|わたし}たちを、やさしく{教|おし}えてくださいました。{失敗|しっぱい}してしまったときも、いつも「だいじょうぶ、だいじょうぶ」と{言|い}ってくださいました。', pt: 'A professora era sempre gentil e alegre. Quando havíamos acabado de chegar ao Japão e ainda não falávamos bem japonês, ela nos ensinou com gentileza. Mesmo quando errávamos, sempre dizia "tudo bem, tudo bem".' },
+        { speaker: 'フオン', ja: '{先生|せんせい}の{授業|じゅぎょう}は、とてもおもしろくて、とてもためになりました。{先生|せんせい}は{私|わたし}たちに、{日本語|にほんご}をたくさん{聞|き}かせて、たくさん{話|はな}させました。この{教|おし}え{方|かた}で、{私|わたし}たちは、{日本語|にほんご}の{会話|かいわ}がすごく{上手|じょうず}になったと{思|おも}います。{先生|せんせい}のおかげです。', pt: 'As aulas da professora eram muito interessantes e úteis. Ela nos fazia ouvir e falar muito japonês. Com esse método, nossa conversação em japonês ficou muito melhor. Foi graças à professora.' },
+        { speaker: 'フオン', ja: '{先生|せんせい}は、{定年退職|ていねんたいしょく}したら、{南|みなみ}の{島|しま}に{引|ひ}っ{越|こ}して、{海|うみ}の{近|ちか}くでのんびり{暮|く}らすのが{夢|ゆめ}だと{言|い}っていましたね。その{夢|ゆめ}がかなわないうちに、{天国|てんごく}に{行|い}ってしまったのは、とても{残念|ざんねん}です。', pt: 'A professora dizia que, ao se aposentar, seu sonho era mudar para uma ilha do sul e viver tranquilamente perto do mar. É muito triste que tenha ido para o céu antes de realizar esse sonho.' },
+        { speaker: 'フオン', ja: '{先生|せんせい}、どうぞ、{天国|てんごく}でのんびり{暮|く}らしながら、{私|わたし}たちのことを{見守|みまも}っていてください。{今|いま}まで、{本当|ほんとう}に、{本当|ほんとう}に、ありがとうございました。{学生代表|がくせいだいひょう}、ファム・フオン。', pt: 'Professora, por favor, viva tranquilamente no céu e continue olhando por nós. Muito, muito obrigada por tudo. Representante dos estudantes, Pham Huong.' },
+      ],
+    },
+  ],
+  '13-15': [
+    {
+      label: 'スピーチ3 - 退職のあいさつ (13-15)',
+      setupPt: '平野 faz uma saudação de aposentadoria depois de 43 anos na JF工業.',
+      lines: [
+        { speaker: '司会者', ja: 'それでは、{平野|ひらの}さん、{最後|さいご}にひとこと、お{願|ねが}いします。', pt: 'Então, Hirano, por favor, uma última palavra.' },
+        { speaker: '平野', ja: '{本日|ほんじつ}は、お{忙|いそが}しい{中|なか}、{私|わたし}のためにみなさん{集|あつ}まってくださり、どうもありがとうございます。{本日|ほんじつ}をもって、{退職|たいしょく}することになりました。{簡単|かんたん}ですが、ごあいさつさせていただきます。', pt: 'Hoje, muito obrigado por todos se reunirem por mim apesar de estarem ocupados. A partir de hoje, vou me aposentar. Será breve, mas gostaria de fazer uma saudação.' },
+        { speaker: '平野', ja: '{私|わたし}がJF{工業|こうぎょう}に{入社|にゅうしゃ}したのは、22{歳|さい}のときですから、43{年間|ねんかん}も、ここJF{工業|こうぎょう}で{働|はたら}いてきました。ここでいろいろな{人生経験|じんせいけいけん}を{積|つ}んできました。', pt: 'Entrei na JF Indústria aos 22 anos, então trabalhei aqui por 43 anos. Aqui acumulei várias experiências de vida.' },
+        { speaker: '平野', ja: '{若|わか}いころ、{朝|あさ}から{晩|ばん}まで{会社|かいしゃ}に{来|き}て{働|はたら}いたこと、バブルのころ、お{客|きゃく}さんを{接待|せったい}したこと、{会社|かいしゃ}が{倒産|とうさん}するかもしれない{危機|きき}を、{会社|かいしゃ}の{人|ひと}たちと{乗|の}り{越|こ}えたこと。みな、{私|わたし}の{人生|じんせい}の{中|なか}で{大切|たいせつ}な{経験|けいけん}です。', pt: 'Quando jovem, trabalhar na empresa de manhã à noite; na época da bolha, receber clientes em restaurantes; superar com todos a crise em que a empresa poderia falir. Tudo isso são experiências importantes na minha vida.' },
+        { speaker: '平野', ja: '{私|わたし}がこれまでしてきた{仕事|しごと}は、{優秀|ゆうしゅう}な{後輩|こうはい}たちに{引|ひ}き{継|つ}がれます。{後輩|こうはい}たちはみな、{外国|がいこく}から{来|き}て、{日本|にほん}で{働|はたら}いている{人|ひと}たちです。{人間|にんげん}が、{国|くに}を{越|こ}えて、{会社|かいしゃ}でいっしょに{働|はたら}いて、いっしょに{社会|しゃかい}を{作|つく}っていく。すばらしい{世|よ}の{中|なか}になりました。', pt: 'O trabalho que fiz até agora será herdado por excelentes colegas mais jovens. Todos são pessoas que vieram do exterior e trabalham no Japão. Pessoas atravessam fronteiras, trabalham juntas na empresa e constroem a sociedade juntas. O mundo se tornou maravilhoso.' },
+        { speaker: '平野', ja: '{退職後|たいしょくご}は、{地域|ちいき}の{日本語|にほんご}サポート{教室|きょうしつ}で、ボランティアをするつもりです。{今|いま}、{日本語教師|にほんごきょうし}の{資格|しかく}を{取|と}る{勉強|べんきょう}もしています。これからも、いろいろなことにチャレンジしていくつもりです。{長|なが}い{間|あいだ}、{本当|ほんとう}に、お{世話|せわ}になりました。', pt: 'Depois da aposentadoria, pretendo ser voluntário em uma aula comunitária de apoio ao japonês. Agora também estudo para obter a qualificação de professor de japonês. Pretendo continuar desafiando várias coisas. Muito obrigado por tudo durante tanto tempo.' },
+      ],
+    },
+  ],
+  '13-16': [
+    {
+      label: 'ストラテジー1 - スピーチの構成を聞く (13-16)',
+      lines: [
+        { speaker: 'ポイント', ja: '{自分|じぶん}と{相手|あいて}との{関係|かんけい}、{相手|あいて}の{人柄|ひとがら}、エピソード、これからのことを{聞|き}き{取|と}る。', pt: 'Ouça a relação com a pessoa, personalidade, episódios e mensagens sobre o futuro.' },
+      ],
+    },
+  ],
+  '13-17': [
+    {
+      label: 'ストラテジー2 - 比喩表現に注目する (13-17)',
+      lines: [
+        { speaker: 'ポイント', ja: '{運命|うんめい}の{赤|あか}い{糸|いと}、{太陽|たいよう}のような{人|ひと}など、たとえの{表現|ひょうげん}に{注目|ちゅうもく}する。', pt: 'Observe expressões metafóricas como fio vermelho do destino e pessoa como o sol.' },
+      ],
+    },
+  ],
+  '13-18': [
+    {
+      label: 'ストラテジー3 - 丁寧な決まり文句 (13-18)',
+      lines: [
+        { speaker: 'ポイント', ja: 'ご{清聴|せいちょう}ありがとうございました。{長|なが}い{間|あいだ}、お{世話|せわ}になりました。', pt: 'Obrigado por ouvirem. Obrigado por tudo durante tanto tempo.' },
+      ],
+    },
+  ],
+  '13-19': [
+    {
+      label: '形に注目 - V-てくださる／V-ていただく (13-19)',
+      lines: [
+        { speaker: 'フオン', ja: 'まだ{日本語|にほんご}が{上手|じょうず}ではない{私|わたし}たちを、やさしく{教|おし}えてくださいました。', pt: 'A senhora nos ensinou com gentileza, quando ainda não falávamos bem japonês.' },
+        { speaker: 'フオン', ja: 'もっともっと、{先生|せんせい}に{教|おし}えていただきたかったです。', pt: 'Eu queria aprender muito, muito mais com a senhora.' },
+      ],
+    },
+  ],
+  '13-20': [
+    {
+      label: '形に注目 - V-(さ)せていただく (13-20)',
+      lines: [
+        { speaker: '新井', ja: '{本日|ほんじつ}は、{友人|ゆうじん}を{代表|だいひょう}して、お{祝|いわ}いのスピーチをさせていただきます。', pt: 'Hoje, em nome dos amigos, farei um discurso de felicitação.' },
+        { speaker: '平野', ja: '{簡単|かんたん}ですが、ごあいさつさせていただきます。', pt: 'Será breve, mas gostaria de fazer uma saudação.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -4614,6 +4917,114 @@ const lesson12: Section = {
   audios: attachScripts(12, L12_SCRIPTS),
 }
 
+const lesson13: Section = {
+  id: 'lesson-13',
+  level: 'pre-intermediate',
+  titleJa: '第13課 ご結婚おめでとうございます',
+  titlePt: 'Lição 13 - Parabéns pelo casamento',
+  summaryPt:
+    'Relações com pessoas · enviar mensagens de aniversário, comentar atualizações de conhecidos, aconselhar presentes e entender discursos formais em cerimônias.',
+  studyNotes: [
+    {
+      title: 'Tópico: Relações com pessoas (人とのつき合い)',
+      bodyPt:
+        'Pergunta de abertura: {最近|さいきん}、あなたやあなたの{知|し}り{合|あ}いに、{何|なに}か{大|おお}きなライフイベントがありましたか？ 例: {誕生|たんじょう}, {入学|にゅうがく}, {就職|しゅうしょく}, {結婚|けっこん}.\n\n' +
+        '## Can-do\n' +
+        '- Enviar mensagem de aniversário a um amigo por app e trocar atualizações.\n' +
+        '- Ouvir atualizações de amigos/conhecidos e comentar com frases curtas.\n' +
+        '- Dar conselho com algum detalhe sobre presentes para aniversário ou data comemorativa.\n' +
+        '- Ouvir discursos formais em cerimônias e entender os pontos principais.',
+    },
+    {
+      title: 'Atividade 1: お誕生日おめでとう！',
+      bodyPt:
+        'A atividade trabalha uma troca em app de mensagens. No exemplo, サナ escreve para まり.\n\n' +
+        '| Pergunta | Gabarito |\n|---|---|\n' +
+        '| 最近どんな様子？ | está bem; ainda não se acostumou ao novo trabalho, mas vai levando; o trabalho é interessante |\n' +
+        '| 何の約束？ | 食事の約束 |\n' +
+        '| Estrutura ①-⑤ | お祝いを言う → 近況をやりとりする → 誘う → 予定を調整する → やりとりを締める |\n\n' +
+        'A escrita precisa soar natural para mensagem pessoal: felicitar, contar brevemente como está, propor encontro e encerrar.',
+    },
+    {
+      title: 'Atividade 2: 猫を飼いはじめたんだって',
+      bodyPt:
+        'Quatro conversas trazem notícias de conhecidos e comentários curtos.\n\n' +
+        '| Faixa | Notícia | Comentários |\n|---|---|---|\n' +
+        '| 13-01 | ダイアナさんの娘さん: 高校卒業 e 大学進学 | 驚いた; よかった |\n' +
+        '| 13-02 | 篠原さん: 猫を飼いはじめた | 大変だ |\n' +
+        '| 13-03 | ダーリットさん: 会社を辞める; カンボジアで両親と店を始める | もったいない; うらやましい |\n' +
+        '| 13-04 | 骨川さん: 病気でしばらく入院する | 心配だ |\n\n' +
+        'Vocabulário útil: {偶然|ぐうぜん}, {成長|せいちょう}, {入学式|にゅうがくしき}, ご{機嫌|きげん}, エサ, {世話|せわ}をする, ようやく, リーダー, {病気|びょうき}, {退院|たいいん}する.',
+    },
+    {
+      title: 'Gramática ➊: S（普通形）らしい',
+      bodyPt:
+        '**S（普通形）らしい** transmite uma informação que você julga a partir do que ouviu ou viu, quando não tem certeza total.\n\n' +
+        '- `カンボジアに帰って、両親といっしょにお店を始めるらしいですよ。`\n' +
+        '- `病気でしばらく入院するらしいですよ。`\n\n' +
+        'Conecta-se à forma comum. Para substantivos e adjetivos ナ: `Nらしい`, `ナAらしい`. Diferente de `そうだ` ou `って`, `らしい` inclui julgamento do falante.',
+    },
+    {
+      title: 'Atividade 3: 何かプレゼントしようと思うんですが...',
+      bodyPt:
+        '豊口 consulta colegas sobre presente de aniversário para o parceiro.\n\n' +
+        '| Pessoa | Presente | Razão | Conselhos concretos |\n|---|---|---|---|\n' +
+        '| 木下 | アクセサリー | 形に残るものがいい | há itens não tão caros; observe o que a pessoa usa normalmente; se estiver inseguro, escolha junto na loja |\n' +
+        '| カン | マッサージ器 | 自分では買わないけど、もらうとうれしいもの | usar no pescoço; alivia ombros/pescoço; pode usar vendo TV; recomenda função de aquecedor |\n' +
+        '| ナレシュ | レストランで食事 | いい思い出になる | restaurante francês no アークタワー; boa vista; reservando antes, dá para pôr mensagem no prato |\n\n' +
+        '豊口 já planeja cozinhar em casa no aniversário, então continua em dúvida sobre o presente.',
+    },
+    {
+      title: 'Gramática ➋➌: consultar e sugerir',
+      bodyPt:
+        '**V-（よ）うと思うんですが** abre uma consulta sobre algo que a própria pessoa planeja fazer.\n\n' +
+        '- `何かプレゼントしようと思うんですが、何がいいか迷ってるんです。`\n\n' +
+        '**Nとか、いいんじゃないですか？** sugere um objeto. Em fala casual, aparece como `いいんじゃない？`.\n\n' +
+        '- `例えばアクセサリーとか、いいんじゃない？`\n\n' +
+        'Quando a sugestão é uma ação, usa-se **S（普通形）のがいいんじゃないですか？**.\n\n' +
+        '- `レストランで食事するのもいいんじゃないですか？`',
+    },
+    {
+      title: 'Atividade 4: スピーチをさせていただきます',
+      bodyPt:
+        'A atividade traz três discursos formais.\n\n' +
+        '| Faixa | Situação | Ordem principal | Pontos do gabarito |\n|---|---|---|---|\n' +
+        '| 13-13 | 結婚式 | relação → personalidade → episódio → proposta → futuro | 新井 é amigo da universidade; noiva é 太陽のような人; noivo é quieto/calma/inteligente; ambos vieram de ninja no Halloween; proposta: 結婚したら問題ないよね？ |\n' +
+        '| 13-14 | お葬式 | pessoa da professora → episódio de aula → sonho | professora era gentil e alegre; fazia ouvir/falar muito japonês; sonho era viver numa ilha do sul perto do mar |\n' +
+        '| 13-15 | 退職 | lembranças da empresa → mensagem aos juniors → planos | 平野 trabalhou 43 anos; valoriza trabalhar com pessoas de outros países; quer ser voluntário em aula comunitária e estudar para 日本語教師 |\n\n' +
+        'Discursos formais usam expressões fixas: `ご結婚、おめでとうございます`, `ご清聴ありがとうございました`, `長い間、本当に、お世話になりました`.',
+    },
+    {
+      title: 'Gramática ➍➎: ações recebidas e fala formal',
+      bodyPt:
+        '**V-てくださる** é forma respeitosa de `V-てくれる`: alguém superior ou respeitado faz algo por você.\n\n' +
+        '- `やさしく教えてくださいました。`\n\n' +
+        '**V-ていただく** é forma humilde de `V-てもらう`: você recebe uma ação de alguém superior ou respeitado.\n\n' +
+        '- `先生に教えていただきたかったです。`\n\n' +
+        '**V-（さ）せていただく** diz de forma polida o que você fará a seguir, comum em apresentações, discursos e contexto de trabalho.\n\n' +
+        '- `お祝いのスピーチをさせていただきます。`\n' +
+        '- `ごあいさつさせていただきます。`',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {運命|うんめい}, {糸|いと}, {恋人|こいびと}, {太陽|たいよう}, {反対|はんたい}, {若|わか}い, {就職|しゅうしょく}する, {退職|たいしょく}する, {覚|おぼ}えている.\n\n' +
+        '**Vocabulário-chave:** ライフイベント, {近況|きんきょう}, {誕生日|たんじょうび}, {約束|やくそく}, {成長|せいちょう}, {入学式|にゅうがくしき}, {ご機嫌|ごきげん}, ペットホテル, {恋人|こいびと}, {形|かたち}に{残|のこ}る, {雰囲気|ふんいき}, {事前|じぜん}に{予約|よやく}する, {新郎新婦|しんろうしんぷ}, {国際結婚|こくさいけっこん}, {定年退職|ていねんたいしょく}, {後輩|こうはい}, {資格|しかく}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**入院:** em internação, normalmente você prepara itens como escova de dentes, copo, roupa íntima, pijama e chinelos. Há 大部屋 e 個室; quarto individual pode ter 差額ベッド代. Alta e pagamento costumam ocorrer juntos; seguro de saúde e 高額療養費制度 podem reduzir custo. Alguns hospitais oferecem 医療通訳.\n\n' +
+        '**日本の教育制度:** antes do primário há 保育所, 幼稚園 e 認定こども園. A educação obrigatória é 小学校 6 anos + 中学校 3 anos. Depois muitos seguem para 高校; após o ensino médio há 大学, 短大, 専門学校, 高専 e 大学院.\n\n' +
+        '**ペット:** cães e gatos são comuns, mas muitos prédios não permitem animais. É necessário confirmar regras antes; criar pet escondido pode gerar mudança ou custos.\n\n' +
+        '**比喩的表現:** `羽を伸ばす` = relaxar livremente; `沼にハマる` = ficar muito envolvido/obcecado; `火に油を注ぐ` = piorar uma situação ruim; `虹の橋を渡る` = forma suave para dizer que um pet morreu.\n\n' +
+        '**結婚式のパーティー／葬式:** a lição remete às TIPS de 初級2 第10課 sobre festas de casamento e funerais.',
+    },
+  ],
+  groups: [lesson13Group],
+  audios: attachScripts(13, L13_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -4633,6 +5044,8 @@ const sections: Section[] = [
   // Tópico 6 - O que fazer nestas situações? (こんなときどうする？)
   lesson11,
   lesson12,
+  // Tópico 7 - Relações com pessoas (人とのつき合い)
+  lesson13,
 ]
 
 export const irodoriPreIntermediate: Level = {
