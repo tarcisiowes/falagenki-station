@@ -345,6 +345,60 @@ const lesson6Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 7: たくさんの人と友だちになれればと思っています (tópico 出会う) ----
+const lesson7Group: ExerciseGroup = {
+  id: 'iro-pi-l7',
+  title: 'たくさんの人と友だちになれればと思っています',
+  subtitlePt: 'Fazer conhecidos · perguntar sobre círculos · autoapresentação em grupo',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l7-1', number: 1, prompt: 'Qual é o tópico desta lição?', choices: [{ n: 1, text: '出会う (encontros / conhecer pessoas)' }, { n: 2, text: '毎日の食事' }, { n: 3, text: 'どこに住む？' }, { n: 4, text: '旅行に行こう' }], answer: 1, explanationPt: 'A Lição 7 abre o tópico 出会う, com foco em fazer conhecidos, entrar em grupos e se apresentar.' },
+    { id: 'iro-pi-l7-2', number: 2, prompt: 'Pergunta de abertura: あなたの友だちとは、どこでどのように知り合いましたか？', choices: [{ n: 1, text: 'Onde e como você conheceu seus amigos?' }, { n: 2, text: 'Você cozinha todos os dias?' }, { n: 3, text: 'Que restaurante recomenda?' }, { n: 4, text: 'Você já perdeu a chave?' }], answer: 1, explanationPt: 'A abertura prepara o tema de ampliar relações e fazer amizades.' },
+    { id: 'iro-pi-l7-3', number: 3, prompt: 'Can-do 21: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ouvir conselhos simples sobre onde ir ou o que fazer para ampliar relações' }, { n: 2, text: 'ler artigo sobre micro-ondas' }, { n: 3, text: 'pedir comida por tablet' }, { n: 4, text: 'fazer reclamação de moradia' }], answer: 1, explanationPt: 'A atividade 1 trabalha conselhos para quem quer conhecidos ou amigos.' },
+    { id: 'iro-pi-l7-4', number: 4, prompt: '聴解 07-01: ミー quer:', image: `${IMG}/ZZ_07_1_01_kinjonohito.png`, imageAlt: 'pessoa que quer conhecer vizinhos', choices: [{ n: 1, text: 'conhecer pessoas da vizinhança' }, { n: 2, text: 'ter amigos de vários países' }, { n: 3, text: 'conhecer outros pais criando filhos' }, { n: 4, text: 'ter amigos fãs de beisebol' }], answer: 1, explanationPt: 'ミー diz que não tem oportunidade de falar com vizinhos e quer conhecê-los.' },
+    { id: 'iro-pi-l7-5', number: 5, prompt: '聴解 07-01: qual método é recomendado para ミー?', image: `${IMG}/ZZ_07_1_08_choonai.png`, imageAlt: 'atividade da associação de bairro', choices: [{ n: 1, text: '町内の活動に参加する' }, { n: 2, text: '国際交流イベントに参加する' }, { n: 3, text: 'ファンが集まる店に行く' }, { n: 4, text: '児童館に行く' }], answer: 1, explanationPt: 'O gabarito marca ① d: participar de atividades da comunidade/bairro.' },
+    { id: 'iro-pi-l7-6', number: 6, prompt: '聴解 07-01: nessas atividades, as pessoas podem:', choices: [{ n: 1, text: 'fazer limpeza voluntária e plantar flores no parque' }, { n: 2, text: 'fazer calligraphy e origami' }, { n: 3, text: 'assistir a jogo no bar' }, { n: 4, text: 'brincar em brinquedos de crianças' }], answer: 1, explanationPt: 'A fala cita ボランティアで掃除をしたり、公園にお花を植えたりする.' },
+    { id: 'iro-pi-l7-7', number: 7, prompt: '聴解 07-01: o que ミー deve fazer depois?', choices: [{ n: 1, text: 'ver o 掲示板 da cidade/bairro' }, { n: 2, text: 'olhar o cronograma mensal no site' }, { n: 3, text: 'ir diretamente buscar panfleto' }, { n: 4, text: 'vestir uniforme vermelho' }], answer: 1, explanationPt: 'O answer key marca エ: 町の掲示板を見る.' },
+    { id: 'iro-pi-l7-8', number: 8, prompt: '聴解 07-02: a pessoa quer:', image: `${IMG}/ZZ_07_1_02_ironnakuni.png`, imageAlt: 'pessoa que quer amigos de vários países', choices: [{ n: 1, text: 'amigos de vários países' }, { n: 2, text: 'colegas fãs do Carp' }, { n: 3, text: 'conhecer os vizinhos' }, { n: 4, text: 'aprender a cozinhar para si' }], answer: 1, explanationPt: 'B diz: いろんな国の友だちがほしいんです.' },
+    { id: 'iro-pi-l7-9', number: 9, prompt: '聴解 07-02: que método é recomendado?', image: `${IMG}/ZZ_07_1_05_kokusaikooryuu.png`, imageAlt: 'evento de intercâmbio internacional', choices: [{ n: 1, text: '市の国際交流イベントに参加する' }, { n: 2, text: '町内の活動に参加する' }, { n: 3, text: '寮の食堂で食べる' }, { n: 4, text: '業務用スーパーに行く' }], answer: 1, explanationPt: 'O gabarito marca ② a: participar de eventos de intercâmbio internacional da cidade.' },
+    { id: 'iro-pi-l7-10', number: 10, prompt: '聴解 07-02: que atividades podem existir nesses eventos?', choices: [{ n: 1, text: 'experiências de cultura japonesa, como 書道 e 折り紙, e passeio pela cidade' }, { n: 2, text: 'pedidos por tablet e self-checkout' }, { n: 3, text: 'nabe de kiritanpo' }, { n: 4, text: 'conserto de ar-condicionado' }], answer: 1, explanationPt: 'A fala cita 書道, 折り紙, 日本文化体験 e 町を散策するイベント.' },
+    { id: 'iro-pi-l7-11', number: 11, prompt: '聴解 07-02: o que deve fazer para se inscrever?', choices: [{ n: 1, text: 'ver o cronograma mensal no website e se inscrever por lá' }, { n: 2, text: 'ver o掲示板 da cidade' }, { n: 3, text: 'vestir uniforme e ir ao restaurante' }, { n: 4, text: 'perguntar ao agricultor' }], answer: 1, explanationPt: 'O answer key marca ア: ウェブサイトで毎月のスケジュールを見る.' },
+    { id: 'iro-pi-l7-12', number: 12, prompt: '聴解 07-03: a pessoa quer:', image: `${IMG}/ZZ_07_1_03_kosodatechuu.png`, imageAlt: 'pessoa criando filho pequeno', choices: [{ n: 1, text: 'conhecer pessoas que também estão criando filhos' }, { n: 2, text: 'amigos de vários países' }, { n: 3, text: 'colegas fãs de beisebol' }, { n: 4, text: 'entrar em grupo de culinária' }], answer: 1, explanationPt: 'B passa muito tempo só com a criança e quer conversar com outras pessoas em 子育て中.' },
+    { id: 'iro-pi-l7-13', number: 13, prompt: '聴解 07-03: que lugar é recomendado?', image: `${IMG}/ZZ_07_1_07_jidookan.png`, imageAlt: '児童館 ou centro de apoio à criação de filhos', choices: [{ n: 1, text: '児童館や子育て支援センター' }, { n: 2, text: 'ファンが集まるお店' }, { n: 3, text: '国際交流イベント' }, { n: 4, text: '業務用スーパー' }], answer: 1, explanationPt: 'O gabarito marca ③ c: ir ao jidokan ou centro de apoio à criação de filhos.' },
+    { id: 'iro-pi-l7-14', number: 14, prompt: '聴解 07-03: o que se pode fazer lá?', choices: [{ n: 1, text: 'brincar com brinquedos e participar de eventos como aniversário' }, { n: 2, text: 'assistir jogo e torcer na TV' }, { n: 3, text: 'comprar legumes frescos' }, { n: 4, text: 'escrever SNS sobre restaurante' }], answer: 1, explanationPt: 'A fala cita おもちゃで遊ぶこと e お誕生日会などのイベント.' },
+    { id: 'iro-pi-l7-15', number: 15, prompt: '聴解 07-03: o que a pessoa deve fazer depois?', choices: [{ n: 1, text: 'ir diretamente e pegar/ver o panfleto' }, { n: 2, text: 'olhar o site de eventos internacionais' }, { n: 3, text: 'ver o掲示板' }, { n: 4, text: 'ir usando uniforme vermelho' }], answer: 1, explanationPt: 'O answer key marca イ: 直接行って、チラシをもらう.' },
+    { id: 'iro-pi-l7-16', number: 16, prompt: '聴解 07-04: ケビン quer:', image: `${IMG}/ZZ_07_1_04_yakyuufan.png`, imageAlt: 'fã de beisebol', choices: [{ n: 1, text: 'companheiros para conversar sobre o Carp' }, { n: 2, text: 'vizinhos para limpar o bairro' }, { n: 3, text: 'outros pais no jidokan' }, { n: 4, text: 'amigos de vários países' }], answer: 1, explanationPt: 'ケビン se tornou fã do Carp e quer 仲間 com quem falar sobre o time.' },
+    { id: 'iro-pi-l7-17', number: 17, prompt: '聴解 07-04: que lugar é recomendado?', image: `${IMG}/ZZ_07_1_06_fan.png`, imageAlt: 'loja onde fãs se reúnem', choices: [{ n: 1, text: 'um お好み焼き屋 onde fãs do Carp se reúnem' }, { n: 2, text: 'um centro infantil' }, { n: 3, text: 'uma aula de japonês' }, { n: 4, text: 'uma loja de pratos prontos' }], answer: 1, explanationPt: 'A recomendação é o restaurante 鯉屋, em 北通り, onde fãs assistem e torcem juntos.' },
+    { id: 'iro-pi-l7-18', number: 18, prompt: '聴解 07-04: para fazer amizade no local, ケビン deve:', choices: [{ n: 1, text: 'vestir o uniforme vermelho e ir quando houver jogo' }, { n: 2, text: 'levar panfleto do jidokan' }, { n: 3, text: 'comprar congelados' }, { n: 4, text: 'preparar comida japonesa' }], answer: 1, explanationPt: 'O answer key marca ウ: ユニフォームを着てお店に行く.' },
+    { id: 'iro-pi-l7-19', number: 19, prompt: 'Vocabulário da atividade 1: ポスター／なかなか～ない／載る／幼稚園／少しずつ／仲良くなる significam:', choices: [{ n: 1, text: 'pôster / não conseguir facilmente / aparecer publicado / jardim de infância / pouco a pouco / ficar próximo' }, { n: 2, text: 'tempero / entregar / congelar / escola de inglês / de repente / cozinhar' }, { n: 3, text: 'pedido / subtotal / alergênico / criança / cedo / vender' }, { n: 4, text: 'mensagem / comida / esporte / barulho / imposto / cortar' }], answer: 1, explanationPt: 'Esses itens aparecem antes de ouvir os diálogos 07-01 a 07-04 novamente.' },
+    { id: 'iro-pi-l7-20', number: 20, prompt: '「興味があるイベントに参加すれば、知り合いもできると思います」 usa V-ば para:', choices: [{ n: 1, text: 'dizer uma condição para o resultado acontecer' }, { n: 2, text: 'fazer algo com antecedência' }, { n: 3, text: 'confirmar algo conhecido' }, { n: 4, text: 'comparar com algo parecido' }], answer: 1, translationPt: 'Se você participar de eventos que te interessam, acho que também conseguirá conhecidos.', explanationPt: 'V-ば marca condição. A lição também usa どうすれば para perguntar por um método específico.' },
+    { id: 'iro-pi-l7-21', number: 21, prompt: '「赤いユニフォームを着て行けば、すぐに周りの人と仲良くなると思います」 significa:', choices: [{ n: 1, text: 'Se for vestindo o uniforme vermelho, acho que logo vai se enturmar com as pessoas ao redor' }, { n: 2, text: 'Vou comprar um uniforme vermelho antes' }, { n: 3, text: 'Não se deve vestir vermelho' }, { n: 4, text: 'Vermelho é caro' }], answer: 1, explanationPt: '着て行けば combina 着て行く na forma condicional バ: se for vestindo.' },
+    { id: 'iro-pi-l7-22', number: 22, prompt: '「通っているうちに、少しずつ話ができる人が増えると思います」 usa V-ているうちに para:', choices: [{ n: 1, text: 'indicar uma mudança que ocorre enquanto a ação se repete/continua' }, { n: 2, text: 'dar uma ordem direta' }, { n: 3, text: 'pedir permissão' }, { n: 4, text: 'explicar uma tela de pedido' }], answer: 1, translationPt: 'Enquanto você continuar frequentando, acho que aos poucos vão aumentar as pessoas com quem consegue conversar.', explanationPt: 'V-ているうちに é seguido por mudança ou resultado.' },
+    { id: 'iro-pi-l7-23', number: 23, prompt: 'Can-do 22: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'escrever mensagem para um amigo que participa de um círculo e obter informações sobre ele' }, { n: 2, text: 'explicar comida regional' }, { n: 3, text: 'ler artigo online sobre micro-ondas' }, { n: 4, text: 'ligar para emergência' }], answer: 1, explanationPt: 'A atividade 2 trabalha uma mensagem para perguntar sobre umサークル.' },
+    { id: 'iro-pi-l7-24', number: 24, prompt: 'No exemplo da mensagem, グレイ quer participar de qual círculo?', choices: [{ n: 1, text: '世界の料理サークル' }, { n: 2, text: 'カープ応援サークル' }, { n: 3, text: '児童館のイベント' }, { n: 4, text: '町内清掃ボランティア' }], answer: 1, explanationPt: 'O answer key marca: 世界の料理サークル.' },
+    { id: 'iro-pi-l7-25', number: 25, prompt: 'No exemplo da mensagem, グレイ pergunta:', choices: [{ n: 1, text: 'que comidas fazem, se há estrangeiros e se tudo bem não saber muito japonês' }, { n: 2, text: 'preço do restaurante, picância e bebida recomendada' }, { n: 3, text: 'onde comprar cebola barata' }, { n: 4, text: 'como reservar quarto' }], answer: 1, explanationPt: 'O answer key resume as perguntas: いつもどんな料理を作るのか, 外国人もいるか, 日本語があまりできなくてもだいじょうぶか.' },
+    { id: 'iro-pi-l7-26', number: 26, prompt: 'Estrutura do exemplo da mensagem: ①, ②, ③, ④ correspondem a:', choices: [{ n: 1, text: 'começar conversa → comunicar o assunto → fazer perguntas → encerrar após sugestão' }, { n: 2, text: 'perguntar → encerrar → começar → recusar' }, { n: 3, text: 'somente agradecer, sem assunto' }, { n: 4, text: 'pedir comida → pagar → ir embora → avaliar' }], answer: 1, explanationPt: 'O gabarito marca ① d, ② c, ③ b, ④ a.' },
+    { id: 'iro-pi-l7-27', number: 27, prompt: 'Na resposta do exemplo, ヘミン diz que noサークル:', choices: [{ n: 1, text: 'há japoneses e estrangeiros, todos são boas pessoas; グレイ ficará bem' }, { n: 2, text: 'só entram japoneses fluentes' }, { n: 3, text: 'ninguém cozinha comida estrangeira' }, { n: 4, text: 'é proibido ir no domingo' }], answer: 1, explanationPt: 'Na mensagem: 日本人も外国人も、みんないい人です; グレイさんなら大丈夫です.' },
+    { id: 'iro-pi-l7-28', number: 28, prompt: 'As imagens da atividade 2 sugerem possíveisサークル como:', image: `${IMG}/ZZ_07_2_01_shodoo.png`, imageAlt: 'círculo de caligrafia', choices: [{ n: 1, text: '書道, 和太鼓, フットサル, 将棋, 合唱, 日本語, 合気道, プレイグループ, ハイキング' }, { n: 2, text: 'apenas restaurantes tailandeses' }, { n: 3, text: 'somente mercados e lojas' }, { n: 4, text: 'somente hospitais' }], answer: 1, explanationPt: 'A atividade permite usar essas ilustrações como referência ou pensar livremente em outro grupo.' },
+    { id: 'iro-pi-l7-29', number: 29, prompt: 'Can-do 23: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'fazer uma autoapresentação coerente com perfil, esperanças e objetivos' }, { n: 2, text: 'preencher formulário de imposto' }, { n: 3, text: 'pedir delivery por aplicativo' }, { n: 4, text: 'reclamar de barulho' }], answer: 1, explanationPt: 'A atividade 3 é a autoapresentação ao entrar pela primeira vez em um círculo ou grupo.' },
+    { id: 'iro-pi-l7-30', number: 30, prompt: '会話 07-07: quem é カイラ?', image: `${IMG}/ZZ_07_3_01_jikoshookai.png`, imageAlt: 'autoapresentação em grupo de culinária', choices: [{ n: 1, text: 'uma pessoa das Filipinas, há 3 anos no Japão, mora em 東区 e ensina inglês em uma escola de conversação' }, { n: 2, text: 'uma fã do Carp que mora em Hiroshima' }, { n: 3, text: 'uma agricultora de mercado matinal' }, { n: 4, text: 'uma funcionária de restaurante tailandês' }], answer: 1, explanationPt: 'O gabarito registra: 出身 フィリピン, 日本に来て3年, 東区, 英会話の学校で英語を教えている.' },
+    { id: 'iro-pi-l7-31', number: 31, prompt: '会話 07-07: por que カイラ entrou no 世界の料理サークル?', choices: [{ n: 1, text: 'gosta de cozinhar e quer fazer comidas de vários países' }, { n: 2, text: 'quer ver jogos de beisebol' }, { n: 3, text: 'quer procurar apartamento' }, { n: 4, text: 'quer comprar alimentos congelados' }], answer: 1, explanationPt: 'Ela gosta de cozinhar, faz várias comidas e quer fazer comidas de muitos países.' },
+    { id: 'iro-pi-l7-32', number: 32, prompt: '会話 07-07: sobre comida japonesa, カイラ diz que:', choices: [{ n: 1, text: 'às vezes faz olhando receitas na internet' }, { n: 2, text: 'nunca tentou' }, { n: 3, text: 'só come no dormitório' }, { n: 4, text: 'não quer aprender' }], answer: 1, explanationPt: '日本料理も、ネットのレシピを見ながら、ときどき作ります.' },
+    { id: 'iro-pi-l7-33', number: 33, prompt: '会話 07-07: que esperanças カイラ expressa?', choices: [{ n: 1, text: 'fazer muitos amigos, ser convidada para refeições e atividades, e se divertir com todos' }, { n: 2, text: 'comprar carne no dia 29' }, { n: 3, text: 'só estudar gramática sozinha' }, { n: 4, text: 'pedir atendimento de emergência' }], answer: 1, explanationPt: 'Ela diz: たくさんの人と友だちになれれば, 食事とかいろいろ誘ってもらえれば, 楽しく活動できればいいな.' },
+    { id: 'iro-pi-l7-34', number: 34, prompt: '「たくさんの人と友だちになれればと思っています」 expressa:', choices: [{ n: 1, text: 'esperança/desejo usando V-ば + と思っています' }, { n: 2, text: 'ordem para fazer amigos' }, { n: 3, text: 'negação de amizade' }, { n: 4, text: 'comparação com amigos' }], answer: 1, translationPt: 'Espero conseguir fazer amizade com muitas pessoas.', explanationPt: 'Na autoapresentação, V-ば + と思っています/うれしいです/いいなと思います apresenta esperanças de forma suave.' },
+    { id: 'iro-pi-l7-35', number: 35, prompt: '「食事とか、いろいろ誘ってもらえればうれしいです」 significa:', choices: [{ n: 1, text: 'Eu ficaria feliz se me convidassem para refeições e outras coisas' }, { n: 2, text: 'Não quero ser convidado para refeições' }, { n: 3, text: 'Já comi antes de vir' }, { n: 4, text: 'Vou convidar todo mundo agora' }], answer: 1, explanationPt: '誘ってもらえればうれしいです expressa desejo envolvendo ação recebida de outras pessoas.' },
+    { id: 'iro-pi-l7-36', number: 36, prompt: 'Estratégia 07-09: em 「英語会話の……あ、英会話の学校で」, a correção serve para:', choices: [{ n: 1, text: 'corrigir uma palavra errada pela palavra certa' }, { n: 2, text: 'corrigir gramática' }, { n: 3, text: 'trocar por palavra mais adequada' }, { n: 4, text: 'mudar de assunto' }], answer: 1, explanationPt: 'O answer key marca 2: 間違えたことばを正しいことばに直す.' },
+    { id: 'iro-pi-l7-37', number: 37, prompt: 'Estratégia 07-09: em 「いろいろの……えっと、いろいろな料理」, a correção serve para:', choices: [{ n: 1, text: 'corrigir a gramática' }, { n: 2, text: 'corrigir uma data' }, { n: 3, text: 'trocar por termo técnico' }, { n: 4, text: 'pedir repetição' }], answer: 1, explanationPt: 'O answer key marca 1: 文法を直す.' },
+    { id: 'iro-pi-l7-38', number: 38, prompt: 'Estratégia 07-09: em 「このグループ……えー、このサークルで」, a correção serve para:', choices: [{ n: 1, text: 'substituir por uma palavra mais adequada' }, { n: 2, text: 'corrigir conjugação' }, { n: 3, text: 'corrigir número' }, { n: 4, text: 'encerrar a fala' }], answer: 1, explanationPt: 'O answer key marca 3: より適切な別のことばに言い換える.' },
+    { id: 'iro-pi-l7-39', number: 39, prompt: 'Kanji da lição: 自己紹介／興味／仲間 lêem-se:', choices: [{ n: 1, text: 'じこしょうかい／きょうみ／なかま' }, { n: 2, text: 'じぶんしょうかい／こうみ／ちゅうま' }, { n: 3, text: 'しこしょうかい／きょうあじ／なかま' }, { n: 4, text: 'じこしょうかい／きょうみ／なかかん' }], answer: 1, explanationPt: '自己紹介 = autoapresentação; 興味 = interesse; 仲間 = companheiro/colega de grupo.' },
+    { id: 'iro-pi-l7-40', number: 40, prompt: 'Kanji da lição: 子育て／児童館／掲示板 lêem-se:', choices: [{ n: 1, text: 'こそだて／じどうかん／けいじばん' }, { n: 2, text: 'こいくて／じどうやかた／かかげばん' }, { n: 3, text: 'こそだて／こどもかん／けいじばん' }, { n: 4, text: 'しそだて／じどうかん／けいばん' }], answer: 1, explanationPt: 'Essas palavras aparecem nos conselhos para pessoas criando filhos e em atividades da comunidade.' },
+    { id: 'iro-pi-l7-41', number: 41, prompt: 'Kanji da lição: 掃除／次／簡単（な）／植える lêem-se:', choices: [{ n: 1, text: 'そうじ／つぎ／かんたん／うえる' }, { n: 2, text: 'そうのぞき／じ／かんだん／そだてる' }, { n: 3, text: 'せいじ／つぎ／かんたん／うえる' }, { n: 4, text: 'そうじ／つぎ／けんたん／しょくえる' }], answer: 1, explanationPt: '掃除 e 植える aparecem nas atividades voluntárias do bairro; 簡単 na frase 自己紹介をお願いします.' },
+    { id: 'iro-pi-l7-42', number: 42, prompt: 'TIPS: 児童館 é:', choices: [{ n: 1, text: 'instalação onde crianças brincam/aprendem e pais em子育て também recebem apoio e informações' }, { n: 2, text: 'um restaurante de fãs de beisebol' }, { n: 3, text: 'um supermercado comercial' }, { n: 4, text: 'um tipo de micro-ondas' }], answer: 1, explanationPt: 'A TIPS diz que muitos jidokan são gratuitos, podem ter regras de idade/região e oferecem brinquedos, livros, espaço para movimento, eventos e apoio aos pais.' },
+    { id: 'iro-pi-l7-43', number: 43, prompt: 'TIPS: sobre times profissionais de beisebol no Japão, qual afirmação está correta?', choices: [{ n: 1, text: 'há 12 times; cada um tem cidade/região-base e torcidas locais fortes' }, { n: 2, text: 'há apenas um time nacional' }, { n: 3, text: 'o Carp é um time de futebol' }, { n: 4, text: 'não se assiste jogo em estádio' }], answer: 1, explanationPt: 'A TIPS usa o Hiroshima Toyo Carp como exemplo e lista as bases dos times profissionais no Japão em 2026.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -1614,6 +1668,164 @@ const L6_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L7_SCRIPTS: Record<string, ScriptItem[]> = {
+  '07-01': [
+    {
+      label: '① ミーさん - 近所の人と知り合いになりたい (07-01)',
+      setupPt: 'ミー pergunta como conhecer pessoas da vizinhança; A recomenda participar de atividades do bairro.',
+      lines: [
+        { speaker: 'A', ja: 'ミーさん、{日本|にほん}の{生活|せいかつ}はどうですか？', pt: 'Mii, como está a vida no Japão?' },
+        { speaker: 'B', ja: '{日本|にほん}は、{住|す}みやすいです。ただ、{近所|きんじょ}の{人|ひと}と{話|はな}す{機会|きかい}がなくて……。', pt: 'O Japão é fácil de viver. Mas não tenho oportunidade de conversar com as pessoas da vizinhança...' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '{近所|きんじょ}の{人|ひと}と{知|し}り{合|あ}いになりたいんですが、どうすればいいでしょうか。', pt: 'Eu queria conhecer as pessoas da vizinhança. O que seria bom fazer?' },
+        { speaker: 'A', ja: 'そうですね。{町内|ちょうない}の{活動|かつどう}に{参加|さんか}してみるのはどうですか？', pt: 'Vejamos. Que tal experimentar participar de atividades do bairro?' },
+        { speaker: 'B', ja: '{町内|ちょうない}の{活動|かつどう}？', pt: 'Atividades do bairro?' },
+        { speaker: 'A', ja: 'ええ、{例|たと}えば、{町内|ちょうない}の{人|ひと}とボランティアで{掃除|そうじ}をしたり、{公園|こうえん}にお{花|はな}を{植|う}えたりするんです。', pt: 'Sim. Por exemplo, fazer limpeza voluntária com as pessoas do bairro ou plantar flores no parque.' },
+        { speaker: 'B', ja: 'へー、どうやって{参加|さんか}するんですか？', pt: 'Ah, e como participa?' },
+        { speaker: 'A', ja: '{町|まち}の{掲示板|けいじばん}に「ボランティア{募集|ぼしゅう}」のポスターが{貼|は}ってあると{思|おも}いますよ。それを{見|み}て、{連絡|れんらく}してみるといいですよ。', pt: 'Acho que há pôsteres de “recrutamento de voluntários” no quadro de avisos da cidade/bairro. É bom ver isso e tentar entrar em contato.' },
+        { speaker: 'B', ja: 'そうなんですね。', pt: 'Entendi.' },
+        { speaker: 'A', ja: 'おしゃべり{好|ず}きな{人|ひと}もいるから、{知|し}り{合|あ}いもできるんじゃないかな。', pt: 'Como também tem gente que gosta de conversar, acho que você pode fazer conhecidos.' },
+        { speaker: 'B', ja: 'いいですね。{掲示板|けいじばん}を{見|み}てみます。', pt: 'Boa ideia. Vou olhar o quadro de avisos.' },
+      ],
+    },
+  ],
+  '07-02': [
+    {
+      label: '② 国際交流イベント (07-02)',
+      setupPt: 'B quer amigos de vários países; A recomenda eventos de intercâmbio internacional da cidade.',
+      lines: [
+        { speaker: 'A', ja: '{最近|さいきん}、どう？ {日本|にほん}の{生活|せいかつ}には{慣|な}れましたか？', pt: 'Como você tem passado? Já se acostumou com a vida no Japão?' },
+        { speaker: 'B', ja: 'うーん、{生活|せいかつ}には{慣|な}れたんですが、なかなか{友|とも}だちができないんです。', pt: 'Hmm, acostumei com a vida aqui, mas não consigo fazer amigos facilmente.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Ah, é?' },
+        { speaker: 'B', ja: 'いろんな{国|くに}の{友|とも}だちがほしいんですけど……。', pt: 'Eu queria amigos de vários países...' },
+        { speaker: 'A', ja: 'んー、じゃあ、{市|し}の{国際交流|こくさいこうりゅう}イベントに{参加|さんか}するのはどうですか？', pt: 'Hmm, então que tal participar de eventos de intercâmbio internacional da cidade?' },
+        { speaker: 'B', ja: '{行|い}ったことないです。どんなイベントがあるんですか？', pt: 'Nunca fui. Que tipo de eventos existem?' },
+        { speaker: 'A', ja: '{書道|しょどう}とか{折|お}り{紙|がみ}とか{日本文化体験|にほんぶんかたいけん}のイベントもあるし、みんなで{町|まち}を{散策|さんさく}するイベントもあるし、いろいろありますよ。', pt: 'Há eventos de experiência de cultura japonesa, como caligrafia e origami, e também eventos para passear pela cidade em grupo; há várias coisas.' },
+        { speaker: 'B', ja: 'へー、おもしろそう。', pt: 'Ah, parece interessante.' },
+        { speaker: 'A', ja: 'いろんな{国|くに}の{人|ひと}が{参加|さんか}してますよ。{興味|きょうみ}があるイベントに{参加|さんか}すれば、{知|し}り{合|あ}いもできると{思|おも}います。', pt: 'Pessoas de vários países participam. Se você participar de eventos que te interessam, acho que também conseguirá conhecidos.' },
+        { speaker: 'B', ja: '{行|い}ってみようかな。', pt: 'Acho que vou experimentar ir.' },
+        { speaker: 'A', ja: 'ウェブサイトに{毎月|まいつき}のスケジュールが{載|の}ってるから、そこから{申|もう}し{込|こ}めばいいですよ。', pt: 'O cronograma mensal aparece no site, então é só se inscrever por lá.' },
+        { speaker: 'B', ja: '{見|み}てみます。ありがとうございます。', pt: 'Vou dar uma olhada. Obrigado.' },
+      ],
+    },
+  ],
+  '07-03': [
+    {
+      label: '③ 子育て中の知り合い (07-03)',
+      setupPt: 'B quer conhecer pessoas que também estão criando filhos; A recomenda 児童館 e 子育て支援センター.',
+      lines: [
+        { speaker: 'A', ja: 'お{子|こ}さん、{何歳|なんさい}になりましたか？', pt: 'Quantos anos seu filho fez?' },
+        { speaker: 'B', ja: 'もうすぐ3{歳|さい}です。', pt: 'Vai fazer 3 anos em breve.' },
+        { speaker: 'A', ja: 'じゃあ、そろそろ{幼稚園|ようちえん}ですね。', pt: 'Então já está quase na idade do jardim de infância.' },
+        { speaker: 'B', ja: 'はい、でも……。', pt: 'Sim, mas...' },
+        { speaker: 'A', ja: 'どうしたんですか？', pt: 'O que houve?' },
+        { speaker: 'B', ja: 'いつも{子|こ}どもと2{人|ふたり}なので、もっと{同|おな}じ{子育|こそだ}て{中|ちゅう}の{人|ひと}と{話|はな}したりしたいなって{思|おも}ってて。', pt: 'Como sempre fico só eu e a criança, queria conversar mais com pessoas que também estão criando filhos.' },
+        { speaker: 'A', ja: 'なるほどね。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '{子育|こそだ}て{中|ちゅう}の{知|し}り{合|あ}いを{作|つく}るには、どうしたらいいでしょうか。', pt: 'O que devo fazer para criar conhecidos que também estão criando filhos?' },
+        { speaker: 'A', ja: 'そうですね。{児童館|じどうかん}とか{子育|こそだ}て{支援|しえん}センターに{行|い}ってみたらどうですか？ {子育|こそだ}て{中|ちゅう}の{人|ひと}がたくさんいますよ。', pt: 'Vejamos. Que tal experimentar ir a um jidokan ou a um centro de apoio à criação de filhos? Há muitas pessoas criando filhos lá.' },
+        { speaker: 'B', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'A', ja: 'おもちゃで{遊|あそ}ぶこともできるし、お{誕生日会|たんじょうびかい}とか、いろんなイベントに{参加|さんか}することもできますよ。', pt: 'Dá para brincar com brinquedos e também participar de vários eventos, como festas de aniversário.' },
+        { speaker: 'B', ja: '{楽|たの}しそうですね。', pt: 'Parece divertido.' },
+        { speaker: 'A', ja: '{通|かよ}っているうちに、{少|すこ}しずつ{話|はなし}ができる{人|ひと}が{増|ふ}えると{思|おも}います。', pt: 'Enquanto você continuar frequentando, acho que aos poucos vão aumentar as pessoas com quem consegue conversar.' },
+        { speaker: 'B', ja: 'ほかには、どんなイベントがあるんですか？', pt: 'Que outros eventos existem?' },
+        { speaker: 'A', ja: 'うーん、{月|つき}によっても{違|ちが}うから、{直接|ちょくせつ}{行|い}ってみたらどうでしょう。チラシが{置|お}いてあると{思|おも}いますよ。', pt: 'Hmm, também muda conforme o mês, então que tal ir diretamente? Acho que há panfletos lá.' },
+        { speaker: 'B', ja: 'そうですか。じゃあ、{今度|こんど}、{子|こ}どもといっしょに{行|い}ってみます。', pt: 'Entendi. Então, da próxima vez, vou experimentar ir com meu filho.' },
+      ],
+    },
+  ],
+  '07-04': [
+    {
+      label: '④ ケビンさん - カープ仲間 (07-04)',
+      setupPt: 'ケビン quer pessoas com quem conversar sobre o Carp; A recomenda um okonomiyaki onde fãs se reúnem.',
+      lines: [
+        { speaker: 'A', ja: 'ケビンさん、カープのファンだったんですか？ その{帽子|ぼうし}……。', pt: 'Kevin, você era fã do Carp? Esse boné...' },
+        { speaker: 'B', ja: 'そうなんですよ！ {日本|にほん}に{来|き}てから{野球|やきゅう}が{好|す}きになりました。{今|いま}では、すっかりカープのファンです。', pt: 'Pois é! Depois que vim ao Japão, passei a gostar de beisebol. Hoje sou totalmente fã do Carp.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: 'でも、カープの{話|はなし}ができる{仲間|なかま}がほしいんですけど、なかなかできないんです。', pt: 'Mas eu queria colegas com quem conversar sobre o Carp, só que não consigo fazer isso facilmente.' },
+        { speaker: 'A', ja: 'それなら、カープファンが{集|あつ}まるお{店|みせ}に{行|い}ってみたらどうかな。{例|たと}えば、{北通|きたどお}りにある「{鯉屋|こいや}」っていうお{好|この}み{焼|や}き{屋|や}さんは{有名|ゆうめい}ですよ。', pt: 'Nesse caso, que tal experimentar ir a um lugar onde fãs do Carp se reúnem? Por exemplo, um okonomiyaki chamado Koiya, na rua Kita, é famoso.' },
+        { speaker: 'B', ja: 'お{好|この}み{焼|や}き{屋|や}さんですか？', pt: 'Um okonomiyaki?' },
+        { speaker: 'A', ja: 'そう。{試合|しあい}があるときは、みんなでテレビを{見|み}ながら{応援|おうえん}するんです。{盛|も}り{上|あ}がってますよ。', pt: 'Isso. Quando tem jogo, todos torcem enquanto assistem à TV. Fica bem animado.' },
+        { speaker: 'B', ja: '{楽|たの}しそうですね。1{人|ひとり}で{行|い}ってもだいじょうぶですか？', pt: 'Parece divertido. Tudo bem ir sozinho?' },
+        { speaker: 'A', ja: 'だいじょうぶですよ。{赤|あか}いユニフォームを{着|き}て{行|い}けば、すぐに{周|まわ}りの{人|ひと}と{仲良|なかよ}くなると{思|おも}います。', pt: 'Tudo bem. Se for vestindo o uniforme vermelho, acho que logo vai se enturmar com as pessoas ao redor.' },
+        { speaker: 'B', ja: 'そうなんですね。{試合|しあい}をやってるときに、{行|い}ってみます。', pt: 'Entendi. Vou experimentar ir quando estiver passando jogo.' },
+        { speaker: 'A', ja: 'カープ{仲間|なかま}ができるといいですね。', pt: 'Tomara que você consiga colegas do Carp.' },
+      ],
+    },
+  ],
+  '07-05': [
+    {
+      label: '形に注目 - V-ば (07-05)',
+      lines: [
+        { speaker: 'A', ja: '{興味|きょうみ}があるイベントに{参加|さんか}すれば、{知|し}り{合|あ}いもできると{思|おも}います。', pt: 'Se você participar de eventos que te interessam, acho que também conseguirá conhecidos.' },
+        { speaker: 'A', ja: '{赤|あか}いユニフォームを{着|き}て{行|い}けば、すぐに{周|まわ}りの{人|ひと}と{仲良|なかよ}くなると{思|おも}います。', pt: 'Se for vestindo o uniforme vermelho, acho que logo vai se enturmar com as pessoas ao redor.' },
+      ],
+    },
+  ],
+  '07-06': [
+    {
+      label: '形に注目 - V-ているうちに (07-06)',
+      lines: [
+        { speaker: 'A', ja: '{通|かよ}っているうちに、{少|すこ}しずつ{話|はなし}ができる{人|ひと}が{増|ふ}えると{思|おも}います。', pt: 'Enquanto você continuar frequentando, acho que aos poucos vão aumentar as pessoas com quem consegue conversar.' },
+      ],
+    },
+  ],
+  '07-07': [
+    {
+      label: '会話 - 世界の料理サークルで自己紹介 (07-07)',
+      setupPt: 'カイラ entra no 世界の料理サークル e faz uma autoapresentação.',
+      lines: [
+        { speaker: 'スタッフ', ja: 'みなさん、こんにちは。はじめに、{今日|きょう}から{新|あたら}しくメンバーになった{人|ひと}を{紹介|しょうかい}します。カイラさんです。', pt: 'Olá, pessoal. Primeiro, vou apresentar a pessoa que se tornou membro a partir de hoje. É a Kyla.' },
+        { speaker: 'カイラ', ja: 'こんにちは。', pt: 'Olá.' },
+        { speaker: 'スタッフ', ja: 'じゃあ、カイラさん、{簡単|かんたん}に{自己紹介|じこしょうかい}をお{願|ねが}いします。', pt: 'Então, Kyla, por favor faça uma breve autoapresentação.' },
+        { speaker: 'カイラ', ja: 'あ、はい。ええと、みなさん、はじめまして。カイラです。フィリピンから{来|き}ました。えー、{日本|にほん}に{来|き}て、3{年|ねん}になります。', pt: 'Ah, sim. Bem, prazer em conhecer vocês. Sou a Kyla. Vim das Filipinas. Faz três anos que vim ao Japão.' },
+        { speaker: 'カイラ', ja: '{今|いま}は{東区|ひがしく}に{住|す}んでいて、{英語会話|えいごかいわ}の……あ、{英会話|えいかいわ}の{学校|がっこう}で、{英語|えいご}を{教|おし}えています。', pt: 'Agora moro no distrito Higashi e ensino inglês em uma escola de... ah, escola de conversação em inglês.' },
+        { speaker: 'カイラ', ja: 'えー、{料理|りょうり}が{好|す}きで、いろいろの……えっと、いろいろな{料理|りょうり}をよく{作|つく}ります。', pt: 'Bem, gosto de cozinhar e faço bastante várias... hum, vários tipos de comida.' },
+        { speaker: 'カイラ', ja: '{日本料理|にほんりょうり}も、ネットのレシピを{見|み}ながら、ときどき{作|つく}ります。', pt: 'Também faço comida japonesa às vezes, olhando receitas na internet.' },
+        { speaker: 'カイラ', ja: 'でも、もっといろいろな{国|くに}の{料理|りょうり}を{作|つく}ってみたくて、この「{世界|せかい}の{料理|りょうり}サークル」に{参加|さんか}しました。', pt: 'Mas eu queria experimentar fazer comidas de mais países, então participei deste “Círculo de Culinária do Mundo”.' },
+        { speaker: 'カイラ', ja: 'あと、{料理|りょうり}だけじゃなくて、このグループ……えー、このサークルで、たくさんの{人|ひと}と{友|とも}だちになれればと{思|おも}っています。', pt: 'Além de cozinhar, neste grupo... quer dizer, neste círculo, espero conseguir fazer amizade com muitas pessoas.' },
+        { speaker: 'カイラ', ja: 'ええと、{食事|しょくじ}とか、いろいろ{誘|さそ}ってもらえればうれしいです。', pt: 'Bem, eu ficaria feliz se me convidassem para refeições e outras coisas.' },
+        { speaker: 'カイラ', ja: 'みなさんといっしょに、{楽|たの}しく{活動|かつどう}できればいいなと{思|おも}います。よろしくお{願|ねが}いします。', pt: 'Espero poder participar das atividades com todos de forma divertida. Conto com vocês.' },
+      ],
+    },
+  ],
+  '07-08': [
+    {
+      label: '形に注目 - 自分の希望を言う (07-08)',
+      lines: [
+        { speaker: 'カイラ', ja: 'たくさんの{人|ひと}と{友|とも}だちになれればと{思|おも}っています。', pt: 'Espero conseguir fazer amizade com muitas pessoas.' },
+        { speaker: 'カイラ', ja: '{食事|しょくじ}とか、いろいろ{誘|さそ}ってもらえればうれしいです。', pt: 'Eu ficaria feliz se me convidassem para refeições e outras coisas.' },
+        { speaker: 'カイラ', ja: 'みなさんといっしょに、{楽|たの}しく{活動|かつどう}できればいいなと{思|おも}います。', pt: 'Espero poder participar das atividades com todos de forma divertida.' },
+      ],
+    },
+  ],
+  '07-09': [
+    {
+      label: 'ストラテジー - 自分で訂正しながら話す (07-09)',
+      setupPt: 'A estratégia é corrigir a própria fala enquanto continua falando.',
+      lines: [
+        { speaker: 'カイラ', ja: '{英語会話|えいごかいわ}の……あ、{英会話|えいかいわ}の{学校|がっこう}で、{英語|えいご}を{教|おし}えています。', pt: 'Em uma escola de “inglês conversa”... ah, de conversação em inglês, ensino inglês.' },
+        { speaker: 'カイラ', ja: '{料理|りょうり}が{好|す}きで、いろいろの……えっと、いろいろな{料理|りょうり}をよく{作|つく}ります。', pt: 'Gosto de cozinhar e faço bastante “vários de”... hum, vários tipos de comida.' },
+        { speaker: 'カイラ', ja: 'このグループ……えー、このサークルで、たくさんの{人|ひと}と{友|とも}だちになれればと{思|おも}っています。', pt: 'Neste grupo... quer dizer, neste círculo, espero conseguir fazer amizade com muitas pessoas.' },
+      ],
+    },
+  ],
+  '07-10': [
+    {
+      label: '話すモデル - サークルで自己紹介する (07-10)',
+      setupPt: 'Modelo para se apresentar ao entrar em um círculo ou grupo.',
+      lines: [
+        { speaker: 'スタッフ', ja: 'じゃあ、カイラさん、{簡単|かんたん}に{自己紹介|じこしょうかい}をお{願|ねが}いします。', pt: 'Então, Kyla, por favor faça uma breve autoapresentação.' },
+        { speaker: 'カイラ', ja: 'はい。みなさん、はじめまして。カイラです。フィリピンから{来|き}ました。{日本|にほん}に{来|き}て3{年|ねん}になります。', pt: 'Sim. Prazer em conhecer vocês. Sou a Kyla. Vim das Filipinas. Faz três anos que vim ao Japão.' },
+        { speaker: 'カイラ', ja: '{今|いま}は{東区|ひがしく}に{住|す}んでいます。{英会話|えいかいわ}の{学校|がっこう}で、{英語|えいご}を{教|おし}えています。', pt: 'Agora moro no distrito Higashi. Ensino inglês em uma escola de conversação em inglês.' },
+        { speaker: 'カイラ', ja: '{料理|りょうり}が{好|す}きで、いろいろな{料理|りょうり}をよく{作|つく}ります。{日本料理|にほんりょうり}も、ネットのレシピを{見|み}ながら、ときどき{作|つく}ります。', pt: 'Gosto de cozinhar e faço bastante vários tipos de comida. Também faço comida japonesa às vezes, olhando receitas na internet.' },
+        { speaker: 'カイラ', ja: 'でも、もっといろいろな{国|くに}の{料理|りょうり}を{作|つく}ってみたくて、このサークルに{参加|さんか}しました。', pt: 'Mas eu queria experimentar fazer comidas de mais países, então participei deste círculo.' },
+        { speaker: 'カイラ', ja: 'このサークルで、たくさんの{人|ひと}と{友|とも}だちになれればと{思|おも}っています。{食事|しょくじ}とか、いろいろ{誘|さそ}ってもらえればうれしいです。', pt: 'Neste círculo, espero conseguir fazer amizade com muitas pessoas. Eu ficaria feliz se me convidassem para refeições e outras coisas.' },
+        { speaker: 'カイラ', ja: 'みなさんといっしょに、{楽|たの}しく{活動|かつどう}できればいいなと{思|おも}います。よろしくお{願|ねが}いします。', pt: 'Espero poder participar das atividades com todos de forma divertida. Conto com vocês.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -2219,6 +2431,107 @@ const lesson6: Section = {
   audios: attachScripts(6, L6_SCRIPTS),
 }
 
+const lesson7: Section = {
+  id: 'lesson-7',
+  level: 'pre-intermediate',
+  titleJa: '第7課 たくさんの人と友だちになれればと思っています',
+  titlePt: 'Lição 7 - Espero conseguir fazer amizade com muitas pessoas',
+  summaryPt:
+    'Encontros · ouvir conselhos para fazer conhecidos, perguntar por mensagem sobre um círculo e fazer uma autoapresentação em grupo.',
+  studyNotes: [
+    {
+      title: 'Tópico: Encontros (出会う)',
+      bodyPt:
+        'Pergunta de abertura: あなたの{友|とも}だちとは、どこでどのように{知|し}り{合|あ}いましたか？\n\n' +
+        '## Can-do\n' +
+        '- Ouvir conselhos simples sobre onde ir ou o que fazer para ampliar relações.\n' +
+        '- Escrever uma mensagem para um amigo que participa de um círculo e obter informações sobre ele.\n' +
+        '- Fazer uma autoapresentação coerente ao entrar pela primeira vez em um círculo ou grupo.',
+    },
+    {
+      title: 'Atividade 1: não consigo fazer amigos facilmente',
+      bodyPt:
+        'Quatro pessoas querem ampliar seus contatos. Cada diálogo liga o objetivo a uma sugestão concreta.\n\n' +
+        '| Faixa | Pessoa | Desejo | Sugestão | Próximo passo |\n|---|---|---|---|---|\n' +
+        '| 07-01 | ミー | conhecer pessoas da vizinhança | participar de {町内|ちょうない}の{活動|かつどう}: limpeza voluntária e plantar flores | olhar o {掲示板|けいじばん} |\n' +
+        '| 07-02 | B | amigos de vários países | eventos de {国際交流|こくさいこうりゅう}: 書道, 折り紙, cultura japonesa e passeio pela cidade | ver o cronograma no site |\n' +
+        '| 07-03 | B | conhecidos que também estão em {子育|こそだ}て{中|ちゅう} | ir a {児童館|じどうかん} ou {子育|こそだ}て{支援|しえん}センター | ir diretamente e pegar o panfleto |\n' +
+        '| 07-04 | ケビン | colegas fãs do Carp | ir ao 「{鯉屋|こいや}」, okonomiyaki onde fãs torcem juntos | ir com o uniforme vermelho quando houver jogo |',
+    },
+    {
+      title: 'Gramática ➊: V-ば',
+      bodyPt:
+        '**V-ば** marca uma condição: se a condição acontecer, espera-se certo resultado. Nesta lição, aparece ao dar conselhos.\n\n' +
+        '- `{興味|きょうみ}があるイベントに{参加|さんか}すれば、{知|し}り{合|あ}いもできると{思|おも}います。`\n' +
+        '- `{赤|あか}いユニフォームを{着|き}て{行|い}けば、すぐに{周|まわ}りの{人|ひと}と{仲良|なかよ}くなると{思|おも}います。`\n' +
+        '- `どうすればいいでしょうか。`\n\n' +
+        'Forma: verbos do grupo 1 mudam o som final para -e + ば; 食べる → 食べれば; する → すれば; 来る → 来れば.',
+    },
+    {
+      title: 'Gramática ➋: V-ているうちに',
+      bodyPt:
+        '**V-ているうちに** indica uma mudança que ocorre enquanto uma ação ou estado continua.\n\n' +
+        '- `{通|かよ}っているうちに、{少|すこ}しずつ{話|はなし}ができる{人|ひと}が{増|ふ}えると{思|おも}います。`\n' +
+        '- `イベントに{参加|さんか}しているうちに、{友|とも}だちができました。`\n\n' +
+        'Depois de うちに, costuma vir uma mudança natural ou gradual, como 増える, 慣れる, わかるようになる.',
+    },
+    {
+      title: 'Atividade 2: perguntar sobre um círculo por mensagem',
+      bodyPt:
+        'グレイ escreve para ヘミン porque quer participar do **{世界|せかい}の{料理|りょうり}サークル**. Ele pergunta três coisas: que comidas fazem, se há estrangeiros e se tudo bem não saber muito japonês.\n\n' +
+        '| Estrutura | Conteúdo no exemplo |\n|---|---|\n' +
+        '| ① iniciar conversa | `ヘミンさん、こんばんは。` |\n' +
+        '| ② comunicar o assunto | `私も行きたいなと思っているんですが…` |\n' +
+        '| ③ fazer perguntas | comidas feitas no círculo, presença de estrangeiros, japonês limitado |\n' +
+        '| ④ encerrar após sugestão | aceitar ir no próximo domingo e também ao karaokê |\n\n' +
+        'A resposta de ヘミン confirma que fazem comidas de vários países, que há japoneses e estrangeiros, e que グレイ ficará bem porque as pessoas ao redor ajudam.',
+    },
+    {
+      title: 'Atividade 3: autoapresentação em grupo',
+      bodyPt:
+        'カイラ entra no 世界の料理サークル. A autoapresentação segue quatro partes claras.\n\n' +
+        '| Parte | Conteúdo de カイラ |\n|---|---|\n' +
+        '| Perfil | カイラ, das Filipinas, há 3 anos no Japão |\n' +
+        '| Situação atual | mora em {東区|ひがしく}; ensina inglês em uma escola de 英会話 |\n' +
+        '| Motivo para participar | gosta de cozinhar, faz várias comidas e quer fazer comidas de muitos países |\n' +
+        '| Esperanças | fazer muitos amigos, ser convidada para refeições e atividades, participar de forma divertida |\n\n' +
+        'O modelo de fala 07-10 organiza a prática por essas quatro partes para que o aluno substitua pelos próprios dados.',
+    },
+    {
+      title: 'Gramática ➌: V-ば para expressar esperança',
+      bodyPt:
+        'A forma condicional **V-ば** também aparece em expressões suaves de esperança ou desejo.\n\n' +
+        '- `たくさんの{人|ひと}と{友|とも}だちになれればと{思|おも}っています。`\n' +
+        '- `{食事|しょくじ}とか、いろいろ{誘|さそ}ってもらえればうれしいです。`\n' +
+        '- `みなさんといっしょに、{楽|たの}しく{活動|かつどう}できればいいなと{思|おも}います。`\n\n' +
+        'Em português, essas frases ficam naturais como “espero conseguir...”, “ficaria feliz se...” e “seria bom se...”.',
+    },
+    {
+      title: 'Estratégia: corrigir a própria fala',
+      bodyPt:
+        'A estratégia da lição é **自分で訂正しながら話す**: corrigir a própria fala enquanto continua falando. O importante é não parar a comunicação.\n\n' +
+        '| Exemplo | Função |\n|---|---|\n' +
+        '| `{英語会話|えいごかいわ}の……あ、{英会話|えいかいわ}の{学校|がっこう}で` | corrigir uma palavra errada pela certa |\n' +
+        '| `いろいろの……えっと、いろいろな{料理|りょうり}` | corrigir a gramática |\n' +
+        '| `このグループ……えー、このサークルで` | trocar por uma palavra mais adequada |',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {自己紹介|じこしょうかい}, {興味|きょうみ}, {仲間|なかま}, {子育|こそだ}て, {児童館|じどうかん}, {掲示板|けいじばん}, {掃除|そうじ}, {次|つぎ}, {簡単|かんたん}（な）, {植|う}える.\n\n' +
+        '**Vocabulário-chave:** {知|し}り{合|あ}い, {近所|きんじょ}, {機会|きかい}, {町内|ちょうない}, {活動|かつどう}, ボランティア{募集|ぼしゅう}, {国際交流|こくさいこうりゅう}, {散策|さんさく}する, {幼稚園|ようちえん}, {支援|しえん}センター, チラシ, {周|まわ}り, {仲良|なかよ}くなる, サークル, メンバー, {抱負|ほうふ}, {訂正|ていせい}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**児童館:** é um espaço onde crianças podem brincar e aprender. Muitos são mantidos por governos locais e podem ser usados gratuitamente, com regras de idade, região, horário e uso. Costumam ter brinquedos, livros, espaço para movimento, eventos sazonais e apoio para responsáveis em 子育て.\n\n' +
+        '**日本のプロ野球チーム:** o Japão tem 12 times profissionais. Cada time tem uma cidade ou região-base e uma torcida local forte. O diálogo cita o Hiroshima Toyo Carp; ir ao estádio ou a um local onde fãs se reúnem pode ser uma forma de participar da cultura local mesmo sem conhecer todas as regras.',
+    },
+  ],
+  groups: [lesson7Group],
+  audios: attachScripts(7, L7_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -2229,6 +2542,8 @@ const sections: Section[] = [
   // Tópico 3 - Refeições do dia a dia (毎日の食事)
   lesson5,
   lesson6,
+  // Tópico 4 - Encontros (出会う)
+  lesson7,
 ]
 
 export const irodoriPreIntermediate: Level = {
