@@ -2640,35 +2640,98 @@ const L11_SCRIPTS: Record<string, ScriptItem[]> = {
       ],
     },
   ],
-  '11-17': [
+  // Seção 2 — 自転車を盗まれました (トラブルを伝える)
+  '11-10': [
     {
-      label: 'トラブル① — バッグがない (11-17) · resumo',
-      setupJa: 'いっしょに{来|き}た{人|ひと}に、なくなったものを{伝|つた}えています。',
-      setupPt: 'Resumo: a pessoa nota que a bolsa que deixou ali sumiu — talvez tenham levado — e decidem ir ao balcão de informações.',
+      label: '① 自転車を盗まれた (11-10)',
+      setupJa: '{店|みせ}や{駐輪場|ちゅうりんじょう}などで、トラブルがあったことを{伝|つた}えています。① {自転車|じてんしゃ}。',
+      setupPt: 'Avisando que houve um problema na loja/no bicicletário. ① a bicicleta.',
       lines: [
-        { speaker: 'A', ja: 'さっき、ここにバッグを{置|お}いたんですけど、ないんです。もしかしたら、とられたかもしれません。', pt: 'Agora há pouco deixei a bolsa aqui e ela sumiu. Talvez tenham levado.' },
-        { speaker: 'B', ja: 'インフォメーションに{行|い}ってみますか？', pt: 'Vamos tentar ir ao balcão de informações?' },
+        { speaker: 'A', ja: 'あの、すみません！', pt: 'Ei, com licença!' },
+        { speaker: 'B', ja: 'どうしましたか？', pt: 'O que aconteceu?' },
+        { speaker: 'A', ja: '{自転車|じてんしゃ}を{盗|ぬす}まれました！', pt: 'Roubaram a minha bicicleta!' },
+        { speaker: 'B', ja: 'どこに{停|と}めましたか？', pt: 'Onde você a estacionou?' },
+        { speaker: 'A', ja: 'ここです。ここに{自転車|じてんしゃ}を{停|と}めたんですけど、ないんです。', pt: 'Aqui. Estacionei a bicicleta aqui, mas ela sumiu.' },
+        { speaker: 'B', ja: 'あー、お{客|きゃく}さん、ここは{停|と}めちゃだめなんですよ。あっちの{駐輪場|ちゅうりんじょう}に{移動|いどう}されたかもしれません。{行|い}って{探|さが}してみてください。', pt: 'Ah, senhor, aqui não pode estacionar. Talvez tenham movido para aquele bicicletário ali. Vá procurar lá.' },
+        { speaker: 'A', ja: 'わかりました。', pt: 'Entendi.' },
       ],
     },
   ],
-  '11-18': [
+  '11-11': [
     {
-      label: 'トラブル② — 体調不良 (11-18) · resumo',
-      setupPt: 'Resumo: a pessoa passa mal de repente (dor de barriga); oferecem que se sente no sofá e cogita-se chamar uma ambulância.',
+      label: '② 急にお腹が痛くなった (11-11)',
+      setupPt: '② mal-estar (dor de barriga).',
       lines: [
-        { speaker: 'A', ja: 'すみません、{急|きゅう}にお{腹|なか}が{痛|いた}くなって……。', pt: 'Com licença, de repente comecei a sentir dor de barriga…' },
-        { speaker: 'B', ja: 'こちらのソファに{座|すわ}ってください。{救急車|きゅうきゅうしゃ}を{呼|よ}びますか？', pt: 'Sente-se neste sofá, por favor. Quer que eu chame uma ambulância?' },
+        { speaker: 'A', ja: 'お{客様|きゃくさま}、どうなさいましたか？', pt: 'Senhor(a), o que houve?' },
+        { speaker: 'B', ja: 'すみません。{急|きゅう}にお{腹|なか}が{痛|いた}くなって……。', pt: 'Desculpe. De repente comecei a sentir dor de barriga…' },
+        { speaker: 'A', ja: 'だいじょうぶですか？　こちらのソファに{座|すわ}ってください。', pt: 'Você está bem? Sente-se neste sofá, por favor.' },
+        { speaker: 'B', ja: 'すみません……{救急車|きゅうきゅうしゃ}を{呼|よ}んでください。', pt: 'Desculpe… chame uma ambulância, por favor.' },
+        { speaker: 'A', ja: 'はい。{今|いま}、{呼|よ}びますね。', pt: 'Sim. Vou chamar agora.' },
       ],
     },
   ],
-  '11-19': [
+  '11-12': [
     {
-      label: 'トラブル③ — ポイントカードを忘れた (11-19) · resumo',
-      setupPt: 'Resumo: no caixa, o cliente percebe que esqueceu o cartão de pontos; pedem que o traga na próxima vez.',
+      label: '③ バッグがなくなった (11-12)',
+      setupPt: '③ a bolsa sumiu.',
       lines: [
-        { speaker: '店員', ja: 'ポイントカードはお{持|も}ちですか？', pt: 'Está com o cartão de pontos?' },
-        { speaker: '客', ja: 'すみません、ポイントカード、{忘|わす}れてしまいました。', pt: 'Desculpe, acabei esquecendo o cartão de pontos.' },
-        { speaker: '店員', ja: '{次回|じかい}お{持|も}ちください。', pt: 'Traga da próxima vez, por favor.' },
+        { speaker: 'A', ja: 'あれ？　あれ？　ない！　ない！', pt: 'Ué? Ué? Sumiu! Sumiu!' },
+        { speaker: 'B', ja: 'どうした？', pt: 'O que foi?' },
+        { speaker: 'A', ja: 'さっき、ここにバッグを{置|お}いたんですけど、ないんです。', pt: 'Agora há pouco coloquei a bolsa aqui, mas ela sumiu.' },
+        { speaker: 'B', ja: 'え、バッグがなくなったの？　{本当|ほんとう}？', pt: 'Hã, a bolsa sumiu? Sério?' },
+        { speaker: 'A', ja: 'もしかしたら、とられたかもしれません。', pt: 'Talvez tenham levado.' },
+        { speaker: 'B', ja: 'インフォメーションに{行|い}ってみる？', pt: 'Vamos tentar ir ao balcão de informações?' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '11-13': [
+    {
+      label: '④ ポイントカードを忘れた (11-13)',
+      setupPt: '④ esqueceu o cartão de pontos (no caixa).',
+      lines: [
+        { speaker: 'A', ja: 'お{会計|かいけい}、4,290{円|えん}になります。ポイントカードはお{持|も}ちですか？', pt: 'A conta dá 4.290 ienes. Está com o cartão de pontos?' },
+        { speaker: 'B', ja: 'あ！　ポイントカード、{忘|わす}れてしまいました……。', pt: 'Ah! Acabei esquecendo o cartão de pontos…' },
+        { speaker: 'A', ja: 'そうしましたら、レシートにスタンプを{押|お}しますので、{次回|じかい}ポイントカードといっしょにお{持|も}ちください。', pt: 'Nesse caso, vou carimbar o recibo; então da próxima vez traga-o junto com o cartão de pontos.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  // Seção 4 — お客様のお呼び出しを申し上げます (店内放送)
+  '11-22': [
+    {
+      label: '① 店内放送 — 営業時間の変更 (11-22)',
+      setupJa: 'ショッピングセンターの{店内放送|てんないほうそう}が{流|なが}れています。① {営業時間|えいぎょうじかん}の{変更|へんこう}。',
+      setupPt: 'Anúncios internos de um shopping. ① mudança do horário de funcionamento.',
+      lines: [
+        { speaker: '放送', ja: 'お{客様|きゃくさま}に{営業時間|えいぎょうじかん}の{変更|へんこう}についてご{案内|あんない}いたします。ただいま、{冬|ふゆ}のセール{開催中|かいさいちゅう}につき、{営業時間|えいぎょうじかん}を30{分|ぷん}{延長|えんちょう}して、{夜|よる}9{時|じ}まで{営業|えいぎょう}しております。ごゆっくりお{買|か}い{物|もの}をお{楽|たの}しみください。なお、レストラン{街|がい}は{通常|つうじょう}どおり、{夜|よる}11{時|じ}まで{営業|えいぎょう}しております。くり{返|かえ}しご{案内|あんない}いたします。ただいま、……（くり{返|かえ}し）', pt: 'Comunicamos aos clientes uma alteração no horário de funcionamento. No momento, por estar em curso a liquidação de inverno, estendemos o horário em 30 minutos e funcionamos até as 21h. Aproveitem suas compras com calma. A praça de restaurantes funciona normalmente, até as 23h. Repetimos o comunicado. No momento… (repete)' },
+      ],
+    },
+  ],
+  '11-23': [
+    {
+      label: '② 店内放送 — お客様のお呼び出し (11-23)',
+      setupPt: '② chamada de cliente (compra de suéter).',
+      lines: [
+        { speaker: '放送', ja: 'お{客様|きゃくさま}のお{呼|よ}び{出|だ}しを{申|もう}し{上|あ}げます。{先|さき}ほど、1{階|かい}{婦人服|ふじんふく}{売|う}り{場|ば}でセーターをお{買|か}い{上|あ}げのお{客様|きゃくさま}、お{伝|つた}えしたいことがございます。{恐|おそ}れ{入|い}りますが、1{階|かい}{婦人服|ふじんふく}{売|う}り{場|ば}までお{越|こ}しください。くり{返|かえ}しご{連絡|れんらく}いたします。{先|さき}ほど、……（くり{返|かえ}し）', pt: 'Fazemos uma chamada a um cliente. À cliente que há pouco comprou um suéter na seção de roupas femininas do 1º andar: temos algo a comunicar. Por gentileza, dirija-se à seção de roupas femininas do 1º andar. Repetimos o aviso. Há pouco… (repete)' },
+      ],
+    },
+  ],
+  '11-24': [
+    {
+      label: '③ 店内放送 — 落とし物の連絡 (11-24)',
+      setupPt: '③ aviso de objeto perdido (uma chave).',
+      lines: [
+        { speaker: '放送', ja: 'お{客様|きゃくさま}に{落|お}とし{物|もの}のご{連絡|れんらく}です。{先|さき}ほど、3{階|かい}{男性用|だんせいよう}トイレに、かぎの{落|お}とし{物|もの}がございました。お{心当|こころあ}たりの{方|かた}は、2{階|かい}インフォメーションカウンターまでお{越|こ}しください。くり{返|かえ}しご{連絡|れんらく}いたします。{先|さき}ほど、……（くり{返|かえ}し）', pt: 'Aviso de objeto perdido aos clientes. Há pouco, foi encontrada uma chave no banheiro masculino do 3º andar. Quem reconhecer o objeto, por favor dirija-se ao balcão de informações do 2º andar. Repetimos o aviso. Há pouco… (repete)' },
+      ],
+    },
+  ],
+  '11-25': [
+    {
+      label: '④ 店内放送 — イベントのお知らせ (11-25)',
+      setupPt: '④ anúncio de evento (feira de Hokkaido).',
+      lines: [
+        { speaker: '放送', ja: 'マルニショッピングセンターより{現在|げんざい}{開催中|かいさいちゅう}のイベントをお{知|し}らせいたします。ただいま、1{階|かい}わくわく{広場|ひろば}にて、{秋|あき}の{北海道|ほっかいどう}フェアを{開催|かいさい}しております。{北海道|ほっかいどう}の{海|うみ}の{幸|さち}、スイーツ、{札幌|さっぽろ}ラーメンなど、{北海道|ほっかいどう}の{秋|あき}の{味覚|みかく}をお{楽|たの}しみいただけます。{本日|ほんじつ}から10{月|がつ}10{日|か}までの1{週間|しゅうかん}{限|かぎ}りです。この{機会|きかい}にぜひ、{味|あじ}わってみてはいかがでしょうか。{皆様|みなさま}のご{来場|らいじょう}を{心|こころ}からお{待|ま}ちしております。くり{返|かえ}しお{知|し}らせいたします。ただいま、……（くり{返|かえ}し）', pt: 'O Maruni Shopping Center informa sobre o evento atualmente em cartaz. No momento, na Praça Wakuwaku do 1º andar, realizamos a Feira de Outono de Hokkaido. Você pode apreciar os sabores de outono de Hokkaido: frutos do mar, doces, lámen de Sapporo e muito mais. Somente desta semana, de hoje até 10 de outubro. Aproveite a ocasião para experimentar! Aguardamos de coração a visita de todos. Repetimos o comunicado. No momento… (repete)' },
       ],
     },
   ],
