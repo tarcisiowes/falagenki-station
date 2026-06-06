@@ -124,6 +124,56 @@ const lesson2Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 3: 引っ越しの準備はどうですか？ (tópico どこに住む？) ----
+const lesson3Group: ExerciseGroup = {
+  id: 'iro-pi-l3',
+  title: '引っ越しの準備はどうですか？',
+  subtitlePt: 'Informações de imóveis · bairros recomendados · pedir ajuda na mudança',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l3-1', number: 1, prompt: 'Qual é o tópico desta lição?', choices: [{ n: 1, text: 'どこに住む？ (onde morar?)' }, { n: 2, text: '好きなもの好きなこと' }, { n: 3, text: '旅行の楽しみ' }, { n: 4, text: '自然と環境' }], answer: 1, explanationPt: 'A Lição 3 abre o tópico どこに住む？ e trata de procurar quarto, escolher bairro e pedir ajuda para mudança.' },
+    { id: 'iro-pi-l3-2', number: 2, prompt: 'Pergunta de abertura: 引っ越しをするなら、どんな部屋に住みたいですか？', choices: [{ n: 1, text: 'Que tipo de quarto/casa você gostaria se fosse se mudar?' }, { n: 2, text: 'Que música você escuta?' }, { n: 3, text: 'Qual esporte você pratica?' }, { n: 4, text: 'Você quer cancelar o compromisso?' }], answer: 1, explanationPt: 'A abertura pergunta sobre experiência de mudança e sobre o tipo de moradia desejada.' },
+    { id: 'iro-pi-l3-3', number: 3, prompt: 'Can-do 07: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ver informações de imóvel em site de moradia e encontrar dados como aluguel, tamanho e localização' }, { n: 2, text: 'dar opinião sobre um filme' }, { n: 3, text: 'convidar para uma apresentação' }, { n: 4, text: 'explicar uma receita' }], answer: 1, explanationPt: 'A atividade 1 é leitura de 物件情報 em um 住宅情報サイト.' },
+    { id: 'iro-pi-l3-4', number: 4, prompt: 'Em 物件情報, A-F correspondem a quais pontos?', image: `${IMG}/ZZ_03_1_01_bukkenjoohoo.png`, imageAlt: 'exemplo de informação de imóvel em site japonês', choices: [{ n: 1, text: '家賃, 交通, 築年数, 間取り, 部屋の階, 設備' }, { n: 2, text: '映画, 音楽, ゲーム, ドラマ, 読書, マンガ' }, { n: 3, text: '応援, 演劇, 落語, バリ舞踊, 相撲, 登山' }, { n: 4, text: '朝食, 昼食, 夕食, 会計, 予約, 注文' }], answer: 1, explanationPt: 'Esses são os seis pontos que a lição pede para localizar no anúncio.' },
+    { id: 'iro-pi-l3-5', number: 5, prompt: '「ワンルーム」 significa:', choices: [{ n: 1, text: '間取り com apenas um cômodo' }, { n: 2, text: 'prédio de cinco andares' }, { n: 3, text: 'quarto japonês com tatami' }, { n: 4, text: 'aluguel mensal' }], answer: 1, explanationPt: 'O gabarito explica ワンルーム como 部屋が1つしかない間取り.' },
+    { id: 'iro-pi-l3-6', number: 6, prompt: '「2K」 no contexto de imóvel indica:', choices: [{ n: 1, text: 'dois cômodos e uma cozinha' }, { n: 2, text: 'dois banheiros' }, { n: 3, text: 'dois meses de aluguel' }, { n: 4, text: 'dois apartamentos no mesmo prédio' }], answer: 1, explanationPt: 'O gabarito define 2K como 部屋が2つとキッチンがある間取り.' },
+    { id: 'iro-pi-l3-7', number: 7, prompt: '「2LDK」 no contexto de imóvel indica:', choices: [{ n: 1, text: 'dois cômodos mais sala de estar, sala de jantar e cozinha' }, { n: 2, text: 'quarto só de estilo japonês' }, { n: 3, text: 'dois andares com elevador' }, { n: 4, text: 'dois contratos de aluguel' }], answer: 1, explanationPt: '2LDK = 部屋が2つとリビングとダイニングキッチンがある間取り.' },
+    { id: 'iro-pi-l3-8', number: 8, prompt: '「和」 e 「洋」 em anúncios de imóvel referem-se a:', choices: [{ n: 1, text: '和室 e 洋室' }, { n: 2, text: 'água quente e água fria' }, { n: 3, text: 'cidade e campo' }, { n: 4, text: 'sim e não' }], answer: 1, explanationPt: '和 indica quarto japonês; 洋 indica quarto ocidental.' },
+    { id: 'iro-pi-l3-9', number: 9, prompt: 'Qual imóvel tem como característica 「駅や商店街が近くて便利」?', choices: [{ n: 1, text: '①ルスコアール' }, { n: 2, text: '②高田ハイツ' }, { n: 3, text: '③グランヒルズ壱番館' }, { n: 4, text: '④つばき荘' }], answer: 1, explanationPt: 'O answer key associa ①ルスコアール à característica b: estação e rua comercial próximas e convenientes.' },
+    { id: 'iro-pi-l3-10', number: 10, prompt: 'Qual imóvel tem 「キッチンが広い」?', choices: [{ n: 1, text: '②高田ハイツ' }, { n: 2, text: '①ルスコアール' }, { n: 3, text: '③グランヒルズ壱番館' }, { n: 4, text: '④つばき荘' }], answer: 1, explanationPt: 'O gabarito marca ②高田ハイツ como c: cozinha ampla.' },
+    { id: 'iro-pi-l3-11', number: 11, prompt: 'Qual imóvel tem 「部屋が新しい」?', choices: [{ n: 1, text: '③グランヒルズ壱番館' }, { n: 2, text: '①ルスコアール' }, { n: 3, text: '②高田ハイツ' }, { n: 4, text: '④つばき荘' }], answer: 1, explanationPt: 'O gabarito marca ③グランヒルズ壱番館 como a: quarto novo.' },
+    { id: 'iro-pi-l3-12', number: 12, prompt: 'Qual imóvel tem 「家賃が安い」?', choices: [{ n: 1, text: '④つばき荘' }, { n: 2, text: '①ルスコアール' }, { n: 3, text: '②高田ハイツ' }, { n: 4, text: '③グランヒルズ壱番館' }], answer: 1, explanationPt: 'O gabarito marca ④つばき荘 como d: aluguel barato.' },
+    { id: 'iro-pi-l3-13', number: 13, prompt: 'Can-do 08: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ouvir comentários simples sobre bairros recomendados para mudança e entender os motivos' }, { n: 2, text: 'ler reviews de mangá' }, { n: 3, text: 'pedir reparo de ar-condicionado' }, { n: 4, text: 'fazer check-in em hotel' }], answer: 1, explanationPt: 'A atividade 2 é uma conversa em que 馬 pede recomendações de bairro para se mudar.' },
+    { id: 'iro-pi-l3-14', number: 14, prompt: '聴解 03-01: 月見台 é apresentado como que tipo de bairro?', image: `${IMG}/ZZ_03_2_03_oshare.png`, imageAlt: 'bairro com cafés e lojas elegantes', choices: [{ n: 1, text: 'おしゃれな町' }, { n: 2, text: '下町っぽい町' }, { n: 3, text: '郊外の住宅地' }, { n: 4, text: '国際的な町' }], answer: 1, explanationPt: '月見台 tem cafés e lojas de roupa elegantes e ficou em 1º em ranking de bairros onde se quer morar.' },
+    { id: 'iro-pi-l3-15', number: 15, prompt: '月見台のいいところ／よくないところ são:', choices: [{ n: 1, text: 'いい: おしゃれなカフェがある; よくない: 家賃が高い, 安いスーパーがない' }, { n: 2, text: 'いい: 商店街がある; よくない: 夜はうるさい' }, { n: 3, text: 'いい: 住宅地で静か; よくない: 交通が不便' }, { n: 4, text: 'いい: 国際的でおもしろい; よくない: 会社から遠い' }], answer: 1, explanationPt: 'O answer key marca 月見台: a como ponto bom, h e j como pontos ruins.' },
+    { id: 'iro-pi-l3-16', number: 16, prompt: '聴解 03-02: 芝浜 é descrito como:', image: `${IMG}/ZZ_03_2_05_shominteki.png`, imageAlt: 'bairro popular com rua comercial', choices: [{ n: 1, text: '庶民的で、下町っぽい雰囲気' }, { n: 2, text: '高級で静かな住宅地' }, { n: 3, text: '会社から遠い国際都市' }, { n: 4, text: 'novo condomínio de luxo' }], answer: 1, explanationPt: '芝浜 é um bairro popular, com 商店街, lojas de 惣菜 e 定食屋.' },
+    { id: 'iro-pi-l3-17', number: 17, prompt: '芝浜のいいところ／よくないところ são:', choices: [{ n: 1, text: 'いい: 商店街がある, 家賃が高くない; よくない: 夜はうるさい' }, { n: 2, text: 'いい: 大きな公園がある; よくない: 交通が不便' }, { n: 3, text: 'いい: 外国語の不動産屋; よくない: 会社から遠い' }, { n: 4, text: 'いい: おしゃれなカフェ; よくない: 安いスーパーがない' }], answer: 1, explanationPt: 'O answer key marca 芝浜: c e f como pontos bons, k como ponto ruim.' },
+    { id: 'iro-pi-l3-18', number: 18, prompt: '聴解 03-03: 北ニュータウン é recomendado por quê?', image: `${IMG}/ZZ_03_2_02_koogai.png`, imageAlt: 'bairro residencial suburbano com parque grande', choices: [{ n: 1, text: 'é uma área residencial quieta e tem um parque grande' }, { n: 2, text: 'tem muitos cafés de luxo' }, { n: 3, text: 'tem muitos restaurantes internacionais' }, { n: 4, text: 'fica dentro da empresa' }], answer: 1, explanationPt: '同僚3 diz que é 住宅地で静か e tem 大きな公園.' },
+    { id: 'iro-pi-l3-19', number: 19, prompt: '北ニュータウンのよくないところ é:', choices: [{ n: 1, text: '交通が不便' }, { n: 2, text: '夜はうるさい' }, { n: 3, text: '会社から遠い' }, { n: 4, text: '家賃が高い' }], answer: 1, explanationPt: 'Como só há ônibus, o gabarito marca i: 交通が不便.' },
+    { id: 'iro-pi-l3-20', number: 20, prompt: '聴解 03-04: 沢口のいいところ／よくないところ são:', image: `${IMG}/ZZ_03_2_04_takokuseki.png`, imageAlt: 'bairro internacional com mercados e restaurantes estrangeiros', choices: [{ n: 1, text: 'いい: 国際的でおもしろい, 外国語が話せる不動産屋がある; よくない: 会社から遠い' }, { n: 2, text: 'いい: 静か, 公園がある; よくない: バスしかない' }, { n: 3, text: 'いい: 家賃が安い, 商店街; よくない: 夜がうるさい' }, { n: 4, text: 'いい: カフェ; よくない: スーパーがない' }], answer: 1, explanationPt: 'O answer key marca 沢口: b e d como bons, l como ruim.' },
+    { id: 'iro-pi-l3-21', number: 21, prompt: '「住むなら、どのあたりがおすすめですか？」 usa 「なら」 para:', choices: [{ n: 1, text: 'apresentar uma condição ou premissa: se eu fosse morar' }, { n: 2, text: 'marcar uma obrigação' }, { n: 3, text: 'descrever som de chuva' }, { n: 4, text: 'pedir desculpas' }], answer: 1, translationPt: 'Se eu fosse morar, que área você recomenda?', explanationPt: 'S（普通形）なら apresenta uma condição/premissa antes de uma pergunta ou sugestão.' },
+    { id: 'iro-pi-l3-22', number: 22, prompt: 'Qual frase usa corretamente 「なら」 como na lição?', choices: [{ n: 1, text: '家賃が安いところがいいなら、芝浜はどう？' }, { n: 2, text: '家賃が安いところをなら、芝浜はどう？' }, { n: 3, text: '家賃が安いならところ、芝浜はどう？' }, { n: 4, text: '家賃なら安いところを、芝浜はどう？' }], answer: 1, translationPt: 'Se você quer um lugar com aluguel barato, que tal Shibahama?', explanationPt: 'なら vem depois da condição/premissa: 家賃が安いところがいいなら.' },
+    { id: 'iro-pi-l3-23', number: 23, prompt: '「下町っぽい雰囲気ですね」 significa:', choices: [{ n: 1, text: 'tem uma atmosfera que lembra um bairro popular/antigo' }, { n: 2, text: 'é um bairro totalmente novo' }, { n: 3, text: 'tem aluguel caro' }, { n: 4, text: 'fica no norte da cidade' }], answer: 1, explanationPt: 'Nっぽい indica que algo tem aparência, sensação ou traço parecido com N.' },
+    { id: 'iro-pi-l3-24', number: 24, prompt: 'Can-do 09: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'pedir ajuda a amigo/colega para mudança e aceitar ou recusar quando pedirem ajuda' }, { n: 2, text: 'fazer comentário de mangá' }, { n: 3, text: 'consultar previsão do tempo' }, { n: 4, text: 'comprar ingresso de cinema' }], answer: 1, explanationPt: 'A atividade 3 é sobre pedir ajuda para mudança usando uma forma educada.' },
+    { id: 'iro-pi-l3-25', number: 25, prompt: '会話 03-07: quem está se mudando?', image: `${IMG}/ZZ_03_3_01_hikkoshi.png`, imageAlt: 'colegas conversando sobre ajuda em mudança', choices: [{ n: 1, text: 'スジャンさん' }, { n: 2, text: '堀川さん' }, { n: 3, text: '町村さん' }, { n: 4, text: 'イムランさん' }], answer: 1, explanationPt: 'No almoço, os colegas falam sobre a mudança de スジャンさん.' },
+    { id: 'iro-pi-l3-26', number: 26, prompt: 'スジャンさん está ocupado agora com quê?', choices: [{ n: 1, text: '荷物をまとめたり、掃除をしたりしている' }, { n: 2, text: 'procurando filme para assistir' }, { n: 3, text: 'preparando apresentação de teatro' }, { n: 4, text: 'reservando restaurante' }], answer: 1, explanationPt: 'Ele diz: 今、荷物をまとめたり、掃除をしたりして、大変です.' },
+    { id: 'iro-pi-l3-27', number: 27, prompt: 'スジャンさん já reservou empresa de mudança?', choices: [{ n: 1, text: 'não; como mora sozinho e não tem muita bagagem, pretende carregar por conta própria' }, { n: 2, text: 'sim; reservou duas empresas' }, { n: 3, text: 'sim; a empresa paga tudo' }, { n: 4, text: 'não; ele desistiu da mudança' }], answer: 1, explanationPt: 'Ele diz que não reservou 引っ越し業者 e que 自分で運ぶつもりです.' },
+    { id: 'iro-pi-l3-28', number: 28, prompt: 'Qual é a data da mudança de スジャンさん?', choices: [{ n: 1, text: '今月の30日' }, { n: 2, text: '来月の1日' }, { n: 3, text: '今週の木曜日' }, { n: 4, text: '日曜日の10時' }], answer: 1, explanationPt: '堀川 pergunta a data e スジャン responde: 今月の30日です.' },
+    { id: 'iro-pi-l3-29', number: 29, prompt: '堀川さん ajuda com quê?', choices: [{ n: 1, text: '荷物を運ぶのを手伝う' }, { n: 2, text: '会社を探す' }, { n: 3, text: '映画を貸す' }, { n: 4, text: '家賃を払う' }], answer: 1, explanationPt: 'O gabarito marca tarefas relacionadas a transportar as caixas e coisas da mudança.' },
+    { id: 'iro-pi-l3-30', number: 30, prompt: '町村さん oferece o quê?', choices: [{ n: 1, text: '車を出して、運転もする' }, { n: 2, text: 'preparar o jantar sozinho' }, { n: 3, text: 'comprar geladeira nova' }, { n: 4, text: 'reservar empresa de mudança' }], answer: 1, explanationPt: '町村 diz: 私の車を出しましょうか？ 運転もしますよ.' },
+    { id: 'iro-pi-l3-31', number: 31, prompt: 'イムランさん responde como?', choices: [{ n: 1, text: 'recusa, pois naquele dia tem planos' }, { n: 2, text: 'aceita e dirige' }, { n: 3, text: 'empresta o apartamento' }, { n: 4, text: 'não aparece na conversa' }], answer: 1, explanationPt: 'イムラン diz: その日はちょっと予定が……。すみません.' },
+    { id: 'iro-pi-l3-32', number: 32, prompt: '「引っ越しを手伝ってもらえたら、とてもありがたいんですが」 é usado para:', choices: [{ n: 1, text: 'pedir ajuda de forma educada, expressando que seria grato' }, { n: 2, text: 'dar uma ordem direta' }, { n: 3, text: 'confirmar uma memória esquecida' }, { n: 4, text: 'descrever um bairro antigo' }], answer: 1, translationPt: 'Eu ficaria muito grato se você pudesse me ajudar na mudança.', explanationPt: 'V-てもらえたら + ありがたい／助かる／うれしい comunica educadamente o que você gostaria que a pessoa fizesse.' },
+    { id: 'iro-pi-l3-33', number: 33, prompt: 'Qual frase segue o padrão da lição?', choices: [{ n: 1, text: '荷物を運ぶのを手伝ってもらえたら、とても助かります。' }, { n: 2, text: '荷物を運ぶのを手伝ってもらえたらを助かります。' }, { n: 3, text: '荷物を運ぶのを手伝ってもらえたらです。' }, { n: 4, text: '荷物を運ぶのを手伝ってもらえます助かる。' }], answer: 1, explanationPt: 'O gabarito da forma traz exatamente: 荷物を運ぶのを手伝ってもらえたら、とても助かります.' },
+    { id: 'iro-pi-l3-34', number: 34, prompt: 'Kanji da lição: 引っ越し／家賃／築～年 lêem-se:', choices: [{ n: 1, text: 'ひっこし／やちん／ちく～ねん' }, { n: 2, text: 'ひきこし／いえちん／きず～ねん' }, { n: 3, text: 'ひっこし／かちん／ちく～とし' }, { n: 4, text: 'いんこし／やちん／ちく～ねん' }], answer: 1, explanationPt: 'Esses são kanji centrais para leitura de informações de imóvel.' },
+    { id: 'iro-pi-l3-35', number: 35, prompt: 'Kanji da lição: 住宅地／荷物／冷蔵庫／電子レンジ lêem-se:', choices: [{ n: 1, text: 'じゅうたくち／にもつ／れいぞうこ／でんしレンジ' }, { n: 2, text: 'すみたくち／かもつ／れいくらこ／でんこレンジ' }, { n: 3, text: 'じゅうたくち／にもつ／れいぞうこ／でんじレンジ' }, { n: 4, text: 'じゅうたくじ／にもつ／ひょうぞうこ／でんしレンジ' }], answer: 1, explanationPt: '住宅地 = área residencial; 荷物 = bagagem/carga; 冷蔵庫 = geladeira; 電子レンジ = micro-ondas.' },
+    { id: 'iro-pi-l3-36', number: 36, prompt: 'TIPS: 畳 e 坪 são unidades para:', choices: [{ n: 1, text: 'expressar área/tamanho de quartos, imóveis e terrenos' }, { n: 2, text: 'medir arroz e saquê' }, { n: 3, text: 'contar pessoas em uma equipe' }, { n: 4, text: 'classificar músicas' }], answer: 1, explanationPt: '畳 é usado para tamanho de quarto; 坪 para áreas maiores, como terreno e área construída.' },
+    { id: 'iro-pi-l3-37', number: 37, prompt: 'TIPS: 合 e 升 são unidades tradicionais para:', choices: [{ n: 1, text: 'quantidade de líquidos e grãos, como arroz e saquê' }, { n: 2, text: 'distância até estação' }, { n: 3, text: 'idade do prédio' }, { n: 4, text: 'número de andares' }], answer: 1, explanationPt: '1合 = 180 ml; 1升 = 10合 = 1800 ml.' },
+    { id: 'iro-pi-l3-38', number: 38, prompt: 'TIPS: ao alugar quarto no Japão, 敷金 e 礼金 são:', choices: [{ n: 1, text: 'depósito de segurança e luva/agradecimento ao proprietário' }, { n: 2, text: 'luz e água' }, { n: 3, text: 'dois tipos de bairro' }, { n: 4, text: 'duas formas de pedir ajuda' }], answer: 1, explanationPt: '敷金 costuma servir como garantia; 礼金 normalmente não é devolvido.' },
+    { id: 'iro-pi-l3-39', number: 39, prompt: 'TIPS: sobre 引っ越しの手続き, qual afirmação está correta?', choices: [{ n: 1, text: 'é preciso avisar saída, fazer trâmites na prefeitura, organizar serviços e atualizar endereço após mudar' }, { n: 2, text: 'não há nenhum procedimento ao mudar de endereço' }, { n: 3, text: 'só é preciso comprar móveis' }, { n: 4, text: 'o procedimento é apenas assistir a um vídeo' }], answer: 1, explanationPt: 'A TIPS lista avisar locador/imobiliária, 転出届/転入届, serviços públicos, correio e atualização de documentos/endereço.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -513,6 +563,153 @@ const L2_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L3_SCRIPTS: Record<string, ScriptItem[]> = {
+  '03-01': [
+    {
+      label: '① 月見台 (03-01)',
+      setupPt: '馬 pergunta aos colegas que bairro recomendam para se mudar.',
+      lines: [
+        { speaker: '馬', ja: '{入社|にゅうしゃ}してから、ずっと{寮|りょう}に{住|す}んでるんですけど、そろそろ{引|ひ}っ{越|こ}ししようと{思|おも}っているんです。', pt: 'Desde que entrei na empresa, moro no dormitório, mas estou pensando em me mudar em breve.' },
+        { speaker: '同僚1', ja: '{馬|ば}さん、{引|ひ}っ{越|こ}しするんだ。どこに？', pt: 'Ma, você vai se mudar? Para onde?' },
+        { speaker: '馬', ja: '{迷|まよ}ってます。{住|す}むなら、どのあたりがおすすめですか？', pt: 'Estou em dúvida. Se eu fosse morar, que área você recomenda?' },
+        { speaker: '同僚1', ja: '{私|わたし}なら{月見台|つきみだい}に{住|す}みたいなあ。', pt: 'Se fosse eu, gostaria de morar em Tsukimidai.' },
+        { speaker: '馬', ja: '{月見台|つきみだい}ですか。おしゃれな{町|まち}っていうイメージです。', pt: 'Tsukimidai? Tenho a imagem de ser um bairro elegante.' },
+        { speaker: '同僚1', ja: 'そうそう、おしゃれなカフェとか{服|ふく}の{店|みせ}がたくさんあるんですよ。{住|す}みたい{街|まち}ランキングでも1{位|い}になってましたよ。', pt: 'Isso mesmo. Tem muitos cafés elegantes e lojas de roupa. Também ficou em primeiro no ranking de bairros onde as pessoas querem morar.' },
+        { speaker: '馬', ja: 'へー、すてきですね。', pt: 'Nossa, que legal.' },
+        { speaker: '同僚2', ja: 'でも、{安|やす}いスーパーとかなさそうだし、{生活|せいかつ}するには{不便|ふべん}じゃないですか？', pt: 'Mas parece que não tem supermercados baratos, então não seria inconveniente para viver?' },
+        { speaker: '同僚1', ja: 'んー、{高級|こうきゅう}スーパーはあるんですけどね。', pt: 'Hmm, supermercados de luxo tem.' },
+        { speaker: '同僚2', ja: 'あと、{家賃|やちん}も{高|たか}そうだし。', pt: 'E o aluguel parece caro.' },
+        { speaker: '同僚1', ja: 'まあ、{家賃|やちん}はしかたないですよ。{月見台|つきみだい}だから。', pt: 'Bem, o aluguel não tem jeito. É Tsukimidai.' },
+        { speaker: '馬', ja: 'そうなんですね。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '03-02': [
+    {
+      label: '② 芝浜 (03-02)',
+      lines: [
+        { speaker: '同僚2', ja: '{家賃|やちん}が{安|やす}いところがいいなら、{芝浜|しばはま}はどう？ {庶民的|しょみんてき}な{町|まち}だから、そんなに{高|たか}くないと{思|おも}いますよ。', pt: 'Se você quer um lugar com aluguel barato, que tal Shibahama? É um bairro popular, então acho que não é tão caro.' },
+        { speaker: '馬', ja: '{芝浜|しばはま}？ ちょっと{調|しら}べてみます……ああ、{写真|しゃしん}が{出|で}てきました！ {下町|したまち}っぽい{雰囲気|ふんいき}ですね。', pt: 'Shibahama? Vou pesquisar um pouco... Ah, apareceram fotos! Tem uma atmosfera de bairro popular antigo.' },
+        { speaker: '同僚2', ja: 'そう。{商店街|しょうてんがい}があって、お{惣菜屋|そうざいや}さんとか、{気軽|きがる}に{入|はい}れる{定食屋|ていしょくや}さんとかあって{便利|べんり}ですよ。', pt: 'Isso. Tem rua comercial, lojas de comida pronta e restaurantes de refeição onde dá para entrar sem cerimônia, então é conveniente.' },
+        { speaker: '馬', ja: 'そうなんですね。', pt: 'Entendi.' },
+        { speaker: '同僚2', ja: 'まあ、{夜遅|よるおそ}くまで{開|あ}いている{店|みせ}も{多|おお}いから、{夜|よる}はちょっとうるさいかもしれないですけど。', pt: 'Bem, como há muitas lojas abertas até tarde, talvez seja um pouco barulhento à noite.' },
+        { speaker: '馬', ja: 'そうですか。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '03-03': [
+    {
+      label: '③ 北ニュータウン (03-03)',
+      lines: [
+        { speaker: '同僚3', ja: '{北|きた}ニュータウンあたりもいいんじゃないですか？', pt: 'Que tal a região de Kita New Town também?' },
+        { speaker: '馬', ja: '{北|きた}ニュータウンって、どこですか？', pt: 'Kita New Town, onde fica?' },
+        { speaker: '同僚3', ja: '{山下駅|やましたえき}からバスで20{分|ぷん}ぐらいのところですよ。', pt: 'Fica a uns 20 minutos de ônibus da estação Yamashita.' },
+        { speaker: '馬', ja: 'へー。', pt: 'Entendi.' },
+        { speaker: '同僚3', ja: '{住宅地|じゅうたくち}だから{静|しず}かだし、{大|おお}きな{公園|こうえん}があるから{休|やす}みの{日|ひ}は{散歩|さんぽ}もできるし。', pt: 'Como é uma área residencial, é tranquila, e há um parque grande, então dá para passear nos dias de folga.' },
+        { speaker: '馬', ja: '{買|か}い{物|もの}できるところもありますか？', pt: 'Também há lugares para fazer compras?' },
+        { speaker: '同僚3', ja: '{自転車|じてんしゃ}で10{分|ぷん}ぐらいのところに、{大|おお}きなショッピングモールがありますよ。', pt: 'Há um shopping grande a uns 10 minutos de bicicleta.' },
+        { speaker: '馬', ja: 'なるほど。', pt: 'Entendi.' },
+        { speaker: '同僚3', ja: 'バスしかないから{交通|こうつう}が{不便|ふべん}だけど、{郊外|こうがい}の{住宅地|じゅうたくち}も{住|す}みやすいと{思|おも}いますよ。', pt: 'Como só tem ônibus, o transporte é inconveniente, mas acho que uma área residencial suburbana também é fácil de morar.' },
+        { speaker: '馬', ja: 'いいですね。', pt: 'Parece bom.' },
+      ],
+    },
+  ],
+  '03-04': [
+    {
+      label: '④ 沢口 (03-04)',
+      lines: [
+        { speaker: '同僚4', ja: '{私|わたし}のおすすめは{沢口|さわぐち}です。{昔|むかし}、{住|す}んでたんですが、{住|す}みやすかったですよ。', pt: 'Minha recomendação é Sawaguchi. Morei lá antes e era fácil de viver.' },
+        { speaker: '馬', ja: 'ああ、{沢口|さわぐち}。', pt: 'Ah, Sawaguchi.' },
+        { speaker: '同僚4', ja: 'いろんな{国|くに}の{人|ひと}が{住|す}んでるから、{国際的|こくさいてき}でおもしろい{町|まち}ですよ。いろんな{国|くに}の{食材|しょくざい}を{売|う}ってるスーパーやレストランがたくさんありますし。', pt: 'Como moram pessoas de vários países, é um bairro internacional e interessante. Há muitos supermercados e restaurantes que vendem ingredientes de vários países.' },
+        { speaker: '馬', ja: 'そういえば、{友|とも}だちも{住|す}んでました。', pt: 'Pensando bem, um amigo meu também morava lá.' },
+        { speaker: '同僚4', ja: '{外国語|がいこくご}が{話|はな}せる{不動産屋|ふどうさんや}さんがいくつかあるから、{部屋|へや}も{見|み}つけやすいですよ。', pt: 'Há algumas imobiliárias que falam línguas estrangeiras, então é fácil encontrar quarto.' },
+        { speaker: '同僚2', ja: 'でも、{会社|かいしゃ}からはちょっと{遠|とお}いかもね。', pt: 'Mas talvez seja um pouco longe da empresa.' },
+        { speaker: '馬', ja: 'いろんな{町|まち}があるから{迷|まよ}うな。', pt: 'Há tantos bairros que fico em dúvida.' },
+        { speaker: '同僚3', ja: 'いつぐらいに{引|ひ}っ{越|こ}しするんですか？', pt: 'Quando mais ou menos você vai se mudar?' },
+        { speaker: '馬', ja: 'まだわかりません。', pt: 'Ainda não sei.' },
+      ],
+    },
+  ],
+  '03-05': [
+    {
+      label: '形に注目 - Sなら (03-05)',
+      lines: [
+        { speaker: '馬', ja: '{住|す}むなら、どのあたりがおすすめですか？', pt: 'Se eu fosse morar, que área você recomenda?' },
+        { speaker: '同僚2', ja: '{家賃|やちん}が{安|やす}いところがいいなら、{芝浜|しばはま}はどう？', pt: 'Se você quer um lugar com aluguel barato, que tal Shibahama?' },
+      ],
+    },
+  ],
+  '03-06': [
+    {
+      label: '形に注目 - Nっぽい (03-06)',
+      lines: [
+        { speaker: '馬', ja: '{下町|したまち}っぽい{雰囲気|ふんいき}ですね。', pt: 'Tem uma atmosfera de bairro popular antigo.' },
+      ],
+    },
+  ],
+  '03-07': [
+    {
+      label: '会話 - 引っ越しの手伝いをお願いする (03-07)',
+      setupPt: 'No almoço, colegas conversam sobre a mudança de Sujan.',
+      lines: [
+        { speaker: '堀川', ja: 'スジャンさん、もうすぐ{引|ひ}っ{越|こ}しですよね。{引|ひ}っ{越|こ}しの{準備|じゅんび}はどうですか？', pt: 'Sujan, sua mudança é em breve, né? Como estão os preparativos?' },
+        { speaker: 'スジャン', ja: '{今|いま}、{荷物|にもつ}をまとめたり、{掃除|そうじ}をしたりして、{大変|たいへん}です。', pt: 'Agora estou juntando a bagagem, limpando e está puxado.' },
+        { speaker: '町村', ja: '{引|ひ}っ{越|こ}し{業者|ぎょうしゃ}はもう{予約|よやく}しましたか？', pt: 'Você já reservou uma empresa de mudança?' },
+        { speaker: 'スジャン', ja: 'いえ、{一人暮|ひとりぐ}らしで、{荷物|にもつ}はそんなに{多|おお}くないので、{自分|じぶん}で{運|はこ}ぶつもりです。', pt: 'Não. Como moro sozinho e não tenho tanta bagagem, pretendo carregar por conta própria.' },
+        { speaker: '堀川', ja: '{自分|じぶん}で？ {大変|たいへん}ですね。', pt: 'Por conta própria? Vai ser difícil.' },
+        { speaker: 'スジャン', ja: 'それで、あのう……もしよければ、{引|ひ}っ{越|こ}しを{手伝|てつだ}ってもらえたら、とてもありがたいんですが。', pt: 'Então, bem... se puderem, eu ficaria muito grato se me ajudassem na mudança.' },
+        { speaker: '堀川', ja: 'いつでしたっけ？', pt: 'Era quando mesmo?' },
+        { speaker: 'スジャン', ja: '{今月|こんげつ}の30{日|にち}です。', pt: 'Dia 30 deste mês.' },
+        { speaker: '堀川', ja: 'だいじょうぶですよ。{何|なに}をすればいいですか？', pt: 'Tudo bem. O que devo fazer?' },
+        { speaker: 'スジャン', ja: 'あ、ありがとうございます！ えっと、{当日|とうじつ}うちに{来|き}て、{荷物|にもつ}を{運|はこ}ぶのを{手伝|てつだ}ってもらえたら、とても{助|たす}かります。', pt: 'Ah, obrigado! Bem, se você vier à minha casa no dia e ajudar a carregar a bagagem, vai me ajudar muito.' },
+        { speaker: 'スジャン', ja: '{荷物|にもつ}は{段|だん}ボール10{個|こ}ぐらいで、あとは{机|つくえ}と、{電子|でんし}レンジと、{小|ちい}さな{冷蔵庫|れいぞうこ}があります。', pt: 'A bagagem são umas 10 caixas de papelão, além de uma mesa, um micro-ondas e uma geladeira pequena.' },
+        { speaker: '町村', ja: '{私|わたし}も、{手伝|てつだ}いに{行|い}きますよ。{車|くるま}はどうするんですか？', pt: 'Eu também vou ajudar. O que você vai fazer com o carro?' },
+        { speaker: 'スジャン', ja: '{町村|まちむら}さん、ありがとうございます。{車|くるま}は、レンタカーを{借|か}りて、{自分|じぶん}で{運転|うんてん}するつもりです。', pt: 'Machimura, obrigado. Vou alugar um carro e dirigir eu mesmo.' },
+        { speaker: '町村', ja: 'それなら、{私|わたし}の{車|くるま}を{出|だ}しましょうか？ {運転|うんてん}もしますよ。', pt: 'Nesse caso, posso levar meu carro. Também dirijo.' },
+        { speaker: 'スジャン', ja: 'え、いいんですか？ そうしてもらえたら、すごくうれしいです。', pt: 'Hã, tudo bem? Se puder fazer isso, fico muito feliz.' },
+        { speaker: '町村', ja: 'イムランさんはその{日|ひ}、{暇|ひま}？', pt: 'Imran, você está livre nesse dia?' },
+        { speaker: 'イムラン', ja: '30{日|にち}ですか？ その{日|ひ}はちょっと{予定|よてい}が……。すみません。', pt: 'Dia 30? Nesse dia tenho uns planos... Desculpe.' },
+        { speaker: 'スジャン', ja: 'だいじょうぶです。2{人|ふたり}に{手伝|てつだ}ってもらったら、すぐに{終|お}わると{思|おも}います。その{日|ひ}の{夕食|ゆうしょく}をごちそうしますね。', pt: 'Tudo bem. Se duas pessoas me ajudarem, acho que terminamos rápido. Eu pago o jantar desse dia.' },
+        { speaker: '堀川', ja: 'やったー。{焼肉|やきにく}ぐらい{期待|きたい}しようかな。', pt: 'Oba. Acho que vou esperar algo como yakiniku.' },
+      ],
+    },
+  ],
+  '03-08': [
+    {
+      label: '形に注目 - V-てもらえたら (03-08)',
+      lines: [
+        { speaker: 'スジャン', ja: '{引|ひ}っ{越|こ}しを{手伝|てつだ}ってもらえたら、とてもありがたいんですが。', pt: 'Eu ficaria muito grato se pudesse me ajudar na mudança.' },
+        { speaker: 'スジャン', ja: '{荷物|にもつ}を{運|はこ}ぶのを{手伝|てつだ}ってもらえたら、とても{助|たす}かります。', pt: 'Se puder ajudar a carregar a bagagem, isso me ajudaria muito.' },
+        { speaker: 'スジャン', ja: 'そうしてもらえたら、すごくうれしいです。', pt: 'Se puder fazer isso, ficarei muito feliz.' },
+      ],
+    },
+  ],
+  '03-09': [
+    {
+      label: '話すモデル① - 手伝いを頼む (03-09)',
+      lines: [
+        { speaker: 'A', ja: '{引|ひ}っ{越|こ}しの{準備|じゅんび}はどうですか？', pt: 'Como estão os preparativos da mudança?' },
+        { speaker: 'B', ja: '{今|いま}、{荷物|にもつ}をまとめたり、{掃除|そうじ}をしたりして、{大変|たいへん}です。', pt: 'Agora estou juntando a bagagem, limpando e está puxado.' },
+        { speaker: 'B', ja: 'もしよければ、{引|ひ}っ{越|こ}しを{手伝|てつだ}ってもらえたら、とてもありがたいんですが。', pt: 'Se puder, eu ficaria muito grato se me ajudasse na mudança.' },
+        { speaker: 'A', ja: 'だいじょうぶですよ。{何|なに}をすればいいですか？', pt: 'Tudo bem. O que devo fazer?' },
+        { speaker: 'B', ja: '{当日|とうじつ}うちに{来|き}て、{荷物|にもつ}を{運|はこ}ぶのを{手伝|てつだ}ってもらえたら、とても{助|たす}かります。', pt: 'Se vier à minha casa no dia e ajudar a carregar a bagagem, isso me ajudaria muito.' },
+      ],
+    },
+  ],
+  '03-10': [
+    {
+      label: '話すモデル② - 断る (03-10)',
+      lines: [
+        { speaker: 'A', ja: '{引|ひ}っ{越|こ}しを{手伝|てつだ}ってもらえたら、とてもありがたいんですが。', pt: 'Eu ficaria muito grato se pudesse me ajudar na mudança.' },
+        { speaker: 'B', ja: 'いつでしたっけ？', pt: 'Era quando mesmo?' },
+        { speaker: 'A', ja: '{今月|こんげつ}の30{日|にち}です。', pt: 'Dia 30 deste mês.' },
+        { speaker: 'B', ja: 'その{日|ひ}はちょっと{予定|よてい}が……。すみません。', pt: 'Nesse dia tenho uns planos... Desculpe.' },
+        { speaker: 'A', ja: 'だいじょうぶです。', pt: 'Tudo bem.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -711,10 +908,114 @@ const lesson2: Section = {
   audios: attachScripts(2, L2_SCRIPTS),
 }
 
+const lesson3: Section = {
+  id: 'lesson-3',
+  level: 'pre-intermediate',
+  titleJa: '第3課 引っ越しの準備はどうですか？',
+  titlePt: 'Lição 3 - Como estão os preparativos da mudança?',
+  summaryPt:
+    'Onde morar · ler informações de imóveis, ouvir recomendações de bairros e pedir ajuda educadamente para uma mudança.',
+  studyNotes: [
+    {
+      title: 'Tópico: Onde morar? (どこに住む？)',
+      bodyPt:
+        'Perguntas de abertura: {引|ひ}っ{越|こ}しをしたことがありますか？ {引|ひ}っ{越|こ}しをするなら、どんな{部屋|へや}に{住|す}みたいですか？\n\n' +
+        '## Can-do\n' +
+        '- Ver informações de imóveis em um site de moradia e encontrar dados necessários, como aluguel, tamanho e localização.\n' +
+        '- Ouvir comentários simples sobre bairros recomendados para mudança e entender os motivos.\n' +
+        '- Pedir ajuda a amigos ou colegas para mudança, e aceitar ou recusar quando alguém pedir ajuda.',
+    },
+    {
+      title: 'Atividade 1: 物件情報',
+      bodyPt:
+        'A atividade lê informações de imóveis em um 住宅情報サイト. Os pontos principais de leitura são:\n\n' +
+        '| Item | Sentido |\n|---|---|\n' +
+        '| {家賃|やちん} | aluguel |\n' +
+        '| {交通|こうつう} | acesso/transporte |\n' +
+        '| {築年数|ちくねんすう} | anos desde a construção |\n' +
+        '| {間取|まど}り | planta/disposição dos cômodos |\n' +
+        '| {部屋|へや}の{階|かい} | andar do quarto |\n' +
+        '| {設備|せつび} | instalações/equipamentos |\n\n' +
+        'Vocabulário de planta: ワンルーム = um cômodo; 2K = dois cômodos e cozinha; 2LDK = dois cômodos mais living, dining e kitchen; {和室|わしつ} = quarto japonês; {洋室|ようしつ} = quarto ocidental; ～{階建|かいだて} = prédio de X andares.\n\n' +
+        'Características do gabarito: ①ルスコアール = estação e rua comercial próximas; ②高田ハイツ = cozinha ampla; ③グランヒルズ壱番館 = quarto novo; ④つばき荘 = aluguel barato.',
+    },
+    {
+      title: 'Atividade 2: bairros recomendados',
+      bodyPt:
+        '馬 quer sair do dormitório da empresa e pergunta aos colegas: `{住|す}むなら、どのあたりがおすすめですか？`\n\n' +
+        '| Bairro | Tipo | Bons pontos | Pontos ruins |\n|---|---|---|---|\n' +
+        '| {月見台|つきみだい} | おしゃれな町 | cafés elegantes | aluguel caro; não há supermercado barato |\n' +
+        '| {芝浜|しばはま} | {下町|したまち}っぽい{雰囲気|ふんいき} | rua comercial; aluguel não tão alto | barulhento à noite |\n' +
+        '| {北|きた}ニュータウン | {郊外|こうがい}の{住宅地|じゅうたくち} | tranquilo; parque grande | transporte inconveniente |\n' +
+        '| {沢口|さわぐち} | internacional | interessante; imobiliárias que falam língua estrangeira | longe da empresa |',
+    },
+    {
+      title: 'Gramática ➊➋: なら e っぽい',
+      bodyPt:
+        '**S（普通形）なら** apresenta uma condição ou premissa antes de perguntar, sugerir, aconselhar ou oferecer:\n\n' +
+        '- `{住|す}むなら、どのあたりがおすすめですか？`\n' +
+        '- `{家賃|やちん}が{安|やす}いところがいいなら、{芝浜|しばはま}はどう？`\n' +
+        '- `1{人|ひとり}で{住|す}むなら、ワンルームで{十分|じゅうぶん}ですよ。`\n\n' +
+        '**Nっぽい** significa que algo tem sensação, aparência ou traço parecido com N:\n\n' +
+        '- `{下町|したまち}っぽい{雰囲気|ふんいき}ですね。`\n' +
+        '- `ホテルっぽくておしゃれだ。`\n' +
+        '- Também aparece em palavras fixas como {油|あぶら}っぽい, {子|こ}どもっぽい, {安|やす}っぽい, {怒|おこ}りっぽい, {忘|わす}れっぽい.',
+    },
+    {
+      title: 'Atividade 3: pedir ajuda para mudança',
+      bodyPt:
+        'スジャン está se mudando e conversa com 堀川, 町村 e イムラン durante o almoço.\n\n' +
+        '- Preparação atual: `{荷物|にもつ}をまとめたり、{掃除|そうじ}をしたりして、{大変|たいへん}です`.\n' +
+        '- Ele não reservou 引っ越し業者 porque mora sozinho e não tem muita bagagem.\n' +
+        '- Data: 今月の30日.\n' +
+        '- 堀川 aceita ajudar a carregar a bagagem.\n' +
+        '- 町村 oferece carro e direção.\n' +
+        '- イムラン recusa porque tem planos.\n' +
+        '- スジャン oferece pagar o jantar do dia; 堀川 brinca que espera 焼肉.',
+    },
+    {
+      title: 'Gramática ➌: V-てもらえたら',
+      bodyPt:
+        '**V-てもらえたら + sentimento** comunica educadamente o que você gostaria que alguém fizesse por você. É a forma potencial de V-てもらう com たら.\n\n' +
+        '- `{引|ひ}っ{越|こ}しを{手伝|てつだ}ってもらえたら、とてもありがたいんですが。`\n' +
+        '- `{荷物|にもつ}を{運|はこ}ぶのを{手伝|てつだ}ってもらえたら、とても{助|たす}かります。`\n' +
+        '- `そうしてもらえたら、すごくうれしいです。`\n\n' +
+        'Depois de V-てもらえたら, a lição usa ありがたいです, 助かります e うれしいです. A frase também pode terminar com んですが para soar menos direta.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {引|ひ}っ{越|こ}し, {家賃|やちん}, {築|ちく}～{年|ねん}, {住宅地|じゅうたくち}, {荷物|にもつ}, {冷蔵庫|れいぞうこ}, {電子|でんし}レンジ, ～{県|けん}, ～{区|く}.\n\n' +
+        '**Frases-modelo:**\n' +
+        '1. {埼玉県|さいたまけん}に{住|す}んでいます。\n' +
+        '2. {南区|みなみく}は、{住宅地|じゅうたくち}で{住|す}みやすいです。\n' +
+        '3. {引|ひ}っ{越|こ}しの{荷物|にもつ}をまとめています。\n' +
+        '4. このアパートは、{築|ちく}3{年|ねん}で、{新|あたら}しいです。\n' +
+        '5. {家賃|やちん}が{安|やす}いところがいいです。\n' +
+        '6. {冷蔵庫|れいぞうこ}と{電子|でんし}レンジを{運|はこ}んでもらえませんか？',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**日本特有の単位:** 畳 e 坪 indicam tamanho/área de quartos, terrenos e imóveis; 合 e 升 indicam quantidade de arroz, saquê e outros líquidos/grãos.\n\n' +
+        '**部屋を借りる:** procurar quarto no Japão normalmente envolve 不動産会社 e sites como SUUMO/HOME’S. A lição explica 敷金, 礼金, 契約期間, 更新, 保証人 e 保証会社.\n\n' +
+        '**部屋の向き:** quartos voltados ao sul são populares por receberem sol; quartos ao norte podem ser frios no inverno e dificultar secagem de roupa.\n\n' +
+        '**ユニットバス:** no uso comum, costuma indicar banheiro com chuveiro/banheira, vaso e pia no mesmo espaço.\n\n' +
+        '**プロパンガス:** a moradia pode usar 都市ガス ou プロパンガス. O gás de cidade tende a ser mais barato; o propano pode variar por empresa.\n\n' +
+        '**外国人の入居:** ainda pode haver recusas por medo de problemas de idioma/cultura, mas há mais imóveis e imobiliárias com suporte para estrangeiros.\n\n' +
+        '**引っ越しの手続き:** antes da mudança, avise locador/imobiliária, faça 転出届 ou 転居届, organize eletricidade/água/gás/internet e encaminhamento postal. Depois, faça 転入届 em até 14 dias, confirme serviços e atualize endereço em documentos e contratos.',
+    },
+  ],
+  groups: [lesson3Group],
+  audios: attachScripts(3, L3_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
   lesson2,
+  // Tópico 2 - Onde morar? (どこに住む？)
+  lesson3,
 ]
 
 export const irodoriPreIntermediate: Level = {
