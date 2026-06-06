@@ -1,16 +1,32 @@
-import { useState } from 'react'
-import { CheckCircle2, NotebookPen, XCircle } from 'lucide-react'
+import { useRef, useState } from 'react'
+import { CheckCircle2, NotebookPen, RotateCcw, XCircle } from 'lucide-react'
 import type { Question } from '../data/types'
 import { JaText } from '../lib/JaText'
 import { setAnswer, useAnswer } from '../lib/storage'
+import { gradeCard } from '../lib/reviewStore'
 
 export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }) {
   const rec = useAnswer(q.id)
   const [checked, setChecked] = useState(false)
+  const gradedFor = useRef<number | undefined>(undefined)
   const selected = rec?.selected
 
   function choose(n: number) {
     setAnswer(q.id, { selected: n })
+  }
+
+  // Ao revelar a correção, a questão é enviada para a revisão (SRS):
+  // acerto → maior intervalo recomendado ('easy', conteúdo que a pessoa já sabe);
+  // erro → menor intervalo, revisão hoje ('again', conteúdo a reforçar).
+  // Só grada na transição "ocultar → mostrar" e quando a alternativa muda,
+  // para não reagendar à toa ao alternar a correção.
+  function toggleCheck() {
+    const revealing = !checked
+    if (revealing && selected !== undefined && gradedFor.current !== selected) {
+      gradeCard(q.id, selected === q.answer ? 'easy' : 'again')
+      gradedFor.current = selected
+    }
+    setChecked((v) => !v)
   }
 
   const isCorrect = checked && selected === q.answer
@@ -75,7 +91,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
           <div className="actions">
             <button
               className="btn primary small"
-              onClick={() => setChecked((v) => !v)}
+              onClick={toggleCheck}
               disabled={selected === undefined && !checked}
             >
               {checked ? 'Ocultar correção' : 'Verificar resposta'}
@@ -91,6 +107,14 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
               </div>
               {q.translationPt && <div className="tr">“{q.translationPt}”</div>}
               <div>{q.explanationPt}</div>
+              <div
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 8, fontSize: 12, opacity: 0.85 }}
+              >
+                <RotateCcw size={13} />
+                {isCorrect
+                  ? 'Enviado à revisão como conteúdo que você já sabe (intervalo maior).'
+                  : 'Enviado à revisão de hoje (conteúdo a reforçar).'}
+              </div>
             </div>
           )}
         </div>
