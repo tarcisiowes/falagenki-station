@@ -605,6 +605,67 @@ const lesson11Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 12: 救急車をお願いします (tópico こんなときどうする？) ----
+const lesson12Group: ExerciseGroup = {
+  id: 'iro-pi-l12',
+  title: '救急車をお願いします',
+  subtitlePt: 'Ajudar pessoas · ligar para 110/119 · relatar incidentes recentes',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l12-1', number: 1, prompt: 'Qual é o tópico da Lição 12?', choices: [{ n: 1, text: 'こんなときどうする？ (o que fazer nestas situações?)' }, { n: 2, text: '人とのつき合い' }, { n: 3, text: '私と日本語' }, { n: 4, text: '好きなもの好きなこと' }], answer: 1, explanationPt: 'A Lição 12 continua o tópico こんなときどうする？, agora com ajuda a pessoas, emergência e incidentes.' },
+    { id: 'iro-pi-l12-2', number: 2, prompt: '「救急車をお願いします」 significa:', choices: [{ n: 1, text: 'Por favor, mande uma ambulância.' }, { n: 2, text: 'Por favor, abra o e-mail.' }, { n: 3, text: 'Por favor, cancele o ingresso.' }, { n: 4, text: 'Por favor, compre uma mala.' }], answer: 1, explanationPt: '救急車 é ambulância. A frase aparece na chamada para 119.' },
+    { id: 'iro-pi-l12-3', number: 3, prompt: 'Pergunta de abertura: 日本で、災害や事故、事件にあったとき、どうしたらいいか知っていますか？', choices: [{ n: 1, text: 'Você sabe o que fazer no Japão em caso de desastre, acidente ou incidente?' }, { n: 2, text: 'Você sabe estudar japonês por IA?' }, { n: 3, text: 'Você sabe comprar ingresso eletrônico?' }, { n: 4, text: 'Você sabe escrever perfil de tandem?' }], answer: 1, explanationPt: 'A pergunta prepara as atividades de ajuda, emergência e relatos de problemas.' },
+    { id: 'iro-pi-l12-4', number: 4, prompt: 'Can-do 38: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'oferecer ajuda a alguém que parece estar com problema' }, { n: 2, text: 'escrever mensagem de aniversário' }, { n: 3, text: 'ler regras de cartão de residência' }, { n: 4, text: 'explicar um método de estudo' }], answer: 1, explanationPt: 'A atividade 1 é 何かお困りですか？ e treina como abordar e ajudar alguém.' },
+    { id: 'iro-pi-l12-5', number: 5, prompt: '12-01: no 100円ショップ, qual é o problema?', image: `${IMG}/ZZ_12_1_01_hyakuenshoppu.png`, imageAlt: 'loja de 100 ienes', choices: [{ n: 1, text: 'um cliente fala inglês e quer uma sacola para comprimir roupas' }, { n: 2, text: 'alguém caiu de bicicleta' }, { n: 3, text: 'um bebê perdeu a chave' }, { n: 4, text: 'um trem foi cancelado' }], answer: 1, explanationPt: 'A pessoa interpreta: 服を圧縮できる袋が買いたいそうです. O funcionário entende 衣類の圧縮袋.' },
+    { id: 'iro-pi-l12-6', number: 6, prompt: '12-01: como a pessoa ajuda?', choices: [{ n: 1, text: 'oferece interpretação porque entende inglês' }, { n: 2, text: 'liga para 110' }, { n: 3, text: 'chama uma ambulância' }, { n: 4, text: 'preenche 被害届' }], answer: 1, explanationPt: 'Ela diz: よかったら、私、通訳しましょうか？ 私、英語わかるので.' },
+    { id: 'iro-pi-l12-7', number: 7, prompt: '12-02: na estação, o que acontece?', image: `${IMG}/ZZ_12_1_02_eki.png`, imageAlt: 'escada da estação', choices: [{ n: 1, text: 'alguém ajuda a carregar o carrinho de bebê na escada' }, { n: 2, text: 'alguém encontra uma carteira' }, { n: 3, text: 'um motorista foge' }, { n: 4, text: 'a pessoa compra 防災リュック' }], answer: 1, explanationPt: 'A fala começa com ベビーカー、持ちましょうか？ e termina com 本当に助かりました.' },
+    { id: 'iro-pi-l12-8', number: 8, prompt: '12-03: na rua, o que as pessoas procuram?', image: `${IMG}/ZZ_12_1_03_michi.png`, imageAlt: 'pessoas olhando mapa na rua', choices: [{ n: 1, text: '近代美術館' }, { n: 2, text: '消防署' }, { n: 3, text: '忘れ物センター' }, { n: 4, text: 'コンサート会場' }], answer: 1, explanationPt: 'Elas querem ir ao museu de arte moderna e não entendem o caminho no mapa.' },
+    { id: 'iro-pi-l12-9', number: 9, prompt: '12-04: no estacionamento de bicicletas, o que a pessoa procura?', image: `${IMG}/ZZ_12_1_04_chuurinjoo.png`, imageAlt: 'estacionamento de bicicletas', choices: [{ n: 1, text: 'a chave da bicicleta com chaveiro de はにわ' }, { n: 2, text: 'um QR code' }, { n: 3, text: 'uma lata de suco' }, { n: 4, text: 'uma bolsa de roupas no trem' }], answer: 1, explanationPt: 'Ela perdeu 自転車の鍵. A dica é はにわのキーホルダー, uma figura marrom.' },
+    { id: 'iro-pi-l12-10', number: 10, prompt: '「何かお困りですか？」 é usado para:', choices: [{ n: 1, text: 'perguntar de forma respeitosa se a pessoa está com algum problema' }, { n: 2, text: 'perguntar se há ambulância disponível' }, { n: 3, text: 'relatar um acidente ao policial' }, { n: 4, text: 'recusar uma ajuda' }], answer: 1, explanationPt: 'おVです é forma respeitosa de V-ています. Aqui, お困りですか？ aborda alguém com cuidado.' },
+    { id: 'iro-pi-l12-11', number: 11, prompt: '「何かお探しですか？」 quer dizer:', choices: [{ n: 1, text: 'Está procurando alguma coisa?' }, { n: 2, text: 'Você chamou a polícia?' }, { n: 3, text: 'A chuva parou?' }, { n: 4, text: 'Você decidiu comprar?' }], answer: 1, explanationPt: '探す vira お探しです na forma respeitosa usada para oferecer ajuda.' },
+    { id: 'iro-pi-l12-12', number: 12, prompt: '「英語を話されているんですけど」 usa qual forma?', choices: [{ n: 1, text: 'V-(ら)れる como 尊敬語 para a ação da outra pessoa' }, { n: 2, text: 'V-ることにする' }, { n: 3, text: 'イA-がる' }, { n: 4, text: 'Sようだ' }], answer: 1, explanationPt: '話されている é a forma respeitosa de 話している. A forma é igual à passiva, mas aqui é 尊敬語.' },
+    { id: 'iro-pi-l12-13', number: 13, prompt: '「どちらに行かれるんですか？」 é equivalente respeitoso de:', choices: [{ n: 1, text: 'どこに行くんですか？' }, { n: 2, text: '何を買うんですか？' }, { n: 3, text: 'どうしましたか？' }, { n: 4, text: '何歳ですか？' }], answer: 1, explanationPt: '行かれる é 尊敬形 de 行く, usado ao falar com alguém que você não conhece bem.' },
+    { id: 'iro-pi-l12-14', number: 14, prompt: 'Can-do 39: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ligar para 110/119 em emergência e pedir polícia ou ambulância com frases simples' }, { n: 2, text: 'trocar comentários sobre mangá' }, { n: 3, text: 'responder a convite de esporte' }, { n: 4, text: 'preencher perfil para tandem' }], answer: 1, explanationPt: 'A atividade 2 trabalha chamadas reais para 119 e 110.' },
+    { id: 'iro-pi-l12-15', number: 15, prompt: 'No Japão, 110番 é usado principalmente para:', image: `${IMG}/ZZ_12_2_21_110ban.png`, imageAlt: 'número 110', choices: [{ n: 1, text: 'chamar a polícia em caso de incidente ou acidente' }, { n: 2, text: 'chamar bombeiros/ambulância' }, { n: 3, text: 'consultar previsão do tempo' }, { n: 4, text: 'falar com achados e perdidos do trem' }], answer: 1, explanationPt: 'A chamada 12-14 começa: 110番警察です。事件ですか？ 事故ですか？' },
+    { id: 'iro-pi-l12-16', number: 16, prompt: 'No Japão, 119番 é usado principalmente para:', image: `${IMG}/ZZ_12_2_20_119ban.png`, imageAlt: 'número 119', choices: [{ n: 1, text: 'incêndio, resgate ou ambulância' }, { n: 2, text: 'perguntar sobre documento de residência' }, { n: 3, text: 'procurar objeto esquecido no trem' }, { n: 4, text: 'denunciar golpe por e-mail' }], answer: 1, explanationPt: 'A chamada 12-13 começa: 119番消防署です。火事ですか？ 救急ですか？' },
+    { id: 'iro-pi-l12-17', number: 17, prompt: 'Vocabulário de crime: 泥棒／ひったくり／すられた significam:', image: `${IMG}/ZZ_12_2_03_hittakuri.png`, imageAlt: 'roubo por arrancada', choices: [{ n: 1, text: 'ladrão / roubo por arrancada / foi furtado por batedor de carteira' }, { n: 2, text: 'incêndio / fumaça / queimando' }, { n: 3, text: 'ambulância / polícia / bombeiros' }, { n: 4, text: 'chuva forte / alerta / evacuação' }], answer: 1, explanationPt: 'Esses itens aparecem no vocabulário preparatório de 110番.' },
+    { id: 'iro-pi-l12-18', number: 18, prompt: 'Vocabulário de acidente: ぶつけた／はねられた／ひき逃げ significam:', image: `${IMG}/ZZ_12_2_10_hikinige.png`, imageAlt: 'atropelamento com fuga', choices: [{ n: 1, text: 'bateu/colidiu / foi atingido ou atropelado / fuga após acidente' }, { n: 2, text: 'perdeu chave / procurou / achou' }, { n: 3, text: 'levantar / sentar / carregar' }, { n: 4, text: 'falar inglês / interpretar / guiar' }], answer: 1, explanationPt: 'São situações para explicar acidentes à polícia.' },
+    { id: 'iro-pi-l12-19', number: 19, prompt: 'Vocabulário de 119: 煙／燃えている／倒れている／けが correspondem a:', image: `${IMG}/ZZ_12_2_16_taoreteiru.png`, imageAlt: 'pessoa caída', choices: [{ n: 1, text: 'fumaça / está queimando / está caído / ferimento' }, { n: 2, text: 'carteira / multa / validade / obrigação' }, { n: 3, text: 'legendagem / IA / perfil / tandem' }, { n: 4, text: 'torcida / esporte / palestra / festival' }], answer: 1, explanationPt: 'Essas palavras ajudam a descrever fogo, acidente ou emergência médica.' },
+    { id: 'iro-pi-l12-20', number: 20, prompt: '12-13: na chamada para 119, a primeira pergunta é:', choices: [{ n: 1, text: '火事ですか？ 救急ですか？' }, { n: 2, text: '日本語はわかりますか？' }, { n: 3, text: '車種は何ですか？' }, { n: 4, text: 'お探しですか？' }], answer: 1, explanationPt: 'O atendente confirma se é incêndio ou emergência médica antes de prosseguir.' },
+    { id: 'iro-pi-l12-21', number: 21, prompt: '12-13: onde a ambulância deve ir?', choices: [{ n: 1, text: 'à entrada do parque de 六日町' }, { n: 2, text: 'ao cruzamento さくら町2丁目' }, { n: 3, text: 'ao 100円ショップ' }, { n: 4, text: 'ao trem-bala' }], answer: 1, explanationPt: '宋 não sabe o endereço exato, mas informa: 六日町の公園の入口のところです.' },
+    { id: 'iro-pi-l12-22', number: 22, prompt: '12-13: o que aconteceu com a senhora?', choices: [{ n: 1, text: 'estava caída no parque e parece ter caído e machucado a perna' }, { n: 2, text: 'teve a bolsa levada no trem' }, { n: 3, text: 'bateu de bicicleta em um carro' }, { n: 4, text: 'perdeu a chave da bicicleta' }], answer: 1, explanationPt: '宋 diz: おばあさんが倒れていました。転んで足をけがしているようです.' },
+    { id: 'iro-pi-l12-23', number: 23, prompt: '12-13: qual é o estado da senhora?', choices: [{ n: 1, text: 'tem consciência, mas diz 痛い e parece estar com muita dor' }, { n: 2, text: 'não tem consciência e está sozinha no trem' }, { n: 3, text: 'está procurando museu' }, { n: 4, text: 'está dirigindo um carro branco' }], answer: 1, explanationPt: '意識はあります; ela fica dizendo 痛い e 痛がっています.' },
+    { id: 'iro-pi-l12-24', number: 24, prompt: '12-13: qual informação 宋 dá no fim da chamada?', choices: [{ n: 1, text: 'nome 宋婉君 e telefone 000-1234-5678' }, { n: 2, text: 'nome ティムール e telefone 000-9876-5432' }, { n: 3, text: 'somente endereço do museu' }, { n: 4, text: 'número do trem-bala' }], answer: 1, explanationPt: 'O atendente pede telefone e nome para contato posterior.' },
+    { id: 'iro-pi-l12-25', number: 25, prompt: '12-14: ティムール está ligando para 110 por quê?', image: `${IMG}/ZZ_12_2_22_jiko.png`, imageAlt: 'acidente de trânsito', choices: [{ n: 1, text: 'sofreu um acidente de bicicleta com um carro' }, { n: 2, text: 'viu uma senhora caída no parque' }, { n: 3, text: 'perdeu uma sacola no shinkansen' }, { n: 4, text: 'precisa de intérprete em loja' }], answer: 1, explanationPt: 'Ele diz: 事故です。自転車に乗ってて、車にぶつかりました.' },
+    { id: 'iro-pi-l12-26', number: 26, prompt: '12-14: o acidente aconteceu quando?', choices: [{ n: 1, text: 'cerca de 5 minutos antes' }, { n: 2, text: 'na noite anterior' }, { n: 3, text: 'há dois meses' }, { n: 4, text: 'durante uma viagem de trabalho no mês passado' }], answer: 1, explanationPt: 'Ele responde: 5分ぐらい前です.' },
+    { id: 'iro-pi-l12-27', number: 27, prompt: '12-14: como ティムール explica o acidente?', choices: [{ n: 1, text: 'ia reto no cruzamento de bicicleta, quando um carro virou à esquerda e bateu nele' }, { n: 2, text: 'desceu a escada olhando o celular e torceu o pé' }, { n: 3, text: 'evacuou para o segundo andar por causa da chuva forte' }, { n: 4, text: 'esqueceu uma sacola de roupas no trem' }], answer: 1, explanationPt: 'A descrição é: 交差点をまっすぐ行こうとしたら、車が左に曲がってきました。そこでぶつかりました.' },
+    { id: 'iro-pi-l12-28', number: 28, prompt: '12-14: ティムール precisa de ambulância?', choices: [{ n: 1, text: 'não; bateu um pouco o joelho, mas diz que está bem' }, { n: 2, text: 'sim; perdeu a consciência' }, { n: 3, text: 'sim; está com febre alta' }, { n: 4, text: 'não sabe responder em japonês' }], answer: 1, explanationPt: 'Ele diz: ちょっとひざを打ちました。でもだいじょうぶです. E recusa ambulância.' },
+    { id: 'iro-pi-l12-29', number: 29, prompt: '12-14: que detalhe ele lembra do carro e onde está?', choices: [{ n: 1, text: 'era provavelmente um carro branco; está no cruzamento さくら町2丁目' }, { n: 2, text: 'era uma bicicleta marrom; está no 100円ショップ' }, { n: 3, text: 'era um shinkansen vazio; está em 六日町' }, { n: 4, text: 'era uma ambulância; está no parque' }], answer: 1, explanationPt: 'Ele lembra 白い車だったと思います e lê さくら町2丁目 no cruzamento.' },
+    { id: 'iro-pi-l12-30', number: 30, prompt: '「転んで足をけがしているようです」 usa Sようだ para:', choices: [{ n: 1, text: 'relatar uma conclusão baseada no que se vê ou na situação' }, { n: 2, text: 'dizer uma decisão pessoal' }, { n: 3, text: 'dar uma ordem informal' }, { n: 4, text: 'confirmar um objeto perdido' }], answer: 1, explanationPt: 'Sようだ é usado em relatos formais, evitando afirmar com certeza absoluta.' },
+    { id: 'iro-pi-l12-31', number: 31, prompt: '「痛がっています」 é usado porque:', choices: [{ n: 1, text: 'descreve a dor percebida em outra pessoa' }, { n: 2, text: 'é a forma casual de chamar ambulância' }, { n: 3, text: 'significa que a dor acabou' }, { n: 4, text: 'só pode ser usado para objetos' }], answer: 1, explanationPt: '痛い expressa a própria dor. 痛がっている descreve que outra pessoa parece/sinaliza estar sentindo dor.' },
+    { id: 'iro-pi-l12-32', number: 32, prompt: '「すぐ救急車を向かわせます」 usa causativo para dizer:', choices: [{ n: 1, text: 'o atendente fará a ambulância ir ao local' }, { n: 2, text: 'a ambulância decidiu comprar algo' }, { n: 3, text: 'a pessoa está procurando uma chave' }, { n: 4, text: 'o carro virou à esquerda sozinho' }], answer: 1, explanationPt: '向かう é intransitivo; em causativo, 救急車を向かわせます = faremos a ambulância se dirigir para aí.' },
+    { id: 'iro-pi-l12-33', number: 33, prompt: 'Can-do 40: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'contar em algum detalhe um incidente recente e explicar o que aconteceu' }, { n: 2, text: 'ler um e-mail de golpe' }, { n: 3, text: 'confirmar identidade em evento' }, { n: 4, text: 'fazer convite para teatro' }], answer: 1, explanationPt: 'A atividade 3 é 置き引きにあっちゃって..., com relatos de incidentes e desastres.' },
+    { id: 'iro-pi-l12-34', number: 34, prompt: '12-20: o que aconteceu no caminho para o trabalho?', image: `${IMG}/ZZ_12_3_01_nenzaa.png`, imageAlt: 'torção no pé', choices: [{ n: 1, text: 'a pessoa caiu na escada da estação e torceu o pé' }, { n: 2, text: 'houve furto no shinkansen' }, { n: 3, text: 'um carro fugiu do cruzamento' }, { n: 4, text: 'um prédio pegou fogo' }], answer: 1, explanationPt: 'Ela diz: 通勤中に駅で転んじゃって、足をねんざしちゃった.' },
+    { id: 'iro-pi-l12-35', number: 35, prompt: '12-20: por que ela caiu?', choices: [{ n: 1, text: 'pisou errado descendo a escada enquanto olhava o celular' }, { n: 2, text: 'foi empurrada por um ladrão' }, { n: 3, text: 'o carro branco bateu nela' }, { n: 4, text: 'a chuva inundou o quarto' }], answer: 1, explanationPt: '駅の階段を下りているときに、足を踏み外しちゃった. Ela admite que estava olhando o smartphone.' },
+    { id: 'iro-pi-l12-36', number: 36, prompt: '12-20: qual foi a consequência e reflexão?', choices: [{ n: 1, text: 'foi levada de ambulância, levaria cerca de 2 meses para curar e refletiu que não deve andar olhando o celular' }, { n: 2, text: 'comprou uma mochila de emergência e voltou ao quarto' }, { n: 3, text: 'fez boletim de ocorrência por furto' }, { n: 4, text: 'guiou turistas até o museu' }], answer: 1, explanationPt: 'O relato termina com: スマホを見ながら歩くのはだめだって、反省した.' },
+    { id: 'iro-pi-l12-37', number: 37, prompt: '12-21: o que aconteceu por causa da 大雨警報?', image: `${IMG}/ZZ_12_3_04_ooamea.png`, imageAlt: 'chuva forte', choices: [{ n: 1, text: 'moradores do primeiro andar evacuaram para um quarto vazio no segundo andar' }, { n: 2, text: 'a pessoa ligou 110 por acidente de bicicleta' }, { n: 3, text: 'a loja chamou intérprete' }, { n: 4, text: 'a sacola de lembranças sumiu' }], answer: 1, explanationPt: 'O dono do apartamento ficou preocupado; como ela mora no 1º andar, todos do 1º andar evacuaram para um quarto vago no 2º.' },
+    { id: 'iro-pi-l12-38', number: 38, prompt: '12-21: o que a pessoa decidiu fazer depois?', image: `${IMG}/ZZ_12_3_05_ooamei.png`, imageAlt: 'pessoa se preparando para desastre', choices: [{ n: 1, text: 'comprar um 防災リュック para se preparar para desastres' }, { n: 2, text: 'não andar mais de bicicleta' }, { n: 3, text: 'não viajar de shinkansen' }, { n: 4, text: 'abrir uma loja de 100 ienes' }], answer: 1, explanationPt: 'Ela diz: 災害に備えて防災リュックを買うことにしました.' },
+    { id: 'iro-pi-l12-39', number: 39, prompt: '12-22: o que aconteceu no shinkansen de volta da viagem de trabalho?', image: `${IMG}/ZZ_12_3_07_okibikia.png`, imageAlt: 'furto por descuido', choices: [{ n: 1, text: 'a sacola de lembranças deixada no assento ao lado desapareceu' }, { n: 2, text: 'a pessoa caiu na escada da estação' }, { n: 3, text: 'a chuva forte atingiu o apartamento' }, { n: 4, text: 'um carrinho de bebê ficou preso' }], answer: 1, explanationPt: 'バチカ foi ao banheiro e, ao voltar, o お土産の紙袋 não estava mais lá.' },
+    { id: 'iro-pi-l12-40', number: 40, prompt: '12-22: depois de falar com o 車掌, o que バチカ fez?', choices: [{ n: 1, text: 'foi à polícia entregar 被害届' }, { n: 2, text: 'ligou para 119' }, { n: 3, text: 'comprou 衣類圧縮袋' }, { n: 4, text: 'evacuou para o segundo andar' }], answer: 1, explanationPt: 'O condutor disse 警察に届けてください; então ele foi apresentar 被害届.' },
+    { id: 'iro-pi-l12-41', number: 41, prompt: '「防災リュックを買うことにしました」 usa qual padrão?', choices: [{ n: 1, text: 'V-ることにする: decidir fazer algo' }, { n: 2, text: 'V-(ら)れる: forma respeitosa' }, { n: 3, text: 'イA-がる: parecer sentir' }, { n: 4, text: 'おVです: situação atual respeitosa' }], answer: 1, explanationPt: 'V-ることにする expressa uma decisão própria; V-ないことにする expressa decidir não fazer algo.' },
+    { id: 'iro-pi-l12-42', number: 42, prompt: 'Estratégia 12-24: quando falta uma palavra específica, o material mostra usar:', choices: [{ n: 1, text: 'なんとか para manter a fala e depois confirmar a palavra' }, { n: 2, text: 'silêncio até lembrar tudo' }, { n: 3, text: 'somente inglês' }, { n: 4, text: 'um QR code' }], answer: 1, explanationPt: 'Exemplo: 大雨なんとか → 大雨警報; なんとかリュック → 防災リュック.' },
+    { id: 'iro-pi-l12-43', number: 43, prompt: 'No exemplo 「警察に なんとか 届を出しに行った」, a palavra correta é:', choices: [{ n: 1, text: '被害届' }, { n: 2, text: '遺失届出書' }, { n: 3, text: '出生届' }, { n: 4, text: '入学届' }], answer: 1, explanationPt: '被害届 é o boletim/relato de dano ou crime entregue à polícia.' },
+    { id: 'iro-pi-l12-44', number: 44, prompt: 'Kanji da lição: 警察／消防署／救急車 leem-se:', choices: [{ n: 1, text: 'けいさつ／しょうぼうしょ／きゅうきゅうしゃ' }, { n: 2, text: 'けいざつ／しょうぼうじょ／きゅうきゅうくるま' }, { n: 3, text: 'けいさつ／しょうふせ／きゅうきゅうしゃ' }, { n: 4, text: 'けいせつ／しょうぼうしょ／きゅうしゃ' }], answer: 1, explanationPt: 'São palavras essenciais para chamadas de emergência.' },
+    { id: 'iro-pi-l12-45', number: 45, prompt: 'Kanji da lição: 交差点／～丁目／～歳／警報／出張 leem-se:', choices: [{ n: 1, text: 'こうさてん／ちょうめ／さい／けいほう／しゅっちょう' }, { n: 2, text: 'こうさでん／ちょうもく／ざい／けいぼう／でばり' }, { n: 3, text: 'まじさてん／ちょうめ／さい／けいほう／しゅっばり' }, { n: 4, text: 'こうさてん／ちょうめ／とし／けいほ／しゅつはり' }], answer: 1, explanationPt: 'Esses kanji aparecem no acidente, idade da pessoa ferida, alerta de chuva e viagem de trabalho.' },
+    { id: 'iro-pi-l12-46', number: 46, prompt: 'TIPS: かけ声 como よいしょ／せーの／おっとっと são:', image: `${IMG}/ZZ_12_tips_01_yokkoisho.png`, imageAlt: 'pessoa fazendo força', choices: [{ n: 1, text: 'expressões curtas usadas ao fazer força, sincronizar ação ou reagir naturalmente' }, { n: 2, text: 'formas de ligação para 110' }, { n: 3, text: 'nomes oficiais de alertas meteorológicos' }, { n: 4, text: 'documentos da prefeitura' }], answer: 1, explanationPt: 'A TIPS explica que não têm significado lexical forte, mas são comuns no cotidiano japonês.' },
+    { id: 'iro-pi-l12-47', number: 47, prompt: 'TIPS: 衣類圧縮袋 em lojas de 100 ienes serve para:', image: `${IMG}/ZZ_12_1_06_menyuu.png`, imageAlt: 'item útil de loja de 100 ienes', choices: [{ n: 1, text: 'guardar roupas reduzindo volume ao retirar o ar' }, { n: 2, text: 'chamar ambulância' }, { n: 3, text: 'preencher boletim de ocorrência' }, { n: 4, text: 'identificar cruzamento' }], answer: 1, explanationPt: 'O texto de TIPS usa esse item como exemplo de 100円ショップの便利グッズ.' },
+    { id: 'iro-pi-l12-48', number: 48, prompt: 'TIPS: quando 警報 ou 注意報 é emitido, o texto recomenda:', choices: [{ n: 1, text: 'evitar sair, não se aproximar de lugares perigosos e seguir instruções da prefeitura/localidade se precisar evacuar' }, { n: 2, text: 'sempre sair para conferir o rio pessoalmente' }, { n: 3, text: 'ignorar porque são apenas anúncios comerciais' }, { n: 4, text: 'ligar para 110 para perguntar a previsão' }], answer: 1, explanationPt: 'A TIPS fala de avisos de chuva, inundação, neve, vento, tsunami, vulcão, terremoto e calor extremo.' },
+    { id: 'iro-pi-l12-49', number: 49, prompt: 'TIPS: sobre 「～歳」 e 「～才」, qual afirmação está correta?', choices: [{ n: 1, text: '～歳 é a forma oficial para idade; ～才 é mais simples e aparece em contextos infantis, casuais ou manuscritos' }, { n: 2, text: '～才 é sempre a única forma oficial' }, { n: 3, text: 'as duas formas têm leituras diferentes' }, { n: 4, text: 'nenhuma delas indica idade' }], answer: 1, explanationPt: 'O material recomenda ～歳 em situações oficiais, mas reconhece o uso casual de ～才.' },
+    { id: 'iro-pi-l12-50', number: 50, prompt: 'TIPS: 緊急時の電話番号 nesta lição remete principalmente a:', choices: [{ n: 1, text: 'saber quando usar 110 e 119 em emergência no Japão' }, { n: 2, text: 'saber como pagar conta de luz falsa' }, { n: 3, text: 'saber como criar conta em app de tandem' }, { n: 4, text: 'saber como comprar ingresso de concerto' }], answer: 1, explanationPt: 'A Lição 12 pratica diretamente 119 para incêndio/ambulância e 110 para polícia.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -2877,6 +2938,354 @@ const L11_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L12_SCRIPTS: Record<string, ScriptItem[]> = {
+  '12-01': [
+    {
+      label: '① 100円ショップで - 衣類圧縮袋 (12-01)',
+      setupPt: 'No 100円ショップ, uma pessoa ajuda como intérprete para um cliente que fala inglês.',
+      lines: [
+        { speaker: 'A', ja: 'あの、{何|なに}かお{困|こま}りですか？', pt: 'Com licença, está com algum problema?' },
+        { speaker: 'B', ja: 'あ、こちらのお{客様|きゃくさま}が、{日本語|にほんご}がわからないみたいで。{英語|えいご}を{話|はな}されているんですけど、よくわからなくて……。', pt: 'Ah, este cliente parece não entender japonês. Ele está falando inglês, mas eu não entendo bem...' },
+        { speaker: 'A', ja: 'よかったら、{私|わたし}、{通訳|つうやく}しましょうか？ {私|わたし}、{英語|えいご}わかるので。', pt: 'Se quiser, posso interpretar. Eu entendo inglês.' },
+        { speaker: 'B', ja: 'あ、いいですか？ お{願|ねが}いします。', pt: 'Ah, pode? Por favor.' },
+        { speaker: 'A', ja: 'えっと、{服|ふく}を{圧縮|あっしゅく}できる{袋|ふくろ}が{買|か}いたいそうです。{服|ふく}をスーツケースに{入|い}れるときに{使|つか}うやつって{言|い}ってます。', pt: 'Ele diz que quer comprar sacos que comprimem roupas. Aqueles usados ao colocar roupas na mala.' },
+        { speaker: 'B', ja: 'ああ、{衣類|いるい}の{圧縮袋|あっしゅくぶくろ}ですね。ご{案内|あんない}します。', pt: 'Ah, sacos de compressão para roupas. Eu mostro onde ficam.' },
+      ],
+    },
+  ],
+  '12-02': [
+    {
+      label: '② 駅で - ベビーカー (12-02)',
+      setupPt: 'Na estação, alguém oferece ajuda para carregar um carrinho de bebê.',
+      lines: [
+        { speaker: 'A', ja: 'あ、ベビーカー、{持|も}ちましょうか？', pt: 'Ah, quer que eu carregue o carrinho?' },
+        { speaker: 'B', ja: 'あ、ありがとうございます。{助|たす}かります。', pt: 'Ah, muito obrigado. Ajuda muito.' },
+        { speaker: 'A', ja: 'よいしょ！', pt: 'Força!' },
+        { speaker: 'B', ja: 'ありがとうございました。', pt: 'Muito obrigado.' },
+        { speaker: 'A', ja: 'いえ。{南口|みなみぐち}は、{階段|かいだん}しかなくて、{不便|ふべん}ですよね。', pt: 'De nada. A saída sul só tem escada, é inconveniente, não é?' },
+        { speaker: 'B', ja: 'はい……。{本当|ほんとう}に{助|たす}かりました。', pt: 'Sim... Ajudou de verdade.' },
+        { speaker: 'A', ja: 'じゃあ、お{気|き}をつけて。', pt: 'Então, tome cuidado.' },
+      ],
+    },
+  ],
+  '12-03': [
+    {
+      label: '③ 道で - 近代美術館 (12-03)',
+      setupPt: 'Na rua, duas pessoas estão perdidas tentando ir ao museu de arte moderna.',
+      lines: [
+        { speaker: 'A', ja: 'えーと、ここを{右|みぎ}に{曲|ま}がればいいのかな？', pt: 'Hmm, será que é só virar à direita aqui?' },
+        { speaker: 'B', ja: 'うーん、この{地図|ちず}だとよくわからないねえ。', pt: 'Hmm, por este mapa não dá para entender bem.' },
+        { speaker: 'C', ja: 'あの、だいじょうぶですか？ どちらに{行|い}かれるんですか？', pt: 'Com licença, está tudo bem? Para onde querem ir?' },
+        { speaker: 'A', ja: 'あ、{近代美術館|きんだいびじゅつかん}に{行|い}きたいんですけど、{道|みち}がわからなくなってしまって……。', pt: 'Ah, queremos ir ao museu de arte moderna, mas nos perdemos...' },
+        { speaker: 'C', ja: '{近代美術館|きんだいびじゅつかん}ですね。{私|わたし}も{同|おな}じ{方向|ほうこう}に{行|い}くので、{途中|とちゅう}まで{案内|あんない}しますよ。', pt: 'Museu de arte moderna, certo. Eu também vou na mesma direção, então guio vocês até parte do caminho.' },
+        { speaker: 'B', ja: 'あ、すみません。ありがとうございます。', pt: 'Ah, desculpe. Muito obrigado.' },
+        { speaker: 'C', ja: '{近代美術館|きんだいびじゅつかん}は、この{先|さき}です。', pt: 'O museu fica mais adiante.' },
+        { speaker: 'A', ja: 'どうもありがとう。{助|たす}かりました。', pt: 'Muito obrigado. Você nos ajudou.' },
+      ],
+    },
+  ],
+  '12-04': [
+    {
+      label: '④ 駐輪場で - 自転車の鍵 (12-04)',
+      setupPt: 'No estacionamento de bicicletas, alguém perdeu a chave da bicicleta.',
+      lines: [
+        { speaker: 'A', ja: 'あのー、{何|なに}かお{探|さが}しですか？', pt: 'Com licença, está procurando alguma coisa?' },
+        { speaker: 'B', ja: 'あ、{自転車|じてんしゃ}の{鍵|かぎ}をなくしちゃったみたいで……。', pt: 'Ah, parece que perdi a chave da bicicleta...' },
+        { speaker: 'A', ja: 'え、{鍵|かぎ}ですか？ {私|わたし}もちょっと{探|さが}してみますね。{自転車|じてんしゃ}の{鍵|かぎ}ですよね？', pt: 'Chave? Vou procurar um pouco também. É a chave da bicicleta, certo?' },
+        { speaker: 'B', ja: 'あ、すみません。えっと、{普通|ふつう}の{自転車|じてんしゃ}の{鍵|かぎ}で、えっと、はにわのキーホルダーがついてます。', pt: 'Ah, desculpe. É uma chave comum de bicicleta, com um chaveiro de haniwa.' },
+        { speaker: 'A', ja: 'はにわ……？', pt: 'Haniwa...?' },
+        { speaker: 'B', ja: 'あ……{茶色|ちゃいろ}い{人形|にんぎょう}みたいなやつです。', pt: 'Ah... é algo como uma bonequinha marrom.' },
+        { speaker: 'A', ja: '{人形|にんぎょう}ですか……。', pt: 'Uma boneca...' },
+        { speaker: 'A', ja: 'あ！ これですか？', pt: 'Ah! É isto?' },
+        { speaker: 'B', ja: 'あ、そうです。よかった！ どうもありがとうございます。', pt: 'Ah, é isso. Que bom! Muito obrigado.' },
+      ],
+    },
+  ],
+  '12-05': [
+    {
+      label: '形に注目 - おVです (12-05)',
+      lines: [
+        { speaker: 'A', ja: '{何|なに}かお{困|こま}りですか？', pt: 'Está com algum problema?' },
+        { speaker: 'A', ja: '{何|なに}かお{探|さが}しですか？', pt: 'Está procurando alguma coisa?' },
+      ],
+    },
+  ],
+  '12-06': [
+    {
+      label: '形に注目 - V-(ら)れる (12-06)',
+      lines: [
+        { speaker: 'B', ja: 'こちらのお{客様|きゃくさま}が、{英語|えいご}を{話|はな}されているんですけど、よくわからなくて……。', pt: 'Este cliente está falando inglês, mas eu não entendo bem...' },
+        { speaker: 'C', ja: 'どちらに{行|い}かれるんですか？', pt: 'Para onde querem ir?' },
+      ],
+    },
+  ],
+  '12-07': [
+    {
+      label: '話すモデル - 困っている人に声をかける (12-07)',
+      lines: [
+        { speaker: 'A', ja: '{何|なに}かお{困|こま}りですか？', pt: 'Está com algum problema?' },
+        { speaker: 'B', ja: '{道|みち}がわからなくなってしまって……。', pt: 'Acabei me perdendo...' },
+        { speaker: 'A', ja: '{私|わたし}も{同|おな}じ{方向|ほうこう}に{行|い}くので、{途中|とちゅう}まで{案内|あんない}しますよ。', pt: 'Também vou na mesma direção, então guio você até parte do caminho.' },
+        { speaker: 'B', ja: 'ありがとうございます。{助|たす}かります。', pt: 'Obrigado. Ajuda muito.' },
+      ],
+    },
+  ],
+  '12-08': [
+    {
+      label: '話すモデル - 探し物を手伝う (12-08)',
+      lines: [
+        { speaker: 'A', ja: '{何|なに}かお{探|さが}しですか？', pt: 'Está procurando alguma coisa?' },
+        { speaker: 'B', ja: '{自転車|じてんしゃ}の{鍵|かぎ}をなくしちゃったみたいで……。', pt: 'Parece que perdi a chave da bicicleta...' },
+        { speaker: 'A', ja: '{私|わたし}もちょっと{探|さが}してみますね。', pt: 'Vou procurar um pouco também.' },
+        { speaker: 'B', ja: 'どうもありがとうございます。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
+  '12-09': [
+    {
+      label: 'ことば - 事件・犯罪 (12-09)',
+      lines: [
+        { speaker: '語彙', ja: '{泥棒|どろぼう}／{盗|ぬす}まれた／ひったくり／すられた', pt: 'ladrão / foi roubado / roubo por arrancada / foi furtado por batedor de carteira' },
+        { speaker: '語彙', ja: '{痴漢|ちかん}／{暴行|ぼうこう}／{不審|ふしん}な{人|ひと}', pt: 'molestador / agressão / pessoa suspeita' },
+      ],
+    },
+  ],
+  '12-10': [
+    {
+      label: 'ことば - 事故 (12-10)',
+      lines: [
+        { speaker: '語彙', ja: 'ぶつけた／はねられた／ひき{逃|に}げ／{転倒|てんとう}', pt: 'bateu/colidiu / foi atingido ou atropelado / fuga após acidente / queda' },
+        { speaker: '語彙', ja: '{事故|じこ}です。{自転車|じてんしゃ}に{乗|の}ってて、{車|くるま}にぶつかりました。', pt: 'É um acidente. Eu estava de bicicleta e bati em um carro.' },
+      ],
+    },
+  ],
+  '12-11': [
+    {
+      label: 'ことば - 火事・けが (12-11)',
+      lines: [
+        { speaker: '語彙', ja: '{煙|けむり}／{火|ひ}／{燃|も}えている／{山火事|やまかじ}', pt: 'fumaça / fogo / está queimando / incêndio florestal' },
+        { speaker: '語彙', ja: '{倒|たお}れている／けが／{痛|いた}い／{苦|くる}しい', pt: 'está caído / ferimento / dói / está sofrendo ou com dificuldade' },
+      ],
+    },
+  ],
+  '12-12': [
+    {
+      label: 'ことば - 110番・119番 (12-12)',
+      lines: [
+        { speaker: '語彙', ja: '119{番|ばん}／110{番|ばん}／{火事|かじ}／{救急|きゅうきゅう}', pt: '119 / 110 / incêndio / emergência médica' },
+        { speaker: '語彙', ja: '{救急車|きゅうきゅうしゃ}をお{願|ねが}いします。', pt: 'Por favor, mande uma ambulância.' },
+      ],
+    },
+  ],
+  '12-13': [
+    {
+      label: '会話1 - 119番に電話する (12-13)',
+      setupPt: '宋 liga para 119 ao encontrar uma senhora caída na entrada de um parque.',
+      lines: [
+        { speaker: '係員', ja: 'はい、119{番消防署|ばんしょうぼうしょ}です。{火事|かじ}ですか？ {救急|きゅうきゅう}ですか？', pt: '119, Corpo de Bombeiros. É incêndio ou emergência médica?' },
+        { speaker: '宋', ja: 'あ、{救急|きゅうきゅう}です。{救急車|きゅうきゅうしゃ}をお{願|ねが}いします。', pt: 'Ah, emergência médica. Por favor, mande uma ambulância.' },
+        { speaker: '係員', ja: '{救急車|きゅうきゅうしゃ}ですね。{住所|じゅうしょ}はどこですか？', pt: 'Ambulância, certo. Qual é o endereço?' },
+        { speaker: '宋', ja: 'すみません、{住所|じゅうしょ}はちょっとわかりません。{六日町|むいかまち}の{公園|こうえん}の{入口|いりぐち}のところです。', pt: 'Desculpe, não sei bem o endereço. É na entrada do parque de Muikamachi.' },
+        { speaker: '係員', ja: '{六日町|むいかまち}の{公園|こうえん}ですね。どうしましたか？', pt: 'Parque de Muikamachi, certo. O que aconteceu?' },
+        { speaker: '宋', ja: 'はい、{公園|こうえん}を{散歩|さんぽ}していたら、おばあさんが{倒|たお}れていました。{転|ころ}んで{足|あし}をけがしているようです。', pt: 'Sim, eu estava caminhando no parque e havia uma senhora caída. Parece que ela caiu e machucou a perna.' },
+        { speaker: '係員', ja: 'おばあさんは、{意識|いしき}がありますか？', pt: 'A senhora tem consciência?' },
+        { speaker: '宋', ja: 'はい、{意識|いしき}はあります。ずっと「{痛|いた}い、{痛|いた}い」と{言|い}って、とても{痛|いた}がっています。', pt: 'Sim, tem consciência. Ela fica dizendo "dói, dói" e parece estar com muita dor.' },
+        { speaker: '係員', ja: 'おばあさんは、{何歳|なんさい}ぐらいの{方|かた}ですか？', pt: 'A senhora tem mais ou menos quantos anos?' },
+        { speaker: '宋', ja: 'わかりませんが、たぶん80{歳|さい}ぐらいだと{思|おも}います。', pt: 'Não sei, mas acho que talvez uns 80 anos.' },
+        { speaker: '係員', ja: 'まわりに、だれかほかの{人|ひと}はいますか？', pt: 'Há mais alguém por perto?' },
+        { speaker: '宋', ja: 'いえ、{私|わたし}だけです。だから{私|わたし}が{電話|でんわ}しました。', pt: 'Não, só eu. Por isso eu liguei.' },
+        { speaker: '係員', ja: 'ありがとうございます。すぐ{救急車|きゅうきゅうしゃ}を{向|む}かわせます。{救急車|きゅうきゅうしゃ}が{到着|とうちゃく}するまで、そこにいてもらうことはできますか？', pt: 'Obrigado. Vamos mandar a ambulância imediatamente. Pode ficar aí até a ambulância chegar?' },
+        { speaker: '宋', ja: 'はい、だいじょうぶです。', pt: 'Sim, tudo bem.' },
+        { speaker: '係員', ja: 'すみませんが、{後|のち}ほど{連絡|れんらく}が{必要|ひつよう}な{場合|ばあい}がありますので、{電話番号|でんわばんごう}とお{名前|なまえ}を{聞|き}いてもよろしいですか？', pt: 'Desculpe, pode ser que precisemos entrar em contato depois, então posso perguntar seu telefone e nome?' },
+        { speaker: '宋', ja: 'はい、000-1234-5678です。{名前|なまえ}は、{宋|ソウ}です。{宋婉君|ソウエンクン}です。', pt: 'Sim, é 000-1234-5678. Meu nome é Song. Song Wanjun.' },
+        { speaker: '係員', ja: 'それでは、すぐに{救急車|きゅうきゅうしゃ}が{向|む}かいます。もう{少|すこ}しお{待|ま}ちください。', pt: 'Então a ambulância irá imediatamente. Aguarde só mais um pouco.' },
+      ],
+    },
+  ],
+  '12-14': [
+    {
+      label: '会話2 - 110番に電話する (12-14)',
+      setupPt: 'ティムール liga para 110 depois de um acidente de bicicleta com carro.',
+      lines: [
+        { speaker: '係員', ja: 'はい、110{番警察|ばんけいさつ}です。{事件|じけん}ですか？ {事故|じこ}ですか？', pt: '110, Polícia. É incidente ou acidente?' },
+        { speaker: 'ティムール', ja: 'あ、ええと……。', pt: 'Ah, bem...' },
+        { speaker: '係員', ja: 'どうしましたか？', pt: 'O que aconteceu?' },
+        { speaker: 'ティムール', ja: 'はい。{事故|じこ}です。えー、{自転車|じてんしゃ}に{乗|の}ってて、{車|くるま}にぶつかりました。', pt: 'Sim. É acidente. Eu estava de bicicleta e bati em um carro.' },
+        { speaker: '係員', ja: '{自転車|じてんしゃ}の{事故|じこ}ですね。{失礼|しつれい}ですが、{外国|がいこく}の{方|かた}ですか？', pt: 'Acidente de bicicleta, certo. Desculpe perguntar, você é estrangeiro?' },
+        { speaker: 'ティムール', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '係員', ja: '{日本語|にほんご}はわかりますか？', pt: 'Você entende japonês?' },
+        { speaker: 'ティムール', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '係員', ja: '{事故|じこ}はいつ{起|お}こりましたか？', pt: 'Quando aconteceu o acidente?' },
+        { speaker: 'ティムール', ja: '5{分|ふん}ぐらい{前|まえ}です。', pt: 'Há cerca de cinco minutos.' },
+        { speaker: '係員', ja: 'では、もう{少|すこ}しくわしく{教|おし}えてください。どんな{事故|じこ}ですか？', pt: 'Então explique com um pouco mais de detalhe. Que tipo de acidente foi?' },
+        { speaker: 'ティムール', ja: 'はい、えっと、{自転車|じてんしゃ}に{乗|の}っていました。{交差点|こうさてん}をまっすぐ{行|い}こうとしたら、{車|くるま}が{左|ひだり}に{曲|ま}がってきました。そこでぶつかりました。', pt: 'Sim, eu estava de bicicleta. Quando tentei seguir reto no cruzamento, um carro veio virando à esquerda. Aí batemos.' },
+        { speaker: '係員', ja: 'わかりました。けがはありませんか？', pt: 'Entendi. Você está ferido?' },
+        { speaker: 'ティムール', ja: 'ちょっとひざを{打|う}ちました。でもだいじょうぶです。', pt: 'Bati um pouco o joelho. Mas estou bem.' },
+        { speaker: '係員', ja: '{救急車|きゅうきゅうしゃ}も{呼|よ}びますか？', pt: 'Também chamamos uma ambulância?' },
+        { speaker: 'ティムール', ja: 'あ、だいじょうぶです。', pt: 'Ah, não precisa.' },
+        { speaker: '係員', ja: '{自動車|じどうしゃ}の{運転手|うんてんしゅ}の{方|かた}も{今|いま}そこにいますか？', pt: 'O motorista do carro também está aí agora?' },
+        { speaker: 'ティムール', ja: 'いえ、{自動車|じどうしゃ}は、いなくなってしまいました。', pt: 'Não, o carro foi embora.' },
+        { speaker: '係員', ja: 'それはひどいですね。{車|くるま}の{車種|しゃしゅ}とか{色|いろ}とかはわかりますか？ あと{運転手|うんてんしゅ}が{男性|だんせい}か{女性|じょせい}かとか、ナンバーとか、{何|なん}でもいいので、{何|なに}か{覚|おぼ}えていませんか？', pt: 'Isso é terrível. Você sabe o tipo ou cor do carro? Ou se o motorista era homem ou mulher, placa, qualquer coisa. Lembra de algo?' },
+        { speaker: 'ティムール', ja: 'すみません、よくわかりません。{白|しろ}い{車|くるま}だったと{思|おも}います。', pt: 'Desculpe, não sei bem. Acho que era um carro branco.' },
+        { speaker: '係員', ja: '{今|いま}からそちらに{向|む}かいますが、{住所|じゅうしょ}はわかりますか？', pt: 'Vamos até aí agora. Você sabe o endereço?' },
+        { speaker: 'ティムール', ja: 'えっと、ちょっと{住所|じゅうしょ}はわかりません。{交差点|こうさてん}にガソリンスタンドがあります。', pt: 'Bem, não sei o endereço. Há um posto de gasolina no cruzamento.' },
+        { speaker: '係員', ja: '{交差点|こうさてん}の{名前|なまえ}はわかりますか？', pt: 'Sabe o nome do cruzamento?' },
+        { speaker: 'ティムール', ja: 'えっと……あ、さくら{町|まち}2{丁目|ちょうめ}と{書|か}いてあります。', pt: 'Bem... Ah, está escrito Sakura-machi 2-chome.' },
+        { speaker: '係員', ja: 'さくら{町|まち}2{丁目交差点|ちょうめこうさてん}ですね。わかりました。お{名前|なまえ}と{電話番号|でんわばんごう}を{聞|き}いてもいいですか？', pt: 'Cruzamento Sakura-machi 2-chome, certo. Entendi. Posso perguntar seu nome e telefone?' },
+        { speaker: 'ティムール', ja: 'はい、{名前|なまえ}はティムールです。{電話番号|でんわばんごう}は、000-9876-5432です。', pt: 'Sim, meu nome é Temur. Meu telefone é 000-9876-5432.' },
+        { speaker: '係員', ja: 'それでは、すぐに{向|む}かいますので、{安全|あんぜん}なところで{待|ま}っていてください。', pt: 'Então vamos até aí imediatamente. Espere em um lugar seguro.' },
+        { speaker: 'ティムール', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '12-15': [
+    {
+      label: '形に注目 - Sようだ (12-15)',
+      lines: [
+        { speaker: '宋', ja: '{転|ころ}んで{足|あし}をけがしているようです。', pt: 'Parece que ela caiu e machucou a perna.' },
+      ],
+    },
+  ],
+  '12-16': [
+    {
+      label: '形に注目 - イA-がる (12-16)',
+      lines: [
+        { speaker: '宋', ja: 'ずっと「{痛|いた}い、{痛|いた}い」と{言|い}って、とても{痛|いた}がっています。', pt: 'Ela fica dizendo "dói, dói" e parece estar com muita dor.' },
+      ],
+    },
+  ],
+  '12-17': [
+    {
+      label: '形に注目 - V-(さ)せる (12-17)',
+      lines: [
+        { speaker: '係員', ja: 'すぐ{救急車|きゅうきゅうしゃ}を{向|む}かわせます。', pt: 'Vamos mandar a ambulância imediatamente.' },
+      ],
+    },
+  ],
+  '12-18': [
+    {
+      label: '話すモデル - 119番に電話する (12-18)',
+      lines: [
+        { speaker: '係員', ja: '119{番消防署|ばんしょうぼうしょ}です。{火事|かじ}ですか？ {救急|きゅうきゅう}ですか？', pt: '119, Corpo de Bombeiros. É incêndio ou emergência médica?' },
+        { speaker: 'A', ja: '{救急|きゅうきゅう}です。{救急車|きゅうきゅうしゃ}をお{願|ねが}いします。', pt: 'É emergência médica. Por favor, mande uma ambulância.' },
+        { speaker: '係員', ja: '{場所|ばしょ}はどこですか？', pt: 'Onde é o local?' },
+        { speaker: 'A', ja: '{六日町|むいかまち}の{公園|こうえん}です。', pt: 'É no parque de Muikamachi.' },
+        { speaker: '係員', ja: 'どうしましたか？', pt: 'O que aconteceu?' },
+        { speaker: 'A', ja: '{人|ひと}が{倒|たお}れています。', pt: 'Há uma pessoa caída.' },
+      ],
+    },
+  ],
+  '12-19': [
+    {
+      label: '話すモデル - 110番に電話する (12-19)',
+      lines: [
+        { speaker: '係員', ja: '110{番警察|ばんけいさつ}です。{事件|じけん}ですか？ {事故|じこ}ですか？', pt: '110, Polícia. É incidente ou acidente?' },
+        { speaker: 'A', ja: '{事故|じこ}です。{自転車|じてんしゃ}に{乗|の}ってて、{車|くるま}にぶつかりました。', pt: 'É acidente. Eu estava de bicicleta e bati em um carro.' },
+        { speaker: '係員', ja: '{事故|じこ}はいつ{起|お}こりましたか？', pt: 'Quando aconteceu o acidente?' },
+        { speaker: 'A', ja: '5{分|ふん}ぐらい{前|まえ}です。', pt: 'Há cerca de cinco minutos.' },
+        { speaker: '係員', ja: '{安全|あんぜん}なところで{待|ま}っていてください。', pt: 'Espere em um lugar seguro.' },
+      ],
+    },
+  ],
+  '12-20': [
+    {
+      label: '① 駅で転んで、ねんざした (12-20)',
+      setupPt: 'Uma pessoa conta que caiu na escada da estação durante o trajeto para o trabalho.',
+      lines: [
+        { speaker: 'A', ja: '{新|あたら}しい{会社|かいしゃ}はどう？ もう{慣|な}れた？', pt: 'Como está a empresa nova? Já se acostumou?' },
+        { speaker: 'B', ja: 'うん、{仕事|しごと}には{慣|な}れてきた。でも、{実|じつ}は、この{間|あいだ}、{通勤中|つうきんちゅう}に{駅|えき}で{転|ころ}んじゃって、{足|あし}をねんざしちゃった。', pt: 'Sim, estou me acostumando ao trabalho. Mas, na verdade, outro dia caí na estação durante o trajeto e torci o pé.' },
+        { speaker: 'A', ja: 'えー！ だいじょうぶ？', pt: 'Nossa! Você está bem?' },
+        { speaker: 'B', ja: 'うん。{今|いま}は、だいぶよくなったよ。', pt: 'Sim. Agora já melhorei bastante.' },
+        { speaker: 'A', ja: 'そう、よかった。', pt: 'Ah, que bom.' },
+        { speaker: 'B', ja: '{駅|えき}の{階段|かいだん}を{下|お}りているときに、{足|あし}を{踏|ふ}み{外|はず}しちゃったんだ。ちょっとスマホを{見|み}てたから……。', pt: 'Quando estava descendo a escada da estação, pisei errado. Eu estava olhando um pouco o celular...' },
+        { speaker: 'A', ja: 'それは、だめだね。', pt: 'Isso não pode, né.' },
+        { speaker: 'B', ja: 'うん……。すごく{痛|いた}くて、{動|うご}けなかった。そうしたら、{近|ちか}くにいた{人|ひと}たちが「だいじょうぶですか？」って{声|こえ}をかけてくれたり、{駅員|えきいん}さんを{呼|よ}んでくれたりしたよ。', pt: 'Sim... Doeu muito e eu não conseguia me mexer. Então pessoas que estavam por perto perguntaram se eu estava bem e chamaram o funcionário da estação.' },
+        { speaker: 'A', ja: 'そう。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'それから、{救急車|きゅうきゅうしゃ}で{病院|びょういん}に{運|はこ}ばれたんだ。そこで、{治|なお}るのに2か{月|げつ}ぐらいかかるって{言|い}われた。', pt: 'Depois fui levado ao hospital de ambulância. Lá me disseram que levaria cerca de dois meses para curar.' },
+        { speaker: 'A', ja: 'えー、けっこうひどいねんざだったんだね。', pt: 'Nossa, foi uma torção bem séria, então.' },
+        { speaker: 'B', ja: 'うん。やっぱり、スマホを{見|み}ながら{歩|ある}くのはだめだって、{反省|はんせい}した。', pt: 'Sim. Refleti que andar olhando o celular realmente não dá.' },
+        { speaker: 'A', ja: 'そうだよ。{気|き}をつけてね。{本当|ほんとう}に{危|あぶ}ないから。', pt: 'É isso mesmo. Tome cuidado, porque é realmente perigoso.' },
+      ],
+    },
+  ],
+  '12-21': [
+    {
+      label: '② 大雨が降って、大変だった (12-21)',
+      setupPt: 'Uma pessoa conta que precisou evacuar dentro do prédio por causa de alerta de chuva forte.',
+      lines: [
+        { speaker: 'A', ja: 'この{間|あいだ}の{大雨|おおあめ}、だいじょうぶでしたか？', pt: 'Você ficou bem naquela chuva forte outro dia?' },
+        { speaker: 'B', ja: 'うん、だいじょうぶだったよ。', pt: 'Sim, fiquei bem.' },
+        { speaker: 'A', ja: 'そうですか。うちは、{大変|たいへん}だったんですよ。', pt: 'Entendi. Na minha casa foi complicado.' },
+        { speaker: 'B', ja: 'え、どうしたの？', pt: 'O quê? O que aconteceu?' },
+        { speaker: 'A', ja: 'あのとき、{大雨|おおあめ}……{大雨|おおあめ}なんとかが{出|で}たじゃないですか。', pt: 'Naquele momento, chuva forte... saiu aquele "alguma coisa" de chuva forte, não foi?' },
+        { speaker: 'B', ja: 'ああ、{大雨警報|おおあめけいほう}？', pt: 'Ah, alerta de chuva forte?' },
+        { speaker: 'A', ja: 'あ、そうです。{大雨警報|おおあめけいほう}が{出|で}て、アパートの{大家|おおや}さんが{心配|しんぱい}して、{部屋|へや}に{来|き}てくれたんです。{私|わたし}、アパートの1{階|かい}に{住|す}んでるので。', pt: 'Isso. Saiu alerta de chuva forte, e o dono do apartamento ficou preocupado e veio ao meu quarto. Eu moro no primeiro andar.' },
+        { speaker: 'B', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'A', ja: 'それで、1{階|かい}は{危|あぶ}ないって{言|い}われて、1{階|かい}の{人|ひと}はみんな2{階|かい}の{空|あ}き{部屋|べや}に{避難|ひなん}することになったんです。', pt: 'Então disseram que o primeiro andar era perigoso, e todos do primeiro andar tiveram que evacuar para um quarto vazio no segundo andar.' },
+        { speaker: 'B', ja: 'それは、{大変|たいへん}だったね。', pt: 'Isso foi difícil.' },
+        { speaker: 'A', ja: 'はい。でも、そのあと、{雨|あめ}がおさまってきたので、{夜|よる}は{自分|じぶん}の{部屋|へや}で{寝|ね}れました。', pt: 'Sim. Mas depois a chuva acalmou, então à noite consegui dormir no meu quarto.' },
+        { speaker: 'B', ja: 'そうなんだ。とにかく、{無事|ぶじ}でよかった。', pt: 'Entendi. De todo modo, que bom que você ficou bem.' },
+        { speaker: 'A', ja: 'はい。{災害|さいがい}に{備|そな}えることは{大切|たいせつ}だと{思|おも}いました。{私|わたし}も、{災害|さいがい}に{備|そな}えて{防災|ぼうさい}リュックを{買|か}うことにしました。', pt: 'Sim. Achei importante se preparar para desastres. Eu também decidi comprar uma mochila de emergência para me preparar.' },
+        { speaker: 'B', ja: 'それは、{大事|だいじ}だね。', pt: 'Isso é importante.' },
+      ],
+    },
+  ],
+  '12-22': [
+    {
+      label: '③ 置き引きにあった (12-22)',
+      setupPt: 'バチカ conta que sofreu furto por descuido no shinkansen de volta de uma viagem de trabalho.',
+      lines: [
+        { speaker: 'A', ja: 'バチカさん、おはようございます。{出張|しゅっちょう}、お{疲|つか}れさまでした。', pt: 'Bachika, bom dia. Obrigado pelo esforço na viagem de trabalho.' },
+        { speaker: 'B', ja: 'あ、ソーンさん、おはよう。', pt: 'Ah, Song, bom dia.' },
+        { speaker: 'A', ja: '{出張|しゅっちょう}、どうでしたか？', pt: 'Como foi a viagem de trabalho?' },
+        { speaker: 'B', ja: 'いやー、{仕事|しごと}は{問題|もんだい}なかったんだけど、{出張|しゅっちょう}から{帰|かえ}る{新幹線|しんかんせん}で、{置|お}き{引|び}きにあっちゃって……。', pt: 'Bem, o trabalho não teve problema, mas no shinkansen de volta sofri furto por descuido...' },
+        { speaker: 'A', ja: 'えっ、{置|お}き{引|び}き？ {泥棒|どろぼう}ってことですか？', pt: 'O quê, furto por descuido? Quer dizer roubo?' },
+        { speaker: 'B', ja: 'うん……。{帰|かえ}りの{新幹線|しんかんせん}で、トイレに{行|い}って、{戻|もど}ってきたら、お{土産|みやげ}の{紙袋|かみぶくろ}がなかったんだよ。', pt: 'Sim... No shinkansen de volta, fui ao banheiro e, quando voltei, a sacola de lembranças não estava mais lá.' },
+        { speaker: 'A', ja: 'えー！ じゃあ、お{土産|みやげ}ないんですか？', pt: 'Nossa! Então não tem lembrança?' },
+        { speaker: 'B', ja: 'うん、ごめんね。{新幹線|しんかんせん}、すいてたから、{隣|となり}の{席|せき}に{紙袋|かみぶくろ}を{置|お}いちゃったんだ……。', pt: 'Sim, desculpe. O shinkansen estava vazio, então deixei a sacola no assento ao lado...' },
+        { speaker: 'A', ja: 'そうですか。それで、どうしたんですか？', pt: 'Entendi. E então, o que você fez?' },
+        { speaker: 'B', ja: '{車掌|しゃしょう}さんに{相談|そうだん}した。そうしたら、「{警察|けいさつ}に{届|とど}けてください」って{言|い}われたよ。', pt: 'Falei com o condutor. Então me disseram para avisar a polícia.' },
+        { speaker: 'A', ja: 'ふーん。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'それで、{警察|けいさつ}に{被害届|ひがいとどけ}を{出|だ}しに{行|い}った。', pt: 'Então fui à polícia apresentar um boletim de ocorrência.' },
+        { speaker: 'A', ja: '{大変|たいへん}でしたね。', pt: 'Foi difícil, hein.' },
+        { speaker: 'B', ja: '{日本|にほん}は{安全|あんぜん}な{国|くに}だと{思|おも}ってたけど、やっぱり{気|き}をつけないといけないね。', pt: 'Eu achava que o Japão era um país seguro, mas é preciso tomar cuidado mesmo assim.' },
+        { speaker: 'A', ja: 'そうですね。{私|わたし}も{気|き}をつけます。', pt: 'É verdade. Eu também vou tomar cuidado.' },
+      ],
+    },
+  ],
+  '12-23': [
+    {
+      label: '形に注目 - V-ることにする (12-23)',
+      lines: [
+        { speaker: 'A', ja: '{私|わたし}も、{災害|さいがい}に{備|そな}えて{防災|ぼうさい}リュックを{買|か}うことにしました。', pt: 'Eu também decidi comprar uma mochila de emergência para me preparar para desastres.' },
+      ],
+    },
+  ],
+  '12-24': [
+    {
+      label: 'ストラテジー - ことばを忘れたとき「なんとか」を使う (12-24)',
+      lines: [
+        { speaker: 'A', ja: '{大雨|おおあめ}……{大雨|おおあめ}なんとかが{出|で}たじゃないですか。', pt: 'Chuva forte... saiu aquele "alguma coisa" de chuva forte, não foi?' },
+        { speaker: 'B', ja: 'ああ、{大雨警報|おおあめけいほう}？', pt: 'Ah, alerta de chuva forte?' },
+        { speaker: 'A', ja: 'そうです。{大雨警報|おおあめけいほう}です。', pt: 'Isso. Alerta de chuva forte.' },
+        { speaker: 'B', ja: '{警察|けいさつ}に、なんとか{届|とどけ}を{出|だ}しに{行|い}った。', pt: 'Fui à polícia entregar aquele "alguma coisa"-t届.' },
+        { speaker: 'A', ja: '{被害届|ひがいとどけ}？', pt: 'Boletim de ocorrência?' },
+      ],
+    },
+  ],
+  '12-25': [
+    {
+      label: '話すモデル - 最近あった大変なことを話す (12-25)',
+      lines: [
+        { speaker: 'A', ja: '{最近|さいきん}、{何|なに}か{大変|たいへん}なことがありましたか？', pt: 'Aconteceu algo difícil recentemente?' },
+        { speaker: 'B', ja: 'この{間|あいだ}、{駅|えき}で{転|ころ}んで、{足|あし}をねんざしちゃいました。', pt: 'Outro dia caí na estação e torci o pé.' },
+        { speaker: 'A', ja: 'えー、だいじょうぶですか？', pt: 'Nossa, você está bem?' },
+        { speaker: 'B', ja: '{今|いま}はだいぶよくなりました。やっぱり、スマホを{見|み}ながら{歩|ある}くのはだめだと{反省|はんせい}しました。', pt: 'Agora já melhorei bastante. Refleti que andar olhando o celular não dá.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -4077,6 +4486,134 @@ const lesson11: Section = {
   audios: attachScripts(11, L11_SCRIPTS),
 }
 
+const lesson12: Section = {
+  id: 'lesson-12',
+  level: 'pre-intermediate',
+  titleJa: '第12課 救急車をお願いします',
+  titlePt: 'Lição 12 - Por favor, mande uma ambulância',
+  summaryPt:
+    'O que fazer nestas situações? · oferecer ajuda a pessoas com problema, ligar para 110/119 em emergência e relatar incidentes, acidentes ou desastres recentes.',
+  studyNotes: [
+    {
+      title: 'Tópico: O que fazer nestas situações? (こんなときどうする？)',
+      bodyPt:
+        'Pergunta de abertura: {日本|にほん}で、{災害|さいがい}や{事故|じこ}、{事件|じけん}にあったとき、どうしたらいいか{知|し}っていますか？\n\n' +
+        '## Can-do\n' +
+        '- Oferecer ajuda a alguém que parece estar com problema.\n' +
+        '- Ligar para 110/119 em emergência e pedir polícia ou ambulância usando frases simples.\n' +
+        '- Conversar em algum detalhe sobre um incidente recente, explicando o que aconteceu e como reagiu.',
+    },
+    {
+      title: 'Atividade 1: 何かお困りですか？',
+      bodyPt:
+        'Quatro cenas mostram como abordar alguém com cuidado e oferecer ajuda.\n\n' +
+        '| Faixa | Situação | Problema | Como ajuda |\n|---|---|---|---|\n' +
+        '| 12-01 | 100円ショップで | o cliente fala inglês e procura 衣類の圧縮袋 | oferece 通訳 porque entende inglês |\n' +
+        '| 12-02 | 駅で | pessoa com ベビーカー precisa usar escada | carrega o carrinho; diz よいしょ |\n' +
+        '| 12-03 | 道で | turistas querem ir ao 近代美術館, mas se perderam | pergunta どちらに行かれるんですか e guia até parte do caminho |\n' +
+        '| 12-04 | 駐輪場で | perdeu a 自転車の鍵 com chaveiro de はにわ | ajuda a procurar e encontra a chave |\n\n' +
+        'A lição evita uma abordagem brusca. Em vez disso usa frases respeitosas: `何かお困りですか？`, `何かお探しですか？`, `持ちましょうか？`.',
+    },
+    {
+      title: 'Gramática ➊➋: formas respeitosas para abordar alguém',
+      bodyPt:
+        '**おVです** é forma respeitosa de `V-ています`, usada para descrever a situação atual de alguém que você não conhece bem ou alguém superior.\n\n' +
+        '- `何かお困りですか？` = Está com algum problema?\n' +
+        '- `何かお探しですか？` = Está procurando alguma coisa?\n\n' +
+        '**V-(ら)れる** também pode ser 尊敬語. A forma é igual à passiva, mas aqui expressa respeito pela ação da outra pessoa.\n\n' +
+        '- `英語を話されているんですけど...` = ele/ela está falando inglês...\n' +
+        '- `どちらに行かれるんですか？` = para onde o(a) senhor(a) vai?',
+    },
+    {
+      title: 'Atividade 2: 110番／119番に電話する',
+      bodyPt:
+        'A atividade separa duas emergências.\n\n' +
+        '| Número | Uso | Primeira confirmação |\n|---|---|---|\n' +
+        '| 119番 | 消防署: 火事 ou 救急／救急車 | `火事ですか？ 救急ですか？` |\n' +
+        '| 110番 | 警察: 事件 ou 事故 | `事件ですか？ 事故ですか？` |\n\n' +
+        'Vocabulário de 110番: {泥棒|どろぼう}, {盗|ぬす}まれる, ひったくり, すられる, {痴漢|ちかん}, {暴行|ぼうこう}, {不審|ふしん}な{人|ひと}, ぶつける, はねられる, ひき{逃|に}げ, {転倒|てんとう}.\n\n' +
+        'Vocabulário de 119番: {煙|けむり}, {火|ひ}, {燃|も}えている, {山火事|やまかじ}, {倒|たお}れている, けが, {痛|いた}い, {苦|くる}しい.',
+    },
+    {
+      title: 'Diálogo 1: 119番 - 救急車をお願いします',
+      bodyPt:
+        '宋 liga para 119 porque viu uma senhora caída ao caminhar no parque.\n\n' +
+        '| Ordem | Informação | Resposta de 宋 |\n|---|---|---|\n' +
+        '| 1 | 火事か救急か | 救急 |\n' +
+        '| 2 | 場所 | 六日町の公園の入口; não sabe o endereço exato |\n' +
+        '| 3 | 何が起きたか | おばあさんが倒れていた; parece ter caído e machucado a perna |\n' +
+        '| 4 | 意識・様子 | 意識はある; diz 痛い e 痛がっている |\n' +
+        '| 5 | 年齢 | 80歳ぐらい |\n' +
+        '| 6 | ほかの人 | ninguém por perto; só 宋 |\n' +
+        '| 7 | 自分の名前と電話番号 | 宋婉君, 000-1234-5678 |\n\n' +
+        'Frases-chave: `救急車をお願いします`, `転んで足をけがしているようです`, `ずっと「痛い、痛い」と言って、とても痛がっています`, `すぐ救急車を向かわせます`.',
+    },
+    {
+      title: 'Diálogo 2: 110番 - 自転車の事故',
+      bodyPt:
+        'ティムール liga para 110 depois de um acidente de bicicleta.\n\n' +
+        '| Ordem | Informação | Resposta de ティムール |\n|---|---|---|\n' +
+        '| 1 | 事件か事故か | 事故 |\n' +
+        '| 2 | 何があったか | 自転車に乗っていて車にぶつかった |\n' +
+        '| 3 | 日本語がわかるか | わかる |\n' +
+        '| 4 | いつ起きたか | 5分ぐらい前 |\n' +
+        '| 5 | 事故の説明 | cruzamento: ele ia reto; carro virou à esquerda e bateu |\n' +
+        '| 6 | 救急車が必要か | não precisa; só bateu um pouco o joelho |\n' +
+        '| 7 | 車や運転手の特徴 | 車は白いと思う; não sabe placa nem motorista |\n' +
+        '| 8 | 場所 | さくら町2丁目交差点; há um posto de gasolina |\n' +
+        '| 9 | 自分の名前と電話番号 | ティムール, 000-9876-5432 |\n\n' +
+        'A conversa mostra que, mesmo sem endereço exato, é útil dizer pontos de referência como 交差点, ガソリンスタンド e placas do local.',
+    },
+    {
+      title: 'Gramática ➌➍➎: relatar estado e enviar ambulância',
+      bodyPt:
+        '**S（普通形）ようだ** relata uma conclusão baseada no que se vê ou na situação. É mais formal que `みたいだ` e aparece em relatos a atendentes.\n\n' +
+        '- `転んで足をけがしているようです。` = Parece que caiu e machucou a perna.\n\n' +
+        '**イA-がる** descreve emoção, sensação ou desejo percebido em outra pessoa. Para a própria dor, diz-se `痛い`; para outra pessoa, `痛がっている`.\n\n' +
+        '- `とても痛がっています。` = Parece estar com muita dor.\n\n' +
+        '**V-(さ)せる** aqui é causativo de ordem/ação dirigida. `救急車が向かう` vira `救急車を向かわせる`: o atendente manda a ambulância ir ao local.\n\n' +
+        '- `すぐ救急車を向かわせます。` = Vamos mandar a ambulância imediatamente.',
+    },
+    {
+      title: 'Atividade 3: 置き引きにあっちゃって...',
+      bodyPt:
+        'Três relatos organizam: o que aconteceu, detalhes, consequência e reflexão.\n\n' +
+        '| Faixa | Evento | Detalhes | Reflexão |\n|---|---|---|---|\n' +
+        '| 12-20 | 駅で転んで、ねんざした | desceu escada olhandoスマホ, pisou errado, não conseguia se mexer; pessoas chamaram 駅員; foi ao hospital de 救急車 | スマホを見ながら歩くのはだめ |\n' +
+        '| 12-21 | 大雨警報で避難した | mora no 1階; 大家 avisou; moradores do 1階 evacuaram para 空き部屋 no 2階; depois a chuva acalmou | 災害に備えることは大切; decidiu comprar 防災リュック |\n' +
+        '| 12-22 | 置き引きにあった | no shinkansen de volta da 出張, deixou お土産の紙袋 no assento ao lado; ao voltar do banheiro, sumiu | 日本は安全でも気をつける; entregou 被害届 |\n\n' +
+        'O padrão de fala é útil para contar experiências: contexto → problema → ajuda/reação → resultado → lição aprendida.',
+    },
+    {
+      title: 'Gramática ➏ e estratégia: V-ることにする／なんとか',
+      bodyPt:
+        '**V-ることにする** expressa uma decisão própria. A forma negativa é **V-ないことにする**.\n\n' +
+        '- `災害に備えて防災リュックを買うことにしました。` = Decidi comprar uma mochila de emergência para me preparar para desastres.\n\n' +
+        'A estratégia da lição é usar **なんとか** quando uma parte da palavra não vem à memória, sem travar a conversa.\n\n' +
+        '- `大雨なんとか` → `大雨警報`\n' +
+        '- `なんとかリュック` → `防災リュック`\n' +
+        '- `なんとか届` → `被害届`',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {警察|けいさつ}, {消防署|しょうぼうしょ}, {救急車|きゅうきゅうしゃ}, ひき{逃|に}げ, {交差点|こうさてん}, ～{丁目|ちょうめ}, ～{歳|さい}, {警報|けいほう}, {出張|しゅっちょう}, {曲|ま}がる, {置|お}く, {降|ふ}る.\n\n' +
+        '**Vocabulário-chave:** {災害|さいがい}, {事故|じこ}, {事件|じけん}, {通訳|つうやく}, {案内|あんない}する, {自転車|じてんしゃ}の{鍵|かぎ}, {衣類|いるい}の{圧縮袋|あっしゅくぶくろ}, {意識|いしき}, {到着|とうちゃく}, {車種|しゃしゅ}, ナンバー, ガソリンスタンド, {避難|ひなん}する, {防災|ぼうさい}リュック, {被害届|ひがいとどけ}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**かけ声:** よいしょ／よっこいしょ são usados ao fazer força; せーの sincroniza ação em grupo; えいっ aparece ao fazer força de uma vez; はい、チーズ！ é usado em fotos; わっしょい！ aparece ao carregar 神輿 em festivais; おっとっと sai quando alguém quase cai ou deixa algo cair.\n\n' +
+        '**100円ショップの便利グッズ:** a TIPS cita 衣類圧縮袋 como item comum para reduzir volume de roupas em mala ou armazenamento.\n\n' +
+        '**警報・注意報:** avisos podem vir por TV, notícia, app de desastre ou 防災無線. Ao receber aviso, evite sair, não se aproxime de áreas perigosas e siga instruções de prefeitura ou governo local para evacuação.\n\n' +
+        '**～歳 e ～才:** ～歳 é o kanji oficial para idade, usado em documentos e textos formais. ～才 é mais simples e aparece em livros infantis, anotações manuscritas e contextos casuais.\n\n' +
+        '**緊急時の電話番号:** a lição remete ao uso de números de emergência, especialmente 110 para polícia e 119 para incêndio/ambulância.',
+    },
+  ],
+  groups: [lesson12Group],
+  audios: attachScripts(12, L12_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -4095,6 +4632,7 @@ const sections: Section[] = [
   lesson10,
   // Tópico 6 - O que fazer nestas situações? (こんなときどうする？)
   lesson11,
+  lesson12,
 ]
 
 export const irodoriPreIntermediate: Level = {
