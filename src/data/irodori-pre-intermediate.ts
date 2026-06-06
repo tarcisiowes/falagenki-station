@@ -845,6 +845,62 @@ const lesson15Group: ExerciseGroup = {
   ],
 }
 
+const lesson16Group: ExerciseGroup = {
+  id: 'iro-pi-l16',
+  title: '第16課 いい写真がたくさん撮れました',
+  subtitlePt: 'Mensagens de viagem · pedidos em hospedagem · experiências de viagem',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l16-1', number: 1, prompt: 'Qual é o tópico da Lição 16?', choices: [{ n: 1, text: '旅行の楽しみ (prazeres da viagem)' }, { n: 2, text: '日本で働く' }, { n: 3, text: '人とのつき合い' }, { n: 4, text: '毎日の食事' }], answer: 1, explanationPt: 'A Lição 16 continua o tópico 旅行の楽しみ, agora com mensagens de viagem, hospedagem e relatos de experiências.' },
+    { id: 'iro-pi-l16-2', number: 2, prompt: '「いい写真がたくさん撮れました」 significa:', choices: [{ n: 1, text: 'Consegui tirar muitas fotos boas.' }, { n: 2, text: 'Quero mudar a refeição da noite.' }, { n: 3, text: 'O avião atrasou mais de uma hora.' }, { n: 4, text: 'Vou fazer check-out cedo.' }], answer: 1, explanationPt: '撮れました é potencial/passado de 撮る: consegui tirar fotos.' },
+    { id: 'iro-pi-l16-3', number: 3, prompt: 'Pergunta de abertura: これまでの旅行で、楽しかった経験や、困った経験がありますか？', choices: [{ n: 1, text: 'Você já teve experiências divertidas ou problemáticas em viagens até agora?' }, { n: 2, text: 'Você consegue falar com o chefe?' }, { n: 3, text: 'Que esporte pratica no fim de semana?' }, { n: 4, text: 'Que comida não pode comer?' }], answer: 1, explanationPt: 'A lição usa experiências boas e problemas de viagem como eixo.' },
+    { id: 'iro-pi-l16-4', number: 4, prompt: 'Can-do 52: 「旅行先からのメッセージ」 trabalha:', choices: [{ n: 1, text: 'enviar mensagem a amigos pelo app a partir do destino de viagem' }, { n: 2, text: 'fazer entrevista de emprego' }, { n: 3, text: 'ler regra de aparência no trabalho' }, { n: 4, text: 'ligar para 119' }], answer: 1, explanationPt: 'O Can-do 52 é escrever uma mensagem de viagem contando o local, atividades e comida.' },
+    { id: 'iro-pi-l16-5', number: 5, prompt: 'No exemplo da mensagem, de onde a pessoa escreve?', choices: [{ n: 1, text: '山口' }, { n: 2, text: '金沢' }, { n: 3, text: '松島' }, { n: 4, text: '鳥取' }], answer: 1, explanationPt: 'O gabarito da atividade 1 indica 山口.' },
+    { id: 'iro-pi-l16-6', number: 6, prompt: 'No exemplo de 山口, quais lugares/atividades aparecem?', choices: [{ n: 1, text: '角島大橋, 元乃隅神社, cidade antiga, 温泉' }, { n: 2, text: 'SL, 月見そば, 奥大井湖上駅' }, { n: 3, text: '桜島, しろくま, 砂風呂' }, { n: 4, text: 'マッチングアプリ e 相談サイト' }], answer: 1, explanationPt: 'O gabarito cita 角島大橋に行った, 元乃隅神社に行った, 古い町を見た e 温泉に入った.' },
+    { id: 'iro-pi-l16-7', number: 7, prompt: 'No exemplo de mensagem, o que a pessoa comeu?', choices: [{ n: 1, text: 'お刺身 e うどん' }, { n: 2, text: 'ノドグロ e 塩ソフトクリーム' }, { n: 3, text: 'しろくま e かき氷' }, { n: 4, text: '月見そば e 飛騨牛' }], answer: 1, explanationPt: 'O gabarito indica お刺身を食べた e うどんを食べた.' },
+    { id: 'iro-pi-l16-8', number: 8, prompt: '「さっき行ってきたところでーす！」 usa:', choices: [{ n: 1, text: 'V-たところだ para ação recém-concluída' }, { n: 2, text: 'もしSば para hipótese' }, { n: 3, text: 'Nにとって para ponto de vista' }, { n: 4, text: 'Nのことで para assunto de consulta' }], answer: 1, explanationPt: 'V-たところだ diz que uma ação acabou de acontecer. Também aparece: ちょうどいまお昼食べたところ.' },
+    { id: 'iro-pi-l16-9', number: 9, prompt: 'Can-do 53: 「夕食の内容を少し変えてほしいんですが…」 trabalha:', choices: [{ n: 1, text: 'explicar circunstâncias e pedir serviços ou mudanças a equipe de hotel/ryokan' }, { n: 2, text: 'ler artigo sobre flores' }, { n: 3, text: 'falar de pessoas próximas' }, { n: 4, text: 'pedir ambulância' }], answer: 1, explanationPt: 'A atividade 2 simula pedidos em hospedagem durante ou antes da estadia.' },
+    { id: 'iro-pi-l16-10', number: 10, prompt: 'Vocabulário: 禁煙／喫煙の部屋がいい significa:', image: `${IMG}/ZZ_16_2_01_kinenkitsuen.png`, imageAlt: 'opções de quarto para não fumante ou fumante', choices: [{ n: 1, text: 'quero quarto não fumante/fumante' }, { n: 2, text: 'quero transfer gratuito' }, { n: 3, text: 'quero mudar o jantar' }, { n: 4, text: 'quero check-out tardio' }], answer: 1, explanationPt: '禁煙 é não fumante; 喫煙 é fumante.' },
+    { id: 'iro-pi-l16-11', number: 11, prompt: 'Vocabulário: 洋室／和室がいい significa:', image: `${IMG}/ZZ_16_2_02_wayoo.png`, imageAlt: 'quarto ocidental e quarto japonês', choices: [{ n: 1, text: 'prefiro quarto ocidental/japonês' }, { n: 2, text: 'quero café da manhã' }, { n: 3, text: 'quero quarto com boa vista' }, { n: 4, text: 'quero guardar bagagem' }], answer: 1, explanationPt: '洋室 é quarto estilo ocidental; 和室 é quarto japonês com tatame/futon.' },
+    { id: 'iro-pi-l16-12', number: 12, prompt: 'Vocabulário: 景色のいい部屋がいい significa:', image: `${IMG}/ZZ_16_2_03_keshiki.png`, imageAlt: 'quarto com boa vista', choices: [{ n: 1, text: 'quero um quarto com boa vista' }, { n: 2, text: 'quero reservar banho privativo' }, { n: 3, text: 'quero atrasar o check-out' }, { n: 4, text: 'quero mudar a comida' }], answer: 1, explanationPt: '景色 = paisagem/vista; 景色のいい部屋 = quarto com boa vista.' },
+    { id: 'iro-pi-l16-13', number: 13, prompt: 'Vocabulário: 貸切風呂を予約したい significa:', image: `${IMG}/ZZ_16_2_04_kashikiriburo.png`, imageAlt: 'banho privativo', choices: [{ n: 1, text: 'quero reservar um banho privativo' }, { n: 2, text: 'quero pedir transfer' }, { n: 3, text: 'quero café da manhã extra' }, { n: 4, text: 'quero quarto japonês' }], answer: 1, explanationPt: '貸切風呂 é um banho reservado para uso exclusivo/privativo.' },
+    { id: 'iro-pi-l16-14', number: 14, prompt: 'Vocabulário: 送迎を頼みたい significa:', image: `${IMG}/ZZ_16_2_05_soogei.png`, imageAlt: 'serviço de transfer', choices: [{ n: 1, text: 'quero pedir serviço de busca/leva' }, { n: 2, text: 'quero ver a paisagem' }, { n: 3, text: 'quero quarto fumante' }, { n: 4, text: 'quero mudar o jantar' }], answer: 1, explanationPt: '送迎 é transporte de busca e retorno oferecido pela hospedagem.' },
+    { id: 'iro-pi-l16-15', number: 15, prompt: 'Vocabulário: チェックアウトの時間を遅らせたい significa:', image: `${IMG}/ZZ_16_2_07_chekkuauto.png`, imageAlt: 'horário de check-out', choices: [{ n: 1, text: 'quero atrasar o horário de check-out' }, { n: 2, text: 'quero fazer check-in cedo' }, { n: 3, text: 'quero refeição sem sashimi' }, { n: 4, text: 'quero reservar banho' }], answer: 1, explanationPt: '遅らせたい = quero atrasar/postergar.' },
+    { id: 'iro-pi-l16-16', number: 16, prompt: 'Vocabulário: 朝食を追加したい significa:', image: `${IMG}/ZZ_16_2_08_chooshoku.png`, imageAlt: 'café da manhã', choices: [{ n: 1, text: 'quero adicionar café da manhã' }, { n: 2, text: 'quero quarto com cama' }, { n: 3, text: 'quero um hotel caro' }, { n: 4, text: 'quero uma mensagem de viagem' }], answer: 1, explanationPt: '朝食 = café da manhã; 追加したい = quero adicionar.' },
+    { id: 'iro-pi-l16-17', number: 17, prompt: 'Vocabulário: 食事の内容を変更したい significa:', image: `${IMG}/ZZ_16_2_09_shokuji.png`, imageAlt: 'alteração de refeição', choices: [{ n: 1, text: 'quero mudar o conteúdo da refeição' }, { n: 2, text: 'quero guardar bagagem' }, { n: 3, text: 'quero ir de avião' }, { n: 4, text: 'quero comprar lembrança' }], answer: 1, explanationPt: '内容 = conteúdo; 変更する = alterar/mudar.' },
+    { id: 'iro-pi-l16-18', number: 18, prompt: '16-03: qual pedido サラ・レデン faz?', choices: [{ n: 1, text: 'mudar de 和室 para 洋室' }, { n: 2, text: 'tirar sashimi do jantar' }, { n: 3, text: 'fazer check-out duas horas mais tarde' }, { n: 4, text: 'pedir transfer do aeroporto' }], answer: 1, explanationPt: 'Ela diz: 案内してもらった部屋が和室なんですが、洋室に変えてもらえませんか？' },
+    { id: 'iro-pi-l16-19', number: 19, prompt: '16-03: que circunstâncias ela explica?', choices: [{ n: 1, text: 'a família não está acostumada a futon e há uma pessoa com perna ruim' }, { n: 2, text: 'a amiga não come sashimi e vem de Myanmar' }, { n: 3, text: 'o shinkansen é à tarde' }, { n: 4, text: 'o avião atrasou' }], answer: 1, explanationPt: 'Ela explica 家族がふとんに慣れていない e 足が悪い人もいる.' },
+    { id: 'iro-pi-l16-20', number: 20, prompt: '16-03: qual solução foi aceita?', choices: [{ n: 1, text: 'pagar adicional e mudar para 和洋室' }, { n: 2, text: 'colocar cama pequena no 和室 de graça' }, { n: 3, text: 'cancelar a reserva' }, { n: 4, text: 'ficar no mesmo quarto sem mudança' }], answer: 1, explanationPt: 'Como 洋室 estava lotado, havia 和洋室 com adicional de 2.000 ienes por pessoa, 6.000 ienes para três.' },
+    { id: 'iro-pi-l16-21', number: 21, prompt: '16-03: 「1名様2,000円なので、3名様で6,000円になります」 usa になります para:', choices: [{ n: 1, text: 'forma polida de です em atendimento' }, { n: 2, text: 'transformação real em dinheiro' }, { n: 3, text: 'hipótese' }, { n: 4, text: 'passiva de incômodo' }], answer: 1, explanationPt: 'Nになります é usado em atendimento como forma polida de Nです.' },
+    { id: 'iro-pi-l16-22', number: 22, prompt: '16-04: qual pedido トゥタ・ゾー faz ao 民宿やまにし?', choices: [{ n: 1, text: 'mudar um pouco o conteúdo do jantar' }, { n: 2, text: 'trocar de quarto' }, { n: 3, text: 'atrasar check-out' }, { n: 4, text: 'reservar banho privativo' }], answer: 1, explanationPt: 'A fala central é 夕食の内容を少し変えてほしいんですが.' },
+    { id: 'iro-pi-l16-23', number: 23, prompt: '16-04: por que ele pede mudança no jantar?', choices: [{ n: 1, text: 'a amiga que vem de Myanmar não gosta de sashimi' }, { n: 2, text: 'ele tem alergia a ovos' }, { n: 3, text: 'ele quer sair cedo para turismo' }, { n: 4, text: 'o restaurante está fechado' }], answer: 1, explanationPt: 'Ele explica: いっしょに行く友だちが、刺身が苦手だそうなんです e ミャンマーから来るんですよ.' },
+    { id: 'iro-pi-l16-24', number: 24, prompt: '16-04: qual alteração a hospedagem propõe?', choices: [{ n: 1, text: 'trocar o sashimi de uma pessoa por peixe frito' }, { n: 2, text: 'trocar por carne' }, { n: 3, text: 'cancelar todo o jantar' }, { n: 4, text: 'servir apenas arroz' }], answer: 1, explanationPt: 'A pessoa da hospedagem propõe 魚のフライ e confirma 1名様分、お刺身を魚のフライに変更します.' },
+    { id: 'iro-pi-l16-25', number: 25, prompt: '16-05: sobre o que o hóspede pergunta?', choices: [{ n: 1, text: 'se pode usar o quarto até 12h, embora o check-out seja 10h' }, { n: 2, text: 'se pode trocar o jantar' }, { n: 3, text: 'se há banho privativo' }, { n: 4, text: 'se há quarto japonês' }], answer: 1, explanationPt: 'Ele pergunta: 12時まで部屋を使うことはできますか？' },
+    { id: 'iro-pi-l16-26', number: 26, prompt: '16-05: qual é a circunstância dele?', choices: [{ n: 1, text: 'o shinkansen do dia seguinte é à tarde' }, { n: 2, text: 'há pessoa com perna ruim' }, { n: 3, text: 'a amiga não come sashimi' }, { n: 4, text: 'o voo foi cancelado' }], answer: 1, explanationPt: 'Ele diz 明日の新幹線、午後なんですよね.' },
+    { id: 'iro-pi-l16-27', number: 27, prompt: '16-05: o que ele decide fazer?', choices: [{ n: 1, text: 'guardar a bagagem e fazer turismo por perto até a hora' }, { n: 2, text: 'pagar late check-out' }, { n: 3, text: 'ficar no lobby sem sair' }, { n: 4, text: 'comprar passagem de avião' }], answer: 1, explanationPt: 'Ele decide: 時間まで、近くを観光することにするので、荷物だけ預かってもらってもいいですか？' },
+    { id: 'iro-pi-l16-28', number: 28, prompt: 'Qual frase é o pedido mais polido entre as opções da lição?', choices: [{ n: 1, text: '何かほかの料理にしていただけませんか？' }, { n: 2, text: '料理を変えろ。' }, { n: 3, text: '料理が変わります。' }, { n: 4, text: '料理を食べさせられた。' }], answer: 1, explanationPt: 'V-ていただけませんか é forma polida de pedir uma ação a outra pessoa.' },
+    { id: 'iro-pi-l16-29', number: 29, prompt: '「確認いたしますので、少々お待ちください」 usa:', choices: [{ n: 1, text: '謙譲語: verbo humilde usado pela equipe para sua própria ação' }, { n: 2, text: 'forma casual de amigo' }, { n: 3, text: 'passiva de incômodo' }, { n: 4, text: 'forma potencial simples' }], answer: 1, explanationPt: 'いたします é humilde de します; a equipe usa para mostrar respeito ao cliente.' },
+    { id: 'iro-pi-l16-30', number: 30, prompt: '「お荷物をお預かりすることもできます」 usa:', choices: [{ n: 1, text: 'おVする, forma humilde' }, { n: 2, text: 'V-たところだ' }, { n: 3, text: 'もしSば' }, { n: 4, text: 'Nのことで' }], answer: 1, explanationPt: 'お預かりする é forma humilde de 預かる. Também aparece ご案内します.' },
+    { id: 'iro-pi-l16-31', number: 31, prompt: 'No modelo de fala 16-09, a ordem básica é:', choices: [{ n: 1, text: 'iniciar a conversa → fazer pedido → explicar circunstâncias e pedir resposta' }, { n: 2, text: 'pedir desculpas → falar de emprego → encerrar' }, { n: 3, text: 'ler aviso → assinar formulário → pagar multa' }, { n: 4, text: 'falar de comida → falar de esporte → comprar ingresso' }], answer: 1, explanationPt: 'A atividade 3 treina essa estrutura para falar com hotel/ryokan.' },
+    { id: 'iro-pi-l16-32', number: 32, prompt: 'Can-do 54: 「飛行機が遅れて、1時間以上待たされたんです」 trabalha:', choices: [{ n: 1, text: 'falar com algum detalhe a um amigo sobre experiências de viagem' }, { n: 2, text: 'enviar mensagem de aniversário' }, { n: 3, text: 'fazer pedido em tablet' }, { n: 4, text: 'ler regras de trabalho' }], answer: 1, explanationPt: 'A atividade 3 traz relatos de viagem a 金沢, 松島 e 鳥取.' },
+    { id: 'iro-pi-l16-33', number: 33, prompt: '16-10: 美林 foi para onde?', image: `${IMG}/ZZ_16_3_01_kuukoo.png`, imageAlt: 'viagem e aeroporto', choices: [{ n: 1, text: '金沢' }, { n: 2, text: '松島' }, { n: 3, text: '鳥取' }, { n: 4, text: '山口' }], answer: 1, explanationPt: 'Ela diz 友だちと金沢に行って来ました.' },
+    { id: 'iro-pi-l16-34', number: 34, prompt: '16-10: qual foi a impressão geral da viagem a 金沢?', choices: [{ n: 1, text: 'foi uma viagem muito boa' }, { n: 2, text: 'foi cansativa e cheia de brigas' }, { n: 3, text: 'foi cancelada' }, { n: 4, text: 'foi só trabalho' }], answer: 1, explanationPt: 'Ela diz すごくいい旅行でした.' },
+    { id: 'iro-pi-l16-35', number: 35, prompt: '16-10: o que é ノドグロ?', image: `${IMG}/ZZ_16_3_06_nodoguro.png`, imageAlt: 'nodoguro', choices: [{ n: 1, text: 'um peixe caro/fino' }, { n: 2, text: 'um tipo de sandália' }, { n: 3, text: 'um trem turístico' }, { n: 4, text: 'um jardim' }], answer: 1, explanationPt: 'Ela explica 魚ですよ。高級な魚なんです.' },
+    { id: 'iro-pi-l16-36', number: 36, prompt: '16-10: o que aconteceu no restaurante popular?', choices: [{ n: 1, text: 'sem reserva não podia entrar, mas conseguiu reserva para o dia seguinte' }, { n: 2, text: 'não havia peixe' }, { n: 3, text: 'o restaurante fechou para reforma' }, { n: 4, text: 'ela perdeu a carteira' }], answer: 1, explanationPt: 'Disseram que sem reserva não entrava, mas たまたま次の日の予約が取れた.' },
+    { id: 'iro-pi-l16-37', number: 37, prompt: '16-10: o que aconteceu ao usar 草履?', image: `${IMG}/ZZ_16_3_02_kimono.png`, imageAlt: 'kimono em viagem', choices: [{ n: 1, text: 'o pé ficou doendo' }, { n: 2, text: 'a viagem foi cancelada' }, { n: 3, text: 'o quarto ficou caro' }, { n: 4, text: 'a mala passou do peso' }], answer: 1, explanationPt: 'Ela diz 草履をはいて歩いたら、足が痛くなっちゃって.' },
+    { id: 'iro-pi-l16-38', number: 38, prompt: '16-11: ソムラック foi para onde?', image: `${IMG}/ZZ_16_3_04_hune.png`, imageAlt: 'barco turístico em Matsushima', choices: [{ n: 1, text: '松島' }, { n: 2, text: '金沢' }, { n: 3, text: '鳥取' }, { n: 4, text: '鹿児島' }], answer: 1, explanationPt: 'A conversa começa lembrando que ele iria viajar para 松島 no feriado de Ano Novo.' },
+    { id: 'iro-pi-l16-39', number: 39, prompt: '16-11: o que ele fez em 松島?', choices: [{ n: 1, text: 'andou de barco vendo as ilhas e tirou boas fotos da paisagem com neve' }, { n: 2, text: 'alugou kimono em Kanazawa' }, { n: 3, text: 'fez sandboard no deserto' }, { n: 4, text: 'comeu shirokuma' }], answer: 1, explanationPt: 'Ele diz 船に乗って、島を見て回った e 雪の景色がすごくきれいで、いい写真がたくさん撮れました.' },
+    { id: 'iro-pi-l16-40', number: 40, prompt: '16-11: que problema houve na volta?', choices: [{ n: 1, text: 'a bagagem passou 5 kg do peso e ele pagou 5.000 ienes; o avião atrasou mais de 1 hora' }, { n: 2, text: 'o hotel trocou o quarto errado' }, { n: 3, text: 'ele perdeu o passaporte' }, { n: 4, text: 'o trem foi cancelado por neve' }], answer: 1, explanationPt: 'O relato usa 荷物が5kg重量オーバー, 5,000円も払わされた e 飛行機が遅れて、1時間以上待たされた.' },
+    { id: 'iro-pi-l16-41', number: 41, prompt: '16-12: マリカ foi para onde?', image: `${IMG}/ZZ_16_3_03_sakyuu.png`, imageAlt: 'dunas de Tottori', choices: [{ n: 1, text: '鳥取' }, { n: 2, text: '松島' }, { n: 3, text: '金沢' }, { n: 4, text: '高山' }], answer: 1, explanationPt: 'Ela diz 友だちと4人で、鳥取に行ったよ.' },
+    { id: 'iro-pi-l16-42', number: 42, prompt: '16-12: 鳥取 é famosa por quê, na conversa?', choices: [{ n: 1, text: '砂丘, que parecia deserto' }, { n: 2, text: 'ノドグロ' }, { n: 3, text: 'SL' }, { n: 4, text: '桜島' }], answer: 1, explanationPt: 'Ela explica 砂丘で有名なところ. 砂丘、砂漠みたいだった.' },
+    { id: 'iro-pi-l16-43', number: 43, prompt: '16-12: por que a viagem foi cansativa?', image: `${IMG}/ZZ_16_3_05_minnanoiken.png`, imageAlt: 'opiniões diferentes no grupo', choices: [{ n: 1, text: 'as opiniões do grupo não batiam e ela acabou andando muito' }, { n: 2, text: 'ela ficou doente no hotel' }, { n: 3, text: 'não havia ônibus' }, { n: 4, text: 'ela esqueceu o passaporte' }], answer: 1, explanationPt: 'みんなの意見が合わなくて e お昼ご飯を食べるお店もなかなか決まらなくて、たくさん歩かされた.' },
+    { id: 'iro-pi-l16-44', number: 44, prompt: '16-12: o que ela achou realmente bom?', choices: [{ n: 1, text: 'a vista das dunas, com contraste entre mar e areia' }, { n: 2, text: 'o check-out tardio' }, { n: 3, text: 'a troca do sashimi' }, { n: 4, text: 'o trem SL' }], answer: 1, explanationPt: 'Ela diz 砂丘から見る景色は本当によかった e 海と砂丘のコントラストがすごくすてきだった.' },
+    { id: 'iro-pi-l16-45', number: 45, prompt: '「たくさん歩かされた」 usa:', choices: [{ n: 1, text: '使役受身: fui levado/forçado a andar muito contra minha vontade' }, { n: 2, text: 'V-たところだ' }, { n: 3, text: 'Nになります' }, { n: 4, text: '連用中止' }], answer: 1, explanationPt: '使役受身 expressa fazer algo sem querer por imposição de alguém ou da situação.' },
+    { id: 'iro-pi-l16-46', number: 46, prompt: 'Kanji da lição: 新幹線／飛行機／宿泊／和室／洋室／お土産 leem-se:', choices: [{ n: 1, text: 'しんかんせん／ひこうき／しゅくはく／わしつ／ようしつ／おみやげ' }, { n: 2, text: 'しんかんせん／ひこうき／しゅっぱく／わせつ／ようせつ／おどさん' }, { n: 3, text: 'しんせん／ひこき／しゅくはく／わしつ／ようしつ／おつちさん' }, { n: 4, text: 'しんかんせん／とびこうき／やどはく／わむろ／ようむろ／みやげ' }], answer: 1, explanationPt: 'São itens de 漢字のことば da Lição 16. Também aparecem 美術館, 追加, 高級 e 疲れる.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -4089,6 +4145,230 @@ const L15_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L16_SCRIPTS: Record<string, ScriptItem[]> = {
+  '16-03': [
+    {
+      label: '① 和室から洋室へ変えたい (16-03)',
+      setupPt: 'サラ・レデン pede para trocar o quarto japonês por um quarto com cama.',
+      lines: [
+        { speaker: 'A', ja: 'すみません。さっきチェックインしたサラ・レデンですが。', pt: 'Com licença. Sou Sara Reden, fiz check-in agora há pouco.' },
+        { speaker: 'B', ja: 'はい、サラ・レデン様ですね。', pt: 'Sim, senhora Sara Reden.' },
+        { speaker: 'A', ja: 'ええ。あのう、ちょっとお願いがあるんですが……。', pt: 'Sim. Bem, tenho um pedido...' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: 'あのう、案内してもらった部屋が和室なんですが、洋室に変えてもらえませんか？', pt: 'Bem, o quarto para o qual me levaram é japonês. Poderia trocar para um quarto ocidental?' },
+        { speaker: 'B', ja: 'かしこまりました。洋室に空きがあれば、ご案内しますね。確認いたしますので、少々お待ちください。', pt: 'Entendido. Se houver quarto ocidental disponível, eu a encaminho. Vou verificar, então aguarde um momento, por favor.' },
+        { speaker: 'A', ja: 'すみません、予約するときに、部屋のタイプをあまり見ていなかったんです。', pt: 'Desculpe, quando fiz a reserva eu não tinha olhado muito o tipo do quarto.' },
+        { speaker: 'B', ja: 'あー……申し訳ありません。今日は、洋室は満室になっていまして……。', pt: 'Ah... Sinto muito. Hoje os quartos ocidentais estão todos ocupados...' },
+        { speaker: 'A', ja: 'そうですか……。あのう、家族がふとんに慣れていないんです。足が悪い人もいるので、ベッドがある部屋にしてもらえたら、ありがたいんですが……。', pt: 'Entendo... Bem, minha família não está acostumada a futon. Também há uma pessoa com problema na perna, então seria ótimo se pudéssemos ficar em um quarto com cama...' },
+        { speaker: 'B', ja: 'そうなんですね。えーと、和洋室なら、空きがあります。ただ、追加料金をいただくことになってしまいますが……。', pt: 'Entendo. Vejamos, se for um quarto japonês-ocidental, temos vaga. Mas será necessário cobrar uma taxa adicional...' },
+        { speaker: 'A', ja: '和洋室って、どんな部屋ですか？', pt: 'Que tipo de quarto é um quarto japonês-ocidental?' },
+        { speaker: 'B', ja: 'あ、畳のスペースと、ベッドのスペースが両方あるお部屋です。', pt: 'É um quarto que tem tanto um espaço com tatame quanto um espaço com cama.' },
+        { speaker: 'A', ja: 'ああ。追加料金って、いくらですか？', pt: 'Entendi. Quanto é a taxa adicional?' },
+        { speaker: 'B', ja: '1名様2,000円なので、3名様で6,000円になります。', pt: 'São 2.000 ienes por pessoa, então para três pessoas fica 6.000 ienes.' },
+        { speaker: 'A', ja: 'そうですか。うーん……じゃあ、和洋室にしてもらえますか？', pt: 'Entendo. Hmm... Então poderia mudar para o quarto japonês-ocidental?' },
+        { speaker: 'B', ja: 'かしこまりました。', pt: 'Perfeitamente.' },
+      ],
+    },
+  ],
+  '16-04': [
+    {
+      label: '② 夕食の内容を変えたい (16-04)',
+      setupPt: 'トゥタ・ゾー liga para o 民宿やまにし antes da hospedagem para pedir alteração no jantar.',
+      lines: [
+        { speaker: 'A', ja: 'お電話ありがとうございます。民宿やまにしでございます。', pt: 'Obrigado por ligar. Aqui é o Minshuku Yamanishi.' },
+        { speaker: 'B', ja: 'すみません、今月の25日に予約しているトゥタ・ゾーと申しますが。食事の内容のことで、お願いしたいことがあって、電話しました。', pt: 'Com licença, sou Tuta Zo, tenho reserva para o dia 25 deste mês. Estou ligando porque gostaria de fazer um pedido sobre o conteúdo da refeição.' },
+        { speaker: 'A', ja: 'はい、少々お待ちください。えーっと、2名様でご宿泊のトゥタ・ゾー様ですね。', pt: 'Sim, aguarde um momento. Vejamos, senhor Tuta Zo, hospedagem para duas pessoas, certo?' },
+        { speaker: 'B', ja: 'はい。あのう、夕食の内容を少し変えてほしいんですが……。', pt: 'Sim. Bem, eu gostaria que mudassem um pouco o conteúdo do jantar...' },
+        { speaker: 'A', ja: 'お食事の内容ですか？', pt: 'O conteúdo da refeição?' },
+        { speaker: 'B', ja: 'はい。いっしょに行く友だちが、刺身が苦手だそうなんです。', pt: 'Sim. Parece que a amiga que vai comigo não gosta de sashimi.' },
+        { speaker: 'A', ja: 'そうなんですか。そうですねえ……。', pt: 'Entendo. Vejamos...' },
+        { speaker: 'B', ja: 'ミャンマーから来るんですよ。食事を楽しみにしているので、何かほかの料理にしていただけませんか？', pt: 'Ela vem de Myanmar. Está ansiosa pela refeição, então será que poderiam trocar por algum outro prato?' },
+        { speaker: 'A', ja: 'わかりました。魚のフライなら、だいじょうぶですか？', pt: 'Entendi. Peixe frito estaria bem?' },
+        { speaker: 'B', ja: 'フライ？', pt: 'Frito?' },
+        { speaker: 'A', ja: 'えーと、魚を油で揚げた料理になりますね。', pt: 'Bem, é um prato de peixe frito em óleo.' },
+        { speaker: 'B', ja: 'はい、だいじょうぶです。', pt: 'Sim, está bem.' },
+        { speaker: 'A', ja: 'では、1名様分、お刺身を魚のフライに変更しますね。', pt: 'Então, para uma pessoa, vamos trocar o sashimi por peixe frito.' },
+        { speaker: 'B', ja: 'はい、ありがとうございます。', pt: 'Sim, muito obrigado.' },
+      ],
+    },
+  ],
+  '16-05': [
+    {
+      label: '③ チェックアウトを遅らせたい (16-05)',
+      setupPt: 'Um hóspede pergunta sobre late check-out e decide deixar a bagagem no hotel.',
+      lines: [
+        { speaker: 'A', ja: 'はい、ただいま、参ります。……お待たせしました。ご用件、伺います。', pt: 'Sim, já vou. ... Obrigado por aguardar. Em que posso ajudar?' },
+        { speaker: 'B', ja: 'あの、チェックアウトの時間について、聞きたいんですけど。', pt: 'Eu gostaria de perguntar sobre o horário de check-out.' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'B', ja: 'あの、チェックアウトの時間って10時ですよね。12時まで部屋を使うことはできますか？', pt: 'O horário de check-out é 10h, certo? Posso usar o quarto até 12h?' },
+        { speaker: 'A', ja: 'はい、可能ですが、有料になります。チェックアウトが10時以降になる場合には、レイトチェックアウトということで、1時間につき1,000円をいただいています。', pt: 'Sim, é possível, mas será pago. Quando o check-out passa das 10h, tratamos como late check-out e cobramos 1.000 ienes por hora.' },
+        { speaker: 'B', ja: 'お金がかかるんですか……。うーん……どうしよう。明日の新幹線、午後なんですよね……。', pt: 'Tem custo... Hmm... O que faço? Meu shinkansen amanhã é à tarde...' },
+        { speaker: 'A', ja: 'そちらのフリースペースなら、チェックアウト後も自由に使っていただいて、だいじょうぶですよ。あと、お荷物をお預かりすることもできますが……。', pt: 'Aquele espaço livre ali pode ser usado livremente depois do check-out. Além disso, também podemos guardar sua bagagem...' },
+        { speaker: 'B', ja: 'そうですか。じゃあ、時間まで、近くを観光することにするので、荷物だけ預かってもらってもいいですか？', pt: 'Entendo. Então vou fazer turismo por perto até a hora; poderia guardar só minha bagagem?' },
+        { speaker: 'A', ja: 'かしこまりました。明日、フロントにお声をおかけください。', pt: 'Perfeitamente. Amanhã, fale com a recepção, por favor.' },
+      ],
+    },
+  ],
+  '16-06': [
+    {
+      label: '形に注目1 - 依頼の形 (16-06)',
+      lines: [
+        { speaker: '例', ja: '和洋室にしてもらえますか？', pt: 'Poderia mudar para um quarto japonês-ocidental?' },
+        { speaker: '例', ja: '時間まで、近くを観光することにするので、荷物だけ預かってもらってもいいですか？', pt: 'Vou fazer turismo por perto até a hora; poderia guardar só minha bagagem?' },
+        { speaker: '例', ja: '食事を楽しみにしているので、何かほかの料理にしていただけませんか？', pt: 'Como ela está ansiosa pela refeição, poderia trocar por algum outro prato?' },
+        { speaker: '例', ja: '案内してもらった部屋が和室なんですが、洋室に変えてもらえませんか？', pt: 'O quarto para o qual me levaram é japonês; poderia trocar por um quarto ocidental?' },
+        { speaker: '例', ja: 'ベッドがある部屋にしてもらえたら、ありがたいんですが……。', pt: 'Seria muito bom se pudesse nos colocar em um quarto com cama...' },
+        { speaker: '例', ja: '夕食の内容を少し変えてほしいんですが……。', pt: 'Eu gostaria que mudassem um pouco o conteúdo do jantar...' },
+      ],
+    },
+  ],
+  '16-07': [
+    {
+      label: '形に注目2 - Nになります (16-07)',
+      lines: [
+        { speaker: 'スタッフ', ja: '1名様2,000円なので、3名様で6,000円になります。', pt: 'São 2.000 ienes por pessoa, então para três pessoas fica 6.000 ienes.' },
+        { speaker: 'スタッフ', ja: '魚を油で揚げた料理になりますね。', pt: 'É um prato de peixe frito em óleo.' },
+        { speaker: 'スタッフ', ja: '可能ですが、有料になります。', pt: 'É possível, mas será pago.' },
+      ],
+    },
+  ],
+  '16-08': [
+    {
+      label: '形に注目3 - 謙譲語 (16-08)',
+      lines: [
+        { speaker: 'スタッフ', ja: '洋室に空きがあれば、ご案内しますね。', pt: 'Se houver quarto ocidental disponível, eu a encaminho.' },
+        { speaker: 'スタッフ', ja: '確認いたしますので、少々お待ちください。', pt: 'Vou verificar, então aguarde um momento, por favor.' },
+        { speaker: 'スタッフ', ja: '追加料金をいただくことになってしまいますが……。', pt: 'Será necessário cobrar uma taxa adicional...' },
+        { speaker: 'スタッフ', ja: 'はい、ただいま、参ります。', pt: 'Sim, já vou.' },
+        { speaker: 'スタッフ', ja: 'お待たせしました。ご用件、伺います。', pt: 'Obrigado por aguardar. Em que posso ajudar?' },
+        { speaker: 'スタッフ', ja: '1時間につき1,000円をいただいています。', pt: 'Cobramos 1.000 ienes por hora.' },
+        { speaker: 'スタッフ', ja: 'お荷物をお預かりすることもできますが……。', pt: 'Também podemos guardar sua bagagem...' },
+      ],
+    },
+  ],
+  '16-09': [
+    {
+      label: '話すモデル - ホテルや旅館に要望を伝える (16-09)',
+      lines: [
+        { speaker: '客', ja: 'すみません。さっきチェックインしたサラ・レデンですが。', pt: 'Com licença. Sou Sara Reden, fiz check-in agora há pouco.' },
+        { speaker: 'スタッフ', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '客', ja: 'あのう、ちょっとお願いがあるんですが……。', pt: 'Bem, tenho um pedido...' },
+        { speaker: 'スタッフ', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '客', ja: '案内してもらった部屋が和室なんですが、洋室に変えてもらえませんか？', pt: 'O quarto para o qual me levaram é japonês; poderia trocar por um quarto ocidental?' },
+        { speaker: 'スタッフ', ja: '申し訳ありません。今日は、洋室は満室になっていまして……。', pt: 'Sinto muito. Hoje os quartos ocidentais estão todos ocupados...' },
+        { speaker: '客', ja: '家族がふとんに慣れていないんです。足が悪い人もいるので、ベッドがある部屋にしてもらえたら、ありがたいんですが……。', pt: 'Minha família não está acostumada a futon. Também há uma pessoa com problema na perna, então seria ótimo se pudesse ser um quarto com cama...' },
+        { speaker: 'スタッフ', ja: '和洋室なら、空きがあります。', pt: 'Se for um quarto japonês-ocidental, temos vaga.' },
+        { speaker: '客', ja: 'じゃあ、和洋室にしてもらえますか？', pt: 'Então poderia mudar para o quarto japonês-ocidental?' },
+        { speaker: 'スタッフ', ja: 'かしこまりました。', pt: 'Perfeitamente.' },
+      ],
+    },
+  ],
+  '16-10': [
+    {
+      label: '① 金沢 (16-10)',
+      setupPt: '美林 conta a um amigo sobre a viagem a Kanazawa.',
+      lines: [
+        { speaker: 'A', ja: '美林さん、連休は、どこか行きましたか？', pt: 'Meilin, você foi a algum lugar no feriado prolongado?' },
+        { speaker: 'B', ja: 'ええ、友だちと金沢に行って来ました。', pt: 'Sim, fui a Kanazawa com uma amiga.' },
+        { speaker: 'A', ja: '金沢ですか。いいですね。どうでしたか？', pt: 'Kanazawa? Que bom. Como foi?' },
+        { speaker: 'B', ja: '兼六園に行ったり、おいしいものを食べたりして、すごくいい旅行でした。', pt: 'Fomos ao Kenroku-en, comemos coisas gostosas e foi uma viagem muito boa.' },
+        { speaker: 'A', ja: 'よかったですね。', pt: 'Que bom.' },
+        { speaker: 'B', ja: 'ええ。ノドグロを食べたんですけど、すごくおいしかったです。', pt: 'Sim. Comi nodoguro e estava muito gostoso.' },
+        { speaker: 'A', ja: 'ノドグロって、何ですか？', pt: 'O que é nodoguro?' },
+        { speaker: 'B', ja: '魚ですよ。高級な魚なんです。', pt: 'É peixe. É um peixe de alta qualidade.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'B', ja: 'すごく人気のあるお店に行ったら、予約していないと入れないって言われたんです。でも、たまたま次の日の予約が取れて、行けました。', pt: 'Fomos a um restaurante muito popular e disseram que, sem reserva, não dava para entrar. Mas por acaso conseguimos reserva para o dia seguinte e pudemos ir.' },
+        { speaker: 'A', ja: 'よかったですね。', pt: 'Que bom.' },
+        { speaker: 'B', ja: 'ノドグロの塩焼きとか握りとか食べました。すごくおいしかったです。やっぱり金沢は魚がとてもおいしいですね。', pt: 'Comemos nodoguro grelhado com sal e sushi nigiri. Estava muito gostoso. Como esperado, o peixe em Kanazawa é muito bom.' },
+        { speaker: 'A', ja: 'いいですねー。', pt: 'Que legal.' },
+        { speaker: 'B', ja: 'あと、はじめて着物を着たんです。レンタルして。', pt: 'Também usei kimono pela primeira vez. Aluguei um.' },
+        { speaker: 'A', ja: '着物ですか。', pt: 'Kimono?' },
+        { speaker: 'B', ja: '着物を着て金沢の町を歩いて、大満足です。でも、最初はよかったんですけど、草履をはいて歩いたら、足が痛くなっちゃって……。', pt: 'Andei pela cidade de Kanazawa usando kimono e fiquei muito satisfeita. Mas no começo estava tudo bem, só que ao andar usando zori, meu pé começou a doer...' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '足にばんそうこうを貼って、歩きました。忘れられない思い出になりましたよ。', pt: 'Coloquei curativo no pé e continuei andando. Virou uma memória inesquecível.' },
+        { speaker: 'A', ja: 'ははは。よかったですね。', pt: 'Ha ha ha. Que bom.' },
+      ],
+    },
+  ],
+  '16-11': [
+    {
+      label: '② 松島 (16-11)',
+      setupPt: 'ソムラック fala sobre a viagem de Ano Novo a Matsushima.',
+      lines: [
+        { speaker: 'A', ja: 'ソムラックさん、お正月休みは、松島に旅行に行くって言ってたよね？どうだった？', pt: 'Somrak, você disse que iria viajar para Matsushima no feriado de Ano Novo, certo? Como foi?' },
+        { speaker: 'B', ja: 'はい。いろいろありましたけど、いい経験ができました。', pt: 'Sim. Aconteceram várias coisas, mas tive uma boa experiência.' },
+        { speaker: 'A', ja: 'そう。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '船に乗って、島を見て回ったんですけど、雪の景色がすごくきれいで、いい写真がたくさん撮れました。', pt: 'Peguei um barco e visitei as ilhas, e a paisagem com neve estava muito bonita. Consegui tirar muitas fotos boas.' },
+        { speaker: 'A', ja: 'そうなんだ。松島は、日本三景だしね。', pt: 'Entendi. Matsushima é uma das Três Paisagens do Japão, afinal.' },
+        { speaker: 'B', ja: 'ええ。船の上で島の説明をしてくれたんですけど、松島も震災の被害にあって、大変だったことがわかりました。', pt: 'Sim. No barco explicaram sobre as ilhas, e entendi que Matsushima também sofreu danos no desastre e passou por dificuldades.' },
+        { speaker: 'A', ja: 'そう。', pt: 'Entendo.' },
+        { speaker: 'B', ja: 'でも、今は観光客もたくさんいて、復興してるんだなって思いました。', pt: 'Mas agora havia muitos turistas e pensei que está se recuperando.' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'ただ、帰りに、空港でいろいろトラブルがあったんです。', pt: 'Só que, na volta, tive vários problemas no aeroporto.' },
+        { speaker: 'A', ja: 'どうしたの？', pt: 'O que aconteceu?' },
+        { speaker: 'B', ja: 'いろいろ買い物したから、荷物が5kg、重量オーバーしちゃったんです。それで、5,000円も払わされたんですよ。', pt: 'Como fiz muitas compras, minha bagagem passou 5 kg do limite de peso. Então me fizeram pagar 5.000 ienes.' },
+        { speaker: 'A', ja: 'えー。ちょっと買いすぎちゃったねー。', pt: 'Nossa. Você comprou um pouco demais, hein.' },
+        { speaker: 'B', ja: 'はい、ちょっと落ち込みました。しかも、飛行機が遅れて、1時間以上待たされたんです。', pt: 'Sim, fiquei um pouco abatido. Além disso, o avião atrasou e me fizeram esperar mais de uma hora.' },
+        { speaker: 'A', ja: 'そう。大変だったねー。', pt: 'Entendi. Foi difícil.' },
+        { speaker: 'B', ja: 'ええ。帰りは本当に疲れました。', pt: 'Sim. A volta foi realmente cansativa.' },
+        { speaker: 'A', ja: 'お疲れさま。', pt: 'Bom trabalho, você deve estar cansado.' },
+      ],
+    },
+  ],
+  '16-12': [
+    {
+      label: '③ 鳥取 (16-12)',
+      setupPt: 'マリカ fala sobre a viagem a Tottori com três amigos.',
+      lines: [
+        { speaker: 'A', ja: 'マリカさん、夏休みは、どうだった？', pt: 'Marika, como foram as férias de verão?' },
+        { speaker: 'B', ja: '友だちと4人で、鳥取に行ったよ。', pt: 'Fui a Tottori com três amigos, quatro pessoas no total.' },
+        { speaker: 'A', ja: 'とっとり……？', pt: 'Tottori...?' },
+        { speaker: 'B', ja: 'うん。砂丘で有名なところ。砂丘、砂漠みたいだった。', pt: 'Sim. É um lugar famoso pelas dunas. As dunas pareciam um deserto.' },
+        { speaker: 'A', ja: 'へー、楽しかった？', pt: 'Nossa, foi divertido?' },
+        { speaker: 'B', ja: 'うん。楽しかったけど、すごく疲れた。', pt: 'Sim. Foi divertido, mas fiquei muito cansada.' },
+        { speaker: 'A', ja: 'え、どうしたの？', pt: 'O que aconteceu?' },
+        { speaker: 'B', ja: 'みんなの意見が合わなくて、ちょっと大変だった。', pt: 'As opiniões de todos não batiam e foi um pouco difícil.' },
+        { speaker: 'A', ja: 'えー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: '旅行の前に、私がほかの3人の意見を聞いて、どこに行くかとか、何を食べるかとか、だいたいの計画を立てたんだ。', pt: 'Antes da viagem, eu ouvi as opiniões dos outros três e fiz um plano geral, como onde ir e o que comer.' },
+        { speaker: 'A', ja: 'おー、すごいね。', pt: 'Oh, que incrível.' },
+        { speaker: 'B', ja: 'でも、鳥取に着いたら、3人とも、いろいろ言いはじめて……。「暑いから歩きたくない」とか「美術館よりサンドボードがいい」とか。', pt: 'Mas quando chegamos a Tottori, os três começaram a falar várias coisas... Tipo, está calor, não quero andar, ou prefiro sandboard a museu.' },
+        { speaker: 'A', ja: 'あー……。', pt: 'Ah...' },
+        { speaker: 'B', ja: 'お昼ご飯を食べるお店もなかなか決まらなくて、たくさん歩かされた。みんなが「あっちの店がいい」とか「こっちのほうがいい」とか、いろいろ言うから。', pt: 'Também não conseguíamos decidir o restaurante para almoçar, então me fizeram andar muito. Todo mundo dizia coisas como aquele restaurante é melhor ou este aqui é melhor.' },
+        { speaker: 'A', ja: 'それは、大変だったね。', pt: 'Isso foi difícil.' },
+        { speaker: 'B', ja: 'でも、砂丘から見る景色は本当によかった。', pt: 'Mas a vista das dunas foi realmente boa.' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'うん。砂漠みたいなのに、すぐ近くに海があって、海と砂丘のコントラストがすごくすてきだった。', pt: 'Sim. Parecia um deserto, mas havia mar bem perto, e o contraste entre o mar e as dunas era maravilhoso.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: 'でも、次の旅行は、絶対1人で行く！', pt: 'Mas na próxima viagem, com certeza vou sozinha!' },
+        { speaker: 'A', ja: 'ははは。', pt: 'Ha ha ha.' },
+      ],
+    },
+  ],
+  '16-13': [
+    {
+      label: '形に注目 - 使役受身 (16-13)',
+      lines: [
+        { speaker: 'マリカ', ja: 'お昼ご飯を食べるお店もなかなか決まらなくて、たくさん歩かされた。', pt: 'Não conseguíamos decidir o restaurante para almoçar, então me fizeram andar muito.' },
+        { speaker: 'ソムラック', ja: '5,000円も払わされたんですよ。', pt: 'Me fizeram pagar 5.000 ienes.' },
+        { speaker: 'ソムラック', ja: '飛行機が遅れて、1時間以上待たされたんです。', pt: 'O avião atrasou e me fizeram esperar mais de uma hora.' },
+      ],
+    },
+  ],
+  '16-14': [
+    {
+      label: '話すモデル - 旅行の体験を話す (16-14)',
+      lines: [
+        { speaker: 'A', ja: '連休は、どこか行きましたか？', pt: 'Você foi a algum lugar no feriado prolongado?' },
+        { speaker: 'B', ja: 'ええ、友だちと金沢に行って来ました。', pt: 'Sim, fui a Kanazawa com uma amiga.' },
+        { speaker: 'A', ja: 'どうでしたか？', pt: 'Como foi?' },
+        { speaker: 'B', ja: '兼六園に行ったり、おいしいものを食べたりして、すごくいい旅行でした。', pt: 'Fomos ao Kenroku-en, comemos coisas gostosas e foi uma viagem muito boa.' },
+        { speaker: 'B', ja: 'ノドグロを食べたんですけど、すごくおいしかったです。', pt: 'Comi nodoguro e estava muito gostoso.' },
+        { speaker: 'B', ja: 'あと、着物を着て町を歩いて、大満足です。でも、草履で歩いたら、足が痛くなっちゃって、忘れられない思い出になりました。', pt: 'Também andei pela cidade usando kimono e fiquei muito satisfeita. Mas, quando andei de zori, meu pé começou a doer, então virou uma memória inesquecível.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -5732,6 +6012,105 @@ const lesson15: Section = {
   audios: attachScripts(15, L15_SCRIPTS),
 }
 
+const lesson16: Section = {
+  id: 'lesson-16',
+  level: 'pre-intermediate',
+  titleJa: '第16課 いい写真がたくさん撮れました',
+  titlePt: 'Lição 16 - Consegui tirar muitas fotos boas',
+  summaryPt:
+    'Prazeres da viagem · enviar mensagens de viagem, pedir serviços ou mudanças em hospedagens e relatar experiências de viagem com mais detalhes.',
+  studyNotes: [
+    {
+      title: 'Tópico: Prazeres da viagem (旅行の楽しみ)',
+      bodyPt:
+        'Pergunta de abertura: これまでの旅行で、楽しかった経験や、困った経験がありますか？\n\n' +
+        '## Can-do\n' +
+        '- Enviar mensagens a amigos, por app de mensagens, a partir de um destino de viagem.\n' +
+        '- Explicar circunstâncias e desejos a funcionários de hotel ou ryokan e pedir serviços ou mudanças.\n' +
+        '- Falar com algum detalhe a um amigo sobre experiências de viagem.',
+    },
+    {
+      title: 'Atividade 1: 旅行先からのメッセージ',
+      bodyPt:
+        'タム envia mensagens durante uma viagem a 山口. A atividade treina leitura de mensagens curtas, com fotos e comentários espontâneos.\n\n' +
+        '| Ponto | Conteúdo |\n|---|---|\n' +
+        '| Onde está | 山口 |\n' +
+        '| O que fez | 角島大橋に行った, 元乃隅神社に行った, 古い町を見た, 温泉に入った |\n' +
+        '| O que comeu | お刺身 e うどん |\n\n' +
+        'Frases-chave: `さっき行ってきたところでーす！`, `ちょうどいまお昼食べたところ。`, `温泉にも入ったし、お刺身も食べたし、大満足です！`.',
+    },
+    {
+      title: 'Gramática ➊: V-たところだ',
+      bodyPt:
+        '**V-たところだ** indica que uma ação acabou de terminar. A forma verbal fica no passado simples antes de ところ.\n\n' +
+        '- `さっき{行|い}ってきたところでーす！` = acabei de voltar de lá agora há pouco.\n' +
+        '- `ちょうどいまお{昼|ひる}{食|た}べたところ。` = acabei de almoçar agora mesmo.\n\n' +
+        'Na fala casual, pode aparecer como `V-たところ` sem だ. Expressões como `さっき` e `ちょうどいま` reforçam a ideia de ação recém-concluída.',
+    },
+    {
+      title: 'Atividade 2: 夕食の内容を少し変えてほしいんですが...',
+      bodyPt:
+        'A atividade trabalha pedidos a funcionários de hotel, ryokan ou minshuku. O foco é explicar a situação antes de pedir uma mudança.\n\n' +
+        '| Faixa | Pedido | Circunstância | Resultado |\n|---|---|---|---|\n' +
+        '| 16-03 | mudar de 和室 para quarto com cama | família não está acostumada a futon; há pessoa com problema na perna | muda para 和洋室 com taxa adicional |\n' +
+        '| 16-04 | mudar um pouco o jantar | amiga de Myanmar não gosta de sashimi | sashimi de uma pessoa vira peixe frito |\n' +
+        '| 16-05 | usar o quarto até 12h | shinkansen é só à tarde | deixa a bagagem e faz turismo por perto |\n\n' +
+        'Vocabulário da hospedagem: 禁煙／喫煙の部屋, 洋室／和室, 景色のいい部屋, 貸切風呂, 送迎, チェックイン, チェックアウト, 朝食, 食事の内容.',
+    },
+    {
+      title: 'Gramática ➋: pedidos com V-てもらう／いただく',
+      bodyPt:
+        'A lição compara formas de pedir que alguém faça algo por você. `V-てもらえますか？` e `V-てもらってもいいですか？` são educadas; `V-ていただけませんか？` é mais polida.\n\n' +
+        '- `和洋室にしてもらえますか？`\n' +
+        '- `時間まで、近くを観光することにするので、荷物だけ預かってもらってもいいですか？`\n' +
+        '- `食事を楽しみにしているので、何かほかの料理にしていただけませんか？`\n\n' +
+        'Também aparecem formas indiretas que suavizam o pedido: `ベッドがある部屋にしてもらえたら、ありがたいんですが...` e `夕食の内容を少し変えてほしいんですが...`.',
+    },
+    {
+      title: 'Gramática ➌➍➎: atendimento e 謙譲語',
+      bodyPt:
+        '**Nになります** aparece em atendimento como forma polida de `Nです`: `1名様2,000円なので、3名様で6,000円になります`, `魚を油で揚げた料理になりますね`, `有料になります`.\n\n' +
+        '**謙譲語①** usa verbos humildes para ações de quem atende: `確認いたしますので、少々お待ちください`, `追加料金をいただくことになってしまいます`, `ご用件、伺います`.\n\n' +
+        '**謙譲語②** usa `おVする／ごVする`: `お荷物をお預かりすることもできます`, `洋室に空きがあれば、ご案内しますね`. O padrão `お + ます-stem + する` é comum com verbos japoneses; `ご + substantivo verbal + する` aparece com muitos verbos sino-japoneses.',
+    },
+    {
+      title: 'Atividade 3: 飛行機が遅れて、1時間以上待たされたんです',
+      bodyPt:
+        'Três pessoas contam viagens a amigos. A atividade treina relatos com acontecimentos bons, problemas e avaliação pessoal.\n\n' +
+        '| Faixa | Destino | Pontos principais |\n|---|---|---|\n' +
+        '| 16-10 | 金沢 | 兼六園, ノドグロ, restaurante popular, kimono alugado, dor no pé por causa do 草履 |\n' +
+        '| 16-11 | 松島 | barco pelas ilhas, paisagem com neve, fotos boas, recuperação pós-terremoto, problemas no aeroporto |\n' +
+        '| 16-12 | 鳥取 | 砂丘, contraste entre mar e areia, opiniões do grupo não batiam, ela foi feita a andar muito |\n\n' +
+        'Frases de avaliação: `すごくいい旅行でした`, `いい経験ができました`, `帰りは本当に疲れました`, `砂丘から見る景色は本当によかった`, `次に旅行するときは、もうひとりで行こうと思った`.',
+    },
+    {
+      title: 'Gramática ➏: V-さ（せら）れる',
+      bodyPt:
+        '**使役受身** expressa que alguém foi levado, obrigado ou forçado a fazer algo, muitas vezes contra a própria vontade. A forma básica é `V-させられる`, mas verbos do Grupo 1 também podem usar a forma contraída `V-される`.\n\n' +
+        '- `飛行機が遅れて、1時間以上待たされたんです。`\n' +
+        '- `5,000円も払わされたんですよ。`\n' +
+        '- `お昼ご飯を食べる店もなかなか決まらなくて、たくさん歩かされた。`\n\n' +
+        'O sentido é diferente da passiva simples: aqui a pessoa sente que a ação foi imposta pela situação, por outra pessoa ou por uma regra.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {新幹線|しんかんせん}, {飛行機|ひこうき}, {宿泊|しゅくはく}, {和室|わしつ}, {洋室|ようしつ}, お{土産|みやげ}, {美術館|びじゅつかん}, {追加|ついか}, {高級|こうきゅう}（な）, {疲|つか}れる.\n\n' +
+        '**Vocabulário-chave:** 旅行先, メッセージ, 温泉, 刺身, うどん, 禁煙, 喫煙, 貸切風呂, 送迎, チェックイン, チェックアウト, 朝食, 変更する, 民宿, フリースペース, 予約, 重量オーバー, 草履, 砂丘, 砂漠, コントラスト.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**山口:** fica no extremo oeste de Honshu, cercada por mar em três lados. A lição apresenta 角島大橋, 元乃隅神社, a antiga cidade de 萩, 錦帯橋, 秋芳洞 e o udon da rede どんどん.\n\n' +
+        '**金沢／松島／鳥取:** 金沢 é conhecida por 兼六園, bairros históricos, aluguel de kimono e frutos do mar como ノドグロ. 松島 é uma das 日本三景 e tem passeio de barco pelas ilhas. 鳥取 é famosa pelas 鳥取砂丘, dunas de areia com vista para o mar.\n\n' +
+        '**日本三××:** exemplos comuns são 日本三景 (松島, 天橋立, 宮島), 日本三名園 (兼六園, 偕楽園, 後楽園), 日本三名瀑, 日本三名泉 e 日本三大夜景.\n\n' +
+        '**ホテル／旅館／民宿／ゲストハウス:** hotel tende a seguir estilo ocidental; ryokan costuma oferecer quartos japoneses e refeições; minshuku é hospedagem familiar mais simples; guest house costuma ser econômica e compartilhada.',
+    },
+  ],
+  groups: [lesson16Group],
+  audios: attachScripts(16, L16_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -5756,6 +6135,7 @@ const sections: Section[] = [
   lesson14,
   // Tópico 8 - Prazeres da viagem (旅行の楽しみ)
   lesson15,
+  lesson16,
 ]
 
 export const irodoriPreIntermediate: Level = {
