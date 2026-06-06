@@ -3232,7 +3232,132 @@ const lesson15: Section = {
   audios: attachScripts(15, L15_SCRIPTS),
 }
 
-// ---- Lições 16-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 16: 地震が来ても、あわてて動かないでください (tópico 自然と環境) --------------
+const lesson16Group: ExerciseGroup = {
+  id: 'iro-e2-l16',
+  title: '地震が来ても、あわてて動かないでください',
+  subtitlePt: 'Entender notícias/anúncios de desastre · entender instruções de simulado de prevenção · entender o que fazer num terremoto · em caso de desastre, perguntar e obter informações',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l16-1', number: 1, prompt: 'O título 「{地震|じしん}が{来|き}て[[も]]、あわてて{動|うご}かないでください」 — 「V-ても」 significa:', choices: [{ n: 1, text: 'mesmo que / ainda que (mesmo que venha um terremoto, não se mexa apressado)' }, { n: 2, text: 'porque ~' }, { n: 3, text: 'enquanto ~' }, { n: 4, text: 'depois que ~' }], answer: 1, translationPt: 'Mesmo com terremoto, não se mexa com pressa.', explanationPt: 'V-ても = «mesmo que ~». {地震|じしん}が{来|き}ても, {雨|あめ}が{降|ふ}っても. + あわてて{動|うご}かないでください (não se desespere). (título · revisão)' },
+    { id: 'iro-e2-l16-2', number: 2, prompt: 'Que desastre natural esta ilustração mostra?', image: `${IMG}/Z_16_1_01_taifuu.png`, imageAlt: 'tufão (vento e chuva fortes)', choices: [{ n: 1, text: '{台風|たいふう} — tufão ({台風|たいふう}が{来|く}る)' }, { n: 2, text: '{地震|じしん} — terremoto' }, { n: 3, text: '{津波|つなみ} — tsunami' }, { n: 4, text: '{大雪|おおゆき} — nevasca' }], answer: 1, explanationPt: '{台風|たいふう} = tufão; {台風|たいふう}が{来|く}る. (Atividade 1 · 災害)' },
+    { id: 'iro-e2-l16-3', number: 3, prompt: 'Que desastre esta ilustração mostra?', image: `${IMG}/Z_16_1_02_jishin.png`, imageAlt: 'terremoto (objetos caindo, casa tremendo)', choices: [{ n: 1, text: '{地震|じしん} — terremoto ({地震|じしん}が{起|お}こる／{揺|ゆ}れる)' }, { n: 2, text: '{台風|たいふう} — tufão' }, { n: 3, text: '{火事|かじ} — incêndio' }, { n: 4, text: '{大雪|おおゆき} — nevasca' }], answer: 1, explanationPt: '{地震|じしん} = terremoto; {地震|じしん}が{起|お}こる, {揺|ゆ}れる. (Atividade 1)' },
+    { id: 'iro-e2-l16-4', number: 4, prompt: 'Que desastre esta ilustração mostra?', image: `${IMG}/Z_16_1_03_kaji.png`, imageAlt: 'incêndio (fogo e fumaça)', choices: [{ n: 1, text: '{火事|かじ}／{火災|かさい} — incêndio ({火事|かじ}になる／{火|ひ}が{出|で}る)' }, { n: 2, text: '{地震|じしん} — terremoto' }, { n: 3, text: '{津波|つなみ} — tsunami' }, { n: 4, text: '{台風|たいふう} — tufão' }], answer: 1, explanationPt: '{火事|かじ}/{火災|かさい} = incêndio; {火事|かじ}になる, {火|ひ}が{出|で}る. (Atividade 1)' },
+    { id: 'iro-e2-l16-5', number: 5, prompt: 'Que desastre esta ilustração mostra?', image: `${IMG}/Z_16_1_04_yuki.png`, imageAlt: 'neve acumulada (nevasca)', choices: [{ n: 1, text: '{大雪|おおゆき} — nevasca ({雪|ゆき}が{積|つ}もる)' }, { n: 2, text: '{台風|たいふう} — tufão' }, { n: 3, text: '{地震|じしん} — terremoto' }, { n: 4, text: '{火事|かじ} — incêndio' }], answer: 1, explanationPt: '{大雪|おおゆき} = nevasca; {雪|ゆき}が{積|つ}もる. (Atividade 1)' },
+    { id: 'iro-e2-l16-6', number: 6, prompt: 'Que desastre esta ilustração mostra?', image: `${IMG}/Z_16_1_05_tsunami.png`, imageAlt: 'tsunami (onda gigante)', choices: [{ n: 1, text: '{津波|つなみ} — tsunami ({津波|つなみ}が{来|く}る)' }, { n: 2, text: '{大雪|おおゆき} — nevasca' }, { n: 3, text: '{火事|かじ} — incêndio' }, { n: 4, text: '{台風|たいふう} — tufão' }], answer: 1, explanationPt: '{津波|つなみ} = tsunami; {津波|つなみ}が{来|く}る → {海岸|かいがん}から{離|はな}れる. (Atividade 1)' },
+    { id: 'iro-e2-l16-7', number: 7, prompt: 'O que é o 「{緊急|きんきゅう}{地震|じしん}{速報|そくほう}」?', image: `${IMG}/Z_16_1_08_kinkyuusokuhoo.png`, imageAlt: 'alerta de terremoto na TV/celular', choices: [{ n: 1, text: 'o alerta antecipado de terremoto (na TV/celular), para se preparar' }, { n: 2, text: 'a previsão do tempo de amanhã' }, { n: 3, text: 'um anúncio de evento' }, { n: 4, text: 'uma propaganda' }], answer: 1, explanationPt: '{緊急|きんきゅう}{地震|じしん}{速報|そくほう} = alerta de terremoto; ouvir notícias/{放送|ほうそう} e entender o que houve e o que fazer. (Seção 1)' },
+    { id: 'iro-e2-l16-8', number: 8, prompt: '聴解 16-07 (避難訓練1 · 地震): que instruções são dadas quando “começa” o terremoto?', context: '{放送|ほうそう}：{震度|しんど}5の{地震|じしん}が{発生|はっせい}しました。Ａ：そこのドアを{開|あ}けて！ {全員|ぜんいん}、ヘルメットをかぶって！ {姿勢|しせい}を{低|ひく}くして！', choices: [{ n: 1, text: 'Abrir a porta, todos porem o capacete e abaixarem o corpo (proteger-se).' }, { n: 2, text: 'Correr para a rua imediatamente.' }, { n: 3, text: 'Usar o elevador.' }, { n: 4, text: 'Continuar trabalhando normalmente.' }], answer: 1, explanationPt: 'No tremor: ドアを{開|あ}ける, ヘルメットをかぶる, {姿勢|しせい}を{低|ひく}くする. Depois: {揺|ゆ}れがおさまったら{避難|ひなん}; エレベーターは{使|つか}わない, {階段|かいだん}で. (聴解 16-07)' },
+    { id: 'iro-e2-l16-9', number: 9, prompt: '「{急|いそ}げ！」「こっちに{集|あつ}まれ！」「{走|はし}るな！」 — essas formas (命令形/命令の否定) são usadas porque:', choices: [{ n: 1, text: 'são ordens fortes e diretas, próprias de emergências/treinos: «depressa! / juntem-se! / não corram!»' }, { n: 2, text: 'são pedidos educados' }, { n: 3, text: 'são convites' }, { n: 4, text: 'indicam o passado' }], answer: 1, explanationPt: 'Imperativo 命令形: {急|いそ}ぐ→{急|いそ}げ, {集|あつ}まる→{集|あつ}まれ, {逃|に}げる→{逃|に}げろ, する→しろ, {来|く}る→{来|こ}い. Proibição V-るな: {走|はし}る→{走|はし}るな. (文法ノート ❶)' },
+    { id: 'iro-e2-l16-10', number: 10, prompt: 'Como se forma a proibição forte (命令形の否定) de um verbo, como em 「{走|はし}るな」?', choices: [{ n: 1, text: 'verbo na forma de dicionário + な: {行|い}く→{行|い}くな, {食|た}べる→{食|た}べるな, する→するな' }, { n: 2, text: 'verbo + ました' }, { n: 3, text: 'verbo + たい' }, { n: 4, text: 'verbo + ましょう' }], answer: 1, explanationPt: 'V(辞書形) + な = proibição forte. {走|はし}るな, {行|い}くな. (≠ {走|はし}れ/{行|い}け = ordem afirmativa.) (文法ノート ❶)' },
+    { id: 'iro-e2-l16-11', number: 11, prompt: '聴解 16-08 (避難訓練2 · 火事): num incêndio no trabalho, que papéis aparecem?', context: '{上司|じょうし}：{火災|かさい}を{確認|かくにん}したら、{青木|あおき}さん、119{番|ばん}に{連絡|れんらく}してください。エルデネさんは、{初期|しょき}{消火|しょうか}をお{願|ねが}いします。', choices: [{ n: 1, text: 'Confirmar o fogo, ligar para o 119, e alguém faz o combate inicial (初期消火) com o extintor; verificar quem não conseguiu escapar.' }, { n: 2, text: 'Todos voltam a trabalhar.' }, { n: 3, text: 'Ninguém faz nada.' }, { n: 4, text: 'Apenas abrem as janelas.' }], answer: 1, explanationPt: '{火災|かさい}{確認|かくにん}→119{番|ばん}に{連絡|れんらく}, {初期|しょき}{消火|しょうか} ({消火器|しょうかき}), {逃|に}げ{遅|おく}れた{人|ひと}がいないか{確認|かくにん}. (聴解 16-08)' },
+    { id: 'iro-e2-l16-12', number: 12, prompt: 'Que equipamento é este, usado no combate inicial ao fogo (初期消火)?', image: `${IMG}/Z_16_2_03_shooka.png`, imageAlt: 'extintor de incêndio', choices: [{ n: 1, text: '{消火器|しょうかき} — extintor de incêndio' }, { n: 2, text: '{火災|かさい}{報知器|ほうちき} — alarme de incêndio' }, { n: 3, text: '{防災|ぼうさい}ずきん — capuz de proteção' }, { n: 4, text: '{給水車|きゅうすいしゃ} — caminhão-pipa' }], answer: 1, explanationPt: '{消火器|しょうかき} = extintor. Partes: {安全|あんぜん}ピン, レバー, ホース. (Seção 2 · 防災訓練4)' },
+    { id: 'iro-e2-l16-13', number: 13, prompt: '聴解 16-10 (消火器の使い方): qual a ordem correta de usar o extintor?', context: '①{安全|あんぜん}ピンを{抜|ぬ}く → ②ホースを{火|ひ}に{向|む}ける → ③レバーを{握|にぎ}る → ④{噴射|ふんしゃ}する。', choices: [{ n: 1, text: 'Tirar o pino de segurança → apontar a mangueira para o fogo → apertar a alavanca → jorrar.' }, { n: 2, text: 'Apertar a alavanca antes de tirar o pino.' }, { n: 3, text: 'Jogar o extintor no fogo.' }, { n: 4, text: 'Apontar para o teto.' }], answer: 1, explanationPt: '{消火器|しょうかき}: {安全|あんぜん}ピンを{抜|ぬ}く→{火|ひ}に{向|む}ける ({先|さき}を{狙|ねら}う)→レバーを{握|にぎ}る→{噴射|ふんしゃ}; 5m〜手前から. (聴解 16-10)' },
+    { id: 'iro-e2-l16-14', number: 14, prompt: '聴解 16-09 (煙体験): num exercício de fumaça, que cuidados se deve ter?', context: '{煙|けむり}が{充満|じゅうまん}しています。{姿勢|しせい}を{低|ひく}くして{進|すす}んでください。タオルやハンカチを{口|くち}に{当|あ}てて、できるだけ{煙|けむり}を{吸|す}わないようにしてください。', choices: [{ n: 1, text: 'Abaixar o corpo e avançar, cobrir a boca com toalha/lenço e procurar não respirar a fumaça.' }, { n: 2, text: 'Correr em pé respirando fundo.' }, { n: 3, text: 'Parar e esperar a fumaça passar.' }, { n: 4, text: 'Abrir todas as janelas e gritar.' }], answer: 1, explanationPt: '{煙体験|けむりたいけん}: {姿勢|しせい}を{低|ひく}くする, {口|くち}にハンカチ, {煙|けむり}を{吸|す}わないようにする, {声|こえ}をかけ{合|あ}う, {床|ゆか}に{近|ちか}く. (聴解 16-09)' },
+    { id: 'iro-e2-l16-15', number: 15, prompt: '「できるだけ{煙|けむり}を{吸|す}わない[[ようにしてください]]」 — qual a diferença para 「{吸|す}わないでください」?', choices: [{ n: 1, text: '〜ないようにする = esforçar-se/tomar cuidado para NÃO fazer (como precaução); 〜ないでください = ordem direta de não fazer agora' }, { n: 2, text: 'são exatamente iguais' }, { n: 3, text: '〜ないようにする significa «faça»' }, { n: 4, text: '〜ないでください é mais educado e suave' }], answer: 1, explanationPt: 'V-ないようにする (empenhar-se em não ~, precaução) ≠ V-ないでください (não faça ~, direto). {煙|けむり}を{吸|す}わないように. (文法ノート ❷)' },
+    { id: 'iro-e2-l16-16', number: 16, prompt: '聴解 (地震が起こったとき): segundo a lição, qual é uma ação SEGURA durante um terremoto?', choices: [{ n: 1, text: 'proteger-se sob a mesa ({机|つくえ}の{下|した}に{隠|かく}れる) e ficar longe de coisas que caem facilmente ({倒|たお}れやすいもの)' }, { n: 2, text: 'correr para fora correndo no susto' }, { n: 3, text: 'usar o elevador para descer rápido' }, { n: 4, text: 'acender uma vela' }], answer: 1, explanationPt: '{地震|じしん}が{起|お}こったら、あわてて{動|うご}かない; {机|つくえ}の{下|した}に{隠|かく}れる, {倒|たお}れやすいものから{離|はな}れる. (Seção · 地震が起こったとき)' },
+    { id: 'iro-e2-l16-17', number: 17, prompt: '聴解 16-22〜23 (災害のあと): após um tufão/terremoto, sobre o que as pessoas conversam?', context: 'Ａ：お{店|みせ}が{開|あ}いていないので、{食|た}べるものがなくて、{困|こま}ってます。Ｂ：これ、{会社|かいしゃ}にあった{非常食|ひじょうしょく}。…{断水|だんすい}、まだ{続|つづ}きそうだよ。{給水車|きゅうすいしゃ}が{来|く}るって。', choices: [{ n: 1, text: 'Falta de comida (recebem 非常食), falta de água (断水) e onde pegar água (給水車); também banho provisório.' }, { n: 2, text: 'Sobre uma festa de aniversário.' }, { n: 3, text: 'Sobre compras de roupas novas.' }, { n: 4, text: 'Sobre um filme no cinema.' }], answer: 1, explanationPt: 'Pós-desastre: {非常食|ひじょうしょく} (comida de emergência), {断水|だんすい} (falta de água), {給水車|きゅうすいしゃ} (caminhão-pipa), {避難所|ひなんじょ}, {仮設|かせつ}のお{風呂|ふろ}. (聴解 16-22〜23)' },
+    { id: 'iro-e2-l16-18', number: 18, prompt: 'O que é o objeto desta ilustração, usado para proteger a cabeça em desastres?', image: `${IMG}/Z_16_2_01_boosaizukin.png`, imageAlt: 'capuz de proteção contra desastres', choices: [{ n: 1, text: '{防災|ぼうさい}ずきん — capuz/touca de proteção (protege a cabeça)' }, { n: 2, text: '{消火器|しょうかき} — extintor' }, { n: 3, text: '{給水車|きゅうすいしゃ} — caminhão-pipa' }, { n: 4, text: '{非常食|ひじょうしょく} — comida de emergência' }], answer: 1, explanationPt: '{防災|ぼうさい}ずきん = capuz de proteção (cabeça). Também: ヘルメット, {非常食|ひじょうしょく}, {懐中電灯|かいちゅうでんとう}. (Seção 2)' },
+    { id: 'iro-e2-l16-19', number: 19, prompt: 'Que aparelho é este, que avisa quando há fumaça/incêndio?', image: `${IMG}/Z_16_2_12_kasaihoochiki.png`, imageAlt: 'detector/alarme de incêndio no teto', choices: [{ n: 1, text: '{火災|かさい}{報知器|ほうちき} — alarme/detector de incêndio' }, { n: 2, text: '{消火器|しょうかき} — extintor' }, { n: 3, text: 'エアコン — ar-condicionado' }, { n: 4, text: '{緊急|きんきゅう}{速報|そくほう} — alerta de emergência' }], answer: 1, explanationPt: '{火災|かさい}{報知器|ほうちき} = detector de incêndio. (Seção 2)' },
+    { id: 'iro-e2-l16-20', number: 20, prompt: 'Vocabulário de desastres: 「{台風|たいふう}／{地震|じしん}／{津波|つなみ}／{避難|ひなん}／{避難所|ひなんじょ}」 significam:', choices: [{ n: 1, text: 'tufão / terremoto / tsunami / evacuação (refugiar-se) / abrigo (local de refúgio)' }, { n: 2, text: 'chuva / vento / maré / fuga / hospital' }, { n: 3, text: 'neve / trovão / onda / passeio / escola' }, { n: 4, text: 'enchente / raio / corrente / viagem / prefeitura' }], answer: 1, explanationPt: '{台風|たいふう}, {地震|じしん}, {津波|つなみ}, {避難|ひなん} (refugiar-se), {避難所|ひなんじょ} (abrigo). Também: {火事|かじ}, {大雪|おおゆき}, {揺|ゆ}れる. (Atividade 1)' },
+    { id: 'iro-e2-l16-21', number: 21, prompt: 'Vocabulário de prevenção: 「{防災|ぼうさい}{訓練|くんれん}／{消火器|しょうかき}／{初期|しょき}{消火|しょうか}／{非常食|ひじょうしょく}／{断水|だんすい}」 significam:', choices: [{ n: 1, text: 'simulado de desastre / extintor / combate inicial ao fogo / comida de emergência / corte de água' }, { n: 2, text: 'evacuação / mangueira / fogueira / lanche / chuva' }, { n: 3, text: 'aula / alarme / incêndio / banquete / inundação' }, { n: 4, text: 'reunião / capacete / fumaça / mercado / vazamento' }], answer: 1, explanationPt: '{防災|ぼうさい}{訓練|くんれん}, {消火器|しょうかき}, {初期|しょき}{消火|しょうか}, {非常食|ひじょうしょく}, {断水|だんすい}. Também: {給水車|きゅうすいしゃ}, {緊急|きんきゅう}{速報|そくほう}, {煙体験|けむりたいけん}. (Seções)' },
+    { id: 'iro-e2-l16-22', number: 22, prompt: 'Os kanji 「{地震|じしん}／{台風|たいふう}／{外|そと}／{声|こえ}／{危|あぶ}ない」 lêem-se:', choices: [{ n: 1, text: 'じしん (terremoto) / たいふう (tufão) / そと (fora) / こえ (voz) / あぶない (perigoso)' }, { n: 2, text: 'じしん / たいふう / がい / せい / きない' }, { n: 3, text: 'ちしん / だいふう / そと / こえ / あぶない' }, { n: 4, text: 'じしん / たいふう / そと / こえ / きけんない' }], answer: 1, explanationPt: '{地震|じしん}, {台風|たいふう}, {外|そと} ({外|そと}に{出|で}ない), {声|こえ} ({声|こえ}をかけ{合|あ}う), {危|あぶ}ない. (漢字のことば)' },
+    { id: 'iro-e2-l16-23', number: 23, prompt: 'Os kanji 「{大切|たいせつ}（な)／{心配|しんぱい}（な)／{集|あつ}まる／{進|すす}む」 lêem-se:', choices: [{ n: 1, text: 'たいせつ (importante) / しんぱい (preocupação) / あつまる (juntar-se) / すすむ (avançar)' }, { n: 2, text: 'だいせつ / しんぱい / しゅうまる / しんむ' }, { n: 3, text: 'たいせつ / こころはい / あつまる / すすむ' }, { n: 4, text: 'たいせつ / しんぱい / あつまる / すずむ' }], answer: 1, explanationPt: '{大切|たいせつ}（な), {心配|しんぱい}（な), {集|あつ}まる ({中庭|なかにわ}に{集|あつ}まる), {進|すす}む ({姿勢|しせい}を{低|ひく}くして{進|すす}む). (漢字のことば)' },
+    { id: 'iro-e2-l16-24', number: 24, prompt: 'Resumo: nesta lição (desastres), aprende-se principalmente:', choices: [{ n: 1, text: 'V-ても (地震が来ても), o 命令形/V-るな para ordens em emergência (急げ／走るな) e V-ないようにする (煙を吸わないように)' }, { n: 2, text: '〜てもらえますか / Nのために' }, { n: 3, text: '〜てある / だけじゃなくて' }, { n: 4, text: 'もう〜ました / まだ〜ていません' }], answer: 1, explanationPt: 'Núcleo da L16: V-ても (título), 命令形+V-るな (❶), V-ないようにしてください (❷); + vocabulário de 災害/防災.' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 16 (situação + falas-chave citadas; não verbatim)
+const L16_SCRIPTS: Record<string, ScriptItem[]> = {
+  '16-07': [
+    {
+      label: '防災訓練1 — 地震 (16-07) · resumo',
+      setupJa: '{職場|しょくば}で、{地震|じしん}の{避難|ひなん}{訓練|くんれん}をしています。',
+      setupPt: 'Resumo: simulado de terremoto no trabalho. No tremor: abrir a porta, pôr capacete, abaixar-se; depois evacuar pela escada (sem elevador), reunir-se no pátio e fazer a chamada.',
+      lines: [
+        { speaker: '放送', ja: '{震度|しんど}5の{地震|じしん}が{発生|はっせい}しました。', pt: 'Ocorreu um terremoto de intensidade 5.' },
+        { speaker: 'A', ja: 'そこのドアを{開|あ}けて！ {全員|ぜんいん}、ヘルメットをかぶって！ {姿勢|しせい}を{低|ひく}くして！', pt: 'Abram aquela porta! Todos, ponham o capacete! Abaixem-se!' },
+        { speaker: 'A', ja: 'エレベーターは{使|つか}わないで。{階段|かいだん}で{下|お}りて。', pt: 'Não usem o elevador. Desçam pela escada.' },
+      ],
+    },
+  ],
+  '16-08': [
+    {
+      label: '防災訓練2 — 火事 (16-08) · resumo',
+      setupPt: 'Resumo: simulado de incêndio no trabalho. Confirmado o fogo: ligar para o 119, fazer o combate inicial com o extintor e verificar se não há ninguém preso.',
+      lines: [
+        { speaker: '上司', ja: '{火災|かさい}を{確認|かくにん}したら、119{番|ばん}に{連絡|れんらく}してください。{初期|しょき}{消火|しょうか}をお{願|ねが}いします。', pt: 'Ao confirmar o incêndio, liguem para o 119. Façam o combate inicial ao fogo, por favor.' },
+      ],
+    },
+  ],
+  '16-09': [
+    {
+      label: '防災訓練3 — 煙体験 (16-09) · resumo',
+      setupJa: '{地域|ちいき}の{防災|ぼうさい}{訓練|くんれん}で、{煙体験|けむりたいけん}のやり{方|かた}の{説明|せつめい}を{聞|き}いています。',
+      setupPt: 'Resumo: simulado de fumaça. Abaixar o corpo, cobrir a boca com lenço, não respirar a fumaça, avançar para a saída e ir avisando uns aos outros.',
+      lines: [
+        { speaker: '説明', ja: '{姿勢|しせい}を{低|ひく}くして{進|すす}んでください。できるだけ{煙|けむり}を{吸|す}わないようにしてください。', pt: 'Avancem abaixados. Procurem não respirar a fumaça o máximo possível.' },
+      ],
+    },
+  ],
+  '16-10': [
+    {
+      label: '防災訓練4 — 消火器の使い方 (16-10) · resumo',
+      setupPt: 'Resumo: como usar o extintor — tirar o pino de segurança, apontar a mangueira para a base do fogo, apertar a alavanca e jorrar (a alguns metros de distância).',
+      lines: [
+        { speaker: '説明', ja: '{安全|あんぜん}ピンを{抜|ぬ}いて、ホースを{火|ひ}に{向|む}けて、レバーを{握|にぎ}って{噴射|ふんしゃ}します。', pt: 'Tire o pino de segurança, aponte a mangueira para o fogo, aperte a alavanca e jorre.' },
+      ],
+    },
+  ],
+}
+
+const lesson16: Section = {
+  id: 'lesson-16',
+  level: 'elementary2',
+  titleJa: '第16課 地震が来ても、あわてて動かないでください',
+  titlePt: 'Lição 16 — Mesmo com terremoto, não se desespere',
+  summaryPt:
+    'Natureza e meio ambiente · entender notícias e alertas de desastre (緊急地震速報／台風・地震・津波), entender instruções de simulados de prevenção (避難訓練／消火器／煙体験), saber o que fazer num terremoto (机の下に隠れる) e, depois de um desastre, perguntar a quem está perto e obter informações (断水／給水車／避難所).',
+  studyNotes: [
+    {
+      title: 'Tópico: Natureza e meio ambiente (自然と環境)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ouvir notícias/anúncios de desastre e entender o que houve e o que fazer.\n' +
+        '- Ouvir explicações e instruções de simulado de prevenção e entender o procedimento e os cuidados.\n' +
+        '- Ouvir e entender o conteúdo geral do que fazer em caso de terremoto num simulado.\n' +
+        '- Em caso de desastre, perguntar a quem está perto e obter as informações necessárias.\n' +
+        '- Ler um folheto de prevenção de desastres em japonês simples para estrangeiros e entender.\n\n' +
+        '💡 災害: {台風|たいふう}, {地震|じしん}, {火事|かじ}, {大雪|おおゆき}, {津波|つなみ}; 防災: {避難|ひなん}, {消火器|しょうかき}, {非常食|ひじょうしょく}, {給水車|きゅうすいしゃ}.',
+    },
+    {
+      title: 'Imperativo 命令形 / V-るな — ordens fortes (➊)',
+      bodyPt:
+        'Em emergências/treinos (e ao torcer), usam-se formas **imperativas** fortes:\n\n' +
+        '- **Ordem afirmativa (命令形):** `{急|いそ}げ！`, `{集|あつ}まれ！`, `{逃|に}げろ！` (グ1 -e: {行|い}く→{行|い}け; グ2 -ろ: {食|た}べる→{食|た}べろ; する→しろ, {来|く}る→{来|こ}い).\n' +
+        '- **Ordem negativa (禁止 V-るな):** `{走|はし}るな！`, `{行|い}くな！` (forma de dicionário + な).\n\n' +
+        '💡 V-てください / V-ないで também instruem; o 命令形 é mais firme. Torcida: {行|い}け！がんばれ！ (文法ノート ❶)',
+    },
+    {
+      title: 'V-ないようにしてください / V-ても (➋ + título)',
+      bodyPt:
+        '- **V-ないようにしてください** — tomar cuidado/empenhar-se para NÃO fazer (precaução): `{煙|けむり}を{吸|す}わないようにしてください`, `{転|ころ}ばないように`. Diferente de **V-ないでください** (ordem direta de não fazer). (文法ノート ❷)\n' +
+        '- **V-ても** (título, revisão) — «mesmo que ~»: `{地震|じしん}が{来|き}ても、あわてて{動|うご}かないでください`, `{雨|あめ}が{降|ふ}っても{行|い}きます`.',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Desastres:** {台風|たいふう}, {地震|じしん} ({揺|ゆ}れる/{起|お}こる), {火事|かじ}/{火災|かさい}, {大雪|おおゆき}, {津波|つなみ}, {緊急|きんきゅう}{地震|じしん}{速報|そくほう}, {避難|ひなん}, {避難所|ひなんじょ}.\n\n' +
+        '**Prevenção:** {防災|ぼうさい}{訓練|くんれん}, {避難|ひなん}{訓練|くんれん}, {消火器|しょうかき} ({安全|あんぜん}ピン/レバー/ホース), {初期|しょき}{消火|しょうか}, 119{番|ばん}, {煙体験|けむりたいけん}, {姿勢|しせい}を{低|ひく}くする, {机|つくえ}の{下|した}に{隠|かく}れる, {防災|ぼうさい}ずきん, {火災|かさい}{報知器|ほうちき}.\n\n' +
+        '**Pós-desastre:** {非常食|ひじょうしょく}, {断水|だんすい}, {給水車|きゅうすいしゃ}, {仮設|かせつ}のお{風呂|ふろ}.\n\n' +
+        '**Kanji da lição:** {地震|じしん}, {台風|たいふう}, {外|そと}, {声|こえ}, {危|あぶ}ない, {大切|たいせつ}（な), {心配|しんぱい}（な), {集|あつ}まる, {進|すす}む.',
+    },
+  ],
+  groups: [lesson16Group],
+  audios: attachScripts(16, L16_SCRIPTS),
+}
+
+// ---- Lições 17-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -3257,13 +3382,7 @@ const sections: Section[] = [
   lesson14,
   // Tópico 8 — Natureza e meio ambiente (自然と環境)
   lesson15,
-  scaffold(16, 'Natureza e meio ambiente', '地震が来ても、あわてて動かないでください', 'Mesmo com terremoto, não se desespere', [
-    'Ouvir notícias/anúncios de desastre e entender o que houve e o que fazer.',
-    'Ouvir explicações e instruções de simulado de prevenção e entender o procedimento e os cuidados.',
-    'Ouvir e entender o conteúdo geral do que fazer em caso de terremoto num simulado.',
-    'Em caso de desastre, perguntar a quem está perto e obter as informações necessárias.',
-    'Ler um folheto de prevenção de desastres em japonês simples para estrangeiros e entender.',
-  ]),
+  lesson16,
   // Tópico 9 — Minha vida (私の人生)
   scaffold(17, 'Minha vida', '日本語が前より話せるようになりました', 'Agora consigo falar japonês melhor que antes', [
     'Falar de forma simples sobre o que viveu e como sua vida mudou desde que chegou ao Japão.',
