@@ -2753,7 +2753,121 @@ const lesson11: Section = {
   audios: attachScripts(11, L11_SCRIPTS),
 }
 
-// ---- Lições 12-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 12: この掃除機は軽くて動かしやすいですよ (tópico 上手な買い物) --------------
+const lesson12Group: ExerciseGroup = {
+  id: 'iro-e2-l12',
+  title: 'この掃除機は軽くて動かしやすいですよ',
+  subtitlePt: 'Pedir conselho sobre o que/onde comprar · usar app de brechó (フリマ) para comprar eletrônicos · ler tabela comparativa e etiquetas de preço · perguntar ao vendedor ou pedir desconto',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l12-1', number: 1, prompt: 'O título 「この{掃除機|そうじき}は{軽|かる}くて{動|うご}かし[[やすい]]ですよ」 — 「V-やすい」 significa:', choices: [{ n: 1, text: 'fácil de fazer (este aspirador é leve e fácil de manusear)' }, { n: 2, text: 'difícil de fazer' }, { n: 3, text: 'caro' }, { n: 4, text: 'pesado' }], answer: 1, translationPt: 'Este aspirador é leve e fácil de manusear.', explanationPt: 'V-ます (radical) + やすい = «fácil de ~». {動|うご}かす→{動|うご}かしやすい. (≠ V-にくい = difícil de ~). (文法ノート ❷)' },
+    { id: 'iro-e2-l12-2', number: 2, prompt: 'Que eletrodoméstico esta ilustração mostra?', image: `${IMG}/Z_12_1_01_reezooko.png`, imageAlt: 'geladeira', choices: [{ n: 1, text: '{冷蔵庫|れいぞうこ} — geladeira' }, { n: 2, text: '{洗濯機|せんたくき} — máquina de lavar' }, { n: 3, text: '{電子|でんし}レンジ — micro-ondas' }, { n: 4, text: '{掃除機|そうじき} — aspirador' }], answer: 1, explanationPt: '{冷蔵庫|れいぞうこ} = geladeira. (Atividade 1 · 電気製品)' },
+    { id: 'iro-e2-l12-3', number: 3, prompt: 'Que eletrodoméstico esta ilustração mostra?', image: `${IMG}/Z_12_1_02_sentakuki.png`, imageAlt: 'máquina de lavar roupa', choices: [{ n: 1, text: '{洗濯機|せんたくき} — máquina de lavar roupa' }, { n: 2, text: '{冷蔵庫|れいぞうこ} — geladeira' }, { n: 3, text: '{炊飯器|すいはんき} — panela de arroz' }, { n: 4, text: '{扇風機|せんぷうき} — ventilador' }], answer: 1, explanationPt: '{洗濯機|せんたくき} = máquina de lavar roupa. (Atividade 1)' },
+    { id: 'iro-e2-l12-4', number: 4, prompt: 'Que eletrodoméstico esta ilustração mostra?', image: `${IMG}/Z_12_1_03_suihanki.png`, imageAlt: 'panela elétrica de arroz', choices: [{ n: 1, text: '{炊飯器|すいはんき} — panela elétrica de arroz' }, { n: 2, text: 'ポット — garrafa térmica/chaleira' }, { n: 3, text: '{電子|でんし}レンジ — micro-ondas' }, { n: 4, text: '{洗濯機|せんたくき} — máquina de lavar' }], answer: 1, explanationPt: '{炊飯器|すいはんき} = panela de arroz (ex.: IHジャー, 5.5{合|ごう}). (Atividade 1)' },
+    { id: 'iro-e2-l12-5', number: 5, prompt: 'Que eletrodoméstico esta ilustração mostra?', image: `${IMG}/Z_12_1_04_denshirenji.png`, imageAlt: 'forno de micro-ondas', choices: [{ n: 1, text: '{電子|でんし}レンジ — (forno de) micro-ondas' }, { n: 2, text: '{炊飯器|すいはんき} — panela de arroz' }, { n: 3, text: '{冷蔵庫|れいぞうこ} — geladeira' }, { n: 4, text: 'テレビ — televisão' }], answer: 1, explanationPt: '{電子|でんし}レンジ = micro-ondas. (Atividade 1)' },
+    { id: 'iro-e2-l12-6', number: 6, prompt: 'Que eletrodoméstico esta ilustração mostra (tema do título da lição)?', image: `${IMG}/Z_12_1_05_soojiki.png`, imageAlt: 'aspirador de pó', choices: [{ n: 1, text: '{掃除機|そうじき} — aspirador de pó' }, { n: 2, text: '{扇風機|せんぷうき} — ventilador' }, { n: 3, text: 'ドライヤー — secador' }, { n: 4, text: 'アイロン — ferro de passar' }], answer: 1, explanationPt: '{掃除機|そうじき} = aspirador. コードレス{掃除機|そうじき} (sem fio). (Atividade 1 / Seção 3)' },
+    { id: 'iro-e2-l12-7', number: 7, prompt: 'Que eletrodoméstico esta ilustração mostra?', image: `${IMG}/Z_12_1_12_senpuuki.png`, imageAlt: 'ventilador', choices: [{ n: 1, text: '{扇風機|せんぷうき} — ventilador' }, { n: 2, text: '{掃除機|そうじき} — aspirador' }, { n: 3, text: 'エアコン — ar-condicionado' }, { n: 4, text: 'ストーブ — aquecedor' }], answer: 1, explanationPt: '{扇風機|せんぷうき} = ventilador. (Atividade 1)' },
+    { id: 'iro-e2-l12-8', number: 8, prompt: 'Que aparelho esta ilustração mostra?', image: `${IMG}/Z_12_1_11_iyahon.png`, imageAlt: 'fones de ouvido (earphones)', choices: [{ n: 1, text: 'イヤホン — fones de ouvido (ex.: ワイヤレス = sem fio)' }, { n: 2, text: 'スピーカー — caixa de som' }, { n: 3, text: 'スマホ — smartphone' }, { n: 4, text: 'パソコン — computador' }], answer: 1, explanationPt: 'イヤホン = fones de ouvido. ワイヤレス (wireless), {音|おと}がいい, {耳|みみ}が{痛|いた}くならない. (Atividade 2/3)' },
+    { id: 'iro-e2-l12-9', number: 9, prompt: '「{使|つか}いやすい」⇔「{使|つか}い[[にくい]]」 — 「V-にくい」 significa:', choices: [{ n: 1, text: 'difícil de fazer (difícil de usar)' }, { n: 2, text: 'fácil de fazer' }, { n: 3, text: 'impossível de fazer' }, { n: 4, text: 'caro' }], answer: 1, explanationPt: 'V-にくい = «difícil de ~» (oposto de V-やすい). {分|わ}かりやすい⇔{分|わ}かりにくい, {読|よ}みやすい⇔{読|よ}みにくい. (文法ノート ❷)' },
+    { id: 'iro-e2-l12-10', number: 10, prompt: '「{軽|かる}[[くて]]、{動|うご}かしやすい」 — o 「〜くて」 aqui:', choices: [{ n: 1, text: 'liga dois predicados (leve E fácil de manusear) — forma て do adjetivo-い' }, { n: 2, text: 'indica proibição' }, { n: 3, text: 'indica passado' }, { n: 4, text: 'indica condição' }], answer: 1, explanationPt: 'い-adj → 〜くて liga qualidades: {軽|かる}い→{軽|かる}くて; {安|やす}くて{いい|いい}. (Forma て de adjetivos, retomada nesta lição.)' },
+    { id: 'iro-e2-l12-11', number: 11, prompt: '「{手元|てもと}に{届|とど}く[[まで]]、2{日|か}しかかかりませんでした」 — 「V-るまで、〜」 indica:', choices: [{ n: 1, text: 'a duração até algo terminar/acontecer (até chegar às minhas mãos, levou só 2 dias)' }, { n: 2, text: 'a razão' }, { n: 3, text: 'a finalidade' }, { n: 4, text: 'uma proibição' }], answer: 1, explanationPt: 'V(辞書形) + まで = «até ~ (acontecer)», marcando duração. {届|とど}くまで2{日|か}, {終|お}わるまで{待|ま}つ. (文法ノート ❶)' },
+    { id: 'iro-e2-l12-12', number: 12, prompt: '「セーシバの{掃除機|そうじき}のほうが、スギシタより{軽|かる}くて、{動|うご}かしやすいですよ」 — qual o padrão de comparação?', choices: [{ n: 1, text: '(N1より) N2のほうが〜 — N2 é mais ~ (que N1); pergunta-se com N1とN2と、どちらが〜か' }, { n: 2, text: 'N1もN2も〜 — tanto N1 como N2' }, { n: 3, text: 'N1かN2 — N1 ou N2' }, { n: 4, text: 'N1のN2 — N2 de N1' }], answer: 1, explanationPt: 'Comparação: 「AとBと、どちらが〜ですか？」→「(Aより) Bのほうが〜です」. {軽|かる}い・{使|つか}いやすい. (文法ノート ❸)' },
+    { id: 'iro-e2-l12-13', number: 13, prompt: '聴解 12-08〜09 (相談): como se pede conselho sobre o que/onde comprar um eletrônico?', context: '「イヤホンがほしいんですけど、{何|なに}がいいですか？」「{電子|でんし}レンジがほしいんですけど、どこで{買|か}ったらいいですか？」', choices: [{ n: 1, text: '「〜がほしいんですけど、{何|なに}がいいですか／どこで{買|か}ったらいいですか？」 e ouve-se a recomendação.' }, { n: 2, text: '「もう{始|はじ}まりましたか？」' }, { n: 3, text: '「{着|き}てみてもいいですか？」' }, { n: 4, text: '「{道|みち}を{教|おし}えてください」' }], answer: 1, explanationPt: 'Pedir conselho de compra: 〜がほしいんですけど + {何|なに}がいいですか／どこで{買|か}ったらいいですか. Resposta com 〜し、〜し. (会話 12-08〜09)' },
+    { id: 'iro-e2-l12-14', number: 14, prompt: '聴解 12-08 (相談 · イヤホン): por que recomendam aquele fone? Como as razões são ligadas?', context: '「[BOSAN]のワイヤレスがいいですよ。{音|おと}がいい[[し]]、{耳|みみ}も{痛|いた}くならない[[し]]。」', choices: [{ n: 1, text: 'Recomendam o fone sem fio da BOSAN porque o som é bom E não machuca o ouvido — razões ligadas com 〜し、〜し.' }, { n: 2, text: 'Recomendam porque é o mais caro.' }, { n: 3, text: 'Não recomendam nenhum.' }, { n: 4, text: 'Recomendam só pela cor.' }], answer: 1, explanationPt: '〜し、〜し enumera razões: {音|おと}がいいし、{耳|みみ}も{痛|いた}くならないし. Também p/ loja: {商品|しょうひん}が{多|おお}いし、{店員|てんいん}が{親切|しんせつ}だし. (会話 12-08)' },
+    { id: 'iro-e2-l12-15', number: 15, prompt: '「{商品|しょうひん}が{多|おお}い[[し]]、{店員|てんいん}が{親切|しんせつ}だ[[し]]」 — 「〜し、〜し」 serve para:', choices: [{ n: 1, text: 'enumerar várias razões/qualidades (tem muitos produtos, e os vendedores são atenciosos…)' }, { n: 2, text: 'comparar dois itens' }, { n: 3, text: 'indicar o passado' }, { n: 4, text: 'dar uma ordem' }], answer: 1, explanationPt: '〜し liga razões/qualidades (forma comum + し). {安|やす}いし、{近|ちか}いし. (Usado nas recomendações da Atividade 3.)' },
+    { id: 'iro-e2-l12-16', number: 16, prompt: 'Numa フリマアプリ (app de brechó), quais são as duas formas de procurar um produto (ex.: 炊飯器)?', choices: [{ n: 1, text: '① digitar o nome do produto ({商品名|しょうひんめい}を{入力|にゅうりょく}) ou ② buscar por categoria (カテゴリー — ex.: {家電|かでん})' }, { n: 2, text: 'ligar para a loja ou ir pessoalmente' }, { n: 3, text: 'só por sorteio' }, { n: 4, text: 'perguntar a um amigo' }], answer: 1, explanationPt: 'フリマアプリ: ① {商品名|しょうひんめい}{検索|けんさく}, ② カテゴリー ({家電|かでん}・スマホ・カメラ etc.). (Seção 2)' },
+    { id: 'iro-e2-l12-17', number: 17, prompt: 'Para refinar a busca (絞り込み) numa フリマアプリ, que critérios costumam aparecer?', choices: [{ n: 1, text: '{価格|かかく} (preço), {状態|じょうたい} (estado/condição) e {配送料|はいそうりょう} (frete)' }, { n: 2, text: 'cor, sabor e cheiro' }, { n: 3, text: 'idade e altura' }, { n: 4, text: 'dia e hora' }], answer: 1, explanationPt: '{絞|しぼ}り{込|こ}み = refinar busca por {価格|かかく}/{状態|じょうたい}/{配送料|はいそうりょう}. {状態|じょうたい}: {新品|しんぴん}/きれい. (Seção 2)' },
+    { id: 'iro-e2-l12-18', number: 18, prompt: 'Numa tabela comparativa (比較表) de aspiradores, que itens se comparam?', image: `${IMG}/Z_12_1_05_soojiki.png`, imageAlt: 'aspirador comparado em tabela', choices: [{ n: 1, text: 'メーカー (fabricante), {値段|ねだん} (preço), {重|おも}さ (peso) e {機能|きのう}/{特徴|とくちょう} (funções) — para decidir qual é melhor' }, { n: 2, text: 'só a cor' }, { n: 3, text: 'só o nome da loja' }, { n: 4, text: 'a data de fabricação apenas' }], answer: 1, explanationPt: '{比較表|ひかくひょう}: メーカー, {値段|ねだん}, {重|おも}さ, {連続|れんぞく}{使用|しよう}/{充電|じゅうでん}, {機能|きのう}. Decidir com 〜のほうが{軽|かる}くて{使|つか}いやすい. (Seção 3)' },
+    { id: 'iro-e2-l12-19', number: 19, prompt: '聴解 / etiqueta de preço: 「9,500{円|えん}（{税別|ぜいべつ}）」「{今週|こんしゅう}{限|かぎ}りの{特別|とくべつ}{価格|かかく}」 significam:', choices: [{ n: 1, text: '9.500 ienes (sem impostos / antes do imposto); preço especial só nesta semana.' }, { n: 2, text: '9.500 ienes com tudo incluído, válido sempre.' }, { n: 3, text: 'desconto de 9.500 ienes.' }, { n: 4, text: 'preço só para sócios.' }], answer: 1, explanationPt: '{税別|ぜいべつ} = preço antes do {消費税|しょうひぜい} (imposto); {今週|こんしゅう}{限|かぎ}り = só esta semana; {広告|こうこく}の{品|しな} = item em oferta. (Seção 1/3 · etiqueta)' },
+    { id: 'iro-e2-l12-20', number: 20, prompt: 'O que esta ilustração mostra (loja grande de eletroeletrônicos)?', image: `${IMG}/Z_12_4_01_kadenryoohanten.png`, imageAlt: 'loja de departamentos de eletroeletrônicos', choices: [{ n: 1, text: '{家電量販店|かでんりょうはんてん}／{電気屋|でんきや} — loja de eletroeletrônicos (ex.: {国道沿|こくどうぞ}い = à beira da rodovia)' }, { n: 2, text: 'um supermercado' }, { n: 3, text: 'uma farmácia' }, { n: 4, text: 'um banco' }], answer: 1, explanationPt: '{電気屋|でんきや}/{家電量販店|かでんりょうはんてん} = loja de eletroeletrônicos. {国道沿|こくどうぞ}いにある, {開店|かいてん}したばかり. (Atividade 2/3)' },
+    { id: 'iro-e2-l12-21', number: 21, prompt: 'Vocabulário de eletrodomésticos (家電): 「{冷蔵庫|れいぞうこ}／{洗濯機|せんたくき}／{炊飯器|すいはんき}／{扇風機|せんぷうき}／ドライヤー」 são:', choices: [{ n: 1, text: 'geladeira / máquina de lavar / panela de arroz / ventilador / secador de cabelo' }, { n: 2, text: 'micro-ondas / aspirador / chaleira / ar-condicionado / ferro' }, { n: 3, text: 'TV / computador / tablet / caixa de som / fones' }, { n: 4, text: 'fogão / pia / armário / cama / mesa' }], answer: 1, explanationPt: '{冷蔵庫|れいぞうこ}, {洗濯機|せんたくき}, {炊飯器|すいはんき}, {扇風機|せんぷうき}, ドライヤー (também: {掃除機|そうじき}, {電子|でんし}レンジ, ポット, アイロン, スピーカー, エアコン). (Atividade 1)' },
+    { id: 'iro-e2-l12-22', number: 22, prompt: 'Vocabulário de compra: 「メーカー／{送料無料|そうりょうむりょう}／{状態|じょうたい}／{配送料|はいそうりょう}／{重|おも}さ」 significam:', choices: [{ n: 1, text: 'fabricante / frete grátis / estado (do produto) / taxa de entrega / peso' }, { n: 2, text: 'loja / desconto / cor / garantia / altura' }, { n: 3, text: 'modelo / parcela / tamanho / nota fiscal / largura' }, { n: 4, text: 'marca / troco / sabor / recibo / velocidade' }], answer: 1, explanationPt: 'メーカー (fabricante), {送料無料|そうりょうむりょう} (frete grátis), {状態|じょうたい} (estado), {配送料|はいそうりょう} (frete), {重|おも}さ (peso). Também: ワイヤレス, {充電|じゅうでん}, {連続|れんぞく}. (Atividades)' },
+    { id: 'iro-e2-l12-23', number: 23, prompt: 'Os kanji 「{商品|しょうひん}／{値段|ねだん}／{価格|かかく}／{消費税|しょうひぜい}／{税別|ぜいべつ}」 lêem-se:', choices: [{ n: 1, text: 'しょうひん (produto) / ねだん (preço) / かかく (preço/valor) / しょうひぜい (imposto sobre consumo) / ぜいべつ (sem imposto)' }, { n: 2, text: 'しょうひん / ちだん / かかく / しょうひぜい / ぜいべつ' }, { n: 3, text: 'あきしな / ねだん / かかく / しょうひぜい / ぜいわけ' }, { n: 4, text: 'しょうひん / ねだん / かかく / きえひぜい / ぜいべつ' }], answer: 1, explanationPt: '{商品|しょうひん}, {値段|ねだん}, {価格|かかく}, {消費税|しょうひぜい}, {税別|ぜいべつ}. (漢字のことば)' },
+    { id: 'iro-e2-l12-24', number: 24, prompt: 'Os kanji 「{店員|てんいん}／{親切|しんせつ}（な）／{重|おも}い／{軽|かる}い／{変|か}わる」 lêem-se:', choices: [{ n: 1, text: 'てんいん (vendedor) / しんせつ (atencioso) / おもい (pesado) / かるい (leve) / かわる (mudar)' }, { n: 2, text: 'てんいん / しんせつ / じゅうい / けいい / へんわる' }, { n: 3, text: 'みせいん / おやきり / おもい / かるい / かわる' }, { n: 4, text: 'てんいん / しんせつ / おもい / かるい / かえる' }], answer: 1, explanationPt: '{店員|てんいん}, {親切|しんせつ}（な), {重|おも}い, {軽|かる}い, {変|か}わる (ボタンを{押|お}すと{変|か}わる). (漢字のことば)' },
+    { id: 'iro-e2-l12-25', number: 25, prompt: 'Resumo: para recomendar um produto a alguém, que estruturas a lição ensina?', choices: [{ n: 1, text: '〜のほうが{軽|かる}くて{使|つか}いやすいですよ／{音|おと}がいいし、{安|やす}いし (comparação + V-やすい + 〜し)' }, { n: 2, text: 'もう{終|お}わりましたか' }, { n: 3, text: '〜てはいけません' }, { n: 4, text: '〜たことがあります' }], answer: 1, explanationPt: 'Recomendar: comparar (Bのほうが〜), qualidade ({軽|かる}くて{使|つか}いやすい ❷), enumerar razões (〜し). (文法ノート ❷❸)' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 12 (situação + falas-chave citadas; não verbatim)
+const L12_SCRIPTS: Record<string, ScriptItem[]> = {
+  '12-08': [
+    {
+      label: '相談① — イヤホンを買いたい (12-08) · resumo',
+      setupJa: '{買|か}いたい{電気製品|でんきせいひん}について、ほかの{人|ひと}に{相談|そうだん}しています。',
+      setupPt: 'Resumo: a pessoa quer comprar fones de ouvido e pergunta qual é bom; recomendam o modelo sem fio da BOSAN, enumerando as razões.',
+      lines: [
+        { speaker: 'A', ja: 'イヤホンがほしいんですけど、{何|なに}がいいですか？', pt: 'Quero comprar fones de ouvido; qual é bom?' },
+        { speaker: 'B', ja: '[BOSAN]のワイヤレスがいいですよ。{音|おと}がいいし、{耳|みみ}も{痛|いた}くならないし。', pt: 'O sem fio da BOSAN é bom. O som é ótimo e não machuca o ouvido.' },
+      ],
+    },
+  ],
+  '12-09': [
+    {
+      label: '相談② — 電子レンジをどこで買う (12-09) · resumo',
+      setupPt: 'Resumo: a pessoa quer um micro-ondas e pergunta onde comprar; recomendam a loja de eletrônicos recém-inaugurada, porque tem muitos produtos e os vendedores são atenciosos.',
+      lines: [
+        { speaker: 'A', ja: '{電子|でんし}レンジがほしいんですけど、どこで{買|か}ったらいいですか？', pt: 'Quero um micro-ondas; onde é bom comprar?' },
+        { speaker: 'B', ja: '{新|あたら}しくできた「○○デンキ」がいいですよ。{商品|しょうひん}が{多|おお}いし、{店員|てんいん}が{親切|しんせつ}だし。', pt: 'A «○○ Denki» que abriu há pouco é boa. Tem muitos produtos e os vendedores são atenciosos.' },
+      ],
+    },
+  ],
+}
+
+const lesson12: Section = {
+  id: 'lesson-12',
+  level: 'elementary2',
+  titleJa: '第12課 この掃除機は軽くて動かしやすいですよ',
+  titlePt: 'Lição 12 — Este aspirador é leve e fácil de manusear',
+  summaryPt:
+    'Comprar bem · pedir conselho sobre o que comprar e onde (イヤホンがほしいんですけど、何がいいですか), usar um app de brechó (フリマ) para procurar eletrônicos (商品名検索／カテゴリー／絞り込み), ler tabela comparativa e etiquetas de preço (税別／今週限りの特別価格) e recomendar/decidir com comparação (セーシバのほうが軽くて動かしやすい).',
+  studyNotes: [
+    {
+      title: 'Tópico: Comprar bem (上手な買い物)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Quando quer comprar algo, consultar alguém sobre o que comprar e onde.\n' +
+        '- Usar um app/site de brechó (flea market) para comprar eletroeletrônicos e outros itens.\n' +
+        '- Ler tabela comparativa e etiquetas de preço de eletroeletrônicos na loja e extrair informações.\n' +
+        '- Ao comprar um eletroeletrônico, perguntar ao vendedor sobre o produto ou pedir desconto.\n\n' +
+        '💡 電気製品/家電: {冷蔵庫|れいぞうこ}, {洗濯機|せんたくき}, {掃除機|そうじき}, {電子|でんし}レンジ, {炊飯器|すいはんき}, {扇風機|せんぷうき}, イヤホン, パソコン etc.',
+    },
+    {
+      title: 'V-るまで、〜 (➊)',
+      bodyPt:
+        '**V(辞書形) + まで、〜** marca a duração **até** algo acontecer/terminar:\n\n' +
+        '- `{手元|てもと}に{届|とど}くまで、2{日|か}しかかかりませんでした` (até chegar às minhas mãos, levou só 2 dias).\n' +
+        '- `{終|お}わるまで{待|ま}ってください`.\n\n' +
+        '🔧 Liga-se ao verbo na forma de dicionário. (文法ノート ❶)',
+    },
+    {
+      title: 'V-やすい / V-にくい (➋)',
+      bodyPt:
+        '**V(radical ます) + やすい/にくい** = fácil / difícil de fazer:\n\n' +
+        '- `{動|うご}かしやすい` (fácil de manusear), `{使|つか}いやすい`⇔`{使|つか}いにくい`, `{分|わ}かりやすい`⇔`{分|わ}かりにくい`.\n\n' +
+        '💡 Liga-se com adjetivo て: `{軽|かる}くて{動|うご}かしやすい` (leve E fácil de manusear). (文法ノート ❷)',
+    },
+    {
+      title: 'Comparação: N1よりN2のほうが〜 (➌)',
+      bodyPt:
+        'Para comparar dois itens:\n\n' +
+        '- **Pergunta:** `AとBと、どちらが〜ですか？` (qual dos dois é mais ~?).\n' +
+        '- **Resposta:** `(Aより) Bのほうが〜です` — `セーシバの{掃除機|そうじき}のほうが、スギシタより{軽|かる}くて{動|うご}かしやすいですよ`.\n\n' +
+        '💡 Enumerar razões com **〜し、〜し**: `{音|おと}がいいし、{安|やす}いし`. (文法ノート ❸)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Eletro/家電:** {冷蔵庫|れいぞうこ}, {洗濯機|せんたくき}, {掃除機|そうじき}, {電子|でんし}レンジ, {炊飯器|すいはんき}, ポット, テレビ, パソコン, タブレット, スマホ, エアコン, イヤホン, {扇風機|せんぷうき}, ストーブ, ドライヤー, アイロン, スピーカー.\n\n' +
+        '**Compra/comparação:** メーカー, ワイヤレス, {値段|ねだん}/{価格|かかく}, {重|おも}さ, {連続|れんぞく}, {充電|じゅうでん}, {機能|きのう}, {送料無料|そうりょうむりょう}, {状態|じょうたい}, {配送料|はいそうりょう}, {税別|ぜいべつ}, {広告|こうこく}の{品|しな}, フリマアプリ, {家電量販店|かでんりょうはんてん}/{電気屋|でんきや}, {国道沿|こくどうぞ}い, {絞|しぼ}り{込|こ}む.\n\n' +
+        '**Kanji da lição:** {商品|しょうひん}, {値段|ねだん}, {価格|かかく}, {消費税|しょうひぜい}, {税別|ぜいべつ}, {店員|てんいん}, {親切|しんせつ}（な), {重|おも}い, {軽|かる}い, {変|か}わる.',
+    },
+  ],
+  groups: [lesson12Group],
+  audios: attachScripts(12, L12_SCRIPTS),
+}
+
+// ---- Lições 13-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -2772,12 +2886,7 @@ const sections: Section[] = [
   lesson10,
   // Tópico 6 — Comprar bem (上手な買い物)
   lesson11,
-  scaffold(12, 'Comprar bem', 'この掃除機は軽くて動かしやすいですよ', 'Este aspirador é leve e fácil de manusear', [
-    'Quando quer comprar algo, consultar alguém sobre o que comprar e onde.',
-    'Usar um app/site de brechó (flea market) para comprar eletroeletrônicos e outros itens.',
-    'Ler tabela comparativa e etiquetas de preço de eletroeletrônicos na loja e extrair informações.',
-    'Ao comprar um eletroeletrônico, perguntar ao vendedor sobre o produto ou pedir desconto.',
-  ]),
+  lesson12,
   // Tópico 7 — Serviços diversos (さまざまなサービス)
   scaffold(13, 'Serviços diversos', 'いろいろな資料を展示してあります', 'Há vários materiais expostos', [
     'Ao ser guiado por um local, ouvir e entender o que há ali e o que se pode fazer.',
