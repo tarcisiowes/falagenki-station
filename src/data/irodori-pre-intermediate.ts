@@ -4272,6 +4272,42 @@ const L15_SCRIPTS: Record<string, ScriptItem[]> = {
 }
 
 const L16_SCRIPTS: Record<string, ScriptItem[]> = {
+  '16-01': [
+    {
+      label: 'ことばの準備 - ホテルや旅館への要望 (16-01)',
+      setupPt: 'Vocabulário para fazer pedidos ou ajustes em hotel/ryokan.',
+      lines: [
+        { speaker: 'a', ja: '禁煙の部屋がいい。', pt: 'Prefiro um quarto não fumante.' },
+        { speaker: 'a', ja: '喫煙の部屋がいい。', pt: 'Prefiro um quarto fumante.' },
+        { speaker: 'b', ja: '洋室がいい。', pt: 'Prefiro um quarto ocidental.' },
+        { speaker: 'b', ja: '和室がいい。', pt: 'Prefiro um quarto japonês.' },
+        { speaker: 'c', ja: '景色のいい部屋がいい。', pt: 'Prefiro um quarto com uma boa vista.' },
+        { speaker: 'd', ja: '貸切風呂を予約したい。', pt: 'Quero reservar um banho privativo.' },
+        { speaker: 'e', ja: '送迎を頼みたい。', pt: 'Quero pedir transporte de ida e volta.' },
+        { speaker: 'f', ja: '早めにチェックインしたい。', pt: 'Quero fazer check-in mais cedo.' },
+        { speaker: 'g', ja: 'チェックアウトの時間を遅らせたい。', pt: 'Quero atrasar o horário do check-out.' },
+        { speaker: 'h', ja: '朝食を追加したい。', pt: 'Quero adicionar café da manhã.' },
+        { speaker: 'i', ja: '食事の内容を変更したい。', pt: 'Quero alterar o conteúdo da refeição.' },
+      ],
+    },
+  ],
+  '16-02': [
+    {
+      label: 'ことばの準備 - ホテルや旅館への要望：聞いて選ぶ (16-02)',
+      setupPt: 'Faixa numerada: ouça a frase e escolha a opção correspondente entre a-i.',
+      lines: [
+        { speaker: '1', ja: '送迎を頼みたいんですが。', pt: 'Quero pedir transporte de ida e volta. (opção e)' },
+        { speaker: '2', ja: '食事の内容を変更したいんですが。', pt: 'Quero alterar o conteúdo da refeição. (opção i)' },
+        { speaker: '3', ja: '禁煙の部屋がいいんですが。', pt: 'Prefiro um quarto não fumante. (opção a)' },
+        { speaker: '4', ja: '貸切風呂を予約したいんですが。', pt: 'Quero reservar um banho privativo. (opção d)' },
+        { speaker: '5', ja: '景色のいい部屋がいいんですが。', pt: 'Prefiro um quarto com uma boa vista. (opção c)' },
+        { speaker: '6', ja: '早めにチェックインしたいんですが。', pt: 'Quero fazer check-in mais cedo. (opção f)' },
+        { speaker: '7', ja: '朝食を追加したいんですが。', pt: 'Quero adicionar café da manhã. (opção h)' },
+        { speaker: '8', ja: '和室がいいんですが。', pt: 'Prefiro um quarto japonês. (opção b)' },
+        { speaker: '9', ja: 'チェックアウトの時間を遅らせたいんですが。', pt: 'Quero atrasar o horário do check-out. (opção g)' },
+      ],
+    },
+  ],
   '16-03': [
     {
       label: '① 和室から洋室へ変えたい (16-03)',
@@ -4591,6 +4627,42 @@ const L17_SCRIPTS: Record<string, ScriptItem[]> = {
         { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
         { speaker: 'A', ja: '電車遅延なら、欠勤にならないので。', pt: 'Se for atraso de trem, não conta como falta.' },
         { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '17-07': [
+    {
+      label: 'ことばの準備 - 職場での悩みや要望 (17-07)',
+      setupPt: 'Vocabulário para falar de problemas e pedidos no local de trabalho.',
+      lines: [
+        { speaker: 'a', ja: '仕事の量が多すぎる。', pt: 'A quantidade de trabalho é excessiva.' },
+        { speaker: 'b', ja: 'トイレがきたない。', pt: 'O banheiro está sujo.' },
+        { speaker: 'c', ja: 'こわい人がいる。', pt: 'Há uma pessoa assustadora/severa.' },
+        { speaker: 'd', ja: '休みが取りにくい。', pt: 'É difícil tirar folga.' },
+        { speaker: 'e', ja: 'セクハラ／パワハラを受けている。', pt: 'Estou sofrendo assédio sexual / assédio de poder.' },
+        { speaker: 'f', ja: '仕事が自分に合っていない。', pt: 'O trabalho não combina comigo.' },
+        { speaker: 'g', ja: '給料が少ない。', pt: 'O salário é baixo.' },
+        { speaker: 'h', ja: '仕事の連絡方法を改善してほしい。', pt: 'Quero que melhorem o método de comunicação do trabalho.' },
+        { speaker: 'i', ja: '残業が多い。', pt: 'Há muitas horas extras.' },
+        { speaker: 'j', ja: '同僚に困っている。', pt: 'Estou tendo problemas com um colega.' },
+        { speaker: 'k', ja: '日本語学習の機会が少ない。', pt: 'Há poucas oportunidades de estudar japonês.' },
+        { speaker: 'l', ja: '部屋の温度が合わない。', pt: 'A temperatura da sala não está adequada para mim.' },
+      ],
+    },
+  ],
+  '17-08': [
+    {
+      label: 'ことばの準備 - 職場での悩みや要望：聞いて選ぶ (17-08)',
+      setupPt: 'Faixa numerada: ouça a frase e escolha a opção correspondente entre a-l.',
+      lines: [
+        { speaker: '1', ja: '仕事が自分に合っていないと思うんです。', pt: 'Acho que o trabalho não combina comigo. (opção f)' },
+        { speaker: '2', ja: '残業が多いんです。', pt: 'Há muitas horas extras. (opção i)' },
+        { speaker: '3', ja: '休みが取りにくくて。', pt: 'É difícil tirar folga. (opção d)' },
+        { speaker: '4', ja: '仕事の量が多すぎます。', pt: 'A quantidade de trabalho é excessiva. (opção a)' },
+        { speaker: '5', ja: '仕事の連絡方法を改善してほしいと思います。', pt: 'Quero que melhorem o método de comunicação do trabalho. (opção h)' },
+        { speaker: '6', ja: '同僚に困っています。', pt: 'Estou tendo problemas com um colega. (opção j)' },
+        { speaker: '7', ja: 'パワハラを受けているんですが、どうしたらいいですか。', pt: 'Estou sofrendo assédio de poder; o que devo fazer? (opção e)' },
+        { speaker: '8', ja: 'トイレが汚いので、何とかしてください。', pt: 'O banheiro está sujo, então por favor façam algo. (opção b)' },
       ],
     },
   ],
