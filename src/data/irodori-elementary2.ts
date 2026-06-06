@@ -1,4 +1,4 @@
-import type { ExerciseGroup, Level, ScriptItem, Section, StudyNote } from './types'
+import type { ExerciseGroup, Level, ScriptItem, Section } from './types'
 import { ELEMENTARY2_AUDIO } from './irodori-elementary2-audio'
 
 // =====================================================================
@@ -18,38 +18,6 @@ function attachScripts(n: number, scripts: Record<string, ScriptItem[]>): typeof
 }
 
 const IMG = '/images/irodori/elementary2'
-
-function canDoNotes(topicPt: string, candos: string[], extra?: string): StudyNote[] {
-  return [
-    {
-      title: `Tópico: ${topicPt}`,
-      bodyPt:
-        `Esta lição faz parte do tópico **${topicPt}**.\n\n## O que você vai conseguir fazer (Can-do)\n` +
-        candos.map((c) => `- ${c}`).join('\n') +
-        (extra ? `\n\n${extra}` : '') +
-        `\n\n> ⏳ Os exercícios desta lição ainda estão em construção. Os **áudios oficiais já estão disponíveis** na aba “Áudios” para você praticar ouvindo e repetindo (shadowing).`,
-    },
-  ]
-}
-
-function scaffold(
-  n: number,
-  topicPt: string,
-  titleJa: string,
-  titlePt: string,
-  candos: string[],
-): Section {
-  return {
-    id: `lesson-${n}`,
-    level: 'elementary2',
-    titleJa: `第${n}課 ${titleJa}`,
-    titlePt: `Lição ${n} — ${titlePt}`,
-    summaryPt: `${topicPt} · ${titlePt}`,
-    studyNotes: canDoNotes(topicPt, candos),
-    groups: [],
-    audios: ELEMENTARY2_AUDIO[n],
-  }
-}
 
 // ---- Lição 1: 先週、日本に来たばかりです (tópico 私の周りの人たち) --------------
 const lesson1Group: ExerciseGroup = {
@@ -3458,7 +3426,106 @@ const lesson17: Section = {
   audios: attachScripts(17, L17_SCRIPTS),
 }
 
-// ---- Lição 18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 18: 将来、自分の会社を作ろうと思います (tópico 私の人生) --------------
+const lesson18Group: ExerciseGroup = {
+  id: 'iro-e2-l18',
+  title: '将来、自分の会社を作ろうと思います',
+  subtitlePt: 'Falar dos seus sonhos e desejos para o futuro · entender a experiência e os conselhos de quem vive há muito no Japão',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l18-1', number: 1, prompt: 'O título 「{将来|しょうらい}、{自分|じぶん}の{会社|かいしゃ}を{作|つく}[[ろうと思います]]」 — 「V-(よ)うと思います」 indica:', choices: [{ n: 1, text: 'intenção/plano para o futuro (pretendo abrir minha própria empresa)' }, { n: 2, text: 'uma ordem' }, { n: 3, text: 'algo que já aconteceu' }, { n: 4, text: 'um convite' }], answer: 1, translationPt: 'No futuro, pretendo abrir minha própria empresa.', explanationPt: 'V(forma volitiva) + と{思|おも}います = «pretendo/penso em ~». {作|つく}る→{作|つく}ろう+と{思|おも}う. (文法ノート ❶)' },
+    { id: 'iro-e2-l18-2', number: 2, prompt: 'Que sonho/objetivo de futuro esta ilustração mostra?', image: `${IMG}/Z_18_1_01_kaishaotsukuru.png`, imageAlt: 'abrir a própria empresa', choices: [{ n: 1, text: '{自分|じぶん}の{会社|かいしゃ}を{作|つく}る — abrir a própria empresa' }, { n: 2, text: '{就職|しゅうしょく}する — arrumar emprego' }, { n: 3, text: '{留学|りゅうがく}する — estudar no exterior' }, { n: 4, text: '{結婚|けっこん}する — casar' }], answer: 1, explanationPt: '{自分|じぶん}の{会社|かいしゃ}を{作|つく}る. Também: {店|みせ}を{持|も}つ. (Atividade 1 · 将来の希望)' },
+    { id: 'iro-e2-l18-3', number: 3, prompt: 'Que objetivo esta ilustração mostra?', image: `${IMG}/Z_18_1_02_shuushokusuru.png`, imageAlt: 'conseguir um emprego', choices: [{ n: 1, text: '{就職|しゅうしょく}する — arrumar emprego (entrar numa empresa)' }, { n: 2, text: '{卒業|そつぎょう}する — formar-se' }, { n: 3, text: '{貯金|ちょきん}する — poupar dinheiro' }, { n: 4, text: '{進学|しんがく}する — ingressar na faculdade' }], answer: 1, explanationPt: '{就職|しゅうしょく}する = arrumar emprego. (Atividade 1)' },
+    { id: 'iro-e2-l18-4', number: 4, prompt: 'Que objetivo esta ilustração mostra?', image: `${IMG}/Z_18_1_04_chokinsuru.png`, imageAlt: 'poupar/economizar dinheiro', choices: [{ n: 1, text: '{貯金|ちょきん}する — poupar dinheiro' }, { n: 2, text: '{結婚|けっこん}する — casar' }, { n: 3, text: '{家|いえ}を{建|た}てる — construir uma casa' }, { n: 4, text: '{留学|りゅうがく}する — estudar fora' }], answer: 1, explanationPt: '{貯金|ちょきん}する = poupar. できるだけたくさん{貯金|ちょきん}しようと{思|おも}います. (Atividade 1)' },
+    { id: 'iro-e2-l18-5', number: 5, prompt: 'Que objetivo esta ilustração mostra?', image: `${IMG}/Z_18_1_05_kekkonsuru.png`, imageAlt: 'casar-se', choices: [{ n: 1, text: '{結婚|けっこん}する — casar' }, { n: 2, text: '{就職|しゅうしょく}する — arrumar emprego' }, { n: 3, text: '{進学|しんがく}する — ingressar na faculdade' }, { n: 4, text: '{貯金|ちょきん}する — poupar' }], answer: 1, explanationPt: '{結婚|けっこん}する = casar. (Atividade 1)' },
+    { id: 'iro-e2-l18-6', number: 6, prompt: 'Que objetivo esta ilustração mostra?', image: `${IMG}/Z_18_1_06_ieotateru.png`, imageAlt: 'construir uma casa', choices: [{ n: 1, text: '{家|いえ}を{建|た}てる — construir uma casa' }, { n: 2, text: '{店|みせ}を{持|も}つ — ter uma loja' }, { n: 3, text: '{留学|りゅうがく}する — estudar fora' }, { n: 4, text: '{結婚|けっこん}する — casar' }], answer: 1, explanationPt: '{家|いえ}を{建|た}てる. Ex.: {両親|りょうしん}に{家|いえ}を{建|た}ててあげるつもりです (❸). (Atividade 1)' },
+    { id: 'iro-e2-l18-7', number: 7, prompt: 'Que objetivo esta ilustração mostra (continuar os estudos)?', image: `${IMG}/Z_18_1_07_shingakusuru.png`, imageAlt: 'ingressar na faculdade', choices: [{ n: 1, text: '{進学|しんがく}する — ingressar na faculdade ({大学|だいがく}に{進学|しんがく})' }, { n: 2, text: '{就職|しゅうしょく}する — arrumar emprego' }, { n: 3, text: '{卒業|そつぎょう}する — formar-se' }, { n: 4, text: '{結婚|けっこん}する — casar' }], answer: 1, explanationPt: '{進学|しんがく}する = ingressar (no ensino superior). {大学|だいがく}に{進学|しんがく}しようと{思|おも}います. (Atividade 1)' },
+    { id: 'iro-e2-l18-8', number: 8, prompt: 'Que objetivo esta ilustração mostra?', image: `${IMG}/Z_18_1_08_ryuugakusuru.png`, imageAlt: 'estudar no exterior', choices: [{ n: 1, text: '{留学|りゅうがく}する — estudar no exterior' }, { n: 2, text: '{進学|しんがく}する — ingressar na faculdade (no país)' }, { n: 3, text: '{就職|しゅうしょく}する — arrumar emprego' }, { n: 4, text: '{家|いえ}を{建|た}てる — construir casa' }], answer: 1, explanationPt: '{留学|りゅうがく}する = estudar fora. (Atividade 1)' },
+    { id: 'iro-e2-l18-9', number: 9, prompt: 'Que profissão dos sonhos esta ilustração mostra?', image: `${IMG}/Z_18_1_12_shokuninninaru.png`, imageAlt: 'tornar-se artesão / sushiman', choices: [{ n: 1, text: '{職人|しょくにん}になる — tornar-se artesão (ex.: すしの{職人|しょくにん})' }, { n: 2, text: '{通訳|つうやく}になる — tornar-se intérprete' }, { n: 3, text: '{日本語|にほんご}{教師|きょうし}になる — tornar-se professor de japonês' }, { n: 4, text: 'ガイドになる — tornar-se guia' }], answer: 1, explanationPt: 'すしの{職人|しょくにん}になりたいです (V-たい). Outras: ガイド, {通訳|つうやく}, {日本語|にほんご}{教師|きょうし}. (Atividade 1)' },
+    { id: 'iro-e2-l18-10', number: 10, prompt: 'Como se forma a forma volitiva (意向形) usada em 「{作|つく}ろうと{思|おも}う」?', choices: [{ n: 1, text: 'グ1 -u→-ou ({書|か}く→{書|か}こう), グ2 -る→-よう ({食|た}べる→{食|た}べよう), する→しよう, {来|く}る→{来|こ}よう' }, { n: 2, text: 'verbo + ました' }, { n: 3, text: 'verbo + ています' }, { n: 4, text: 'verbo + たい' }], answer: 1, explanationPt: 'Forma volitiva: {作|つく}る→{作|つく}ろう, {勉強|べんきょう}する→{勉強|べんきょう}しよう, {帰|かえ}る→{帰|かえ}ろう. + と{思|おも}います/{思|おも}っています. (文法ノート ❶)' },
+    { id: 'iro-e2-l18-11', number: 11, prompt: '「すしの{職人|しょくにん}に[[なりたい]]です」「{今|いま}の{仕事|しごと}が{終|お}わったら、フィリピンに{帰|かえ}る[[つもり]]です」 — essas formas expressam:', choices: [{ n: 1, text: 'desejo (V-たい) e plano firme (V-つもり) para o futuro' }, { n: 2, text: 'obrigação e proibição' }, { n: 3, text: 'passado e dúvida' }, { n: 4, text: 'ordem e convite' }], answer: 1, explanationPt: 'V-たいです (quero ~), V-つもりです (pretendo/tenho a intenção de ~). Ao lado de V-(よ)うと{思|おも}う, formam o «falar de planos». (文法ノート ❶)' },
+    { id: 'iro-e2-l18-12', number: 12, prompt: '「{日本|にほん}に{住|す}む[[ために]]、もっと{日本語|にほんご}をがんばろうと{思|おも}います」 — 「V-るために、〜」 indica:', choices: [{ n: 1, text: 'o objetivo/finalidade (a fim de morar no Japão, vou me esforçar mais no japonês)' }, { n: 2, text: 'a causa passada' }, { n: 3, text: 'a condição' }, { n: 4, text: 'a comparação' }], answer: 1, explanationPt: 'V(辞書形) + ために = «a fim de ~»; Nのために = «para ~». {若者|わかもの}を{手伝|てつだ}うために, {自分|じぶん}の{世界|せかい}を{広|ひろ}げるために. (文法ノート ❷)' },
+    { id: 'iro-e2-l18-13', number: 13, prompt: '「{両親|りょうしん}に、{家|いえ}を{建|た}てて[[あげる]]つもりです」 — 「V-てあげる」 significa:', choices: [{ n: 1, text: 'fazer algo PARA/EM BENEFÍCIO de outra pessoa (construir uma casa para os pais)' }, { n: 2, text: 'receber algo de alguém' }, { n: 3, text: 'fazer algo para si mesmo' }, { n: 4, text: 'pedir um favor' }], answer: 1, explanationPt: 'V-てあげる = fazer algo em benefício de outro. {両親|りょうしん}に{家|いえ}を{建|た}ててあげる, {友|とも}だちに{日本語|にほんご}を{教|おし}えてあげる. (文法ノート ❸)' },
+    { id: 'iro-e2-l18-14', number: 14, prompt: 'Que profissão dos sonhos esta ilustração mostra (trabalhar com idiomas)?', image: `${IMG}/Z_18_1_14_tsuuyakuninaru.png`, imageAlt: 'tornar-se intérprete', choices: [{ n: 1, text: '{通訳|つうやく}になる — tornar-se intérprete' }, { n: 2, text: '{職人|しょくにん}になる — tornar-se artesão' }, { n: 3, text: '{自動車|じどうしゃ}の{整備|せいび} — fazer manutenção de carros' }, { n: 4, text: '{貯金|ちょきん}する — poupar' }], answer: 1, explanationPt: '{通訳|つうやく}になる = tornar-se intérprete. Outras: {日本語|にほんご}{教師|きょうし}, ガイド. (Atividade 1)' },
+    { id: 'iro-e2-l18-15', number: 15, prompt: '聴解 18-07〜09 (将来の夢): que estruturas as pessoas usam para falar dos planos?', context: '「{将来|しょうらい}は、{自分|じぶん}の{会社|かいしゃ}を{作|つく}ろうと{思|おも}います」「もっと{日本語|にほんご}を{勉強|べんきょう}しようと{思|おも}います」「すしの{職人|しょくにん}になりたいです」', choices: [{ n: 1, text: 'V-(よ)うと思います (pretendo ~) e V-たいです (quero ~), às vezes com a finalidade (〜ために).' }, { n: 2, text: '〜てはいけません / 命令形.' }, { n: 3, text: '〜たことがあります.' }, { n: 4, text: '〜なくちゃならない.' }], answer: 1, explanationPt: 'Falar de sonhos: V-(よ)うと{思|おも}う, V-たい, V-つもり, + V-るために (finalidade). (聴解 18-07〜09)' },
+    { id: 'iro-e2-l18-16', number: 16, prompt: '聴解 18-03〜06 (会話 · 将来について): além dos planos, sobre o que se conversa?', context: '{将来|しょうらい}の{夢|ゆめ}や{希望|きぼう}（{会社|かいしゃ}を{作|つく}る／{店|みせ}を{持|も}つ／{日本|にほん}で{暮|く}らす／{留学|りゅうがく}する）について、{理由|りゆう}や{目的|もくてき}も{話|はな}す。', choices: [{ n: 1, text: 'Os sonhos/desejos de futuro e também o motivo e o objetivo de cada um (por que e para quê).' }, { n: 2, text: 'O preço de produtos.' }, { n: 3, text: 'Como separar o lixo.' }, { n: 4, text: 'Como pedir reentrega.' }], answer: 1, explanationPt: '{将来|しょうらい}の{夢|ゆめ}・{希望|きぼう} + {理由|りゆう}/{目的|もくてき} (〜ために). (聴解 18-03〜06)' },
+    { id: 'iro-e2-l18-17', number: 17, prompt: 'Vocabulário de futuro/trabalho: 「{自動車|じどうしゃ}／{整備|せいび}／{技術|ぎじゅつ}／{役|やく}に{立|た}つ／{広|ひろ}げる」 significam:', choices: [{ n: 1, text: 'automóvel / manutenção (conserto) / técnica/tecnologia / ser útil / ampliar (expandir)' }, { n: 2, text: 'bicicleta / limpeza / arte / ser caro / fechar' }, { n: 3, text: 'trem / pintura / força / ser fácil / encolher' }, { n: 4, text: 'navio / reforma / sorte / ser difícil / dividir' }], answer: 1, explanationPt: '{自動車|じどうしゃ} (carro), {整備|せいび} (manutenção), {技術|ぎじゅつ} (técnica), {役|やく}に{立|た}つ (ser útil), {広|ひろ}げる (ampliar). Também: {暮|く}らし, うまくいく, {若者|わかもの}. (Atividades)' },
+    { id: 'iro-e2-l18-18', number: 18, prompt: 'Vocabulário de estudo/carreira: 「{卒業|そつぎょう}する／{留学|りゅうがく}する／{就職|しゅうしょく}する／{進学|しんがく}する／うまくいく」 significam:', choices: [{ n: 1, text: 'formar-se / estudar no exterior / arrumar emprego / ingressar (no ensino superior) / dar certo' }, { n: 2, text: 'entrar / mudar / demitir-se / repetir de ano / dar errado' }, { n: 3, text: 'matricular-se / viajar / aposentar-se / desistir / atrasar' }, { n: 4, text: 'estudar / morar / trabalhar / casar / acelerar' }], answer: 1, explanationPt: '{卒業|そつぎょう}する, {留学|りゅうがく}する, {就職|しゅうしょく}する, {進学|しんがく}する, うまくいく (dar certo). (Atividades)' },
+    { id: 'iro-e2-l18-19', number: 19, prompt: 'Os kanji 「{希望|きぼう}／{募集|ぼしゅう}／{特|とく}に／{住|す}む／{建|た}てる」 lêem-se:', choices: [{ n: 1, text: 'きぼう (desejo/esperança) / ぼしゅう (recrutamento) / とくに (especialmente) / すむ (morar) / たてる (construir)' }, { n: 2, text: 'きぼう / ぼしゅう / とくに / じゅうむ / けんてる' }, { n: 3, text: 'きもう / ぼしゅう / べつに / すむ / たてる' }, { n: 4, text: 'きぼう / つのしゅう / とくに / すむ / たてる' }], answer: 1, explanationPt: '{希望|きぼう}, {募集|ぼしゅう} (recrutamento/vaga), {特|とく}に, {住|す}む, {建|た}てる. (漢字のことば)' },
+    { id: 'iro-e2-l18-20', number: 20, prompt: 'Os kanji 「{続|つづ}ける／{考|かんが}える／{役|やく}に{立|た}つ／{卒業|そつぎょう}する／{留学|りゅうがく}する」 lêem-se:', choices: [{ n: 1, text: 'つづける (continuar) / かんがえる (pensar) / やくにたつ (ser útil) / そつぎょうする (formar-se) / りゅうがくする (estudar no exterior)' }, { n: 2, text: 'ぞくける / こうえる / やくにたつ / そつぎょうする / るがくする' }, { n: 3, text: 'つづける / かんがえる / えきにたつ / しゅつぎょう / りゅうがく' }, { n: 4, text: 'つづける / かんがえる / やくにたつ / そつぎょうする / りゅうがくする' }], answer: 1, explanationPt: '{続|つづ}ける, {考|かんが}える, {役|やく}に{立|た}つ, {卒業|そつぎょう}する, {留学|りゅうがく}する. (漢字のことば)' },
+    { id: 'iro-e2-l18-21', number: 21, prompt: 'Resumo final: para falar de sonhos e planos de futuro, a lição reúne:', choices: [{ n: 1, text: 'V-(よ)うと思います (作ろうと思う) + V-たい/V-つもり, V-るために (finalidade), V-てあげる (em benefício de alguém)' }, { n: 2, text: '〜てもらえますか / Nのために apenas' }, { n: 3, text: '命令形 / V-るな' }, { n: 4, text: 'もう〜ました / まだ〜ていません' }], answer: 1, explanationPt: 'Falar de futuro: V-(よ)うと{思|おも}う (❶), V-るために (❷), V-てあげる (❸); + V-たい/つもり. Última lição do 初級2! 🎉' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 18 (situação + falas-chave citadas; não verbatim)
+const L18_SCRIPTS: Record<string, ScriptItem[]> = {
+  '18-07': [
+    {
+      label: '将来の夢 — 自分の会社を作る (18-07) · resumo',
+      setupJa: '{将来|しょうらい}の{夢|ゆめ}や{希望|きぼう}について{話|はな}しています。',
+      setupPt: 'Resumo: a pessoa conta que pretende abrir a própria empresa no futuro e, para isso, poupar bastante e estudar mais japonês.',
+      lines: [
+        { speaker: 'A', ja: '{将来|しょうらい}は、{自分|じぶん}の{会社|かいしゃ}を{作|つく}ろうと{思|おも}います。', pt: 'No futuro, pretendo abrir minha própria empresa.' },
+        { speaker: 'A', ja: '{日本|にほん}に{住|す}むために、もっと{日本語|にほんご}をがんばろうと{思|おも}います。', pt: 'Para morar no Japão, pretendo me esforçar mais no japonês.' },
+      ],
+    },
+  ],
+  '18-09': [
+    {
+      label: '将来の夢 — すしの職人になりたい (18-09) · resumo',
+      setupPt: 'Resumo: a pessoa quer se tornar sushiman e, se possível, viver sempre no Japão; menciona também o plano de construir uma casa para os pais.',
+      lines: [
+        { speaker: 'A', ja: 'すしの{職人|しょくにん}になりたいです。できればずっと{日本|にほん}で{暮|く}らしたいです。', pt: 'Quero me tornar sushiman. Se possível, quero viver sempre no Japão.' },
+        { speaker: 'A', ja: '{両親|りょうしん}に、{家|いえ}を{建|た}ててあげるつもりです。', pt: 'Pretendo construir uma casa para os meus pais.' },
+      ],
+    },
+  ],
+}
+
+const lesson18: Section = {
+  id: 'lesson-18',
+  level: 'elementary2',
+  titleJa: '第18課 将来、自分の会社を作ろうと思います',
+  titlePt: 'Lição 18 — No futuro, pretendo abrir minha própria empresa',
+  summaryPt:
+    'Minha vida · falar dos sonhos e desejos para o futuro (自分の会社を作ろうと思います／すしの職人になりたいです) com o motivo e o objetivo (日本に住むために／両親に家を建ててあげる) e entender a experiência e os conselhos de quem vive há muito no Japão. Última lição do Elementary 2 (初級2).',
+  studyNotes: [
+    {
+      title: 'Tópico: Minha vida (私の人生)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Falar de forma simples sobre seus sonhos e desejos para o futuro.\n' +
+        '- Ouvir e entender o conteúdo geral da experiência e dos conselhos de quem vive há muito no Japão.\n\n' +
+        '💡 将来の{希望|きぼう}: {会社|かいしゃ}を{作|つく}る, {店|みせ}を{持|も}つ, {家|いえ}を{建|た}てる, {留学|りゅうがく}する, {職人|しょくにん}/{通訳|つうやく}/{日本語|にほんご}{教師|きょうし}になる.',
+    },
+    {
+      title: 'V-(よ)うと思います — intenção (➊)',
+      bodyPt:
+        '**V(forma volitiva 意向形) + と{思|おも}います/{思|おも}っています** = «pretendo / penso em ~»:\n\n' +
+        '- `{自分|じぶん}の{会社|かいしゃ}を{作|つく}ろうと{思|おも}います`, `もっと{日本語|にほんご}を{勉強|べんきょう}しようと{思|おも}います`.\n' +
+        '- Forma volitiva: グ1 -u→-ou ({書|か}く→{書|か}こう), グ2 -る→-よう ({食|た}べる→{食|た}べよう), する→しよう, {来|く}る→{来|こ}よう.\n\n' +
+        '💡 Também: **V-たいです** (quero ~), **V-つもりです** (pretendo, plano firme). (文法ノート ❶)',
+    },
+    {
+      title: 'V-るために / V-てあげる (➋➌)',
+      bodyPt:
+        '- **V(辞書形)+ために、〜 / Nのために** — objetivo/finalidade: `{日本|にほん}に{住|す}むために、{日本語|にほんご}をがんばろうと{思|おも}います`, `{若者|わかもの}のために{働|はたら}く`. (❷)\n' +
+        '- **V-てあげる** — fazer algo em benefício de outra pessoa: `{両親|りょうしん}に{家|いえ}を{建|た}ててあげるつもりです`, `{友|とも}だちに{教|おし}えてあげる`. (❸)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Sonhos/objetivos:** {自分|じぶん}の{会社|かいしゃ}を{作|つく}る, {店|みせ}を{持|も}つ, {就職|しゅうしょく}する, {貯金|ちょきん}する, {結婚|けっこん}する, {家|いえ}を{建|た}てる, {進学|しんがく}する, {留学|りゅうがく}する, のんびり{暮|く}らす, {職人|しょくにん}/ガイド/{通訳|つうやく}/{日本語|にほんご}{教師|きょうし}になる.\n\n' +
+        '**Outros:** {自動車|じどうしゃ}, {整備|せいび}, {技術|ぎじゅつ}, {役|やく}に{立|た}つ, がんばる, {暮|く}らし, うまくいく, {若者|わかもの}, {卒業|そつぎょう}する, {別|べつ}の〜, {広|ひろ}げる, {将来|しょうらい}, {希望|きぼう}.\n\n' +
+        '**Kanji da lição:** {希望|きぼう}, {募集|ぼしゅう}, {特|とく}に, {住|す}む, {建|た}てる, {続|つづ}ける, {考|かんが}える, {役|やく}に{立|た}つ, {卒業|そつぎょう}する, {留学|りゅうがく}する.',
+    },
+  ],
+  groups: [lesson18Group],
+  audios: attachScripts(18, L18_SCRIPTS),
+}
+
+// ---- Array final de seções (Elementary 2 completo: L1–L18) -------------------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -3486,11 +3553,7 @@ const sections: Section[] = [
   lesson16,
   // Tópico 9 — Minha vida (私の人生)
   lesson17,
-  scaffold(18, 'Minha vida', '将来、自分の会社を作ろうと思います', 'No futuro, pretendo abrir minha própria empresa', [
-    'Falar de forma simples sobre seus sonhos e desejos para o futuro.',
-    'Ouvir e entender o conteúdo geral da experiência e dos conselhos de quem vive há muito no Japão.',
-    'Numa festa de despedida etc., agradecer incluindo alguns episódios breves.',
-  ]),
+  lesson18,
 ]
 
 export const irodoriElementary2: Level = {
