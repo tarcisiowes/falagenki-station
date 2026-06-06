@@ -3357,7 +3357,108 @@ const lesson16: Section = {
   audios: attachScripts(16, L16_SCRIPTS),
 }
 
-// ---- Lições 17-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 17: 日本語が前より話せるようになりました (tópico 私の人生) --------------
+const lesson17Group: ExerciseGroup = {
+  id: 'iro-e2-l17',
+  title: '日本語が前より話せるようになりました',
+  subtitlePt: 'Falar das mudanças recentes na vida · falar do trabalho e do japonês comparando antes e agora · escrever uma mensagem de novidades ao professor',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l17-1', number: 1, prompt: 'O título 「{日本語|にほんご}が{前|まえ}より{話|はな}せる[[ようになりました]]」 — 「V-(可能形)ようになりました」 indica:', choices: [{ n: 1, text: 'uma mudança: passou a conseguir fazer algo que antes não conseguia (passei a falar japonês mais que antes)' }, { n: 2, text: 'algo que sempre soube fazer' }, { n: 3, text: 'uma ordem' }, { n: 4, text: 'algo que vai parar de fazer' }], answer: 1, translationPt: 'Passei a falar japonês mais do que antes.', explanationPt: 'V(可能形) + ようになりました = «passei a conseguir ~» (mudança). {話|はな}せる→{話|はな}せるようになった. {前|まえ}より = mais que antes. (文法ノート ❶)' },
+    { id: 'iro-e2-l17-2', number: 2, prompt: '「{最近|さいきん}は、ほかの{人|ひと}に{教|おし}えられるようになりました」 — o que mudou?', choices: [{ n: 1, text: 'antes não conseguia, mas agora consegue ensinar os outros (passou a conseguir)' }, { n: 2, text: 'parou de ensinar' }, { n: 3, text: 'sempre ensinou' }, { n: 4, text: 'foi obrigada a ensinar' }], answer: 1, explanationPt: '{教|おし}える→{教|おし}えられる (potencial) + ようになった = passou a conseguir ensinar. ⚠️ Com わかる/できる: 「{日本語|にほんご}が{少|すこ}しわかるようになった」. (文法ノート ❶)' },
+    { id: 'iro-e2-l17-3', number: 3, prompt: '「{買|か}い{物|もの}に{困|こま}ら[[なくなりました]]」 — 「V-なくなりました」 indica:', image: `${IMG}/Z_17_1_02_kaimono.png`, imageAlt: 'pessoa fazendo compras com facilidade', choices: [{ n: 1, text: 'deixou de ~ (mudança): parou de ter problemas para fazer compras' }, { n: 2, text: 'passou a ter problemas' }, { n: 3, text: 'nunca teve problemas' }, { n: 4, text: 'precisa fazer compras' }], answer: 1, explanationPt: 'V-なくなる = «deixar de ~». {困|こま}る→{困|こま}らなくなった (não tem mais problemas). Liga-se à ない-form (ない→なく). (文法ノート ❶)' },
+    { id: 'iro-e2-l17-4', number: 4, prompt: 'Para mudanças com substantivo/adjetivo, usa-se 「〜になる／〜くなる」. Quais estão certos?', choices: [{ n: 1, text: '{友|とも}だちが{増|ふ}えました／{元気|げんき}になりました／{仕事|しごと}が{楽|たの}しくなりました／すし{職人|しょくにん}になりたい' }, { n: 2, text: '{友|とも}だちが{増|ふ}えるだ／{元気|げんき}くなる／{楽|たの}しいになる' }, { n: 3, text: '{友|とも}だちを{増|ふ}える／{元気|げんき}でなる' }, { n: 4, text: 'nenhuma das anteriores' }], answer: 1, explanationPt: 'Nになる ({職人|しょくにん}になる), なAになる ({元気|げんき}になる), いA→くなる ({楽|たの}しくなる), V-ようになる. (文法ノート ❶ · 変化のまとめ)' },
+    { id: 'iro-e2-l17-5', number: 5, prompt: '「{日本語|にほんご}が[[{前|まえ}より]]{話|はな}せるようになりました」 — 「前より」 significa:', choices: [{ n: 1, text: 'mais do que antes (comparação com o estado anterior)' }, { n: 2, text: 'antes de ~' }, { n: 3, text: 'graças a ~' }, { n: 4, text: 'em vez de antes' }], answer: 1, explanationPt: '{前|まえ}より = «mais que antes». {前|まえ}より{話|はな}せる, {前|まえ}より{仕事|しごと}が{早|はや}くできる. (文法ノート ❶)' },
+    { id: 'iro-e2-l17-6', number: 6, prompt: 'Que atividade esta ilustração mostra (entrou nessa roda e fez amigos)?', image: `${IMG}/Z_17_1_03_wadaiko.png`, imageAlt: 'grupo tocando tambor japonês (wadaiko)', choices: [{ n: 1, text: '{和太鼓|わだいこ}のサークルに{入|はい}る — entrar num clube de tambor japonês (e fazer amigos)' }, { n: 2, text: 'assistir a um drama' }, { n: 3, text: 'fazer compras' }, { n: 4, text: 'mandar e-mail' }], answer: 1, explanationPt: '{和太鼓|わだいこ} (tambor japonês); サークルに{入|はい}る (entrar no clube), {誘|さそ}う (convidar), おかげで (graças a). (Atividade 1)' },
+    { id: 'iro-e2-l17-7', number: 7, prompt: 'Que mudança esta ilustração ajuda a contar (agora entende e ri das falas)?', image: `${IMG}/Z_17_1_01_dorama.png`, imageAlt: 'pessoa assistindo a um drama e rindo', choices: [{ n: 1, text: 'ドラマの[[セリフ]]がわかって{笑|わら}えるようになった — passou a entender as falas (セリフ) do drama e rir' }, { n: 2, text: 'parou de ver TV' }, { n: 3, text: 'comprou uma TV nova' }, { n: 4, text: 'não gosta de drama' }], answer: 1, explanationPt: 'ドラマ (drama), セリフ (falas/diálogos), {笑|わら}う (rir), うまい (ser bom em), ほとんど (quase tudo). (Atividade 1)' },
+    { id: 'iro-e2-l17-8', number: 8, prompt: '聴解 17-10 (仕事について): como a pessoa descreve a mudança no trabalho?', context: 'はじめは、やり{方|かた}がわからないことが{多|おお}かったですが、{今|いま}は、だいぶわかるようになりました。', choices: [{ n: 1, text: 'No começo havia muita coisa que não sabia fazer, mas agora passou a entender bastante.' }, { n: 2, text: 'O trabalho ficou impossível.' }, { n: 3, text: 'Nunca teve dificuldade.' }, { n: 4, text: 'Decidiu largar o trabalho.' }], answer: 1, explanationPt: 'はじめはやり{方|かた}がわからない→{今|いま}はだいぶわかるようになった (mudança ❶). (聴解 17-10)' },
+    { id: 'iro-e2-l17-9', number: 9, prompt: '聴解 17-11 (日本語について): que mudanças no japonês a pessoa relata?', context: 'みんなが{私|わたし}に{言|い}っていることは、だいたいわかるようになりました。それから、{前|まえ}より{話|はな}せるようになりました。', choices: [{ n: 1, text: 'Passou a entender quase tudo o que lhe dizem e a falar mais do que antes.' }, { n: 2, text: 'Esqueceu todo o japonês.' }, { n: 3, text: 'Só entende a escrita.' }, { n: 4, text: 'Não houve mudança.' }], answer: 1, explanationPt: 'みんなの{話|はなし}がわかるようになった; {前|まえ}より{話|はな}せるようになった. はじめは{知|し}らないことばが{多|おお}くて{大変|たいへん}でした. (聴解 17-11)' },
+    { id: 'iro-e2-l17-10', number: 10, prompt: 'Termos de trabalho que apareceram: 「{締|し}め{日|び}」「{納期|のうき}」 significam:', choices: [{ n: 1, text: 'dia de fechamento (prazo de corte) / prazo de entrega' }, { n: 2, text: 'dia de folga / hora do almoço' }, { n: 3, text: 'salário / bônus' }, { n: 4, text: 'feriado / reunião' }], answer: 1, explanationPt: '{締|し}め{日|び} (data de fechamento), {納期|のうき} (prazo de entrega). No começo a pessoa não entendia esses termos. (Seção 2 · 知らないことば)' },
+    { id: 'iro-e2-l17-11', number: 11, prompt: 'Onde a personagem Tila conversa com o chefe Nakata sobre o trabalho e o japonês?', image: `${IMG}/Z_17_2_01_shokudoo.png`, imageAlt: 'refeitório/cantina da empresa', choices: [{ n: 1, text: 'no {食堂|しょくどう} (refeitório), durante o {昼休|ひるやす}み (intervalo do almoço)' }, { n: 2, text: 'numa loja de roupas' }, { n: 3, text: 'num hospital' }, { n: 4, text: 'num templo' }], answer: 1, explanationPt: 'ティラさんが{昼休|ひるやす}みに、{上司|じょうし}の{中田|なかた}さんと{食堂|しょくどう}で{仕事|しごと}や{日本語|にほんご}について{話|はな}す. (Seção 2)' },
+    { id: 'iro-e2-l17-12', number: 12, prompt: '聴解 17-13 (近況報告のメッセージ): que tipo de mensagem se escreve ao professor de japonês?', image: `${IMG}/Z_17_1_04_meeru.png`, imageAlt: 'mensagem no celular', choices: [{ n: 1, text: 'uma mensagem de novidades (近況) contando como está a vida/trabalho/japonês, com agradecimento (感謝)' }, { n: 2, text: 'um pedido de reembolso' }, { n: 3, text: 'uma reclamação de produto' }, { n: 4, text: 'um convite para festa' }], answer: 1, explanationPt: '{近況報告|きんきょうほうこく}のメッセージ: {仕事|しごと}/{生活|せいかつ}/{日本語|にほんご}の{変化|へんか} + {感謝|かんしゃ}. {友|とも}だちリクエストを{承認|しょうにん}する. (Seção 3)' },
+    { id: 'iro-e2-l17-13', number: 13, prompt: 'Vocabulário de SNS/mensagem: 「{友|とも}だちリクエスト／{承認|しょうにん}する／{授業|じゅぎょう}／{感謝|かんしゃ}する」 significam:', choices: [{ n: 1, text: 'pedido de amizade / aceitar (aprovar) / aula / agradecer (ser grato)' }, { n: 2, text: 'curtida / bloquear / festa / reclamar' }, { n: 3, text: 'mensagem / apagar / prova / desculpar-se' }, { n: 4, text: 'foto / compartilhar / nota / convidar' }], answer: 1, explanationPt: '{友|とも}だちリクエスト, {承認|しょうにん}する (aprovar), {授業|じゅぎょう} (aula), {感謝|かんしゃ}する (agradecer). (Seção 3)' },
+    { id: 'iro-e2-l17-14', number: 14, prompt: 'Vocabulário de mudança/adaptação: 「{慣|な}れる／{増|ふ}える／{困|こま}る／{苦労|くろう}する／おかげで」 significam:', choices: [{ n: 1, text: 'acostumar-se / aumentar / ter dificuldade/aperto / passar por dificuldades / graças a' }, { n: 2, text: 'esquecer / diminuir / descansar / brincar / por causa de (culpa)' }, { n: 3, text: 'aprender / mudar / pagar / viajar / apesar de' }, { n: 4, text: 'cansar / sumir / comprar / dormir / em vez de' }], answer: 1, explanationPt: '{慣|な}れる (acostumar), {増|ふ}える (aumentar), {困|こま}る (ter dificuldade), {苦労|くろう}する (passar aperto), おかげで (graças a). (Atividades)' },
+    { id: 'iro-e2-l17-15', number: 15, prompt: 'Vocabulário de hobby/comunicação: 「{和太鼓|わだいこ}／サークル／{誘|さそ}う／やりとり／〜{以外|いがい}」 significam:', choices: [{ n: 1, text: 'tambor japonês / clube (círculo) / convidar / troca (de mensagens/comunicação) / além de ~' }, { n: 2, text: 'piano / fila / recusar / silêncio / dentro de ~' }, { n: 3, text: 'violão / time / cobrar / encontro / antes de ~' }, { n: 4, text: 'flauta / aula / pagar / despedida / depois de ~' }], answer: 1, explanationPt: '{和太鼓|わだいこ}, サークル (clube), {誘|さそ}う (convidar), やりとり (troca/comunicação), 〜{以外|いがい} (além de). (Atividade 1)' },
+    { id: 'iro-e2-l17-16', number: 16, prompt: 'Os kanji 「{最近|さいきん}／{授業|じゅぎょう}／{問題|もんだい}／{大変|たいへん}（な)／{困|こま}る」 lêem-se:', choices: [{ n: 1, text: 'さいきん (recentemente) / じゅぎょう (aula) / もんだい (problema) / たいへん (difícil/duro) / こまる (ter dificuldade)' }, { n: 2, text: 'さいきん / じゅぎょう / もんだい / だいへん / くるしる' }, { n: 3, text: 'もとちか / じゅぎょう / といだい / たいへん / こまる' }, { n: 4, text: 'さいきん / じゅごう / もんだい / たいへん / なやる' }], answer: 1, explanationPt: '{最近|さいきん}, {授業|じゅぎょう}, {問題|もんだい}, {大変|たいへん}（な), {困|こま}る. (漢字のことば)' },
+    { id: 'iro-e2-l17-17', number: 17, prompt: 'Os kanji 「{違|ちが}う／{慣|な}れる／{増|ふ}える／{笑|わら}う／{苦労|くろう}する」 lêem-se:', choices: [{ n: 1, text: 'ちがう (ser diferente) / なれる (acostumar-se) / ふえる (aumentar) / わらう (rir) / くろうする (penar/esforçar-se)' }, { n: 2, text: 'いう / なれる / ぞうえる / わらう / くろうする' }, { n: 3, text: 'ちがう / かんれる / ふえる / しょうう / くろうする' }, { n: 4, text: 'ちがう / なれる / ふえる / わらう / にがろうする' }], answer: 1, explanationPt: '{違|ちが}う ({文化|ぶんか}が{違|ちが}う), {慣|な}れる, {増|ふ}える, {笑|わら}う, {苦労|くろう}する. (漢字のことば)' },
+    { id: 'iro-e2-l17-18', number: 18, prompt: 'Resumo: para contar mudanças (antes × agora), a lição reúne as formas:', choices: [{ n: 1, text: 'Nになる / なAになる / いA-くなる / V-(可能形)ようになる / V-るようになる / V-なくなる (+ 前より)' }, { n: 2, text: '〜てもらえますか / Nのために' }, { n: 3, text: '命令形 / V-るな' }, { n: 4, text: '〜たまま / 〜のにいい' }], answer: 1, explanationPt: 'Mudanças (変化): {職人|しょくにん}になる, {元気|げんき}になる, {楽|たの}しくなる, {話|はな}せるようになる, {使|つか}うようになる, {困|こま}らなくなる; {前|まえ}より. (文法ノート ❶)' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 17 (situação + falas-chave citadas; não verbatim)
+const L17_SCRIPTS: Record<string, ScriptItem[]> = {
+  '17-06': [
+    {
+      label: '会話モデル — 最近の生活の変化 (17-06) · resumo',
+      setupJa: '{最近|さいきん}の{生活|せいかつ}の{変化|へんか}について{話|はな}しています。',
+      setupPt: 'Resumo: ao ser perguntada se já se acostumou ao Japão, a pessoa conta as mudanças — agora tem hobby, mais amigos, não tem mais problemas nas compras e passou a aproveitar mais a vida.',
+      lines: [
+        { speaker: 'A', ja: '{日本|にほん}には、もう{慣|な}れましたか？', pt: 'Já se acostumou ao Japão?' },
+        { speaker: 'B', ja: 'はい、おかげさまで。{前|まえ}は{毎日|まいにち}{仕事|しごと}だけでしたけど、{今|いま}は{趣味|しゅみ}も{楽|たの}しめるようになりました。', pt: 'Sim, graças a você. Antes era só trabalho todo dia, mas agora passei a aproveitar também os hobbies.' },
+      ],
+    },
+  ],
+  '17-10': [
+    {
+      label: '会話 — 仕事や日本語について（ティラ×中田）(17-10) · resumo',
+      setupJa: 'ティラさんが、{昼休|ひるやす}みに、{上司|じょうし}の{中田|なかた}さんと{食堂|しょくどう}で{話|はな}しています。',
+      setupPt: 'Resumo: no almoço, Tila conta ao chefe Nakata como mudou no trabalho (antes não sabia como fazer, agora entende bastante) e no japonês (passou a entender quase tudo e a falar mais que antes).',
+      lines: [
+        { speaker: 'ティラ', ja: 'はじめは、やり{方|かた}がわからないことが{多|おお}かったですが、{今|いま}は、だいぶわかるようになりました。', pt: 'No começo havia muita coisa que eu não sabia fazer, mas agora passei a entender bastante.' },
+        { speaker: 'ティラ', ja: '{前|まえ}より{話|はな}せるようになりました。', pt: 'Passei a falar mais do que antes.' },
+      ],
+    },
+  ],
+}
+
+const lesson17: Section = {
+  id: 'lesson-17',
+  level: 'elementary2',
+  titleJa: '第17課 日本語が前より話せるようになりました',
+  titlePt: 'Lição 17 — Passei a falar japonês mais do que antes',
+  summaryPt:
+    'Minha vida · falar das mudanças recentes na vida (前は仕事だけでしたけど、今は趣味も楽しめるようになりました／買い物に困らなくなりました), comparar antes e agora no trabalho e no japonês (はじめは…が、今は…ようになりました) e escrever uma mensagem de novidades (近況) ao professor de japonês.',
+  studyNotes: [
+    {
+      title: 'Tópico: Minha vida (私の人生)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Falar de forma simples sobre as mudanças recentes na sua vida.\n' +
+        '- Falar sobre o trabalho e o japonês comparando como era antes e como é agora.\n' +
+        '- Escrever uma mensagem ao professor de japonês contando as novidades (近況).\n\n' +
+        '💡 Foco em **variação/mudança** (変化): antes × agora, com 「〜ようになりました」e 「前より」.',
+    },
+    {
+      title: 'Mudança: V-(可能形)ようになりました (➊)',
+      bodyPt:
+        '**V(可能形) + ようになりました** = passou a conseguir fazer algo (antes não):\n\n' +
+        '- `{日本語|にほんご}が{前|まえ}より{話|はな}せるようになりました`, `ほかの{人|ひと}に{教|おし}えられるようになりました`.\n' +
+        '- ⚠️ Com **わかる/できる** (já potenciais): `{日本語|にほんご}が{少|すこ}しわかるようになりました`, `{仕事|しごと}が{早|はや}くできるようになりました`.\n' +
+        '- **V-るようになる** (mudança de hábito/gosto): `{料理|りょうり}にしょうゆを{使|つか}うようになりました`. (文法ノート ❶)',
+    },
+    {
+      title: 'Mudança: 〜なる / V-なくなる (➊ · resumo)',
+      bodyPt:
+        'Outras formas de marcar **mudança**:\n\n' +
+        '- **N になる** (`すし{職人|しょくにん}になりたい`), **なA になる** (`{元気|げんき}になりました`), **いA → くなる** (`{仕事|しごと}が{楽|たの}しくなりました`).\n' +
+        '- **V-なくなりました** — deixou de ~: `{生活|せいかつ}に{困|こま}らなくなりました` (ない→なく + なる).\n\n' +
+        '💡 Comparação com o passado: **{前|まえ}より** (mais que antes). (文法ノート ❶)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Mudança/vida:** {慣|な}れる, {増|ふ}える, {困|こま}る/{困|こま}らなくなる, {苦労|くろう}する, おかげで, {変化|へんか}, {趣味|しゅみ}, {最近|さいきん}.\n\n' +
+        '**Hobby/SNS:** {和太鼓|わだいこ}, サークル, {入|はい}る, {誘|さそ}う, やりとり, 〜{以外|いがい}, ドラマ, セリフ, うまい, ほとんど, {友|とも}だちリクエスト, {承認|しょうにん}する, {近況|きんきょう}, {感謝|かんしゃ}する.\n\n' +
+        '**Trabalho:** やり{方|かた}, {締|し}め{日|び}, {納期|のうき}, {上司|じょうし}, {食堂|しょくどう}, {昼休|ひるやす}み.\n\n' +
+        '**Kanji da lição:** {最近|さいきん}, {授業|じゅぎょう}, {問題|もんだい}, {大変|たいへん}（な), {困|こま}る, {違|ちが}う, {慣|な}れる, {増|ふ}える, {笑|わら}う, {苦労|くろう}する.',
+    },
+  ],
+  groups: [lesson17Group],
+  audios: attachScripts(17, L17_SCRIPTS),
+}
+
+// ---- Lição 18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -3384,11 +3485,7 @@ const sections: Section[] = [
   lesson15,
   lesson16,
   // Tópico 9 — Minha vida (私の人生)
-  scaffold(17, 'Minha vida', '日本語が前より話せるようになりました', 'Agora consigo falar japonês melhor que antes', [
-    'Falar de forma simples sobre o que viveu e como sua vida mudou desde que chegou ao Japão.',
-    'Falar de forma simples aos colegas sobre como o trabalho anda ultimamente.',
-    'Escrever e enviar uma mensagem simples de novidades a quem lhe ensinou japonês.',
-  ]),
+  lesson17,
   scaffold(18, 'Minha vida', '将来、自分の会社を作ろうと思います', 'No futuro, pretendo abrir minha própria empresa', [
     'Falar de forma simples sobre seus sonhos e desejos para o futuro.',
     'Ouvir e entender o conteúdo geral da experiência e dos conselhos de quem vive há muito no Japão.',
