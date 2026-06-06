@@ -3159,16 +3159,17 @@ const lesson14Group: ExerciseGroup = {
     { id: 'iro-e2-l14-11', number: 11, prompt: '聴解 14-04 (宅配便): qual a diferença entre 着払い e 元払い ao enviar uma encomenda?', context: '{店員|てんいん}：お{支払|しはら}いは、{着払|ちゃくばら}いと{元払|もとばら}いのどちらにしますか？', choices: [{ n: 1, text: '着払い = quem recebe paga; 元払い = quem envia paga (na hora).' }, { n: 2, text: '着払い = mais caro; 元払い = grátis.' }, { n: 3, text: 'São a mesma coisa.' }, { n: 4, text: '着払い = só para o exterior.' }], answer: 1, explanationPt: '{着払|ちゃくばら}い (paga o destinatário) vs {元払|もとばら}い (paga o remetente); {午前中|ごぜんちゅう} etc. p/ horário; お{預|あず}かりします. (聴解 14-04)' },
     { id: 'iro-e2-l14-12', number: 12, prompt: '聴解 14-05 (ATM): que passos aparecem para sacar dinheiro?', context: '「お{引|ひ}き{出|だ}し」をタッチ→キャッシュカードを{入|い}れる→{暗証番号|あんしょうばんごう}（4{桁|けた}）を{入力|にゅうりょく}する→{金額|きんがく}を{入|い}れる。', choices: [{ n: 1, text: 'Tocar em «saque», inserir o cartão, digitar a senha (4 dígitos) e o valor.' }, { n: 2, text: 'Só inserir o cartão e pronto.' }, { n: 3, text: 'Falar com o caixa humano.' }, { n: 4, text: 'Digitar nome e endereço.' }], answer: 1, explanationPt: 'ATM: お{引|ひ}き{出|だ}し→キャッシュカード→{暗証番号|あんしょうばんごう}4{桁|けた}{入力|にゅうりょく}→{金額|きんがく}; {利用明細|りようめいさい} (extrato), {両替|りょうがえ}. (聴解 14-05)' },
     { id: 'iro-e2-l14-13', number: 13, prompt: 'Você recebeu um aviso de ausência (不在連絡票) do 宅配便. Que formas há para pedir a reentrega (再配達)?', choices: [{ n: 1, text: 'ir ao correio buscar, preencher o papel e pôr no correio, pela internet, por telefone — escolhendo onde/quando receber (自宅/勤め先)' }, { n: 2, text: 'só esperar; não dá para fazer nada' }, { n: 3, text: 'pagar uma multa na loja' }, { n: 4, text: 'devolver a encomenda ao remetente' }], answer: 1, explanationPt: '{再配達|さいはいたつ}: {郵便局|ゆうびんきょく}で{受|う}け{取|と}る／{紙|かみ}をポストに／インターネット／{電話|でんわ}. {不在|ふざい}, お{勤|つと}め{先|さき} (trabalho). (Seção 2)' },
-    { id: 'iro-e2-l14-14', number: 14, prompt: '聴解 14-07 (美容院): como o cliente diz o corte que quer?', context: '{客|きゃく}：ボリュームを{少|すく}なくして、{長|なが}さも{少|すこ}し{短|みじか}くしてください。…{上|うえ}は3cmぐらい、まわりは5mmぐらいにしてください。', choices: [{ n: 1, text: 'Pede para reduzir o volume e deixar um pouco mais curto: ~3 cm em cima e ~5 mm nas laterais.' }, { n: 2, text: 'Pede para deixar bem comprido.' }, { n: 3, text: 'Pede para pintar de loiro.' }, { n: 4, text: 'Pede só lavagem, sem corte.' }], answer: 1, explanationPt: 'Salão: ボリュームを{少|すく}なくして、{短|みじか}くして; {上|うえ}は3cm、まわりは5mmにして; こんな{感|かん}じに. (聴解 14-07)' },
-    { id: 'iro-e2-l14-15', number: 15, prompt: '「{全体的|ぜんたいてき}に{短|みじか}[[く]]{切|き}ってください」「まわりは5mm[[に]]してください」 — para dizer COMO fazer algo, usa-se:', choices: [{ n: 1, text: 'い-adj → 〜く + V; な-adj/N → 〜に + する/V (cortar curto / deixar em 5 mm)' }, { n: 2, text: '〜たり〜たりする' }, { n: 3, text: '〜てしまう' }, { n: 4, text: '〜かもしれない' }], answer: 1, explanationPt: 'A-く + V: {短|みじか}く{切|き}る, {少|すく}なくする; N/なA-に + する: 5mmにする, きれいにする. (文法ノート ❶)' },
-    { id: 'iro-e2-l14-16', number: 16, prompt: 'Para pedir um corte específico ao cabeleireiro, o padrão central da lição é:', choices: [{ n: 1, text: '〜く／〜に + {切|き}ってもらえますか／してください (短く切ってもらえますか／5mmにしてください)' }, { n: 2, text: '〜はもう{始|はじ}まりましたか' }, { n: 3, text: '〜を{盗|ぬす}まれました' }, { n: 4, text: '〜たことがあります' }], answer: 1, explanationPt: 'Pedido de corte: A-く/N-に + {切|き}ってもらえますか／してください. (Atividade 2 · 希望を伝える)' },
-    { id: 'iro-e2-l14-17', number: 17, prompt: '「{外国|がいこく}の{方|かた}[[のために]]、いろいろなサービスがあります」 — 「N のために、〜」 significa:', choices: [{ n: 1, text: 'para (o benefício de) ~: há vários serviços para os estrangeiros' }, { n: 2, text: 'por causa de ~ (culpa de)' }, { n: 3, text: 'em vez de ~' }, { n: 4, text: 'apesar de ~' }], answer: 1, explanationPt: 'N のために = «para (o bem de) ~». {外国|がいこく}の{方|かた}のために, {家族|かぞく}のために, {健康|けんこう}のために. (文法ノート ❷)' },
-    { id: 'iro-e2-l14-18', number: 18, prompt: '聴解 14-13 (外国の方のためのサービス): que tipos de serviço para estrangeiros são apresentados?', image: `${IMG}/Z_14_4_01_gaikokugo-soodan.png`, imageAlt: 'balcão de consulta em língua estrangeira', choices: [{ n: 1, text: 'consulta em língua estrangeira (外国語相談), intérprete no hospital (通訳), guia de vida e aulas de japonês (日本語教室)' }, { n: 2, text: 'só serviços de táxi' }, { n: 3, text: 'só venda de comida' }, { n: 4, text: 'só serviços bancários' }], answer: 1, explanationPt: '{外国|がいこく}の{方|かた}のために: {外国語|がいこくご}{相談|そうだん} ({無料|むりょう}), {病院|びょういん}の{通訳|つうやく}, {生活|せいかつ}ガイドブック, {日本語|にほんご}{教室|きょうしつ}. (聴解 14-13)' },
-    { id: 'iro-e2-l14-19', number: 19, prompt: 'Vocabulário de serviços: 「{宅配便|たくはいびん}／{着払|ちゃくばら}い／{暗証番号|あんしょうばんごう}／{再配達|さいはいたつ}／{両替|りょうがえ}」 significam:', choices: [{ n: 1, text: 'entrega de encomendas / pagamento na entrega / senha (PIN) / reentrega / troca de dinheiro (trocar nota)' }, { n: 2, text: 'correio / desconto / número de série / devolução / câmbio de moeda estrangeira' }, { n: 3, text: 'táxi / gorjeta / código de barras / cancelamento / saque' }, { n: 4, text: 'mudança / parcela / RG / entrega expressa / depósito' }], answer: 1, explanationPt: '{宅配便|たくはいびん}, {着払|ちゃくばら}い, {暗証番号|あんしょうばんごう}, {再配達|さいはいたつ}, {両替|りょうがえ}. Também: シミ{抜|ぬ}き, {空気入|くうきい}れ, {利用明細|りようめいさい}, {不在|ふざい}. (Atividades)' },
-    { id: 'iro-e2-l14-20', number: 20, prompt: 'Vocabulário do salão: 「{前髪|まえがみ}／{長|なが}さ／{全体的|ぜんたいてき}に／バリカン／シャンプー{台|だい}」 significam:', choices: [{ n: 1, text: 'franja / comprimento / no geral (de modo geral) / máquina de cortar cabelo / lavatório (do salão)' }, { n: 2, text: 'pente / cor / às vezes / secador / espelho' }, { n: 3, text: 'cabelo / peso / nunca / tesoura / cadeira' }, { n: 4, text: 'barba / largura / sempre / pincel / toalha' }], answer: 1, explanationPt: '{前髪|まえがみ} (franja), {長|なが}さ (comprimento), {全体的|ぜんたいてき}に (no geral), バリカン (máquina), シャンプー{台|だい} (lavatório). Também: {鏡|かがみ}, ひげ{剃|そ}り, こんな{感|かん}じ. (Seção 3)' },
-    { id: 'iro-e2-l14-21', number: 21, prompt: 'Os kanji 「{外国|がいこく}／{情報|じょうほう}／{相談|そうだん}／{質問|しつもん}／{窓口|まどぐち}」 lêem-se:', choices: [{ n: 1, text: 'がいこく (exterior/estrangeiro) / じょうほう (informação) / そうだん (consulta) / しつもん (pergunta) / まどぐち (guichê/balcão)' }, { n: 2, text: 'がいこく / じょうほう / そうだん / しつもん / そうこう' }, { n: 3, text: 'そとくに / じょうほう / あいだん / しつもん / まどぐち' }, { n: 4, text: 'がいこく / せいほう / そうだん / しちもん / まどぐち' }], answer: 1, explanationPt: '{外国|がいこく}, {情報|じょうほう}, {相談|そうだん}, {質問|しつもん}, {窓口|まどぐち} (10{番|ばん}の{窓口|まどぐち}). (漢字のことば)' },
-    { id: 'iro-e2-l14-22', number: 22, prompt: 'Os kanji 「{郵便局|ゆうびんきょく}／{近所|きんじょ}／{自動|じどう}／{洗|あら}う／{入力|にゅうりょく}する」 lêem-se:', choices: [{ n: 1, text: 'ゆうびんきょく (correio) / きんじょ (vizinhança) / じどう (automático) / あらう (lavar) / にゅうりょくする (digitar/inserir)' }, { n: 2, text: 'ゆうびんきょく / きんじょ / じどう / せんう / にゅうりょくする' }, { n: 3, text: 'ゆうびんきょく / ちかじょ / じどう / あらう / いりりょくする' }, { n: 4, text: 'ゆうびんつぼね / きんじょ / みずどう / あらう / にゅうりょく' }], answer: 1, explanationPt: '{郵便局|ゆうびんきょく}, {近所|きんじょ}, {自動|じどう} ({自動|じどう}で{出|で}る), {洗|あら}う ({髪|かみ}を{洗|あら}う), {入力|にゅうりょく}する. (漢字のことば)' },
-    { id: 'iro-e2-l14-23', number: 23, prompt: 'Resumo: nesta lição, para usar serviços e fazer pedidos, aprende-se principalmente:', choices: [{ n: 1, text: 'V-てもらえますか (pedir serviço), A-く/N-に + V (短く切る), N のために (para estrangeiros etc.)' }, { n: 2, text: '〜たら / 受身 / かもしれない' }, { n: 3, text: '〜んです / しか / だけ' }, { n: 4, text: '〜てある / だけじゃなくて' }], answer: 1, explanationPt: 'Núcleo da L14: pedir serviços (V-てもらえますか), instruir como fazer (A-く/N-に+V ❶) e serviços «para ~» (Nのために ❷).' },
+    { id: 'iro-e2-l14-14', number: 14, prompt: '聴解 14-06 (床屋): como o cliente diz o corte que quer?', context: '{客|きゃく}：{全体的|ぜんたいてき}に{短|みじか}く{切|き}ってください。{上|うえ}は、3cmぐらい、{横|よこ}と{後|うし}ろは、5mmぐらいにしてください。', choices: [{ n: 1, text: 'Pede um corte curto no geral: em cima cerca de 3 cm, lados e atrás cerca de 5 mm.' }, { n: 2, text: 'Pede para só aparar a franja.' }, { n: 3, text: 'Pede permanente e coloração.' }, { n: 4, text: 'Pede para deixar o cabelo comprido.' }], answer: 1, explanationPt: '床屋: {全体的|ぜんたいてき}に{短|みじか}く, {上|うえ}は3cm, {横|よこ}と{後|うし}ろは5mm, まわりはバリカン. (聴解 14-06)' },
+    { id: 'iro-e2-l14-15', number: 15, prompt: '聴解 14-07 (美容院): como a cliente diz o corte que quer?', context: '{客|きゃく}：ボリュームを{少|すく}なくして、{長|なが}さも{少|すこ}し{短|みじか}くしてください。…3cmぐらい{切|き}ってください。', choices: [{ n: 1, text: 'Pede para reduzir o volume, deixar o comprimento um pouco mais curto e cortar cerca de 3 cm.' }, { n: 2, text: 'Pede laterais de 5 mm com máquina.' }, { n: 3, text: 'Pede só lavagem, sem corte.' }, { n: 4, text: 'Pede para raspar tudo.' }], answer: 1, explanationPt: '美容院: ボリュームを{少|すく}なくして, {長|なが}さも{少|すこ}し{短|みじか}く, 3cmぐらい{切|き}って, こんな{感|かん}じに. (聴解 14-07)' },
+    { id: 'iro-e2-l14-16', number: 16, prompt: '「{全体的|ぜんたいてき}に{短|みじか}[[く]]{切|き}ってください」「まわりは5mm[[に]]してください」 — para dizer COMO fazer algo, usa-se:', choices: [{ n: 1, text: 'い-adj → 〜く + V; な-adj/N → 〜に + する/V (cortar curto / deixar em 5 mm)' }, { n: 2, text: '〜たり〜たりする' }, { n: 3, text: '〜てしまう' }, { n: 4, text: '〜かもしれない' }], answer: 1, explanationPt: 'A-く + V: {短|みじか}く{切|き}る, {少|すく}なくする; N/なA-に + する: 5mmにする, きれいにする. (文法ノート ❶)' },
+    { id: 'iro-e2-l14-17', number: 17, prompt: 'Para pedir um corte específico ao cabeleireiro, o padrão central da lição é:', choices: [{ n: 1, text: '〜く／〜に + {切|き}ってもらえますか／してください (短く切ってもらえますか／5mmにしてください)' }, { n: 2, text: '〜はもう{始|はじ}まりましたか' }, { n: 3, text: '〜を{盗|ぬす}まれました' }, { n: 4, text: '〜たことがあります' }], answer: 1, explanationPt: 'Pedido de corte: A-く/N-に + {切|き}ってもらえますか／してください. (Atividade 2 · 希望を伝える)' },
+    { id: 'iro-e2-l14-18', number: 18, prompt: '「{外国|がいこく}の{方|かた}[[のために]]、いろいろなサービスがあります」 — 「N のために、〜」 significa:', choices: [{ n: 1, text: 'para (o benefício de) ~: há vários serviços para os estrangeiros' }, { n: 2, text: 'por causa de ~ (culpa de)' }, { n: 3, text: 'em vez de ~' }, { n: 4, text: 'apesar de ~' }], answer: 1, explanationPt: 'N のために = «para (o bem de) ~». {外国|がいこく}の{方|かた}のために, {家族|かぞく}のために, {健康|けんこう}のために. (文法ノート ❷)' },
+    { id: 'iro-e2-l14-19', number: 19, prompt: '聴解 14-13 (外国の方のためのサービス): que tipos de serviço para estrangeiros são apresentados?', image: `${IMG}/Z_14_4_01_gaikokugo-soodan.png`, imageAlt: 'balcão de consulta em língua estrangeira', choices: [{ n: 1, text: 'consulta em língua estrangeira (外国語相談), intérprete no hospital (通訳), guia de vida e aulas de japonês (日本語教室)' }, { n: 2, text: 'só serviços de táxi' }, { n: 3, text: 'só venda de comida' }, { n: 4, text: 'só serviços bancários' }], answer: 1, explanationPt: '{外国|がいこく}の{方|かた}のために: {外国語|がいこくご}{相談|そうだん} ({無料|むりょう}), {病院|びょういん}の{通訳|つうやく}, {生活|せいかつ}ガイドブック, {日本語|にほんご}{教室|きょうしつ}. (聴解 14-13)' },
+    { id: 'iro-e2-l14-20', number: 20, prompt: 'Vocabulário de serviços: 「{宅配便|たくはいびん}／{着払|ちゃくばら}い／{暗証番号|あんしょうばんごう}／{再配達|さいはいたつ}／{両替|りょうがえ}」 significam:', choices: [{ n: 1, text: 'entrega de encomendas / pagamento na entrega / senha (PIN) / reentrega / troca de dinheiro (trocar nota)' }, { n: 2, text: 'correio / desconto / número de série / devolução / câmbio de moeda estrangeira' }, { n: 3, text: 'táxi / gorjeta / código de barras / cancelamento / saque' }, { n: 4, text: 'mudança / parcela / RG / entrega expressa / depósito' }], answer: 1, explanationPt: '{宅配便|たくはいびん}, {着払|ちゃくばら}い, {暗証番号|あんしょうばんごう}, {再配達|さいはいたつ}, {両替|りょうがえ}. Também: シミ{抜|ぬ}き, {空気入|くうきい}れ, {利用明細|りようめいさい}, {不在|ふざい}. (Atividades)' },
+    { id: 'iro-e2-l14-21', number: 21, prompt: 'Vocabulário do salão: 「{前髪|まえがみ}／{長|なが}さ／{全体的|ぜんたいてき}に／バリカン／シャンプー{台|だい}」 significam:', choices: [{ n: 1, text: 'franja / comprimento / no geral (de modo geral) / máquina de cortar cabelo / lavatório (do salão)' }, { n: 2, text: 'pente / cor / às vezes / secador / espelho' }, { n: 3, text: 'cabelo / peso / nunca / tesoura / cadeira' }, { n: 4, text: 'barba / largura / sempre / pincel / toalha' }], answer: 1, explanationPt: '{前髪|まえがみ} (franja), {長|なが}さ (comprimento), {全体的|ぜんたいてき}に (no geral), バリカン (máquina), シャンプー{台|だい} (lavatório). Também: {鏡|かがみ}, ひげ{剃|そ}り, こんな{感|かん}じ. (Seção 3)' },
+    { id: 'iro-e2-l14-22', number: 22, prompt: 'Os kanji 「{外国|がいこく}／{情報|じょうほう}／{相談|そうだん}／{質問|しつもん}／{窓口|まどぐち}」 lêem-se:', choices: [{ n: 1, text: 'がいこく (exterior/estrangeiro) / じょうほう (informação) / そうだん (consulta) / しつもん (pergunta) / まどぐち (guichê/balcão)' }, { n: 2, text: 'がいこく / じょうほう / そうだん / しつもん / そうこう' }, { n: 3, text: 'そとくに / じょうほう / あいだん / しつもん / まどぐち' }, { n: 4, text: 'がいこく / せいほう / そうだん / しちもん / まどぐち' }], answer: 1, explanationPt: '{外国|がいこく}, {情報|じょうほう}, {相談|そうだん}, {質問|しつもん}, {窓口|まどぐち} (10{番|ばん}の{窓口|まどぐち}). (漢字のことば)' },
+    { id: 'iro-e2-l14-23', number: 23, prompt: 'Os kanji 「{郵便局|ゆうびんきょく}／{近所|きんじょ}／{自動|じどう}／{洗|あら}う／{入力|にゅうりょく}する」 lêem-se:', choices: [{ n: 1, text: 'ゆうびんきょく (correio) / きんじょ (vizinhança) / じどう (automático) / あらう (lavar) / にゅうりょくする (digitar/inserir)' }, { n: 2, text: 'ゆうびんきょく / きんじょ / じどう / せんう / にゅうりょくする' }, { n: 3, text: 'ゆうびんきょく / ちかじょ / じどう / あらう / いりりょくする' }, { n: 4, text: 'ゆうびんつぼね / きんじょ / みずどう / あらう / にゅうりょく' }], answer: 1, explanationPt: '{郵便局|ゆうびんきょく}, {近所|きんじょ}, {自動|じどう} ({自動|じどう}で{出|で}る), {洗|あら}う ({髪|かみ}を{洗|あら}う), {入力|にゅうりょく}する. (漢字のことば)' },
+    { id: 'iro-e2-l14-24', number: 24, prompt: 'Resumo: nesta lição, para usar serviços e fazer pedidos, aprende-se principalmente:', choices: [{ n: 1, text: 'V-てもらえますか (pedir serviço), A-く/N-に + V (短く切る), N のために (para estrangeiros etc.)' }, { n: 2, text: '〜たら / 受身 / かもしれない' }, { n: 3, text: '〜んです / しか / だけ' }, { n: 4, text: '〜てある / だけじゃなくて' }], answer: 1, explanationPt: 'Núcleo da L14: pedir serviços (V-てもらえますか), instruir como fazer (A-く/N-に+V ❶) e serviços «para ~» (Nのために ❷).' },
   ],
 }
 
@@ -3268,14 +3269,60 @@ const L14_SCRIPTS: Record<string, ScriptItem[]> = {
       ],
     },
   ],
+  '14-06': [
+    {
+      label: '会話1 — 床屋（理容師）(14-06)',
+      setupJa: '{美容院|びよういん}や{床屋|とこや}で、どのような{髪型|かみがた}にしたいか{伝|つた}えています。① {男|おとこ}の{人|ひと}が{理容店|りようてん}に{来|き}ました。',
+      setupPt: 'No salão/barbearia, dizendo o corte que quer. ① um homem chega à barbearia.',
+      lines: [
+        { speaker: '理容師', ja: 'お{次|つぎ}の{方|かた}、どうぞ。', pt: 'Próximo, por favor.' },
+        { speaker: '理容師', ja: '（いすに{座|すわ}って）{今日|きょう}は、どのように{切|き}りましょうか？', pt: '(sentado na cadeira) Como vamos cortar hoje?' },
+        { speaker: '客', ja: 'ええと、{全体的|ぜんたいてき}に{短|みじか}く{切|き}ってください。{上|うえ}は、3cmぐらい、{横|よこ}と{後|うし}ろは、5mmぐらいにしてください。', pt: 'Hmm, corte mais curto no geral. Em cima uns 3 cm, e nas laterais e atrás deixe uns 5 mm.' },
+        { speaker: '理容師', ja: '{上|うえ}が3cmで、まわりが5mmですね。まわりはバリカンでだいじょうぶですか？', pt: 'Em cima 3 cm e em volta 5 mm, certo. Pode ser na máquina nas laterais?' },
+        { speaker: '客', ja: 'はい、バリカンでお{願|ねが}いします。', pt: 'Sim, pode ser na máquina.' },
+        { speaker: '理容師', ja: 'シャンプーとひげ{剃|そ}りも、なさいますか？', pt: 'Vai querer lavagem e barba também?' },
+        { speaker: '客', ja: 'ひげ{剃|そ}りは、だいじょうぶです。シャンプーだけお{願|ねが}いします。', pt: 'Barba não precisa. Só a lavagem, por favor.' },
+        { speaker: '理容師', ja: 'わかりました。それでは、よろしくお{願|ねが}いします。', pt: 'Entendido. Então, vamos lá.' },
+        { speaker: '理容師', ja: '（{鏡|かがみ}を{見|み}せて）{後|うし}ろのほう、こんな{感|かん}じでよろしいですか？', pt: '(mostrando o espelho) Atrás, ficou assim, está bom?' },
+        { speaker: '客', ja: 'あ、はい。', pt: 'Ah, sim.' },
+        { speaker: '理容師', ja: 'それでは、シャンプーしますので、どうぞ。', pt: 'Então vou fazer a lavagem; por aqui, por favor.' },
+        { speaker: '客', ja: 'え？', pt: 'Hã?' },
+        { speaker: '理容師', ja: 'あ、ここで{頭|あたま}を{洗|あら}いますので、{洗面台|せんめんだい}に、{頭|あたま}をお{願|ねが}いします。', pt: 'Ah, vou lavar a cabeça aqui; encoste a cabeça no lavatório, por favor.' },
+        { speaker: '客', ja: 'あ、はい。', pt: 'Ah, sim.' },
+        { speaker: '理容師', ja: 'はい、お{疲|つか}れさまでした。あちらでお{会計|かいけい}をお{願|ねが}いします。', pt: 'Pronto, terminamos. O caixa é ali, por favor.' },
+        { speaker: '店員', ja: '（{会計|かいけい}で）カットとシャンプーで、1,800{円|えん}になります。', pt: '(no caixa) Corte e lavagem dão 1.800 ienes.' },
+        { speaker: '客', ja: 'じゃあ、5,000{円|えん}でお{願|ねが}いします。', pt: 'Então aqui, 5.000 ienes.' },
+        { speaker: '店員', ja: 'はい、5,000{円|えん}からお{預|あず}かりします。3,200{円|えん}のお{返|かえ}しです。あと、こちらは、うちのスタンプカードになります。{次回|じかい}お{持|も}ちください。スタンプが10{個|こ}たまると、500{円|えん}{引|び}きになります。', pt: 'Certo, recebi 5.000 ienes. Seu troco é 3.200 ienes. E este é o nosso cartão de carimbos. Traga-o da próxima vez. Quando juntar 10 carimbos, ganha 500 ienes de desconto.' },
+        { speaker: '客', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: '店員', ja: 'ありがとうございました。', pt: 'Muito obrigado.' },
+      ],
+    },
+  ],
   '14-07': [
     {
-      label: '会話 — 美容院 (14-07) · resumo',
-      setupJa: '{美容院|びよういん}で、どのような{髪型|かみがた}にしたいか{伝|つた}えています。',
-      setupPt: 'Resumo: no salão, o cliente pede corte e shampoo, e explica o corte que quer (menos volume, mais curto; ~3 cm em cima, ~5 mm nas laterais).',
+      label: '会話2 — 美容院（美容師）(14-07)',
+      setupJa: '② {女|おんな}の{人|ひと}が{美容院|びよういん}に{来|き}ました。',
+      setupPt: '② uma mulher chega ao salão de beleza.',
       lines: [
-        { speaker: '客', ja: 'カットとシャンプー、お{願|ねが}いします。ボリュームを{少|すく}なくして、{長|なが}さも{少|すこ}し{短|みじか}くしてください。', pt: 'Corte e shampoo, por favor. Diminua o volume e deixe o comprimento um pouco mais curto.' },
-        { speaker: '客', ja: '{前髪|まえがみ}は、もう{少|すこ}し{短|みじか}く{切|き}ってもらえますか？', pt: 'Pode cortar a franja um pouco mais curta?' },
+        { speaker: '美容師', ja: 'いらっしゃいませ。', pt: 'Bem-vinda.' },
+        { speaker: '客', ja: 'あのう、{予約|よやく}した、カインと{申|もう}します。', pt: 'Ahn, eu tenho hora marcada; meu nome é Kain.' },
+        { speaker: '美容師', ja: 'はい、カイン{様|さま}ですね。お{待|ま}ちしておりました。こちらにどうぞ。', pt: 'Sim, Sra. Kain, certo. Estávamos à sua espera. Por aqui, por favor.' },
+        { speaker: '美容師', ja: '（いすに{座|すわ}って）こんにちは、{矢吹|やぶき}と{申|もう}します。よろしくお{願|ねが}いします。', pt: '(sentada na cadeira) Olá, meu nome é Yabuki. Prazer em atendê-la.' },
+        { speaker: '客', ja: 'お{願|ねが}いします。', pt: 'Por favor.' },
+        { speaker: '美容師', ja: '{今日|きょう}はカットでよろしいですね。どのような{感|かん}じになさいますか？', pt: 'Hoje é corte, certo? Que estilo você quer?' },
+        { speaker: '客', ja: 'そうですね。ボリュームを{少|すく}なくして、{長|なが}さも{少|すこ}し{短|みじか}くしてください。', pt: 'Bom, diminua o volume e deixe o comprimento um pouco mais curto também.' },
+        { speaker: '美容師', ja: 'どのぐらい{切|き}りますか？', pt: 'Quanto vamos cortar?' },
+        { speaker: '客', ja: '3cmぐらい{切|き}ってください。えーと、ちょっと{待|ま}ってください。（スマホの{写真|しゃしん}を{見|み}せて）こんな{感|かん}じにお{願|ねが}いします。', pt: 'Corte uns 3 cm. Hmm, espera um pouquinho. (mostrando uma foto no celular) Quero assim, por favor.' },
+        { speaker: '美容師', ja: 'わかりました。それでは、シャンプー{台|だい}のほうへどうぞ。', pt: 'Entendido. Então, vamos ao lavatório, por favor.' },
+        { speaker: 'アシスタント', ja: '（シャンプー{台|だい}で）かゆいところはございませんか？', pt: '(no lavatório) Tem algum lugar que está coçando?' },
+        { speaker: '客', ja: 'えーと、だいじょうぶです。', pt: 'Hmm, está bom.' },
+        { speaker: 'アシスタント', ja: '……お{疲|つか}れさまでした。あちらへどうぞ。', pt: '…Pronto. Por ali, por favor.' },
+        { speaker: '美容師', ja: '（いすに{座|すわ}って）{前髪|まえがみ}は、こんな{感|かん}じでいかがですか？', pt: '(sentada na cadeira) A franja, ficou assim, que tal?' },
+        { speaker: '客', ja: 'そうですね、すみません、もう{少|すこ}し{短|みじか}く{切|き}ってもらえますか？', pt: 'Hmm, desculpe, pode cortar um pouco mais curta?' },
+        { speaker: '美容師', ja: 'もう{少|すこ}し{短|みじか}くですね。わかりました。', pt: 'Um pouco mais curta, certo. Entendido.' },
+        { speaker: '美容師', ja: '（{鏡|かがみ}を{見|み}せて）これでどうでしょうか？', pt: '(mostrando o espelho) E assim, que tal?' },
+        { speaker: '客', ja: 'ありがとうございます。とてもいいです。', pt: 'Obrigada. Ficou ótimo.' },
+        { speaker: '美容師', ja: 'ありがとうございます。それでは、あちらでお{会計|かいけい}をお{願|ねが}いいたします。', pt: 'Obrigada. Então, o caixa é ali, por favor.' },
       ],
     },
   ],
@@ -3619,14 +3666,69 @@ const lesson17Group: ExerciseGroup = {
 
 // Resumos das faixas de áudio da Lição 17 (situação + falas-chave citadas; não verbatim)
 const L17_SCRIPTS: Record<string, ScriptItem[]> = {
-  '17-06': [
+  '17-01': [
     {
-      label: '会話モデル — 最近の生活の変化 (17-06) · resumo',
-      setupJa: '{最近|さいきん}の{生活|せいかつ}の{変化|へんか}について{話|はな}しています。',
-      setupPt: 'Resumo: ao ser perguntada se já se acostumou ao Japão, a pessoa conta as mudanças — agora tem hobby, mais amigos, não tem mais problemas nas compras e passou a aproveitar mais a vida.',
+      label: '① 和太鼓のサークル（イ）(17-01)',
+      setupJa: '{日本|にほん}の{生活|せいかつ}には{慣|な}れましたか？　{最近|さいきん}の{変化|へんか}について{話|はな}しています。① イさん。',
+      setupPt: 'Já se acostumou à vida no Japão? Conversando sobre as mudanças recentes. ① Lee.',
       lines: [
-        { speaker: 'A', ja: '{日本|にほん}には、もう{慣|な}れましたか？', pt: 'Já se acostumou ao Japão?' },
-        { speaker: 'B', ja: 'はい、おかげさまで。{前|まえ}は{毎日|まいにち}{仕事|しごと}だけでしたけど、{今|いま}は{趣味|しゅみ}も{楽|たの}しめるようになりました。', pt: 'Sim, graças a você. Antes era só trabalho todo dia, mas agora passei a aproveitar também os hobbies.' },
+        { speaker: 'A', ja: 'イさん、{日本|にほん}の{生活|せいかつ}には、もう{慣|な}れた？', pt: 'Lee, você já se acostumou à vida no Japão?' },
+        { speaker: 'B', ja: 'はい。{最近|さいきん}は、{趣味|しゅみ}ができて、とても{楽|たの}しいです。', pt: 'Sim. Ultimamente arrumei um hobby e está bem divertido.' },
+        { speaker: 'A', ja: 'そう。{何|なに}かやってるの？', pt: 'É? Está fazendo o quê?' },
+        { speaker: 'B', ja: 'はい。{和太鼓|わだいこ}のサークルに{入|はい}っています。', pt: 'Entrei num clube de tambor japonês (wadaiko).' },
+        { speaker: 'A', ja: 'へー、{和太鼓|わだいこ}。', pt: 'Nossa, wadaiko.' },
+        { speaker: 'B', ja: '{会社|かいしゃ}の{人|ひと}に{誘|さそ}われて、{半年前|はんとしまえ}に{始|はじ}めました。ときどき、みんなといっしょに、お{祭|まつ}りで{演奏|えんそう}します。', pt: 'Fui convidado por um colega da empresa e comecei há meio ano. Às vezes tocamos todos juntos nas festas.' },
+        { speaker: 'A', ja: 'それは、すごいね！', pt: 'Que demais!' },
+        { speaker: 'B', ja: 'おかげで、{前|まえ}は、{毎日|まいにち}、{仕事|しごと}だけでしたけど、{今|いま}は、{趣味|しゅみ}も{楽|たの}しめるようになりました。', pt: 'Graças a isso, antes era só trabalho todo dia, mas agora passei a aproveitar também o hobby.' },
+      ],
+    },
+  ],
+  '17-02': [
+    {
+      label: '② 買い物に困らなくなった（ソロンゴ）(17-02)',
+      setupPt: '② Solongo (compras).',
+      lines: [
+        { speaker: 'A', ja: 'ソロンゴさん、{日本|にほん}の{生活|せいかつ}には、もう{慣|な}れましたか？', pt: 'Solongo, você já se acostumou à vida no Japão?' },
+        { speaker: 'B', ja: 'はい。だいたい、{慣|な}れました。{買|か}い{物|もの}にも{困|こま}らなくなりました。', pt: 'Sim. No geral, me acostumei. Já não tenho mais problemas nem com as compras.' },
+        { speaker: 'A', ja: '{買|か}い{物|もの}ですか。', pt: 'Compras, é?' },
+        { speaker: 'B', ja: 'はい。はじめは、どこで{何|なに}を{買|か}えばいいか、よくわかりませんでした。でも、{今|いま}は、おいしいお{弁当|べんとう}の{店|みせ}とか、{安|やす}いドラッグストアとか、お{店|みせ}にくわしくなりました。', pt: 'Sim. No começo eu não sabia bem onde comprar o quê. Mas agora conheço bem as lojas — onde tem marmita gostosa, drogaria barata etc.' },
+        { speaker: 'A', ja: 'それは、よかったですね。', pt: 'Que bom.' },
+        { speaker: 'B', ja: 'はい。{最近|さいきん}は、ほかの{人|ひと}に{教|おし}えられるようになりました。', pt: 'Sim. Ultimamente, passei até a conseguir ensinar os outros.' },
+        { speaker: 'A', ja: 'それは、すごいですね。', pt: 'Isso é incrível.' },
+      ],
+    },
+  ],
+  '17-03': [
+    {
+      label: '③ 友だちが増えた（カルロス）(17-03)',
+      setupPt: '③ Carlos (amigos).',
+      lines: [
+        { speaker: 'A', ja: 'カルロスさん、{日本|にほん}には、もう{慣|な}れた？', pt: 'Carlos, você já se acostumou ao Japão?' },
+        { speaker: 'B', ja: 'はい、おかげさまで。{最近|さいきん}は、{友|とも}だちも{増|ふ}えました。', pt: 'Sim, graças a Deus. Ultimamente fiz mais amigos também.' },
+        { speaker: 'A', ja: 'そう。', pt: 'É mesmo.' },
+        { speaker: 'B', ja: '{今度|こんど}の{日曜日|にちようび}、{青森|あおもり}から、{日本人|にほんじん}の{友|とも}だちがこっちに{遊|あそ}びに{来|く}るんですよ。', pt: 'No próximo domingo, um amigo japonês vem de Aomori me visitar aqui.' },
+        { speaker: 'A', ja: 'へー、{何|なん}の{友|とも}だち？', pt: 'Nossa, amigo de onde?' },
+        { speaker: 'B', ja: 'この{間|あいだ}、{旅行|りょこう}に{行|い}ったとき、ゲストハウスで{会|あ}った{人|ひと}です。SNSで{友|とも}だちになって、ときどき、メールでやりとりしてます。', pt: 'É uma pessoa que conheci num guest house quando viajei outro dia. Viramos amigos nas redes sociais e às vezes trocamos mensagens.' },
+        { speaker: 'A', ja: 'へー。{仕事|しごと}{以外|いがい}にも、{友|とも}だちができると、いいよね。', pt: 'Que legal. É bom ter amigos além do trabalho, né.' },
+        { speaker: 'B', ja: 'はい。{日本|にほん}に{来|き}たときは、{友|とも}だちがあまりいませんでした。でも、{今|いま}は、いろいろな{友|とも}だちができて、うれしいです。', pt: 'Sim. Quando cheguei ao Japão eu quase não tinha amigos. Mas agora fiz vários amigos, estou feliz.' },
+      ],
+    },
+  ],
+  '17-04': [
+    {
+      label: '④ 日本語がうまくなった（アセップ）(17-04)',
+      setupPt: '④ Asep (japonês/drama).',
+      lines: [
+        { speaker: 'A', ja: 'アセップさん、{日本|にほん}に{来|き}てからもうすぐ1{年|ねん}ですね。{日本|にほん}には、{慣|な}れましたか？', pt: 'Asep, logo faz 1 ano que você chegou ao Japão. Já se acostumou?' },
+        { speaker: 'B', ja: 'うーん、まあまあです。', pt: 'Hmm, mais ou menos.' },
+        { speaker: 'A', ja: 'でも、{日本語|にほんご}、うまくなりましたよね。', pt: 'Mas o seu japonês melhorou, né.' },
+        { speaker: 'B', ja: 'え、ほんとですか？　ありがとうございます。', pt: 'Hã, é mesmo? Obrigado.' },
+        { speaker: 'A', ja: 'たくさん{勉強|べんきょう}してるんですか？', pt: 'Você estuda bastante?' },
+        { speaker: 'B', ja: 'いえ。でも、ドラマが{大好|だいす}きで、{毎日|まいにち}{見|み}てます。はじめは、{言|い}ってることがほとんどわかりませんでしたが、{最近|さいきん}は、{少|すこ}しわかるようになりました。', pt: 'Não. Mas adoro dorama e assisto todo dia. No começo eu quase não entendia o que falavam, mas ultimamente passei a entender um pouco.' },
+        { speaker: 'A', ja: 'へー、そうなんですか。', pt: 'Nossa, é mesmo?' },
+        { speaker: 'B', ja: 'あと、{好|す}きなセリフをまねして{覚|おぼ}えます。', pt: 'E também imito as falas que gosto e decoro.' },
+        { speaker: 'A', ja: 'それは、いいアイディアですね。', pt: 'Que boa ideia.' },
+        { speaker: 'B', ja: 'でも、ドラマと{同|おな}じ{話|はな}し{方|かた}をすると、ときどき{笑|わら}われます！', pt: 'Mas quando falo do mesmo jeito que no dorama, às vezes riem de mim!' },
       ],
     },
   ],
@@ -3721,26 +3823,94 @@ const lesson18Group: ExerciseGroup = {
   ],
 }
 
-// Resumos das faixas de áudio da Lição 18 (situação + falas-chave citadas; não verbatim)
+// Transcrições oficiais dos diálogos da Lição 18 (聴解スクリプト)
 const L18_SCRIPTS: Record<string, ScriptItem[]> = {
-  '18-07': [
+  '18-03': [
     {
-      label: '将来の夢 — 自分の会社を作る (18-07) · resumo',
-      setupJa: '{将来|しょうらい}の{夢|ゆめ}や{希望|きぼう}について{話|はな}しています。',
-      setupPt: 'Resumo: a pessoa conta que pretende abrir a própria empresa no futuro e, para isso, poupar bastante e estudar mais japonês.',
+      label: '① 将来の夢 — 自動車の会社 (18-03)',
+      setupJa: '{将来|しょうらい}の{夢|ゆめ}や{希望|きぼう}について{話|はな}しています。① {自動車|じどうしゃ}の{整備|せいび}。',
+      setupPt: 'Falando sobre sonhos e desejos para o futuro. ① manutenção de automóveis.',
       lines: [
-        { speaker: 'A', ja: '{将来|しょうらい}は、{自分|じぶん}の{会社|かいしゃ}を{作|つく}ろうと{思|おも}います。', pt: 'No futuro, pretendo abrir minha própria empresa.' },
-        { speaker: 'A', ja: '{日本|にほん}に{住|す}むために、もっと{日本語|にほんご}をがんばろうと{思|おも}います。', pt: 'Para morar no Japão, pretendo me esforçar mais no japonês.' },
+        { speaker: '話す人', ja: '{私|わたし}の{今|いま}の{仕事|しごと}は、{自動車|じどうしゃ}の{整備|せいび}の{仕事|しごと}です。{毎日|まいにち}、{忙|いそが}しいです。でも、{日本|にほん}で{勉強|べんきょう}した{自動車|じどうしゃ}のことは、タイでも{役|やく}に{立|た}つと{思|おも}います。{将来|しょうらい}は、タイで、{自分|じぶん}の{会社|かいしゃ}を{作|つく}ろうと{思|おも}います。そのために、{今|いま}は{一生懸命|いっしょうけんめい}{働|はたら}いて、お{金|かね}を{稼|かせ}いで、できるだけたくさん{貯金|ちょきん}しようと{思|おも}います。', pt: 'Meu trabalho atual é fazer manutenção de automóveis. Estou ocupado todos os dias. Mas acho que o que aprendi sobre carros no Japão será útil também na Tailândia. No futuro, pretendo abrir minha própria empresa na Tailândia. Para isso, agora trabalho com afinco, ganho dinheiro e pretendo poupar o máximo possível.' },
       ],
     },
   ],
-  '18-09': [
+  '18-04': [
     {
-      label: '将来の夢 — すしの職人になりたい (18-09) · resumo',
-      setupPt: 'Resumo: a pessoa quer se tornar sushiman e, se possível, viver sempre no Japão; menciona também o plano de construir uma casa para os pais.',
+      label: '② 将来の夢 — すしの職人 (18-04)',
+      setupPt: '② tornar-se sushiman.',
       lines: [
-        { speaker: 'A', ja: 'すしの{職人|しょくにん}になりたいです。できればずっと{日本|にほん}で{暮|く}らしたいです。', pt: 'Quero me tornar sushiman. Se possível, quero viver sempre no Japão.' },
-        { speaker: 'A', ja: '{両親|りょうしん}に、{家|いえ}を{建|た}ててあげるつもりです。', pt: 'Pretendo construir uma casa para os meus pais.' },
+        { speaker: '話す人', ja: '{私|わたし}は、おすし{屋|や}さんで、{調理|ちょうり}を{手伝|てつだ}う{仕事|しごと}をしています。{将来|しょうらい}は、もっと{技術|ぎじゅつ}を{覚|おぼ}えて、すしの{職人|しょくにん}になりたいです。{職人|しょくにん}になったら、できればずっと{日本|にほん}で{暮|く}らしたいです。{日本|にほん}に{住|す}むために、もっと{日本語|にほんご}をがんばろうと{思|おも}います。すし{職人|しょくにん}になって、{日本|にほん}で{結婚|けっこん}して、{家族|かぞく}を{作|つく}りたいです。でも、カンボジアにも、お{金|かね}を{送|おく}ります。{両親|りょうしん}に、{家|いえ}を{建|た}ててあげるつもりです。', pt: 'Eu trabalho ajudando no preparo numa casa de sushi. No futuro, quero aprender mais a técnica e me tornar um sushiman. Quando me tornar sushiman, se possível quero viver sempre no Japão. Para morar no Japão, pretendo me esforçar mais no japonês. Quero virar sushiman, casar no Japão e construir uma família. Mas também vou mandar dinheiro para o Camboja. Pretendo construir uma casa para os meus pais.' },
+      ],
+    },
+  ],
+  '18-05': [
+    {
+      label: '③ 将来の夢 — 日本語教師 (18-05)',
+      setupPt: '③ tornar-se professor(a) de japonês.',
+      lines: [
+        { speaker: '話す人', ja: '{私|わたし}は、{日本|にほん}にはじめて{来|き}ました。{日本|にほん}の{暮|く}らしは、{楽|たの}しいです。{今|いま}は、{仕事|しごと}もとてもうまくいっているし、{周|まわ}りの{人|ひと}もみんな{親切|しんせつ}です。{私|わたし}の{国|くに}ミャンマーの{若者|わかもの}には、{日本|にほん}に{行|い}きたい、{日本|にほん}で{働|はたら}きたいと{思|おも}っている{人|ひと}が、たくさんいます。{私|わたし}は{将来|しょうらい}、そんな{若者|わかもの}を{手伝|てつだ}うために、{日本語|にほんご}{教師|きょうし}になりたいと{思|おも}います。そのために、ミャンマーに{帰|かえ}ったら、{大学|だいがく}に{進学|しんがく}しようと{思|おも}います。', pt: 'Esta é a primeira vez que venho ao Japão. A vida no Japão é divertida. Agora o trabalho vai muito bem, e as pessoas ao meu redor são todas gentis. No meu país, Mianmar, há muitos jovens que querem vir ao Japão e trabalhar aqui. No futuro, para ajudar esses jovens, quero me tornar professor de japonês. Para isso, quando voltar a Mianmar, pretendo ingressar na universidade.' },
+      ],
+    },
+  ],
+  '18-06': [
+    {
+      label: '④ 将来の夢 — 世界を広げる (18-06)',
+      setupPt: '④ ampliar o próprio mundo.',
+      lines: [
+        { speaker: '話す人', ja: '{私|わたし}は、{大学|だいがく}を{卒業|そつぎょう}して、フィリピンの{会社|かいしゃ}で3{年間|ねんかん}{働|はたら}いてから、{日本|にほん}に{来|き}ました。{日本|にほん}の{会社|かいしゃ}は、フィリピンの{会社|かいしゃ}と{違|ちが}います。とてもおもしろいと{思|おも}いました。{私|わたし}は、{今|いま}の{仕事|しごと}が{終|お}わったら、{一度|いちど}フィリピンに{戻|もど}るつもりです。そのあと、また{別|べつ}の{国|くに}に{行|い}って、{働|はたら}きたいと{思|おも}います。もっと{自分|じぶん}の{世界|せかい}を{広|ひろ}げるために、いろいろな{国|くに}の{文化|ぶんか}を{見|み}てみようと{思|おも}います。{将来|しょうらい}は、どこかの{国|くに}で、{海|うみ}を{見|み}ながら、のんびり{暮|く}らしたいです。', pt: 'Eu me formei na universidade, trabalhei 3 anos numa empresa nas Filipinas e depois vim ao Japão. As empresas japonesas são diferentes das filipinas. Achei muito interessante. Quando meu trabalho atual terminar, pretendo voltar uma vez às Filipinas. Depois, quero ir para outro país e trabalhar. Para ampliar mais o meu mundo, pretendo conhecer a cultura de vários países. No futuro, quero viver tranquilo em algum país, olhando para o mar.' },
+      ],
+    },
+  ],
+  // 2. 最初はすごく苦労したよ (店長ラビ × 劉の会話)
+  '18-12': [
+    {
+      label: '会話 — 最初はすごく苦労したよ ① (18-12)',
+      setupJa: '{劉|リュウ}さんが、{店長|てんちょう}のラビさんに、{日本|にほん}での{経験|けいけん}について{聞|き}いています。',
+      setupPt: 'Liu pergunta ao gerente Rabi sobre a experiência dele no Japão.',
+      lines: [
+        { speaker: 'ラビ', ja: 'お{疲|つか}れさま。', pt: 'Bom trabalho.' },
+        { speaker: '劉', ja: 'お{疲|つか}れさまです。……あの、{店長|てんちょう}は、{日本|にほん}に{来|き}て、どのぐらいですか？', pt: 'Bom trabalho. …Ahn, gerente, faz quanto tempo que você veio ao Japão?' },
+        { speaker: 'ラビ', ja: 'え？　うーん、ぼくは、{日本|にほん}に{来|き}て、もうすぐ10{年|ねん}かな。', pt: 'Hã? Hmm, eu… logo faz 10 anos que vim ao Japão.' },
+        { speaker: '劉', ja: 'すごいですね。どうして{日本|にほん}で{働|はたら}こうと{思|おも}いましたか？', pt: 'Que impressionante. Por que você resolveu trabalhar no Japão?' },
+        { speaker: 'ラビ', ja: 'もともと、{日本|にほん}のマンガが{好|す}きで、{日本|にほん}には{興味|きょうみ}があったからね。だから、{高校|こうこう}を{卒業|そつぎょう}したら、{日本語|にほんご}{学校|がっこう}で{日本語|にほんご}を{勉強|べんきょう}して、そのとき、{日本|にほん}で{仕事|しごと}があるっていう{募集|ぼしゅう}を{見|み}て、それに{応募|おうぼ}して。', pt: 'É que eu já gostava de mangá japonês e tinha interesse no Japão. Então, ao terminar o ensino médio, estudei japonês numa escola de japonês e, nessa época, vi um anúncio de vaga de emprego no Japão e me candidatei.' },
+        { speaker: '劉', ja: 'そうですか。{日本|にほん}に{来|き}て、どうでしたか？', pt: 'Ah, sei. E como foi vir ao Japão?' },
+        { speaker: 'ラビ', ja: '{日本|にほん}は{本当|ほんとう}に{便利|べんり}で、{住|す}みやすいと{思|おも}ったよ。{夜中|よなか}でも{店|みせ}が{開|あ}いてて、{何|なん}でも{買|か}えるし。', pt: 'Achei o Japão muito prático e fácil de morar. As lojas ficam abertas até de madrugada e dá para comprar de tudo.' },
+        { speaker: '劉', ja: 'そうですね。', pt: 'É verdade.' },
+        { speaker: 'ラビ', ja: 'でも、{最初|さいしょ}は{日本語|にほんご}があまりできなかったから、すごく{苦労|くろう}したよ。お{客|きゃく}さんの{言|い}ってることがわからなくて、よく{怒|おこ}られた。{仕事|しごと}で{使|つか}うことばも、{難|むずか}しくてぜんぜんわからなかったし。', pt: 'Mas, no começo, como eu quase não falava japonês, penei muito. Não entendia o que os clientes diziam e era repreendido com frequência. As palavras usadas no trabalho também eram difíceis, eu não entendia nada.' },
+        { speaker: '劉', ja: 'あー、{店長|てんちょう}も、そうなんですか。', pt: 'Ah, então até você passou por isso, gerente.' },
+        { speaker: 'ラビ', ja: 'あと、{日本|にほん}の{文化|ぶんか}がわからなくて{困|こま}ったね。{例|たと}えば、{仕事|しごと}で「10{時|じ}に{来|こ}い」って{言|い}われて、10{時|じ}2{分|ふん}に{行|い}ったら、「{遅|おそ}い！」って{怒|おこ}られたりとか。{日本人|にほんじん}は、9{時|じ}50{分|ぷん}ぐらいからみんな{来|き}てたって。', pt: 'E também me atrapalhei por não conhecer a cultura japonesa. Por exemplo, me disseram «venha às 10h» no trabalho; cheguei às 10h02 e fui repreendido com um «atrasado!». Os japoneses já estavam todos lá por volta das 9h50.' },
+        { speaker: '劉', ja: 'あー、わかります。{私|わたし}も、{最近|さいきん}{日本|にほん}の{生活|せいかつ}が、ちょっと{疲|つか}れます。ときどき{国|くに}に{帰|かえ}りたいと{思|おも}います。', pt: 'Ah, entendo. Eu também ando um pouco cansado da vida no Japão ultimamente. Às vezes me dá vontade de voltar para o meu país.' },
+        { speaker: 'ラビ', ja: 'そう。でも{劉|リュウ}さんは、{日本|にほん}に{来|き}て、まだ{半年|はんとし}でしょう？　ぼくも、{日本|にほん}に{来|き}て{半年|はんとし}ぐらいのときは、いつも{国|くに}に{帰|かえ}りたいって{思|おも}ってたよ。', pt: 'Entendo. Mas você, Liu, só faz meio ano que veio ao Japão, né? Eu também, quando estava com uns 6 meses de Japão, vivia querendo voltar para casa.' },
+        { speaker: '劉', ja: 'そうなんですか。どうしたらいいですか？', pt: 'É mesmo? O que eu faço?' },
+        { speaker: 'ラビ', ja: 'そうだなあ、{日本|にほん}で{暮|く}らすために、やっぱり{大切|たいせつ}なのは、{日本語|にほんご}だね。{今|いま}も、{日本語|にほんご}の{勉強|べんきょう}を{続|つづ}けてる？', pt: 'Hmm, para viver no Japão, o mais importante mesmo é o japonês. Você ainda continua estudando japonês?' },
+        { speaker: '劉', ja: 'ええと、{今|いま}は、{忙|いそが}しくて、あまり{勉強|べんきょう}していません。', pt: 'Hmm, agora ando ocupado e não tenho estudado muito.' },
+      ],
+    },
+  ],
+  '18-13': [
+    {
+      label: '会話 — 最初はすごく苦労したよ ② (18-13)',
+      setupPt: 'Conselhos de Rabi: estudar japonês e conviver com pessoas fora do trabalho.',
+      lines: [
+        { speaker: 'ラビ', ja: '{最初|さいしょ}は、とにかく{日本語|にほんご}の{勉強|べんきょう}をがんばるといいよ。{日本語|にほんご}ができるようになると、{日本|にほん}の{生活|せいかつ}は、{本当|ほんとう}にぜんぜん{違|ちが}うから。ストレスがすごく{少|すく}なくなるよ。', pt: 'No começo, o melhor é se dedicar ao estudo de japonês. Quando você passa a falar japonês, a vida no Japão fica realmente muito diferente. O estresse diminui bastante.' },
+        { speaker: '劉', ja: 'わかりました。また{日本語|にほんご}の{勉強|べんきょう}をがんばります。', pt: 'Entendi. Vou voltar a me dedicar ao japonês.' },
+        { speaker: 'ラビ', ja: 'あと、{仕事|しごと}{以外|いがい}の{人|ひと}と{話|はな}すのも{大切|たいせつ}だよ。{趣味|しゅみ}を{始|はじ}めたり、{国際|こくさい}{交流|こうりゅう}のイベントに{行|い}ったりして、いろいろな{人|ひと}と{知|し}り{合|あ}って{話|はな}すと、{生活|せいかつ}も{楽|たの}しくなるし、{日本語|にほんご}も{上手|じょうず}になるよ。', pt: 'E também é importante conversar com pessoas fora do trabalho. Começando um hobby, indo a eventos de intercâmbio internacional, conhecendo e conversando com várias pessoas — a vida fica mais divertida e o japonês também melhora.' },
+        { speaker: '劉', ja: 'そうですか。いろいろ{考|かんが}えてみます。', pt: 'Ah, sei. Vou pensar a respeito.' },
+      ],
+    },
+  ],
+  '18-14': [
+    {
+      label: '会話 — 最初はすごく苦労したよ ③ (18-14)',
+      setupPt: 'Liu e Rabi falam dos planos de futuro.',
+      lines: [
+        { speaker: 'ラビ', ja: '{劉|リュウ}さんは、{将来|しょうらい}はどうしたいの？　{日本|にほん}に{住|す}みたいの？', pt: 'E você, Liu, o que quer para o futuro? Quer morar no Japão?' },
+        { speaker: '劉', ja: '{私|わたし}は、この{仕事|しごと}が{終|お}わったら、{国|くに}に{帰|かえ}ろうと{思|おも}います。どこか{大|おお}きな{会社|かいしゃ}に{就職|しゅうしょく}したいです。できれば、{日本語|にほんご}を{使|つか}う{仕事|しごと}がしたいです。', pt: 'Quando este trabalho terminar, pretendo voltar para o meu país. Quero conseguir emprego em alguma empresa grande. Se possível, quero um trabalho em que use o japonês.' },
+        { speaker: 'ラビ', ja: 'そう、いいね。', pt: 'Ah, que bom.' },
+        { speaker: '劉', ja: '{店長|てんちょう}は、{将来|しょうらい}、どうしますか？　{日本|にほん}にずっと{住|す}みますか？', pt: 'E você, gerente, o que vai fazer no futuro? Vai morar sempre no Japão?' },
+        { speaker: 'ラビ', ja: '{今|いま}は、この{仕事|しごと}をずっと{続|つづ}けたいと{思|おも}ってる。{将来|しょうらい}は、そうだなあ、{日本|にほん}で{家|いえ}を{買|か}いたいなあ。', pt: 'Por enquanto, quero continuar neste trabalho por muito tempo. No futuro, hmm, quero comprar uma casa no Japão.' },
+        { speaker: '劉', ja: 'そうなんですか。', pt: 'Ah, é mesmo.' },
       ],
     },
   ],
