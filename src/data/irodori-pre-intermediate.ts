@@ -71,6 +71,59 @@ const lesson1Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 2: ドラマを見るのがいちばん好きです (tópico 好きなもの好きなこと) ----
+const lesson2Group: ExerciseGroup = {
+  id: 'iro-pi-l2',
+  title: 'ドラマを見るのがいちばん好きです',
+  subtitlePt: 'Resenhas de mangá · falar sobre filmes · explicar gostos em detalhe',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l2-1', number: 1, prompt: 'Qual é a pergunta de abertura desta lição?', choices: [{ n: 1, text: 'あなたは、映画、ドラマ、音楽、読書、ゲームのうち、どれが好きですか？' }, { n: 2, text: '休みの日には、何をして過ごしますか？' }, { n: 3, text: '引っ越しをしたことがありますか？' }, { n: 4, text: 'どんな部屋に住みたいですか？' }], answer: 1, explanationPt: 'A Lição 2 continua o tópico 好きなもの好きなこと e parte de filmes, dramas, música, leitura e jogos.' },
+    { id: 'iro-pi-l2-2', number: 2, prompt: 'Can-do 04: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ler comentários curtos e simples sobre mangá e entender avaliações gerais' }, { n: 2, text: 'entender anúncios de imóveis' }, { n: 3, text: 'cancelar compromisso por mensagem' }, { n: 4, text: 'dar instruções para emergência' }], answer: 1, explanationPt: 'O Can-do 04 é ler reviews/comentários curtos e simples sobre mangá gratuito.' },
+    { id: 'iro-pi-l2-3', number: 3, prompt: 'Leitura: no PR de mangás gratuitos, os gêneros ①-④ correspondem a:', choices: [{ n: 1, text: '①アクション ②ラブコメディ ③ファンタジー ④家庭・育児' }, { n: 2, text: '①料理 ②スポーツ ③歴史 ④ホラー' }, { n: 3, text: '①音楽 ②ゲーム ③ドラマ ④映画' }, { n: 4, text: '①落語 ②演劇 ③相撲 ④フットサル' }], answer: 1, explanationPt: 'O answer key marca: ① f アクション, ② a ラブコメディ, ③ c ファンタジー, ④ h 家庭・育児.' },
+    { id: 'iro-pi-l2-4', number: 4, prompt: 'Nos comentários de mangá, qual conjunto traz apenas avaliações positivas segundo o gabarito?', choices: [{ n: 1, text: 'A, C, D, E, F, H, I, J' }, { n: 2, text: 'B, G, K, L' }, { n: 3, text: 'A, B, G, K' }, { n: 4, text: 'C, L, G, B' }], answer: 1, explanationPt: 'O gabarito marca como positivos A, C, D, E, F, H, I e J; B, G, K e L são negativos.' },
+    { id: 'iro-pi-l2-5', number: 5, prompt: 'Qual palavra dos comentários significa "ritmo/andamento" de uma obra?', choices: [{ n: 1, text: 'テンポ' }, { n: 2, text: '主人公' }, { n: 3, text: '離婚' }, { n: 4, text: '共感' }], answer: 1, explanationPt: 'テンポ descreve o ritmo da leitura ou da narrativa.' },
+    { id: 'iro-pi-l2-6', number: 6, prompt: '「あっという間に」 nos comentários indica:', choices: [{ n: 1, text: 'algo que passou muito rápido, em um instante' }, { n: 2, text: 'um personagem principal' }, { n: 3, text: 'um gênero de mangá' }, { n: 4, text: 'um pedido formal' }], answer: 1, explanationPt: 'あっという間に aparece para dizer que a pessoa leu tudo rapidamente.' },
+    { id: 'iro-pi-l2-7', number: 7, prompt: '「尊い」 em comentário de fã expressa principalmente:', choices: [{ n: 1, text: 'forte admiração ou afeto por algo precioso para a pessoa' }, { n: 2, text: 'que a obra é barata' }, { n: 3, text: 'que a leitura é obrigatória' }, { n: 4, text: 'que o mangá é antigo' }], answer: 1, explanationPt: '尊い é linguagem comum de fãs para algo que desperta admiração, afeto ou sensação de preciosidade.' },
+    { id: 'iro-pi-l2-8', number: 8, prompt: 'Qual item combina melhor com 「モヤモヤする」?', choices: [{ n: 1, text: 'ficar com sensação confusa, incômoda ou mal resolvida' }, { n: 2, text: 'ficar com fome' }, { n: 3, text: 'subir montanha' }, { n: 4, text: 'pedir desculpas formalmente' }], answer: 1, explanationPt: 'モヤモヤする descreve um incômodo vago, uma sensação de algo não resolvido.' },
+    { id: 'iro-pi-l2-9', number: 9, prompt: 'Can-do 05: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'falar com certo detalhe a um amigo sobre um filme, incluindo opinião e comentários' }, { n: 2, text: 'ler contrato de aluguel' }, { n: 3, text: 'pedir informação de ônibus' }, { n: 4, text: 'explicar regras de sumô' }], answer: 1, explanationPt: 'A atividade 2 trata de conversar sobre o filme SLAM DUNK e organizar comentários sobre um filme.' },
+    { id: 'iro-pi-l2-10', number: 10, prompt: '会話 02-02: sobre qual filme チェン e 石山 conversam?', image: `${IMG}/ZZ_02_2_01_eiganokansoo.png`, imageAlt: 'duas pessoas conversando sobre impressões de um filme', choices: [{ n: 1, text: '映画『スラムダンク』' }, { n: 2, text: '『孤独のグルメ』' }, { n: 3, text: '『刀剣乱舞 ONLINE』' }, { n: 4, text: '『Lemon』' }], answer: 1, explanationPt: 'チェン reconhece a pasta de 石山 e diz: スラムダンクですね. A conversa segue sobre o filme.' },
+    { id: 'iro-pi-l2-11', number: 11, prompt: '会話 02-02: qual é a impressão geral de チェン sobre o filme?', choices: [{ n: 1, text: 'とてもよかった' }, { n: 2, text: '退屈だった' }, { n: 3, text: 'ひどかった' }, { n: 4, text: '全然わからなかった' }], answer: 1, explanationPt: 'チェン responde: はい、とてもよかったです.' },
+    { id: 'iro-pi-l2-12', number: 12, prompt: 'Sobre o filme, quais aspectos aparecem na conversa e no gabarito?', choices: [{ n: 1, text: '映像, 印象的なシーン, 声優／俳優の演技, ストーリー, 音楽' }, { n: 2, text: '家賃, 広さ, 立地' }, { n: 3, text: '野球, 落語, バリ舞踊' }, { n: 4, text: '履歴書, 面接, 採用' }], answer: 1, explanationPt: 'O answer key lista esses aspectos como pontos tratados na atividade de escuta sobre o filme.' },
+    { id: 'iro-pi-l2-13', number: 13, prompt: 'Por que チェン achou a 映像 excelente?', choices: [{ n: 1, text: 'porque o CG deixava os movimentos das pessoas muito realistas' }, { n: 2, text: 'porque o filme não tinha personagens' }, { n: 3, text: 'porque o áudio estava baixo' }, { n: 4, text: 'porque era uma peça teatral' }], answer: 1, explanationPt: 'Ele diz que provavelmente usaram CG e que 人の動きがとてもリアル.' },
+    { id: 'iro-pi-l2-14', number: 14, prompt: 'Qual cena deixou チェン realmente ドキドキ?', choices: [{ n: 1, text: 'バスケットの試合のシーン' }, { n: 2, text: 'uma cena de restaurante' }, { n: 3, text: 'um show de música' }, { n: 4, text: 'uma cena de mudança de casa' }], answer: 1, explanationPt: 'Ele fala que a cena do jogo de basquete foi emocionante, com 盛り上がる演出.' },
+    { id: 'iro-pi-l2-15', number: 15, prompt: 'Qual ponto negativo チェン comenta sobre o filme?', choices: [{ n: 1, text: 'a história pareceu um pouco curta e ele queria conhecer melhor cada personagem' }, { n: 2, text: 'o filme era longo demais' }, { n: 3, text: 'a música era muito alta' }, { n: 4, text: 'não havia cenas de basquete' }], answer: 1, explanationPt: 'Como não conhecia o mangá original nem o anime, チェン sentiu falta de mais contexto sobre os personagens.' },
+    { id: 'iro-pi-l2-16', number: 16, prompt: '「どうでしたか？ おもしろかったでしょう？」 usa 「でしょう？」 para:', choices: [{ n: 1, text: 'pedir concordância ou confirmação sobre algo que o falante acredita ser verdade' }, { n: 2, text: 'negar uma opinião' }, { n: 3, text: 'dar uma ordem' }, { n: 4, text: 'marcar passado remoto' }], answer: 1, translationPt: 'Como foi? Foi interessante, não foi?', explanationPt: 'S（普通形）でしょう？ busca confirmação ou concordância do interlocutor.' },
+    { id: 'iro-pi-l2-17', number: 17, prompt: 'Qual frase usa 「気がする」 de modo fiel à lição?', choices: [{ n: 1, text: 'ストーリーがちょっと短かった気がしました。' }, { n: 2, text: 'ストーリーを気がしました。' }, { n: 3, text: 'ストーリーに気がするをしました。' }, { n: 4, text: 'ストーリーで気です。' }], answer: 1, translationPt: 'Tive a impressão de que a história foi um pouco curta.', explanationPt: 'S（普通形）気がする suaviza uma impressão ou opinião, especialmente quando ela pode soar negativa.' },
+    { id: 'iro-pi-l2-18', number: 18, prompt: 'Na estratégia de fala 02-05, qual expressão ajuda a ganhar tempo enquanto pensa?', choices: [{ n: 1, text: 'そうですね、えっと' }, { n: 2, text: '全巻持ってるので' }, { n: 3, text: 'お腹がすくから' }, { n: 4, text: '見る専門です' }], answer: 1, explanationPt: 'A lição apresenta そうですね, えっと, なんていうか, んー e そのー como expressões para pensar enquanto fala.' },
+    { id: 'iro-pi-l2-19', number: 19, prompt: 'Can-do 06: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'falar com certo detalhe sobre algo de que gosta, como música, jogo, drama ou esporte' }, { n: 2, text: 'ler recibos de compra' }, { n: 3, text: 'explicar uma doença' }, { n: 4, text: 'anunciar um evento de empresa' }], answer: 1, explanationPt: 'A atividade 3 escuta e pratica explicações sobre jogos, música e dramas favoritos.' },
+    { id: 'iro-pi-l2-20', number: 20, prompt: '聴解 02-07: o que 婷婷 gosta?', image: `${IMG}/ZZ_02_3_01_sukinamono.png`, imageAlt: 'pessoas conversando sobre jogos, música e dramas favoritos', choices: [{ n: 1, text: 'ゲーム, especialmente 『刀剣乱舞 ONLINE』' }, { n: 2, text: 'ドラマ, especialmente 『孤独のグルメ』' }, { n: 3, text: '音楽, especially 米津玄師' }, { n: 4, text: '落語' }], answer: 1, explanationPt: '婷婷 diz que gosta de jogos e que seu jogo favorito é 『刀剣乱舞』／『刀剣乱舞 ONLINE』.' },
+    { id: 'iro-pi-l2-21', number: 21, prompt: 'Como 婷婷 explica 『刀剣乱舞 ONLINE』?', choices: [{ n: 1, text: 'um jogo em que se juntam personagens nascidos de espadas japonesas e se luta contra inimigos que tentam mudar a história' }, { n: 2, text: 'um drama em que um homem come em restaurantes' }, { n: 3, text: 'uma canção famosa de J-POP' }, { n: 4, text: 'um mangá de família e criação de filhos' }], answer: 1, explanationPt: 'A fala-chave é: 日本の刀から生まれたキャラクターを集めて、歴史を変えようとする敵と戦うってゲームです.' },
+    { id: 'iro-pi-l2-22', number: 22, prompt: 'Quais pontos 婷婷 cita como atrativos de 『刀剣乱舞 ONLINE』?', choices: [{ n: 1, text: 'キャラクターがおもしろい e ゲーム以外でも楽しめる' }, { n: 2, text: 'メロディーがきれい e 歌が上手' }, { n: 3, text: '食べ方がいい e バラエティがある' }, { n: 4, text: '家賃が安い e 駅から近い' }], answer: 1, explanationPt: 'O gabarito marca esses dois pontos para 婷婷.' },
+    { id: 'iro-pi-l2-23', number: 23, prompt: '聴解 02-08: o que ノン ouve com frequência?', choices: [{ n: 1, text: '音楽, especialmente 米津玄師' }, { n: 2, text: 'ゲーム, especially 刀剣乱舞' }, { n: 3, text: 'ドラマ, especially 孤独のグルメ' }, { n: 4, text: '相撲' }], answer: 1, explanationPt: 'ノン diz que ouve muita música e que, no momento, escuta muito 米津玄師.' },
+    { id: 'iro-pi-l2-24', number: 24, prompt: 'Como ノン apresenta 米津玄師?', choices: [{ n: 1, text: 'um singer-songwriter japonês famoso pela canção 『Lemon』' }, { n: 2, text: 'um personagem de espada' }, { n: 3, text: 'um protagonista de mangá de basquete' }, { n: 4, text: 'um restaurante de comida japonesa' }], answer: 1, explanationPt: 'ノン diz: 日本のシンガーソングライターです。『Lemon』って曲が有名ですよ.' },
+    { id: 'iro-pi-l2-25', number: 25, prompt: 'Quais pontos ノン cita sobre 米津玄師?', choices: [{ n: 1, text: 'メロディーがきれい e 曲のジャンルが広い' }, { n: 2, text: 'キャラクターがおもしろい e 舞台がある' }, { n: 3, text: '食べ方がいい e バラエティがある' }, { n: 4, text: 'ストーリーが短い e 原作が長い' }], answer: 1, explanationPt: 'ノン diz que a melodia é marcante e dá vontade de ouvir várias vezes, e que há músicas de vários estilos.' },
+    { id: 'iro-pi-l2-26', number: 26, prompt: '聴解 02-09: o que アマンダ mais gosta?', choices: [{ n: 1, text: 'ドラマを見ること, especialmente 『孤独のグルメ』' }, { n: 2, text: 'jogar no celular' }, { n: 3, text: 'ler mangá de ação' }, { n: 4, text: 'cantar karaoke' }], answer: 1, explanationPt: 'アマンダ diz: 私は、ドラマを見るのがいちばん好きですね. O drama em que ela está viciada é 『孤独のグルメ』.' },
+    { id: 'iro-pi-l2-27', number: 27, prompt: 'Como アマンダ explica 『孤独のグルメ』?', choices: [{ n: 1, text: 'um drama em que 五郎さん entra sozinho em restaurantes e refeitórios pelo Japão e aproveita a refeição' }, { n: 2, text: 'um jogo de espadas que protege a história' }, { n: 3, text: 'uma música de Vocaloid' }, { n: 4, text: 'um mangá de esporte escolar' }], answer: 1, explanationPt: 'A fala-chave é: 五郎さんというおじさんが、日本のあちこちで、1人で町のレストランや食堂に入って、食事を楽しむってドラマです.' },
+    { id: 'iro-pi-l2-28', number: 28, prompt: 'Quais pontos アマンダ cita como atrativos de 『孤独のグルメ』?', choices: [{ n: 1, text: '食べ方がいい e バラエティがある' }, { n: 2, text: 'メロディーがきれい e ジャンルが広い' }, { n: 3, text: 'キャラクターがおもしろい e ゲーム以外でも楽しめる' }, { n: 4, text: '映像がすばらしい e CGがリアル' }], answer: 1, explanationPt: 'O gabarito marca 食べ方がいい e バラエティがある.' },
+    { id: 'iro-pi-l2-29', number: 29, prompt: '「歴史を変えようとする敵と戦うってゲームです」 usa 「って」 para:', choices: [{ n: 1, text: 'explicar informalmente que tipo de jogo é' }, { n: 2, text: 'pedir concordância' }, { n: 3, text: 'cancelar uma promessa' }, { n: 4, text: 'marcar comparação formal' }], answer: 1, translationPt: 'É um jogo em que você luta contra inimigos que tentam mudar a história.', explanationPt: 'S（普通形）って N é uma forma casual de explicar ou definir algo. Em registro mais formal, a nota aponta という.' },
+    { id: 'iro-pi-l2-30', number: 30, prompt: 'Na lição, 「それに」 e 「あと」 são usados para:', choices: [{ n: 1, text: 'acrescentar mais razões ou atrativos em sequência' }, { n: 2, text: 'negar a fala anterior' }, { n: 3, text: 'perguntar o preço' }, { n: 4, text: 'marcar uma obrigação legal' }], answer: 1, explanationPt: 'A nota gramatical ➍ reúne conectores como それに e あと para listar razões ou pontos de atração.' },
+    { id: 'iro-pi-l2-31', number: 31, prompt: 'Kanji da lição: 共感／主人公／映像 lêem-se:', choices: [{ n: 1, text: 'きょうかん／しゅじんこう／えいぞう' }, { n: 2, text: 'ともかん／ぬしじんこう／えいが' }, { n: 3, text: 'きょうかん／しゅにんこう／うつぞう' }, { n: 4, text: 'きょうがん／しゅじんこう／えいぞう' }], answer: 1, explanationPt: '共感 = empatia/identificação; 主人公 = protagonista; 映像 = imagem/vídeo.' },
+    { id: 'iro-pi-l2-32', number: 32, prompt: 'Kanji da lição: 原作／歌詞／俳優 lêem-se:', choices: [{ n: 1, text: 'げんさく／かし／はいゆう' }, { n: 2, text: 'はらさく／うたことば／はいゆ' }, { n: 3, text: 'げんさく／かじ／はいゆう' }, { n: 4, text: 'げんつく／かし／はいゆう' }], answer: 1, explanationPt: '原作 = obra original; 歌詞 = letra de música; 俳優 = ator.' },
+    { id: 'iro-pi-l2-33', number: 33, prompt: 'Kanji da lição: お腹／深み／演じる／探す／死ぬ lêem-se:', choices: [{ n: 1, text: 'おなか／ふかみ／えんじる／さがす／しぬ' }, { n: 2, text: 'おはら／しんみ／えんじる／たずねる／しぬ' }, { n: 3, text: 'おなか／ふかみ／やんじる／さがす／しぬ' }, { n: 4, text: 'おなか／ふかみ／えんじる／さがす／しなない' }], answer: 1, explanationPt: 'Esses são os kanji e leituras apresentados na seção 漢字のことば.' },
+    { id: 'iro-pi-l2-34', number: 34, prompt: 'Qual frase usa um kanji da lição no contexto correto?', choices: [{ n: 1, text: '原作では、主人公は死んでしまいます。' }, { n: 2, text: '原作では、主人公は勝ってしまいます。' }, { n: 3, text: '原作では、主人公は探してしまいます。' }, { n: 4, text: '原作では、主人公は座ってしまいます。' }], answer: 1, explanationPt: 'Esta é uma das frases-modelo da seção de kanji.' },
+    { id: 'iro-pi-l2-35', number: 35, prompt: 'TIPS: sobre apps de mangá, qual afirmação está correta?', choices: [{ n: 1, text: 'há serviços para smartphone/tablet com capítulos grátis, leitura após anúncios ou espera por tempo' }, { n: 2, text: 'mangá só pode ser lido em revista impressa' }, { n: 3, text: 'todos os mangás digitais são proibidos no Japão' }, { n: 4, text: 'apps de mangá não têm comentários de leitores' }], answer: 1, explanationPt: 'A TIPS apresenta serviços de mangá em app e modos comuns de leitura gratuita ou parcial.' },
+    { id: 'iro-pi-l2-36', number: 36, prompt: 'TIPS: 「オノマトペ」 são:', choices: [{ n: 1, text: 'palavras que expressam sons, movimentos, estados ou sentimentos, como ワンワン e イライラ' }, { n: 2, text: 'nomes de restaurantes reais' }, { n: 3, text: 'apenas nomes de personagens' }, { n: 4, text: 'regras de conjugação de passado' }], answer: 1, explanationPt: 'A lição mostra onomatopeias como ワンワン, ピューピュー, ごろごろ, ピカピカ, イライラ, わくわく, ガーン, ザーザー, ポツポツ, しとしと e シーン.' },
+    { id: 'iro-pi-l2-37', number: 37, prompt: 'TIPS: o que a dica sobre ふりがな especial explica?', choices: [{ n: 1, text: 'em mangás e letras, furigana pode indicar leitura criativa ou significado, não só a leitura padrão' }, { n: 2, text: 'furigana é proibido em mangá' }, { n: 3, text: 'furigana serve apenas para números' }, { n: 4, text: 'furigana sempre deve ser removido' }], answer: 1, explanationPt: 'A TIPS mostra que furigana pode ser usado de forma especial para efeito expressivo em mangá e letras de música.' },
+    { id: 'iro-pi-l2-38', number: 38, prompt: 'TIPS: sobre 『SLAM DUNK』, qual resumo está correto?', choices: [{ n: 1, text: 'mangá de basquete de Inoue Takehiko, publicado de 1990 a 1996, com crescimento de Sakuragi Hanamichi e dramas dos personagens' }, { n: 2, text: 'jogo online de espadas iniciado em 2015' }, { n: 3, text: 'drama gourmet sobre restaurantes' }, { n: 4, text: 'música de 米津玄師' }], answer: 1, explanationPt: 'A TIPS resume SLAM DUNK como mangá de basquete ainda amado e menciona o filme THE FIRST SLAM DUNK de 2022.' },
+    { id: 'iro-pi-l2-39', number: 39, prompt: 'TIPS: 「マンガのメディア展開」 quer dizer que mangás populares podem virar:', choices: [{ n: 1, text: 'anime, filmes, dramas live-action, peças, musicais e até colaborações como kabuki' }, { n: 2, text: 'somente livros de gramática' }, { n: 3, text: 'apenas anúncios de imóveis' }, { n: 4, text: 'somente aplicativos bancários' }], answer: 1, explanationPt: 'A TIPS menciona adaptações de mangá para várias mídias e o termo 2.5次元 para obras de palco/musical baseadas em mundos 2D.' },
+    { id: 'iro-pi-l2-40', number: 40, prompt: 'TIPS: 『刀剣乱舞 ONLINE』 é descrito como:', choices: [{ n: 1, text: 'jogo online popular em que espadas japonesas viram personagens; também tem anime, palco e musicais' }, { n: 2, text: 'um mangá de basquete escolar' }, { n: 3, text: 'um drama sobre comida' }, { n: 4, text: 'uma onomatopeia para chuva' }], answer: 1, explanationPt: 'A dica diz que o serviço começou em 2015 e que o boom também levou fãs a museus e santuários com espadas reais.' },
+    { id: 'iro-pi-l2-41', number: 41, prompt: 'TIPS: sobre 米津玄師, qual afirmação está correta?', choices: [{ n: 1, text: 'começou na internet como ハチ, passou a atuar com seu nome real em 2012 e é conhecido por músicas como 『Lemon』' }, { n: 2, text: 'é o protagonista de 『孤独のグルメ』' }, { n: 3, text: 'é um time de basquete' }, { n: 4, text: 'é uma palavra para furigana especial' }], answer: 1, explanationPt: 'A TIPS cita sua trajetória, músicas conhecidas, canções-tema e estilo com melodias únicas, letras profundas e variedade de gêneros.' },
+    { id: 'iro-pi-l2-42', number: 42, prompt: 'TIPS: o que caracteriza os グルメドラマ como 『孤独のグルメ』?', choices: [{ n: 1, text: 'obras centradas em comida, muitas vezes baseadas em mangá ou ensaio, com restaurantes e pratos reais que podem motivar 聖地巡礼' }, { n: 2, text: 'obras sem relação com restaurantes' }, { n: 3, text: 'apenas manuais de cozinha escolar' }, { n: 4, text: 'jogos sobre personagens de espada' }], answer: 1, explanationPt: 'A TIPS apresenta 『孤独のグルメ』 e outros dramas gourmet como porta de entrada para a cultura alimentar japonesa.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -276,6 +329,190 @@ const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L2_SCRIPTS: Record<string, ScriptItem[]> = {
+  '02-01': [
+    {
+      label: 'ことば - 好きなもの好きなこと (02-01)',
+      lines: [
+        { speaker: 'Narração', ja: '{映画|えいが}／ドラマ／{音楽|おんがく}／{読書|どくしょ}／ゲーム', pt: 'filmes, dramas, música, leitura, jogos' },
+        { speaker: 'Narração', ja: 'アクション／ラブコメディ／ファンタジー／{家庭|かてい}・{育児|いくじ}', pt: 'ação, comédia romântica, fantasia, família e criação de filhos' },
+        { speaker: 'Narração', ja: '{印象的|いんしょうてき}／{物足|ものた}りない／{共感|きょうかん}／モヤモヤする', pt: 'marcante, insuficiente, identificação/empatia, ficar com sensação incômoda' },
+      ],
+    },
+  ],
+  '02-02': [
+    {
+      label: '会話 - 映画「スラムダンク」の感想 (02-02)',
+      setupPt: 'Chen e Ishiyama conversam sobre o filme SLAM DUNK.',
+      lines: [
+        { speaker: 'チェン', ja: 'あ、{石山|いしやま}さん、そのクリアファイル、いいですね。スラムダンクですね！', pt: 'Ah, Ishiyama, essa pasta é legal. É SLAM DUNK, né?' },
+        { speaker: '石山', ja: 'ええ。チェンさん、スラムダンク、{好|す}きなんですか？', pt: 'Sim. Chen, você gosta de SLAM DUNK?' },
+        { speaker: 'チェン', ja: 'はい、この{間|あいだ}、{映画|えいが}を{見|み}ました。{石山|いしやま}さんも{見|み}ましたか？', pt: 'Sim, vi o filme outro dia. Você também viu, Ishiyama?' },
+        { speaker: '石山', ja: 'もちろん！ もう3{回|かい}{見|み}ました。どうでしたか？ おもしろかったでしょう？', pt: 'Claro! Já vi três vezes. Como foi? Foi interessante, não foi?' },
+        { speaker: 'チェン', ja: 'はい、とてもよかったです。', pt: 'Sim, foi muito bom.' },
+        { speaker: '石山', ja: 'ですよね。どこがよかったですか？', pt: 'Pois é. O que foi bom?' },
+        { speaker: 'チェン', ja: 'そうですね、えっと、まず、{映像|えいぞう}がすばらしかったです。', pt: 'Bem, vejamos... primeiro, as imagens eram excelentes.' },
+        { speaker: '石山', ja: 'ああ。', pt: 'Ah.' },
+        { speaker: 'チェン', ja: 'たぶん、CGを{使|つか}っていると{思|おも}いますが、{人|ひと}の{動|うご}きがとてもリアルで、すごいと{思|おも}いました。', pt: 'Acho que usaram CG, mas os movimentos das pessoas eram muito realistas e achei incrível.' },
+        { speaker: '石山', ja: 'そうですよね。', pt: 'É verdade.' },
+        { speaker: 'チェン', ja: 'はい。それから、やっぱり、バスケットの{試合|しあい}のシーンが、{本当|ほんとう}にドキドキしました。{盛|も}り{上|あ}がる{演出|えんしゅつ}で、なんていうか、すごく{興奮|こうふん}しました。', pt: 'Sim. E, como era de se esperar, a cena do jogo de basquete me deixou muito empolgado. A direção criava muita emoção e, como dizer, fiquei muito animado.' },
+        { speaker: '石山', ja: 'わかります。{最後|さいご}はそういう{結果|けっか}になるだろうなあ、ってわかってても、{見|み}ていてドキドキしますよね。', pt: 'Entendo. Mesmo sabendo que o final provavelmente teria aquele resultado, dá emoção vendo, né?' },
+        { speaker: 'チェン', ja: 'そうですね。ただ……{全体的|ぜんたいてき}に、んー、ストーリーがちょっと{短|みじか}かった{気|き}がしました。', pt: 'É. Mas... no geral, hmm, tive a impressão de que a história foi um pouco curta.' },
+        { speaker: '石山', ja: '{短|みじか}かった？', pt: 'Curta?' },
+        { speaker: 'チェン', ja: 'はい。{私|わたし}は、スラムダンクは、{原作|げんさく}のマンガもテレビアニメも{知|し}らないで、{映画|えいが}ではじめて{見|み}たんですが……それぞれのキャラクターがどんな{人|ひと}か、そのー、もう{少|すこ}しくわしく{知|し}りたいと{思|おも}いました。あの{赤|あか}い{髪|かみ}の{人|ひと}とか。そこが、なんだか{物足|ものた}りなかった{気|き}がします。', pt: 'Sim. Eu não conhecia o mangá original nem o anime de TV de SLAM DUNK e vi pela primeira vez no filme... Então quis saber um pouco mais sobre que tipo de pessoa cada personagem era. Por exemplo, aquele de cabelo vermelho. Foi essa parte que me pareceu meio insuficiente.' },
+        { speaker: '石山', ja: 'ああ、{確|たし}かにそうですね。{赤|あか}い{髪|かみ}の{人|ひと}は{桜木|さくらぎ}っていうんですが、{原作|げんさく}だと、{桜木|さくらぎ}が{主人公|しゅじんこう}なんですよ。', pt: 'Ah, realmente. O de cabelo vermelho se chama Sakuragi e, no original, o protagonista é o Sakuragi.' },
+        { speaker: '石山', ja: 'でも{原作|げんさく}の{長|なが}い{話|はなし}を、2{時間|じかん}の{映画|えいが}にするのは、{大変|たいへん}なんでしょうね。', pt: 'Mas deve ser difícil transformar uma história longa do original em um filme de duas horas.' },
+        { speaker: 'チェン', ja: 'そうなんですか。{今度|こんど}、{原作|げんさく}のマンガも{読|よ}んでみたいと{思|おも}います。', pt: 'Entendi. Da próxima vez, quero tentar ler o mangá original também.' },
+        { speaker: '石山', ja: 'ぼく、{全巻|ぜんかん}{持|も}ってるので、{貸|か}しますよ。', pt: 'Eu tenho a coleção completa, então empresto para você.' },
+        { speaker: 'チェン', ja: 'わあ、ありがとうございます。いいんですか？', pt: 'Nossa, obrigado. Tudo bem mesmo?' },
+        { speaker: '石山', ja: 'はい。スラムダンクのファンが{増|ふ}えるのは、ぼくもうれしいですしね。', pt: 'Sim. Também fico feliz quando aumenta o número de fãs de SLAM DUNK.' },
+      ],
+    },
+  ],
+  '02-03': [
+    {
+      label: '形に注目 - Sでしょう？ (02-03)',
+      lines: [
+        { speaker: '石山', ja: 'どうでしたか？ おもしろかったでしょう？', pt: 'Como foi? Foi interessante, não foi?' },
+      ],
+    },
+  ],
+  '02-04': [
+    {
+      label: '形に注目 - S気がする (02-04)',
+      lines: [
+        { speaker: 'チェン', ja: 'ストーリーがちょっと{短|みじか}かった{気|き}がしました。', pt: 'Tive a impressão de que a história foi um pouco curta.' },
+        { speaker: 'チェン', ja: 'そこが、なんだか{物足|ものた}りなかった{気|き}がします。', pt: 'Essa parte me pareceu meio insuficiente.' },
+      ],
+    },
+  ],
+  '02-05': [
+    {
+      label: 'ストラテジー - 考えながら話す (02-05)',
+      setupPt: 'Expressões para ganhar tempo e organizar a fala enquanto pensa.',
+      lines: [
+        { speaker: 'チェン', ja: 'そうですね、えっと、まず、{映像|えいぞう}がすばらしかったです。', pt: 'Bem, vejamos... primeiro, as imagens eram excelentes.' },
+        { speaker: 'チェン', ja: '{盛|も}り{上|あ}がる{演出|えんしゅつ}で、なんていうか、すごく{興奮|こうふん}しました。', pt: 'A direção criava emoção e, como dizer, fiquei muito animado.' },
+        { speaker: 'チェン', ja: 'ただ……{全体的|ぜんたいてき}に、んー、ストーリーがちょっと{短|みじか}かった{気|き}がしました。', pt: 'Mas... no geral, hmm, tive a impressão de que a história foi um pouco curta.' },
+        { speaker: 'チェン', ja: 'それぞれのキャラクターがどんな{人|ひと}か、そのー、もう{少|すこ}しくわしく{知|し}りたいと{思|おも}いました。', pt: 'Quis saber um pouco mais sobre que tipo de pessoa cada personagem era.' },
+      ],
+    },
+  ],
+  '02-06': [
+    {
+      label: '話すモデル - 映画の感想 (02-06)',
+      lines: [
+        { speaker: 'A', ja: 'この{間|あいだ}、スラムダンクの{映画|えいが}を{見|み}ました。', pt: 'Outro dia vi o filme de SLAM DUNK.' },
+        { speaker: 'B', ja: 'どうでしたか？', pt: 'Como foi?' },
+        { speaker: 'A', ja: 'とてもよかったです。', pt: 'Foi muito bom.' },
+        { speaker: 'B', ja: 'どこがよかったですか？', pt: 'O que foi bom?' },
+        { speaker: 'A', ja: 'えっと、まず、{映像|えいぞう}がすばらしかったです。{人|ひと}の{動|うご}きがとてもリアルで、すごいと{思|おも}いました。', pt: 'Bem, primeiro, as imagens eram excelentes. Os movimentos das pessoas eram muito realistas e achei incrível.' },
+        { speaker: 'A', ja: 'それから、バスケットの{試合|しあい}のシーンが、{本当|ほんとう}にドキドキしました。{盛|も}り{上|あ}がる{演出|えんしゅつ}で、すごく{興奮|こうふん}しました。', pt: 'Além disso, a cena do jogo de basquete me deixou muito empolgado. A direção criava emoção e fiquei muito animado.' },
+        { speaker: 'A', ja: 'ただ、{全体的|ぜんたいてき}に、ストーリーがちょっと{短|みじか}かった{気|き}がしました。', pt: 'Mas, no geral, tive a impressão de que a história foi um pouco curta.' },
+      ],
+    },
+  ],
+  '02-07': [
+    {
+      label: '① 婷婷さん - 刀剣乱舞 ONLINE (02-07)',
+      setupPt: 'No restaurante, colegas da mesma aula de japonês falam sobre jogos, música e dramas favoritos.',
+      lines: [
+        { speaker: 'アマンダ', ja: '{婷婷|ティンティン}さん、{今日|きょう}はちょっと{眠|ねむ}そうですけど、だいじょうぶですか？', pt: 'Tingting, hoje você parece um pouco sonolenta. Está tudo bem?' },
+        { speaker: '婷婷', ja: 'あ、{昨日|きのう}、{夜遅|よるおそ}くまでゲームしてたんです。', pt: 'Ah, ontem fiquei jogando até tarde da noite.' },
+        { speaker: 'アマンダ', ja: 'ゲーム？ {婷婷|ティンティン}さん、ゲーム、{好|す}きなんですか？', pt: 'Jogo? Tingting, você gosta de jogos?' },
+        { speaker: '婷婷', ja: 'はい。スマホでよくやってます。', pt: 'Sim. Jogo bastante no smartphone.' },
+        { speaker: 'ノン', ja: 'へー。どんなゲームをやるんですか？', pt: 'Nossa. Que tipo de jogo você joga?' },
+        { speaker: '婷婷', ja: 'えっと、いちばん{好|す}きなゲームは『{刀剣乱舞|とうけんらんぶ}』です。', pt: 'Bem, meu jogo favorito é Touken Ranbu.' },
+        { speaker: 'アマンダ', ja: 'とう……けん？', pt: 'Tou... ken?' },
+        { speaker: '婷婷', ja: '『{刀剣乱舞|とうけんらんぶ} ONLINE』です。{日本|にほん}の{刀|かたな}から{生|う}まれたキャラクターを{集|あつ}めて、{歴史|れきし}を{変|か}えようとする{敵|てき}と{戦|たたか}うってゲームです。', pt: 'É Touken Ranbu ONLINE. É um jogo em que você reúne personagens nascidos de espadas japonesas e luta contra inimigos que tentam mudar a história.' },
+        { speaker: 'ノン', ja: 'え、{日本|にほん}の{刀|かたな}？', pt: 'Hã, espadas japonesas?' },
+        { speaker: '婷婷', ja: 'はい。{刀|かたな}が{人間|にんげん}のキャラクターになっていて、おもしろいんです。いろいろなキャラクターがいて、{刀|かたな}の{歴史|れきし}や{種類|しゅるい}に{合|あ}わせて{強|つよ}さや{得意|とくい}なことが{違|ちが}うんですよ。', pt: 'Sim. As espadas viram personagens humanos e isso é interessante. Há vários personagens, e a força e as especialidades mudam conforme a história e o tipo da espada.' },
+        { speaker: 'ノン', ja: 'へー、おもしろそうですね。', pt: 'Nossa, parece interessante.' },
+        { speaker: '婷婷', ja: 'それに、ゲームだけじゃなくて、{舞台|ぶたい}とかミュージカルとかアニメとかもあって、いろいろ{楽|たの}しめるんです。{舞台|ぶたい}では、イケメン{俳優|はいゆう}がゲームのキャラクターそっくりに{演|えん}じていて、すごくすてきなんですよ。YouTubeでもちょっと{見|み}られますよ。', pt: 'Além disso, não é só o jogo. Há peças, musicais, anime e dá para aproveitar de várias formas. No palco, atores bonitos interpretam os personagens iguais aos do jogo, e é muito legal. Dá para ver um pouco no YouTube também.' },
+        { speaker: 'ノン', ja: 'へー。{私|わたし}も、やってみたいです。', pt: 'Nossa. Eu também quero experimentar.' },
+        { speaker: '婷婷', ja: 'じゃあ、{今|いま}リンク{送|おく}りますね。', pt: 'Então vou mandar o link agora.' },
+        { speaker: 'ノン', ja: 'ありがとう。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+  '02-08': [
+    {
+      label: '② ノンさん - 米津玄師 (02-08)',
+      lines: [
+        { speaker: '婷婷', ja: 'ノンさんも、ゲームをしますか？', pt: 'Non, você também joga?' },
+        { speaker: 'ノン', ja: '{私|わたし}は、あまり……。ゲームより、{私|わたし}は{音楽|おんがく}をよく{聞|き}きます。', pt: 'Eu não muito... Mais do que jogos, eu ouço bastante música.' },
+        { speaker: '婷婷', ja: 'へー。{私|わたし}、{音楽|おんがく}も{好|す}きですよ。ノンさんは、どんな{音楽|おんがく}を{聞|き}くんですか？', pt: 'Nossa. Eu também gosto de música. Que tipo de música você ouve?' },
+        { speaker: 'ノン', ja: '{何|なん}でも{好|す}きです。J-POP、ロック、ジャズ、クラシック……。でも、{今|いま}よく{聞|き}いているのは、{米津玄師|よねづけんし}ですね。', pt: 'Gosto de qualquer coisa. J-POP, rock, jazz, clássico... Mas agora escuto muito Kenshi Yonezu.' },
+        { speaker: '婷婷', ja: 'よねづけんし？', pt: 'Yonezu Kenshi?' },
+        { speaker: 'ノン', ja: '{日本|にほん}のシンガーソングライターです。『Lemon』って{曲|きょく}が{有名|ゆうめい}ですよ。', pt: 'É um singer-songwriter japonês. A música Lemon é famosa.' },
+        { speaker: 'ノン', ja: '{私|わたし}も、{友|とも}だちがカラオケで{歌|うた}ってるのを{聞|き}いて、すごくいい{曲|きょく}だなって{思|おも}いました。それで{気|き}になって、ほかの{曲|きょく}も{聞|き}くようになったんです。', pt: 'Eu ouvi um amigo cantando no karaoke e achei que era uma música muito boa. Aí fiquei curioso e passei a ouvir outras músicas também.' },
+        { speaker: '婷婷', ja: 'へー、そうなんですか。', pt: 'Nossa, entendi.' },
+        { speaker: 'ノン', ja: 'ええ。メロディーがきれいなんですよ。すごく{印象的|いんしょうてき}なメロディーで、{何回|なんかい}も{聞|き}きたくなるんです。', pt: 'Sim. A melodia é bonita. É uma melodia muito marcante e dá vontade de ouvir várias vezes.' },
+        { speaker: 'アマンダ', ja: 'ふーん。', pt: 'Entendi.' },
+        { speaker: 'ノン', ja: 'それに、{曲|きょく}のジャンルが{広|ひろ}いんです。いろいろな{雰囲気|ふんいき}の{曲|きょく}があって、{落|お}ち{着|つ}いたバラードもあるし、ノリのいいアップテンポの{曲|きょく}もあるし、どれも{心|こころ}に{残|のこ}るんです。', pt: 'Além disso, os gêneros das músicas são amplos. Há músicas com várias atmosferas, baladas calmas, músicas agitadas e todas ficam na memória.' },
+        { speaker: '婷婷', ja: 'そうなんですか。{今度|こんど}、{探|さが}して{聞|き}いてみます。', pt: 'Entendi. Vou procurar e ouvir depois.' },
+      ],
+    },
+  ],
+  '02-09': [
+    {
+      label: '③ アマンダさん - 孤独のグルメ (02-09)',
+      lines: [
+        { speaker: 'ノン', ja: 'アマンダさんも、ゲームとか、{音楽|おんがく}とか{好|す}きですか？', pt: 'Amanda, você também gosta de jogos, música e coisas assim?' },
+        { speaker: 'アマンダ', ja: 'うーん、{私|わたし}は、ドラマを{見|み}るのがいちばん{好|す}きですね。', pt: 'Hmm, eu gosto mais de assistir dramas.' },
+        { speaker: '婷婷', ja: 'ドラマですか。', pt: 'Dramas?' },
+        { speaker: 'アマンダ', ja: 'はい。{今|いま}ハマってるドラマは、『{孤独|こどく}のグルメ』です。{知|し}ってますか？', pt: 'Sim. O drama em que estou viciada agora é Kodoku no Gourmet. Vocês conhecem?' },
+        { speaker: 'ノン', ja: 'え、{知|し}らないです。', pt: 'Hã, não conheço.' },
+        { speaker: '婷婷', ja: '{私|わたし}も。どんなドラマですか？', pt: 'Eu também não. Que tipo de drama é?' },
+        { speaker: 'アマンダ', ja: '{五郎|ごろう}さんというおじさんが、{日本|にほん}のあちこちで、1{人|ひとり}で{町|まち}のレストランや{食堂|しょくどう}に{入|はい}って、{食事|しょくじ}を{楽|たの}しむってドラマです。', pt: 'É um drama em que um senhor chamado Goro entra sozinho em restaurantes e refeitórios de várias partes do Japão e aproveita a refeição.' },
+        { speaker: 'ノン', ja: 'え、それ、おもしろいんですか？', pt: 'Hã, isso é interessante?' },
+        { speaker: 'アマンダ', ja: 'おもしろいんですよ。{食|た}べるシーンがメインなんですけど、{五郎|ごろう}さんの{食|た}べ{方|かた}がいいんです。{本当|ほんとう}においしそうに、たくさん{食|た}べるので、{気持|きも}ちいいです。', pt: 'É interessante. As cenas de comer são o principal, e o jeito do Goro comer é ótimo. Ele come bastante, parecendo muito saboroso, então é satisfatório.' },
+        { speaker: 'ノン', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'アマンダ', ja: 'そのお{店|みせ}に{行|い}って、{同|おな}じメニューを{食|た}べたくなりますよ。', pt: 'Dá vontade de ir àquele restaurante e comer o mesmo prato.' },
+        { speaker: '婷婷', ja: 'ふーん。', pt: 'Entendi.' },
+        { speaker: 'アマンダ', ja: 'あと、{毎回|まいかい}バラエティがあって、{楽|たの}しいです。', pt: 'Além disso, cada episódio tem variedade e é divertido.' },
+        { speaker: '婷婷', ja: 'バラエティ？', pt: 'Variedade?' },
+        { speaker: 'アマンダ', ja: 'はい。{例|たと}えば、{行|い}くお{店|みせ}が、{定食屋|ていしょくや}とか、{居酒屋|いざかや}とか、エスニックのレストランとか、いろいろなんです。{日本|にほん}のあちこちに{行|い}くので、その{地方|ちほう}の{料理|りょうり}が{見|み}られるのも、おもしろいですよ。', pt: 'Sim. Por exemplo, os lugares variam: restaurantes de refeições prontas, izakaya, restaurantes étnicos e outros. Como ele vai a vários lugares do Japão, também é interessante ver a culinária de cada região.' },
+        { speaker: '婷婷', ja: 'へー。{今度|こんど}、{見|み}てみようかな。', pt: 'Nossa. Acho que vou assistir depois.' },
+        { speaker: 'アマンダ', ja: 'ええ、ぜひ。でも、{絶対|ぜったい}お{腹|なか}がすくから、{気|き}をつけてくださいね。', pt: 'Sim, assista. Mas você com certeza vai ficar com fome, então cuidado.' },
+      ],
+    },
+  ],
+  '02-10': [
+    {
+      label: '形に注目 - SってN (02-10)',
+      lines: [
+        { speaker: '婷婷', ja: '{日本|にほん}の{刀|かたな}から{生|う}まれたキャラクターを{集|あつ}めて、{歴史|れきし}を{変|か}えようとする{敵|てき}と{戦|たたか}うってゲームです。', pt: 'É um jogo em que você reúne personagens nascidos de espadas japonesas e luta contra inimigos que tentam mudar a história.' },
+        { speaker: 'アマンダ', ja: '{五郎|ごろう}さんというおじさんが、{日本|にほん}のあちこちで、1{人|ひとり}で{町|まち}のレストランや{食堂|しょくどう}に{入|はい}って、{食事|しょくじ}を{楽|たの}しむってドラマです。', pt: 'É um drama em que um senhor chamado Goro entra sozinho em restaurantes e refeitórios pelo Japão e aproveita a refeição.' },
+      ],
+    },
+  ],
+  '02-11': [
+    {
+      label: '形に注目 - 接続表現 (02-11)',
+      lines: [
+        { speaker: '婷婷', ja: 'それに、ゲームだけじゃなくて、{舞台|ぶたい}とかミュージカルとかアニメとかもあって、いろいろ{楽|たの}しめるんです。', pt: 'Além disso, não é só o jogo. Há peças, musicais, anime e dá para aproveitar de várias formas.' },
+        { speaker: 'アマンダ', ja: 'あと、{毎回|まいかい}バラエティがあって、{楽|たの}しいです。', pt: 'Além disso, cada episódio tem variedade e é divertido.' },
+      ],
+    },
+  ],
+  '02-12': [
+    {
+      label: '話すモデル - 好きなものについて話す (02-12)',
+      lines: [
+        { speaker: 'A', ja: '{何|なに}が{好|す}きですか？', pt: 'Do que você gosta?' },
+        { speaker: 'B', ja: 'ゲームが{好|す}きです。いちばん{好|す}きなゲームは『{刀剣乱舞|とうけんらんぶ} ONLINE』です。', pt: 'Gosto de jogos. Meu jogo favorito é Touken Ranbu ONLINE.' },
+        { speaker: 'A', ja: '{刀剣乱舞|とうけんらんぶ}？', pt: 'Touken Ranbu?' },
+        { speaker: 'B', ja: 'はい。{日本|にほん}の{刀|かたな}から{生|う}まれたキャラクターを{集|あつ}めて、{歴史|れきし}を{変|か}えようとする{敵|てき}と{戦|たたか}うってゲームです。', pt: 'Sim. É um jogo em que você reúne personagens nascidos de espadas japonesas e luta contra inimigos que tentam mudar a história.' },
+        { speaker: 'A', ja: 'そうなんですか。どんなところが{好|す}きなんですか？', pt: 'Entendi. Que parte você gosta?' },
+        { speaker: 'B', ja: 'キャラクターがおもしろいんです。{刀|かたな}が{人間|にんげん}のキャラクターになっていて、{刀|かたな}の{歴史|れきし}や{種類|しゅるい}に{合|あ}わせて{強|つよ}さや{得意|とくい}なことが{違|ちが}うんです。', pt: 'Os personagens são interessantes. As espadas viram personagens humanos, e a força e as especialidades mudam conforme a história e o tipo da espada.' },
+        { speaker: 'B', ja: 'あと、ゲーム{以外|いがい}でも、いろいろ{楽|たの}しめるんですよ。{舞台|ぶたい}とかミュージカルとかアニメとかもあります。{舞台|ぶたい}では、イケメン{俳優|はいゆう}がゲームのキャラクターそっくりに{演|えん}じていて、すごくすてきなんです。', pt: 'E dá para aproveitar de várias formas além do jogo. Há peças, musicais e anime. No palco, atores bonitos interpretam os personagens iguais aos do jogo, e é muito legal.' },
+        { speaker: 'A', ja: 'おもしろそうですね。', pt: 'Parece interessante.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -364,9 +601,120 @@ const lesson1: Section = {
   audios: attachScripts(1, L1_SCRIPTS),
 }
 
+const lesson2: Section = {
+  id: 'lesson-2',
+  level: 'pre-intermediate',
+  titleJa: '第2課 ドラマを見るのがいちばん好きです',
+  titlePt: 'Lição 2 - O que eu mais gosto é assistir dramas',
+  summaryPt:
+    'Coisas e atividades favoritas · ler comentários curtos sobre mangá, falar sobre impressões de um filme e explicar em detalhe jogos, música ou dramas de que gosta.',
+  studyNotes: [
+    {
+      title: 'Tópico: Coisas e atividades favoritas (好きなもの好きなこと)',
+      bodyPt:
+        'Pergunta de abertura: あなたは、{映画|えいが}、ドラマ、{音楽|おんがく}、{読書|どくしょ}、ゲームのうち、どれが{好|す}きですか？\n\n' +
+        '## Can-do\n' +
+        '- Ler e entender comentários curtos e simples sobre mangá.\n' +
+        '- Falar com certo detalhe a um amigo sobre um filme, incluindo opinião e comentários.\n' +
+        '- Falar com certo detalhe sobre algo de que gosta, como música, jogo, drama ou esporte, explicando razões e atrativos.',
+    },
+    {
+      title: 'Atividade 1: PR de mangás gratuitos',
+      bodyPt:
+        'A atividade trabalha comentários curtos de leitores sobre mangás. O gabarito classifica os gêneros assim:\n\n' +
+        '| Mangá | Gênero |\n|---|---|\n' +
+        '| ① | アクション |\n' +
+        '| ② | ラブコメディ |\n' +
+        '| ③ | ファンタジー |\n' +
+        '| ④ | 家庭・育児 |\n\n' +
+        'Comentários positivos no gabarito: A, C, D, E, F, H, I, J. Comentários negativos: B, G, K, L.\n\n' +
+        'Vocabulário útil: テンポ (ritmo), あっという{間|ま}に (em um instante), {尊|とうと}い (precioso/admirável em linguagem de fã), なにげに (sutilmente/mais do que parece), ドキドキする (ficar empolgado ou ansioso), {追放|ついほう}する (expulsar), パターン (padrão), キャラ (personagem), {主人公|しゅじんこう} (protagonista), {共感|きょうかん} (empatia/identificação), {離婚|りこん}する (divorciar-se), モヤモヤする (ficar com sensação incômoda), モラハラ (assédio moral), むかつく (irritar).',
+    },
+    {
+      title: 'Atividade 2: falar sobre um filme',
+      bodyPt:
+        'チェン e 石山 conversam sobre o filme 『SLAM DUNK』. A impressão geral de チェン é **とてもよかった**.\n\n' +
+        '| Ponto | O que チェン diz |\n|---|---|\n' +
+        '| {映像|えいぞう} | As imagens foram excelentes; provavelmente usaram CG e os movimentos das pessoas eram muito realistas. |\n' +
+        '| {印象的|いんしょうてき}なシーン | A cena do jogo de basquete foi emocionante; a direção aumentava a tensão e ele ficou muito empolgado. |\n' +
+        '| ストーリー | No geral, a história pareceu um pouco curta; ele queria saber mais sobre cada personagem, especialmente o de cabelo vermelho. |\n\n' +
+        'Vocabulário de impressão positiva: とてもよかった, {迫力|はくりょく}があった, {楽|たの}しかった, すごいと{思|おも}った, {感動的|かんどうてき}だった, ドキドキした, {深|ふか}みがあった, きれいだった, すばらしかった, {興奮|こうふん}した.\n\n' +
+        'Vocabulário de impressão negativa: {退屈|たいくつ}だった, {難|むずか}しかった, {物足|ものた}りなかった, {短|みじか}かった, いまいちだった, ひどかった.',
+    },
+    {
+      title: 'Gramática ➊➋: でしょう？ e 気がする',
+      bodyPt:
+        '**S（普通形）でしょう？** busca concordância ou confirmação sobre algo que o falante acredita ser verdade:\n\n' +
+        '- `おもしろかったでしょう？` = Foi interessante, não foi?\n' +
+        '- Pode aparecer depois de forma passada, presente, afirmativa ou negativa conforme a frase-base.\n\n' +
+        '**S（普通形）気がする** suaviza uma impressão ou opinião. A lição usa isso para comentários que poderiam soar negativos:\n\n' +
+        '- `ストーリーがちょっと{短|みじか}かった{気|き}がしました。`\n' +
+        '- `そこが、なんだか{物足|ものた}りなかった{気|き}がします。`\n' +
+        '- Com adjetivo ナ, use `ナA-な気がする`: `いまいちな{気|き}がしました`.',
+    },
+    {
+      title: 'Estratégia: pensar enquanto fala',
+      bodyPt:
+        'A faixa 02-05 destaca preenchimentos naturais que ajudam a manter a conversa enquanto você organiza a ideia:\n\n' +
+        '- `そうですね、えっと、まず、{映像|えいぞう}がすばらしかったです。`\n' +
+        '- `{盛|も}り{上|あ}がる{演出|えんしゅつ}で、なんていうか、すごく{興奮|こうふん}しました。`\n' +
+        '- `ただ……{全体的|ぜんたいてき}に、んー、ストーリーがちょっと{短|みじか}かった{気|き}がしました。`\n' +
+        '- `そのー、もう{少|すこ}しくわしく{知|し}りたいと{思|おも}いました。`',
+    },
+    {
+      title: 'Atividade 3: falar sobre coisas favoritas',
+      bodyPt:
+        'No restaurante, 婷婷, ノン e アマンダ falam sobre jogos, música e dramas.\n\n' +
+        '| Pessoa | Gosta de | Especificamente | O que é |\n|---|---|---|---|\n' +
+        '| 婷婷 | ゲーム | 『刀剣乱舞 ONLINE』 | Jogo em que personagens nascidos de espadas japonesas lutam contra inimigos que tentam mudar a história. |\n' +
+        '| ノン | {音楽|おんがく} | {米津玄師|よねづけんし} | Singer-songwriter japonês; 『Lemon』 é uma música famosa. |\n' +
+        '| アマンダ | ドラマ | 『{孤独|こどく}のグルメ』 | Drama em que 五郎さん entra sozinho em restaurantes e refeitórios pelo Japão e aproveita a refeição. |\n\n' +
+        'Atrativos principais: 婷婷 fala que os personagens são interessantes e que dá para aproveitar além do jogo; ノン fala da melodia bonita e variedade de gêneros; アマンダ fala do jeito de comer de 五郎さん e da variedade dos lugares e comidas.',
+    },
+    {
+      title: 'Gramática ➌➍: って N e conectores',
+      bodyPt:
+        '**S（普通形）って N** explica informalmente que tipo de coisa algo é. Em registro formal/escrito, a forma equivalente é **という**.\n\n' +
+        '- `{歴史|れきし}を{変|か}えようとする{敵|てき}と{戦|たたか}うってゲームです。`\n' +
+        '- `{食事|しょくじ}を{楽|たの}しむってドラマです。`\n\n' +
+        '**Conectores para listar razões e atrativos:**\n\n' +
+        '- `それに、ゲームだけじゃなくて、{舞台|ぶたい}とかミュージカルとかアニメとかもあって、いろいろ{楽|たの}しめるんです。`\n' +
+        '- `あと、{毎回|まいかい}バラエティがあって、{楽|たの}しいです。`\n\n' +
+        'A nota também reúne conectores como だから, それで／で, でも, それと, ただ, それから, そうしたら／そしたら.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {共感|きょうかん}, {主人公|しゅじんこう}, {映像|えいぞう}, {原作|げんさく}, {歌詞|かし}, {俳優|はいゆう}, お{腹|なか}, {深|ふか}み, {演|えん}じる, {探|さが}す, {死|し}ぬ.\n\n' +
+        '**Frases-modelo:**\n' +
+        '1. あのマンガはストーリーに{深|ふか}みがあったし、{共感|きょうかん}もできた。\n' +
+        '2. {原作|げんさく}では、{主人公|しゅじんこう}は{死|し}んでしまいます。\n' +
+        '3. イケメン{俳優|はいゆう}がゲームのキャラクターを{演|えん}じています。\n' +
+        '4. {映像|えいぞう}が、すばらしかったです。\n' +
+        '5. 『{孤独|こどく}のグルメ』を{見|み}ていると、お{腹|なか}がすきます。\n' +
+        '6. いい{曲|きょく}だったので、{歌詞|かし}を{探|さが}して{歌|うた}ってみました。',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**マンガを読む:** apps de mangá para smartphone/tablet permitem ler capítulos grátis, assistir anúncios ou esperar para continuar. Comentários curtos de leitores ajudam a aprender vocabulário real de opinião.\n\n' +
+        '**オノマトペ:** expressões de som, movimento, estado e sentimento. A lição mostra ワンワン, ピューピュー, ごろごろ, ピカピカ, イライラ, わくわく, ガーン, ザーザー, ポツポツ, しとしと e シーン.\n\n' +
+        '**ふりがなの特別な用法:** em mangás e letras, furigana pode indicar leitura criativa ou sentido extra, não apenas a leitura padrão do kanji.\n\n' +
+        '**『SLAM DUNK』 e mangás de esporte:** SLAM DUNK foi publicado de 1990 a 1996 e mostra basquete, crescimento do protagonista e dramas dos personagens. A lição também cita obras esportivas como 『キャプテン翼』, 『ハイキュー!!』 e 『テニスの王子様』.\n\n' +
+        '**マンガのメディア展開:** mangás populares viram anime, filmes, dramas live-action, peças, musicais e até kabuki. O termo 2.5次元 é usado para adaptações de mundos 2D em palco real.\n\n' +
+        '**『刀剣乱舞 ONLINE』:** jogo online iniciado em 2015 em que espadas japonesas viram personagens. A popularidade também levou fãs a museus e santuários com espadas reais.\n\n' +
+        '**米津玄師:** singer-songwriter japonês que começou na internet como ハチ, passou a atuar com seu nome real em 2012 e é conhecido por músicas como 『Lemon』.\n\n' +
+        '**グルメドラマ e 『孤独のグルメ』:** dramas centrados em comida muitas vezes mostram restaurantes reais e podem motivar 聖地巡礼, visitas aos locais que aparecem nas obras.',
+    },
+  ],
+  groups: [lesson2Group],
+  audios: attachScripts(2, L2_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
+  lesson2,
 ]
 
 export const irodoriPreIntermediate: Level = {
