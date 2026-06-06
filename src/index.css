@@ -96,7 +96,7 @@ ruby rt { font-size: 0.58em; color: var(--ink-soft); font-weight: 400; }
 }
 .nav-dd-btn:hover { background: var(--surface-2); }
 .nav-dd-menu {
-  position: absolute; top: 100%; left: 0; min-width: 230px; margin-top: 6px;
+  position: absolute; top: 100%; left: 0; width: max-content; min-width: 230px; max-width: min(92vw, 420px); margin-top: 6px;
   background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
   box-shadow: var(--shadow); padding: 6px; z-index: 30; display: flex; flex-direction: column; gap: 2px;
 }
@@ -110,7 +110,7 @@ ruby rt { font-size: 0.58em; color: var(--ink-soft); font-weight: 400; }
 }
 .nav-dd-item {
   display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 8px;
-  font-size: 14px; font-weight: 600; color: var(--ink);
+  font-size: 14px; font-weight: 600; color: var(--ink); white-space: nowrap;
 }
 .nav-dd-item:hover { background: var(--surface-2); text-decoration: none; }
 .nav-dd-item.active { color: var(--accent-ink); background: var(--accent-soft); }

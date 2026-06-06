@@ -18,6 +18,20 @@ const LEVEL_BG: Record<string, string> = {
 }
 const LEVEL_SHORT: Record<string, string> = { N5: 'N5', N4: 'N4', starter: '入門' }
 
+function levelTitleForCard(lv: Level) {
+  if (lv.courseId === 'irodori') {
+    return lv.titlePt.replace(/^Irodori\s*[—-]\s*/, '')
+  }
+  return lv.titlePt
+}
+
+function levelDescriptionForCard(lv: Level) {
+  if (lv.courseId === 'irodori') {
+    return lv.descriptionPt.replace(/\s+do Irodori\s+\(いろどり: Japonês para a vida no Japão, da Japan Foundation\)/g, '')
+  }
+  return lv.descriptionPt
+}
+
 export function Home() {
   const answers = useAnswers()
   const srs = useSrs()
@@ -28,13 +42,14 @@ export function Home() {
   function LevelCard({ lv }: { lv: Level }) {
     const p = levelProgress(lv, answers)
     const isJlpt = lv.courseId === 'jlpt'
+    const description = levelDescriptionForCard(lv)
     return (
       <Link to={`/nivel/${lv.id}`} className="card level-card" style={{ background: LEVEL_BG[lv.id] }}>
         <div className="lv" style={{ fontFamily: isJlpt ? undefined : 'var(--ja-font)' }}>
           {LEVEL_SHORT[lv.id] ?? lv.id}
         </div>
-        <h3>{lv.titlePt}</h3>
-        <p>{lv.descriptionPt.slice(0, 120)}{lv.descriptionPt.length > 120 ? '…' : ''}</p>
+        <h3>{levelTitleForCard(lv)}</h3>
+        <p>{description.slice(0, 120)}{description.length > 120 ? '…' : ''}</p>
         <div className="prog" style={{ marginTop: 14 }}>
           <div className="progress accent"><i style={{ width: `${p.pct}%` }} /></div>
           <div className="prog-label">

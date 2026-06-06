@@ -6,6 +6,14 @@ import {
 import { courses } from '../data'
 import { SectionIcon } from './icons'
 
+function levelTitleForMenu(title: string, levelId: string, courseId: string) {
+  const withoutCourse = title.replace(/^(JLPT|Irodori)\s*[—-]\s*/, '').replace(/^JLPT\s*/, '')
+  if (courseId === 'jlpt') {
+    return `${levelId} — ${withoutCourse.replace(new RegExp(`^${levelId}\\s*[—-]\\s*`), '')}`
+  }
+  return withoutCourse
+}
+
 function Dropdown({
   label,
   icon,
@@ -50,7 +58,7 @@ export function Layout() {
           <Link to="/" className="brand">
             <span className="logo">あ</span>
             <span>
-              駅のfalaGENKI
+              falaGENKIの駅
               <small>Japonês para brasileiros</small>
             </span>
           </Link>
@@ -61,7 +69,7 @@ export function Layout() {
               <span className="nav-dd-head">Níveis</span>
               {jlpt.levels.map((l) => (
                 <NavLink key={l.id} to={`/nivel/${l.id}`} className="nav-dd-item">
-                  {l.id} — {l.titlePt.replace(/^JLPT\s*/, '').replace(new RegExp(`^${l.id}\\s*—\\s*`), '')}
+                  {levelTitleForMenu(l.titlePt, l.id, l.courseId)}
                 </NavLink>
               ))}
               <div className="nav-dd-sep" />
@@ -76,7 +84,7 @@ export function Layout() {
               <span className="nav-dd-head">Níveis</span>
               {irodori.levels.map((l) => (
                 <NavLink key={l.id} to={`/nivel/${l.id}`} className="nav-dd-item">
-                  <SectionIcon id="reading" size={15} /> {l.titlePt.replace(/^Irodori — /, '')}
+                  <SectionIcon id="reading" size={15} /> {levelTitleForMenu(l.titlePt, l.id, l.courseId)}
                 </NavLink>
               ))}
               <div className="nav-dd-sep" />
@@ -93,7 +101,7 @@ export function Layout() {
         <Outlet />
       </main>
       <footer className="app-footer">
-        駅のfalaGENKI · Material baseado nos exames de exemplo da JLPT (N5/N4) e no curso Irodori da
+        falaGENKIの駅 · Material baseado nos exames de exemplo da JLPT (N5/N4) e no curso Irodori da
         Japan Foundation. Conteúdo para estudo, com explicações em português do Brasil. Suas
         respostas ficam salvas apenas no seu navegador.
       </footer>

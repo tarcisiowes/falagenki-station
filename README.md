@@ -1,4 +1,4 @@
-# falagenki-station — 駅のfalaGENKI
+# falagenki-station — falaGENKIの駅
 
 Plataforma de estudo de japonês para falantes de **português do Brasil**, construída a partir
 dos materiais oficiais de exemplo do exame **JLPT** (níveis N5 e N4). Sem login: todo o progresso
