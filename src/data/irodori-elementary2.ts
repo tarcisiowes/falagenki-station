@@ -2867,7 +2867,138 @@ const lesson12: Section = {
   audios: attachScripts(12, L12_SCRIPTS),
 }
 
-// ---- Lições 13-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 13: いろいろな資料を展示してあります (tópico さまざまなサービス) --------------
+const lesson13Group: ExerciseGroup = {
+  id: 'iro-e2-l13',
+  title: 'いろいろな資料を展示してあります',
+  subtitlePt: 'Ouvir e entender o que há num local e o que se pode fazer · entender explicações de uso de academia e locais públicos · perguntar regras na biblioteca · ler o guia de uso · entender placas',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l13-1', number: 1, prompt: 'O título 「いろいろな{資料|しりょう}を{展示|てんじ}して[[あります]]」 — 「V-てあります」 indica:', choices: [{ n: 1, text: 'estado resultante de algo feito de propósito (vários materiais estão expostos)' }, { n: 2, text: 'algo que está acontecendo agora' }, { n: 3, text: 'uma obrigação' }, { n: 4, text: 'algo que vai acontecer' }], answer: 1, translationPt: 'Há vários materiais expostos.', explanationPt: 'V-てある = estado resultante de uma ação proposital. {展示|てんじ}してある (está exposto), {置|お}いてある (está colocado). (文法ノート ❷)' },
+    { id: 'iro-e2-l13-2', number: 2, prompt: 'Que local público esta ilustração mostra?', image: `${IMG}/Z_13_1_02_toshokan.png`, imageAlt: 'biblioteca com estantes de livros', choices: [{ n: 1, text: '{図書館|としょかん} — biblioteca' }, { n: 2, text: '{美術館|びじゅつかん} — museu de arte' }, { n: 3, text: '{体育館|たいいくかん} — ginásio' }, { n: 4, text: 'プール — piscina' }], answer: 1, explanationPt: '{図書館|としょかん} = biblioteca. {本|ほん}だけじゃなくて、CDやDVDもただで{借|か}りられる. (Atividade 1)' },
+    { id: 'iro-e2-l13-3', number: 3, prompt: 'Que local esta ilustração mostra?', image: `${IMG}/Z_13_1_03_bijutsukan.png`, imageAlt: 'museu de arte com quadros nas paredes', choices: [{ n: 1, text: '{美術館|びじゅつかん} — museu de arte' }, { n: 2, text: '{図書館|としょかん} — biblioteca' }, { n: 3, text: '{体育館|たいいくかん} — ginásio' }, { n: 4, text: 'ホール — salão de eventos' }], answer: 1, explanationPt: '{美術館|びじゅつかん} = museu de arte ({絵|え}が{展示|てんじ}してある). (Atividade 1)' },
+    { id: 'iro-e2-l13-4', number: 4, prompt: 'Que local esta ilustração mostra (objetos antigos expostos)?', image: `${IMG}/Z_13_1_04_minzokushiryookan.png`, imageAlt: 'museu de objetos folclóricos/etnográficos', choices: [{ n: 1, text: '{民族|みんぞく}{資料館|しりょうかん} — museu etnográfico (de materiais folclóricos)' }, { n: 2, text: '{図書館|としょかん} — biblioteca' }, { n: 3, text: 'プール — piscina' }, { n: 4, text: 'スポーツジム — academia' }], answer: 1, explanationPt: '{民族|みんぞく}{資料館|しりょうかん}: {昔|むかし}{使|つか}っていた{道具|どうぐ}など、いろいろな{資料|しりょう}を{展示|てんじ}してある. (Atividade 1)' },
+    { id: 'iro-e2-l13-5', number: 5, prompt: 'Que local esta ilustração mostra?', image: `${IMG}/Z_13_1_05_taiikukan.png`, imageAlt: 'ginásio esportivo coberto', choices: [{ n: 1, text: '{体育館|たいいくかん} — ginásio esportivo' }, { n: 2, text: 'プール — piscina' }, { n: 3, text: '{美術館|びじゅつかん} — museu de arte' }, { n: 4, text: 'ホール — salão' }], answer: 1, explanationPt: '{体育館|たいいくかん} = ginásio (esportes em ambiente fechado). (Atividade 1)' },
+    { id: 'iro-e2-l13-6', number: 6, prompt: 'Que local esta ilustração mostra?', image: `${IMG}/Z_13_1_06_supootsujimu.png`, imageAlt: 'academia de ginástica com aparelhos', choices: [{ n: 1, text: 'スポーツジム — academia de ginástica' }, { n: 2, text: '{図書館|としょかん} — biblioteca' }, { n: 3, text: '{入浴|にゅうよく}{施設|しせつ} — casa de banho' }, { n: 4, text: 'プラネタリウム — planetário' }], answer: 1, explanationPt: 'スポーツジム = academia. Regras de uso: {室内|しつない}のくつ、はじめての{人|ひと}はオリエンテーション. (Atividade 1 / Seção 2)' },
+    { id: 'iro-e2-l13-7', number: 7, prompt: 'Que local esta ilustração mostra?', image: `${IMG}/Z_13_1_07_puuru.png`, imageAlt: 'piscina pública', choices: [{ n: 1, text: 'プール — piscina' }, { n: 2, text: '{入浴|にゅうよく}{施設|しせつ} — casa de banho (onsen)' }, { n: 3, text: '{体育館|たいいくかん} — ginásio' }, { n: 4, text: 'ホール — salão' }], answer: 1, explanationPt: 'プール = piscina. (Atividade 1)' },
+    { id: 'iro-e2-l13-8', number: 8, prompt: 'Que local esta ilustração mostra (banho público)?', image: `${IMG}/Z_13_1_08_ofuro.png`, imageAlt: 'casa de banho público / onsen', choices: [{ n: 1, text: 'お{風呂|ふろ}／{入浴|にゅうよく}{施設|しせつ} — casa de banho público (onsen)' }, { n: 2, text: 'プール — piscina' }, { n: 3, text: '{図書館|としょかん} — biblioteca' }, { n: 4, text: '{美術館|びじゅつかん} — museu de arte' }], answer: 1, explanationPt: '{入浴|にゅうよく}{施設|しせつ}: お{風呂|ふろ}に{入|はい}るときは{別|べつ}の{券|けん}, タオル/シャンプーは{有料|ゆうりょう}, {休憩室|きゅうけいしつ}は{無料|むりょう}. (Seção 2, 13-09)' },
+    { id: 'iro-e2-l13-9', number: 9, prompt: 'Que local esta ilustração mostra (projeção de estrelas)?', image: `${IMG}/Z_13_1_10_puranetariumu.png`, imageAlt: 'planetário', choices: [{ n: 1, text: 'プラネタリウム — planetário' }, { n: 2, text: '{美術館|びじゅつかん} — museu de arte' }, { n: 3, text: 'プール — piscina' }, { n: 4, text: 'インフォメーションコーナー — balcão de informações' }], answer: 1, explanationPt: 'プラネタリウム = planetário. Outros: ホール, {物産|ぶっさん}コーナー, インフォメーションコーナー. (Atividade 1)' },
+    { id: 'iro-e2-l13-10', number: 10, prompt: '「この{建物|たてもの}は、2{年前|ねんまえ}に[[{建|た}てられました]]」 — essa forma (受身/passivo) é usada porque:', choices: [{ n: 1, text: 'o prédio é o sujeito (não importa quem o construiu): «o prédio foi construído há 2 anos»' }, { n: 2, text: 'a pessoa construiu o prédio ela mesma' }, { n: 3, text: 'é uma ordem' }, { n: 4, text: 'é algo que vai acontecer' }], answer: 1, explanationPt: 'Passivo 受身④ p/ coisas como sujeito: {建|た}てる→{建|た}てられる ({建物|たてもの}が{建|た}てられた), {作|つく}る→{作|つく}られる (1970{年|ねん}に{作|つく}られた{作品|さくひん}). (文法ノート ❶)' },
+    { id: 'iro-e2-l13-11', number: 11, prompt: '「パンフレットが{置|お}いて[[あります]]」「{資料|しりょう}を{展示|てんじ}して[[あります]]」 — a diferença entre 「〜てある」 e 「〜ている」:', choices: [{ n: 1, text: '〜てある = estado resultante de algo feito DE PROPÓSITO por alguém (foi colocado/exposto e continua assim)' }, { n: 2, text: '〜てある indica uma ação em andamento' }, { n: 3, text: '〜てある indica o futuro' }, { n: 4, text: '〜てある é uma ordem' }], answer: 1, explanationPt: 'V-てある: alguém fez de propósito e o resultado permanece. {置|お}いてある, {展示|てんじ}してある, {書|か}いてある, {貼|は}ってある. (文法ノート ❷)' },
+    { id: 'iro-e2-l13-12', number: 12, prompt: '「{本|ほん}[[だけじゃなくて]]、CDとか、DVDもただで{借|か}りられます」 — 「〜だけじゃなくて」 significa:', choices: [{ n: 1, text: 'não só ~ (mas também): não só livros, mas também CDs e DVDs' }, { n: 2, text: 'apenas ~ (e nada mais)' }, { n: 3, text: 'em vez de ~' }, { n: 4, text: 'por causa de ~' }], answer: 1, explanationPt: '〜だけじゃなくて、〜も = «não só ~, mas também ~». {本|ほん}だけじゃなくて、CD・DVDも. ただで = de graça. (文法ノート ❸)' },
+    { id: 'iro-e2-l13-13', number: 13, prompt: '聴解 13-03 (さくらトピアの案内): Rick é levado pela colega Nogawa pela 文化施設. O que se diz sobre o local?', context: '{野川|のがわ}：この「さくらトピア」は、2{年前|ねんまえ}にできた{新|あたら}しい{施設|しせつ}なんです。…インフォメーションコーナーでは、{市内|しない}の{施設|しせつ}や{観光地|かんこうち}のパンフレットがもらえますよ。', choices: [{ n: 1, text: 'É uma instalação cultural nova (de 2 anos atrás); no balcão de informações dá para pegar folhetos de locais e pontos turísticos da cidade.' }, { n: 2, text: 'É um prédio muito antigo, prestes a fechar.' }, { n: 3, text: 'É uma loja de departamentos.' }, { n: 4, text: 'É um hospital.' }], answer: 1, explanationPt: 'さくらトピア = {文化施設|ぶんかしせつ}, 2{年前|ねんまえ}にできた; インフォメーションコーナーでパンフレットがもらえる. (聴解 13-03)' },
+    { id: 'iro-e2-l13-14', number: 14, prompt: '聴解 13-03: o que se pode fazer na biblioteca da さくらトピア?', context: '{図書館|としょかん}には、{外国語|がいこくご}の{本|ほん}もあります。{本|ほん}だけじゃなくて、CDやDVDも、ただで{借|か}りられます。', choices: [{ n: 1, text: 'Há livros em língua estrangeira; e não só livros — CDs e DVDs também podem ser emprestados de graça.' }, { n: 2, text: 'Só se pode ler no local, nada é emprestado.' }, { n: 3, text: 'É preciso pagar para entrar.' }, { n: 4, text: 'Só há livros em japonês.' }], answer: 1, explanationPt: '{外国語|がいこくご}の{本|ほん}もある; {本|ほん}だけじゃなくてCD・DVDもただで{借|か}りられる (❸). (聴解 13-03)' },
+    { id: 'iro-e2-l13-15', number: 15, prompt: '聴解 13-07 (スポーツジムの受付): que regra/orientação aparece para quem usa a academia pela 1ª vez?', context: 'はじめての{方|かた}には、オリエンテーションがあります。{室内|しつない}{用|よう}のくつが{必要|ひつよう}です。', choices: [{ n: 1, text: 'Quem usa pela primeira vez passa por uma orientação; é preciso ter um tênis de uso interno.' }, { n: 2, text: 'Pode entrar de qualquer calçado, sem regra.' }, { n: 3, text: 'A academia é só para sócios profissionais.' }, { n: 4, text: 'Não há limite de horário nem orientação.' }], answer: 1, explanationPt: 'ジム: はじめての{人|ひと}はオリエンテーション; {室内|しつない}{用|よう}のくつが{必要|ひつよう}; {料金|りょうきん}・{利用時間|りようじかん}の{規則|きそく}あり. (聴解 13-07)' },
+    { id: 'iro-e2-l13-16', number: 16, prompt: '聴解 13-09 (入浴施設の受付): que regras de uso aparecem?', context: 'お{風呂|ふろ}に{入|はい}るときは、{別|べつ}の{券|けん}（チケット）を{買|か}ってください。タオルやシャンプーは{売店|ばいてん}で{販売|はんばい}しています。{休憩室|きゅうけいしつ}は{無料|むりょう}でご{利用|りよう}いただけます。', choices: [{ n: 1, text: 'Para o banho compra-se um bilhete à parte; toalha/xampu são vendidos (à parte); a sala de descanso é gratuita.' }, { n: 2, text: 'Tudo é gratuito, inclusive toalha e xampu.' }, { n: 3, text: 'Não se pode usar a sala de descanso.' }, { n: 4, text: 'É preciso reservar com 1 mês de antecedência.' }], answer: 1, explanationPt: '{入浴|にゅうよく}{施設|しせつ}: お{風呂|ふろ}は{別|べつ}の{券|けん}; タオル/シャンプーは{有料|ゆうりょう} ({売店|ばいてん}); {休憩室|きゅうけいしつ}は{無料|むりょう}. (聴解 13-09)' },
+    { id: 'iro-e2-l13-17', number: 17, prompt: 'O que é necessário fazer para usar o computador/impressora da biblioteca (聴解 13-10)?', image: `${IMG}/Z_13_3_04_riyookaado.png`, imageAlt: 'cartão de usuário da biblioteca', choices: [{ n: 1, text: 'Fazer um {利用者|りようしゃ}カード (cartão de usuário) com nome, endereço e telefone; uso de até 60 min, impressão grátis até 10 folhas.' }, { n: 2, text: 'Pagar 600 ienes por hora.' }, { n: 3, text: 'Não é permitido usar computador na biblioteca.' }, { n: 4, text: 'Só professores podem usar.' }], answer: 1, explanationPt: '{利用者|りようしゃ}カードを{作|つく}る ({名前|なまえ}/{住所|じゅうしょ}/{電話番号|でんわばんごう}); インターネット・プリンターが{無料|むりょう}; 1{人|り}60{分|ぷん}まで; プリントアウトは10{枚|まい}まで{無料|むりょう}. (聴解 13-10)' },
+    { id: 'iro-e2-l13-18', number: 18, prompt: 'Vocabulário de locais públicos: 「{図書館|としょかん}／{美術館|びじゅつかん}／{民族|みんぞく}{資料館|しりょうかん}／{体育館|たいいくかん}／{入浴|にゅうよく}{施設|しせつ}」 são:', choices: [{ n: 1, text: 'biblioteca / museu de arte / museu etnográfico / ginásio esportivo / casa de banho' }, { n: 2, text: 'livraria / cinema / zoológico / estádio / piscina' }, { n: 3, text: 'escola / teatro / aquário / academia / sauna' }, { n: 4, text: 'prefeitura / galeria / planetário / quadra / spa' }], answer: 1, explanationPt: '{図書館|としょかん}, {美術館|びじゅつかん}, {民族|みんぞく}{資料館|しりょうかん}, {体育館|たいいくかん}, {入浴|にゅうよく}{施設|しせつ} (também ホール, スポーツジム, プール, プラネタリウム, {物産|ぶっさん}コーナー). (Atividade 1)' },
+    { id: 'iro-e2-l13-19', number: 19, prompt: 'Vocabulário de uso de serviços: 「{料金|りょうきん}／{利用|りよう}する／{規則|きそく}／{無料|むりょう}／{展示|てんじ}する」 significam:', choices: [{ n: 1, text: 'tarifa/preço / utilizar / regra / gratuito / expor (em exposição)' }, { n: 2, text: 'desconto / reservar / horário / pago / vender' }, { n: 3, text: 'multa / alugar / mapa / caro / guardar' }, { n: 4, text: 'recibo / devolver / fila / barato / consertar' }], answer: 1, explanationPt: '{料金|りょうきん} (tarifa), {利用|りよう}する (usar), {規則|きそく} (regra), {無料|むりょう} (grátis), {展示|てんじ}する (expor). Também: {自由|じゆう}に, {建|た}てる, {歴史|れきし}. (Atividades)' },
+    { id: 'iro-e2-l13-20', number: 20, prompt: 'Os kanji 「{市|し}／{料金|りょうきん}／{図書館|としょかん}／{道具|どうぐ}／{必要|ひつよう}（な)」 lêem-se:', choices: [{ n: 1, text: 'し (cidade/município) / りょうきん (tarifa) / としょかん (biblioteca) / どうぐ (instrumento/utensílio) / ひつよう (necessário)' }, { n: 2, text: 'いち / りょうきん / としょかん / みちぐ / ひつよう' }, { n: 3, text: 'し / りょうごん / ずしょかん / どうぐ / ひっよう' }, { n: 4, text: 'し / りょうきん / としょかん / どうぐ / ひすよう' }], answer: 1, explanationPt: '{市|し}, {料金|りょうきん}, {図書館|としょかん}, {道具|どうぐ}, {必要|ひつよう}（な). (漢字のことば)' },
+    { id: 'iro-e2-l13-21', number: 21, prompt: 'Os kanji 「{借|か}りる／{返|かえ}す／{開|あ}く／{閉|し}まる／{利用|りよう}する」 lêem-se:', choices: [{ n: 1, text: 'かりる (pegar emprestado) / かえす (devolver) / あく (abrir) / しまる (fechar) / りようする (utilizar)' }, { n: 2, text: 'かりる / かえす / ひらく / とじる / りようする' }, { n: 3, text: 'しゃくる / へんす / あく / しまる / りようする' }, { n: 4, text: 'かりる / かえす / あく / しまる / さようする' }], answer: 1, explanationPt: '{借|か}りる (emprestar-se), {返|かえ}す (devolver), {開|あ}く (abrir), {閉|し}まる (fechar — {夜|よる}8{時|じ}に{閉|し}まる), {利用|りよう}する. (漢字のことば)' },
+    { id: 'iro-e2-l13-22', number: 22, prompt: 'Resumo: para descrever o que há e o que se pode fazer num local público, a lição usa:', choices: [{ n: 1, text: '〜が{展示|てんじ}してあります／〜が{置|お}いてあります (estado), 〜が{建|た}てられました (passivo), 〜だけじゃなくて〜も' }, { n: 2, text: 'もう{始|はじ}まりましたか' }, { n: 3, text: '〜てみてもいいですか' }, { n: 4, text: '〜なくちゃならない' }], answer: 1, explanationPt: 'Descrever local/serviço: V-てある (❷) + 受身 ({建|た}てられた ❶) + 〜だけじゃなくて (❸). (文法ノート ❶❷❸)' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 13 (situação + falas-chave citadas; não verbatim)
+const L13_SCRIPTS: Record<string, ScriptItem[]> = {
+  '13-03': [
+    {
+      label: '会話 — 文化施設「さくらトピア」の案内 (13-03) · resumo',
+      setupJa: 'リックさんが、{同僚|どうりょう}の{野川|のがわ}さんに、{市|し}の{文化施設|ぶんかしせつ}「さくらトピア」を{案内|あんない}してもらっています。',
+      setupPt: 'Resumo: Nogawa mostra a Rick o centro cultural «Sakura Topia» (novo, de 2 anos atrás) e explica o que há em cada andar: balcão de informações, biblioteca (livros, CDs e DVDs grátis) e museu etnográfico.',
+      lines: [
+        { speaker: '野川', ja: 'この「さくらトピア」は、2{年前|ねんまえ}にできた{新|あたら}しい{施設|しせつ}なんです。', pt: 'Este «Sakura Topia» é uma instalação nova, de 2 anos atrás.' },
+        { speaker: '野川', ja: '{本|ほん}だけじゃなくて、CDやDVDも、ただで{借|か}りられますよ。', pt: 'Não só livros — CDs e DVDs também podem ser emprestados de graça.' },
+      ],
+    },
+  ],
+  '13-07': [
+    {
+      label: '① スポーツジムの利用説明 (13-07) · resumo',
+      setupJa: '{公共|こうきょう}{施設|しせつ}を、はじめて{利用|りよう}する{人|ひと}が、{利用方法|りようほうほう}の{説明|せつめい}を{聞|き}いています。',
+      setupPt: 'Resumo: explicação de como usar a academia a quem vai pela primeira vez — passa por uma orientação e precisa de tênis de uso interno.',
+      lines: [
+        { speaker: '係', ja: 'はじめての{方|かた}には、オリエンテーションがあります。{室内|しつない}{用|よう}のくつが{必要|ひつよう}です。', pt: 'Quem vem pela primeira vez passa por uma orientação. É preciso ter um tênis de uso interno.' },
+      ],
+    },
+  ],
+  '13-09': [
+    {
+      label: '③ 入浴施設の受付 (13-09) · resumo',
+      setupPt: 'Resumo: na casa de banho, o banho exige um bilhete à parte; toalha e xampu são vendidos no quiosque; a sala de descanso é gratuita.',
+      lines: [
+        { speaker: '係', ja: 'お{風呂|ふろ}に{入|はい}るときは、{別|べつ}の{券|けん}を{買|か}ってください。{休憩室|きゅうけいしつ}は{無料|むりょう}でご{利用|りよう}いただけます。', pt: 'Para entrar no banho, compre um bilhete à parte. A sala de descanso é de uso gratuito.' },
+      ],
+    },
+  ],
+  '13-10': [
+    {
+      label: '④ 図書館の利用者カード (13-10) · resumo',
+      setupPt: 'Resumo: para usar internet e impressora da biblioteca, faz-se um cartão de usuário (nome, endereço, telefone); uso livre de até 60 min, impressão grátis até 10 folhas.',
+      lines: [
+        { speaker: '係', ja: 'インターネットとプリンターが{無料|むりょう}で{使|つか}えます。まず{利用者|りようしゃ}カードを{作|つく}りますので、お{名前|なまえ}やご{住所|じゅうしょ}を{書|か}いてください。', pt: 'Internet e impressora são de uso gratuito. Primeiro vamos fazer um cartão de usuário, então escreva seu nome e endereço.' },
+        { speaker: '係', ja: '1{人|り}60{分|ぷん}までお{使|つか}いください。プリントアウトは{無料|むりょう}ですが、1{人|り}10{枚|まい}までとなっています。', pt: 'Use por até 60 minutos por pessoa. A impressão é gratuita, mas até 10 folhas por pessoa.' },
+      ],
+    },
+  ],
+}
+
+const lesson13: Section = {
+  id: 'lesson-13',
+  level: 'elementary2',
+  titleJa: '第13課 いろいろな資料を展示してあります',
+  titlePt: 'Lição 13 — Há vários materiais expostos',
+  summaryPt:
+    'Serviços diversos · ao ser guiado por um local, entender o que há ali e o que se pode fazer (2年前にできた／本だけじゃなくてCDも借りられる), entender explicações de uso de academia e locais públicos (はじめての方にはオリエンテーション), perguntar regras na biblioteca (利用者カード／60分まで) e entender placas e o guia de uso.',
+  studyNotes: [
+    {
+      title: 'Tópico: Serviços diversos (さまざまなサービス)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ao ser guiado por um local, ouvir e entender o que há ali e o que se pode fazer.\n' +
+        '- Ouvir e entender explicações de como usar a academia e outros locais públicos.\n' +
+        '- Na biblioteca, perguntar sobre uso e regras e entender as respostas.\n' +
+        '- Ler o guia de uso da biblioteca em japonês simples para estrangeiros e entender.\n' +
+        '- Ver e entender placas como “proibido fotografar” em estabelecimentos.\n\n' +
+        '💡 公共施設: ホール, {図書館|としょかん}, {美術館|びじゅつかん}, {民族|みんぞく}{資料館|しりょうかん}, {体育館|たいいくかん}, スポーツジム, プール, {入浴|にゅうよく}{施設|しせつ}, プラネタリウム.',
+    },
+    {
+      title: 'Passivo 受身④ — coisas como sujeito (➊)',
+      bodyPt:
+        'Quando a **coisa** é o sujeito (não importa quem fez), usa-se o passivo:\n\n' +
+        '- `この{建物|たてもの}は、2{年前|ねんまえ}に{建|た}てられました` (este prédio foi construído há 2 anos).\n' +
+        '- `この{作品|さくひん}は、1970{年|ねん}に{作|つく}られました`, `{昔|むかし}から{使|つか}われています`.\n\n' +
+        '🔧 {建|た}てる→{建|た}てられる, {作|つく}る→{作|つく}られる, {使|つか}う→{使|つか}われる. (文法ノート ❶)',
+    },
+    {
+      title: 'V-てある — estado resultante (➋)',
+      bodyPt:
+        '**V-てある** descreve o **estado** deixado por uma ação proposital:\n\n' +
+        '- `{資料|しりょう}が{展示|てんじ}してあります` (os materiais estão expostos), `パンフレットが{置|お}いてあります`, `{紙|かみ}に{書|か}いてあります`.\n\n' +
+        '⚠️ V-てある (alguém preparou, e fica assim) ≠ V-ている (em andamento) e ≠ passivo. (文法ノート ❷)',
+    },
+    {
+      title: '〜だけじゃなくて — não só ~ (➌)',
+      bodyPt:
+        '**〜だけじゃなくて、〜も** = “não só ~, mas também ~”:\n\n' +
+        '- `{本|ほん}だけじゃなくて、CDとか、DVDも、ただで{借|か}りられます`.\n' +
+        '- `{日本人|にほんじん}だけじゃなくて、{外国人|がいこくじん}も{利用|りよう}できます`.\n\n' +
+        '💡 ただ／{無料|むりょう} = de graça. (文法ノート ❸)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Locais:** ホール, {図書館|としょかん}, {美術館|びじゅつかん}, {民族|みんぞく}{資料館|しりょうかん}, {体育館|たいいくかん}, スポーツジム, プール, {入浴|にゅうよく}{施設|しせつ}, インフォメーションコーナー, プラネタリウム, {物産|ぶっさん}コーナー.\n\n' +
+        '**Uso/regras:** {利用|りよう}する, {利用者|りようしゃ}カード, {料金|りょうきん}, {規則|きそく}, {無料|むりょう}/{有料|ゆうりょう}, {自由|じゆう}に, オリエンテーション, {展示|てんじ}する, {借|か}りる/{返|かえ}す, {休憩室|きゅうけいしつ}, {歴史|れきし}, {建|た}てる.\n\n' +
+        '**Kanji da lição:** {市|し}, {料金|りょうきん}, {図書館|としょかん}, {道具|どうぐ}, 〜{点|てん}, {必要|ひつよう}（な), {借|か}りる, {返|かえ}す, {開|あ}く, {閉|し}まる, {利用|りよう}する.',
+    },
+  ],
+  groups: [lesson13Group],
+  audios: attachScripts(13, L13_SCRIPTS),
+}
+
+// ---- Lições 14-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -2888,13 +3019,7 @@ const sections: Section[] = [
   lesson11,
   lesson12,
   // Tópico 7 — Serviços diversos (さまざまなサービス)
-  scaffold(13, 'Serviços diversos', 'いろいろな資料を展示してあります', 'Há vários materiais expostos', [
-    'Ao ser guiado por um local, ouvir e entender o que há ali e o que se pode fazer.',
-    'Ouvir e entender explicações de como usar a academia e outros locais públicos.',
-    'Na biblioteca, perguntar sobre uso e regras e entender as respostas.',
-    'Ler o guia de uso da biblioteca em japonês simples para estrangeiros e entender.',
-    'Ver e entender placas como “proibido fotografar” em estabelecimentos.',
-  ]),
+  lesson13,
   scaffold(14, 'Serviços diversos', '前髪は、もう少し短く切ってもらえますか？', 'Pode cortar a franja um pouco mais curta?', [
     'Ao usar serviços como entrega (takkyūbin) ou lavanderia, ouvir a explicação e entender como usar.',
     'Ler o aviso de ausência dos Correios e entender como pedir a reentrega.',
