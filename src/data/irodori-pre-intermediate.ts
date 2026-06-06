@@ -174,6 +174,63 @@ const lesson3Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 4: エアコンが壊れたみたいなんですが… (tópico どこに住む？) ----
+const lesson4Group: ExerciseGroup = {
+  id: 'iro-pi-l4',
+  title: 'エアコンが壊れたみたいなんですが…',
+  subtitlePt: 'Problemas em casa · reclamações de moradia · falar sobre onde mora',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l4-1', number: 1, prompt: 'Qual é o tópico desta lição?', choices: [{ n: 1, text: 'どこに住む？ (onde morar?)' }, { n: 2, text: '毎日の食事' }, { n: 3, text: '旅行に行こう' }, { n: 4, text: '地域のイベント' }], answer: 1, explanationPt: 'A Lição 4 continua o tópico どこに住む？, agora com problemas da moradia, reclamações e experiência de morar em determinado lugar.' },
+    { id: 'iro-pi-l4-2', number: 2, prompt: 'Pergunta de abertura: 今、どんなところに住んでいますか？ その部屋／家は、気に入っていますか？', choices: [{ n: 1, text: 'Que tipo de lugar você mora agora? Gosta desse quarto/casa?' }, { n: 2, text: 'Que comida japonesa você prefere?' }, { n: 3, text: 'Que esporte você pratica?' }, { n: 4, text: 'Que filme você viu ontem?' }], answer: 1, explanationPt: 'A abertura conecta a lição à experiência pessoal de moradia.' },
+    { id: 'iro-pi-l4-3', number: 3, prompt: 'Can-do 10: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'relatar a um gerente/imobiliária um problema da casa e receber uma providência' }, { n: 2, text: 'pedir opinião sobre filme' }, { n: 3, text: 'cancelar convite por mensagem' }, { n: 4, text: 'ler cardápio de restaurante' }], answer: 1, explanationPt: 'A atividade 1 é sobre 家に関する問題: reportar problemas como vazamento, ar-condicionado quebrado, ninho de vespa ou chave perdida.' },
+    { id: 'iro-pi-l4-4', number: 4, prompt: 'Vocabulário: エアコンが壊れた significa:', image: `${IMG}/ZZ_04_1_01_eakon.png`, imageAlt: 'ar-condicionado quebrado', choices: [{ n: 1, text: 'o ar-condicionado quebrou' }, { n: 2, text: 'a janela quebrou' }, { n: 3, text: 'a chave sumiu' }, { n: 4, text: 'a água não sai' }], answer: 1, explanationPt: 'エアコン = ar-condicionado; 壊れた = quebrou.' },
+    { id: 'iro-pi-l4-5', number: 5, prompt: 'Vocabulário: 換気扇が動かない significa:', image: `${IMG}/ZZ_04_1_02_kankisen.png`, imageAlt: 'exaustor que não funciona', choices: [{ n: 1, text: 'o exaustor/ventilador de ventilação não funciona' }, { n: 2, text: 'o banheiro entupiu' }, { n: 3, text: 'a água está vazando' }, { n: 4, text: 'a luz não acende' }], answer: 1, explanationPt: '換気扇 é o ventilador/exaustor de ventilação; 動かない = não se move/não funciona.' },
+    { id: 'iro-pi-l4-6', number: 6, prompt: 'Vocabulário: 水漏れしている significa:', image: `${IMG}/ZZ_04_1_08_mizumore.png`, imageAlt: 'vazamento de água', choices: [{ n: 1, text: 'está vazando água' }, { n: 2, text: 'não há água quente' }, { n: 3, text: 'o Wi-Fi não conecta' }, { n: 4, text: 'há uma vespa no quarto' }], answer: 1, explanationPt: '水漏れ = vazamento de água.' },
+    { id: 'iro-pi-l4-7', number: 7, prompt: 'Vocabulário: 鍵をなくした significa:', image: `${IMG}/ZZ_04_1_09_kagi.png`, imageAlt: 'chave perdida', choices: [{ n: 1, text: 'perdi a chave' }, { n: 2, text: 'a janela quebrou' }, { n: 3, text: 'a luz não acende' }, { n: 4, text: 'há fezes de pássaro' }], answer: 1, explanationPt: '鍵 = chave; なくした = perdi.' },
+    { id: 'iro-pi-l4-8', number: 8, prompt: '聴解 04-03: qual é o problema?', image: `${IMG}/ZZ_04_1_08_mizumore.png`, imageAlt: 'vazamento embaixo da pia', choices: [{ n: 1, text: '洗面台が水漏れしている' }, { n: 2, text: 'エアコンが壊れた' }, { n: 3, text: 'ハチの巣ができた' }, { n: 4, text: '鍵をなくした' }], answer: 1, explanationPt: 'カリモフ・ハサン relata que a água está vazando embaixo da pia: 洗面台の下から、水が漏れている.' },
+    { id: 'iro-pi-l4-9', number: 9, prompt: '聴解 04-03: o que a pessoa deve fazer depois?', choices: [{ n: 1, text: 'esperar o técnico no quarto' }, { n: 2, text: 'procurar uma empresa por conta própria' }, { n: 3, text: 'esperar o proprietário na frente do quarto' }, { n: 4, text: 'ir ao shopping perguntar' }], answer: 1, explanationPt: 'A imobiliária diz: 修理業者を手配しますので、お部屋でお待ちください.' },
+    { id: 'iro-pi-l4-10', number: 10, prompt: '聴解 04-04: qual é a situação do ar-condicionado?', choices: [{ n: 1, text: 'mesmo no modo resfriamento, não sai ar frio' }, { n: 2, text: 'o controle remoto foi roubado' }, { n: 3, text: 'a água quente não sai' }, { n: 4, text: 'o Wi-Fi cai à noite' }], answer: 1, explanationPt: 'バヤルマー explica: 冷房にしても、冷たい空気が出てこないんです.' },
+    { id: 'iro-pi-l4-11', number: 11, prompt: '聴解 04-04: o que acontecerá depois?', choices: [{ n: 1, text: 'a pessoa deve esperar contato do prestador de serviço' }, { n: 2, text: 'ela deve comprar outro aparelho imediatamente' }, { n: 3, text: 'o proprietário levará uma chave reserva' }, { n: 4, text: 'ela deve ir à delegacia' }], answer: 1, explanationPt: 'A fala diz: あとで業者から連絡がありますので、少しお待ちください.' },
+    { id: 'iro-pi-l4-12', number: 12, prompt: '聴解 04-05: onde está o ninho de vespa?', image: `${IMG}/ZZ_04_1_11_hachinosu.png`, imageAlt: 'ninho de vespa na varanda', choices: [{ n: 1, text: 'na varanda, no teto' }, { n: 2, text: 'embaixo da pia' }, { n: 3, text: 'no shopping' }, { n: 4, text: 'na cozinha' }], answer: 1, explanationPt: 'ソヌミ diz que o ninho está no teto da varanda: ベランダの天井です.' },
+    { id: 'iro-pi-l4-13', number: 13, prompt: '聴解 04-05: por que a imobiliária não resolve diretamente?', choices: [{ n: 1, text: 'porque ninhos em varandas de quartos ficam sob responsabilidade do morador' }, { n: 2, text: 'porque não há vespas no Japão' }, { n: 3, text: 'porque o quarto não existe' }, { n: 4, text: 'porque o morador deve mudar de bairro' }], answer: 1, explanationPt: 'A empresa explica que áreas comuns seriam responsabilidade dela, mas a varanda de cada quarto fica a cargo do入居者.' },
+    { id: 'iro-pi-l4-14', number: 14, prompt: '聴解 04-06: quando ヴィレアック acha que perdeu a chave?', choices: [{ n: 1, text: 'quando foi fazer compras' }, { n: 2, text: 'quando pegou ônibus' }, { n: 3, text: 'durante uma mudança' }, { n: 4, text: 'quando foi ao restaurante' }], answer: 1, explanationPt: 'Ele diz: 買い物に行ったときになくしたみたいです.' },
+    { id: 'iro-pi-l4-15', number: 15, prompt: '聴解 04-06: o que o proprietário fará?', choices: [{ n: 1, text: 'levará a chave reserva e a pessoa deve esperar na frente do quarto' }, { n: 2, text: 'mandará procurar uma empresa de vespas' }, { n: 3, text: 'pedirá o número de telefone do técnico' }, { n: 4, text: 'fará uma reunião com todos os moradores' }], answer: 1, explanationPt: '榎本 diz que tem uma 合鍵 e vai levá-la; pede para esperar na frente do quarto.' },
+    { id: 'iro-pi-l4-16', number: 16, prompt: '「エアコンが壊れたみたいなんですが……」 usa みたい para:', choices: [{ n: 1, text: 'dizer uma conclusão provável baseada no que percebeu, evitando afirmar de forma absoluta' }, { n: 2, text: 'dar uma ordem direta' }, { n: 3, text: 'marcar futuro decidido' }, { n: 4, text: 'indicar obrigação legal' }], answer: 1, translationPt: 'Parece que o ar-condicionado quebrou...', explanationPt: 'S（普通形）みたいだ expressa julgamento baseado no que se viu, sentiu ou experimentou.' },
+    { id: 'iro-pi-l4-17', number: 17, prompt: 'Qual frase usa corretamente 「S（普通形）みたいだ」?', choices: [{ n: 1, text: '買い物に行ったときになくしたみたいです。' }, { n: 2, text: '買い物に行ったときになくしたのみたいです。' }, { n: 3, text: '買い物に行ったときになくすみたいしました。' }, { n: 4, text: '買い物に行ったときになくしたみたいをです。' }], answer: 1, explanationPt: 'みたい vem depois da forma comum. A frase da lição é 買い物に行ったときになくしたみたいです.' },
+    { id: 'iro-pi-l4-18', number: 18, prompt: 'Na fala da imobiliária, お電話番号／ご都合 usam お／ご para:', choices: [{ n: 1, text: 'mostrar respeito ao falar de algo ligado ao ouvinte' }, { n: 2, text: 'marcar passado' }, { n: 3, text: 'criar voz passiva' }, { n: 4, text: 'contar objetos' }], answer: 1, explanationPt: 'A nota gramatical explica que お／ご + N expressa respeito ao ouvinte, especialmente em atendimento ao cliente.' },
+    { id: 'iro-pi-l4-19', number: 19, prompt: '「お部屋でお待ちください」 e 「業者に直接ご連絡ください」 são exemplos de:', choices: [{ n: 1, text: 'お／ご + V + ください, pedido ou instrução polida' }, { n: 2, text: 'Nでしたっけ？' }, { n: 3, text: 'Sなら' }, { n: 4, text: 'V-てもらえたら' }], answer: 1, explanationPt: 'お待ちください e ご連絡ください são formas mais polidas que V-てください.' },
+    { id: 'iro-pi-l4-20', number: 20, prompt: 'Can-do 11: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'explicar uma situação de barulho/problema em apartamento e transmitir uma reclamação à administração' }, { n: 2, text: 'ler notícia de esporte' }, { n: 3, text: 'fazer reserva de viagem' }, { n: 4, text: 'descrever um personagem de mangá' }], answer: 1, explanationPt: 'A atividade 2 trabalha como comunicar uma reclamação sobre ruído ou regras de convivência.' },
+    { id: 'iro-pi-l4-21', number: 21, prompt: 'Vocabulário: 共用スペースに物を置く significa:', image: `${IMG}/ZZ_04_2_04_mono.png`, imageAlt: 'objetos colocados em espaço comum', choices: [{ n: 1, text: 'colocar coisas em espaço comum' }, { n: 2, text: 'jogar lixo no dia errado' }, { n: 3, text: 'fumar na varanda' }, { n: 4, text: 'correr no corredor' }], answer: 1, explanationPt: '共用スペース = espaço comum; 物を置く = colocar objetos.' },
+    { id: 'iro-pi-l4-22', number: 22, prompt: 'Vocabulário: ベランダでたばこを吸う significa:', image: `${IMG}/ZZ_04_2_06_tabako.png`, imageAlt: 'pessoa fumando na varanda', choices: [{ n: 1, text: 'fumar na varanda' }, { n: 2, text: 'cozinhar com cheiro forte' }, { n: 3, text: 'estacionar bicicleta sem permissão' }, { n: 4, text: 'ter pet fazendo xixi' }], answer: 1, explanationPt: 'ベランダ = varanda; たばこを吸う = fumar.' },
+    { id: 'iro-pi-l4-23', number: 23, prompt: '会話 04-14: do que カタリーナ reclama?', image: `${IMG}/ZZ_04_2_01_oto.png`, imageAlt: 'barulho de máquina de lavar', choices: [{ n: 1, text: 'a pessoa do andar de cima lava roupa tarde da noite' }, { n: 2, text: 'o ar-condicionado dela quebrou' }, { n: 3, text: 'há um ninho de vespa na escada' }, { n: 4, text: 'a água quente não sai' }], answer: 1, explanationPt: 'Ela diz: 上の階の部屋の人が、夜遅い時間に洗濯をするんです.' },
+    { id: 'iro-pi-l4-24', number: 24, prompt: '会話 04-14: segundo カタリーナ, com que frequência e em que horário isso acontece?', choices: [{ n: 1, text: 'todos os dias, por volta das 23h, às vezes passando de meia-noite' }, { n: 2, text: 'uma vez por mês, às 6h' }, { n: 3, text: 'só aos domingos, às 15h' }, { n: 4, text: 'sempre às 8h' }], answer: 1, explanationPt: 'Ela explica: 毎日, だいたい夜の11時から, ときどき12時を過ぎることもあります.' },
+    { id: 'iro-pi-l4-25', number: 25, prompt: '会話 04-14: por que カタリーナ está incomodada?', choices: [{ n: 1, text: 'quer dormir cedo, mas o barulho da máquina de lavar a impede de dormir' }, { n: 2, text: 'quer se mudar para uma casa maior' }, { n: 3, text: 'não sabe onde fica a imobiliária' }, { n: 4, text: 'perdeu a chave no shopping' }], answer: 1, explanationPt: 'Ela diz: 早く寝たいのに、洗濯機の音がうるさくて、眠れなくなります.' },
+    { id: 'iro-pi-l4-26', number: 26, prompt: 'Estratégia 04-15: 「あのう、すみません、ちょっと相談があるんですが……」 é usado para:', choices: [{ n: 1, text: 'fazer uma abertura/preâmbulo antes de entrar no assunto delicado' }, { n: 2, text: 'encerrar a conversa' }, { n: 3, text: 'recusar ajuda' }, { n: 4, text: 'confirmar endereço' }], answer: 1, explanationPt: 'A estratégia da lição é 前置きをする: preparar a conversa antes de falar da reclamação.' },
+    { id: 'iro-pi-l4-27', number: 27, prompt: 'Can-do 12: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'receber uma reclamação da administração e explicar sua situação enquanto responde ao problema' }, { n: 2, text: 'escrever comentário de mangá' }, { n: 3, text: 'preencher anúncio de imóvel' }, { n: 4, text: 'fazer convite para esporte' }], answer: 1, explanationPt: 'A atividade 3 mostra o outro lado: マテオ recebe uma reclamação sobre barulho.' },
+    { id: 'iro-pi-l4-28', number: 28, prompt: '会話 04-17: o que o gerente veio comunicar a マテオ?', choices: [{ n: 1, text: 'houve reclamação de que ele usa a máquina de lavar à noite e o som é barulhento' }, { n: 2, text: 'ele precisa renovar contrato de aluguel' }, { n: 3, text: 'a chave dele foi encontrada' }, { n: 4, text: 'a varanda precisa ser limpa' }], answer: 1, explanationPt: '管理人 diz que outros moradores reclamaram do barulho da máquina de lavar usada à noite.' },
+    { id: 'iro-pi-l4-29', number: 29, prompt: '会話 04-17: por que マテオ costuma lavar roupa às 23h?', choices: [{ n: 1, text: 'sai para o trabalho às 8h, volta por volta das 21h depois de jantar, fala online com família/amigos e só depois lava' }, { n: 2, text: 'porque a lavanderia só abre às 23h' }, { n: 3, text: 'porque o gerente mandou' }, { n: 4, text: 'porque ele não trabalha de manhã' }], answer: 1, explanationPt: 'Ele explica sua rotina: sai às 8h, volta por volta das 9 da noite, fala pela internet e então lava a roupa.' },
+    { id: 'iro-pi-l4-30', number: 30, prompt: '会話 04-17: o que マテオ decide fazer?', choices: [{ n: 1, text: 'voltar um pouco mais cedo e lavar roupa imediatamente, terminando até as 21h' }, { n: 2, text: 'continuar lavando às 23h' }, { n: 3, text: 'parar de trabalhar' }, { n: 4, text: 'mudar para outro país' }], answer: 1, explanationPt: 'Ele diz que voltará um pouco mais cedo e lavará logo; o gerente pede que termine até as 9 da noite.' },
+    { id: 'iro-pi-l4-31', number: 31, prompt: '「遅い時間に音を出されると困る人もいます」 é exemplo de:', choices: [{ n: 1, text: '迷惑の受身: passiva usada quando a ação de alguém incomoda outra pessoa' }, { n: 2, text: 'Nみたいだ' }, { n: 3, text: 'お＋N' }, { n: 4, text: 'V-ることになった' }], answer: 1, translationPt: 'Há pessoas que ficam incomodadas quando fazem barulho tarde da noite.', explanationPt: 'A nota chama isso de 迷惑の受身, passiva de incômodo.' },
+    { id: 'iro-pi-l4-32', number: 32, prompt: 'Qual frase também usa 迷惑の受身 corretamente?', choices: [{ n: 1, text: '隣の人にたばこを吸われて、困りました。' }, { n: 2, text: '隣の人をたばこに吸いました。' }, { n: 3, text: '隣の人がたばこを吸うみたいください。' }, { n: 4, text: '隣の人にたばこを吸ってもらえたらです。' }], answer: 1, explanationPt: 'A ação de outra pessoa (たばこを吸う) é expressa do ponto de vista de quem sofreu incômodo: 隣の人にたばこを吸われた.' },
+    { id: 'iro-pi-l4-33', number: 33, prompt: 'Can-do 13: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'falar a um amigo, com algum detalhe, sobre conforto, ambiente e pontos bons/ruins da própria moradia' }, { n: 2, text: 'ligar para emergência médica' }, { n: 3, text: 'anunciar evento esportivo' }, { n: 4, text: 'preparar receita de festa' }], answer: 1, explanationPt: 'A atividade 4 é sobre falar do lugar onde se mora: 住み心地 e 周りの環境.' },
+    { id: 'iro-pi-l4-34', number: 34, prompt: '聴解 04-20: ウェンシン mora onde?', choices: [{ n: 1, text: 'em apartamento, morando sozinho' }, { n: 2, text: 'em dormitório da empresa' }, { n: 3, text: 'em casa antiga com amigos' }, { n: 4, text: 'em hotel' }], answer: 1, explanationPt: 'Ele diz: アパートで一人暮らしをしています.' },
+    { id: 'iro-pi-l4-35', number: 35, prompt: '聴解 04-20: quais são os pontos bons da moradia de ウェンシン?', choices: [{ n: 1, text: 'é livre/confortável e a localização é conveniente' }, { n: 2, text: 'o aluguel é de graça e o quarto é grande' }, { n: 3, text: 'o inverno é quente e a família mora perto' }, { n: 4, text: 'não há comércio perto' }], answer: 1, explanationPt: 'O gabarito marca 自由で快適 e 場所が便利.' },
+    { id: 'iro-pi-l4-36', number: 36, prompt: '聴解 04-20: qual é o ponto ruim para ウェンシン?', choices: [{ n: 1, text: 'o quarto é pequeno e ele não consegue chamar muitos amigos' }, { n: 2, text: 'o colega de quarto acorda às 4h' }, { n: 3, text: 'o aquecimento não funciona bem' }, { n: 4, text: 'a empresa fica longe' }], answer: 1, explanationPt: 'Ele diz: 部屋がせまい; 友だちをたくさん呼べないから、ちょっとつまらない.' },
+    { id: 'iro-pi-l4-37', number: 37, prompt: '聴解 04-21: シティ mora onde?', choices: [{ n: 1, text: 'no dormitório da empresa' }, { n: 2, text: 'em apartamento sozinho' }, { n: 3, text: 'em uma casa antiga com três amigos' }, { n: 4, text: 'em casa própria nova' }], answer: 1, explanationPt: 'Ela responde: 私は、会社の寮です.' },
+    { id: 'iro-pi-l4-38', number: 38, prompt: '聴解 04-21: quais são os pontos bons para シティ?', choices: [{ n: 1, text: 'não custa muito dinheiro e o deslocamento ao trabalho é fácil' }, { n: 2, text: 'há jardim grande e vizinhos prestativos' }, { n: 3, text: 'ela pode chamar muitos amigos' }, { n: 4, text: 'não precisa considerar colega de quarto' }], answer: 1, explanationPt: 'Ela fala de 家賃 barato/móveis que não precisa comprar e 通勤が楽 por ficar perto da empresa.' },
+    { id: 'iro-pi-l4-39', number: 39, prompt: '聴解 04-21: qual é o ponto ruim para シティ?', choices: [{ n: 1, text: 'o ritmo de vida da colega de quarto não combina: dorme por volta das 21h e acorda às 4h' }, { n: 2, text: 'o quarto é pequeno demais para amigos' }, { n: 3, text: 'não há ônibus perto' }, { n: 4, text: 'o ar-condicionado está quebrado' }], answer: 1, explanationPt: 'O gabarito marca 同じ部屋の人と生活リズムが合わない.' },
+    { id: 'iro-pi-l4-40', number: 40, prompt: '聴解 04-22: クリスティン mora onde?', choices: [{ n: 1, text: 'com dois amigos, em uma casa antiga independente' }, { n: 2, text: 'sozinha em apartamento novo' }, { n: 3, text: 'no dormitório da empresa' }, { n: 4, text: 'num quarto de hotel perto do trabalho' }], answer: 1, explanationPt: 'Ela diz: 友だちと3人で、古い一戸建てに住んでます.' },
+    { id: 'iro-pi-l4-41', number: 41, prompt: '聴解 04-22: quais são os pontos bons para クリスティン?', choices: [{ n: 1, text: 'dá para viver com espaço e os vizinhos são gentis' }, { n: 2, text: 'o quarto é pequeno e barato' }, { n: 3, text: 'o colega de quarto dorme cedo' }, { n: 4, text: 'não há jardim' }], answer: 1, explanationPt: 'Ela fala que pode viver com calma/espaço, cultivar legumes e fazer churrasco; também diz que os vizinhos foram gentis no terremoto.' },
+    { id: 'iro-pi-l4-42', number: 42, prompt: '聴解 04-22: qual é o ponto ruim para クリスティン?', choices: [{ n: 1, text: 'no inverno faz frio, porque os cômodos são amplos e o aquecimento não funciona bem' }, { n: 2, text: 'não há lugar para lavar roupa' }, { n: 3, text: 'o aluguel é caro demais para o dormitório' }, { n: 4, text: 'não há arrozais perto' }], answer: 1, explanationPt: 'Ela diz: 冬が寒い; 部屋が広いから、暖房があまり効かない.' },
+    { id: 'iro-pi-l4-43', number: 43, prompt: 'Kanji da lição: 洗面台／洗濯機／換気扇 lêem-se:', choices: [{ n: 1, text: 'せんめんだい／せんたくき／かんきせん' }, { n: 2, text: 'あらいめんだい／せんたくき／こうきせん' }, { n: 3, text: 'せんめんだい／せんたくぎ／かんきおうぎ' }, { n: 4, text: 'せんめんたい／せんだくき／かんきせん' }], answer: 1, explanationPt: 'Esses kanji aparecem em problemas de casa: pia/lavatório, máquina de lavar e exaustor.' },
+    { id: 'iro-pi-l4-44', number: 44, prompt: 'Kanji da lição: 一戸建て／庭／通勤／バス停 lêem-se:', choices: [{ n: 1, text: 'いっこだて／にわ／つうきん／バスてい' }, { n: 2, text: 'いちとけん／てい／つうがく／バスどめ' }, { n: 3, text: 'いっこだて／にわ／つうぎん／バスてい' }, { n: 4, text: 'いえだて／にわ／こうきん／バスてい' }], answer: 1, explanationPt: '一戸建て = casa independente; 庭 = jardim; 通勤 = deslocamento ao trabalho; バス停 = ponto de ônibus.' },
+    { id: 'iro-pi-l4-45', number: 45, prompt: 'TIPS: ao ter um problema na casa alugada no Japão, qual é a recomendação principal?', choices: [{ n: 1, text: 'contatar primeiro o proprietário ou a administradora, em vez de consertar por conta própria' }, { n: 2, text: 'sempre contratar qualquer panfleto recebido no correio' }, { n: 3, text: 'mexer na instalação sozinho e pedir reembolso depois' }, { n: 4, text: 'ignorar o contrato e a 入居のしおり' }], answer: 1, explanationPt: 'A TIPS alerta que consertar sem passar pelo proprietário/administradora pode gerar cobrança ou não reembolso; também recomenda cuidado com empresas mal-intencionadas.' },
+    { id: 'iro-pi-l4-46', number: 46, prompt: 'TIPS: sobre reclamações de moradia, qual atitude é recomendada?', choices: [{ n: 1, text: 'evitar confronto direto quando possível e procurar a administradora/proprietário para mediar' }, { n: 2, text: 'ir diretamente brigar com o vizinho' }, { n: 3, text: 'continuar o comportamento sem ouvir a reclamação' }, { n: 4, text: 'mudar sem avisar ninguém' }], answer: 1, explanationPt: 'A TIPS diz que, em conflitos entre moradores, hoje é comum a administradora ou o proprietário intermediar para evitar problemas maiores.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -710,6 +767,348 @@ const L3_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L4_SCRIPTS: Record<string, ScriptItem[]> = {
+  '04-01': [
+    {
+      label: 'ことばの準備 - 家のトラブル (04-01)',
+      setupPt: 'Vocabulário de problemas da casa. Ouça olhando as ilustrações.',
+      lines: [
+        { speaker: '語彙', ja: 'エアコンが{壊|こわ}れた。', pt: 'O ar-condicionado quebrou.' },
+        { speaker: '語彙', ja: '{換気扇|かんきせん}が{動|うご}かない。', pt: 'O exaustor/ventilador de ventilação não funciona.' },
+        { speaker: '語彙', ja: '{窓|まど}が{割|わ}れた。', pt: 'A janela quebrou.' },
+        { speaker: '語彙', ja: '{電気|でんき}がつかない。', pt: 'A luz não acende.' },
+        { speaker: '語彙', ja: 'トイレがつまった。', pt: 'O vaso sanitário entupiu.' },
+        { speaker: '語彙', ja: '{水|みず}が{出|で}ない。', pt: 'A água não sai.' },
+        { speaker: '語彙', ja: 'お{湯|ゆ}が{出|で}ない。', pt: 'A água quente não sai.' },
+        { speaker: '語彙', ja: '{水漏|みずも}れしている。', pt: 'Está vazando água.' },
+        { speaker: '語彙', ja: '{鍵|かぎ}をなくした。', pt: 'Perdi a chave.' },
+        { speaker: '語彙', ja: 'Wi-Fiがつながらない。', pt: 'O Wi-Fi não conecta.' },
+        { speaker: '語彙', ja: 'ハチの{巣|す}ができた。', pt: 'Formou-se um ninho de vespa.' },
+        { speaker: '語彙', ja: '{鳥|とり}がフンをする。', pt: 'Pássaros fazem fezes.' },
+      ],
+    },
+  ],
+  '04-02': [
+    {
+      label: 'ことばの確認 - 家のトラブル (04-02)',
+      setupPt: 'Ouça e escolha a ilustração correspondente aos problemas da casa.',
+      lines: [
+        { speaker: '語彙', ja: 'お{湯|ゆ}が{出|で}ない。{鍵|かぎ}をなくした。トイレがつまった。Wi-Fiがつながらない。', pt: 'Não sai água quente. Perdi a chave. O vaso entupiu. O Wi-Fi não conecta.' },
+        { speaker: '語彙', ja: 'エアコンが{壊|こわ}れた。{水漏|みずも}れしている。{電気|でんき}がつかない。{換気扇|かんきせん}が{動|うご}かない。', pt: 'O ar-condicionado quebrou. Há vazamento. A luz não acende. O exaustor não funciona.' },
+      ],
+    },
+  ],
+  '04-03': [
+    {
+      label: '① 洗面台の水漏れ (04-03)',
+      setupPt: 'Uma pessoa liga para a imobiliária por causa de vazamento na pia.',
+      lines: [
+        { speaker: 'A', ja: 'はい、サンシャイン{不動産|ふどうさん}です。', pt: 'Sim, aqui é a Sunshine Imobiliária.' },
+        { speaker: 'B', ja: 'あ、{南町|みなみまち}のアイワアパートに{住|す}んでいる{者|もの}です。{洗面台|せんめんだい}が{水漏|みずも}れしているんですが……。', pt: 'Ah, sou morador do Aiwa Apartment, em Minamimachi. A pia/lavatório está vazando...' },
+        { speaker: 'A', ja: 'かしこまりました。{水漏|みずも}れですね。{部屋番号|へやばんごう}とご{契約者様|けいやくしゃさま}のお{名前|なまえ}をお{願|ねが}いいたします。', pt: 'Entendido. Vazamento, certo. Por favor, o número do quarto e o nome do titular do contrato.' },
+        { speaker: 'B', ja: '102{号室|ごうしつ}のカリモフ・ハサンです。', pt: 'Sou Karimov Hasan, do quarto 102.' },
+        { speaker: 'A', ja: 'ありがとうございます。{洗面台|せんめんだい}の{水漏|みずも}れとのことですが、どのような{状態|じょうたい}でしょうか。', pt: 'Obrigado. Sobre o vazamento da pia, em que estado está?' },
+        { speaker: 'B', ja: 'えっと、{洗面台|せんめんだい}の{下|した}から、{水|みず}が{漏|も}れているんです。', pt: 'Bem, está vazando água por baixo da pia.' },
+        { speaker: 'A', ja: 'わかりました。では、{修理業者|しゅうりぎょうしゃ}を{手配|てはい}しますので、お{部屋|へや}でお{待|ま}ちください。ご{都合|つごう}の{悪|わる}いお{時間|じかん}はありますか？', pt: 'Entendi. Então vamos providenciar uma empresa de reparo, por favor aguarde no seu quarto. Há algum horário que não seja conveniente?' },
+        { speaker: 'B', ja: 'いつでも、だいじょうぶです。', pt: 'Qualquer horário está bom.' },
+        { speaker: 'A', ja: 'ありがとうございます。それでは、よろしくお{願|ねが}いいたします。', pt: 'Obrigado. Contamos com sua compreensão.' },
+      ],
+    },
+  ],
+  '04-04': [
+    {
+      label: '② エアコンが壊れた (04-04)',
+      setupPt: 'Bayarmaa liga para relatar problema com o ar-condicionado.',
+      lines: [
+        { speaker: 'A', ja: 'はい、リビングしろくまです。', pt: 'Sim, aqui é a Living Shirokuma.' },
+        { speaker: 'B', ja: 'あ、おはようございます。{夢|ゆめ}が{丘市|おかし}{虹ヶ原町|にじがはらまち}の{大森|おおもり}ハイツ101{号室|ごうしつ}のバヤルマーと{申|もう}しますが。', pt: 'Bom dia. Sou Bayarmaa, do quarto 101 do Omori Heights, em Nijigaharamachi, cidade de Yumegaoka.' },
+        { speaker: 'A', ja: 'はい、おはようございます。', pt: 'Sim, bom dia.' },
+        { speaker: 'B', ja: 'あの、エアコンが{壊|こわ}れたみたいなんですが……。', pt: 'Bem, parece que o ar-condicionado quebrou...' },
+        { speaker: 'A', ja: 'えーと、エアコンはどのような{状態|じょうたい}ですか？', pt: 'Certo, em que estado está o ar-condicionado?' },
+        { speaker: 'B', ja: '{冷房|れいぼう}にしても、{冷|つめ}たい{空気|くうき}が{出|で}てこないんです。', pt: 'Mesmo colocando no modo resfriamento, não sai ar frio.' },
+        { speaker: 'A', ja: 'わかりました。では、{修理業者|しゅうりぎょうしゃ}を{手配|てはい}します。あとで{業者|ぎょうしゃ}から{連絡|れんらく}がありますので、{少|すこ}しお{待|ま}ちください。お{電話番号|でんわばんごう}、お{願|ねが}いします。', pt: 'Entendi. Vamos providenciar uma empresa de reparo. O prestador entrará em contato depois, então aguarde um pouco. Por favor, seu número de telefone.' },
+        { speaker: 'B', ja: '000-1234-5678です。', pt: 'É 000-1234-5678.' },
+        { speaker: 'A', ja: 'はい、わかりました。', pt: 'Certo, entendi.' },
+      ],
+    },
+  ],
+  '04-05': [
+    {
+      label: '③ ハチの巣 (04-05)',
+      setupPt: 'Sonumi liga para a administradora por causa de um ninho de vespa na varanda.',
+      lines: [
+        { speaker: 'A', ja: 'はい、たけもり{賃貸|ちんたい}センターです。', pt: 'Sim, aqui é o Takemori Rental Center.' },
+        { speaker: 'B', ja: 'あの、すみません。コーポ{青空台|あおぞらだい}303{号室|ごうしつ}のソヌミです。えっと、{外|そと}にハチの{巣|す}ができているんですが……。', pt: 'Desculpe. Sou Sonumi, do quarto 303 do Corpo Aozoradai. Bem, há um ninho de vespa do lado de fora...' },
+        { speaker: 'A', ja: 'あー、ハチの{巣|す}ですか。この{季節|きせつ}、{多|おお}いんですよね。{巣|す}は、どこですか？', pt: 'Ah, ninho de vespa? Nesta época aparece bastante. Onde fica o ninho?' },
+        { speaker: 'B', ja: 'ベランダの{天井|てんじょう}です。', pt: 'No teto da varanda.' },
+        { speaker: 'A', ja: 'そうですか。えーと、{部屋|へや}のベランダにハチの{巣|す}ができてしまった{場合|ばあい}は、{申|もう}し{訳|わけ}ないんですが、{入居者|にゅうきょしゃ}さんに{対応|たいおう}をお{願|ねが}いしているんですよ。', pt: 'Entendi. Bem, quando aparece ninho de vespa na varanda do quarto, desculpe, mas pedimos que o morador cuide disso.' },
+        { speaker: 'B', ja: 'えっ、{私|わたし}がですか？', pt: 'Hã, eu?' },
+        { speaker: 'A', ja: 'はい。{廊下|ろうか}とか{階段|かいだん}とかの{共用部分|きょうようぶぶん}の{場合|ばあい}は、こちらで{対応|たいおう}するんですが、{各部屋|かくへや}のベランダは{入居者|にゅうきょしゃ}さんにお{願|ねが}いしているんです。', pt: 'Sim. Se fosse corredor ou escada, uma área comum, nós cuidaríamos; mas a varanda de cada quarto fica sob responsabilidade do morador.' },
+        { speaker: 'B', ja: 'じゃあ、どうすればいいですか？', pt: 'Então, o que devo fazer?' },
+        { speaker: 'A', ja: 'ハチの{巣|す}を{駆除|くじょ}してくれる{業者|ぎょうしゃ}がいろいろあるんですよ。ちょっと{探|さが}してみて、{業者|ぎょうしゃ}に{直接|ちょくせつ}ご{連絡|れんらく}ください。', pt: 'Há várias empresas que removem ninhos de vespa. Procure um pouco e entre em contato diretamente com uma empresa.' },
+        { speaker: 'B', ja: '{業者|ぎょうしゃ}を{自分|じぶん}で{探|さが}すんですね。わかりました。', pt: 'Então devo procurar a empresa por conta própria. Entendi.' },
+        { speaker: 'A', ja: 'すみません。{駆除|くじょ}が{終|お}わったら、お{手数|てすう}ですが、こちらにもお{電話|でんわ}ください。', pt: 'Desculpe. Quando a remoção terminar, por favor, ligue para nós também.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '04-06': [
+    {
+      label: '④ 鍵をなくした (04-06)',
+      setupPt: 'Villeac liga para o proprietário porque perdeu a chave.',
+      lines: [
+        { speaker: 'A', ja: 'はい、{榎本|えのもと}です。', pt: 'Sim, aqui é Enomoto.' },
+        { speaker: 'B', ja: 'あ、{大家|おおや}さんですか？ 203{号室|ごうしつ}のヴィレアックですけど。', pt: 'Ah, é o proprietário? Sou Villeac, do quarto 203.' },
+        { speaker: 'A', ja: 'ああ、ヴィレアックさん、こんにちは。どうしましたか？', pt: 'Ah, Villeac, boa tarde. O que aconteceu?' },
+        { speaker: 'B', ja: 'すみません、{部屋|へや}の{鍵|かぎ}をなくしてしまいました……。', pt: 'Desculpe, perdi a chave do quarto...' },
+        { speaker: 'A', ja: 'あー……、そうですか……。', pt: 'Ah... entendi...' },
+        { speaker: 'B', ja: '{本当|ほんとう}にすみません。{買|か}い{物|もの}に{行|い}ったときになくしたみたいです。{買|か}い{物|もの}していたショッピングモールとか、{近|ちか}くの{交番|こうばん}でも{聞|き}いてみたんですけど、ありませんでした。', pt: 'Sinto muito mesmo. Parece que perdi quando fui fazer compras. Perguntei no shopping onde estava fazendo compras e também no posto policial próximo, mas não estava lá.' },
+        { speaker: 'A', ja: 'わかりました。えーと、{今|いま}、どこにいますか？', pt: 'Entendi. Bem, onde você está agora?' },
+        { speaker: 'B', ja: 'アパートに{帰|かえ}って{来|き}ました。', pt: 'Voltei para o apartamento.' },
+        { speaker: 'A', ja: 'わかりました。こちらに{合鍵|あいかぎ}があるので、これから{持|も}って{行|い}きますね。{部屋|へや}の{前|まえ}で{待|ま}っててください。', pt: 'Entendi. Tenho uma chave reserva aqui, então vou levar agora. Espere na frente do quarto.' },
+        { speaker: 'B', ja: 'はい。ありがとうございます！', pt: 'Sim. Muito obrigado!' },
+      ],
+    },
+  ],
+  '04-07': [
+    {
+      label: '形に注目 - Sみたいだ (04-07)',
+      lines: [
+        { speaker: 'バヤルマー', ja: 'エアコンが{壊|こわ}れたみたいなんですが……。', pt: 'Parece que o ar-condicionado quebrou...' },
+        { speaker: 'ヴィレアック', ja: '{買|か}い{物|もの}に{行|い}ったときになくしたみたいです。', pt: 'Parece que perdi quando fui fazer compras.' },
+      ],
+    },
+  ],
+  '04-08': [
+    {
+      label: '形に注目 - お／ご + N (04-08)',
+      lines: [
+        { speaker: 'A', ja: 'お{電話番号|でんわばんごう}、お{願|ねが}いします。', pt: 'Por favor, seu número de telefone.' },
+        { speaker: 'A', ja: 'ご{都合|つごう}の{悪|わる}いお{時間|じかん}はありますか？', pt: 'Há algum horário inconveniente para você?' },
+      ],
+    },
+  ],
+  '04-09': [
+    {
+      label: '形に注目 - お／ご + Vください (04-09)',
+      lines: [
+        { speaker: 'A', ja: 'お{部屋|へや}でお{待|ま}ちください。', pt: 'Por favor, aguarde no seu quarto.' },
+        { speaker: 'A', ja: 'ちょっと{探|さが}してみて、{業者|ぎょうしゃ}に{直接|ちょくせつ}ご{連絡|れんらく}ください。', pt: 'Procure um pouco e entre em contato diretamente com uma empresa.' },
+        { speaker: 'A', ja: '{駆除|くじょ}が{終|お}わったら、お{手数|てすう}ですが、こちらにもお{電話|でんわ}ください。', pt: 'Quando a remoção terminar, por favor, ligue para nós também.' },
+      ],
+    },
+  ],
+  '04-10': [
+    {
+      label: '話すモデル① - 部屋のトラブルを連絡する (04-10)',
+      lines: [
+        { speaker: 'A', ja: 'はい、サンシャイン{不動産|ふどうさん}です。', pt: 'Sim, aqui é a Sunshine Imobiliária.' },
+        { speaker: 'B', ja: 'すみません、{虹ヶ原町|にじがはらまち}の{大森|おおもり}ハイツ101{号室|ごうしつ}のバヤルマーです。エアコンが{壊|こわ}れたみたいなんですが……。', pt: 'Desculpe, sou Bayarmaa, do quarto 101 do Omori Heights em Nijigaharamachi. Parece que o ar-condicionado quebrou...' },
+        { speaker: 'A', ja: 'どのような{状態|じょうたい}でしょうか？', pt: 'Em que estado está?' },
+        { speaker: 'B', ja: '{冷房|れいぼう}にしても、{冷|つめ}たい{空気|くうき}が{出|で}てこないんです。', pt: 'Mesmo colocando no modo resfriamento, não sai ar frio.' },
+        { speaker: 'A', ja: 'では、{業者|ぎょうしゃ}を{手配|てはい}します。あとで{業者|ぎょうしゃ}から{連絡|れんらく}がありますので、{少|すこ}しお{待|ま}ちください。', pt: 'Então vamos providenciar uma empresa. O prestador entrará em contato depois, aguarde um pouco.' },
+      ],
+    },
+  ],
+  '04-11': [
+    {
+      label: '話すモデル② - ハチの巣を連絡する (04-11)',
+      lines: [
+        { speaker: 'B', ja: 'すみません、{外|そと}にハチの{巣|す}ができているんですが……。', pt: 'Desculpe, há um ninho de vespa do lado de fora...' },
+        { speaker: 'A', ja: '{巣|す}はどこですか？', pt: 'Onde fica o ninho?' },
+        { speaker: 'B', ja: 'ベランダの{天井|てんじょう}です。', pt: 'No teto da varanda.' },
+        { speaker: 'A', ja: '{申|もう}し{訳|わけ}ないんですが、{業者|ぎょうしゃ}を{探|さが}して、{直接|ちょくせつ}ご{連絡|れんらく}ください。', pt: 'Desculpe, mas procure uma empresa e entre em contato diretamente.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '04-12': [
+    {
+      label: 'ことばの準備 - 家の苦情 (04-12)',
+      setupPt: 'Vocabulário de reclamações em apartamentos e condomínios.',
+      lines: [
+        { speaker: '語彙', ja: '{音|おと}がうるさい。ごみ{出|だ}しのルールを{守|まも}らない。{料理|りょうり}のにおいが{強|つよ}い。', pt: 'O som é barulhento. Não seguem as regras de descarte de lixo. O cheiro da comida é forte.' },
+        { speaker: '語彙', ja: '{共用|きょうよう}スペースに{物|もの}を{置|お}く。{自転車|じてんしゃ}を{勝手|かって}に{停|と}める。ベランダでたばこを{吸|す}う。', pt: 'Colocam coisas no espaço comum. Estacionam bicicleta sem permissão. Fumam na varanda.' },
+        { speaker: '語彙', ja: '{子|こ}どもが{走|はし}り{回|まわ}る。ペットがおしっこをする。', pt: 'Crianças correm de um lado para o outro. O pet faz xixi.' },
+      ],
+    },
+  ],
+  '04-13': [
+    {
+      label: 'ことばの確認 - 家の苦情 (04-13)',
+      setupPt: 'Ouça e escolha a ilustração correspondente à reclamação.',
+      lines: [
+        { speaker: '語彙', ja: '{共用|きょうよう}スペースに{物|もの}を{置|お}く。{音|おと}がうるさい。{自転車|じてんしゃ}を{勝手|かって}に{停|と}める。', pt: 'Colocar coisas no espaço comum. O som é barulhento. Estacionar bicicleta sem permissão.' },
+        { speaker: '語彙', ja: '{料理|りょうり}のにおいが{強|つよ}い。{子|こ}どもが{走|はし}り{回|まわ}る。ごみ{出|だ}しのルールを{守|まも}らない。ベランダでたばこを{吸|す}う。', pt: 'Cheiro forte de comida. Crianças correndo. Não cumprir regras de lixo. Fumar na varanda.' },
+      ],
+    },
+  ],
+  '04-14': [
+    {
+      label: '会話 - 洗濯機の音がうるさい (04-14)',
+      setupPt: 'カタリーナ, do quarto 102, liga para a sala do gerente para fazer uma reclamação.',
+      lines: [
+        { speaker: '管理人', ja: 'はい、{管理人室|かんりにんしつ}です。', pt: 'Sim, sala do gerente.' },
+        { speaker: 'カタリーナ', ja: 'あのう、すみません、ちょっと{相談|そうだん}があるんですが……。', pt: 'Bem, desculpe, eu gostaria de consultar uma coisa...' },
+        { speaker: '管理人', ja: 'あ、はい。どちら{様|さま}でしょうか。', pt: 'Ah, sim. Quem fala, por favor?' },
+        { speaker: 'カタリーナ', ja: 'あ、102{号室|ごうしつ}のカタリーナです。', pt: 'Ah, sou Catarina, do quarto 102.' },
+        { speaker: '管理人', ja: 'あ、カタリーナさんですね。どうしましたか？', pt: 'Ah, Catarina. O que aconteceu?' },
+        { speaker: 'カタリーナ', ja: 'えっと、{上|うえ}の{階|かい}の{部屋|へや}の{人|ひと}が、{夜遅|よるおそ}い{時間|じかん}に{洗濯|せんたく}をするんです。それで、ちょっと{困|こま}っています。', pt: 'Bem, a pessoa do quarto no andar de cima lava roupa tarde da noite. Isso está me causando problema.' },
+        { speaker: '管理人', ja: '{洗濯|せんたく}ですか。もう{少|すこ}しくわしく{教|おし}えてください。', pt: 'Lavar roupa? Conte-me um pouco mais, por favor.' },
+        { speaker: 'カタリーナ', ja: 'はい、2{階|かい}の{人|ひと}だと{思|おも}います。{毎日|まいにち}、{夜|よる}{洗濯|せんたく}をします。{時間|じかん}は、だいたい{夜|よる}の11{時|じ}から、ときどき12{時|じ}を{過|す}ぎることもあります。', pt: 'Sim, acho que é a pessoa do segundo andar. Lava roupa todas as noites. O horário é mais ou menos a partir das 23h, às vezes passa de meia-noite.' },
+        { speaker: '管理人', ja: 'ああ、それはちょっと{遅|おそ}いですね。', pt: 'Ah, isso é um pouco tarde.' },
+        { speaker: 'カタリーナ', ja: '{私|わたし}は、{早|はや}く{寝|ね}たいのに、{洗濯機|せんたくき}の{音|おと}がうるさくて、{眠|ねむ}れなくなります。', pt: 'Eu quero dormir cedo, mas o som da máquina de lavar é barulhento e acabo não conseguindo dormir.' },
+        { speaker: '管理人', ja: 'そうですか。', pt: 'Entendo.' },
+        { speaker: 'カタリーナ', ja: 'すみません、{注意|ちゅうい}してもらえませんか？', pt: 'Desculpe, poderia chamar a atenção da pessoa?' },
+        { speaker: '管理人', ja: 'どの{部屋|へや}の{人|ひと}かはわかりますか？', pt: 'Você sabe de qual quarto é a pessoa?' },
+        { speaker: 'カタリーナ', ja: 'それはわかりません。', pt: 'Isso eu não sei.' },
+        { speaker: '管理人', ja: 'わかりました。こちらでも{調|しら}べてみますね。わかったら、うるさいということを、{伝|つた}えます。', pt: 'Entendi. Vamos verificar aqui também. Se descobrirmos, transmitiremos que está barulhento.' },
+        { speaker: 'カタリーナ', ja: 'ありがとうございます。よろしくお{願|ねが}いします。', pt: 'Obrigada. Conto com você.' },
+      ],
+    },
+  ],
+  '04-15': [
+    {
+      label: 'ストラテジー - 前置きをする (04-15)',
+      lines: [
+        { speaker: 'カタリーナ', ja: 'あのう、すみません、ちょっと{相談|そうだん}があるんですが……。', pt: 'Bem, desculpe, eu gostaria de consultar uma coisa...' },
+        { speaker: '管理人', ja: 'あ、はい。', pt: 'Ah, sim.' },
+      ],
+    },
+  ],
+  '04-16': [
+    {
+      label: '話すモデル - 苦情を伝える (04-16)',
+      lines: [
+        { speaker: 'カタリーナ', ja: 'すみません。102{号室|ごうしつ}のカタリーナです。ちょっと{相談|そうだん}があるんですが……。', pt: 'Desculpe. Sou Catarina, do quarto 102. Gostaria de consultar uma coisa...' },
+        { speaker: '管理人', ja: 'あ、カタリーナさんですね。どうしましたか？', pt: 'Ah, Catarina. O que aconteceu?' },
+        { speaker: 'カタリーナ', ja: '{上|うえ}の{階|かい}の{部屋|へや}の{人|ひと}が、{夜遅|よるおそ}い{時間|じかん}に{洗濯|せんたく}をするんです。それで、ちょっと{困|こま}っています。', pt: 'A pessoa do quarto do andar de cima lava roupa tarde da noite. Isso está me causando problema.' },
+        { speaker: '管理人', ja: 'もう{少|すこ}しくわしく{教|おし}えてください。', pt: 'Conte-me mais um pouco, por favor.' },
+        { speaker: 'カタリーナ', ja: '2{階|かい}の{人|ひと}だと{思|おも}います。{毎日|まいにち}、{夜|よる}{洗濯|せんたく}をします。{時間|じかん}は、だいたい{夜|よる}の11{時|じ}から、ときどき12{時|じ}を{過|す}ぎることもあります。', pt: 'Acho que é a pessoa do segundo andar. Lava todas as noites, por volta das 23h, às vezes passa de meia-noite.' },
+        { speaker: 'カタリーナ', ja: '{私|わたし}は、{早|はや}く{寝|ね}たいのに、{洗濯機|せんたくき}の{音|おと}がうるさくて、{眠|ねむ}れなくなります。すみません、{注意|ちゅうい}してもらえませんか？', pt: 'Eu quero dormir cedo, mas o som da máquina me impede de dormir. Desculpe, poderia chamar a atenção da pessoa?' },
+        { speaker: '管理人', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'カタリーナ', ja: 'ありがとうございます。よろしくお{願|ねが}いします。', pt: 'Obrigada. Conto com você.' },
+      ],
+    },
+  ],
+  '04-17': [
+    {
+      label: '会話 - え、洗濯機がうるさいですか？ (04-17)',
+      setupPt: 'O gerente do prédio fala com Mateo, do quarto 202, sobre uma reclamação de barulho.',
+      lines: [
+        { speaker: '管理人', ja: '（ピンポン）', pt: '(Campainha)' },
+        { speaker: 'マテオ', ja: 'はい。', pt: 'Sim.' },
+        { speaker: '管理人', ja: 'こんばんは、マテオさん。{管理人|かんりにん}の{上野|うえの}です。', pt: 'Boa noite, Mateo. Sou Ueno, o gerente.' },
+        { speaker: 'マテオ', ja: 'あ、はい。', pt: 'Ah, sim.' },
+        { speaker: '管理人', ja: 'こんばんは。{夜分|やぶん}すみませんね。{実|じつ}は……この{階|かい}の{人|ひと}が、{毎日|まいにち}、{夜|よる}、{洗濯機|せんたくき}を{使|つか}って、{音|おと}がうるさいと、ほかの{住人|じゅうにん}の{方|かた}から{苦情|くじょう}があったんですよ。', pt: 'Boa noite. Desculpe vir tarde. Na verdade... houve reclamação de outros moradores de que alguém deste andar usa a máquina de lavar todas as noites e o som é barulhento.' },
+        { speaker: 'マテオ', ja: 'え、{洗濯機|せんたくき}がうるさいですか？', pt: 'Hã, a máquina de lavar é barulhenta?' },
+        { speaker: '管理人', ja: 'はい。{洗濯|せんたく}は、いつも{何時|なんじ}ごろしていますか？', pt: 'Sim. Que horas você costuma lavar roupa?' },
+        { speaker: 'マテオ', ja: '{洗濯|せんたく}は、だいたい11{時|じ}ごろにしていますけど、だめですか？', pt: 'Lavo mais ou menos por volta das 23h. Não pode?' },
+        { speaker: '管理人', ja: 'そうですね、11{時|じ}はちょっと{遅|おそ}いですね。', pt: 'Bem, 23h é um pouco tarde.' },
+        { speaker: 'マテオ', ja: 'そうですか。{私|わたし}は{仕事|しごと}があるので、{朝|あさ}8{時|じ}ごろに{家|いえ}を{出|で}て、{夜|よる}、{仕事|しごと}のあと、ご{飯|はん}を{食|た}べてから{家|いえ}に{帰|かえ}るので、だいたい9{時|じ}ごろに{帰|かえ}るんです。', pt: 'Entendo. Como trabalho, saio de casa por volta das 8h da manhã, e à noite, depois do trabalho, janto antes de voltar, então costumo chegar em casa por volta das 21h.' },
+        { speaker: 'マテオ', ja: 'それから{家族|かぞく}や{友|とも}だちとネットで{話|はな}したりして、そのあと{洗濯|せんたく}するので、11{時|じ}ぐらいになってしまいます。', pt: 'Depois falo pela internet com família e amigos, e então lavo a roupa, por isso acaba ficando por volta das 23h.' },
+        { speaker: '管理人', ja: 'でも、まあ{普通|ふつう}は、だいたい{夜|よる}の9{時|じ}を{過|す}ぎたら、{洗濯機|せんたくき}や{掃除機|そうじき}の{音|おと}を{出|だ}さないのが{常識|じょうしき}ですね。{早|はや}い{時間|じかん}に{寝|ね}る{人|ひと}とか、{遅|おそ}い{時間|じかん}に{音|おと}を{出|だ}されると{困|こま}る{人|ひと}もいますからね。', pt: 'Mas, normalmente, depois de mais ou menos 21h, o senso comum é não fazer barulho de máquina de lavar ou aspirador. Há pessoas que dormem cedo e pessoas que ficam incomodadas quando fazem barulho tarde.' },
+        { speaker: 'マテオ', ja: 'そうなんですか。それは{知|し}りませんでした。じゃあ、{夜|よる}、もう{少|すこ}し{早|はや}くうちに{帰|かえ}って、すぐに{洗濯|せんたく}をするようにします。8{時|じ}ごろならだいじょうぶですか？', pt: 'Ah, é? Eu não sabia. Então vou tentar voltar para casa um pouco mais cedo à noite e lavar logo. Por volta das 20h tudo bem?' },
+        { speaker: '管理人', ja: 'そうですね。その{時間|じかん}なら{問題|もんだい}ないですよ。9{時|じ}までに{終|お}わるようにしてください。', pt: 'Sim, nesse horário não há problema. Por favor, termine até as 21h.' },
+        { speaker: 'マテオ', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: '管理人', ja: 'まあ、これからは{気|き}をつけてください。', pt: 'Então, de agora em diante, tome cuidado.' },
+        { speaker: 'マテオ', ja: 'はい。どうもすみませんでした。', pt: 'Sim. Sinto muito.' },
+      ],
+    },
+  ],
+  '04-18': [
+    {
+      label: '形に注目 - 迷惑の受身 (04-18)',
+      lines: [
+        { speaker: '管理人', ja: '{早|はや}い{時間|じかん}に{寝|ね}る{人|ひと}とか、{遅|おそ}い{時間|じかん}に{音|おと}を{出|だ}されると{困|こま}る{人|ひと}もいますからね。', pt: 'Há pessoas que dormem cedo e ficam incomodadas quando fazem barulho tarde.' },
+      ],
+    },
+  ],
+  '04-19': [
+    {
+      label: '話すモデル - 苦情を受けて対応する (04-19)',
+      lines: [
+        { speaker: '管理人', ja: 'こんばんは、マテオさん。{管理人|かんりにん}の{上野|うえの}です。{実|じつ}は……この{階|かい}の{人|ひと}が、{毎日|まいにち}、{夜|よる}、{洗濯機|せんたくき}を{使|つか}って、{音|おと}がうるさいと、ほかの{住人|じゅうにん}の{方|かた}から{苦情|くじょう}があったんですよ。', pt: 'Boa noite, Mateo. Sou Ueno, o gerente. Na verdade... houve reclamação de outros moradores de que alguém deste andar usa a máquina de lavar todas as noites e o som é barulhento.' },
+        { speaker: 'マテオ', ja: 'え、{洗濯機|せんたくき}がうるさいですか？', pt: 'Hã, a máquina de lavar é barulhenta?' },
+        { speaker: '管理人', ja: '{洗濯|せんたく}は、いつも{何時|なんじ}ごろしていますか？', pt: 'Que horas você costuma lavar roupa?' },
+        { speaker: 'マテオ', ja: '{洗濯|せんたく}は、だいたい11{時|じ}ごろにしていますけど、だめですか？', pt: 'Lavo por volta das 23h. Não pode?' },
+        { speaker: '管理人', ja: '11{時|じ}はちょっと{遅|おそ}いですね。', pt: '23h é um pouco tarde.' },
+        { speaker: 'マテオ', ja: '{仕事|しごと}のあと、だいたい9{時|じ}ごろに{帰|かえ}るんです。それから{家族|かぞく}や{友|とも}だちとネットで{話|はな}したりして、そのあと{洗濯|せんたく}するので、11{時|じ}ぐらいになってしまいます。', pt: 'Depois do trabalho, chego por volta das 21h. Depois falo online com família e amigos, e então lavo, por isso acaba ficando por volta das 23h.' },
+        { speaker: '管理人', ja: '9{時|じ}までに{終|お}わるようにしてください。', pt: 'Por favor, termine até as 21h.' },
+        { speaker: 'マテオ', ja: 'わかりました。どうもすみませんでした。', pt: 'Entendi. Sinto muito.' },
+      ],
+    },
+  ],
+  '04-20': [
+    {
+      label: '① ウェンシンさん - 一人暮らし (04-20)',
+      setupPt: 'Wenxin fala sobre morar sozinho em apartamento.',
+      lines: [
+        { speaker: 'シティ', ja: 'ウェンシンさん、{最近|さいきん}、{引|ひ}っ{越|こ}したそうですね。', pt: 'Wenxin, ouvi dizer que você se mudou recentemente.' },
+        { speaker: 'ウェンシン', ja: 'ええ、アパートで{一人暮|ひとりぐ}らしをしています。{一人暮|ひとりぐ}らしは、はじめてなんですけど、{自由|じゆう}ですごく{快適|かいてき}です。{好|す}きな{時間|じかん}にご{飯|はん}を{食|た}べて、{好|す}きな{時間|じかん}にお{風呂|ふろ}に{入|はい}って、{好|す}きな{時間|じかん}に{寝|ね}ることができますから。', pt: 'Sim, estou morando sozinho em um apartamento. É a primeira vez que moro sozinho, mas é livre e muito confortável. Posso comer, tomar banho e dormir no horário que quiser.' },
+        { speaker: 'シティ', ja: 'いいですねー。{確|たし}か、わかば{町|ちょう}でしたよね？', pt: 'Que bom. Se não me engano, era Wakabacho, certo?' },
+        { speaker: 'ウェンシン', ja: 'はい、{場所|ばしょ}が{便利|べんり}で、すごく{住|す}みやすいです。{近|ちか}くに{商店街|しょうてんがい}もスーパーもあるから{買|か}い{物|もの}しやすいし、バス{停|てい}も{近|ちか}いから{便利|べんり}です。', pt: 'Sim, a localização é conveniente e é muito fácil de morar. Há uma rua comercial e supermercado perto, então é fácil fazer compras, e o ponto de ônibus também é próximo.' },
+        { speaker: 'クリスティン', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'ウェンシン', ja: 'でも、ちょっと{部屋|へや}がせまいんですよね。{友|とも}だちをたくさん{呼|よ}べないから、ちょっとつまらないです。お{金|かね}が{貯|た}まったら、もう{少|すこ}し{広|ひろ}い{部屋|へや}に{引|ひ}っ{越|こ}したいと{思|おも}ってます。', pt: 'Mas o quarto é um pouco pequeno. Como não consigo chamar muitos amigos, é meio sem graça. Quando juntar dinheiro, quero me mudar para um quarto um pouco maior.' },
+        { speaker: 'シティ', ja: 'そうですか。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '04-21': [
+    {
+      label: '② シティさん - 会社の寮 (04-21)',
+      setupPt: 'Siti fala sobre morar no dormitório da empresa.',
+      lines: [
+        { speaker: 'ウェンシン', ja: 'シティさんは、どんなところに{住|す}んでいますか？', pt: 'Siti, em que tipo de lugar você mora?' },
+        { speaker: 'シティ', ja: '{私|わたし}は、{会社|かいしゃ}の{寮|りょう}です。', pt: 'Eu moro no dormitório da empresa.' },
+        { speaker: 'ウェンシン', ja: 'へー、どうですか？', pt: 'Ah, e como é?' },
+        { speaker: 'シティ', ja: 'やっぱり、お{金|かね}がかからないのがいいですね。{家賃|やちん}も{安|やす}いし、{家具|かぐ}も{自分|じぶん}で{買|か}わなくていいんです。', pt: 'O bom é que realmente não custa muito dinheiro. O aluguel é barato e não preciso comprar móveis por conta própria.' },
+        { speaker: 'ウェンシン', ja: 'そうですか。', pt: 'Entendi.' },
+        { speaker: 'シティ', ja: 'あと、{通勤|つうきん}が{楽|らく}で{助|たす}かります。{会社|かいしゃ}から{近|ちか}くて、{自転車|じてんしゃ}で5{分|ふん}ぐらいだから、{仕事|しごと}で{疲|つか}れてもすぐに{部屋|へや}に{帰|かえ}れるんです。', pt: 'Além disso, o deslocamento ao trabalho é fácil e isso ajuda. Fica perto da empresa, uns 5 minutos de bicicleta, então mesmo cansada do trabalho consigo voltar logo para o quarto.' },
+        { speaker: 'クリスティン', ja: 'いいですね。', pt: 'Que bom.' },
+        { speaker: 'シティ', ja: 'でも、いろいろ{気|き}を{遣|つか}いますよ。うちの{寮|りょう}は、{二人部屋|ふたりべや}なんです。{同|おな}じ{部屋|へや}の{人|ひと}はいい{人|ひと}なんですけど、{生活|せいかつ}リズムが{合|あ}わないんです。その{人|ひと}、{夜寝|よるね}るのがすごく{早|はや}くて、{夜|よる}9{時|じ}ぐらいに{寝|ね}るんです。それに、{朝|あさ}は4{時|じ}に{起|お}きてシャワーを{浴|あ}びるんですよ。', pt: 'Mas preciso ser cuidadosa em várias coisas. Nosso dormitório é quarto para duas pessoas. A pessoa que divide o quarto é boa, mas nossos ritmos de vida não combinam. Ela dorme muito cedo, por volta das 21h. Além disso, acorda às 4h da manhã e toma banho.' },
+        { speaker: 'クリスティン', ja: 'それは、{早|はや}いですね。', pt: 'Isso é cedo.' },
+        { speaker: 'シティ', ja: '{私|わたし}も、{早|はや}く{寮|りょう}を{出|で}て、アパートを{借|か}りて、1{人|ひとり}で{暮|く}らしたいと{思|おも}ってます。', pt: 'Eu também quero sair logo do dormitório, alugar um apartamento e morar sozinha.' },
+      ],
+    },
+  ],
+  '04-22': [
+    {
+      label: '③ クリスティンさん - 古い一戸建て (04-22)',
+      setupPt: 'Christine fala sobre morar com amigos em uma casa antiga.',
+      lines: [
+        { speaker: 'シティ', ja: 'クリスティンさんは？', pt: 'E você, Christine?' },
+        { speaker: 'クリスティン', ja: '{友|とも}だちと3{人|にん}で、{古|ふる}い{一戸建|いっこだ}てに{住|す}んでます。', pt: 'Moro com dois amigos em uma casa antiga independente.' },
+        { speaker: 'シティ', ja: 'へー、{一戸建|いっこだ}て。', pt: 'Ah, uma casa independente.' },
+        { speaker: 'クリスティン', ja: 'すごく{古|ふる}い{家|いえ}なんです。{築|ちく}60{年|ねん}。{家|いえ}のまわりには、{田|た}んぼとか{林|はやし}があって……。', pt: 'É uma casa muito antiga. Tem 60 anos. Em volta da casa há arrozais e bosques...' },
+        { speaker: 'ウェンシン', ja: 'えー。', pt: 'Nossa.' },
+        { speaker: 'クリスティン', ja: 'でも、すごくゆったり{暮|く}らせるんですよ。{庭|にわ}も{広|ひろ}くて、{野菜|やさい}を{作|つく}ったり、{休|やす}みの{日|ひ}に3{人|にん}でバーベキューしたりしてます。', pt: 'Mas dá para viver com bastante espaço. O jardim é grande, então cultivamos legumes e fazemos churrasco nós três nos dias de folga.' },
+        { speaker: 'シティ', ja: 'いいですね。', pt: 'Que bom.' },
+        { speaker: 'クリスティン', ja: 'それに、{近所|きんじょ}の{人|ひと}が{親切|しんせつ}なんです。この{間|あいだ}{地震|じしん}があったときも、{心配|しんぱい}してすぐに{様子|ようす}を{見|み}に{来|き}てくれました。', pt: 'Além disso, os vizinhos são gentis. Quando houve terremoto outro dia, ficaram preocupados e vieram logo ver como estávamos.' },
+        { speaker: 'シティ', ja: 'そうなんですか。', pt: 'É mesmo?' },
+        { speaker: 'クリスティン', ja: '{困|こま}るのは、{冬|ふゆ}が{寒|さむ}いことですね。{部屋|へや}が{広|ひろ}いから、{暖房|だんぼう}があまり{効|き}かないんです。', pt: 'O problema é que o inverno é frio. Como os quartos são amplos, o aquecimento não funciona muito bem.' },
+        { speaker: 'ウェンシン', ja: 'えー。', pt: 'Nossa.' },
+        { speaker: 'クリスティン', ja: '{冬|ふゆ}になると、せまくてもいいから、{寒|さむ}くない{家|いえ}に{住|す}みたいって{思|おも}いますよ。', pt: 'Quando chega o inverno, penso que queria morar em uma casa que não fosse fria, mesmo que fosse pequena.' },
+        { speaker: 'シティ', ja: 'ははは。', pt: 'Ha ha ha.' },
+      ],
+    },
+  ],
+  '04-23': [
+    {
+      label: '話すモデル - 今住んでいる家について話す (04-23)',
+      lines: [
+        { speaker: 'A', ja: '{最近|さいきん}、{引|ひ}っ{越|こ}したそうですね。', pt: 'Ouvi dizer que você se mudou recentemente.' },
+        { speaker: 'B', ja: 'ええ、アパートで{一人暮|ひとりぐ}らしをしています。{自由|じゆう}ですごく{快適|かいてき}です。', pt: 'Sim, moro sozinho em um apartamento. É livre e muito confortável.' },
+        { speaker: 'A', ja: 'いいですねー。', pt: 'Que bom.' },
+        { speaker: 'B', ja: 'あと、{場所|ばしょ}が{便利|べんり}で{住|す}みやすいです。{近|ちか}くに{商店街|しょうてんがい}もスーパーもあるから{買|か}い{物|もの}しやすいし、バス{停|てい}も{近|ちか}いから{便利|べんり}です。', pt: 'Além disso, a localização é conveniente e é fácil morar lá. Há rua comercial e supermercado perto, então é fácil fazer compras, e o ponto de ônibus também é perto.' },
+        { speaker: 'B', ja: 'でも、ちょっと{部屋|へや}がせまいんですよね。{友|とも}だちをたくさん{呼|よ}べないから、ちょっとつまらないです。', pt: 'Mas o quarto é um pouco pequeno. Como não consigo chamar muitos amigos, é meio sem graça.' },
+        { speaker: 'B', ja: 'お{金|かね}が{貯|た}まったら、もう{少|すこ}し{広|ひろ}い{部屋|へや}に{引|ひ}っ{越|こ}したいと{思|おも}ってます。', pt: 'Quando juntar dinheiro, quero me mudar para um quarto um pouco maior.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -1010,12 +1409,112 @@ const lesson3: Section = {
   audios: attachScripts(3, L3_SCRIPTS),
 }
 
+const lesson4: Section = {
+  id: 'lesson-4',
+  level: 'pre-intermediate',
+  titleJa: '第4課 エアコンが壊れたみたいなんですが…',
+  titlePt: 'Lição 4 - Parece que o ar-condicionado quebrou...',
+  summaryPt:
+    'Onde morar · relatar problemas da casa, fazer e receber reclamações de moradia e falar com detalhes sobre o lugar onde mora.',
+  studyNotes: [
+    {
+      title: 'Tópico: Onde morar? (どこに住む？)',
+      bodyPt:
+        'Pergunta de abertura: {今|いま}、どんなところに{住|す}んでいますか？ その{部屋|へや}／{家|いえ}は、{気|き}に{入|い}っていますか？\n\n' +
+        '## Can-do\n' +
+        '- Relatar a um gerente, proprietário ou administradora um problema relacionado à casa e receber orientação ou providência.\n' +
+        '- Explicar uma situação de ruído ou convivência e transmitir uma reclamação à administração.\n' +
+        '- Receber uma reclamação da administração e responder explicando sua situação.\n' +
+        '- Falar com algum detalhe sobre o conforto, o entorno e os pontos bons/ruins do lugar onde mora.',
+    },
+    {
+      title: 'Atividade 1: problemas da casa',
+      bodyPt:
+        'A atividade apresenta vocabulário de problemas de moradia e quatro ligações para imobiliária, administradora ou proprietário.\n\n' +
+        '| Faixa | Problema | Situação | O que fazer |\n|---|---|---|---|\n' +
+        '| 04-03 | {水漏|みずも}れしている | {洗面台|せんめんだい}の{下|した}から{水|みず}が{漏|も}れている | Esperar o técnico no quarto. |\n' +
+        '| 04-04 | エアコンが{壊|こわ}れた | {冷房|れいぼう}にしても{冷|つめ}たい{空気|くうき}が{出|で}てこない | Esperar ligação do prestador. |\n' +
+        '| 04-05 | ハチの{巣|す}ができた | ベランダの{天井|てんじょう}にある | Procurar uma empresa por conta própria e avisar depois. |\n' +
+        '| 04-06 | {鍵|かぎ}をなくした | {買|か}い{物|もの}に{行|い}ったときになくしたみたい | Esperar o proprietário na frente do quarto. |\n\n' +
+        'Frases úteis: `{部屋番号|へやばんごう}とご{契約者様|けいやくしゃさま}のお{名前|なまえ}をお{願|ねが}いいたします`, `どのような{状態|じょうたい}でしょうか`, `{修理業者|しゅうりぎょうしゃ}を{手配|てはい}します`.',
+    },
+    {
+      title: 'Gramática ➊➋➌: みたいだ e formas polidas',
+      bodyPt:
+        '**S（普通形）みたいだ** expressa uma conclusão provável a partir do que se viu, sentiu ou viveu. Também suaviza a afirmação:\n\n' +
+        '- `エアコンが{壊|こわ}れたみたいなんですが……。`\n' +
+        '- `{買|か}い{物|もの}に{行|い}ったときになくしたみたいです。`\n\n' +
+        '**お／ご + N** mostra respeito ao falar de algo ligado ao ouvinte: `お{電話番号|でんわばんごう}`, `ご{都合|つごう}`, `お{時間|じかん}`, `お{部屋|へや}`.\n\n' +
+        '**お／ご + Vください** dá instruções ou faz pedidos de forma polida: `お{待|ま}ちください`, `ご{連絡|れんらく}ください`, `お{電話|でんわ}ください`.',
+    },
+    {
+      title: 'Atividade 2: transmitir uma reclamação',
+      bodyPt:
+        'カタリーナ liga para a sala do gerente para reclamar do barulho da máquina de lavar no andar de cima.\n\n' +
+        '| Ponto | Conteúdo |\n|---|---|\n' +
+        '| Problema | A pessoa do quarto de cima lava roupa tarde da noite. |\n' +
+        '| Causa provável | Pessoa do 2º andar. |\n' +
+        '| Frequência e horário | Todos os dias, por volta das 23h, às vezes passando de meia-noite. |\n' +
+        '| Por que incomoda | Ela quer dormir cedo, mas o som da máquina de lavar é barulhento e ela não consegue dormir. |\n' +
+        '| Pedido | `すみません、{注意|ちゅうい}してもらえませんか？` |\n\n' +
+        'A estratégia da atividade é **前置きをする**: começar com uma abertura como `あのう、すみません、ちょっと{相談|そうだん}があるんですが……` antes de entrar no assunto.',
+    },
+    {
+      title: 'Atividade 3: receber uma reclamação',
+      bodyPt:
+        'O gerente visita マテオ porque outros moradores reclamaram que alguém usa a máquina de lavar todas as noites e o barulho incomoda.\n\n' +
+        'マテオ explica a rotina: sai de casa por volta das 8h para trabalhar, volta por volta das 21h depois de jantar, fala online com família e amigos e só então lava a roupa, o que acaba ficando perto das 23h.\n\n' +
+        'Ele não sabia que isso era problema. Decide voltar um pouco mais cedo e lavar logo, terminando até 21h.',
+    },
+    {
+      title: 'Gramática ➍: 迷惑の受身',
+      bodyPt:
+        '**V-（ら）れる** como **迷惑の受身** descreve a ação de alguém do ponto de vista da pessoa que se sente incomodada. A ação não precisa ser dirigida diretamente a ela, mas causa problema ou incômodo.\n\n' +
+        '- `{遅|おそ}い{時間|じかん}に{音|おと}を{出|だ}されると{困|こま}る{人|ひと}もいますからね。`\n' +
+        '- `{隣|となり}の{人|ひと}にたばこを{吸|す}われた。`\n' +
+        '- `{子|こ}どもに{廊下|ろうか}でうるさくされた。`\n\n' +
+        'Costuma aparecer com expressões de incômodo, como {困|こま}る, {迷惑|めいわく}だ, {気分|きぶん}が{悪|わる}い, {眠|ねむ}れなかった.',
+    },
+    {
+      title: 'Atividade 4: falar sobre onde mora',
+      bodyPt:
+        'ウェンシン, シティ e クリスティン falam sobre o lugar onde moram.\n\n' +
+        '| Pessoa | Moradia | Pontos bons | Pontos ruins | Desejo |\n|---|---|---|---|---|\n' +
+        '| ウェンシン | Apartamento, {一人暮|ひとりぐ}らし | {自由|じゆう}で{快適|かいてき}; {場所|ばしょ}が{便利|べんり} | {部屋|へや}がせまい | {少|すこ}し{広|ひろ}い{部屋|へや} |\n' +
+        '| シティ | {会社|かいしゃ}の{寮|りょう} | お{金|かね}がかからない; {通勤|つうきん}が{楽|らく} | {同|おな}じ{部屋|へや}の{人|ひと}と{生活|せいかつ}リズムが{合|あ}わない | アパートで{一人暮|ひとりぐ}らし |\n' +
+        '| クリスティン | {友|とも}だちと{古|ふる}い{一戸建|いっこだ}て | ゆったり{暮|く}らせる; {近所|きんじょ}の{人|ひと}が{親切|しんせつ} | {冬|ふゆ}が{寒|さむ}い | {寒|さむ}くない{家|いえ} |',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {洗面台|せんめんだい}, {洗濯機|せんたくき}, {換気扇|かんきせん}, {一戸建|いっこだ}て, {庭|にわ}, {通勤|つうきん}, バス{停|てい}, {田|た}んぼ, {林|はやし}, {鳥|とり}.\n\n' +
+        '**Frases-modelo:**\n' +
+        '1. バス{停|てい}が{近|ちか}いので、{通勤|つうきん}に{便利|べんり}です。\n' +
+        '2. {友|とも}だちと3{人|にん}で、{一戸建|いっこだ}てに{住|す}んでいます。\n' +
+        '3. {庭|にわ}の{木|き}に{鳥|とり}が{巣|す}を{作|つく}っています。\n' +
+        '4. {換気扇|かんきせん}が{動|うご}かないんです。\n' +
+        '5. {洗面台|せんめんだい}が{水漏|みずも}れしています。\n' +
+        '6. {洗濯機|せんたくき}の{音|おと}がうるさくて、{眠|ねむ}れません。',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**家のトラブル:** em moradia alugada, primeiro entre em contato com o proprietário ou a administradora. Consertar por conta própria pode gerar problemas de reembolso ou cobrança na saída. Confira antes o contrato, a 入居のしおり e contatos de emergência.\n\n' +
+        '**ハチの巣:** ninhos de vespa podem aparecer da primavera ao outono em varandas, beirais e unidades externas de ar-condicionado. Como pode ser perigoso, especialmente com スズメバチ, avise o proprietário/administradora antes de tentar resolver.\n\n' +
+        '**家の苦情:** barulho, lixo, cheiro de comida, objetos em áreas comuns, bicicleta estacionada sem permissão, cigarro, crianças correndo e pets podem gerar conflito em moradia coletiva. A lição recomenda evitar confronto direto quando possível e pedir mediação da administradora ou do proprietário.',
+    },
+  ],
+  groups: [lesson4Group],
+  audios: attachScripts(4, L4_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
   lesson2,
   // Tópico 2 - Onde morar? (どこに住む？)
   lesson3,
+  lesson4,
 ]
 
 export const irodoriPreIntermediate: Level = {
