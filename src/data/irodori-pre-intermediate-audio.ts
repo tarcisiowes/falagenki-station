@@ -150,4 +150,15 @@ export const PRE_INTERMEDIATE_AUDIO: Record<number, AudioTrack[]> = {
     { id: 'iro-pi-09-25', title: '09-25 · hanasu1', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/09-25_hanasu1.mp3', script: [] },
     { id: 'iro-pi-09-26', title: '09-26 · hanasu2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/09-26_hanasu2.mp3', script: [] },
   ],
+  10: [
+    { id: 'iro-pi-10-01', title: '10-01 · kotoba1', descriptionPt: 'Vocabulário (ことば)', src: '/audio/irodori/pre-intermediate/10-01_kotoba1.mp3', script: [] },
+    { id: 'iro-pi-10-02', title: '10-02 · kotoba2', descriptionPt: 'Vocabulário (ことば)', src: '/audio/irodori/pre-intermediate/10-02_kotoba2.mp3', script: [] },
+    { id: 'iro-pi-10-03', title: '10-03 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/10-03_kiku1.mp3', script: [] },
+    { id: 'iro-pi-10-04', title: '10-04 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/10-04_kiku2.mp3', script: [] },
+    { id: 'iro-pi-10-05', title: '10-05 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/10-05_kiku3.mp3', script: [] },
+    { id: 'iro-pi-10-06', title: '10-06 · katachi1', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/10-06_katachi1.mp3', script: [] },
+    { id: 'iro-pi-10-07', title: '10-07 · katachi2', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/10-07_katachi2.mp3', script: [] },
+    { id: 'iro-pi-10-08', title: '10-08 · strategy', descriptionPt: 'Estratégia (ストラテジー)', src: '/audio/irodori/pre-intermediate/10-08_strategy.mp3', script: [] },
+    { id: 'iro-pi-10-09', title: '10-09 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/10-09_hanasu.mp3', script: [] },
+  ],
 }

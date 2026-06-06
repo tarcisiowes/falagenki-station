@@ -499,6 +499,59 @@ const lesson9Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 10: どうやって日本語を勉強してる？ (tópico 私と日本語) ----
+const lesson10Group: ExerciseGroup = {
+  id: 'iro-pi-l10',
+  title: 'どうやって日本語を勉強してる？',
+  subtitlePt: 'Métodos de estudo · portais e apps · perfil para tandem',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l10-1', number: 1, prompt: 'Qual é o tópico desta lição?', choices: [{ n: 1, text: '私と日本語 (eu e a língua japonesa)' }, { n: 2, text: 'こんなときどうする？' }, { n: 3, text: '出会う' }, { n: 4, text: '自然を楽しむ' }], answer: 1, explanationPt: 'A Lição 10 continua o tópico 私と日本語 e trata de métodos de aprendizagem de japonês.' },
+    { id: 'iro-pi-l10-2', number: 2, prompt: 'Can-do 31: o aluno deve conseguir:', choices: [{ n: 1, text: 'ler descrições de cursos online e apps em um portal de japonês e escolher opções adequadas' }, { n: 2, text: 'contar uma experiência de onsen' }, { n: 3, text: 'denunciar um golpe por e-mail' }, { n: 4, text: 'pedir desculpas por atraso no trabalho' }], answer: 1, explanationPt: 'A primeira atividade usa um portal de aprendizagem para comparar sites e apps.' },
+    { id: 'iro-pi-l10-3', number: 3, prompt: 'No portal, qual opção é adequada para estudar japonês de forma abrangente?', choices: [{ n: 1, text: 'A: JF にほんご e ラーニング みなと' }, { n: 2, text: 'B: ひきだすにほんご' }, { n: 3, text: 'C: アニメ・マンガの日本語' }, { n: 4, text: 'apenas D: KANJI Memory Hint' }], answer: 1, explanationPt: 'O gabarito marca A para 総合的な日本語が勉強したい.' },
+    { id: 'iro-pi-l10-4', number: 4, prompt: 'Para quem quer ler mangá, o gabarito indica:', choices: [{ n: 1, text: 'C: アニメ・マンガの日本語' }, { n: 2, text: 'apenas A: みなと' }, { n: 3, text: 'apenas D: KANJI Memory Hint' }, { n: 4, text: 'nenhuma opção' }], answer: 1, explanationPt: 'C é o site que usa anime e mangá como entrada para estudar japonês.' },
+    { id: 'iro-pi-l10-5', number: 5, prompt: 'Para trabalhar e viver no Japão, qual opção aparece no gabarito?', choices: [{ n: 1, text: 'B: ひきだすにほんご' }, { n: 2, text: 'D: KANJI Memory Hint' }, { n: 3, text: 'apenas C: アニメ・マンガの日本語' }, { n: 4, text: 'nenhuma opção' }], answer: 1, explanationPt: 'O gabarito marca B para 日本で働きながら、生活したい.' },
+    { id: 'iro-pi-l10-6', number: 6, prompt: 'Para aprender オノマトペ, o gabarito permite:', choices: [{ n: 1, text: 'B ou C' }, { n: 2, text: 'somente A' }, { n: 3, text: 'somente D' }, { n: 4, text: 'nenhuma opção' }], answer: 1, explanationPt: 'O answer key marca B,C para オノマトペを学びたい.' },
+    { id: 'iro-pi-l10-7', number: 7, prompt: 'Para estudar kanji, quais opções aparecem no gabarito?', choices: [{ n: 1, text: 'A, C e D' }, { n: 2, text: 'somente B' }, { n: 3, text: 'B e C' }, { n: 4, text: 'somente A' }], answer: 1, explanationPt: 'O gabarito marca A,C,D para 漢字を勉強したい.' },
+    { id: 'iro-pi-l10-8', number: 8, prompt: 'Sobre A「みなと」: 「まるごとコース」では、日本語の「話すこと」は勉強できません。', choices: [{ n: 1, text: '×: a afirmação está incorreta' }, { n: 2, text: '〇: a afirmação está correta' }, { n: 3, text: 'não há informação no material' }, { n: 4, text: 'vale só para kanji' }], answer: 1, explanationPt: 'O gabarito marca ×. A fala/produção oral também faz parte do estudo no curso.' },
+    { id: 'iro-pi-l10-9', number: 9, prompt: 'Sobre A「みなと」: usar o site exige ユーザー登録.', choices: [{ n: 1, text: '〇: a afirmação está correta' }, { n: 2, text: '×: a afirmação está incorreta' }, { n: 3, text: 'só para pessoas fora do Japão' }, { n: 4, text: 'só para mangá' }], answer: 1, explanationPt: 'O gabarito marca 〇 para ユーザー登録.' },
+    { id: 'iro-pi-l10-10', number: 10, prompt: 'Sobre B「ひきだすにほんご」, qual afirmação está correta?', choices: [{ n: 1, text: 'é possível aprender estratégias vendo vídeos' }, { n: 2, text: 'a protagonista スアン trabalha em um hotel no Vietnã' }, { n: 3, text: 'estrangeiros no Japão apresentam オノマトペ' }, { n: 4, text: 'não há conteúdo em vídeo' }], answer: 1, explanationPt: 'No gabarito, B1 é 〇; B2 e B3 são ×.' },
+    { id: 'iro-pi-l10-11', number: 11, prompt: 'Sobre C「アニメ・マンガの日本語」, o gabarito indica que:', choices: [{ n: 1, text: 'há 4 gêneros de mangá e a seção de mangá tem áudio' }, { n: 2, text: 'as expressões vêm só de livros didáticos comuns' }, { n: 3, text: 'não há áudio' }, { n: 4, text: 'é exclusivamente para kanji' }], answer: 1, explanationPt: 'C2 e C3 são 〇; C1 é ×.' },
+    { id: 'iro-pi-l10-12', number: 12, prompt: 'Sobre D「KANJI Memory Hint」, qual afirmação está correta?', choices: [{ n: 1, text: 'usa ilustrações para memorizar kanji, permite conferir leitura por áudio e tem 3 versões na série' }, { n: 2, text: 'não trabalha leitura de kanji' }, { n: 3, text: 'não usa imagens' }, { n: 4, text: 'é um site de dramas' }], answer: 1, explanationPt: 'O gabarito marca 〇 para as três afirmações sobre D.' },
+    { id: 'iro-pi-l10-13', number: 13, prompt: 'Em 「日本語を総合的に勉強する『まるごとコース』」, que padrão aparece?', choices: [{ n: 1, text: 'V（普通形）＋N para explicar/modificar um substantivo' }, { n: 2, text: 'Vなさい' }, { n: 3, text: 'Nでしたっけ？' }, { n: 4, text: '数量＋も' }], answer: 1, explanationPt: 'A nota ➊ trata de V（plain-form 普通形）＋N.' },
+    { id: 'iro-pi-l10-14', number: 14, prompt: '「国際交流基金が運営する日本語学習プラットフォーム。」 é exemplo de:', choices: [{ n: 1, text: 'frase que termina em substantivo, comum em títulos/resumos escritos' }, { n: 2, text: 'pergunta de confirmação oral' }, { n: 3, text: 'ordem direta' }, { n: 4, text: 'forma honorífica' }], answer: 1, explanationPt: 'A nota ➋ explica 名詞で終わる言い方; です fica omitido em estilo resumido de escrita.' },
+    { id: 'iro-pi-l10-15', number: 15, prompt: 'Can-do 32: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'trocar informações relativamente detalhadas com um amigo sobre métodos de estudo de japonês' }, { n: 2, text: 'ler placas em dialeto' }, { n: 3, text: 'entender anúncio de trem' }, { n: 4, text: 'fazer reserva em hotel' }], answer: 1, explanationPt: 'A atividade 2 trabalha conversas entre Nicole, Hong e Shiva sobre métodos de aprendizagem.' },
+    { id: 'iro-pi-l10-16', number: 16, prompt: 'Vocabulário: 日本語学校に通う／地域の日本語教室に通う／オンラインレッスンを受ける significam:', image: `${IMG}/ZZ_10_2_01_nihongogakkoo.png`, imageAlt: 'pessoa estudando em escola de japonês', choices: [{ n: 1, text: 'frequentar escola de japonês / frequentar aula comunitária / fazer aula online' }, { n: 2, text: 'ler mangá / ver anime / usar IA' }, { n: 3, text: 'escrever perfil / registrar app / pesquisar economia' }, { n: 4, text: 'memorizar kanji / estudar onomatopeia / fazer tradução' }], answer: 1, explanationPt: 'São métodos de estudo apresentados na preparação de vocabulário.' },
+    { id: 'iro-pi-l10-17', number: 17, prompt: 'Vocabulário: 日本のアニメを見る／日本のドラマを見る／AIを使う correspondem a:', image: `${IMG}/ZZ_10_2_06_dorama.png`, imageAlt: 'pessoa vendo drama japonês', choices: [{ n: 1, text: 'ver anime japonês / ver drama japonês / usar IA' }, { n: 2, text: 'escrever perfil / morar no Japão / estudar em escola' }, { n: 3, text: 'frequentar aula comunitária / estudar por livro / fazer tandem' }, { n: 4, text: 'registrar usuário / operar site / aprender kado' }], answer: 1, explanationPt: 'Esses itens aparecem como e, f e j na lista de métodos de aprendizagem.' },
+    { id: 'iro-pi-l10-18', number: 18, prompt: '10-03: ニコル usa qual método de estudo além da aula?', image: `${IMG}/ZZ_10_2_06_dorama.png`, imageAlt: 'drama japonês', choices: [{ n: 1, text: '日本のドラマを見る' }, { n: 2, text: 'タンデム学習をする' }, { n: 3, text: 'AIを使う' }, { n: 4, text: '地域の日本語教室に通う' }], answer: 1, explanationPt: 'O gabarito marca f para ニコルさん.' },
+    { id: 'iro-pi-l10-19', number: 19, prompt: '10-03: qual é o método específico de ニコル?', choices: [{ n: 1, text: 'ver 3 vezes: sem legenda, com legenda em japonês e depois com legenda em inglês' }, { n: 2, text: 'escrever para AI corrigir' }, { n: 3, text: 'trocar idioma com um parceiro de tandem' }, { n: 4, text: 'decorar kanji por ilustrações' }], answer: 1, explanationPt: 'Ela explica: 字幕をつけないで見る → 日本語の字幕 → 英語の字幕.' },
+    { id: 'iro-pi-l10-20', number: 20, prompt: '10-03: que efeito ニコル percebeu?', choices: [{ n: 1, text: 'ficou capaz de entender o que a outra pessoa está dizendo na vida diária e no trabalho' }, { n: 2, text: 'perdeu medo de escrever japonês' }, { n: 3, text: 'aprendeu a escrever perfil' }, { n: 4, text: 'parou de usar legendas para sempre' }], answer: 1, explanationPt: 'O gabarito marca イ: 相手の言っていることがわかるようになった.' },
+    { id: 'iro-pi-l10-21', number: 21, prompt: '10-04: ホン usa qual método?', image: `${IMG}/ZZ_10_2_11_tandemu.png`, imageAlt: 'aprendizagem tandem', choices: [{ n: 1, text: 'タンデム学習をする' }, { n: 2, text: '日本のドラマを見る' }, { n: 3, text: 'AIを使う' }, { n: 4, text: 'テレビ講座で勉強する' }], answer: 1, explanationPt: 'O gabarito marca k para ホンさん.' },
+    { id: 'iro-pi-l10-22', number: 22, prompt: '10-04: no tandem de ホン, o que acontece?', choices: [{ n: 1, text: 'ela ensina vietnamita e a outra pessoa ensina japonês' }, { n: 2, text: 'ela só assiste aula gravada' }, { n: 3, text: 'ela pede correção para AI' }, { n: 4, text: 'ela lê mangá com áudio' }], answer: 1, explanationPt: 'O parceiro japonês estuda vietnamita; eles ensinam um ao outro.' },
+    { id: 'iro-pi-l10-23', number: 23, prompt: '10-04: que efeito ホン sente?', choices: [{ n: 1, text: 'consegue dizer em japonês o que quer dizer' }, { n: 2, text: 'não tem mais medo de escrever' }, { n: 3, text: 'entende todos os kanji' }, { n: 4, text: 'não precisa mais estudar' }], answer: 1, explanationPt: 'O gabarito marca ウ: 言いたいことが日本語で言えるようになった.' },
+    { id: 'iro-pi-l10-24', number: 24, prompt: '10-04: por que ホン gosta do método?', choices: [{ n: 1, text: 'porque aprende palavras que japoneses usam no dia a dia' }, { n: 2, text: 'porque evita falar com pessoas' }, { n: 3, text: 'porque substitui todas as aulas' }, { n: 4, text: 'porque só treina kanji' }], answer: 1, explanationPt: 'Ela diz que consegue memorizar várias palavras que japoneses usam normalmente.' },
+    { id: 'iro-pi-l10-25', number: 25, prompt: '10-05: シヴァ usa qual método?', image: `${IMG}/ZZ_10_2_10_eeai.png`, imageAlt: 'uso de IA para estudar', choices: [{ n: 1, text: 'AIを使う' }, { n: 2, text: '本で勉強する' }, { n: 3, text: '日本語学校に通う' }, { n: 4, text: '日本のドラマを見る' }], answer: 1, explanationPt: 'O gabarito marca j para シヴァさん.' },
+    { id: 'iro-pi-l10-26', number: 26, prompt: '10-05: como シヴァ usa AI?', choices: [{ n: 1, text: 'quando escreve um texto em japonês, pergunta se está correto e recebe correções de gramática e expressão' }, { n: 2, text: 'para encontrar parceiro de tandem' }, { n: 3, text: 'para assistir drama sem legenda' }, { n: 4, text: 'para registrar usuário no Minato' }], answer: 1, explanationPt: 'Ele diz: AIに聞いたら、文法や表現を直してくれるんだ.' },
+    { id: 'iro-pi-l10-27', number: 27, prompt: '10-05: qual efeito シヴァ relata?', choices: [{ n: 1, text: 'não tem ficado com medo de escrever japonês' }, { n: 2, text: 'entende todos os dramas' }, { n: 3, text: 'começou a trabalhar em hotel' }, { n: 4, text: 'decorou todos os kanji' }], answer: 1, explanationPt: 'O gabarito marca ア: 日本語を書くのがこわくなくなった.' },
+    { id: 'iro-pi-l10-28', number: 28, prompt: '「3回も見るの？ すごいね。」 usa も para indicar:', choices: [{ n: 1, text: 'que a quantidade parece grande para quem fala' }, { n: 2, text: 'negação' }, { n: 3, text: 'permissão' }, { n: 4, text: 'respeito/honorífico' }], answer: 1, explanationPt: 'A nota ➌ explica 数量＋も: “tantas vezes”, “até 3 vezes”.' },
+    { id: 'iro-pi-l10-29', number: 29, prompt: '「言えるようになってきた」 usa V-てくる para:', choices: [{ n: 1, text: 'falar de uma mudança gradual em comparação com antes' }, { n: 2, text: 'dar uma ordem' }, { n: 3, text: 'indicar uma quantidade grande' }, { n: 4, text: 'encerrar uma frase como título' }], answer: 1, explanationPt: 'A nota ➍ explica que V-てくる expressa mudança; aqui, uma habilidade que vem se desenvolvendo.' },
+    { id: 'iro-pi-l10-30', number: 30, prompt: 'Estratégia 10-08: quando ニコル não sabia a palavra 字幕, ela:', choices: [{ n: 1, text: 'disse a palavra em inglês: subtitle' }, { n: 2, text: 'ficou em silêncio' }, { n: 3, text: 'mudou de assunto' }, { n: 4, text: 'escreveu um perfil' }], answer: 1, explanationPt: 'A estratégia é わからないことばを英語で言う: usar inglês ou outra palavra disponível para manter a conversa.' },
+    { id: 'iro-pi-l10-31', number: 31, prompt: 'No modelo de fala 10-09, a conversa sobre método de estudo segue qual estrutura?', choices: [{ n: 1, text: 'método → método específico → efeito → opinião' }, { n: 2, text: 'opinião → kanji → registro → desculpa' }, { n: 3, text: 'cumprimento → convite → recusa → promessa' }, { n: 4, text: 'local → preço → horário → pagamento' }], answer: 1, explanationPt: 'A atividade organiza a fala em どんな方法？, 具体的な勉強方法, どんな効果があった？ e どう思っている？.' },
+    { id: 'iro-pi-l10-32', number: 32, prompt: 'Can-do 33: a atividade de escrita pede que o aluno consiga:', choices: [{ n: 1, text: 'escrever perfil e desejos em algum detalhe em site/app para procurar parceiro de tandem' }, { n: 2, text: 'preencher boletim de ocorrência' }, { n: 3, text: 'escrever resenha de restaurante' }, { n: 4, text: 'ler roteiro de drama' }], answer: 1, explanationPt: 'A atividade 3 é タンデム学習の相手探し.' },
+    { id: 'iro-pi-l10-33', number: 33, prompt: 'Um perfil para tandem organiza principalmente:', choices: [{ n: 1, text: 'nome/nickname, línguas que fala, língua que quer aprender, interesses e pedidos para a aula' }, { n: 2, text: 'somente endereço completo e senha' }, { n: 3, text: 'apenas histórico escolar' }, { n: 4, text: 'somente foto e idade' }], answer: 1, explanationPt: 'O formulário do material pede 名前, 話せる言語, 学習したい言語, 自分のこと/好きなこと e お願いしたいこと.' },
+    { id: 'iro-pi-l10-34', number: 34, prompt: 'Perfil XYZ: qual resumo corresponde ao gabarito?', choices: [{ n: 1, text: 'fala nepalês, quer aprender japonês, estuda culinária em escola técnica, quer trabalhar em restaurante no Japão e precisa de ajuda com escrita' }, { n: 2, text: 'fala chinês e inglês, pesquisa economia japonesa' }, { n: 3, text: 'é SE em empresa japonesa e quer conversar com colegas' }, { n: 4, text: 'vai ao Japão a trabalho na primavera e gosta de J-POP' }], answer: 1, explanationPt: 'O answer key lista ネパール語, 日本語, 専門学校で料理の勉強, restaurante no futuro e pedido de checar cartas/e-mails.' },
+    { id: 'iro-pi-l10-35', number: 35, prompt: 'Perfil うた: qual dado aparece no gabarito?', choices: [{ n: 1, text: 'fala indonésio, gosta do Japão e de J-POP, e vai ao Japão a trabalho na primavera' }, { n: 2, text: 'mora em Hunan e pesquisa economia' }, { n: 3, text: 'quer trabalhar em restaurante japonês' }, { n: 4, text: 'quer ajuda só com apresentações' }], answer: 1, explanationPt: 'うた fala インドネシア語, quer aprender 日本語, gosta de 日本 e J-POP e vai ao Japão por trabalho.' },
+    { id: 'iro-pi-l10-36', number: 36, prompt: 'Perfil クオン: qual combinação está correta?', choices: [{ n: 1, text: 'fala vietnamita e inglês; trabalha como SE em empresa japonesa; quer comunicação para conversas casuais com colegas' }, { n: 2, text: 'fala nepalês e estuda culinária' }, { n: 3, text: 'fala chinês e inglês e mora em Hunan' }, { n: 4, text: 'fala indonésio e gosta de なにわ男子' }], answer: 1, explanationPt: 'O gabarito informa ベトナム語・英語, 日系企業でSE e desejo de 雑談できるようなコミュニケーション力.' },
+    { id: 'iro-pi-l10-37', number: 37, prompt: 'Perfil 念念: qual resumo corresponde ao gabarito?', choices: [{ n: 1, text: 'fala chinês e inglês, mora em Hunan, pesquisa economia japonesa na pós-graduação e quer praticar japonês para apresentações' }, { n: 2, text: 'estuda culinária em escola técnica' }, { n: 3, text: 'vai ao Japão a trabalho na primavera' }, { n: 4, text: 'é parceira de tandem de Hong' }], answer: 1, explanationPt: '念念 é 中国の湖南省在住, 大学院で日本の経済について研究 e quer ajuda inclusive com 発表.' },
+    { id: 'iro-pi-l10-38', number: 38, prompt: 'Kanji da lição: 登録／在住／対象 leem-se:', choices: [{ n: 1, text: 'とうろく／ざいじゅう／たいしょう' }, { n: 2, text: 'とうき／ざいしょ／たいぞう' }, { n: 3, text: 'とろく／ざいじゅ／たいせき' }, { n: 4, text: 'とうろく／すみじゅう／たいしょう' }], answer: 1, explanationPt: 'Esses kanji aparecem no portal e no perfil.' },
+    { id: 'iro-pi-l10-39', number: 39, prompt: 'Kanji da lição: 文章／表現／字幕 leem-se:', choices: [{ n: 1, text: 'ぶんしょう／ひょうげん／じまく' }, { n: 2, text: 'ぶんそう／ひょうけん／じばく' }, { n: 3, text: 'もんしょう／ひょうげん／じまく' }, { n: 4, text: 'ぶんしょう／ひょうご／じまく' }], answer: 1, explanationPt: '文章 e 表現 aparecem no uso de AI; 字幕 aparece no método de ニコル.' },
+    { id: 'iro-pi-l10-40', number: 40, prompt: 'Kanji da lição: 専門学校／基礎的／研究する／助かる leem-se:', choices: [{ n: 1, text: 'せんもんがっこう／きそてき／けんきゅうする／たすかる' }, { n: 2, text: 'せんこうがっこう／きほんてき／けんさくする／すくかる' }, { n: 3, text: 'せんもんがくこう／きそまと／けんきゅうする／たつかる' }, { n: 4, text: 'せんもんがっこう／きそてき／けんきょうする／たすかる' }], answer: 1, explanationPt: 'São itens do bloco 漢字のことば da Lição 10.' },
+    { id: 'iro-pi-l10-41', number: 41, prompt: 'TIPS: sobre sites de aprendizagem da JF, qual afirmação está correta?', choices: [{ n: 1, text: 'a JF desenvolve, opera ou supervisiona vários sites/apps gratuitos, como みなと, アニメ・マンガの日本語, ひきだすにほんご e KANJI Memory Hint' }, { n: 2, text: 'a JF não oferece materiais online' }, { n: 3, text: 'todos exigem pagamento obrigatório' }, { n: 4, text: 'só há material de kanji' }], answer: 1, explanationPt: 'A TIPS também cita MARUGOTO Plus, Erin, Hirogaru e NHK WORLD-JAPAN やさしい日本語.' },
+    { id: 'iro-pi-l10-42', number: 42, prompt: 'TIPS: sobre タンデム学習 e AI, qual afirmação está alinhada ao material?', choices: [{ n: 1, text: 'tandem é troca entre pessoas em pé de igualdade, mas exige cuidado com segurança; AI é útil para estudo, mas suas respostas precisam ser verificadas' }, { n: 2, text: 'tandem é sempre relação professor-aluno e AI sempre responde corretamente' }, { n: 3, text: 'AI só serve para imagem, não para japonês' }, { n: 4, text: 'tandem não pode ser feito online' }], answer: 1, explanationPt: 'As TIPS destacam aprender ajudando um ao outro, usar serviços confiáveis e confirmar respostas de AI com cuidado.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -2470,6 +2523,140 @@ const L9_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L10_SCRIPTS: Record<string, ScriptItem[]> = {
+  '10-01': [
+    {
+      label: 'ことば - 日本語の学習方法 (10-01)',
+      lines: [
+        { speaker: 'Narração', ja: '{日本語学校|にほんごがっこう}に{通|かよ}う／{地域|ちいき}の{日本語教室|にほんごきょうしつ}に{通|かよ}う／オンラインレッスンを{受|う}ける', pt: 'frequentar escola de japonês / frequentar aula comunitária de japonês / fazer aulas online' },
+        { speaker: 'Narração', ja: '{本|ほん}で{勉強|べんきょう}する／{日本|にほん}のアニメを{見|み}る／{日本|にほん}のドラマを{見|み}る', pt: 'estudar por livros / ver anime japonês / ver dramas japoneses' },
+        { speaker: 'Narração', ja: 'テレビ／ラジオの{日本語講座|にほんごこうざ}で{勉強|べんきょう}する／{日本語学習|にほんごがくしゅう}サイトで{勉強|べんきょう}する／{日本語学習|にほんごがくしゅう}アプリで{勉強|べんきょう}する', pt: 'estudar por curso de japonês na TV/rádio / estudar em site de aprendizagem / estudar em app de aprendizagem' },
+        { speaker: 'Narração', ja: 'AIを{使|つか}う／タンデム{学習|がくしゅう}をする／{日本人|にほんじん}の{友|とも}だちを{作|つく}る', pt: 'usar IA / fazer aprendizagem tandem / fazer amigos japoneses' },
+      ],
+    },
+  ],
+  '10-02': [
+    {
+      label: 'ことば - 聞いて選ぶ (10-02)',
+      lines: [
+        { speaker: 'Narração', ja: '{本|ほん}で{勉強|べんきょう}する', pt: 'estudar por livros' },
+        { speaker: 'Narração', ja: 'テレビ／ラジオの{日本語講座|にほんごこうざ}で{勉強|べんきょう}する', pt: 'estudar por curso de japonês na TV ou no rádio' },
+        { speaker: 'Narração', ja: '{日本|にほん}のドラマを{見|み}る', pt: 'ver dramas japoneses' },
+        { speaker: 'Narração', ja: 'タンデム{学習|がくしゅう}をする', pt: 'fazer aprendizagem tandem' },
+        { speaker: 'Narração', ja: 'オンラインレッスンを{受|う}ける', pt: 'fazer aulas online' },
+        { speaker: 'Narração', ja: 'AIを{使|つか}う', pt: 'usar IA' },
+        { speaker: 'Narração', ja: '{地域|ちいき}の{日本語教室|にほんごきょうしつ}に{通|かよ}う', pt: 'frequentar uma aula comunitária de japonês' },
+        { speaker: 'Narração', ja: '{日本語学習|にほんごがくしゅう}アプリで{勉強|べんきょう}する', pt: 'estudar com app de aprendizagem de japonês' },
+      ],
+    },
+  ],
+  '10-03': [
+    {
+      label: '① ニコルさん - ドラマで勉強する (10-03)',
+      setupPt: 'Nicole fala como usa dramas japoneses para estudar.',
+      lines: [
+        { speaker: 'シヴァ', ja: 'この{日本語|にほんご}クラスのほかに、もっと{日本語|にほんご}を{勉強|べんきょう}したいんだけど、ニコルさんとホンさんは、どうやって{日本語|にほんご}を{勉強|べんきょう}してる？', pt: 'Além desta aula de japonês, quero estudar mais. Nicole e Hong, como vocês estudam japonês?' },
+        { speaker: 'ニコル', ja: '{私|わたし}は、ネット{配信|はいしん}で{日本|にほん}のドラマをよく{見|み}てるよ。', pt: 'Eu vejo bastante dramas japoneses por streaming.' },
+        { speaker: 'シヴァ', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'ニコル', ja: '{見|み}るときは……えっと、{日本語|にほんご}で{何|なん}だっけ、subtitle を{使|つか}ってる。', pt: 'Quando assisto... como era em japonês mesmo, uso subtitle.' },
+        { speaker: 'ホン', ja: '{字幕|じまく}？', pt: 'Legenda?' },
+        { speaker: 'ニコル', ja: 'そうそう。{字幕|じまく}。ドラマの{配信|はいしん}って、{字幕|じまく}がつけられるでしょう？', pt: 'Isso, legenda. Em streaming de dramas dá para colocar legenda, né?' },
+        { speaker: 'ニコル', ja: '{最初|さいしょ}は{字幕|じまく}をつけないで{見|み}て、{次|つぎ}に{日本語|にほんご}の{字幕|じまく}をつけて{見|み}て、{最後|さいご}に{英語|えいご}の{字幕|じまく}をつけて{見|み}る。', pt: 'Primeiro vejo sem legenda, depois vejo com legenda em japonês e, por último, com legenda em inglês.' },
+        { speaker: 'シヴァ', ja: '3{回|かい}も{見|み}るの？ すごいね。', pt: 'Você assiste até três vezes? Impressionante.' },
+        { speaker: 'ニコル', ja: 'その{方法|ほうほう}でいろいろドラマを{見|み}てたら、{普段|ふだん}の{生活|せいかつ}とか{仕事|しごと}とかで、{相手|あいて}の{言|い}っていることがわかるようになってきたよ。', pt: 'Depois de ver vários dramas assim, passei a entender melhor o que as pessoas dizem na vida diária e no trabalho.' },
+        { speaker: 'ホン', ja: 'すごーい。', pt: 'Que incrível.' },
+        { speaker: 'ニコル', ja: 'ドラマが{大好|だいす}きだから、{私|わたし}に{合|あ}ってるのかな。', pt: 'Como eu adoro dramas, talvez combine comigo.' },
+        { speaker: 'シヴァ', ja: 'いいね。{今度|こんど}、ぼくもやってみよう。', pt: 'Legal. Vou tentar fazer isso qualquer hora.' },
+      ],
+    },
+  ],
+  '10-04': [
+    {
+      label: '② ホンさん - タンデム学習 (10-04)',
+      setupPt: 'Hong explica como faz tandem com uma pessoa japonesa.',
+      lines: [
+        { speaker: 'シヴァ', ja: 'ホンさんは？', pt: 'E você, Hong?' },
+        { speaker: 'ホン', ja: '{私|わたし}は、{日本人|にほんじん}の{人|ひと}に{教|おし}えてもらってるよ。タンデム{学習|がくしゅう}って、{知|し}ってる？', pt: 'Eu recebo ajuda de uma pessoa japonesa. Você conhece aprendizagem tandem?' },
+        { speaker: 'シヴァ', ja: 'タンデム？', pt: 'Tandem?' },
+        { speaker: 'ホン', ja: 'そう。{自分|じぶん}の{母語|ぼご}とか{得意|とくい}なことばを、お{互|たが}いに{教|おし}え{合|あ}うんだよ。', pt: 'Isso. Cada pessoa ensina à outra sua língua materna ou uma língua em que é boa.' },
+        { speaker: 'ホン', ja: '{相手|あいて}の{日本人|にほんじん}はベトナム{語|ご}を{勉強|べんきょう}してるから、{私|わたし}がベトナム{語|ご}を{教|おし}えて、その{人|ひと}は{私|わたし}に{日本語|にほんご}を{教|おし}えてくれる。', pt: 'A pessoa japonesa estuda vietnamita, então eu ensino vietnamita e ela me ensina japonês.' },
+        { speaker: 'シヴァ', ja: 'そうなんだ。どう？', pt: 'Entendi. E como é?' },
+        { speaker: 'ホン', ja: 'うん、{自分|じぶん}の{言|い}いたいことが{日本語|にほんご}で{言|い}えるようになってきたと{思|おも}う。', pt: 'Acho que passei a conseguir dizer em japonês o que quero dizer.' },
+        { speaker: 'シヴァ', ja: 'その{人|ひと}、{日本語|にほんご}の{先生|せんせい}なの？', pt: 'Essa pessoa é professora de japonês?' },
+        { speaker: 'ホン', ja: 'ううん、{普通|ふつう}の{日本人|にほんじん}。でも、{日本人|にほんじん}が{普段|ふだん}よく{使|つか}うことばがいろいろ{覚|おぼ}えられるから、{気|き}に{入|い}ってる。', pt: 'Não, é uma pessoa japonesa comum. Mas gosto porque consigo aprender várias palavras que japoneses usam normalmente.' },
+        { speaker: 'シヴァ', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'ホン', ja: 'タンデム{相手|あいて}が{探|さが}せるアプリがあるから、よかったら、{紹介|しょうかい}するね。', pt: 'Tem um app para procurar parceiros de tandem. Se quiser, eu te mostro.' },
+        { speaker: 'シヴァ', ja: 'うん、ありがとう。', pt: 'Sim, obrigado.' },
+      ],
+    },
+  ],
+  '10-05': [
+    {
+      label: '③ シヴァさん - AIを使う (10-05)',
+      setupPt: 'Shiva fala como usa IA para corrigir textos em japonês.',
+      lines: [
+        { speaker: 'ホン', ja: 'シヴァさんは？ {何|なに}かやってること、ある？', pt: 'E você, Shiva? Tem algo que você faça?' },
+        { speaker: 'シヴァ', ja: 'うーん、{勉強|べんきょう}って{感|かん}じじゃないけど……ぼくは、AIを{使|つか}ってる。', pt: 'Hmm, não sei se parece exatamente estudo... mas eu uso IA.' },
+        { speaker: 'ホン', ja: 'え、どういうこと？', pt: 'Como assim?' },
+        { speaker: 'シヴァ', ja: '{例|たと}えば、ChatGPTとか。', pt: 'Por exemplo, ChatGPT.' },
+        { speaker: 'ニコル', ja: 'あ、{私|わたし}も{使|つか}ってる。', pt: 'Ah, eu também uso.' },
+        { speaker: 'シヴァ', ja: 'すごく{便利|べんり}だよね。{日本語|にほんご}の{文章|ぶんしょう}を{書|か}いたとき、「これでいいですか？」ってAIに{聞|き}いたら、{文法|ぶんぽう}や{表現|ひょうげん}を{直|なお}してくれるんだ。', pt: 'É muito prático, né? Quando escrevo um texto em japonês, pergunto à IA “está certo assim?” e ela corrige a gramática e as expressões.' },
+        { speaker: 'ホン', ja: 'へー、{便利|べんり}なんだね。', pt: 'Nossa, é prático.' },
+        { speaker: 'シヴァ', ja: '{前|まえ}は{日本語|にほんご}を{書|か}くのがすごく{苦手|にがて}だったけど、AIに{助|たす}けてもらえるから、{今|いま}は{書|か}くのがこわくなくなってきた。', pt: 'Antes eu era muito ruim em escrever japonês, mas como posso receber ajuda da IA, agora escrever tem ficado menos assustador.' },
+        { speaker: 'ホン', ja: 'へー。', pt: 'Entendi.' },
+        { speaker: 'シヴァ', ja: 'わからないことを{何|なん}でも{教|おし}えてくれて、{本当|ほんとう}に{助|たす}かってる。', pt: 'Ela me ensina qualquer coisa que eu não entendo, então ajuda muito.' },
+        { speaker: 'ニコル', ja: 'そうそう。', pt: 'É isso mesmo.' },
+        { speaker: 'ホン', ja: 'いろいろな{方法|ほうほう}があるんだね。', pt: 'Há vários métodos, né?' },
+        { speaker: 'シヴァ', ja: 'そうだね。いろいろ{試|ため}してみよう。', pt: 'Pois é. Vamos experimentar vários.' },
+      ],
+    },
+  ],
+  '10-06': [
+    {
+      label: '形に注目 - 数量＋も (10-06)',
+      lines: [
+        { speaker: 'シヴァ', ja: '3{回|かい}も{見|み}るの？ すごいね。', pt: 'Você assiste até três vezes? Impressionante.' },
+      ],
+    },
+  ],
+  '10-07': [
+    {
+      label: '形に注目 - V-てくる (10-07)',
+      lines: [
+        { speaker: 'ニコル', ja: 'その{方法|ほうほう}でいろいろドラマを{見|み}てたら、{普段|ふだん}の{生活|せいかつ}とか{仕事|しごと}とかで、{相手|あいて}の{言|い}っていることがわかるようになってきたよ。', pt: 'Depois de ver vários dramas assim, passei a entender melhor o que as pessoas dizem na vida diária e no trabalho.' },
+        { speaker: 'ホン', ja: '{自分|じぶん}の{言|い}いたいことが{日本語|にほんご}で{言|い}えるようになってきたと{思|おも}う。', pt: 'Acho que passei a conseguir dizer em japonês o que quero dizer.' },
+        { speaker: 'シヴァ', ja: '{今|いま}は{書|か}くのがこわくなくなってきた。', pt: 'Agora escrever tem ficado menos assustador.' },
+      ],
+    },
+  ],
+  '10-08': [
+    {
+      label: 'ストラテジー - わからないことばを英語で言う (10-08)',
+      lines: [
+        { speaker: 'A', ja: '{見|み}るときは……えっと、{日本語|にほんご}で{何|なん}だっけ、subtitle を{使|つか}ってる。', pt: 'Quando assisto... como era em japonês mesmo, uso subtitle.' },
+        { speaker: 'B', ja: '{字幕|じまく}？', pt: 'Legenda?' },
+        { speaker: 'A', ja: 'そうそう。{字幕|じまく}。', pt: 'Isso, legenda.' },
+      ],
+    },
+  ],
+  '10-09': [
+    {
+      label: '話すモデル - 自分の日本語の勉強方法 (10-09)',
+      lines: [
+        { speaker: 'A', ja: 'どうやって{日本語|にほんご}を{勉強|べんきょう}してる？', pt: 'Como você estuda japonês?' },
+        { speaker: 'B', ja: '{日本|にほん}のドラマを{見|み}てるよ。', pt: 'Vejo dramas japoneses.' },
+        { speaker: 'A', ja: 'ドラマ？', pt: 'Dramas?' },
+        { speaker: 'B', ja: '{最初|さいしょ}は{字幕|じまく}をつけないで{見|み}て、{次|つぎ}に{日本語|にほんご}の{字幕|じまく}をつけて{見|み}て、{最後|さいご}に{英語|えいご}の{字幕|じまく}をつけて{見|み}る。', pt: 'Primeiro vejo sem legenda, depois com legenda em japonês e, por último, com legenda em inglês.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Nossa.' },
+        { speaker: 'B', ja: '{普段|ふだん}の{生活|せいかつ}とか{仕事|しごと}とかで、{相手|あいて}の{言|い}っていることがわかるようになってきた。', pt: 'Passei a entender melhor o que as pessoas dizem na vida diária e no trabalho.' },
+        { speaker: 'A', ja: 'そうなんだ。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'ドラマが{大好|だいす}きだから、{私|わたし}に{合|あ}ってるのかな。', pt: 'Como adoro dramas, talvez combine comigo.' },
+        { speaker: 'A', ja: 'いいね。', pt: 'Legal.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -3411,6 +3598,134 @@ const lesson9: Section = {
   audios: attachScripts(9, L9_SCRIPTS),
 }
 
+const lesson10: Section = {
+  id: 'lesson-10',
+  level: 'pre-intermediate',
+  titleJa: '第10課 どうやって日本語を勉強してる？',
+  titlePt: 'Lição 10 - Como você estuda japonês?',
+  summaryPt:
+    'Eu e o japonês · escolher sites e apps de estudo, conversar sobre métodos de aprendizagem e escrever um perfil para encontrar parceiro de tandem.',
+  studyNotes: [
+    {
+      title: 'Tópico: Eu e o japonês (私と日本語)',
+      bodyPt:
+        'Pergunta de abertura: どうやって日本語を勉強してる？\n\n' +
+        '## Can-do\n' +
+        '- Ler descrições de cursos online e apps em um portal de aprendizagem de japonês e escolher opções adequadas.\n' +
+        '- Trocar informações relativamente detalhadas com um amigo sobre métodos de estudo de japonês.\n' +
+        '- Escrever um perfil, interesses e pedidos em um site/app para encontrar parceiros de tandem.',
+    },
+    {
+      title: 'Atividade 1: portal de aprendizagem',
+      bodyPt:
+        'A leitura compara quatro recursos de estudo em um portal de 日本語学習. O objetivo é escolher o recurso conforme a finalidade.\n\n' +
+        '| Recurso | Foco principal | Indicações do gabarito |\n|---|---|---|\n' +
+        '| A: JF にほんご e ラーニング みなと | cursos como まるごとコース, estudo abrangente, registro de usuário | 総合的な日本語, 漢字, 日本文化 |\n' +
+        '| B: ひきだすにほんご | programa de aprendizagem, vida/trabalho no Japão, estratégias | trabalhar e viver no Japão; オノマトペ |\n' +
+        '| C: アニメ・マンガの日本語 | japonês a partir de anime e mangá, gêneros e áudio | mangá, オノマトペ, kanji, cultura japonesa |\n' +
+        '| D: KANJI Memory Hint | memorizar kanji com ilustrações, leitura por áudio e série de apps | kanji |\n\n' +
+        'A atividade também introduz descrições escritas curtas, como `国際交流基金が運営する日本語学習プラットフォーム。`.',
+    },
+    {
+      title: 'Gramática ➊: V（普通形）＋N',
+      bodyPt:
+        '**V（普通形）＋N** modifica e explica um substantivo. Nesta lição, aparece em descrições de sites e apps.\n\n' +
+        '- `日本語を総合的に勉強する「まるごとコース」` = o curso “Marugoto”, em que se estuda japonês de forma abrangente.\n' +
+        '- `アニメ・マンガを入り口として、日本語を勉強するサイトです。` = é um site para estudar japonês tendo anime e mangá como porta de entrada.\n' +
+        '- `漢字の練習ができるアプリです。` = é um app em que dá para praticar kanji.\n\n' +
+        'O substantivo não precisa ser sujeito ou objeto direto do verbo; a frase inteira explica que tipo de site, app, curso, serviço ou recurso é.',
+    },
+    {
+      title: 'Gramática ➋: terminar em substantivo',
+      bodyPt:
+        'Em textos escritos, uma descrição pode terminar diretamente em substantivo, omitindo `です`. Isso deixa o texto curto, como título ou chamada.\n\n' +
+        '- `国際交流基金が運営する日本語学習プラットフォーム。`\n' +
+        '- `日本語学習番組「ひきだすにほんご」のサイト。`\n' +
+        '- `恋愛、学校、忍者、侍の4つ。`\n\n' +
+        'Esse formato é comum em páginas de apresentação, listas de serviços e resumos de apps.',
+    },
+    {
+      title: 'Vocabulário: métodos de estudo',
+      bodyPt:
+        'A preparação de vocabulário apresenta maneiras de estudar japonês.\n\n' +
+        '| Japonês | Português |\n|---|---|\n' +
+        '| 日本語学校に通う | frequentar escola de japonês |\n' +
+        '| 地域の日本語教室に通う | frequentar aula comunitária de japonês |\n' +
+        '| オンラインレッスンを受ける | fazer aulas online |\n' +
+        '| 本で勉強する | estudar por livros |\n' +
+        '| 日本のアニメ／ドラマを見る | ver anime/dramas japoneses |\n' +
+        '| 日本語学習サイト／アプリで勉強する | estudar em site/app de aprendizagem |\n' +
+        '| AIを使う | usar IA |\n' +
+        '| タンデム学習をする | fazer aprendizagem tandem |\n' +
+        '| 日本人の友だちを作る | fazer amigos japoneses |',
+    },
+    {
+      title: 'Atividade 2: como cada pessoa estuda',
+      bodyPt:
+        'ニコル, ホン e シヴァ conversam depois da aula sobre métodos de estudo além da classe de japonês.\n\n' +
+        '| Pessoa | Método | Método específico | Efeito | Opinião |\n|---|---|---|---|---|\n' +
+        '| ニコル | 日本のドラマを見る | assiste sem legenda, depois com 字幕 em japonês, depois com 字幕 em inglês | entende melhor o que as pessoas dizem | combina com ela porque ama dramas |\n' +
+        '| ホン | タンデム学習をする | ensina vietnamita e recebe japonês de uma pessoa japonesa | consegue dizer em japonês o que quer dizer | gosta porque aprende palavras usadas no dia a dia |\n' +
+        '| シヴァ | AIを使う | pergunta se seus textos em japonês estão corretos e recebe correções | escrever japonês ficou menos assustador | ajuda muito porque ensina qualquer dúvida |\n\n' +
+        'A fala usa 普通体 porque são colegas/amigos conversando informalmente.',
+    },
+    {
+      title: 'Gramática ➌: 数量＋も',
+      bodyPt:
+        '**数量＋も** mostra que a quantidade parece grande para quem fala.\n\n' +
+        '- `3回も見るの？ すごいね。` = você assiste até três vezes? Impressionante.\n' +
+        '- `漢字のテストで、8つも間違えてしまいました。` = errei até oito itens na prova de kanji.\n' +
+        '- `もう10年も日本語を勉強しているけど、うまく話せません。` = já estudo japonês há dez anos, mas ainda não falo bem.\n\n' +
+        'A nuance é surpresa, ênfase ou sensação de “tanto assim”.',
+    },
+    {
+      title: 'Gramática ➍: V-てくる',
+      bodyPt:
+        '**V-てくる** expressa mudança que vem ocorrendo até agora. Na lição, aparece para comparar a aprendizagem atual com antes.\n\n' +
+        '- `相手の言っていることがわかるようになってきた。` = passei a entender o que a outra pessoa está dizendo.\n' +
+        '- `言いたいことが日本語で言えるようになってきた。` = passei a conseguir dizer em japonês o que quero dizer.\n' +
+        '- `書くのがこわくなくなってきた。` = escrever tem ficado menos assustador.\n\n' +
+        'Forma: verbo na forma テ + くる. Pode aparecer com `V-るようになる` para falar de habilidade que se desenvolveu gradualmente.',
+    },
+    {
+      title: 'Estratégia: dizer a palavra em inglês',
+      bodyPt:
+        'A estratégia é **わからないことばを英語で言う**: quando não souber uma palavra em japonês, usar uma palavra em inglês ou outra língua compartilhada para continuar a conversa.\n\n' +
+        '| Fala | Função |\n|---|---|\n' +
+        '| `日本語で何だっけ、subtitle を使ってる。` | a pessoa sabe o conceito, mas não lembra o termo japonês |\n' +
+        '| `字幕？` | o interlocutor oferece a palavra japonesa |\n' +
+        '| `そうそう。字幕。` | a pessoa confirma e segue a fala |\n\n' +
+        'O objetivo é manter a comunicação fluindo e recuperar o vocabulário pelo contexto.',
+    },
+    {
+      title: 'Atividade 3: perfil para tandem',
+      bodyPt:
+        'A escrita final pede um perfil para procurar parceiro de タンデム学習. O perfil organiza informações pessoais e pedidos de aprendizagem.\n\n' +
+        '| Campo | O que escrever |\n|---|---|\n' +
+        '| 名前（ニックネーム可） | nome ou apelido |\n' +
+        '| 話せる言語／学習したい言語 | línguas que fala e língua que quer aprender |\n' +
+        '| 自分のこと／好きなこと／興味があること | quem você é, gostos e interesses |\n' +
+        '| 日本語の勉強について／お願いしたいこと | objetivo de estudo e ajuda que deseja receber |\n\n' +
+        'Os exemplos incluem XYZ, うた, クオン e 念念: cada perfil combina línguas, interesses, situação pessoal e um pedido concreto, como revisar e-mails, conversar com colegas ou praticar apresentações.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {登録|とうろく}, {在住|ざいじゅう}, {対象|たいしょう}, {専門学校|せんもんがっこう}, {文章|ぶんしょう}, {基礎的|きそてき}（な）, {表現|ひょうげん}, {研究|けんきゅう}する, {字幕|じまく}, {助|たす}かる.\n\n' +
+        '**Vocabulário-chave:** {主|おも}な, {対象|たいしょう}, {学|まな}ぶ, {運営|うんえい}する, プラットフォーム, {総合的|そうごうてき}（な）, ライブレッスン, ユーザー{登録|とうろく}, {基礎的|きそてき}（な）, {最大限|さいだいげん}, ストラテジー, {来日|らいにち}する, ドキュメンタリー, オノマトペ, {音声|おんせい}, {用語|ようご}, {連想|れんそう}, {語彙|ごい}, {書|か}き{順|じゅん}, {例文|れいぶん}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**JF運営・監修の日本語学習サイト:** a Japan Foundation desenvolve, opera e supervisiona vários sites e apps gratuitos para aprendizes de japonês. A TIPS cita, além dos recursos da lição, MARUGOTO Plus, Erin, Hirogaru e NHK WORLD-JAPAN やさしい日本語.\n\n' +
+        '**タンデム学習:** duas pessoas ensinam uma à outra as línguas que querem aprender. Pode ser presencial ou online, mas o texto alerta para usar serviços confiáveis por segurança.\n\n' +
+        '**AIと日本語学習:** AI pode corrigir textos, explicar palavras/gramática, simplificar ou traduzir textos, criar exercícios e servir como parceiro de escrita. O material ressalta que respostas geradas por AI nem sempre estão corretas; é importante pensar por conta própria e confirmar com outras pessoas ou professores.',
+    },
+  ],
+  groups: [lesson10Group],
+  audios: attachScripts(10, L10_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -3426,6 +3741,7 @@ const sections: Section[] = [
   lesson8,
   // Tópico 5 - Eu e o japonês (私と日本語)
   lesson9,
+  lesson10,
 ]
 
 export const irodoriPreIntermediate: Level = {
