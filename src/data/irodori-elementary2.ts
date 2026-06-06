@@ -2998,7 +2998,132 @@ const lesson13: Section = {
   audios: attachScripts(13, L13_SCRIPTS),
 }
 
-// ---- Lições 14-18 (estrutura por tópico; exercícios em construção) -----------
+// ---- Lição 14: 前髪は、もう少し短く切ってもらえますか？ (tópico さまざまなサービス) --------------
+const lesson14Group: ExerciseGroup = {
+  id: 'iro-e2-l14',
+  title: '前髪は、もう少し短く切ってもらえますか？',
+  subtitlePt: 'Usar serviços (entrega, lavanderia, banco) e entender como funcionam · no salão/barbearia, dizer o corte que quer · conhecer serviços para estrangeiros',
+  instructionJa: 'いみや ばめんに あう ものを えらんで ください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-e2-l14-1', number: 1, prompt: 'O título 「{前髪|まえがみ}は、もう{少|すこ}し{短|みじか}く{切|き}って[[もらえますか]]？」 — 「V-てもらえますか」 serve para:', choices: [{ n: 1, text: 'pedir educadamente um serviço/favor (pode cortar a franja um pouco mais curta?)' }, { n: 2, text: 'oferecer ajuda a alguém' }, { n: 3, text: 'recusar um pedido' }, { n: 4, text: 'descrever o passado' }], answer: 1, translationPt: 'Pode cortar a franja um pouco mais curta?', explanationPt: 'V-てもらえますか/もらえませんか = pedido educado de serviço. {切|き}ってもらえますか, {直|なお}してもらえますか. (Atividade · 美容院)' },
+    { id: 'iro-e2-l14-2', number: 2, prompt: 'Que serviço/loja esta ilustração mostra?', image: `${IMG}/Z_14_1_06_kuriininguten.png`, imageAlt: 'lavanderia / tinturaria (dry cleaner)', choices: [{ n: 1, text: 'クリーニング{店|てん} — lavanderia/tinturaria (dry cleaner)' }, { n: 2, text: 'コインランドリー — lavanderia self-service' }, { n: 3, text: '{美容院|びよういん} — salão de beleza' }, { n: 4, text: '{銀行|ぎんこう} — banco' }], answer: 1, explanationPt: 'クリーニング{店|てん} = tinturaria. シミ (mancha), シミ{抜|ぬ}き (tirar mancha, {別料金|べつりょうきん}). (Atividade 1 · 会話1)' },
+    { id: 'iro-e2-l14-3', number: 3, prompt: 'Que serviço/loja esta ilustração mostra?', image: `${IMG}/Z_14_1_07_koinrandorii.png`, imageAlt: 'lavanderia self-service com máquinas', choices: [{ n: 1, text: 'コインランドリー — lavanderia self-service' }, { n: 2, text: 'クリーニング{店|てん} — tinturaria' }, { n: 3, text: '{銀行|ぎんこう} — banco' }, { n: 4, text: '{郵便局|ゆうびんきょく} — correio' }], answer: 1, explanationPt: 'コインランドリー = lavanderia self-service (com máquinas a fichas). (Atividade 1)' },
+    { id: 'iro-e2-l14-4', number: 4, prompt: 'Que serviço/loja esta ilustração mostra?', image: `${IMG}/Z_14_1_05_biyooin.png`, imageAlt: 'salão de beleza (cabeleireiro)', choices: [{ n: 1, text: '{美容院|びよういん} — salão de beleza' }, { n: 2, text: '{理髪店|りはつてん}／{床屋|とこや} — barbearia' }, { n: 3, text: 'クリーニング{店|てん} — tinturaria' }, { n: 4, text: '{病院|びょういん} — hospital' }], answer: 1, explanationPt: '{美容院|びよういん} = salão de beleza ({理髪店|りはつてん}/{床屋|とこや} = barbearia). カット, シャンプー, パーマ, カラー. (Atividade 1 · Seção 3)' },
+    { id: 'iro-e2-l14-5', number: 5, prompt: 'Que serviço/loja esta ilustração mostra?', image: `${IMG}/Z_14_1_04_rihatsuten.png`, imageAlt: 'barbearia com cadeira e poste listrado', choices: [{ n: 1, text: '{理髪店|りはつてん}／{床屋|とこや} — barbearia' }, { n: 2, text: '{美容院|びよういん} — salão de beleza' }, { n: 3, text: '{銀行|ぎんこう} — banco' }, { n: 4, text: '{自転車店|じてんしゃてん} — bicicletaria' }], answer: 1, explanationPt: '{理髪店|りはつてん}/{床屋|とこや} = barbearia (バリカン, ひげ{剃|そ}り). (Atividade 1 · Seção 3)' },
+    { id: 'iro-e2-l14-6', number: 6, prompt: 'Que serviço/loja esta ilustração mostra?', image: `${IMG}/Z_14_1_09_jitenshaten.png`, imageAlt: 'bicicletaria (loja de conserto de bicicletas)', choices: [{ n: 1, text: '{自転車店|じてんしゃてん} — bicicletaria (conserto de bicicleta)' }, { n: 2, text: '{中古車店|ちゅうこしゃてん} — loja de carros usados' }, { n: 3, text: 'クリーニング{店|てん} — tinturaria' }, { n: 4, text: '{銀行|ぎんこう} — banco' }], answer: 1, explanationPt: '{自転車店|じてんしゃてん}: {空気|くうき}を{入|い}れる, タイヤ, {油|あぶら}を{差|さ}す. (Atividade 1 · 会話2)' },
+    { id: 'iro-e2-l14-7', number: 7, prompt: 'Que serviço esta ilustração mostra (entrega de encomendas)?', image: `${IMG}/Z_14_1_15_takuhaibin.png`, imageAlt: 'serviço de entrega de encomendas (takkyūbin)', choices: [{ n: 1, text: '{宅配便|たくはいびん} — serviço de entrega de encomendas' }, { n: 2, text: '{郵便局|ゆうびんきょく} — correio' }, { n: 3, text: '{銀行|ぎんこう} — banco' }, { n: 4, text: 'コインランドリー — lavanderia' }], answer: 1, explanationPt: '{宅配便|たくはいびん} = entrega de encomendas. {着払|ちゃくばら}い (paga quem recebe) / {元払|もとばら}い (paga quem envia), {伝票|でんぴょう}, お{届|とど}け{先|さき}. (Atividade 1 · 会話3)' },
+    { id: 'iro-e2-l14-8', number: 8, prompt: 'Que serviço/loja esta ilustração mostra?', image: `${IMG}/Z_14_1_01_ginkoo.png`, imageAlt: 'banco (caixa eletrônico/ATM)', choices: [{ n: 1, text: '{銀行|ぎんこう} — banco (ATM)' }, { n: 2, text: '{郵便局|ゆうびんきょく} — correio' }, { n: 3, text: '{美容院|びよういん} — salão de beleza' }, { n: 4, text: '{図書館|としょかん} — biblioteca' }], answer: 1, explanationPt: '{銀行|ぎんこう}のATM: お{引|ひ}き{出|だ}し (saque), キャッシュカード, {暗証番号|あんしょうばんごう} (senha), {金額|きんがく}, {両替|りょうがえ}. (Atividade 1 · 会話4)' },
+    { id: 'iro-e2-l14-9', number: 9, prompt: '聴解 14-02 (クリーニング店): o que a atendente recomenda para a calça com mancha?', context: '{店員|てんいん}：このシミは、{普通|ふつう}のクリーニングでは{落|お}ちないので、シミ{抜|ぬ}きをおすすめします。シミ{抜|ぬ}きは{別料金|べつりょうきん}になります。', choices: [{ n: 1, text: 'Recomenda a remoção de mancha (シミ抜き), que tem cobrança à parte (別料金).' }, { n: 2, text: 'Recomenda jogar a calça fora.' }, { n: 3, text: 'Diz que não há nada a fazer.' }, { n: 4, text: 'Recomenda lavar em casa.' }], answer: 1, explanationPt: 'シミは{普通|ふつう}のクリーニングでは{落|お}ちない→シミ{抜|ぬ}き ({別料金|べつりょうきん}); お{渡|わた}し (entrega) em alguns dias. (聴解 14-02)' },
+    { id: 'iro-e2-l14-10', number: 10, prompt: '聴解 14-03 (自転車店): a pessoa veio encher o pneu; o que o dono faz “de quebra” (ついでに)?', context: '{店員|てんいん}：{空気|くうき}を{入|い}れますね。ついでに、{油|あぶら}を{差|さ}しておきましょうか。', choices: [{ n: 1, text: 'Enche o pneu de ar e, de quebra, lubrifica (油を差す) a bicicleta.' }, { n: 2, text: 'Vende uma bicicleta nova.' }, { n: 3, text: 'Cobra uma taxa alta pelo ar.' }, { n: 4, text: 'Recusa o serviço.' }], answer: 1, explanationPt: '{空気|くうき}を{入|い}れる + ついでに{油|あぶら}を{差|さ}す (de quebra). タイヤ, キャップ, はずす. (聴解 14-03)' },
+    { id: 'iro-e2-l14-11', number: 11, prompt: '聴解 14-04 (宅配便): qual a diferença entre 着払い e 元払い ao enviar uma encomenda?', context: '{店員|てんいん}：お{支払|しはら}いは、{着払|ちゃくばら}いと{元払|もとばら}いのどちらにしますか？', choices: [{ n: 1, text: '着払い = quem recebe paga; 元払い = quem envia paga (na hora).' }, { n: 2, text: '着払い = mais caro; 元払い = grátis.' }, { n: 3, text: 'São a mesma coisa.' }, { n: 4, text: '着払い = só para o exterior.' }], answer: 1, explanationPt: '{着払|ちゃくばら}い (paga o destinatário) vs {元払|もとばら}い (paga o remetente); {午前中|ごぜんちゅう} etc. p/ horário; お{預|あず}かりします. (聴解 14-04)' },
+    { id: 'iro-e2-l14-12', number: 12, prompt: '聴解 14-05 (ATM): que passos aparecem para sacar dinheiro?', context: '「お{引|ひ}き{出|だ}し」をタッチ→キャッシュカードを{入|い}れる→{暗証番号|あんしょうばんごう}（4{桁|けた}）を{入力|にゅうりょく}する→{金額|きんがく}を{入|い}れる。', choices: [{ n: 1, text: 'Tocar em «saque», inserir o cartão, digitar a senha (4 dígitos) e o valor.' }, { n: 2, text: 'Só inserir o cartão e pronto.' }, { n: 3, text: 'Falar com o caixa humano.' }, { n: 4, text: 'Digitar nome e endereço.' }], answer: 1, explanationPt: 'ATM: お{引|ひ}き{出|だ}し→キャッシュカード→{暗証番号|あんしょうばんごう}4{桁|けた}{入力|にゅうりょく}→{金額|きんがく}; {利用明細|りようめいさい} (extrato), {両替|りょうがえ}. (聴解 14-05)' },
+    { id: 'iro-e2-l14-13', number: 13, prompt: 'Você recebeu um aviso de ausência (不在連絡票) do 宅配便. Que formas há para pedir a reentrega (再配達)?', choices: [{ n: 1, text: 'ir ao correio buscar, preencher o papel e pôr no correio, pela internet, por telefone — escolhendo onde/quando receber (自宅/勤め先)' }, { n: 2, text: 'só esperar; não dá para fazer nada' }, { n: 3, text: 'pagar uma multa na loja' }, { n: 4, text: 'devolver a encomenda ao remetente' }], answer: 1, explanationPt: '{再配達|さいはいたつ}: {郵便局|ゆうびんきょく}で{受|う}け{取|と}る／{紙|かみ}をポストに／インターネット／{電話|でんわ}. {不在|ふざい}, お{勤|つと}め{先|さき} (trabalho). (Seção 2)' },
+    { id: 'iro-e2-l14-14', number: 14, prompt: '聴解 14-07 (美容院): como o cliente diz o corte que quer?', context: '{客|きゃく}：ボリュームを{少|すく}なくして、{長|なが}さも{少|すこ}し{短|みじか}くしてください。…{上|うえ}は3cmぐらい、まわりは5mmぐらいにしてください。', choices: [{ n: 1, text: 'Pede para reduzir o volume e deixar um pouco mais curto: ~3 cm em cima e ~5 mm nas laterais.' }, { n: 2, text: 'Pede para deixar bem comprido.' }, { n: 3, text: 'Pede para pintar de loiro.' }, { n: 4, text: 'Pede só lavagem, sem corte.' }], answer: 1, explanationPt: 'Salão: ボリュームを{少|すく}なくして、{短|みじか}くして; {上|うえ}は3cm、まわりは5mmにして; こんな{感|かん}じに. (聴解 14-07)' },
+    { id: 'iro-e2-l14-15', number: 15, prompt: '「{全体的|ぜんたいてき}に{短|みじか}[[く]]{切|き}ってください」「まわりは5mm[[に]]してください」 — para dizer COMO fazer algo, usa-se:', choices: [{ n: 1, text: 'い-adj → 〜く + V; な-adj/N → 〜に + する/V (cortar curto / deixar em 5 mm)' }, { n: 2, text: '〜たり〜たりする' }, { n: 3, text: '〜てしまう' }, { n: 4, text: '〜かもしれない' }], answer: 1, explanationPt: 'A-く + V: {短|みじか}く{切|き}る, {少|すく}なくする; N/なA-に + する: 5mmにする, きれいにする. (文法ノート ❶)' },
+    { id: 'iro-e2-l14-16', number: 16, prompt: 'Para pedir um corte específico ao cabeleireiro, o padrão central da lição é:', choices: [{ n: 1, text: '〜く／〜に + {切|き}ってもらえますか／してください (短く切ってもらえますか／5mmにしてください)' }, { n: 2, text: '〜はもう{始|はじ}まりましたか' }, { n: 3, text: '〜を{盗|ぬす}まれました' }, { n: 4, text: '〜たことがあります' }], answer: 1, explanationPt: 'Pedido de corte: A-く/N-に + {切|き}ってもらえますか／してください. (Atividade 2 · 希望を伝える)' },
+    { id: 'iro-e2-l14-17', number: 17, prompt: '「{外国|がいこく}の{方|かた}[[のために]]、いろいろなサービスがあります」 — 「N のために、〜」 significa:', choices: [{ n: 1, text: 'para (o benefício de) ~: há vários serviços para os estrangeiros' }, { n: 2, text: 'por causa de ~ (culpa de)' }, { n: 3, text: 'em vez de ~' }, { n: 4, text: 'apesar de ~' }], answer: 1, explanationPt: 'N のために = «para (o bem de) ~». {外国|がいこく}の{方|かた}のために, {家族|かぞく}のために, {健康|けんこう}のために. (文法ノート ❷)' },
+    { id: 'iro-e2-l14-18', number: 18, prompt: '聴解 14-13 (外国の方のためのサービス): que tipos de serviço para estrangeiros são apresentados?', image: `${IMG}/Z_14_4_01_gaikokugo-soodan.png`, imageAlt: 'balcão de consulta em língua estrangeira', choices: [{ n: 1, text: 'consulta em língua estrangeira (外国語相談), intérprete no hospital (通訳), guia de vida e aulas de japonês (日本語教室)' }, { n: 2, text: 'só serviços de táxi' }, { n: 3, text: 'só venda de comida' }, { n: 4, text: 'só serviços bancários' }], answer: 1, explanationPt: '{外国|がいこく}の{方|かた}のために: {外国語|がいこくご}{相談|そうだん} ({無料|むりょう}), {病院|びょういん}の{通訳|つうやく}, {生活|せいかつ}ガイドブック, {日本語|にほんご}{教室|きょうしつ}. (聴解 14-13)' },
+    { id: 'iro-e2-l14-19', number: 19, prompt: 'Vocabulário de serviços: 「{宅配便|たくはいびん}／{着払|ちゃくばら}い／{暗証番号|あんしょうばんごう}／{再配達|さいはいたつ}／{両替|りょうがえ}」 significam:', choices: [{ n: 1, text: 'entrega de encomendas / pagamento na entrega / senha (PIN) / reentrega / troca de dinheiro (trocar nota)' }, { n: 2, text: 'correio / desconto / número de série / devolução / câmbio de moeda estrangeira' }, { n: 3, text: 'táxi / gorjeta / código de barras / cancelamento / saque' }, { n: 4, text: 'mudança / parcela / RG / entrega expressa / depósito' }], answer: 1, explanationPt: '{宅配便|たくはいびん}, {着払|ちゃくばら}い, {暗証番号|あんしょうばんごう}, {再配達|さいはいたつ}, {両替|りょうがえ}. Também: シミ{抜|ぬ}き, {空気入|くうきい}れ, {利用明細|りようめいさい}, {不在|ふざい}. (Atividades)' },
+    { id: 'iro-e2-l14-20', number: 20, prompt: 'Vocabulário do salão: 「{前髪|まえがみ}／{長|なが}さ／{全体的|ぜんたいてき}に／バリカン／シャンプー{台|だい}」 significam:', choices: [{ n: 1, text: 'franja / comprimento / no geral (de modo geral) / máquina de cortar cabelo / lavatório (do salão)' }, { n: 2, text: 'pente / cor / às vezes / secador / espelho' }, { n: 3, text: 'cabelo / peso / nunca / tesoura / cadeira' }, { n: 4, text: 'barba / largura / sempre / pincel / toalha' }], answer: 1, explanationPt: '{前髪|まえがみ} (franja), {長|なが}さ (comprimento), {全体的|ぜんたいてき}に (no geral), バリカン (máquina), シャンプー{台|だい} (lavatório). Também: {鏡|かがみ}, ひげ{剃|そ}り, こんな{感|かん}じ. (Seção 3)' },
+    { id: 'iro-e2-l14-21', number: 21, prompt: 'Os kanji 「{外国|がいこく}／{情報|じょうほう}／{相談|そうだん}／{質問|しつもん}／{窓口|まどぐち}」 lêem-se:', choices: [{ n: 1, text: 'がいこく (exterior/estrangeiro) / じょうほう (informação) / そうだん (consulta) / しつもん (pergunta) / まどぐち (guichê/balcão)' }, { n: 2, text: 'がいこく / じょうほう / そうだん / しつもん / そうこう' }, { n: 3, text: 'そとくに / じょうほう / あいだん / しつもん / まどぐち' }, { n: 4, text: 'がいこく / せいほう / そうだん / しちもん / まどぐち' }], answer: 1, explanationPt: '{外国|がいこく}, {情報|じょうほう}, {相談|そうだん}, {質問|しつもん}, {窓口|まどぐち} (10{番|ばん}の{窓口|まどぐち}). (漢字のことば)' },
+    { id: 'iro-e2-l14-22', number: 22, prompt: 'Os kanji 「{郵便局|ゆうびんきょく}／{近所|きんじょ}／{自動|じどう}／{洗|あら}う／{入力|にゅうりょく}する」 lêem-se:', choices: [{ n: 1, text: 'ゆうびんきょく (correio) / きんじょ (vizinhança) / じどう (automático) / あらう (lavar) / にゅうりょくする (digitar/inserir)' }, { n: 2, text: 'ゆうびんきょく / きんじょ / じどう / せんう / にゅうりょくする' }, { n: 3, text: 'ゆうびんきょく / ちかじょ / じどう / あらう / いりりょくする' }, { n: 4, text: 'ゆうびんつぼね / きんじょ / みずどう / あらう / にゅうりょく' }], answer: 1, explanationPt: '{郵便局|ゆうびんきょく}, {近所|きんじょ}, {自動|じどう} ({自動|じどう}で{出|で}る), {洗|あら}う ({髪|かみ}を{洗|あら}う), {入力|にゅうりょく}する. (漢字のことば)' },
+    { id: 'iro-e2-l14-23', number: 23, prompt: 'Resumo: nesta lição, para usar serviços e fazer pedidos, aprende-se principalmente:', choices: [{ n: 1, text: 'V-てもらえますか (pedir serviço), A-く/N-に + V (短く切る), N のために (para estrangeiros etc.)' }, { n: 2, text: '〜たら / 受身 / かもしれない' }, { n: 3, text: '〜んです / しか / だけ' }, { n: 4, text: '〜てある / だけじゃなくて' }], answer: 1, explanationPt: 'Núcleo da L14: pedir serviços (V-てもらえますか), instruir como fazer (A-く/N-に+V ❶) e serviços «para ~» (Nのために ❷).' },
+  ],
+}
+
+// Resumos das faixas de áudio da Lição 14 (situação + falas-chave citadas; não verbatim)
+const L14_SCRIPTS: Record<string, ScriptItem[]> = {
+  '14-02': [
+    {
+      label: '会話1 — クリーニング店 (14-02) · resumo',
+      setupJa: 'シミのついたズボンを{持|も}って、クリーニング{店|てん}に{来|き}ました。',
+      setupPt: 'Resumo: o cliente leva uma calça manchada à tinturaria; a atendente diz que a mancha não sai na lavagem comum e recomenda a remoção de mancha (com taxa à parte).',
+      lines: [
+        { speaker: '店員', ja: 'このシミは、{普通|ふつう}のクリーニングでは{落|お}ちないので、シミ{抜|ぬ}きをおすすめします。シミ{抜|ぬ}きは{別料金|べつりょうきん}になります。', pt: 'Esta mancha não sai na lavagem comum, então recomendo a remoção de mancha. A remoção de mancha tem cobrança à parte.' },
+      ],
+    },
+  ],
+  '14-04': [
+    {
+      label: '会話3 — 宅配便 (14-04) · resumo',
+      setupPt: 'Resumo: a pessoa vai enviar uma encomenda numa loja de conveniência; a atendente pergunta a forma de pagamento (paga quem envia ou quem recebe) e quando deve chegar.',
+      lines: [
+        { speaker: '店員', ja: 'お{支払|しはら}いは、{着払|ちゃくばら}いと{元払|もとばら}いのどちらにしますか？', pt: 'O pagamento será na entrega (着払い) ou agora pelo remetente (元払い)?' },
+      ],
+    },
+  ],
+  '14-07': [
+    {
+      label: '会話 — 美容院 (14-07) · resumo',
+      setupJa: '{美容院|びよういん}で、どのような{髪型|かみがた}にしたいか{伝|つた}えています。',
+      setupPt: 'Resumo: no salão, o cliente pede corte e shampoo, e explica o corte que quer (menos volume, mais curto; ~3 cm em cima, ~5 mm nas laterais).',
+      lines: [
+        { speaker: '客', ja: 'カットとシャンプー、お{願|ねが}いします。ボリュームを{少|すく}なくして、{長|なが}さも{少|すこ}し{短|みじか}くしてください。', pt: 'Corte e shampoo, por favor. Diminua o volume e deixe o comprimento um pouco mais curto.' },
+        { speaker: '客', ja: '{前髪|まえがみ}は、もう{少|すこ}し{短|みじか}く{切|き}ってもらえますか？', pt: 'Pode cortar a franja um pouco mais curta?' },
+      ],
+    },
+  ],
+  '14-13': [
+    {
+      label: '会話 — 外国の方のためのサービス (14-13) · resumo',
+      setupJa: 'ディアンティさんが、{担当|たんとう}の{人|ひと}に、{外国|がいこく}の{方|かた}{向|む}けのサービスについて{聞|き}いています。',
+      setupPt: 'Resumo: Dianti pergunta sobre serviços para estrangeiros; há consulta gratuita em língua estrangeira (com hora marcada), intérprete no hospital, guia de vida e aulas de japonês.',
+      lines: [
+        { speaker: '担当の人', ja: 'ここで、{外国語|がいこくご}で{無料|むりょう}で{相談|そうだん}ができますよ。{病院|びょういん}に{行|い}くときの、{外国語|がいこくご}の{通訳|つうやく}も{紹介|しょうかい}しています。', pt: 'Aqui dá para fazer consulta gratuita em língua estrangeira. Também indicamos intérprete para quando você vai ao hospital.' },
+      ],
+    },
+  ],
+}
+
+const lesson14: Section = {
+  id: 'lesson-14',
+  level: 'elementary2',
+  titleJa: '第14課 前髪は、もう少し短く切ってもらえますか？',
+  titlePt: 'Lição 14 — Pode cortar a franja um pouco mais curta?',
+  summaryPt:
+    'Serviços diversos · usar serviços (tinturaria, bicicletaria, entrega, ATM) e entender como funcionam (シミ抜き／着払い／お引き出し), pedir a reentrega de uma encomenda (再配達), no salão/barbearia dizer o corte que quer (短く切ってもらえますか／5mmにしてください) e conhecer serviços para estrangeiros (外国の方のために).',
+  studyNotes: [
+    {
+      title: 'Tópico: Serviços diversos (さまざまなサービス)',
+      bodyPt:
+        '## O que você vai conseguir fazer (Can-do)\n' +
+        '- Ao usar serviços como entrega (takkyūbin) ou lavanderia, ouvir a explicação e entender como usar.\n' +
+        '- Entender um aviso de ausência e pedir a reentrega de uma encomenda.\n' +
+        '- No salão/barbearia, dizer que tipo de corte/penteado quer.\n' +
+        '- Conhecer e entender serviços oferecidos para estrangeiros (consulta, intérprete, aulas de japonês).\n\n' +
+        '💡 Lojas/serviços: {銀行|ぎんこう}, {郵便局|ゆうびんきょく}, クリーニング{店|てん}, コインランドリー, {自転車店|じてんしゃてん}, {宅配便|たくはいびん}, {美容院|びよういん}/{理髪店|りはつてん}, スマホ{修理店|しゅうりてん}.',
+    },
+    {
+      title: 'A-く / N-に + V — dizer COMO fazer (➊)',
+      bodyPt:
+        'Para instruir **como** algo deve ficar:\n\n' +
+        '- **い-adj → 〜く + V:** `{全体的|ぜんたいてき}に{短|みじか}く{切|き}ってください`, `{長|なが}さを{短|みじか}くする`.\n' +
+        '- **な-adj / N → 〜に + する/V:** `まわりは5mmにしてください`, `ボリュームを{少|すく}なくする`, `きれいにする`.\n\n' +
+        '💡 Pedido de serviço: junta-se com **V-てもらえますか / 〜てください**: `{短|みじか}く{切|き}ってもらえますか？`. (文法ノート ❶)',
+    },
+    {
+      title: 'N のために、〜 — para (o bem de) ~ (➋)',
+      bodyPt:
+        '**N のために、〜** indica o beneficiário/objetivo:\n\n' +
+        '- `{外国|がいこく}の{方|かた}のために、いろいろなサービスがあります` (há vários serviços para os estrangeiros).\n' +
+        '- `{家族|かぞく}のために{働|はたら}く`, `{健康|けんこう}のために{歩|ある}く`.\n\n' +
+        '💡 Com verbo: V(辞書形)+ために = «a fim de ~». (文法ノート ❷)',
+    },
+    {
+      title: 'Vocabulário e Kanji',
+      bodyPt:
+        '**Tinturaria/bici:** シミ, シミ{抜|ぬ}き, {別料金|べつりょうきん}, お{渡|わた}し, {空気|くうき}を{入|い}れる, タイヤ, {油|あぶら}を{差|さ}す, ついでに.\n\n' +
+        '**Entrega/ATM:** {宅配便|たくはいびん}, {着払|ちゃくばら}い/{元払|もとばら}い, {伝票|でんぴょう}, お{届|とど}け{先|さき}, {再配達|さいはいたつ}, {不在|ふざい}, お{引|ひ}き{出|だ}し, キャッシュカード, {暗証番号|あんしょうばんごう}, {金額|きんがく}, {両替|りょうがえ}, {利用明細|りようめいさい}.\n\n' +
+        '**Salão:** カット, シャンプー, パーマ, カラー, {前髪|まえがみ}, {長|なが}さ, {全体的|ぜんたいてき}に, バリカン, シャンプー{台|だい}, こんな{感|かん}じ.\n\n' +
+        '**Kanji da lição:** {外国|がいこく}, {情報|じょうほう}, {相談|そうだん}, {質問|しつもん}, {窓口|まどぐち}, {郵便局|ゆうびんきょく}, {近所|きんじょ}, {自動|じどう}, {洗|あら}う, {入力|にゅうりょく}する.',
+    },
+  ],
+  groups: [lesson14Group],
+  audios: attachScripts(14, L14_SCRIPTS),
+}
+
+// ---- Lições 15-18 (estrutura por tópico; exercícios em construção) -----------
 const sections: Section[] = [
   // Tópico 1 — As pessoas ao meu redor (私の周りの人たち)
   lesson1,
@@ -3020,12 +3145,7 @@ const sections: Section[] = [
   lesson12,
   // Tópico 7 — Serviços diversos (さまざまなサービス)
   lesson13,
-  scaffold(14, 'Serviços diversos', '前髪は、もう少し短く切ってもらえますか？', 'Pode cortar a franja um pouco mais curta?', [
-    'Ao usar serviços como entrega (takkyūbin) ou lavanderia, ouvir a explicação e entender como usar.',
-    'Ler o aviso de ausência dos Correios e entender como pedir a reentrega.',
-    'No salão/barbearia, transmitir como quer o corte de cabelo.',
-    'Na associação de intercâmbio etc., ouvir e entender que serviços há para estrangeiros.',
-  ]),
+  lesson14,
   // Tópico 8 — Natureza e meio ambiente (自然と環境)
   scaffold(15, 'Natureza e meio ambiente', '会議室の電気がついたままでした', 'As luzes da sala de reunião ficaram acesas', [
     'Ver um cartaz sobre atividades ecológicas afixado no trabalho etc. e entender os pontos de atenção.',
