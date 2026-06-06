@@ -267,4 +267,18 @@ export const PRE_INTERMEDIATE_AUDIO: Record<number, AudioTrack[]> = {
     { id: 'iro-pi-16-13', title: '16-13 · katachi', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/16-13_katachi.mp3', script: [] },
     { id: 'iro-pi-16-14', title: '16-14 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/16-14_hanasu.mp3', script: [] },
   ],
+  17: [
+    { id: 'iro-pi-17-01', title: '17-01 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/17-01_kiku1.mp3', script: [] },
+    { id: 'iro-pi-17-02', title: '17-02 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/17-02_kiku2.mp3', script: [] },
+    { id: 'iro-pi-17-03', title: '17-03 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/17-03_kiku3.mp3', script: [] },
+    { id: 'iro-pi-17-04', title: '17-04 · kiku4', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/17-04_kiku4.mp3', script: [] },
+    { id: 'iro-pi-17-05', title: '17-05 · katachi', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/17-05_katachi.mp3', script: [] },
+    { id: 'iro-pi-17-06', title: '17-06 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/17-06_hanasu.mp3', script: [] },
+    { id: 'iro-pi-17-07', title: '17-07 · kotoba1', descriptionPt: 'Vocabulário (ことばの準備)', src: '/audio/irodori/pre-intermediate/17-07_kotoba1.mp3', script: [] },
+    { id: 'iro-pi-17-08', title: '17-08 · kotoba2', descriptionPt: 'Vocabulário (ことばの準備)', src: '/audio/irodori/pre-intermediate/17-08_kotoba2.mp3', script: [] },
+    { id: 'iro-pi-17-09', title: '17-09 · kaiwa', descriptionPt: 'Diálogo (会話)', src: '/audio/irodori/pre-intermediate/17-09_kaiwa.mp3', script: [] },
+    { id: 'iro-pi-17-10', title: '17-10 · katachi', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/17-10_katachi.mp3', script: [] },
+    { id: 'iro-pi-17-11', title: '17-11 · strategy', descriptionPt: 'Estratégia de fala (ストラテジー)', src: '/audio/irodori/pre-intermediate/17-11_strategy.mp3', script: [] },
+    { id: 'iro-pi-17-12', title: '17-12 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/17-12_hanasu.mp3', script: [] },
+  ],
 }

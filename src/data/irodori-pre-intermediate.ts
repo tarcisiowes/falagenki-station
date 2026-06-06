@@ -901,6 +901,71 @@ const lesson16Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 17: ホールの仕事について説明します (tópico 日本で働く) ----
+const lesson17Group: ExerciseGroup = {
+  id: 'iro-pi-l17',
+  title: '第17課 ホールの仕事について説明します',
+  subtitlePt: 'Instruções no trabalho · regras de aparência · problemas no trabalho',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l17-1', number: 1, prompt: 'Qual é o tópico da Lição 17?', choices: [{ n: 1, text: '日本で働く (trabalhar no Japão)' }, { n: 2, text: '旅行の楽しみ' }, { n: 3, text: '人とのつき合い' }, { n: 4, text: '好きなもの好きなこと' }], answer: 1, explanationPt: 'A Lição 17 abre o tópico 日本で働く.' },
+    { id: 'iro-pi-l17-2', number: 2, prompt: '「ホールの仕事について説明します」 significa:', choices: [{ n: 1, text: 'Vou explicar o trabalho do salão/atendimento.' }, { n: 2, text: 'Consegui tirar muitas fotos boas.' }, { n: 3, text: 'Quero trabalhar aqui se for possível.' }, { n: 4, text: 'Tenho só dois dias de folga por mês.' }], answer: 1, explanationPt: 'ホール é o salão/área de atendimento em restaurante; 仕事について説明します = explicar sobre o trabalho.' },
+    { id: 'iro-pi-l17-3', number: 3, prompt: 'Pergunta de abertura: これまで仕事で、楽しかったことや困ったことはありましたか？', choices: [{ n: 1, text: 'Até agora, você já teve coisas divertidas ou problemáticas no trabalho?' }, { n: 2, text: 'Você já enviou mensagem de viagem?' }, { n: 3, text: 'Que tipo de quarto prefere?' }, { n: 4, text: 'Você já viu neve em Matsushima?' }], answer: 1, explanationPt: 'A abertura prepara os temas de instruções, regras e problemas no local de trabalho.' },
+    { id: 'iro-pi-l17-4', number: 4, prompt: 'Can-do 55: 「電車遅延と書いておいてください」 trabalha:', choices: [{ n: 1, text: 'dar instruções e explicações simples sobre trabalho a subordinados ou colegas mais novos' }, { n: 2, text: 'ler artigo turístico' }, { n: 3, text: 'pedir mudança de jantar em ryokan' }, { n: 4, text: 'fazer entrevista de emprego' }], answer: 1, explanationPt: 'O Can-do 55 é instruir ou explicar procedimentos simples no trabalho.' },
+    { id: 'iro-pi-l17-5', number: 5, prompt: 'Na atividade 1, quais situações aparecem?', choices: [{ n: 1, text: '品出し no supermercado, 遅刻届, telefone da empresa e servir comida em izakaya' }, { n: 2, text: 'hotel, aeroporto, dunas e barco turístico' }, { n: 3, text: 'mangá, filme, jogo e música' }, { n: 4, text: 'mudança, aluguel, bairro e imobiliária' }], answer: 1, explanationPt: 'As quatro ilustrações são trabalho de reposição, formulário de atraso, atendimento telefônico e serviço de comida.' },
+    { id: 'iro-pi-l17-6', number: 6, prompt: '17-01: ao organizar produtos, o que deve ser feito com o rótulo?', image: `${IMG}/ZZ_17_1_01_shinadashi1.png`, imageAlt: 'reposição de produtos com rótulo virado para frente', choices: [{ n: 1, text: 'deixar o rótulo virado para frente' }, { n: 2, text: 'colocar o produto antigo atrás' }, { n: 3, text: 'escrever 電車遅延' }, { n: 4, text: 'dizer もしもし' }], answer: 1, explanationPt: 'A instrução é ラベルを前にしてください.' },
+    { id: 'iro-pi-l17-7', number: 7, prompt: '17-01: por que os produtos antigos vão para frente?', image: `${IMG}/ZZ_17_1_02_shinadashi2.png`, imageAlt: 'produtos antigos na frente e novos atrás', choices: [{ n: 1, text: 'porque querem que os produtos com validade mais próxima sejam comprados primeiro' }, { n: 2, text: 'porque o telefone precisa ser desligado primeiro' }, { n: 3, text: 'porque o cliente pediu atraso' }, { n: 4, text: 'porque o prato está quente' }], answer: 1, explanationPt: '賞味期限が近いものを早く買ってもらいたいので、古いものを前に出します.' },
+    { id: 'iro-pi-l17-8', number: 8, prompt: '17-02: em caso de atraso por trem, o que escrever no motivo do 遅刻届?', image: `${IMG}/ZZ_17_1_03_chikokutodoke1.png`, imageAlt: 'formulário de atraso', choices: [{ n: 1, text: '電車遅延' }, { n: 2, text: '欠勤' }, { n: 3, text: '水産' }, { n: 4, text: '焼き魚' }], answer: 1, explanationPt: 'A instrução é 理由のところには電車遅延と書いておいてください.' },
+    { id: 'iro-pi-l17-9', number: 9, prompt: '17-02: além do 遅刻届, o que deve ser entregue?', image: `${IMG}/ZZ_17_1_04_chikokutodoke2.png`, imageAlt: 'certificado de atraso', choices: [{ n: 1, text: '遅延証明書' }, { n: 2, text: '履歴書' }, { n: 3, text: '料理の名前' }, { n: 4, text: '制服' }], answer: 1, explanationPt: 'A fala diz 遅延証明書もいっしょに出してください.' },
+    { id: 'iro-pi-l17-10', number: 10, prompt: '17-03: qual forma é recomendada para atender telefone na empresa?', image: `${IMG}/ZZ_17_1_05_denwa1.png`, imageAlt: 'atendimento telefônico na empresa', choices: [{ n: 1, text: 'はい、JF水産でございます' }, { n: 2, text: 'もしもし、JF水産です' }, { n: 3, text: 'お疲れさま' }, { n: 4, text: 'じゃあね' }], answer: 1, explanationPt: 'A fala corrige para はい、JF水産でございます.' },
+    { id: 'iro-pi-l17-11', number: 11, prompt: '17-03: por que evitar 「もしもし」 no trabalho?', choices: [{ n: 1, text: 'porque pode dar uma impressão rude/descortês em contexto profissional' }, { n: 2, text: 'porque é uma palavra estrangeira' }, { n: 3, text: 'porque só se usa em restaurante' }, { n: 4, text: 'porque significa atraso de trem' }], answer: 1, explanationPt: '仕事で使うと、失礼な印象を与えるんです.' },
+    { id: 'iro-pi-l17-12', number: 12, prompt: '17-03: quando desligar o telefone?', image: `${IMG}/ZZ_17_1_06_denwa2.png`, imageAlt: 'desligar telefone depois da outra pessoa', choices: [{ n: 1, text: 'depois de dizer 失礼します e a outra pessoa desligar' }, { n: 2, text: 'antes da outra pessoa terminar de falar' }, { n: 3, text: 'sem dizer nada' }, { n: 4, text: 'assim que ouvir o nome da empresa' }], answer: 1, explanationPt: '相手が電話を切ってから、受話器を置いてください.' },
+    { id: 'iro-pi-l17-13', number: 13, prompt: '17-04: ao servir comida, o que o atendente deve dizer?', image: `${IMG}/ZZ_17_1_07_ryoori1.png`, imageAlt: 'servindo comida', choices: [{ n: 1, text: 'o nome do prato' }, { n: 2, text: 'o número do telefone' }, { n: 3, text: 'o motivo do atraso' }, { n: 4, text: 'o valor do salário' }], answer: 1, explanationPt: '料理を出すときは、必ず、料理の名前を言ってください.' },
+    { id: 'iro-pi-l17-14', number: 14, prompt: '17-04: segundo a regra do exemplo, como colocar 焼き魚?', image: `${IMG}/ZZ_17_1_08_ryoori2.png`, imageAlt: 'orientação do peixe grelhado', choices: [{ n: 1, text: 'com a cabeça para a esquerda' }, { n: 2, text: 'com a cabeça para a direita' }, { n: 3, text: 'sempre em pé' }, { n: 4, text: 'sem prato' }], answer: 1, explanationPt: '焼き魚を置くときは、頭を左にしてください.' },
+    { id: 'iro-pi-l17-15', number: 15, prompt: '「はい、JF水産でございます」 usa Nでございます para:', choices: [{ n: 1, text: 'forma mais polida de Nです em atendimento' }, { n: 2, text: 'passiva de incômodo' }, { n: 3, text: 'ação recém-concluída' }, { n: 4, text: 'condição hipotética' }], answer: 1, explanationPt: 'Nでございます é mais polido que Nです e aparece em atendimento ao telefone ou ao servir.' },
+    { id: 'iro-pi-l17-16', number: 16, prompt: 'No modelo 17-06, a sequência básica ao instruir é:', choices: [{ n: 1, text: 'perguntar se sabe → dar instrução → explicar o motivo' }, { n: 2, text: 'reclamar → pedir demissão → agradecer' }, { n: 3, text: 'dar lembrança → contar viagem → dormir' }, { n: 4, text: 'ler aviso → comprar passagem → fazer check-out' }], answer: 1, explanationPt: 'O modelo organiza 指示や説明をする e 理由を伝える.' },
+    { id: 'iro-pi-l17-17', number: 17, prompt: 'Can-do 56: 「従業員身だしなみ規則」 trabalha:', choices: [{ n: 1, text: 'ler e entender documento em tópicos sobre regras do local de trabalho' }, { n: 2, text: 'ouvir relato de viagem' }, { n: 3, text: 'pedir alteração de quarto' }, { n: 4, text: 'falar de um filme' }], answer: 1, explanationPt: 'A atividade 2 lê regras de服装 e 身だしなみ para restaurante.' },
+    { id: 'iro-pi-l17-18', number: 18, prompt: 'Pelo gabarito, sandálias são permitidas nesse local de trabalho?', image: `${IMG}/ZZ_17_2_01_sandaru.png`, imageAlt: 'sandálias', choices: [{ n: 1, text: 'não, é ×' }, { n: 2, text: 'sim, é ○' }, { n: 3, text: 'só no inverno' }, { n: 4, text: 'não aparece no texto' }], answer: 1, explanationPt: 'O item 1 é ×. O vocabulário traz サンダル不可.' },
+    { id: 'iro-pi-l17-19', number: 19, prompt: 'Pelo gabarito, cabelo comprido solto é permitido?', image: `${IMG}/ZZ_17_2_02_nagaikami.png`, imageAlt: 'cabelo comprido', choices: [{ n: 1, text: 'não, é ×; cabelo comprido deve ser preso' }, { n: 2, text: 'sim, é ○' }, { n: 3, text: 'sim, se for roxo' }, { n: 4, text: 'só para gerentes' }], answer: 1, explanationPt: 'O item 2 é ×. A regra completa: 髪が長い場合は、必ず結ぶこと.' },
+    { id: 'iro-pi-l17-20', number: 20, prompt: 'Pelo gabarito, cabelo castanho do item 3 é:', image: `${IMG}/ZZ_17_2_03_chapatsu.png`, imageAlt: 'cabelo castanho', choices: [{ n: 1, text: 'permitido, ○' }, { n: 2, text: 'proibido, ×' }, { n: 3, text: 'obrigatório' }, { n: 4, text: 'não avaliado' }], answer: 1, explanationPt: 'O item 3 é ○ no gabarito.' },
+    { id: 'iro-pi-l17-21', number: 21, prompt: 'Pelo gabarito, cor de cabelo chamativa como roxo é:', image: `${IMG}/ZZ_17_2_04_hadenakamiiro.png`, imageAlt: 'cabelo de cor chamativa', choices: [{ n: 1, text: 'proibida, ×' }, { n: 2, text: 'permitida, ○' }, { n: 3, text: 'obrigatória' }, { n: 4, text: 'considerada uniforme' }], answer: 1, explanationPt: 'O item 4 é ×. A lista de vocabulário menciona 紫 e 着色を避ける.' },
+    { id: 'iro-pi-l17-22', number: 22, prompt: 'Quais itens estão permitidos pelo gabarito da atividade 2?', choices: [{ n: 1, text: '3, 5 e 10' }, { n: 2, text: '1, 2 e 4' }, { n: 3, text: '6, 7 e 8' }, { n: 4, text: '9 e 11 apenas' }], answer: 1, explanationPt: 'O gabarito marca 1×, 2×, 3○, 4×, 5○, 6×, 7×, 8×, 9×, 10○, 11×.' },
+    { id: 'iro-pi-l17-23', number: 23, prompt: 'Qual conjunto fica proibido segundo o gabarito?', choices: [{ n: 1, text: 'マニキュア, メイク forte, 香水, ピアス e 指輪' }, { n: 2, text: 'cabelo castanho, barba e relógio' }, { n: 3, text: 'uniforme limpo e cabelo preso' }, { n: 4, text: 'dizer nome do prato' }], answer: 1, explanationPt: 'Itens 6, 7, 8, 9 e 11 são ×. O item 10, 腕時計, é ○.' },
+    { id: 'iro-pi-l17-24', number: 24, prompt: '「指定の制服を着用すること」 usa V-ること para:', choices: [{ n: 1, text: 'declarar obrigação/regra por escrito' }, { n: 2, text: 'pedir favor informal' }, { n: 3, text: 'relatar viagem' }, { n: 4, text: 'mostrar ação recém-concluída' }], answer: 1, explanationPt: 'V-ること declara algo que deve ser feito em regras e avisos.' },
+    { id: 'iro-pi-l17-25', number: 25, prompt: '「制服は常に清潔に保ち、汚れたままにしないこと」 usa V-ないこと para:', choices: [{ n: 1, text: 'declarar algo que não se deve fazer' }, { n: 2, text: 'dizer que acabou de fazer algo' }, { n: 3, text: 'falar mais polido que です' }, { n: 4, text: 'pedir aumento de salário' }], answer: 1, explanationPt: 'V-ないこと declara proibição/regra negativa por escrito.' },
+    { id: 'iro-pi-l17-26', number: 26, prompt: 'Can-do 57: 「冷房を、もう少し弱くしていただければと思います」 trabalha:', choices: [{ n: 1, text: 'transmitir a um superior pedidos ou insatisfações sobre trabalho e ambiente em uma entrevista individual' }, { n: 2, text: 'ler comentários de leitores de mangá' }, { n: 3, text: 'apresentar destinos turísticos' }, { n: 4, text: 'fazer pedido em hospedagem' }], answer: 1, explanationPt: 'A atividade 3 é uma 面談 entre リーナ e o superior.' },
+    { id: 'iro-pi-l17-27', number: 27, prompt: 'Vocabulário: 「仕事の量が多すぎる」 significa:', image: `${IMG}/ZZ_17_3_01_shigotonoryoo.png`, imageAlt: 'volume de trabalho excessivo', choices: [{ n: 1, text: 'a quantidade de trabalho é grande demais' }, { n: 2, text: 'o banheiro está sujo' }, { n: 3, text: 'o salário é baixo' }, { n: 4, text: 'a pessoa é assustadora' }], answer: 1, explanationPt: '仕事の量 = quantidade de trabalho; 多すぎる = demais.' },
+    { id: 'iro-pi-l17-28', number: 28, prompt: 'Vocabulário: 「仕事が自分に合っていない」 significa:', image: `${IMG}/ZZ_17_3_06_atteinai.png`, imageAlt: 'trabalho não combina com a pessoa', choices: [{ n: 1, text: 'o trabalho não combina comigo' }, { n: 2, text: 'tenho muitas horas extras' }, { n: 3, text: 'o ar-condicionado está frio' }, { n: 4, text: 'preciso usar uniforme' }], answer: 1, explanationPt: '自分に合っていない = não se ajusta a mim/não combina comigo.' },
+    { id: 'iro-pi-l17-29', number: 29, prompt: 'Vocabulário: 「セクハラ／パワハラを受けている」 significa:', image: `${IMG}/ZZ_17_3_05_sekuharapawahara.png`, imageAlt: 'assédio sexual e assédio de poder', choices: [{ n: 1, text: 'estou sofrendo assédio sexual/power harassment' }, { n: 2, text: 'o banheiro está limpo' }, { n: 3, text: 'fui elogiado pelo chefe' }, { n: 4, text: 'estou estudando japonês' }], answer: 1, explanationPt: '受けている aqui indica estar sofrendo/recebendo esse tipo de assédio.' },
+    { id: 'iro-pi-l17-30', number: 30, prompt: 'Vocabulário: 「仕事の連絡方法を改善してほしい」 significa:', image: `${IMG}/ZZ_17_3_08_renrakuhoohoo.png`, imageAlt: 'método de comunicação do trabalho', choices: [{ n: 1, text: 'quero que melhorem o método de comunicação do trabalho' }, { n: 2, text: 'quero que diminuam o ar-condicionado' }, { n: 3, text: 'quero que aumentem o salário' }, { n: 4, text: 'quero sair de férias' }], answer: 1, explanationPt: '改善してほしい = quero que melhorem.' },
+    { id: 'iro-pi-l17-31', number: 31, prompt: 'Na classificação exemplo do gabarito, 業務の内容や量 inclui:', choices: [{ n: 1, text: 'a e f' }, { n: 2, text: 'b e l' }, { n: 3, text: 'c, e e j' }, { n: 4, text: 'd, g, h, i e k' }], answer: 1, explanationPt: 'O gabarito sugere ア = a, f; mas observa que há outras interpretações possíveis.' },
+    { id: 'iro-pi-l17-32', number: 32, prompt: 'Na classificação exemplo do gabarito, 人間関係 inclui:', choices: [{ n: 1, text: 'c, e e j' }, { n: 2, text: 'a e f' }, { n: 3, text: 'b e l' }, { n: 4, text: 'd e g apenas' }], answer: 1, explanationPt: 'O gabarito sugere エ = c, e, j.' },
+    { id: 'iro-pi-l17-33', number: 33, prompt: '17-09: qual é a ordem dos problemas/pedidos que リーナ menciona?', choices: [{ n: 1, text: 'l → j → h → k' }, { n: 2, text: 'a → f → b → l' }, { n: 3, text: 'k → h → j → l' }, { n: 4, text: 'c → e → i → g' }], answer: 1, explanationPt: 'O gabarito da escuta marca l, j, h, k.' },
+    { id: 'iro-pi-l17-34', number: 34, prompt: '17-09: sobre 部屋の温度が合わない, qual é o problema concreto?', image: `${IMG}/ZZ_17_3_12_heyanoondo.png`, imageAlt: 'temperatura da sala', choices: [{ n: 1, text: 'o ar-condicionado às vezes está forte e faz muito frio' }, { n: 2, text: 'a janela não abre' }, { n: 3, text: 'o banheiro está sujo' }, { n: 4, text: 'há muitas horas extras' }], answer: 1, explanationPt: '部屋の冷房がときどきちょっと強くて、とても寒いときがあります.' },
+    { id: 'iro-pi-l17-35', number: 35, prompt: '17-09: o que リーナ pede sobre o ar-condicionado?', choices: [{ n: 1, text: '冷房を、もう少し弱くしてほしい' }, { n: 2, text: 'trocar de setor imediatamente' }, { n: 3, text: 'pagar hora extra' }, { n: 4, text: 'não pede nada' }], answer: 1, explanationPt: 'Ela diz 冷房を、もう少し弱くしていただければと思います.' },
+    { id: 'iro-pi-l17-36', number: 36, prompt: '17-09: com qual colega リーナ tem dificuldade?', image: `${IMG}/ZZ_17_3_10_dooryoo.png`, imageAlt: 'colega de trabalho', choices: [{ n: 1, text: 'ナタリア, da 国際係' }, { n: 2, text: '藤田, do supermercado' }, { n: 3, text: 'オリバー, do telefone' }, { n: 4, text: 'イェン, do salão' }], answer: 1, explanationPt: 'Ela menciona いっしょに国際係で働いているナタリアさん.' },
+    { id: 'iro-pi-l17-37', number: 37, prompt: '17-09: qual problema リーナ relata sobre ナタリア?', choices: [{ n: 1, text: 'ela chega atrasada às reuniões e ao horário de trabalho' }, { n: 2, text: 'ela fala alto no telefone com clientes' }, { n: 3, text: 'ela usa sandália no salão' }, { n: 4, text: 'ela não sabe servir peixe' }], answer: 1, explanationPt: '会議の時間とか、仕事の時間とかに遅れて来るので、困ることがあります.' },
+    { id: 'iro-pi-l17-38', number: 38, prompt: '17-09: sobre a comunicação no trabalho, qual é a dificuldade de リーナ?', choices: [{ n: 1, text: 'escrever japonês à mão e ler caracteres manuscritos' }, { n: 2, text: 'falar ao telefone em inglês' }, { n: 3, text: 'usar uniforme' }, { n: 4, text: 'pegar o trem no horário' }], answer: 1, explanationPt: 'Ela diz 日本語を手書きしたり、手書きした文字を読んだりするのが苦手.' },
+    { id: 'iro-pi-l17-39', number: 39, prompt: '17-09: que mudança リーナ pede na comunicação do trabalho?', choices: [{ n: 1, text: 'usar email ou mensagens em vez de manuscrito sempre que possível' }, { n: 2, text: 'usar apenas telefone' }, { n: 3, text: 'proibir reuniões' }, { n: 4, text: 'diminuir o salário' }], answer: 1, explanationPt: '仕事の連絡は、手書きではなく、できるだけ、メールとか、メッセージとかでできるようにしていただければ...'},
+    { id: 'iro-pi-l17-40', number: 40, prompt: '17-09: sobre 日本語学習の機会が少ない, qual é a dificuldade concreta?', image: `${IMG}/ZZ_17_3_11_nihongogakushuu.png`, imageAlt: 'oportunidade de estudo de japonês', choices: [{ n: 1, text: 'estudar sozinha é difícil e não há aula de japonês por perto' }, { n: 2, text: 'a sala está fria' }, { n: 3, text: 'o prato está na direção errada' }, { n: 4, text: 'a validade está próxima' }], answer: 1, explanationPt: '1人で勉強するのは難しいし、日本語の教室もこの近くにはないみたいでした.' },
+    { id: 'iro-pi-l17-41', number: 41, prompt: '17-09: que suporte リーナ sugere para japonês?', choices: [{ n: 1, text: 'uma classe dentro da empresa para praticar japonês cerca de uma vez por semana' }, { n: 2, text: 'mais tempo de almoço' }, { n: 3, text: 'uma sala mais quente' }, { n: 4, text: 'menos reunião com colegas' }], answer: 1, explanationPt: '例えば、週に1回ぐらい、会社の中で日本語の練習ができるクラスがあるといいと思います.' },
+    { id: 'iro-pi-l17-42', number: 42, prompt: '「冷房を、もう少し弱くしていただければと思います」 usa:', choices: [{ n: 1, text: 'V-ていただければと思います para fazer pedido de modo polido' }, { n: 2, text: 'V-たところだ para ação recém-concluída' }, { n: 3, text: 'Nになります como atendimento' }, { n: 4, text: 'Nのことで para consulta' }], answer: 1, explanationPt: 'A nota ➌ apresenta V-ていただければと思います／ありがたいと思います.' },
+    { id: 'iro-pi-l17-43', number: 43, prompt: 'Estratégia 17-11: ao dizer algo difícil, リーナ usa expressões como:', choices: [{ n: 1, text: '言っていいかどうかわからないんですが e もしできれば' }, { n: 2, text: 'さっき e ちょうどいま' }, { n: 3, text: '非常に e めちゃくちゃ' }, { n: 4, text: 'もし時間とお金があれば' }], answer: 1, explanationPt: 'A estratégia suaviza críticas e pedidos difíceis antes de dizer o conteúdo.' },
+    { id: 'iro-pi-l17-44', number: 44, prompt: 'Can-do 58: 「休みが月2日しかありません」 trabalha:', choices: [{ n: 1, text: 'escrever mensagem a conhecido sobre problema no trabalho e pedir informação sobre onde consultar' }, { n: 2, text: 'dar instruções sobre peixe grelhado' }, { n: 3, text: 'ler regras de aparência' }, { n: 4, text: 'atender telefone da empresa' }], answer: 1, explanationPt: 'A atividade 4 usa uma mensagem de consulta sobre problemas de trabalho.' },
+    { id: 'iro-pi-l17-45', number: 45, prompt: 'Na mensagem de ウドム, qual é o problema geral?', choices: [{ n: 1, text: 'o trabalho está pesado/difícil' }, { n: 2, text: 'a viagem foi cansativa' }, { n: 3, text: 'o quarto é japonês' }, { n: 4, text: 'não entende mangá' }], answer: 1, explanationPt: 'O gabarito completa 仕事が大変.' },
+    { id: 'iro-pi-l17-46', number: 46, prompt: 'Na mensagem de ウドム, quanto overtime aparece?', choices: [{ n: 1, text: 'há cerca de meio ano, todo dia 4-5 horas' }, { n: 2, text: 'uma hora por semana' }, { n: 3, text: 'duas horas por mês' }, { n: 4, text: 'nenhum overtime' }], answer: 1, explanationPt: 'O gabarito marca 残業がとても多い e 半年くらい毎日4～5時間.' },
+    { id: 'iro-pi-l17-47', number: 47, prompt: 'Na mensagem de ウドム, quantos dias de folga por mês ele tem?', choices: [{ n: 1, text: 'apenas 2 dias por mês' }, { n: 2, text: '10 dias por mês' }, { n: 3, text: 'todos os domingos' }, { n: 4, text: 'nenhum dia' }], answer: 1, explanationPt: '休みが月2日しかありません.' },
+    { id: 'iro-pi-l17-48', number: 48, prompt: 'Depois de falar com líder e chefe, o que disseram a ウドム?', choices: [{ n: 1, text: 'que agora é uma época difícil e ele deve aguentar' }, { n: 2, text: 'que ele pode tirar férias imediatamente' }, { n: 3, text: 'que deve ligar para cliente' }, { n: 4, text: 'que precisa usar sandália' }], answer: 1, explanationPt: 'O gabarito completa 今は大変な時期だから、がまんしろと言われた.' },
+    { id: 'iro-pi-l17-49', number: 49, prompt: 'O que ウドム decide fazer?', choices: [{ n: 1, text: 'ligar para um balcão de consulta para estrangeiros' }, { n: 2, text: 'trocar para 和洋室' }, { n: 3, text: 'viajar para 山口' }, { n: 4, text: 'parar de estudar japonês' }], answer: 1, explanationPt: 'O gabarito diz 外国人のための相談窓口に電話することにした.' },
+    { id: 'iro-pi-l17-50', number: 50, prompt: 'Kanji da lição: 給料／欠勤／会議／残業／規則 leem-se:', choices: [{ n: 1, text: 'きゅうりょう／けっきん／かいぎ／ざんぎょう／きそく' }, { n: 2, text: 'きゅりょう／けつきん／あいぎ／のこぎょう／きそく' }, { n: 3, text: 'きゅうりょう／けっきん／えぎ／ざんごう／のりそく' }, { n: 4, text: 'きょうりょう／けつきん／かいぎ／ざつぎょう／きそ' }], answer: 1, explanationPt: 'São itens de 漢字のことば da Lição 17.' },
+    { id: 'iro-pi-l17-51', number: 51, prompt: 'Kanji da lição: 髪型／不可／係／速い／遅刻する leem-se:', choices: [{ n: 1, text: 'かみがた／ふか／がかり／はやい／ちこくする' }, { n: 2, text: 'かみかた／ふけ／けい／そくい／おそきざする' }, { n: 3, text: 'はつがた／ふか／かかり／はやい／ちこくする' }, { n: 4, text: 'かみがた／むか／がかり／そくい／ちきする' }], answer: 1, explanationPt: '係 aparece em palavras como レジ係, 品出し係 e 国際係.' },
+    { id: 'iro-pi-l17-52', number: 52, prompt: 'TIPS: sobre 料理の向き, qual afirmação está correta?', choices: [{ n: 1, text: '焼き魚 geralmente é servido com a cabeça à esquerda; arroz à esquerda e missoshiru à direita também é comum' }, { n: 2, text: 'não existe nenhuma regra ou costume sobre posição de comida' }, { n: 3, text: 'peixe sempre deve ficar com a cabeça à direita' }, { n: 4, text: 'hashi fica sempre com a ponta para a direita' }], answer: 1, explanationPt: 'A TIPS explica costumes de orientação de peixe, arroz, sopa, pratos e hashi.' },
+    { id: 'iro-pi-l17-53', number: 53, prompt: 'TIPS: ハラスメント inclui exemplos como:', choices: [{ n: 1, text: 'セクハラ, パワハラ, アカハラ, カスハラ, アルハラ, マタハラ' }, { n: 2, text: 'ネモフィラ, 藤, 菜の花' }, { n: 3, text: 'ホテル, 旅館, 民宿' }, { n: 4, text: '松島, 天橋立, 宮島' }], answer: 1, explanationPt: 'A TIPS enfatiza que, ao sofrer harassment, é importante consultar alguém em vez de aguentar sozinho.' },
+    { id: 'iro-pi-l17-54', number: 54, prompt: 'TIPS: sobre 手書き e consultas para estrangeiros:', choices: [{ n: 1, text: 'nome e endereço ainda podem exigir escrita manual; problemas trabalhistas podem ser consultados em serviços públicos multilíngues' }, { n: 2, text: 'ninguém usa escrita manual no Japão e não há consultas públicas' }, { n: 3, text: 'a escrita manual só aparece em mangá' }, { n: 4, text: 'consultas são apenas presenciais em Tóquio' }], answer: 1, explanationPt: 'A TIPS cita situações com escrita à mão e balcões como 確かめよう労働条件 e FRESC.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -4369,6 +4434,177 @@ const L16_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L17_SCRIPTS: Record<string, ScriptItem[]> = {
+  '17-01': [
+    {
+      label: '① スーパーで品出しをするとき (17-01)',
+      setupPt: '藤田 recebe instruções sobre como organizar produtos no supermercado.',
+      lines: [
+        { speaker: 'A', ja: '藤田さん、商品の品出し、やったことがありますか？', pt: 'Fujita, você já fez reposição de produtos?' },
+        { speaker: 'B', ja: 'はじめてです。', pt: 'É a primeira vez.' },
+        { speaker: 'A', ja: 'そうですか。じゃあ、まず商品を並べるときは、ラベルを前にしてください。', pt: 'Entendo. Então, primeiro, quando organizar os produtos, deixe o rótulo virado para frente.' },
+        { speaker: 'B', ja: 'はい。いちばん前の列だけですか？', pt: 'Sim. Só a fileira da frente?' },
+        { speaker: 'A', ja: '後ろの列の商品も、全部、同じようにしてください。ラベルが前にあるとお客様が商品を選びやすいんですよ。', pt: 'Faça o mesmo com todos os produtos das fileiras de trás também. Quando o rótulo fica para frente, fica mais fácil para o cliente escolher o produto.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'A', ja: 'あと、古いものは前に出して、新しいものは後ろに並べてください。', pt: 'Além disso, coloque os produtos antigos na frente e os novos atrás.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'A', ja: '賞味期限が近いものを早く買ってもらいたいので、古いものを前に出すんです。ちょっと、やってみますか？', pt: 'Como queremos que comprem primeiro os produtos com validade mais próxima, colocamos os antigos na frente. Quer tentar um pouco?' },
+        { speaker: 'B', ja: 'やってみます。', pt: 'Vou tentar.' },
+        { speaker: 'A', ja: 'わからないことがあったら、いつでも聞いてください。', pt: 'Se houver algo que você não entenda, pergunte a qualquer momento.' },
+      ],
+    },
+  ],
+  '17-02': [
+    {
+      label: '② 会社で遅刻届を出すとき (17-02)',
+      setupPt: 'Um funcionário atrasado por causa do trem recebe instruções sobre o formulário de atraso.',
+      lines: [
+        { speaker: 'A', ja: '課長、遅刻してすみませんでした。電車が遅れてしまって……。', pt: 'Chefe de seção, desculpe pelo atraso. O trem atrasou...' },
+        { speaker: 'B', ja: '大変でしたね。遅刻の申請のし方、わかりますか？', pt: 'Foi complicado, hein. Você sabe como fazer a solicitação de atraso?' },
+        { speaker: 'A', ja: 'まだ、やったことがないです。', pt: 'Ainda nunca fiz.' },
+        { speaker: 'B', ja: '遅刻届の用紙があるので、書いて提出してください。理由のところには電車遅延と書いておいてください。', pt: 'Há um formulário de atraso, então preencha e entregue. No campo do motivo, escreva atraso de trem.' },
+        { speaker: 'A', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '電車遅延なら、うちの会社では欠勤にならないので。', pt: 'Se for atraso de trem, na nossa empresa isso não conta como falta.' },
+        { speaker: 'A', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'B', ja: 'あと、遅延証明書もいっしょに出してくださいね。鉄道会社のサイトに載っていると思います。', pt: 'Além disso, entregue também o certificado de atraso. Acho que ele está no site da companhia ferroviária.' },
+        { speaker: 'A', ja: 'わかりました。申請しておきます。', pt: 'Entendi. Vou fazer a solicitação.' },
+      ],
+    },
+  ],
+  '17-03': [
+    {
+      label: '③ 会社で電話を取るとき (17-03)',
+      setupPt: 'オリバー aprende como atender telefone na empresa.',
+      lines: [
+        { speaker: 'A', ja: 'そろそろ、オリバーさんにも電話を取ってもらいたいんですが、だいじょうぶですか？', pt: 'Já está na hora de você também atender o telefone, Oliver. Tudo bem?' },
+        { speaker: 'B', ja: 'はい、がんばります。電話を取るときは、「もしもし、JF水産です」でいいですか？', pt: 'Sim, vou me esforçar. Ao atender, posso dizer Alô, aqui é a JF Suisan?' },
+        { speaker: 'A', ja: 'んー、「はい、JF水産でございます」がいいですね。「もしもし」は使わないでください。', pt: 'Hmm, é melhor dizer Sim, aqui é a JF Suisan. Não use moshi moshi.' },
+        { speaker: 'B', ja: 'えっ、「もしもし」を使うのは、だめなんですか？', pt: 'O quê? Não pode usar moshi moshi?' },
+        { speaker: 'A', ja: 'はい。仕事で使うと、失礼な印象を与えるんです。', pt: 'Isso. Quando usado no trabalho, dá uma impressão descortês.' },
+        { speaker: 'B', ja: 'そうなんですね。', pt: 'Entendi.' },
+        { speaker: 'A', ja: 'あと、最後は「失礼します」と言って、相手が電話を切ってから、受話器を置いてくださいね。', pt: 'Além disso, no final diga shitsurei shimasu e coloque o fone no gancho depois que a outra pessoa desligar.' },
+        { speaker: 'B', ja: 'ルールがたくさんあるんですね。', pt: 'Há muitas regras, hein.' },
+        { speaker: 'A', ja: 'そうですね。これも相手に失礼な印象を与えないためかな。', pt: 'Sim. Acho que isso também é para não dar uma impressão descortês à outra pessoa.' },
+        { speaker: 'B', ja: 'そうですか。', pt: 'Entendi.' },
+        { speaker: 'A', ja: '最初は大変だけど、まずはやってみてください。', pt: 'No começo é difícil, mas primeiro tente fazer.' },
+        { speaker: 'B', ja: 'わかりました。ありがとうございます。', pt: 'Entendi. Obrigado.' },
+      ],
+    },
+  ],
+  '17-04': [
+    {
+      label: '④ 居酒屋で料理を出すとき (17-04)',
+      setupPt: 'イェン recebe explicações sobre o trabalho do salão em um izakaya.',
+      lines: [
+        { speaker: 'A', ja: 'イェンさん、今日からよろしくお願いします。', pt: 'Yen, contamos com você a partir de hoje.' },
+        { speaker: 'B', ja: 'よろしくお願いします。', pt: 'Conto com você.' },
+        { speaker: 'A', ja: 'それでは、ホールの仕事について説明します。まず、お客様に料理を出すときは、必ず、料理の名前を言ってください。', pt: 'Então vou explicar o trabalho do salão. Primeiro, ao levar comida ao cliente, diga sempre o nome do prato.' },
+        { speaker: 'B', ja: '料理の名前を言うんですか？', pt: 'Dizer o nome do prato?' },
+        { speaker: 'A', ja: 'はい。違う料理を出さないように、お客様に確認してから置くんです。', pt: 'Sim. Para não servir o prato errado, você confirma com o cliente antes de colocar.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'A', ja: 'あと、料理を出すときは、向きに気をつけてくださいね。例えば、焼き魚を置くときは、頭を左にしてください。', pt: 'Além disso, ao servir a comida, preste atenção à direção. Por exemplo, ao colocar peixe grelhado, deixe a cabeça para a esquerda.' },
+        { speaker: 'B', ja: 'はい……でも、どうしてですか？', pt: 'Sim... mas por quê?' },
+        { speaker: 'A', ja: 'さあ、習慣だからかな。', pt: 'Não sei, talvez porque é costume.' },
+        { speaker: 'B', ja: 'そうなんですね。', pt: 'Entendi.' },
+        { speaker: 'A', ja: 'あと、鉄板料理は熱いので、運ぶときは気をつけてください。', pt: 'Além disso, pratos em chapa são quentes, então tome cuidado ao carregar.' },
+        { speaker: 'B', ja: 'ありがとうございます。気をつけます。', pt: 'Obrigado. Vou tomar cuidado.' },
+      ],
+    },
+  ],
+  '17-05': [
+    {
+      label: '形に注目 - Nでございます (17-05)',
+      lines: [
+        { speaker: 'A', ja: 'もしもし、JF水産です。', pt: 'Alô, aqui é a JF Suisan.' },
+        { speaker: 'B', ja: 'はい、JF水産でございます。', pt: 'Sim, aqui é a JF Suisan.' },
+      ],
+    },
+  ],
+  '17-06': [
+    {
+      label: '話すモデル - 職場で指示や説明をする (17-06)',
+      lines: [
+        { speaker: 'A', ja: '遅刻の申請のし方、わかりますか？', pt: 'Você sabe como fazer a solicitação de atraso?' },
+        { speaker: 'B', ja: 'まだ、やったことがないです。', pt: 'Ainda nunca fiz.' },
+        { speaker: 'A', ja: '遅刻届の用紙があるので、提出してください。理由のところには、電車遅延と書いておいてください。', pt: 'Há um formulário de atraso, então entregue-o. No campo do motivo, escreva atraso de trem.' },
+        { speaker: 'B', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'A', ja: '電車遅延なら、欠勤にならないので。', pt: 'Se for atraso de trem, não conta como falta.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Sim.' },
+      ],
+    },
+  ],
+  '17-09': [
+    {
+      label: '職場の個別面談 (17-09)',
+      setupPt: 'リーナ conversa com o superior em uma entrevista individual sobre o trabalho e o ambiente de trabalho.',
+      lines: [
+        { speaker: '上司', ja: 'リーナさん、もう仕事には慣れましたか？', pt: 'Reena, você já se acostumou ao trabalho?' },
+        { speaker: 'リーナ', ja: 'はい、おかげさまで。だいぶ慣れたと思います。はじめは日本語がわからないことが多くて、ちょっと困りましたが、今はだいたいわかりますので、だいじょうぶです。', pt: 'Sim, graças a vocês. Acho que me acostumei bastante. No começo havia muitas coisas em japonês que eu não entendia e tive um pouco de dificuldade, mas agora entendo quase tudo, então está tudo bem.' },
+        { speaker: '上司', ja: 'そうですか。それはよかったですね。今日のこの面談は、会社で働いている人が困っていることがないか聞くためのもので、全員に行っています。カジュアルな面談ですから、あまり緊張しなくてもいいですよ。', pt: 'Entendo. Que bom. A entrevista de hoje é para perguntar se as pessoas que trabalham na empresa têm algo que as incomoda, e fazemos com todos. É uma entrevista casual, então você não precisa ficar tão nervosa.' },
+        { speaker: 'リーナ', ja: 'はい、実は緊張していました。', pt: 'Sim, na verdade eu estava nervosa.' },
+        { speaker: '上司', ja: 'どうですか？リーナさんは、今の仕事とか、職場のこととか、何か困ったことや、もっとこうしてほしいこととか、ありませんか？', pt: 'Como está? Reena, sobre seu trabalho atual ou o local de trabalho, há algo que a incomoda ou algo que você gostaria que fosse feito de outro jeito?' },
+        { speaker: 'リーナ', ja: 'いえ、別にないです。だいじょうぶです。', pt: 'Não, nada em especial. Está tudo bem.' },
+        { speaker: '上司', ja: 'でも、どんなに小さいことでもいいですよ。そのことで、リーナさんが困ったり、損したりすることはないですからね。', pt: 'Mas pode ser algo pequeno. Você não vai ter problema nem sair perdendo por causa disso.' },
+        { speaker: 'リーナ', ja: 'そうですねえ、じゃあ……。', pt: 'Vejamos, então...' },
+        { speaker: '上司', ja: '何ですか？', pt: 'O que é?' },
+        { speaker: 'リーナ', ja: 'あのう、部屋の冷房なんですけど、ときどき、ちょっと強くて、とても寒いときがあります。冷房を、もう少し弱くしていただければと思います。', pt: 'Bem, é sobre o ar-condicionado da sala. Às vezes ele fica um pouco forte e há momentos em que faz muito frio. Eu gostaria que pudessem deixá-lo um pouco mais fraco.' },
+        { speaker: '上司', ja: '冷房ですね。わかりました。ほかに何かありますか？仕事のこととか、人間関係とか、だいじょうぶですか？', pt: 'O ar-condicionado, certo. Entendi. Há mais alguma coisa? Trabalho, relações pessoais, está tudo bem?' },
+        { speaker: 'リーナ', ja: 'そうですねえ。言っていいかどうかわからないんですが……いっしょに国際係で働いているナタリアさんなんですが、ちょっと時間にルーズっていうか……。ときどき会議の時間とか、仕事の時間とかに遅れて来るので、困ることがあります。', pt: 'Vejamos. Não sei se posso dizer isso... é sobre Natalia, que trabalha comigo na seção internacional. Ela é um pouco relaxada com horário, digamos... Às vezes chega atrasada para reuniões e para o horário de trabalho, e isso me causa problema.' },
+        { speaker: '上司', ja: 'そうですか。わかりました。ほかには、何かありますか？仕事全体で、こうしてほしいとか、もっとこうだったらいいなあとか。', pt: 'Entendo. Compreendi. Há mais alguma coisa? Algo sobre o trabalho como um todo, algo que você gostaria que fosse feito assim ou que fosse melhor de outro jeito?' },
+        { speaker: 'リーナ', ja: 'うーん、じゃあ、私は、日本語を手書きしたり、手書きした文字を読んだりするのが苦手です。たぶん、ほかの外国人の社員もそうだと思います。なので、仕事の連絡は、手書きではなく、できるだけ、メールとか、メッセージとかでできるようにしていただければ、とてもありがたいと思います。', pt: 'Hmm, então... Eu tenho dificuldade para escrever japonês à mão e ler caracteres escritos à mão. Acho que provavelmente outros funcionários estrangeiros também têm. Então, eu ficaria muito grata se as comunicações de trabalho pudessem ser feitas, na medida do possível, por email ou mensagens em vez de manuscrito.' },
+        { speaker: '上司', ja: 'ああ、そうですね。そういうシステムを、うちも少しずつ取り入れていますけど、なかなかすぐに変えるのは難しいですね。でも、考えてみます。', pt: 'Ah, sim. Nós também estamos adotando esse tipo de sistema aos poucos, mas é difícil mudar tudo rapidamente. Mesmo assim, vou pensar sobre isso.' },
+        { speaker: 'リーナ', ja: '私も、日本語をもっと勉強したいんですが、あまり機会がなくて。1人で勉強するのは難しいし、日本語の教室も調べたんですが、この近くにはないみたいでした。', pt: 'Eu também quero estudar mais japonês, mas não tenho muitas oportunidades. Estudar sozinha é difícil, e também procurei aulas de japonês, mas parece que não há nenhuma por aqui.' },
+        { speaker: '上司', ja: 'そうですか。', pt: 'Entendo.' },
+        { speaker: 'リーナ', ja: 'あのう、もしできれば、日本語の勉強のサポートがあったらいいなあと思います。', pt: 'Bem, se possível, eu acharia bom se houvesse apoio para estudar japonês.' },
+        { speaker: '上司', ja: '日本語の勉強ですか。例えば、どんなサポートがあるといいですか？', pt: 'Estudo de japonês? Por exemplo, que tipo de apoio seria bom?' },
+        { speaker: 'リーナ', ja: 'そうですねえ、例えば、週に1回ぐらい、会社の中で日本語の練習ができるクラスがあるといいと思います。', pt: 'Vejamos. Por exemplo, acho que seria bom haver uma aula dentro da empresa onde pudéssemos praticar japonês cerca de uma vez por semana.' },
+        { speaker: '上司', ja: 'それはいいアイデアですね。社内でもできるかどうか、話し合ってみますね。ほかには？', pt: 'Essa é uma boa ideia. Vou conversar internamente para ver se dá para fazer. Mais alguma coisa?' },
+        { speaker: 'リーナ', ja: 'あ、もうだいじょうぶです。なんか、すごくたくさん意見を言ってしまいましたね……。', pt: 'Ah, já está tudo bem. Acabei dando muitas opiniões, né...' },
+        { speaker: '上司', ja: 'だいじょうぶですよ。みんなの意見を聞いて、いい会社にしていきたいですからね。あ、リーナさん、所長が、リーナさんは仕事が速いって、ほめてましたよ。', pt: 'Está tudo bem. Queremos ouvir a opinião de todos para tornar a empresa melhor. Ah, Reena, o diretor elogiou você, dizendo que você trabalha rápido.' },
+        { speaker: 'リーナ', ja: 'え、そうですか？ありがとうございます！', pt: 'Sério? Muito obrigada!' },
+        { speaker: '上司', ja: 'これからも、がんばってくださいね。', pt: 'Continue se esforçando.' },
+        { speaker: 'リーナ', ja: 'はい、がんばります！', pt: 'Sim, vou me esforçar!' },
+      ],
+    },
+  ],
+  '17-10': [
+    {
+      label: '形に注目 - V-ていただければと思います (17-10)',
+      lines: [
+        { speaker: 'リーナ', ja: '冷房を、もう少し弱くしていただければと思います。', pt: 'Eu gostaria que pudessem deixar o ar-condicionado um pouco mais fraco.' },
+        { speaker: 'リーナ', ja: 'メールとか、メッセージとかでできるようにしていただければ、とてもありがたいと思います。', pt: 'Eu ficaria muito grata se pudessem tornar possível fazer isso por email ou mensagens.' },
+      ],
+    },
+  ],
+  '17-11': [
+    {
+      label: 'ストラテジー - 言いにくいことを伝える (17-11)',
+      lines: [
+        { speaker: 'リーナ', ja: '言っていいかどうかわからないんですが……いっしょに国際係で働いているナタリアさんなんですが、ちょっと時間にルーズっていうか……。', pt: 'Não sei se posso dizer isso... é sobre Natalia, que trabalha comigo na seção internacional. Ela é um pouco relaxada com horário, digamos...' },
+        { speaker: 'リーナ', ja: 'あのう、もしできれば、日本語の勉強のサポートがあったらいいなあと思います。', pt: 'Bem, se possível, eu acharia bom se houvesse apoio para estudar japonês.' },
+      ],
+    },
+  ],
+  '17-12': [
+    {
+      label: '話すモデル - 職場での悩みや要望を伝える (17-12)',
+      lines: [
+        { speaker: '上司', ja: '今の仕事とか、職場のこととか、何か困ったことや、もっとこうしてほしいこととか、ありませんか？', pt: 'Sobre seu trabalho atual ou o local de trabalho, há algo que a incomoda ou algo que você gostaria que fosse feito de outro jeito?' },
+        { speaker: 'リーナ', ja: 'そうですねえ、あのう、部屋の冷房なんですけど、ときどき、ちょっと強くて、とても寒いときがあると思います。もう少し弱くしていただければと思います。', pt: 'Vejamos. Bem, é sobre o ar-condicionado da sala. Acho que às vezes ele fica um pouco forte e faz muito frio. Eu gostaria que pudessem deixá-lo um pouco mais fraco.' },
+        { speaker: '上司', ja: '冷房ですね。わかりました。ほかに何かありますか？', pt: 'O ar-condicionado, certo. Entendi. Há mais alguma coisa?' },
+        { speaker: 'リーナ', ja: '言っていいかどうかわからないんですが……国際係のナタリアさんなんですが、ちょっと困ることがあります。ときどき会議の時間とか、仕事の時間とかに遅れて来ることがあります。', pt: 'Não sei se posso dizer isso... é sobre Natalia, da seção internacional. Há algo que me causa problema. Às vezes ela chega atrasada para reuniões e para o horário de trabalho.' },
+        { speaker: '上司', ja: 'そうですか。わかりました。ほかには、何かありますか？', pt: 'Entendo. Compreendi. Há mais alguma coisa?' },
+        { speaker: 'リーナ', ja: 'うーん、じゃあ、私は、日本語を手書きしたり、手書きの文字を読んだりするのが苦手です。なので、仕事の連絡は、手書きではなく、メールとかメッセージとかでできるようにしていただければ、とてもありがたいと思います。', pt: 'Hmm, então... Eu tenho dificuldade para escrever japonês à mão e ler caracteres manuscritos. Por isso, ficaria muito grata se as comunicações de trabalho pudessem ser feitas por email ou mensagens em vez de manuscrito.' },
+        { speaker: '上司', ja: 'ああ、そうですね。考えてみます。', pt: 'Ah, sim. Vou pensar sobre isso.' },
+        { speaker: 'リーナ', ja: '私も、日本語をもっと勉強したいんですが、あまり機会がなくて。1人で勉強するのは難しいし、日本語の教室も調べましたが、この近くにはないみたいでした。もしできれば、日本語の勉強のサポートがあったらいいなあと思います。', pt: 'Eu também quero estudar mais japonês, mas não tenho muitas oportunidades. Estudar sozinha é difícil, e também procurei aulas de japonês, mas parece que não há nenhuma por aqui. Se possível, eu acharia bom se houvesse apoio para estudar japonês.' },
+        { speaker: 'リーナ', ja: '例えば、週に1回ぐらい、会社の中で日本語の練習ができるクラスがあるといいと思います。', pt: 'Por exemplo, acho que seria bom haver uma aula dentro da empresa para praticar japonês cerca de uma vez por semana.' },
+        { speaker: '上司', ja: 'それはいいアイデアですね。ほかには？', pt: 'Essa é uma boa ideia. Mais alguma coisa?' },
+        { speaker: 'リーナ', ja: 'あ、もうだいじょうぶです。', pt: 'Ah, já está tudo bem.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -6111,6 +6347,124 @@ const lesson16: Section = {
   audios: attachScripts(16, L16_SCRIPTS),
 }
 
+const lesson17: Section = {
+  id: 'lesson-17',
+  level: 'pre-intermediate',
+  titleJa: '第17課 ホールの仕事について説明します',
+  titlePt: 'Lição 17 - Vou explicar o trabalho do salão',
+  summaryPt:
+    'Trabalhar no Japão · dar instruções simples no trabalho, ler regras de aparência, falar com o superior sobre problemas e escrever uma mensagem de consulta.',
+  studyNotes: [
+    {
+      title: 'Tópico: Trabalhar no Japão (日本で働く)',
+      bodyPt:
+        'Pergunta de abertura: これまで仕事で、楽しかったことや困ったことはありましたか？\n\n' +
+        '## Can-do\n' +
+        '- Dar instruções e explicações simples sobre trabalho a subordinados ou colegas mais novos.\n' +
+        '- Ler e entender documentos em tópicos sobre regras do local de trabalho.\n' +
+        '- Transmitir a um superior pedidos ou insatisfações sobre trabalho e ambiente de trabalho em uma entrevista individual.\n' +
+        '- Escrever mensagem a um conhecido explicando um problema no trabalho e pedindo informação sobre onde consultar.',
+    },
+    {
+      title: 'Atividade 1: 電車遅延と書いておいてください',
+      bodyPt:
+        'A atividade apresenta quatro cenas em que alguém explica um procedimento de trabalho.\n\n' +
+        '| Faixa | Situação | Instruções principais | Motivo |\n|---|---|---|---|\n' +
+        '| 17-01 | 品出し | ラベルを前にする; 古いものを前、新しいものを後ろに並べる | cliente escolhe mais fácil; vender primeiro produtos com validade próxima |\n' +
+        '| 17-02 | 遅刻届 | escrever 電車遅延 no motivo; entregar 遅延証明書 | atraso de trem não vira 欠勤 |\n' +
+        '| 17-03 | 電話を取る | dizer `はい、JF水産でございます`; não usar もしもし; desligar depois da outra pessoa | evitar impressão descortês |\n' +
+        '| 17-04 | 料理を出す | dizer o nome do prato; pôr 焼き魚 com cabeça à esquerda | confirmar com o cliente; costume de apresentação |\n\n' +
+        'O modelo de fala segue: perguntar se a pessoa sabe o procedimento, dar instruções e explicar o motivo.',
+    },
+    {
+      title: 'Gramática ➊: Nでございます',
+      bodyPt:
+        '**Nでございます** é uma forma muito polida de **Nです**, comum em atendimento, telefone e serviço.\n\n' +
+        '- `はい、JF水産でございます。`\n' +
+        '- `こちらが、ルームキーでございます。`\n' +
+        '- `お待たせいたしました。お刺身定食でございます。`\n\n' +
+        'Na lição, ela contrasta com `JF水産です`; `でございます` soa mais formal e adequada ao atendimento profissional.',
+    },
+    {
+      title: 'Atividade 2: 従業員身だしなみ規則',
+      bodyPt:
+        'A leitura é um documento de regras de服装 e 身だしなみ para um restaurante no Japão. O gabarito dos itens 1-11 é: **×, ×, ○, ×, ○, ×, ×, ×, ×, ○, ×**.\n\n' +
+        'Regras centrais:\n' +
+        '- `指定の制服を着用すること。`\n' +
+        '- `髪が長い場合は、必ず結ぶこと。`\n' +
+        '- `制服は常に清潔に保ち、汚れたままにしないこと。`\n' +
+        '- `香水や匂いの強い整髪料は使用しないこと。`\n\n' +
+        'Vocabulário-chave: 従業員, 身だしなみ, 規則, 接客, 衛生的, 制服, 着用する, サンダル不可, 髪型, 髪色, マニキュア, 香水, 腕時計, 指輪.',
+    },
+    {
+      title: 'Gramática ➋: V-ること／V-ないこと',
+      bodyPt:
+        '**V-ること** e **V-ないこと** aparecem em regras escritas para dizer o que deve ou não deve ser feito.\n\n' +
+        '- `指定の制服を着用すること。` = usar o uniforme designado.\n' +
+        '- `制服は常に清潔に保ち、汚れたままにしないこと。` = manter o uniforme sempre limpo e não deixá-lo sujo.\n' +
+        '- `遅刻・欠勤の場合は、早めに連絡すること。`\n' +
+        '- `工場内でたばこを吸わないこと。`\n\n' +
+        'É linguagem escrita, comum em avisos, regulamentos, manuais e cartazes de regras.',
+    },
+    {
+      title: 'Atividade 3: 冷房を、もう少し弱くしていただければと思います',
+      bodyPt:
+        'リーナ conversa com o superior em uma面談. Ela começa dizendo que está tudo bem, mas o superior a tranquiliza: mesmo coisas pequenas podem ser ditas.\n\n' +
+        '| Ordem | Tema | Problema concreto | Pedido |\n|---|---|---|---|\n' +
+        '| 1 | 部屋の温度が合わない | 冷房が強くて寒い | 冷房をもう少し弱くしてほしい |\n' +
+        '| 2 | 同僚に困っている | ナタリアが会議や仕事の時間に遅れて来る | pedido explícito não aparece |\n' +
+        '| 3 | 仕事の連絡方法を改善してほしい | 手書きする／手書きの文字を読むのが苦手 | email ou mensagem em vez de manuscrito |\n' +
+        '| 4 | 日本語学習の機会が少ない | estudar sozinha é difícil; não há aula por perto | classe interna de prática de japonês cerca de 1 vez por semana |',
+    },
+    {
+      title: 'Gramática ➌: V-ていただければと思います',
+      bodyPt:
+        '**V-ていただければと思います** e **V-ていただければ、ありがたいと思います** transmitem pedidos de modo polido. `V-ていただく` é forma humilde de `V-てもらう`; aqui aparece na forma potencial + ば.\n\n' +
+        '- `冷房を、もう少し弱くしていただければと思います。`\n' +
+        '- `メールとか、メッセージとかでできるようにしていただければ、とてもありがたいと思います。`\n' +
+        '- `もう少しやさしい日本語で説明していただければと思います。`\n\n' +
+        'Também existem variações como `V-ていただければありがたいです` e `V-ていただければ助かります`.',
+    },
+    {
+      title: 'Estratégia: 言いにくいことを伝える',
+      bodyPt:
+        'Para dizer algo difícil, a lição usa expressões que suavizam a entrada antes do conteúdo principal.\n\n' +
+        '- `言っていいかどうかわからないんですが……いっしょに国際係で働いているナタリアさんなんですが、ちょっと時間にルーズっていうか……。`\n' +
+        '- `あのう、もしできれば、日本語の勉強のサポートがあったらいいなあと思います。`\n\n' +
+        'A prática sugere reformular reclamações como `社食の料理の味がちょっと...` ou `田中さんがこわいっていうか、厳しいっていうか...` antes de pedir uma solução.',
+    },
+    {
+      title: 'Atividade 4: 休みが月2日しかありません',
+      bodyPt:
+        'A leitura/escrita final é uma mensagem de ウドム para 平野, pessoa conhecida de uma aula de japonês da associação internacional.\n\n' +
+        '| Ponto | Conteúdo do gabarito |\n|---|---|\n' +
+        '| Problema geral | 仕事が大変 |\n' +
+        '| 残業 | muito overtime; há cerca de meio ano, todos os dias 4-5 horas |\n' +
+        '| Comentário da empresa | como o dormitório fica perto, disseram que ele pode voltar logo |\n' +
+        '| 休み | poucos dias de folga; às vezes domingo também é trabalho; só 2 dias por mês |\n' +
+        '| Tentou falar com | líder e superior |\n' +
+        '| Resposta recebida | agora é uma época difícil, então disseram para aguentar |\n' +
+        '| Decisão | ligar para um balcão de consulta para estrangeiros |',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {給料|きゅうりょう}, {欠勤|けっきん}, {会議|かいぎ}, {残業|ざんぎょう}, {規則|きそく}, {髪型|かみがた}, {不可|ふか}, ～{係|がかり}, {速|はや}い, {遅刻|ちこく}する.\n\n' +
+        '**Vocabulário-chave:** 品出し, 商品, ラベル, 賞味期限, 遅刻届, 遅延証明書, 受話器, ホール, 鉄板, 従業員, 身だしなみ, 衛生的, 着用する, 接客, 同僚, 人間関係, 職場環境, 改善する, 手書き, 社内, 相談窓口.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**料理の向き:** 焼き魚 costuma ser servido com a cabeça à esquerda. Arroz fica geralmente à esquerda e missoshiru à direita; hashi ficam com a ponta à esquerda para quem come. Algumas regras têm explicações práticas, outras são costume.\n\n' +
+        '**ハラスメント:** a TIPS apresenta セクハラ, パワハラ, アカハラ, カスハラ, アルハラ, マタハラ e novos termos como スメハラ e テクハラ. A orientação é não aguentar sozinho e consultar alguém ou um serviço apropriado.\n\n' +
+        '**手書き:** mesmo com computador e smartphone, nome e endereço ainda podem precisar ser escritos à mão em hotel, envio de encomendas etc. Também pode ser necessário ler manuscritos de outras pessoas.\n\n' +
+        '**外国人向けの相談窓口:** há serviços públicos multilíngues para problemas como harassment, salário não pago, horas longas ou falta de folga. A lição cita 確かめよう労働条件 e FRESC, além de associações internacionais locais.',
+    },
+  ],
+  groups: [lesson17Group],
+  audios: attachScripts(17, L17_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -6136,6 +6490,8 @@ const sections: Section[] = [
   // Tópico 8 - Prazeres da viagem (旅行の楽しみ)
   lesson15,
   lesson16,
+  // Tópico 9 - Trabalhar no Japão (日本で働く)
+  lesson17,
 ]
 
 export const irodoriPreIntermediate: Level = {
