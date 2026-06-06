@@ -161,4 +161,16 @@ export const PRE_INTERMEDIATE_AUDIO: Record<number, AudioTrack[]> = {
     { id: 'iro-pi-10-08', title: '10-08 · strategy', descriptionPt: 'Estratégia (ストラテジー)', src: '/audio/irodori/pre-intermediate/10-08_strategy.mp3', script: [] },
     { id: 'iro-pi-10-09', title: '10-09 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/10-09_hanasu.mp3', script: [] },
   ],
+  11: [
+    { id: 'iro-pi-11-01', title: '11-01 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/11-01_kiku1.mp3', script: [] },
+    { id: 'iro-pi-11-02', title: '11-02 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/11-02_kiku2.mp3', script: [] },
+    { id: 'iro-pi-11-03', title: '11-03 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/11-03_kiku3.mp3', script: [] },
+    { id: 'iro-pi-11-04', title: '11-04 · kiku4', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/11-04_kiku4.mp3', script: [] },
+    { id: 'iro-pi-11-05', title: '11-05 · katachi', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/11-05_katachi.mp3', script: [] },
+    { id: 'iro-pi-11-06', title: '11-06 · kaiwa', descriptionPt: 'Diálogo (会話)', src: '/audio/irodori/pre-intermediate/11-06_kaiwa.mp3', script: [] },
+    { id: 'iro-pi-11-07', title: '11-07 · katachi1', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/11-07_katachi1.mp3', script: [] },
+    { id: 'iro-pi-11-08', title: '11-08 · katachi2', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/11-08_katachi2.mp3', script: [] },
+    { id: 'iro-pi-11-09', title: '11-09 · katachi3', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/11-09_katachi3.mp3', script: [] },
+    { id: 'iro-pi-11-10', title: '11-10 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/11-10_hanasu.mp3', script: [] },
+  ],
 }

@@ -552,6 +552,59 @@ const lesson10Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 11: これは詐欺メールですよ (tópico こんなときどうする？) ----
+const lesson11Group: ExerciseGroup = {
+  id: 'iro-pi-l11',
+  title: 'これは詐欺メールですよ',
+  subtitlePt: 'Golpes · achados e perdidos · entrada em eventos · identificação',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l11-1', number: 1, prompt: 'Qual é o tópico da Lição 11?', choices: [{ n: 1, text: 'こんなときどうする？ (o que fazer nestas situações?)' }, { n: 2, text: '私と日本語' }, { n: 3, text: '出会う' }, { n: 4, text: '好きなもの好きなこと' }], answer: 1, explanationPt: 'A lição abre o tópico こんなときどうする？, com situações de problema, regras e procedimentos.' },
+    { id: 'iro-pi-l11-2', number: 2, prompt: '「これは詐欺メールですよ」 significa:', choices: [{ n: 1, text: 'Isto é um e-mail de golpe/fraude.' }, { n: 2, text: 'Este é um e-mail de confirmação.' }, { n: 3, text: 'Esta é uma passagem de trem.' }, { n: 4, text: 'Este é meu documento.' }], answer: 1, explanationPt: '詐欺メール é um e-mail que finge ser real para enganar e roubar dinheiro ou dados.' },
+    { id: 'iro-pi-l11-3', number: 3, prompt: 'Pergunta de abertura: 落とし物の財布を拾ったとき、あなたならどうしますか？', choices: [{ n: 1, text: 'Se encontrasse uma carteira perdida, o que você faria?' }, { n: 2, text: 'Como você estuda japonês?' }, { n: 3, text: 'Você gosta de dramas?' }, { n: 4, text: 'Você já foi a um concerto?' }], answer: 1, explanationPt: 'A abertura prepara as situações de achados e perdidos e resposta adequada.' },
+    { id: 'iro-pi-l11-4', number: 4, prompt: 'Can-do 34: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'entender explicações simples de amigos sobre o que fazer em situações como pegar um objeto perdido' }, { n: 2, text: 'escrever perfil de tandem' }, { n: 3, text: 'ler resenha de mangá' }, { n: 4, text: 'explicar uma receita' }], answer: 1, explanationPt: 'A atividade 1 trata de quatro situações problemáticas e da resposta adequada.' },
+    { id: 'iro-pi-l11-5', number: 5, prompt: '11-01: ao receber um e-mail suspeito sobre 電気料金, o que se deve fazer?', image: `${IMG}/ZZ_11_1_01_ayashiimeerua.png`, imageAlt: 'e-mail suspeito', choices: [{ n: 1, text: 'apagar o e-mail sem abrir links nem clicar' }, { n: 2, text: 'clicar no link imediatamente' }, { n: 3, text: 'responder com o cartão' }, { n: 4, text: 'enviar dinheiro' }], answer: 1, explanationPt: 'O gabarito marca b: メールを消す. A fala também diz para não abrir nem clicar no link.' },
+    { id: 'iro-pi-l11-6', number: 6, prompt: '11-01: se achar suspeito, que informação pesquisar?', choices: [{ n: 1, text: 'o 件名 (assunto/título) do e-mail' }, { n: 2, text: 'a previsão do tempo' }, { n: 3, text: 'o número do assento' }, { n: 4, text: 'o nome do shopping' }], answer: 1, explanationPt: '怪しいと思ったら、件名をそのまま検索すれば、詐欺メールかどうかだいたいわかる.' },
+    { id: 'iro-pi-l11-7', number: 7, prompt: '11-02: se esquecer uma sacola de roupas no trem, primeiro é melhor:', image: `${IMG}/ZZ_11_1_03_wasuremonoa.png`, imageAlt: 'item esquecido no trem', choices: [{ n: 1, text: 'telefonar para o 忘れ物センター da companhia ferroviária' }, { n: 2, text: 'sempre ligar 110 imediatamente' }, { n: 3, text: 'mandar e-mail para banco' }, { n: 4, text: 'ignorar' }], answer: 1, explanationPt: 'O gabarito marca 鉄道会社に連絡する; se mesmo assim não encontrar, pode ir ao 交番.' },
+    { id: 'iro-pi-l11-8', number: 8, prompt: '11-02: que detalhes devem ser passados por telefone?', choices: [{ n: 1, text: 'qual trem pegou e o que havia dentro' }, { n: 2, text: 'nome do banco e senha' }, { n: 3, text: 'data de nascimento e arena' }, { n: 4, text: 'título do e-mail suspeito' }], answer: 1, explanationPt: '電話で、どの電車に乗ったとか、何が入っているかとか伝えれば、探してくれる.' },
+    { id: 'iro-pi-l11-9', number: 9, prompt: '11-03: no shopping, ao encontrar uma criança perdida, o melhor é:', image: `${IMG}/ZZ_11_1_05_maigoa.png`, imageAlt: 'criança perdida', choices: [{ n: 1, text: 'avisar uma pessoa da loja' }, { n: 2, text: 'procurar os pais sozinho com a criança' }, { n: 3, text: 'levar a criança para casa' }, { n: 4, text: 'não fazer nada' }], answer: 1, explanationPt: 'O gabarito marca お店の人に伝える. A fala alerta que falar com criança desconhecida pode parecer suspeito.' },
+    { id: 'iro-pi-l11-10', number: 10, prompt: '11-03: se encontrar uma criança perdida na rua, deve:', choices: [{ n: 1, text: 'contatar a polícia' }, { n: 2, text: 'procurar os pais sozinho' }, { n: 3, text: 'clicar em link' }, { n: 4, text: 'jogar fora' }], answer: 1, explanationPt: '道なら、警察に連絡するといいですよ.' },
+    { id: 'iro-pi-l11-11', number: 11, prompt: '11-04: se encontrar uma carteira perdida, deve:', image: `${IMG}/ZZ_11_1_07_otoshimonoa.png`, imageAlt: 'carteira perdida', choices: [{ n: 1, text: 'levar à polícia/交番' }, { n: 2, text: 'ligar 110 no local' }, { n: 3, text: 'ficar com ela' }, { n: 4, text: 'jogar fora' }], answer: 1, explanationPt: 'O gabarito marca 警察に持って行く. No posto policial, informa-se onde foi encontrado e dados de contato.' },
+    { id: 'iro-pi-l11-12', number: 12, prompt: '「このメールを見てほしいんですが……」 usa qual padrão?', choices: [{ n: 1, text: 'V-てほしいんですが para pedir que alguém faça algo' }, { n: 2, text: '数量＋も' }, { n: 3, text: 'Vはじめる' }, { n: 4, text: '普通形＋N' }], answer: 1, explanationPt: 'A nota ➊ apresenta V-てほしいんですが como pedido em situação de problema.' },
+    { id: 'iro-pi-l11-13', number: 13, prompt: 'Can-do 35: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'olhar um e-mail de golpe e decidir se deve ignorá-lo' }, { n: 2, text: 'conversar sobre dramas' }, { n: 3, text: 'escrever perfil para tandem' }, { n: 4, text: 'perguntar sobre dialeto' }], answer: 1, explanationPt: 'A atividade 2 é 電気料金はすぐにお支払ってください！, leitura de e-mail suspeito.' },
+    { id: 'iro-pi-l11-14', number: 14, prompt: 'O e-mail suspeito da atividade 2 é sobre:', choices: [{ n: 1, text: '未払いの電気料金 (conta de luz não paga)' }, { n: 2, text: 'assento de concerto' }, { n: 3, text: 'reentrega de bagagem' }, { n: 4, text: 'aula de japonês' }], answer: 1, explanationPt: 'O gabarito identifica o tema como 未払いの電気料金についてのメール.' },
+    { id: 'iro-pi-l11-15', number: 15, prompt: 'Sinais de golpe: a e b no gabarito apontam:', choices: [{ n: 1, text: 'gramática errada e uso não natural do japonês' }, { n: 2, text: 'QR code e bagagem' }, { n: 3, text: 'somente câmera proibida' }, { n: 4, text: 'endereço correto e frase natural' }], answer: 1, explanationPt: 'Exemplos: 「お支払ってください」 está errado e expressões como 「こんにちは」「あなた」 soam inadequadas em e-mail oficial.' },
+    { id: 'iro-pi-l11-16', number: 16, prompt: 'Sinais de golpe: c e d no gabarito apontam:', choices: [{ n: 1, text: 'fonte/forma de caracteres estranha e pontuação não natural' }, { n: 2, text: 'documento com foto e nome completo' }, { n: 3, text: 'regra de ingresso eletrônico' }, { n: 4, text: 'tandem online' }], answer: 1, explanationPt: 'O answer key menciona caracteres diferentes e mistura/posição estranha de 「。」「、」「，」「！」.' },
+    { id: 'iro-pi-l11-17', number: 17, prompt: 'Sinais de golpe: e, f e g incluem:', choices: [{ n: 1, text: 'domínio/endereço estranho, URL incomum e expressões que apressam como 至急／すぐに' }, { n: 2, text: 'somente nome e data de nascimento' }, { n: 3, text: 'câmera e lata de suco' }, { n: 4, text: 'japonês natural e link oficial confirmado' }], answer: 1, explanationPt: 'Esses pontos ajudam a perceber que o e-mail deve ser ignorado.' },
+    { id: 'iro-pi-l11-18', number: 18, prompt: 'Vocabulário de e-mail: 宛先／至急／未払い／期限 significam:', choices: [{ n: 1, text: 'destinatário / urgente / não pago / prazo' }, { n: 2, text: 'câmera / arena / ingresso / banco' }, { n: 3, text: 'carteira / estação / criança / polícia' }, { n: 4, text: 'residência / validade / obrigação / multa' }], answer: 1, explanationPt: 'Essas palavras aparecem no bloco 大切なことば do e-mail.' },
+    { id: 'iro-pi-l11-19', number: 19, prompt: 'Can-do 36: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'responder quando pedirem verificação de identidade ou inspeção de bagagem em eventos' }, { n: 2, text: 'escrever e-mail formal de trabalho' }, { n: 3, text: 'explicar anime e mangá' }, { n: 4, text: 'comprar comida por tablet' }], answer: 1, explanationPt: 'A atividade 3 acontece na entrada de um concerto.' },
+    { id: 'iro-pi-l11-20', number: 20, prompt: '11-06: qual é a ordem inicial correta?', choices: [{ n: 1, text: 'bagagem é verificada → falam da lata de suco → ela responde o conteúdo da sacola' }, { n: 2, text: 'mostra ID → entra → fala da lata' }, { n: 3, text: 'entra → joga câmera fora → lê e-mail' }, { n: 4, text: 'perde carteira → faz tandem → usa AI' }], answer: 1, explanationPt: 'O gabarito coloca a=1, c=2, d=3.' },
+    { id: 'iro-pi-l11-21', number: 21, prompt: '11-06: o que メラニ decide fazer com a 缶ジュース?', image: `${IMG}/ZZ_11_3_04_kanjuusu.png`, imageAlt: 'lata de suco', choices: [{ n: 1, text: 'jogar fora' }, { n: 2, text: 'voltar e beber' }, { n: 3, text: 'levar escondido' }, { n: 4, text: 'guardar no bolso' }], answer: 1, explanationPt: 'Ela responde: じゃあ、捨ててください.' },
+    { id: 'iro-pi-l11-22', number: 22, prompt: '11-06: o que acontece com a câmera?', image: `${IMG}/ZZ_11_3_08_kamera.png`, imageAlt: 'câmera', choices: [{ n: 1, text: 'depois de entrar, ela deve deixá-la no balcão indicado' }, { n: 2, text: 'é quebrada na entrada' }, { n: 3, text: 'pode entrar normalmente' }, { n: 4, text: 'deve ser enviada por correio' }], answer: 1, explanationPt: 'スタッフ diz que há um 窓口 à direita após a entrada, onde a câmera será guardada e devolvida após o concerto.' },
+    { id: 'iro-pi-l11-23', number: 23, prompt: '11-06: para 本人確認, メラニ mostra:', image: `${IMG}/ZZ_11_3_17_zairyuukaado.png`, imageAlt: 'cartão de residência', choices: [{ n: 1, text: '在留カード' }, { n: 2, text: '運転免許証' }, { n: 3, text: 'マイナンバーカード' }, { n: 4, text: 'somente QR code' }], answer: 1, explanationPt: 'Ela pergunta se 在留カード serve, e o staff responde que sim.' },
+    { id: 'iro-pi-l11-24', number: 24, prompt: '「缶ジュースは持ち込み禁止になっています」 usa Nになっている para:', choices: [{ n: 1, text: 'dizer uma regra já estabelecida' }, { n: 2, text: 'pedir favor informal' }, { n: 3, text: 'indicar começo de ação' }, { n: 4, text: 'mostrar quantidade grande' }], answer: 1, explanationPt: 'A nota ➋ explica que Nになっている descreve regras ou regulamentos definidos previamente.' },
+    { id: 'iro-pi-l11-25', number: 25, prompt: '「身分証明書を見せていただけますか？」 é:', choices: [{ n: 1, text: 'pedido polido para a pessoa mostrar identificação' }, { n: 2, text: 'ordem casual entre amigos' }, { n: 3, text: 'pergunta sobre dialeto' }, { n: 4, text: 'confirmação de memória' }], answer: 1, explanationPt: 'A nota ➌ apresenta V-ていただけますか？ como pedido polido a desconhecidos ou superiores.' },
+    { id: 'iro-pi-l11-26', number: 26, prompt: '「お飲みになりますか？」 em relação a 「飲みますか？」 é:', choices: [{ n: 1, text: 'forma respeitosa おVになる' }, { n: 2, text: 'forma negativa' }, { n: 3, text: 'dialeto de Kansai' }, { n: 4, text: 'forma de quantidade' }], answer: 1, explanationPt: 'A nota ➍ explica おVになる como 尊敬語: お飲みになる, お預けになる, お待ちになる.' },
+    { id: 'iro-pi-l11-27', number: 27, prompt: 'Can-do 37: a leitura 「在留カードについて」 pede que o aluno consiga:', choices: [{ n: 1, text: 'ler guia de regras de vida no Japão para estrangeiros e entender o conteúdo' }, { n: 2, text: 'ouvir drama japonês sem legenda' }, { n: 3, text: 'responder a convite de evento' }, { n: 4, text: 'escrever mensagem de cancelamento' }], answer: 1, explanationPt: 'A atividade 4 lê uma explicação sobre 在留カード.' },
+    { id: 'iro-pi-l11-28', number: 28, prompt: '在留カード é emitido para quem, segundo o gabarito?', choices: [{ n: 1, text: 'estrangeiros que ficam no Japão por médio/longo período' }, { n: 2, text: 'qualquer turista de um dia' }, { n: 3, text: 'somente japoneses' }, { n: 4, text: 'somente crianças' }], answer: 1, explanationPt: 'O answer key traz 日本に中長期間滞在する外国人.' },
+    { id: 'iro-pi-l11-29', number: 29, prompt: 'Para verificar até quando o 在留カード pode ser usado, deve-se olhar:', choices: [{ n: 1, text: '有効期限' }, { n: 2, text: 'QRコード' }, { n: 3, text: 'アリーナ' }, { n: 4, text: '件名' }], answer: 1, explanationPt: 'O gabarito marca 有効期限.' },
+    { id: 'iro-pi-l11-30', number: 30, prompt: 'Sobre portar 在留カード ao sair, qual afirmação está correta?', choices: [{ n: 1, text: 'pode haver multa se não portar; mesmo com passaporte, é preciso portar o cartão' }, { n: 2, text: 'não há regra de porte' }, { n: 3, text: 'passaporte sempre substitui o cartão' }, { n: 4, text: 'só precisa em concertos' }], answer: 1, explanationPt: 'O gabarito indica 罰金を支払うことがある e que, mesmo com passaporte, deve portar 在留カード.' },
+    { id: 'iro-pi-l11-31', number: 31, prompt: 'Se polícia ou imigração pedir para ver 在留カード:', choices: [{ n: 1, text: 'mostrar é obrigação; recusar pode levar a punição' }, { n: 2, text: 'recusar é sempre permitido' }, { n: 3, text: 'deve mostrar apenas se estiver em evento' }, { n: 4, text: 'deve procurar o assunto do e-mail' }], answer: 1, explanationPt: 'O answer key marca 義務 e 処罰されることがある.' },
+    { id: 'iro-pi-l11-32', number: 32, prompt: 'Se perder o 在留カード, a sequência correta inclui:', choices: [{ n: 1, text: 'ir à polícia, solicitar reemissão em até 14 dias e usar dados como número de recebimento do boletim de perda' }, { n: 2, text: 'dar o cartão vencido a outra pessoa' }, { n: 3, text: 'ignorar porque passaporte basta' }, { n: 4, text: 'clicar em URL recebida por e-mail' }], answer: 1, explanationPt: 'O gabarito traz 警察, 14日以内 e 遺失届出書の受理番号など.' },
+    { id: 'iro-pi-l11-33', number: 33, prompt: '「在留カードを持っていないと、罰金を支払うことがあります」 usa V-ることがある para:', choices: [{ n: 1, text: 'dizer que algo pode acontecer, sem afirmar que sempre acontecerá' }, { n: 2, text: 'dar ordem' }, { n: 3, text: 'pedir para mostrar ID' }, { n: 4, text: 'indicar respeito' }], answer: 1, explanationPt: 'A nota ➎ explica que V-ることがある expressa possibilidade.' },
+    { id: 'iro-pi-l11-34', number: 34, prompt: 'Kanji da lição: 忘れ物／財布／鉄道会社 leem-se:', choices: [{ n: 1, text: 'わすれもの／さいふ／てつどうがいしゃ' }, { n: 2, text: 'わすれぶつ／ざいふ／てつどうかいしゃ' }, { n: 3, text: 'ぼうれもの／さいふ／てつどうがいじゃ' }, { n: 4, text: 'わすれもの／さいぶ／てつどうしゃ' }], answer: 1, explanationPt: 'Esses itens aparecem nas conversas sobre trem e carteira perdida.' },
+    { id: 'iro-pi-l11-35', number: 35, prompt: 'Kanji da lição: 提示する／発券する／落とす／預ける leem-se:', choices: [{ n: 1, text: 'ていじする／はっけんする／おとす／あずける' }, { n: 2, text: 'けいじする／はつけんする／らくとす／あづける' }, { n: 3, text: 'ていしする／はっけんする／おろす／あずかる' }, { n: 4, text: 'ていじする／ほっけんする／おとす／よける' }], answer: 1, explanationPt: 'Esses kanji aparecem no evento e nas regras de entrada.' },
+    { id: 'iro-pi-l11-36', number: 36, prompt: 'Kanji da lição: 法律／違反／協力／払う leem-se:', choices: [{ n: 1, text: 'ほうりつ／いはん／きょうりょく／はらう' }, { n: 2, text: 'ほうそく／ちがはん／こうりょく／ばらう' }, { n: 3, text: 'ほうりつ／いばん／きょうりき／はらう' }, { n: 4, text: 'ほうれつ／いはん／きょうりょく／ふらう' }], answer: 1, explanationPt: '法律違反 aparece nas regras de 在留カード; ご協力 e 払う aparecem no evento e e-mail.' },
+    { id: 'iro-pi-l11-37', number: 37, prompt: 'TIPS: sobre 詐欺メール, qual regra é recomendada?', choices: [{ n: 1, text: 'se não reconhecer o conteúdo, suspeitar, não abrir, não clicar e não responder' }, { n: 2, text: 'sempre clicar rápido em 至急' }, { n: 3, text: 'responder com senha para confirmar' }, { n: 4, text: 'não pedir ajuda a ninguém' }], answer: 1, explanationPt: 'A TIPS explica sinais de golpe e recomenda pesquisar o título e consultar pessoas próximas se o japonês for difícil.' },
+    { id: 'iro-pi-l11-38', number: 38, prompt: 'TIPS: sobre 落とし物・忘れ物, qual afirmação está correta?', choices: [{ n: 1, text: 'se perder em transporte/loja, contatar o local; se achar na rua, levar ao 交番; ficar com achado é ilegal' }, { n: 2, text: 'sempre levar para casa' }, { n: 3, text: 'nunca há devolução no Japão' }, { n: 4, text: 'não se informa detalhes ao centro de achados' }], answer: 1, explanationPt: 'A TIPS cita que muitos itens voltam ao dono e que carteira perdida tem alta taxa de retorno.' },
+    { id: 'iro-pi-l11-39', number: 39, prompt: 'TIPS: na entrada de concertos/eventos, pode haver:', choices: [{ n: 1, text: 'ticket em papel ou eletrônico, QR code, inspeção de bagagem e itens proibidos como latas/câmeras' }, { n: 2, text: 'somente entrada sem regras' }, { n: 3, text: 'apenas perfil de tandem' }, { n: 4, text: 'somente leitura de mangá' }], answer: 1, explanationPt: 'A TIPS recomenda ler regras antes do evento para evitar problemas.' },
+    { id: 'iro-pi-l11-40', number: 40, prompt: 'TIPS: por que pode haver 本人確認 em eventos?', choices: [{ n: 1, text: 'para prevenir revenda irregular de ingressos e confirmar se o comprador é a pessoa presente' }, { n: 2, text: 'para ensinar japonês' }, { n: 3, text: 'para procurar criança perdida' }, { n: 4, text: 'para apagar e-mail' }], answer: 1, explanationPt: 'A TIPS explica medidas contra 転売 e que o assento pode ser revelado só ao escanear o QR code.' },
+    { id: 'iro-pi-l11-41', number: 41, prompt: 'TIPS: documentos usados em 本人確認 incluem:', choices: [{ n: 1, text: '在留カード, passaporte, マイナンバーカード e carteira de motorista japonesa' }, { n: 2, text: 'somente recibo de compra' }, { n: 3, text: 'somente legenda de drama' }, { n: 4, text: 'somente e-mail impresso' }], answer: 1, explanationPt: 'A TIPS também lista informações que podem ser conferidas: nome, nacionalidade, escola/trabalho, nascimento, endereço e telefone.' },
+    { id: 'iro-pi-l11-42', number: 42, prompt: 'TIPS: マイナンバーカード é:', choices: [{ n: 1, text: 'cartão IC com foto emitido para residentes no Japão, com número individual de 12 dígitos, usado em identificação e procedimentos' }, { n: 2, text: 'um ingresso de concerto' }, { n: 3, text: 'um app de kanji' }, { n: 4, text: 'um centro de achados e perdidos' }], answer: 1, explanationPt: 'Estrangeiros de médio/longo prazo recebem My Number ao registrar residência e podem solicitar o cartão.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -2657,6 +2710,173 @@ const L10_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L11_SCRIPTS: Record<string, ScriptItem[]> = {
+  '11-01': [
+    {
+      label: '① 怪しいメールが届いた (11-01)',
+      setupPt: 'Tom pede a Kondo que olhe um e-mail suspeito sobre conta de luz.',
+      lines: [
+        { speaker: 'A', ja: '{近藤|こんどう}さん、このメールを{見|み}てほしいんですが……。{電気料金|でんきりょうきん}を{払|はら}ってくださいっていうメールが{届|とど}いたんです。でも、{毎月|まいつき}ちゃんと{払|はら}ってると{思|おも}うんですけど。', pt: 'Kondo, queria que você olhasse este e-mail... Chegou um e-mail dizendo para eu pagar a conta de luz. Mas acho que pago todo mês certinho.' },
+        { speaker: 'B', ja: 'メール、ちょっと{見|み}せてください。あ、これは{詐欺|さぎ}メールですよ。', pt: 'Mostre o e-mail um pouco. Ah, isto é e-mail de golpe.' },
+        { speaker: 'A', ja: '{詐欺|さぎ}メール……？', pt: 'E-mail de golpe...?' },
+        { speaker: 'B', ja: 'トムさんをだますための、うそのメールってことです。ほら、よく{見|み}てください。{差出人|さしだしにん}のメールアドレスが、ちょっとおかしいですよ。', pt: 'Quer dizer que é um e-mail falso para enganar você, Tom. Veja bem. O endereço do remetente está meio estranho.' },
+        { speaker: 'A', ja: 'あー、そうですね。これ、どうすればいいですか？', pt: 'Ah, é mesmo. O que devo fazer?' },
+        { speaker: 'B', ja: 'そのままメールを{消|け}せばいいですよ。メールを{開|ひら}いたり、リンクをクリックしたりしちゃだめですよ。', pt: 'Pode apagar o e-mail como está. Não abra o e-mail nem clique em links.' },
+        { speaker: 'A', ja: 'そうですか。{見分|みわ}けるのが{難|むずか}しいですね。', pt: 'Entendi. É difícil distinguir.' },
+        { speaker: 'B', ja: '{怪|あや}しいと{思|おも}ったら、{件名|けんめい}をそのまま{検索|けんさく}すれば、{詐欺|さぎ}メールかどうかだいたいわかりますよ。', pt: 'Se achar suspeito, pesquise o assunto exatamente como está; geralmente dá para saber se é golpe.' },
+        { speaker: 'A', ja: '{危|あぶ}ないですね。{気|き}をつけます。', pt: 'É perigoso. Vou tomar cuidado.' },
+      ],
+    },
+  ],
+  '11-02': [
+    {
+      label: '② 電車に忘れ物をした (11-02)',
+      setupPt: 'Alguém esqueceu uma sacola de roupas no trem.',
+      lines: [
+        { speaker: 'A', ja: 'あっ！', pt: 'Ah!' },
+        { speaker: 'B', ja: 'どうしたんですか？', pt: 'O que aconteceu?' },
+        { speaker: 'A', ja: '{電車|でんしゃ}に{荷物|にもつ}を{忘|わす}れちゃいました……。', pt: 'Esqueci minha bagagem no trem...' },
+        { speaker: 'B', ja: 'えっ、{何|なに}、{忘|わす}れたんですか？', pt: 'O quê? O que você esqueceu?' },
+        { speaker: 'A', ja: 'さっき{買|か}った{服|ふく}です。どうしよう。{交番|こうばん}に{行|い}ったほうがいいですか？', pt: 'As roupas que comprei agora há pouco. O que faço? É melhor ir ao posto policial?' },
+        { speaker: 'B', ja: '{電車|でんしゃ}に{忘|わす}れたなら、{鉄道会社|てつどうがいしゃ}の{忘|わす}れ{物|もの}センターに、{電話|でんわ}で{聞|き}くといいですよ。', pt: 'Se você esqueceu no trem, é bom ligar para o centro de achados e perdidos da companhia ferroviária.' },
+        { speaker: 'A', ja: 'あ、そうですか。', pt: 'Ah, entendi.' },
+        { speaker: 'B', ja: '{電話|でんわ}で、どの{電車|でんしゃ}に{乗|の}ったとか、{何|なに}が{入|はい}っているかとか{伝|つた}えれば、{探|さが}してくれると{思|おも}います。', pt: 'Se você disser por telefone qual trem pegou e o que havia dentro, acho que eles procuram.' },
+        { speaker: 'A', ja: 'わかりました。ちょっと、{問|と}い{合|あ}わせてみます。', pt: 'Entendi. Vou entrar em contato.' },
+        { speaker: 'B', ja: 'きっと{見|み}つかりますよ。', pt: 'Com certeza vão encontrar.' },
+      ],
+    },
+  ],
+  '11-03': [
+    {
+      label: '③ 迷子を見つけた (11-03)',
+      setupPt: 'Uma pessoa pergunta o que fazer ao encontrar uma criança perdida.',
+      lines: [
+        { speaker: 'A', ja: '{山崎|やまざき}さん、ちょっと{教|おし}えてほしいんですが、{迷子|まいご}を{見|み}つけたときって、どうすればいいんでしょうか。', pt: 'Yamazaki, queria que você me explicasse uma coisa: o que se deve fazer ao encontrar uma criança perdida?' },
+        { speaker: 'B', ja: '{迷子|まいご}ですか？', pt: 'Criança perdida?' },
+        { speaker: 'A', ja: '{昨日|きのう}、ショッピングモールで{迷子|まいご}がいたんです。', pt: 'Ontem havia uma criança perdida no shopping.' },
+        { speaker: 'B', ja: 'あー、ショッピングモールなら、どこかのお{店|みせ}の{人|ひと}に{言|い}えばいいですよ。', pt: 'Ah, se for no shopping, basta avisar alguém de alguma loja.' },
+        { speaker: 'A', ja: 'なるほど。1{人|ひとり}で{泣|な}いてたから、いっしょに{親|おや}を{探|さが}そうかと{思|おも}ったんですけど。', pt: 'Entendi. Ela estava chorando sozinha, então pensei em procurar os pais junto com ela.' },
+        { speaker: 'B', ja: 'それは、やめたほうがいいですよ。{最近|さいきん}は、{知|し}らない{子|こ}どもに{話|はな}しかけただけで、{不審|ふしん}な{人|ひと}と{思|おも}われちゃいますからね。', pt: 'Melhor não fazer isso. Hoje em dia, só de falar com uma criança desconhecida, podem achar que você é suspeito.' },
+        { speaker: 'A', ja: 'えー、そうなんですか。じゃあ、ショッピングモールじゃなくて、{道|みち}で{迷子|まいご}を{見|み}つけたら、どうしたらいいんですか？', pt: 'Nossa, é mesmo? Então, se não for no shopping e eu encontrar uma criança perdida na rua, o que devo fazer?' },
+        { speaker: 'B', ja: '{道|みち}なら、{警察|けいさつ}に{連絡|れんらく}するといいですよ。', pt: 'Se for na rua, é bom contatar a polícia.' },
+        { speaker: 'A', ja: 'そうなんですね。', pt: 'Entendi.' },
+      ],
+    },
+  ],
+  '11-04': [
+    {
+      label: '④ 落とし物を拾った (11-04)',
+      setupPt: 'Duas pessoas encontram uma carteira perdida.',
+      lines: [
+        { speaker: 'A', ja: 'あっ、{財布|さいふ}。', pt: 'Ah, uma carteira.' },
+        { speaker: 'B', ja: 'えっ？', pt: 'Hã?' },
+        { speaker: 'A', ja: 'ほら、これ、{落|お}とし{物|もの}？', pt: 'Olha, isto é um objeto perdido?' },
+        { speaker: 'B', ja: 'あー、だれかジュースを{買|か}うときに、{落|お}としちゃったんですね。', pt: 'Ah, alguém deve ter deixado cair quando comprava suco.' },
+        { speaker: 'A', ja: 'これ、どうすればいいですか？ 110{番|ばん}しますか？', pt: 'O que fazemos com isto? Ligamos 110?' },
+        { speaker: 'B', ja: 'うーん、110{番|ばん}はちょっと……。{落|お}とし{物|もの}は{警察|けいさつ}に{持|も}って{行|い}ったほうがいいですね。', pt: 'Hmm, ligar 110 talvez seja demais... É melhor levar achados à polícia.' },
+        { speaker: 'A', ja: 'そうですか。', pt: 'Entendi.' },
+        { speaker: 'B', ja: 'はい。{警察|けいさつ}に{持|も}って{行|い}って、{拾|ひろ}った{場所|ばしょ}を{伝|つた}えたり、{私|わたし}たちの{名前|なまえ}や{連絡先|れんらくさき}を{書|か}いたりするんです。', pt: 'Sim. Levamos à polícia, dizemos onde encontramos e escrevemos nossos nomes e contatos.' },
+        { speaker: 'A', ja: '{駅前|えきまえ}に{交番|こうばん}がありましたよね？ {持|も}って{行|い}きましょうか。', pt: 'Tinha um posto policial em frente à estação, não tinha? Vamos levar?' },
+        { speaker: 'B', ja: 'そうしましょう。', pt: 'Vamos.' },
+      ],
+    },
+  ],
+  '11-05': [
+    {
+      label: '形に注目 - V-てほしいんですが (11-05)',
+      lines: [
+        { speaker: 'A', ja: 'このメールを{見|み}てほしいんですが……。', pt: 'Queria que você olhasse este e-mail...' },
+        { speaker: 'A', ja: 'ちょっと{教|おし}えてほしいんですが、{迷子|まいご}を{見|み}つけたときって、どうすればいいんでしょうか。', pt: 'Queria que você me explicasse: o que se deve fazer ao encontrar uma criança perdida?' },
+      ],
+    },
+  ],
+  '11-06': [
+    {
+      label: '会話 - コンサート会場で (11-06)',
+      setupPt: 'Melani passa por inspeção de bagagem, emissão de ticket e verificação de identidade na entrada de um concerto.',
+      lines: [
+        { speaker: 'スタッフA', ja: '{手荷物検査|てにもつけんさ}を{行|おこな}います。{中|なか}に{手|て}を{入|い}れてもいいですか？', pt: 'Faremos inspeção de bagagem. Posso colocar a mão dentro?' },
+        { speaker: 'メラニ', ja: 'どうぞ。', pt: 'Claro.' },
+        { speaker: 'スタッフA', ja: 'あ、{缶|かん}ジュースは{持|も}ち{込|こ}み{禁止|きんし}になっています。', pt: 'Ah, latas de suco são proibidas de entrar.' },
+        { speaker: 'メラニ', ja: 'そうなんですか。', pt: 'Ah, é?' },
+        { speaker: 'スタッフA', ja: 'こちらで{捨|す}ててもよろしいですか？ それとも、{戻|もど}って、お{飲|の}みになりますか？', pt: 'Podemos descartar aqui? Ou você quer voltar e beber?' },
+        { speaker: 'メラニ', ja: 'じゃあ、{捨|す}ててください。', pt: 'Então, descarte, por favor.' },
+        { speaker: 'スタッフA', ja: 'ご{協力|きょうりょく}ありがとうございます。あと、こちらの{袋|ふくろ}は{何|なん}ですか？', pt: 'Obrigado pela cooperação. E o que é esta sacola?' },
+        { speaker: 'メラニ', ja: 'カメラが{入|はい}っています。', pt: 'Tem uma câmera.' },
+        { speaker: 'スタッフA', ja: '{申|もう}し{訳|わけ}ありません。この{会場|かいじょう}は、カメラも{持|も}ち{込|こ}み{禁止|きんし}になっています。', pt: 'Desculpe. Neste local, câmeras também são proibidas.' },
+        { speaker: 'メラニ', ja: 'え！ どうすればいいですか……？', pt: 'O quê? O que devo fazer?' },
+        { speaker: 'スタッフA', ja: '{入場|にゅうじょう}したら、{右手|みぎて}にカメラを{預|あず}ける{窓口|まどぐち}がありますので、そちらに{預|あず}けてください。コンサート{終了後|しゅうりょうご}に{返却|へんきゃく}します。', pt: 'Depois de entrar, à direita há um balcão para deixar câmeras. Deixe lá, por favor. Será devolvida após o concerto.' },
+        { speaker: 'メラニ', ja: 'あ、はい。わかりました。', pt: 'Ah, sim. Entendi.' },
+        { speaker: 'スタッフA', ja: 'ほかは、だいじょうぶです。そのまま、お{進|すす}みください。', pt: 'O resto está tudo bem. Siga em frente, por favor.' },
+        { speaker: 'スタッフB', ja: 'こんにちは。1{名様|めいさま}ですね。チケットのQRコードをお{願|ねが}いします。', pt: 'Olá. Uma pessoa, certo? O QR code do ingresso, por favor.' },
+        { speaker: 'メラニ', ja: 'はい！ ……あれ？', pt: 'Sim! ...Ué?' },
+        { speaker: 'スタッフB', ja: 'もういちど、やってみますね。あ、システムエラーですね。あちらでチケットを{発券|はっけん}します。', pt: 'Vou tentar de novo. Ah, é erro do sistema. Vamos emitir o ingresso ali.' },
+        { speaker: 'スタッフC', ja: 'それでは、{本人確認|ほんにんかくにん}をしますので、{身分証明書|みぶんしょうめいしょ}を{見|み}せていただけますか？', pt: 'Então, faremos verificação de identidade. Poderia mostrar um documento de identificação?' },
+        { speaker: 'メラニ', ja: 'あっ、はい。えっと、{身分証明書|みぶんしょうめいしょ}は、{何|なに}が{必要|ひつよう}ですか？', pt: 'Ah, sim. Que tipo de documento é necessário?' },
+        { speaker: 'スタッフC', ja: '{写真付|しゃしんつ}きで、{名前|なまえ}と{生年月日|せいねんがっぴ}が{確認|かくにん}できるものをお{願|ねが}いします。{運転免許証|うんてんめんきょしょう}とか、マイナンバーカードとかですが、お{持|も}ちですか？', pt: 'Algo com foto que permita confirmar nome e data de nascimento. Carteira de motorista, My Number Card e similares. Você tem?' },
+        { speaker: 'メラニ', ja: '{在留|ざいりゅう}カードでもいいですか？', pt: 'Pode ser o cartão de residência?' },
+        { speaker: 'スタッフC', ja: 'はい、だいじょうぶです。', pt: 'Sim, tudo bem.' },
+        { speaker: 'メラニ', ja: 'じゃあ、これでお{願|ねが}いします。', pt: 'Então, este, por favor.' },
+        { speaker: 'スタッフC', ja: 'ありがとうございます。{確認|かくにん}のために、お{名前|なまえ}と{生年月日|せいねんがっぴ}を{言|い}っていただけますか？', pt: 'Obrigado. Para confirmação, poderia dizer seu nome e data de nascimento?' },
+        { speaker: 'メラニ', ja: 'メラニ・アユ・プトリです。{生年月日|せいねんがっぴ}は、2005{年|ねん}12{月|がつ}22{日|にち}です。', pt: 'Sou Melani Ayu Putri. Minha data de nascimento é 22 de dezembro de 2005.' },
+        { speaker: 'スタッフC', ja: 'ご{協力|きょうりょく}ありがとうございました。{確認|かくにん}ができました。チケット{発券|はっけん}しますね。コンサート、{楽|たの}しんできてください。', pt: 'Obrigado pela cooperação. Confirmamos. Vou emitir o ingresso. Aproveite o concerto.' },
+        { speaker: 'メラニ', ja: 'はい。ん？ え？ アリーナ！！！', pt: 'Sim. Hã? O quê? Arena!!!' },
+      ],
+    },
+  ],
+  '11-07': [
+    {
+      label: '形に注目 - Nになっている (11-07)',
+      lines: [
+        { speaker: 'スタッフA', ja: '{缶|かん}ジュースは{持|も}ち{込|こ}み{禁止|きんし}になっています。', pt: 'Latas de suco são proibidas de entrar.' },
+        { speaker: 'スタッフA', ja: 'この{会場|かいじょう}は、カメラも{持|も}ち{込|こ}み{禁止|きんし}になっています。', pt: 'Neste local, câmeras também são proibidas.' },
+      ],
+    },
+  ],
+  '11-08': [
+    {
+      label: '形に注目 - V-ていただけますか？ (11-08)',
+      lines: [
+        { speaker: 'スタッフC', ja: '{身分証明書|みぶんしょうめいしょ}を{見|み}せていただけますか？', pt: 'Poderia mostrar um documento de identificação?' },
+        { speaker: 'スタッフC', ja: '{確認|かくにん}のために、お{名前|なまえ}と{生年月日|せいねんがっぴ}を{言|い}っていただけますか？', pt: 'Para confirmação, poderia dizer seu nome e data de nascimento?' },
+      ],
+    },
+  ],
+  '11-09': [
+    {
+      label: '形に注目 - おVになる (11-09)',
+      lines: [
+        { speaker: 'スタッフA', ja: 'それとも、{戻|もど}って、お{飲|の}みになりますか？', pt: 'Ou você quer voltar e beber?' },
+      ],
+    },
+  ],
+  '11-10': [
+    {
+      label: '話すモデル - 手荷物検査と本人確認 (11-10)',
+      lines: [
+        { speaker: 'スタッフ', ja: '{手荷物検査|てにもつけんさ}を{行|おこな}います。{中|なか}に{手|て}を{入|い}れてもいいですか？', pt: 'Faremos inspeção de bagagem. Posso colocar a mão dentro?' },
+        { speaker: '客', ja: 'どうぞ。', pt: 'Claro.' },
+        { speaker: 'スタッフ', ja: '{缶|かん}ジュースは{持|も}ち{込|こ}み{禁止|きんし}になっています。', pt: 'Latas de suco são proibidas.' },
+        { speaker: '客', ja: 'そうなんですか。じゃあ、{捨|す}ててください。', pt: 'Ah, é? Então descarte, por favor.' },
+        { speaker: 'スタッフ', ja: 'こちらの{袋|ふくろ}は{何|なん}ですか？', pt: 'O que é esta sacola?' },
+        { speaker: '客', ja: 'カメラです。', pt: 'É uma câmera.' },
+        { speaker: 'スタッフ', ja: '{申|もう}し{訳|わけ}ありません。この{会場|かいじょう}は、カメラも{持|も}ち{込|こ}み{禁止|きんし}になっています。', pt: 'Desculpe. Neste local, câmeras também são proibidas.' },
+        { speaker: '客', ja: 'どうすればいいですか？', pt: 'O que devo fazer?' },
+        { speaker: 'スタッフ', ja: '{窓口|まどぐち}に{預|あず}けてください。', pt: 'Deixe no balcão, por favor.' },
+        { speaker: '客', ja: 'わかりました。', pt: 'Entendi.' },
+        { speaker: 'スタッフ', ja: 'チケットのQRコードをお{願|ねが}いします。', pt: 'O QR code do ingresso, por favor.' },
+        { speaker: '客', ja: 'はい。', pt: 'Sim.' },
+        { speaker: 'スタッフ', ja: 'システムエラーですね。{身分証明書|みぶんしょうめいしょ}を{見|み}せていただけますか？', pt: 'É erro do sistema. Poderia mostrar um documento de identificação?' },
+        { speaker: '客', ja: '{在留|ざいりゅう}カードでもいいですか？', pt: 'Pode ser o cartão de residência?' },
+        { speaker: 'スタッフ', ja: 'はい。{確認|かくにん}のために、お{名前|なまえ}と{生年月日|せいねんがっぴ}を{言|い}っていただけますか？', pt: 'Sim. Para confirmação, poderia dizer seu nome e data de nascimento?' },
+        { speaker: '客', ja: 'メラニ・アユ・プトリです。{生年月日|せいねんがっぴ}は、2005{年|ねん}12{月|がつ}22{日|にち}です。', pt: 'Sou Melani Ayu Putri. Minha data de nascimento é 22 de dezembro de 2005.' },
+        { speaker: 'スタッフ', ja: 'ご{協力|きょうりょく}ありがとうございました。{確認|かくにん}ができました。', pt: 'Obrigado pela cooperação. Confirmamos.' },
+        { speaker: '客', ja: 'ありがとうございます。', pt: 'Obrigado.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -3726,6 +3946,137 @@ const lesson10: Section = {
   audios: attachScripts(10, L10_SCRIPTS),
 }
 
+const lesson11: Section = {
+  id: 'lesson-11',
+  level: 'pre-intermediate',
+  titleJa: '第11課 これは詐欺メールですよ',
+  titlePt: 'Lição 11 - Isto é um e-mail de golpe',
+  summaryPt:
+    'O que fazer nestas situações? · lidar com e-mails suspeitos, achados e perdidos, entrada em eventos, documentos de identificação e regras do cartão de residência.',
+  studyNotes: [
+    {
+      title: 'Tópico: O que fazer nestas situações? (こんなときどうする？)',
+      bodyPt:
+        'Pergunta de abertura: {落|お}とし{物|もの}の{財布|さいふ}を{拾|ひろ}ったとき、あなたならどうしますか？\n\n' +
+        '## Can-do\n' +
+        '- Ouvir explicações simples de amigos e entender como agir quando há um problema, como esquecer algo ou encontrar um objeto perdido.\n' +
+        '- Ler um e-mail suspeito e decidir se é uma mensagem que deve ser ignorada.\n' +
+        '- Responder a pedidos de 本人確認 e 手荷物検査 em eventos.\n' +
+        '- Ler um guia de regras de vida no Japão sobre 在留カード.',
+    },
+    {
+      title: 'Atividade 1: o que fazer em problemas',
+      bodyPt:
+        'Quatro conversas apresentam respostas práticas para situações comuns.\n\n' +
+        '| Faixa | Situação | Resposta principal | Detalhe importante |\n|---|---|---|---|\n' +
+        '| 11-01 | 怪しいメールが届いた | apagar o e-mail | não abrir, não clicar; pesquisar o 件名 se parecer suspeito |\n' +
+        '| 11-02 | 電車に忘れ物をした | contatar a 鉄道会社／忘れ物センター | dizer qual trem pegou e o que havia dentro; se não encontrar, ir ao 交番 |\n' +
+        '| 11-03 | 迷子を見つけた | avisar loja ou polícia | no shopping, falar com 店の人; na rua, contatar 警察 |\n' +
+        '| 11-04 | 落とし物を拾った | levar à polícia | informar lugar onde pegou, nome e contato |\n\n' +
+        'A lição evita soluções impulsivas: não clicar em links, não levar achados para casa e não abordar criança desconhecida sozinho.',
+    },
+    {
+      title: 'Gramática ➊: V-てほしいんですが',
+      bodyPt:
+        '**V-てほしいんですが** é usado para pedir que alguém faça algo, de forma suave. Aparece quando a pessoa está com problema e quer ajuda.\n\n' +
+        '- `このメールを見てほしいんですが……。` = queria que você olhasse este e-mail...\n' +
+        '- `ちょっと教えてほしいんですが、迷子を見つけたときって、どうすればいいんでしょうか。` = queria que você me explicasse: o que fazer ao encontrar uma criança perdida?\n\n' +
+        '`V-てほしい` expressa o que a pessoa quer que outra pessoa faça. Para o que a própria pessoa quer fazer, usa-se `V-たい`.',
+    },
+    {
+      title: 'Atividade 2: e-mail de golpe',
+      bodyPt:
+        'O e-mail diz ser sobre **未払いの電気料金**. A meta da atividade não é identificar todos os detalhes técnicos, mas perceber que o e-mail é suspeito e deve ser ignorado.\n\n' +
+        '| Sinal | Exemplo do gabarito |\n|---|---|\n' +
+        '| a. 文法が間違っている | `お支払ってください`, `早期の` deveriam ser `お支払いください`, `早急に` |\n' +
+        '| b. 使い方が不自然 | `こんにちは`, `あなた`, `素晴らしい一日を...` não combinam com aviso oficial |\n' +
+        '| c. フォントが不自然 | caracteres de 電気／連絡／大切 parecem diferentes |\n' +
+        '| d. 句読点が不自然 | mistura de `。`, `、`, `，`, `！`, `？` |\n' +
+        '| e. ドメインが不自然 | sequência estranha como `qoebxep` no domínio |\n' +
+        '| f. URLが不自然 | link de pagamento com sequência estranha e domínio incomum |\n' +
+        '| g. 急かす表現 | `至急`, `すぐに` criam pressão para agir rápido |',
+    },
+    {
+      title: 'Atividade 3: entrada em concerto',
+      bodyPt:
+        'メラニ passa por uma entrada de evento com 手荷物検査, emissão de ticket e 本人確認.\n\n' +
+        '| Ordem | Ação |\n|---|---|\n' +
+        '| 1 | バッグの中を確認していいか聞かれる |\n' +
+        '| 2 | 缶ジュースについて話す; ela decide descartar |\n' +
+        '| 3 | 袋の中身を答える: há uma câmera |\n' +
+        '| 4 | カメラについて話す; deve deixar no 窓口 depois de entrar |\n' +
+        '| 5 | QRコードをかざす; aparece erro |\n' +
+        '| 6 | 身分証明書を見せる: 在留カード |\n' +
+        '| 7 | 名前と生年月日を言う |\n' +
+        '| 8 | 発券してもらう |\n' +
+        '| 9 | 席を確認して入場する; ela descobre que é アリーナ |',
+    },
+    {
+      title: 'Gramática ➋: Nになっている',
+      bodyPt:
+        '**Nになっている** é usado para dizer regras ou regulamentos já definidos.\n\n' +
+        '- `缶ジュースは持ち込み禁止になっています。` = latas de suco são proibidas de entrar.\n' +
+        '- `この会場は、カメラも持ち込み禁止になっています。` = neste local, câmeras também são proibidas.\n' +
+        '- `会場は、再入場不可になっています。` = o local não permite reentrada.\n\n' +
+        'Em situações formais também aparece `Nとなっている`.',
+    },
+    {
+      title: 'Gramática ➌: V-ていただけますか？',
+      bodyPt:
+        '**V-ていただけますか？** é um pedido polido, usado com desconhecidos, clientes ou pessoas superiores.\n\n' +
+        '- `身分証明書を見せていただけますか？` = poderia mostrar um documento de identificação?\n' +
+        '- `確認のために、お名前と生年月日を言っていただけますか？` = para confirmação, poderia dizer seu nome e data de nascimento?\n' +
+        '- `ポケットの中身を全部出していただけますか？` = poderia tirar tudo de dentro dos bolsos?\n\n' +
+        '`V-ていただく` é forma humilde de `V-てもらう`; aqui aparece em forma potencial + pergunta.',
+    },
+    {
+      title: 'Gramática ➍: おVになる',
+      bodyPt:
+        '**おVになる** é uma forma respeitosa para ações da outra pessoa.\n\n' +
+        '- `戻って、お飲みになりますか？` = quer voltar e beber?\n' +
+        '- `お荷物、お預けになりますか？` = deseja despachar/deixar sua bagagem?\n' +
+        '- `こちらにお並びになってお待ちください。` = alinhe-se aqui e aguarde, por favor.\n\n' +
+        'Forma: お + verbo na forma マス sem ます + になる. Para 飲む, também se pode usar o respeitoso `召し上がる`.',
+    },
+    {
+      title: 'Atividade 4: 在留カード',
+      bodyPt:
+        'A leitura apresenta regras sobre o cartão de residência para estrangeiros no Japão.\n\n' +
+        '| Ponto | Conteúdo do gabarito |\n|---|---|\n' +
+        '| ① cartão e validade | emitido a estrangeiros de médio/longo prazo; verificar 有効期限 |\n' +
+        '| ② portar o cartão | se não portar, pode pagar 罰金; passaporte não substitui o dever de portar 在留カード |\n' +
+        '| ③ mostrar às autoridades | mostrar a 警察官／入国警備官 é 義務; recusar pode levar a 処罰 |\n' +
+        '| ④ perda | ir à 警察; pedir 再交付 em até 14日以内; usar 遺失届出書の受理番号など |\n' +
+        '| ⑤ emprestar/entregar | nem cartão vencido deve ser entregue a outra pessoa; pode haver punição ou 強制送還 |',
+    },
+    {
+      title: 'Gramática ➎: V-ることがある',
+      bodyPt:
+        '**V-ることがある** expressa que algo pode acontecer, sem afirmar que sempre vai acontecer.\n\n' +
+        '- `在留カードを持っていないと、罰金を支払うことがあります。` = se não portar o cartão de residência, pode ter que pagar multa.\n' +
+        '- `提示を拒むと、処罰されることがあります。` = se recusar a apresentar, pode ser punido.\n' +
+        '- `銀行に在留資格が変わったことを伝えないと、口座が使えなくなることがあります。` = se não avisar o banco que seu status mudou, a conta pode ficar inutilizável.\n\n' +
+        'É diferente de `ことになる`, que afirma algo como regra/decisão definida.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {忘|わす}れ{物|もの}, {財布|さいふ}, {法律|ほうりつ}, {違反|いはん}, {協力|きょうりょく}, {鉄道会社|てつどうがいしゃ}, {提示|ていじ}する, {発券|はっけん}する, {落|お}とす, {預|あず}ける, {払|はら}う.\n\n' +
+        '**Vocabulário-chave:** {差出人|さしだしにん}, メールアドレス, {見分|みわ}ける, {問|と}い{合|あ}わせる, {宛先|あてさき}, {至急|しきゅう}, {未払|みばら}い, {期限|きげん}, {手荷物検査|てにもつけんさ}, {返却|へんきゃく}する, {本人確認|ほんにんかくにん}, {写真付|しゃしんつ}き, {在留資格|ざいりゅうしかく}, {携帯|けいたい}する, {罰金|ばっきん}, {義務|ぎむ}, {再交付|さいこうふ}, {強制送還|きょうせいそうかん}.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**詐欺メール:** chegam por e-mail, SMS ou SNS e fingem ser bancos, cartão, lojas online ou empresas de entrega. Se não reconhecer, não abrir, não clicar e não responder. Pesquisar o 件名 ajuda a verificar.\n\n' +
+        '**落とし物・忘れ物:** ao perder algo em transporte/loja, contate o local com detalhes. Ao achar algo na rua, leve ao 交番; ficar com item achado é ilegal.\n\n' +
+        '**コンサートやイベントの入場:** tickets podem ser em papel ou eletrônicos com QR code; pode haver 手荷物検査, itens proibidos, 本人確認 contra 転売 e assentos revelados só na entrada.\n\n' +
+        '**本人確認・マイナンバーカード:** identidade pode ser pedida em banco, celular, prefeitura, entrega, eventos e polícia. Documentos incluem 在留カード, passaporte, マイナンバーカード e carteira japonesa. My Number Card é cartão IC com foto e número individual de 12 dígitos.',
+    },
+  ],
+  groups: [lesson11Group],
+  audios: attachScripts(11, L11_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -3742,6 +4093,8 @@ const sections: Section[] = [
   // Tópico 5 - Eu e o japonês (私と日本語)
   lesson9,
   lesson10,
+  // Tópico 6 - O que fazer nestas situações? (こんなときどうする？)
+  lesson11,
 ]
 
 export const irodoriPreIntermediate: Level = {
