@@ -69,4 +69,17 @@ export const PRE_INTERMEDIATE_AUDIO: Record<number, AudioTrack[]> = {
     { id: 'iro-pi-04-22', title: '04-22 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/04-22_kiku3.mp3', script: [] },
     { id: 'iro-pi-04-23', title: '04-23 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/04-23_hanasu.mp3', script: [] },
   ],
+  5: [
+    { id: 'iro-pi-05-01', title: '05-01 · kaiwa', descriptionPt: 'Diálogo (会話)', src: '/audio/irodori/pre-intermediate/05-01_kaiwa.mp3', script: [] },
+    { id: 'iro-pi-05-02', title: '05-02 · katachi1', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/05-02_katachi1.mp3', script: [] },
+    { id: 'iro-pi-05-03', title: '05-03 · katachi2', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/05-03_katachi2.mp3', script: [] },
+    { id: 'iro-pi-05-04', title: '05-04 · strategy', descriptionPt: 'Estratégia de fala (ストラテジー)', src: '/audio/irodori/pre-intermediate/05-04_strategy.mp3', script: [] },
+    { id: 'iro-pi-05-05', title: '05-05 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/05-05_hanasu.mp3', script: [] },
+    { id: 'iro-pi-05-06', title: '05-06 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/05-06_kiku1.mp3', script: [] },
+    { id: 'iro-pi-05-07', title: '05-07 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/05-07_kiku2.mp3', script: [] },
+    { id: 'iro-pi-05-08', title: '05-08 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/05-08_kiku3.mp3', script: [] },
+    { id: 'iro-pi-05-09', title: '05-09 · kiku4', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/05-09_kiku4.mp3', script: [] },
+    { id: 'iro-pi-05-10', title: '05-10 · katachi', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/05-10_katachi.mp3', script: [] },
+    { id: 'iro-pi-05-11', title: '05-11 · strategy', descriptionPt: 'Estratégia de fala (ストラテジー)', src: '/audio/irodori/pre-intermediate/05-11_strategy.mp3', script: [] },
+  ],
 }

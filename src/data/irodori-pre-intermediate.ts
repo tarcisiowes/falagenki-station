@@ -231,6 +231,64 @@ const lesson4Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 5: どんなお店がいいですか？ (tópico 毎日の食事) ----
+const lesson5Group: ExerciseGroup = {
+  id: 'iro-pi-l5',
+  title: 'どんなお店がいいですか？',
+  subtitlePt: 'Pedidos por tablet · recomendar restaurantes · escrever impressões · comidas regionais',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l5-1', number: 1, prompt: 'Qual é o tópico desta lição?', choices: [{ n: 1, text: '毎日の食事 (refeições do dia a dia)' }, { n: 2, text: 'どこに住む？' }, { n: 3, text: '旅行に行こう' }, { n: 4, text: '仕事の連絡' }], answer: 1, explanationPt: 'A Lição 5 abre o tópico 毎日の食事 e trata de restaurantes, pedidos e pratos regionais.' },
+    { id: 'iro-pi-l5-2', number: 2, prompt: 'Pergunta de abertura: おすすめのレストランがありますか？ どんなお店ですか？', choices: [{ n: 1, text: 'Você tem algum restaurante recomendado? Que tipo de lugar é?' }, { n: 2, text: 'Que tipo de quarto você quer alugar?' }, { n: 3, text: 'Você já perdeu uma chave?' }, { n: 4, text: 'Qual esporte você pratica?' }], answer: 1, explanationPt: 'A abertura prepara a atividade de recomendar restaurantes.' },
+    { id: 'iro-pi-l5-3', number: 3, prompt: 'Can-do 14: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'pedir comida e bebida usando o tablet de pedidos de um restaurante' }, { n: 2, text: 'pedir ajuda com mudança' }, { n: 3, text: 'fazer reclamação de ruído' }, { n: 4, text: 'escrever mensagem de cancelamento' }], answer: 1, explanationPt: 'A atividade 1 trabalha 注文用タブレット em um restaurante familiar.' },
+    { id: 'iro-pi-l5-4', number: 4, prompt: 'No início do pedido por tablet, duas pessoas chegaram ao restaurante. O gabarito indica que primeiro se toca em:', image: `${IMG}/ZZ_05_1_01_chuumon.png`, imageAlt: 'tela de pedido por tablet em restaurante', choices: [{ n: 1, text: '人数「2人」' }, { n: 2, text: '注文履歴' }, { n: 3, text: 'アレルゲン' }, { n: 4, text: '店員呼出' }], answer: 1, explanationPt: 'Como são duas pessoas, primeiro seleciona-se o número de pessoas: 2人.' },
+    { id: 'iro-pi-l5-5', number: 5, prompt: 'Depois de selecionar o número de pessoas, o gabarito indica tocar em:', choices: [{ n: 1, text: '注文を開始する' }, { n: 2, text: 'キャンセル' }, { n: 3, text: '税込' }, { n: 4, text: '少なめ' }], answer: 1, explanationPt: 'Após selecionar 2人, toca-se em 注文を開始する para iniciar o pedido.' },
+    { id: 'iro-pi-l5-6', number: 6, prompt: 'Vocabulário do tablet: 麺 significa:', image: `${IMG}/ZZ_05_1_02_raamen.png`, imageAlt: 'ramen como exemplo de macarrão', choices: [{ n: 1, text: 'macarrão/noodles' }, { n: 2, text: 'sobremesa' }, { n: 3, text: 'subtotal' }, { n: 4, text: 'histórico de pedidos' }], answer: 1, explanationPt: '麺 é a categoria de macarrão/noodles.' },
+    { id: 'iro-pi-l5-7', number: 7, prompt: 'Vocabulário do tablet: 持ち帰り significa:', choices: [{ n: 1, text: 'para levar / takeout' }, { n: 2, text: 'sem arroz' }, { n: 3, text: 'alergênico' }, { n: 4, text: 'garçom' }], answer: 1, explanationPt: '持ち帰り é pedido para levar.' },
+    { id: 'iro-pi-l5-8', number: 8, prompt: 'Vocabulário do tablet: 注文履歴 é usado quando você quer:', choices: [{ n: 1, text: 'verificar o que já foi pedido e o valor' }, { n: 2, text: 'trocar idioma' }, { n: 3, text: 'pedir arroz pequeno' }, { n: 4, text: 'fazer um post no SNS' }], answer: 1, explanationPt: '注文履歴 = histórico de pedidos.' },
+    { id: 'iro-pi-l5-9', number: 9, prompt: 'Vocabulário do tablet: アレルゲン serve para:', choices: [{ n: 1, text: 'verificar ingredientes que podem causar alergia' }, { n: 2, text: 'calcular imposto' }, { n: 3, text: 'chamar robô de entrega' }, { n: 4, text: 'cancelar uma reserva' }], answer: 1, explanationPt: 'A função アレルゲン ajuda a checar se há ingredientes aos quais a pessoa é alérgica.' },
+    { id: 'iro-pi-l5-10', number: 10, prompt: 'Can-do 15: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'falar com certo detalhe sobre um restaurante no Japão onde se come comida do próprio país/região' }, { n: 2, text: 'ler anúncio de imóvel' }, { n: 3, text: 'usar passiva de incômodo' }, { n: 4, text: 'relatar chave perdida' }], answer: 1, explanationPt: 'A atividade 2 usa uma recomendação de restaurante tailandês feita por ナパー.' },
+    { id: 'iro-pi-l5-11', number: 11, prompt: '会話 05-01: que tipo de restaurante 山本 procura?', choices: [{ n: 1, text: 'não muito caro, com comida tailandesa autêntica, bebida, boa atmosfera e fácil de entrar sozinho' }, { n: 2, text: 'um restaurante de luxo e silencioso sem álcool' }, { n: 3, text: 'uma rede rápida apenas para delivery' }, { n: 4, text: 'um restaurante japonês de ramen' }], answer: 1, explanationPt: 'O gabarito marca: あまり高くない, 本物のタイ料理, お酒が飲める, 雰囲気がいい e 1人でも入りやすい.' },
+    { id: 'iro-pi-l5-12', number: 12, prompt: '会話 05-01: qual restaurante ナパー recomenda e onde fica?', choices: [{ n: 1, text: 'イサーン, em 十条' }, { n: 2, text: '月島, em 秋田' }, { n: 3, text: 'サイウア, em 千葉' }, { n: 4, text: 'ドゥル天, em 沖縄' }], answer: 1, explanationPt: 'ナパー recomenda 十条にある、イサーンというお店.' },
+    { id: 'iro-pi-l5-13', number: 13, prompt: '会話 05-01: イサーン é descrito como:', choices: [{ n: 1, text: 'um 居酒屋 com balcão, onde se pode comer comida tailandesa casualmente' }, { n: 2, text: 'uma cafeteria de sobremesas' }, { n: 3, text: 'uma churrascaria brasileira formal' }, { n: 4, text: 'um restaurante de pedido apenas por aplicativo' }], answer: 1, explanationPt: 'ナパー diz: 居酒屋なんですけど、カウンターがあって、気軽にタイ料理が食べられます.' },
+    { id: 'iro-pi-l5-14', number: 14, prompt: '会話 05-01: aproximadamente quanto custa cada prato?', choices: [{ n: 1, text: 'cerca de 600円' }, { n: 2, text: 'cerca de 60円' }, { n: 3, text: 'cerca de 6000円' }, { n: 4, text: 'não há preço' }], answer: 1, explanationPt: 'A fala diz: どの料理もだいたい600円ぐらいです.' },
+    { id: 'iro-pi-l5-15', number: 15, prompt: '会話 05-01: que pratos tailandeses famosos são citados?', choices: [{ n: 1, text: 'ソムタム e トムヤムクン' }, { n: 2, text: 'きりたんぽ e しもつかれ' }, { n: 3, text: '焼き鳥 e コロッケ' }, { n: 4, text: 'ラーメン e パフェ' }], answer: 1, explanationPt: 'ナパー diz que há pratos famosos como ソムタム e トムヤムクン.' },
+    { id: 'iro-pi-l5-16', number: 16, prompt: '会話 05-01: サイウア é explicado como:', choices: [{ n: 1, text: 'um prato parecido com linguiça/salsicha, especialidade do norte da Tailândia' }, { n: 2, text: 'um tipo de doce de Okinawa' }, { n: 3, text: 'um arroz em palito de Akita' }, { n: 4, text: 'um miso doce de Chiba' }], answer: 1, explanationPt: 'A frase da lição: ソーセージみたいな料理で、タイの北部の名物です.' },
+    { id: 'iro-pi-l5-17', number: 17, prompt: '会話 05-01: sobre o sabor picante, ナパー diz que:', choices: [{ n: 1, text: 'não deixam muito picante para japoneses, mas se pedir fazem com a picância local/autêntica' }, { n: 2, text: 'sempre é impossível pedir picante' }, { n: 3, text: 'é doce como sobremesa' }, { n: 4, text: 'não há comida picante' }], answer: 1, explanationPt: 'Ela explica: 日本人に合わせて、あまり辛くしていない; 頼めば本場の辛さにしてくれます.' },
+    { id: 'iro-pi-l5-18', number: 18, prompt: '会話 05-01: qual é a recomendação de bebida?', choices: [{ n: 1, text: 'タイの焼酎' }, { n: 2, text: 'ドリンクバー' }, { n: 3, text: '牛乳' }, { n: 4, text: '味噌汁' }], answer: 1, explanationPt: 'ナパー recomenda タイの焼酎, feito de arroz tailandês.' },
+    { id: 'iro-pi-l5-19', number: 19, prompt: '「ソーセージみたいな料理」 usa N1みたいなN2 para:', choices: [{ n: 1, text: 'explicar algo comparando a algo parecido' }, { n: 2, text: 'pedir que alguém espere' }, { n: 3, text: 'mostrar passiva de incômodo' }, { n: 4, text: 'marcar histórico de pedidos' }], answer: 1, translationPt: 'um prato parecido com linguiça/salsicha', explanationPt: 'N1みたいなN2 compara uma coisa a outra parecida para explicar.' },
+    { id: 'iro-pi-l5-20', number: 20, prompt: '「本場の辛さ」: 辛さ é formado a partir de 辛い para expressar:', choices: [{ n: 1, text: 'grau/qualidade de picância como substantivo' }, { n: 2, text: 'passado de picante' }, { n: 3, text: 'ordem de pedido' }, { n: 4, text: 'negação' }], answer: 1, explanationPt: 'イA-さ／ナA-さ transforma adjetivos em substantivos de grau: 辛い → 辛さ.' },
+    { id: 'iro-pi-l5-21', number: 21, prompt: 'Estratégia 05-04: quando ナパー esquece a palavra 焼酎, ela:', choices: [{ n: 1, text: 'descreve as características: feito de arroz, transparente, bebida alcoólica forte' }, { n: 2, text: 'troca imediatamente de assunto' }, { n: 3, text: 'fica em silêncio até o fim' }, { n: 4, text: 'escreve no tablet' }], answer: 1, explanationPt: 'A estratégia é 思い出せない単語の特徴を言って質問する.' },
+    { id: 'iro-pi-l5-22', number: 22, prompt: 'Can-do 16: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'escrever um post simples em SNS sobre um restaurante onde foi' }, { n: 2, text: 'explicar uma comida regional desconhecida oralmente' }, { n: 3, text: 'usar tablet de pedidos' }, { n: 4, text: 'pedir conserto da pia' }], answer: 1, explanationPt: 'A atividade 3 é escrita curta: 感想をSNSに書き込む.' },
+    { id: 'iro-pi-l5-23', number: 23, prompt: 'No exemplo de post SNS, que tipo de restaurante aparece?', choices: [{ n: 1, text: 'もんじゃ焼きのお店' }, { n: 2, text: 'タイ料理の居酒屋' }, { n: 3, text: '会社の食堂' }, { n: 4, text: '沖縄料理店' }], answer: 1, explanationPt: 'O gabarito da atividade 3 marca もんじゃ焼きのお店.' },
+    { id: 'iro-pi-l5-24', number: 24, prompt: 'No exemplo de post SNS, o que foi comido?', choices: [{ n: 1, text: 'もち明太子もんじゃ, お好み焼き e 焼きそば' }, { n: 2, text: 'ソムタム, トムヤムクン e サイウア' }, { n: 3, text: 'きりたんぽ, ドゥル天 e しもつかれ' }, { n: 4, text: 'ラーメン, ハンバーグ e パフェ' }], answer: 1, explanationPt: 'O gabarito lista もち明太子もんじゃ, お好み焼き e 焼きそば.' },
+    { id: 'iro-pi-l5-25', number: 25, prompt: 'No exemplo de post SNS, qual foi a impressão?', choices: [{ n: 1, text: 'estava muito gostoso e a pessoa quer ir de novo' }, { n: 2, text: 'era caro e não quer voltar' }, { n: 3, text: 'não conseguiu pedir pelo tablet' }, { n: 4, text: 'não entendeu o cardápio' }], answer: 1, explanationPt: 'O gabarito traz: すごくおいしかった, また行きたい.' },
+    { id: 'iro-pi-l5-26', number: 26, prompt: 'Can-do 17: nesta atividade, o aluno deve conseguir:', choices: [{ n: 1, text: 'ouvir apresentação de comidas desconhecidas/regionais e entender modo de preparo e origem em linhas gerais' }, { n: 2, text: 'falar sobre imóveis disponíveis' }, { n: 3, text: 'receber reclamação de barulho' }, { n: 4, text: 'cancelar compromisso por mensagem' }], answer: 1, explanationPt: 'A atividade 4 trabalha 郷土料理 e comidas que o aluno talvez não conheça.' },
+    { id: 'iro-pi-l5-27', number: 27, prompt: '聴解 05-06: a comida apresentada é:', image: `${IMG}/ZZ_05_4_01_chijinnoie.png`, imageAlt: 'refeição na casa de um conhecido', choices: [{ n: 1, text: 'きりたんぽ, de 秋田' }, { n: 2, text: 'ドゥル天, de 沖縄' }, { n: 3, text: 'しもつかれ, de 栃木' }, { n: 4, text: 'みそピーナッツ, de 千葉' }], answer: 1, explanationPt: 'O gabarito marca ① c e região ア: きりたんぽ de Akita.' },
+    { id: 'iro-pi-l5-28', number: 28, prompt: '聴解 05-06: きりたんぽ é feito de quê?', image: `${IMG}/ZZ_05_4_12_kome.png`, imageAlt: 'arroz', choices: [{ n: 1, text: '米' }, { n: 2, text: '田芋' }, { n: 3, text: 'ニンジン e ダイコン' }, { n: 4, text: 'ピーナッツ e みそ' }], answer: 1, explanationPt: 'A explicação diz: お米から作るんです.' },
+    { id: 'iro-pi-l5-29', number: 29, prompt: '聴解 05-06: como se prepara きりたんぽ?', choices: [{ n: 1, text: 'amassa-se arroz, prende-se em volta de um bastão, endurece-se e assa-se' }, { n: 2, text: 'rala-se cenoura e nabo e mistura-se com salmão' }, { n: 3, text: 'amassa-se taro, mistura-se com porco e frita-se' }, { n: 4, text: 'adoça-se miso com açúcar e envolve-se amendoim' }], answer: 1, explanationPt: 'O script diz: お米をつぶして、棒のまわりにつけて固めてから、焼いた料理.' },
+    { id: 'iro-pi-l5-30', number: 30, prompt: '聴解 05-07: a comida apresentada é:', image: `${IMG}/ZZ_05_4_02_izakaya.png`, imageAlt: 'comida em izakaya de Okinawa', choices: [{ n: 1, text: 'ドゥル天, de 沖縄' }, { n: 2, text: 'きりたんぽ, de 秋田' }, { n: 3, text: 'しもつかれ, de 栃木' }, { n: 4, text: 'みそピーナッツ, de 千葉' }], answer: 1, explanationPt: 'O gabarito marca ② b e região エ: ドゥル天 de Okinawa.' },
+    { id: 'iro-pi-l5-31', number: 31, prompt: '聴解 05-07: ドゥル天 é feito principalmente com:', image: `${IMG}/ZZ_05_4_07_taimo.png`, imageAlt: '田芋', choices: [{ n: 1, text: '田芋, 豚肉 e だし' }, { n: 2, text: '米 e ちくわ' }, { n: 3, text: 'サケ, 大豆 e 酒粕' }, { n: 4, text: 'ピーナッツ, みそ e 砂糖' }], answer: 1, explanationPt: 'O gabarito marca ingredientes c, f, m: 田芋, 豚肉 e だし.' },
+    { id: 'iro-pi-l5-32', number: 32, prompt: '聴解 05-07: o que é ドゥル天?', choices: [{ n: 1, text: 'ドゥルワカシー moldado e frito em óleo' }, { n: 2, text: 'arroz assado no bastão' }, { n: 3, text: 'restos de inverno com salmão' }, { n: 4, text: 'amendoim com miso doce' }], answer: 1, explanationPt: 'A frase central: これをさらに丸めて、油で揚げたやつが、ドゥル天なんですよ.' },
+    { id: 'iro-pi-l5-33', number: 33, prompt: '聴解 05-08: a comida apresentada é:', image: `${IMG}/ZZ_05_4_03_shokudoo.png`, imageAlt: 'refeição na cantina do dormitório', choices: [{ n: 1, text: 'しもつかれ, de 栃木' }, { n: 2, text: 'みそピーナッツ, de 千葉' }, { n: 3, text: 'ドゥル天, de 沖縄' }, { n: 4, text: 'きりたんぽ, de 秋田' }], answer: 1, explanationPt: 'O gabarito marca ③ d e região イ: しもつかれ de Tochigi.' },
+    { id: 'iro-pi-l5-34', number: 34, prompt: '聴解 05-08: quais ingredientes aparecem em しもつかれ?', choices: [{ n: 1, text: 'ニンジン, ダイコン, サケ, 大豆, 油揚げ e 酒粕' }, { n: 2, text: '田芋, 豚肉 e だし' }, { n: 3, text: '米 e 砂糖' }, { n: 4, text: 'ピーナッツ e みそ apenas' }], answer: 1, explanationPt: 'O gabarito marca a, b, g, d, i, l.' },
+    { id: 'iro-pi-l5-35', number: 35, prompt: '聴解 05-08: qual era a origem de しもつかれ segundo a explicação?', choices: [{ n: 1, text: 'comida de inverno feita misturando sobras de Ano Novo e Setsubun' }, { n: 2, text: 'bebida de arroz tailandês' }, { n: 3, text: 'comida para churrasco de varanda' }, { n: 4, text: 'sobremesa de festival' }], answer: 1, explanationPt: 'O script explica que era uma comida de inverno feita com sobras como cabeça de salmão do Ano Novo e soja de Setsubun.' },
+    { id: 'iro-pi-l5-36', number: 36, prompt: '聴解 05-09: a comida apresentada é:', image: `${IMG}/ZZ_05_4_04_tomodachinoie.png`, imageAlt: 'comida na casa de um amigo', choices: [{ n: 1, text: 'みそピーナッツ, de 千葉' }, { n: 2, text: 'しもつかれ, de 栃木' }, { n: 3, text: 'ドゥル天, de 沖縄' }, { n: 4, text: 'きりたんぽ, de 秋田' }], answer: 1, explanationPt: 'O gabarito marca ④ a e região ウ: みそピーナッツ de Chiba.' },
+    { id: 'iro-pi-l5-37', number: 37, prompt: '聴解 05-09: みそピーナッツ usa quais ingredientes?', choices: [{ n: 1, text: 'ピーナッツ, みそ e 砂糖' }, { n: 2, text: '米, 田芋 e 豚肉' }, { n: 3, text: 'ニンジン, ダイコン e サケ' }, { n: 4, text: 'サイウア e 焼酎' }], answer: 1, explanationPt: 'O gabarito marca e, j, k: amendoim, miso e açúcar.' },
+    { id: 'iro-pi-l5-38', number: 38, prompt: '聴解 05-09: como みそピーナッツ pode ser comido?', choices: [{ n: 1, text: 'como petisco ou em cima do arroz' }, { n: 2, text: 'somente dentro de hot pot' }, { n: 3, text: 'apenas frito como tempurá' }, { n: 4, text: 'somente como bebida' }], answer: 1, explanationPt: 'O script diz: おつまみとして食べてもいいし、ご飯にのせて食べる人もいます.' },
+    { id: 'iro-pi-l5-39', number: 39, prompt: '「油で揚げたやつ」 usa やつ para:', choices: [{ n: 1, text: 'evitar repetir 料理/もの em fala casual' }, { n: 2, text: 'mostrar respeito formal' }, { n: 3, text: 'pedir desculpa' }, { n: 4, text: 'marcar plural' }], answer: 1, translationPt: 'a coisa/o prato que foi frito em óleo', explanationPt: 'S（普通形）やつ substitui informalmente um substantivo já entendido pelo contexto. Pode ser trocado por もの.' },
+    { id: 'iro-pi-l5-40', number: 40, prompt: 'Estratégia 05-11: quando não entende uma palavra como きりたんぽ ou ドゥルワカシー, a pessoa:', choices: [{ n: 1, text: 'repete a parte que ouviu com entonação de pergunta para pedir esclarecimento' }, { n: 2, text: 'muda para inglês imediatamente' }, { n: 3, text: 'faz pedido por tablet' }, { n: 4, text: 'sai da conversa' }], answer: 1, explanationPt: 'A estratégia é ことばの一部をくり返して聞き返す: え？ きりたん……？ / え？ ドゥル……？' },
+    { id: 'iro-pi-l5-41', number: 41, prompt: 'Kanji da lição: 注文履歴／送信する lêem-se:', choices: [{ n: 1, text: 'ちゅうもんりれき／そうしんする' }, { n: 2, text: 'ちゅうぶんりれき／おくしんする' }, { n: 3, text: 'ちゅうもんれきし／そうしんする' }, { n: 4, text: 'しゅうもんりれき／そうじんする' }], answer: 1, explanationPt: '注文履歴 = histórico de pedidos; 送信する = enviar.' },
+    { id: 'iro-pi-l5-42', number: 42, prompt: 'Kanji da lição: 持ち帰り／税込／大盛り lêem-se:', choices: [{ n: 1, text: 'もちかえり／ぜいこみ／おおもり' }, { n: 2, text: 'もちはいり／ぜいこみ／だいもり' }, { n: 3, text: 'もちかえり／ぜいこめ／おおせい' }, { n: 4, text: 'じかえり／ぜいこみ／おおもり' }], answer: 1, explanationPt: 'Esses termos aparecem em telas de pedido e cardápios.' },
+    { id: 'iro-pi-l5-43', number: 43, prompt: 'Kanji da lição: 混ぜる／固める／丸める／煮る lêem-se:', choices: [{ n: 1, text: 'まぜる／かためる／まるめる／にる' }, { n: 2, text: 'こんぜる／こためる／えんめる／にる' }, { n: 3, text: 'まぜる／かたまる／まるめる／ねる' }, { n: 4, text: 'まじる／かためる／まるむ／にえる' }], answer: 1, explanationPt: 'São verbos usados para explicar preparo de comidas regionais.' },
+    { id: 'iro-pi-l5-44', number: 44, prompt: 'TIPS: sobre automação em restaurantes no Japão, qual afirmação está correta?', choices: [{ n: 1, text: 'há cada vez mais recepção, pedido, serviço e pagamento automatizados por tablet, smartphone, robô ou self-checkout' }, { n: 2, text: 'tablets nunca têm opção de idioma' }, { n: 3, text: 'robôs substituem todos os funcionários em todos os restaurantes' }, { n: 4, text: 'não se deve perguntar nada ao funcionário se não entender' }], answer: 1, explanationPt: 'A TIPS explica automação em受付, 注文, 配膳 e 会計, e diz que você pode perguntar ao funcionário se não entender.' },
+    { id: 'iro-pi-l5-45', number: 45, prompt: 'TIPS: もんじゃ焼き é:', choices: [{ n: 1, text: 'prato de massa com ingredientes assado na chapa, famoso em áreas tradicionais de Tokyo como 月島' }, { n: 2, text: 'bebida alcoólica de Okinawa' }, { n: 3, text: 'um jogo de mão' }, { n: 4, text: 'arroz em palito de Akita' }], answer: 1, explanationPt: 'A TIPS descreve もんじゃ焼き como prato feito na chapa, parecido com お好み焼き, mas com massa mais líquida.' },
+    { id: 'iro-pi-l5-46', number: 46, prompt: 'TIPS: 泡盛 é:', choices: [{ n: 1, text: 'um tipo de 焼酎 de Okinawa feito de arroz tailandês' }, { n: 2, text: 'arroz amassado e assado' }, { n: 3, text: 'jogo de pedra-papel-tesoura' }, { n: 4, text: 'um app de pedido por smartphone' }], answer: 1, explanationPt: 'A TIPS de Okinawa explica 泡盛 como焼酎 produzido em Okinawa a partir de arroz tailandês.' },
+    { id: 'iro-pi-l5-47', number: 47, prompt: 'TIPS: ふるさと納税 é:', choices: [{ n: 1, text: 'sistema de doação a municípios no Japão que pode reduzir imposto e enviar返礼品 como produtos regionais' }, { n: 2, text: 'um tipo de monjayaki' }, { n: 3, text: 'uma regra de tablet' }, { n: 4, text: 'uma reclamação de condomínio' }], answer: 1, explanationPt: 'A TIPS apresenta ふるさと納税 como doação a自治体 com benefícios fiscais e presentes regionais.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -1109,6 +1167,195 @@ const L4_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L5_SCRIPTS: Record<string, ScriptItem[]> = {
+  '05-01': [
+    {
+      label: '会話 - 本場の辛さにしてくれます (05-01)',
+      setupPt: '山本 pergunta a ナパー, da Tailândia, sobre um restaurante tailandês recomendado.',
+      lines: [
+        { speaker: '山本', ja: 'ナパーさん、この{辺|へん}で、いいタイ{料理|りょうり}のお{店|みせ}、{知|し}らない？', pt: 'Napha, você conhece algum bom restaurante tailandês por aqui?' },
+        { speaker: 'ナパー', ja: 'タイ{料理|りょうり}ですか？ そうですね、いくつか{知|し}ってますよ。チェーン{店|てん}もあるし、ちょっと{高級|こうきゅう}な{店|みせ}もあるし、どんなお{店|みせ}がいいですか？', pt: 'Comida tailandesa? Vejamos, conheço alguns. Há redes, há lugares um pouco sofisticados... que tipo de restaurante você quer?' },
+        { speaker: '山本', ja: 'うーん、あまり{高|たか}くなくて、でも{本物|ほんもの}のタイ{料理|りょうり}が{食|た}べられるところがいいかな。あと、お{酒|さけ}が{飲|の}めて、{雰囲気|ふんいき}がよくて、1{人|ひとり}でも{入|はい}りやすいところ。', pt: 'Hmm, queria um lugar não muito caro, mas onde dê para comer comida tailandesa autêntica. E que tenha bebida, boa atmosfera e seja fácil entrar sozinho.' },
+        { speaker: 'ナパー', ja: 'じゃあ、{十条|じゅうじょう}にある、イサーンというお{店|みせ}がおすすめですね。{居酒屋|いざかや}なんですけど、カウンターがあって、{気軽|きがる}にタイ{料理|りょうり}が{食|た}べられます。', pt: 'Então recomendo um lugar chamado Isaan, em Jujo. É um izakaya, mas tem balcão e dá para comer comida tailandesa de forma casual.' },
+        { speaker: '山本', ja: '{居酒屋|いざかや}？ へー。{安|やす}いの？', pt: 'Izakaya? Ah. É barato?' },
+        { speaker: 'ナパー', ja: 'そうですね、どの{料理|りょうり}もだいたい600{円|えん}ぐらいです。', pt: 'Sim, todos os pratos ficam por volta de 600 ienes.' },
+        { speaker: '山本', ja: 'けっこう{安|やす}いねー。どんな{料理|りょうり}があるの？', pt: 'É bem barato. Que pratos tem?' },
+        { speaker: 'ナパー', ja: 'ソムタムとか、トムヤムクンとか、{有名|ゆうめい}なタイ{料理|りょうり}はだいたいありますよ。あと、サイウアとか{地方|ちほう}の{料理|りょうり}も{食|た}べられます。', pt: 'Tem mais ou menos os pratos tailandeses famosos, como som tam e tom yum goong. E também dá para comer pratos regionais, como sai ua.' },
+        { speaker: '山本', ja: 'サイウア？', pt: 'Sai ua?' },
+        { speaker: 'ナパー', ja: 'ソーセージみたいな{料理|りょうり}で、タイの{北部|ほくぶ}の{名物|めいぶつ}です。', pt: 'É um prato parecido com linguiça/salsicha, especialidade do norte da Tailândia.' },
+        { speaker: '山本', ja: 'へー。{味|あじ}は{本格的|ほんかくてき}？', pt: 'Ah. O sabor é autêntico?' },
+        { speaker: 'ナパー', ja: 'はい、{辛|から}い{料理|りょうり}は、{日本人|にほんじん}に{合|あ}わせて、あまり{辛|から}くしていないんですが、「タイの{辛|から}さでお{願|ねが}いします」って{頼|たの}めば、{本場|ほんば}の{辛|から}さにしてくれます。', pt: 'Sim. Os pratos picantes são ajustados aos japoneses e não ficam muito picantes, mas, se você pedir “com a picância tailandesa”, eles fazem com a picância autêntica.' },
+        { speaker: '山本', ja: 'そうなんだ。いいね。おすすめは？', pt: 'Entendi. Que bom. O que você recomenda?' },
+        { speaker: 'ナパー', ja: 'そうですねえ、おすすめは、タイのお{酒|さけ}です。タイのビールもありますが、{何|なん}でしたっけ、お{米|こめ}から{作|つく}る、{透明|とうめい}で、ちょっと{強|つよ}いお{酒|さけ}……。', pt: 'Vejamos, recomendo a bebida tailandesa. Tem cerveja tailandesa também, mas como era mesmo... uma bebida feita de arroz, transparente e um pouco forte...' },
+        { speaker: '山本', ja: '{焼酎|しょうちゅう}？', pt: 'Shochu?' },
+        { speaker: 'ナパー', ja: 'はい、{焼酎|しょうちゅう}です。タイのお{米|こめ}から{作|つく}った{焼酎|しょうちゅう}で、ほかのタイ{料理|りょうり}のレストランと{比|くら}べて、あまり{高|たか}くない{値段|ねだん}で{飲|の}むことができます。', pt: 'Sim, shochu. É um shochu feito de arroz tailandês, e dá para beber por um preço não muito alto comparado a outros restaurantes tailandeses.' },
+        { speaker: '山本', ja: 'タイの{焼酎|しょうちゅう}か。{飲|の}んでみたいな。', pt: 'Shochu tailandês, hein. Quero experimentar.' },
+        { speaker: 'ナパー', ja: 'タイ{人|じん}の{親子|おやこ}がやっていて、お{母|かあ}さんはけっこうおしゃべりなので、{楽|たの}しい{雰囲気|ふんいき}です。ほかのお{客|きゃく}さんとも{気軽|きがる}におしゃべりもできますし。', pt: 'É administrado por mãe e filho tailandeses, e a mãe conversa bastante, então a atmosfera é divertida. Também dá para conversar casualmente com outros clientes.' },
+        { speaker: '山本', ja: 'へー。{行|い}ってみたくなってきた。くわしい{場所|ばしょ}とか{教|おし}えて。', pt: 'Nossa. Fiquei com vontade de ir. Me diga a localização detalhada.' },
+        { speaker: 'ナパー', ja: 'はい、{今|いま}、リンクを{送|おく}りますね。あまり{飲|の}みすぎないようにしてくださいね。', pt: 'Sim, vou mandar o link agora. Não beba demais, hein.' },
+        { speaker: '山本', ja: 'あはは、{気|き}をつけなきゃ。', pt: 'Haha, vou tomar cuidado.' },
+      ],
+    },
+  ],
+  '05-02': [
+    {
+      label: '形に注目 - N1みたいなN2 (05-02)',
+      lines: [
+        { speaker: 'ナパー', ja: '（サイウアは）ソーセージみたいな{料理|りょうり}で、タイの{北部|ほくぶ}の{名物|めいぶつ}です。', pt: 'Sai ua é um prato parecido com linguiça/salsicha e é uma especialidade do norte da Tailândia.' },
+      ],
+    },
+  ],
+  '05-03': [
+    {
+      label: '形に注目 - イA-さ／ナA-さ (05-03)',
+      lines: [
+        { speaker: 'ナパー', ja: '{辛|から}い{料理|りょうり}は、{日本人|にほんじん}に{合|あ}わせて、あまり{辛|から}くしていないんですが、「タイの{辛|から}さでお{願|ねが}いします」って{頼|たの}めば、{本場|ほんば}の{辛|から}さにしてくれます。', pt: 'Os pratos picantes não ficam muito picantes para combinar com japoneses, mas se pedir “com a picância tailandesa”, eles fazem com a picância autêntica.' },
+      ],
+    },
+  ],
+  '05-04': [
+    {
+      label: 'ストラテジー - 思い出せない単語の特徴を言う (05-04)',
+      lines: [
+        { speaker: 'ナパー', ja: '{何|なん}でしたっけ、お{米|こめ}から{作|つく}る、{透明|とうめい}で、ちょっと{強|つよ}いお{酒|さけ}……。', pt: 'Como era mesmo... uma bebida feita de arroz, transparente e um pouco forte...' },
+        { speaker: '山本', ja: '{焼酎|しょうちゅう}？', pt: 'Shochu?' },
+        { speaker: 'ナパー', ja: 'はい、{焼酎|しょうちゅう}です。', pt: 'Sim, shochu.' },
+      ],
+    },
+  ],
+  '05-05': [
+    {
+      label: '話すモデル - おすすめのレストラン (05-05)',
+      lines: [
+        { speaker: 'A', ja: 'この{辺|へん}で、いいタイ{料理|りょうり}の{店|みせ}って、ありますか？', pt: 'Há algum bom restaurante tailandês por aqui?' },
+        { speaker: 'B', ja: '{十条|じゅうじょう}にある、イサーンというお{店|みせ}がおすすめですね。', pt: 'Recomendo um restaurante chamado Isaan, em Jujo.' },
+        { speaker: 'B', ja: '{居酒屋|いざかや}なんですけど、カウンターがあって、{気軽|きがる}にタイ{料理|りょうり}が{食|た}べられます。', pt: 'É um izakaya, mas tem balcão e dá para comer comida tailandesa casualmente.' },
+        { speaker: 'A', ja: '{安|やす}いですか？', pt: 'É barato?' },
+        { speaker: 'B', ja: 'どの{料理|りょうり}もだいたい600{円|えん}ぐらいです。', pt: 'Todos os pratos custam por volta de 600 ienes.' },
+        { speaker: 'A', ja: 'どんな{料理|りょうり}が{食|た}べられるんですか？', pt: 'Que tipo de pratos dá para comer?' },
+        { speaker: 'B', ja: 'ソムタムとか、トムヤムクンとか、{有名|ゆうめい}なタイ{料理|りょうり}はだいたいありますよ。あと、サイウアとか{地方|ちほう}の{料理|りょうり}も{食|た}べられます。', pt: 'Há pratos tailandeses famosos como som tam e tom yum goong. Também dá para comer pratos regionais, como sai ua.' },
+        { speaker: 'A', ja: '{味|あじ}は？', pt: 'E o sabor?' },
+        { speaker: 'B', ja: '{味|あじ}は{本格的|ほんかくてき}です。{辛|から}い{料理|りょうり}は、{日本人|にほんじん}に{合|あ}わせて、あまり{辛|から}くしていないんですが、{頼|たの}めば、{本場|ほんば}の{辛|から}さにしてくれます。', pt: 'O sabor é autêntico. Os pratos picantes são ajustados para japoneses e não ficam muito picantes, mas se pedir eles fazem com a picância autêntica.' },
+        { speaker: 'A', ja: 'おすすめはありますか？', pt: 'Há alguma recomendação?' },
+        { speaker: 'B', ja: 'おすすめは、タイの{焼酎|しょうちゅう}です。', pt: 'Minha recomendação é o shochu tailandês.' },
+        { speaker: 'A', ja: '{雰囲気|ふんいき}はどんな{感|かん}じですか？', pt: 'Como é a atmosfera?' },
+        { speaker: 'B', ja: 'お{母|かあ}さんはけっこうおしゃべりなので、{楽|たの}しい{雰囲気|ふんいき}です。', pt: 'A mãe conversa bastante, então a atmosfera é divertida.' },
+        { speaker: 'A', ja: 'へー。{行|い}ってみたくなってきました。', pt: 'Nossa. Fiquei com vontade de ir.' },
+      ],
+    },
+  ],
+  '05-06': [
+    {
+      label: '① きりたんぽ (05-06)',
+      setupPt: 'Em casa de um conhecido, explicam きりたんぽ, comida de Akita.',
+      lines: [
+        { speaker: 'A', ja: '{今日|きょう}は、お{鍋|なべ}にしましたよ。{冬|ふゆ}はやっぱり{鍋|なべ}ですね。', pt: 'Hoje preparei nabe. No inverno, nabe é mesmo o melhor.' },
+        { speaker: 'B', ja: 'わあ！ おいしそうですね！ でも、その{白|しろ}いのは、{何|なん}ですか？ ちくわじゃないですよね？', pt: 'Nossa! Parece delicioso! Mas o que é essa coisa branca? Não é chikuwa, né?' },
+        { speaker: 'C', ja: 'あ、これは、きりたんぽ。{秋田|あきた}の{料理|りょうり}です。', pt: 'Ah, isso é kiritanpo. É comida de Akita.' },
+        { speaker: 'B', ja: 'え？ きりたん……？', pt: 'Hã? Kir tan...?' },
+        { speaker: 'C', ja: 'きりたんぽ。この{間|あいだ}、{秋田|あきた}の{自治体|じちたい}に、ふるさと{納税|のうぜい}をして、そのお{礼|れい}にもらったんですよ。だから、{今日|きょう}はきりたんぽ{鍋|なべ}です。', pt: 'Kiritanpo. Outro dia fiz uma doação de furusato nozei a um município de Akita e recebi isso como agradecimento. Então hoje é nabe de kiritanpo.' },
+        { speaker: 'B', ja: 'へー、きりたんぽ、ですか？ {材料|ざいりょう}は、{何|なん}ですか？', pt: 'Ah, kiritanpo? Quais são os ingredientes?' },
+        { speaker: 'C', ja: 'お{米|こめ}から{作|つく}るんです。お{米|こめ}をつぶして、{棒|ぼう}のまわりにつけて{固|かた}めてから、{焼|や}いた{料理|りょうり}です。', pt: 'É feito de arroz. Amassa-se o arroz, prende-se em volta de um bastão, endurece-se e assa-se.' },
+        { speaker: 'B', ja: 'じゃあ、きりたんぽは、お{餅|もち}ですか？', pt: 'Então kiritanpo é mochi?' },
+        { speaker: 'C', ja: 'まあ、ちょっと{似|に}てるかもしれませんね。', pt: 'Bem, talvez seja um pouco parecido.' },
+        { speaker: 'A', ja: 'じゃあ、{今|いま}、お{鍋|なべ}に{火|ひ}をつけますね。……これで、お{鍋|なべ}が{煮|に}えたら、きりたんぽを{入|い}れて{食|た}べるんです。でも、あまり{煮|に}すぎると、ボロボロになっちゃうから、{注意|ちゅうい}してくださいね。', pt: 'Então vou acender o fogo do nabe agora. Quando ferver, colocamos o kiritanpo e comemos. Mas, se cozinhar demais, ele se desfaz, então tome cuidado.' },
+        { speaker: 'B', ja: 'はい。', pt: 'Certo.' },
+      ],
+    },
+  ],
+  '05-07': [
+    {
+      label: '② ドゥル天 (05-07)',
+      setupPt: 'Em um izakaya de Okinawa, explicam ドゥル天.',
+      lines: [
+        { speaker: 'A', ja: 'じゃ、{乾杯|かんぱい}しましょう。かんぱーい！', pt: 'Então vamos brindar. Saúde!' },
+        { speaker: '全員', ja: 'かんぱーい！', pt: 'Saúde!' },
+        { speaker: 'B', ja: 'ここ、{沖縄料理|おきなわりょうり}のお{店|みせ}ですよね？ {私|わたし}、{沖縄|おきなわ}の{料理|りょうり}、はじめてなんです。', pt: 'Aqui é um restaurante de comida okinawana, certo? É a primeira vez que como comida de Okinawa.' },
+        { speaker: 'A', ja: 'そうですか。めずらしいでしょう？', pt: 'É mesmo? É diferente, não é?' },
+        { speaker: 'B', ja: 'ええ。はじめて{見|み}るものばかりです。これは{何|なん}ですか？ この、コロッケみたいなの。', pt: 'Sim. Só tem coisas que vejo pela primeira vez. O que é isto? Essa coisa parecida com croquete.' },
+        { speaker: 'A', ja: 'これは、ドゥル{天|てん}です。ドゥルワカシーの{天|てん}ぷら。', pt: 'Isto é duruten. Tempurá de duruwakashi.' },
+        { speaker: 'B', ja: 'え？ ドゥル……？', pt: 'Hã? Duru...?' },
+        { speaker: 'A', ja: 'ドゥルワカシー。ドゥルワカシーは、{田芋|ターンム}っていう{沖縄|おきなわ}の{芋|いも}をつぶして……。', pt: 'Duruwakashi. Duruwakashi é feito amassando um tubérculo de Okinawa chamado taanmu...' },
+        { speaker: 'B', ja: 'ターンム、ですか？', pt: 'Taanmu?' },
+        { speaker: 'A', ja: 'そう。{田|た}んぼの{芋|いも}と{書|か}いて、{田芋|ターンム}。', pt: 'Isso. Escreve-se “batata do arrozal”: taanmu.' },
+        { speaker: 'B', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'A', ja: 'これをつぶして、{豚肉|ぶたにく}とか、だしとかと{混|ま}ぜて{作|つく}るのが、ドゥルワカシー。で、これをさらに{丸|まる}めて、{油|あぶら}で{揚|あ}げたやつが、ドゥル{天|てん}なんですよ。{食|た}べてみてください。', pt: 'Amassar isso e misturar com carne de porco e caldo é o duruwakashi. A coisa feita ao moldar isso e fritar em óleo é o duruten. Experimente.' },
+        { speaker: 'B', ja: 'はい、いただきます。あ、おいしいですね。{本当|ほんとう}にコロッケみたい。', pt: 'Sim, vou provar. Ah, é gostoso. Parece mesmo croquete.' },
+        { speaker: 'A', ja: 'お{酒|さけ}にも{合|あ}うんですよ。', pt: 'Combina com bebida alcoólica também.' },
+        { speaker: 'B', ja: 'じゃあ、もう1つ、{食|た}べてもいいですか？', pt: 'Então posso comer mais um?' },
+        { speaker: 'A', ja: 'ははは、どうぞ。', pt: 'Ha ha ha, fique à vontade.' },
+      ],
+    },
+  ],
+  '05-08': [
+    {
+      label: '③ しもつかれ (05-08)',
+      setupPt: 'Na cantina do dormitório, explicam しもつかれ, comida de Tochigi.',
+      lines: [
+        { speaker: 'A', ja: '{今日|きょう}も、どれもおいしそうですね。{阿久津|あくつ}さんは、{何|なに}にしますか？', pt: 'Hoje também tudo parece gostoso. Akutsu, o que você vai pedir?' },
+        { speaker: 'B', ja: '{私|わたし}は、{今日|きょう}はアジフライにします。ビマルさんは？', pt: 'Hoje vou de aji fry. E você, Bimal?' },
+        { speaker: 'A', ja: '{私|わたし}は、ハンバーグにします。あれ、このおかずは、{何|なん}ですか？ 「しもつかれ」って{書|か}いてありますが。', pt: 'Eu vou de hambúrguer. Ué, que acompanhamento é esse? Está escrito “shimotsukare”.' },
+        { speaker: 'B', ja: 'しもつかれ、{知|し}らないですか？ ここ{栃木|とちぎ}では、よく{食|た}べる{料理|りょうり}ですよ。', pt: 'Você não conhece shimotsukare? Aqui em Tochigi é um prato muito comido.' },
+        { speaker: 'A', ja: 'そうなんですか。はじめて{見|み}ました。{何|なん}でできていますか？', pt: 'É mesmo? É a primeira vez que vejo. De que é feito?' },
+        { speaker: 'B', ja: 'しもつかれは、ニンジンやダイコンをおろしたものに、えっと、サケとか、あと、{大豆|だいず}や{油揚|あぶらあ}げとかを{混|ま}ぜて{作|つく}るんです。', pt: 'Shimotsukare é feito misturando cenoura e nabo ralados com, bem, salmão, soja e tofu frito.' },
+        { speaker: 'A', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'B', ja: '{酒粕|さけかす}で{味|あじ}をつけるのが、ちょっと{特徴的|とくちょうてき}ですね。', pt: 'O característico é temperar com sakekasu.' },
+        { speaker: 'A', ja: 'そうなんですか。{見|み}ただけでは、{何|なん}でできているか、ぜんぜんわかりませんね。', pt: 'Entendi. Só olhando, não dá para saber de que é feito.' },
+        { speaker: 'B', ja: 'そうですね。{見|み}た{目|め}はあまりおいしそうじゃないかもしれませんね。しもつかれは、もともとはお{正月|しょうがつ}に{食|た}べたサケの{頭|あたま}や、{節分|せつぶん}の{大豆|だいず}とかの、{残|のこ}り{物|もの}を{混|ま}ぜて{作|つく}る{料理|りょうり}だったんですよ。だから、{冬|ふゆ}の{料理|りょうり}でした。', pt: 'Pois é. A aparência talvez não pareça muito apetitosa. Originalmente, shimotsukare era um prato feito misturando sobras, como a cabeça de salmão comida no Ano Novo e a soja de Setsubun. Por isso era um prato de inverno.' },
+        { speaker: 'B', ja: 'でも{今|いま}は、{一年中|いちねんじゅう}スーパーで{売|う}ってますけどね。{栄養|えいよう}もあって{体|からだ}にいいんですよ。', pt: 'Mas hoje é vendido em supermercados o ano todo. Tem nutrição e faz bem para o corpo.' },
+        { speaker: 'A', ja: 'そうなんですか。', pt: 'Entendi.' },
+        { speaker: 'B', ja: '{食|た}べてみますか？', pt: 'Quer experimentar?' },
+        { speaker: 'A', ja: 'うーん、じゃあ、{食|た}べてみます。ちょっと{勇気|ゆうき}がいりますね……。', pt: 'Hmm, então vou experimentar. Precisa de um pouco de coragem...' },
+      ],
+    },
+  ],
+  '05-09': [
+    {
+      label: '④ みそピーナッツ (05-09)',
+      setupPt: 'Na casa de um amigo, uma pessoa apresenta みそピーナッツ, comida de Chiba.',
+      lines: [
+        { speaker: 'A', ja: 'はい、{私|わたし}は、{焼|や}き{鳥|とり}とコロッケ、{買|か}ってきた。', pt: 'Eu comprei yakitori e croquete.' },
+        { speaker: 'B', ja: '{私|わたし}は、{枝豆|えだまめ}とか、{唐揚|からあ}げとか。どうぞ。', pt: 'Eu trouxe edamame e karaage. Sirvam-se.' },
+        { speaker: 'C', ja: 'ぼくは、これを{持|も}って{来|き}ました。', pt: 'Eu trouxe isto.' },
+        { speaker: 'D', ja: '{何|なん}ですか？ それ。', pt: 'O que é isso?' },
+        { speaker: 'C', ja: 'みそピーナッツです。「みそピー」とか{呼|よ}ぶこともあります。', pt: 'É miso peanuts. Também chamam de “miso-pii”.' },
+        { speaker: 'B', ja: 'あ、それ、{千葉県|ちばけん}で{有名|ゆうめい}なやつだよね？', pt: 'Ah, isso é aquele famoso em Chiba, né?' },
+        { speaker: 'A', ja: '{知|し}らないなあ。ピーナッツのみそ{漬|づ}け？', pt: 'Não conheço. Amendoim em conserva de miso?' },
+        { speaker: 'C', ja: 'ちょっと{違|ちが}いますね。この、ピーナッツのまわりのみそは、{砂糖|さとう}を{入|い}れて、{甘|あま}く{味|あじ}つけがしてあるんです。', pt: 'É um pouco diferente. O miso em volta do amendoim tem açúcar e é temperado de forma doce.' },
+        { speaker: 'D', ja: 'え、{甘|あま}いんですか？', pt: 'Hã, é doce?' },
+        { speaker: 'C', ja: 'はい。おいしいですよ。そのまま、おつまみとして{食|た}べてもいいし、ご{飯|はん}にのせて{食|た}べる{人|ひと}もいます。', pt: 'Sim. É gostoso. Pode comer assim mesmo como petisco, e algumas pessoas comem colocando em cima do arroz.' },
+        { speaker: 'D', ja: 'へー。', pt: 'Ah.' },
+        { speaker: 'C', ja: 'このみそピーナッツは、{千葉|ちば}のソウルフードとも{呼|よ}ばれています。ぼくは{出身|しゅっしん}が{千葉|ちば}なんですけど、{子|こ}どものころから、よく{食|た}べていました。{給食|きゅうしょく}にも{出|で}てきましたよ。', pt: 'Este miso peanuts também é chamado de soul food de Chiba. Eu sou de Chiba, e como desde criança. Também aparecia na merenda escolar.' },
+        { speaker: 'D', ja: 'そうなんですか。じゃあ、ちょっといただきます。あ、おいしい！', pt: 'É mesmo? Então vou experimentar. Ah, é gostoso!' },
+        { speaker: 'C', ja: 'でしょう？', pt: 'Não é?' },
+        { speaker: 'D', ja: 'なるほど。これは、{止|と}まらなくなりますね。{癖|くせ}になる{味|あじ}です！', pt: 'Entendi. Isso dá vontade de não parar. É um sabor viciante!' },
+      ],
+    },
+  ],
+  '05-10': [
+    {
+      label: '形に注目 - S（普通形）やつ (05-10)',
+      lines: [
+        { speaker: 'A', ja: 'これをさらに{丸|まる}めて、{油|あぶら}で{揚|あ}げたやつが、ドゥル{天|てん}なんですよ。', pt: 'A coisa feita ao moldar isso e fritar em óleo é o duruten.' },
+        { speaker: 'B', ja: 'それ、{千葉県|ちばけん}で{有名|ゆうめい}なやつだよね？', pt: 'Isso é aquele famoso em Chiba, né?' },
+      ],
+    },
+  ],
+  '05-11': [
+    {
+      label: 'ストラテジー - 一部をくり返して聞き返す (05-11)',
+      lines: [
+        { speaker: 'A', ja: 'あ、これは、きりたんぽ。{秋田|あきた}の{料理|りょうり}です。', pt: 'Ah, isto é kiritanpo. É comida de Akita.' },
+        { speaker: 'B', ja: 'え？ きりたん……？', pt: 'Hã? Kir tan...?' },
+        { speaker: 'A', ja: 'きりたんぽ。', pt: 'Kiritanpo.' },
+        { speaker: 'A', ja: 'これは、ドゥル{天|てん}です。ドゥルワカシーの{天|てん}ぷら。', pt: 'Isto é duruten. Tempurá de duruwakashi.' },
+        { speaker: 'B', ja: 'え？ ドゥル……？', pt: 'Hã? Duru...?' },
+        { speaker: 'A', ja: 'ドゥルワカシー。', pt: 'Duruwakashi.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -1508,6 +1755,111 @@ const lesson4: Section = {
   audios: attachScripts(4, L4_SCRIPTS),
 }
 
+const lesson5: Section = {
+  id: 'lesson-5',
+  level: 'pre-intermediate',
+  titleJa: '第5課 どんなお店がいいですか？',
+  titlePt: 'Lição 5 - Que tipo de restaurante você prefere?',
+  summaryPt:
+    'Refeições do dia a dia · pedir em tablet, recomendar restaurantes, escrever impressões simples e entender explicações sobre comidas regionais.',
+  studyNotes: [
+    {
+      title: 'Tópico: Refeições do dia a dia (毎日の食事)',
+      bodyPt:
+        'Pergunta de abertura: おすすめのレストランがありますか？ どんなお{店|みせ}ですか？\n\n' +
+        '## Can-do\n' +
+        '- Pedir comidas e bebidas usando um tablet de pedidos em restaurante.\n' +
+        '- Falar com algum detalhe sobre restaurante recomendado no Japão, incluindo tipo de lugar, pratos, preço, sabor e atmosfera.\n' +
+        '- Escrever um post simples em SNS sobre um restaurante onde foi.\n' +
+        '- Ouvir apresentação de comidas regionais/desconhecidas e entender origem, ingredientes e preparo em linhas gerais.',
+    },
+    {
+      title: 'Atividade 1: pedido por tablet',
+      bodyPt:
+        'A situação é em um family restaurant: duas pessoas estão olhando o 注文用タブレット na mesa. O gabarito começa selecionando **2人** e depois **注文を開始する**.\n\n' +
+        'Vocabulário de tela e menu: {麺|めん} (noodles), {和食|わしょく} (comida japonesa), {丼|どんぶり} (tigela de arroz), パスタ, サイドメニュー, {持|も}ち{帰|かえ}り, ライス, {少|すく}なめ, キャンセル, {下記|かき}, {送信|そうしん}する, {税込|ぜいこみ}, {数量|すうりょう}, {小計|しょうけい}, ドリンクバー, {合計|ごうけい}, アレルゲン, {注文履歴|ちゅうもんりれき}.',
+    },
+    {
+      title: 'Atividade 2: restaurante tailandês recomendado',
+      bodyPt:
+        '山本 pergunta a ナパー por um bom restaurante tailandês. Condições de 山本: não muito caro, comida tailandesa autêntica, bebida, boa atmosfera e fácil de entrar sozinho.\n\n' +
+        '| Ponto | Conteúdo |\n|---|---|\n' +
+        '| Nome/lugar | イサーン, em {十条|じゅうじょう} |\n' +
+        '| Tipo | {居酒屋|いざかや} com balcão; dá para comer comida tailandesa casualmente |\n' +
+        '| Preço | Pratos por volta de 600円 |\n' +
+        '| Pratos | ソムタム, トムヤムクン e pratos regionais como サイウア |\n' +
+        '| Sabor | {本格的|ほんかくてき}; se pedir, fazem com a {本場|ほんば}の{辛|から}さ |\n' +
+        '| Recomendação | タイの{焼酎|しょうちゅう} |\n' +
+        '| Atmosfera | A mãe conversa bastante; ambiente divertido |',
+    },
+    {
+      title: 'Gramática ➊➋: みたいな e ～さ',
+      bodyPt:
+        '**N1みたいなN2** explica algo comparando com algo parecido:\n\n' +
+        '- `サイウアは、ソーセージみたいな{料理|りょうり}です。`\n' +
+        '- `キンパは、おすしみたいな{食|た}べ{物|もの}です。`\n\n' +
+        '**イA-さ／ナA-さ** transforma adjetivos em substantivos que indicam grau ou qualidade:\n\n' +
+        '- `{辛|から}い` → `{辛|から}さ`\n' +
+        '- `{高|たか}い` → `{高|たか}さ`\n' +
+        '- `いい` → `よさ`.',
+    },
+    {
+      title: 'Estratégia: palavra esquecida',
+      bodyPt:
+        'Quando não lembra uma palavra, descreva suas características e deixe a outra pessoa ajudar:\n\n' +
+        '- `何でしたっけ、お{米|こめ}から{作|つく}る、{透明|とうめい}で、ちょっと{強|つよ}いお{酒|さけ}……。`\n' +
+        '- 山本 entende e sugere: `{焼酎|しょうちゅう}？`\n\n' +
+        'O gabarito propõe a mesma estratégia para palavras como {納豆|なっとう}, わさび e {茶碗蒸|ちゃわんむ}し.',
+    },
+    {
+      title: 'Atividade 3: post em SNS',
+      bodyPt:
+        'O exemplo de post apresenta um restaurante de もんじゃ{焼|や}き. A pessoa comeu **もち{明太子|めんたいこ}もんじゃ**, お{好|この}み{焼|や}き e {焼|や}きそば. A impressão foi simples e direta: estava muito gostoso e quer ir de novo.\n\n' +
+        'A tarefa pede escrever sobre um restaurante visitado recentemente, o que comeu e como foi. Se possível, usar foto.',
+    },
+    {
+      title: 'Atividade 4: comidas regionais',
+      bodyPt:
+        'Quatro pessoas explicam comidas regionais ou desconhecidas.\n\n' +
+        '| Faixa | Lugar da conversa | Prato e região | Ingredientes/pontos |\n|---|---|---|---|\n' +
+        '| 05-06 | {知人|ちじん}の{家|いえ} | きりたんぽ, {秋田|あきた} | feito de {米|こめ}; arroz amassado em volta de bastão, endurecido e assado |\n' +
+        '| 05-07 | {居酒屋|いざかや} | ドゥル{天|てん}, {沖縄|おきなわ} | {田芋|ターンム}, {豚肉|ぶたにく}, だし; moldado e frito; combina com bebida |\n' +
+        '| 05-08 | {寮|りょう}の{食堂|しょくどう} | しもつかれ, {栃木|とちぎ} | ニンジン, ダイコン, サケ, {大豆|だいず}, {油揚|あぶらあ}げ, {酒粕|さけかす}; prato de inverno feito de sobras |\n' +
+        '| 05-09 | {友|とも}だちの{家|いえ} | みそピーナッツ, {千葉|ちば} | ピーナッツ, みそ, {砂糖|さとう}; petisco ou em cima do arroz |',
+    },
+    {
+      title: 'Gramática ➌: やつ',
+      bodyPt:
+        '**S（普通形）やつ** evita repetir uma palavra já clara no contexto. É casual; em fala mais neutra/formal, pode ser trocado por もの.\n\n' +
+        '- `これをさらに{丸|まる}めて、{油|あぶら}で{揚|あ}げたやつが、ドゥル{天|てん}なんですよ。`\n' +
+        '- `それ、{千葉県|ちばけん}で{有名|ゆうめい}なやつだよね？`\n\n' +
+        'Também pode ajudar quando você esquece uma palavra específica: `あの{辛|から}いやつ`.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {注文履歴|ちゅうもんりれき}, {送信|そうしん}する, {持|も}ち{帰|かえ}り, {税込|ぜいこみ}, {大盛|おおも}り, {麺|めん}, {混|ま}ぜる, {固|かた}める, {丸|まる}める, {煮|に}る.\n\n' +
+        '**Frases-modelo:**\n' +
+        '1. {注文|ちゅうもん}が{送信|そうしん}されたか{確認|かくにん}するときは、{注文履歴|ちゅうもんりれき}を{見|み}ればわかります。\n' +
+        '2. {麺|めん}の{持|も}ち{帰|かえ}りはできません。\n' +
+        '3. ご{飯|はん}の{大盛|おおも}りは、{税込|ぜいこみ}250{円|えん}です。\n' +
+        '4. きりたんぽは、お{米|こめ}を{棒|ぼう}のまわりにつけて{固|かた}めてから{焼|や}きます。\n' +
+        '5. まず、{材料|ざいりょう}を{混|ま}ぜてから、それを{丸|まる}めます。',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**飲食店のサービスの自動化:** restaurantes no Japão usam cada vez mais recepção automática, pedido por tablet/smartphone, robôs de serviço e self-checkout. Se o sistema variar e ficar confuso, perguntar ao funcionário é normal.\n\n' +
+        '**もんじゃ焼き:** prato de massa líquida com ingredientes assado na chapa, tradicional em áreas de Tokyo como {月島|つきしま}. Come-se direto da chapa com uma espátula pequena.\n\n' +
+        '**じゃんけん:** pedra-papel-tesoura é muito usado para decidir vencedores ou responsáveis por tarefas.\n\n' +
+        '**沖縄料理:** inclui 沖縄そば, チャンプルー, サーターアンダギー e 泡盛. Há restaurantes/izakaya de Okinawa em muitas cidades japonesas.\n\n' +
+        '**ふるさと納税:** sistema de doação a municípios que pode reduzir imposto e render返礼品, frequentemente produtos regionais.',
+    },
+  ],
+  groups: [lesson5Group],
+  audios: attachScripts(5, L5_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -1515,6 +1867,8 @@ const sections: Section[] = [
   // Tópico 2 - Onde morar? (どこに住む？)
   lesson3,
   lesson4,
+  // Tópico 3 - Refeições do dia a dia (毎日の食事)
+  lesson5,
 ]
 
 export const irodoriPreIntermediate: Level = {
