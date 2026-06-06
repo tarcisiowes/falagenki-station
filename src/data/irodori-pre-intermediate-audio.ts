@@ -243,4 +243,12 @@ export const PRE_INTERMEDIATE_AUDIO: Record<number, AudioTrack[]> = {
     { id: 'iro-pi-14-18', title: '14-18 · hanasu1', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/14-18_hanasu1.mp3', script: [] },
     { id: 'iro-pi-14-19', title: '14-19 · hanasu2', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/14-19_hanasu2.mp3', script: [] },
   ],
+  15: [
+    { id: 'iro-pi-15-01', title: '15-01 · kiku1', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/15-01_kiku1.mp3', script: [] },
+    { id: 'iro-pi-15-02', title: '15-02 · kiku2', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/15-02_kiku2.mp3', script: [] },
+    { id: 'iro-pi-15-03', title: '15-03 · kiku3', descriptionPt: 'Compreensão auditiva (聞く)', src: '/audio/irodori/pre-intermediate/15-03_kiku3.mp3', script: [] },
+    { id: 'iro-pi-15-04', title: '15-04 · kaiwa', descriptionPt: 'Diálogo (会話)', src: '/audio/irodori/pre-intermediate/15-04_kaiwa.mp3', script: [] },
+    { id: 'iro-pi-15-05', title: '15-05 · katachi', descriptionPt: 'Foco na forma (形に注目)', src: '/audio/irodori/pre-intermediate/15-05_katachi.mp3', script: [] },
+    { id: 'iro-pi-15-06', title: '15-06 · hanasu', descriptionPt: 'Conversação / fala (話す)', src: '/audio/irodori/pre-intermediate/15-06_hanasu.mp3', script: [] },
+  ],
 }

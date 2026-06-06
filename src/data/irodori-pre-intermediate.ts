@@ -788,6 +788,63 @@ const lesson14Group: ExerciseGroup = {
   ],
 }
 
+// ---- Lição 15: 桜島を見てみたいんです (tópico 旅行の楽しみ) ----
+const lesson15Group: ExerciseGroup = {
+  id: 'iro-pi-l15',
+  title: '桜島を見てみたいんです',
+  subtitlePt: 'Vlogs de viagem · artigos turísticos · destinos que quero visitar',
+  instructionJa: 'いみや ばめんに あう ものを えらんでください。',
+  instructionPt: 'Escolha o significado ou a resposta adequada à situação.',
+  questions: [
+    { id: 'iro-pi-l15-1', number: 1, prompt: 'Qual é o tópico da Lição 15?', choices: [{ n: 1, text: '旅行の楽しみ (prazeres da viagem)' }, { n: 2, text: '人とのつき合い' }, { n: 3, text: '日本で働く' }, { n: 4, text: '健康な生活' }], answer: 1, explanationPt: 'A Lição 15 abre o tópico 旅行の楽しみ: buscar informação, entender vídeos/artigos e falar de destinos desejados.' },
+    { id: 'iro-pi-l15-2', number: 2, prompt: '「桜島を見てみたいんです」 significa:', choices: [{ n: 1, text: 'Quero experimentar/ver Sakurajima.' }, { n: 2, text: 'Acabei de tirar boas fotos.' }, { n: 3, text: 'Estou preocupado com um amigo.' }, { n: 4, text: 'Quero mudar o jantar.' }], answer: 1, explanationPt: 'Vてみたい expressa vontade de tentar/experimentar fazer algo; aqui, ver Sakurajima ao vivo.' },
+    { id: 'iro-pi-l15-3', number: 3, prompt: 'Pergunta de abertura: 今、旅行するとしたら、どんなところに行きたいですか？ 旅行に行く前には、どうやって情報を集めますか？', choices: [{ n: 1, text: 'Se fosse viajar agora, que tipo de lugar gostaria de visitar? Como reúne informações antes de viajar?' }, { n: 2, text: 'Você tem problemas de relacionamento?' }, { n: 3, text: 'Você já usou matching app?' }, { n: 4, text: 'Você prefere quarto ocidental ou japonês?' }], answer: 1, explanationPt: 'A lição conecta desejo de viagem com Vlogs, sites de viagem e conversa sobre lugares que se quer visitar.' },
+    { id: 'iro-pi-l15-4', number: 4, prompt: 'Can-do 49: 「そして、目の前は、海！」 trabalha:', choices: [{ n: 1, text: 'assistir a vídeos curtos de viagem e entender locais famosos e especialidades gerais' }, { n: 2, text: 'ler regras de aparência no trabalho' }, { n: 3, text: 'ligar para 119 em emergência' }, { n: 4, text: 'escrever mensagem de aniversário' }], answer: 1, explanationPt: 'A atividade 1 usa três Vlogs de viagem: 飛騨高山, 大井川鐡道 e しまなみ海道.' },
+    { id: 'iro-pi-l15-5', number: 5, prompt: '15-01 飛騨高山: えみ veio com quem?', image: `${IMG}/ZZ_15_1_01_hidatakayama1.png`, imageAlt: 'vlog de Hida Takayama', choices: [{ n: 1, text: 'com a família' }, { n: 2, text: 'sozinha a trabalho' }, { n: 3, text: 'com colegas de escola' }, { n: 4, text: 'com um guia turístico' }], answer: 1, explanationPt: 'A primeira fala é: 今日は家族と飛騨高山に来ました.' },
+    { id: 'iro-pi-l15-6', number: 6, prompt: '15-01 飛騨高山: segundo o gabarito, havia poucos turistas estrangeiros em 高山駅?', choices: [{ n: 1, text: 'não; havia muitos turistas estrangeiros' }, { n: 2, text: 'sim; quase não havia ninguém' }, { n: 3, text: 'não foi mencionado' }, { n: 4, text: 'só havia turistas japoneses' }], answer: 1, explanationPt: 'Ela diz 外国人の観光客もいっぱいだー. Portanto a afirmação “ほとんどいません” é ×.' },
+    { id: 'iro-pi-l15-7', number: 7, prompt: '15-01: onde acontece o 宮川朝市?', choices: [{ n: 1, text: 'perto do rio 宮川' }, { n: 2, text: 'dentro de uma estação de trem' }, { n: 3, text: 'no meio do lago' }, { n: 4, text: 'no aeroporto' }], answer: 1, explanationPt: 'O vídeo diz この朝市は、宮川という川のそばでやっています.' },
+    { id: 'iro-pi-l15-8', number: 8, prompt: '15-01: o que é 「さるぼぼ」 no vídeo?', image: `${IMG}/ZZ_15_1_02_hidatakayama2.png`, imageAlt: 'sarubobo em Takayama', choices: [{ n: 1, text: 'uma boneca/amuleta de macaco' }, { n: 2, text: 'um tipo de carne bovina' }, { n: 3, text: 'um trem turístico' }, { n: 4, text: 'um prato de soba' }], answer: 1, explanationPt: 'A fala diz 有名なサルのお人形「さるぼぼ」.' },
+    { id: 'iro-pi-l15-9', number: 9, prompt: '15-01: o restaurante de 焼肉 entrou rapidamente?', choices: [{ n: 1, text: 'não; ela esperou cerca de 1 hora' }, { n: 2, text: 'sim; entrou sem esperar' }, { n: 3, text: 'não conseguiu entrar' }, { n: 4, text: 'foi cancelado por chuva' }], answer: 1, explanationPt: 'Ela diz 1時間くらい待って、やっと入れました.' },
+    { id: 'iro-pi-l15-10', number: 10, prompt: '15-01: o que ela vai fazer depois em さんまち通り?', image: `${IMG}/ZZ_15_1_04_hidatakayama4.png`, imageAlt: 'rua antiga em Hida Takayama', choices: [{ n: 1, text: 'andar de 人力車' }, { n: 2, text: 'nadar no mar' }, { n: 3, text: 'fazer sand bath' }, { n: 4, text: 'subir no avião' }], answer: 1, explanationPt: 'Ela vê uma 人力車 e diz せっかくなので、これに乗って、観光したいと思います.' },
+    { id: 'iro-pi-l15-11', number: 11, prompt: '15-02 大井川鐡道: quanto tempo ノア diz que ficará no SL?', image: `${IMG}/ZZ_15_1_05_ooigawa1.png`, imageAlt: 'SL da Oigawa Railway', choices: [{ n: 1, text: 'cerca de 30 minutos' }, { n: 2, text: '24 horas' }, { n: 3, text: '15 minutos a pé' }, { n: 4, text: '1 hora de espera' }], answer: 1, explanationPt: 'Ele diz 今日は、まずこのSLに乗ります。だいたい30分くらいです.' },
+    { id: 'iro-pi-l15-12', number: 12, prompt: '15-02: como é o vagão em que ノア entrou?', choices: [{ n: 1, text: 'um vagão antigo feito aproximadamente entre 昭和10 e 30' }, { n: 2, text: 'um vagão novo de shinkansen' }, { n: 3, text: 'um bondinho sem janelas' }, { n: 4, text: 'um ônibus turístico' }], answer: 1, explanationPt: 'A fala diz 昭和10年から30年くらいに作られた古い車両.' },
+    { id: 'iro-pi-l15-13', number: 13, prompt: '15-02: o que ノア compra na venda dentro do trem?', choices: [{ n: 1, text: 'um relógio despertador SL limitado ao trem' }, { n: 2, text: 'doces do SL' }, { n: 3, text: 'um chapéu e brinquedos' }, { n: 4, text: 'uma passagem aérea' }], answer: 1, explanationPt: 'Embora veja várias opções, ele decide: 時計にします！ 車内限定のSL目覚まし時計です.' },
+    { id: 'iro-pi-l15-14', number: 14, prompt: '15-02: como ele descreve o 月見そば?', choices: [{ n: 1, text: 'quente e gostoso' }, { n: 2, text: 'frio e caro' }, { n: 3, text: 'doce e com fruta' }, { n: 4, text: 'picante demais' }], answer: 1, explanationPt: 'Ele diz あったかーい。おいしーい.' },
+    { id: 'iro-pi-l15-15', number: 15, prompt: '15-02: quanto tempo ele caminha até o ponto da vista panorâmica?', image: `${IMG}/ZZ_15_1_07_ooigawa3.png`, imageAlt: 'Oku-Oi Kojo Station', choices: [{ n: 1, text: 'cerca de 15 minutos' }, { n: 2, text: 'cerca de 5 minutos' }, { n: 3, text: 'cerca de 30 minutos' }, { n: 4, text: '24 horas' }], answer: 1, explanationPt: 'Ele diz これから15分くらい歩いて、絶景を見に行きます.' },
+    { id: 'iro-pi-l15-16', number: 16, prompt: '15-02: como estava o tempo nesse dia?', image: `${IMG}/ZZ_15_1_08_ooigawa4.png`, imageAlt: 'lago e céu azul', choices: [{ n: 1, text: 'muito bom, sem uma nuvem' }, { n: 2, text: 'chuvoso e com vento forte' }, { n: 3, text: 'nevando' }, { n: 4, text: 'nublado e escuro' }], answer: 1, explanationPt: 'Ele diz 雲ひとつない青空.' },
+    { id: 'iro-pi-l15-17', number: 17, prompt: '15-03 しまなみ海道: o que a rota liga?', image: `${IMG}/ZZ_15_1_09_shimanami1.png`, imageAlt: 'Shimanami Kaido de bicicleta', choices: [{ n: 1, text: 'seis ilhas, por uma blue line de cerca de 70 km' }, { n: 2, text: 'Tóquio e Ogasawara por avião' }, { n: 3, text: 'um lago e uma estação de SL' }, { n: 4, text: 'três parques de flores' }], answer: 1, explanationPt: 'A abertura diz 6つの島をつなぐ約70kmのブルーライン.' },
+    { id: 'iro-pi-l15-18', number: 18, prompt: '15-03: é a primeira vez de すもも na しまなみ海道?', choices: [{ n: 1, text: 'não; é a segunda vez' }, { n: 2, text: 'sim; é a primeira vez' }, { n: 3, text: 'é a décima vez' }, { n: 4, text: 'ela não sabe' }], answer: 1, explanationPt: 'Ela diz しまなみ海道に来たのは、2回目です.' },
+    { id: 'iro-pi-l15-19', number: 19, prompt: '15-03: ela chegou à 大島 conforme o planejado?', choices: [{ n: 1, text: 'sim; chegou às 12h30 conforme o planejado' }, { n: 2, text: 'não; atrasou muito' }, { n: 3, text: 'não; se perdeu' }, { n: 4, text: 'não; desistiu antes' }], answer: 1, explanationPt: 'A fala é 12時半、大島に到着。予定通りです.' },
+    { id: 'iro-pi-l15-20', number: 20, prompt: '15-03: como era o 海鮮丼?', image: `${IMG}/ZZ_15_1_10_shimanami2.png`, imageAlt: 'kaisen-don', choices: [{ n: 1, text: 'tinha vários peixes, foi satisfatório e não era caro' }, { n: 2, text: 'era caro e pequeno' }, { n: 3, text: 'era um doce de limão' }, { n: 4, text: 'era soba quente' }], answer: 1, explanationPt: 'Ela diz いろいろなお魚が入っていて、大満足 and お値段も高くなくて.' },
+    { id: 'iro-pi-l15-21', number: 21, prompt: '15-03: o que há no 道の駅伯方S・Cパーク além de restaurante e lojas?', choices: [{ n: 1, text: 'sala de concerto e quadras de tênis' }, { n: 2, text: 'aeroporto e ferry' }, { n: 3, text: 'jardim de glicínias' }, { n: 4, text: 'teleférico e estação de trem' }], answer: 1, explanationPt: 'O vídeo diz コンサートホールやテニスコートもあります.' },
+    { id: 'iro-pi-l15-22', number: 22, prompt: '15-03: o que ela faz olhando para o mar?', image: `${IMG}/ZZ_15_1_11_shimanami3.png`, imageAlt: 'mar em Hakata Island', choices: [{ n: 1, text: 'come o famoso 塩ソフトクリーム' }, { n: 2, text: 'nada no mar' }, { n: 3, text: 'compra um relógio de SL' }, { n: 4, text: 'faz sand bath' }], answer: 1, explanationPt: 'Ela diz 海を見ながら、名物の塩ソフトクリームをいただきます.' },
+    { id: 'iro-pi-l15-23', number: 23, prompt: '15-03: pelo que 生口島 é conhecida?', image: `${IMG}/ZZ_15_1_12_shimanami4.png`, imageAlt: 'limões de Ikuchijima', choices: [{ n: 1, text: 'produção de limão número um do Japão' }, { n: 2, text: 'Sakurajima e shirokuma' }, { n: 3, text: 'flores de wisteria' }, { n: 4, text: 'locomotivas a vapor' }], answer: 1, explanationPt: 'A fala é この島は、レモンの生産量日本一の島.' },
+    { id: 'iro-pi-l15-24', number: 24, prompt: '15-03: onde ela vai ficar nesse dia?', choices: [{ n: 1, text: 'em 生口島, com check-in no hotel' }, { n: 2, text: 'em Ogasawara' }, { n: 3, text: 'em Takayama' }, { n: 4, text: 'em Kagoshima' }], answer: 1, explanationPt: 'Ela diz 今日のゴール、生口島に到着 e これからホテルにチェックイン.' },
+    { id: 'iro-pi-l15-25', number: 25, prompt: 'Can-do 50: 「花の名所ベスト3」 trabalha:', choices: [{ n: 1, text: 'ler artigos de site de viagem sobre pontos turísticos e entender o conteúdo geral' }, { n: 2, text: 'dar conselhos de relacionamento' }, { n: 3, text: 'fazer pedido a hotel' }, { n: 4, text: 'falar de problemas de trabalho' }], answer: 1, explanationPt: 'A atividade 2 lê um artigo de viagem sobre três lugares famosos por flores.' },
+    { id: 'iro-pi-l15-26', number: 26, prompt: 'No gabarito, as fotos de A, B e C são:', choices: [{ n: 1, text: 'A: ウ・エ / B: ア・カ / C: イ・オ' }, { n: 2, text: 'A: ア・イ / B: ウ・エ / C: オ・カ' }, { n: 3, text: 'A: イ・オ / B: ア・カ / C: ウ・エ' }, { n: 4, text: 'A: カ・オ / B: イ・ウ / C: ア・エ' }], answer: 1, explanationPt: 'Answer key da atividade 2: A = ウ, エ; B = ア, カ; C = イ, オ.' },
+    { id: 'iro-pi-l15-27', number: 27, prompt: 'Artigo: quando o ネモフィラ de ひたち海浜公園 floresce, 「みはらしの丘」 fica vermelho vivo?', choices: [{ n: 1, text: 'não; fica azul de nemophila' }, { n: 2, text: 'sim; fica 真っ赤' }, { n: 3, text: 'não; fica amarelo de 菜の花' }, { n: 4, text: 'não aparece no artigo' }], answer: 1, explanationPt: 'O gabarito marca ×: a colina se tinge de azul de ネモフィラ, não vermelho.' },
+    { id: 'iro-pi-l15-28', number: 28, prompt: 'Artigo: em ひたち海浜公園, várias flores florescem conforme a estação?', choices: [{ n: 1, text: 'sim' }, { n: 2, text: 'não; só há nemophila' }, { n: 3, text: 'não; só há sakura' }, { n: 4, text: 'o parque não tem flores' }], answer: 1, explanationPt: 'O gabarito marca ○ para 季節ごとにいろいろな花が咲く.' },
+    { id: 'iro-pi-l15-29', number: 29, prompt: 'Artigo: 藤 de あしかがフラワーパーク pode ser aproveitada o ano todo?', choices: [{ n: 1, text: 'não; há época de 見ごろ' }, { n: 2, text: 'sim, o ano todo' }, { n: 3, text: 'sim, mas só no inverno' }, { n: 4, text: 'a lição não fala de 藤' }], answer: 1, explanationPt: 'O gabarito marca × para 一年中楽しめる; o texto fala de 見ごろ e eventos ao longo do ano.' },
+    { id: 'iro-pi-l15-30', number: 30, prompt: 'Artigo: あしかがフラワーパーク fica logo a pé da estação de trem?', choices: [{ n: 1, text: 'sim' }, { n: 2, text: 'não; só de barco' }, { n: 3, text: 'não; só por ferry de 24h' }, { n: 4, text: 'não há estação' }], answer: 1, explanationPt: 'O gabarito marca ○: fica perto da estação.' },
+    { id: 'iro-pi-l15-31', number: 31, prompt: 'Artigo: em 権現堂堤 há 桜まつり e barracas?', choices: [{ n: 1, text: 'sim' }, { n: 2, text: 'não; não há festival' }, { n: 3, text: 'não; só há iluminação de inverno' }, { n: 4, text: 'não; é uma estação de trem' }], answer: 1, explanationPt: 'O gabarito marca ○ para 桜まつり e 屋台.' },
+    { id: 'iro-pi-l15-32', number: 32, prompt: 'Artigo: o principal atrativo de 権現堂堤 é a entrada ser muito barata?', choices: [{ n: 1, text: 'não' }, { n: 2, text: 'sim' }, { n: 3, text: 'só em abril' }, { n: 4, text: 'só para famílias' }], answer: 1, explanationPt: 'O gabarito marca ×. O foco é a paisagem de sakura e 菜の花, não preço de entrada.' },
+    { id: 'iro-pi-l15-33', number: 33, prompt: '「染まり、あり、なり、行われ、続き」 no foco gramatical são exemplos de:', choices: [{ n: 1, text: '連用中止: forma escrita para conectar frases' }, { n: 2, text: 'forma causativa passiva' }, { n: 3, text: 'forma honorífica' }, { n: 4, text: 'te-form casual de convite' }], answer: 1, explanationPt: '連用中止 é a forma マス sem ます usada frequentemente na escrita para conectar orações.' },
+    { id: 'iro-pi-l15-34', number: 34, prompt: 'Em 「東京からの日帰り圏内」 e 「公園へのアクセス」, o の vem depois de:', choices: [{ n: 1, text: 'partículas como から, へ e で' }, { n: 2, text: 'somente が, を e に' }, { n: 3, text: 'sempre um verbo' }, { n: 4, text: 'um adjetivo イ' }], answer: 1, explanationPt: 'A nota ➋ mostra N1 + partícula + の + N2. Antes de の podem vir から, まで, で, へ e と.' },
+    { id: 'iro-pi-l15-35', number: 35, prompt: 'Can-do 51: 「ぜひ行ってみたいのは…」 trabalha:', choices: [{ n: 1, text: 'falar com certo detalhe sobre destinos desejados, lugares a visitar e o que quer fazer lá' }, { n: 2, text: 'ouvir pequenos problemas de amigos' }, { n: 3, text: 'ler comentários de mangá' }, { n: 4, text: 'explicar regras de trabalho' }], answer: 1, explanationPt: 'A atividade 3 usa uma conversa sobre 鹿児島 e 小笠原 como destinos desejados.' },
+    { id: 'iro-pi-l15-36', number: 36, prompt: '15-04: ordem dos pontos sobre 鹿児島 e 小笠原 no gabarito:', image: `${IMG}/ZZ_15_3_01_ryokoosaki.png`, imageAlt: 'destinos de viagem desejados', choices: [{ n: 1, text: '鹿児島: b → f → d / 小笠原: a → e → c' }, { n: 2, text: '鹿児島: a → e → c / 小笠原: b → f → d' }, { n: 3, text: '鹿児島: f → d → b / 小笠原: c → e → a' }, { n: 4, text: 'não há ordem definida' }], answer: 1, explanationPt: 'Answer key: 〈1〉b, f, d; 〈2〉a, e, c.' },
+    { id: 'iro-pi-l15-37', number: 37, prompt: '15-04: por que ター quer ver 桜島?', choices: [{ n: 1, text: 'viu na internet uma paisagem dinâmica com vulcão soltando fumaça do outro lado do mar' }, { n: 2, text: 'quer andar de bicicleta sobre seis ilhas' }, { n: 3, text: 'quer ver wisteria iluminada' }, { n: 4, text: 'quer andar de SL por 30 minutos' }], answer: 1, explanationPt: 'Ela diz 海の向こうに火山があって、ずっと煙を出してて、その風景がとてもダイナミック.' },
+    { id: 'iro-pi-l15-38', number: 38, prompt: '15-04: o que é 「しろくま」 na fala de ター?', choices: [{ n: 1, text: 'かき氷 com leite e frutas por cima, famosa em Kagoshima' }, { n: 2, text: 'um prato de carne bovina' }, { n: 3, text: 'um animal em zoológico' }, { n: 4, text: 'um trem turístico' }], answer: 1, explanationPt: 'Ela explica: ミルクのかかったかき氷に、フルーツをトッピングしたやつ.' },
+    { id: 'iro-pi-l15-39', number: 39, prompt: '15-04: por que 小笠原 desperta interesse em ター?', choices: [{ n: 1, text: 'não tem aeroporto, leva 24h de barco de Tóquio e é uma ilha muito distante, o que dá empolgação' }, { n: 2, text: 'fica perto da estação e dá para ir de ônibus em 15 minutos' }, { n: 3, text: 'é famosa por carne Hida' }, { n: 4, text: 'tem apenas lojas de lembranças' }], answer: 1, explanationPt: 'Ela diz 小笠原には空港がない, 東京から船で24時間かかる e 東京からこんなに離れた島なのでわくわくする.' },
+    { id: 'iro-pi-l15-40', number: 40, prompt: '15-04: que experiências naturais ター quer em 小笠原?', choices: [{ n: 1, text: 'diving/snorkeling e encontrar golfinhos ou tartarugas marinhas' }, { n: 2, text: 'comer shirokuma e fazer sand bath' }, { n: 3, text: 'comprar relógio de SL' }, { n: 4, text: 'ver nemophila e wisteria' }], answer: 1, explanationPt: 'Ela diz ダイビングやシュノーケリングにも挑戦してみたい and イルカとかウミガメに会ってみたい.' },
+    { id: 'iro-pi-l15-41', number: 41, prompt: '「もし時間とお金があれば、ぜひ行ってみたいのは、小笠原です」 usa:', choices: [{ n: 1, text: 'もし Sば para hipótese seguida de desejo ou esperança' }, { n: 2, text: 'Nにとって para ponto de vista' }, { n: 3, text: 'Sのに para resultado contrário' }, { n: 4, text: 'おVする para humildade' }], answer: 1, explanationPt: 'もしSば expressa condição hipotética; aqui, tempo e dinheiro como condição para o desejo.' },
+    { id: 'iro-pi-l15-42', number: 42, prompt: 'Kanji da lição: 湖／雲／空港／各地／緑／黄色 leem-se:', choices: [{ n: 1, text: 'みずうみ／くも／くうこう／かくち／みどり／きいろ' }, { n: 2, text: 'こ／うん／そらこう／おのおのち／りょく／おうしょく' }, { n: 3, text: 'みずうみ／くも／くこう／かくじ／みどり／きろ' }, { n: 4, text: 'みずみ／くも／そらみなと／かくち／みどり／きいろ' }], answer: 1, explanationPt: 'São itens de 漢字のことば da Lição 15.' },
+    { id: 'iro-pi-l15-43', number: 43, prompt: 'Kanji da lição: 昔／かき氷／石炭／暖かい／訪れる leem-se:', choices: [{ n: 1, text: 'むかし／かきごおり／せきたん／あたたかい／おとずれる' }, { n: 2, text: 'むかし／かきこおり／いしたん／だんかい／たずれる' }, { n: 3, text: 'せき／かきごおり／せきすみ／あたかい／ほうれる' }, { n: 4, text: 'むかし／こおり／せきたん／あたたかい／おどれる' }], answer: 1, explanationPt: 'かき氷 é raspadinha; 石炭 é carvão; 訪れる significa visitar.' },
+    { id: 'iro-pi-l15-44', number: 44, prompt: 'TIPS: 効果音 como ジャーン, パンパカパーン, ピンポーン, ブー, ピコーン e チーン são:', image: `${IMG}/ZZ_15_tips_01_jajaan.png`, imageAlt: 'efeito sonoro jajan', choices: [{ n: 1, text: 'efeitos sonoros usados na fala, mangá ou SNS para tornar a expressão mais viva' }, { n: 2, text: 'nomes de flores sazonais' }, { n: 3, text: 'nomes de hotéis em Kagoshima' }, { n: 4, text: 'formas oficiais de kanji antigo' }], answer: 1, explanationPt: 'A TIPS explica que 効果音 imitam sons/melodias e aparecem em conversa, vídeos, mangá e textos online.' },
+    { id: 'iro-pi-l15-45', number: 45, prompt: 'TIPS: 地域ブランド食品 são:', choices: [{ n: 1, text: 'alimentos associados a regiões, como 飛騨牛, 神戸牛, かごしま黒豚 e 夕張メロン' }, { n: 2, text: 'apps de vídeo para estudar japonês' }, { n: 3, text: 'formas antigas de kanji' }, { n: 4, text: 'nomes de barcos para Ogasawara' }], answer: 1, explanationPt: 'A TIPS apresenta marcas locais como atrativo de viagem, muitas vezes só disponíveis naquela região.' },
+    { id: 'iro-pi-l15-46', number: 46, prompt: 'TIPS: sobre 小笠原, qual afirmação está correta?', choices: [{ n: 1, text: 'pertence administrativamente a Tóquio, não tem aeroporto e exige barco de 24h; foi registrada como patrimônio natural em 2011' }, { n: 2, text: 'fica em Kyushu e é famosa por sand bath' }, { n: 3, text: 'é uma ferrovia em Shizuoka' }, { n: 4, text: 'é uma estrada para bicicletas entre Imabari e Onomichi' }], answer: 1, explanationPt: 'A TIPS diz que 小笠原諸島 fica cerca de 1000 km ao sul de Tóquio, pertence a Tóquio e só se acessa por おがさわら丸.' },
+  ],
+}
+
 const L1_SCRIPTS: Record<string, ScriptItem[]> = {
   '01-01': [
     {
@@ -3931,6 +3988,107 @@ const L14_SCRIPTS: Record<string, ScriptItem[]> = {
   ],
 }
 
+const L15_SCRIPTS: Record<string, ScriptItem[]> = {
+  '15-01': [
+    {
+      label: '① 飛騨高山 (15-01)',
+      setupPt: 'えみ visita Hida Takayama com a família e grava um Vlog de viagem.',
+      lines: [
+        { speaker: 'えみ', ja: 'Ciao！いつもありがとうございます。「えみちゃんねる」です。今日は家族と飛騨高山に来ました。いろんなSNSで見て、ずっと行きたかった場所なので、楽しみ。旅のスタートは、ここ高山駅です。おしゃれな駅ですね。外国人の観光客もいっぱいだー。では、まずは宮川朝市に向かいます。', pt: 'Ciao! Obrigada como sempre. Este é o Emi Channel. Hoje vim com minha família para Hida Takayama. Eu via em vários SNS e era um lugar aonde queria ir havia muito tempo, então estou animada. A viagem começa aqui, na estação Takayama. É uma estação estilosa. Também há muitos turistas estrangeiros. Então, primeiro vamos para o mercado matinal Miyagawa.' },
+        { speaker: 'えみ', ja: '着きました！この朝市は、宮川という川のそばでやっていて、地元の新鮮な野菜や果物、お土産を売っています。あ、これが有名なサルのお人形「さるぼぼ」ですね。かわいい！「この赤のさるぼぼ、お願いします！」', pt: 'Chegamos! Este mercado matinal acontece perto de um rio chamado Miyagawa e vende verduras, frutas frescas locais e lembranças. Ah, esta é a famosa bonequinha de macaco, sarubobo. Que fofa! Vou levar esta sarubobo vermelha, por favor.' },
+        { speaker: 'えみ', ja: 'ランチは、焼肉レストランに来ました。1時間くらい待って、やっと入れました。飛騨牛たくさん食べるぞー！んーーー、焼肉最高！「すいません、ご飯、おかわりお願いします！」', pt: 'Para o almoço, viemos a um restaurante de yakiniku. Esperamos cerca de uma hora e finalmente conseguimos entrar. Vou comer bastante Hida beef! Hmm, yakiniku é o melhor! Com licença, mais arroz, por favor!' },
+        { speaker: 'えみ', ja: 'はー、お腹いっぱいです。次は、さんまち通りです。このあたりは、昔の日本の町の様子が残っている地域で、古くて立派な建物が並んでいます。あ、人力車。せっかくなので、これに乗って、観光したいと思います。「お願いしまーす！」', pt: 'Ah, estou de barriga cheia. A seguir é a rua Sanmachi. Esta área conserva a aparência de uma antiga cidade japonesa, com prédios antigos e imponentes alinhados. Ah, um riquixá. Já que estamos aqui, quero passear nele. Por favor!' },
+      ],
+    },
+  ],
+  '15-02': [
+    {
+      label: '② 大井川鐡道 (15-02)',
+      setupPt: 'ノア apresenta a viagem pela Oigawa Railway, em Shizuoka, incluindo o trem SL e a estação Oku-Oi Kojo.',
+      lines: [
+        { speaker: 'ノア', ja: 'こんにちは、「ノアの日本トラベル」です。今回は静岡県の大井川鐡道に来ています。そして、じゃーん！見てください！蒸気機関車、SLです！すごい！かっこいい！SLの燃料は、電気ではなく、石炭なんですよ。今日は、まずこのSLに乗ります。だいたい30分くらいです。では、乗車します。', pt: 'Olá, este é o Noah no Japão Travel. Desta vez vim à Oigawa Railway, na província de Shizuoka. E... tcharam! Vejam! É uma locomotiva a vapor, um SL! Incrível! Que legal! O combustível do SL não é eletricidade, é carvão. Hoje, primeiro vou embarcar neste SL. São mais ou menos 30 minutos. Então, vou entrar.' },
+        { speaker: 'ノア', ja: '車内です。昭和10年から30年くらいに作られた古い車両ですが、その古さがいいですね。あ、車内販売が来ました。SLに乗った記念に何かお土産を買いたいと思います。いろいろあります。お菓子に、帽子、それにおもちゃ……。うーん、悩みますねえ……。よし、決めました。時計にします！車内限定のSL目覚まし時計です。', pt: 'Estou dentro do vagão. É um vagão antigo, feito aproximadamente entre os anos 10 e 30 da era Showa, e essa antiguidade é boa. Ah, chegou a venda dentro do trem. Como lembrança de ter andado no SL, quero comprar algum souvenir. Há várias coisas. Doces, chapéus e brinquedos... Hmm, dá dúvida... Pronto, decidi. Vai ser o relógio! É um despertador SL exclusivo do trem.' },
+        { speaker: 'ノア', ja: '千頭駅まで来ました。ここでお昼を食べようと思います。駅といえば駅そば！月見そばにします。あったかーい。おいしーい。では、次は列車に乗って、今日の最終目的地に向かいます。', pt: 'Cheguei até a estação Senzu. Vou almoçar aqui. Quando se fala em estação, é soba de estação! Vou escolher tsukimi soba. Quentinho. Gostoso. Então, agora vou pegar o trem e seguir para o destino final de hoje.' },
+        { speaker: 'ノア', ja: 'じゃじゃーん！着きました！奥大井湖上駅です。これから15分くらい歩いて、絶景を見に行きます。いい写真が撮れるといいな。着きました。みなさん、見てください。湖の真ん中にあるのが、さっき列車で着いた奥大井湖上駅です。今日は、雲ひとつない青空なので、湖のエメラルドグリーンも、山の緑も、とてもきれいです。最高！これが見たかったー！', pt: 'Tcharam! Cheguei! É a estação Oku-Oi Kojo. Agora vou andar uns 15 minutos para ver uma vista espetacular. Tomara que eu consiga tirar boas fotos. Cheguei. Pessoal, vejam. Aquilo no meio do lago é a estação Oku-Oi Kojo, onde eu cheguei de trem agora há pouco. Hoje o céu está azul, sem uma nuvem, então o verde-esmeralda do lago e o verde das montanhas estão muito bonitos. Perfeito! Era isso que eu queria ver!' },
+      ],
+    },
+  ],
+  '15-03': [
+    {
+      label: '③ しまなみ海道 (15-03)',
+      setupPt: 'すもも pedala pela Shimanami Kaido em uma viagem de dois dias.',
+      lines: [
+        { speaker: 'すもも', ja: '今回の「すもものサイクリング旅」は、しまなみ海道。6つの島をつなぐ約70kmのブルーラインを1泊2日で走ります。今治を出発しました。風も少なくてサイクリング日和。海もきれいで、とても気持ちがいいです。しまなみ海道に来たのは、2回目ですが、やっぱり海の上を走るのは、特別ですね。', pt: 'A viagem de bicicleta da Sumomo desta vez é pela Shimanami Kaido. Vou percorrer em dois dias e uma noite a Blue Line de cerca de 70 km que liga seis ilhas. Parti de Imabari. Há pouco vento, perfeito para pedalar. O mar também está bonito e é muito agradável. É minha segunda vez na Shimanami Kaido, mas pedalar sobre o mar realmente é especial.' },
+        { speaker: 'すもも', ja: '12時半、大島に到着。予定通りです。今日の昼食は、海鮮丼。いろいろなお魚が入っていて、大満足です。お値段も高くなくて、うれしいです。そしてやっぱり瀬戸内は、お魚が新鮮。ごちそうさまでした。', pt: 'Às 12h30, cheguei a Oshima. Tudo conforme o planejado. O almoço de hoje é kaisen-don. Tem vários tipos de peixe e fiquei muito satisfeita. O preço também não é alto, o que é ótimo. E, como esperado, no Setouchi o peixe é fresco. Obrigada pela refeição.' },
+        { speaker: 'すもも', ja: 'さて、伯方島に来ました。道の駅伯方S・Cパークで休憩です。この道の駅には、レストランや売店だけでなく、コンサートホールやテニスコートもあります。すごいですね。そして、目の前は、海！夏は泳げます。私は、海を見ながら、名物の塩ソフトクリームをいただきます。ん、おいしい。', pt: 'Agora, cheguei a Hakatajima. Vou descansar na estação de estrada Hakata S.C. Park. Esta estação de estrada tem não só restaurante e lojas, mas também sala de concerto e quadras de tênis. Incrível. E, bem à frente, o mar! No verão dá para nadar. Eu vou tomar o famoso sorvete soft de sal enquanto olho o mar. Hmm, gostoso.' },
+        { speaker: 'すもも', ja: '今日のゴール、生口島に到着。この島は、レモンの生産量日本一の島。島のあちこちにレモンがあります。到着が、ちょうど日暮れの時間だったので、多々羅大橋近くのレモン谷で美しい夕焼けが見られました。これからホテルにチェックイン。おいしいご飯を食べて、サウナでととのって、ゆっくり休みます。そして明日は、因島などを通って、ゴールの尾道を目指します。続きもお楽しみに。', pt: 'Cheguei a Ikuchijima, o objetivo de hoje. Esta ilha é a número um do Japão em produção de limões. Há limões por toda parte na ilha. Como cheguei exatamente na hora do pôr do sol, pude ver um belo entardecer no Lemon Valley, perto da ponte Tatara. Agora vou fazer check-in no hotel. Vou comer uma boa refeição, relaxar na sauna e descansar bastante. E amanhã, passando por lugares como Innoshima, vou mirar o destino final, Onomichi. Aguardem a continuação.' },
+      ],
+    },
+  ],
+  '15-04': [
+    {
+      label: '会話 - ぜひ行ってみたいのは... (15-04)',
+      setupPt: '森本 pergunta a ター sobre viagens feitas no Japão e lugares aonde ela gostaria de ir.',
+      lines: [
+        { speaker: '森本', ja: 'ターさんは、日本に来てから、どこか旅行に行った？', pt: 'Taa, desde que veio ao Japão, você viajou para algum lugar?' },
+        { speaker: 'ター', ja: 'はい、いろいろ行きました。河口湖とか、日光とか、高尾山とか……。', pt: 'Sim, fui a vários lugares. Kawaguchiko, Nikko, monte Takao...' },
+        { speaker: '森本', ja: 'へー。よかった？', pt: 'Ah. Foi bom?' },
+        { speaker: 'ター', ja: 'はい、どこも景色がきれいで、食べ物もおいしくて、よかったです。', pt: 'Sim, em todos os lugares a paisagem era bonita e a comida gostosa, então foi bom.' },
+        { speaker: '森本', ja: 'そう。それはよかったね。ほかに、どこか行ってみたいところって、ある？やっぱり京都とか北海道とか？', pt: 'Entendi. Que bom. Além desses, há algum lugar aonde você gostaria de ir? Talvez Kyoto ou Hokkaido?' },
+        { speaker: 'ター', ja: 'うーん、そうですねえ。もちろんそういうメジャーな観光地にも興味はあるんですが、私はもっと、違うところに行ってみたいと思ってます。', pt: 'Hmm, vejamos. Claro que tenho interesse nesses pontos turísticos famosos, mas penso em ir a lugares um pouco diferentes.' },
+        { speaker: '森本', ja: 'へー。例えば？', pt: 'Ah. Por exemplo?' },
+        { speaker: 'ター', ja: 'そうですね、今いちばん行ってみたいのは、鹿児島です。', pt: 'Vejamos, o lugar aonde mais quero ir agora é Kagoshima.' },
+        { speaker: '森本', ja: '鹿児島？どうして？', pt: 'Kagoshima? Por quê?' },
+        { speaker: 'ター', ja: 'はい、桜島を見てみたいんです。ネットで見たんですが、海の向こうに火山があって、ずっと煙を出してて、その風景がとてもダイナミックで、ぜひ生で見てみたいと思いました。', pt: 'Quero ver Sakurajima. Vi na internet: há um vulcão do outro lado do mar, soltando fumaça o tempo todo, e essa paisagem é muito dinâmica. Pensei que quero muito ver ao vivo.' },
+        { speaker: '森本', ja: 'ああ、桜島、いいよね。', pt: 'Ah, Sakurajima é legal mesmo.' },
+        { speaker: 'ター', ja: 'それから、「しろくま」が食べたいです。', pt: 'Além disso, quero comer shirokuma.' },
+        { speaker: '森本', ja: 'しろくま？', pt: 'Shirokuma?' },
+        { speaker: 'ター', ja: 'はい。ミルクのかかったかき氷に、フルーツをトッピングしたやつで、そのお店が、鹿児島市内にあるって聞きました。', pt: 'Sim. É uma raspadinha com leite e frutas por cima. Ouvi que essa loja fica na cidade de Kagoshima.' },
+        { speaker: '森本', ja: 'へー、そうなんだ。', pt: 'Ah, entendi.' },
+        { speaker: 'ター', ja: 'はい。鹿児島のお店で、ぜひ「しろくま」を食べてみたいです。', pt: 'Sim. Quero muito experimentar shirokuma em uma loja de Kagoshima.' },
+        { speaker: '森本', ja: 'なんか、私も食べてみたくなったな。', pt: 'Agora até eu fiquei com vontade de experimentar.' },
+        { speaker: 'ター', ja: 'あと、砂風呂です。鹿児島県には、砂に入る温泉があって、とても気持ちがいいと聞きました。それも、いちど体験してみたいです。', pt: 'Também tem o banho de areia. Ouvi que na província de Kagoshima há uma fonte termal em que se entra na areia, e que é muito agradável. Também quero experimentar uma vez.' },
+        { speaker: '森本', ja: 'うん、砂風呂もいいよね。じゃあ、鹿児島のほかには？', pt: 'Sim, banho de areia também é bom. Então, além de Kagoshima?' },
+        { speaker: 'ター', ja: 'そうですね……もし時間とお金があれば、ぜひ行ってみたいのは、小笠原です。', pt: 'Vejamos... Se eu tivesse tempo e dinheiro, o lugar aonde eu realmente gostaria de ir é Ogasawara.' },
+        { speaker: '森本', ja: 'へー、小笠原。島だよね？飛行機で行くんだっけ？', pt: 'Ah, Ogasawara. É uma ilha, não é? Vai de avião?' },
+        { speaker: 'ター', ja: 'いえ、小笠原には空港がないので、東京から船で行きます。24時間かかります。', pt: 'Não. Ogasawara não tem aeroporto, então vai de barco a partir de Tóquio. Leva 24 horas.' },
+        { speaker: '森本', ja: '24時間！行くだけで大変ね。どうしてそんなところに？', pt: '24 horas! Só chegar lá já é difícil. Por que um lugar assim?' },
+        { speaker: 'ター', ja: '東京都なのに、東京からこんなに離れた島なので、なんだかわくわくします。', pt: 'Apesar de pertencer a Tóquio, é uma ilha tão distante de Tóquio que, de algum modo, me deixa empolgada.' },
+        { speaker: '森本', ja: 'ああ、わかるなあ。', pt: 'Ah, entendo.' },
+        { speaker: 'ター', ja: 'もちろん、自然もすばらしいですよね。海がすごくきれいだそうですし、ダイビングやシュノーケリングにも挑戦してみたいです。イルカとかウミガメに会ってみたいです。', pt: 'Claro que a natureza também é maravilhosa. Dizem que o mar é muito bonito, e quero tentar mergulho e snorkel. Quero encontrar golfinhos e tartarugas marinhas.' },
+        { speaker: '森本', ja: 'イルカやウミガメかー。よさそうだね。', pt: 'Golfinhos e tartarugas marinhas, hein. Parece ótimo.' },
+        { speaker: 'ター', ja: 'あと、展望台も有名です。夕日が見える展望台が、有名な観光スポットになってて、観光で行った人は、毎日そこに行って、海に沈む夕日を眺めるんだそうです。本当に美しいそうです。', pt: 'Além disso, o observatório também é famoso. Há um observatório de onde se vê o pôr do sol, que virou ponto turístico famoso. Dizem que as pessoas que vão a turismo vão lá todos os dias para contemplar o sol se pondo no mar. Parece realmente belo.' },
+        { speaker: '森本', ja: 'へー、いいねえ。', pt: 'Nossa, que bom.' },
+        { speaker: 'ター', ja: 'もしできれば、何週間か泊まって、のんびり過ごしたいですね。', pt: 'Se fosse possível, eu gostaria de ficar algumas semanas e passar o tempo tranquilamente.' },
+        { speaker: '森本', ja: 'あはは、そのあと仕事に戻れなくなりそうだね。', pt: 'Ha ha, depois disso parece que você não conseguiria voltar ao trabalho.' },
+      ],
+    },
+  ],
+  '15-05': [
+    {
+      label: '形に注目 - もしSば (15-05)',
+      lines: [
+        { speaker: 'ター', ja: 'もし時間とお金があれば、ぜひ行ってみたいのは、小笠原です。', pt: 'Se eu tivesse tempo e dinheiro, o lugar aonde eu realmente gostaria de ir é Ogasawara.' },
+        { speaker: 'ター', ja: 'もしできれば、何週間か泊まって、のんびり過ごしたいですね。', pt: 'Se fosse possível, eu gostaria de ficar algumas semanas e passar o tempo tranquilamente.' },
+      ],
+    },
+  ],
+  '15-06': [
+    {
+      label: '話すモデル - 行ってみたい旅行先を話す (15-06)',
+      setupPt: 'Modelo para falar em detalhes sobre um destino aonde você gostaria de ir.',
+      lines: [
+        { speaker: 'A', ja: 'ほかに、どこか行ってみたいところって、ありますか？', pt: 'Além desses, há algum lugar aonde você gostaria de ir?' },
+        { speaker: 'B', ja: '今いちばん行ってみたいのは、鹿児島です。', pt: 'O lugar aonde mais quero ir agora é Kagoshima.' },
+        { speaker: 'A', ja: '鹿児島？どうしてですか？', pt: 'Kagoshima? Por quê?' },
+        { speaker: 'B', ja: '桜島を見てみたいんです。海の向こうに火山があって、ずっと煙を出してて、その風景がとてもダイナミックで、ぜひ生で見てみたいと思いました。', pt: 'Quero ver Sakurajima. Há um vulcão do outro lado do mar, soltando fumaça o tempo todo, e essa paisagem é muito dinâmica. Pensei que quero muito ver ao vivo.' },
+        { speaker: 'B', ja: 'それから、鹿児島のお店で「しろくま」を食べてみたいです。あと、砂風呂もいちど体験してみたいです。', pt: 'Além disso, quero experimentar shirokuma em uma loja de Kagoshima. Também quero experimentar banho de areia uma vez.' },
+        { speaker: 'A', ja: 'へー、いいですね。', pt: 'Nossa, que legal.' },
+      ],
+    },
+  ],
+}
+
 const lesson1: Section = {
   id: 'lesson-1',
   level: 'pre-intermediate',
@@ -5481,6 +5639,99 @@ const lesson14: Section = {
   audios: attachScripts(14, L14_SCRIPTS),
 }
 
+const lesson15: Section = {
+  id: 'lesson-15',
+  level: 'pre-intermediate',
+  titleJa: '第15課 桜島を見てみたいんです',
+  titlePt: 'Lição 15 - Quero ver Sakurajima',
+  summaryPt:
+    'Prazeres da viagem · entender Vlogs curtos de turismo, ler artigos sobre pontos turísticos e falar com detalhe sobre destinos que gostaria de visitar.',
+  studyNotes: [
+    {
+      title: 'Tópico: Prazeres da viagem (旅行の楽しみ)',
+      bodyPt:
+        'Pergunta de abertura: 今、旅行するとしたら、どんなところに行きたいですか？ 旅行に行く前には、どうやって情報を集めますか？\n\n' +
+        '## Can-do\n' +
+        '- Assistir a vídeos curtos de viagem e entender, de modo geral, locais famosos e especialidades regionais.\n' +
+        '- Ler artigos de sites de viagem sobre pontos turísticos e entender aproximadamente o conteúdo.\n' +
+        '- Falar com algum detalhe sobre destinos aonde quer ir, lugares que quer visitar e experiências que quer fazer.',
+    },
+    {
+      title: 'Atividade 1: そして、目の前は、海！',
+      bodyPt:
+        'A atividade usa três Vlogs de viagem. O foco é captar o fluxo geral: lugar, transporte, comida, paisagem e o que a pessoa achou especial.\n\n' +
+        '| Faixa | Lugar | Pontos principais |\n|---|---|---|\n' +
+        '| 15-01 | 飛騨高山 | estação Takayama, 宮川朝市, さるぼぼ, 飛騨牛, さんまち通り e 人力車 |\n' +
+        '| 15-02 | 大井川鐡道 | SL movido a 石炭, vagão antigo, venda no trem, 月見そば e 奥大井湖上駅 |\n' +
+        '| 15-03 | しまなみ海道 | rota de cerca de 70 km, 海鮮丼, 道の駅伯方S・Cパーク, 塩ソフトクリーム, 生口島 e レモン |\n\n' +
+        'Gabarito das afirmações: 飛騨高山 = ○, ×, ○, ○, ×, ×, ○. 大井川鐡道 = ○, ○, ×, ○, ×, ○. しまなみ海道 = ○, ×, ×, ×, ○, ×, ○, ○.',
+    },
+    {
+      title: 'Gramática ➊: 連用中止',
+      bodyPt:
+        '**連用中止** é a forma ます sem ます usada para conectar orações, muito comum em textos escritos e descrições. Na fala cotidiana, a forma て costuma ser mais natural.\n\n' +
+        '- `「みはらしの丘」が一面ネモフィラの青に染まり、空と地面の境目がわからないほどの絶景が広がります。`\n' +
+        '- `高山には古い街並みが残り、観光が楽しめる。`\n' +
+        '- `奥大井湖上駅は、湖の真ん中にあり、美しい写真が撮れる。`\n\n' +
+        'Na atividade, aparecem formas como `染まり`, `あり`, `なり`, `行われ` e `続き`.',
+    },
+    {
+      title: 'Atividade 2: 花の名所ベスト3',
+      bodyPt:
+        'A leitura apresenta três lugares famosos por flores e treina leitura de sites de viagem.\n\n' +
+        '| Lugar | Fotos do gabarito | Características |\n|---|---|---|\n' +
+        '| ひたち海浜公園 | ウ・エ | ネモフィラ no みはらしの丘, além de flores diferentes conforme a estação |\n' +
+        '| あしかがフラワーパーク | ア・カ | 藤, 大藤 e eventos de flores ao longo do ano |\n' +
+        '| 権現堂堤 | イ・オ | 桜 e 菜の花, 桜まつり e 屋台 |\n\n' +
+        'Gabarito das afirmações: ×, ○, ×, ○, ○, ×. A leitura também apresenta vocabulário de viagem como 見ごろ, 名所, 絶景, 日帰り圏内, アクセス e 屋台.',
+    },
+    {
+      title: 'Gramática ➋: N1 + partícula + の + N2',
+      bodyPt:
+        '**N1 + partícula + の + N2** transforma uma relação marcada por partícula em modificador de substantivo. Antes de の podem aparecer partículas como `から`, `まで`, `で`, `へ` e `と`. Não se usa esse padrão com `が`, `を` ou `に`.\n\n' +
+        '- `東京からの日帰り圏内` = dentro do alcance de bate-volta a partir de Tóquio.\n' +
+        '- `公園へのアクセスはJR勝田駅からバスで約15分。` = o acesso ao parque leva cerca de 15 minutos de ônibus a partir da estação JR Katsuta.\n' +
+        '- `子どもとの旅行`, `外国人観光客へのサービス`, `屋台での食事`.',
+    },
+    {
+      title: 'Atividade 3: ぜひ行ってみたいのは...',
+      bodyPt:
+        'ター fala com 森本 sobre lugares aonde gostaria de ir. O modelo organiza o destino, a razão e as experiências desejadas.\n\n' +
+        '| Destino | Ordem do gabarito | O que quer fazer |\n|---|---|---|\n' +
+        '| 鹿児島 | b → f → d | ver 桜島 ao vivo, comer しろくま e experimentar 砂風呂 |\n' +
+        '| 小笠原 | a → e → c | viajar 24 horas de barco, ver natureza, tentar ダイビング e シュノーケリング, encontrar イルカ e ウミガメ, ver o pôr do sol no 展望台 |\n\n' +
+        'Frases-chave: `桜島を見てみたいんです`, `ぜひ生で見てみたいと思いました`, `いちど体験してみたいです`, `もし時間とお金があれば...`.',
+    },
+    {
+      title: 'Gramática ➌: もし Sば、...',
+      bodyPt:
+        '**もし Sば、...** expressa uma condição hipotética. Nesta lição, aparece para falar de desejos e esperanças que dependem de uma condição.\n\n' +
+        '- `もし時間とお金があれば、ぜひ行ってみたいのは、小笠原です。`\n' +
+        '- `もしできれば、何週間か泊まって、のんびり過ごしたいですね。`\n' +
+        '- `もし3か月休みがとれれば、世界一周旅行に行きたいです。`\n\n' +
+        'Use a forma ば: `ある → あれば`, `できる → できれば`, `とれる → とれれば`.',
+    },
+    {
+      title: 'Kanji e vocabulário',
+      bodyPt:
+        '**Kanji da lição:** {湖|みずうみ}, {雲|くも}, {空港|くうこう}, {各地|かくち}, {緑|みどり}, {黄色|きいろ}, {昔|むかし}, かき{氷|ごおり}, {石炭|せきたん}, {暖|あたた}かい, {訪|おとず}れる.\n\n' +
+        '**Vocabulário-chave:** 旅行, 観光客, 朝市, お土産, 焼肉, 人力車, 蒸気機関車, 車内販売, 目覚まし時計, 絶景, サイクリング, 海鮮丼, 道の駅, 名物, 生産量, 日暮れ, 見ごろ, 名所, 日帰り, 展望台, 砂風呂, ダイビング, シュノーケリング.',
+    },
+    {
+      title: 'TIPS culturais',
+      bodyPt:
+        '**Vlog:** vídeo blog usado para compartilhar vida cotidiana, hobbies e viagens. Plataformas como YouTube, Instagram, TikTok e Niconico podem servir como material vivo para estudar japonês e cultura, especialmente quando há legendas.\n\n' +
+        '**効果音:** ジャーン／ジャジャーン marcam revelação ou anúncio; パンパカパーン soa como fanfarra feliz; ピンポーン indica acerto; ブー／ブブー indica erro; チャラリー aparece para choque ou frustração; ピコーン sugere ideia; チーン indica situação ruim ou constrangedora.\n\n' +
+        '**地域ブランド食品:** alimentos associados a regiões, como 飛騨牛, 神戸牛, 松阪牛, 石垣牛, 比内地鶏, かごしま黒豚, 夕張メロン e 下仁田ネギ, são parte importante do prazer de viajar.\n\n' +
+        '**観光地:** 高山 conserva ruas antigas e tem 朝市, さるぼぼ e 飛騨牛. 大井川鐡道 é famosa pelo SL, pela paisagem do rio Oi e por 奥大井湖上駅. しまなみ海道 liga Imabari a Onomichi e é conhecida como rota de ciclismo.\n\n' +
+        '**旧字体 e 季節の花:** 鐡 é forma antiga de 鉄, como em 大井川鐡道. Outras formas antigas aparecem em nomes próprios. Flores sazonais incluem 桜, ネモフィラ, 藤, 菜の花, 紫陽花, ひまわり, ラベンダー, コスモス, 紅葉, 椿, 水仙 e 梅.\n\n' +
+        '**鹿児島 e 小笠原:** 鹿児島 é conhecida por 桜島, 指宿の砂風呂, しろくま, 黒豚 e さつま揚げ. 小笠原 pertence a Tóquio, fica a cerca de 1000 km ao sul, não tem aeroporto e é acessada por barco de cerca de 24 horas; foi registrada como Patrimônio Natural Mundial em 2011.',
+    },
+  ],
+  groups: [lesson15Group],
+  audios: attachScripts(15, L15_SCRIPTS),
+}
+
 const sections: Section[] = [
   // Tópico 1 - Coisas e atividades favoritas (好きなもの好きなこと)
   lesson1,
@@ -5503,6 +5754,8 @@ const sections: Section[] = [
   // Tópico 7 - Relações com pessoas (人とのつき合い)
   lesson13,
   lesson14,
+  // Tópico 8 - Prazeres da viagem (旅行の楽しみ)
+  lesson15,
 ]
 
 export const irodoriPreIntermediate: Level = {
