@@ -117,11 +117,101 @@ const vocabulary: Section = {
   groups: [vocabM1, vocabM2, vocabM3, vocabM4],
 }
 
+// ---------------------------------------------------------------------
+//  言語知識（文法）・読解 — Grammar
+// ---------------------------------------------------------------------
+const gramM1: ExerciseGroup = {
+  id: 'n5-2012-gram-m1',
+  title: 'もんだい1',
+  subtitlePt: 'Forma gramatical (preencher a lacuna)',
+  instructionJa: '（　）に 何を 入れますか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'O que entra na lacuna （　）? Escolha a melhor partícula/forma.',
+  example: {
+    prompt: 'これ（　）えんぴつです。',
+    choices: [{ n: 1, text: 'に' }, { n: 2, text: 'を' }, { n: 3, text: 'は' }, { n: 4, text: 'や' }],
+    answer: 3,
+    note: 'これは えんぴつです (Isto é um lápis). Tópico = は.',
+  },
+  questions: [
+    { id: 'n5-2012-gram-1', number: 1, prompt: '日本（　）ラーメンは おいしいです。', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'の' }, { n: 3, text: 'を' }, { n: 4, text: 'へ' }], answer: 2, translationPt: 'O lámen do Japão é gostoso.', explanationPt: '日本の ラーメン = lámen do Japão (の liga dois substantivos: posse/origem).' },
+    { id: 'n5-2012-gram-2', number: 2, prompt: 'わたしには きょうだいが 二人 います。弟（　）妹です。', choices: [{ n: 1, text: 'は' }, { n: 2, text: 'も' }, { n: 3, text: 'と' }, { n: 4, text: 'か' }], answer: 3, translationPt: 'Tenho dois irmãos: um irmão mais novo e uma irmã mais nova.', explanationPt: '弟と妹 = irmão E irmã (と liga substantivos numa lista completa).' },
+    { id: 'n5-2012-gram-3', number: 3, prompt: '山下「田中さん（　）きのう どこかに 出かけましたか。」田中「いいえ、いえに いました。」', choices: [{ n: 1, text: 'で' }, { n: 2, text: 'は' }, { n: 3, text: 'を' }, { n: 4, text: 'に' }], answer: 2, translationPt: '— Tanaka, você saiu para algum lugar ontem? — Não, fiquei em casa.', explanationPt: '田中さんは = o Tanaka (tópico/sujeito da pergunta). は marca o tema.' },
+    { id: 'n5-2012-gram-4', number: 4, prompt: '（タクシーで）A「つぎの かどを 右（　）まがって ください。」B「わかりました。」', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'や' }, { n: 3, text: 'か' }, { n: 4, text: 'に' }], answer: 4, translationPt: '(No táxi) — Vire à direita na próxima esquina. — Entendi.', explanationPt: '右に まがる = virar para a direita (に indica direção/destino do movimento).' },
+    { id: 'n5-2012-gram-5', number: 5, prompt: 'きのう、わたしは ひとり（　）えいがを 見に 行きました。', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'を' }, { n: 3, text: 'で' }, { n: 4, text: 'は' }], answer: 3, translationPt: 'Ontem fui ver um filme sozinho.', explanationPt: 'ひとりで = sozinho (で indica modo/condição em que a ação ocorre).' },
+    { id: 'n5-2012-gram-6', number: 6, prompt: '山下「今日 パーティーが ありますから、田中さん（　）来て ください。」田中「ありがとうございます。」', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'も' }, { n: 3, text: 'や' }, { n: 4, text: 'で' }], answer: 2, translationPt: '— Hoje tem festa, então venha você também, Tanaka. — Obrigado.', explanationPt: '田中さんも = o Tanaka também (も = também).' },
+    { id: 'n5-2012-gram-7', number: 7, prompt: '田中「この ぼうしは 山田さん（　）ですか。」山田「はい。」', choices: [{ n: 1, text: 'や' }, { n: 2, text: 'は' }, { n: 3, text: 'の' }, { n: 4, text: 'か' }], answer: 3, translationPt: '— Este chapéu é do Yamada? — Sim.', explanationPt: '山田さんの = do Yamada (の indica posse; aqui "o (chapéu) do Yamada").' },
+    { id: 'n5-2012-gram-8', number: 8, prompt: '駅まで タクシーで 1000円（　）です。', choices: [{ n: 1, text: 'ぐらい' }, { n: 2, text: 'など' }, { n: 3, text: 'ごろ' }, { n: 4, text: 'も' }], answer: 1, translationPt: 'Até a estação, de táxi, custa uns 1000 ienes.', explanationPt: '1000円ぐらい = cerca de 1000 ienes (ぐらい = aprox. quantidade). ごろ é aprox. de tempo (hora).' },
+    { id: 'n5-2012-gram-9', number: 9, prompt: 'A「さようなら。」B「さようなら。また（　）。」', choices: [{ n: 1, text: 'おととい' }, { n: 2, text: '今日' }, { n: 3, text: '来週' }, { n: 4, text: '今月' }], answer: 3, translationPt: '— Tchau. — Tchau. Até a semana que vem.', explanationPt: 'また + tempo futuro = até... 来週 (semana que vem). おととい=anteontem (passado).' },
+    { id: 'n5-2012-gram-10', number: 10, prompt: 'わたしの 母は 50さいです。父は 55さいです。母は 父（　）5さい わかいです。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'まで' }, { n: 3, text: 'より' }, { n: 4, text: 'のほうが' }], answer: 3, translationPt: 'Minha mãe tem 50 anos; meu pai, 55. A mãe é 5 anos mais nova que o pai.', explanationPt: 'AはBより〜 = A é mais 〜 que B (より = do que, na comparação).' },
+    { id: 'n5-2012-gram-11', number: 11, prompt: '子ども「いただきます。」母「あ、食べる（　）手を あらいましょう。」', choices: [{ n: 1, text: 'まえに' }, { n: 2, text: 'のまえに' }, { n: 3, text: 'あとに' }, { n: 4, text: 'のあとに' }], answer: 1, translationPt: '— Vou comer! — Ah, antes de comer vamos lavar as mãos.', explanationPt: 'verbo (dicionário) + まえに = antes de fazer algo: 食べる まえに. Com substantivo seria 〜の まえに.' },
+    { id: 'n5-2012-gram-12', number: 12, prompt: 'A「東京でも 雪が ふりますか。」B「ええ、ふりますよ。でも、きょねんは あまり（　）。」', choices: [{ n: 1, text: 'ふりませんでした' }, { n: 2, text: 'ふりません' }, { n: 3, text: 'ふりました' }, { n: 4, text: 'ふります' }], answer: 1, translationPt: '— Em Tóquio também neva? — Sim, neva. Mas ano passado não nevou muito.', explanationPt: 'きょねん (ano passado) pede passado; あまり〜ない = não muito → passado negativo ふりませんでした.' },
+    { id: 'n5-2012-gram-13', number: 13, prompt: '（川で）A「見て ください。小さな 魚が たくさん（　）よ。」B「ほんとうですね。30ぴき くらい いますね。」', choices: [{ n: 1, text: 'およぎます' }, { n: 2, text: 'およぎません' }, { n: 3, text: 'およぎました' }, { n: 4, text: 'およいで います' }], answer: 4, translationPt: '(No rio) — Olha! Tem muitos peixinhos nadando. — É mesmo, devem ser uns 30.', explanationPt: 'およいで います = estão nadando (て+いる = ação em andamento, cena atual).' },
+    { id: 'n5-2012-gram-14', number: 14, prompt: '中川「山田さんの その カメラは いいですね。どこで かいましたか。」山田「いえ、これは 兄に（　）。」', choices: [{ n: 1, text: 'あげました' }, { n: 2, text: 'もらいました' }, { n: 3, text: 'うりました' }, { n: 4, text: 'かいました' }], answer: 2, translationPt: '— Que câmera boa, Yamada. Onde comprou? — Não, esta eu ganhei do meu irmão.', explanationPt: '兄に もらいました = ganhei do meu irmão (Aに もらう = receber de A). あげる=dar, うる=vender.' },
+    { id: 'n5-2012-gram-15', number: 15, prompt: 'たまごりょうりの じょうずな 作りかたを（　）読みました。', choices: [{ n: 1, text: '何に' }, { n: 2, text: '何も' }, { n: 3, text: '何かへ' }, { n: 4, text: '何かで' }], answer: 4, translationPt: 'Li em algum lugar um bom modo de preparar pratos com ovo.', explanationPt: '何かで = em algo / em alguma fonte (livro, site...). で indica meio/lugar onde se leu.' },
+    { id: 'n5-2012-gram-16', number: 16, prompt: '（電話で）本田「はい、本田です。」北山「あ、北山花子です。すみません、（　）。」本田「はい。ちょっと まって くださいね。」', choices: [{ n: 1, text: 'ひろこさんを おねがいします' }, { n: 2, text: 'ひろこさんを ください' }, { n: 3, text: 'ひろこさんと 話しますか' }, { n: 4, text: 'ひろこさんと 話しませんか' }], answer: 1, translationPt: '(Ao telefone) — Alô, é a casa dos Honda. — Ah, aqui é a Hanako Kitayama. Por favor, queria falar com a Hiroko. — Sim, um momento.', explanationPt: '〜を おねがいします = ao telefone, "queria falar com 〜, por favor". ください seria para objetos.' },
+  ],
+}
+
+const gramM2: ExerciseGroup = {
+  id: 'n5-2012-gram-m2',
+  title: 'もんだい2',
+  subtitlePt: 'Montagem da frase (★)',
+  instructionJa: '★に 入る ものは どれですか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'Ordene os fragmentos. Qual entra na posição ★? (A explicação mostra a frase montada.)',
+  example: {
+    prompt: 'A「＿＿ ＿＿ ★ ＿＿ か。」B「山田さんです。」',
+    choices: [{ n: 1, text: 'です' }, { n: 2, text: 'は' }, { n: 3, text: 'あの 人' }, { n: 4, text: 'だれ' }],
+    answer: 1,
+    note: 'Ordem: あの人 は だれ です か → ★ = です (1).',
+  },
+  questions: [
+    { id: 'n5-2012-gram-17', number: 17, prompt: '（店で）田中「すみません。くだもの ＿＿ ＿＿ ★ ＿＿ か。」店の人「こちらです。」', choices: [{ n: 1, text: 'どこ' }, { n: 2, text: 'あります' }, { n: 3, text: 'は' }, { n: 4, text: 'に' }], answer: 4, translationPt: '(Na loja) — Com licença, onde ficam as frutas? — Por aqui.', explanationPt: 'Ordem: くだもの は どこ に あります か (は3・どこ1・に4・あります2). ★ = に (4).' },
+    { id: 'n5-2012-gram-18', number: 18, prompt: 'A「山下さんは？」B「となりの へやで ＿＿ ＿＿ ★ ＿＿ して います。」', choices: [{ n: 1, text: 'れんしゅう' }, { n: 2, text: 'の' }, { n: 3, text: 'ギター' }, { n: 4, text: 'を' }], answer: 1, translationPt: '— E o Yamashita? — Está praticando violão na sala ao lado.', explanationPt: 'Ordem: ギター の れんしゅう を して います (ギター3・の2・れんしゅう1・を4). ★ = れんしゅう (1).' },
+    { id: 'n5-2012-gram-19', number: 19, prompt: 'A「会社 ＿＿ ＿＿ ★ ＿＿ 行って いますか。」B「わたしは あるいて 行って います。」', choices: [{ n: 1, text: 'で' }, { n: 2, text: 'は' }, { n: 3, text: 'へ' }, { n: 4, text: '何' }], answer: 4, translationPt: '— Como você vai ao trabalho? — Eu vou a pé.', explanationPt: 'Ordem: 会社 へ は 何 で 行って いますか (へ3・は2・何4・で1). ★ = 何 (4).' },
+    { id: 'n5-2012-gram-20', number: 20, prompt: '山田「ジョンさん、しゅくだいは ぜんぶ おわりましたか。」ジョン「いいえ、まだです。ここ ＿＿ ＿＿ ★ ＿＿、さいごの もんだいが むずかしいです。」', choices: [{ n: 1, text: 'は' }, { n: 2, text: 'かんたんでした' }, { n: 3, text: 'が' }, { n: 4, text: 'まで' }], answer: 2, translationPt: '— John, terminou toda a lição? — Não, ainda não. Até aqui foi fácil, mas a última questão é difícil.', explanationPt: 'Ordem: ここ まで は かんたんでした が (まで4・は1・かんたんでした2・が3). ★ = かんたんでした (2).' },
+    { id: 'n5-2012-gram-21', number: 21, prompt: '（本屋で）ヤン「わたしは この 本を 買います。アンナさんは どんな 本が いいですか。」アンナ「わたしは もう 少し ＿＿ ＿＿ ★ ＿＿ が いいです。」', choices: [{ n: 1, text: '本' }, { n: 2, text: 'かんたんな' }, { n: 3, text: 'の' }, { n: 4, text: '日本語' }], answer: 2, translationPt: '(Na livraria) — Vou levar este livro. E você, Anna, que tipo de livro quer? — Eu prefiro um livro em japonês um pouco mais fácil.', explanationPt: 'Ordem: もう少し かんたんな 日本語 の 本 が いいです (かんたんな2・日本語4・の3・本1). ★ = かんたんな (2).' },
+  ],
+}
+
+const gramM3: ExerciseGroup = {
+  id: 'n5-2012-gram-m3',
+  title: 'もんだい3',
+  subtitlePt: 'Gramática no texto (cloze)',
+  instructionJa:
+    '22から26に 何を 入れますか。ぶんしょうの いみを かんがえて、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\n【日本で べんきょうして いる 学生が「すきな 店」の ぶんしょうを 書いて、クラスの みんなの 前で 読みました。】\n\n（1）ケンさんの ぶんしょう：わたしは すしが すきです。日本には たくさん すし屋が あります。わたしの 国には すし屋が ありませんから、今 とても うれしいです。日本に【22】、いろいろな 店で 食べました。学校の 前の 店は、安くて おいしいです。すしが すきな 人は、いっしょに【23】。\n\n（2）ミンジさんの ぶんしょう：わたしは えきの ちかくの 本屋が すきです。えきの ちかくの 本屋は【24】 大きい お店です。外国の 本も 売って います。わたしの 国の 本も【25】。そして、外国の すきな りょうりの 本も 多いです。【26】、本は いつも えきの ちかくの 本屋で 買います。みなさんは すきな 本屋が ありますか。',
+  instructionPt:
+    'Leia os dois textos (estudantes apresentando sua "loja favorita") e escolha o que melhor preenche cada lacuna 22–26.',
+  questions: [
+    { id: 'n5-2012-gram-22', number: 22, prompt: '【22】', choices: [{ n: 1, text: '行くから' }, { n: 2, text: '行ってから' }, { n: 3, text: '来るから' }, { n: 4, text: '来てから' }], answer: 4, translationPt: 'Depois que vim ao Japão, comi (sushi) em vários lugares.', explanationPt: '日本に 来てから = depois que vim ao Japão (movimento até onde se fala = 来る; 〜てから = depois de).' },
+    { id: 'n5-2012-gram-23', number: 23, prompt: '【23】', choices: [{ n: 1, text: '行きましたか' }, { n: 2, text: '行きませんか' }, { n: 3, text: '行って いましたか' }, { n: 4, text: '行って いませんか' }], answer: 2, translationPt: 'Quem gosta de sushi, vamos juntos?', explanationPt: '〜ませんか = convite ("não quer...?/vamos?"). いっしょに 行きませんか = vamos juntos?' },
+    { id: 'n5-2012-gram-24', number: 24, prompt: '【24】', choices: [{ n: 1, text: 'か' }, { n: 2, text: 'と' }, { n: 3, text: 'の' }, { n: 4, text: 'は' }], answer: 4, translationPt: 'A livraria perto da estação é uma loja grande.', explanationPt: 'Retoma o tema com は: 本屋は ... 大きい お店です. は marca o tópico da frase.' },
+    { id: 'n5-2012-gram-25', number: 25, prompt: '【25】', choices: [{ n: 1, text: 'います' }, { n: 2, text: '読みます' }, { n: 3, text: 'あります' }, { n: 4, text: 'します' }], answer: 3, translationPt: 'Também há livros do meu país.', explanationPt: 'Para objetos/coisas que existem usa-se あります. 本も あります = também há livros.' },
+    { id: 'n5-2012-gram-26', number: 26, prompt: '【26】', choices: [{ n: 1, text: 'だから' }, { n: 2, text: 'では' }, { n: 3, text: 'それから' }, { n: 4, text: 'でも' }], answer: 1, translationPt: 'Por isso, sempre compro livros na livraria perto da estação.', explanationPt: 'だから = por isso (conclusão a partir do que foi dito). では=então, それから=e depois, でも=mas.' },
+  ],
+}
+
+const grammar: Section = {
+  id: 'grammar',
+  level: 'N5-2012',
+  titleJa: 'げんごちしき（ぶんぽう）',
+  titlePt: 'Gramática',
+  summaryPt:
+    'Conhecimento da língua (gramática) do simulado oficial 2012: forma gramatical, montagem de frases (★) e gramática no texto. 26 questões.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (文法)',
+      bodyPt:
+        '- **もんだい1** — escolher a **partícula/forma** que preenche a lacuna `（　）`.\n- **もんだい2** — **ordenar** 4 fragmentos; responder qual fica na posição **★** (a explicação mostra a frase montada).\n- **もんだい3** — **cloze**: preencher as lacunas de um texto pensando no sentido geral.',
+    },
+  ],
+  groups: [gramM1, gramM2, gramM3],
+}
+
 export const n5_2012: Level = {
   id: 'N5-2012',
   courseId: 'jlpt',
   titlePt: 'N5 — Simulado 2012',
   descriptionPt:
-    'Segunda leva de prática do N5: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: outras seções serão adicionadas.)',
-  sections: [vocabulary],
+    'Segunda leva de prática do N5: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
+  sections: [vocabulary, grammar],
 }
