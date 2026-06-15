@@ -657,7 +657,379 @@ Mensagens escritas para alguém em ocasiões especiais (troca de emprego, aposen
 // ---------------------------------------------------------------------
 //  初級2 (Elementary 2 / A2)
 // ---------------------------------------------------------------------
-const ELEMENTARY2_NOTES: StudyNote[] = []
+const ELEMENTARY2_NOTES: StudyNote[] = [
+  {
+    title: 'Lição 1',
+    bodyPt: `## J-pop e Perfume
+**J-pop** é o termo geral da música pop japonesa (rock, folk, idol, hip hop, techno-pop e, às vezes, **enka** e **ani-son**). Dá para ouvir fácil online (vídeos oficiais no YouTube, ou serviços por assinatura). **Perfume** é um trio feminino de techno-pop famoso pela dança e por shows com tecnologia de ponta.
+
+## Tabe-aruki
+Aqui **tabe-aruki** não é "comer andando", e sim experimentar comida em vários restaurantes — pratos famosos numa viagem ou casas do bairro. Pode-se seguir o instinto, guias, ou focar num tipo (ramen, comida estrangeira). Há programas de TV e mangás sobre o tema.
+
+## Ani-son
+**Ani-son** ("anime song") é a música de anime (às vezes de tokusatsu/jogos); virou um gênero próprio, popular no karaokê. Como o anime, faz sucesso fora do Japão — há quem conheça muitos ani-son sem conhecer J-pop (ex.: "Voltes V" nas Filipinas). Cantores de ani-son têm fãs no exterior.
+
+## Grupos de estudo de japonês em redes sociais
+Dá para estudar japonês de graça em grupos e sites: falantes nativos e professores respondem dúvidas (grupos no Facebook; sites como **HiNative** e **Lang-8**, onde nativos também corrigem frases). É preciso se cadastrar.`,
+  },
+  {
+    title: 'Lição 2',
+    bodyPt: `## Barba e bigode no Japão
+A barba/bigode masculino muitas vezes não é bem-visto hoje. Tribunais já disseram que usar é escolha de cada um, e há mais atletas com barba — sinal de que a sociedade aceita mais. Mas certos empregos e empresas não permitem. Se mandarem você raspar, pergunte o motivo e converse.
+
+## Amuro Namie
+Cantora de Okinawa (estreou em 1992, aposentou-se em 2018), popular pelo canto, dança e moda — nos anos 1990, jovens copiavam seu estilo (as "Amurers"). Sucessos: "Can You Celebrate?", "Chase the Chance", "Hero". Ainda muito ouvida no karaokê.
+
+## Mifune Toshiro e "Os Sete Samurais"
+**Mifune Toshiro** (1920–1997) foi um ator premiado (Melhor Ator em Veneza), conhecido no exterior (tem estrela na Calçada da Fama). Filmes famosos: *Rashomon*, *Os Sete Samurais*, *Yojimbo*, *Barba Ruiva*. *Os Sete Samurais* (1954, dir. **Kurosawa Akira**) — camponeses contratam sete samurais contra bandidos — influenciou o cinema mundial. Disponível em streaming.
+
+## Revistas comunitárias
+As **komyunitii-shi** (também *taun-jōhōshi* ou *free paper*) são folhetos gratuitos (estações, lojas, konbini) com informações locais: lojas, restaurantes, eventos e atividades de grupos da comunidade. Ajudam a conhecer a região.
+
+## Horas extras
+Desde abril de 2019 há limite legal: no máximo 45 h extras por mês e 360 h por ano. Forçar além disso é punível. Hora extra sem registro ou sem pagamento (**saabisu zangyō**) também é ilegal — se ocorrer, procure as autoridades.`,
+  },
+  {
+    title: 'Lição 3',
+    bodyPt: `## Teishoku (refeição completa)
+**Teishoku** é o prato principal com arroz, missoshiru e acompanhamentos; barato e equilibrado. Variações pelo principal: peixe grelhado, **tonkatsu**, hambúrguer, sashimi, **yakiniku** — e o **asa-teishoku** (café da manhã).
+
+## Okawari e ōmori
+**Okawari** é repetir comida/bebida na mesma refeição (alguns teishoku oferecem arroz e missô grátis à vontade). **Ōmori** é porção maior (arroz, ramen, soba), em geral com taxa extra. Há ainda **tokumori/dekamori/megamori** (porções gigantes) e, para menos, **komori** ou **sukuname**; o normal é **namimori/futsū**.
+
+## Café e chá
+Ao pedir, leite e açúcar costumam vir à parte. No chá preto podem perguntar se quer com leite ou limão. Para gelado, peça *aisu kōhī* ou *aisu tī* (servidos com gelo); às vezes perguntam "hot" ou "iced".
+
+## Wasabi
+**Wasabi** (raiz-forte japonesa) é o condimento verde do sushi/sashimi — picante, "arde no nariz". Vai no **nigiri-zushi**, mas dá para pedir sem: sushi sem wasabi é **sabi-nuki**.
+
+## Regras da bicicleta
+A bicicleta é "veículo leve" pela lei de trânsito — andar embriagado é crime. Ande pela esquerda; é permitido na calçada por segurança, mas dando preferência ao pedestre. **Proibido**: andar bêbado, com duas pessoas, segurando guarda-chuva aberto, ou usando celular/fones. Quebrar regra pode dar multa.
+
+## Fumar em restaurantes
+As regras ficam mais rígidas: desde abril de 2020 (Tóquio) é proibido fumar em restaurantes com funcionários, contra o fumo passivo. Como o número de fumantes cai, a proibição tende a se espalhar.
+
+## Furai (frituras empanadas)
+**Furai** é fruto do mar ou legume empanado e frito (parte da culinária ocidental adaptada desde ~1900): **ebi-furai** (camarão), **aji-furai**, **ika-furai**, **kaki-furai** (ostra), **mikkusu furai**. Carne empanada chama-se **katsu** (tonkatsu, chikin-katsu, menchi-katsu) — mas a fronteira entre furai e katsu não é clara.
+
+## Como pagar a conta no restaurante
+Paga-se no caixa ou na mesa, conforme o lugar (na mesa costuma ser mais caro). **Não se dá gorjeta**; restaurantes/hotéis caros às vezes incluem ~10% de serviço. Em grupo, um paga tudo ou divide-se — dividir igualmente é **warikan**, prática comum (no aperto, o restaurante pode recusar dividir).
+
+## Cupons de restaurante
+Restaurantes dão cupons de desconto ou de bebida/sobremesa grátis — no caixa, em panfletos, na revista comunitária, distribuídos na estação, ou em sites e apps.
+
+## "Drink bar"
+Seção onde você se serve à vontade (*all-you-can-drink*): quentes (café, chá) e gelados (chá gelado, suco), às vezes sopa (pode ser cobrada à parte). Hoje há em cybercafés, karaokê, fast-food e até kaiten-zushi.`,
+  },
+  {
+    title: 'Lição 4',
+    bodyPt: `## Ramen
+Macarrão japonês de origem chinesa, adaptado e hoje mundial. Pelo caldo: **shōyu** (shoyu), **shio** (sal), **miso** e **tonkotsu** (osso de porco, leitoso). Variações regionais (**gotōchi ramen**): **Hakata** (Fukuoka, macarrão fino em tonkotsu), **Sapporo** (miso com manteiga e milho), **Kitakata** (Fukushima, macarrão grosso ondulado em caldo leve de shoyu).
+
+## Comida regional (gotōchi)
+Descobrir especialidades locais é parte da viagem: **toriten** (tempura de frango, Ōita), **kiritanpo-nabe** (Akita), **hitsumabushi** (enguia, Nagoya), **sanuki-udon** (Kagawa), **chanpon** (Nagasaki), **gōyā chanpurū** (Okinawa).
+
+## Shoyu, soosu, tsuyu e tare
+- **Shoyu** (molho de soja): o tempero mais usado; para sashimi, sushi e pratos em geral.
+- **Soosu**: do inglês "sauce"; molho escuro tipo Worcestershire para frituras (tonkatsu). Outros molhos precisam de nome (tártaro, demi-glace...).
+- **Tsuyu**: shoyu + dashi + saquê + mirin; para molhar tempura e soba, e para temperar.
+- **Tare**: molho encorpado para mergulhar — **yakiniku no tare**, **goma-dare** (gergelim, do shabu-shabu).
+
+## Temaki-zushi
+O **maki-zushi** (enrolado) tem arroz e ingredientes na alga, enrolados. O **temaki-zushi** é a versão em que cada um monta o seu — fácil e popular em festas em casa (atum, salmão, camarão, pepino, abacate, ovo, **kanpyō**, nattō).
+
+## Yaki-imo (batata-doce assada)
+Batata-doce assada inteira em fogo baixo; com pedras quentes vira **ishiyaki-imo** (mais doce). No inverno, caminhões a vendem pelas ruas anunciando no alto-falante. Hoje há também assadas em forno elétrico no supermercado (~¥500–700 cada). Dá para pedir por valor: "gohyaku-en bun kudasai" (¥500).
+
+## Shabu-shabu
+Fatias finas de carne passadas rapidamente no caldo fervente com hashi (boi no Kansai, porco no Kantō; **buri-shabu** com olho-de-boi no Hokuriku). Mergulhe em **goma-dare** ou **ponzu**. No fim, faz-se o **shime**: udon/ramen no caldo, ou arroz com ovo (canja).`,
+  },
+  {
+    title: 'Lição 5',
+    bodyPt: `## Destinos turísticos 1 (Hokkaido / Tóquio / Kyoto / Okinawa)
+- **Hokkaido** (norte): natureza (montanhas, lagos, fauna), esqui no inverno, frutos do mar (caranguejo, ouriço, lula, vieira, ova de salmão) e o festival da neve de Sapporo (fevereiro).
+- **Tóquio**: capital; cada área tem seu caráter — Shinjuku (movimento, mirante grátis da Prefeitura), Akihabara (anime/eletrônicos), Ueno (museus, zoo), Asakusa (templo tradicional), Odaiba (moderno); Skytree, Palácio Imperial, Disneyland (que fica em Chiba).
+- **Kyoto**: capital desde 794; muitos templos/santuários (17 são Patrimônio Mundial, como Kinkakuji, Kiyomizudera, Ryōanji), ruas antigas, culinária e **maiko**.
+- **Okinawa** (antiga Ryūkyū, sul): cultura própria, subtropical, mar lindo, mergulho e esportes aquáticos. Voos caros, mais baratos na baixa temporada, antecipados ou em **LCC**.
+
+## Monte Fuji e os Cinco Lagos
+A região **Fuji Goko** (lado norte, em Yamanashi) formou-se com a lava barrando um rio; ótima para ver o Fuji, a ~2 h de ônibus de Shinjuku. Lagos **Kawaguchi** e **Yamanaka** (barco, bicicleta), o parque **Fuji-Q Highland** (montanhas-russas) e onsen com vista. Comida típica: udon com água do Fuji e **hōtō** (macarrão grosso com legumes no missô).
+
+## Ônibus rodoviários (highway bus)
+Ligam cidades e pontos turísticos pela estrada; mais baratos que Shinkansen/avião (Tóquio–Osaka: avião ¥10.000–20.000, Shinkansen ¥14.000, ônibus ¥3.000–5.000). Muitos viajam à noite e chegam de manhã. Há assentos mais espaçosos por um pouco mais. Compra-se online (ou no balcão, conforme disponibilidade).
+
+## Destinos turísticos 2 (Nikko / Nara / Toyama / Nagano)
+- **Nikko** (Tochigi, ~2 h de Tóquio): natureza e história; o santuário **Tōshōgū** (a Tokugawa Ieyasu, Patrimônio Mundial), o portão Yōmeimon e os três macacos (não vejo, não falo, não ouço); Cataratas Kegon, Lago Chūzenji, a estrada Irohazaka (folhagem de outono).
+- **Nara**: capital em 710; **Tōdaiji** (Grande Buda), santuário **Kasuga**, e o Parque de Nara com cervos mansos (compre **shika-senbei** para alimentá-los).
+- **Toyama**: entre o Mar do Japão e os Alpes do Norte; rota **Tateyama-Kurobe**, ferrovia do desfiladeiro Kurobe; frutos do mar (lula-vaga-lume, camarão-de-vidro, olho-de-boi de inverno).
+- **Nagano**: Olimpíadas de Inverno de 1998; montanhas e estações de esqui, montanhismo no verão, onsen, o templo **Zenkōji** e o Jigokudani (macacos no onsen).
+
+## Esqui e estações de esqui
+Mais de 500 estações (Chūbu, Tōhoku, Hokkaido). Mesmo de Tóquio dá para ir fácil com excursões de ônibus na temporada (dez–mar), algumas com transporte + lift + aluguel de equipamento/roupa. Iniciante: faça aula primeiro. Muitas ficam perto de onsen.
+
+## Hotéis, ryokan, minshuku e guest houses
+- **Hotel**: às vezes cobra por nº de hóspedes (e não por quarto); horários de check-in/out rígidos. O **business hotel** é mais barato (quartos menores).
+- **Ryokan**: hospedagem de estilo japonês, geralmente **1 diária + 2 refeições** (jantar e café); banho público interno.
+- **Minshuku**: menor, familiar, refeições caseiras; mais barato, com menos serviços; às vezes só reservável por telefone.
+- **Guest house**: barata; cama própria em quarto compartilhado (**aibeya**), com salão para conversar com outros hóspedes.`,
+  },
+  {
+    title: 'Lição 6',
+    bodyPt: `## Bilhetes do Shinkansen
+Compra-se no guichê da JR, em máquinas ou online (online exige cadastro, sem fila). São **dois** bilhetes: o **jōshaken** (passagem) e o **tokkyūken** (taxa de expresso pelo Shinkansen). O tokkyūken tem **assento reservado** (*shitei-seki*) ou **não reservado** (*jiyū-seki*, mais barato, mas pode faltar lugar). Há ainda o **green car** (1ª classe, com bilhete próprio). As vendas abrem às 10h um mês antes; dá para comprar no dia, mas os reservados podem esgotar.
+
+## Destinos turísticos 3 (Osaka / Huis Ten Bosch / Mt. Takao / Jōdogahama)
+- **Osaka** (oeste): Castelo de Osaka, a torre **Tsūtenkaku** (Shinsekai), o arranha-céu **Abeno Harukas** (mirante a 300 m, 2014), o Museu do Cup Noodle, o aquário **Kaiyūkan** e o parque **USJ**.
+- **Huis Ten Bosch** (Nagasaki): parque temático holandês (cidade, moinhos, flores, iluminação noturna). Parece histórico (houve comércio com a Holanda no período Edo), mas foi construído nos anos 1990.
+- **Monte Takao** (oeste de Tóquio, 599 m): natureza perto da cidade, com teleférico/cadeirinha ou trilha de 1–2 h; três estrelas no Guia Michelin (2007), por isso lotado.
+- **Jōdogahama** (Iwate): paisagem de rochas, pinheiros e praia; passeio de barco (dá para alimentar gaivotas com **umineko-pan**), banho de mar no verão e pesca.
+
+## Kushi-katsu
+**Kushi-katsu** (ou kushi-age): carne, legumes e frutos do mar no espeto, empanados e fritos — especialidade de Osaka (Minami, Shinsekai). O molho é compartilhado: regra do **"não molhar duas vezes"** (não mergulhe de novo depois de morder).
+
+## Takoyaki
+Bolinhos de massa de trigo com pedaços de polvo, grelhados numa chapa de cavidades redondas; por cima, molho, **katsuobushi** e alga em pó. Surgiu em Osaka; come-se em restaurantes e barracas de festival.
+
+## Yuba (película de tofu)
+Ao ferver leite de soja forma-se uma película fina: a **yuba**. Tipos: **sashimi-yuba** (crua), **maki-yuba** (em camadas), **hoshi-yuba** (seca). Comum na **shōjin-ryōri** (comida vegetariana de templo), logo frequente em Kyoto, Nara e Nikko.`,
+  },
+  {
+    title: 'Lição 7',
+    bodyPt: `## Festivais e mikoshi
+Nos festivais, o **mikoshi** (andor, tido como o "veículo dos deuses") é carregado pelas ruas por muita gente de **happi/hanten** e **hachimaki**, ao grito de "soiya, soiya" ou "wasshoi". Quem pode carregar varia (só moradores antigos, ou voluntários). Para ajudar, contate os organizadores do cartaz.
+
+## Associação de bairro (chōnaikai)
+O **chōnaikai** (ou **jichikai**) é uma organização voluntária de moradores, com mensalidade, que faz limpeza, vigilância, festivais e clubes de idosos/crianças. Nas grandes cidades muitos não participam, mas conviver com vizinhos ajuda — sobretudo em desastres (informação de abrigos, água, recursos).
+
+## Murais e kairanban
+Há **murais** (quadros de avisos) pela cidade com mensagens da prefeitura/associação: obras, coleta de lixo, segurança, falecimentos, eventos. Outro meio é o **kairanban** (circular): papéis num suporte passam de casa em casa — ao receber, carimbe/assine e repasse (regras variam por bairro).
+
+## Rádio de prevenção de desastres
+Em desastre, alto-falantes na cidade e receptores em casa anunciam avisos, alertas e instruções de evacuação. Em dias normais, dão recados da polícia e de eventos. Em muitas regiões tocam música de fim de tarde (~17h) avisando as crianças para voltarem para casa — também serve de teste do sistema.
+
+## Shows de fogos (hanabi)
+No verão, em parques, orlas e margens de rio, com barracas e clima de festival. Os famosos atraem mais de 1 milhão (Sumida em Tóquio, Nagaoka em Niigata) — chegue cedo para um bom lugar; alguns têm assentos reservados.
+
+## Michi-no-eki (estação de estrada)
+Como uma área de serviço, mas em rodovias comuns: estacionamento, banheiros, restaurantes e lojas, além de centro turístico com frutas/legumes locais, pratos regionais e souvenirs; alguns têm parque, museu ou onsen.
+
+## Bon-odori
+Dança do período **Obon** (agosto, evento budista pelos antepassados): em volta de uma **yagura** (torre), todos dançam em círculo repetindo os mesmos passos — fácil de aprender, qualquer um entra. Há barracas para quem prefere só comer.
+
+## Yukata
+Quimono simples de algodão fino, com faixa, sem roupa de baixo; usado no verão e em ryokan. Hoje homens e mulheres usam em festivais e fogos. Preços variam (há kits baratos com faixa e tamancos); há muitos vídeos ensinando a vestir.
+
+## Brechós / feiras de usados (furima)
+**Furima** (de "flea market", também **nomi-no-ichi**): vende-se e compra-se usado, popular no Japão. Em parques e estacionamentos:
+- Em geral, empresas não vendem; pessoas se inscrevem para um espaço.
+- Vendem-se itens usados do dia a dia (roupa, brinquedos), não arte cara nem antiguidades.
+- A entrada é grátis.
+- É comum o comprador pedir desconto.`,
+  },
+  {
+    title: 'Lição 8',
+    bodyPt: `## Festivais de intercâmbio internacional
+Os **kokusai kōryū matsuri** são organizados por governos locais e associações para aproximar estrangeiros e japoneses: culinária internacional, música e dança, barracas e concursos de discurso, em parques ou centros culturais. Busque "(cidade) 国際交流フェスティバル" online. É ainda melhor participar como voluntário ou apresentando algo.
+
+## Concursos de discurso em japonês
+Os **supīchi-taikai** (ou *benron-taikai*) para estrangeiros vão de grandes nacionais a locais/escolares. O processo: pense na sua experiência de estudar/viver no Japão, escreva o discurso e apresente diante de uma plateia; juízes pontuam e há prêmios (dinheiro, vale-livros, produtos locais). Inscreva-se enviando o texto; leia bem as regras (duração, requisitos de residência) — em geral qualquer não nativo pode participar.
+
+## Concursos de karaokê
+Nos concursos de karaokê (também **nodojiman-taikai**) compete-se para ver quem canta melhor. Requisitos variam (grátis ou pagos; com ou sem prêmio). Os grandes nacionais pedem uma gravação na inscrição; os pequenos (festivais locais) aceitam qualquer um, às vezes inscrição na hora.`,
+  },
+  {
+    title: 'Lição 9',
+    bodyPt: `## Ano-Novo (Oshōgatsu)
+A maior festa anual. No fim de ano e Ano-Novo quase não se trabalha; muitos voltam à terra natal ou viajam.
+- **Decorações**: **kadomatsu** (pinheiros no portão), **shimenawa/shimekazari** (corda sagrada) e **kagamimochi** (bolo de arroz para os deuses) dentro de casa.
+- **Nengajō** (cartões de Ano-Novo): postados no fim do ano e entregues todos em 1º de janeiro, com a saudação e o signo do ano. Hoje muitos preferem mensagens por LINE/Messenger/redes sociais.
+
+## Osechi e ozōni
+- **Osechi-ryōri**: a refeição do Ano-Novo, em caixas de camadas, com pratos de bom presságio — **kazunoko** (ova de arenque = filhos), **kuromame** (feijão preto = trabalhar bem), **kuri-kinton** (dourado = riqueza).
+- **Ozōni**: sopa com **mochi**; tempero/ingredientes variam (Kantō: shoyu em caldo claro; Kansai: missô; o mochi é quadrado ou redondo conforme a região).
+
+## Hatsumōde
+Primeira visita do ano a um templo/santuário. Os famosos lotam (horas de fila). Dá para fazer na noite de 31/12, oferecendo **osaisen** (oferta em dinheiro) à meia-noite, no fim da contagem regressiva.
+
+## Otoshidama
+Dinheiro dado às crianças no Ano-Novo, num envelope (**otoshidama-bukuro** / **pochi-bukuro**). O valor depende da idade e da relação — em geral ¥1.000 a ¥5.000 por criança.
+
+## Dia da Maioridade (Seijin-no-hi)
+Feriado na 2ª segunda de janeiro, celebrando quem virou adulto. Os governos locais fazem cerimônias (em salão/ginásio) com discursos e apresentações; reencontrar amigos de escola é o melhor para muitos. Mulheres usam **haregi** (quimono de gala); homens, quimono ou terno. A maioridade era aos 20, mas desde 2022 passou a 18 (cada cidade decide a idade da cerimônia).
+
+## Eventos anuais
+- **Hinamatsuri** (3/3): saúde das meninas; expõem-se **hina-ningyō**; come-se chirashi-zushi e **hina-arare**, bebe-se **amazake**.
+- **Kodomo-no-hi** (5/5): Dia das Crianças (antigo Tango-no-sekku, dos meninos); **koinobori** e bonecos de maio; **kashiwa-mochi** e **chimaki**; banho de **shōbu** (íris).
+- **Tanabata** (7/7): lenda de Orihime e Hikoboshi, separados pela Via Láctea e reunidos só nesse dia. Escrevem-se desejos em tiras (**tanzaku**) penduradas em bambu.
+- **Natal**: virou evento comercial (sem feriado nem peso religioso); passa-se com parceiro/amigos, come-se frango e bolo. Logo depois, tudo vira preparação para o Ano-Novo.
+
+## Mochitsuki
+Fazer **mochi** socando arroz glutinoso cozido no **usu** (pilão) com o **kine** (mão de pilão), no fim do ano. Hoje costuma ser em eventos de escolas, associações e empresas (**mochitsuki-taikai**), onde às vezes qualquer um pode socar e provar mochi fresquinho.`,
+  },
+  {
+    title: 'Lição 10',
+    bodyPt: `## Funerais (sōshiki)
+Tem duas cerimônias: o **otsuya** (velório, à noite) e o **kokubetsu-shiki** (no dia seguinte) — vá às duas se era próximo, a uma se não. Vista **mofuku** (luto) ou preto formal (homem, gravata preta — vende-se em konbini e loja de ¥100). Leve **kōden** (dinheiro de pêsames) num **kōden-bukuro** com seu nome (~¥3.000 a ¥10.000, conforme a relação). À família, diga **"go-shūshō-sama desu"**.
+Num funeral budista faz-se **shōkō** (oferecer incenso): cumprimente a família, o altar e o monge; depois:
+- pegue uma pitada de incenso com polegar, indicador e médio e leve-a à altura da testa;
+- deixe cair no incensário;
+- repita ~3 vezes (varia por seita), junte as mãos diante do altar e curve-se à família ao voltar.
+
+## Etiqueta de celular
+É rude falar ao celular no trem/ônibus — ponha em **manaa mōdo** (silencioso). **Aruki-sumaho** (mexer no celular andando) é perigoso, há cartazes alertando. Usar celular dirigindo carro ou moto é ilegal.
+
+## Festa de casamento
+A cerimônia costuma ser em igreja ou santuário; depois há o **hirōen** (recepção), geralmente em hotel, para família e amigos, que levam **go-shūgi** (dinheiro). Quem quer algo casual reserva um restaurante; alguns fazem um **niji-kai** (after). A recepção é mais formal (parentes e VIPs); a festa, mais barata, para amigos que pagam para ir.
+
+## Omimai (visitar quem está internado)
+**Não** leve plantas com raiz (a palavra "criar raiz" lembra "ficar de cama"). Muitos hospitais hoje proíbem até buquês (risco de infecção) e têm regras sobre comida — confira antes de ir.
+
+## Festa de casa/prédio novo
+A **shinchiku party** / **shinkyo ohirome-kai** celebra a construção de uma casa ou a compra de um apartamento novo (convidam-se amigos, parentes, vizinhos); empresas também fazem ao erguer um prédio. Pode ser formal ou casual. O presente é o **shinchiku-iwai** (ou dinheiro, se não há festa).
+
+## Costumes regionais
+Algumas regiões têm costumes próprios em festas: o **otōri** (Ilha Miyako, Okinawa), em que todos bebem **awamori** do mesmo copinho após a fala do "pai"; em Kōchi, o **kenpai/henpai** (oferecer e retribuir saquê no mesmo copo entre níveis). Há também costumes únicos de comida, casamento e funeral por região.
+
+## Praças de alimentação (food court)
+Área ampla com vários balcões de autoatendimento (hambúrguer, frango frito, ramen, curry, gyū-don, sushi, takoyaki...), em shoppings, mercados, áreas de serviço e aeroportos. Peça, pague e pegue a comida (às vezes um número num painel ou uma campainha avisa quando fica pronta); ao terminar, devolva a louça ao ponto de coleta.
+
+## Otōshi (couvert)
+No izakaya, junto do oshibori vem uma tigelinha de comida que você não pediu: o **otōshi** (ou **tsukidashi**), um por pessoa. Não é grátis — custa ~¥300–500 e funciona como **couvert** (em vez de gorjeta).`,
+  },
+  {
+    title: 'Lição 11',
+    bodyPt: `## Tamanhos de roupa
+- **Camisas/jaquetas**: letras S, M, L. Do menor ao maior: XS → S → M → L → LL (XL/2L) → 3L (XXL); em roupa esportiva, "O" (Overlarge) = LL. Roupa feminina às vezes usa número: 7≈S, 9≈M, 11≈L, 13≈LL. Atenção: S/M/L variam por país (um L americano pode ser LL no Japão; um L chinês, S/M). Prove e consulte um vendedor.
+- **Calças/saias**: cintura em cm (peça para medirem); às vezes em polegadas. Encurtar/ajustar é **o-naoshi** (muitas vezes grátis na loja onde comprou).
+- **Calçados**: em cm (do dedão ao calcanhar); largura em EE/EEE/EEEE (mais "E" = mais largo).
+
+## Telefones de emergência
+Decore **110** e **119**. A **polícia é o 110** (crime ou acidente — perguntam se é "incidente" ou "acidente"). Os **bombeiros/ambulância é o 119** (incêndio ou ambulância). Vão perguntar onde você está, o que houve, nome e contato — fique calmo. Em dúvida se chama ambulância, em alguns lugares ligue **#7119** para orientação. Ambulância é gratuita.
+
+## Cartões de pontos
+Acumulam pontos nas compras, trocáveis por itens ou usados como dinheiro. Alguns valem em muitas lojas (**T Point**, **Ponta**); outros são de uma loja só. Em geral, ~1 ponto (¥1) a cada ¥100; às vezes há promoções de pontos em dobro.
+
+## Balcão de informações do shopping
+Os grandes têm balcão (**information**) que tira dúvidas e cuida, junto com a segurança, de crianças e objetos perdidos.
+
+## Liquidações (sēru / bāgen)
+Lojas fazem liquidação sobretudo em janeiro e julho (após os bônus), além de aberturas, fechamentos e reformas. Veja no site da loja ou na revista comunitária.
+
+## Feiras em lojas de departamento
+Ao longo do ano há feiras temáticas por tempo limitado: produtos de uma região (Feira de Hokkaido, de Kyushu), de **ekiben** (marmitas de estação), ou por data (Valentine's em fevereiro, ingressantes em abril, Dia das Mães em maio) e por estação.`,
+  },
+  {
+    title: 'Lição 12',
+    bodyPt: `## Sites e apps de usados (furima)
+**Furima** (de "flea market"): compram-se roupas, livros e eletrônicos usados baratos em sites/apps de venda e leilão — **Mercari**, **Yahoo! Auctions**. Para vender: crie conta, fotografe, descreva, defina o preço e clique em **shuppin** (publicar). Regras de pagamento e envio variam — leia as instruções.
+
+## Negociar preço
+Em geral não se pechincha em loja (cada item tem etiqueta), mas em **loja de eletrônicos** é comum. Pode haver o aviso "se for ¥1 mais caro que outra loja, fale conosco". Tente: **"ikura made yasuku narimasu ka?"** ("até quanto baixa?"), mostrando o preço de outro site. Às vezes pede-se pontos extras em vez de desconto.`,
+  },
+  {
+    title: 'Lição 13',
+    bodyPt: `## Centros culturais e esportivos públicos
+Os **centros culturais** (bunka sentā/kaikan, *shimin plaza*), de governos locais, costumam ter sala de concertos/teatro, biblioteca, galeria e balcão de informações turísticas. Os **centros esportivos** (sports center, *shimin taiikukan*) têm ginásio, campo, piscina, dōjō e, às vezes, academia e banho por taxa baixa. São serviços públicos — veja o que há na sua região.
+
+## Bibliotecas
+Públicas (municipais, provinciais ou nacionais), as locais são as mais práticas. Têm livros para todas as idades, e muitas têm revistas, mangás, livros em língua estrangeira, CDs e DVDs para emprestar de graça; o catálogo costuma estar online, e há eventos (leituras, sessões de filme). Para usar, faça a carteirinha levando um documento com endereço (zairyū card, carteira de motorista).
+
+## Yasashii Nihongo (japonês fácil)
+**Yasashii Nihongo** é um japonês simplificado, mais fácil para não nativos. Características:
+- furigana nos kanji ou palavras em hiragana;
+- evitar palavras e gramática difíceis;
+- frases curtas;
+- evitar formas honoríficas.
+
+Usado em avisos de governos locais (sobretudo em desastres) e em sites de notícias, para alcançar o maior número de pessoas.`,
+  },
+  {
+    title: 'Lição 14',
+    bodyPt: `## Lavanderia (dry cleaning)
+Leve a roupa à **kuriiningu** e busque depois de pronta. Preços variam: roupas comuns custam algumas centenas de ienes; itens que não se lavam em casa (couro, caxemira, pluma, quimono), alguns milhares. Camisa comum leva ~2–3 dias (há serviço no mesmo dia). Muitas também limpam calçados, bolsas e pelúcias, ajustam roupa, alugam futon ou guardam casacos de inverno.
+
+## Serviço de entrega (takuhaibin)
+Permite enviar encomendas para quase todo o Japão, com rapidez e precisão. Leve o pacote ao konbini (ou a um posto da transportadora). Escolha **pago no envio** ou **na entrega**; o custo depende do tamanho e da distância, e dá para marcar data/horário. Se você não estiver em casa, deixam um **aviso de ausência** — peça reentrega (telefone ou online), redirecione ao trabalho ou retire no konbini.
+
+## Barbearia e salão de beleza
+Há dois tipos legais, sem grande diferença para o cliente:
+- **Barbearia (rihatsuten / tokoya)**: poste vermelho-azul-branco na porta; corta, lava e faz a barba; clientes em geral homens; costuma não precisar de reserva.
+- **Salão de beleza (biyōin)**: lavar, cortar, colorir, alisar/ondular, unhas, *head spa*, e ajuda para vestir quimono; mais mulheres, mas também homens.
+
+Preços: barbearia independente ~¥3.000–4.000; perto de estação ~¥1.500–2.000 (corte+lavagem+barba); salão ~¥2.000–6.000 só corte (estilista famoso, ¥10.000+). Há cortes rápidos (~10 min) e salões só de corte/cor sem lavagem (~¥1.000). Na barbearia: senha/espera, peça o estilo, corte, lavagem, barba (toalha quente), secagem e pagamento. No salão: **reserve** antes; ficha de cadastro na 1ª vez; mostre uma foto do estilo desejado.
+
+## Serviços públicos para estrangeiros
+Muitos governos locais têm um **Gaikokujin Sōdan Center** (centro de consulta para estrangeiros), com atendimento em vários idiomas: orientação sobre problemas do dia a dia, ajuda com formulários e, às vezes, intérprete por conferência (lei, bem-estar, imigração). Alguns usam voluntários que repassam informações e levam pedidos dos estrangeiros ao governo.`,
+  },
+  {
+    title: 'Lição 15',
+    bodyPt: `## "Cool Biz"
+Antes, trabalhadores usavam terno e gravata mesmo no calor. Em 2005 o Ministério do Meio Ambiente lançou o **Cool Biz**: pôr o ar-condicionado do escritório em 28 °C e deixar a roupa mais leve (reduz CO₂). Vai de junho a setembro — camisa de manga curta, sem gravata nem paletó; alguns usam camisa havaiana ou a okinawana **kariyushi**.
+
+## Sacolas plásticas e "my bag"
+As sacolas plásticas eram grátis, mas desde julho de 2020 passaram a ser **pagas** (mercados, konbini, drogarias, lojas, takeout). Cobrar reduz o lixo plástico, a poluição marinha, o CO₂ e o uso de petróleo. Melhor levar a sua sacola reutilizável — **mai baggu** / **eco baggu**.
+
+## Separação do lixo
+Na maior parte do Japão é preciso separar o lixo antes da coleta (e nas lixeiras públicas). Em geral:
+- **Queimável** (*moeru gomi*): resto de comida, papel, madeira, plásticos, isopor, borracha, couro. Coleta ~2× por semana.
+- **Não queimável** (*moenai gomi*): vidro, metal, cerâmica. Coleta ~1×/semana ou quinzenal.
+- **Reciclável** (*shigen gomi*): garrafas de vidro, latas, PET, papel usado (jornal, revista, papelão). ~1×/semana; em alguns lugares separa-se ainda mais (PET, lata de aço, de alumínio, vidro claro e colorido). Muitos mercados têm caixas de coleta.
+- **Lixo volumoso** (*sodai gomi*): móveis, bicicletas, futon, tapetes — não entram na coleta comum; é preciso solicitar e pagar (telefone/internet). Eletrodomésticos (lavadora, TV, ar, geladeira, secadora, PC) **não** são sodai gomi — vão por empresa específica.
+
+O conteúdo de cada categoria muda por cidade; siga o manual da prefeitura (há versões em outras línguas) para evitar atritos com vizinhos.`,
+  },
+  {
+    title: 'Lição 16',
+    bodyPt: `## Desastres naturais e mapas de risco (hazard map)
+O Japão tem tufões, terremotos, tsunamis e nevascas, e cada área sofre desastres diferentes. O **hazard map** do governo local prevê onde e quão grave um desastre pode ser, e mostra áreas e rotas de evacuação. Pegue na prefeitura, baixe no site, ou veja o portal do Ministério (MLIT). Saiba quais desastres podem ocorrer onde você mora e para onde evacuar.
+
+## Mochila de emergência
+Junte numa mochila o que precisaria num desastre e deixe-a num lugar fácil (entrada de casa): água e comida para vários dias, remédios de uso contínuo, lanterna, bateria portátil, rádio portátil, luvas, kit de primeiros socorros, capa de chuva, dinheiro e valores, passaporte e cópia do cartão do seguro de saúde.
+
+## Magnitude e intensidade (shindo)
+A **magnitude** indica o tamanho do terremoto (uma só por evento, escala universal). A **intensidade (shindo)** indica a força do tremor **em cada local** (varia conforme o ponto). No Japão a escala de shindo tem 10 níveis (0 a 7, com 5 e 6 divididos em inferior e superior):
+| Nível (shindo) | Efeito |
+| --- | --- |
+| 0 | Quase ninguém sente; só sismógrafos registram. |
+| 1 | Algumas pessoas paradas em ambiente fechado sentem. |
+| 2 | Muitas pessoas dentro de casa sentem; lustres balançam. |
+| 3 | Quase todos sentem; acorda quem dorme. |
+| 4 | Susto geral; objetos pendurados balançam forte. |
+| 5 inferior | Medo; difícil andar; livros caem das estantes. |
+| 5 superior | TVs/louças caem, vidros quebram, muros tombam; faltam luz/gás/água. |
+| 6 inferior | Difícil ficar em pé; móveis se deslocam; prédios podem inclinar. |
+| 6 superior | Só se anda rastejando; casas desabam; rachaduras e deslizamentos. |
+| 7 | Móveis voam; prédios desabam; a cidade para; a paisagem muda. |
+
+## Divisão regional do Japão
+Informações de terremoto e tufão vêm por regiões — saiba como se chama a região onde você mora.
+
+## Simulado de desastre (bōsai kunren)
+Empresas e escolas fazem simulados periódicos (também associações, lojas, hotéis, hospitais); se estiver presente, pode participar. Muitos ocorrem em 1º de setembro (Dia da Prevenção). Treina-se evacuação e rota; às vezes uso de extintor, sala de fumaça, carro simulador de terremoto, primeiros socorros e **DEA/AED**. Bombeiros podem dar orientações. Participe e leia os manuais da prefeitura.`,
+  },
+  {
+    title: 'Lição 17',
+    bodyPt: `## Wadaiko (tambor japonês)
+**Wadaiko** são os tambores tradicionais, de vários tamanhos, usados em festivais e artes cênicas. Cada região tem sua tradição, passada de geração em geração (às vezes aprendida desde a primária). Toca-se em grupo, com vários tambores; há grupos amadores que dão concertos e tocam em festivais.
+
+## Quando te elogiam
+Se ouvir **"nihongo ga jōzu desu ne"** ("seu japonês é bom"), pode aceitar com **"hontō desu ka? arigatō"**. Mas, ao serem elogiados, japoneses costumam responder se diminuindo — **"iie, mada mada desu"** ("ainda não sou tão bom") — por valorizarem a **humildade (kenson)**, achando melhor não parecer orgulhoso. Exemplos: oferecer comida deliciosa dizendo que "não é nada de especial"; ou, elogiados sobre o filho/cônjuge, responder com algo modesto ("mas ele não nos obedece"; "em casa ele não serve para nada"). Isso surpreende estrangeiros sem essa tradição.
+
+## Doramas japoneses
+A maioria tem 10–12 episódios de ~50 min ("bite-sized"). Às vezes ficam grátis no site da emissora após irem ao ar; com assinatura (Netflix, Hulu, Amazon Prime), assiste-se quando quiser — cada serviço tem seu foco, e quase todos têm teste grátis. **Cuidado ao estudar por doramas**: os de época usam linguagem antiga; os de profissões específicas (polícia, médico), palavras difíceis; os do interior, dialetos. Comece pelos de cotidiano moderno, com legendas.`,
+  },
+  {
+    title: 'Lição 18',
+    bodyPt: `## Shokunin (artesão/mestre)
+**Shokunin** são pessoas que, após anos de treino, dominam uma técnica avançada e fazem coisas à mão — o mestre de sushi do texto, mas também carpintaria, gesso, laca, bambu, tatami, guarda-chuvas, tempura, doces japoneses etc. O número de jovens que querem ser shokunin vem caindo (são muitos anos de treino árduo como aprendiz). Alguns governos e empresas mantêm escolas de formação de shokunin.
+
+## Festa de despedida (sōbetsu-kai)
+Ao ser transferido, mudar de carreira ou se aposentar, costuma-se fazer um breve discurso no último dia; a pessoa recebe buquê, presente ou cartão dos colegas. A festa de despedida (**sōbetsu-kai**) acontece em restaurante/izakaya ou numa sala da empresa. Fazê-la ou não depende da empresa e do tempo de casa.
+
+## Como continuar aprendendo japonês
+Terminado o material, continue estudando — ainda mais se mora no Japão. Caminhos: aulas de grupos de intercâmbio locais; estudar sozinho com notícias, doramas e anime; e usar sites/apps (a maioria grátis). O portal **NIHONGO e-na** (nihongo-e-na.com) busca recursos por tema e nível; e o **JF Japanese e-Learning Minato** (minato-jf.jp), da Japan Foundation, tem cursos gratuitos por nível e objetivo (precisa de cadastro). Experimente!`,
+  },
+]
 
 // ---------------------------------------------------------------------
 //  中級 (Pre-Intermediate / B1)
