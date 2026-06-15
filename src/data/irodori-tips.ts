@@ -407,7 +407,252 @@ Com tantos vulcões, há **onsen** por toda parte (cerca de 3.000). **Beppu** (�
 // ---------------------------------------------------------------------
 //  初級1 (Elementary 1 / A2)
 // ---------------------------------------------------------------------
-const ELEMENTARY1_NOTES: StudyNote[] = []
+const ELEMENTARY1_NOTES: StudyNote[] = [
+  {
+    title: 'Lição 1',
+    bodyPt: `## Níveis de formalidade
+O japonês tem um estilo polido e um estilo casual, escolhidos pela relação entre as pessoas. Como saber quem está em posição superior ou inferior?
+- **Idade**: em geral, o mais velho fica em posição superior — por isso podem perguntar sua idade. Entre pessoas de idade parecida ou amigos, isso pesa menos.
+- **Senpai e kōhai**: numa organização, quem entrou antes é **senpai**; quem entrou depois, **kōhai**. Numa empresa o senpai pode até ser mais novo. Essa relação costuma pesar mais que a de idade.
+- **Status/posição**: status social e profissional importam — professor acima de aluno, presidente acima de funcionário.
+- **Cliente e funcionário**: o cliente é tratado como superior, não importa a idade; o funcionário usa linguagem honorífica (**keigo**).
+
+## "Ogenki desu ka?"
+Equivale a "How are you?", mas **o-genki desu ka?** se usa após muito tempo sem ver a pessoa — não para um colega de trabalho ou alguém que você vê todo dia.`,
+  },
+  {
+    title: 'Lição 2',
+    bodyPt: `## Beisebol (yakyū)
+Há anos um dos esportes mais populares. Existem times comunitários infantis e clubes escolares; o torneio de verão do ensino médio (**Kōshien**) é tradição. O profissional tem 12 times: 6 na **Central League** e 6 na **Pacific League**, ligados às suas cidades. Muita gente joga por hobby — em parques se vê crianças e adultos jogando catch.
+
+## Ikebana
+**Ikebana** (arranjo floral) é uma arte tradicional: flores, folhas e galhos dispostos num vaso. Há aulas em centros culturais e comunitários; as aulas práticas para iniciantes são uma boa porta de entrada.
+
+## Studio Ghibli
+Produtora de animação ligada ao diretor **Miyazaki Hayao**. Seus filmes fazem sucesso dentro e fora do Japão e ganham prêmios internacionais: *Meu Amigo Totoro*, *A Viagem de Chihiro*, *O Castelo Animado*.
+
+## Associações internacionais
+Organizações que apoiam estrangeiros na comunidade local e promovem o convívio com moradores: cursos de japonês, festivais de comida internacional, concursos de discurso e eventos de intercâmbio. Vale conhecer a da sua região.`,
+  },
+  {
+    title: 'Lição 3',
+    bodyPt: `## O clima no Japão
+Por ser um país longo no sentido norte–sul, o clima varia muito:
+- **Tóquio**: esquenta no fim de março; verão (jul–ago) muito quente e úmido (perto de 40 °C); inverno (dez–fev) seco e claro, com neve rara.
+- **Hokkaido** (norte): verão ameno; inverno rigoroso (abaixo de zero de dia, até ~-20 °C) e com muita neve.
+- **Okinawa** (sul): subtropical; dá para nadar de abril a outubro; no inverno raramente abaixo de 10 °C; temporada de tufões de julho a outubro (~10 por ano).
+- **Lado do Mar do Japão** (Niigata, Toyama, Ishikawa): verão quente e ensolarado; inverno com muita chuva/neve (vários metros em alguns lugares).
+
+## Tsuyu (estação das chuvas)
+Do fim de maio a meados de julho. Sobem a umidade e a temperatura: a comida estraga mais fácil, o mofo cresce na cozinha e no banho, e a roupa demora a secar. O verão de verdade começa quando o tsuyu acaba.
+
+## Sakura e hanami
+As flores de cerejeira (rosa-claras) abrem do fim de março a abril — sinal da primavera, coincidindo com o início do ano letivo/fiscal (ligadas a formaturas e recomeços). A previsão anuncia quando vão abrir. O **hanami** é fazer piquenique e beber sob as cerejeiras; em parques populares, alguns chegam de madrugada para garantir lugar (**bashotori**).
+
+## Folhagem de outono (kōyō)
+No outono as folhas passam de verde a vermelho, laranja e amarelo. As pessoas vão a montanhas, vales e jardins ver o **kōyō** (out–nov, varia por região e altitude). Diferente do hanami, não se faz piquenique embaixo das árvores.
+
+## Cigarras (semi)
+Insetos que cantam alto do alto das árvores; no Japão, seu som é o som do verão. Tipos batizados pelo canto: **min-min zemi**, **tsuku-tsuku-bōshi**, **kana-kana**. O coro chama-se **semi-shigure**, muito usado como efeito sonoro de verão em TV, filmes e anime.`,
+  },
+  {
+    title: 'Lição 4',
+    bodyPt: `## Tufões (taifū)
+Ciclones tropicais que se formam no mar ao sul e atingem o Japão do verão ao outono, com ventos e chuvas fortes que causam estragos. Podem parar transporte, escolas e empresas — não saia e acompanhe as informações na TV e na internet. Virou moda (por redes sociais) comer **korokke** durante o tufão, e algumas lojas chegam a esgotar.
+
+## Previsão do tempo
+Além de tempo, temperatura e chuva, a previsão japonesa traz, conforme a estação e a região: quantidade de pólen, intensidade de raios UV, risco de insolação, facilidade de secar roupa — e até qual prato de panela combina mais com o dia.`,
+  },
+  {
+    title: 'Lição 5',
+    bodyPt: `## Academias (sports clubs)
+Espaços para exercício e treino, também chamados de sports gym ou fitness club. As grandes têm aparelhos, estúdios e piscina; mensalidade ~¥10.000 (varia por dia/horário de uso). Crescem as academias 24 h só com máquinas (mensalidade ~metade). Há ginásios públicos por algumas centenas de ienes a visita.
+
+## Shopping malls
+Reúnem lojas de roupa, calçado, eletrônicos, drogaria, mercado, praça de alimentação, fliperama e cinema — dá para passar o dia inteiro comprando, comendo e se divertindo.
+
+## Estabelecimentos de banho
+Além dos onsen de uso diurno (algumas centenas de ienes):
+- **Sentō** (casa de banho pública, *ofuroyasan*): tradicional, para quem não tinha banheira em casa; barato (¥500 ou menos). Diminuíram, mas voltam a crescer com banho ao ar livre, sauna e jacuzzi.
+- **Kenkō-land** (spa): vários banhos, sauna, salas de descanso e restaurante; ~¥1.000–2.000 (alugam toalha e roupa). Cheios de famílias nas folgas.
+- **Super sentō**: meio-termo entre sentō e kenkō-land, mais simples e barato.`,
+  },
+  {
+    title: 'Lição 6',
+    bodyPt: `## Semáforos
+Há verde, amarelo e vermelho para os veículos (mas o verde é chamado de **ao**, "azul"). Para pedestres há só verde e vermelho; o verde piscando equivale ao amarelo dos carros. Alguns semáforos de pedestre só abrem se você apertar o botão (sempre ou em certos horários).
+
+## Templos e santuários
+Há muitos por todo o Japão, alguns Patrimônio Mundial (Templo **Hōryūji**, em Nara; Santuário **Itsukushima**, em Hiroshima). A grande diferença: **templo (otera) é budista; santuário (jinja) é xintoísta**.
+- **No templo** você encontra: estátuas de Buda, túmulos, monges, um sino e cheiro de incenso.
+- **No santuário** você encontra: o portão **torii**, sacerdotes/miko e visitantes que batem palmas ao rezar.`,
+  },
+  {
+    title: 'Lição 7',
+    bodyPt: `## Pontualidade e atrasos
+Diz-se que os japoneses são pontuais: chegar 1 minuto atrasado ao trabalho já é mal visto, e evita-se fazer o outro esperar (chega-se na hora ou um pouco antes). Se for atrasar 5–10 min, avise o quanto antes. Mas o senso de tempo varia por geração e lugar; e a pontualidade vale para começar, não tanto para terminar — reuniões e expediente costumam passar do horário, o que surpreende estrangeiros.
+
+## Interrupções no serviço de trens
+Os trens são pontualíssimos; por um pequeno atraso o operador já pede desculpas. Podem atrasar ou parar por acidente, mal-estar de passageiro, falha de sinal etc. — acompanhe os avisos (estação e online). Em caso de atraso, dão o **chien-shōmeisho** (atestado de atraso): entregue à sua empresa e você não é considerado atrasado (cada empresa tem sua política). Disponível na estação ou pela internet.`,
+  },
+  {
+    title: 'Lição 8',
+    bodyPt: `## Castelos japoneses
+Construídos do período Sengoku ao Edo (séc. XVI–XIX), têm altas muralhas de pedra, fossos e torres. Atrações turísticas: o branco **Himeji** (Hyōgo, Patrimônio Mundial), o **Matsumoto** (Nagano, com laca preta) e o **Matsuyama** (Ehime, castelo de montanha). Osaka e Nagoya têm torres reconstruídas em concreto na era Showa (1926–1989), com elevador. Há também parques com ruínas de castelo.
+
+## Outlets
+Shopping com produtos vindos direto da fábrica, popular nas folgas; ficam em pontos turísticos, subúrbios e perto de rodovias. No Japão, outlet **não** é lugar de produto com defeito ou de baixa qualidade.
+
+## Luta livre profissional (puroresu)
+Mistura de luta e atuação, popular e atraindo também o público feminino. Há grandes organizações em arenas (Tokyo Dome) e pequenas locais (ginásios, estacionamentos de shopping) — muitas dessas gratuitas, diversão para adultos e crianças.`,
+  },
+  {
+    title: 'Lição 9',
+    bodyPt: `## Estudar japonês com anime
+Muita gente começa a estudar japonês por gostar de **anime**, hoje fácil de achar online (YouTube etc., alguns legendados, ou em serviços pagos). Assistir ajuda a treinar a escuta e a pronúncia com japonês natural — procure suas séries favoritas.
+
+## Aulas de japonês locais
+Cidades e associações internacionais oferecem aulas para estrangeiros, grátis ou baratas (muitas com voluntários), 1–2× por semana em centros comunitários. Há vários formatos (turma, grupo, individual) e dias/horários variados; também servem para conhecer moradores e obter informações úteis.`,
+  },
+  {
+    title: 'Lição 10',
+    bodyPt: `## Centros comunitários (kōminkan)
+Espaço público de educação social e de rede local, com salas japonesas, salas de reunião, salões multiuso, cozinha e oficinas. Sediam, por aluguel baixo, aulas de japonês, de culinária, cursos diversos e atividades de clubes locais. Ótimo para aprender e conhecer gente — procure o mais perto de você.
+
+## Aulas de culinária
+Estão entre as aulas mais populares; às vezes em centros comunitários. Empresas de alimentos e de gás criam cursos completos: aulas avulsas de experimentação, pratos regionais, pratos da estação — variam em duração, preço e tipo de comida.
+
+## Caligrafia (shodō)
+Arte de escrever kanji com pincel e tinta. No Japão começa na escola primária e é parte importante da educação; no Ano-Novo, os alunos fazem o **kakizome**. Há concursos nas escolas e aulas em centros comunitários, de crianças a adultos.
+
+## Aikidō
+Arte marcial japonesa, como o judô e o karatê, fundada por **Ueshiba Morihei**; cerca de 1,6 milhão de praticantes no mundo. Voltada à autodefesa: você desvia do ataque e usa a força do oponente para projetá-lo. Popular entre mulheres e idosos (exige pouca força, não tem competição e dá para praticar por muito tempo).`,
+  },
+  {
+    title: 'Lição 11',
+    bodyPt: `## Churrasco (bābekyū)
+Grelhar e comer ao ar livre. O churrasco japonês tem particularidades:
+- Grelha-se carne com abóbora, cebola e milho, além de camarão, lula e mariscos.
+- Cozinha-se e come-se ao mesmo tempo (não se espera tudo ficar pronto).
+- No fim costuma-se fazer **yakisoba** ou **yaki-onigiri**.
+- Em parques e campings dá para alugar o equipamento; alguns lugares alugam e vendem tudo (equipamento, comida, bebida).
+- Crescem os churrascos em terraços nas cidades.
+
+## Pratos prontos no supermercado (sōzai)
+Na seção de **sōzai** vendem-se acompanhamentos prontos (frituras como korokke, yakitori, **nimono** e saladas) — leve para casa e coma sem cozinhar. Há os caseiros e os difíceis de fazer em casa. Úteis para quem é ocupado; saem com desconto perto do fechamento.
+
+## Yakitori
+Pedaços de frango grelhados no espeto; raramente feito em casa (compra-se em mercado/konbini ou pede-se no izakaya; a casa especializada é **yakitori-ya**). Partes variadas: fígado, **seseri** (pescoço), **sasami** (peito); também **negima** (frango + cebolinha) e **tsukune** (frango moído). Tempera-se com sal ou **tare** (molho de shoyu adocicado).
+
+## Prazos de validade (dois tipos)
+Toda comida traz **shōmikigen** ("consumir preferencialmente antes de") ou **shōhikigen** ("data limite"). O **shōmikigen** indica até quando o sabor e a qualidade se mantêm — ainda dá para comer depois. O **shōhikigen** é a data após a qual não é seguro comer (alimentos que estragam rápido).
+
+## Aviso de alérgenos
+Por lei, o rótulo deve indicar se contém ovo, leite, trigo, camarão, caranguejo, amendoim e trigo-sarraceno. Mas o ingrediente pode aparecer com outro nome (ovo como "omelete", leite como "sorvete"). Pratos prontos, marmitas e refeições de restaurante não são obrigados a rotular — pergunte ao funcionário.`,
+  },
+  {
+    title: 'Lição 12',
+    bodyPt: `## Obento (marmita)
+Compra-se em konbini, mercado ou loja de **bentō**, ou faz-se em casa. Acompanhamentos comuns: omelete enrolada, frituras, hambúrguer, salada de batata. Valoriza-se sabor, aparência e cores variadas (tomate vermelho, omelete amarela, verduras, arroz branco, alga/gergelim preto). Há acessórios para enfeitar.
+
+## Tamago-yaki
+Omelete enrolada caseira, de café da manhã e de marmita. Bate-se o ovo com sal, shoyu, mirin, açúcar ou dashi e frita-se enrolando na frigideira. No Kantō costuma ser doce; no Kansai, salgada. Variações: cebolinha, espinafre, **shirasu**, **mentaiko**.
+
+## Okonomiyaki
+"Panqueca" de repolho, carne, frutos do mar etc. misturados à massa de trigo, feita na chapa. **Kansai**: tudo misturado antes de grelhar. **Hiroshima**: em camadas, sem misturar. Em Osaka/Hiroshima o funcionário faz; em Tóquio o cliente grelha na própria mesa. Também há versão congelada de micro-ondas. Finaliza-se com molho, maionese, **katsuobushi** e alga.
+
+## Sukiyaki
+Panela (**nabe**) de fatias finas de boi grelhadas com legumes, temperadas com shoyu e açúcar (acelga, **shirataki**, tofu, enoki, cebolinha); come-se mergulhando em ovo cru. Usa carne de qualidade — caro em restaurante, mas há versão barata em redes de gyū-don.
+
+## Chawan-mushi
+Creme de ovo cozido no vapor, servido em refeição de curso ou como acompanhamento. Leva dashi, ovo batido e ingredientes (frango, **kamaboko**, shiitake, enoki, ginkgo, camarão). Come-se de **colher**, como pudim — não use hashi.
+
+## Dashi
+O sabor-base da cozinha japonesa, extraído fervendo lentamente **katsuobushi**, **kombu**, sardinha seca ou shiitake. Fazer do zero é trabalhoso, então a maioria usa o **dashi no moto** (instantâneo: pó na água quente).
+
+## Macarrão instantâneo em copo
+Pronto em 3–5 min com água quente; criado no Japão em 1971 e consumido no mundo todo (ramen, udon). No **yakisoba** em copo, escorre-se a água depois que o macarrão amolece. Barato e de longa validade — útil para emergências.`,
+  },
+  {
+    title: 'Lição 13',
+    bodyPt: `## Banheiros japoneses
+- **Estilo japonês (washiki)**: hoje raro (prédios antigos, locais públicos); agacha-se sobre o vaso.
+- **Bidê de água morna (washlet)**: comum nos vasos ocidentais; os botões às vezes só vêm em japonês — **おしり** (lava o ânus), **止** (parar), força fraca↔forte, posição frente↔trás e **ビデ** (uso feminino).
+- **Dar a descarga** de vários jeitos: botão no painel (**大** = sólidos, **小** = líquidos), botão na parede (洗浄 / 流す), sensor (passe a mão e segure alguns segundos), alavanca no tanque (大⇔小) ou alavanca manual (use a mão, não o pé).
+- **Botão de chamada (呼出)**: é de emergência (mal-estar ou queda), **não** de descarga — não confunda.`,
+  },
+  {
+    title: 'Lição 14',
+    bodyPt: `## Carimbo pessoal (hanko / inkan)
+Necessário para coisas oficiais: entregar documentos em repartições, abrir conta e receber entregas em casa. Há lojas com sobrenomes prontos (algumas centenas de ienes); para sobrenome estrangeiro faz-se sob encomenda (alguns milhares de ienes, conforme material e tamanho). Às vezes a assinatura é aceita, mas certas repartições e bancos só aceitam carimbo. Pode ser feito em alfabeto, katakana ou kanji.
+
+## Férias remuneradas (yūkyū)
+Desde 1º/4/2019 é obrigatório tirar férias remuneradas. Dão-se 10 dias por ano a quem (1) trabalhou 6+ meses na mesma empresa e (2) compareceu a 80% dos dias úteis. A empresa é responsável por garantir que cada um tire ao menos 5 dias por ano — vale também para contratados e meio-período. Quem descumpre pode ser punido (prisão ou multa). O Ministério da Saúde, Trabalho e Bem-Estar atende dúvidas em vários idiomas.`,
+  },
+  {
+    title: 'Lição 15',
+    bodyPt: `## Ir ao hospital no Japão
+Você escolhe o médico conforme o sintoma. Pode ir a uma clínica ou a um hospital geral — neste, sem carta de encaminhamento de uma clínica, paga-se uma taxa extra. Passos: 1) recepção; 2) ficha/questionário; 3) sala de espera; 4) consulta quando chamado; 5) pagamento; 6) receita; 7) levar a receita à farmácia; 8) pagar o remédio (a farmácia em geral fica fora do hospital).
+
+Fora do horário ou em feriado, vá ao plantão; se for grave, chame ambulância (**119**, gratuita) dizendo **"kyūkyūsha o yonde kudasai"**. Há hospitais que arranjam intérprete, e a lista de quem atende estrangeiro está no site da **JNTO** (jnto.go.jp).
+
+Departamentos por sintoma:
+| Sintoma | Departamento |
+| --- | --- |
+| Febre, garganta, tosse, coriza, dor de cabeça/barriga | clínica geral (naika) |
+| Fratura, contusão, entorse | ortopedia (seikei-geka) |
+| Garganta, nariz, ouvido | otorrino (jibika) |
+| Urticária, manchas na pele | dermatologia (hifuka) |
+| Problema nos olhos | oftalmologia (ganka) |
+| Saúde mental | psicossomática (shinryō-naika) |
+| Saúde feminina, gravidez | gineco/obstetrícia (fujinka) |
+| Dente | odontologia (shika) |
+
+## Febre do feno (kafunshō)
+Alergia ao pólen de cedro e outras plantas: coceira nos olhos, espirros, coriza e nariz entupido. No Japão há muito pólen de cedro de março a maio, e mais gente tem sintomas nessa época. Muitos desenvolvem na vida adulta — alguns estrangeiros têm pela primeira vez no Japão. Trata-se com médico; máscaras e colírio na farmácia/drogaria ajudam.`,
+  },
+  {
+    title: 'Lição 16',
+    bodyPt: `## Ombros tensos (katakori)
+Queixa muito comum no Japão (top 1–2 incômodos físicos para muita gente). Talvez pareça "típico japonês" porque algumas línguas nem têm a palavra. Ocorre por carregar peso ou ficar na mesma postura por muito tempo (pescoço, ombros, costas, trapézio). Há itens que ajudam: cadeira de massagem, bastão de massagem, faixa de apoio para o ombro, colar e adesivos magnéticos.
+
+## Máscaras
+Estrangeiros se surpreendem com tanta gente de máscara. A "etiqueta da tosse" pede que quem tosse/espirra use máscara; muitos também usam para não pegar doença e na época da febre do feno. Há ainda usos não ligados à saúde: evitar conversa, não mostrar o rosto, não se maquiar — e máscaras com cores e estampas viraram acessório.`,
+  },
+  {
+    title: 'Lição 17',
+    bodyPt: `## Como sentar num quarto japonês
+Várias formas de sentar no tatami:
+- **Seiza** (sobre os joelhos): a forma formal, sempre aceitável, mas deixa as pernas dormentes. Se ficar difícil, pergunte **"raku ni shitemo ii desu ka?"** e mude de posição.
+- **Agura** (de pernas cruzadas): comum entre homens (e cada vez mais entre mulheres), mas muitos acham que não se deve.
+- **Yokozuwari** (pernas para o lado): jeito casual, comum entre mulheres.
+- Esticar as pernas, levantar um joelho ou abraçar os joelhos não é comum num quarto japonês.
+
+## Omamori (amuletos)
+Comprados em santuários e templos, com pedidos variados: segurança da família, passar na prova, sucesso nos negócios, sorte no amor. Alguns levam de souvenir pela estampa fofa. Não convém guardar por muito tempo: quando o desejo se realiza, devolva o amuleto ao local onde o pegou e faça **orei-mairi** (visita de agradecimento).
+
+## Como se referir aos familiares
+Há palavras diferentes para falar do pai (**chichi** / **otōsan**) e da mãe (**haha** / **okāsan**): use **chichi/haha** para a própria família e **otōsan/okāsan** para a de outra pessoa — em situações formais (trabalho, com alguém mais velho). Entre amigos, ou quando o falante é jovem/estudante, ele chama os próprios pais de otōsan/okāsan e os irmãos mais velhos de **oniisan / oneesan**. Não acrescente **-san** a quem é mais novo que você na família: **otōto** (irmão menor), **imōto** (irmã menor), **musuko** (filho), **musume** (filha).`,
+  },
+  {
+    title: 'Lição 18',
+    bodyPt: `## Nomes japoneses
+Deve-se registrar o nome do bebê na prefeitura em até 14 dias. Escolhe-se pelo significado e pela leitura dos kanji (de bom presságio para o futuro). As modas mudam: antes nomes de menina terminavam em **-ko** e os de menino traziam números de ordem (**ichi** = 1, **ji** = 2); hoje preferem-se nomes de um só kanji (ex.: Ren). Há uma lista limitada de kanji para nomes, mas **não** há limite de leitura — por isso alguns nomes são difíceis de ler (ex.: Kanon, Rizumu).
+
+## Brinde (kanpai)
+Diz-se **kanpai!** (os kanji significam "copo cheio" + "esvaziar"). Não precisa esvaziar de fato — basta um gole após o brinde e depois você bebe quando quiser. Numa festa, todos brindam para começar e esperam o brinde para beber. Quem propõe costuma ser o mais graduado ou o convidado de honra; encoste seu copo no dos outros e dê um gole (alguns batem palmas depois).
+
+## Karaokê
+Diversão inventada no Japão: cantar suas músicas favoritas, geralmente numa **karaoke box** (sala fechada). Popular com estudantes e com adultos depois da bebida; cresce o **hitori-karaoke** (sozinho). Como usar:
+- Defina o nº de pessoas e o tempo (cobrança por tempo, ou "free-time" fixo; pode haver **nomi-hōdai**, bebida à vontade).
+- Cadastre-se no balcão (vale virar sócio para preço menor e pontos).
+- Peça bebida (sistema **one-drink**: uma por pessoa) e escolha músicas no tablet.
+- ~5 min antes do fim, ligam avisando; dá para estender (**enchō**) se ninguém estiver esperando. Pague no balcão ao sair.
+
+## Yosegaki (recado coletivo)
+Mensagens escritas para alguém em ocasiões especiais (troca de emprego, aposentadoria, casamento), num cartão colorido assinado por várias pessoas — por exemplo, de quem não pôde ir ao casamento. Usa-se um **shikishi** (papel quadrado e grosso, de borda dourada, o mesmo de autógrafos), que pode virar enfeite de parede.`,
+  },
+]
 
 // ---------------------------------------------------------------------
 //  初級2 (Elementary 2 / A2)
