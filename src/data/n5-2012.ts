@@ -207,11 +207,69 @@ const grammar: Section = {
   groups: [gramM1, gramM2, gramM3],
 }
 
+// ---------------------------------------------------------------------
+//  読解 — Reading
+// ---------------------------------------------------------------------
+const readM4: ExerciseGroup = {
+  id: 'n5-2012-read-m4',
+  title: 'もんだい4',
+  subtitlePt: 'Compreensão de texto curto',
+  instructionJa: 'つぎの (1)から(3)の ぶんしょうを 読んで、しつもんに こたえてください。こたえは、1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'Leia cada texto curto e responda à pergunta.',
+  questions: [
+    { id: 'n5-2012-read-27', number: 27, context: '（1）わたしは 今日、友だちと 買い物に 行きました。3か月前に 見た えいがの DVDが ほしかったからです。買った DVDは、友だちや 姉と いっしょに 見ます。', prompt: '「わたし」は 今日、何を しましたか。', choices: [{ n: 1, text: '友だちと えいがを 見に 行きました。' }, { n: 2, text: '友だちと DVDを 買いに 行きました。' }, { n: 3, text: '姉と えいがを 見に 行きました。' }, { n: 4, text: '姉と DVDを 買いに 行きました。' }], answer: 2, translationPt: 'O que “eu” fiz hoje? — Fui comprar um DVD com amigos.', explanationPt: 'O texto diz 今日、友だちと 買い物に 行きました e que o objetivo era o DVD. Assistir (com a irmã/amigos) será depois, não foi hoje.' },
+    { id: 'n5-2012-read-28', number: 28, context: '（2）わたしの へやには、テーブルが 一つと いすが 二つと 本だなが 一つ あります。本が たくさん ありますから、もっと 大きい 本だなが ほしいです。 ※ No original as 4 opções são imagens de quartos; aqui foram descritas em texto.', prompt: '今の へやは どれですか。（descrições do quarto）', choices: [{ n: 1, text: 'Mesa, 2 cadeiras e 2 estantes.' }, { n: 2, text: 'Mesa, 2 cadeiras, 1 estante e livros empilhados no chão.' }, { n: 3, text: 'Mesa, 2 cadeiras e 1 estante.' }, { n: 4, text: 'Mesa, 1 cadeira e 1 estante.' }], answer: 3, translationPt: 'Como é o quarto agora?', explanationPt: 'O texto diz テーブル×1, いす×2, 本だな×1 (a pessoa ainda quer uma estante maior, mas só tem uma). Logo: 1 mesa, 2 cadeiras e 1 estante.' },
+    { id: 'n5-2012-read-29', number: 29, context: '（3）森さんの 机の 上に、山口先生の メモと 本が あります。\n\n森さん\nクラスで 使う 本を 中川先生に かりました。\n5ページを 25枚 コピーして ください。\nコピーは 南さんに わたして ください。\n本は、わたしが あした かえしますから、わたしの 机の 上に おいて ください。\n山口', prompt: '森さんは コピーを した あとで、本を どうしますか。', choices: [{ n: 1, text: 'クラスで 使います。' }, { n: 2, text: '南さんに わたします。' }, { n: 3, text: '中川先生に かえします。' }, { n: 4, text: '山口先生の 机の 上に おきます。' }], answer: 4, translationPt: 'Depois de tirar as cópias, o que o Mori faz com o livro?', explanationPt: 'A memo pede: コピーは 南さんに わたす, mas o 本 deve ser deixado na mesa do(a) Yamaguchi (本は…わたしの 机の 上に おいて ください). Quem devolve ao Nakagawa é o próprio Yamaguchi.' },
+  ],
+}
+
+const readM5: ExerciseGroup = {
+  id: 'n5-2012-read-m5',
+  title: 'もんだい5',
+  subtitlePt: 'Compreensão de texto médio',
+  instructionJa:
+    'つぎの ぶんしょうを 読んで、しつもんに こたえてください。こたえは、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\nきのうの 夜は おそくまで しごとを しました。とても つかれました。しごとの あと、電車で 帰りました。家の 近くの 駅で 電車を おりました。外は 雨でしたが、わたしは かさが ありませんでした。とても こまりました。\n駅の 人が わたしを 見て、「あの はこの 中の かさを 使って ください。」と 言いました。はこの 中には かさが 3本 ありました。わたしは「えっ、いいんですか。」と 聞きました。駅の 人は「あれは みんなの かさです。お金は いりません。あした、あの はこに かえして ください。」と 言いました。わたしは「わかりました。ありがとうございます。」と 言って、かさを かりて 帰りました。',
+  instructionPt: 'Leia o texto e responda. (Cheguei à estação na chuva, sem guarda-chuva, e o funcionário me emprestou um da “caixa de todos”.)',
+  questions: [
+    { id: 'n5-2012-read-30', number: 30, prompt: 'どうして こまりましたか。', choices: [{ n: 1, text: 'おそい 時間に 駅に 着いたから' }, { n: 2, text: 'しごとが たくさん あったから' }, { n: 3, text: 'とても つかれたから' }, { n: 4, text: 'かさが なかったから' }], answer: 4, translationPt: 'Por que ficou em apuros? — Porque não tinha guarda-chuva.', explanationPt: 'O texto diz 外は 雨でしたが、わたしは かさが ありませんでした。とても こまりました — estava chovendo e a pessoa não tinha guarda-chuva.' },
+    { id: 'n5-2012-read-31', number: 31, prompt: '「わたし」は、あした どうしますか。', choices: [{ n: 1, text: 'かさを はこの 中に 入れます。' }, { n: 2, text: 'かさを 駅の 人に わたします。' }, { n: 3, text: 'お金を はこの 中に 入れます。' }, { n: 4, text: 'お金を 駅の 人に わたします。' }], answer: 1, translationPt: 'O que “eu” faz amanhã? — Devolve o guarda-chuva à caixa.', explanationPt: 'O funcionário disse あした、あの はこに かえして ください e que não precisa pagar (お金は いりません). Logo: amanhã devolve o guarda-chuva na caixa.' },
+  ],
+}
+
+const readM6: ExerciseGroup = {
+  id: 'n5-2012-read-m6',
+  title: 'もんだい6',
+  subtitlePt: 'Busca de informação',
+  instructionJa:
+    '右の ページを 見て、下の しつもんに こたえてください。こたえは、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\n【スーパー「あらきや」 朝8:00〜夜9:00】\n・6月11日(月)〜14日(木)：さとう 128円／トイレットペーパー 490円\n・6月15日(金)〜18日(月)：しょうゆ 198円／ティッシュペーパー 290円\n・毎週 安い：月・火＝くだもの・魚・ジュース／水・木＝とうふ・にく・やさい／金・土＝パン・ぎゅうにゅう・魚・やさい',
+  instructionPt: 'Veja o folheto do mercado “Arakiya” e responda.',
+  questions: [
+    { id: 'n5-2012-read-32', number: 32, prompt: 'あらきやで トイレットペーパーと にくと やさいを 同じ 日に 買いたいです。いつが 安いですか。', choices: [{ n: 1, text: '6月11日(月)と 12日(火)' }, { n: 2, text: '6月13日(水)と 14日(木)' }, { n: 3, text: '6月15日(金)と 16日(土)' }, { n: 4, text: '6月17日(日)と 18日(月)' }], answer: 2, translationPt: 'Quero comprar papel higiênico, carne e verduras no mesmo dia, barato. Quando?', explanationPt: 'Papel higiênico está barato de 11 a 14 (seg–qui); carne (にく) e verduras (やさい) são baratas toda 水・木 (qua/qui). A interseção é 13(qua) e 14(qui).' },
+  ],
+}
+
+const reading: Section = {
+  id: 'reading',
+  level: 'N5-2012',
+  titleJa: 'どっかい',
+  titlePt: 'Leitura',
+  summaryPt:
+    'Compreensão de leitura do simulado oficial 2012: textos curtos, texto médio e busca de informação. 6 questões.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (読解)',
+      bodyPt:
+        '- **もんだい4** — textos **curtos** (avisos, memos, e-mails); responda à pergunta sobre o conteúdo.\n- **もんだい5** — texto **médio**; entenda o motivo/a ação descrita.\n- **もんだい6** — **busca de informação** (folhetos, tabelas, horários): ache o dado que satisfaz as condições.',
+    },
+  ],
+  groups: [readM4, readM5, readM6],
+}
+
 export const n5_2012: Level = {
   id: 'N5-2012',
   courseId: 'jlpt',
   titlePt: 'N5 — Simulado 2012',
   descriptionPt:
-    'Segunda leva de prática do N5: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
-  sections: [vocabulary, grammar],
+    'Segunda leva de prática do N5: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 聴解 com áudio será adicionado.)',
+  sections: [vocabulary, grammar, reading],
 }
