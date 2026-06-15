@@ -265,11 +265,231 @@ const reading: Section = {
   groups: [readM4, readM5, readM6],
 }
 
+// ---------------------------------------------------------------------
+//  聴解 — Listening (áudio oficial 2012)
+// ---------------------------------------------------------------------
+const listening: Section = {
+  id: 'listening',
+  level: 'N5-2012',
+  titleJa: 'ちょうかい',
+  titlePt: 'Audição',
+  summaryPt:
+    'Compreensão auditiva do simulado oficial 2012. Quatro tipos (tarefa, ponto-chave, expressões, resposta rápida). Use o player com os áudios oficiais e acompanhe a transcrição com tradução.',
+  studyNotes: [
+    {
+      title: 'Como estudar com os áudios',
+      bodyPt:
+        '1. **Ouça primeiro sem ler** e tente responder.\n2. Use o player para **reduzir a velocidade** (0,75×) e o **A–B** para repetir trechos.\n3. Depois leia a **transcrição** com furigana e ative a **tradução pt-BR**.\n4. Por fim, marque “Mostrar respostas” e compare. Áudios oficiais (JLPT 2012).',
+    },
+  ],
+  groups: [],
+  audios: [
+    {
+      id: 'n5-2012-listening-q1',
+      title: 'もんだい１ — Compreensão de tarefa',
+      descriptionPt: 'Ouça a pergunta, depois o diálogo, e descubra o que a pessoa precisa fazer. (7 itens + exemplo)',
+      src: '/audio/N5-2012/N5Q1.mp3',
+      script: [
+        { label: '例', setupJa: 'クラスで{先生|せんせい}が{話|はな}しています。{学生|がくせい}は、{今日|きょう}{家|いえ}で、どこを{勉強|べんきょう}しますか。', setupPt: 'Numa sala, a professora fala. Onde o aluno vai estudar em casa hoje?', lines: [
+          { speaker: 'F', ja: 'では、{今日|きょう}は 20ページまで{終|お}わりましたから、21ページは{宿題|しゅくだい}ですね。', pt: 'Bom, hoje terminamos até a página 20, então a página 21 é tarefa.' },
+          { speaker: 'M', ja: '{全部|ぜんぶ}ですか。', pt: 'A página inteira?' },
+          { speaker: 'F', ja: 'いえ、21ページの 1{番|ばん}です。2{番|ばん}は、クラスでします。', pt: 'Não, o exercício 1 da página 21. O 2 fazemos em aula.' },
+        ], questionJa: '{学生|がくせい}は、{今日|きょう}{家|いえ}で、どこを{勉強|べんきょう}しますか。', answer: 3 },
+        { label: '1番', setupJa: '{靴下|くつした}の{店|みせ}で、{女|おんな}の{人|ひと}と{店|みせ}の{人|ひと}が{話|はな}しています。{女|おんな}の{人|ひと}は、どの{靴下|くつした}を{買|か}いますか。', setupPt: 'Numa loja de meias, a mulher e o atendente conversam. Quais meias ela compra?', lines: [
+          { speaker: 'F', ja: '{子供|こども}の{靴下|くつした}、ありますか。', pt: 'Tem meias infantis?' },
+          { speaker: 'M', ja: 'はい。{長|なが}いのですか、{短|みじか}いのですか。', pt: 'Sim. Compridas ou curtas?' },
+          { speaker: 'F', ja: '{長|なが}いのです。', pt: 'Compridas.' },
+          { speaker: 'M', ja: 'はい。{果物|くだもの}の{絵|え}と{動物|どうぶつ}の{絵|え}があります。どちらがいいですか。', pt: 'Certo. Tem estampa de frutas e de animais. Qual prefere?' },
+          { speaker: 'F', ja: 'そうですね、{動物|どうぶつ}のを{下|くだ}さい。', pt: 'Hmm, me dê a de animais.' },
+        ], questionJa: '{女|おんな}の{人|ひと}は、どの{靴下|くつした}を{買|か}いますか。', answer: 2 },
+        { label: '2番', setupJa: '{病院|びょういん}で、{医者|いしゃ}と{女|おんな}の{人|ひと}が{話|はな}しています。{女|おんな}の{人|ひと}は、{一日|いちにち}に{何回|なんかい}{薬|くすり}を{飲|の}みますか。', setupPt: 'No hospital, o médico e a mulher conversam. Quantas vezes por dia ela toma o remédio?', lines: [
+          { speaker: 'M', ja: 'この{薬|くすり}は、{朝|あさ}と{夜|よる}、ご{飯|はん}を{食|た}べたあとで{飲|の}んでください。', pt: 'Tome este remédio de manhã e à noite, depois das refeições.' },
+          { speaker: 'F', ja: '{昼|ひる}ご{飯|はん}のあとは？', pt: 'E depois do almoço?' },
+          { speaker: 'M', ja: '{昼|ひる}は{飲|の}まないでください。', pt: 'No almoço, não tome.' },
+          { speaker: 'F', ja: 'はい。', pt: 'Sim.' },
+          { speaker: 'M', ja: '{四日間|よっかかん}{飲|の}んでくださいね。', pt: 'Tome por quatro dias.' },
+          { speaker: 'F', ja: '{分|わ}かりました。', pt: 'Entendi.' },
+        ], questionJa: '{一日|いちにち}に{何回|なんかい}{薬|くすり}を{飲|の}みますか。', answer: 2 },
+        { label: '3番', setupJa: 'デパートで、{女|おんな}の{人|ひと}と{店|みせ}の{人|ひと}が{話|はな}しています。{店|みせ}の{人|ひと}は、どのかばんを{取|と}りますか。', setupPt: 'Na loja de departamentos, a mulher e o atendente conversam. Qual bolsa ele pega?', lines: [
+          { speaker: 'F', ja: 'すみません、その{上|うえ}の{黒|くろ}いかばんを{取|と}ってください。', pt: 'Com licença, pegue aquela bolsa preta de cima.' },
+          { speaker: 'M', ja: 'どちらですか。この{小|ちい}さいのですか。', pt: 'Qual? Esta pequena?' },
+          { speaker: 'F', ja: 'いいえ。{大|おお}きいのです。', pt: 'Não, a grande.' },
+          { speaker: 'M', ja: 'はい。', pt: 'Certo.' },
+        ], questionJa: '{店|みせ}の{人|ひと}は、どのかばんを{取|と}りますか。', answer: 3 },
+        { label: '4番', setupJa: '{教室|きょうしつ}で、{先生|せんせい}が{話|はな}しています。{学生|がくせい}は、{机|つくえ}の{上|うえ}に{何|なに}を{置|お}きますか。', setupPt: 'Na sala, o professor fala. O que os alunos põem sobre a mesa?', lines: [
+          { speaker: 'M', ja: '{今|いま}からテストをします。このテストでは、{辞書|じしょ}を{使|つか}う{問題|もんだい}がありますから、{机|つくえ}の{上|うえ}に{辞書|じしょ}を{出|だ}してください。{鉛筆|えんぴつ}と{消|け}しゴムも{出|だ}してください。{時計|とけい}は、かばんの{中|なか}に{入|い}れてください。', pt: 'Vamos fazer a prova. Nela há questões que usam dicionário, então ponham o dicionário sobre a mesa. Ponham também lápis e borracha. O relógio, guardem na bolsa.' },
+          { speaker: 'F', ja: '{先生|せんせい}、ノートはどうしますか。', pt: 'Professor, e o caderno?' },
+          { speaker: 'M', ja: 'ノートもかばんの{中|なか}に{入|い}れてください。', pt: 'O caderno também, guardem na bolsa.' },
+        ], questionJa: '{机|つくえ}の{上|うえ}に{何|なに}を{置|お}きますか。', answer: 3 },
+        { label: '5番', setupJa: 'バスの{中|なか}で、{旅行会社|りょこうがいしゃ}の{人|ひと}が{学生|がくせい}に{話|はな}しています。{学生|がくせい}は、{始|はじ}めに{何|なに}をしますか。', setupPt: 'No ônibus, a guia fala aos alunos. O que eles fazem primeiro?', lines: [
+          { speaker: 'F', ja: '{皆|みな}さん、ホテルに{着|つ}きました。{今|いま}から 1{階|かい}のレストランで{晩|ばん}ご{飯|はん}を{食|た}べます。{晩|ばん}ご{飯|はん}は 7{時|じ}からです。{今|いま}6{時|じ}50{分|ぷん}ですから、すぐに{行|い}ってください。{皆|みな}さんの{荷物|にもつ}は、ホテルの{人|ひと}が{部屋|へや}に{持|も}っていきます。{晩|ばん}ご{飯|はん}のあとは、テレビを{見|み}たり、{買|か}い{物|もの}をしたりしてください。', pt: 'Pessoal, chegamos ao hotel. Agora vamos jantar no restaurante do 1º andar. O jantar é às 19h. São 18h50, então vão logo. A bagagem o pessoal do hotel leva aos quartos. Depois do jantar, assistam TV, façam compras etc.' },
+        ], questionJa: '{学生|がくせい}は、{始|はじ}めに{何|なに}をしますか。', answer: 1 },
+        { label: '6番', setupJa: '{男|おとこ}の{人|ひと}と{女|おんな}の{人|ひと}が{話|はな}しています。{男|おとこ}の{人|ひと}は、{何|なに}を{持|も}っていきますか。', setupPt: 'Um homem e uma mulher conversam. O que o homem vai levar?', lines: [
+          { speaker: 'M', ja: '{来週|らいしゅう}の{日曜日|にちようび}、{海|うみ}へ{行|い}きますね。{何|なに}を{持|も}っていきましょうか。', pt: 'Domingo que vem vamos à praia. O que levamos?' },
+          { speaker: 'F', ja: '{私|わたし}はおにぎりを{持|も}っていきます。', pt: 'Eu levo onigiri.' },
+          { speaker: 'M', ja: 'じゃあ{僕|ぼく}は。', pt: 'Então eu...?' },
+          { speaker: 'F', ja: '{飲|の}み{物|もの}とお{菓子|かし}をお{願|ねが}いします。', pt: 'Bebida e doces, por favor.' },
+          { speaker: 'M', ja: 'はい。{飲|の}み{物|もの}とお{菓子|かし}ですね。', pt: 'Ok, bebida e doces.' },
+          { speaker: 'F', ja: 'あ、{飲|の}み{物|もの}は{重|おも}いですね。{海|うみ}に{着|つ}いてから{買|か}いましょう。', pt: 'Ah, bebida é pesada. Compramos quando chegarmos à praia.' },
+          { speaker: 'M', ja: 'そうですね。', pt: 'É verdade.' },
+        ], questionJa: '{男|おとこ}の{人|ひと}は、{何|なに}を{持|も}っていきますか。', answer: 4 },
+        { label: '7番', setupJa: 'バス{停|てい}で、{女|おんな}の{人|ひと}とバス{会社|がいしゃ}の{人|ひと}が{話|はな}しています。{女|おんな}の{人|ひと}は、{何番|なんばん}のバスに{乗|の}りますか。', setupPt: 'No ponto, a mulher e o funcionário da empresa de ônibus conversam. Que ônibus ela pega?', lines: [
+          { speaker: 'F', ja: 'すみません、1{番|ばん}のバスはみどり{駅|えき}に{行|い}きますか。', pt: 'Com licença, o ônibus 1 vai à estação Midori?' },
+          { speaker: 'M', ja: 'いいえ、みどり{駅|えき}に{行|い}くバスは 3{番|ばん}と 5{番|ばん}と 7{番|ばん}ですよ。', pt: 'Não. Os que vão à Midori são o 3, o 5 e o 7.' },
+          { speaker: 'F', ja: 'そうですか。', pt: 'Ah, sim.' },
+          { speaker: 'M', ja: 'あ、でも、{今日|きょう}は{日曜日|にちようび}ですから、5{番|ばん}のバスはありません。', pt: 'Mas hoje é domingo, então não tem o 5.' },
+          { speaker: 'F', ja: 'そうですか。', pt: 'Entendi.' },
+          { speaker: 'M', ja: 'それから、3{番|ばん}は{朝|あさ}と{夕方|ゆうがた}のバスですから、{今|いま}の{時間|じかん}は 7{番|ばん}ですね。', pt: 'E o 3 só de manhã e à tardinha, então a esta hora é o 7.' },
+          { speaker: 'F', ja: '{分|わ}かりました。ありがとうございます。', pt: 'Entendi, obrigada.' },
+        ], questionJa: '{女|おんな}の{人|ひと}は、{何番|なんばん}のバスに{乗|の}りますか。', answer: 4 },
+      ],
+    },
+    {
+      id: 'n5-2012-listening-q2',
+      title: 'もんだい２ — Compreensão de ponto-chave',
+      descriptionPt: 'Ouça a pergunta, depois o diálogo, e escolha a informação específica pedida. (6 itens + exemplo)',
+      src: '/audio/N5-2012/N5Q2.mp3',
+      script: [
+        { label: '例', setupJa: '{男|おとこ}の{人|ひと}と{女|おんな}の{人|ひと}が{話|はな}しています。{男|おとこ}の{人|ひと}は{昨日|きのう}、どこへ{行|い}きましたか。', setupPt: 'Conversam. Onde o homem foi ontem?', lines: [
+          { speaker: 'M', ja: '{山田|やまだ}さん、{昨日|きのう}どこかへ{行|い}きましたか。', pt: 'Yamada, foi a algum lugar ontem?' },
+          { speaker: 'F', ja: '{図書館|としょかん}へ{行|い}きました。', pt: 'Fui à biblioteca.' },
+          { speaker: 'M', ja: '{駅|えき}のそばの{図書館|としょかん}ですか。', pt: 'A biblioteca perto da estação?' },
+          { speaker: 'F', ja: 'はい。', pt: 'Sim.' },
+          { speaker: 'M', ja: '{僕|ぼく}は{山川|やまかわ}デパートへ{行|い}って、{買|か}い{物|もの}をしました。', pt: 'Eu fui à loja Yamakawa e fiz compras.' },
+          { speaker: 'F', ja: 'え、{私|わたし}も{昨日|きのう}の{夜|よる}、{山川|やまかわ}デパートのレストランへ{行|い}きましたよ。', pt: 'Ah, eu também fui ontem à noite ao restaurante da Yamakawa.' },
+          { speaker: 'M', ja: 'そうですか。', pt: 'É mesmo?' },
+        ], questionJa: '{男|おとこ}の{人|ひと}は{昨日|きのう}、どこへ{行|い}きましたか。', answer: 3 },
+        { label: '1番', setupJa: '{大学|だいがく}で、{男|おとこ}の{学生|がくせい}と{女|おんな}の{学生|がくせい}が{話|はな}しています。{女|おんな}の{学生|がくせい}は、{今日|きょう}、{何時間|なんじかん}{勉強|べんきょう}しますか。', setupPt: 'Na faculdade, dois estudantes conversam. Quantas horas ela vai estudar hoje?', lines: [
+          { speaker: 'M', ja: '{山田|やまだ}さんはいつも{何時間|なんじかん}ぐらい{勉強|べんきょう}しますか。', pt: 'Yamada, quantas horas você costuma estudar?' },
+          { speaker: 'F', ja: 'うーん、{毎日|まいにち}3{時間|じかん}ぐらいです。', pt: 'Hmm, umas 3 horas por dia.' },
+          { speaker: 'M', ja: 'えっ、{私|わたし}は{毎日|まいにち}1{時間|じかん}です。', pt: 'Nossa, eu estudo 1 hora por dia.' },
+          { speaker: 'F', ja: 'あ、でも、{明日|あした}はテストがありますから、{今日|きょう}は 4{時間|じかん}{勉強|べんきょう}します。', pt: 'Ah, mas amanhã tem prova, então hoje vou estudar 4 horas.' },
+          { speaker: 'M', ja: 'そうですか。', pt: 'Entendi.' },
+        ], questionJa: '{女|おんな}の{学生|がくせい}は、{今日|きょう}、{何時間|なんじかん}{勉強|べんきょう}しますか。', answer: 4 },
+        { label: '2番', setupJa: '{男|おとこ}の{人|ひと}と{女|おんな}の{人|ひと}が{話|はな}しています。{女|おんな}の{人|ひと}の{電話番号|でんわばんごう}は{何番|なんばん}ですか。', setupPt: 'Conversam. Qual é o telefone da mulher?', lines: [
+          { speaker: 'M', ja: 'あのう、{山田|やまだ}さんの{電話番号|でんわばんごう}は、512-7734ですね？', pt: 'O telefone da Yamada é 512-7734, certo?' },
+          { speaker: 'F', ja: 'いいえ、7734じゃなくて 7743です。', pt: 'Não, não é 7734, é 7743.' },
+          { speaker: 'M', ja: 'え、ちょっと{待|ま}ってください。メモします。512の。', pt: 'Espere, vou anotar. 512...' },
+          { speaker: 'F', ja: '7743です。', pt: '7743.' },
+          { speaker: 'M', ja: 'はい。ありがとうございました。', pt: 'Certo. Obrigado.' },
+        ], questionJa: '{女|おんな}の{人|ひと}の{電話番号|でんわばんごう}は{何番|なんばん}ですか。', answer: 3 },
+        { label: '3番', setupJa: '{女|おんな}の{学生|がくせい}と{男|おとこ}の{学生|がくせい}が{話|はな}しています。{男|おとこ}の{学生|がくせい}は、だれと{住|す}んでいますか。', setupPt: 'Conversam. Com quem o rapaz mora?', lines: [
+          { speaker: 'F', ja: '{山田|やまだ}さんは、お{父|とう}さんとお{母|かあ}さんと、{一緒|いっしょ}に{住|す}んでいますか。', pt: 'Yamada, você mora com seu pai e sua mãe?' },
+          { speaker: 'M', ja: 'いえ、{両親|りょうしん}は{遠|とお}くに{住|す}んでいます。', pt: 'Não, meus pais moram longe.' },
+          { speaker: 'F', ja: 'そうですか。', pt: 'Ah, entendi.' },
+          { speaker: 'M', ja: 'いま、{姉|あね}と{一緒|いっしょ}に{住|す}んでいます。', pt: 'Agora moro com minha irmã mais velha.' },
+          { speaker: 'F', ja: '{兄弟|きょうだい}は{一人|ひとり}ですか。', pt: 'Você tem só ela de irmã?' },
+          { speaker: 'M', ja: 'あ、{弟|おとうと}もいますよ。{弟|おとうと}は{両親|りょうしん}と{一緒|いっしょ}です。', pt: 'Ah, tenho um irmão mais novo também. Ele está com meus pais.' },
+        ], questionJa: '{男|おとこ}の{学生|がくせい}は、だれと{住|す}んでいますか。', answer: 2 },
+        { label: '4番', setupJa: '{学校|がっこう}で{男|おとこ}の{学生|がくせい}と{女|おんな}の{学生|がくせい}が{話|はな}しています。{二人|ふたり}はどこで{昼|ひる}ご{飯|はん}を{食|た}べますか。', setupPt: 'Na escola, dois estudantes conversam. Onde vão almoçar?', lines: [
+          { speaker: 'M', ja: 'もう 1{時|じ}ですね。{何|なに}か{食|た}べませんか。', pt: 'Já é 1h. Vamos comer algo?' },
+          { speaker: 'F', ja: 'そうですね。でも{今日|きょう}は{土曜日|どようび}だから、{学校|がっこう}の{食堂|しょくどう}や{喫茶店|きっさてん}は{休|やす}みですよ。', pt: 'Vamos. Mas hoje é sábado, então o refeitório e o café da escola estão fechados.' },
+          { speaker: 'M', ja: 'じゃ、パン{屋|や}でパンを{買|か}って、{教室|きょうしつ}で{食|た}べましょうか。', pt: 'Então compramos pão na padaria e comemos na sala?' },
+          { speaker: 'F', ja: 'そうですね。', pt: 'Boa ideia.' },
+        ], questionJa: '{二人|ふたり}はどこで{昼|ひる}ご{飯|はん}を{食|た}べますか。', answer: 4 },
+        { label: '5番', setupJa: '{教室|きょうしつ}で、{先生|せんせい}が{学生|がくせい}に{話|はな}しています。{学生|がくせい}は{何|なに}で{名前|なまえ}を{書|か}きますか。', setupPt: 'Na sala, a professora fala aos alunos. Com o que escrevem o nome?', lines: [
+          { speaker: 'F', ja: 'はい、じゃあちょっと{聞|き}いてください。えー、{来月|らいげつ}のバス{旅行|りょこう}に{行|い}きたい{人|ひと}は、この{紙|かみ}に、ボールペンで{名前|なまえ}を{書|か}いてください。{鉛筆|えんぴつ}じゃなくて、ボールペンですよ。{黒|くろ}で{書|か}いてください。{赤|あか}で{書|か}かないでくださいね。', pt: 'Ouçam um instante. Quem quer ir na excursão de ônibus do mês que vem, escreva o nome neste papel com caneta esferográfica. Não a lápis, com caneta. Em preto. Não escrevam em vermelho.' },
+        ], questionJa: '{学生|がくせい}は{何|なに}で{名前|なまえ}を{書|か}きますか。', answer: 1 },
+        { label: '6番', setupJa: '{女|おんな}の{学生|がくせい}と{男|おとこ}の{学生|がくせい}が{話|はな}しています。{二人|ふたり}は{明日|あした}どこで{会|あ}いますか。', setupPt: 'Conversam. Onde vão se encontrar amanhã?', lines: [
+          { speaker: 'F', ja: '{明日|あした}の{夜|よる}、{一緒|いっしょ}にサッカーを{見|み}に{行|い}きませんか。', pt: 'Amanhã à noite, vamos ver futebol juntos?' },
+          { speaker: 'M', ja: 'いいですね。どこで{会|あ}いましょうか。', pt: 'Boa. Onde nos encontramos?' },
+          { speaker: 'F', ja: '5{時|じ}に{駅|えき}で{会|あ}いませんか。', pt: 'Às 17h na estação?' },
+          { speaker: 'M', ja: '{駅|えき}は{人|ひと}が{多|おお}いですよ。', pt: 'A estação tem muita gente.' },
+          { speaker: 'F', ja: 'そうですね。じゃあ、{駅|えき}の{前|まえ}の{喫茶店|きっさてん}はどうですか。', pt: 'É mesmo. Então no café em frente à estação?' },
+          { speaker: 'M', ja: 'はい、そうしましょう。あ、サッカーを{見|み}てから{近|ちか}くのレストランで{晩|ばん}ご{飯|はん}を{食|た}べませんか。', pt: 'Sim, vamos assim. Ah, depois do futebol, jantamos num restaurante perto?' },
+          { speaker: 'F', ja: 'ええ。じゃ、{明日|あした}5{時|じ}に{会|あ}いましょう。', pt: 'Sim. Então amanhã às 17h.' },
+        ], questionJa: '{二人|ふたり}は{明日|あした}どこで{会|あ}いますか。', answer: 3 },
+      ],
+    },
+    {
+      id: 'n5-2012-listening-q3',
+      title: 'もんだい３ — Expressões em situação',
+      descriptionPt: 'Olhe a cena e escolha o que a pessoa deve dizer. (5 itens + exemplo, 3 opções lidas no áudio)',
+      src: '/audio/N5-2012/N5Q3.mp3',
+      script: [
+        { label: '例', setupJa: 'レストランでお{店|みせ}の{人|ひと}を{呼|よ}びます。{何|なん}と{言|い}いますか。', setupPt: 'No restaurante, você chama o atendente. O que diz?', lines: [
+          { speaker: '1', ja: 'いらっしゃいませ。', pt: '1. Bem-vindo. (é o atendente que diz)' },
+          { speaker: '2', ja: '{失礼|しつれい}しました。', pt: '2. Desculpe o incômodo.' },
+          { speaker: '3', ja: 'すみません。', pt: '3. Com licença! (chamando)' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 3 },
+        { label: '1番', setupJa: 'ご{飯|はん}を{食|た}べました。{何|なん}と{言|い}いますか。', setupPt: 'Você terminou de comer. O que diz?', lines: [
+          { speaker: '1', ja: 'ごちそうさまでした。', pt: '1. Obrigado pela refeição. (ao terminar)' },
+          { speaker: '2', ja: 'いただきます。', pt: '2. Vou comer. (antes de comer)' },
+          { speaker: '3', ja: 'どういたしまして。', pt: '3. De nada.' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 1 },
+        { label: '2番', setupJa: '{電車|でんしゃ}の{中|なか}です。{女|おんな}の{人|ひと}が{来|き}ました。{何|なん}と{言|い}いますか。', setupPt: 'Você está no trem. Uma mulher chegou (em pé). O que diz?', lines: [
+          { speaker: '1', ja: 'どうもありがとう。', pt: '1. Muito obrigado.' },
+          { speaker: '2', ja: '{初|はじ}めまして。', pt: '2. Prazer em conhecê-lo.' },
+          { speaker: '3', ja: 'ここ、どうぞ。', pt: '3. Sente-se aqui, por favor.' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 3 },
+        { label: '3番', setupJa: '{家|うち}へ{帰|かえ}ります。{友達|ともだち}に{何|なん}と{言|い}いますか。', setupPt: 'Você vai para casa. O que diz a um amigo (que fica)?', lines: [
+          { speaker: '1', ja: 'いってきます。', pt: '1. Já vou (e volto). (ao sair de casa)' },
+          { speaker: '2', ja: 'じゃ、また。', pt: '2. Então, até mais.' },
+          { speaker: '3', ja: 'ただいま。', pt: '3. Cheguei. (ao chegar em casa)' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 2 },
+        { label: '4番', setupJa: '{郵便局|ゆうびんきょく}で{切手|きって}を{買|か}います。{何|なん}と{言|い}いますか。', setupPt: 'No correio, você vai comprar selos. O que diz?', lines: [
+          { speaker: '1', ja: '{切手|きって}を{買|か}いませんか。', pt: '1. Não quer comprar selos?' },
+          { speaker: '2', ja: '{切手|きって}をどうぞ。', pt: '2. Aqui, selos. (oferecendo)' },
+          { speaker: '3', ja: '{切手|きって}を{下|くだ}さい。', pt: '3. Me dê selos, por favor.' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 3 },
+        { label: '5番', setupJa: '{友達|ともだち}は{鉛筆|えんぴつ}がありません。{友達|ともだち}に{何|なん}と{言|い}いますか。', setupPt: 'Seu amigo está sem lápis. O que você diz a ele?', lines: [
+          { speaker: '1', ja: '{鉛筆|えんぴつ}、{借|か}りましょうか。', pt: '1. Quer que eu peça um lápis emprestado?' },
+          { speaker: '2', ja: '{鉛筆|えんぴつ}、{使|つか}いますか。', pt: '2. Quer usar (meu) lápis?' },
+          { speaker: '3', ja: '{鉛筆|えんぴつ}、{貸|か}してください。', pt: '3. Me empreste um lápis, por favor.' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 2 },
+      ],
+    },
+    {
+      id: 'n5-2012-listening-q4',
+      title: 'もんだい４ — Resposta rápida',
+      descriptionPt: 'Ouça a fala e escolha a resposta mais natural. (6 itens + exemplo, 3 opções)',
+      src: '/audio/N5-2012/N5Q4.mp3',
+      script: [
+        { label: '例', setupJa: 'お{国|くに}はどちらですか。', setupPt: 'De que país você é?', lines: [
+          { speaker: '1', ja: 'あちらです。', pt: '1. É por ali.' },
+          { speaker: '2', ja: 'アメリカです。', pt: '2. Sou dos Estados Unidos.' },
+          { speaker: '3', ja: '{部屋|へや}です。', pt: '3. É um quarto.' },
+        ], questionJa: 'どれが いいですか。', answer: 2 },
+        { label: '1番', setupJa: '{今日|きょう}は{何日|なんにち}ですか。', setupPt: 'Que dia (do mês) é hoje?', lines: [
+          { speaker: '1', ja: '{三日|みっか}です。', pt: '1. É dia 3.' },
+          { speaker: '2', ja: '3{週間|しゅうかん}です。', pt: '2. São 3 semanas.' },
+          { speaker: '3', ja: '3{時|じ}です。', pt: '3. São 3 horas.' },
+        ], questionJa: 'どれが いいですか。', answer: 1 },
+        { label: '2番', setupJa: 'すみません、{図書館|としょかん}はどこですか。', setupPt: 'Com licença, onde fica a biblioteca?', lines: [
+          { speaker: '1', ja: 'あそこです。', pt: '1. É ali.' },
+          { speaker: '2', ja: '6{時|じ}までです。', pt: '2. É até as 6h.' },
+          { speaker: '3', ja: '{本|ほん}を{借|か}ります。', pt: '3. Vou pegar um livro emprestado.' },
+        ], questionJa: 'どれが いいですか。', answer: 1 },
+        { label: '3番', setupJa: '{明日|あした}、{何時|なんじ}に{学校|がっこう}に{来|き}ますか。', setupPt: 'Amanhã, a que horas você vem à escola?', lines: [
+          { speaker: '1', ja: 'バスで{来|き}ます。', pt: '1. Venho de ônibus.' },
+          { speaker: '2', ja: '9{時半|じはん}です。', pt: '2. Às 9h30.' },
+          { speaker: '3', ja: '6{人|にん}です。', pt: '3. São 6 pessoas.' },
+        ], questionJa: 'どれが いいですか。', answer: 2 },
+        { label: '4番', setupJa: '{田中|たなか}さん、その{荷物|にもつ}を{持|も}ちましょうか。', setupPt: 'Tanaka, quer que eu carregue essa bagagem?', lines: [
+          { speaker: '1', ja: 'どういたしまして。', pt: '1. De nada.' },
+          { speaker: '2', ja: '{持|も}ちませんでした。', pt: '2. Não carreguei.' },
+          { speaker: '3', ja: 'ありがとうございます。', pt: '3. Muito obrigado.' },
+        ], questionJa: 'どれが いいですか。', answer: 3 },
+        { label: '5番', setupJa: 'ちょっと{休|やす}みませんか。', setupPt: 'Vamos descansar um pouco?', lines: [
+          { speaker: '1', ja: '{日曜日|にちようび}です。', pt: '1. É domingo.' },
+          { speaker: '2', ja: 'お{元気|げんき}ですか。', pt: '2. Como vai?' },
+          { speaker: '3', ja: 'そうしましょう。', pt: '3. Vamos sim.' },
+        ], questionJa: 'どれが いいですか。', answer: 3 },
+        { label: '6番', setupJa: 'それは、{何|なん}の{本|ほん}ですか。', setupPt: 'Que livro é esse?', lines: [
+          { speaker: '1', ja: '{料理|りょうり}の{本|ほん}です。', pt: '1. É um livro de culinária.' },
+          { speaker: '2', ja: '{私|わたし}の{本|ほん}です。', pt: '2. É o meu livro.' },
+          { speaker: '3', ja: 'はい、そうです。', pt: '3. Sim, é isso.' },
+        ], questionJa: 'どれが いいですか。', answer: 1 },
+      ],
+    },
+  ],
+}
+
 export const n5_2012: Level = {
   id: 'N5-2012',
   courseId: 'jlpt',
   titlePt: 'N5 — Simulado 2012',
   descriptionPt:
-    'Segunda leva de prática do N5: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 聴解 com áudio será adicionado.)',
-  sections: [vocabulary, grammar, reading],
+    'Segunda leva de prática do N5: simulado completo a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial, explicações em pt-BR e áudio oficial na audição.',
+  sections: [vocabulary, grammar, reading, listening],
 }
