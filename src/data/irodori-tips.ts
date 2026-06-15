@@ -1034,7 +1034,376 @@ Terminado o material, continue estudando — ainda mais se mora no Japão. Camin
 // ---------------------------------------------------------------------
 //  中級 (Pre-Intermediate / B1)
 // ---------------------------------------------------------------------
-const PRE_INTERMEDIATE_NOTES: StudyNote[] = []
+const PRE_INTERMEDIATE_NOTES: StudyNote[] = [
+  {
+    title: 'Lição 1',
+    bodyPt: `## Sumô
+Esporte tradicional: dois lutadores se chocam num ringue circular; perde quem sai dele ou toca o chão com algo que não a sola dos pés. Originou-se como rito religioso e hoje é o **kokugi** (esporte nacional). Lutas curtas (segundos). Há 6 torneios por ano (**hon-basho**, 15 dias cada): janeiro/maio/setembro em Tóquio (Kokugikan), março em Osaka, julho em Nagoya, novembro em Fukuoka. Muitos lutadores estrangeiros viraram **yokozuna** (grande campeão), a maioria da Mongólia. Ingressos são difíceis; uma opção é o **chihō jungyō** (turnês regionais), com lutas, fotos e autógrafos.
+
+## Rakugo
+Arte cênica em que um único contador (**rakugoka**) interpreta vários personagens sentado, mudando a voz e a direção do rosto, usando só um leque e uma toalha. Histórias em geral cômicas, com um **ochi** (desfecho engraçado). Vê-se em teatros **yose**, em encontros (**rakugo-kai**) e em vídeos online (alguns legendados).
+
+## Nihon ou Nippon?
+"日本" tem duas leituras. **Nihon** é a do dia a dia (nihon-go, nihon-ryōri, nihon-bunka). **Nippon** é mais formal/solene (no nome oficial do país, no "NIPPON GINKO" das cédulas, e em torcidas: "Ganbare! Nippon!"). Ao falar, use **nihon**; ao ouvir **nippon**, é o mesmo.
+
+## Festivais de outros países
+Em várias cidades há festivais que apresentam culturas estrangeiras (Tailândia, Vietnã, Indonésia, Brasil etc.), em geral em parques no fim de semana. Tem comida típica, produtos, dança e música — quase sempre grátis. Boa chance de encontrar conterrâneos e se ligar à comunidade local.
+
+## Teatro japonês
+Há desde artes clássicas — **Kabuki**, **Nō**, **Kyōgen** — até o teatro moderno. **Takarazuka** é uma companhia só de mulheres (que fazem papéis masculinos e femininos), com mais de 100 anos. **Gekidan Shiki** é uma das maiores companhias (de musicais da Disney a produções originais).
+
+## COVID-19
+No Japão a doença é chamada **korona**. Espalhou-se na primavera de 2020; em abril/2020 declarou-se "estado de emergência" (saídas restritas, escolas/lojas fechadas, máscaras, distanciamento). Em maio/2023 deixou de ter tratamento especial, passando a ser como a gripe. Hoje a vida voltou quase ao normal e o uso de máscara é opcional (mas pode ser exigido em hospitais e casas de repouso).`,
+  },
+  {
+    title: 'Lição 2',
+    bodyPt: `## Apps de mangá
+Muito populares: hoje, sobretudo entre jovens, lê-se mais mangá no celular do que em papel. Há propaganda nas redes que mostra só um trecho para atrair leitores. Modelos de leitura grátis: alguns totalmente livres, outros com os primeiros capítulos, "grátis após assistir anúncio" ou "espere e leia" (libera com o tempo). Muitos autores publicam direto nas redes, e os sucessos viram livros. Bom para treinar conversa, kanji e vocabulário.
+
+## Onomatopeias
+Palavras que expressam sons, movimentos e sentimentos — usadíssimas. Tipos: **giseigo/giongo** (sons: latido, vento), **gitaigo** (estado/movimento: "à toa", "brilhando") e **gijōgo** (sentimentos: irritação, empolgação, susto). Há até várias para a chuva caindo e uma para o silêncio. Aprendem-se bem em mangá; sites úteis: Hikidasu, Erin, Anime & Manga (Japan Foundation).
+
+## Usos especiais de furigana
+Em mangá e letras de música, um kanji às vezes recebe um furigana que **não** é a leitura normal, para indicar um sentido. Ex.: 勇者 ("herói") com a leitura これ ("este"); ou 地球 lido como "planeta", 宇宙 como "céu". Repare como o kanji original e a leitura escolhida se conectam.
+
+## "SLAM DUNK" e mangás de esporte
+**SLAM DUNK** (de Inoue Takehiko, Shōnen Jump, 1990–1996) conta Sakuragi Hanamichi, um iniciante total no basquete que cresce junto com o time — não é só esporte, é o drama dos personagens. Em 2022 saiu o filme *THE FIRST SLAM DUNK*. Há muitos mangás esportivos: *Captain Tsubasa* (futebol), *Haikyu!!* (vôlei), *O Príncipe do Tênis*.
+
+## Mangá em outras mídias
+Mangás populares viram anime, filmes e doramas com atores (ex.: *Nodame Cantabile*), e até peças e musicais — o chamado **2.5D** ("2D" do mangá encenado em "3D"). Obras como *ONE PIECE*, *Nausicaä* e *Lupin III* já foram encenadas como **kabuki**, unindo mangá e cultura tradicional.
+
+## Touken Ranbu ONLINE
+Jogo online (desde 2015) em que espadas japonesas viram personagens (**tōken danshi**); o jogador é um **saniwa** que protege a história. Virou anime, peças e musicais. Despertou interesse por espadas reais em museus e santuários, ajudando a preservá-las.
+
+## Yonezu Kenshi
+Cantor e compositor popular. Começou na internet com Vocaloid (como **HACHI**) e estreou com o nome real em 2012. Sucessos: "Lemon", "Fireworks", "Flamingo". Também compõe para outros (o hit "Paprika", do grupo Foorin) e faz temas de filmes (*O Menino e a Garça*). Marca registrada: melodias e letras próprias, capas que ele mesmo desenha e videoclipes autorais.
+
+## Doramas gastronômicos e "Kodoku no Gourmet"
+Os **doramas de comida** fazem sucesso. *Kodoku no Gourmet* ("O Gourmet Solitário", de um mangá) acompanha um homem de meia-idade que come sozinho, em silêncio, em vários restaurantes — estilo simples, foco na comida. Outros: *Wakako-zake*, *O Que Você Comeu Ontem?*. Muitos usam restaurantes reais, gerando o **seichi junrei** (peregrinação aos locais) e movimentando os estabelecimentos. Ótima porta de entrada para a cultura gastronômica japonesa.`,
+  },
+  {
+    title: 'Lição 3',
+    bodyPt: `## Unidades próprias do Japão
+Usam-se metro e litro, mas algumas unidades tradicionais persistem:
+- **Jō (畳)**: tamanho de um tatami (no anúncio imobiliário, 1 jō ≈ 1,62 m²). Um quarto de **6 jō** é padrão; **4,5 jō** (*yo-jō-han*) é pequeno. Hoje grafa-se também 帖.
+- **Tsubo (坪)**: ~3,3 m² (≈ 2 tatamis), para áreas e terrenos; um 2–3LDK tem ~15–20 tsubo. Preço de terreno às vezes vem por tsubo. Para áreas enormes usa-se "x vezes o Tokyo Dome" (46.755 m²).
+- **Gō (合) e shō (升)**: para líquidos e grãos. 1 gō = 180 ml; 1 shō = 10 gō = 1.800 ml. Saquê/shōchū vendem-se em garrafa de 4 gō (720 ml) ou de 1 shō (1.800 ml); arroz mede-se em gō.
+
+## Alugar um quarto
+Pontos importantes do sistema imobiliário:
+- **Imobiliárias** (*fudōsan*) perto das estações, e sites como **SUUMO** e **HOME'S**.
+- **Shikikin** (caução, em geral devolvida, menos o reparo) e **reikin** (luvas ao proprietário, não devolvida) — costumam ser 1–2 meses de aluguel; já há imóveis sem reikin.
+- **Contrato**: em geral 2 anos, com **kōshin-ryō** (taxa de renovação, ~1 mês) ao renovar.
+- **Fiador** (*hoshōnin*): se não houver, usa-se **empresa de garantia** (com taxa).
+- **Direção do quarto**: os voltados ao **sul** (mais sol) são valorizados; ao norte, evitados (frios, roupa não seca) — influencia o aluguel.
+- **Unit bath**: banho, vaso e pia num só cômodo (aluguel mais barato). Confira se são separados.
+- **Gás**: encanado (*toshi gasu*, mais barato, comum nas cidades) ou de botijão (*propano/LP*, mais caro, comum no interior).
+- **Aluguel a estrangeiros**: ainda há recusas, mas cresce a oferta e o atendimento em outras línguas.
+
+## Mudança (procedimentos)
+**Antes**: avise o proprietário (~1 mês antes) e marque a vistoria; na prefeitura atual, faça o **tenshutsu-todoke** (saída) e receba o **tenshutsu-shōmeisho**; avise luz/água/gás/internet; faça o reencaminhamento de correspondência no correio. **Depois**: na nova prefeitura, faça o **tennyū-todoke** (entrada) levando o comprovante de saída + zairyū card / My Number, em até **14 dias** (o novo endereço vai no verso do cartão); reative os serviços; atualize o endereço na CNH (delegacia) e em banco/operadora.`,
+  },
+  {
+    title: 'Lição 4',
+    bodyPt: `## Problemas em casa
+Em imóvel alugado podem surgir vazamentos, ar-condicionado quebrado, ninho de vespa na varanda ou perda de chave. Primeiro, **contate o proprietário ou a administradora** — eles costumam mandar alguém consertar. O contato de emergência está no contrato ou no **guia de entrada** (*nyūkyo no shiori*); às vezes há "suporte 24h". Evite consertar por conta (pode não ser ressarcido ou ser cobrado na saída). Cuidado com panfletos de empresas que cobram muito mais que o anunciado.
+
+## Ninhos de vespa
+Da primavera ao outono, vespas fazem ninho em varandas, beirais e na unidade externa do ar-condicionado. Atenção a duas: **ashinagabachi** (marimbondo, corpo fino, pernas penduradas, calmo; ninho tipo chuveiro) e **suzumebachi** (vespa-gigante, grande e agressiva, picada perigosa — pode dar reação alérgica e exigir hospital; ninho redondo e grande). Não remova sozinho: contate o proprietário/administradora; alguns governos locais ajudam ou dão apoio financeiro.
+
+## Conflitos com vizinhos
+Em prédios há atritos por **barulho, cheiro e lixo** — diferenças culturais podem causar problemas sem você perceber (paredes finas; festas até tarde, música/instrumento alto, regras de lixo, objetos em área comum). Se for incomodado, **não fale direto** com a pessoa — procure a administradora/proprietário. Se reclamarem de você, mantenha a calma, ouça e diga o que vai fazer ("dō sureba ii desu ka?"); se não sabia ("shiranakatta desu"), explicar costuma resolver. Respeito mútuo constrói boa convivência.`,
+  },
+  {
+    title: 'Lição 5',
+    bodyPt: `## Automação em restaurantes
+Cada vez mais redes usam máquinas:
+- **Recepção**: digite o nº de pessoas na tela; guarde o papel com o número (pode precisar para pagar).
+- **Pedido**: por **tablet** na mesa (às vezes muda de idioma) ou por **smartphone** (escaneie o QR ou use o app da rede).
+- **Servir**: alguns family restaurants usam **robôs**; confira o prato, pegue e aperte o botão "pronto".
+- **Pagamento**: caixas de autoatendimento na saída (escaneie o recibo; dinheiro, cartão, e-money). Na dúvida, peça ajuda ao funcionário.
+
+## Monjayaki
+Massa de trigo bem aguada com repolho, **tenkasu**, camarão etc., feita na chapa — típica da **shitamachi** de Tóquio (Tsukishima é famosa). Parecida com okonomiyaki, mas mais líquida e de textura mole/pegajosa. Faz-se um anel com os ingredientes, despeja-se a massa no centro, mistura-se e come-se direto da chapa com a espatulinha (**hagashi**), deixando dourar um pouco.
+
+## Janken (pedra-papel-tesoura)
+Jogo de mãos usadíssimo para decidir/escolher. Três formas: **guu** (pedra), **choki** (tesoura), **paa** (papel). Pedra vence tesoura, tesoura vence papel, papel vence pedra. Chama-se "saisho wa guu" (primeiro pedra) e "jankenpon"; empate é **aiko** ("aiko desho"). As chamadas variam por região.
+
+## Cozinha de Okinawa
+A antiga **Ryūkyū** teve contato com a China e o Sudeste Asiático, criando uma culinária própria com muito porco e vegetais locais:
+- **Soba de Okinawa**: macarrão de trigo grosso em caldo leve de porco e peixe, com **sōki** (costela) ou kamaboko.
+- **Champurū**: refogado de tofu, legumes e ovo — o mais famoso é o **gōyā champurū** (melão-amargo).
+- **Sata andagi**: bolinhos fritos doces, tipo sonho.
+- **Awamori**: shōchū de arroz tailandês (20–60%); envelhecido vira **kūsū**. Também a cerveja **Orion** e drinques com **shikuwasa**.
+
+## Kyūshoku (merenda escolar)
+Almoço que a escola serve; em mais de 90% das escolas públicas. O cardápio é planejado por nutricionistas (equilibrado), igual para todos (pão/arroz, prato principal, acompanhamento, leite). Pode ter pratos regionais ou de datas (chirashi-zushi no Hinamatsuri). Os alunos comem na sala e se revezam servindo (**kyūshoku-tōban**).
+
+## Imposto da cidade natal (furusato nōzei)
+Sistema em que você **doa** a qualquer cidade do Japão e abate parte do imposto que pagaria ao seu governo local. Em troca recebe **brindes** (carne, frutos do mar, frutas, arroz etc.) — o grande atrativo. Fácil de fazer online, mas é preciso completar certos passos para ter o benefício fiscal.`,
+  },
+  {
+    title: 'Lição 6',
+    bodyPt: `## Goro-awase (trocadilho com números)
+Lê-se números como sons japoneses para formar palavras. Ex.: 29 = **niku** (carne), então todo dia 29 é o "Dia da Carne". Cada algarismo tem várias leituras (1: ichi/i/hito/hi; 2: ni/futa/fu; 8: hachi/ha/ya; 0: rei/maru/o...). Usos:
+- **Datas comemorativas**: 22/11 = "Bom Casal", 9/6 = "Dia do Rock", 31/8 = "Dia dos Vegetais".
+- **Telefones**: 4126 ("ii furo", bom banho — hotéis de onsen); 6480 ("mushiba zero", zero cárie — dentistas).
+- **Anos históricos**: 794 (capital em Kyoto), 1868 (Restauração Meiji).
+- **Senhas/números**: 5963 ("gokurō-san", obrigado pelo esforço), 4649 ("yoroshiku").
+
+## Supermercados de atacado
+Vendem alimentos para restaurantes/izakaya, mas qualquer um pode comprar. Quantidades maiores e mais baratas (frango/gyōza por quilo, bebida de 2 L por caixa) e muitos itens de longa duração (congelados, temperos, secos, enlatados) e produtos internacionais. Bom para economizar ou achar comida do seu país.
+
+## Entrega de comida (demae)
+**Demae** (pedir comida em casa) é antigo no Japão: soba/sushi entregavam de moto em louça de verdade, recolhida depois (lave e deixe na entrada). Hoje, nas cidades, são populares **Uber Eats** e **Demae-kan**: o restaurante faz e um entregador leva; pede-se por app/site, com muitas opções (bentō, sushi, curry, ramen...). Custa mais que comer no local, mas é prático quando se está ocupado ou com visitas.`,
+  },
+  {
+    title: 'Lição 7',
+    bodyPt: `## Centros para crianças (jidōkan)
+Locais onde crianças brincam e aprendem, mantidos sobretudo por governos locais, em geral **gratuitos** (alguns só para moradores ou certas idades — confira o site). Têm brinquedos, livros, espaço para se mexer e eventos sazonais. Também apoiam quem cria filhos (encontros entre pais, consultas, palestras, informações locais).
+
+## Times de beisebol profissional
+O "Carp" do texto é o **Hiroshima Tōyō Carp**. O Japão tem **12 times** profissionais, cada um ligado a uma cidade/região, com torcida local. Ir ao estádio é ótimo mesmo sem entender muito de beisebol — vale pela atmosfera, pela torcida ritmada e por comer e beber assistindo. (Sedes em 2026 incluem Rakuten/Sendai, Nipponham/Hokkaido, Seibu/Saitama, Hanshin/Hyōgo, ORIX e Buffaloes/Osaka, SoftBank/Fukuoka, Carp/Hiroshima, Lotte/Chiba, Giants e Swallows/Tóquio, DeNA/Yokohama, Chunichi/Nagoya.)`,
+  },
+  {
+    title: 'Lição 8',
+    bodyPt: `## Shōgi
+Jogo de tabuleiro com mais de 1.000 anos no Japão (origem indiana), parecido com xadrez: dois jogadores movem peças num tabuleiro 9×9 para capturar o "rei" adversário. Regras simples, mas leva tempo para dominar (ajuda raciocínio e concentração). Há profissionais (Habu Yoshiharu, Fujii Sōta) e partidas na TV/online. Para começar, procure clubes/aulas locais (site da Associação Japonesa de Shōgi); não é preciso falar japonês fluente.
+
+## Hello Kitty (Kitty-chan)
+Personagem criada em 1974 pela **Sanrio**, reconhecida pelo laço vermelho. Amada por todas as idades no mundo todo; aparece em ~50.000 produtos por ano em 130 países/regiões — um ícone da cultura **kawaii**. No perfil, "nasceu" nos arredores de Londres e adora assar biscoitos e tocar piano.
+
+## Túmulos e cemitérios
+No Japão quase sempre se faz **cremação**; as cinzas vão a um túmulo. O tradicional tem um pilar de pedra (**hakaishi**) com o nome/sobrenome ou "Túmulo dos Ancestrais". Muitos ficam em terrenos de **templos** (em áreas residenciais), e no interior há túmulos perto de casas e arrozais — o que surpreende estrangeiros. Há também **reien** (cemitérios), amplos, geridos por governos/empresas em lugares calmos, mantidos como parques e usáveis por qualquer religião. Em grandes cemitérios há túmulos de gente famosa.`,
+  },
+  {
+    title: 'Lição 9',
+    bodyPt: `## Exames de proficiência em japonês
+Há vários; escolha o que combina com você:
+- **JLPT** (Japanese Language Proficiency Test): o mais conhecido do mundo (1,47 milhão de inscritos em 2024). 5 níveis, N5 (fácil) a N1 (difícil); mede leitura e escuta; aprovado/reprovado, às vezes exigido para emprego/estudo/visto. Desde dez/2025 também mostra o nível CEFR (A1–C1). Duas vezes/ano (julho e dezembro).
+- **JFT-Basic** (Japan Foundation): mede o japonês do dia a dia (A2); por computador, o ano todo; usado para o visto "Trabalhador com Habilidade Específica (i)".
+- **Outros**: EJU (admissão em universidade), BJT (japonês de negócios), OPI/OPIc (fala). Há mais de 20 listados pela Agência de Assuntos Culturais.
+
+## Dialetos japoneses (hōgen)
+O país tem dialetos com vocabulário e pronúncia próprios (no passado as pessoas viajavam pouco). No dia a dia usam-se dialeto e **kyōtsūgo** (japonês padrão, base de Tóquio) conforme a situação.
+- **Tōhoku** (Akita, Aomori...): mudanças de vogais e muitos sons sonoros; "soou como francês" para alguns; famoso pelo dorama *Oshin*.
+- **Kansai** (Osaka, Kyoto): vocabulário e **entonação** bem diferentes (ōkini = obrigado; akan = não pode; nanbo = quanto); muito ouvido pelos comediantes na TV.
+- **Kyūshū** (ex.: **Hakata-ben** de Fukuoka): adjetivos terminados em -ka; também o **Satsuma-ben** de Kagoshima, comum em doramas históricos.
+- **Okinawa**: separou-se do japonês antes da era Nara — alguns o consideram língua à parte (línguas ryukyuanas), muito variável por ilha; hoje usa-se o **Uchinā Yamatu-guchi** (japonês okinawano).
+
+Obs.: "**-ben**" (Ōsaka-ben etc.) é comum, mas alguns evitam por achar que pode soar pejorativo.`,
+  },
+  {
+    title: 'Lição 10',
+    bodyPt: `## Sites de japonês da Japan Foundation (JF)
+A JF (que faz o Irodori) mantém vários sites/apps gratuitos:
+- **JF Japanese e-Learning Minato** (minato-jf.jp): cursos por nível/objetivo, com cadastro.
+- **Marugoto Plus**: pratica o coursebook Marugoto (conversa, gramática, vocabulário, kanji).
+- **Erin's Challenge**: aprende com vídeos de ensino médio, legendas em vários idiomas.
+- **Hirogaru**: 12 temas (artes marciais, doces, música...) por vídeos e artigos.
+- **NHK World-Japan Easy Japanese**: esquetes animados, explicações em 20 idiomas.
+- Também: Anime & Manga, Activate Your Japanese!, KANJI Memory Hint, Nihongo e-na.
+
+## Aprendizado em tandem
+Duas pessoas ensinam uma à outra a língua que querem aprender (ex.: um vietnamita estudando japonês e um japonês estudando vietnamita), como **iguais**, não professor-aluno. Pode ser presencial (mais informação nas reações) ou online (com pessoas distantes). Cuidado: alguns usam esses encontros para paquera ou para convidar a alguma religião — prefira serviços confiáveis (grupos de intercâmbio, aulas, apps de tandem).
+
+## IA e o aprendizado de japonês
+**IA** (inteligência artificial) já se usa em imagens, transcrição de voz e carros autônomos. A **IA generativa** cria texto/imagem a partir do que aprendeu. Para estudar japonês, dá para: pedir correção de frases suas, perguntar o significado de palavras, reescrever em japonês fácil ou traduzir, fotografar um documento difícil e pedir explicação, comparar gramática com exemplos, gerar exercícios e treinar conversa por escrito. É como um professor — mas a IA **nem sempre acerta**, então confira com alguém ou um professor.`,
+  },
+  {
+    title: 'Lição 11',
+    bodyPt: `## E-mails golpistas (phishing)
+Chegam muitos golpes por e-mail, **SMS** e redes, fingindo ser bancos, cartões, lojas ou transportadoras ("há um problema na sua conta", "tentamos entregar um pacote"). Sinais: endereço estranho do remetente, erros de português/japonês, palavras de pressão ("urgente", "imediatamente"). Em dúvida, busque o título do e-mail online. Regra: **não abrir, não clicar, não responder**. Se caiu (digitou senha/cartão), troque a senha ou bloqueie o cartão; se mandou dinheiro, procure a polícia. Aja rápido e não se culpe.
+
+## Objetos perdidos
+No Japão é comum reaver o que se perde (~70% das carteiras voltam ao dono).
+- Sabe onde perdeu? Contate logo o achados e perdidos (estação, empresa de ônibus, recepção da loja) e dê o máximo de detalhes.
+- Na rua: vá a um **kōban** (posto policial); se não achou, preencha o **registro de perda** e aguarde. Cartões: avise a empresa para bloquear.
+- **Achou** algo? Não leve para casa — entregue no kōban ou ao funcionário. Ficar com objeto alheio é crime (apropriação).
+
+## Entrada em shows e eventos
+- **Ingressos/QR**: em papel (compra online + impressão no konbini) ou eletrônico (mostra o QR na entrada).
+- **Revista de bagagem**: em grandes eventos pode haver checagem; itens proibidos (garrafas, latas, câmeras, bagagem grande) ficam num guarda-volumes.
+- **Antirrevenda e conferência de identidade**: a revenda (**tenbai**) é problema; pode haver checagem de ID (de todos ou por sorteio) confrontando o nome da compra e a foto.
+- **Assentos**: às vezes só revelados ao escanear o QR (também antirrevenda). **Assento de arena** = cadeiras no piso plano da arena, perto do palco.
+
+## Verificação de identidade
+Confirmar que você é quem diz, mostrando documento com nome e endereço. Podem pedir: nome completo, nacionalidade, trabalho/escola, data de nascimento, endereço, telefone (oral, por escrito ou em tela). Documentos (de preferência com foto): **zairyū card** (residentes de médio/longo prazo), **passaporte** (turistas), **My Number Card**, **CNH japonesa**. Como o estrangeiro deve portar sempre o zairyū card, ele é o melhor para mostrar. Exigida ao abrir conta, contratar celular, em repartições, ao receber encomenda nominal e em eventos.
+
+## My Number Card
+Cartão IC com foto e um número de **12 dígitos** (My Number), emitido a todos os residentes (estrangeiros de médio/longo prazo também recebem o número ao se registrar; depois solicitam o cartão, no balcão ou pelo celular). Serve como ID com foto, cartão do seguro de saúde (unificado desde dez/2025), e para procedimentos, imposto e abrir conta. Para o estrangeiro nem sempre é obrigatório (há o zairyū card), mas é útil. Em jun/2026 chega o "zairyū card especial", que combina os dois.`,
+  },
+  {
+    title: 'Lição 12',
+    bodyPt: `## Kakegoe (exclamações de apoio)
+Palavrinhas ditas ao fazer uma ação ou sincronizar com outros — sem sentido específico, mas comuns:
+- **Sozinho**, ao levantar peso/sentar: **"yoisho"** (e variações).
+- **Em grupo**, ao erguer algo junto: **"se-no"** ou **"ichi-ni-no-san"** (combine o tempo no trabalho).
+- **"Ei!" / força num instante**: ao atacar no marcial, abrir uma tampa dura, ou enfim apertar "enviar".
+- **Foto**: **"hai, chiizu!"** (mas como termina em "zu" a boca não sorri — daí "ichi tasu ichi wa? ni!").
+- Carregar mikoshi: **"wasshoi"**. Quase caindo: **"otto"**.
+
+## Itens úteis das lojas de ¥100
+Têm muitos itens engenhosos baratos:
+- **Sacos a vácuo para roupa**: tiram o ar e achatam a roupa (viagem/armazenamento).
+- **Utensílios de micro-ondas**: cozinham massa, arroz, ovo, legumes — sem fogo, ideais para porção individual.
+- **Prendedor de meias**: prende os pares para lavar e secar juntos.
+- **Seladores fáceis**: re-selam saquinhos abertos com calor.
+- **Esponjas de melamina**: limpam só com água (conhecidas como "Magic Eraser").
+
+## Haniwa (figuras de barro)
+Figuras toscas de barro em forma de pessoas, animais e construções, feitas no período Kofun (séc. III–VII) e postas nos **kofun** (túmulos de reis e nobres). Pelo visual peculiar, hoje viram personagens fofos e souvenirs (chaveiros, papelaria em museus).
+
+## Alertas e avisos meteorológicos
+A Agência Meteorológica emite, por risco de desastre: **keihō** (alerta, risco sério — proteja a vida), **chūihō** (aviso, risco menor) e **tokubetsu keihō** (alerta especial, perigo extremo, raríssimo). Há de chuva forte, inundação, neve, vento/tempestade. Também: **alertas de tsunami** (saia logo do mar, vá para o alto), **alertas vulcânicos** (níveis 1–5), **alerta sísmico antecipado** (segundos antes do tremor forte) e **alerta de insolação** no verão. Chegam por TV, apps e rádio de prevenção — evite sair e siga as instruções do governo local; instale apps e veja o hazard map.
+
+## Os kanji de idade (才 e 歳)
+"~sai" (anos) tem dois kanji: o oficial **歳** (documentos, jornais) e o **才** (originalmente "talento"), usado por ser fácil de escrever — comum em livros infantis e anotações casuais. Em situações oficiais, use **歳**; para crianças ou no informal, **才** serve.`,
+  },
+  {
+    title: 'Lição 13',
+    bodyPt: `## Internação (nyūin)
+Ficar dias no hospital em tratamento. Leve seus itens (escova, copo, roupa íntima, pijama, chinelo) — alguns hospitais alugam ou têm loja. No Japão a internação tende a ser **mais longa** (apendicite pode dar ~1 semana). **Quartos**: coletivo (~4 pessoas, separadas por cortina, sem custo extra) ou privativo (privacidade, mas com **taxa de leito**, não coberta pelo seguro — salvo se não houver coletivo). Ao sair, paga-se a conta: com seguro japonês você paga só uma parte, e há o **sistema de despesas médicas altas** (reembolso acima de certo valor), também para estrangeiros com visto e seguro. Alguns hospitais oferecem **intérprete médico** (peça antes).
+
+## Sistema educacional japonês
+- **Infância (0–6)**: creche (**hoikuen**), jardim (**yōchien**) ou centro certificado.
+- **Obrigatório (6–15)**: primária (6 anos) + ginásio (3) = 9 anos; em escola pública, sem mensalidade e com livros grátis.
+- **Ensino médio (a partir dos 15)**: 3 anos, não obrigatório, mas ~99% cursam.
+- **Superior**: universidade (4 anos), faculdade de 2 anos (**tanki daigaku**) ou escola técnica/profissional (1–4 anos); ~60% dos formandos do médio vão à universidade. Há ainda **kōsen** (5 anos, técnico, após o ginásio).
+- **Pós**: mestrado (~2 anos) e doutorado (~3 anos).
+
+## Animais de estimação
+Cão e gato são os mais comuns (também coelho, hamster, pássaro, peixe, tartaruga). **Muitos prédios não permitem** — confira as regras antes; ter pet escondido pode levar a despejo ou multa. Mesmo onde é permitido, latido, cheiro e dejetos incomodam vizinhos; pet exige cuidado diário e vacinas. Para viagens, há **pet hotel** e **pet sitter**; e cresce a hospedagem que aceita pets.
+
+## Halloween
+Veio de festas europeias (colheita e espíritos). Nos EUA virou evento infantil ("Trick or Treat!"). No Japão popularizou-se nos anos 2000 por parques e lojas; em outubro há decoração laranja e doces de abóbora. Aqui crianças **não** saem de porta em porta — jovens e adultos se fantasiam e se reúnem nas ruas (Shibuya lota, com problemas de segurança). Tornou-se evento de adultos, sem peso religioso.
+
+## Aposentadoria (taishoku)
+Como a pensão começa aos **65**, muitos se aposentam nessa idade. Aposentar na idade fixada pela empresa é **teinen taishoku**; alguns saem antes. Há quem se aposente como efetivo aos 60 e siga até 65 como contratado (**reemprego pós-aposentadoria**). Trabalhar na mesma empresa do início ao fim é o **shūshin koyō** (emprego vitalício), hoje menos comum (mais gente troca de emprego ou abre negócio). Algumas pagam **taishokukin** (verba rescisória), conforme a empresa.
+
+## Bolha econômica (Bubble)
+De ~1986, o Japão viveu grande euforia ("bolha": preços altos sem valor real). Terras e ações dispararam, empresas lucraram, gastava-se livremente (clientes em clubes de Ginza, marcas de luxo, viagens). Por volta de **1990** veio o estouro: preços despencaram, empresas quebraram, muita gente perdeu o emprego — começou a longa recessão (a "década perdida").
+
+## Expressões metafóricas
+Comparações usadas no dia a dia:
+- **Fio vermelho do destino** (*akai ito*): pessoas ligadas pelo destino (casais).
+- **Abrir as asas** (*hane o nobasu*): relaxar e se divertir à vontade.
+- **Cair no pântano** (*numa ni hamaru*): viciar-se em algo (tempo e dinheiro).
+- **Jogar lenha na fogueira** (*hi ni abura o sosogu*): piorar uma situação ruim.
+- **Cruzar a ponte do arco-íris**: morte de um pet (também "virou estrela", "virou anjo") — modo suave de dizer "morreu".`,
+  },
+  {
+    title: 'Lição 14',
+    bodyPt: `## Osusowake (repartir com os outros)
+Dar uma porção de algo que se tem em abundância. Em kanji é お裾分け — **suso** é a barra da roupa/o pé da montanha, daí "repartir um pouco da pontinha". Faz-se quando se colhe muito, se recebe um pacote grande da terra natal, ou sobram lembranças — sem esperar retorno. Hoje, com as relações de vizinhança mudadas, ficou menos comum, mas persiste no trabalho, em dormitórios e shared houses.
+
+## Apps de relacionamento (matching apps)
+Apps para achar namoro, casamento ou amizades: cria-se um perfil (foto, hobbies), buscam-se pessoas, trocam-se "likes" e mensagens no app. Há vários tipos (casamento sério, amizade, +50, mesmo sexo). Antes mal-vistos, hoje muitos casais se conhecem assim. Há grátis, mas funções extras pedem assinatura. **Segurança**: escolha o app conforme o objetivo; não revele dados pessoais cedo; no 1º encontro, lugar público; desconfie de quem pede dinheiro ou fala de investimento.
+
+## Sites de conselhos
+Sites onde se pergunta anonimamente, de graça, e a comunidade responde:
+- **Komachi** (Yomiuri): foco feminino — vida cotidiana e relações; quem posta é o **topi-nushi** (autor do tópico).
+- **OKWAVE**: Q&A amplo (vida, computador, saúde, dinheiro); o autor escolhe a "melhor resposta".
+- **Yahoo! Chiebukuro** (LINE Yahoo): muitos usuários; dúvidas práticas do dia a dia.
+
+Escreva de forma clara e específica, em japonês educado, sem dados que te identifiquem. As respostas são de qualquer um (nem sempre corretas) — compare opiniões e cheque fontes oficiais; ignore respostas agressivas.`,
+  },
+  {
+    title: 'Lição 15',
+    bodyPt: `## Vlog
+De "video blog": vídeos do cotidiano, hobbies, viagens etc. postados online (sobretudo no YouTube; também Instagram, TikTok, Niconico), em geral grátis. Há de tudo — vida diária, viagem, culinária, e vlogs que mostram a vida no Japão (interior das casas, ruas, refeições, transporte). Os em **japonês** servem para estudar: muitos têm legendas, então mesmo sem confiança na escuta dá para entender — são "material de estudo vivo".
+
+## Efeitos sonoros (na fala/escrita)
+Diferente das onomatopeias, imitam **sons e melodias** reais; aparecem na fala, em mangá e nas redes:
+- **"jajaan"**: ao revelar/apresentar algo com surpresa (fanfarra).
+- **"pinpon"**: "correto/isso!" (acerto de quiz); **"buu"**: "errado" (buzina).
+- **"chiin"**: som de sino budista — quando algo é sem graça ou fracassa.
+- **"pikōn"**: ao ter uma boa ideia (com a lâmpada acendendo).
+
+## Marcas regionais de alimentos
+Muitos alimentos levam o nome da região, com método e qualidade próprios. Carnes: além do **Hida** (Gifu), há **Kobe** (Hyōgo), **Matsuzaka** (Mie), **Ishigaki** (Okinawa) — só carne dentro do padrão usa o nome. Também **frango Hinai jidori** (Akita), **porco kurobuta** (Kagoshima), **melão Yūbari** (Hokkaido), **alho-poró Shimonita** (Gunma). Provar essas marcas é um dos prazeres de viajar.
+
+## Destinos turísticos (4 e 5)
+- **Takayama** (Gifu): "Pequena Kyoto de Hida", ruas do período Edo, cervejarias de saquê, festival de Takayama; o amuleto **sarubobo**.
+- **Ferrovia Ōigawa** (Shizuoka): trens a vapor (SL) com fumaça preta, vista do rio Ōi e chá; a estação Oku-Ōi Kojō parece flutuar sobre a água.
+- **Shimanami Kaidō** (~60 km, Ehime–Hiroshima): pontes ligando ilhas do Mar Interior de Seto; meca do **ciclismo** (a "Blue Line" guia iniciantes).
+- **Kagoshima**: o vulcão ativo **Sakurajima**, banho de areia em Ibusuki, o doce **shirokuma**, porco **kurobuta**.
+- **Ogasawara** (Tóquio, ~1.000 km ao sul): sem aeroporto — 24 h de balsa; natureza única (Patrimônio Natural da UNESCO, 2011), golfinhos e tartarugas.
+
+## Flores das estações
+Cada estação tem suas flores e o costume de sair para vê-las: **primavera** (sakura/hanami, nemophila, glicínia, colza); **verão** (hortênsia, girassol, lavanda de Furano); **outono** (cosmos, folhagem); **inverno** (camélia, narciso; em Okinawa a **kanhi-zakura** floresce já em janeiro, e a ameixeira anuncia a primavera).
+
+## Formas antigas de kanji (kyūjitai)
+Após a guerra (1946, lista Tōyō Kanji), simplificaram-se kanji complexos — as novas formas são **shinjitai**; as antigas, **kyūjitai**. Ainda aparecem em nomes oficiais por tradição/imagem de marca (ex.: a Ferrovia Ōigawa escreve 鐵 em vez de 鉄; Universidade Keiō; o jornal Yomiuri).`,
+  },
+  {
+    title: 'Lição 16',
+    bodyPt: `## Destinos turísticos (6 e 7)
+- **Yamaguchi**: oeste de Honshū, cercada de mar; Yamaguchi foi 3º lugar na lista "52 Places to Go" do New York Times (2024). A ponte **Tsunoshima Ōhashi** (1.780 m, mar esmeralda), o santuário **Motonosumi** (123 torii vermelhos rumo ao mar) e a cidade-castelo **Hagi**.
+- **Kanazawa** (Ishikawa): cidade-castelo da família Maeda; o jardim **Kenroku-en** (um dos três grandes), o bairro **Higashi Chaya**, e o peixe nobre **nodoguro**.
+- **Matsushima** (Miyagi): uma das "Três Paisagens"; mais de 260 ilhas (que reduziram os danos do terremoto de 2011); passeios de barco, templo **Zuiganji**, **Godaidō**.
+- **Tottori**: província menos populosa; as famosas **Dunas de Tottori** (~16 km), com camelo, paraglider e sandboard.
+
+## "Os três xx do Japão"
+Costuma-se eleger os três mais famosos de algo (**Nihon sandai ~**). Alguns são de escritos históricos, outros de promoção turística (as listas variam):
+| Categoria | Os três |
+| --- | --- |
+| Três paisagens (三景) | Matsushima (Miyagi), Amanohashidate (Kyoto), Miyajima (Hiroshima) |
+| Três jardins (三名園) | Kenroku-en (Kanazawa), Kairaku-en (Mito), Kōraku-en (Okayama) |
+| Três cachoeiras (三名瀑) | Kegon (Tochigi), Nachi (Wakayama), Fukuroda (Ibaraki) |
+| Três termas (三名泉) | Kusatsu (Gunma), Arima (Hyōgo), Gero (Gifu) |
+| Três vistas noturnas (三大夜景) | Hakodate (Hokkaido), Kobe/Maya (Hyōgo), Nagasaki/Inasa (Nagasaki) |`,
+  },
+  {
+    title: 'Lição 17',
+    bodyPt: `## Como dispor a comida
+Há convenções ao servir: peixe grelhado com a **cabeça à esquerda** e a cauda à direita (mais fácil para destros; e a esquerda é tida como o lado de honra). O **arroz vai à esquerda** e a **sopa de missô à direita**; o prato principal à frente e os acompanhamentos atrás. As louças ficam com o desenho voltado para quem come; os hashis na frente, com a ponta à esquerda. Algumas regras têm razão prática, outras não, e variam por região (há até "debate" sobre que lado do prato leva o arroz no curry). Repare nesses detalhes ao comer fora.
+
+## Assédio (harassment)
+No trabalho usa-se muito o termo "harassment":
+- **Sekuhara** (sexual): palavras/atos sexuais, comentar a aparência, perguntar sobre namoro.
+- **Pawahara** (de poder): superior que humilha o subordinado — gritar, agredir, sobrecarregar, ou não dar trabalho/ensino.
+- **Akahara** (acadêmico): de professor a aluno (negar créditos, ignorar, criticar em público).
+- **Kasuhara** (do cliente): cliente que insulta ou faz exigências absurdas a funcionários.
+- Outros: **aruhara** (forçar a beber), **matahara** (gravidez/maternidade), **sumehara** (cheiro forte), **tekuhara** (zombar de quem não domina tecnologia).
+
+Hoje é fortemente repudiado; empresas e escolas previnem. Se sofrer, **não guarde para si** — procure o canal de apoio, colegas ou amigos.
+
+## Escrita à mão
+Mesmo digitando, às vezes é preciso escrever à mão **nome e endereço** (hotel, encomendas) — vale saber. Também é preciso **ler** a letra dos outros, mais difícil que a impressa. Há kanji **abreviados** à mão (próprios do Japão, diferentes do chinês simplificado), comuns em anotações. Idosos às vezes usam escrita cursiva vertical, hoje pouco lida — se tiver dificuldade, fotografe e pergunte a uma IA.
+
+## Atendimento a estrangeiros
+Em problemas no trabalho (assédio, salário atrasado, jornada longa, sem folga) há serviços públicos de consulta em vários idiomas:
+- **"Check Your Working Conditions"** (Ministério da Saúde, Trabalho e Bem-Estar): telefones de ajuda em línguas estrangeiras, com dias/horários.
+- **FRESC** (Foreign Residents Support Center, Tóquio): consulta gratuita reunindo vários ministérios — trabalho, visto, saúde, educação; por telefone/online mesmo fora de Tóquio.
+- Muitos governos locais têm associações de intercâmbio ou centros multiculturais. Não enfrente sozinho — procure ajuda cedo.`,
+  },
+  {
+    title: 'Lição 18',
+    bodyPt: `## Pensões (nenkin)
+Dos **20 aos 59 anos** é obrigatório participar da **kokumin nenkin** (Pensão Nacional); quem trabalha em empresa entra na **kōsei nenkin** (Pensão dos Empregados). Pagando as contribuições, recebe-se pensão mensal a partir dos **65**. Estrangeiros que vivem/trabalham no Japão também participam:
+- **Longo prazo**: quem contribuiu **10+ anos** recebe a pensão japonesa aos 65, mesmo se voltar ao país de origem.
+- **Curto prazo** (menos de 10 anos): em geral não recebe, mas pode pedir o **pagamento de retirada de quantia fixa** (parte do que pagou).
+- Países com **acordo de previdência** com o Japão podem somar os períodos de contribuição. Detalhes no site do Japan Pension Service.
+
+## Tipos de emprego
+- **Arubaito** (do alemão *Arbeit*, abreviado **baito**): trabalho curto/de poucas horas, comum entre estudantes; pago por hora, turnos flexíveis, mas sem bônus e instável (geralmente sem seguro social).
+- **Paato**: quase igual ao baito, mas associado a quem voltou ao trabalho (ex.: após cuidar de filhos) e fica mais tempo.
+- **Seishain** (efetivo): contrato sem prazo, salário mensal, bônus, promoção, seguro e pensão — o mais estável, mas com mais responsabilidade e possível transferência.
+- **Keiyaku-shain / shokutaku-shain** (contrato por prazo determinado): condições claras; o *shokutaku* é o recontratado após aposentar.
+- **Haken-shain** (terceirizado): registrado numa agência que o envia a empresas; o contrato e o salário (por hora) são com a agência.
+
+Para estrangeiros, o que se pode trabalhar depende do **visto**: estudante precisa de "Permissão para atividade fora do status" (até **28 h/semana**; 8 h/dia nas férias longas); vistos de trabalho só permitem a área do status. Confira com a empresa ou a prefeitura.
+
+## Hōrensō (relatar, comunicar, consultar)
+Termo-chave nas empresas: junta **hōkoku** (relatar), **renraku** (comunicar) e **sōdan** (consultar) — e brinca com a palavra **hōrensō** (espinafre). É princípio básico de comunicação no trabalho:
+- **Relatar**: informar o chefe sobre o andamento/resultado ("a tarefa X terminou").
+- **Comunicar**: compartilhar informação necessária ("ligou o sr. X", "a máquina X falhou").
+- **Consultar**: pedir conselho quando não pode decidir sozinho ("posso não cumprir o prazo; o que faço?").
+
+O Japão valoriza compartilhar com o time em vez de decidir sozinho; pouco hōrensō pode soar como "agir por conta própria". Mesmo achando que dá conta, compartilhe — isso facilita o trabalho no Japão.`,
+  },
+]
 
 export const irodoriTips: Level = {
   id: LEVEL,
