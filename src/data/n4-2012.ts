@@ -286,11 +286,262 @@ const reading: Section = {
   groups: [readM4, readM5, readM6],
 }
 
+// ---------------------------------------------------------------------
+//  聴解 — Listening (áudio oficial 2012)
+// ---------------------------------------------------------------------
+const listening: Section = {
+  id: 'listening',
+  level: 'N4-2012',
+  titleJa: 'ちょうかい',
+  titlePt: 'Audição',
+  summaryPt:
+    'Compreensão auditiva do simulado oficial 2012. Quatro tipos (tarefa, ponto-chave, expressões, resposta rápida). Use o player com os áudios oficiais e acompanhe a transcrição com tradução.',
+  studyNotes: [
+    {
+      title: 'Como estudar com os áudios',
+      bodyPt:
+        '1. **Ouça primeiro sem ler** e tente responder.\n2. Use o player para **reduzir a velocidade** e o **A–B** para repetir trechos.\n3. Depois leia a **transcrição** com furigana e ative a **tradução pt-BR**.\n4. Marque “Mostrar respostas” e compare. Áudios oficiais (JLPT 2012).',
+    },
+  ],
+  groups: [],
+  audios: [
+    {
+      id: 'n4-2012-listening-q1',
+      title: 'もんだい１ — Compreensão de tarefa',
+      descriptionPt: 'Ouça a pergunta, depois o diálogo, e descubra o que a pessoa precisa fazer. (8 itens + exemplo)',
+      src: '/audio/N4-2012/N4Q1.mp3',
+      script: [
+        { label: '例', setupJa: '{男|おとこ}の{人|ひと}が{女|おんな}の{人|ひと}に{電話|でんわ}を しています。{男|おとこ}の{人|ひと}は、{何|なに}を{買|か}って{帰|かえ}りますか。', setupPt: 'Um homem liga para uma mulher. O que ele vai comprar na volta?', lines: [
+          { speaker: 'M', ja: 'これから{帰|かえ}るけど、{何|なに}か{買|か}って{帰|かえ}ろうか。', pt: 'Estou indo para casa; quer que eu compre algo?' },
+          { speaker: 'F', ja: 'あ、ありがとう。えっとね、{牛乳|ぎゅうにゅう}。それから。', pt: 'Ah, obrigada. Então... leite. E...' },
+          { speaker: 'M', ja: 'ちょっと{待|ま}って、{牛乳|ぎゅうにゅう}は 1{本|ぽん}でいいの？', pt: 'Espera, leite é uma caixa só?' },
+          { speaker: 'F', ja: 'えっと、2{本|ほん}お{願|ねが}い。それから、チーズ。', pt: 'Hmm, duas, por favor. E queijo.' },
+          { speaker: 'M', ja: 'あれ、チーズはまだ たくさん あったよね。', pt: 'Ué, ainda tinha bastante queijo, né?' },
+          { speaker: 'F', ja: 'ごめん、{今日|きょう}のお{昼|ひる}に{全部|ぜんぶ}{食|た}べたの。', pt: 'Desculpa, comi tudo no almoço de hoje.' },
+          { speaker: 'M', ja: '{分|わ}かった。じゃ、{買|か}って{帰|かえ}るね。', pt: 'Entendi. Então compro na volta.' },
+        ], questionJa: '{男|おとこ}の{人|ひと}は、{何|なに}を{買|か}って{帰|かえ}りますか。', answer: 4 },
+        { label: '1番', setupJa: '{男|おとこ}の{人|ひと}と{女|おんな}の{人|ひと}が{話|はな}しています。{男|おとこ}の{人|ひと}は、{何|なに}で{美術館|びじゅつかん}へ{行|い}きますか。', setupPt: 'Conversam. Como o homem vai ao museu?', lines: [
+          { speaker: 'M', ja: '{美術館|びじゅつかん}に{行|い}きたいんですけど、{何|なに}で{行|い}くのが{便利|べんり}ですか。', pt: 'Quero ir ao museu; como é mais prático ir?' },
+          { speaker: 'F', ja: '{車|くるま}で{行|い}けば 10{分|ぷん}ですよ。', pt: 'De carro são 10 minutos.' },
+          { speaker: 'M', ja: 'そうですか。{電車|でんしゃ}かバスでも{行|い}けますか。', pt: 'Ah. Dá para ir de trem ou ônibus também?' },
+          { speaker: 'F', ja: 'うーん、{行|い}けますけど、{時間|じかん}が かかりますよ。{自転車|じてんしゃ}は{持|も}っていますか。', pt: 'Dá, mas demora. Você tem bicicleta?' },
+          { speaker: 'M', ja: 'はい。', pt: 'Tenho.' },
+          { speaker: 'F', ja: 'じゃあ、{自転車|じてんしゃ}のほうが{便利|べんり}ですよ。', pt: 'Então a bicicleta é mais prática.' },
+          { speaker: 'M', ja: 'そうですか。{分|わ}かりました。じゃ、そうします。', pt: 'Entendi. Então vou assim.' },
+        ], questionJa: '{男|おとこ}の{人|ひと}は、{何|なに}で{美術館|びじゅつかん}へ{行|い}きますか。', answer: 1 },
+        { label: '2番', setupJa: '{男|おとこ}の{学生|がくせい}と{女|おんな}の{学生|がくせい}が{話|はな}しています。{男|おとこ}の{学生|がくせい}は、{何|なに}を{買|か}いますか。', setupPt: 'Sobre um presente de aniversário. O que o rapaz vai comprar?', lines: [
+          { speaker: 'M', ja: '{来週|らいしゅう}、{佐藤|さとう}さんの{誕生日|たんじょうび}だね。もうプレゼント、{買|か}った？', pt: 'Semana que vem é aniversário da Sato. Já comprou presente?' },
+          { speaker: 'F', ja: 'うん。かばん、{買|か}った。', pt: 'Sim, comprei uma bolsa.' },
+          { speaker: 'M', ja: 'そうか。{僕|ぼく}はまだ{決|き}められなくて{困|こま}っているんだ。', pt: 'Ah. Eu ainda não consegui decidir.' },
+          { speaker: 'F', ja: 'そう。じゃあ、カップはどう？{佐藤|さとう}さん、コーヒーが{好|す}きで、よく{飲|の}んでいるよ。', pt: 'Que tal uma xícara? A Sato gosta de café, bebe sempre.' },
+          { speaker: 'M', ja: 'うーん、でも、カップはもう たくさん{持|も}っているかもしれないな。', pt: 'Hmm, mas ela talvez já tenha muitas xícaras.' },
+          { speaker: 'F', ja: 'じゃあ、タオルはどう？よくスポーツを しているから。', pt: 'Então uma toalha? Ela pratica esporte.' },
+          { speaker: 'M', ja: 'そうだね。じゃあ、そうしよう。ありがとう。', pt: 'É verdade. Então vou de toalha. Obrigado.' },
+        ], questionJa: '{男|おとこ}の{学生|がくせい}は、{何|なに}を{買|か}いますか。', answer: 4 },
+        { label: '3番', setupJa: '{男|おとこ}の{人|ひと}と{女|おんな}の{人|ひと}が{話|はな}しています。{女|おんな}の{人|ひと}は、チケットを{何枚|なんまい}{予約|よやく}しますか。', setupPt: 'Conversam. Quantos ingressos a mulher vai reservar?', lines: [
+          { speaker: 'M', ja: '{来月|らいげつ}のコンサートのチケット、{予約|よやく}してくれる？', pt: 'Pode reservar os ingressos do show do mês que vem?' },
+          { speaker: 'F', ja: 'うん、いいよ。{何枚|なんまい}？', pt: 'Claro. Quantos?' },
+          { speaker: 'M', ja: '{僕|ぼく}たち{二人|ふたり}と、{友達|ともだち}{四人|よにん}。', pt: 'Nós dois e quatro amigos.' },
+          { speaker: 'F', ja: 'じゃあ、6{枚|まい}ね。', pt: 'Então seis.' },
+          { speaker: 'M', ja: 'あ、そうだ、ごめん。{一人|ひとり}{都合|つごう}が{悪|わる}くなったから、{五人|ごにん}だ。', pt: 'Ah, desculpa. Um não pode mais vir, então são cinco.' },
+          { speaker: 'F', ja: 'あ、そう。{分|わ}かった。', pt: 'Ah, tá. Entendi.' },
+        ], questionJa: '{女|おんな}の{人|ひと}は、チケットを{何枚|なんまい}{予約|よやく}しますか。', answer: 3 },
+        { label: '4番', setupJa: '{女|おんな}の{人|ひと}と{男|おとこ}の{人|ひと}が{写真|しゃしん}について{話|はな}しています。{女|おんな}の{人|ひと}は、どの{写真|しゃしん}を{送|おく}りますか。', setupPt: 'Falam sobre fotos. Quais fotos ela vai enviar?', lines: [
+          { speaker: 'F', ja: '{国|くに}の{両親|りょうしん}に{写真|しゃしん}を{送|おく}りたいんだけど、どれがいいと{思|おも}う？', pt: 'Quero mandar fotos aos meus pais no meu país; quais você acha boas?' },
+          { speaker: 'M', ja: 'この{海|うみ}の{写真|しゃしん}は{顔|かお}が{小|ちい}さくて よく{見|み}えないね。', pt: 'Nesta foto do mar o rosto fica pequeno e não dá para ver bem.' },
+          { speaker: 'F', ja: 'うん。じゃ、だめだね。この{山|やま}の{写真|しゃしん}はどう？', pt: 'É. Então não serve. E esta da montanha?' },
+          { speaker: 'M', ja: 'うん、これ、いいね。', pt: 'Essa está boa.' },
+          { speaker: 'F', ja: 'じゃ、これ 1{枚|まい}。もう 1{枚|まい}は、この、{私|わたし}の{部屋|へや}の{写真|しゃしん}は？', pt: 'Então essa, uma. A outra: esta do meu quarto?' },
+          { speaker: 'M', ja: '{部屋|へや}があまり きれいじゃないから やめたほうがいいよ。それより、{大学|だいがく}の{前|まえ}でとった{写真|しゃしん}がいいよ。', pt: 'O quarto não está muito arrumado, melhor não. Em vez disso, aquela tirada em frente à universidade.' },
+          { speaker: 'F', ja: 'そうだね。この 2{枚|まい}にしよう。', pt: 'Tem razão. Vou com essas duas.' },
+        ], questionJa: '{女|おんな}の{人|ひと}は、どの{写真|しゃしん}を{送|おく}りますか。', answer: 4 },
+        { label: '5番', setupJa: '{男|おとこ}の{留学生|りゅうがくせい}と{女|おんな}の{人|ひと}が{話|はな}しています。{男|おとこ}の{留学生|りゅうがくせい}は、{何|なに}を{持|も}っていきますか。', setupPt: 'Um estudante estrangeiro e uma mulher conversam. O que ele vai levar (visita ao hospital)?', lines: [
+          { speaker: 'M', ja: '{友達|ともだち}がけがをして、{入院|にゅういん}しているんです。お{見舞|みま}いに{行|い}きたいんですが、{日本|にほん}では{何|なに}を{持|も}っていきますか。', pt: 'Um amigo se machucou e está internado. Quero visitá-lo; no Japão o que se costuma levar?' },
+          { speaker: 'F', ja: 'そうですね。よく{花|はな}や{果物|くだもの}を{持|も}っていきます。{病院|びょういん}では{時間|じかん}が たくさん あるから、{本|ほん}もいいと{思|おも}いますよ。', pt: 'Bem, costuma-se levar flores ou frutas. No hospital há muito tempo livre, então livro também é bom.' },
+          { speaker: 'M', ja: 'ああ、いいですね。{本|ほん}{読|よ}むのが{好|す}きだから、そうします。', pt: 'Ah, boa. Ele gosta de ler, então vou levar.' },
+          { speaker: 'F', ja: 'あ、それから、{若|わか}い{人|ひと}なら{音楽|おんがく}のＣＤもいいと{思|おも}いますよ。', pt: 'Ah, e para gente jovem, um CD de música também é bom.' },
+          { speaker: 'M', ja: 'うーん、でも、{音楽|おんがく}は あまり{聴|き}きませんから。', pt: 'Hmm, mas ele não ouve muita música.' },
+        ], questionJa: '{男|おとこ}の{留学生|りゅうがくせい}は、{何|なに}を{持|も}っていきますか。', answer: 3 },
+        { label: '6番', setupJa: '{会社|かいしゃ}で{男|おとこ}の{人|ひと}と{女|おんな}の{人|ひと}が{話|はな}しています。{女|おんな}の{人|ひと}は{今日|きょう}、このあと{何|なに}をしますか。', setupPt: 'Na empresa. O que a mulher fará hoje em seguida?', lines: [
+          { speaker: 'M', ja: 'ちょっと、いい？{今|いま}{部長|ぶちょう}から{電話|でんわ}があって、{資料|しりょう}のコピーを{頼|たの}まれたんだ。お{願|ねが}いしてもいい？', pt: 'Posso? O chefe ligou agora e pediu cópias do material. Pode fazer?' },
+          { speaker: 'F', ja: '{分|わ}かりました。{明日|あした}の{会議|かいぎ}の{資料|しりょう}ですね。', pt: 'Certo. É o material da reunião de amanhã, né?' },
+          { speaker: 'M', ja: 'うん。それから、{会議室|かいぎしつ}の{準備|じゅんび}だけど、いすを{並|なら}べておいてくれる？', pt: 'Sim. E sobre a preparação da sala de reunião: pode arrumar as cadeiras?' },
+          { speaker: 'F', ja: 'はい。でも、{会議室|かいぎしつ}は{今|いま}、{使|つか}っています。', pt: 'Sim. Mas a sala está em uso agora.' },
+          { speaker: 'M', ja: 'そうか。じゃあ、それは{明日|あした}だね。', pt: 'Ah. Então isso fica para amanhã.' },
+        ], questionJa: '{女|おんな}の{人|ひと}は{今日|きょう}、このあと{何|なに}をしますか。', answer: 2 },
+        { label: '7番', setupJa: '{教室|きょうしつ}で、{先生|せんせい}が{話|はな}しています。{学生|がくせい}は{明日|あした}、{何時|なんじ}にどこに{集|あつ}まらなければ なりませんか。', setupPt: 'Na sala, o professor fala. A que horas e onde os alunos se reúnem amanhã?', lines: [
+          { speaker: 'M', ja: 'えー、これから、{明日|あした}のバス{旅行|りょこう}について{連絡|れんらく}します。{明日|あした}は、{朝|あさ}8{時半|じはん}までに{来|き}てください。いつもは 9{時|じ}からですが、30{分|ぷん}{早|はや}いので、{間違|まちが}えないでくださいね。{学校|がっこう}の{体育館|たいいくかん}の{前|まえ}に{集|あつ}まってください。いいですか。{教室|きょうしつ}じゃなくて、{体育館|たいいくかん}の{前|まえ}ですよ。', pt: 'Aviso sobre a excursão de ônibus de amanhã: cheguem até as 8h30. Normalmente é às 9h, mas é 30 min mais cedo, então não se confundam. Reúnam-se em frente ao ginásio da escola. Entenderam? Não é na sala, é em frente ao ginásio.' },
+        ], questionJa: '{学生|がくせい}は{明日|あした}、{何時|なんじ}にどこに{集|あつ}まりますか。', answer: 2 },
+        { label: '8番', setupJa: '{図書館|としょかん}で{男|おとこ}の{人|ひと}と{係|かか}りの{人|ひと}が{話|はな}しています。{男|おとこ}の{人|ひと}はこのあと どのボタンを{押|お}しますか。', setupPt: 'Na biblioteca, um homem fala com a funcionária. Que botão ele aperta em seguida?', lines: [
+          { speaker: 'M', ja: 'すみません。ちょっと、コピーの{仕方|しかた}を{教|おし}えてもらえませんか。{青|あお}いボタンを{押|お}したんですが、{字|じ}が{小|ちい}さくなってしまったんです。', pt: 'Com licença, pode me ensinar a copiar? Apertei o botão azul, mas a letra ficou pequena.' },
+          { speaker: 'F', ja: '{字|じ}を{大|おお}きくするなら、{赤|あか}いボタンを{押|お}してください。', pt: 'Para aumentar a letra, aperte o botão vermelho.' },
+          { speaker: 'M', ja: 'あ、はい。それから、もう{少|すこ}し{濃|こ}くしたいんです。', pt: 'Ah, sim. E queria deixar um pouco mais escuro.' },
+          { speaker: 'F', ja: 'じゃあ、{黄色|きいろ}いボタンを{押|お}してください。{薄|うす}くするときは、{白|しろ}いボタンです。', pt: 'Então aperte o botão amarelo. Para clarear, é o branco.' },
+          { speaker: 'M', ja: 'そうですか。どうもありがとうございます。', pt: 'Entendi. Muito obrigado.' },
+        ], questionJa: '{男|おとこ}の{人|ひと}はこのあと、{字|じ}を{大|おお}きくする どのボタンを{押|お}しますか。', answer: 1 },
+      ],
+    },
+    {
+      id: 'n4-2012-listening-q2',
+      title: 'もんだい２ — Compreensão de ponto-chave',
+      descriptionPt: 'Ouça a pergunta, depois o diálogo, e escolha a informação específica pedida. (7 itens + exemplo)',
+      src: '/audio/N4-2012/N4Q2.mp3',
+      script: [
+        { label: '例', setupJa: '{女|おんな}の{人|ひと}と{男|おとこ}の{人|ひと}が{話|はな}しています。{女|おんな}の{人|ひと}は、どうして{引|ひ}っ{越|こ}しを しますか。', setupPt: 'Conversam. Por que a mulher vai se mudar?', lines: [
+          { speaker: 'F', ja: '{来週|らいしゅう}の{日曜日|にちようび}、{引|ひ}っ{越|こ}しを{手伝|てつだ}ってくれない？', pt: 'Pode me ajudar na mudança domingo que vem?' },
+          { speaker: 'M', ja: 'いいけど、また{引|ひ}っ{越|こ}すんだね。{部屋|へや}が{狭|せま}いの？', pt: 'Claro, mas vai se mudar de novo? O quarto é apertado?' },
+          { speaker: 'F', ja: 'ううん。{部屋|へや}の{大|おお}きさも{場所|ばしょ}も{問題|もんだい}ないんだけど、{建物|たてもの}が{古|ふる}くて{嫌|いや}なんだ。{最近|さいきん}、{近所|きんじょ}の{人|ひと}と{友達|ともだち}になったから、{残念|ざんねん}なんだけど。', pt: 'Não. Tamanho e localização não são problema, mas o prédio é velho e não gosto. Pena que virei amiga dos vizinhos há pouco.' },
+          { speaker: 'M', ja: 'そうなんだ。', pt: 'Ah, entendi.' },
+        ], questionJa: '{女|おんな}の{人|ひと}は、どうして{引|ひ}っ{越|こ}しを しますか。', answer: 3 },
+        { label: '1番', setupJa: '{男|おとこ}の{学生|がくせい}と{女|おんな}の{学生|がくせい}が{話|はな}しています。{女|おんな}の{学生|がくせい}は、だれと{住|す}んでいますか。', setupPt: 'Conversam. Com quem a estudante mora?', lines: [
+          { speaker: 'M', ja: '{山田|やまだ}さん、{新|あたら}しい{生活|せいかつ}はどう？', pt: 'Yamada, como está a vida nova?' },
+          { speaker: 'F', ja: 'はい、{毎日|まいにち}{楽|たの}しいです。', pt: 'Está divertida todos os dias.' },
+          { speaker: 'M', ja: 'ご{両親|りょうしん}と{一緒|いっしょ}じゃなくて、{寂|さび}しくない？', pt: 'Não fica solitária longe dos seus pais?' },
+          { speaker: 'F', ja: 'ええ、{少|すこ}し。でも、{弟|おとうと}と{一緒|いっしょ}に{住|す}んでいるので、{大丈夫|だいじょうぶ}です。', pt: 'Um pouco. Mas moro com meu irmão mais novo, então tudo bem.' },
+          { speaker: 'M', ja: 'そうなんだ。{兄弟|きょうだい}は{弟|おとうと}さん{一人|ひとり}？', pt: 'Ah. Seu único irmão é ele?' },
+          { speaker: 'F', ja: '{姉|あね}もいます。{姉|あね}は{両親|りょうしん}と{一緒|いっしょ}に{住|す}んでいます。', pt: 'Tenho uma irmã mais velha também. Ela mora com nossos pais.' },
+        ], questionJa: '{女|おんな}の{学生|がくせい}は、だれと{住|す}んでいますか。', answer: 4 },
+        { label: '2番', setupJa: '{大学|だいがく}で、{女|おんな}の{学生|がくせい}が{男|おとこ}の{学生|がくせい}と{話|はな}しています。{女|おんな}の{学生|がくせい}は、いつ、{男|おとこ}の{学生|がくせい}に{相談|そうだん}しますか。', setupPt: 'Na faculdade. Quando ela vai se aconselhar com o veterano?', lines: [
+          { speaker: 'F', ja: '{先輩|せんぱい}、{相談|そうだん}したいことが あるんですが、{今|いま}、いいですか。', pt: 'Veterano, queria conversar sobre uma coisa; tem tempo agora?' },
+          { speaker: 'M', ja: 'ごめん。{今|いま}から{授業|じゅぎょう}が あるんだ。', pt: 'Desculpa, tenho aula agora.' },
+          { speaker: 'F', ja: 'そうですか。じゃ、{今日|きょう}の{夕方|ゆうがた}はどうですか。', pt: 'Ah. Então e hoje no fim da tarde?' },
+          { speaker: 'M', ja: '6{時|じ}から{約束|やくそく}があるけど、4{時|じ}{頃|ごろ}なら{大丈夫|だいじょうぶ}だよ。', pt: 'Tenho compromisso às 18h, mas por volta das 16h tudo bem.' },
+          { speaker: 'F', ja: '4{時|じ}ですね。', pt: 'Às 16h, então.' },
+          { speaker: 'M', ja: 'あ、{明日|あした}の{昼|ひる}でもいいよ。', pt: 'Ah, amanhã de tarde também pode.' },
+          { speaker: 'F', ja: 'すみません。{明日|あした}は{用事|ようじ}が あるんです。', pt: 'Desculpe, amanhã tenho compromisso.' },
+          { speaker: 'M', ja: 'そう。じゃあ、やっぱり{今日|きょう}にしよう。', pt: 'Tá. Então fica para hoje mesmo.' },
+        ], questionJa: '{女|おんな}の{学生|がくせい}は、いつ{相談|そうだん}しますか。', answer: 2 },
+        { label: '3番', setupJa: '{学校|がっこう}で、{男|おとこ}の{先生|せんせい}と{女|おんな}の{留学生|りゅうがくせい}が{話|はな}しています。{女|おんな}の{留学生|りゅうがくせい}は、どうしてアルバイトが したいですか。', setupPt: 'Por que a estudante estrangeira quer fazer um trabalho de meio período?', lines: [
+          { speaker: 'M', ja: 'もうすぐ{冬休|ふゆやす}みですね。どこかへ{旅行|りょこう}に{行|い}きますか。', pt: 'Logo são as férias de inverno. Vai viajar para algum lugar?' },
+          { speaker: 'F', ja: 'いいえ。{冬休|ふゆやす}みは、デパートでアルバイトを するつもりです。', pt: 'Não. Nas férias pretendo trabalhar numa loja de departamentos.' },
+          { speaker: 'M', ja: 'あ、そうですか。', pt: 'Ah, é?' },
+          { speaker: 'F', ja: '{日本人|にほんじん}の{働|はたら}き{方|かた}が{知|し}りたいんです。', pt: 'É que quero conhecer o jeito de trabalhar dos japoneses.' },
+          { speaker: 'M', ja: 'いい{経験|けいけん}に なりますね。{日本語|にほんご}も{上手|じょうず}に なると{思|おも}いますよ。', pt: 'Vai ser uma boa experiência. E seu japonês deve melhorar.' },
+        ], questionJa: '{女|おんな}の{留学生|りゅうがくせい}は、どうしてアルバイトが したいですか。', answer: 3 },
+        { label: '4番', setupJa: '{天気予報|てんきよほう}を{聞|き}いています。{何曜日|なんようび}に、{一日中|いちにちじゅう}{雨|あめ}が{降|ふ}ると{言|い}っていますか。', setupPt: 'Previsão do tempo. Em que dia vai chover o dia todo?', lines: [
+          { speaker: 'M', ja: '{東京|とうきょう}の{月曜日|げつようび}から 1{週間|しゅうかん}の{天気予報|てんきよほう}です。{月曜日|げつようび}と{火曜日|かようび}は{晴|は}れるでしょう。{水曜日|すいようび}は、{午前中|ごぜんちゅう}は{晴|は}れますが、{午後|ごご}から{曇|くも}って、{夜|よる}には{雨|あめ}になるでしょう。{木曜日|もくようび}は{一日|いちにち}ずっと{雨|あめ}に なるでしょう。{金曜日|きんようび}と{土日|どにち}は{晴|は}れて、いい{天気|てんき}に なるでしょう。', pt: 'Previsão de Tóquio para a semana. Segunda e terça, sol. Quarta, sol de manhã, nublado à tarde e chuva à noite. Quinta, chuva o dia inteiro. Sexta e fim de semana, sol e tempo bom.' },
+        ], questionJa: '{何曜日|なんようび}に、{一日中|いちにちじゅう}{雨|あめ}が{降|ふ}りますか。', answer: 3 },
+        { label: '5番', setupJa: '{女|おんな}の{人|ひと}と{男|おとこ}の{人|ひと}が{話|はな}しています。{男|おとこ}の{人|ひと}は、{最近|さいきん}、どのぐらい{本|ほん}を{読|よ}んでいますか。', setupPt: 'Conversam. Quanto o homem tem lido ultimamente?', lines: [
+          { speaker: 'F', ja: '{山田|やまだ}さんは、よく{本|ほん}を{読|よ}みますか。', pt: 'Yamada, você lê bastante?' },
+          { speaker: 'M', ja: 'うーん、{子供|こども}のときは{月|つき}に 10{冊|さつ}{以上|いじょう}{読|よ}んでいましたが、{最近|さいきん}は{全然|ぜんぜん}{読|よ}んでいませんね。', pt: 'Hmm, quando criança lia mais de 10 por mês, mas ultimamente não leio nada.' },
+          { speaker: 'F', ja: 'そうですか。', pt: 'Ah, é?' },
+          { speaker: 'M', ja: 'ええ、{仕事|しごと}が{忙|いそが}しいんです。{田中|たなか}さんはどうですか。', pt: 'É que o trabalho está corrido. E você, Tanaka?' },
+          { speaker: 'F', ja: '{最近|さいきん}は、{専門|せんもん}の{本|ほん}を{月|つき}に 3{冊|さつ}ぐらい{読|よ}んでいます。', pt: 'Ultimamente leio uns 3 livros da minha área por mês.' },
+          { speaker: 'M', ja: 'そうですか。{私|わたし}も{月|つき}に 1{冊|さつ}ぐらいは{読|よ}みたいんですが。', pt: 'Que bom. Eu queria ler ao menos 1 por mês...' },
+        ], questionJa: '{男|おとこ}の{人|ひと}は、{最近|さいきん}、どのぐらい{本|ほん}を{読|よ}んでいますか。', answer: 1 },
+        { label: '6番', setupJa: '{男|おとこ}の{学生|がくせい}と{女|おんな}の{学生|がくせい}が{話|はな}しています。{女|おんな}の{学生|がくせい}は、{子供|こども}のとき、{何|なに}に なりたかったですか。', setupPt: 'Conversam. O que a estudante queria ser quando criança?', lines: [
+          { speaker: 'M', ja: '{田中|たなか}さんは、{将来|しょうらい}、どんな{仕事|しごと}が したいですか。', pt: 'Tanaka, que profissão quer ter no futuro?' },
+          { speaker: 'F', ja: '{将来|しょうらい}は、{小学校|しょうがっこう}の{先生|せんせい}に なりたいです。', pt: 'Quero ser professora de escola primária.' },
+          { speaker: 'M', ja: '{先生|せんせい}ですか。{子供|こども}のときからですか。', pt: 'Professora? Desde criança?' },
+          { speaker: 'F', ja: '{子供|こども}のときは、ピアニストに なりたかったんです。', pt: 'Quando criança, eu queria ser pianista.' },
+          { speaker: 'M', ja: '{音楽|おんがく}が{好|す}きだったんですね。{私|わたし}は{子供|こども}のとき、{警察官|けいさつかん}に なるのが{夢|ゆめ}でした。', pt: 'Gostava de música, né. Eu, quando criança, sonhava em ser policial.' },
+          { speaker: 'F', ja: '{警察官|けいさつかん}ですか。', pt: 'Policial?' },
+          { speaker: 'M', ja: 'でも、{最近|さいきん}は、{看護師|かんごし}に なりたいんです。', pt: 'Mas agora quero ser enfermeiro.' },
+        ], questionJa: '{女|おんな}の{学生|がくせい}は、{子供|こども}のとき、{何|なに}に なりたかったですか。', answer: 2 },
+        { label: '7番', setupJa: '{港|みなと}で、{船|ふね}の{案内|あんない}を{聞|き}いています。{次|つぎ}の{船|ふね}は、{何時|なんじ}に{出発|しゅっぱつ}しますか。', setupPt: 'No porto, ouvindo o aviso do barco. A que horas parte o próximo barco?', lines: [
+          { speaker: 'F', ja: '{皆様|みなさま}、もうすぐ、{次|つぎ}の{船|ふね}が{出発|しゅっぱつ}します。{船|ふね}は、{近|ちか}くの{島|しま}を 30{分|ぷん}で{回|まわ}ります。{海|うみ}からの{美|うつく}しい{景色|けしき}を{楽|たの}しむことができます。{出発|しゅっぱつ}は 10{時|じ}20{分|ぷん}の{予定|よてい}です。{出発|しゅっぱつ}まで 10{分|ぷん}です。チケットは{船|ふね}の{中|なか}で{買|か}うことができます。{皆様|みなさま}、{乗|の}ってみませんか。', pt: 'Senhores, logo parte o próximo barco. Ele dá a volta na ilha próxima em 30 min, com bela vista do mar. A partida está prevista para as 10h20 — faltam 10 minutos. Os bilhetes podem ser comprados no barco. Não querem embarcar?' },
+        ], questionJa: '{次|つぎ}の{船|ふね}は、{何時|なんじ}に{出発|しゅっぱつ}しますか。', answer: 3 },
+      ],
+    },
+    {
+      id: 'n4-2012-listening-q3',
+      title: 'もんだい３ — Expressões em situação',
+      descriptionPt: 'Olhe a cena e escolha o que a pessoa deve dizer. (5 itens + exemplo, 3 opções lidas no áudio)',
+      src: '/audio/N4-2012/N4Q3.mp3',
+      script: [
+        { label: '例', setupJa: 'レストランでお{店|みせ}の{人|ひと}を{呼|よ}びます。{何|なん}と{言|い}いますか。', setupPt: 'No restaurante, você chama o atendente. O que diz?', lines: [
+          { speaker: '1', ja: 'いらっしゃいませ。', pt: '1. Bem-vindo. (é o atendente)' },
+          { speaker: '2', ja: '{失礼|しつれい}しました。', pt: '2. Desculpe o incômodo.' },
+          { speaker: '3', ja: 'すみません。', pt: '3. Com licença! (chamando)' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 3 },
+        { label: '1番', setupJa: 'お{土産|みやげ}を{買|か}いました。{先輩|せんぱい}にあげます。{何|なん}と{言|い}いますか。', setupPt: 'Você comprou uma lembrança e vai dá-la ao veterano. O que diz?', lines: [
+          { speaker: '1', ja: 'これ、お{土産|みやげ}です。どうぞ。', pt: '1. Aqui, uma lembrança. Aceite, por favor.' },
+          { speaker: '2', ja: 'お{土産|みやげ}、{頂|いただ}きます。', pt: '2. Aceito a lembrança. (recebendo)' },
+          { speaker: '3', ja: 'お{土産|みやげ}を{買|か}っておきます。', pt: '3. Vou comprar uma lembrança (de antemão).' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 1 },
+        { label: '2番', setupJa: '{明日|あした}、{二人|ふたり}で{映画|えいが}に{行|い}きたいです。{何|なん}と{言|い}いますか。', setupPt: 'Você quer ir ao cinema com a pessoa amanhã. O que diz?', lines: [
+          { speaker: '1', ja: '{明日|あした}、{映画|えいが}に{誘|さそ}いましょう。', pt: '1. Vamos convidar (alguém) para o cinema amanhã.' },
+          { speaker: '2', ja: '{明日|あした}、{映画|えいが}を{見|み}に{行|い}きませんか。', pt: '2. Amanhã, não quer ir ver um filme (comigo)?' },
+          { speaker: '3', ja: '{明日|あした}、{映画|えいが}に{行|い}きたいそうですよ。', pt: '3. Dizem que ele quer ir ao cinema amanhã.' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 2 },
+        { label: '3番', setupJa: '{黒板|こくばん}の{字|じ}が{小|ちい}さくて、{読|よ}めません。{先生|せんせい}に{何|なん}と{言|い}いますか。', setupPt: 'A letra no quadro está pequena e você não consegue ler. O que diz ao professor?', lines: [
+          { speaker: '1', ja: 'すいません、よく{見|み}えません。', pt: '1. Desculpe, não dá para ver bem.' },
+          { speaker: '2', ja: 'すいません、{読|よ}んでもいいですか。', pt: '2. Desculpe, posso ler?' },
+          { speaker: '3', ja: 'すいません、{書|か}きましょうか。', pt: '3. Desculpe, quer que eu escreva?' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 1 },
+        { label: '4番', setupJa: '{先生|せんせい}に{今|いま}、{相談|そうだん}したいです。{何|なん}と{言|い}いますか。', setupPt: 'Você quer falar com o professor agora. O que diz?', lines: [
+          { speaker: '1', ja: 'あのう、いつでしょうか。', pt: '1. Hum, quando seria?' },
+          { speaker: '2', ja: 'ちょっと よろしいでしょうか。', pt: '2. Tem um minutinho? (posso falar?)' },
+          { speaker: '3', ja: '{相談|そうだん}してくださいませんか。', pt: '3. Poderia se aconselhar (comigo)? (errado aqui)' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 2 },
+        { label: '5番', setupJa: '{友達|ともだち}のペンを{借|か}りたいです。{何|なん}と{言|い}いますか。', setupPt: 'Você quer pegar emprestada a caneta do amigo. O que diz?', lines: [
+          { speaker: '1', ja: 'ペン、{貸|か}してもらえる？', pt: '1. Pode me emprestar a caneta?' },
+          { speaker: '2', ja: 'ペン、{取|と}ってあげる。', pt: '2. Eu pego a caneta para você.' },
+          { speaker: '3', ja: 'ペン、{使|つか}ってくれる？', pt: '3. Você usa a caneta para mim? (sem sentido aqui)' },
+        ], questionJa: '{何|なん}と{言|い}いますか。', answer: 1 },
+      ],
+    },
+    {
+      id: 'n4-2012-listening-q4',
+      title: 'もんだい４ — Resposta rápida',
+      descriptionPt: 'Ouça a fala e escolha a resposta mais natural. (8 itens + exemplo, 3 opções)',
+      src: '/audio/N4-2012/N4Q4.mp3',
+      script: [
+        { label: '例', setupJa: 'ジュース{買|か}いに{行|い}きますけど、{何|なに}か{買|か}ってきましょうか。', setupPt: 'Vou comprar suco; quer que eu traga algo?', lines: [
+          { speaker: '1', ja: 'ええ、いいですよ。', pt: '1. Sim, tudo bem.' },
+          { speaker: '2', ja: 'そうですか。おいしそうですね。', pt: '2. Ah é? Parece gostoso.' },
+          { speaker: '3', ja: 'あ、コーヒー、お{願|ねが}いします。', pt: '3. Ah, um café, por favor.' },
+        ], questionJa: 'どれが いいですか。', answer: 3 },
+        { label: '1番', setupJa: 'どこに{行|い}くんですか。', setupPt: 'Aonde você vai?', lines: [
+          { speaker: '1', ja: 'いってらっしゃい。', pt: '1. Vá com cuidado. (quem fica diz)' },
+          { speaker: '2', ja: 'ちょっと{食事|しょくじ}に{行|い}ってきます。', pt: '2. Vou ali comer rapidinho.' },
+          { speaker: '3', ja: '{気|き}をつけてください。', pt: '3. Tome cuidado.' },
+        ], questionJa: 'どれが いいですか。', answer: 2 },
+        { label: '2番', setupJa: 'ねえ、{京都|きょうと}、{行|い}ったことある？', setupPt: 'Ei, você já foi a Kyoto?', lines: [
+          { speaker: '1', ja: '{行|い}かなかったよ。', pt: '1. Não fui.' },
+          { speaker: '2', ja: 'そう、{行|い}ったんだ。', pt: '2. Ah, então você foi.' },
+          { speaker: '3', ja: 'うん、1{回|かい}あるよ。', pt: '3. Sim, uma vez.' },
+        ], questionJa: 'どれが いいですか。', answer: 3 },
+        { label: '3番', setupJa: 'どうして{昨日|きのう}、{授業|じゅぎょう}を{休|やす}んだんですか。', setupPt: 'Por que você faltou à aula ontem?', lines: [
+          { speaker: '1', ja: '{休|やす}むかもしれません。', pt: '1. Talvez eu falte.' },
+          { speaker: '2', ja: '{風邪|かぜ}をひいてしまいました。', pt: '2. É que peguei um resfriado.' },
+          { speaker: '3', ja: 'ゆっくり{休|やす}んでください。', pt: '3. Descanse bem.' },
+        ], questionJa: 'どれが いいですか。', answer: 2 },
+        { label: '4番', setupJa: '{夏休|なつやす}みに{国|くに}へ{帰|かえ}ったら、{何|なに}をしますか。', setupPt: 'Quando voltar ao seu país nas férias, o que vai fazer?', lines: [
+          { speaker: '1', ja: '{友達|ともだち}に{会|あ}うつもりです。', pt: '1. Pretendo encontrar meus amigos.' },
+          { speaker: '2', ja: '{母|はは}に{会|あ}いました。', pt: '2. Encontrei minha mãe.' },
+          { speaker: '3', ja: '{来月|らいげつ}にします。', pt: '3. Deixo para o mês que vem.' },
+        ], questionJa: 'どれが いいですか。', answer: 1 },
+        { label: '5番', setupJa: '{学校|がっこう}を{休|やす}むときは{電話|でんわ}してください。', setupPt: 'Quando faltar à escola, ligue, por favor.', lines: [
+          { speaker: '1', ja: 'いつ{休|やす}むんですか。', pt: '1. Quando você vai faltar?' },
+          { speaker: '2', ja: 'はい、{連絡|れんらく}します。', pt: '2. Sim, vou avisar.' },
+          { speaker: '3', ja: '{電話|でんわ}を{待|ま}っています。', pt: '3. Estou esperando sua ligação.' },
+        ], questionJa: 'どれが いいですか。', answer: 2 },
+        { label: '6番', setupJa: 'あのう、その{本|ほん}を{取|と}ってくれませんか。', setupPt: 'Com licença, pode me passar aquele livro?', lines: [
+          { speaker: '1', ja: 'ありがとう。', pt: '1. Obrigado.' },
+          { speaker: '2', ja: 'もらいましたよ。', pt: '2. Eu recebi.' },
+          { speaker: '3', ja: 'え、どれですか。', pt: '3. Ah, qual deles?' },
+        ], questionJa: 'どれが いいですか。', answer: 3 },
+        { label: '7番', setupJa: 'ジョンさん、{日本語|にほんご}が{話|はな}せますか。', setupPt: 'John, você consegue falar japonês?', lines: [
+          { speaker: '1', ja: '{勉強|べんきょう}してください。', pt: '1. Estude, por favor.' },
+          { speaker: '2', ja: '{分|わ}かりました。', pt: '2. Entendi.' },
+          { speaker: '3', ja: '{少|すこ}しなら できます。', pt: '3. Um pouco, sim.' },
+        ], questionJa: 'どれが いいですか。', answer: 3 },
+        { label: '8番', setupJa: 'あ、{田中|たなか}さん、{黒板|こくばん}を{消|け}しておいてくれませんか。', setupPt: 'Ah, Tanaka, pode apagar o quadro (para depois)?', lines: [
+          { speaker: '1', ja: 'はい、すぐにやります。', pt: '1. Sim, faço já.' },
+          { speaker: '2', ja: 'きれいになりましたね。', pt: '2. Ficou limpo, né.' },
+          { speaker: '3', ja: 'ここに{置|お}きましょう。', pt: '3. Vamos deixar aqui.' },
+        ], questionJa: 'どれが いいですか。', answer: 1 },
+      ],
+    },
+  ],
+}
+
 export const n4_2012: Level = {
   id: 'N4-2012',
   courseId: 'jlpt',
   titlePt: 'N4 — Simulado 2012',
   descriptionPt:
-    'Segunda leva de prática do N4: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 聴解 com áudio será adicionado.)',
-  sections: [vocabulary, grammar, reading],
+    'Segunda leva de prática do N4: simulado completo a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial, explicações em pt-BR e áudio oficial na audição.',
+  sections: [vocabulary, grammar, reading, listening],
 }
