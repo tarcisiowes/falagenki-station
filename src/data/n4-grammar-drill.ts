@@ -43,6 +43,26 @@ const studyNotes: StudyNote[] = [
     bodyPt:
       'Propósito, esforço, mudança e plano:\n\n- **〜ために**: propósito (verbo volitivo / 名詞+の) ou causa. 勉強するために来た.\n- **〜ように**: para que (resultado), com verbo potencial, negativo ou sujeito diferente. 見えるように前に座った; 忘れないように.\n- **〜ようにする**: esforçar-se para fazer / criar hábito. 毎日食べるようにする.\n- **〜ようになる**: passar a (mudança de capacidade ou hábito). 読めるようになった.\n- **〜（よ）うと思う**: pretender / estar pensando em (意向形+と思う). 旅行しようと思う.',
   },
+  {
+    title: '6. Conectores e conjunções',
+    bodyPt:
+      'Ligações entre frases:\n\n- **〜から**: porque (razão subjetiva); aceita pedido/volição depois. 寒いから閉めて.\n- **〜ので**: porque (mais suave/objetivo, educado). Substantivo/na-adj + な + ので: 日曜日なので.\n- **〜のに**: apesar de (resultado contrário, frustração). 勉強したのに落ちた. Substantivo/na-adj + な + のに.\n- **〜ても／でも**: mesmo que. 降っても行く; 高くても; 日曜日でも.\n- **〜が／けど**: mas (contraste). 安いが、おいしくない.\n- **〜ながら**: enquanto (duas ações do mesmo sujeito). 聞きながら勉強する.\n- **〜あいだに**: durante o período em que (faz algo num ponto; sujeitos podem diferir). 寝ているあいだに.',
+  },
+  {
+    title: '7. Nominalização e modificação de substantivos',
+    bodyPt:
+      'Transformar frases em substantivos e modificar nomes:\n\n- **〜の／こと**: nominalizador. 話すのは難しい; 趣味は読むこと. Com percepção (見る・聞く) use の: 歌うのを聞いた.\n- **普通形+名詞**: oração relativa em forma plana. 昨日買った本; 歌っている人. O sujeito interno usa が.\n- **〜という**: N chamado X / o fato de que. 「さくら」という店; 来ないということ.\n- **〜かどうか**: se … ou não (pergunta sim/não embutida). 来るかどうか分からない. Substantivo/na-adj sem だ: 必要かどうか.',
+  },
+  {
+    title: '8. Dar e receber (あげる・くれる・もらう)',
+    bodyPt:
+      'O sistema depende da direção do favor:\n\n- **あげる**: eu (ou meu grupo) dou a outro. 友だちにあげた.\n- **くれる**: outro dá a mim (ou meu grupo). 友だちがくれた.\n- **もらう**: eu recebo de outro (doador com に/から). 友だちにもらった.\n- **Educado**: いただく = humilde de もらう (先生にいただく); くださる = honorífico de くれる (先生がくださる). Com て: 〜ていただく / 〜てくださる.',
+  },
+  {
+    title: '9. Comparação',
+    bodyPt:
+      'Comparar e indicar o máximo:\n\n- **〜より**: do que (marca o padrão). 電車はバスより速い.\n- **〜ほうが**: o lado … / prefiro; 〜たほうがいい (conselho). 電車のほうが速い; 休んだほうがいい.\n- **〜ほど〜ない**: não tão … quanto. 今日は昨日ほど寒くない.\n- **〜の中で〜がいちばん**: o mais … (superlativo). クラスで彼がいちばん背が高い.',
+  },
 ]
 
 const groups: ExerciseGroup[] = [
@@ -317,7 +337,172 @@ const groups: ExerciseGroup[] = [
       { id: 'n4g-p33-5', number: 165, prompt: '{新|あたら}しい パソコンを {買|か}（　）と {思|おも}っている。', choices: [{ n: 1, text: 'おう' }, { n: 2, text: 'う' }, { n: 3, text: 'いたい' }, { n: 4, text: 'えば' }], answer: 1, translationPt: 'Estou pensando em comprar um computador novo.', explanationPt: '意向形 買おう+と思う = pretender comprar.' },
     ],
   },
-  // —— próximos temas (6..20) serão acrescentados aqui ——
+  {
+    id: 'n4g-t6',
+    title: 'もんだい６',
+    subtitlePt: '6. Conectores (〜から・〜ので・〜のに・〜ても・〜が・〜ながら・〜あいだに)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 34. 〜から ——
+      { id: 'n4g-p34-1', number: 166, prompt: '{時間|じかん}が ない（　）、{急|いそ}ごう。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Como não temos tempo, vamos nos apressar.', explanationPt: '〜から = porque (razão); aceita volição depois (急ごう).' },
+      { id: 'n4g-p34-2', number: 167, prompt: '{寒|さむ}い（　）、{窓|まど}を {閉|し}めて ください。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'たり' }], answer: 1, translationPt: 'Como está frio, feche a janela, por favor.', explanationPt: '〜から + pedido (ください): apresenta a razão.' },
+      { id: 'n4g-p34-3', number: 168, prompt: 'もう {遅|おそ}い（　）、{帰|かえ}ります。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'ながら' }], answer: 1, translationPt: 'Já está tarde, então vou para casa.', explanationPt: '〜から = motivo da decisão.' },
+      { id: 'n4g-p34-4', number: 169, prompt: 'あぶない（　）、さわらないで ください。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'É perigoso, então não toque.', explanationPt: '〜から explica o porquê do pedido.' },
+      { id: 'n4g-p34-5', number: 170, prompt: 'テストが ある（　）、{今夜|こんや}は {勉強|べんきょう}する。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'ながら' }], answer: 1, translationPt: 'Tem prova, então hoje à noite vou estudar.', explanationPt: '〜から = razão (subjetiva) para a ação.' },
+
+      // —— 35. 〜ので ——
+      { id: 'n4g-p35-1', number: 171, prompt: '{電車|でんしゃ}が {遅|おく}れた（　）、{遅刻|ちこく}しました。', choices: [{ n: 1, text: 'ので' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Cheguei atrasado porque o trem atrasou.', explanationPt: '〜ので = porque (tom mais suave/objetivo, comum em explicações educadas).' },
+      { id: 'n4g-p35-2', number: 172, prompt: '{今日|きょう}は {日曜日|にちようび}（　）、{店|みせ}は {休|やす}みです。', choices: [{ n: 1, text: 'なので' }, { n: 2, text: 'だので' }, { n: 3, text: 'のので' }, { n: 4, text: 'でので' }], answer: 1, translationPt: 'Como hoje é domingo, a loja está fechada.', explanationPt: 'Substantivo + な + ので: 日曜日なので.' },
+      { id: 'n4g-p35-3', number: 173, prompt: '{頭|あたま}が {痛|いた}い（　）、{先|さき}に {帰|かえ}っても いいですか。', choices: [{ n: 1, text: 'ので' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'たり' }], answer: 1, translationPt: 'Estou com dor de cabeça, posso ir embora antes?', explanationPt: '〜ので suaviza o pedido (motivo apresentado de forma educada).' },
+      { id: 'n4g-p35-4', number: 174, prompt: 'ここは {静|しず}か（　）、{勉強|べんきょう}しやすいです。', choices: [{ n: 1, text: 'なので' }, { n: 2, text: 'だので' }, { n: 3, text: 'のので' }, { n: 4, text: 'でので' }], answer: 1, translationPt: 'Aqui é silencioso, então é fácil estudar.', explanationPt: 'na-adjetivo + な + ので: 静かなので.' },
+      { id: 'n4g-p35-5', number: 175, prompt: '{道|みち}が こんでいた（　）、{時間|じかん}が かかりました。', choices: [{ n: 1, text: 'ので' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'ながら' }], answer: 1, translationPt: 'Como a rua estava congestionada, demorou.', explanationPt: '〜ので = causa apresentada de forma objetiva.' },
+
+      // —— 36. 〜のに ——
+      { id: 'n4g-p36-1', number: 176, prompt: 'たくさん {勉強|べんきょう}した（　）、{試験|しけん}に {落|お}ちた。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'から' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Apesar de ter estudado muito, fui reprovado.', explanationPt: '〜のに = apesar de (resultado contrário ao esperado, com frustração).' },
+      { id: 'n4g-p36-2', number: 177, prompt: '{約束|やくそく}した（　）、{彼|かれ}は {来|こ}なかった。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'から' }, { n: 4, text: 'ても' }], answer: 1, translationPt: 'Apesar de ter prometido, ele não veio.', explanationPt: '〜のに contrasta a expectativa (prometeu) com o fato (não veio).' },
+      { id: 'n4g-p36-3', number: 178, prompt: 'もう {春|はる}（　）、まだ {寒|さむ}い。', choices: [{ n: 1, text: 'なのに' }, { n: 2, text: 'なので' }, { n: 3, text: 'だから' }, { n: 4, text: 'でも' }], answer: 1, translationPt: 'Apesar de já ser primavera, ainda está frio.', explanationPt: 'Substantivo + な + のに: 春なのに.' },
+      { id: 'n4g-p36-4', number: 179, prompt: 'この レストランは {安|やす}い（　）、おいしい。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'から' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Apesar de ser barato, este restaurante é gostoso.', explanationPt: '〜のに = contraste inesperado (barato, mas bom).' },
+      { id: 'n4g-p36-5', number: 180, prompt: '{一生懸命|いっしょうけんめい} {作|つく}った（　）、だれも {食|た}べて くれなかった。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'から' }, { n: 4, text: 'ながら' }], answer: 1, translationPt: 'Apesar de eu ter feito com todo empenho, ninguém comeu.', explanationPt: '〜のに transmite frustração/decepção.' },
+
+      // —— 37. 〜ても／でも ——
+      { id: 'n4g-p37-1', number: 181, prompt: '{雨|あめ}が {降|ふ}っ（　）、ピクニックに {行|い}きます。', choices: [{ n: 1, text: 'ても' }, { n: 2, text: 'から' }, { n: 3, text: 'のに' }, { n: 4, text: 'ながら' }], answer: 1, translationPt: 'Mesmo que chova, vamos ao piquenique.', explanationPt: '〜ても = mesmo que (condição sem efeito no resultado). 降る→降っても.' },
+      { id: 'n4g-p37-2', number: 182, prompt: 'この かばんは {高|たか}く（　）、{買|か}います。', choices: [{ n: 1, text: 'ても' }, { n: 2, text: 'から' }, { n: 3, text: 'のに' }, { n: 4, text: 'ので' }], answer: 1, translationPt: 'Mesmo que esta bolsa seja cara, eu compro.', explanationPt: 'Adjetivo-i + くても: 高い→高くても.' },
+      { id: 'n4g-p37-3', number: 183, prompt: '{日曜日|にちようび}（　）、{働|はたら}きます。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'だと' }, { n: 3, text: 'なら' }, { n: 4, text: 'から' }], answer: 1, translationPt: 'Mesmo que seja domingo, eu trabalho.', explanationPt: 'Substantivo + でも: 日曜日でも (mesmo sendo domingo).' },
+      { id: 'n4g-p37-4', number: 184, prompt: 'いくら {呼|よ}ん（　）、へんじが ない。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'から' }, { n: 3, text: 'のに' }, { n: 4, text: 'ば' }], answer: 1, translationPt: 'Por mais que eu chame, não há resposta.', explanationPt: 'いくら〜ても = por mais que. 呼ぶ→呼んでも.' },
+      { id: 'n4g-p37-5', number: 185, prompt: '{薬|くすり}を {飲|の}ん（　）、よく ならない。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'から' }, { n: 3, text: 'のに' }, { n: 4, text: 'ば' }], answer: 1, translationPt: 'Mesmo tomando remédio, não melhoro.', explanationPt: '〜ても = mesmo fazendo X, o resultado esperado não vem. 飲む→飲んでも.' },
+
+      // —— 38. 〜が／けど ——
+      { id: 'n4g-p38-1', number: 186, prompt: 'この {店|みせ}は {安|やす}い（　）、あまり おいしくない。', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'から' }, { n: 3, text: 'ので' }, { n: 4, text: 'ば' }], answer: 1, translationPt: 'Esta loja é barata, mas não é muito gostosa.', explanationPt: '〜が = mas (contraste neutro entre duas frases).' },
+      { id: 'n4g-p38-2', number: 187, prompt: 'すみません（　）、{道|みち}を {教|おし}えて ください。', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'から' }, { n: 3, text: 'ので' }, { n: 4, text: 'のに' }], answer: 1, translationPt: 'Com licença, mas pode me indicar o caminho?', explanationPt: 'すみませんが = uso de が como introdução educada.' },
+      { id: 'n4g-p38-3', number: 188, prompt: '{日本語|にほんご}は {難|むずか}しい（　）、おもしろい。', choices: [{ n: 1, text: 'けど' }, { n: 2, text: 'から' }, { n: 3, text: 'ので' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Japonês é difícil, mas é interessante.', explanationPt: '〜けど = mas (versão coloquial de が).' },
+      { id: 'n4g-p38-4', number: 189, prompt: '{電話|でんわ}した（　）、だれも {出|で}なかった。', choices: [{ n: 1, text: 'けど' }, { n: 2, text: 'から' }, { n: 3, text: 'ので' }, { n: 4, text: 'ても' }], answer: 1, translationPt: 'Liguei, mas ninguém atendeu.', explanationPt: '〜けど liga duas frases em contraste.' },
+      { id: 'n4g-p38-5', number: 190, prompt: '{映画|えいが}を {見|み}に {行|い}きたい（　）、{時間|じかん}が ない。', choices: [{ n: 1, text: 'けど' }, { n: 2, text: 'から' }, { n: 3, text: 'ので' }, { n: 4, text: 'ば' }], answer: 1, translationPt: 'Quero ir ver um filme, mas não tenho tempo.', explanationPt: '〜けど = mas (contraste simples).' },
+
+      // —— 39. 〜ながら ——
+      { id: 'n4g-p39-1', number: 191, prompt: '{音楽|おんがく}を {聞|き}き（　）{勉強|べんきょう}する。', choices: [{ n: 1, text: 'ながら' }, { n: 2, text: 'あいだに' }, { n: 3, text: 'たり' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Estudo enquanto ouço música.', explanationPt: '動詞ます形+ながら = duas ações ao mesmo tempo (mesmo sujeito).' },
+      { id: 'n4g-p39-2', number: 192, prompt: '{歩|ある}き（　）、{話|はな}しましょう。', choices: [{ n: 1, text: 'ながら' }, { n: 2, text: 'あいだに' }, { n: 3, text: 'たり' }, { n: 4, text: 'ても' }], answer: 1, translationPt: 'Vamos conversar enquanto andamos.', explanationPt: '〜ながら liga duas ações simultâneas.' },
+      { id: 'n4g-p39-3', number: 193, prompt: 'テレビを {見|み}（　）、ごはんを {食|た}べる。', choices: [{ n: 1, text: 'ながら' }, { n: 2, text: 'あいだに' }, { n: 3, text: 'たり' }, { n: 4, text: 'から' }], answer: 1, translationPt: 'Como vendo TV.', explanationPt: '〜ながら: ação secundária + principal ao mesmo tempo.' },
+      { id: 'n4g-p39-4', number: 194, prompt: 'コーヒーを {飲|の}み（　）、{新聞|しんぶん}を {読|よ}む。', choices: [{ n: 1, text: 'ながら' }, { n: 2, text: 'あいだに' }, { n: 3, text: 'たり' }, { n: 4, text: 'ので' }], answer: 1, translationPt: 'Leio o jornal enquanto tomo café.', explanationPt: '〜ながら = duas ações simultâneas do mesmo sujeito.' },
+      { id: 'n4g-p39-5', number: 195, prompt: '{彼|かれ}は {働|はたら}き（　）、{大学|だいがく}に {通|かよ}っている。', choices: [{ n: 1, text: 'ながら' }, { n: 2, text: 'あいだに' }, { n: 3, text: 'たり' }, { n: 4, text: 'ても' }], answer: 1, translationPt: 'Ele frequenta a faculdade enquanto trabalha.', explanationPt: '〜ながら também indica duas atividades mantidas em paralelo na vida.' },
+
+      // —— 40. 〜あいだに ——
+      { id: 'n4g-p40-1', number: 196, prompt: '{母|はは}が {寝|ね}ている（　）、{宿題|しゅくだい}を した。', choices: [{ n: 1, text: 'あいだに' }, { n: 2, text: 'ながら' }, { n: 3, text: 'たり' }, { n: 4, text: 'ので' }], answer: 1, translationPt: 'Fiz a lição enquanto minha mãe dormia.', explanationPt: '〜あいだに = durante o período em que (sujeitos diferentes), faço algo num ponto.' },
+      { id: 'n4g-p40-2', number: 197, prompt: '{夏休|なつやす}みの（　）、{本|ほん}を ５さつ {読|よ}んだ。', choices: [{ n: 1, text: 'あいだに' }, { n: 2, text: 'ながら' }, { n: 3, text: 'うえに' }, { n: 4, text: 'ために' }], answer: 1, translationPt: 'Durante as férias de verão, li 5 livros.', explanationPt: '名詞+の+あいだに: 夏休みのあいだに.' },
+      { id: 'n4g-p40-3', number: 198, prompt: '{留守|るす}の（　）、だれかが {来|き}たようだ。', choices: [{ n: 1, text: 'あいだに' }, { n: 2, text: 'ながら' }, { n: 3, text: 'ために' }, { n: 4, text: 'ように' }], answer: 1, translationPt: 'Enquanto eu estava fora, parece que alguém veio.', explanationPt: '〜あいだに marca o intervalo em que o evento ocorre.' },
+      { id: 'n4g-p40-4', number: 199, prompt: '{電車|でんしゃ}を {待|ま}っている（　）、{雨|あめ}が {降|ふ}ってきた。', choices: [{ n: 1, text: 'あいだに' }, { n: 2, text: 'ながら' }, { n: 3, text: 'たり' }, { n: 4, text: 'ので' }], answer: 1, translationPt: 'Enquanto esperava o trem, começou a chover.', explanationPt: '〜あいだに: um evento pontual dentro de um período.' },
+      { id: 'n4g-p40-5', number: 200, prompt: '{赤|あか}ちゃんが ねている（　）、{家事|かじ}を します。', choices: [{ n: 1, text: 'あいだに' }, { n: 2, text: 'ながら' }, { n: 3, text: 'ために' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Enquanto o bebê dorme, faço as tarefas de casa.', explanationPt: '〜あいだに = aproveitar o período (bebê dorme) para fazer algo.' },
+    ],
+  },
+  {
+    id: 'n4g-t7',
+    title: 'もんだい７',
+    subtitlePt: '7. Nominalização e modificação (〜の・こと・普通形+名詞・〜という・〜かどうか)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 41. 〜の／こと ——
+      { id: 'n4g-p41-1', number: 201, prompt: '{日本語|にほんご}を {話|はな}す（　）は {難|むずか}しい。', choices: [{ n: 1, text: 'の' }, { n: 2, text: 'もの' }, { n: 3, text: 'とき' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Falar japonês é difícil.', explanationPt: '〜の nominaliza o verbo (話すの = o ato de falar).' },
+      { id: 'n4g-p41-2', number: 202, prompt: '{私|わたし}の しゅみは {本|ほん}を {読|よ}む（　）です。', choices: [{ n: 1, text: 'こと' }, { n: 2, text: 'もの' }, { n: 3, text: 'とき' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Meu hobby é ler livros.', explanationPt: '趣味は〜こと: usa こと para definir uma atividade.' },
+      { id: 'n4g-p41-3', number: 203, prompt: '{彼|かれ}が {歌|うた}う（　）を {聞|き}いた。', choices: [{ n: 1, text: 'の' }, { n: 2, text: 'とき' }, { n: 3, text: 'もの' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Ouvi ele cantar.', explanationPt: 'Com verbos de percepção (聞く・見る), usa-se の: 歌うのを聞いた.' },
+      { id: 'n4g-p41-4', number: 204, prompt: '{外国語|がいこくご}を {学|まな}ぶ（　）は {楽|たの}しい。', choices: [{ n: 1, text: 'の' }, { n: 2, text: 'もの' }, { n: 3, text: 'とき' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Aprender uma língua estrangeira é divertido.', explanationPt: '〜の (ou こと) nominaliza a ação para virar sujeito.' },
+      { id: 'n4g-p41-5', number: 205, prompt: '{毎日|まいにち} {運動|うんどう}する（　）が {大切|たいせつ}です。', choices: [{ n: 1, text: 'こと' }, { n: 2, text: 'もの' }, { n: 3, text: 'とき' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Fazer exercício todo dia é importante.', explanationPt: '〜ことが大切 = é importante (fazer algo); こと para afirmações gerais.' },
+
+      // —— 42. 普通形＋名詞 ——
+      { id: 'n4g-p42-1', number: 206, prompt: '{昨日|きのう}（　）{本|ほん}は おもしろい。', choices: [{ n: 1, text: '{買|か}った' }, { n: 2, text: '{買|か}いました' }, { n: 3, text: '{買|か}って' }, { n: 4, text: '{買|か}う' }], answer: 1, translationPt: 'O livro que comprei ontem é interessante.', explanationPt: 'A oração que modifica 名詞 usa forma plana: 買った本.' },
+      { id: 'n4g-p42-2', number: 207, prompt: 'あそこで（　）{人|ひと}は {姉|あね}です。', choices: [{ n: 1, text: '{歌|うた}っている' }, { n: 2, text: '{歌|うた}います' }, { n: 3, text: '{歌|うた}って' }, { n: 4, text: '{歌|うた}い' }], answer: 1, translationPt: 'A pessoa que está cantando ali é minha irmã.', explanationPt: 'Forma plana modifica 人: 歌っている人.' },
+      { id: 'n4g-p42-3', number: 208, prompt: 'これは {母|はは}が（　）{料理|りょうり}です。', choices: [{ n: 1, text: '{作|つく}った' }, { n: 2, text: '{作|つく}りました' }, { n: 3, text: '{作|つく}って' }, { n: 4, text: '{作|つく}り' }], answer: 1, translationPt: 'Este é o prato que minha mãe fez.', explanationPt: '母が作った料理: oração relativa em forma plana (sujeito interno com が).' },
+      { id: 'n4g-p42-4', number: 209, prompt: '{昨日|きのう} {私|わたし}が（　）{映画|えいが}は {悲|かな}しかった。', choices: [{ n: 1, text: '{見|み}た' }, { n: 2, text: '{見|み}ました' }, { n: 3, text: '{見|み}て' }, { n: 4, text: '{見|み}る' }], answer: 1, translationPt: 'O filme que vi ontem era triste.', explanationPt: '私が見た映画: modificação com forma plana no passado.' },
+      { id: 'n4g-p42-5', number: 210, prompt: '{日本語|にほんご}が（　）{人|ひと}を さがして います。', choices: [{ n: 1, text: '{話|はな}せる' }, { n: 2, text: '{話|はな}せます' }, { n: 3, text: '{話|はな}せて' }, { n: 4, text: '{話|はな}せ' }], answer: 1, translationPt: 'Estou procurando uma pessoa que saiba falar japonês.', explanationPt: '話せる人: potencial em forma plana modifica 人.' },
+
+      // —— 43. 〜という ——
+      { id: 'n4g-p43-1', number: 211, prompt: '「ホア」（　）{名前|なまえ}です。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'といって' }, { n: 3, text: 'と{思|おも}う' }, { n: 4, text: 'とは' }], answer: 1, translationPt: 'É um nome chamado “Hoa”.', explanationPt: 'XというN = N chamado/de nome X (「ホア」という名前).' },
+      { id: 'n4g-p43-2', number: 212, prompt: '{彼|かれ}が {来|こ}ない（　）ことを {聞|き}いた。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'と{言|い}って' }, { n: 4, text: 'について' }], answer: 1, translationPt: 'Ouvi (a notícia) de que ele não vem.', explanationPt: '〜ということ = o fato/conteúdo de que… (彼が来ないということ).' },
+      { id: 'n4g-p43-3', number: 213, prompt: 'これは「{絵馬|えま}」（　）ものです。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'といって' }, { n: 3, text: 'と{思|おも}う' }, { n: 4, text: 'とは' }], answer: 1, translationPt: 'Isto é o que se chama “ema”.', explanationPt: '「絵馬」というもの = a coisa chamada ema (apresenta um termo novo).' },
+      { id: 'n4g-p43-4', number: 214, prompt: '{駅|えき}の {近|ちか}くに「さくら」（　）{店|みせ}が あります。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'といって' }, { n: 3, text: 'と{思|おも}う' }, { n: 4, text: 'について' }], answer: 1, translationPt: 'Perto da estação tem uma loja chamada “Sakura”.', explanationPt: 'XというN: dá o nome próprio de algo (「さくら」という店).' },
+      { id: 'n4g-p43-5', number: 215, prompt: '{日本|にほん}に「{富士山|ふじさん}」（　）{山|やま}が あります。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'と{言|い}って' }, { n: 4, text: 'とは' }], answer: 1, translationPt: 'No Japão há uma montanha chamada “Fuji”.', explanationPt: '〜という apresenta o nome de algo que o ouvinte talvez não conheça.' },
+
+      // —— 44. 〜かどうか ——
+      { id: 'n4g-p44-1', number: 216, prompt: '{彼|かれ}が {来|く}る（　）{分|わ}からない。', choices: [{ n: 1, text: 'かどうか' }, { n: 2, text: 'かどう' }, { n: 3, text: 'どうか' }, { n: 4, text: 'ように' }], answer: 1, translationPt: 'Não sei se ele vem ou não.', explanationPt: '〜かどうか = se… ou não (pergunta sim/não embutida).' },
+      { id: 'n4g-p44-2', number: 217, prompt: 'この {答|こた}えが {正|ただ}しい（　）、たしかめて ください。', choices: [{ n: 1, text: 'かどうか' }, { n: 2, text: 'かどう' }, { n: 3, text: 'だろうか' }, { n: 4, text: 'について' }], answer: 1, translationPt: 'Verifique se esta resposta está correta ou não.', explanationPt: '正しいかどうか確かめる = checar se está certo ou não.' },
+      { id: 'n4g-p44-3', number: 218, prompt: 'あした {晴|は}れる（　）、わかりません。', choices: [{ n: 1, text: 'かどうか' }, { n: 2, text: 'かどう' }, { n: 3, text: 'ように' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Não sei se amanhã vai fazer sol.', explanationPt: '〜かどうかわからない = não saber se (acontece) ou não.' },
+      { id: 'n4g-p44-4', number: 219, prompt: 'よやくが ひつよう（　）、{聞|き}いて みます。', choices: [{ n: 1, text: 'かどうか' }, { n: 2, text: 'なかどうか' }, { n: 3, text: 'だかどうか' }, { n: 4, text: 'のかどうか' }], answer: 1, translationPt: 'Vou perguntar se é necessário reservar ou não.', explanationPt: 'Substantivo/na-adjetivo + かどうか (sem だ): 必要かどうか.' },
+      { id: 'n4g-p44-5', number: 220, prompt: '{彼女|かのじょ}が {元気|げんき}（　）、しんぱいです。', choices: [{ n: 1, text: 'かどうか' }, { n: 2, text: 'なかどうか' }, { n: 3, text: 'だかどうか' }, { n: 4, text: 'について' }], answer: 1, translationPt: 'Estou preocupado se ela está bem ou não.', explanationPt: '元気かどうか: na-adjetivo + かどうか.' },
+    ],
+  },
+  {
+    id: 'n4g-t8',
+    title: 'もんだい８',
+    subtitlePt: '8. Dar e receber (あげる・くれる・もらう・いただく・くださる)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 45. あげる ——
+      { id: 'n4g-p45-1', number: 221, prompt: '{私|わたし}は {友|とも}だちに プレゼントを（　）。', choices: [{ n: 1, text: 'あげた' }, { n: 2, text: 'くれた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'された' }], answer: 1, translationPt: 'Dei um presente para meu amigo.', explanationPt: 'あげる = eu dou a outra pessoa (私→友だち).' },
+      { id: 'n4g-p45-2', number: 222, prompt: '{妹|いもうと}に {古|ふる}い {本|ほん}を（　）。', choices: [{ n: 1, text: 'あげる' }, { n: 2, text: 'くれる' }, { n: 3, text: 'もらう' }, { n: 4, text: 'させる' }], answer: 1, translationPt: 'Vou dar um livro velho para minha irmã.', explanationPt: 'あげる: direção de mim para o outro (に marca quem recebe).' },
+      { id: 'n4g-p45-3', number: 223, prompt: '{母|はは}の {日|ひ}に {花|はな}を（　）つもりだ。', choices: [{ n: 1, text: 'あげる' }, { n: 2, text: 'くれる' }, { n: 3, text: 'もらう' }, { n: 4, text: 'いる' }], answer: 1, translationPt: 'Pretendo dar flores no Dia das Mães.', explanationPt: 'あげる = oferecer/dar algo a alguém.' },
+      { id: 'n4g-p45-4', number: 224, prompt: '{田中|たなか}さんは {山田|やまだ}さんに {本|ほん}を（　）。', choices: [{ n: 1, text: 'あげた' }, { n: 2, text: 'くれた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'された' }], answer: 1, translationPt: 'O Tanaka deu um livro para o Yamada.', explanationPt: 'Entre terceiros, do ponto de vista de quem dá: あげる (田中→山田).' },
+      { id: 'n4g-p45-5', number: 225, prompt: '{私|わたし}は {犬|いぬ}に えさを（　）。', choices: [{ n: 1, text: 'あげる' }, { n: 2, text: 'くれる' }, { n: 3, text: 'もらう' }, { n: 4, text: 'する' }], answer: 1, translationPt: 'Dou comida ao cachorro.', explanationPt: 'あげる para dar a alguém/algo fora de mim.' },
+
+      // —— 46. くれる ——
+      { id: 'n4g-p46-1', number: 226, prompt: '{友|とも}だちが {私|わたし}に プレゼントを（　）。', choices: [{ n: 1, text: 'くれた' }, { n: 2, text: 'あげた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'された' }], answer: 1, translationPt: 'Meu amigo me deu um presente.', explanationPt: 'くれる = o outro dá para mim (友だち→私).' },
+      { id: 'n4g-p46-2', number: 227, prompt: '{父|ちち}が {時計|とけい}を（　）。', choices: [{ n: 1, text: 'くれた' }, { n: 2, text: 'あげた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'させた' }], answer: 1, translationPt: 'Meu pai me deu um relógio.', explanationPt: 'くれる: alguém dá a mim (sem precisar dizer 私に).' },
+      { id: 'n4g-p46-3', number: 228, prompt: '{先生|せんせい}が {妹|いもうと}に {本|ほん}を（　）。', choices: [{ n: 1, text: 'くれた' }, { n: 2, text: 'あげた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'された' }], answer: 1, translationPt: 'O professor deu um livro para a minha irmã.', explanationPt: 'くれる também serve para dar a alguém do meu grupo (妹).' },
+      { id: 'n4g-p46-4', number: 229, prompt: 'だれが あなたに これを（　）か。', choices: [{ n: 1, text: 'くれた' }, { n: 2, text: 'あげた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'した' }], answer: 1, translationPt: 'Quem te deu isto?', explanationPt: 'くれる: foco em quem deu algo a você/mim.' },
+      { id: 'n4g-p46-5', number: 230, prompt: '{祖母|そぼ}が おこづかいを（　）。', choices: [{ n: 1, text: 'くれた' }, { n: 2, text: 'あげた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'させた' }], answer: 1, translationPt: 'Minha avó me deu uma mesada.', explanationPt: 'くれる = doação na direção de mim/meu grupo.' },
+
+      // —— 47. もらう ——
+      { id: 'n4g-p47-1', number: 231, prompt: '{私|わたし}は {友|とも}だちに プレゼントを（　）。', choices: [{ n: 1, text: 'もらった' }, { n: 2, text: 'あげた' }, { n: 3, text: 'くれた' }, { n: 4, text: 'された' }], answer: 1, translationPt: 'Recebi um presente do meu amigo.', explanationPt: 'もらう = eu recebo (友だちに/から もらう).' },
+      { id: 'n4g-p47-2', number: 232, prompt: '{先生|せんせい}（　）アドバイスを もらった。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'を' }, { n: 3, text: 'へ' }, { n: 4, text: 'で' }], answer: 1, translationPt: 'Recebi um conselho do professor.', explanationPt: 'もらう: o doador leva に ou から (先生から もらった).' },
+      { id: 'n4g-p47-3', number: 233, prompt: 'たんじょうびに {何|なに}を（　）か。', choices: [{ n: 1, text: 'もらった' }, { n: 2, text: 'あげた' }, { n: 3, text: 'くれた' }, { n: 4, text: 'した' }], answer: 1, translationPt: 'O que você ganhou no aniversário?', explanationPt: 'もらう = receber algo (de alguém).' },
+      { id: 'n4g-p47-4', number: 234, prompt: '{兄|あに}に {古|ふる}い パソコンを（　）。', choices: [{ n: 1, text: 'もらった' }, { n: 2, text: 'あげた' }, { n: 3, text: 'くれた' }, { n: 4, text: 'された' }], answer: 1, translationPt: 'Ganhei um computador velho do meu irmão.', explanationPt: 'もらう: eu recebo do irmão (兄に もらった).' },
+      { id: 'n4g-p47-5', number: 235, prompt: '{店|みせ}の {人|ひと}に {地図|ちず}を（　）。', choices: [{ n: 1, text: 'もらった' }, { n: 2, text: 'あげた' }, { n: 3, text: 'くれた' }, { n: 4, text: 'した' }], answer: 1, translationPt: 'Recebi um mapa da pessoa da loja.', explanationPt: 'もらう = receber (店の人に もらった).' },
+
+      // —— 48. いただく／くださる ——
+      { id: 'n4g-p48-1', number: 236, prompt: '{先生|せんせい}に {本|ほん}を（　）。', choices: [{ n: 1, text: 'いただきました' }, { n: 2, text: 'くださいました' }, { n: 3, text: 'あげました' }, { n: 4, text: 'さしあげました' }], answer: 1, translationPt: 'Recebi um livro do professor (humilde).', explanationPt: 'いただく = forma humilde de もらう (receber de um superior).' },
+      { id: 'n4g-p48-2', number: 237, prompt: '{先生|せんせい}が {本|ほん}を（　）。', choices: [{ n: 1, text: 'くださいました' }, { n: 2, text: 'いただきました' }, { n: 3, text: 'もらいました' }, { n: 4, text: 'あげました' }], answer: 1, translationPt: 'O professor me deu um livro (honorífico).', explanationPt: 'くださる = forma honorífica de くれる (superior dá a mim).' },
+      { id: 'n4g-p48-3', number: 238, prompt: '{部長|ぶちょう}に おみやげを（　）。', choices: [{ n: 1, text: 'いただいた' }, { n: 2, text: 'くださった' }, { n: 3, text: 'あげた' }, { n: 4, text: 'させた' }], answer: 1, translationPt: 'Recebi uma lembrança do chefe (humilde).', explanationPt: 'いただく: eu recebo de alguém de posição superior.' },
+      { id: 'n4g-p48-4', number: 239, prompt: '{社長|しゃちょう}が {手紙|てがみ}を（　）。', choices: [{ n: 1, text: 'くださった' }, { n: 2, text: 'いただいた' }, { n: 3, text: 'もらった' }, { n: 4, text: 'あげた' }], answer: 1, translationPt: 'O presidente da empresa me deu uma carta (honorífico).', explanationPt: 'くださる = honorífico de くれる.' },
+      { id: 'n4g-p48-5', number: 240, prompt: '{先生|せんせい}に {日本語|にほんご}を {教|おし}えて（　）。', choices: [{ n: 1, text: 'いただいた' }, { n: 2, text: 'くださった' }, { n: 3, text: 'もらった' }, { n: 4, text: 'あげた' }], answer: 1, translationPt: 'Tive o professor me ensinando japonês (humilde).', explanationPt: '〜ていただく = forma humilde de 〜てもらう (先生に 教えていただいた).' },
+    ],
+  },
+  {
+    id: 'n4g-t9',
+    title: 'もんだい９',
+    subtitlePt: '9. Comparação (〜より・〜ほうが・〜ほど・〜がいちばん)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 49. 〜より ——
+      { id: 'n4g-p49-1', number: 241, prompt: '{電車|でんしゃ}は バス（　）{速|はや}い。', choices: [{ n: 1, text: 'より' }, { n: 2, text: 'ほど' }, { n: 3, text: 'から' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'O trem é mais rápido que o ônibus.', explanationPt: 'AはB+より = A é mais … que B (より marca o termo de comparação).' },
+      { id: 'n4g-p49-2', number: 242, prompt: '{今日|きょう}は {昨日|きのう}（　）{暑|あつ}い。', choices: [{ n: 1, text: 'より' }, { n: 2, text: 'ほど' }, { n: 3, text: 'から' }, { n: 4, text: 'しか' }], answer: 1, translationPt: 'Hoje está mais quente que ontem.', explanationPt: '〜より = do que (compara com ontem).' },
+      { id: 'n4g-p49-3', number: 243, prompt: '{飛行機|ひこうき}は {船|ふね}（　）{高|たか}い。', choices: [{ n: 1, text: 'より' }, { n: 2, text: 'ほど' }, { n: 3, text: 'から' }, { n: 4, text: 'だけ' }], answer: 1, translationPt: 'O avião é mais caro que o navio.', explanationPt: '〜より indica o padrão inferior na comparação.' },
+      { id: 'n4g-p49-4', number: 244, prompt: 'この {問題|もんだい}は {思|おも}った（　）{難|むずか}しい。', choices: [{ n: 1, text: 'より' }, { n: 2, text: 'ほど' }, { n: 3, text: 'から' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Este problema é mais difícil do que eu pensava.', explanationPt: '思ったより = mais … do que se esperava.' },
+      { id: 'n4g-p49-5', number: 245, prompt: '{弟|おとうと}は {私|わたし}（　）{背|せ}が {高|たか}い。', choices: [{ n: 1, text: 'より' }, { n: 2, text: 'ほど' }, { n: 3, text: 'から' }, { n: 4, text: 'しか' }], answer: 1, translationPt: 'Meu irmão é mais alto que eu.', explanationPt: '〜より compara a altura (eu = padrão).' },
+
+      // —— 50. 〜ほうが ——
+      { id: 'n4g-p50-1', number: 246, prompt: 'こっちの（　）いいと {思|おも}う。', choices: [{ n: 1, text: 'ほうが' }, { n: 2, text: 'よりが' }, { n: 3, text: 'ほどが' }, { n: 4, text: 'ためが' }], answer: 1, translationPt: 'Acho que este aqui é melhor.', explanationPt: '〜ほうがいい = este lado é melhor (escolha/preferência).' },
+      { id: 'n4g-p50-2', number: 247, prompt: '{歩|ある}くより {電車|でんしゃ}の（　）{速|はや}い。', choices: [{ n: 1, text: 'ほうが' }, { n: 2, text: 'よりが' }, { n: 3, text: 'ほどが' }, { n: 4, text: 'だけが' }], answer: 1, translationPt: 'O trem é mais rápido do que ir a pé.', explanationPt: 'AよりBのほうが… = B é mais … que A.' },
+      { id: 'n4g-p50-3', number: 248, prompt: '{疲|つか}れたなら、{休|やす}んだ（　）いいですよ。', choices: [{ n: 1, text: 'ほうが' }, { n: 2, text: 'よりが' }, { n: 3, text: 'ほどが' }, { n: 4, text: 'ことが' }], answer: 1, translationPt: 'Se está cansado, é melhor descansar.', explanationPt: '〜たほうがいい = conselho (é melhor fazer).' },
+      { id: 'n4g-p50-4', number: 249, prompt: 'たばこは すわない（　）いい。', choices: [{ n: 1, text: 'ほうが' }, { n: 2, text: 'よりが' }, { n: 3, text: 'ほどが' }, { n: 4, text: 'ことが' }], answer: 1, translationPt: 'É melhor não fumar.', explanationPt: '〜ないほうがいい = é melhor não fazer.' },
+      { id: 'n4g-p50-5', number: 250, prompt: '{肉|にく}より {魚|さかな}の（　）{好|す}きです。', choices: [{ n: 1, text: 'ほうが' }, { n: 2, text: 'よりが' }, { n: 3, text: 'ほどが' }, { n: 4, text: 'しか' }], answer: 1, translationPt: 'Gosto mais de peixe do que de carne.', explanationPt: 'AよりBのほうが好き = preferir B a A.' },
+
+      // —— 51. 〜ほど ——
+      { id: 'n4g-p51-1', number: 251, prompt: '{今日|きょう}は {昨日|きのう}（　）{寒|さむ}くない。', choices: [{ n: 1, text: 'ほど' }, { n: 2, text: 'より' }, { n: 3, text: 'ほうが' }, { n: 4, text: 'だけ' }], answer: 1, translationPt: 'Hoje não está tão frio quanto ontem.', explanationPt: 'BほどA+ない = não tão … quanto B (今日は昨日ほど寒くない).' },
+      { id: 'n4g-p51-2', number: 252, prompt: '{思|おも}った（　）{難|むずか}しくなかった。', choices: [{ n: 1, text: 'ほど' }, { n: 2, text: 'より' }, { n: 3, text: 'ほうが' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Não foi tão difícil quanto eu pensava.', explanationPt: '思ったほど〜ない = não tão … quanto se esperava.' },
+      { id: 'n4g-p51-3', number: 253, prompt: 'この {町|まち}は {東京|とうきょう}（　）にぎやかでは ない。', choices: [{ n: 1, text: 'ほど' }, { n: 2, text: 'より' }, { n: 3, text: 'ほうが' }, { n: 4, text: 'しか' }], answer: 1, translationPt: 'Esta cidade não é tão movimentada quanto Tóquio.', explanationPt: '〜ほど〜ない compara mostrando que A fica abaixo de B.' },
+      { id: 'n4g-p51-4', number: 254, prompt: '{私|わたし}は {兄|あに}（　）{背|せ}が {高|たか}くない。', choices: [{ n: 1, text: 'ほど' }, { n: 2, text: 'より' }, { n: 3, text: 'ほうが' }, { n: 4, text: 'だけ' }], answer: 1, translationPt: 'Não sou tão alto quanto meu irmão.', explanationPt: '兄ほど高くない = não tão alto quanto o irmão.' },
+      { id: 'n4g-p51-5', number: 255, prompt: '{今年|ことし}の {夏|なつ}は {去年|きょねん}（　）{暑|あつ}くない。', choices: [{ n: 1, text: 'ほど' }, { n: 2, text: 'より' }, { n: 3, text: 'ほうが' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'O verão deste ano não está tão quente quanto o do ano passado.', explanationPt: '〜ほど〜ない = o grau de A não chega ao de B.' },
+
+      // —— 52. 〜がいちばん ——
+      { id: 'n4g-p52-1', number: 256, prompt: 'クラスの {中|なか}で {彼|かれ}が（　）{背|せ}が {高|たか}い。', choices: [{ n: 1, text: 'いちばん' }, { n: 2, text: 'もっと' }, { n: 3, text: 'より' }, { n: 4, text: 'ほど' }], answer: 1, translationPt: 'Na turma, ele é o mais alto.', explanationPt: '〜の中で〜がいちばん = o superlativo (o mais …).' },
+      { id: 'n4g-p52-2', number: 257, prompt: '{果物|くだもの}の {中|なか}で りんごが（　）{好|す}きだ。', choices: [{ n: 1, text: 'いちばん' }, { n: 2, text: 'もっと' }, { n: 3, text: 'より' }, { n: 4, text: 'ほど' }], answer: 1, translationPt: 'Dentre as frutas, gosto mais de maçã.', explanationPt: '〜の中で〜がいちばん好き = gostar mais de … (entre um grupo).' },
+      { id: 'n4g-p52-3', number: 258, prompt: '{一年|いちねん}で {二月|にがつ}が（　）{寒|さむ}い。', choices: [{ n: 1, text: 'いちばん' }, { n: 2, text: 'もっと' }, { n: 3, text: 'より' }, { n: 4, text: 'ほど' }], answer: 1, translationPt: 'No ano, fevereiro é o mais frio.', explanationPt: '〜で〜がいちばん = o superlativo dentro de um período/conjunto.' },
+      { id: 'n4g-p52-4', number: 259, prompt: 'スポーツの {中|なか}で サッカーが（　）おもしろい。', choices: [{ n: 1, text: 'いちばん' }, { n: 2, text: 'もっと' }, { n: 3, text: 'より' }, { n: 4, text: 'ほど' }], answer: 1, translationPt: 'Entre os esportes, futebol é o mais interessante.', explanationPt: 'いちばん = número um / o mais … (superlativo).' },
+      { id: 'n4g-p52-5', number: 260, prompt: 'この {店|みせ}で この ケーキが（　）{人気|にんき}が ある。', choices: [{ n: 1, text: 'いちばん' }, { n: 2, text: 'もっと' }, { n: 3, text: 'より' }, { n: 4, text: 'ほど' }], answer: 1, translationPt: 'Nesta loja, este bolo é o mais popular.', explanationPt: '〜でいちばん = o mais … (aqui, o mais popular).' },
+    ],
+  },
+  // —— próximos temas (10..20) serão acrescentados aqui ——
 ]
 
 const grammarDrill: Section = {
