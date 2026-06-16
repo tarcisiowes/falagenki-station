@@ -322,12 +322,3 @@ export const n5_mock: Level = {
     'Simulado de prática do N5 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. A audição está como roteiro (sem áudio por enquanto).',
   sections: [vocabulary, grammar, reading, listening],
 }
-
-export const n5_mock: Level = {
-  id: 'N5-mock',
-  courseId: 'jlpt',
-  titlePt: 'N5 — Simulado autoral',
-  descriptionPt:
-    'Simulado de prática do N5 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
-  sections: [vocabulary, grammar],
-}
