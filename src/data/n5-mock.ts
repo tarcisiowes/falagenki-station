@@ -183,6 +183,146 @@ const grammar: Section = {
   groups: [gramM1, gramM2, gramM3],
 }
 
+// ---------------------------------------------------------------------
+//  読解 — Reading
+// ---------------------------------------------------------------------
+const readM4: ExerciseGroup = {
+  id: 'n5-mock-read-m4',
+  title: 'もんだい4',
+  subtitlePt: 'Compreensão de texto curto',
+  instructionJa: 'つぎの (1)から(3)の ぶんしょうを 読んで、しつもんに こたえてください。',
+  instructionPt: 'Leia cada texto curto e responda à pergunta.',
+  questions: [
+    { id: 'n5-mock-read-26', number: 26, context: '（1）クラスの みなさんへ\nあしたは テストが あります。きょうかしょの 10ページから 20ページまでです。えんぴつと けしゴムを もって きて ください。じしょは つかいません。 — たなか', prompt: 'あした、{何|なに}を もって きますか。', choices: [{ n: 1, text: 'じしょと えんぴつ' }, { n: 2, text: 'えんぴつと けしゴム' }, { n: 3, text: 'きょうかしょと じしょ' }, { n: 4, text: 'ペンと けしゴム' }], answer: 2, translationPt: 'O que trazer amanhã?', explanationPt: 'O aviso pede «えんぴつと けしゴムを もって きて ください» (lápis e borracha); o dicionário NÃO será usado.' },
+    { id: 'n5-mock-read-27', number: 27, context: '（2）リンさんへ\nあした いっしょに ひるごはんを たべませんか。12じに えきの まえで あいましょう。レストランは わたしが よやくします。へんじを ください。 — ヤン', prompt: 'メールを 読んで、リンさんは {何|なに}を しますか。', choices: [{ n: 1, text: 'レストランを よやくします。' }, { n: 2, text: 'ヤンさんに へんじを します。' }, { n: 3, text: '12じに うちで まちます。' }, { n: 4, text: 'ひとりで ひるごはんを たべます。' }], answer: 2, translationPt: 'Lendo o e-mail, o que a Lin vai fazer?', explanationPt: 'A mensagem termina com «へんじを ください» (me responda). Quem reserva o restaurante é o Yan.' },
+    { id: 'n5-mock-read-28', number: 28, context: '（3）この としょかんは ごぜん 9じから ごご 5じまでです。日よう日は やすみです。本は 2しゅうかん かりる ことが できます。', prompt: 'この としょかんに ついて、ただしいのは どれですか。', choices: [{ n: 1, text: '日よう日も あいて います。' }, { n: 2, text: '本は 1かげつ かりられます。' }, { n: 3, text: 'ごご 6じまで あいて います。' }, { n: 4, text: '日よう日は しまって います。' }], answer: 4, translationPt: 'O que está correto sobre esta biblioteca?', explanationPt: '«日よう日は やすみです» = fecha aos domingos. Abre 9h–17h; empréstimo por 2 semanas.' },
+  ],
+}
+
+const readM5: ExerciseGroup = {
+  id: 'n5-mock-read-m5',
+  title: 'もんだい5',
+  subtitlePt: 'Compreensão de texto médio',
+  instructionJa:
+    'つぎの ぶんしょうを 読んで、しつもんに こたえてください。\n\nわたしは せんしゅうの 日よう日に かぞくと うみへ 行きました。あさ 早く うちを 出て、車で 3じかん かかりました。うみは とても きれいで、たくさん およぎました。ひるごはんは うみの 近くの レストランで さかなを たべました。とても おいしかったです。ごご、すこし さんぽを してから、うちへ かえりました。つかれましたが、たのしい 一日でした。',
+  instructionPt: 'Leia o texto (um passeio de domingo à praia com a família) e responda.',
+  questions: [
+    { id: 'n5-mock-read-29', number: 29, prompt: 'この {人|ひと}は うみで {何|なに}を しましたか。', choices: [{ n: 1, text: 'さかなを つりました。' }, { n: 2, text: 'およぎました。' }, { n: 3, text: 'ねました。' }, { n: 4, text: 'かいものを しました。' }], answer: 2, translationPt: 'O que essa pessoa fez na praia?', explanationPt: '«たくさん およぎました» = nadou bastante. (Comeu peixe no restaurante, mas não pescou.)' },
+    { id: 'n5-mock-read-30', number: 30, prompt: 'ひるごはんに {何|なに}を たべましたか。', choices: [{ n: 1, text: 'にく' }, { n: 2, text: 'やさい' }, { n: 3, text: 'さかな' }, { n: 4, text: 'パン' }], answer: 3, translationPt: 'O que comeu no almoço?', explanationPt: '«レストランで さかなを たべました» = comeu peixe.' },
+  ],
+}
+
+const readM6: ExerciseGroup = {
+  id: 'n5-mock-read-m6',
+  title: 'もんだい6',
+  subtitlePt: 'Busca de informação',
+  instructionJa:
+    '右の あんないを 見て、しつもんに こたえてください。\n\n【あおぞら りょうり きょうしつ】\n・わしょく（comida japonesa）：月よう日 10:00〜12:00 … 2000円\n・パン：水よう日 14:00〜16:00 … 1500円\n・ケーキ：土よう日 13:00〜15:00 … 2500円\n・こども りょうり：日よう日 10:00〜12:00 … 1000円\n※ はじめての 人は 500円 やすく なります。',
+  instructionPt: 'Veja o aviso da “oficina de culinária Aozora” e responda.',
+  questions: [
+    { id: 'n5-mock-read-31', number: 31, prompt: '{田中|たなか}さんは はじめてです。土よう日の ケーキの きょうしつに {行|い}きます。いくら はらいますか。', choices: [{ n: 1, text: '1000円' }, { n: 2, text: '1500円' }, { n: 3, text: '2000円' }, { n: 4, text: '2500円' }], answer: 3, translationPt: 'O Tanaka é iniciante e vai à oficina de bolo de sábado. Quanto paga?', explanationPt: 'Bolo = 2500円, mas iniciante tem 500円 de desconto → 2000円.' },
+  ],
+}
+
+const reading: Section = {
+  id: 'reading',
+  level: 'N5-mock',
+  titleJa: 'どっかい',
+  titlePt: 'Leitura',
+  summaryPt:
+    'Simulado autoral N5 (leitura): textos curtos, texto médio e busca de informação. 6 questões originais.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (読解)',
+      bodyPt:
+        '- **もんだい4** — textos **curtos** (avisos, e-mails).\n- **もんだい5** — texto **médio**; entenda o conteúdo.\n- **もんだい6** — **busca de informação** (folhetos, tabelas).',
+    },
+  ],
+  groups: [readM4, readM5, readM6],
+}
+
+// ---------------------------------------------------------------------
+//  聴解 — Listening (roteiro/texto; sem áudio por enquanto)
+// ---------------------------------------------------------------------
+const listenM1: ExerciseGroup = {
+  id: 'n5-mock-listen-m1',
+  title: 'もんだい1',
+  subtitlePt: 'Compreensão de tarefa (pelo roteiro)',
+  instructionJa: 'かいわを 読んで、しつもんに こたえてください。',
+  instructionPt: 'Leia o diálogo (roteiro de áudio) e descubra o que a pessoa faz.',
+  questions: [
+    { id: 'n5-mock-listen-1', number: 1, context: 'おとこの{人|ひと}と おんなの{人|ひと}が はなして います。\nF：あした パーティーが ありますね。{何|なに}を もって いきましょうか。\nM：のみものは ぼくが かいます。たなかさんは おかしを おねがいします。\nF：わかりました。', prompt: 'おんなの{人|ひと}は {何|なに}を もって いきますか。', choices: [{ n: 1, text: 'のみもの' }, { n: 2, text: 'おかし' }, { n: 3, text: 'りょうり' }, { n: 4, text: 'はな' }], answer: 2, translationPt: 'O que a mulher vai levar?', explanationPt: 'O homem cuida das bebidas e pede à mulher os doces: «おかしを おねがいします».' },
+    { id: 'n5-mock-listen-2', number: 2, context: 'せんせいが はなして います。\nM：あした 9じに きょうしつに きて ください。はじめに テストを します。テストの あとで、ビデオを みます。', prompt: 'がくせいは あした はじめに {何|なに}を しますか。', choices: [{ n: 1, text: 'ビデオを みる' }, { n: 2, text: 'テストを する' }, { n: 3, text: 'そうじを する' }, { n: 4, text: 'うたを うたう' }], answer: 2, translationPt: 'O que os alunos fazem primeiro amanhã?', explanationPt: '«はじめに テストを します» = primeiro a prova; o vídeo é depois.' },
+    { id: 'n5-mock-listen-3', number: 3, context: 'みせの{人|ひと}と おんなの{人|ひと}が はなして います。\nF：すみません、この くろい かばんは いくらですか。\nM：3000円です。あおいのは 2500円ですよ。\nF：じゃ、あおいのを ください。', prompt: 'おんなの{人|ひと}は どの かばんを かいますか。', choices: [{ n: 1, text: 'くろい かばん' }, { n: 2, text: 'あおい かばん' }, { n: 3, text: 'あかい かばん' }, { n: 4, text: 'しろい かばん' }], answer: 2, translationPt: 'Qual bolsa a mulher compra?', explanationPt: 'Ela escolhe a azul: «あおいのを ください» (a azul, 2500円).' },
+  ],
+}
+
+const listenM2: ExerciseGroup = {
+  id: 'n5-mock-listen-m2',
+  title: 'もんだい2',
+  subtitlePt: 'Compreensão de ponto-chave (pelo roteiro)',
+  instructionJa: 'かいわを 読んで、しつもんに こたえてください。',
+  instructionPt: 'Leia o diálogo e escolha a informação específica pedida.',
+  questions: [
+    { id: 'n5-mock-listen-4', number: 4, context: 'おとこの{人|ひと}と おんなの{人|ひと}が はなして います。\nM：きのう どこへ {行|い}きましたか。\nF：デパートへ {行|い}きました。くつを かいました。\nM：えいがは みませんでしたか。\nF：いいえ、じかんが ありませんでした。', prompt: 'おんなの{人|ひと}は きのう {何|なに}を かいましたか。', choices: [{ n: 1, text: 'ふく' }, { n: 2, text: 'くつ' }, { n: 3, text: '本' }, { n: 4, text: 'とけい' }], answer: 2, translationPt: 'O que a mulher comprou ontem?', explanationPt: '«くつを かいました» = comprou sapatos. Não viu filme (sem tempo).' },
+    { id: 'n5-mock-listen-5', number: 5, context: 'おんなの{人|ひと}と おとこの{人|ひと}が はなして います。\nF：たなかさんの たんじょうびは いつですか。\nM：6がつ 15にちです。\nF：そうですか。わたしは 7がつ 20にちです。', prompt: 'たなかさんの たんじょうびは いつですか。', choices: [{ n: 1, text: '6がつ15にち' }, { n: 2, text: '7がつ15にち' }, { n: 3, text: '6がつ20にち' }, { n: 4, text: '7がつ20にち' }], answer: 1, translationPt: 'Quando é o aniversário do Tanaka?', explanationPt: 'Ele diz «6がつ 15にち». 7月20日 é o aniversário dela.' },
+    { id: 'n5-mock-listen-6', number: 6, context: 'がくせいが はなして います。\nM：やまださんは {何|なに}で がっこうへ きますか。\nF：いつも じてんしゃです。でも、あめの 日は バスで きます。\nM：きょうは あめですね。', prompt: 'おんなの{人|ひと}は きょう {何|なに}で がっこうへ きましたか。', choices: [{ n: 1, text: 'じてんしゃ' }, { n: 2, text: 'バス' }, { n: 3, text: 'でんしゃ' }, { n: 4, text: 'あるいて' }], answer: 2, translationPt: 'Como a mulher veio à escola hoje?', explanationPt: 'Normalmente de bicicleta, mas em dia de chuva vai de ônibus — e hoje está chovendo.' },
+  ],
+}
+
+const listenM3: ExerciseGroup = {
+  id: 'n5-mock-listen-m3',
+  title: 'もんだい3',
+  subtitlePt: 'Expressões em situação',
+  instructionJa: 'ばめんを 読んで、なんと 言うか えらんでください。',
+  instructionPt: 'Leia a situação e escolha o que dizer.',
+  questions: [
+    { id: 'n5-mock-listen-7', number: 7, prompt: 'ともだちの いえに {入|はい}ります。{何|なん}と 言いますか。', choices: [{ n: 1, text: 'おじゃまします。' }, { n: 2, text: 'おだいじに。' }, { n: 3, text: 'いってきます。' }], answer: 1, translationPt: 'Você entra na casa de um amigo. O que diz?', explanationPt: 'Ao entrar na casa de alguém: «おじゃまします» (com licença). おだいじに=melhoras, いってきます=já volto (ao sair).' },
+    { id: 'n5-mock-listen-8', number: 8, prompt: 'みせで この ふくを かいたいです。みせの{人|ひと}に {何|なん}と 言いますか。', choices: [{ n: 1, text: 'これを ください。' }, { n: 2, text: 'これを どうぞ。' }, { n: 3, text: 'これは いりません。' }], answer: 1, translationPt: 'Você quer comprar esta roupa. O que diz ao atendente?', explanationPt: '«これを ください» = me dê isto (quero comprar). どうぞ=tome (oferecendo), いりません=não preciso.' },
+    { id: 'n5-mock-listen-9', number: 9, prompt: 'あさ、{学校|がっこう}で せんせいに あいました。{何|なん}と 言いますか。', choices: [{ n: 1, text: 'おはようございます。' }, { n: 2, text: 'おやすみなさい。' }, { n: 3, text: 'さようなら。' }], answer: 1, translationPt: 'De manhã você encontra o professor na escola. O que diz?', explanationPt: 'De manhã: «おはようございます». おやすみなさい=boa noite (ao dormir), さようなら=adeus.' },
+  ],
+}
+
+const listenM4: ExerciseGroup = {
+  id: 'n5-mock-listen-m4',
+  title: 'もんだい4',
+  subtitlePt: 'Resposta rápida',
+  instructionJa: 'はじめの ことばを 読んで、いちばん いい へんじを えらんでください。',
+  instructionPt: 'Leia a fala e escolha a resposta mais natural.',
+  questions: [
+    { id: 'n5-mock-listen-10', number: 10, prompt: 'お{名前|なまえ}は？', choices: [{ n: 1, text: 'たなかです。' }, { n: 2, text: 'にほんです。' }, { n: 3, text: 'がくせいです。' }], answer: 1, translationPt: 'Qual é o seu nome?', explanationPt: 'お名前は？ pergunta o nome → «たなかです».' },
+    { id: 'n5-mock-listen-11', number: 11, prompt: 'いっしょに ひるごはんを たべませんか。', choices: [{ n: 1, text: 'はい、たべました。' }, { n: 2, text: 'いいですね、たべましょう。' }, { n: 3, text: 'いいえ、ちがいます。' }], answer: 2, translationPt: 'Vamos almoçar juntos?', explanationPt: 'Convite 〜ませんか → aceitar: «いいですね、たべましょう».' },
+    { id: 'n5-mock-listen-12', number: 12, prompt: 'これは だれの かさですか。', choices: [{ n: 1, text: 'わたしのです。' }, { n: 2, text: 'あそこです。' }, { n: 3, text: '3000円です。' }], answer: 1, translationPt: 'De quem é este guarda-chuva?', explanationPt: 'だれの〜 pergunta o dono → «わたしのです» (é meu).' },
+    { id: 'n5-mock-listen-13', number: 13, prompt: 'どうも ありがとう。', choices: [{ n: 1, text: 'どういたしまして。' }, { n: 2, text: 'はじめまして。' }, { n: 3, text: 'おめでとう。' }], answer: 1, translationPt: 'Muito obrigado.', explanationPt: 'Resposta a um agradecimento: «どういたしまして» (de nada).' },
+  ],
+}
+
+const listening: Section = {
+  id: 'listening',
+  level: 'N5-mock',
+  titleJa: 'ちょうかい',
+  titlePt: 'Audição (roteiro)',
+  summaryPt:
+    'Simulado autoral N5 (audição) — por enquanto SEM áudio: pratique lendo o roteiro. Quatro tipos (tarefa, ponto-chave, expressões, resposta rápida). 13 itens. (TTS pode ser adicionado depois.)',
+  studyNotes: [
+    {
+      title: 'Audição por roteiro',
+      bodyPt:
+        'Esta leva é autoral e ainda **não tem áudio gravado** — os itens de 聴解 estão como **roteiro (texto)** para você praticar a compreensão lendo o diálogo. Áudio (TTS) pode ser adicionado no futuro. Os quatro tipos seguem o formato do exame: tarefa, ponto-chave, expressões e resposta rápida.',
+    },
+  ],
+  groups: [listenM1, listenM2, listenM3, listenM4],
+}
+
+export const n5_mock: Level = {
+  id: 'N5-mock',
+  courseId: 'jlpt',
+  titlePt: 'N5 — Simulado autoral',
+  descriptionPt:
+    'Simulado de prática do N5 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. A audição está como roteiro (sem áudio por enquanto).',
+  sections: [vocabulary, grammar, reading, listening],
+}
+
 export const n5_mock: Level = {
   id: 'N5-mock',
   courseId: 'jlpt',
