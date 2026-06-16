@@ -136,11 +136,99 @@ const vocabulary: Section = {
   groups: [vocabM1, vocabM2, vocabM3, vocabM4, vocabM5],
 }
 
+// ---------------------------------------------------------------------
+//  言語知識（文法）・読解 — Grammar
+// ---------------------------------------------------------------------
+const gramM1: ExerciseGroup = {
+  id: 'n4-2012-gram-m1',
+  title: 'もんだい1',
+  subtitlePt: 'Forma gramatical (preencher a lacuna)',
+  instructionJa: '（　）に 何を 入れますか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'O que entra na lacuna （　）? Escolha a melhor partícula/forma.',
+  example: {
+    prompt: 'わたしは {毎朝|まいあさ} {新聞|しんぶん}（　）{読|よ}みます。',
+    choices: [{ n: 1, text: 'が' }, { n: 2, text: 'の' }, { n: 3, text: 'を' }, { n: 4, text: 'で' }],
+    answer: 3,
+    note: '新聞を 読む (ler jornal); を marca o objeto.',
+  },
+  questions: [
+    { id: 'n4-2012-gram-1', number: 1, prompt: 'わたしの {父|ちち}は {中国語|ちゅうごくご}も {英語|えいご}（　）{話|はな}せます。', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'で' }, { n: 3, text: 'も' }, { n: 4, text: 'が' }], answer: 3, translationPt: 'Meu pai fala chinês e inglês também.', explanationPt: '中国語も 英語も = chinês também, inglês também. O segundo も marca mais um item da lista.' },
+    { id: 'n4-2012-gram-2', number: 2, prompt: 'これは わたしが {米|こめ}（　）{作|つく}った パンです。', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'で' }, { n: 3, text: 'が' }, { n: 4, text: 'から' }], answer: 4, translationPt: 'Este é um pão que eu fiz a partir de arroz.', explanationPt: '原料 (matéria-prima que se transforma) usa から: 米から 作る (fazer a partir do arroz). で seria material que ainda se reconhece.' },
+    { id: 'n4-2012-gram-3', number: 3, prompt: '{男|おとこ}の{子|こ}の {顔|かお}は {父親|ちちおや}より {母親|ははおや}（　）にる という {話|はなし}を {聞|き}いた。', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'が' }, { n: 3, text: 'も' }, { n: 4, text: 'の' }], answer: 1, translationPt: 'Ouvi dizer que o rosto do menino se parece mais com a mãe do que com o pai.', explanationPt: 'Aに にる = parecer-se COM A (に marca com quem se parece).' },
+    { id: 'n4-2012-gram-4', number: 4, prompt: '{妹|いもうと}は おしゃべりだ。{静|しず}かなのは {食事|しょくじ}の とき（　）だ。', choices: [{ n: 1, text: 'しか' }, { n: 2, text: 'だけ' }, { n: 3, text: 'が' }, { n: 4, text: 'の' }], answer: 2, translationPt: 'Minha irmã é tagarela. O único momento em que fica quieta é na refeição.', explanationPt: '〜だけ = somente/único. 食事の ときだけ = só na hora da refeição.' },
+    { id: 'n4-2012-gram-5', number: 5, prompt: 'A「{誕生日|たんじょうび}に {田中|たなか}さんから {何|なに}を もらったんですか。」B「田中さん（　）{腕時計|うでどけい}を もらいました。」', choices: [{ n: 1, text: 'からが' }, { n: 2, text: 'からに' }, { n: 3, text: 'からで' }, { n: 4, text: 'からは' }], answer: 4, translationPt: '— O que você ganhou do Tanaka no aniversário? — Do Tanaka eu ganhei um relógio de pulso.', explanationPt: '〜から もらう = receber de alguém; com は (tópico/contraste): 田中さんからは.' },
+    { id: 'n4-2012-gram-6', number: 6, prompt: '（{会社|かいしゃ}で）A「すみません。{山田|やまだ}さんは どこですか。」B「山田さんは {会議中|かいぎちゅう}ですが、{会議|かいぎ}は 11{時半|じはん}（　）{終|お}わると {思|おも}いますよ。」', choices: [{ n: 1, text: 'までは' }, { n: 2, text: 'までには' }, { n: 3, text: 'までも' }, { n: 4, text: 'までにも' }], answer: 2, translationPt: '(Na empresa) — O Yamada está onde? — Está em reunião, mas acho que ela termina até as 11h30.', explanationPt: '〜までに = até (prazo) de um acontecimento pontual (終わる). Com は: 11時半までには.' },
+    { id: 'n4-2012-gram-7', number: 7, prompt: '{学生|がくせい}「{先生|せんせい}、この {言葉|ことば}は（　）{意味|いみ}ですか。」先生「『やさしい』と いう {意味|いみ}です。」', choices: [{ n: 1, text: 'どうやって' }, { n: 2, text: 'どのぐらい' }, { n: 3, text: 'どういう' }, { n: 4, text: 'どう' }], answer: 3, translationPt: '— Professor, que sentido tem esta palavra? — Significa "fácil/gentil".', explanationPt: 'どういう + substantivo = "que tipo de ~": どういう 意味 (que sentido).' },
+    { id: 'n4-2012-gram-8', number: 8, prompt: 'チャン「{古川|ふるかわ}さん、この じゅぎょうの レポート、{終|お}わりましたか。」古川「はい、{一週間|いっしゅうかん} かかりましたが、きのうの {夜|よる}、（　）{終|お}わりました。」', choices: [{ n: 1, text: 'やっと' }, { n: 2, text: 'ずっと' }, { n: 3, text: 'もっと' }, { n: 4, text: 'きっと' }], answer: 1, translationPt: '— Furukawa, terminou o relatório da aula? — Sim, levei uma semana, mas ontem à noite finalmente terminei.', explanationPt: 'やっと = enfim/finalmente (algo difícil se concretiza). ずっと=o tempo todo, もっと=mais, きっと=com certeza.' },
+    { id: 'n4-2012-gram-9', number: 9, prompt: 'A「あした いっしょに ドライブに {行|い}きませんか。」B「（　）、ごめんなさい、あしたは アルバイトが あるんです。」', choices: [{ n: 1, text: '行きたいから' }, { n: 2, text: '行きたいけれど' }, { n: 3, text: '行きたいし' }, { n: 4, text: '行きたくて' }], answer: 2, translationPt: '— Amanhã vamos passear de carro? — Eu queria ir, mas desculpa, amanhã tenho trabalho de meio período.', explanationPt: '〜けれど = mas (contraste). "Queria ir, mas não posso".' },
+    { id: 'n4-2012-gram-10', number: 10, prompt: '{子|こ}ども「ねえ、ゲームを しても いい？」{母親|ははおや}「しゅくだいを（　）あとでね。」', choices: [{ n: 1, text: 'して いた' }, { n: 2, text: 'して いる' }, { n: 3, text: 'したら' }, { n: 4, text: 'した' }], answer: 4, translationPt: '— Mãe, posso jogar videogame? — Depois de fazer a lição, viu.', explanationPt: '〜た あとで = depois de fazer ~. しゅくだいを した あとで = depois de fazer a lição.' },
+    { id: 'n4-2012-gram-11', number: 11, prompt: 'この すいかは（　）すぎて、れいぞうこに {入|はい}らない。', choices: [{ n: 1, text: '大き' }, { n: 2, text: '大きい' }, { n: 3, text: '大きく' }, { n: 4, text: '大きくて' }], answer: 1, translationPt: 'Esta melancia é grande demais e não cabe na geladeira.', explanationPt: 'い-adjetivo + すぎる: tira o い → 大き + すぎる = grande demais.' },
+    { id: 'n4-2012-gram-12', number: 12, prompt: 'A「{誕生日|たんじょうび} おめでとうございます。これ、プレゼントです。どうぞ。」B「ありがとうございます。{大切|たいせつ}に（　）。」', choices: [{ n: 1, text: 'します' }, { n: 2, text: 'なります' }, { n: 3, text: 'います' }, { n: 4, text: 'あります' }], answer: 1, translationPt: '— Parabéns pelo aniversário. Aqui, um presente. — Obrigado. Vou guardar com carinho.', explanationPt: '大切に します = vou cuidar/guardar com carinho (〜に する = decidir tratar de tal modo).' },
+    { id: 'n4-2012-gram-13', number: 13, prompt: 'A「きのうは ひっこしを（　）、どうも ありがとうございました。」B「いいえ、どういたしまして。」', choices: [{ n: 1, text: '手伝って' }, { n: 2, text: '手伝ったので' }, { n: 3, text: '手伝って くれて' }, { n: 4, text: '手伝ったから' }], answer: 3, translationPt: '— Obrigado por ter me ajudado na mudança ontem. — De nada.', explanationPt: '〜て くれて ありがとう = obrigado por (fazer algo) por mim. 手伝って くれて = por ter me ajudado.' },
+    { id: 'n4-2012-gram-14', number: 14, prompt: '{今日|きょう}、わたしは えんぴつと {消|け}しゴムを {忘|わす}れたので、となりの {人|ひと}に {貸|か}して（　）。', choices: [{ n: 1, text: 'やりました' }, { n: 2, text: 'あげました' }, { n: 3, text: 'くれました' }, { n: 4, text: 'もらいました' }], answer: 4, translationPt: 'Hoje esqueci o lápis e a borracha, então pedi emprestado ao colega ao lado.', explanationPt: '〜て もらう = receber o favor de alguém. 貸して もらいました = pedi (e recebi) emprestado.' },
+    { id: 'n4-2012-gram-15', number: 15, prompt: 'わたしの {本|ほん}だなには（　）{読|よ}んで いない まんがが たくさん あります。', choices: [{ n: 1, text: '買うあいだ' }, { n: 2, text: '買ったまま' }, { n: 3, text: '買いそうで' }, { n: 4, text: '買って いる' }], answer: 2, translationPt: 'Na minha estante há muitos mangás que comprei mas (deixei) sem ler.', explanationPt: '〜たまま = no estado de ter feito (sem mudar): 買ったまま 読んで いない = comprado e deixado sem ler.' },
+  ],
+}
+
+const gramM2: ExerciseGroup = {
+  id: 'n4-2012-gram-m2',
+  title: 'もんだい2',
+  subtitlePt: 'Montagem da frase (★)',
+  instructionJa: '★に 入る ものは どれですか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'Ordene os fragmentos. Qual entra na posição ★? (A explicação mostra a frase montada.)',
+  example: {
+    prompt: 'つくえの ＿＿ ＿＿ ★ ＿＿ あります。',
+    choices: [{ n: 1, text: 'が' }, { n: 2, text: 'に' }, { n: 3, text: '上' }, { n: 4, text: 'ペン' }],
+    answer: 4,
+    note: 'Ordem: つくえの 上 に ペン が あります → ★ = ペン (4).',
+  },
+  questions: [
+    { id: 'n4-2012-gram-16', number: 16, prompt: 'A「コンサートには もう {間|ま}に{合|あ}わないですね。」B「{今|いま}すぐ ＿＿ ＿＿ ★ ＿＿ {行|い}こう。」', choices: [{ n: 1, text: 'タクシーに' }, { n: 2, text: 'タクシーで' }, { n: 3, text: '間に合うかもしれないから' }, { n: 4, text: '乗れば' }], answer: 3, translationPt: '— Não vamos mais conseguir chegar a tempo no show. — Vamos agora; se pegarmos um táxi talvez dê tempo.', explanationPt: 'Ordem: 今すぐ タクシーに 乗れば 間に合うかもしれないから 行こう. ★ = 間に合うかもしれないから (3).' },
+    { id: 'n4-2012-gram-17', number: 17, prompt: '{山田|やまだ}「{田中|たなか}さん、これから {食事|しょくじ}でも どうですか。」田中「すみません。ちょうど ＿＿ ＿＿ ★ ＿＿ です。」', choices: [{ n: 1, text: 'なん' }, { n: 2, text: 'ところ' }, { n: 3, text: '食べた' }, { n: 4, text: '今' }], answer: 2, translationPt: '— Tanaka, que tal comermos algo agora? — Desculpe, acabei de comer agorinha.', explanationPt: 'Ordem: ちょうど 今 食べた ところ なん です (acabei de comer). ★ = ところ (2).' },
+    { id: 'n4-2012-gram-18', number: 18, prompt: 'A「あしたは {大事|だいじ}な おきゃくさまに {会|あ}うから、＿＿ ＿＿ ★ ＿＿ いけませんよ。」B「わかりました。あしたは {新|あたら}しい くつを はいて {来|き}ます。」', choices: [{ n: 1, text: 'くつ' }, { n: 2, text: 'は' }, { n: 3, text: 'そんな' }, { n: 4, text: 'で' }], answer: 4, translationPt: '— Amanhã vamos receber um cliente importante, então não pode ir com esse tipo de sapato. — Entendi, amanhã venho de sapato novo.', explanationPt: 'Ordem: そんな くつ で は いけません. ★ = で (4).' },
+    { id: 'n4-2012-gram-19', number: 19, prompt: '{今日|きょう}は、{風|かぜ}が ＿＿ ＿＿ ★ ＿＿ {出|で}かけたくない。', choices: [{ n: 1, text: 'し' }, { n: 2, text: 'だから' }, { n: 3, text: '{寒|さむ}そう' }, { n: 4, text: '{強|つよ}い' }], answer: 3, translationPt: 'Hoje o vento está forte e parece que vai fazer frio, então não quero sair.', explanationPt: 'Ordem: 風が 強い し 寒そう だから 出かけたくない. ★ = 寒そう (3).' },
+    { id: 'n4-2012-gram-20', number: 20, prompt: '{田中|たなか}「{山田|やまだ}さん。{東京|とうきょう}の {大学|だいがく}に {行|い}く ことを、もう ご{両親|りょうしん}に {話|はな}しましたか。」山田「いいえ。でも、もし {両親|りょうしん}に ＿＿ ＿＿ ★ ＿＿ つもりです。」', choices: [{ n: 1, text: '{反対|はんたい}' }, { n: 2, text: 'する' }, { n: 3, text: '{東京|とうきょう}で {勉強|べんきょう}' }, { n: 4, text: 'されても' }], answer: 3, translationPt: '— Yamada, você já contou aos seus pais que vai para a universidade em Tóquio? — Não. Mas, mesmo que eles sejam contra, pretendo estudar em Tóquio.', explanationPt: 'Ordem: もし 両親に 反対 されても 東京で勉強 する つもりです. ★ = 東京で勉強 (3).' },
+  ],
+}
+
+const gramM3: ExerciseGroup = {
+  id: 'n4-2012-gram-m3',
+  title: 'もんだい3',
+  subtitlePt: 'Gramática no texto (cloze)',
+  instructionJa:
+    '21から25に 何を 入れますか。文章の 意味を 考えて、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\n【下の 文章は「家族」に ついての 作文です。】\n\n「ポチ」　{林|はやし} {明|あきら}\n\nわたしの {家|いえ}には「ポチ」と いう {名前|なまえ}の {犬|いぬ}が います。一か月前に {父|ちち}が もらって きました。わたしたちは ポチを 家の 中で【21】。ポチが 好きな ところは テレビの 前の ソファーです。ポチは とても かわいいのですが、{何|なん}でも かむので 少し こまって います。先週は 本当に こまりました。ポチが 父の けいたいでんわを【22】からです。\nわたしは {兄弟|きょうだい}が いないので、ずっと さびしかったです。しかし、ポチを かってからは【23】。わたしたちは いつも いっしょです。ポチは わたしが 家を 出る とき、いつも げんかんまで 出て きます。【24】、{元気|げんき}が ない ときは、そばに 来て くれます。ポチ【25】わたしたちの {大切|たいせつ}な {家族|かぞく}の {一員|いちいん}です。',
+  instructionPt: 'Leia a redação "Pochi" (sobre a família, do cão da casa) e escolha o que melhor preenche cada lacuna 21–25.',
+  questions: [
+    { id: 'n4-2012-gram-21', number: 21, prompt: '【21】', choices: [{ n: 1, text: 'かうでしょう' }, { n: 2, text: 'かって います' }, { n: 3, text: 'かって いますか' }, { n: 4, text: 'かって いました' }], answer: 2, translationPt: 'Criamos o Pochi dentro de casa.', explanationPt: 'Fato atual e contínuo → 〜て います: 家の 中で かって います (criamos/temos dentro de casa).' },
+    { id: 'n4-2012-gram-22', number: 22, prompt: '【22】', choices: [{ n: 1, text: 'こわした ところだ' }, { n: 2, text: 'こわされて いる' }, { n: 3, text: 'こわして しまった' }, { n: 4, text: 'こわされた' }], answer: 3, translationPt: '...porque o Pochi acabou quebrando o celular do pai.', explanationPt: '〜て しまった = acabou fazendo (algo indesejado/concluído). ポチが…こわして しまった.' },
+    { id: 'n4-2012-gram-23', number: 23, prompt: '【23】', choices: [{ n: 1, text: 'さびしく なります' }, { n: 2, text: 'さびしく なくなりました' }, { n: 3, text: 'さびしく なるかもしれません' }, { n: 4, text: 'さびしく なくなったそうです' }], answer: 2, translationPt: 'Depois que passei a criá-lo, deixei de me sentir sozinho.', explanationPt: 'さびしく なくなりました = deixou de ser solitário (mudança já ocorrida, sobre si mesmo).' },
+    { id: 'n4-2012-gram-24', number: 24, prompt: '【24】', choices: [{ n: 1, text: 'それに' }, { n: 2, text: 'たとえば' }, { n: 3, text: 'だから' }, { n: 4, text: 'それなら' }], answer: 1, translationPt: 'Além disso, quando estou sem ânimo, ele vem para o meu lado.', explanationPt: 'それに = além disso (acrescenta mais um ponto positivo). たとえば=por exemplo, だから=por isso.' },
+    { id: 'n4-2012-gram-25', number: 25, prompt: '【25】', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'で' }, { n: 3, text: 'と' }, { n: 4, text: 'は' }], answer: 4, translationPt: 'O Pochi é um membro importante da nossa família.', explanationPt: 'Tópico/definição: ポチは … 一員です (o Pochi é um membro). は marca o tema.' },
+  ],
+}
+
+const grammar: Section = {
+  id: 'grammar',
+  level: 'N4-2012',
+  titleJa: 'げんごちしき（ぶんぽう）',
+  titlePt: 'Gramática',
+  summaryPt:
+    'Conhecimento da língua (gramática) do simulado oficial 2012: forma gramatical, montagem de frases (★) e gramática no texto. 25 questões.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (文法)',
+      bodyPt:
+        '- **もんだい1** — escolher a **forma/partícula** que preenche a lacuna `（　）`.\n- **もんだい2** — **ordenar** 4 fragmentos; responder qual fica na posição **★** (a explicação mostra a frase montada).\n- **もんだい3** — **cloze**: preencher as lacunas de um texto pensando no sentido geral.',
+    },
+  ],
+  groups: [gramM1, gramM2, gramM3],
+}
+
 export const n4_2012: Level = {
   id: 'N4-2012',
   courseId: 'jlpt',
   titlePt: 'N4 — Simulado 2012',
   descriptionPt:
-    'Segunda leva de prática do N4: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 文法・読解 e 聴解 serão adicionados.)',
-  sections: [vocabulary],
+    'Segunda leva de prática do N4: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
+  sections: [vocabulary, grammar],
 }
