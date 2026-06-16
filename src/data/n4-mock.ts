@@ -185,11 +185,143 @@ const grammar: Section = {
   groups: [gramM1, gramM2, gramM3],
 }
 
+// ---------------------------------------------------------------------
+//  読解 — Reading
+// ---------------------------------------------------------------------
+const readM4: ExerciseGroup = {
+  id: 'n4-mock-read-m4',
+  title: 'もんだい4',
+  subtitlePt: 'Compreensão de texto curto',
+  instructionJa: 'つぎの (1)から(3)の ぶんしょうを 読んで、しつもんに こたえてください。',
+  instructionPt: 'Leia cada texto curto e responda à pergunta.',
+  questions: [
+    { id: 'n4-mock-read-26', number: 26, context: '（1）リンさんへ\nあしたの かいぎは 10じからですが、9じはんに きて、へやの じゅんびを てつだって ください。よろしく おねがいします。 — やまだ', prompt: 'リンさんは あした 9じはんに {何|なに}を しますか。', choices: [{ n: 1, text: 'かいぎに でます。' }, { n: 2, text: 'へやの じゅんびを てつだいます。' }, { n: 3, text: 'やまださんに れんらくします。' }, { n: 4, text: '10じに きます。' }], answer: 2, translationPt: 'O que a Lin faz amanhã às 9h30?', explanationPt: 'A reunião é às 10h, mas pede chegar às 9h30 para «へやの じゅんびを てつだって» (ajudar a preparar a sala).' },
+    { id: 'n4-mock-read-27', number: 27, context: '（2）【おしらせ】\nこの エレベーターは こしょうの ため、きょうは つかえません。かいだんを つかって ください。ごめいわくを おかけします。', prompt: 'きょう、どうやって うえの かいへ {行|い}きますか。', choices: [{ n: 1, text: 'エレベーターで 行きます。' }, { n: 2, text: 'かいだんで 行きます。' }, { n: 3, text: 'うえの かいへは 行けません。' }, { n: 4, text: 'となりの ビルへ 行きます。' }], answer: 2, translationPt: 'Como ir ao andar de cima hoje?', explanationPt: 'O elevador está quebrado (こしょう); o aviso pede «かいだんを つかって ください» (use a escada).' },
+    { id: 'n4-mock-read-28', number: 28, context: '（3）わたしは まいあさ ジョギングを して います。はじめは 15ふんだけでしたが、いまは 1じかん はしれる ように なりました。あさ はしると、一日 げんきに すごせます。', prompt: 'この {人|ひと}について、ただしいのは どれですか。', choices: [{ n: 1, text: 'いまは 15ふんだけ はしります。' }, { n: 2, text: 'よる ジョギングを します。' }, { n: 3, text: 'いまは 1じかん はしれます。' }, { n: 4, text: 'ジョギングが きらいです。' }], answer: 3, translationPt: 'O que está correto sobre essa pessoa?', explanationPt: 'Começou com 15 min, mas «いまは 1じかん はしれる ように なりました» (agora consegue correr 1 hora). Corre de manhã.' },
+  ],
+}
+
+const readM5: ExerciseGroup = {
+  id: 'n4-mock-read-m5',
+  title: 'もんだい5',
+  subtitlePt: 'Compreensão de texto médio',
+  instructionJa:
+    'つぎの ぶんしょうを 読んで、しつもんに こたえてください。\n\nせんしゅう、わたしは はじめて 一人で りょうりを つくりました。{母|はは}に でんわして、つくりかたを 聞きながら、カレーを つくりました。やさいを 切るのに 時間が かかって、たいへんでしたが、できあがった カレーは とても おいしかったです。かぞくも「おいしい」と 言って くれました。これからは、もっと いろいろな りょうりに ちょうせんしたいです。',
+  instructionPt: 'Leia o texto (a primeira vez cozinhando sozinho) e responda.',
+  questions: [
+    { id: 'n4-mock-read-29', number: 29, prompt: 'この {人|ひと}は どうやって カレーを つくりましたか。', choices: [{ n: 1, text: '母と いっしょに つくりました。' }, { n: 2, text: '母に でんわで 聞きながら つくりました。' }, { n: 3, text: '本を 見ながら つくりました。' }, { n: 4, text: '一人で レシピを かんがえました。' }], answer: 2, translationPt: 'Como essa pessoa fez o curry?', explanationPt: '«母に でんわして、つくりかたを 聞きながら» = perguntando à mãe por telefone enquanto cozinhava.' },
+    { id: 'n4-mock-read-30', number: 30, prompt: 'カレーを つくって、どう おもいましたか。', choices: [{ n: 1, text: 'やさいを 切るのは かんたんだった。' }, { n: 2, text: 'たいへんだったが、おいしく できた。' }, { n: 3, text: 'かぞくは たべなかった。' }, { n: 4, text: 'もう つくりたくない。' }], answer: 2, translationPt: 'O que achou de ter feito o curry?', explanationPt: 'Cortar os legumes deu trabalho (たいへん), «でも… とても おいしかった» — deu trabalho, mas ficou gostoso.' },
+  ],
+}
+
+const readM6: ExerciseGroup = {
+  id: 'n4-mock-read-m6',
+  title: 'もんだい6',
+  subtitlePt: 'Busca de informação',
+  instructionJa:
+    '右の あんないを 見て、しつもんに こたえてください。\n\n【スポーツクラブ あおぞら】\n・かいいんに なる：にゅうかいきん 3000円 ＋ まいつき 5000円\n・がくせい かいいん：まいつき 3000円\n・1日だけ つかう（ビジター）：2000円\n・プールも つかう {人|ひと}：＋1000円／つき\n※ どようび・にちようびは ビジターは つかえません。',
+  instructionPt: 'Veja o quadro da academia “Aozora” e responda.',
+  questions: [
+    { id: 'n4-mock-read-31', number: 31, prompt: 'がくせいの {田中|たなか}さんが かいいんに なって、プールも つかいたいです。まいつき いくら はらいますか。', choices: [{ n: 1, text: '3000円' }, { n: 2, text: '4000円' }, { n: 3, text: '5000円' }, { n: 4, text: '6000円' }], answer: 2, translationPt: 'O Tanaka (estudante) vira sócio e quer usar a piscina. Quanto paga por mês?', explanationPt: 'Sócio estudante = 3000円/mês + piscina 1000円/mês = 4000円. (A taxa de adesão é só uma vez, não mensal.)' },
+    { id: 'n4-mock-read-32', number: 32, prompt: '{山田|やまだ}さんは どようびに 1日だけ つかいたいです。できますか。', choices: [{ n: 1, text: 'はい、2000円で つかえます。' }, { n: 2, text: 'いいえ、どようびは ビジターは つかえません。' }, { n: 3, text: 'はい、3000円で つかえます。' }, { n: 4, text: 'はい、プールだけ つかえます。' }], answer: 2, translationPt: 'O Yamada quer usar só 1 dia, no sábado. Pode?', explanationPt: 'O ※ avisa: «どようび・にちようびは ビジターは つかえません» (visitante não pode usar aos sábados/domingos).' },
+  ],
+}
+
+const reading: Section = {
+  id: 'reading',
+  level: 'N4-mock',
+  titleJa: 'どっかい',
+  titlePt: 'Leitura',
+  summaryPt:
+    'Simulado autoral N4 (leitura): textos curtos, texto médio e busca de informação. 7 questões originais.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (読解)',
+      bodyPt:
+        '- **もんだい4** — textos **curtos** (avisos, e-mails).\n- **もんだい5** — texto **médio**; entenda detalhes e a opinião.\n- **もんだい6** — **busca de informação** (folhetos, tabelas).',
+    },
+  ],
+  groups: [readM4, readM5, readM6],
+}
+
+// ---------------------------------------------------------------------
+//  聴解 — Listening (roteiro/texto; sem áudio por enquanto)
+// ---------------------------------------------------------------------
+const listenM1: ExerciseGroup = {
+  id: 'n4-mock-listen-m1',
+  title: 'もんだい1',
+  subtitlePt: 'Compreensão de tarefa (pelo roteiro)',
+  instructionJa: 'かいわを 読んで、しつもんに こたえてください。',
+  instructionPt: 'Leia o diálogo (roteiro de áudio) e descubra o que a pessoa faz.',
+  questions: [
+    { id: 'n4-mock-listen-1', number: 1, context: 'おとこの{人|ひと}と おんなの{人|ひと}が はなして います。\nM：レポート、もう おわった？\nF：ううん、まだ。これから としょかんで {本|ほん}を かりて、それから かく。\nM：てつだおうか。\nF：ありがとう。じゃあ、{本|ほん}を いっしょに さがして。', prompt: '二人は はじめに {何|なに}を しますか。', choices: [{ n: 1, text: 'レポートを かく' }, { n: 2, text: '本を さがす' }, { n: 3, text: 'ごはんを たべる' }, { n: 4, text: 'いえに かえる' }], answer: 2, translationPt: 'O que os dois fazem primeiro?', explanationPt: 'Ela vai pegar livros na biblioteca e ele se oferece para ajudar a procurar: «本を いっしょに さがして» — primeiro procuram os livros.' },
+    { id: 'n4-mock-listen-2', number: 2, context: 'てんいんと きゃくが はなして います。\nF：すみません、この シャツの {白|しろ}いのは ありますか。\nM：{白|しろ}は いま ありません。{青|あお}と {黒|くろ}は ありますよ。\nF：じゃあ、{黒|くろ}を ください。', prompt: 'きゃくは どの シャツを かいますか。', choices: [{ n: 1, text: '白い シャツ' }, { n: 2, text: '青い シャツ' }, { n: 3, text: '黒い シャツ' }, { n: 4, text: '赤い シャツ' }], answer: 3, translationPt: 'Qual camisa o cliente compra?', explanationPt: 'A branca está em falta; ela escolhe a preta: «黒を ください».' },
+    { id: 'n4-mock-listen-3', number: 3, context: '{先生|せんせい}が はなして います。\nM：あしたは えんそくです。9じに がっこうに あつまって ください。おべんとうと のみものを もって きて ください。かさは いりません。', prompt: 'あした、{何|なに}を もって いきますか。', choices: [{ n: 1, text: 'おべんとうと かさ' }, { n: 2, text: 'おべんとうと のみもの' }, { n: 3, text: 'のみものと かさ' }, { n: 4, text: 'きょうかしょ' }], answer: 2, translationPt: 'O que levar amanhã?', explanationPt: '«おべんとうと のみものを もって きて» (marmita e bebida); «かさは いりません» (não precisa de guarda-chuva).' },
+  ],
+}
+
+const listenM2: ExerciseGroup = {
+  id: 'n4-mock-listen-m2',
+  title: 'もんだい2',
+  subtitlePt: 'Compreensão de ponto-chave (pelo roteiro)',
+  instructionJa: 'かいわを 読んで、しつもんに こたえてください。',
+  instructionPt: 'Leia o diálogo e escolha a informação específica pedida.',
+  questions: [
+    { id: 'n4-mock-listen-4', number: 4, context: 'おんなの{人|ひと}と おとこの{人|ひと}が はなして います。\nF：しゅうまつ、どこか {行|い}きましたか。\nM：{山|やま}に のぼる つもりでしたが、あめだったので、いえで えいがを {見|み}ました。', prompt: 'おとこの{人|ひと}は しゅうまつ {何|なに}を しましたか。', choices: [{ n: 1, text: '山に のぼった' }, { n: 2, text: 'いえで えいがを 見た' }, { n: 3, text: 'かいものを した' }, { n: 4, text: 'はたらいた' }], answer: 2, translationPt: 'O que o homem fez no fim de semana?', explanationPt: 'Pretendia subir a montanha, mas choveu, então «いえで えいがを 見ました» (viu filme em casa).' },
+    { id: 'n4-mock-listen-5', number: 5, context: 'おとこの{人|ひと}と おんなの{人|ひと}が はなして います。\nM：あたらしい かばん、いいですね。たかかったでしょう。\nF：いいえ、セールで やすく かいました。5000円でした。\nM：へえ、やすいですね。', prompt: 'かばんは いくらでしたか。', choices: [{ n: 1, text: '500円' }, { n: 2, text: '5000円' }, { n: 3, text: '15000円' }, { n: 4, text: '50000円' }], answer: 2, translationPt: 'Quanto custou a bolsa?', explanationPt: 'Ela comprou na promoção: «5000円でした».' },
+    { id: 'n4-mock-listen-6', number: 6, context: 'おんなの{人|ひと}と おとこの{人|ひと}が でんわで はなして います。\nF：もしもし、いま どこ？ えいがは 3じからだよ。\nM：ごめん、でんしゃが おくれて いて、3じ15ふんに つくと おもう。\nF：わかった、えきの まえで まってるね。', prompt: 'おとこの{人|ひと}は {何時|なんじ}に えきに つきますか。', choices: [{ n: 1, text: '3じ' }, { n: 2, text: '3じ15ふん' }, { n: 3, text: '3じはん' }, { n: 4, text: '2じ' }], answer: 2, translationPt: 'A que horas o homem chega à estação?', explanationPt: 'O trem está atrasado: «3じ15ふんに つくと おもう» (acho que chego às 3h15).' },
+  ],
+}
+
+const listenM3: ExerciseGroup = {
+  id: 'n4-mock-listen-m3',
+  title: 'もんだい3',
+  subtitlePt: 'Expressões em situação',
+  instructionJa: 'ばめんを 読んで、なんと 言うか えらんでください。',
+  instructionPt: 'Leia a situação e escolha o que dizer.',
+  questions: [
+    { id: 'n4-mock-listen-7', number: 7, prompt: 'ともだちが びょうきです。{何|なん}と 言いますか。', choices: [{ n: 1, text: 'おだいじに。' }, { n: 2, text: 'おめでとう。' }, { n: 3, text: 'いただきます。' }], answer: 1, translationPt: 'Seu amigo está doente. O que diz?', explanationPt: 'おだいじに = melhoras/cuide-se. おめでとう=parabéns, いただきます=antes de comer.' },
+    { id: 'n4-mock-listen-8', number: 8, prompt: 'かいものの あと、お{金|かね}を はらいます。てんいんに {何|なん}と 言いますか。', choices: [{ n: 1, text: 'ぜんぶで いくらですか。' }, { n: 2, text: 'いらっしゃいませ。' }, { n: 3, text: 'おつかれさまです。' }], answer: 1, translationPt: 'Depois de escolher, você vai pagar. O que diz ao atendente?', explanationPt: 'ぜんぶで いくらですか = quanto é no total? いらっしゃいませ é o que o atendente diz.' },
+    { id: 'n4-mock-listen-9', number: 9, prompt: 'あいての なまえが わかりません。{何|なん}と 聞きますか。', choices: [{ n: 1, text: 'お{名前|なまえ}は {何|なん}ですか。' }, { n: 2, text: 'おいくつですか。' }, { n: 3, text: 'いつですか。' }], answer: 1, translationPt: 'Você não sabe o nome da pessoa. O que pergunta?', explanationPt: 'お名前は 何ですか = qual é o seu nome? おいくつ=quantos anos, いつ=quando.' },
+  ],
+}
+
+const listenM4: ExerciseGroup = {
+  id: 'n4-mock-listen-m4',
+  title: 'もんだい4',
+  subtitlePt: 'Resposta rápida',
+  instructionJa: 'はじめの ことばを 読んで、いちばん いい へんじを えらんでください。',
+  instructionPt: 'Leia a fala e escolha a resposta mais natural.',
+  questions: [
+    { id: 'n4-mock-listen-10', number: 10, prompt: 'しゅうまつ、{何|なに}を しましたか。', choices: [{ n: 1, text: 'ともだちと あいました。' }, { n: 2, text: 'げんきです。' }, { n: 3, text: 'そうですね。' }], answer: 1, translationPt: 'O que você fez no fim de semana?', explanationPt: 'Pergunta sobre uma ação no passado → «ともだちと あいました» (encontrei amigos).' },
+    { id: 'n4-mock-listen-11', number: 11, prompt: 'この いすを つかっても いいですか。', choices: [{ n: 1, text: 'ええ、どうぞ。' }, { n: 2, text: 'いいえ、ちがいます。' }, { n: 3, text: 'こちらこそ。' }], answer: 1, translationPt: 'Posso usar esta cadeira?', explanationPt: 'Pedido de permissão 〜てもいいですか → «ええ、どうぞ» (claro, à vontade).' },
+    { id: 'n4-mock-listen-12', number: 12, prompt: 'あした、てつだって くれませんか。', choices: [{ n: 1, text: 'はい、いいですよ。' }, { n: 2, text: 'はい、そうです。' }, { n: 3, text: 'どういたしまして。' }], answer: 1, translationPt: 'Amanhã, você poderia me ajudar?', explanationPt: 'Pedido 〜てくれませんか → aceitar: «はい、いいですよ».' },
+    { id: 'n4-mock-listen-13', number: 13, prompt: 'おそく なって、すみません。', choices: [{ n: 1, text: 'だいじょうぶですよ。' }, { n: 2, text: 'おめでとうございます。' }, { n: 3, text: 'いってきます。' }], answer: 1, translationPt: 'Desculpe pelo atraso.', explanationPt: 'Resposta a um pedido de desculpas → «だいじょうぶですよ» (tudo bem).' },
+  ],
+}
+
+const listening: Section = {
+  id: 'listening',
+  level: 'N4-mock',
+  titleJa: 'ちょうかい',
+  titlePt: 'Audição (roteiro)',
+  summaryPt:
+    'Simulado autoral N4 (audição) — por enquanto SEM áudio: pratique lendo o roteiro. Quatro tipos (tarefa, ponto-chave, expressões, resposta rápida). 13 itens. (TTS pode ser adicionado depois.)',
+  studyNotes: [
+    {
+      title: 'Audição por roteiro',
+      bodyPt:
+        'Esta leva é autoral e ainda **não tem áudio gravado** — os itens de 聴解 estão como **roteiro (texto)** para você praticar lendo o diálogo. Áudio (TTS) pode ser adicionado depois. Os quatro tipos seguem o formato do exame.',
+    },
+  ],
+  groups: [listenM1, listenM2, listenM3, listenM4],
+}
+
 export const n4_mock: Level = {
   id: 'N4-mock',
   courseId: 'jlpt',
   titlePt: 'N4 — Simulado autoral',
   descriptionPt:
-    'Simulado de prática do N4 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
-  sections: [vocabulary, grammar],
+    'Simulado de prática do N4 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. A audição está como roteiro (sem áudio por enquanto).',
+  sections: [vocabulary, grammar, reading, listening],
 }
