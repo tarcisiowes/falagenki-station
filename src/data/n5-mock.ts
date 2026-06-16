@@ -297,21 +297,33 @@ const listenM4: ExerciseGroup = {
   ],
 }
 
+const listenAudios = [
+  { id: 'n5-mock-listening-q1', title: 'もんだい１ — Compreensão de tarefa', src: '/audio/N5-mock/N5Q1.mp3' },
+  { id: 'n5-mock-listening-q2', title: 'もんだい２ — Compreensão de ponto-chave', src: '/audio/N5-mock/N5Q2.mp3' },
+  { id: 'n5-mock-listening-q3', title: 'もんだい３ — Expressões em situação', src: '/audio/N5-mock/N5Q3.mp3' },
+  { id: 'n5-mock-listening-q4', title: 'もんだい４ — Resposta rápida', src: '/audio/N5-mock/N5Q4.mp3' },
+].map((t) => ({
+  ...t,
+  descriptionPt: 'Áudio sintetizado por voz (TTS). O roteiro, as perguntas e as respostas estão na aba “Exercícios”.',
+  script: [],
+}))
+
 const listening: Section = {
   id: 'listening',
   level: 'N5-mock',
   titleJa: 'ちょうかい',
-  titlePt: 'Audição (roteiro)',
+  titlePt: 'Audição',
   summaryPt:
-    'Simulado autoral N5 (audição) — por enquanto SEM áudio: pratique lendo o roteiro. Quatro tipos (tarefa, ponto-chave, expressões, resposta rápida). 13 itens. (TTS pode ser adicionado depois.)',
+    'Simulado autoral N5 (audição). Quatro tipos (tarefa, ponto-chave, expressões, resposta rápida), 13 itens. Áudio sintetizado por voz (TTS) na aba “Áudios”; o roteiro e as perguntas ficam na aba “Exercícios”.',
   studyNotes: [
     {
-      title: 'Audição por roteiro',
+      title: 'Áudio (TTS) + roteiro',
       bodyPt:
-        'Esta leva é autoral e ainda **não tem áudio gravado** — os itens de 聴解 estão como **roteiro (texto)** para você praticar a compreensão lendo o diálogo. Áudio (TTS) pode ser adicionado no futuro. Os quatro tipos seguem o formato do exame: tarefa, ponto-chave, expressões e resposta rápida.',
+        'Esta leva é autoral. O **áudio** de 聴解 é **sintetizado por voz (TTS)** — ouça na aba **“Áudios”**. O **roteiro**, as **perguntas** e as **respostas** estão na aba **“Exercícios”** (com explicações em pt-BR). Os quatro tipos seguem o formato do exame: tarefa, ponto-chave, expressões e resposta rápida.',
     },
   ],
   groups: [listenM1, listenM2, listenM3, listenM4],
+  audios: listenAudios,
 }
 
 export const n5_mock: Level = {
@@ -319,6 +331,6 @@ export const n5_mock: Level = {
   courseId: 'jlpt',
   titlePt: 'N5 — Simulado autoral',
   descriptionPt:
-    'Simulado de prática do N5 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. A audição está como roteiro (sem áudio por enquanto).',
+    'Simulado de prática do N5 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. A audição tem áudio sintetizado por voz (TTS).',
   sections: [vocabulary, grammar, reading, listening],
 }
