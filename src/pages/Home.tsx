@@ -14,9 +14,10 @@ import { isDue } from '../lib/srs'
 const LEVEL_BG: Record<string, string> = {
   N5: '#fde7ea',
   N4: '#e6eefb',
+  N4G: '#ede9fe',
   starter: '#e4f5ea',
 }
-const LEVEL_SHORT: Record<string, string> = { N5: 'N5', N4: 'N4', starter: '入門' }
+const LEVEL_SHORT: Record<string, string> = { N5: 'N5', N4: 'N4', N4G: '文法', starter: '入門' }
 
 function levelTitleForCard(lv: Level) {
   if (lv.courseId === 'irodori') {
