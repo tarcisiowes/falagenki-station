@@ -224,11 +224,73 @@ const grammar: Section = {
   groups: [gramM1, gramM2, gramM3],
 }
 
+// ---------------------------------------------------------------------
+//  読解 — Reading
+// ---------------------------------------------------------------------
+const readM4: ExerciseGroup = {
+  id: 'n4-2012-read-m4',
+  title: 'もんだい4',
+  subtitlePt: 'Compreensão de texto curto',
+  instructionJa: 'つぎの(1)から(4)の 文章を 読んで、質問に 答えてください。答えは、1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'Leia cada texto curto e responda à pergunta.',
+  questions: [
+    { id: 'n4-2012-read-26', number: 26, context: '（1）アリさんの {机|つくえ}の {上|うえ}に、このメモと {本|ほん}が {置|お}いて あります。\n\nアリさん\nアリさんから {借|か}りた 本を {置|お}いて おきます。ありがとうございました。アリさんが 借りたいと {言|い}っていた 本も、{一緒|いっしょ}に {置|お}きます。{重|おも}いので、{今日|きょう}は 2{冊|さつ}しか {持|も}ってきませんでした。{来週|らいしゅう}、ほかの 3{冊|さつ}を {持|も}ってきます。\n石川', prompt: '{石川|いしかわ}さんは、{来週|らいしゅう}、{何|なに}を すると {言|い}っていますか。', choices: [{ n: 1, text: 'アリさんに 本を 2冊返します。' }, { n: 2, text: 'アリさんに 本を 3冊返します。' }, { n: 3, text: 'アリさんに 本を 2冊貸します。' }, { n: 4, text: 'アリさんに 本を 3冊貸します。' }], answer: 4, translationPt: 'O que o Ishikawa diz que fará na semana que vem?', explanationPt: 'Ishikawa empresta a Ari os livros que ela queria; hoje trouxe só 2 (pesados) e «来週、ほかの 3冊を 持ってきます» — semana que vem traz/empresta os outros 3 (貸す).' },
+    { id: 'n4-2012-read-27', number: 27, context: '（2）{公園|こうえん}の {入口|いりぐち}に、このお{知|し}らせが あります。\n\n【公園で 遊ぶ ときの 注意】\n◆ 公園が 開いている 時間は、午前6時から 午後9時です。これ以外の 時間は 入れません。\n◆ {自転車|じてんしゃ}や オートバイは、公園の 入口に とめてください。中に 入れては いけません。\n◆ 公園の 中で、次の ことを しては いけません。・ボールを 使って 遊ぶこと ・たばこを 吸うこと', prompt: 'このお{知|し}らせから、{公園|こうえん}について わかる ことは {何|なん}ですか。', choices: [{ n: 1, text: '午後10時に 公園に 入っても いいです。' }, { n: 2, text: '入口に オートバイを とめては いけません。' }, { n: 3, text: 'サッカーの 練習を しては いけません。' }, { n: 4, text: 'たばこを 吸っても いいです。' }], answer: 3, translationPt: 'O que se entende sobre o parque por este aviso?', explanationPt: 'Proíbe brincar com bola → futebol (que usa bola) é proibido = opção 3. (1 fecha às 21h; 2 as motos DEVEM ficar na entrada; 4 proíbe fumar.)' },
+    { id: 'n4-2012-read-28', number: 28, context: '（3）これは、{山田|やまだ}先生から トムさんに {届|とど}いた メールです。\n\nトムさん\n{明日|あした}（30日）の {約束|やくそく}ですが、{会議|かいぎ}に {出|で}なければ ならなく なりました。それで、すみませんが、約束を 31日の 午後3時に {変|か}えられませんか。トムさんの {都合|つごう}が よければ、オフィスで {待|ま}っています。このメールを {読|よ}んだら、{返事|へんじ}を ください。\n山田', prompt: 'トムさんは、{山田|やまだ}先生に {何|なに}を {知|し}らせなければ なりませんか。', choices: [{ n: 1, text: '約束を 明日に 変えられるかどうか' }, { n: 2, text: '約束を あさってに 変えられるかどうか' }, { n: 3, text: 'トムさんの 明日の 午後の 都合' }, { n: 4, text: 'トムさんの あさっての 午前の 都合' }], answer: 2, translationPt: 'O que o Tom precisa avisar ao professor Yamada?', explanationPt: '明日=30, あさって=31. Yamada quer mudar para o dia 31 (あさって) às 15h. Tom deve avisar se pode mudar para あさって = opção 2.' },
+    { id: 'n4-2012-read-29', number: 29, context: '（4）{石田|いしだ}さんは、{川下|かわした}{図書館|としょかん}で {働|はたら}いています。本についての {相談|そうだん}を {受|う}けたり、どこに どの本を {置|お}くのが いいか {考|かんが}えたりします。それから、図書館の {新聞|しんぶん}に よい本の {紹介文|しょうかいぶん}を {書|か}いたり、{小|ちい}さな {子|こ}どもたちに {絵本|えほん}を {読|よ}んだり します。', prompt: '{石田|いしだ}さんの {仕事|しごと}ではない ものは どれですか。', choices: [{ n: 1, text: '相談に 来た人に 本について 紹介します。' }, { n: 2, text: '本を 置く場所は どこが いいか、考えます。' }, { n: 3, text: '新聞に のっている、よい本の 紹介文を さがします。' }, { n: 4, text: '小さな 子どもたちに、いろいろな 絵本を 読みます。' }], answer: 3, translationPt: 'Qual NÃO é tarefa do Ishida?', explanationPt: 'Ele ESCREVE resenhas no jornal (紹介文を 書く), não as PROCURA (さがす). Logo a opção 3 não é tarefa dele.' },
+  ],
+}
+
+const readM5: ExerciseGroup = {
+  id: 'n4-2012-read-m5',
+  title: 'もんだい5',
+  subtitlePt: 'Compreensão de texto médio',
+  instructionJa:
+    'つぎの 文章を 読んで、質問に 答えてください。答えは、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\n{今年|ことし}の {夏|なつ}、わたしは {家族|かぞく}で {山|やま}の {中|なか}に ある ホテルに {泊|と}まりました。{駅|えき}から ホテルの {近|ちか}くの バス{停|てい}まで バスで 2{時間|じかん}{以上|いじょう}かかりました。バス停から ホテルは、{細|ほそ}い {道|みち}を 30{分|ぷん}{近|ちか}く {歩|ある}きました。①ホテルは {小|ちい}さくて {古|ふる}かったですが、{中|なか}は とても きれいでした。ホテルに {着|つ}くと、{息子|むすこ}は「テレビが {見|み}たい」「ゲームが したい」と {言|い}いました。しかし、ホテルには どちらも ありません。{冷蔵庫|れいぞうこ}も エアコンも ありません。このホテルは {便利|べんり}では ありませんでした。\n{部屋|へや}に {荷物|にもつ}を {置|お}いて {窓|まど}を {開|あ}けると、{湖|みずうみ}から すずしい {風|かぜ}が {入|はい}って きました。{少|すこ}し {休|やす}んでから、まだ {明|あか}るかったので、{散歩|さんぽ}に {出|で}かけました。{空気|くうき}が おいしくて、{景色|けしき}も {美|うつく}しかったです。{夜|よる}は、{星|ほし}が とても きれいでした。わたしたちは {毎日|まいにち}、みんなで {散歩|さんぽ}を したり、{湖|みずうみ}で {泳|およ}いだり、{虫|むし}を とったり、{昼寝|ひるね}を したり しました。\nホテルには 1{週間|しゅうかん} いました。わたしたちは「{楽|たの}しかったね。②こんな {生活|せいかつ}も たまには いいね」と {話|はな}して、{家|いえ}に {帰|かえ}りました。',
+  instructionPt: 'Leia o texto (férias em família num hotel simples no meio das montanhas) e responda.',
+  questions: [
+    { id: 'n4-2012-read-30', number: 30, prompt: 'どんな ①ホテルに {泊|と}まりましたか。', choices: [{ n: 1, text: '山の 中の 大きな ホテル' }, { n: 2, text: '古いが、中は きれいな ホテル' }, { n: 3, text: 'テレビや ゲームが 楽しめる ホテル' }, { n: 4, text: 'いろいろな ものが あって、便利な ホテル' }], answer: 2, translationPt: 'Em que tipo de hotel ficaram?', explanationPt: '«小さくて 古かったですが、中は とても きれいでした» → velho, mas limpo por dentro = opção 2. Não tinha TV/games/geladeira/ar (não era prático).' },
+    { id: 'n4-2012-read-31', number: 31, prompt: '{駅|えき}から ホテルまで どうやって {行|い}きましたか。', choices: [{ n: 1, text: '駅から 30分 バスに 乗って、バス停から 2時間以上 歩きました。' }, { n: 2, text: '駅から 30分 バス停まで 歩いて、バスに 2時間以上 乗りました。' }, { n: 3, text: '駅から 2時間以上 バスに 乗って、バス停から 30分以上 歩きました。' }, { n: 4, text: '駅から 2時間以上 バスに 乗って、バス停から 30分 歩きました。' }], answer: 4, translationPt: 'Como foram da estação até o hotel?', explanationPt: '«バスで 2時間以上» depois «30分近く 歩きました» → ônibus 2h+ e caminhada de ~30 min (30分近く ≈ quase 30) = opção 4.' },
+    { id: 'n4-2012-read-32', number: 32, prompt: 'ホテルに {着|つ}いてから、{何|なに}を しましたか。', choices: [{ n: 1, text: '部屋に 行かないで、すぐに 湖に 行きました。' }, { n: 2, text: '部屋に 行って、夜まで ずっと 休みました。' }, { n: 3, text: '部屋で テレビを 見てから、星を 見に 外へ 出ました。' }, { n: 4, text: '部屋で 少し 休んでから、散歩に 行きました。' }], answer: 4, translationPt: 'O que fizeram depois de chegar ao hotel?', explanationPt: '«部屋に 荷物を 置いて… 少し 休んでから… 散歩に 出かけました» → descansaram um pouco no quarto e foram passear = opção 4.' },
+    { id: 'n4-2012-read-33', number: 33, prompt: '②こんな {生活|せいかつ}とありますが、どんな {生活|せいかつ}ですか。', choices: [{ n: 1, text: '山で 遊んだり、昼寝を したりする 生活' }, { n: 2, text: 'ゲームを したり、虫を とったりする 生活' }, { n: 3, text: '散歩を したり、テレビを 見たりする 生活' }, { n: 4, text: 'おいしい ものを 食べて、何も しない 生活' }], answer: 1, translationPt: 'O que significa "esse tipo de vida"?', explanationPt: 'A vida descrita é na natureza: passear, nadar no lago, pegar insetos, tirar soneca. Opção 1 (brincar na montanha e tirar soneca) combina. (Não havia TV nem games no hotel.)' },
+  ],
+}
+
+const readM6: ExerciseGroup = {
+  id: 'n4-2012-read-m6',
+  title: 'もんだい6',
+  subtitlePt: 'Busca de informação',
+  instructionJa:
+    '右の ページの「スポーツ教室」のお知らせを 見て、下の 質問に 答えてください。答えは、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\n【あおぞら一日スポーツ教室】 5月29日(日) 10:00〜17:00 ／ 場所：あおぞら運動場\nいろいろな スポーツの ルールや やり方を 先生が 教えます。\n\n① 好きな 時間に 始められる:\n・ジョギング 10:00〜12:00 第1運動場 … ただ(grátis)\n・自転車 13:30〜17:00 第1運動場 … ただ（※自転車を 借りる 人は 200円）\n・水泳 10:00〜17:00 プール … 300円\n② グループで 試合をする:\n・サッカー 10:00〜17:00 第2運動場 … 100円\n・バスケットボール 10:00〜17:00 体育館 … 100円\n②午前：ルールややり方を 先生が 教えます（サッカーは 第2運動場、バスケットボールは 体育館に 10:00までに）。午後：グループで 試合（受付は 13:00までに）。初めての 人は ぜひ 午前の 教室から。',
+  instructionPt: 'Veja o aviso da “oficina de esportes de um dia” e responda.',
+  questions: [
+    { id: 'n4-2012-read-34', number: 34, prompt: '{自転車|じてんしゃ}を {借|か}りて {乗|の}りたい {人|ひと}は、いくら {払|はら}わなければ なりませんか。', choices: [{ n: 1, text: 'ただ' }, { n: 2, text: '100円' }, { n: 3, text: '200円' }, { n: 4, text: '300円' }], answer: 3, translationPt: 'Quem quer andar de bicicleta emprestada paga quanto?', explanationPt: 'A atividade de bicicleta é grátis (ただ), mas quem PRECISA pegar a bicicleta emprestada paga 200円 (※). = opção 3.' },
+    { id: 'n4-2012-read-35', number: 35, prompt: 'バスケットボールの ルールや、やり{方|かた}を {習|なら}ってから {試合|しあい}に {出|で}たい {人|ひと}は、まず どう しなければ なりませんか。', choices: [{ n: 1, text: '10:00までに 受付に 行きます。' }, { n: 2, text: '10:00までに 体育館に 行きます。' }, { n: 3, text: '13:00までに 受付に 行きます。' }, { n: 4, text: '13:00までに 体育館に 行きます。' }], answer: 2, translationPt: 'Quem quer aprender as regras do basquete e depois jogar a partida deve fazer o quê primeiro?', explanationPt: 'Para aprender as regras (parte da manhã), o basquete é no ginásio (体育館) e deve-se chegar até as 10:00. = opção 2.' },
+  ],
+}
+
+const reading: Section = {
+  id: 'reading',
+  level: 'N4-2012',
+  titleJa: 'どっかい',
+  titlePt: 'Leitura',
+  summaryPt:
+    'Compreensão de leitura do simulado oficial 2012: textos curtos, texto médio e busca de informação. 10 questões.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (読解)',
+      bodyPt:
+        '- **もんだい4** — textos **curtos** (avisos, memos, e-mails).\n- **もんだい5** — texto **médio**; entenda detalhes e expressões sublinhadas.\n- **もんだい6** — **busca de informação** (folhetos, tabelas, horários).',
+    },
+  ],
+  groups: [readM4, readM5, readM6],
+}
+
 export const n4_2012: Level = {
   id: 'N4-2012',
   courseId: 'jlpt',
   titlePt: 'N4 — Simulado 2012',
   descriptionPt:
-    'Segunda leva de prática do N4: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
-  sections: [vocabulary, grammar],
+    'Segunda leva de prática do N4: simulado a partir do Official Practice Workbook 2012 do JLPT (Japan Foundation), com gabarito oficial e explicações em pt-BR. (Em construção: 聴解 com áudio será adicionado.)',
+  sections: [vocabulary, grammar, reading],
 }
