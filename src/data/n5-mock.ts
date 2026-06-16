@@ -107,11 +107,87 @@ const vocabulary: Section = {
   groups: [vocabM1, vocabM2, vocabM3, vocabM4],
 }
 
+// ---------------------------------------------------------------------
+//  言語知識（文法）・読解 — Grammar
+// ---------------------------------------------------------------------
+const gramM1: ExerciseGroup = {
+  id: 'n5-mock-gram-m1',
+  title: 'もんだい1',
+  subtitlePt: 'Forma gramatical (preencher a lacuna)',
+  instructionJa: '（　）に 何を 入れますか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'O que entra na lacuna （　）? Escolha a melhor partícula/forma.',
+  questions: [
+    { id: 'n5-mock-gram-1', number: 1, prompt: 'わたしは まいにち コーヒー（　）{飲|の}みます。', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'が' }, { n: 3, text: 'に' }, { n: 4, text: 'で' }], answer: 1, translationPt: 'Eu bebo café todos os dias.', explanationPt: 'を marca o objeto direto do verbo: コーヒーを 飲む (beber café).' },
+    { id: 'n5-mock-gram-2', number: 2, prompt: 'これは {日本語|にほんご}（　）{本|ほん}です。', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'の' }, { n: 3, text: 'に' }, { n: 4, text: 'へ' }], answer: 2, translationPt: 'Este é um livro de japonês.', explanationPt: 'の liga dois substantivos: 日本語の 本 (livro de japonês).' },
+    { id: 'n5-mock-gram-3', number: 3, prompt: '{図書館|としょかん}（　）{本|ほん}を {読|よ}みます。', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'に' }, { n: 3, text: 'で' }, { n: 4, text: 'へ' }], answer: 3, translationPt: 'Leio livros na biblioteca.', explanationPt: 'で marca o lugar onde a ação acontece: 図書館で 読む.' },
+    { id: 'n5-mock-gram-4', number: 4, prompt: 'あさ 7{時|じ}（　）おきます。', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'を' }, { n: 3, text: 'で' }, { n: 4, text: 'と' }], answer: 1, translationPt: 'Acordo às 7 da manhã.', explanationPt: 'に marca o ponto no tempo (hora): 7時に おきる.' },
+    { id: 'n5-mock-gram-5', number: 5, prompt: '{電車|でんしゃ}（　）{学校|がっこう}へ {行|い}きます。', choices: [{ n: 1, text: 'に' }, { n: 2, text: 'を' }, { n: 3, text: 'で' }, { n: 4, text: 'が' }], answer: 3, translationPt: 'Vou para a escola de trem.', explanationPt: 'で marca o meio de transporte: 電車で 行く.' },
+    { id: 'n5-mock-gram-6', number: 6, prompt: '{田中|たなか}さん（　）いっしょに えいがを {見|み}ます。', choices: [{ n: 1, text: 'と' }, { n: 2, text: 'を' }, { n: 3, text: 'が' }, { n: 4, text: 'に' }], answer: 1, translationPt: 'Vou ver um filme junto com o Tanaka.', explanationPt: '〜と いっしょに = junto com 〜. 田中さんと いっしょに.' },
+    { id: 'n5-mock-gram-7', number: 7, prompt: 'へやに だれ（　）いますか。', choices: [{ n: 1, text: 'か' }, { n: 2, text: 'も' }, { n: 3, text: 'が' }, { n: 4, text: 'を' }], answer: 3, translationPt: 'Tem alguém no quarto?', explanationPt: 'だれが いますか = quem está (existe)? が marca o sujeito de いる.' },
+    { id: 'n5-mock-gram-8', number: 8, prompt: 'わたしは すし（　）{好|す}きです。', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'が' }, { n: 3, text: 'に' }, { n: 4, text: 'で' }], answer: 2, translationPt: 'Eu gosto de sushi.', explanationPt: 'Com 好き usa-se が: すしが 好きです.' },
+    { id: 'n5-mock-gram-9', number: 9, prompt: 'この レストランは {安|やす}い（　）、おいしいです。', choices: [{ n: 1, text: 'ので' }, { n: 2, text: 'でも' }, { n: 3, text: 'し' }, { n: 4, text: 'が' }], answer: 3, translationPt: 'Este restaurante é barato e (além disso) gostoso.', explanationPt: '〜し = enumera qualidades/razões: 安いし、おいしい (é barato e gostoso).' },
+    { id: 'n5-mock-gram-10', number: 10, prompt: 'あした {雨|あめ}（　）、{出|で}かけません。', choices: [{ n: 1, text: 'だから' }, { n: 2, text: 'でも' }, { n: 3, text: 'まで' }, { n: 4, text: 'より' }], answer: 1, translationPt: 'Amanhã, como vai chover, não vou sair.', explanationPt: 'substantivo + だから = porque é ~: 雨だから (porque é chuva/vai chover).' },
+    { id: 'n5-mock-gram-11', number: 11, prompt: 'テレビを {見|み}（　）、ごはんを {食|た}べます。', choices: [{ n: 1, text: 'ながら' }, { n: 2, text: 'たり' }, { n: 3, text: 'ても' }, { n: 4, text: 'ので' }], answer: 1, translationPt: 'Como vendo TV (ao mesmo tempo).', explanationPt: 'verbo (masu sem masu) + ながら = enquanto/ao mesmo tempo: 見ながら 食べる.' },
+    { id: 'n5-mock-gram-12', number: 12, prompt: 'しゅくだいを し（　）から、あそびます。', choices: [{ n: 1, text: 'て' }, { n: 2, text: 'た' }, { n: 3, text: 'ない' }, { n: 4, text: 'ます' }], answer: 1, translationPt: 'Depois de fazer a lição, vou brincar.', explanationPt: '〜てから = depois de fazer ~: してから あそぶ.' },
+    { id: 'n5-mock-gram-13', number: 13, prompt: 'わたしは すしを {食|た}べた こと（　）あります。', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'を' }, { n: 3, text: 'に' }, { n: 4, text: 'で' }], answer: 1, translationPt: 'Eu já comi sushi (tenho a experiência).', explanationPt: '〜た ことが ある = já fez algo (experiência): 食べた ことが ある.' },
+    { id: 'n5-mock-gram-14', number: 14, prompt: 'ここで {写真|しゃしん}を {撮|と}っても （　）ですか。', choices: [{ n: 1, text: 'いい' }, { n: 2, text: 'ある' }, { n: 3, text: 'する' }, { n: 4, text: 'なる' }], answer: 1, translationPt: 'Posso tirar foto aqui?', explanationPt: '〜ても いいですか = posso ~? (pedir permissão): 撮っても いいですか.' },
+    { id: 'n5-mock-gram-15', number: 15, prompt: 'きょうは {寒|さむ}いですから、コートを {着|き}た （　）が いいですよ。', choices: [{ n: 1, text: 'まえ' }, { n: 2, text: 'ほう' }, { n: 3, text: 'こと' }, { n: 4, text: 'とき' }], answer: 2, translationPt: 'Hoje está frio, então é melhor vestir um casaco.', explanationPt: '〜た ほうが いい = é melhor fazer ~: 着た ほうが いい.' },
+  ],
+}
+
+const gramM2: ExerciseGroup = {
+  id: 'n5-mock-gram-m2',
+  title: 'もんだい2',
+  subtitlePt: 'Montagem da frase (★)',
+  instructionJa: '★に 入る ものは どれですか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'Ordene os fragmentos. Qual entra na posição ★? (A explicação mostra a frase montada.)',
+  questions: [
+    { id: 'n5-mock-gram-16', number: 16, prompt: 'わたしは ＿＿ ＿＿ ★ ＿＿ {好|す}きです。', choices: [{ n: 1, text: 'が' }, { n: 2, text: 'ねこ' }, { n: 3, text: 'より' }, { n: 4, text: 'いぬ' }], answer: 4, translationPt: 'Eu gosto mais de cachorro do que de gato.', explanationPt: 'Ordem: ねこ より いぬ が 好きです. ★ = いぬ (4).' },
+    { id: 'n5-mock-gram-17', number: 17, prompt: 'すみません、＿＿ ＿＿ ★ ＿＿ ありますか。', choices: [{ n: 1, text: 'は' }, { n: 2, text: 'トイレ' }, { n: 3, text: 'この' }, { n: 4, text: 'ちかくに' }], answer: 2, translationPt: 'Com licença, tem banheiro aqui perto?', explanationPt: 'Ordem: この ちかくに トイレ は ありますか. ★ = トイレ (2).' },
+    { id: 'n5-mock-gram-18', number: 18, prompt: '{妹|いもうと}は ＿＿ ＿＿ ★ ＿＿ います。', choices: [{ n: 1, text: 'で' }, { n: 2, text: 'して' }, { n: 3, text: 'しゅくだいを' }, { n: 4, text: 'へや' }], answer: 3, translationPt: 'Minha irmã mais nova está fazendo a lição no quarto.', explanationPt: 'Ordem: へや で しゅくだいを して います. ★ = しゅくだいを (3).' },
+    { id: 'n5-mock-gram-19', number: 19, prompt: 'なつやすみに ＿＿ ＿＿ ★ ＿＿ か。', choices: [{ n: 1, text: 'なに' }, { n: 2, text: 'する' }, { n: 3, text: 'を' }, { n: 4, text: 'つもりです' }], answer: 2, translationPt: 'O que você pretende fazer nas férias de verão?', explanationPt: 'Ordem: なに を する つもりです か. ★ = する (2).' },
+    { id: 'n5-mock-gram-20', number: 20, prompt: '{漢字|かんじ}は ＿＿ ＿＿ ★ ＿＿ です。', choices: [{ n: 1, text: 'むずかしい' }, { n: 2, text: 'おぼえる' }, { n: 3, text: 'のが' }, { n: 4, text: 'とても' }], answer: 4, translationPt: 'Kanji é muito difícil de memorizar.', explanationPt: 'Ordem: おぼえる のが とても むずかしい. ★ = とても (4).' },
+  ],
+}
+
+const gramM3: ExerciseGroup = {
+  id: 'n5-mock-gram-m3',
+  title: 'もんだい3',
+  subtitlePt: 'Gramática no texto (cloze)',
+  instructionJa:
+    '21から25に 何を 入れますか。文章の 意味を 考えて、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\n【リンさんの 作文】\nはじめまして。わたしは リンです。{中国|ちゅうごく}【21】{来|き}ました。いま、日本の {大学|だいがく}で べんきょうして います。日本語は すこし むずかしい【22】、たのしいです。まいにち {友|とも}だち【23】日本語で {話|はな}します。やすみの 日は、よく {公園|こうえん}【24】{行|い}きます。日本の せいかつは とても たのしいです。【25】、もっと 日本語が じょうずに なりたいです。',
+  instructionPt: 'Leia a redação da Lin (uma autoapresentação) e escolha o que melhor preenche cada lacuna 21–25.',
+  questions: [
+    { id: 'n5-mock-gram-21', number: 21, prompt: '【21】', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'まで' }, { n: 3, text: 'へ' }, { n: 4, text: 'を' }], answer: 1, translationPt: 'Vim da China.', explanationPt: '〜から 来ました = vim de ~ (ponto de origem): 中国から 来ました.' },
+    { id: 'n5-mock-gram-22', number: 22, prompt: '【22】', choices: [{ n: 1, text: 'ので' }, { n: 2, text: 'から' }, { n: 3, text: 'が' }, { n: 4, text: 'し' }], answer: 3, translationPt: 'O japonês é um pouco difícil, mas é divertido.', explanationPt: '〜が = mas (contraste): むずかしいが、たのしい (difícil, mas divertido).' },
+    { id: 'n5-mock-gram-23', number: 23, prompt: '【23】', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'と' }, { n: 3, text: 'に' }, { n: 4, text: 'が' }], answer: 2, translationPt: 'Falo em japonês com meus amigos.', explanationPt: '〜と 話す = conversar COM ~: 友だちと 話します.' },
+    { id: 'n5-mock-gram-24', number: 24, prompt: '【24】', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'に' }, { n: 3, text: 'で' }, { n: 4, text: 'から' }], answer: 2, translationPt: 'Nos dias de folga, costumo ir ao parque.', explanationPt: '〜に 行く = ir A (destino): 公園に 行きます.' },
+    { id: 'n5-mock-gram-25', number: 25, prompt: '【25】', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'それから' }, { n: 3, text: 'だから' }, { n: 4, text: 'では' }], answer: 3, translationPt: 'Por isso, quero ficar ainda melhor em japonês.', explanationPt: 'だから = por isso (conclusão). A vida é divertida, por isso quer estudar mais.' },
+  ],
+}
+
+const grammar: Section = {
+  id: 'grammar',
+  level: 'N5-mock',
+  titleJa: 'げんごちしき（ぶんぽう）',
+  titlePt: 'Gramática',
+  summaryPt:
+    'Simulado autoral N5 (gramática): forma gramatical, montagem de frases (★) e gramática no texto. 25 questões originais.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (文法)',
+      bodyPt:
+        '- **もんだい1** — escolher a **partícula/forma** que preenche a lacuna `（　）`.\n- **もんだい2** — **ordenar** 4 fragmentos; responder qual fica na posição **★**.\n- **もんだい3** — **cloze**: preencher as lacunas de um texto pensando no sentido.',
+    },
+  ],
+  groups: [gramM1, gramM2, gramM3],
+}
+
 export const n5_mock: Level = {
   id: 'N5-mock',
   courseId: 'jlpt',
   titlePt: 'N5 — Simulado autoral',
   descriptionPt:
-    'Simulado de prática do N5 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. (Em construção: 文法・読解 e 聴解 serão adicionados.)',
-  sections: [vocabulary],
+    'Simulado de prática do N5 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
+  sections: [vocabulary, grammar],
 }
