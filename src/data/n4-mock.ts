@@ -109,11 +109,87 @@ const vocabulary: Section = {
   groups: [vocabM1, vocabM2, vocabM3, vocabM4, vocabM5],
 }
 
+// ---------------------------------------------------------------------
+//  言語知識（文法）・読解 — Grammar
+// ---------------------------------------------------------------------
+const gramM1: ExerciseGroup = {
+  id: 'n4-mock-gram-m1',
+  title: 'もんだい1',
+  subtitlePt: 'Forma gramatical (preencher a lacuna)',
+  instructionJa: '（　）に 何を 入れますか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'O que entra na lacuna （　）? Escolha a melhor forma.',
+  questions: [
+    { id: 'n4-mock-gram-1', number: 1, prompt: '{雨|あめ}が ふって いる（　）、しあいは ちゅうしに なりました。', choices: [{ n: 1, text: 'ので' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'し' }], answer: 1, translationPt: 'Como está chovendo, o jogo foi cancelado.', explanationPt: '〜ので = porque/como (razão objetiva). のに = embora (contraste).' },
+    { id: 'n4-mock-gram-2', number: 2, prompt: 'まいにち れんしゅうして、じょうずに {泳|およ}げる（　）なりました。', choices: [{ n: 1, text: 'ように' }, { n: 2, text: 'ことに' }, { n: 3, text: 'ために' }, { n: 4, text: 'そうに' }], answer: 1, translationPt: 'Treinando todo dia, passei a nadar bem.', explanationPt: '〜ように なる = passar a (conseguir) ~ (mudança de capacidade): 泳げるように なった.' },
+    { id: 'n4-mock-gram-3', number: 3, prompt: 'ねつが あるなら、びょういんへ {行|い}った（　）が いいですよ。', choices: [{ n: 1, text: 'ほう' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Se está com febre, é melhor ir ao hospital.', explanationPt: '〜た ほうが いい = é melhor fazer ~ (conselho): 行った ほうが いい.' },
+    { id: 'n4-mock-gram-4', number: 4, prompt: 'そらが くらいです。ゆうがた {雨|あめ}が ふる（　）。', choices: [{ n: 1, text: 'かもしれません' }, { n: 2, text: 'はずでした' }, { n: 3, text: 'ところです' }, { n: 4, text: 'ことです' }], answer: 1, translationPt: 'O céu está escuro. Talvez chova de tardinha.', explanationPt: '〜かもしれない = talvez/é possível que ~ (incerteza).' },
+    { id: 'n4-mock-gram-5', number: 5, prompt: 'この えいがは こどもでも たのしめる（　）。', choices: [{ n: 1, text: 'でしょう' }, { n: 2, text: 'ましょう' }, { n: 3, text: 'ください' }, { n: 4, text: 'ません' }], answer: 1, translationPt: 'Este filme provavelmente até crianças conseguem curtir.', explanationPt: '〜でしょう = provavelmente/deve ser (suposição).' },
+    { id: 'n4-mock-gram-6', number: 6, prompt: 'ここに ごみを {捨|す}てない（　）ください。', choices: [{ n: 1, text: 'で' }, { n: 2, text: 'と' }, { n: 3, text: 'ば' }, { n: 4, text: 'ても' }], answer: 1, translationPt: 'Por favor, não jogue lixo aqui.', explanationPt: '〜ないで ください = por favor, não faça ~: 捨てないで ください.' },
+    { id: 'n4-mock-gram-7', number: 7, prompt: 'ばんごはんを {食|た}べて（　）、おふろに {入|はい}ります。', choices: [{ n: 1, text: 'から' }, { n: 2, text: 'まで' }, { n: 3, text: 'のに' }, { n: 4, text: 'ても' }], answer: 1, translationPt: 'Depois de jantar, tomo banho.', explanationPt: '〜てから = depois de fazer ~: 食べてから 入る.' },
+    { id: 'n4-mock-gram-8', number: 8, prompt: 'この みせは ねだんも {安|やす}い（　）、てんいんも しんせつです。', choices: [{ n: 1, text: 'し' }, { n: 2, text: 'ので' }, { n: 3, text: 'のに' }, { n: 4, text: 'から' }], answer: 1, translationPt: 'Nesta loja o preço é barato e além disso os funcionários são gentis.', explanationPt: '〜し = enumera qualidades/razões: 安いし、しんせつだ.' },
+    { id: 'n4-mock-gram-9', number: 9, prompt: 'まどを {開|あ}けた（　）、つめたい かぜが {入|はい}って きた。', choices: [{ n: 1, text: 'ら' }, { n: 2, text: 'ば' }, { n: 3, text: 'ても' }, { n: 4, text: 'のに' }], answer: 1, translationPt: 'Quando abri a janela, entrou um vento frio.', explanationPt: '〜たら = quando/ao fazer ~ (depois disso aconteceu algo): 開けたら 入って きた.' },
+    { id: 'n4-mock-gram-10', number: 10, prompt: '{妹|いもうと}に えいごを {教|おし}えて（　）。', choices: [{ n: 1, text: 'あげました' }, { n: 2, text: 'もらいました' }, { n: 3, text: 'くれました' }, { n: 4, text: 'おきました' }], answer: 1, translationPt: 'Ensinei inglês para a minha irmã mais nova.', explanationPt: '〜て あげる = fazer algo POR alguém (eu → outro): 教えて あげました.' },
+    { id: 'n4-mock-gram-11', number: 11, prompt: 'わからない ことを {先生|せんせい}に {教|おし}えて（　）。', choices: [{ n: 1, text: 'あげました' }, { n: 2, text: 'もらいました' }, { n: 3, text: 'やりました' }, { n: 4, text: 'いきました' }], answer: 2, translationPt: 'Pedi ao professor que me ensinasse o que eu não sabia.', explanationPt: '〜て もらう = receber o favor de alguém (outro → eu): 教えて もらいました.' },
+    { id: 'n4-mock-gram-12', number: 12, prompt: '{旅行|りょこう}の まえに、ホテルを よやくして（　）。', choices: [{ n: 1, text: 'おきます' }, { n: 2, text: 'みます' }, { n: 3, text: 'しまいます' }, { n: 4, text: 'いきます' }], answer: 1, translationPt: 'Antes da viagem, vou reservar o hotel (de antemão).', explanationPt: '〜て おく = fazer ~ de antemão/deixar preparado: よやくして おきます.' },
+    { id: 'n4-mock-gram-13', number: 13, prompt: 'たくさん べんきょうした（　）、しけんに おちて しまった。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'から' }, { n: 4, text: 'し' }], answer: 1, translationPt: 'Embora eu tenha estudado muito, fui reprovado na prova.', explanationPt: '〜のに = embora/apesar de (resultado inesperado): 勉強したのに 落ちた.' },
+    { id: 'n4-mock-gram-14', number: 14, prompt: 'この {本|ほん}は おもしろそうですが、まだ {読|よ}んで（　）。', choices: [{ n: 1, text: 'いません' }, { n: 2, text: 'ありません' }, { n: 3, text: 'みません' }, { n: 4, text: 'おきません' }], answer: 1, translationPt: 'Este livro parece interessante, mas ainda não li.', explanationPt: 'まだ 〜て いない = ainda não fez ~: まだ 読んで いません.' },
+    { id: 'n4-mock-gram-15', number: 15, prompt: 'もし あした {晴|は}れれ（　）、こうえんへ {行|い}きましょう。', choices: [{ n: 1, text: 'ば' }, { n: 2, text: 'たら' }, { n: 3, text: 'と' }, { n: 4, text: 'なら' }], answer: 1, translationPt: 'Se amanhã fizer sol, vamos ao parque.', explanationPt: 'Forma condicional 〜ば: 晴れる → 晴れれば (se fizer sol).' },
+  ],
+}
+
+const gramM2: ExerciseGroup = {
+  id: 'n4-mock-gram-m2',
+  title: 'もんだい2',
+  subtitlePt: 'Montagem da frase (★)',
+  instructionJa: '★に 入る ものは どれですか。1・2・3・4から いちばん いい ものを 一つ えらんでください。',
+  instructionPt: 'Ordene os fragmentos. Qual entra na posição ★? (A explicação mostra a frase montada.)',
+  questions: [
+    { id: 'n4-mock-gram-16', number: 16, prompt: 'わたしは ＿＿ ＿＿ ★ ＿＿ あります。', choices: [{ n: 1, text: 'ことが' }, { n: 2, text: '{行|い}った' }, { n: 3, text: '{日本|にほん}' }, { n: 4, text: 'に' }], answer: 2, translationPt: 'Eu já fui ao Japão.', explanationPt: 'Ordem: 日本 に 行った ことが あります (〜た ことが ある = já fez). ★ = 行った (2).' },
+    { id: 'n4-mock-gram-17', number: 17, prompt: 'あした ＿＿ ＿＿ ★ ＿＿ つもりです。', choices: [{ n: 1, text: 'する' }, { n: 2, text: 'で' }, { n: 3, text: '{勉強|べんきょう}' }, { n: 4, text: '{図書館|としょかん}' }], answer: 3, translationPt: 'Amanhã pretendo estudar na biblioteca.', explanationPt: 'Ordem: 図書館 で 勉強 する つもりです. ★ = 勉強 (3).' },
+    { id: 'n4-mock-gram-18', number: 18, prompt: 'すみません、＿＿ ＿＿ ★ ＿＿ ください。', choices: [{ n: 1, text: 'を' }, { n: 2, text: 'つかいかた' }, { n: 3, text: 'これの' }, { n: 4, text: '{教|おし}えて' }], answer: 1, translationPt: 'Com licença, ensine-me como usar isto.', explanationPt: 'Ordem: これの つかいかた を 教えて ください. ★ = を (1).' },
+    { id: 'n4-mock-gram-19', number: 19, prompt: 'A「なつやすみは どうでしたか。」B「＿＿ ＿＿ ★ ＿＿。」', choices: [{ n: 1, text: 'より' }, { n: 2, text: 'おもった' }, { n: 3, text: 'たのしかった' }, { n: 4, text: 'ずっと' }], answer: 4, translationPt: '— Como foram as férias? — Foram muito mais divertidas do que eu pensava.', explanationPt: 'Ordem: おもった より ずっと たのしかった (〜より ずっと = muito mais que). ★ = ずっと (4).' },
+    { id: 'n4-mock-gram-20', number: 20, prompt: '＿＿ ＿＿ ★ ＿＿ わすれないで ください。', choices: [{ n: 1, text: 'のを' }, { n: 2, text: 'もって' }, { n: 3, text: 'かさを' }, { n: 4, text: '{来|く}る' }], answer: 4, translationPt: 'Não esqueça de trazer o guarda-chuva.', explanationPt: 'Ordem: かさを もって 来る のを わすれないで ください. ★ = 来る (4).' },
+  ],
+}
+
+const gramM3: ExerciseGroup = {
+  id: 'n4-mock-gram-m3',
+  title: 'もんだい3',
+  subtitlePt: 'Gramática no texto (cloze)',
+  instructionJa:
+    '21から25に 何を 入れますか。文章の 意味を 考えて、1・2・3・4から いちばん いい ものを 一つ えらんでください。\n\n【わたしの まちの こうえん】\nわたしの まちには、おおきな こうえんが あります。その こうえんは いえから あるいて 10ぷん【21】ところに あります。やすみの 日には、たくさんの {人|ひと}が さんぽや うんどうを して います。せんしゅうは、ともだち【22】いっしょに、こうえんで しゃしんを とりました。こうえんの {花|はな}が とても きれいだった【23】、いい しゃしんが とれました。【24】、こうえんには レストランも あって、しょくじも できます。これ【25】、もっと いろいろな きせつに この こうえんへ 行きたいです。',
+  instructionPt: 'Leia o texto (sobre o parque do bairro) e escolha o que melhor preenche cada lacuna 21–25.',
+  questions: [
+    { id: 'n4-mock-gram-21', number: 21, prompt: '【21】', choices: [{ n: 1, text: 'の' }, { n: 2, text: 'に' }, { n: 3, text: 'で' }, { n: 4, text: 'を' }], answer: 1, translationPt: '...fica num lugar a 10 minutos a pé de casa.', explanationPt: '「あるいて 10ぷんの ところ」 — の liga a expressão de tempo ao substantivo ところ.' },
+    { id: 'n4-mock-gram-22', number: 22, prompt: '【22】', choices: [{ n: 1, text: 'と' }, { n: 2, text: 'を' }, { n: 3, text: 'に' }, { n: 4, text: 'が' }], answer: 1, translationPt: 'Tirei fotos junto com um amigo.', explanationPt: '〜と いっしょに = junto COM ~: ともだちと いっしょに.' },
+    { id: 'n4-mock-gram-23', number: 23, prompt: '【23】', choices: [{ n: 1, text: 'ので' }, { n: 2, text: 'のに' }, { n: 3, text: 'ても' }, { n: 4, text: 'なら' }], answer: 1, translationPt: 'Como as flores estavam lindas, saíram boas fotos.', explanationPt: '〜ので = porque (razão): きれいだったので.' },
+    { id: 'n4-mock-gram-24', number: 24, prompt: '【24】', choices: [{ n: 1, text: 'それに' }, { n: 2, text: 'でも' }, { n: 3, text: 'しかし' }, { n: 4, text: 'では' }], answer: 1, translationPt: 'Além disso, no parque há um restaurante e dá para fazer refeições.', explanationPt: 'それに = além disso (acrescenta informação). でも/しかし = mas.' },
+    { id: 'n4-mock-gram-25', number: 25, prompt: '【25】', choices: [{ n: 1, text: 'からも' }, { n: 2, text: 'までも' }, { n: 3, text: 'でも' }, { n: 4, text: 'だけも' }], answer: 1, translationPt: 'De agora em diante também quero ir a esse parque em várias estações.', explanationPt: 'これからも = de agora em diante também (これから + も).' },
+  ],
+}
+
+const grammar: Section = {
+  id: 'grammar',
+  level: 'N4-mock',
+  titleJa: 'げんごちしき（ぶんぽう）',
+  titlePt: 'Gramática',
+  summaryPt:
+    'Simulado autoral N4 (gramática): forma gramatical, montagem de frases (★) e gramática no texto. 25 questões originais.',
+  studyNotes: [
+    {
+      title: 'Os 3 tipos de questão (文法)',
+      bodyPt:
+        '- **もんだい1** — escolher a **forma** que preenche a lacuna `（　）`.\n- **もんだい2** — **ordenar** 4 fragmentos; responder qual fica na posição **★**.\n- **もんだい3** — **cloze**: preencher as lacunas de um texto pensando no sentido.',
+    },
+  ],
+  groups: [gramM1, gramM2, gramM3],
+}
+
 export const n4_mock: Level = {
   id: 'N4-mock',
   courseId: 'jlpt',
   titlePt: 'N4 — Simulado autoral',
   descriptionPt:
-    'Simulado de prática do N4 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. (Em construção: 文法・読解 e 聴解 serão adicionados.)',
-  sections: [vocabulary],
+    'Simulado de prática do N4 com questões originais (autorais) no formato JLPT, para treinar além dos simulados oficiais. Explicações em pt-BR. (Em construção: 読解 e 聴解 serão adicionados.)',
+  sections: [vocabulary, grammar],
 }
