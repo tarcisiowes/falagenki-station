@@ -83,6 +83,41 @@ const studyNotes: StudyNote[] = [
     bodyPt:
       '- **〜んです／のです**: dar explicação/contexto. 頭が痛いんです; どうしたんですか.\n- **〜の？**: pergunta casual (busca explicação). もう食べたの？ Substantivo/na-adj + な + の.\n- **〜ないほうがいい**: é melhor não fazer. 吸わないほうがいい.\n- **〜たらどうですか**: que tal ~? (sugestão). 休んだらどうですか.',
   },
+  {
+    title: '14. Vontade, convite e instrução',
+    bodyPt:
+      '- **〜たい**: querer (1ª pessoa). V-stem + たい; conjuga como adjetivo-i (たくない, たかった). Objeto com が ou を. 食べたい.\n- **〜ましょう／ましょうか**: vamos / vamos? (proposta educada). 行きましょう; 手伝いましょうか.\n- **〜ませんか**: convite (“não quer ~?”), mais gentil que ましょう. 一緒に行きませんか.\n- **〜かた（方）**: maneira de fazer (vira substantivo); o を vira の. 使い方; この漢字の書き方.\n- **〜でも**: sugestão não específica (“~ ou algo do tipo”). お茶でも飲みませんか.',
+  },
+  {
+    title: '15. Decisão e mudança de estado',
+    bodyPt:
+      '- **〜ことにする**: decidir fazer (decisão do próprio falante). 毎日走ることにした.\n- **〜ことになる**: ficar decidido que (por circunstâncias externas). 転勤することになった.\n- **〜ようとする**: tentar fazer / estar prestes a. 出かけようとした時に電話が来た.\n- **〜たところ**: acabou de fazer (agora mesmo). 今、着いたところだ.\n- **〜ているところ**: estar no meio de (em pleno andamento). 今、食べているところだ.\n- **〜たばかり**: recém fez (sensação subjetiva de pouco tempo). 日本語を習い始めたばかりだ.',
+  },
+  {
+    title: '16. Relato e opinião',
+    bodyPt:
+      '- **〜と思う**: achar que (opinião/suposição). Substantivo e na-adj mantêm だ antes de と. 高いと思う; 学生だと思う.\n- **〜と言っていた**: fulano disse que (relato do que se ouviu diretamente). 彼は来ると言っていた.\n- **〜と言う**: dizer que / chamar-se. 「行く」と言った; 「さくら」という店.',
+  },
+  {
+    title: '17. Interrogativos combinados',
+    bodyPt:
+      '- **疑問詞＋でも**: qualquer ~. 何でも (qualquer coisa), どこでも (qualquer lugar), 誰でも (qualquer pessoa), いつでも (a qualquer hora).\n- **疑問詞＋も＋negativo**: nenhum ~. 何も食べない (não como nada), どこも行かない (não vou a lugar nenhum), 誰も来ない (não vem ninguém).',
+  },
+  {
+    title: '18. Partículas e restrições',
+    bodyPt:
+      '- **〜しか〜ない**: só (sempre com verbo negativo; nuance de insuficiência, “nada além de”). 千円しかない.\n- **〜だけ**: apenas/somente (neutro, sem a nuance de しか). 一人だけ来た.\n- **〜ばかり**: só faz ~ (repetição, geralmente com leve crítica). ゲームばかりしている.\n- **〜について**: sobre / a respeito de (introduz o tema). 日本の文化について話す.\n- **〜のに（用途）**: para (uso) — gasta tempo/dinheiro; com 必要だ／かかる／使う. Diferente do のに de contraste. この料理を作るのに三時間かかった.',
+  },
+  {
+    title: '19. Sensações e nominalização de adjetivos',
+    bodyPt:
+      '- **〜がする**: sentir (som/cheiro/sabor/sensação). 音／におい／味／感じ + がする. いいにおいがする; 変な音がする.\n- **〜さ**: nominaliza o adjetivo, indicando grau/medida. 高い→高さ (altura), 長い→長さ (comprimento), 便利→便利さ.',
+  },
+  {
+    title: '20. Estruturas-ponte para N3',
+    bodyPt:
+      'Pontos que já apontam para o N3:\n\n- **〜ば〜ほど**: quanto mais ~, mais ~ (proporção). 練習すればするほど上手になる.\n- **〜うちに**: enquanto ainda ~ (antes que a situação mude); 〜ないうちに = antes que ~. 熱いうちに食べる; 忘れないうちにメモする.\n- **〜にちがいない**: com certeza deve ser (convicção forte, mais que はずだ). 彼が犯人にちがいない.\n- **〜こと（規則）**: instrução/regra em texto escrito (“deve-se / não se deve ~”). ここに駐車しないこと.\n- **〜という（伝聞・説明）**: diz-se que ~ / o que se chama. 来月、新しい店が開店するという.\n- **〜たり（単独）**: exemplo único / suavizar (“coisas como ~”). 大声で話したりしてはいけない.',
+  },
 ]
 
 const groups: ExerciseGroup[] = [
@@ -673,7 +708,265 @@ const groups: ExerciseGroup[] = [
       { id: 'n4g-p69-5', number: 345, prompt: 'わからないなら、{先生|せんせい}に {相談|そうだん}し（　）。', choices: [{ n: 1, text: 'たらどうですか' }, { n: 2, text: 'てもいいですか' }, { n: 3, text: 'ましょうか' }, { n: 4, text: 'ませんか' }], answer: 1, translationPt: 'Se não entende, que tal consultar o professor?', explanationPt: '〜たらどうですか = dar uma sugestão educada.' },
     ],
   },
-  // —— próximos temas (14..20) serão acrescentados aqui ——
+  {
+    id: 'n4g-t14',
+    title: 'もんだい１４',
+    subtitlePt: '14. Vontade, convite e instrução (〜たい・〜ましょう／ましょうか・〜ませんか・〜かた・〜でも)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 70. 〜たい ——
+      { id: 'n4g-p70-1', number: 346, prompt: '{私|わたし}は すしを {食|た}べ（　）。', choices: [{ n: 1, text: 'たい' }, { n: 2, text: 'たがる' }, { n: 3, text: 'ましょう' }, { n: 4, text: 'ている' }], answer: 1, translationPt: 'Quero comer sushi.', explanationPt: '〜たい = desejo do próprio falante (V-stem + たい).' },
+      { id: 'n4g-p70-2', number: 347, prompt: 'のどが かわいた。{水|みず}が {飲|の}み（　）。', choices: [{ n: 1, text: 'たい' }, { n: 2, text: 'たがる' }, { n: 3, text: 'ている' }, { n: 4, text: 'そうだ' }], answer: 1, translationPt: 'Estou com sede. Quero beber água.', explanationPt: '〜たい: o objeto pode levar が (水が飲みたい).' },
+      { id: 'n4g-p70-3', number: 348, prompt: '{将来|しょうらい}、{日本|にほん}で {働|はたら}き（　）です。', choices: [{ n: 1, text: 'たい' }, { n: 2, text: 'たがり' }, { n: 3, text: 'ましょう' }, { n: 4, text: 'ている' }], answer: 1, translationPt: 'No futuro, quero trabalhar no Japão.', explanationPt: '〜たいです = desejo do falante (forma polida).' },
+      { id: 'n4g-p70-4', number: 349, prompt: '{今日|きょう}は つかれたから、{早|はや}く {帰|かえ}り（　）。', choices: [{ n: 1, text: 'たい' }, { n: 2, text: 'たがる' }, { n: 3, text: 'てある' }, { n: 4, text: 'ましょう' }], answer: 1, translationPt: 'Hoje estou cansado, quero voltar cedo.', explanationPt: '〜たい expressa a vontade de quem fala.' },
+      { id: 'n4g-p70-5', number: 350, prompt: '{今日|きょう}は どこへも {行|い}き（　）ない。', choices: [{ n: 1, text: 'たく' }, { n: 2, text: 'たい' }, { n: 3, text: 'たがら' }, { n: 4, text: 'て' }], answer: 1, translationPt: 'Hoje não quero ir a lugar nenhum.', explanationPt: '〜たい nega como adjetivo-i: 行きたくない.' },
+
+      // —— 71. 〜ましょう／ましょうか ——
+      { id: 'n4g-p71-1', number: 351, prompt: 'つかれたでしょう。{少|すこ}し {休|やす}み（　）。', choices: [{ n: 1, text: 'ましょう' }, { n: 2, text: 'たい' }, { n: 3, text: 'ますか' }, { n: 4, text: 'ている' }], answer: 1, translationPt: 'Deve estar cansado. Vamos descansar um pouco.', explanationPt: '〜ましょう = proposta (vamos fazer juntos).' },
+      { id: 'n4g-p71-2', number: 352, prompt: '{荷物|にもつ}を {持|も}ち（　）か。', choices: [{ n: 1, text: 'ましょう' }, { n: 2, text: 'たい' }, { n: 3, text: 'ません' }, { n: 4, text: 'ている' }], answer: 1, translationPt: 'Quer que eu carregue a bagagem?', explanationPt: '〜ましょうか = oferecer-se para fazer algo.' },
+      { id: 'n4g-p71-3', number: 353, prompt: '１{時|じ}に {駅|えき}で {会|あ}い（　）。', choices: [{ n: 1, text: 'ましょう' }, { n: 2, text: 'たい' }, { n: 3, text: 'ますか' }, { n: 4, text: 'ている' }], answer: 1, translationPt: 'Vamos nos encontrar na estação à 1h.', explanationPt: '〜ましょう combina/propõe uma ação.' },
+      { id: 'n4g-p71-4', number: 354, prompt: 'そろそろ {始|はじ}め（　）か。', choices: [{ n: 1, text: 'ましょう' }, { n: 2, text: 'たい' }, { n: 3, text: 'ません' }, { n: 4, text: 'ている' }], answer: 1, translationPt: 'Vamos começar (já)?', explanationPt: '〜ましょうか pede a concordância do grupo.' },
+      { id: 'n4g-p71-5', number: 355, prompt: '{暑|あつ}いですね。まどを {開|あ}け（　）か。', choices: [{ n: 1, text: 'ましょう' }, { n: 2, text: 'たがる' }, { n: 3, text: 'ている' }, { n: 4, text: 'てある' }], answer: 1, translationPt: 'Está quente, né. Quer que eu abra a janela?', explanationPt: '〜ましょうか oferece um favor ao interlocutor.' },
+
+      // —— 72. 〜ませんか ——
+      { id: 'n4g-p72-1', number: 356, prompt: '{一緒|いっしょ}に {昼|ひる}ごはんを {食|た}べ（　）。', choices: [{ n: 1, text: 'ませんか' }, { n: 2, text: 'ますか' }, { n: 3, text: 'たいか' }, { n: 4, text: 'ましたか' }], answer: 1, translationPt: 'Não quer almoçar junto?', explanationPt: '〜ませんか = convite gentil (negativo + か).' },
+      { id: 'n4g-p72-2', number: 357, prompt: '{週末|しゅうまつ}、{映画|えいが}を {見|み}に {行|い}き（　）。', choices: [{ n: 1, text: 'ませんか' }, { n: 2, text: 'ますか' }, { n: 3, text: 'たいか' }, { n: 4, text: 'ましたか' }], answer: 1, translationPt: 'Não quer ir ver um filme no fim de semana?', explanationPt: '〜ませんか faz um convite educado.' },
+      { id: 'n4g-p72-3', number: 358, prompt: 'コーヒーでも {飲|の}み（　）。', choices: [{ n: 1, text: 'ませんか' }, { n: 2, text: 'ますか' }, { n: 3, text: 'たいか' }, { n: 4, text: 'ましたか' }], answer: 1, translationPt: 'Não quer tomar um café (ou algo)?', explanationPt: '〜ませんか convida de forma suave.' },
+      { id: 'n4g-p72-4', number: 359, prompt: '{今度|こんど}、うちに {遊|あそ}びに {来|き}（　）。', choices: [{ n: 1, text: 'ませんか' }, { n: 2, text: 'ますか' }, { n: 3, text: 'たいか' }, { n: 4, text: 'ましたか' }], answer: 1, translationPt: 'Não quer vir me visitar em casa qualquer dia?', explanationPt: '来ませんか (きませんか) = convite educado.' },
+      { id: 'n4g-p72-5', number: 360, prompt: 'テニスを し（　）。', choices: [{ n: 1, text: 'ませんか' }, { n: 2, text: 'ますか' }, { n: 3, text: 'たいか' }, { n: 4, text: 'ましたか' }], answer: 1, translationPt: 'Não quer jogar tênis?', explanationPt: '〜ませんか = convite (mais gentil que ましょう).' },
+
+      // —— 73. 〜かた（方） ——
+      { id: 'n4g-p73-1', number: 361, prompt: 'この {漢字|かんじ}の {読|よ}み（　）を {教|おし}えて ください。', choices: [{ n: 1, text: 'かた' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Por favor, me ensine como ler este kanji.', explanationPt: 'V-stem + 方（かた）= modo de fazer (読み方).' },
+      { id: 'n4g-p73-2', number: 362, prompt: 'はしの {使|つか}い（　）が わかりません。', choices: [{ n: 1, text: 'かた' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Não sei como usar o hashi.', explanationPt: '使い方 = a maneira de usar.' },
+      { id: 'n4g-p73-3', number: 363, prompt: 'この {機械|きかい}の {動|うご}かし（　）は {難|むずか}しい。', choices: [{ n: 1, text: 'かた' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'ほう' }], answer: 1, translationPt: 'O modo de operar esta máquina é difícil.', explanationPt: '動かし方 = como operar/mexer.' },
+      { id: 'n4g-p73-4', number: 364, prompt: '{駅|えき}までの {行|い}き（　）を {聞|き}いた。', choices: [{ n: 1, text: 'かた' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Perguntei como chegar até a estação.', explanationPt: '行き方 = o caminho/como ir.' },
+      { id: 'n4g-p73-5', number: 365, prompt: 'この {料理|りょうり}の {作|つく}り（　）を {習|なら}った。', choices: [{ n: 1, text: 'かた' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Aprendi como fazer este prato.', explanationPt: '作り方 = a receita/maneira de preparar.' },
+
+      // —— 74. 〜でも ——
+      { id: 'n4g-p74-1', number: 366, prompt: 'つかれたね。お{茶|ちゃ}（　）{飲|の}まない？', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Cansado, né. Não quer tomar um chá ou algo?', explanationPt: 'Substantivo + でも = sugerir algo não específico.' },
+      { id: 'n4g-p74-2', number: 367, prompt: 'ひまだから、{映画|えいが}（　）{見|み}に {行|い}こう。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Estou livre, vamos ver um filme ou algo assim.', explanationPt: '〜でも = ~ ou algo do tipo (sugestão aberta).' },
+      { id: 'n4g-p74-3', number: 368, prompt: '{昼|ひる}ごはんに ラーメン（　）{食|た}べよう。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Vamos comer um ramen ou algo no almoço.', explanationPt: '〜でも apresenta uma opção como exemplo.' },
+      { id: 'n4g-p74-4', number: 369, prompt: 'たいくつだね。トランプ（　）しようか。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Que tédio. Vamos jogar cartas ou algo?', explanationPt: '〜でも suaviza a sugestão (cartas, por exemplo).' },
+      { id: 'n4g-p74-5', number: 370, prompt: 'のどが かわいた。ジュース（　）{買|か}って こよう。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Estou com sede. Vou comprar um suco ou algo.', explanationPt: '〜でも = ~ ou outra coisa parecida.' },
+    ],
+  },
+  {
+    id: 'n4g-t15',
+    title: 'もんだい１５',
+    subtitlePt: '15. Decisão e mudança de estado (〜ことにする・〜ことになる・〜ようとする・〜たところ・〜ているところ・〜たばかり)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 75. 〜ことにする ——
+      { id: 'n4g-p75-1', number: 371, prompt: '{健康|けんこう}の ために、{毎日|まいにち} {運動|うんどう}する（　）。', choices: [{ n: 1, text: 'ことにした' }, { n: 2, text: 'ことになった' }, { n: 3, text: 'ようになった' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Pela saúde, decidi me exercitar todo dia.', explanationPt: '〜ことにする = decisão tomada pelo próprio falante.' },
+      { id: 'n4g-p75-2', number: 372, prompt: 'たばこを やめる（　）。', choices: [{ n: 1, text: 'ことにした' }, { n: 2, text: 'ことになった' }, { n: 3, text: 'ようになった' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Decidi parar de fumar.', explanationPt: '〜ことにした = eu mesmo decidi.' },
+      { id: 'n4g-p75-3', number: 373, prompt: 'よく {考|かんが}えて、{留学|りゅうがく}する（　）。', choices: [{ n: 1, text: 'ことにした' }, { n: 2, text: 'ことになった' }, { n: 3, text: 'ようになった' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Depois de pensar bem, decidi estudar fora.', explanationPt: '〜ことにする: decisão própria (após refletir).' },
+      { id: 'n4g-p75-4', number: 374, prompt: '{今日|きょう}から {日記|にっき}を つける（　）。', choices: [{ n: 1, text: 'ことにした' }, { n: 2, text: 'ことになった' }, { n: 3, text: 'ようになった' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'A partir de hoje, decidi escrever um diário.', explanationPt: '〜ことにする marca uma resolução pessoal.' },
+      { id: 'n4g-p75-5', number: 375, prompt: 'ダイエットの ために、あまい ものを {食|た}べない（　）。', choices: [{ n: 1, text: 'ことにした' }, { n: 2, text: 'ことになった' }, { n: 3, text: 'ようになった' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Pela dieta, decidi não comer doces.', explanationPt: '〜ないことにする = decidir NÃO fazer.' },
+
+      // —— 76. 〜ことになる ——
+      { id: 'n4g-p76-1', number: 376, prompt: '{仕事|しごと}で {大阪|おおさか}に {転勤|てんきん}する（　）。', choices: [{ n: 1, text: 'ことになった' }, { n: 2, text: 'ことにした' }, { n: 3, text: 'ようにした' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Por causa do trabalho, fui transferido para Osaka.', explanationPt: '〜ことになる = decidido por circunstâncias externas.' },
+      { id: 'n4g-p76-2', number: 377, prompt: '{来月|らいげつ}、{結婚|けっこん}する（　）。', choices: [{ n: 1, text: 'ことになりました' }, { n: 2, text: 'ことにしました' }, { n: 3, text: 'ようにしました' }, { n: 4, text: 'ところです' }], answer: 1, translationPt: 'Ficou decidido que vou me casar mês que vem.', explanationPt: '〜ことになりました anuncia um fato decidido (educado).' },
+      { id: 'n4g-p76-3', number: 378, prompt: '{台風|たいふう}で、{旅行|りょこう}は {中止|ちゅうし}する（　）。', choices: [{ n: 1, text: 'ことになった' }, { n: 2, text: 'ことにした' }, { n: 3, text: 'ようになった' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Por causa do tufão, a viagem foi cancelada.', explanationPt: '〜ことになる: o resultado não dependeu de você.' },
+      { id: 'n4g-p76-4', number: 379, prompt: '{新|あたら}しい プロジェクトを {担当|たんとう}する（　）。', choices: [{ n: 1, text: 'ことになった' }, { n: 2, text: 'ことにした' }, { n: 3, text: 'ようにした' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Fiquei encarregado do novo projeto.', explanationPt: '〜ことになる = decisão da empresa/de outros.' },
+      { id: 'n4g-p76-5', number: 380, prompt: '{駅|えき}の {前|まえ}に {新|あたら}しい ビルが {建|た}つ（　）。', choices: [{ n: 1, text: 'ことになった' }, { n: 2, text: 'ことにした' }, { n: 3, text: 'ようになった' }, { n: 4, text: 'ところだ' }], answer: 1, translationPt: 'Ficou decidido que um novo prédio será construído em frente à estação.', explanationPt: '〜ことになる relata uma decisão externa.' },
+
+      // —— 77. 〜ようとする ——
+      { id: 'n4g-p77-1', number: 381, prompt: '{家|いえ}を {出|で}（　）とした {時|とき}、{電話|でんわ}が なった。', choices: [{ n: 1, text: 'よう' }, { n: 2, text: 'たい' }, { n: 3, text: 'て' }, { n: 4, text: 'そう' }], answer: 1, translationPt: 'Quando eu estava prestes a sair de casa, o telefone tocou.', explanationPt: '意向形 + とする = estar prestes a (出ようとした).' },
+      { id: 'n4g-p77-2', number: 382, prompt: '{赤|あか}ちゃんが {立|た}ち{上|あ}がろう（　）いる。', choices: [{ n: 1, text: 'として' }, { n: 2, text: 'にして' }, { n: 3, text: 'ことにして' }, { n: 4, text: 'ないで' }], answer: 1, translationPt: 'O bebê está tentando se levantar.', explanationPt: '〜ようとしている = tentar/esforçar-se para fazer.' },
+      { id: 'n4g-p77-3', number: 383, prompt: 'バスに {乗|の}ろう（　）した {時|とき}、ドアが {閉|し}まった。', choices: [{ n: 1, text: 'と' }, { n: 2, text: 'に' }, { n: 3, text: 'で' }, { n: 4, text: 'を' }], answer: 1, translationPt: 'Quando eu ia pegar o ônibus, a porta fechou.', explanationPt: '乗ろう + と + する = estar a ponto de pegar.' },
+      { id: 'n4g-p77-4', number: 384, prompt: '{何度|なんど}も ドアを {開|あ}け（　）したが、{開|あ}かなかった。', choices: [{ n: 1, text: 'ようと' }, { n: 2, text: 'たいと' }, { n: 3, text: 'ると' }, { n: 4, text: 'ないと' }], answer: 1, translationPt: 'Tentei abrir a porta várias vezes, mas não abriu.', explanationPt: '開けようとした = tentou abrir (sem sucesso).' },
+      { id: 'n4g-p77-5', number: 385, prompt: '{犬|いぬ}が {道|みち}を {渡|わた}ろう（　）いる。', choices: [{ n: 1, text: 'として' }, { n: 2, text: 'にして' }, { n: 3, text: 'ようで' }, { n: 4, text: 'そうで' }], answer: 1, translationPt: 'O cachorro está prestes a atravessar a rua.', explanationPt: '〜ようとしている indica ação iminente.' },
+
+      // —— 78. 〜たところ ——
+      { id: 'n4g-p78-1', number: 386, prompt: 'もしもし。{今|いま}、{駅|えき}に {着|つ}いた（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Alô. Acabei de chegar na estação agora.', explanationPt: 'V-た + ところ = a ação terminou agora mesmo.' },
+      { id: 'n4g-p78-2', number: 387, prompt: 'ごはんを {食|た}べた（　）だから、おなかが いっぱいだ。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Acabei de comer, por isso estou cheio.', explanationPt: '〜たところ marca o exato fim da ação.' },
+      { id: 'n4g-p78-3', number: 388, prompt: '{映画|えいが}は {今|いま} {終|お}わった（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'O filme acabou agora mesmo.', explanationPt: '〜たところ = recém-concluído.' },
+      { id: 'n4g-p78-4', number: 389, prompt: 'ちょうど {今|いま}、{仕事|しごと}が {終|お}わった（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'ほう' }], answer: 1, translationPt: 'Justamente agora, o trabalho acabou.', explanationPt: 'ちょうど + 〜たところ reforça o “agora mesmo”.' },
+      { id: 'n4g-p78-5', number: 390, prompt: '{家|いえ}に {帰|かえ}って {来|き}た（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Acabei de chegar em casa.', explanationPt: '〜たところ = ação completada neste instante.' },
+
+      // —— 79. 〜ているところ ——
+      { id: 'n4g-p79-1', number: 391, prompt: '{今|いま}、{昼|ひる}ごはんを {食|た}べて いる（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Estou no meio do almoço agora.', explanationPt: 'V-ている + ところ = ação em pleno andamento.' },
+      { id: 'n4g-p79-2', number: 392, prompt: '{母|はは}は {今|いま}、{料理|りょうり}を {作|つく}って いる（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Minha mãe está cozinhando agora.', explanationPt: '〜ているところ enfatiza o “neste momento”.' },
+      { id: 'n4g-p79-3', number: 393, prompt: '{資料|しりょう}を {準備|じゅんび}して いる（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'ほう' }], answer: 1, translationPt: 'Estou preparando os materiais agora.', explanationPt: '〜ているところ = no meio de uma ação.' },
+      { id: 'n4g-p79-4', number: 394, prompt: '{今|いま}、{先生|せんせい}と {話|はな}して いる（　）だから、あとで かけ{直|なお}す。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'とき' }], answer: 1, translationPt: 'Estou conversando com o professor agora, ligo de volta depois.', explanationPt: '〜ているところ: ação corrente que impede outra.' },
+      { id: 'n4g-p79-5', number: 395, prompt: 'その {問題|もんだい}に ついて {今|いま} {考|かんが}えて いる（　）です。', choices: [{ n: 1, text: 'ところ' }, { n: 2, text: 'こと' }, { n: 3, text: 'もの' }, { n: 4, text: 'ほう' }], answer: 1, translationPt: 'Estou pensando nesse problema agora.', explanationPt: '〜ているところ = exatamente no processo.' },
+
+      // —— 80. 〜たばかり ——
+      { id: 'n4g-p80-1', number: 396, prompt: '{日本語|にほんご}の {勉強|べんきょう}を {始|はじ}めた（　）です。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'だけ' }, { n: 3, text: 'しか' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Acabei de começar a estudar japonês (faz pouco).', explanationPt: 'V-た + ばかり = pouco tempo desde a ação.' },
+      { id: 'n4g-p80-2', number: 397, prompt: 'この {車|くるま}は {先月|せんげつ} {買|か}った（　）です。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'だけ' }, { n: 3, text: 'しか' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Comprei este carro mês passado (faz pouco).', explanationPt: '〜たばかり = sensação subjetiva de “recém” (mesmo um mês).' },
+      { id: 'n4g-p80-3', number: 398, prompt: '{赤|あか}ちゃんは さっき {寝|ね}た（　）だ。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'だけ' }, { n: 3, text: 'しか' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'O bebê acabou de dormir há pouco.', explanationPt: '〜たばかり = faz pouquíssimo tempo.' },
+      { id: 'n4g-p80-4', number: 399, prompt: '{新|あたら}しい パソコンを {買|か}った（　）なのに、もう こわれた。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'だけ' }, { n: 3, text: 'しか' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Comprei o computador novo faz pouco, e já quebrou.', explanationPt: '〜たばかりなのに = mesmo recém-feito, contraste.' },
+      { id: 'n4g-p80-5', number: 400, prompt: '{彼|かれ}は {入社|にゅうしゃ}した（　）で、まだ {仕事|しごと}に なれて いない。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'だけ' }, { n: 3, text: 'しか' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Ele acabou de entrar na empresa, ainda não se acostumou com o trabalho.', explanationPt: '〜たばかり = há pouco tempo entrou.' },
+    ],
+  },
+  {
+    id: 'n4g-t16',
+    title: 'もんだい１６',
+    subtitlePt: '16. Relato e opinião (〜と思う・〜と言っていた・〜と言う)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 81. 〜と思う ——
+      { id: 'n4g-p81-1', number: 401, prompt: '{明日|あした}は {雨|あめ}が {降|ふ}る（　）。', choices: [{ n: 1, text: 'と{思|おも}う' }, { n: 2, text: 'と{言|い}っていた' }, { n: 3, text: 'ことにする' }, { n: 4, text: 'ようにする' }], answer: 1, translationPt: 'Acho que amanhã vai chover.', explanationPt: 'Forma simples + と思う = opinião/suposição do falante.' },
+      { id: 'n4g-p81-2', number: 402, prompt: 'この {映画|えいが}は おもしろい（　）。', choices: [{ n: 1, text: 'と{思|おも}う' }, { n: 2, text: 'と{言|い}う' }, { n: 3, text: 'ことだ' }, { n: 4, text: 'ようにする' }], answer: 1, translationPt: 'Acho que este filme é interessante.', explanationPt: '〜と思う expressa o que o falante acha.' },
+      { id: 'n4g-p81-3', number: 403, prompt: '{彼|かれ}は {学生|がくせい}だ（　）。', choices: [{ n: 1, text: 'と{思|おも}う' }, { n: 2, text: '{思|おも}う' }, { n: 3, text: 'と{思|おも}って' }, { n: 4, text: 'を{思|おも}う' }], answer: 1, translationPt: 'Acho que ele é estudante.', explanationPt: 'Substantivo + だ + と思う (mantém だ antes de と).' },
+      { id: 'n4g-p81-4', number: 404, prompt: 'この {問題|もんだい}は {難|むずか}しすぎる（　）。', choices: [{ n: 1, text: 'と{思|おも}う' }, { n: 2, text: 'と{言|い}う' }, { n: 3, text: 'ことにする' }, { n: 4, text: 'ようになる' }], answer: 1, translationPt: 'Acho que este problema é difícil demais.', explanationPt: '〜と思う = julgamento pessoal.' },
+      { id: 'n4g-p81-5', number: 405, prompt: '{日本語|にほんご}は {大切|たいせつ}だ（　）。', choices: [{ n: 1, text: 'と{思|おも}う' }, { n: 2, text: '{思|おも}う' }, { n: 3, text: 'な{思|おも}う' }, { n: 4, text: 'の{思|おも}う' }], answer: 1, translationPt: 'Acho que o japonês é importante.', explanationPt: 'ナ-adj + だ + と思う (大切だと思う).' },
+
+      // —— 82. 〜と言っていた ——
+      { id: 'n4g-p82-1', number: 406, prompt: '{田中|たなか}さんは {来週|らいしゅう} {国|くに}に {帰|かえ}る（　）。', choices: [{ n: 1, text: 'と{言|い}っていた' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'ことになる' }, { n: 4, text: 'ようにする' }], answer: 1, translationPt: 'O Tanaka disse que vai voltar ao país dele semana que vem.', explanationPt: '〜と言っていた = relata fala ouvida diretamente.' },
+      { id: 'n4g-p82-2', number: 407, prompt: '{先生|せんせい}は あした {試験|しけん}が ある（　）。', choices: [{ n: 1, text: 'と{言|い}っていた' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'ことになる' }, { n: 4, text: 'ようにする' }], answer: 1, translationPt: 'O professor disse que amanhã tem prova.', explanationPt: '〜と言っていた transmite o que alguém falou.' },
+      { id: 'n4g-p82-3', number: 408, prompt: '{彼女|かのじょ}は その {店|みせ}は {高|たか}い（　）。', choices: [{ n: 1, text: 'と{言|い}っていた' }, { n: 2, text: 'そうにする' }, { n: 3, text: 'ことになる' }, { n: 4, text: 'ようになる' }], answer: 1, translationPt: 'Ela disse que aquela loja é cara.', explanationPt: '〜と言っていた = reporta a opinião de outra pessoa.' },
+      { id: 'n4g-p82-4', number: 409, prompt: '{母|はは}は {夕方|ゆうがた}から {雨|あめ}に なる（　）。', choices: [{ n: 1, text: 'と{言|い}っていた' }, { n: 2, text: 'と{思|おも}わない' }, { n: 3, text: 'ことにする' }, { n: 4, text: 'ようにする' }], answer: 1, translationPt: 'Minha mãe disse que vai chover a partir do fim de tarde.', explanationPt: '〜と言っていた relata uma informação recebida.' },
+      { id: 'n4g-p82-5', number: 410, prompt: '{部長|ぶちょう}は {会議|かいぎ}は ３{時|じ}からだ（　）。', choices: [{ n: 1, text: 'と{言|い}っていた' }, { n: 2, text: '{言|い}っていた' }, { n: 3, text: 'を{言|い}っていた' }, { n: 4, text: 'で{言|い}っていた' }], answer: 1, translationPt: 'O chefe disse que a reunião é a partir das 3h.', explanationPt: '〜だ + と言っていた (a citação leva と).' },
+
+      // —— 83. 〜と言う ——
+      { id: 'n4g-p83-1', number: 411, prompt: '{彼|かれ}は 「また {来|く}る」（　）。', choices: [{ n: 1, text: 'と{言|い}った' }, { n: 2, text: 'を{言|い}った' }, { n: 3, text: 'が{言|い}った' }, { n: 4, text: 'で{言|い}った' }], answer: 1, translationPt: 'Ele disse: “volto de novo”.', explanationPt: 'Citação 「…」 + と言う (と marca a fala citada).' },
+      { id: 'n4g-p83-2', number: 412, prompt: 'これは {日本語|にほんご}で 「さくら」（　）。', choices: [{ n: 1, text: 'と{言|い}います' }, { n: 2, text: 'と{思|おも}います' }, { n: 3, text: 'に なります' }, { n: 4, text: 'が あります' }], answer: 1, translationPt: 'Isto se chama “sakura” em japonês.', explanationPt: '〜と言う = chamar-se / dizer-se.' },
+      { id: 'n4g-p83-3', number: 413, prompt: 'あの {人|ひと}は {何|なん}（　）{名前|なまえ}ですか。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'と{聞|き}く' }, { n: 4, text: 'と{見|み}る' }], answer: 1, translationPt: 'Qual é o nome daquela pessoa?', explanationPt: '何という + 名前 = “que nome se chama”.' },
+      { id: 'n4g-p83-4', number: 414, prompt: '「ありがとう」は {英語|えいご}で {何|なん}（　）か。', choices: [{ n: 1, text: 'と{言|い}います' }, { n: 2, text: 'と{思|おも}います' }, { n: 3, text: 'に します' }, { n: 4, text: 'が します' }], answer: 1, translationPt: 'Como se diz “obrigado” em inglês?', explanationPt: '何と言いますか = “como se diz?”.' },
+      { id: 'n4g-p83-5', number: 415, prompt: '{駅|えき}の {近|ちか}くに 「みどり」（　）{店|みせ}が ある。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'と{聞|き}く' }, { n: 4, text: 'と{言|い}った' }], answer: 1, translationPt: 'Perto da estação tem uma loja chamada “Midori”.', explanationPt: 'X + という + 名詞 = um N chamado X.' },
+    ],
+  },
+  {
+    id: 'n4g-t17',
+    title: 'もんだい１７',
+    subtitlePt: '17. Interrogativos combinados (疑問詞＋でも・疑問詞＋も〜ない)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 84. 疑問詞＋でも ——
+      { id: 'n4g-p84-1', number: 416, prompt: 'わたしは {辛|から}い ものなら {何|なに}（　）{食|た}べられる。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'か' }, { n: 3, text: 'も' }, { n: 4, text: 'しか' }], answer: 1, translationPt: 'Se for comida apimentada, consigo comer qualquer uma.', explanationPt: '何でも = qualquer coisa (疑問詞 + でも).' },
+      { id: 'n4g-p84-2', number: 417, prompt: 'この {仕事|しごと}は {誰|だれ}（　）できる。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'か' }, { n: 3, text: 'も' }, { n: 4, text: 'しか' }], answer: 1, translationPt: 'Qualquer um consegue fazer este trabalho.', explanationPt: '誰でも = qualquer pessoa.' },
+      { id: 'n4g-p84-3', number: 418, prompt: 'ひまだから、いつ（　）{来|き}て ください。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'か' }, { n: 3, text: 'も' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Estou livre, então venha quando quiser.', explanationPt: 'いつでも = a qualquer hora.' },
+      { id: 'n4g-p84-4', number: 419, prompt: 'この {商品|しょうひん}は どこに（　）ある。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'か' }, { n: 3, text: 'も' }, { n: 4, text: 'しか' }], answer: 1, translationPt: 'Este produto existe em qualquer lugar.', explanationPt: 'どこにでも = em qualquer lugar.' },
+      { id: 'n4g-p84-5', number: 420, prompt: 'わからない ことが あったら、{何|なん}（　）{聞|き}いて ください。', choices: [{ n: 1, text: 'でも' }, { n: 2, text: 'か' }, { n: 3, text: 'も' }, { n: 4, text: 'だけ' }], answer: 1, translationPt: 'Se tiver algo que não entende, pergunte qualquer coisa.', explanationPt: '何でも聞く = perguntar qualquer coisa.' },
+
+      // —— 85. 疑問詞＋も〜ない ——
+      { id: 'n4g-p85-1', number: 421, prompt: 'おなかが いたくて、{何|なに}（　）{食|た}べたくない。', choices: [{ n: 1, text: 'も' }, { n: 2, text: 'でも' }, { n: 3, text: 'か' }, { n: 4, text: 'だけ' }], answer: 1, translationPt: 'Estou com dor de barriga e não quero comer nada.', explanationPt: '何も + negativo = nada (何も食べたくない).' },
+      { id: 'n4g-p85-2', number: 422, prompt: '{日曜日|にちようび}は どこ（　）{行|い}かなかった。', choices: [{ n: 1, text: 'も' }, { n: 2, text: 'でも' }, { n: 3, text: 'か' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'No domingo não fui a lugar nenhum.', explanationPt: 'どこも + negativo = lugar nenhum.' },
+      { id: 'n4g-p85-3', number: 423, prompt: 'その ことは {誰|だれ}（　）{知|し}らない。', choices: [{ n: 1, text: 'も' }, { n: 2, text: 'でも' }, { n: 3, text: 'か' }, { n: 4, text: 'だけ' }], answer: 1, translationPt: 'Ninguém sabe disso.', explanationPt: '誰も + negativo = ninguém.' },
+      { id: 'n4g-p85-4', number: 424, prompt: 'パーティーに {誰|だれ}（　）{来|こ}なかった。', choices: [{ n: 1, text: 'も' }, { n: 2, text: 'でも' }, { n: 3, text: 'か' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Ninguém veio à festa.', explanationPt: '誰も来なかった = ninguém veio.' },
+      { id: 'n4g-p85-5', number: 425, prompt: '{冷蔵庫|れいぞうこ}の {中|なか}に {何|なに}（　）ない。', choices: [{ n: 1, text: 'も' }, { n: 2, text: 'でも' }, { n: 3, text: 'か' }, { n: 4, text: 'だけ' }], answer: 1, translationPt: 'Não tem nada dentro da geladeira.', explanationPt: '何もない = não há nada.' },
+    ],
+  },
+  {
+    id: 'n4g-t18',
+    title: 'もんだい１８',
+    subtitlePt: '18. Partículas e restrições (〜しか〜ない・〜だけ・〜ばかり・〜について・〜のに)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 86. 〜しか〜ない ——
+      { id: 'n4g-p86-1', number: 426, prompt: 'さいふの {中|なか}に {百|ひゃく}{円|えん}（　）ない。', choices: [{ n: 1, text: 'しか' }, { n: 2, text: 'だけ' }, { n: 3, text: 'でも' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Só tem 100 ienes na carteira.', explanationPt: '〜しか + verbo negativo = apenas (nada além de).' },
+      { id: 'n4g-p86-2', number: 427, prompt: 'この クラスには {学生|がくせい}が {五人|ごにん}（　）いない。', choices: [{ n: 1, text: 'しか' }, { n: 2, text: 'だけ' }, { n: 3, text: 'でも' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Nesta turma só tem cinco alunos.', explanationPt: '〜しか〜ない destaca a pequena quantidade.' },
+      { id: 'n4g-p86-3', number: 428, prompt: 'わたしは {日本語|にほんご}（　）{話|はな}せない。', choices: [{ n: 1, text: 'しか' }, { n: 2, text: 'だけ' }, { n: 3, text: 'でも' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Só consigo falar japonês.', explanationPt: '〜しか〜ない sempre exige verbo negativo.' },
+      { id: 'n4g-p86-4', number: 429, prompt: '{今日|きょう}は パン（　）{食|た}べて いない。', choices: [{ n: 1, text: 'しか' }, { n: 2, text: 'だけ' }, { n: 3, text: 'でも' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Hoje só comi pão.', explanationPt: '〜しか〜ない = somente, com nuance de insuficiência.' },
+      { id: 'n4g-p86-5', number: 430, prompt: '{時間|じかん}が {少|すこ}し（　）{残|のこ}って いない。', choices: [{ n: 1, text: 'しか' }, { n: 2, text: 'だけ' }, { n: 3, text: 'でも' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Só resta um pouco de tempo.', explanationPt: '少ししか残っていない = só resta pouco.' },
+
+      // —— 87. 〜だけ ——
+      { id: 'n4g-p87-1', number: 431, prompt: 'パーティーには {友|とも}だちが {一人|ひとり}（　）{来|き}た。', choices: [{ n: 1, text: 'だけ' }, { n: 2, text: 'しか' }, { n: 3, text: 'でも' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Só um amigo veio à festa.', explanationPt: '〜だけ = apenas (verbo afirmativo, neutro).' },
+      { id: 'n4g-p87-2', number: 432, prompt: 'ほしい ものは これ（　）です。', choices: [{ n: 1, text: 'だけ' }, { n: 2, text: 'しか' }, { n: 3, text: 'でも' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'A única coisa que quero é esta.', explanationPt: 'これだけ = só isto.' },
+      { id: 'n4g-p87-3', number: 433, prompt: '{少|すこ}し {休|やす}みたいので、５{分|ふん}（　）{待|ま}って ください。', choices: [{ n: 1, text: 'だけ' }, { n: 2, text: 'しか' }, { n: 3, text: 'でも' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Quero descansar, então espere só cinco minutos.', explanationPt: '五分だけ = somente cinco minutos.' },
+      { id: 'n4g-p87-4', number: 434, prompt: '{店|みせ}で {服|ふく}を {見|み}る（　）{見|み}て、{買|か}わなかった。', choices: [{ n: 1, text: 'だけ' }, { n: 2, text: 'しか' }, { n: 3, text: 'でも' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Só fiquei olhando as roupas na loja e não comprei.', explanationPt: 'V(dic.) + だけ = só fazer tal ação (見るだけ).' },
+      { id: 'n4g-p87-5', number: 435, prompt: '{必要|ひつよう}な もの（　）{持|も}って {来|き}て ください。', choices: [{ n: 1, text: 'だけ' }, { n: 2, text: 'しか' }, { n: 3, text: 'でも' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Traga só o que for necessário.', explanationPt: '必要なものだけ = apenas o necessário.' },
+
+      // —— 88. 〜ばかり ——
+      { id: 'n4g-p88-1', number: 436, prompt: '{弟|おとうと}は ゲーム（　）して、{勉強|べんきょう}しない。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'でも' }], answer: 1, translationPt: 'Meu irmão só joga videogame e não estuda.', explanationPt: '〜ばかり = só faz ~ (repetição, leve crítica).' },
+      { id: 'n4g-p88-2', number: 437, prompt: '{彼|かれ}は おかし（　）{食|た}べて、ごはんを {食|た}べない。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Ele só come doces e não come comida de verdade.', explanationPt: '〜ばかり sugere excesso/desaprovação.' },
+      { id: 'n4g-p88-3', number: 438, prompt: '{文句|もんく}（　）{言|い}わないで、{自分|じぶん}で やりなさい。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'でも' }], answer: 1, translationPt: 'Não fique só reclamando, faça você mesmo.', explanationPt: '文句ばかり言う = viver reclamando.' },
+      { id: 'n4g-p88-4', number: 439, prompt: 'テレビを {見|み}て（　）いないで、{手伝|てつだ}って。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Não fique só vendo TV, me ajude.', explanationPt: 'V-て + ばかり = só ficar fazendo (見てばかり).' },
+      { id: 'n4g-p88-5', number: 440, prompt: 'あの {子|こ}は {泣|な}いて（　）いる。', choices: [{ n: 1, text: 'ばかり' }, { n: 2, text: 'しか' }, { n: 3, text: 'だけ' }, { n: 4, text: 'でも' }], answer: 1, translationPt: 'Aquela criança só fica chorando.', explanationPt: '泣いてばかりいる = não para de chorar.' },
+
+      // —— 89. 〜について ——
+      { id: 'n4g-p89-1', number: 441, prompt: '{日本|にほん}の {歴史|れきし}（　）{研究|けんきゅう}して いる。', choices: [{ n: 1, text: 'について' }, { n: 2, text: 'にとって' }, { n: 3, text: 'によって' }, { n: 4, text: 'にたいして' }], answer: 1, translationPt: 'Estou pesquisando sobre a história do Japão.', explanationPt: '〜について = sobre / a respeito de (introduz o tema).' },
+      { id: 'n4g-p89-2', number: 442, prompt: 'その {事件|じけん}（　）くわしく {話|はな}して ください。', choices: [{ n: 1, text: 'について' }, { n: 2, text: 'にとって' }, { n: 3, text: 'によって' }, { n: 4, text: 'にたいして' }], answer: 1, translationPt: 'Por favor, fale em detalhes sobre aquele incidente.', explanationPt: '〜について話す = falar a respeito de.' },
+      { id: 'n4g-p89-3', number: 443, prompt: '{環境|かんきょう}{問題|もんだい}（　）{作文|さくぶん}を {書|か}いた。', choices: [{ n: 1, text: 'について' }, { n: 2, text: 'にとって' }, { n: 3, text: 'によって' }, { n: 4, text: 'にたいして' }], answer: 1, translationPt: 'Escrevi uma redação sobre o problema ambiental.', explanationPt: '〜について書く = escrever sobre um tema.' },
+      { id: 'n4g-p89-4', number: 444, prompt: '{将来|しょうらい}の {夢|ゆめ}（　）{話|はな}しました。', choices: [{ n: 1, text: 'について' }, { n: 2, text: 'にとって' }, { n: 3, text: 'によって' }, { n: 4, text: 'にたいして' }], answer: 1, translationPt: 'Falei sobre meus sonhos para o futuro.', explanationPt: '〜について = acerca de tal assunto.' },
+      { id: 'n4g-p89-5', number: 445, prompt: 'この {本|ほん}は {宇宙|うちゅう}（　）{書|か}かれて いる。', choices: [{ n: 1, text: 'について' }, { n: 2, text: 'にとって' }, { n: 3, text: 'によって' }, { n: 4, text: 'にたいして' }], answer: 1, translationPt: 'Este livro é escrito sobre o universo.', explanationPt: '〜について書かれる = tratar de um tema.' },
+
+      // —— 90. 〜のに（用途） ——
+      { id: 'n4g-p90-1', number: 446, prompt: 'この はさみは {紙|かみ}を {切|き}る（　）{使|つか}う。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'のは' }, { n: 4, text: 'のが' }], answer: 1, translationPt: 'Esta tesoura é usada para cortar papel.', explanationPt: 'V(dic.) + のに + 使う = finalidade de uso.' },
+      { id: 'n4g-p90-2', number: 447, prompt: '{駅|えき}まで {行|い}く（　）{30分|さんじゅっぷん}かかる。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'のは' }, { n: 4, text: 'けど' }], answer: 1, translationPt: 'Para chegar até a estação leva 30 minutos.', explanationPt: '〜のに + かかる = gasta tempo para tal fim.' },
+      { id: 'n4g-p90-3', number: 448, prompt: 'この アプリは {予約|よやく}する（　）{便利|べんり}だ。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'のは' }, { n: 4, text: 'けれど' }], answer: 1, translationPt: 'Este aplicativo é útil para fazer reservas.', explanationPt: '〜のに便利だ = conveniente para tal uso.' },
+      { id: 'n4g-p90-4', number: 449, prompt: 'ケーキを {作|つく}る（　）{卵|たまご}が {三|みっ}つ {必要|ひつよう}だ。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'のは' }, { n: 4, text: 'のが' }], answer: 1, translationPt: 'Para fazer um bolo, são necessários três ovos.', explanationPt: '〜のに必要だ = necessário para tal finalidade.' },
+      { id: 'n4g-p90-5', number: 450, prompt: 'この {町|まち}は {生活|せいかつ}する（　）べんりだ。', choices: [{ n: 1, text: 'のに' }, { n: 2, text: 'ので' }, { n: 3, text: 'から' }, { n: 4, text: 'のは' }], answer: 1, translationPt: 'Esta cidade é conveniente para se viver.', explanationPt: '〜のに便利だ ≠ のに de contraste (aqui é uso).' },
+    ],
+  },
+  {
+    id: 'n4g-t19',
+    title: 'もんだい１９',
+    subtitlePt: '19. Sensações e nominalização de adjetivos (〜がする・〜さ)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 91. 〜がする ——
+      { id: 'n4g-p91-1', number: 451, prompt: 'となりの {部屋|へや}から {変|へん}な {音|おと}（　）。', choices: [{ n: 1, text: 'がする' }, { n: 2, text: 'をする' }, { n: 3, text: 'になる' }, { n: 4, text: 'である' }], answer: 1, translationPt: 'Vem um som estranho do quarto ao lado.', explanationPt: '音がする = ouvir/sentir um som (percepção).' },
+      { id: 'n4g-p91-2', number: 452, prompt: 'この お{茶|ちゃ}は {変|へん}な {味|あじ}（　）。', choices: [{ n: 1, text: 'がする' }, { n: 2, text: 'をする' }, { n: 3, text: 'になる' }, { n: 4, text: 'がある' }], answer: 1, translationPt: 'Este chá tem um gosto estranho.', explanationPt: '味がする = sentir um sabor.' },
+      { id: 'n4g-p91-3', number: 453, prompt: 'どこかで {花|はな}の いい におい（　）。', choices: [{ n: 1, text: 'がする' }, { n: 2, text: 'をする' }, { n: 3, text: 'になる' }, { n: 4, text: 'である' }], answer: 1, translationPt: 'Sinto um cheiro bom de flores em algum lugar.', explanationPt: 'においがする = sentir um cheiro.' },
+      { id: 'n4g-p91-4', number: 454, prompt: 'だれか {来|き}たような {気|き}（　）。', choices: [{ n: 1, text: 'がする' }, { n: 2, text: 'をする' }, { n: 3, text: 'になる' }, { n: 4, text: 'である' }], answer: 1, translationPt: 'Tenho a sensação de que alguém veio.', explanationPt: '気がする = ter a impressão/sensação.' },
+      { id: 'n4g-p91-5', number: 455, prompt: 'この {料理|りょうり}は カレーの {味|あじ}（　）。', choices: [{ n: 1, text: 'がする' }, { n: 2, text: 'をする' }, { n: 3, text: 'になる' }, { n: 4, text: 'がある' }], answer: 1, translationPt: 'Este prato tem gosto de curry.', explanationPt: '味がする = perceber um sabor.' },
+
+      // —— 92. 〜さ ——
+      { id: 'n4g-p92-1', number: 456, prompt: '{富士山|ふじさん}の {高|たか}（　）は ３７７６メートルだ。', choices: [{ n: 1, text: 'さ' }, { n: 2, text: 'み' }, { n: 3, text: 'こと' }, { n: 4, text: 'もの' }], answer: 1, translationPt: 'A altura do Monte Fuji é de 3776 metros.', explanationPt: '高い → 高さ (adjetivo vira substantivo de grau).' },
+      { id: 'n4g-p92-2', number: 457, prompt: 'この ひもの {長|なが}（　）を {計|はか}って ください。', choices: [{ n: 1, text: 'さ' }, { n: 2, text: 'み' }, { n: 3, text: 'こと' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'Por favor, meça o comprimento deste barbante.', explanationPt: '長い → 長さ = comprimento.' },
+      { id: 'n4g-p92-3', number: 458, prompt: 'スマホの {便利|べんり}（　）に みんな おどろいた。', choices: [{ n: 1, text: 'さ' }, { n: 2, text: 'み' }, { n: 3, text: 'こと' }, { n: 4, text: 'もの' }], answer: 1, translationPt: 'Todos se surpreenderam com a praticidade do smartphone.', explanationPt: '便利 → 便利さ (ナ-adj + さ = grau).' },
+      { id: 'n4g-p92-4', number: 459, prompt: 'この {問題|もんだい}の {難|むずか}し（　）は {予想|よそう}{以上|いじょう}だった。', choices: [{ n: 1, text: 'さ' }, { n: 2, text: 'み' }, { n: 3, text: 'こと' }, { n: 4, text: 'ところ' }], answer: 1, translationPt: 'A dificuldade deste problema foi maior do que o esperado.', explanationPt: '難しい → 難しさ = dificuldade.' },
+      { id: 'n4g-p92-5', number: 460, prompt: '{冬|ふゆ}の {寒|さむ}（　）が にがてだ。', choices: [{ n: 1, text: 'さ' }, { n: 2, text: 'み' }, { n: 3, text: 'こと' }, { n: 4, text: 'もの' }], answer: 1, translationPt: 'Não gosto do frio do inverno.', explanationPt: '寒い → 寒さ = o frio (grau).' },
+    ],
+  },
+  {
+    id: 'n4g-t20',
+    title: 'もんだい２０',
+    subtitlePt: '20. Estruturas-ponte para N3 (〜ば〜ほど・〜うちに・〜にちがいない・〜こと・〜という・〜たり)',
+    instructionJa,
+    instructionPt,
+    questions: [
+      // —— 93. 〜ば〜ほど ——
+      { id: 'n4g-p93-1', number: 461, prompt: '{日本語|にほんご}は {勉強|べんきょう}すれ（　）するほど {面白|おもしろ}く なる。', choices: [{ n: 1, text: 'ば' }, { n: 2, text: 'たら' }, { n: 3, text: 'ても' }, { n: 4, text: 'ると' }], answer: 1, translationPt: 'Quanto mais estudo japonês, mais interessante fica.', explanationPt: '〜ば〜ほど = quanto mais ~, mais ~ (勉強すればするほど).' },
+      { id: 'n4g-p93-2', number: 462, prompt: '{考|かんが}えれば {考|かんが}える（　）わからなく なる。', choices: [{ n: 1, text: 'ほど' }, { n: 2, text: 'まで' }, { n: 3, text: 'だけ' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Quanto mais penso, menos entendo.', explanationPt: '〜ば〜ほど: a segunda parte leva ほど.' },
+      { id: 'n4g-p93-3', number: 463, prompt: '{値段|ねだん}は {安|やす}けれ（　）{安|やす}いほど いい。', choices: [{ n: 1, text: 'ば' }, { n: 2, text: 'たら' }, { n: 3, text: 'ても' }, { n: 4, text: 'なら' }], answer: 1, translationPt: 'Quanto mais barato o preço, melhor.', explanationPt: 'Adjetivo-i: 安ければ安いほど.' },
+      { id: 'n4g-p93-4', number: 464, prompt: '{練習|れんしゅう}すれば する（　）{上手|じょうず}に なる。', choices: [{ n: 1, text: 'ほど' }, { n: 2, text: 'まで' }, { n: 3, text: 'だけ' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Quanto mais pratica, melhor fica.', explanationPt: '〜すればするほど = proporção crescente.' },
+      { id: 'n4g-p93-5', number: 465, prompt: '{人|ひと}は {多|おお}けれ（　）{多|おお}いほど {楽|たの}しい。', choices: [{ n: 1, text: 'ば' }, { n: 2, text: 'たら' }, { n: 3, text: 'ても' }, { n: 4, text: 'なら' }], answer: 1, translationPt: 'Quanto mais gente, mais divertido.', explanationPt: '多ければ多いほど = quanto mais, melhor.' },
+
+      // —— 94. 〜うちに ——
+      { id: 'n4g-p94-1', number: 466, prompt: '{熱|あつ}い（　）{食|た}べて ください。', choices: [{ n: 1, text: 'うちに' }, { n: 2, text: 'までに' }, { n: 3, text: 'ながら' }, { n: 4, text: 'ように' }], answer: 1, translationPt: 'Coma enquanto está quente.', explanationPt: '〜うちに = enquanto ainda ~ (antes de esfriar).' },
+      { id: 'n4g-p94-2', number: 467, prompt: '{忘|わす}れない（　）、メモして おこう。', choices: [{ n: 1, text: 'うちに' }, { n: 2, text: 'までに' }, { n: 3, text: 'ながら' }, { n: 4, text: 'ように' }], answer: 1, translationPt: 'Vou anotar antes que esqueça.', explanationPt: '〜ないうちに = antes que ~ aconteça.' },
+      { id: 'n4g-p94-3', number: 468, prompt: '{明|あか}るい（　）、{家|いえ}に {帰|かえ}ろう。', choices: [{ n: 1, text: 'うちに' }, { n: 2, text: 'までに' }, { n: 3, text: 'ながら' }, { n: 4, text: 'ところに' }], answer: 1, translationPt: 'Vamos voltar para casa enquanto está claro.', explanationPt: '明るいうちに = enquanto ainda há luz.' },
+      { id: 'n4g-p94-4', number: 469, prompt: '{若|わか}い（　）、いろいろな ことに チャレンジしたい。', choices: [{ n: 1, text: 'うちに' }, { n: 2, text: 'までに' }, { n: 3, text: 'ながら' }, { n: 4, text: 'ように' }], answer: 1, translationPt: 'Quero desafiar várias coisas enquanto sou jovem.', explanationPt: '若いうちに = enquanto ainda jovem.' },
+      { id: 'n4g-p94-5', number: 470, prompt: '{日本|にほん}に いる（　）、{富士山|ふじさん}に {登|のぼ}りたい。', choices: [{ n: 1, text: 'うちに' }, { n: 2, text: 'までに' }, { n: 3, text: 'ながら' }, { n: 4, text: 'ように' }], answer: 1, translationPt: 'Quero subir o Monte Fuji enquanto estou no Japão.', explanationPt: 'いるうちに = enquanto ainda está (no Japão).' },
+
+      // —— 95. 〜にちがいない ——
+      { id: 'n4g-p95-1', number: 471, prompt: '{電気|でんき}が ついて いる。だれか {家|いえ}に いる（　）。', choices: [{ n: 1, text: 'にちがいない' }, { n: 2, text: 'はずがない' }, { n: 3, text: 'かもしれない' }, { n: 4, text: 'だろうか' }], answer: 1, translationPt: 'A luz está acesa. Com certeza tem alguém em casa.', explanationPt: '〜にちがいない = convicção forte (deve ser, com certeza).' },
+      { id: 'n4g-p95-2', number: 472, prompt: 'あんなに {勉強|べんきょう}したのだから、{合格|ごうかく}した（　）。', choices: [{ n: 1, text: 'にちがいない' }, { n: 2, text: 'はずがない' }, { n: 3, text: 'ことがない' }, { n: 4, text: 'ものだ' }], answer: 1, translationPt: 'Estudou tanto, com certeza passou.', explanationPt: '〜にちがいない (mais forte que はずだ).' },
+      { id: 'n4g-p95-3', number: 473, prompt: '{空|そら}が {暗|くら}く なって きた。{雨|あめ}が {降|ふ}る（　）。', choices: [{ n: 1, text: 'にちがいない' }, { n: 2, text: 'はずがない' }, { n: 3, text: 'ことがある' }, { n: 4, text: 'ものだ' }], answer: 1, translationPt: 'O céu escureceu. Com certeza vai chover.', explanationPt: '〜にちがいない baseia-se em forte evidência.' },
+      { id: 'n4g-p95-4', number: 474, prompt: '{彼|かれ}の {話|はなし}は うそだ。きっと うそ（　）。', choices: [{ n: 1, text: 'にちがいない' }, { n: 2, text: 'はずがない' }, { n: 3, text: 'かもしれない' }, { n: 4, text: 'だろうか' }], answer: 1, translationPt: 'A história dele é mentira. Com certeza é mentira.', explanationPt: 'Substantivo + にちがいない (うそにちがいない).' },
+      { id: 'n4g-p95-5', number: 475, prompt: 'こんなに {人|ひと}が {並|なら}んで いる。この {店|みせ}は おいしい（　）。', choices: [{ n: 1, text: 'にちがいない' }, { n: 2, text: 'はずがない' }, { n: 3, text: 'ことがない' }, { n: 4, text: 'ものだ' }], answer: 1, translationPt: 'Tem tanta gente na fila. Esta loja com certeza é boa.', explanationPt: '〜にちがいない = conclusão segura pela evidência.' },
+
+      // —— 96. 〜こと（規則） ——
+      { id: 'n4g-p96-1', number: 476, prompt: 'この へやに {入|はい}る {時|とき}は、くつを ぬぐ（　）。', choices: [{ n: 1, text: 'こと' }, { n: 2, text: 'もの' }, { n: 3, text: 'ところ' }, { n: 4, text: 'ほう' }], answer: 1, translationPt: 'Ao entrar nesta sala, deve-se tirar os sapatos.', explanationPt: 'V(dic.) + こと = instrução/regra (deve-se ~).' },
+      { id: 'n4g-p96-2', number: 477, prompt: 'しめきりは あした。{必|かなら}ず {出|だ}す（　）。', choices: [{ n: 1, text: 'こと' }, { n: 2, text: 'もの' }, { n: 3, text: 'ところ' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'O prazo é amanhã. Deve-se entregar sem falta.', explanationPt: '〜こと em avisos = ordem/regra escrita.' },
+      { id: 'n4g-p96-3', number: 478, prompt: 'ここに {自転車|じてんしゃ}を とめない（　）。', choices: [{ n: 1, text: 'こと' }, { n: 2, text: 'もの' }, { n: 3, text: 'ところ' }, { n: 4, text: 'ほう' }], answer: 1, translationPt: 'Não se deve estacionar bicicleta aqui.', explanationPt: 'V(ない) + こと = proibição em regra (とめないこと).' },
+      { id: 'n4g-p96-4', number: 479, prompt: 'しけん{中|ちゅう}は {話|はな}さない（　）。', choices: [{ n: 1, text: 'こと' }, { n: 2, text: 'もの' }, { n: 3, text: 'ところ' }, { n: 4, text: 'まで' }], answer: 1, translationPt: 'Durante a prova, não se deve conversar.', explanationPt: '〜ないこと = não se deve fazer (regra).' },
+      { id: 'n4g-p96-5', number: 480, prompt: '{図書館|としょかん}の {本|ほん}は {一週間|いっしゅうかん}で {返|かえ}す（　）。', choices: [{ n: 1, text: 'こと' }, { n: 2, text: 'もの' }, { n: 3, text: 'ところ' }, { n: 4, text: 'ばかり' }], answer: 1, translationPt: 'Os livros da biblioteca devem ser devolvidos em uma semana.', explanationPt: '〜こと = instrução formal (deve-se devolver).' },
+
+      // —— 97. 〜という（伝聞・説明） ——
+      { id: 'n4g-p97-1', number: 481, prompt: '{天気|てんき}{予報|よほう}に よると、あしたは {雪|ゆき}が {降|ふ}る（　）。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'ことにする' }, { n: 4, text: 'ようにする' }], answer: 1, translationPt: 'Segundo a previsão, dizem que amanhã vai nevar.', explanationPt: '〜によると…という = dizem que / segundo (hearsay).' },
+      { id: 'n4g-p97-2', number: 482, prompt: 'ニュースに よると、{事故|じこ}で {電車|でんしゃ}が {止|と}まって いる（　）。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'ことになる' }, { n: 4, text: 'ようになる' }], answer: 1, translationPt: 'Segundo o noticiário, dizem que os trens estão parados por um acidente.', explanationPt: '〜という = transmite informação ouvida.' },
+      { id: 'n4g-p97-3', number: 483, prompt: '{社長|しゃちょう}が {来月|らいげつ} やめる（　）{話|はなし}を {聞|き}いた。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'ような' }, { n: 4, text: 'ことの' }], answer: 1, translationPt: 'Ouvi a notícia de que o presidente vai sair mês que vem.', explanationPt: '〜という + 名詞 = a notícia/fato de que ~.' },
+      { id: 'n4g-p97-4', number: 484, prompt: '{彼|かれ}が {結婚|けっこん}する（　）うわさだ。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'ことの' }, { n: 4, text: 'ような' }], answer: 1, translationPt: 'Corre o boato de que ele vai se casar.', explanationPt: '〜といううわさ = o boato de que ~.' },
+      { id: 'n4g-p97-5', number: 485, prompt: '{新聞|しんぶん}に よると、ことしの {夏|なつ}は とても {暑|あつ}く なる（　）。', choices: [{ n: 1, text: 'という' }, { n: 2, text: 'と{思|おも}う' }, { n: 3, text: 'ことにする' }, { n: 4, text: 'ようになる' }], answer: 1, translationPt: 'Segundo o jornal, dizem que este verão será muito quente.', explanationPt: '〜という relata o conteúdo da fonte.' },
+
+      // —— 98. 〜たり（単独） ——
+      { id: 'n4g-p98-1', number: 486, prompt: '{授業|じゅぎょう}{中|ちゅう}に {立|た}っ（　）して は いけない。', choices: [{ n: 1, text: 'たり' }, { n: 2, text: 'ても' }, { n: 3, text: 'ながら' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Não se deve ficar de pé (e coisas assim) durante a aula.', explanationPt: 'V-た + り + する (sozinho) = citar um exemplo.' },
+      { id: 'n4g-p98-2', number: 487, prompt: 'ここで {写真|しゃしん}を {撮|と}っ（　）しないで ください。', choices: [{ n: 1, text: 'たり' }, { n: 2, text: 'ても' }, { n: 3, text: 'ながら' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Por favor, não fique tirando fotos (e coisas assim) aqui.', explanationPt: '〜たりする suaviza/dá um exemplo representativo.' },
+      { id: 'n4g-p98-3', number: 488, prompt: '{人|ひと}の {悪口|わるくち}を {言|い}っ（　）するのは よくない。', choices: [{ n: 1, text: 'たり' }, { n: 2, text: 'ても' }, { n: 3, text: 'ながら' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Falar mal dos outros (e coisas do tipo) não é bom.', explanationPt: '〜たりする = exemplo único, “coisas como ~”.' },
+      { id: 'n4g-p98-4', number: 489, prompt: '{廊下|ろうか}を {走|はし}っ（　）しては いけません。', choices: [{ n: 1, text: 'たり' }, { n: 2, text: 'ても' }, { n: 3, text: 'ながら' }, { n: 4, text: 'たら' }], answer: 1, translationPt: 'Não se deve correr no corredor (e coisas assim).', explanationPt: '〜たりしてはいけない = proibir um exemplo de ação.' },
+      { id: 'n4g-p98-5', number: 490, prompt: '{大切|たいせつ}な ものを なくし（　）したら {大変|たいへん}だ。', choices: [{ n: 1, text: 'たり' }, { n: 2, text: 'ても' }, { n: 3, text: 'ながら' }, { n: 4, text: 'つつ' }], answer: 1, translationPt: 'Seria terrível se você perdesse algo importante (e coisas assim).', explanationPt: '〜たりしたら = se acontecer algo como ~.' },
+    ],
+  },
 ]
 
 const grammarDrill: Section = {
