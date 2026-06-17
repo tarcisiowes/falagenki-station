@@ -4,12 +4,15 @@ import type { Question } from '../data/types'
 import { JaText } from '../lib/JaText'
 import { setAnswer, useAnswer } from '../lib/storage'
 import { gradeCard } from '../lib/reviewStore'
+import { useShuffledChoices } from '../lib/choiceOrder'
 
 export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }) {
   const rec = useAnswer(q.id)
   const [checked, setChecked] = useState(false)
   const gradedFor = useRef<number | undefined>(undefined)
   const selected = rec?.selected
+
+  const { order, displayNum, answerDisplay } = useShuffledChoices(q)
 
   function choose(n: number) {
     setAnswer(q.id, { selected: n })
@@ -62,14 +65,14 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
           )}
 
           <div className="choices">
-            {q.choices.map((c) => {
+            {order.map((c, i) => {
               let cls = 'choice'
               if (selected === c.n) cls += ' selected'
               if (checked && c.n === q.answer) cls += ' correct'
               else if (checked && selected === c.n && c.n !== q.answer) cls += ' wrong'
               return (
                 <button key={c.n} className={cls} onClick={() => choose(c.n)} type="button">
-                  <span className="num">{c.n}</span>
+                  <span className="num">{i + 1}</span>
                   <JaText text={c.text} furigana={furigana} />
                 </button>
               )
@@ -96,14 +99,14 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
             >
               {checked ? 'Ocultar correção' : 'Verificar resposta'}
             </button>
-            {selected !== undefined && <span className="saved-dot">● marcado: {selected}</span>}
+            {selected !== undefined && <span className="saved-dot">● marcado: {displayNum.get(selected)}</span>}
           </div>
 
           {checked && (
             <div className={`feedback ${isCorrect ? 'ok' : 'no'}`}>
               <div className="head" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
                 {isCorrect ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
-                {isCorrect ? 'Correto!' : `Resposta correta: ${q.answer}`}
+                {isCorrect ? 'Correto!' : `Resposta correta: ${answerDisplay}`}
               </div>
               {q.translationPt && <div className="tr">“{q.translationPt}”</div>}
               <div>{q.explanationPt}</div>

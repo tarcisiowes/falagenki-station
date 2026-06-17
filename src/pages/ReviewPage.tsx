@@ -8,6 +8,7 @@ import { customStore } from '../lib/customStore'
 import { srsStore, gradeCard, useSrs } from '../lib/reviewStore'
 import { isDue, previewInterval, type Grade } from '../lib/srs'
 import { useCustom } from '../lib/customStore'
+import { useShuffledChoices } from '../lib/choiceOrder'
 
 const NEW_LIMIT = 20
 
@@ -39,6 +40,10 @@ export function ReviewPage() {
   const [selected, setSelected] = useState<number | undefined>()
   const [revealed, setRevealed] = useState(false)
   const [done, setDone] = useState(0)
+  const current = queue[0]
+  // Chamado de forma incondicional (antes de qualquer return) p/ respeitar as
+  // regras dos Hooks; tolera current indefinido.
+  const { order, answerDisplay } = useShuffledChoices(current?.q)
 
   const counts = useMemo(() => {
     let flat = allFlatQuestions(custom).filter((f) => f.courseId === courseId)
@@ -61,7 +66,6 @@ export function ReviewPage() {
   }
 
   const levelOptions = ['all', ...course.levels.map((l) => l.id)]
-  const current = queue[0]
 
   function answer(g: Grade) {
     if (!current) return
@@ -140,14 +144,14 @@ export function ReviewPage() {
           </div>
 
           <div className="choices">
-            {current.q.choices.map((c) => {
+            {order.map((c, i) => {
               let cls = 'choice'
               if (selected === c.n) cls += ' selected'
               if (revealed && c.n === current.q.answer) cls += ' correct'
               else if (revealed && selected === c.n && c.n !== current.q.answer) cls += ' wrong'
               return (
                 <button key={c.n} className={cls} disabled={revealed} onClick={() => setSelected(c.n)} type="button">
-                  <span className="num">{c.n}</span>
+                  <span className="num">{i + 1}</span>
                   <JaText text={c.text} furigana={furigana} />
                 </button>
               )
@@ -166,7 +170,7 @@ export function ReviewPage() {
               <div className={`feedback ${correct ? 'ok' : 'no'}`}>
                 <div className="head" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
                   {correct ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
-                  {correct ? 'Você acertou' : `Errou — correta: ${current.q.answer}`}
+                  {correct ? 'Você acertou' : `Errou — correta: ${answerDisplay}`}
                 </div>
                 {current.q.translationPt && <div className="tr">“{current.q.translationPt}”</div>}
                 <div>{current.q.explanationPt}</div>
