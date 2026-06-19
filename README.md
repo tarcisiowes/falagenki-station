@@ -29,7 +29,7 @@ The current UI has been checked against an iPhone 16 Pro Max viewport and smalle
 
 **falaGENKIの駅** is a personal, non-commercial Japanese study platform created for my own learning routine. The goal was not to build a product to sell. The goal was to solve a real study problem I had, while also practicing frontend engineering, content modeling, UI design, local persistence, deployment, and mobile compatibility.
 
-For recruiters who may see this repository in the future: this project is intentionally practical. It shows how I approach a real user need, break learning material into structured data, build a usable interface around it, and keep improving the product through deployment, validation, and responsive testing.
+Although it started as a personal tool, the project is intentionally practical. It shows how a real user need can become structured data, product flows, responsive UI, local persistence, deployment, validation, and ongoing iteration.
 
 ### What It Does
 
@@ -67,7 +67,7 @@ For recruiters who may see this repository in the future: this project is intent
 
 **falaGENKIの駅** は、自分自身の日本語学習のために作った、個人用かつ非商用の学習プラットフォームです。販売やサービス化を目的にしたものではありません。自分の学習上の課題を解決しながら、フロントエンド開発、データ設計、UI設計、ローカル保存、デプロイ、モバイル対応などを実践するために作っています。
 
-将来このリポジトリを見る採用担当者の方へ: このプロジェクトは、個人用途でありながら、実際の利用シーンを前提に作っています。学習コンテンツを構造化し、使いやすい画面に落とし込み、検証しながら改善していくプロセスを見せるためのプロジェクトでもあります。
+個人用途から始まったプロジェクトですが、実際の利用シーンを前提に丁寧に作っています。学習コンテンツを構造化し、使いやすい画面に落とし込み、検証しながら改善していくプロセスも、このプロジェクトの重要な目的です。
 
 ### 主な機能
 
@@ -105,7 +105,7 @@ For recruiters who may see this repository in the future: this project is intent
 
 **falaGENKIの駅** é uma plataforma pessoal de estudos de japonês, criada a partir das minhas próprias necessidades. A intenção não é comercializar o projeto. A intenção é ter uma ferramenta real para estudar melhor e, ao mesmo tempo, colocar em prática técnicas de programação, organização de dados, frontend, UX, persistência local, deploy e compatibilidade mobile.
 
-Para recrutadores que talvez vejam este repositório no futuro: este projeto é pessoal, mas foi tratado como uma aplicação de verdade. Ele mostra como transformo uma dor real em produto utilizável, estruturo conteúdo, penso em fluxo de estudo, cuido da experiência em mobile e valido mudanças antes de considerar algo pronto.
+Mesmo sendo pessoal, o projeto foi tratado como uma aplicação de verdade. Ele mostra como uma dor real pode virar um produto utilizável, com conteúdo estruturado, fluxo de estudo, experiência mobile e validação antes de considerar uma mudança pronta.
 
 ### O Que Ele Faz
 
