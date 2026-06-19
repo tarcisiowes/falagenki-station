@@ -1,7 +1,7 @@
 # Deploy — acessar o app no iOS fora de casa
 
 > Como publicar o **falaGENKIの駅** (SPA estático Vite/React) para abrir no iPhone
-> a qualquer hora, com acesso **privado**. Última revisão: 2026-06-17.
+> a qualquer hora, com acesso **privado**. Última revisão: 2026-06-19.
 
 ---
 
@@ -49,16 +49,22 @@ npx wrangler login
 ```
 (abre o browser p/ oauth)
 
-### Passo 2 — build + deploy
+### Passo 2 — criar o projeto Pages (1x)
+```
+npx wrangler pages project create falagenki-station --production-branch master
+```
+Se o projeto já existir, pule este passo.
+
+### Passo 3 — build + deploy
 ```
 npm run build
 npx wrangler pages deploy dist --project-name falagenki-station
 ```
-Primeira vez cria o projeto. Upload ~1.2 GB (demora — só áudio). Retorna URL
+Primeiro upload ~1.2 GB (demora — só áudio). Retorna URL
 `falagenki-station.pages.dev`. Deploys futuros: só repetir este passo; áudio
 inalterado sobe rápido (Cloudflare deduplica).
 
-### Passo 3 — gate privado (Cloudflare Access)
+### Passo 4 — gate privado (Cloudflare Access)
 Dashboard → **Workers & Pages → falagenki-station → Settings → enable Access policy**
 (production). Ou Zero Trust → Access → Applications → Add → Self-hosted:
 - Domain: `falagenki-station.pages.dev`
@@ -67,11 +73,11 @@ Dashboard → **Workers & Pages → falagenki-station → Settings → enable Ac
 
 Login: abre site → digita e-mail → recebe código → entra. Cookie persiste no Safari.
 
-### Passo 4 — iPhone
+### Passo 5 — iPhone
 Safari → abre URL → faz login Access → **Compartilhar → Adicionar à Tela de Início**.
 Vira ícone tipo app.
 
-### Passo 5 — progresso desktop → iPhone
+### Passo 6 — progresso desktop → iPhone
 `localStorage` é por-aparelho. `BackupBar` exporta `.json` no desktop →
 AirDrop/e-mail → importa no iPhone.
 
@@ -81,7 +87,7 @@ AirDrop/e-mail → importa no iPhone.
 
 - Áudio = streaming online. iOS não cacheia 1 GB offline — app-shell offline sim,
   áudio não.
-- Deploys futuros: só repetir Passo 2.
+- Deploys futuros: só repetir Passo 3.
 
 ## Melhorias opcionais
 
