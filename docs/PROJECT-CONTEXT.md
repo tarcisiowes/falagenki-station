@@ -132,7 +132,7 @@ Convenção de id Irodori: lição `lesson-N`; questões/áudios estáveis e pre
 - `storage.ts` — respostas marcadas/anotações por questão (`AnswerMap`).
   Chave `nihongo-br:answers:v1`. **Backup `.json` versão 2** inclui `answers`,
   `srs`, `custom` e `exams`.
-- `reviewStore.ts` + `srs.ts` — revisão espaçada (SM-2 simplificado, estilo Anki).
+- `reviewStore.ts` + `srs.ts` — revisão espaçada com FSRS (`ts-fsrs`), estilo Anki moderno.
 - `customStore.ts` — questões criadas pelo usuário (página `/criar`).
 - `examStore.ts` — histórico de tentativas de simulado.
 - `dataAccess.ts` — mescla conteúdo embutido + custom; lookup de level/section.
