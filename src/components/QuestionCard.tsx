@@ -18,15 +18,15 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
     setAnswer(q.id, { selected: n })
   }
 
-  // Ao revelar a correção, a questão é enviada para a revisão (SRS):
-  // acerto → maior intervalo recomendado ('easy', conteúdo que a pessoa já sabe);
-  // erro → menor intervalo, revisão hoje ('again', conteúdo a reforçar).
-  // Só grada na transição "ocultar → mostrar" e quando a alternativa muda,
-  // para não reagendar à toa ao alternar a correção.
+  // When revealing the correction, send the question to SRS:
+  // correct -> the minimum normal interval ('good'), without an ease penalty;
+  // wrong -> review today ('again').
+  // Grade only when switching from hidden to visible and the selected answer changed,
+  // so toggling the correction does not reschedule the card unnecessarily.
   function toggleCheck() {
     const revealing = !checked
     if (revealing && selected !== undefined && gradedFor.current !== selected) {
-      gradeCard(q.id, selected === q.answer ? 'easy' : 'again')
+      gradeCard(q.id, selected === q.answer ? 'good' : 'again')
       gradedFor.current = selected
     }
     setChecked((v) => !v)
@@ -115,7 +115,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
               >
                 <RotateCcw size={13} />
                 {isCorrect
-                  ? 'Enviado à revisão como conteúdo que você já sabe (intervalo maior).'
+                  ? 'Enviado à revisão com o intervalo recomendado mínimo.'
                   : 'Enviado à revisão de hoje (conteúdo a reforçar).'}
               </div>
             </div>
