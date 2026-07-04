@@ -85,14 +85,15 @@ AirDrop/e-mail → importa no iPhone.
 
 ## Notas
 
-- Áudio = streaming online. iOS não cacheia 1 GB offline — app-shell offline sim,
-  áudio não.
+- Offline/PWA = `manifest.webmanifest` + `sw.js` gerados no build. O service
+  worker faz precache do app-shell, imagens e todos os audios publicados.
+- Primeiro carregamento offline baixa ~1.16 GiB. No iOS, o cache pode falhar se
+  o aparelho/navegador negar espaco suficiente.
 - Deploys futuros: só repetir Passo 3.
 
 ## Melhorias opcionais
 
-- **PWA**: `manifest.webmanifest` + `apple-touch-icon` → ícone/splash decente,
-  app-shell offline.
+- **PWA polish**: `apple-touch-icon` dedicado e splash/iconografia melhores.
 - **Sync automático de progresso** (substitui Passo 5): backend leve (Supabase/
   similar) ou gist. Hoje é export/import manual `.json`.
 - **Áudio em R2** (só se Pages ficar lento): mover mp3 p/ Cloudflare R2 + env
