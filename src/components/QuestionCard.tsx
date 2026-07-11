@@ -5,6 +5,8 @@ import { JaText } from '../lib/JaText'
 import { setAnswer, useAnswer } from '../lib/storage'
 import { gradeCard } from '../lib/reviewStore'
 import { useShuffledChoices } from '../lib/choiceOrder'
+import { AudioPlayer } from './AudioPlayer'
+import { StudyHelp } from './StudyHelp'
 
 export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }) {
   const rec = useAnswer(q.id)
@@ -47,6 +49,14 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
           <div className="stem ja">
             <JaText text={q.prompt} furigana={furigana} />
           </div>
+
+          {q.audio && (
+            <div className="question-audio">
+              <AudioPlayer src={q.audio.src} title={q.audio.title} />
+            </div>
+          )}
+
+          {q.helpPt && <StudyHelp><JaText text={q.helpPt} furigana={furigana} /></StudyHelp>}
 
           {q.image && (
             <img

@@ -16,8 +16,9 @@ const LEVEL_BG: Record<string, string> = {
   N4: '#e6eefb',
   N4G: '#ede9fe',
   starter: '#e4f5ea',
+  'genki-1': '#fff0df',
 }
-const LEVEL_SHORT: Record<string, string> = { N5: 'N5', N4: 'N4', N4G: '文法', starter: '入門' }
+const LEVEL_SHORT: Record<string, string> = { N5: 'N5', N4: 'N4', N4G: '文法', starter: '入門', 'genki-1': '元気 I' }
 
 function levelTitleForCard(lv: Level) {
   if (lv.courseId === 'irodori') {
@@ -79,14 +80,14 @@ export function Home() {
         <div className="ja-big ja">日本語を学ぼう</div>
         <h1>Estude japonês — explicado em português</h1>
         <p>
-          Duas trilhas: <b>JLPT</b> (N5/N4), focada no exame de proficiência, e <b>Irodori</b>, o
-          curso da Japan Foundation para a vida no Japão. Exercícios com correção, áudios com
+          Três trilhas: <b>JLPT</b> (N5/N4), <b>Irodori</b> para a vida no Japão e <b>Genki</b> como
+          curso integrado. Exercícios com correção, áudios com
           controles e transcrição, revisão estilo Anki e análise — tudo salvo no seu navegador.
         </p>
         <div className="feature-list">
           <div className="item"><span className="ic"><NotebookPen size={18} /></span><span>Exercícios com campo de resposta e anotação salvos automaticamente.</span></div>
           <div className="item"><span className="ic"><Headphones size={18} /></span><span>Player de áudio com velocidade, avanço/retrocesso e repetição A–B.</span></div>
-          <div className="item"><span className="ic"><FileText size={18} /></span><span>Transcrição (JLPT) e organização por módulos (Irodori), com explicações em pt-BR.</span></div>
+          <div className="item"><span className="ic"><FileText size={18} /></span><span>Transcrições e módulos de JLPT, Irodori e Genki, com explicações em pt-BR.</span></div>
           <div className="item"><span className="ic"><Save size={18} /></span><span>Backup das respostas, revisão e simulados em arquivo.</span></div>
         </div>
       </section>

@@ -33,7 +33,7 @@ Although it started as a personal tool, the project is intentionally practical. 
 
 ### What It Does
 
-- Organizes JLPT and Irodori study material into levels, sections, exercises, audio, scripts, review, and analytics.
+- Organizes JLPT, Irodori, and Genki study material into levels, sections, exercises, audio, scripts, review, and analytics.
 - Provides interactive exercises with answer checking, explanations in Brazilian Portuguese, notes per question, and automatic local saving.
 - Includes audio study flows with playback speed, seeking, A-B looping, script viewing, furigana, and translation.
 - Adds an Anki-style review queue using local spaced repetition data.
@@ -71,7 +71,7 @@ Although it started as a personal tool, the project is intentionally practical. 
 
 ### 主な機能
 
-- JLPT と Irodori の教材を、レベル、セクション、問題、音声、スクリプト、復習、分析に整理。
+- JLPT、Irodori、Genki の教材を、レベル、セクション、問題、音声、スクリプト、復習、分析に整理。
 - 問題演習、解答チェック、ブラジルポルトガル語での解説、問題ごとのメモ、自動ローカル保存。
 - 音声学習: 再生速度、シーク、A-Bリピート、スクリプト表示、ふりがな、翻訳。
 - Anki 形式に近い復習キューと、ローカルの間隔反復データ。
@@ -109,7 +109,7 @@ Mesmo sendo pessoal, o projeto foi tratado como uma aplicação de verdade. Ele 
 
 ### O Que Ele Faz
 
-- Organiza conteúdos de JLPT e Irodori por níveis, seções, exercícios, áudios, scripts, revisão e análise.
+- Organiza conteúdos de JLPT, Irodori e Genki por níveis, seções, exercícios, áudios, scripts, revisão e análise.
 - Oferece exercícios interativos com correção, explicação em português do Brasil, anotação por questão e salvamento automático.
 - Traz estudo por áudio com velocidade, avanço/retrocesso, repetição A-B, transcrição, furigana e tradução.
 - Inclui revisão estilo Anki com dados de repetição espaçada salvos localmente.
@@ -159,7 +159,7 @@ public/
   images/                    # study images
 src/
   components/                # AudioPlayer, ScriptViewer, QuestionCard, Layout, BackupBar
-  data/                      # structured JLPT and Irodori content
+  data/                      # structured JLPT, Irodori, and Genki content
   lib/                       # local storage, SRS, progress, custom exercises, Japanese rendering
   pages/                     # Home, study pages, review, stats, exam, create exercise
 docs/
@@ -172,6 +172,7 @@ docs/
 - Learner-facing explanations are in Brazilian Portuguese.
 - Japanese source text is preserved with the local furigana convention.
 - Irodori source material is maintained separately under local docs and translated/adapted into structured app data.
+- Genki is implemented incrementally by lesson with pt-BR explanations, interactive exercises, source audio, practical help blocks, and FSRS review cards.
 
 <a id="local-development"></a>
 

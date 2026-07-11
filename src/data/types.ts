@@ -4,7 +4,7 @@
 //   [[alvo]]      -> trecho destacado (sublinhado no exame)
 //   （　）         -> lacuna a preencher
 
-export type CourseId = 'jlpt' | 'irodori'
+export type CourseId = 'jlpt' | 'irodori' | 'genki'
 
 export type LevelId = string
 
@@ -30,6 +30,11 @@ export interface Question {
   image?: string
   /** texto alternativo da ilustração (acessibilidade) */
   imageAlt?: string
+  /** áudio necessário para responder à questão, quando aplicável */
+  audio?: {
+    src: string
+    title: string
+  }
   choices: Choice[]
   /** alternativa correta (1..4) */
   answer: number
@@ -37,6 +42,8 @@ export interface Question {
   translationPt?: string
   /** explicação do porquê da resposta, em pt-BR */
   explanationPt: string
+  /** pista ou explicação alternativa, exibida sob demanda */
+  helpPt?: string
 }
 
 export interface ExampleQuestion {
@@ -44,6 +51,8 @@ export interface ExampleQuestion {
   choices: Choice[]
   answer: number
   note?: string
+  /** maneira alternativa de entender ou aplicar o exemplo */
+  helpPt?: string
 }
 
 export interface ExerciseGroup {
@@ -62,6 +71,8 @@ export interface StudyNote {
   title: string
   /** corpo em pt-BR; markdown leve (## , -, **negrito**, `código`) */
   bodyPt: string
+  /** explicação suplementar opcional, também em markdown leve */
+  helpPt?: string
 }
 
 export interface ScriptLine {

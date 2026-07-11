@@ -31,6 +31,7 @@ export const router = createBrowserRouter([
             links={[
               { to: '/revisar/jlpt', label: 'Revisar JLPT' },
               { to: '/revisar/irodori', label: 'Revisar Irodori' },
+              { to: '/revisar/genki', label: 'Revisar Genki' },
             ]}
           />
         ),
@@ -45,6 +46,7 @@ export const router = createBrowserRouter([
             links={[
               { to: '/analise/jlpt', label: 'Análise JLPT' },
               { to: '/analise/irodori', label: 'Análise Irodori' },
+              { to: '/analise/genki', label: 'Análise Genki' },
             ]}
           />
         ),

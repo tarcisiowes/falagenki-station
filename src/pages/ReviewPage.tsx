@@ -9,6 +9,8 @@ import { srsStore, gradeCard, useSrs } from '../lib/reviewStore'
 import { isDue, previewInterval, type Grade } from '../lib/srs'
 import { useCustom } from '../lib/customStore'
 import { useShuffledChoices } from '../lib/choiceOrder'
+import { AudioPlayer } from '../components/AudioPlayer'
+import { StudyHelp } from '../components/StudyHelp'
 
 const NEW_LIMIT = 20
 
@@ -142,6 +144,14 @@ export function ReviewPage() {
           <div className="stem ja" style={{ fontSize: 18, margin: '6px 0 12px' }}>
             <JaText text={current.q.prompt} furigana={furigana} />
           </div>
+
+          {current.q.audio && (
+            <div className="question-audio">
+              <AudioPlayer src={current.q.audio.src} title={current.q.audio.title} />
+            </div>
+          )}
+
+          {current.q.helpPt && <StudyHelp><JaText text={current.q.helpPt} furigana={furigana} /></StudyHelp>}
 
           <div className="choices">
             {order.map((c, i) => {

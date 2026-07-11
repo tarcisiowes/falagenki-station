@@ -11,12 +11,14 @@ import { irodoriElementary1 } from './irodori-elementary1'
 import { irodoriElementary2 } from './irodori-elementary2'
 import { irodoriPreIntermediate } from './irodori-pre-intermediate'
 import { irodoriTips } from './irodori-tips'
+import { genki1 } from './genki-1'
 
-export const levels: Level[] = [n5, n4, n5_2012, n4_2012, n5_mock, n4_mock, n4GrammarDrill, irodoriStarter, irodoriElementary1, irodoriElementary2, irodoriPreIntermediate, irodoriTips]
+export const levels: Level[] = [n5, n4, n5_2012, n4_2012, n5_mock, n4_mock, n4GrammarDrill, irodoriStarter, irodoriElementary1, irodoriElementary2, irodoriPreIntermediate, irodoriTips, genki1]
 
 export const courses: Course[] = [
   { id: 'jlpt', titlePt: 'JLPT', taglinePt: 'Exame de proficiência (N5/N4)', levels: [n5, n4, n5_2012, n4_2012, n5_mock, n4_mock, n4GrammarDrill] },
   { id: 'irodori', titlePt: 'Irodori', taglinePt: 'Japonês para a vida no Japão (A1-B1)', levels: [irodoriStarter, irodoriElementary1, irodoriElementary2, irodoriPreIntermediate, irodoriTips] },
+  { id: 'genki', titlePt: 'Genki', taglinePt: 'Curso integrado de japonês (3ª edição)', levels: [genki1] },
 ]
 
 export function getCourse(id: string | undefined): Course | undefined {

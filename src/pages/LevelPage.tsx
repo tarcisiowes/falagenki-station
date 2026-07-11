@@ -50,7 +50,7 @@ export function LevelPage() {
               to={`/nivel/${level.id}/${s.id}`}
               key={s.id}
               className="card section-tile"
-              style={{ background: TILE_BG[s.id] }}
+              style={{ background: TILE_BG[s.id] ?? '#fff0df' }}
             >
               <div className="ic"><SectionIcon id={s.id} size={28} /></div>
               <h3>{s.titlePt}</h3>

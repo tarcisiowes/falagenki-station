@@ -6,7 +6,7 @@ export const offlineGlobPatterns = ['**/*']
 export const pwaManifest = {
   name: 'falaGENKI no Eki',
   short_name: 'falaGENKI',
-  description: 'Plataforma de estudo de japones JLPT e Irodori para falantes de portugues-BR.',
+  description: 'Plataforma de estudo de japones JLPT, Irodori e Genki para falantes de portugues-BR.',
   lang: 'pt-BR',
   start_url: '/',
   scope: '/',

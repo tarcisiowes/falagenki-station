@@ -2,6 +2,7 @@ import { Fragment, type ReactNode } from 'react'
 import { BookOpenText } from 'lucide-react'
 import type { StudyNote } from '../data/types'
 import { JaText } from '../lib/JaText'
+import { StudyHelp } from './StudyHelp'
 
 // Inline: **negrito**, `código/japonês`, e marcação de furigana via JaText.
 function renderInline(text: string, keyBase: string): ReactNode[] {
@@ -108,6 +109,7 @@ export function StudyNotes({ notes }: { notes: StudyNote[] }) {
         <div className="note" key={i}>
           <h3>{n.title}</h3>
           <Fragment>{renderBody(n.bodyPt)}</Fragment>
+          {n.helpPt && <StudyHelp><Fragment>{renderBody(n.helpPt)}</Fragment></StudyHelp>}
         </div>
       ))}
     </div>

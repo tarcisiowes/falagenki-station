@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import {
-  BarChart3, ChevronDown, GraduationCap, Languages, Repeat, SquarePen, Timer,
+  BarChart3, BookOpenText, ChevronDown, GraduationCap, Languages, Repeat, SquarePen, Timer,
 } from 'lucide-react'
 import { courses } from '../data'
 import { SectionIcon } from './icons'
@@ -50,6 +50,7 @@ function Dropdown({
 export function Layout() {
   const jlpt = courses.find((c) => c.id === 'jlpt')!
   const irodori = courses.find((c) => c.id === 'irodori')!
+  const genki = courses.find((c) => c.id === 'genki')!
 
   return (
     <>
@@ -80,6 +81,18 @@ export function Layout() {
               <NavLink to="/analise/jlpt" className="nav-dd-item"><BarChart3 size={15} /> Análise JLPT</NavLink>
             </Dropdown>
 
+            <Dropdown label="Genki" icon={<BookOpenText size={15} />}>
+              <span className="nav-dd-head">Livros</span>
+              {genki.levels.map((l) => (
+                <NavLink key={l.id} to={`/nivel/${l.id}`} className="nav-dd-item">
+                  <BookOpenText size={15} /> {levelTitleForMenu(l.titlePt, l.id, l.courseId)}
+                </NavLink>
+              ))}
+              <div className="nav-dd-sep" />
+              <NavLink to="/revisar/genki" className="nav-dd-item"><Repeat size={15} /> Revisão Genki</NavLink>
+              <NavLink to="/analise/genki" className="nav-dd-item"><BarChart3 size={15} /> Análise Genki</NavLink>
+            </Dropdown>
+
             <Dropdown label="Irodori" icon={<Languages size={15} />}>
               <span className="nav-dd-head">Níveis</span>
               {irodori.levels.map((l) => (
@@ -101,8 +114,8 @@ export function Layout() {
         <Outlet />
       </main>
       <footer className="app-footer">
-        falaGENKIの駅 · Material baseado nos exames de exemplo da JLPT (N5/N4) e no curso Irodori da
-        Japan Foundation. Conteúdo para estudo, com explicações em português do Brasil. Suas
+        falaGENKIの駅 · Material de estudo baseado em JLPT (N5/N4), Irodori e Genki. Conteúdo com
+        explicações em português do Brasil. Suas
         respostas ficam salvas apenas no seu navegador.
       </footer>
     </>

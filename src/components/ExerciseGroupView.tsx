@@ -2,6 +2,7 @@ import { CheckCircle2, Circle } from 'lucide-react'
 import type { ExerciseGroup } from '../data/types'
 import { JaText } from '../lib/JaText'
 import { QuestionCard } from './QuestionCard'
+import { StudyHelp } from './StudyHelp'
 
 export function ExerciseGroupView({ group, furigana }: { group: ExerciseGroup; furigana: boolean }) {
   return (
@@ -30,6 +31,7 @@ export function ExerciseGroupView({ group, furigana }: { group: ExerciseGroup; f
             ))}
           </div>
           {group.example.note && <div className="muted" style={{ fontSize: 13, marginTop: 6 }}>{group.example.note}</div>}
+          {group.example.helpPt && <StudyHelp label="Outra forma de ver o exemplo"><JaText text={group.example.helpPt} furigana={furigana} /></StudyHelp>}
         </div>
       )}
 
