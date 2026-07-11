@@ -172,6 +172,22 @@ describe('Genki I lesson 7', () => {
   })
 })
 
+describe('Genki I lesson 8', () => {
+  const lesson = genki1.sections.find((section) => section.id === 'lesson-8')!
+  const questions = lesson.groups.flatMap((group) => group.questions)
+  it('covers present short forms, informal and quoted speech, nominalization, reading, and listening', () => {
+    expect(questions).toHaveLength(64)
+    expect(lesson.audios).toHaveLength(22)
+    expect(questions.filter((question) => question.audio)).toHaveLength(8)
+    expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(6)
+    for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
+  })
+  it('adds every exercise to the FSRS pool', () => {
+    const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki' && item.sectionId === 'lesson-8')
+    expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
+  })
+})
+
 describe('all implemented Genki I modules', () => {
   it('keeps section and question ids globally unique with valid answers', () => {
     expect(new Set(genki1.sections.map((section) => section.id)).size).toBe(genki1.sections.length)
