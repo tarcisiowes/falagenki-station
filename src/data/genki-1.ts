@@ -6,6 +6,7 @@ import { genki1Lesson5 } from './genki-1-lesson-5'
 import { genki1Lesson6 } from './genki-1-lesson-6'
 import { genki1Lesson7 } from './genki-1-lesson-7'
 import { genki1Lesson8 } from './genki-1-lesson-8'
+import { genki1Lesson9 } from './genki-1-lesson-9'
 
 const AUDIO_BASE = '/audio/genki/genki-1/lesson-1'
 
@@ -391,5 +392,6 @@ export const genki1: Level = {
     genki1Lesson6,
     genki1Lesson7,
     genki1Lesson8,
+    genki1Lesson9,
   ],
 }
