@@ -129,13 +129,48 @@ const listening = [
 ]
 
 const scripts: Record<string, ScriptItem[]> = {
-  K06_01: [{ label: '会話 I', lines: [{ speaker: '山下先生', ja: 'ロバートさん、次のページを読んでください。', pt: 'Robert, leia a próxima página, por favor.' }, { speaker: '山下先生', ja: 'ロバートさん、起きてください。クラスで寝てはいけませんよ。', pt: 'Robert, acorde. Não se pode dormir na aula.' }, { speaker: 'R', ja: '先生、教科書を忘れました。', pt: 'Professor, esqueci o livro.' }, { speaker: '山下先生', ja: '教科書を持ってきてくださいね。毎日使いますから。', pt: 'Traga o livro, está bem? Nós o usamos todos os dias.' }, { speaker: 'R', ja: 'はい、すみません。', pt: 'Sim, desculpe.' }] }],
-  K06_03: [{ label: '会話 II', lines: [{ speaker: 'S', ja: 'ロバートさん、今日は大変でしたね。', pt: 'Robert, hoje foi difícil, não foi?' }, { speaker: 'R', ja: 'ええ。後でソラさんのノートを借りてもいいですか。', pt: 'Sim. Posso pegar seu caderno emprestado depois?' }, { speaker: 'S', ja: 'いいですよ。', pt: 'Pode.' }, { speaker: 'R', ja: 'ありがとう。すぐ返します。', pt: 'Obrigado. Devolvo logo.' }, { speaker: 'S', ja: 'ロバートさん、あしたテストがありますよ。', pt: 'Robert, haverá prova amanhã.' }, { speaker: 'R', ja: 'えっ、本当ですか。', pt: 'O quê? Sério?' }, { speaker: 'S', ja: 'ええ。ロバートさん、金曜日に休みましたからね。', pt: 'Sim. Você faltou na sexta-feira.' }, { speaker: 'R', ja: 'じゃあ、今日は家に帰って、勉強します。', pt: 'Então hoje vou para casa e estudo.' }] }],
-  K06_05: [{ label: '会話 III', lines: [{ speaker: 'おばあさん', ja: 'あの、すみません。このバスはさくら病院へ行きますか。', pt: 'Com licença. Este ônibus vai ao Hospital Sakura?' }, { speaker: 'R', ja: 'ええ、行きますよ。……あの、どうぞ座ってください。', pt: 'Sim. Bem... sente-se, por favor.' }, { speaker: 'おばあさん', ja: 'いいえ、けっこうです。すぐ降りますから。', pt: 'Não, obrigada. Vou descer logo.' }, { speaker: 'R', ja: 'そうですか。じゃあ、荷物を持ちましょうか。', pt: 'Entendo. Então quer que eu segure sua bagagem?' }, { speaker: 'おばあさん', ja: 'あ、どうもすみません。', pt: 'Ah, muito obrigada.' }] }],
-  Y06: [{ label: '私のすきなレストラン', lines: [{ speaker: 'Naomi', ja: '私のすきなレストランは、イタリアりょうりのマンジャーレです。えきの南口を出て、右へ五分ぐらいです。', pt: 'Meu restaurante favorito é o italiano Mangiare. Saia pela saída sul da estação e siga à direita por cerca de cinco minutos.' }, { speaker: 'Naomi', ja: 'ちいさいレストランです。シェフはイタリア人のアントニオさんです。アントニオさんはとてもおもしろい人です。りょうりはとてもおいしいです。', pt: 'É um restaurante pequeno. O chef é o italiano Antonio, uma pessoa muito interessante. A comida é muito gostosa.' }, { speaker: 'Naomi', ja: '私はよくマンジャーレに行きます。マンジャーレでワインを飲んで、ピザを食べます。アイスクリームもおいしいです。', pt: 'Vou muito ao Mangiare. Lá bebo vinho e como pizza. O sorvete também é gostoso.' }, { speaker: 'Naomi', ja: 'りょうりはやすいですから、外国人もたくさんきます。みなさんもきてください。', pt: 'Como a comida é barata, muitos estrangeiros também vêm. Venham vocês também.' }] }],
+  K06_01: [{ label: '{会話|かいわ} I', lines: [
+    { speaker: '山下先生', ja: 'ロバートさん、{次|つぎ}のページを{読|よ}んでください。', pt: 'Robert, leia a próxima página, por favor.' },
+    { speaker: 'R', ja: '……', pt: '……' },
+    { speaker: '山下先生', ja: 'ロバートさん、{起|お}きてください。クラスで{寝|ね}てはいけませんよ。', pt: 'Robert, acorde. Não se pode dormir na aula.' },
+    { speaker: 'R', ja: '{先生|せんせい}、{教科書|きょうかしょ}を{忘|わす}れました。', pt: 'Professor, esqueci o livro didático.' },
+    { speaker: '山下先生', ja: '{教科書|きょうかしょ}を{持|も}ってきてくださいね。{毎日|まいにち}{使|つか}いますから。', pt: 'Traga o livro didático, está bem? Nós o usamos todos os dias.' },
+    { speaker: 'R', ja: 'はい、すみません。', pt: 'Sim, desculpe.' },
+  ] }],
+  K06_03: [{ label: '{会話|かいわ} II', lines: [
+    { speaker: 'S', ja: 'ロバートさん、{今日|きょう}は{大変|たいへん}でしたね。', pt: 'Robert, hoje foi difícil, não foi?' },
+    { speaker: 'R', ja: 'ええ。{後|あと}でソラさんのノートを{借|か}りてもいいですか。', pt: 'Sim. Posso pegar seu caderno emprestado depois?' },
+    { speaker: 'S', ja: 'いいですよ。', pt: 'Pode.' },
+    { speaker: 'R', ja: 'ありがとう。すぐ{返|かえ}します。', pt: 'Obrigado. Devolvo logo.' },
+    { speaker: 'S', ja: 'ロバートさん、あしたテストがありますよ。', pt: 'Robert, haverá uma prova amanhã.' },
+    { speaker: 'R', ja: 'えっ、{本当|ほんとう}ですか。', pt: 'O quê? Sério?' },
+    { speaker: 'S', ja: 'ええ。ロバートさん、{金曜日|きんようび}に{休|やす}みましたからね。', pt: 'Sim. É porque você faltou na sexta-feira.' },
+    { speaker: 'R', ja: 'じゃあ、{今日|きょう}は{家|いえ}に{帰|かえ}って、{勉強|べんきょう}します。', pt: 'Então, hoje vou para casa e estudo.' },
+  ] }],
+  K06_05: [{ label: '{会話|かいわ} III', lines: [
+    { speaker: 'おばあさん', ja: 'あの、すみません。このバスはさくら{病院|びょういん}へ{行|い}きますか。', pt: 'Com licença. Este ônibus vai ao Hospital Sakura?' },
+    { speaker: 'R', ja: 'ええ、{行|い}きますよ。……あの、どうぞ{座|すわ}ってください。', pt: 'Sim. Bem... sente-se, por favor.' },
+    { speaker: 'おばあさん', ja: 'いいえ、けっこうです。すぐ{降|お}りますから。', pt: 'Não, obrigada. Vou descer logo.' },
+    { speaker: 'R', ja: 'そうですか。じゃあ、{荷物|にもつ}を{持|も}ちましょうか。', pt: 'Entendo. Então, quer que eu segure sua bagagem?' },
+    { speaker: 'おばあさん', ja: 'あ、どうもすみません。', pt: 'Ah, muito obrigada.' },
+  ] }],
+  Y06: [{ label: '{私|わたし}のすきなレストラン', lines: [
+    { speaker: 'Naomi', ja: '{私|わたし}のすきなレストランは、イタリアりょうりのマンジャーレです。', pt: 'Meu restaurante favorito é o Mangiare, de culinária italiana.' },
+    { speaker: 'Naomi', ja: 'えきの{南口|みなみぐち}を{出|で}て、{右|みぎ}へ{五分|ごふん}ぐらいです。', pt: 'Saindo pela saída sul da estação, fica a cerca de cinco minutos à direita.' },
+    { speaker: 'Naomi', ja: 'ちいさいレストランです。', pt: 'É um restaurante pequeno.' },
+    { speaker: 'Naomi', ja: 'シェフはイタリア{人|じん}のアントニオさんです。', pt: 'O chef é Antonio, um italiano.' },
+    { speaker: 'Naomi', ja: 'アントニオさんはとてもおもしろい{人|ひと}です。', pt: 'Antonio é uma pessoa muito interessante.' },
+    { speaker: 'Naomi', ja: 'アントニオさんのりょうりはとてもおいしいです。', pt: 'A comida de Antonio é muito gostosa.' },
+    { speaker: 'Naomi', ja: '{私|わたし}はよくマンジャーレに{行|い}きます。', pt: 'Vou muito ao Mangiare.' },
+    { speaker: 'Naomi', ja: 'マンジャーレでワインを{飲|の}んで、ピザを{食|た}べます。', pt: 'No Mangiare, bebo vinho e como pizza.' },
+    { speaker: 'Naomi', ja: 'アイスクリームもおいしいです。', pt: 'O sorvete também é gostoso.' },
+    { speaker: 'Naomi', ja: 'ここでいつもたくさん{食|た}べます。', pt: 'Sempre como bastante aqui.' },
+    { speaker: 'Naomi', ja: 'りょうりはやすいですから、{外国人|がいこくじん}もたくさんきます。', pt: 'Como a comida é barata, muitos estrangeiros também vêm.' },
+    { speaker: 'Naomi', ja: 'みなさんもきてください。', pt: 'Venham vocês também.' },
+  ] }],
 }
 
 const files = [...Array.from({ length: 15 }, (_, i) => `K06_${String(i + 1).padStart(2, '0')}`), 'Y06', 'W06_A', 'W06_B', 'W06_C']
-const audios: AudioTrack[] = files.map((file) => ({ id: `genki-1-l6-audio-${file.toLowerCase()}`, title: file === 'K06_01' ? 'Diálogo I — em aula' : file === 'K06_03' ? 'Diálogo II — depois da aula' : file === 'K06_05' ? 'Diálogo III — no ônibus' : file === 'Y06' ? 'Leitura — meu restaurante favorito' : file.startsWith('W06') ? `Workbook — ${file.slice(-1)}` : `Textbook — ${file}`, descriptionPt: file === 'Y06' ? 'Leitura integral da seção de leitura e escrita.' : file.startsWith('W06') ? 'Compreensão oral do workbook.' : 'Áudio do diálogo, vocabulário ou prática correspondente.', src: `${BASE}/${file}.mp3`, script: scripts[file] ?? [] }))
+const audios: AudioTrack[] = files.map((file) => ({ id: `genki-1-l6-audio-${file.toLowerCase()}`, title: file === 'K06_01' ? 'Diálogo I — em aula' : file === 'K06_03' ? 'Diálogo II — depois da aula' : file === 'K06_05' ? 'Diálogo III — no ônibus' : file === 'Y06' ? 'Leitura — meu restaurante favorito' : file.startsWith('W06') ? `Workbook — ${file.slice(-1)}` : `Textbook — ${file}`, descriptionPt: file === 'Y06' ? 'Leitura integral da seção de leitura e escrita.' : file.startsWith('W06') ? 'Compreensão oral do workbook.' : 'Áudio do diálogo, vocabulário ou prática correspondente.', src: `${BASE}/${file}.mp3`, script: scripts[file] ?? [], transcript: scripts[file] ? { kind: 'full', source: 'source-aligned', reviewed: true, items: scripts[file] } : undefined }))
 
 export const genki1Lesson6: Section = { id: 'lesson-6', level: 'genki-1', titleJa: '第6課　ロバートさんの一日', titlePt: 'Lição 6 — Um dia na vida de Robert', summaryPt: 'Forma て, pedidos, sequências, permissão, proibição, razões, ofertas, kanji e leitura de restaurante.', studyNotes, groups: [group('dialogue', '会話', 'compreensão dos diálogos', dialogue), group('te-form', '文法 1', 'conjugação da forma て', teForm), group('requests-sequence', '文法 2・3', 'pedidos e sequência de ações', requestsSequence), group('permission-rules', '文法 4・5', 'permissão e proibição', permissionRules), group('reason-offer', '文法 6・7', 'razões e ofertas de ajuda', reasonOffer), group('kanji-reading', '読み書き', 'kanji e leitura', kanjiReading), group('listening', '聞く練習', 'compreensão oral do workbook', listening)], audios }

@@ -280,7 +280,9 @@ const listening = [
 ]
 
 const dialogueOne: ScriptItem[] = [{
-  label: '会話 I',
+  label: '{会話|かいわ} I',
+  setupJa: '{第2課|だいにか} かいもの。{会話|かいわ} I。',
+  setupPt: 'Lição 2 — Compras. Diálogo I.',
   lines: [
     { speaker: 'M', ja: 'すみません。これは いくらですか。', pt: 'Com licença. Quanto custa isto?' },
     { speaker: 'V', ja: 'それは さんぜんえんです。', pt: 'Isso custa 3.000 ienes.' },
@@ -290,12 +292,15 @@ const dialogueOne: ScriptItem[] = [{
     { speaker: 'V', ja: 'これは せんはっぴゃくえんですよ。', pt: 'Este custa 1.800 ienes, viu.' },
     { speaker: 'M', ja: 'じゃあ、そのとけいを ください。', pt: 'Então, por favor, me dê esse relógio.' },
     { speaker: 'H', ja: 'これは だれの さいふですか。', pt: 'De quem é esta carteira?' },
-    { speaker: 'M', ja: 'わたしの さいふです。ありがとうございます。', pt: 'É minha carteira. Muito obrigada.' },
+    { speaker: 'M', ja: 'わたしの さいふです。', pt: 'É a minha carteira.' },
+    { speaker: 'M', ja: 'ありがとうございます。', pt: 'Muito obrigada.' },
   ],
 }]
 
 const dialogueTwo: ScriptItem[] = [{
-  label: '会話 II',
+  label: '{会話|かいわ} II',
+  setupJa: '{二|に}。',
+  setupPt: 'Diálogo II.',
   lines: [
     { speaker: 'V', ja: 'いらっしゃいませ。メニューを どうぞ。', pt: 'Bem-vinda. Aqui está o cardápio.' },
     { speaker: 'M', ja: 'どうも。これは なんですか。', pt: 'Obrigada. O que é isto?' },
@@ -309,29 +314,104 @@ const dialogueTwo: ScriptItem[] = [{
   ],
 }]
 
+const katakanaRecognitionScript: ScriptItem[] = [{
+  label: 'I-A',
+  setupJa: '{読|よ}み{書|か}き{編|へん} {第2課|だいにか} I　Katakana Practice A。',
+  setupPt: 'Seção de leitura e escrita, Lição 2, prática de katakana I-A.',
+  lines: [
+    { speaker: '1', ja: 'オ。', pt: 'Som “o”.' },
+    { speaker: '2', ja: 'ヌ。', pt: 'Som “nu”.' },
+    { speaker: '3', ja: 'サ。', pt: 'Som “sa”.' },
+    { speaker: '4', ja: 'シ。', pt: 'Som “shi”.' },
+    { speaker: '5', ja: 'ク。', pt: 'Som “ku”.' },
+    { speaker: '6', ja: 'マ。', pt: 'Som “ma”.' },
+    { speaker: '7', ja: 'ル。', pt: 'Som “ru”.' },
+    { speaker: '8', ja: 'ホ。', pt: 'Som “ho”.' },
+    { speaker: '9', ja: 'ユ。', pt: 'Som “yu”.' },
+  ],
+}]
+
+const katakanaFoodScript: ScriptItem[] = [{
+  label: 'I-B',
+  setupJa: 'B。',
+  setupPt: 'Prática de associação de palavras em katakana, item B.',
+  lines: [
+    { speaker: '1', ja: 'オレンジジュース。', pt: 'Suco de laranja.' },
+    { speaker: '2', ja: 'フライドポテト。', pt: 'Batata frita.' },
+    { speaker: '3', ja: 'ケーキ。', pt: 'Bolo.' },
+    { speaker: '4', ja: 'サラダ。', pt: 'Salada.' },
+    { speaker: '5', ja: 'チョコレートパフェ。', pt: 'Parfait de chocolate.' },
+    { speaker: '6', ja: 'コーヒー。', pt: 'Café.' },
+    { speaker: '7', ja: 'サンドイッチ。', pt: 'Sanduíche.' },
+    { speaker: '8', ja: 'ステーキ。', pt: 'Bife.' },
+    { speaker: '9', ja: 'カレー。', pt: 'Curry.' },
+    { speaker: '10', ja: 'ピザ。', pt: 'Pizza.' },
+    { speaker: '11', ja: 'トースト。', pt: 'Torrada.' },
+    { speaker: '12', ja: 'アイスティー。', pt: 'Chá gelado.' },
+  ],
+}]
+
+const katakanaReadingScript: ScriptItem[] = [{
+  label: 'II',
+  setupJa: 'II　Reading Practice。',
+  setupPt: 'Prática de leitura II.',
+  lines: [
+    { speaker: '1', ja: 'これは わたしの ぼうしじゃないです。', pt: 'Este não é o meu boné.' },
+    { speaker: '1', ja: 'キャシーさんの ぼうしです。', pt: 'É o boné da Cathy.' },
+    { speaker: '1', ja: 'ニューヨークヤンキースの ぼうしです。', pt: 'É um boné do New York Yankees.' },
+    { speaker: '2', ja: 'これは わたしの じてんしゃです。', pt: 'Esta é a minha bicicleta.' },
+    { speaker: '2', ja: 'オーストラリアの じてんしゃです。', pt: 'É uma bicicleta australiana.' },
+    { speaker: '2', ja: 'たかいです。', pt: 'É cara.' },
+    { speaker: '3', ja: 'これは ミシェルさんの ほんです。', pt: 'Este é o livro da Michelle.' },
+    { speaker: '3', ja: 'スペインごの ほんじゃないです。', pt: 'Não é um livro em espanhol.' },
+    { speaker: '3', ja: 'フランスごの ほんです。', pt: 'É um livro em francês.' },
+    { speaker: '4', ja: 'これは ジャクソンさんの くつです。', pt: 'Estes são os sapatos de Jackson.' },
+    { speaker: '4', ja: 'イタリアの くつじゃないです。', pt: 'Não são sapatos italianos.' },
+    { speaker: '4', ja: 'アメリカの くつです。', pt: 'São americanos.' },
+  ],
+}]
+
+type FullAudioTranscript = NonNullable<AudioTrack['transcript']>
+
+function fullTranscript(items: ScriptItem[]): FullAudioTranscript {
+  return { kind: 'full', source: 'source-aligned', reviewed: true, items }
+}
+
+const fullTranscripts: Partial<Record<string, FullAudioTranscript>> = {
+  K02_01: fullTranscript(dialogueOne),
+  K02_03: fullTranscript(dialogueTwo),
+  Y02_1: fullTranscript(katakanaRecognitionScript),
+  Y02_2: fullTranscript(katakanaFoodScript),
+  Y02_3: fullTranscript(katakanaReadingScript),
+}
+
 const trackFiles = [
   ...Array.from({ length: 15 }, (_, index) => `K02_${String(index + 1).padStart(2, '0')}`),
   'Y02_1', 'Y02_2', 'Y02_3', 'W02_1', 'W02_A', 'W02_B', 'W02_C',
 ]
 
-const audios: AudioTrack[] = trackFiles.map((file) => ({
-  id: `genki-1-l2-audio-${file.toLowerCase()}`,
-  title: file === 'K02_01' ? 'Diálogo I - japonês'
-    : file === 'K02_02' ? 'Diálogo I - apoio em inglês'
-      : file === 'K02_03' ? 'Diálogo II - japonês'
-        : file === 'K02_04' ? 'Diálogo II - apoio em inglês'
-          : file === 'K02_05' ? 'Vocabulário - japonês para inglês'
-            : file === 'K02_06' ? 'Vocabulário - inglês para japonês'
-              : file.startsWith('Y02') ? `Leitura e escrita - Katakana ${file.slice(-1)}`
-                : file === 'W02_1' ? 'Workbook - Números'
-                  : file.startsWith('W02') ? `Workbook - Compreensão ${file.slice(-1)}`
-                    : `Prática do textbook - ${file}`,
-  descriptionPt: file.startsWith('Y02') ? 'Faixa da seção de leitura e escrita da Lição 2.'
-    : file.startsWith('W02') ? 'Faixa de exercícios do workbook da Lição 2.'
-      : 'Faixa correspondente ao conteúdo e às práticas da Lição 2 no textbook.',
-  src: `${AUDIO_BASE}/${file}.mp3`,
-  script: file === 'K02_01' ? dialogueOne : file === 'K02_03' ? dialogueTwo : [],
-}))
+const audios: AudioTrack[] = trackFiles.map((file) => {
+  const transcript = fullTranscripts[file]
+  return {
+    id: `genki-1-l2-audio-${file.toLowerCase()}`,
+    title: file === 'K02_01' ? 'Diálogo I - japonês'
+      : file === 'K02_02' ? 'Diálogo I - apoio em inglês'
+        : file === 'K02_03' ? 'Diálogo II - japonês'
+          : file === 'K02_04' ? 'Diálogo II - apoio em inglês'
+            : file === 'K02_05' ? 'Vocabulário - japonês para inglês'
+              : file === 'K02_06' ? 'Vocabulário - inglês para japonês'
+                : file.startsWith('Y02') ? `Leitura e escrita - Katakana ${file.slice(-1)}`
+                  : file === 'W02_1' ? 'Workbook - Números'
+                    : file.startsWith('W02') ? `Workbook - Compreensão ${file.slice(-1)}`
+                      : `Prática do textbook - ${file}`,
+    descriptionPt: file.startsWith('Y02') ? 'Faixa da seção de leitura e escrita da Lição 2.'
+      : file.startsWith('W02') ? 'Faixa de exercícios do workbook da Lição 2.'
+        : 'Faixa correspondente ao conteúdo e às práticas da Lição 2 no textbook.',
+    src: `${AUDIO_BASE}/${file}.mp3`,
+    script: transcript?.items ?? [],
+    transcript,
+  }
+})
 
 export const genki1Lesson2: Section = {
   id: 'lesson-2',

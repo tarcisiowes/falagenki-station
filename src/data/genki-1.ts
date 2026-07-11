@@ -1,4 +1,9 @@
 import type { AudioTrack, ExerciseGroup, Level, Question, ScriptItem, StudyNote } from './types'
+import { genki1Foundations } from './genki-1-foundations'
+import {
+  genki1Lesson1WritingAudios,
+  genki1Lesson1WritingGroups,
+} from './genki-1-lesson-1-writing'
 import { genki1Lesson2 } from './genki-1-lesson-2'
 import { genki1Lesson3 } from './genki-1-lesson-3'
 import { genki1Lesson4 } from './genki-1-lesson-4'
@@ -10,6 +15,7 @@ import { genki1Lesson9 } from './genki-1-lesson-9'
 import { genki1Lesson10 } from './genki-1-lesson-10'
 import { genki1Lesson11 } from './genki-1-lesson-11'
 import { genki1Lesson12 } from './genki-1-lesson-12'
+import { enrichGenkiLevel } from './genki-audio-study'
 
 const AUDIO_BASE = '/audio/genki/genki-1/lesson-1'
 
@@ -277,26 +283,39 @@ const numberTimeQuestions = [
 const listeningAudio = (file: string, title: string) => ({ src: `${AUDIO_BASE}/${file}.mp3`, title })
 
 const listeningQuestions = [
-  question('listening-b-1', 53, 'W01-B, item 1: パリは なんじですか。', ['ごぜん よじ', 'ごご よじ', 'ごぜん はちじ', 'ごご はちじ'], 1, 'No diálogo, o horário de Paris é 4:00 A.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais'), helpPt: 'Na primeira escuta, procure apenas パリ. Na segunda, capture ごぜん/ごご e a hora. Use a velocidade 0,75× se precisar separar os blocos.' }),
-  question('listening-b-2', 54, 'W01-B, item 2: ソウルは なんじですか。', ['ごぜん くじ', 'ごご くじ', 'ごぜん しちじ', 'ごご しちじ'], 2, 'No diálogo, o horário de Seul é 9:00 P.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
-  question('listening-b-3', 55, 'W01-B, item 3: ニューヨークは なんじですか。', ['ごぜん いちじ', 'ごご いちじ', 'ごぜん さんじ', 'ごご さんじ'], 2, 'No diálogo, o horário de Nova York é 1:00 P.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
-  question('listening-b-4', 56, 'W01-B, item 4: ロンドンは なんじですか。', ['ごぜん しちじ', 'ごぜん しちじはん', 'ごご しちじ', 'ごご しちじはん'], 2, 'No diálogo, o horário de Londres é 7:30 A.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
-  question('listening-b-5', 57, 'W01-B, item 5: タイペイは なんじですか。', ['ごぜん じゅういちじ', 'ごご じゅういちじ', 'ごぜん いちじ', 'ごご いちじ'], 1, 'No diálogo, o horário de Taipei é 11:00 A.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
-  question('listening-b-6', 58, 'W01-B, item 6: シドニーは なんじですか。', ['ごぜん さんじ', 'ごぜん さんじはん', 'ごご さんじ', 'ごご さんじはん'], 4, 'No diálogo, o horário de Sydney é 3:30 P.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
-  question('listening-c-1', 59, 'W01-C, item 1: かわさきさんの でんわばんごうは なんばんですか。', ['905-0877', '950-0877', '905-0787', '509-8077'], 1, 'O número informado para Kawasaki é 905-0877.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
-  question('listening-c-2', 60, 'W01-C, item 2: リーさんの でんわばんごうは なんばんですか。', ['59341026', '53941026', '59340126', '59341206'], 1, 'O número informado para Lee é 59341026.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
-  question('listening-c-3', 61, 'W01-C, item 3: ウッズさんの でんわばんごうは なんばんですか。', ['491509', '419509', '491059', '495109'], 1, 'O número informado para Woods é 491509.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
-  question('listening-c-4', 62, 'W01-C, item 4: クマールさんの でんわばんごうは なんばんですか。', ['67823333', '68723333', '67832333', '67823313'], 1, 'O número informado para Kumar é 67823333.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
-  question('listening-d-1', 63, 'W01-D, item 1: アキラさんは いちねんせいです。', ['○ — verdadeiro', '× — falso'], 1, 'A afirmação é verdadeira.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
-  question('listening-d-2', 64, 'W01-D, item 2: アキラさんは アメリカだいがくの がくせいです。', ['○ — verdadeiro', '× — falso'], 2, 'A afirmação é falsa.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
-  question('listening-d-3', 65, 'W01-D, item 3: アキラさんの せんこうは れきしです。', ['○ — verdadeiro', '× — falso'], 2, 'A afirmação é falsa.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
-  question('listening-d-4', 66, 'W01-D, item 4: ケイトさんは にねんせいです。', ['○ — verdadeiro', '× — falso'], 2, 'A afirmação é falsa.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
-  question('listening-d-5', 67, 'W01-D, item 5: ケイトさんの せんこうは にほんごです。', ['○ — verdadeiro', '× — falso'], 1, 'A afirmação é verdadeira.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
+  question('listening-a-1', 53, 'W01-A, item 1: qual cena corresponde à expressão ouvida?', ['h — alguém recebe ajuda e agradece', 'g — alguém esbarra em outra pessoa', 'a — alguém acorda outra pessoa', 'b — alguém termina uma refeição'], 1, 'O áudio diz 「ありがとうございます」. No workbook, a situação de agradecimento é a figura h.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'Escute o final longo 「ございます」 e decida se a intenção é agradecer, pedir desculpas ou cumprimentar.' }),
+  question('listening-a-2', 54, 'W01-A, item 2: qual cena corresponde à expressão ouvida?', ['d — alguém volta para casa', 'k — duas pessoas se despedem acenando', 'i — alguém sai de casa', 'j — duas pessoas se encontram durante o dia'], 2, 'O áudio diz 「さようなら」. A despedida mostrada no workbook é a figura k.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'Procure uma despedida completa, usada quando as pessoas vão se separar, e não a expressão específica de sair de casa.' }),
+  question('listening-a-3', 55, 'W01-A, item 3: qual cena corresponde à expressão ouvida?', ['f — duas pessoas se apresentam', 'g — alguém esbarra e pede desculpas', 'h — alguém agradece uma ajuda', 'e — alguém vai dormir'], 2, 'O áudio diz 「あっ、すみません」. O pedido de desculpas após o esbarrão corresponde à figura g.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'A interjeição curta antes da expressão indica que algo inesperado acabou de acontecer.' }),
+  question('listening-a-4', 56, 'W01-A, item 4: qual cena corresponde à expressão ouvida?', ['a — uma pessoa cumprimenta outra pela manhã', 'c — duas pessoas se encontram à noite', 'j — duas pessoas se encontram à tarde', 'e — uma pessoa se despede antes de dormir'], 1, 'O áudio diz 「おはよう」. O cumprimento matinal corresponde à figura a.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'Compare o primeiro som: o cumprimento da manhã começa com 「おは…」; os cumprimentos da tarde e da noite começam com 「こん…」.' }),
+  question('listening-a-5', 57, 'W01-A, item 5: qual cena corresponde à expressão ouvida?', ['a — início da manhã', 'e — hora de dormir', 'k — despedida na rua', 'b — fim de uma refeição'], 2, 'O áudio diz 「おやすみなさい」. A situação de boa-noite é a figura e.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'Ouça o bloco 「やすみ」 e procure a cena ligada ao descanso, não apenas uma despedida comum.' }),
+  question('listening-a-6', 58, 'W01-A, item 6: qual cena corresponde à expressão ouvida?', ['c — encontro à noite', 'j — encontro durante o dia', 'a — encontro pela manhã', 'f — primeira apresentação'], 2, 'O áudio diz 「こんにちは」. O encontro diurno corresponde à figura j.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'Concentre-se no miolo: 「…にち…」 distingue o cumprimento diurno de 「…ばん…」, usado à noite.' }),
+  question('listening-a-7', 59, 'W01-A, item 7: qual cena corresponde à expressão ouvida?', ['j — conhecidos se encontram durante o dia', 'f — duas pessoas se conhecem e se apresentam', 'h — alguém agradece', 'k — duas pessoas se despedem'], 2, 'O áudio diz 「はじめまして。よろしくおねがいします」. A primeira apresentação é a figura f.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'São duas expressões em sequência. Procure uma situação em que as pessoas ainda estão estabelecendo a relação.' }),
+  question('listening-a-8', 60, 'W01-A, item 8: qual cena corresponde à expressão ouvida?', ['a — encontro pela manhã', 'c — encontro à noite', 'j — encontro durante o dia', 'e — despedida antes de dormir'], 2, 'O áudio diz 「こんばんは」. O encontro noturno corresponde à figura c.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'O bloco 「ばん」 significa noite. Use essa pista sonora para separar esta fala de 「こんにちは」.' }),
+  question('listening-a-9', 61, 'W01-A, item 9: qual cena corresponde à expressão ouvida?', ['b — alguém termina uma refeição', 'd — alguém volta para casa', 'i — alguém sai de casa', 'h — alguém agradece uma ajuda'], 1, 'O áudio diz 「ごちそうさま」, usado depois de comer. A cena correta é a figura b.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'Identifique o início 「ごちそう…」 e procure a cena em que a refeição já terminou.' }),
+  question('listening-a-10', 62, 'W01-A, item 10: qual cena corresponde à expressão ouvida?', ['d — alguém acaba de voltar', 'i — alguém está saindo de casa', 'k — despedida genérica na rua', 'f — primeira apresentação'], 2, 'O áudio diz 「いってきます」, fala de quem sai de casa e pretende voltar. A figura correta é i.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'O verbo final 「きます」 inclui a ideia de voltar. Procure quem ainda está partindo, não quem acabou de chegar.' }),
+  question('listening-a-11', 63, 'W01-A, item 11: qual cena corresponde à expressão ouvida?', ['i — alguém está saindo', 'd — alguém acaba de chegar em casa', 'a — alguém acorda', 'b — alguém termina de comer'], 2, 'O áudio diz 「ただいま」, fala de quem acaba de chegar em casa. A figura correta é d.', { audio: listeningAudio('W01_A', 'Workbook W01-A — Cumprimentos'), helpPt: 'Esta é uma expressão curta dita por quem retorna. Compare-a com a fala mais longa usada antes de sair.' }),
+  question('listening-b-1', 64, 'W01-B, item 1: パリは なんじですか。', ['ごぜん よじ', 'ごご よじ', 'ごぜん はちじ', 'ごご はちじ'], 1, 'No diálogo, o horário de Paris é 4:00 A.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais'), helpPt: 'Na primeira escuta, procure apenas パリ. Na segunda, capture ごぜん/ごご e a hora. Use a velocidade 0,75× se precisar separar os blocos.' }),
+  question('listening-b-2', 65, 'W01-B, item 2: ソウルは なんじですか。', ['ごぜん くじ', 'ごご くじ', 'ごぜん しちじ', 'ごご しちじ'], 2, 'No diálogo, o horário de Seul é 9:00 P.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
+  question('listening-b-3', 66, 'W01-B, item 3: ニューヨークは なんじですか。', ['ごぜん いちじ', 'ごご いちじ', 'ごぜん さんじ', 'ごご さんじ'], 2, 'No diálogo, o horário de Nova York é 1:00 P.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
+  question('listening-b-4', 67, 'W01-B, item 4: ロンドンは なんじですか。', ['ごぜん しちじ', 'ごぜん しちじはん', 'ごご しちじ', 'ごご しちじはん'], 2, 'No diálogo, o horário de Londres é 7:30 A.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
+  question('listening-b-5', 68, 'W01-B, item 5: タイペイは なんじですか。', ['ごぜん じゅういちじ', 'ごご じゅういちじ', 'ごぜん いちじ', 'ごご いちじ'], 1, 'No diálogo, o horário de Taipei é 11:00 A.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
+  question('listening-b-6', 69, 'W01-B, item 6: シドニーは なんじですか。', ['ごぜん さんじ', 'ごぜん さんじはん', 'ごご さんじ', 'ごご さんじはん'], 4, 'No diálogo, o horário de Sydney é 3:30 P.M.', { audio: listeningAudio('W01_B', 'Workbook W01-B — Horários internacionais') }),
+  question('listening-c-1', 70, 'W01-C, item 1: かわさきさんの でんわばんごうは なんばんですか。', ['905-0877', '950-0877', '905-0787', '509-8077'], 1, 'O número informado para Kawasaki é 905-0877.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
+  question('listening-c-2', 71, 'W01-C, item 2: リーさんの でんわばんごうは なんばんですか。', ['59341026', '53941026', '59340126', '59341206'], 1, 'O número informado para Lee é 59341026.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
+  question('listening-c-3', 72, 'W01-C, item 3: ウッズさんの でんわばんごうは なんばんですか。', ['491509', '419509', '491059', '495109'], 1, 'O número informado para Woods é 491509.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
+  question('listening-c-4', 73, 'W01-C, item 4: クマールさんの でんわばんごうは なんばんですか。', ['67823333', '68723333', '67832333', '67823313'], 1, 'O número informado para Kumar é 67823333.', { audio: listeningAudio('W01_C', 'Workbook W01-C — Números de telefone') }),
+  question('listening-d-1', 74, 'W01-D, item 1: アキラさんは いちねんせいです。', ['○ — verdadeiro', '× — falso'], 1, 'A afirmação é verdadeira.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
+  question('listening-d-2', 75, 'W01-D, item 2: アキラさんは アメリカだいがくの がくせいです。', ['○ — verdadeiro', '× — falso'], 2, 'A afirmação é falsa.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
+  question('listening-d-3', 76, 'W01-D, item 3: アキラさんの せんこうは れきしです。', ['○ — verdadeiro', '× — falso'], 2, 'A afirmação é falsa.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
+  question('listening-d-4', 77, 'W01-D, item 4: ケイトさんは にねんせいです。', ['○ — verdadeiro', '× — falso'], 2, 'A afirmação é falsa.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
+  question('listening-d-5', 78, 'W01-D, item 5: ケイトさんの せんこうは にほんごです。', ['○ — verdadeiro', '× — falso'], 1, 'A afirmação é verdadeira.', { audio: listeningAudio('W01_D', 'Workbook W01-D — Akira e Kate') }),
 ]
 
 const dialogueOneScript: ScriptItem[] = [
   {
-    label: '会話 I',
+    label: '{会話|かいわ} I',
+    setupJa: '{第1課|だいいっか} あたらしい ともだち。{会話|かいわ} I。',
+    setupPt: 'Lição 1 — Novos amigos. Diálogo I.',
     lines: [
       { speaker: 'T', ja: 'こんにちは。きむら たけしです。', pt: 'Olá. Sou Takeshi Kimura.' },
       { speaker: 'M', ja: 'メアリー・ハートです。あのう、りゅうがくせいですか。', pt: 'Sou Mary Hart. Bem... você é estudante internacional?' },
@@ -309,7 +328,9 @@ const dialogueOneScript: ScriptItem[] = [
 
 const dialogueTwoScript: ScriptItem[] = [
   {
-    label: '会話 II',
+    label: '{会話|かいわ} II',
+    setupJa: '{二|に}。',
+    setupPt: 'Diálogo II.',
     lines: [
       { speaker: 'M', ja: 'はじめまして。メアリー・ハートです。', pt: 'Muito prazer. Sou Mary Hart.' },
       { speaker: 'M', ja: 'アリゾナだいがくの がくせいです。にねんせいです。', pt: 'Sou estudante da Universidade do Arizona. Estou no segundo ano.' },
@@ -318,6 +339,17 @@ const dialogueTwoScript: ScriptItem[] = [
     ],
   },
 ]
+
+type FullAudioTranscript = NonNullable<AudioTrack['transcript']>
+
+function fullTranscript(items: ScriptItem[]): FullAudioTranscript {
+  return { kind: 'full', source: 'source-aligned', reviewed: true, items }
+}
+
+const fullTranscripts: Partial<Record<string, FullAudioTranscript>> = {
+  K01_01: fullTranscript(dialogueOneScript),
+  K01_03: fullTranscript(dialogueTwoScript),
+}
 
 const audioLabels: Array<[string, string, string]> = [
   ['K01_01', 'Diálogo I — japonês', 'Diálogo entre Takeshi e Mary durante a orientação.'],
@@ -350,20 +382,38 @@ const audioLabels: Array<[string, string, string]> = [
   ['W01_D', 'Workbook D — Akira e Kate', 'Ouça a conversa e julgue as afirmações como verdadeiras ou falsas.'],
 ]
 
-const audios: AudioTrack[] = audioLabels.map(([file, title, descriptionPt]) => ({
-  id: `genki-1-l1-audio-${file.toLowerCase()}`,
-  title,
-  descriptionPt,
-  src: `${AUDIO_BASE}/${file}.mp3`,
-  script: file === 'K01_01' ? dialogueOneScript : file === 'K01_03' ? dialogueTwoScript : [],
-}))
+const audios: AudioTrack[] = audioLabels.map(([file, title, descriptionPt]) => {
+  const transcript = fullTranscripts[file]
+  return {
+    id: `genki-1-l1-audio-${file.toLowerCase()}`,
+    title,
+    descriptionPt,
+    src: `${AUDIO_BASE}/${file}.mp3`,
+    script: transcript?.items ?? [],
+    transcript,
+  }
+})
 
-export const genki1: Level = {
+function renumberGroups(groups: ExerciseGroup[], start: number): ExerciseGroup[] {
+  let next = start
+  return groups.map((exerciseGroup) => ({
+    ...exerciseGroup,
+    questions: exerciseGroup.questions.map((item) => ({ ...item, number: next++ })),
+  }))
+}
+
+const lesson1WritingGroups = renumberGroups(
+  genki1Lesson1WritingGroups,
+  listeningQuestions[listeningQuestions.length - 1].number + 1,
+)
+
+const genki1Base: Level = {
   id: 'genki-1',
   courseId: 'genki',
   titlePt: 'Genki I — 3ª edição',
   descriptionPt: 'Curso iniciante integrado com explicações em português, exercícios interativos, compreensão oral e revisão FSRS estilo Anki.',
   sections: [
+    genki1Foundations,
     {
       id: 'lesson-1',
       level: 'genki-1',
@@ -385,8 +435,9 @@ export const genki1: Level = {
         group('no', '文法 3', 'Substantivo 1 の Substantivo 2', 'Ligue substantivos com の e identifique a ideia principal.', noQuestions),
         group('numbers-time', '数字・時間', 'Números e horas', 'Pratique leituras de números, idade e horários.', numberTimeQuestions),
         group('listening', '聞く練習', 'Compreensão oral do workbook', 'Ouça a faixa indicada em cada cartão antes de responder. As mesmas questões também aparecem com áudio na revisão FSRS.', listeningQuestions),
+        ...lesson1WritingGroups,
       ],
-      audios,
+      audios: [...audios, ...genki1Lesson1WritingAudios],
     },
     genki1Lesson2,
     genki1Lesson3,
@@ -401,3 +452,5 @@ export const genki1: Level = {
     genki1Lesson12,
   ],
 }
+
+export const genki1: Level = enrichGenkiLevel(genki1Base)

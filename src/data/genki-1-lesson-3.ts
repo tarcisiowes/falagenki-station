@@ -233,35 +233,69 @@ const listening = [
   q('listen-d-4', 78, 'W03-D: Que outras sugestões ele fez?', ['ler e caminhar', 'praticar japonês no café e almoçar no dia seguinte', 'ver filme e jantar', 'ir à biblioteca'], 2, 'Essas duas sugestões estão marcadas no workbook.', { audio: audio('W03_D', 'Workbook W03-D - Convites') }),
 ]
 
-const scriptOne: ScriptItem[] = [{ label: '会話 I', lines: [
-  { speaker: 'T', ja: 'メアリーさん、週末は たいてい 何を しますか。', pt: 'Mary, o que você costuma fazer no fim de semana?' },
-  { speaker: 'M', ja: 'そうですね。たいてい うちで 勉強します。でも、ときどき 映画を 見ます。', pt: 'Bem... geralmente estudo em casa. Mas às vezes vejo filmes.' },
-  { speaker: 'T', ja: 'そうですか。じゃあ、土曜日に 映画を 見ませんか。', pt: 'Entendo. Então, quer ver um filme no sábado?' },
-  { speaker: 'M', ja: '土曜日は ちょっと…。', pt: 'Sábado é meio complicado...' },
-  { speaker: 'T', ja: 'じゃあ、日曜日は どうですか。', pt: 'Então, que tal domingo?' },
+const scriptOne: ScriptItem[] = [{ label: '{会話|かいわ} I', setupJa: '{第3課|だいさんか} デートの{約束|やくそく}。{会話|かいわ} I。', setupPt: 'Lição 3 — Marcando um encontro. Diálogo I.', lines: [
+  { speaker: 'T', ja: 'メアリーさん、{週末|しゅうまつ}は たいてい {何|なに}を しますか。', pt: 'Mary, o que você costuma fazer no fim de semana?' },
+  { speaker: 'M', ja: 'そうですね。たいてい うちで {勉強|べんきょう}します。でも、ときどき {映画|えいが}を {見|み}ます。', pt: 'Bem... geralmente estudo em casa. Mas às vezes vejo filmes.' },
+  { speaker: 'T', ja: 'そうですか……。じゃあ、{土曜日|どようび}に {映画|えいが}を {見|み}ませんか。', pt: 'Entendo... Então, quer ver um filme no sábado?' },
+  { speaker: 'M', ja: '{土曜日|どようび}は ちょっと……。', pt: 'Sábado é meio complicado...' },
+  { speaker: 'T', ja: 'じゃあ、{日曜日|にちようび}は どうですか。', pt: 'Então, que tal domingo?' },
   { speaker: 'M', ja: 'いいですね。', pt: 'Parece ótimo.' },
 ] }]
 
-const scriptTwo: ScriptItem[] = [{ label: '会話 II', lines: [
+const scriptTwo: ScriptItem[] = [{ label: '{会話|かいわ} II', setupJa: '{二|に}。', setupPt: 'Diálogo II.', lines: [
   { speaker: 'M', ja: 'おはようございます。', pt: 'Bom dia.' },
-  { speaker: 'H', ja: 'おはよう。早いですね。', pt: 'Bom dia. Você está cedo, não é?' },
-  { speaker: 'M', ja: 'ええ、今日は 京都に 行きます。京都で 映画を 見ます。', pt: 'Sim, hoje vou a Kyoto. Vou ver um filme em Kyoto.' },
-  { speaker: 'H', ja: 'いいですね。何時ごろ 帰りますか。', pt: 'Que bom. Por volta de que horas volta?' },
-  { speaker: 'M', ja: '九時ごろです。', pt: 'Por volta das nove.' },
-  { speaker: 'H', ja: '晩ご飯は？', pt: 'E o jantar?' },
-  { speaker: 'M', ja: '食べません。', pt: 'Não vou comer.' },
+  { speaker: 'H', ja: 'おはよう。{早|はや}いですね。', pt: 'Bom dia. Você está cedo, não é?' },
+  { speaker: 'M', ja: 'ええ、{今日|きょう}は {京都|きょうと}に {行|い}きます。{京都|きょうと}で {映画|えいが}を {見|み}ます。', pt: 'Sim, hoje vou a Kyoto. Vou ver um filme em Kyoto.' },
+  { speaker: 'H', ja: 'いいですね。{何時|なんじ}ごろ {帰|かえ}りますか。', pt: 'Que bom. Por volta de que horas volta?' },
+  { speaker: 'M', ja: '{九時|くじ}ごろです。', pt: 'Por volta das nove.' },
+  { speaker: 'H', ja: '{晩ご飯|ばんごはん}は？', pt: 'E o jantar?' },
+  { speaker: 'M', ja: '{食|た}べません。', pt: 'Não vou comer.' },
   { speaker: 'H', ja: 'そうですか。じゃあ、いってらっしゃい。', pt: 'Entendo. Então, tenha um bom dia.' },
   { speaker: 'M', ja: 'いってきます。', pt: 'Estou indo e volto.' },
 ] }]
 
+const dailyRoutineScript: ScriptItem[] = [{
+  label: 'II　まいにちのせいかつ',
+  setupJa: '{読|よ}み{書|か}き{編|へん} {第3課|だいさんか} II　まいにちのせいかつ。',
+  setupPt: 'Seção de leitura e escrita, Lição 3, II — Vida cotidiana.',
+  lines: [
+    { speaker: 'N', ja: 'わたしは まいにち {七時|しちじ}に おきます。', pt: 'Eu me levanto às sete todos os dias.' },
+    { speaker: 'N', ja: 'うちで あさごはんを たべます。', pt: 'Tomo café da manhã em casa.' },
+    { speaker: 'N', ja: '{八時|はちじ}に だいがくへ いきます。', pt: 'Vou para a universidade às oito.' },
+    { speaker: 'N', ja: '{九時|くじ}に にほんごを べんきょうします。', pt: 'Estudo japonês às nove.' },
+    { speaker: 'N', ja: '{十二時半|じゅうにじはん}に だいがくで ひるごはんを たべます。', pt: 'Almoço na universidade às doze e meia.' },
+    { speaker: 'N', ja: 'ときどき コーヒーを のみます。', pt: 'Às vezes, tomo café.' },
+    { speaker: 'N', ja: '{四時|よじ}に としょかんで ほんを よみます。', pt: 'Às quatro, leio livros na biblioteca.' },
+    { speaker: 'N', ja: '{六時|ろくじ}ごろ うちへ かえります。', pt: 'Volto para casa por volta das seis.' },
+    { speaker: 'N', ja: '{十時|じゅうじ}に テレビを みます。', pt: 'Assisto à televisão às dez.' },
+    { speaker: 'N', ja: '{十二時|じゅうにじ}ごろ ねます。', pt: 'Vou dormir por volta da meia-noite.' },
+  ],
+}]
+
+type FullAudioTranscript = NonNullable<AudioTrack['transcript']>
+
+function fullTranscript(items: ScriptItem[]): FullAudioTranscript {
+  return { kind: 'full', source: 'source-aligned', reviewed: true, items }
+}
+
+const fullTranscripts: Partial<Record<string, FullAudioTranscript>> = {
+  K03_01: fullTranscript(scriptOne),
+  K03_03: fullTranscript(scriptTwo),
+  Y03: fullTranscript(dailyRoutineScript),
+}
+
 const files = [...Array.from({ length: 15 }, (_, i) => `K03_${String(i + 1).padStart(2, '0')}`), 'Y03', 'W03_A', 'W03_B', 'W03_C', 'W03_D']
-const audios: AudioTrack[] = files.map((file) => ({
-  id: `genki-1-l3-audio-${file.toLowerCase()}`,
-  title: file === 'K03_01' ? 'Diálogo I - japonês' : file === 'K03_02' ? 'Diálogo I - apoio em inglês' : file === 'K03_03' ? 'Diálogo II - japonês' : file === 'K03_04' ? 'Diálogo II - apoio em inglês' : file === 'K03_05' ? 'Vocabulário - japonês para inglês' : file === 'K03_06' ? 'Vocabulário - inglês para japonês' : file === 'Y03' ? 'Leitura - Rotina diária' : file.startsWith('W03') ? `Workbook - Compreensão ${file.slice(-1)}` : `Prática do textbook - ${file}`,
-  descriptionPt: file === 'Y03' ? 'Leitura em voz alta do texto sobre rotina diária.' : file.startsWith('W03') ? 'Faixa de compreensão oral do workbook.' : 'Faixa correspondente à Lição 3 no textbook.',
-  src: `${AUDIO_BASE}/${file}.mp3`,
-  script: file === 'K03_01' ? scriptOne : file === 'K03_03' ? scriptTwo : [],
-}))
+const audios: AudioTrack[] = files.map((file) => {
+  const transcript = fullTranscripts[file]
+  return {
+    id: `genki-1-l3-audio-${file.toLowerCase()}`,
+    title: file === 'K03_01' ? 'Diálogo I - japonês' : file === 'K03_02' ? 'Diálogo I - apoio em inglês' : file === 'K03_03' ? 'Diálogo II - japonês' : file === 'K03_04' ? 'Diálogo II - apoio em inglês' : file === 'K03_05' ? 'Vocabulário - japonês para inglês' : file === 'K03_06' ? 'Vocabulário - inglês para japonês' : file === 'Y03' ? 'Leitura - Rotina diária' : file.startsWith('W03') ? `Workbook - Compreensão ${file.slice(-1)}` : `Prática do textbook - ${file}`,
+    descriptionPt: file === 'Y03' ? 'Leitura em voz alta do texto sobre rotina diária.' : file.startsWith('W03') ? 'Faixa de compreensão oral do workbook.' : 'Faixa correspondente à Lição 3 no textbook.',
+    src: `${AUDIO_BASE}/${file}.mp3`,
+    script: transcript?.items ?? [],
+    transcript,
+  }
+})
 
 export const genki1Lesson3: Section = {
   id: 'lesson-3', level: 'genki-1', titleJa: '第3課　デートの約束', titlePt: 'Lição 3 - Marcando um encontro',

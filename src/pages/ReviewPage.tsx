@@ -82,6 +82,7 @@ export function ReviewPage() {
   }
 
   const correct = current && selected === current.q.answer
+  const isSelfCheck = current?.q.assessment === 'self-check'
 
   return (
     <div>
@@ -147,7 +148,7 @@ export function ReviewPage() {
 
           {current.q.audio && (
             <div className="question-audio">
-              <AudioPlayer src={current.q.audio.src} title={current.q.audio.title} />
+              <AudioPlayer src={current.q.audio.src} title={current.q.audio.title} compact />
             </div>
           )}
 
@@ -157,8 +158,8 @@ export function ReviewPage() {
             {order.map((c, i) => {
               let cls = 'choice'
               if (selected === c.n) cls += ' selected'
-              if (revealed && c.n === current.q.answer) cls += ' correct'
-              else if (revealed && selected === c.n && c.n !== current.q.answer) cls += ' wrong'
+              if (!isSelfCheck && revealed && c.n === current.q.answer) cls += ' correct'
+              else if (!isSelfCheck && revealed && selected === c.n && c.n !== current.q.answer) cls += ' wrong'
               return (
                 <button key={c.n} className={cls} disabled={revealed} onClick={() => setSelected(c.n)} type="button">
                   <span className="num">{i + 1}</span>
@@ -171,16 +172,20 @@ export function ReviewPage() {
           {!revealed ? (
             <div className="actions" style={{ marginTop: 14 }}>
               <button className="btn primary" disabled={selected === undefined} onClick={() => setRevealed(true)}>
-                Mostrar resposta
+                {isSelfCheck ? 'Registrar prática' : 'Mostrar resposta'}
               </button>
               {selected === undefined && <span className="muted" style={{ fontSize: 13 }}>marque uma alternativa</span>}
             </div>
           ) : (
             <>
-              <div className={`feedback ${correct ? 'ok' : 'no'}`}>
+              <div className={`feedback ${correct ? 'ok' : isSelfCheck ? 'review' : 'no'}`}>
                 <div className="head" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                  {correct ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
-                  {correct ? 'Você acertou' : `Errou — correta: ${answerDisplay}`}
+                  {isSelfCheck
+                    ? (correct ? <CheckCircle2 size={16} /> : <RotateCcw size={16} />)
+                    : (correct ? <CheckCircle2 size={16} /> : <XCircle size={16} />)}
+                  {isSelfCheck
+                    ? (correct ? 'Prática registrada' : 'Faixa marcada para repetir')
+                    : (correct ? 'Você acertou' : `Errou — correta: ${answerDisplay}`)}
                 </div>
                 {current.q.translationPt && <div className="tr">“{current.q.translationPt}”</div>}
                 <div>{current.q.explanationPt}</div>

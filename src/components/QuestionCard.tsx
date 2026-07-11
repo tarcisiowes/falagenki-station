@@ -13,10 +13,12 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
   const [checked, setChecked] = useState(false)
   const gradedFor = useRef<number | undefined>(undefined)
   const selected = rec?.selected
+  const isSelfCheck = q.assessment === 'self-check'
 
   const { order, displayNum, answerDisplay } = useShuffledChoices(q)
 
   function choose(n: number) {
+    if (checked) return
     setAnswer(q.id, { selected: n })
   }
 
@@ -37,7 +39,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
   const isCorrect = checked && selected === q.answer
 
   return (
-    <div className="card q" id={q.id}>
+    <div className="card q" id={q.id} tabIndex={-1}>
       <div className="qhead">
         <span className="qnum">{q.number}</span>
         <div style={{ flex: 1 }}>
@@ -52,7 +54,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
 
           {q.audio && (
             <div className="question-audio">
-              <AudioPlayer src={q.audio.src} title={q.audio.title} />
+              <AudioPlayer src={q.audio.src} title={q.audio.title} compact />
             </div>
           )}
 
@@ -78,10 +80,10 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
             {order.map((c, i) => {
               let cls = 'choice'
               if (selected === c.n) cls += ' selected'
-              if (checked && c.n === q.answer) cls += ' correct'
-              else if (checked && selected === c.n && c.n !== q.answer) cls += ' wrong'
+              if (!isSelfCheck && checked && c.n === q.answer) cls += ' correct'
+              else if (!isSelfCheck && checked && selected === c.n && c.n !== q.answer) cls += ' wrong'
               return (
-                <button key={c.n} className={cls} onClick={() => choose(c.n)} type="button">
+                <button key={c.n} className={cls} disabled={checked} onClick={() => choose(c.n)} type="button">
                   <span className="num">{i + 1}</span>
                   <JaText text={c.text} furigana={furigana} />
                 </button>
@@ -107,16 +109,22 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
               onClick={toggleCheck}
               disabled={selected === undefined && !checked}
             >
-              {checked ? 'Ocultar correção' : 'Verificar resposta'}
+              {checked
+                ? (isSelfCheck ? 'Ocultar orientação' : 'Ocultar correção')
+                : (isSelfCheck ? 'Registrar prática' : 'Verificar resposta')}
             </button>
             {selected !== undefined && <span className="saved-dot">● marcado: {displayNum.get(selected)}</span>}
           </div>
 
           {checked && (
-            <div className={`feedback ${isCorrect ? 'ok' : 'no'}`}>
+            <div className={`feedback ${isCorrect ? 'ok' : isSelfCheck ? 'review' : 'no'}`}>
               <div className="head" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
-                {isCorrect ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
-                {isCorrect ? 'Correto!' : `Resposta correta: ${answerDisplay}`}
+                {isSelfCheck
+                  ? (isCorrect ? <CheckCircle2 size={16} /> : <RotateCcw size={16} />)
+                  : (isCorrect ? <CheckCircle2 size={16} /> : <XCircle size={16} />)}
+                {isSelfCheck
+                  ? (isCorrect ? 'Prática registrada' : 'Faixa marcada para repetir')
+                  : (isCorrect ? 'Correto!' : `Resposta correta: ${answerDisplay}`)}
               </div>
               {q.translationPt && <div className="tr">“{q.translationPt}”</div>}
               <div>{q.explanationPt}</div>
@@ -126,7 +134,9 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
                 <RotateCcw size={13} />
                 {isCorrect
                   ? 'Enviado à revisão com o intervalo recomendado mínimo.'
-                  : 'Enviado à revisão de hoje (conteúdo a reforçar).'}
+                  : isSelfCheck
+                    ? 'Esta faixa volta hoje para uma nova tentativa.'
+                    : 'Enviado à revisão de hoje (conteúdo a reforçar).'}
               </div>
             </div>
           )}

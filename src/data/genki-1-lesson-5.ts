@@ -129,15 +129,64 @@ const listening = [
 ]
 
 const scripts: Record<string, ScriptItem[]> = {
-  K05_01: [{ label: '会話 I', lines: [{ speaker: 'R', ja: 'いい天気ですね。', pt: 'Tempo bom, não é?' }, { speaker: 'K', ja: 'そうですね。でも、ちょっと暑いですね。', pt: 'Sim. Mas está um pouco quente.' }, { speaker: 'R', ja: 'ええ。わあ、きれいな海！', pt: 'É. Uau, que mar bonito!' }, { speaker: 'K', ja: '泳ぎましょう。', pt: 'Vamos nadar.' }, { speaker: 'K', ja: 'ロバートさんは どんなスポーツが 好きですか。', pt: 'De que tipo de esporte você gosta, Robert?' }, { speaker: 'R', ja: 'サーフィンが 好きです。あした 一緒に やりましょうか。', pt: 'Gosto de surfe. Vamos praticar juntos amanhã?' }, { speaker: 'K', ja: 'でも、難しくないですか。', pt: 'Mas não é difícil?' }, { speaker: 'R', ja: '大丈夫ですよ。', pt: 'Não tem problema.' }] }],
-  K05_03: [{ label: '会話 II', lines: [{ speaker: 'R', ja: 'すみません。このTシャツは、いくらですか。', pt: 'Com licença. Quanto custa esta camiseta?' }, { speaker: '店員', ja: '千八百円です。', pt: 'Custa 1.800 ienes.' }, { speaker: 'R', ja: 'あのう、Lサイズが ありますか。', pt: 'Bem... tem tamanho L?' }, { speaker: '店員', ja: 'はい、ありますよ。', pt: 'Sim, temos.' }, { speaker: 'R', ja: 'じゃ、Lサイズを 二枚 ください。', pt: 'Então, duas do tamanho L, por favor.' }] }],
-  K05_05: [{ label: '会話 III', lines: [{ speaker: 'T', ja: 'ロバートさん、旅行は 楽しかったですか。', pt: 'Robert, a viagem foi divertida?' }, { speaker: 'R', ja: 'ええ。沖縄の海は すごく きれいでしたよ。', pt: 'Sim. O mar de Okinawa estava muito bonito.' }, { speaker: 'T', ja: 'よかったですね。ぼくも 海が 大好きです。ホテルは 高かったですか。', pt: 'Que bom. Eu também adoro o mar. O hotel era caro?' }, { speaker: 'R', ja: 'いいえ、あまり 高くなかったです。これ、おみやげです。', pt: 'Não, não era muito caro. Isto é uma lembrança.' }, { speaker: 'T', ja: 'ありがとう。', pt: 'Obrigado.' }, { speaker: 'R', ja: 'たけしさんのデートは どうでしたか。', pt: 'Como foi seu encontro, Takeshi?' }] }],
-  Y05_1: [{ label: 'たのしいりょこう', lines: [{ speaker: 'Moe', ja: '今、ウィーンにいます。ここは ちょっと さむいです。ウィーンは とても きれいな まちです。', pt: 'Agora estou em Viena. Aqui está um pouco frio. Viena é uma cidade muito bonita.' }, { speaker: 'Moe', ja: 'きのうは おしろを 見ました。ふるかったですが、とても きれいでした。たくさん しゃしんを とりました。', pt: 'Ontem vi um castelo. Era antigo, mas muito bonito. Tirei muitas fotos.' }, { speaker: 'Moe', ja: 'よるは クラシックの コンサートに 行きました。よかったです。', pt: 'À noite fui a um concerto de música clássica. Foi bom.' }, { speaker: 'Moe', ja: 'ウィーンには カフェが たくさん あります。まいにち カフェで コーヒーを 飲みます。ケーキも 食べます。すごく おいしいです。', pt: 'Há muitos cafés em Viena. Todos os dias bebo café num café e também como bolo. É muito gostoso.' }] }],
-  Y05_2: [{ label: 'ロバートのはがき', lines: [{ speaker: 'Robert', ja: 'おかあさん、お元気ですか。今、私は おきなわに います。ここは あついですが、いい天気です。', pt: 'Mãe, tudo bem? Agora estou em Okinawa. Aqui está quente, mas o tempo está bom.' }, { speaker: 'Robert', ja: 'きのうは 友だちと いっしょに 海で およぎました。今日は 日本人の 男の人と メキシコ人の 女の人と 山に 行きました。', pt: 'Ontem nadei no mar com amigos. Hoje fui à montanha com um homem japonês e uma mulher mexicana.' }, { speaker: 'Robert', ja: 'たいへんでしたが、とても きれいでした。まいにち たのしいです。おきなわの 食べ物も 大好きです。では、お元気で。', pt: 'Foi puxado, mas muito bonito. Divirto-me todos os dias. Também adoro a comida de Okinawa. Cuide-se.' }] }],
+  K05_01: [{ label: '{会話|かいわ} I', lines: [
+    { speaker: 'R', ja: 'いい{天気|てんき}ですね。', pt: 'Tempo bom, não é?' },
+    { speaker: 'K', ja: 'そうですね。でも、ちょっと{暑|あつ}いですね。', pt: 'Pois é. Mas está um pouco quente.' },
+    { speaker: 'R', ja: 'ええ。わあ、きれいな{海|うみ}！', pt: 'É. Uau, que mar bonito!' },
+    { speaker: 'K', ja: '{泳|およ}ぎましょう。', pt: 'Vamos nadar.' },
+    { speaker: 'K', ja: 'ロバートさんはどんなスポーツが{好|す}きですか。', pt: 'Robert, de que tipo de esporte você gosta?' },
+    { speaker: 'R', ja: 'サーフィンが{好|す}きです。', pt: 'Gosto de surfe.' },
+    { speaker: 'R', ja: 'あした{一緒|いっしょ}にやりましょうか。', pt: 'Vamos praticar juntos amanhã?' },
+    { speaker: 'K', ja: 'でも、{難|むずか}しくないですか。', pt: 'Mas não é difícil?' },
+    { speaker: 'R', ja: '{大丈夫|だいじょうぶ}ですよ。', pt: 'Não tem problema.' },
+  ] }],
+  K05_03: [{ label: '{会話|かいわ} II', lines: [
+    { speaker: 'R', ja: 'すみません。このTシャツは、いくらですか。', pt: 'Com licença. Quanto custa esta camiseta?' },
+    { speaker: '店員', ja: '{千八百円|せんはっぴゃくえん}です。', pt: 'Custa 1.800 ienes.' },
+    { speaker: 'R', ja: 'あのう、Lサイズがありますか。', pt: 'Bem... tem tamanho L?' },
+    { speaker: '店員', ja: 'はい、ありますよ。', pt: 'Sim, temos.' },
+    { speaker: 'R', ja: 'じゃ、Lサイズを{二枚|にまい}ください。', pt: 'Então, duas do tamanho L, por favor.' },
+  ] }],
+  K05_05: [{ label: '{会話|かいわ} III', lines: [
+    { speaker: 'T', ja: 'ロバートさん、{旅行|りょこう}は{楽|たの}しかったですか。', pt: 'Robert, a viagem foi divertida?' },
+    { speaker: 'R', ja: 'ええ。{沖縄|おきなわ}の{海|うみ}はすごくきれいでしたよ。', pt: 'Sim. O mar de Okinawa estava muito bonito.' },
+    { speaker: 'T', ja: 'よかったですね。ぼくも{海|うみ}が{大好|だいす}きです。ホテルは{高|たか}かったですか。', pt: 'Que bom. Eu também adoro o mar. O hotel era caro?' },
+    { speaker: 'R', ja: 'いいえ、あまり{高|たか}くなかったです。これ、おみやげです。', pt: 'Não, não era muito caro. Isto é uma lembrança.' },
+    { speaker: 'T', ja: 'ありがとう。', pt: 'Obrigado.' },
+    { speaker: 'R', ja: 'たけしさんのデートはどうでしたか。', pt: 'Como foi seu encontro, Takeshi?' },
+    { speaker: 'T', ja: '……', pt: '……' },
+  ] }],
+  Y05_1: [{ label: 'たのしいりょこう', lines: [
+    { speaker: 'Moe', ja: '{今|いま}、ウィーンにいます。', pt: 'Agora estou em Viena.' },
+    { speaker: 'Moe', ja: 'ここはちょっとさむいです。', pt: 'Aqui está um pouco frio.' },
+    { speaker: 'Moe', ja: 'ウィーンはとてもきれいなまちです。', pt: 'Viena é uma cidade muito bonita.' },
+    { speaker: 'Moe', ja: 'きのうはおしろを{見|み}ました。', pt: 'Ontem vi um castelo.' },
+    { speaker: 'Moe', ja: 'ふるかったですが、とてもきれいでした。', pt: 'Era antigo, mas muito bonito.' },
+    { speaker: 'Moe', ja: 'たくさんしゃしんをとりました。', pt: 'Tirei muitas fotos.' },
+    { speaker: 'Moe', ja: 'よるはクラシックのコンサートに{行|い}きました。', pt: 'À noite, fui a um concerto de música clássica.' },
+    { speaker: 'Moe', ja: 'よかったです。', pt: 'Foi bom.' },
+    { speaker: 'Moe', ja: 'ウィーンにはカフェがたくさんあります。', pt: 'Há muitos cafés em Viena.' },
+    { speaker: 'Moe', ja: 'まいにちカフェでコーヒーを{飲|の}みます。', pt: 'Todos os dias, bebo café em um café.' },
+    { speaker: 'Moe', ja: 'ケーキも{食|た}べます。', pt: 'Também como bolo.' },
+    { speaker: 'Moe', ja: 'すごくおいしいです。', pt: 'É muito gostoso.' },
+  ] }],
+  Y05_2: [{ label: 'ロバートのはがき', lines: [
+    { speaker: 'Robert', ja: 'おかあさん、お{元気|げんき}ですか。', pt: 'Mãe, tudo bem?' },
+    { speaker: 'Robert', ja: '{今|いま}、{私|わたし}はおきなわにいます。', pt: 'Agora estou em Okinawa.' },
+    { speaker: 'Robert', ja: 'ここはあついですが、いい{天気|てんき}です。', pt: 'Aqui está quente, mas o tempo está bom.' },
+    { speaker: 'Robert', ja: 'きのうはともだちといっしょにうみでおよぎました。', pt: 'Ontem nadei no mar com amigos.' },
+    { speaker: 'Robert', ja: '{今日|きょう}は{日本人|にほんじん}の{男|おとこ}の{人|ひと}とメキシコ{人|じん}の{女|おんな}の{人|ひと}と{山|やま}に{行|い}きました。', pt: 'Hoje fui à montanha com um homem japonês e uma mulher mexicana.' },
+    { speaker: 'Robert', ja: 'たいへんでしたが、とてもきれいでした。', pt: 'Foi puxado, mas muito bonito.' },
+    { speaker: 'Robert', ja: 'まいにちたのしいです。', pt: 'Divirto-me todos os dias.' },
+    { speaker: 'Robert', ja: 'おきなわの{食|た}べものもだいすきです。', pt: 'Também adoro a comida de Okinawa.' },
+    { speaker: 'Robert', ja: 'では、お{元気|げんき}で。', pt: 'Então, cuide-se.' },
+    { speaker: 'Robert', ja: '{九月九日|くがつここのか}', pt: '9 de setembro.' },
+    { speaker: 'Robert', ja: 'ロバート・スミス', pt: 'Robert Smith.' },
+  ] }],
 }
 
 const files = [...Array.from({ length: 16 }, (_, i) => `K05_${String(i + 1).padStart(2, '0')}`), 'Y05_1', 'Y05_2', 'W05_A', 'W05_B', 'W05_C']
-const audios: AudioTrack[] = files.map((file) => ({ id: `genki-1-l5-audio-${file.toLowerCase()}`, title: file === 'K05_01' ? 'Diálogo I — na praia' : file === 'K05_03' ? 'Diálogo II — camisetas' : file === 'K05_05' ? 'Diálogo III — depois da viagem' : file === 'Y05_1' ? 'Leitura — uma viagem divertida' : file === 'Y05_2' ? 'Leitura — cartão de Robert' : file.startsWith('W05') ? `Workbook — ${file.slice(-1)}` : `Textbook — ${file}`, descriptionPt: file.startsWith('Y05') ? 'Leitura integral da seção de leitura e escrita.' : file.startsWith('W05') ? 'Compreensão oral do workbook.' : 'Áudio do diálogo, vocabulário ou prática correspondente.', src: `${BASE}/${file}.mp3`, script: scripts[file] ?? [] }))
+const audios: AudioTrack[] = files.map((file) => ({ id: `genki-1-l5-audio-${file.toLowerCase()}`, title: file === 'K05_01' ? 'Diálogo I — na praia' : file === 'K05_03' ? 'Diálogo II — camisetas' : file === 'K05_05' ? 'Diálogo III — depois da viagem' : file === 'Y05_1' ? 'Leitura — uma viagem divertida' : file === 'Y05_2' ? 'Leitura — cartão de Robert' : file.startsWith('W05') ? `Workbook — ${file.slice(-1)}` : `Textbook — ${file}`, descriptionPt: file.startsWith('Y05') ? 'Leitura integral da seção de leitura e escrita.' : file.startsWith('W05') ? 'Compreensão oral do workbook.' : 'Áudio do diálogo, vocabulário ou prática correspondente.', src: `${BASE}/${file}.mp3`, script: scripts[file] ?? [], transcript: scripts[file] ? { kind: 'full', source: 'source-aligned', reviewed: true, items: scripts[file] } : undefined }))
 
 export const genki1Lesson5: Section = {
   id: 'lesson-5', level: 'genki-1', titleJa: '第5課　沖縄旅行', titlePt: 'Lição 5 — Uma viagem a Okinawa', summaryPt: 'Adjetivos no presente e passado, gostos, convites, contadores, kanji e leituras de viagem.', studyNotes,

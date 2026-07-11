@@ -11,10 +11,10 @@ export function About() {
         <div className="note">
           <h3>O que é</h3>
           <p>
-            Simulação de uma plataforma de ensino de japonês para falantes de português do Brasil,
-            organizada a partir dos materiais oficiais de exemplo do exame <strong>JLPT</strong>
-            (níveis N5 e N4). O conteúdo é dividido por área — vocabulário, gramática, leitura e
-            audição — seguindo a estrutura de cada parte do exame.
+            Plataforma pessoal de estudo de japonês para falantes de português do Brasil. Ela reúne
+            JLPT, Irodori e Genki em explicações, exercícios, leitura, áudio e revisão espaçada. Cada
+            curso preserva a organização do respectivo material-fonte e acrescenta apoio prático em
+            português para transformar conteúdo passivo em estudo revisável.
           </p>
         </div>
         <div className="note">
@@ -31,18 +31,21 @@ export function About() {
         <div className="note">
           <h3>Áudios e transcrição</h3>
           <p>
-            Os áudios da seção de audição vêm com um player próprio (velocidade, avançar/voltar e
-            repetição de trecho A–B). A transcrição usada é o <strong>roteiro oficial</strong> de
-            cada áudio, exibido com furigana (leitura dos kanji) e tradução em português — gratuito,
-            exato e funcionando offline.
+            Cada faixa informa o objetivo, uma sequência de estudo e os exercícios relacionados. O
+            player oferece velocidade, avanço/retrocesso e repetição A–B. Quando existe texto de
+            apoio, ele é identificado como transcrição completa, trecho ou resumo; furigana,
+            tradução e gabarito só aparecem quando há conteúdo real para esses controles. As
+            transcrições automáticas são marcadas como apoio não revisado e devem ser confirmadas
+            pelo áudio e pela atividade-fonte. As questões ligadas ao áudio entram na mesma revisão
+            FSRS dos demais exercícios.
           </p>
         </div>
         <div className="note">
           <h3>Aviso</h3>
           <p>
-            Os textos, questões e áudios são dos materiais de exemplo publicados pela Japan
-            Foundation / JEES para fins de divulgação do JLPT, usados aqui em contexto de estudo. As
-            explicações em português são autorais desta plataforma.
+            Os direitos dos textos e áudios de cada material pertencem aos respectivos autores e
+            editores. Eles são usados nesta ferramenta pessoal e não comercial de estudo. As
+            explicações e ajudas complementares em português são produzidas para esta plataforma.
           </p>
         </div>
       </div>

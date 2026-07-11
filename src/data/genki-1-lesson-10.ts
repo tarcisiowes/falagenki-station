@@ -16,6 +16,64 @@ const planChange=[q('p1',21,'“Pretendo jogar tênis.”',['テニスをする�
 const indefMeans=[q('i1',33,'どこ（　）行きましたか。 “algum lugar”',['も','かへ','へか','をか'],2,'Partícula へ antes de か.'),q('i2',34,'どこ（　）行きませんでした。 “lugar nenhum”',['にも','かに','もを','何も'],1,'どこにも + negativo.'),q('i3',35,'だれ（　）会いましたか。 “alguém”',['かに','にか','もに','がか'],1,'だれかに: か vem antes de に? Fonte mostra だれかに; logo か + に.'),q('i4',36,'だれ（　）会いませんでした。',['かに','にも','もに','をも'],2,'だれにも + negativo.'),q('m1',37,'バス（　）駅まで行きました。',['に','で','を','が'],2,'で marca transporte.'),q('m2',38,'はし（　）ご飯を食べます。',['を','で','に','が'],2,'Instrumento com で.'),q('m3',39,'日本語（　）話しましょう。',['を','で','に','へ'],2,'Idioma/meio com で.'),q('m4',40,'テレビ（　）映画を見ました。',['を','で','に','へ'],2,'Meio de exibição com で.')]
 const kanjiReading=[q('k1',41,'売る／買う',['dar/receber','vender/comprar','ir/voltar','fazer/carregar'],2,'売 = vender; 買 = comprar.'),q('k2',42,'雪／夜／朝',['chuva/tarde/manhã','neve/noite/manhã','inverno/noite/dia','branco/ano/noite'],2,'Kanji do conto.'),q('k3',43,'Por que o velho vai à cidade?',['comprar arroz','vender chapéus','visitar família','ver neve'],2,'Ele tenta vender chapéus.'),q('k4',44,'O que faz com os Jizo?',['vende-os','coloca chapéus neles','leva para casa','pinta'],2,'Protege as estátuas da neve.'),q('k5',45,'O que acontece à noite?',['a neve para','os Jizo levam comida','o casal viaja','o velho vende tudo'],2,'Recebem comida para o Ano-Novo.'),q('k6',46,'Mensagem central do conto:',['competição','generosidade recompensada','viagem','estudo'],2,'O gesto desinteressado é recompensado.')]
 const listening=[q('l1',47,'W10-A: Mary ficará em Hokkaido por:',['3 dias','1 semana','2 semanas','1 mês'],2,'一週間ぐらい.',{audio:au('W10_A','Workbook W10-A — Férias')}),q('l2',48,'W10-A: Robert ficará em London:',['22/12 a 23/1','1 semana','até 3/1','2 semanas'],1,'Datas informadas no áudio.',{audio:au('W10_A','Workbook W10-A — Férias')}),q('l3',49,'W10-A: Takeshi fará:',['viagem','trabalho','não viajará e estará livre','esqui'],3,'Sem dinheiro e sem trabalho.',{audio:au('W10_A','Workbook W10-A — Férias')}),q('l4',50,'W10-A: Sora ficará em Hokkaido:',['1 semana','2 semanas','1 mês','3 dias'],2,'二週間ぐらい.',{audio:au('W10_A','Workbook W10-A — Férias')}),q('l5',51,'W10-B: maior universidade:',['Hanaoka','Sakura','Tsushima'],1,'花岡大学がいちばん大きい.',{audio:au('W10_B','Workbook W10-B — Universidades')}),q('l6',52,'W10-B: mais barata:',['Hanaoka','Sakura','Tsushima'],2,'Sakura custa cerca de 700 mil.',{audio:au('W10_B','Workbook W10-B — Universidades')}),q('l7',53,'W10-B: mais próxima:',['Hanaoka','Sakura','Tsushima'],3,'Tsushima fica a 30 min de ônibus.',{audio:au('W10_B','Workbook W10-B — Universidades')}),q('l8',54,'W10-C: Yui voltou de Tokyo em:',['11/12','15/12','22/12','23/1'],2,'O diário diz 12月15日に帰った.',{audio:au('W10_C','Workbook W10-C — Diário de viagem')})]
-const scripts:Record<string,ScriptItem[]>={K10_01:[{label:'会話 I',lines:[{speaker:'M',ja:'北海道か九州に行くつもりですが、まだ決めていません。',pt:'Pretendo ir a Hokkaido ou Kyushu, mas ainda não decidi.'},{speaker:'M',ja:'北海道と九州とどっちのほうがいいと思いますか。',pt:'Qual acha melhor?'},{speaker:'T',ja:'冬は北海道のほうがおもしろいと思います。',pt:'Acho Hokkaido mais interessante no inverno.'},{speaker:'T',ja:'お金がないから、どこにも行きません。',pt:'Como não tenho dinheiro, não vou a lugar nenhum.'},{speaker:'M',ja:'じゃあ、おみやげを買ってきますよ。',pt:'Então trarei uma lembrança.'}]}],K10_03:[{label:'会話 II',lines:[{speaker:'M',ja:'ここから旭山動物園までどのぐらいかかりますか。',pt:'Quanto leva até o zoológico?'},{speaker:'ホテル',ja:'電車とバスで二時間半ぐらいです。',pt:'Cerca de duas horas e meia de trem e ônibus.'},{speaker:'ホテル',ja:'土曜日と日曜日はバスツアーがありますが。',pt:'Há excursões sábado e domingo.'},{speaker:'M',ja:'じゃあ、ツアーの予約をお願いします。土曜日のをお願いします。',pt:'Quero reservar o passeio de sábado.'}]}],Y10:[{label:'かさじぞう',lines:[{speaker:'語り手',ja:'おじいさんとおばあさんは、かさを作って町へ売りに行きました。',pt:'O casal fez chapéus e o velho foi vendê-los na cidade.'},{speaker:'語り手',ja:'かさは売れませんでした。帰る道で、おじいさんはじぞうにかさをかぶせました。',pt:'Não vendeu. Na volta, cobriu os Jizo com chapéus.'},{speaker:'語り手',ja:'その夜、じぞうはたくさん食べ物を持ってきました。',pt:'Naquela noite, os Jizo trouxeram muita comida.'}]}]}
-const fs=[...Array.from({length:15},(_,i)=>`K10_${String(i+1).padStart(2,'0')}`),'Y10','W10_A','W10_B','W10_C'],audios:AudioTrack[]=fs.map(f=>({id:`genki-1-l10-audio-${f.toLowerCase()}`,title:f==='K10_01'?'Diálogo I — férias de inverno':f==='K10_03'?'Diálogo II — reserva do passeio':f==='Y10'?'Leitura — Kasajizo':f.startsWith('W10')?`Workbook — ${f.slice(-1)}`:`Textbook — ${f}`,descriptionPt:f==='Y10'?'Leitura integral do conto.':f.startsWith('W10')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${B}/${f}.mp3`,script:scripts[f]??[]}))
+const scripts:Record<string,ScriptItem[]>={
+K10_01:[{label:'{会話|かいわ} I',lines:[
+{speaker:'Anúncio',ja:'{第十課|だいじゅっか}　{冬休|ふゆやす}みの{予定|よてい}　{会話|かいわ}{一|いち}',pt:'Lição 10: Planos para as férias de inverno. Diálogo I.'},
+{speaker:'M',ja:'{寒|さむ}くなりましたね。',pt:'Ficou frio, não é?'},
+{speaker:'T',ja:'ええ。メアリーさん、{冬休|ふゆやす}みはどうしますか。',pt:'Sim. Mary, o que você vai fazer nas férias de inverno?'},
+{speaker:'M',ja:'{北海道|ほっかいどう}か{九州|きゅうしゅう}に{行|い}くつもりですが、まだ{決|き}めていません。',pt:'Pretendo ir a Hokkaido ou Kyushu, mas ainda não decidi.'},
+{speaker:'T',ja:'いいですね。',pt:'Que bom.'},
+{speaker:'M',ja:'{北海道|ほっかいどう}と{九州|きゅうしゅう}とどっちのほうがいいと{思|おも}いますか。',pt:'Qual dos dois você acha melhor, Hokkaido ou Kyushu?'},
+{speaker:'T',ja:'{冬|ふゆ}は{北海道|ほっかいどう}のほうがおもしろいと{思|おも}います。ぼくの{友|とも}だちは{食|た}べ{物|もの}もおいしいと{言|い}っていましたよ。',pt:'Acho Hokkaido mais interessante no inverno. Meu amigo também disse que a comida de lá é gostosa.'},
+{speaker:'M',ja:'そうですか。ところで、たけしさんはどこかに{行|い}きますか。',pt:'Entendo. A propósito, Takeshi, você vai a algum lugar?'},
+{speaker:'T',ja:'お{金|かね}がないから、どこにも{行|い}きません。',pt:'Como não tenho dinheiro, não vou a lugar nenhum.'},
+{speaker:'M',ja:'そうですか。じゃあ、たけしさんにおみやげを{買|か}ってきますよ。',pt:'Entendo. Então vou trazer uma lembrança para você.'},
+{speaker:'T',ja:'わあ、ありがとう。',pt:'Uau, obrigado.'},
+]}],
+K10_03:[{label:'{会話|かいわ} II',lines:[
+{speaker:'Anúncio',ja:'{二|に}',pt:'Diálogo II.'},
+{speaker:'M',ja:'すみません。ここから{旭山動物園|あさひやまどうぶつえん}までどのぐらいかかりますか。',pt:'Com licença. Quanto tempo leva daqui até o Zoológico de Asahiyama?'},
+{speaker:'H',ja:'そうですね。{電車|でんしゃ}とバスで{二時間半|にじかんはん}ぐらいです。',pt:'Vejamos. Cerca de duas horas e meia de trem e ônibus.'},
+{speaker:'M',ja:'{時間|じかん}がかかりますね。',pt:'Leva bastante tempo, não é?'},
+{speaker:'H',ja:'{土曜日|どようび}と{日曜日|にちようび}はバスツアーがありますが……。',pt:'Há passeios de ônibus aos sábados e domingos...'},
+{speaker:'M',ja:'そうですか。いくらですか。',pt:'É mesmo? Quanto custa?'},
+{speaker:'H',ja:'{四千八百円|よんせんはっぴゃくえん}です。',pt:'São 4.800 ienes.'},
+{speaker:'M',ja:'いいですね。じゃあ、ツアーの{予約|よやく}をお{願|ねが}いします。',pt:'Ótimo. Então, gostaria de reservar o passeio.'},
+{speaker:'M',ja:'{土曜日|どようび}のをお{願|ねが}いします。',pt:'O de sábado, por favor.'},
+]}],
+Y10:[{label:'B — かさじぞう',lines:[
+{speaker:'Anúncio',ja:'{読み書き編|よみかきへん}　{第十課|だいじゅっか}　{二|に}　かさじぞう　B　かさじぞう',pt:'Parte de leitura e escrita, lição 10, seção II: Kasajizo. Seção B: Kasajizo.'},
+{speaker:'N',ja:'むかしむかし、{山|やま}の{中|なか}におじいさんとおばあさんが{住|す}んでいました。',pt:'Era uma vez um senhor e uma senhora que moravam nas montanhas.'},
+{speaker:'N',ja:'おじいさんとおばあさんはうちでかさを{作|つく}っていました。',pt:'O senhor e a senhora faziam chapéus de palha em casa.'},
+{speaker:'N',ja:'あしたはお{正月|しょうがつ}です。{新|あたら}しい{年|とし}がはじまります。',pt:'Amanhã é Ano-Novo. Um novo ano vai começar.'},
+{speaker:'N',ja:'でも、おじいさんとおばあさんはお{金|かね}がなかったから、お{正月|しょうがつ}のおもちもありませんでした。',pt:'Mas, como eles não tinham dinheiro, também não tinham bolinhos de arroz para o Ano-Novo.'},
+{speaker:'N',ja:'{二人|ふたり}はかさを{売|う}って、おもちを{買|か}うつもりでした。',pt:'Os dois pretendiam vender os chapéus e comprar bolinhos de arroz.'},
+{speaker:'N',ja:'おじいさんはかさを{持|も}って、{町|まち}に{売|う}りに{行|い}きました。',pt:'O senhor levou os chapéus à cidade para vendê-los.'},
+{speaker:'N',ja:'でも、だれもかさを{買|か}いませんでした。おじいさんはかなしくなりました。',pt:'Mas ninguém comprou os chapéus. O senhor ficou triste.'},
+{speaker:'N',ja:'おじいさんは{長|なが}い{山道|やまみち}を{歩|ある}いて{帰|かえ}りました。{雪|ゆき}がたくさんふっていました。',pt:'O senhor voltou a pé pelo longo caminho da montanha. Nevava muito.'},
+{speaker:'N',ja:'「あっ！　おじぞうさんだ！」',pt:'“Ah! São estátuas de Jizo!”'},
+{speaker:'N',ja:'{雪|ゆき}の{中|なか}におじぞうさんが{六|むっ}つ{立|た}っていました。',pt:'Havia seis estátuas de Jizo de pé na neve.'},
+{speaker:'N',ja:'おじいさんは「おじぞうさん、さむくないですか。」と{聞|き}きました。',pt:'O senhor perguntou: “Senhores Jizo, vocês não estão com frio?”'},
+{speaker:'N',ja:'おじぞうさんは{何|なに}も{言|い}いませんでした。',pt:'Os Jizo não disseram nada.'},
+{speaker:'N',ja:'「どうぞかさを{使|つか}ってください。」',pt:'“Por favor, usem estes chapéus.”'},
+{speaker:'N',ja:'おじいさんはおじぞうさんのあたまの{上|うえ}にかさをかぶせました。',pt:'O senhor colocou um chapéu na cabeça de cada Jizo.'},
+{speaker:'N',ja:'「{一|ひと}つ、{二|ふた}つ、{三|みっ}つ、{四|よっ}つ、{五|いつ}つ。」',pt:'“Um, dois, três, quatro, cinco.”'},
+{speaker:'N',ja:'かさは{五|いつ}つでした。{一人|ひとり}のおじぞうさんはかさがありませんでした。',pt:'Havia cinco chapéus. Um dos Jizo ficou sem chapéu.'},
+{speaker:'N',ja:'おじいさんは{自分|じぶん}のかさをとりました。',pt:'O senhor tirou o próprio chapéu.'},
+{speaker:'N',ja:'「このかさは{古|ふる}いですが、どうぞ。」と{言|い}って、おじぞうさんにかぶせました。',pt:'Ele disse: “Este chapéu é velho, mas fique com ele”, e o colocou no Jizo.'},
+{speaker:'N',ja:'うちに{帰|かえ}って、おじいさんはおばあさんにおじぞうさんの{話|はなし}をしました。',pt:'Ao voltar para casa, o senhor contou à senhora sobre os Jizo.'},
+{speaker:'N',ja:'おばあさんは「おじいさん、いいことをしましたね。」と{言|い}いました。',pt:'A senhora disse: “Você fez uma boa ação.”'},
+{speaker:'N',ja:'その{夜|よる}おそく、おじいさんはだれかの{声|こえ}を{聞|き}きました。',pt:'Mais tarde naquela noite, o senhor ouviu a voz de alguém.'},
+{speaker:'N',ja:'「おじいさん、おじいさん。」',pt:'“Senhor, senhor.”'},
+{speaker:'N',ja:'おじいさんは{戸|と}を{開|あ}けて、びっくりしました。',pt:'O senhor abriu a porta e ficou surpreso.'},
+{speaker:'N',ja:'{六人|ろくにん}のおじぞうさんが{立|た}っていました。',pt:'Os seis Jizo estavam ali.'},
+{speaker:'N',ja:'おじぞうさんはお{正月|しょうがつ}のおもちをたくさん{持|も}っていました。',pt:'Os Jizo tinham trazido muitos bolinhos de arroz para o Ano-Novo.'},
+{speaker:'N',ja:'お{正月|しょうがつ}の{朝|あさ}になりました。',pt:'Chegou a manhã de Ano-Novo.'},
+{speaker:'N',ja:'おじいさんとおばあさんはおもちをたくさん{食|た}べました。{二人|ふたり}はとてもしあわせでした。',pt:'O senhor e a senhora comeram muitos bolinhos de arroz. Os dois ficaram muito felizes.'},
+]}],
+}
+const fs=[...Array.from({length:15},(_,i)=>`K10_${String(i+1).padStart(2,'0')}`),'Y10','W10_A','W10_B','W10_C'],audios:AudioTrack[]=fs.map(f=>{
+const script=scripts[f]??[]
+return {id:`genki-1-l10-audio-${f.toLowerCase()}`,title:f==='K10_01'?'Diálogo I — férias de inverno':f==='K10_03'?'Diálogo II — reserva do passeio':f==='Y10'?'Leitura — Kasajizo':f.startsWith('W10')?`Workbook — ${f.slice(-1)}`:`Textbook — ${f}`,descriptionPt:f==='Y10'?'Leitura integral do conto.':f.startsWith('W10')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${B}/${f}.mp3`,script,transcript:script.length?{kind:'full' as const,source:'source-aligned' as const,reviewed:true,items:script}:undefined}
+})
 export const genki1Lesson10:Section={id:'lesson-10',level:'genki-1',titleJa:'第10課　冬休みの予定',titlePt:'Lição 10 — Planos para as férias de inverno',summaryPt:'Comparações, superlativos, substituição com の, intenções, mudanças, indefinidos, meios, kanji, conto e escuta.',studyNotes,groups:[g('dialogue','会話','compreensão dos diálogos',dialogue),g('comparison','文法 1〜3','comparações e substituição com の',comparison),g('plan-change','文法 4・5','planos e mudanças',planChange),g('indef-means','文法 6・7','indefinidos e meios',indefMeans),g('kanji-reading','読み書き','kanji e leitura',kanjiReading),g('listening','聞く練習','compreensão oral do workbook',listening)],audios}

@@ -29,7 +29,59 @@ const listening=[
  q('l1',59,'W07-A: o que Robert e Sora faziam?',['ouviam música','faziam dever','tomavam banho','dormiam'],2,'部屋で宿題をしていました。',{audio:qa('W07_A','Workbook W07-A — Depoimento')}),q('l2',60,'W07-A: Takeshi e Ken estavam:',['ouvindo música','estudando','comendo','trabalhando'],1,'たけしさんの部屋で音楽を聴いていました。',{audio:qa('W07_A','Workbook W07-A — Depoimento')}),q('l3',61,'W07-A: Yui estava:',['dormindo','tomando banho','lendo','cozinhando'],2,'シャワーを浴びていました。',{audio:qa('W07_A','Workbook W07-A — Depoimento')}),q('l4',62,'W07-A: quem não foi localizado?',['Sora','Tom','Ken','Yui'],2,'Robert não sabe onde Tom está.',{audio:qa('W07_A','Workbook W07-A — Depoimento')}),
  q('l5',63,'W07-B: Uno Daiki usa:',['vestido e chapéu','T-shirt e jeans','óculos e terno','saia e botas'],2,'Tシャツを着てジーンズをはいています。',{audio:qa('W07_B','Workbook W07-B — Festa')}),q('l6',64,'W07-B: Uno Daiki é:',['baixo e fofo','alto e bonito','gordo e quieto','magro e velho'],2,'背が高くてかっこいいです。',{audio:qa('W07_B','Workbook W07-B — Festa')}),q('l7',65,'W07-B: Noguchi Erika usa:',['jeans e óculos','vestido e chapéu','T-shirt','terno'],2,'きれいなドレス e ぼうし.',{audio:qa('W07_B','Workbook W07-B — Festa')}),q('l8',66,'W07-B: Matsumoto Kana está de:',['chapéu','óculos','jeans','cachecol'],2,'今日はめがねをかけています。',{audio:qa('W07_B','Workbook W07-B — Festa')}),q('l9',67,'W07-B: o cabelo de Kana é:',['curto','longo','loiro','não mencionado'],2,'髪が長い.',{audio:qa('W07_B','Workbook W07-B — Festa')}),q('l10',68,'W07-B: o novo namorado de Kana é:',['alto e magro','cabelo curto e um pouco gordo','cabelo longo e fofo','usa chapéu'],2,'髪が短くてちょっと太っています。',{audio:qa('W07_B','Workbook W07-B — Festa')}),
  q('l11',69,'W07-C: Tanaka veio comprar:',['flores','cartões','um jogo','roupas'],3,'Compra um jogo de presente.',{audio:qa('W07_C','Workbook W07-C — Entrevistas')}),q('l12',70,'W07-C: o presente é para:',['irmão','aniversário de amigo','namorada','mãe'],2,'友だちの誕生日のプレゼント.',{audio:qa('W07_C','Workbook W07-C — Entrevistas')}),q('l13',71,'W07-C: Sato veio:',['trabalhar','divertir-se e cantar no karaokê','comprar flores','ver irmã'],2,'遊びに来て、カラオケで歌います。',{audio:qa('W07_C','Workbook W07-C — Entrevistas')}),q('l14',72,'W07-C: Suzuki veio ver:',['irmã mais nova','irmão mais velho','amiga','professora'],1,'妹に会いに来ました。',{audio:qa('W07_C','Workbook W07-C — Entrevistas')}),q('l15',73,'W07-C: onde a irmã trabalha?',['hospital','loja de departamentos','escola','restaurante'],2,'このデパートで働いています。',{audio:qa('W07_C','Workbook W07-C — Entrevistas')})]
-const scripts:Record<string,ScriptItem[]>={K07_01:[{label:'会話 I',lines:[{speaker:'Y',ja:'これはソラさんの家族の写真ですか。',pt:'Esta é uma foto da sua família, Sora?'},{speaker:'S',ja:'ええ。',pt:'Sim.'},{speaker:'Y',ja:'ソラさんはどれですか。',pt:'Qual é você?'},{speaker:'S',ja:'これです。高校の時はめがねをかけていました。',pt:'Esta. No ensino médio eu usava óculos.'},{speaker:'S',ja:'これは父です。ニューヨークの会社で働いています。',pt:'Este é meu pai. Trabalha numa empresa em New York.'},{speaker:'Y',ja:'背が高くて、かっこいいですね。',pt:'Ele é alto e bonito.'},{speaker:'S',ja:'姉は結婚しています。今ソウルに住んでいます。子供が一人います。三歳です。',pt:'Minha irmã é casada, mora em Seul e tem um filho de três anos.'},{speaker:'Y',ja:'あっ、猫がいますね。ちょっと太っていますね。',pt:'Ah, há um gato. Está um pouco gordo.'},{speaker:'S',ja:'ええ、よく食べますから。',pt:'Sim, porque come muito.'}]}],K07_03:[{label:'会話 II',lines:[{speaker:'R',ja:'もしもし、ゆいさん、今何をしていますか。',pt:'Alô, Yui, o que está fazendo agora?'},{speaker:'Y',ja:'別に何もしていません。今、ソラさんの写真を見ています。',pt:'Nada em especial. Estou vendo as fotos de Sora.'},{speaker:'R',ja:'きのうおいしいコーヒーを買いました。よかったら飲みに来ませんか。',pt:'Comprei um café gostoso ontem. Quer vir tomar?'},{speaker:'Y',ja:'いいですね。ソラさんも一緒に行ってもいいですか。',pt:'Boa ideia. Sora pode ir junto?'},{speaker:'R',ja:'もちろん。',pt:'Claro.'},{speaker:'Y',ja:'じゃあ、すぐ行きます。',pt:'Então vamos agora.'}]}],Y07:[{label:'メアリーさんのてがみ',lines:[{speaker:'Mary',ja:'今、私は日本のかぞくと大学のちかくにすんでいます。ここは小さくて、しずかなまちです。私のかぞくは四人です。',pt:'Moro com uma família japonesa perto da universidade. É uma cidade pequena e tranquila. Minha família tem quatro pessoas.'},{speaker:'Mary',ja:'お父さんはコンピューターの会社ではたらいています。お母さんはとてもおもしろい人です。いもうとは高校生です。',pt:'O pai trabalha numa empresa de computadores. A mãe é muito interessante. A irmã mais nova está no ensino médio.'},{speaker:'Mary',ja:'おにいさんは東京の大学に行っていますから、あまり会いません。私は今、日本語と日本文学のクラスをとっています。テニスサークルにも入っています。',pt:'Como o irmão mais velho estuda numa universidade em Tokyo, quase não o vejo. Faço aulas de japonês e literatura japonesa e participo de um círculo de tênis.'},{speaker:'Mary',ja:'西川先生はいつ日本に帰りますか。日本で会いましょう。たのしみにしています。からだに気をつけてください。',pt:'Quando voltará ao Japão? Vamos nos encontrar. Estou ansiosa. Cuide-se.'}]}]}
+const scripts: Record<string, ScriptItem[]> = {
+  K07_01: [{ label: '{会話|かいわ} I', lines: [
+    { speaker: 'Y', ja: 'これはソラさんの{家族|かぞく}の{写真|しゃしん}ですか。', pt: 'Esta é uma foto da sua família, Sora?' },
+    { speaker: 'S', ja: 'ええ。', pt: 'Sim.' },
+    { speaker: 'Y', ja: 'ソラさんはどれですか。', pt: 'Qual delas é você?' },
+    { speaker: 'S', ja: 'これです。{高校|こうこう}の{時|とき}はめがねをかけていました。', pt: 'Esta. No ensino médio, eu usava óculos.' },
+    { speaker: 'Y', ja: 'かわいいですね。', pt: 'Que fofa!' },
+    { speaker: 'S', ja: 'これは{父|ちち}です。ニューヨークの{会社|かいしゃ}で{働|はたら}いています。', pt: 'Este é meu pai. Ele trabalha em uma empresa em Nova York.' },
+    { speaker: 'Y', ja: '{背|せ}が{高|たか}くて、かっこいいですね。これはお{姉|ねえ}さんですか。', pt: 'Ele é alto e bonito. Esta é sua irmã mais velha?' },
+    { speaker: 'S', ja: 'ええ。{姉|あね}は{結婚|けっこん}しています。{今|いま}ソウルに{住|す}んでいます。', pt: 'Sim. Minha irmã é casada. Agora mora em Seul.' },
+    { speaker: 'S', ja: '{子供|こども}が{一人|ひとり}います。{三歳|さんさい}です。', pt: 'Ela tem um filho. Ele tem três anos.' },
+    { speaker: 'Y', ja: 'そうですか。あっ、{猫|ねこ}がいますね。', pt: 'Entendo. Ah, vocês têm um gato.' },
+    { speaker: 'Y', ja: 'ちょっと{太|ふと}っていますね。', pt: 'Ele está um pouco gordo.' },
+    { speaker: 'S', ja: 'ええ、よく{食|た}べますから。', pt: 'Sim, porque come bastante.' },
+  ] }],
+  K07_03: [{ label: '{会話|かいわ} II', lines: [
+    { speaker: 'R', ja: 'もしもし、ゆいさん、{今|いま}{何|なに}をしていますか。', pt: 'Alô, Yui, o que está fazendo agora?' },
+    { speaker: 'Y', ja: '{別|べつ}に{何|なに}もしていません。{今|いま}、ソラさんの{写真|しゃしん}を{見|み}ています。', pt: 'Nada em especial. Agora estou vendo as fotos de Sora.' },
+    { speaker: 'R', ja: 'そうですか。きのうおいしいコーヒーを{買|か}いました。', pt: 'Entendo. Ontem comprei um café gostoso.' },
+    { speaker: 'R', ja: 'よかったら{飲|の}みに{来|き}ませんか。', pt: 'Se quiser, quer vir tomar?' },
+    { speaker: 'Y', ja: 'いいですね。ソラさんも{一緒|いっしょ}に{行|い}ってもいいですか。', pt: 'Boa ideia. Sora pode ir junto?' },
+    { speaker: 'R', ja: 'もちろん。', pt: 'Claro.' },
+    { speaker: 'Y', ja: 'じゃあ、すぐ{行|い}きます。', pt: 'Então, vou já.' },
+  ] }],
+  Y07: [{ label: 'メアリーさんのてがみ', lines: [
+    { speaker: 'Mary', ja: '{西川|にしかわ}{京子|きょうこ}{先生|せんせい}へ', pt: 'À professora Kyoko Nishikawa.' },
+    { speaker: 'Mary', ja: '{西川|にしかわ}{先生|せんせい}、お{元気|げんき}ですか。', pt: 'Professora Nishikawa, tudo bem?' },
+    { speaker: 'Mary', ja: 'アリゾナはあついですか。', pt: 'Está quente no Arizona?' },
+    { speaker: 'Mary', ja: '{日本|にほん}はすこしさむいです。', pt: 'No Japão está um pouco frio.' },
+    { speaker: 'Mary', ja: '{今|いま}、{私|わたし}は{日本|にほん}のかぞくと{大学|だいがく}のちかくにすんでいます。', pt: 'Agora moro com uma família japonesa perto da universidade.' },
+    { speaker: 'Mary', ja: 'ここは{小|ちい}さくて、しずかなまちです。', pt: 'Aqui é uma cidade pequena e tranquila.' },
+    { speaker: 'Mary', ja: '{私|わたし}のかぞくは{四人|よにん}です。', pt: 'Minha família tem quatro pessoas.' },
+    { speaker: 'Mary', ja: 'みんなとてもしんせつで、たのしいです。', pt: 'Todos são muito gentis e divertidos.' },
+    { speaker: 'Mary', ja: 'お{父|とう}さんはコンピューターの{会社|かいしゃ}ではたらいています。', pt: 'O pai trabalha em uma empresa de computadores.' },
+    { speaker: 'Mary', ja: 'いそがしくて、{毎日|まいにち}おそく{帰|かえ}ります。', pt: 'Ele é ocupado e volta tarde todos os dias.' },
+    { speaker: 'Mary', ja: 'お{母|かあ}さんはとてもおもしろい{人|ひと}です。', pt: 'A mãe é uma pessoa muito interessante.' },
+    { speaker: 'Mary', ja: 'いっしょによくはなします。', pt: 'Conversamos muito juntas.' },
+    { speaker: 'Mary', ja: 'いもうとは{高校生|こうこうせい}です。', pt: 'A irmã mais nova está no ensino médio.' },
+    { speaker: 'Mary', ja: 'らいねん{大学|だいがく}ですから、よくべんきょうします。', pt: 'Como irá para a universidade no ano que vem, ela estuda bastante.' },
+    { speaker: 'Mary', ja: '{毎日|まいにち}{学校|がっこう}から{帰|かえ}って、すぐじゅくへ{行|い}きます。', pt: 'Todos os dias, volta da escola e vai imediatamente ao cursinho.' },
+    { speaker: 'Mary', ja: '{日本|にほん}の{高校生|こうこうせい}はたいへんですね。', pt: 'Os estudantes do ensino médio no Japão têm uma vida puxada, não é?' },
+    { speaker: 'Mary', ja: 'おにいさんは{東京|とうきょう}の{大学|だいがく}に{行|い}っていますから、あまり{会|あ}いません。', pt: 'Como o irmão mais velho estuda em uma universidade em Tóquio, quase não o vejo.' },
+    { speaker: 'Mary', ja: '{私|わたし}は{今|いま}、{日本語|にほんご}と{日本文学|にほんぶんがく}のクラスをとっています。', pt: 'Agora estou fazendo aulas de japonês e literatura japonesa.' },
+    { speaker: 'Mary', ja: 'テニスサークルにも{入|はい}っています。', pt: 'Também participo de um círculo de tênis.' },
+    { speaker: 'Mary', ja: 'とてもおもしろいです。', pt: 'É muito interessante.' },
+    { speaker: 'Mary', ja: '{西川|にしかわ}{先生|せんせい}はいつ{日本|にほん}に{帰|かえ}りますか。', pt: 'Professora Nishikawa, quando voltará ao Japão?' },
+    { speaker: 'Mary', ja: '{日本|にほん}で{会|あ}いましょう。', pt: 'Vamos nos encontrar no Japão.' },
+    { speaker: 'Mary', ja: 'たのしみにしています。', pt: 'Estou ansiosa por isso.' },
+    { speaker: 'Mary', ja: 'からだに{気|き}をつけてください。', pt: 'Cuide-se.' },
+    { speaker: 'Mary', ja: '{十一月三日|じゅういちがつみっか}', pt: '3 de novembro.' },
+    { speaker: 'Mary', ja: 'メアリー・ハート', pt: 'Mary Hart.' },
+  ] }],
+}
 const files=[...Array.from({length:14},(_,i)=>`K07_${String(i+1).padStart(2,'0')}`),'Y07','W07_A','W07_B','W07_C']
-const audios:AudioTrack[]=files.map(file=>({id:`genki-1-l7-audio-${file.toLowerCase()}`,title:file==='K07_01'?'Diálogo I — foto da família':file==='K07_03'?'Diálogo II — convite para café':file==='Y07'?'Leitura — carta de Mary':file.startsWith('W07')?`Workbook — ${file.slice(-1)}`:`Textbook — ${file}`,descriptionPt:file==='Y07'?'Leitura integral da carta.':file.startsWith('W07')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${BASE}/${file}.mp3`,script:scripts[file]??[]}))
+const audios:AudioTrack[]=files.map(file=>({id:`genki-1-l7-audio-${file.toLowerCase()}`,title:file==='K07_01'?'Diálogo I — foto da família':file==='K07_03'?'Diálogo II — convite para café':file==='Y07'?'Leitura — carta de Mary':file.startsWith('W07')?`Workbook — ${file.slice(-1)}`:`Textbook — ${file}`,descriptionPt:file==='Y07'?'Leitura integral da carta.':file.startsWith('W07')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${BASE}/${file}.mp3`,script:scripts[file]??[],transcript:scripts[file]?{kind:'full',source:'source-aligned',reviewed:true,items:scripts[file]}:undefined}))
 export const genki1Lesson7:Section={id:'lesson-7',level:'genki-1',titleJa:'第7課　家族の写真',titlePt:'Lição 7 — Foto de família',summaryPt:'〜ている, aparência, ligação de descrições, finalidade de movimento, pessoas, família, kanji, carta e compreensão oral.',studyNotes,groups:[group('dialogue','会話','compreensão dos diálogos',dialogue),group('te-iru','文法 1・2','ações e estados com 〜ている',teIru),group('description-join','文法 3・4','aparência e ligação de descrições',descriptionJoin),group('purpose-people','文法 5・6','finalidade e contagem de pessoas',purposePeople),group('kanji-reading','読み書き','kanji e leitura',kanjiReading),group('listening','聞く練習','compreensão oral do workbook',listening)],audios}

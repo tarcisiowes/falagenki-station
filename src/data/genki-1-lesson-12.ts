@@ -18,6 +18,55 @@ q('o1',31,'食べない → obrigação formal',['食べなければいけませ
 q('dsh1',35,'あした雨が降る（　）か。',['んです','でしょう','すぎる','ので'],2,'でしょうか pergunta tentativamente.'),q('dsh2',36,'トマトは野菜（　）か。',['だでしょう','でしょう','なんでしょうだ','のでしょうだ'],2,'Sem だ diante de でしょう.'),q('dsh3',37,'たぶんあしたは寒くない（　）。',['んでした','でしょう','すぎる','ほう'],2,'Conjectura negativa.'),q('dsh4',38,'でしょう sem か pode expressar:',['ordem','probabilidade/conjectura','obrigação','desejo'],2,'Significa provavelmente.')]
 const kanjiReading=[q('k1',39,'昔々',['amanhã','era uma vez','todo dia','à noite'],2,'Abertura de conto.'),q('k2',40,'早く起きる',['dormir cedo','acordar cedo','trabalhar','usar'],2,'早 + 起.'),q('k3',41,'働く／連れて帰る',['trabalhar/levar alguém de volta','usar/separar','levantar/encontrar','comprar/vender'],1,'Vocabulário narrativo.'),q('k4',42,'赤／青／色',['branco/preto/papel','vermelho/azul/cor','céu/neve/noite','deus/vaca/trabalho'],2,'Cores dos papéis.'),q('rr1',43,'Quem é Orihime?',['filha do deus e tecelã','médica','estudante','viajante'],1,'娘で、毎日織っていました.'),q('rr2',44,'Por que o casal foi separado?',['brigou','parou de trabalhar','viajou','ficou doente'],2,'Depois do casamento, não trabalhavam.'),q('rr3',45,'Quando podem se encontrar?',['todo mês','7 de julho, uma vez por ano','Ano-Novo','toda noite'],2,'七月七日の夜に一年に一度.'),q('rr4',46,'O que as pessoas fazem no Tanabata?',['vendem chapéus','escrevem desejos em papéis coloridos','comem sushi','vão ao hospital'],2,'Escrevem desejos em tiras coloridas.')]
 const listening=[q('l1',47,'W12-A paciente 1: sintomas',['garganta, tosse e febre','estômago apenas','cabeça e estômago','nenhum'],1,'のどが痛い, 咳, 熱.',{audio:au('W12_A','Workbook W12-A — Clínica')}),q('l2',48,'Conselho ao paciente 1:',['trabalhar','descansar em casa','comer mais','hospital grande'],2,'家でゆっくり休む.',{audio:au('W12_A','Workbook W12-A — Clínica')}),q('l3',49,'Paciente 2 tem:',['dor de estômago sem febre','tosse','dor de cabeça e febre','garganta'],1,'お腹が痛い, 熱はない.',{audio:au('W12_A','Workbook W12-A — Clínica')}),q('l4',50,'Causa do paciente 2:',['gripe','comeu demais','frio','não dormiu'],2,'食べすぎた.',{audio:au('W12_A','Workbook W12-A — Clínica')}),q('l5',51,'Paciente 3 tem:',['cabeça, estômago e febre','tosse apenas','garganta','nada'],1,'頭、お腹、熱.',{audio:au('W12_A','Workbook W12-A — Clínica')}),q('l6',52,'Conselho ao paciente 3:',['casa','hospital maior','exercício','comer'],2,'大きい病院に行ったほうがいい.',{audio:au('W12_A','Workbook W12-A — Clínica')}),q('l7',53,'W12-B: por que o homem não sai para beber?',['prova','aniversário do filho','doença','trabalho'],2,'子供の誕生日なので.',{audio:au('W12_B','Workbook W12-B — Aniversário')}),q('l8',54,'Ele já comprou presente?',['sim','não','não é dito','comprou ontem'],2,'いいえ、忙しかったから.',{audio:au('W12_B','Workbook W12-B — Aniversário')}),q('l9',55,'W12-C: colega de quarto será japonês?',['sim confirmado','ainda não sabe','não','americano'],2,'まだわかりません.',{audio:au('W12_C','Workbook W12-C — Intercâmbio')}),q('l10',56,'Distância até universidade:',['5 min','30 min a pé','1 hora','30 min de trem'],2,'歩いて三十分ぐらい.',{audio:au('W12_C','Workbook W12-C — Intercâmbio')}),q('l11',57,'Há banho no quarto?',['sim','não, mas há chuveiro','não há nada','banho público'],2,'お風呂はないがシャワーがある.',{audio:au('W12_C','Workbook W12-C — Intercâmbio')}),q('l12',58,'Pode usar o chuveiro tarde?',['não','sim','só domingo','não é dito'],2,'大丈夫ですよ.',{audio:au('W12_C','Workbook W12-C — Intercâmbio')})]
-const scripts:Record<string,ScriptItem[]>={K12_01:[{label:'会話 I',lines:[{speaker:'Y',ja:'メアリーさん、元気がありませんね。',pt:'Mary, você não parece bem.'},{speaker:'M',ja:'ちょっとおなかが痛いんです。',pt:'Estou com um pouco de dor de estômago.'},{speaker:'Y',ja:'どうしたんですか。',pt:'O que aconteceu?'},{speaker:'M',ja:'きのう友だちと晩ご飯を食べに行ったんです。たぶん食べすぎたんです。',pt:'Saí para jantar ontem. Provavelmente comi demais.'},{speaker:'Y',ja:'病院に行ったほうがいいですよ。',pt:'É melhor ir ao hospital.'}]}],K12_03:[{label:'会話 II',lines:[{speaker:'M',ja:'おなかが痛くて熱もあるんです。インフルエンザでしょうか。',pt:'Tenho dor de estômago e febre. Será gripe?'},{speaker:'医者',ja:'インフルエンザじゃないですね。かぜです。',pt:'Não é gripe. É resfriado.'},{speaker:'M',ja:'もうすぐテニスの試合があるので、練習しなきゃいけないんですが。',pt:'Tenho partida em breve, então preciso treinar.'},{speaker:'医者',ja:'二三日、運動しないほうがいいでしょう。',pt:'É melhor não se exercitar por dois ou três dias.'},{speaker:'医者',ja:'今日は薬を飲んで、早く寝てください。',pt:'Hoje tome remédio e durma cedo.'}]}],Y12:[{label:'七夕',lines:[{speaker:'語り手',ja:'昔々、天に神さまが住んでいました。娘の名前はおりひめでした。',pt:'Era uma vez um deus no céu. Sua filha chamava-se Orihime.'},{speaker:'語り手',ja:'おりひめとひこぼしは結婚しました。二人は仕事をしないので、神さまは怒りました。',pt:'Eles se casaram e pararam de trabalhar; o deus ficou bravo.'},{speaker:'語り手',ja:'神さまは二人を天の川の向こうとこちらに別れさせました。',pt:'O deus os separou nos lados da Via Láctea.'},{speaker:'語り手',ja:'一年に一度、七月七日の夜に会います。七夕の日、私たちは色々な色の紙に願いを書きます。',pt:'Eles se encontram uma vez por ano, em 7 de julho. No Tanabata escrevemos desejos em papéis coloridos.'}]}]}
-const fs=[...Array.from({length:14},(_,i)=>`K12_${String(i+1).padStart(2,'0')}`),'Y12','W12_A','W12_B','W12_C'],audios:AudioTrack[]=fs.map(f=>({id:`genki-1-l12-audio-${f.toLowerCase()}`,title:f==='K12_01'?'Diálogo I — Mary passa mal':f==='K12_03'?'Diálogo II — no hospital':f==='Y12'?'Leitura — Tanabata':f.startsWith('W12')?`Workbook — ${f.slice(-1)}`:`Textbook — ${f}`,descriptionPt:f==='Y12'?'Leitura integral do conto.':f.startsWith('W12')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${B}/${f}.mp3`,script:scripts[f]??[]}))
+const scripts:Record<string,ScriptItem[]>={
+K12_01:[{label:'{会話|かいわ} I',lines:[
+{speaker:'Anúncio',ja:'{第十二課|だいじゅうにか}　{病気|びょうき}　{会話|かいわ}{一|いち}',pt:'Lição 12: Doença. Diálogo I.'},
+{speaker:'Y',ja:'メアリーさん、{元気|げんき}がありませんね。',pt:'Mary, você não parece bem.'},
+{speaker:'M',ja:'うーん。ちょっとおなかが{痛|いた}いんです。',pt:'Hum... Estou com um pouco de dor de estômago.'},
+{speaker:'Y',ja:'どうしたんですか。',pt:'O que aconteceu?'},
+{speaker:'M',ja:'きのう{友|とも}だちと{晩|ばん}ご{飯|はん}を{食|た}べに{行|い}ったんです。',pt:'Ontem saí para jantar com um amigo.'},
+{speaker:'M',ja:'たぶん{食|た}べすぎたんです。',pt:'Provavelmente comi demais.'},
+{speaker:'Y',ja:'{大丈夫|だいじょうぶ}ですか。',pt:'Você está bem?'},
+{speaker:'M',ja:'ええ。{心配|しんぱい}しないでください。……ああ、{痛|いた}い。',pt:'Sim. Não se preocupe... Ah, dói.'},
+{speaker:'Y',ja:'{病院|びょういん}に{行|い}ったほうがいいですよ。',pt:'É melhor você ir ao hospital.'},
+]}],
+K12_03:[{label:'{会話|かいわ} II',lines:[
+{speaker:'Anúncio',ja:'{二|に}',pt:'Diálogo II.'},
+{speaker:'M',ja:'{先生|せんせい}、おなかが{痛|いた}くて{熱|ねつ}もあるんです。インフルエンザでしょうか。',pt:'Doutor, estou com dor de estômago e também tenho febre. Será que é gripe?'},
+{speaker:'Dr.',ja:'インフルエンザじゃないですね。かぜです。',pt:'Não parece ser gripe. É um resfriado.'},
+{speaker:'M',ja:'よかった。あのう、もうすぐテニスの{試合|しあい}があるので、{練習|れんしゅう}しなきゃいけないんですが……。',pt:'Que bom. Bem, tenho uma partida de tênis em breve, então preciso treinar...'},
+{speaker:'Dr.',ja:'{二三日|にさんにち}、{運動|うんどう}しないほうがいいでしょう。',pt:'É melhor não se exercitar por dois ou três dias.'},
+{speaker:'M',ja:'わかりました。',pt:'Entendi.'},
+{speaker:'Dr.',ja:'{今日|きょう}は{薬|くすり}を{飲|の}んで、{早|はや}く{寝|ね}てください。',pt:'Hoje tome o remédio e vá dormir cedo.'},
+{speaker:'M',ja:'はい、ありがとうございました。',pt:'Sim, muito obrigada.'},
+{speaker:'Dr.',ja:'お{大事|だいじ}に。',pt:'Cuide-se.'},
+]}],
+Y12:[{label:'B — {七夕|たなばた}',lines:[
+{speaker:'Anúncio',ja:'{読み書き編|よみかきへん}　{第十二課|だいじゅうにか}　{二|に}　{七夕|たなばた}　B',pt:'Parte de leitura e escrita, lição 12, seção II: Tanabata. Seção B.'},
+{speaker:'N',ja:'{七月七日|しちがつなのか}は{七夕|たなばた}です。これは{七夕|たなばた}の{話|はなし}です。',pt:'Sete de julho é o dia de Tanabata. Esta é a história de Tanabata.'},
+{speaker:'N',ja:'{昔々|むかしむかし}、{天|てん}に{神|かみ}さまが{住|す}んでいました。{娘|むすめ}が{一人|ひとり}いて、{名前|なまえ}はおりひめでした。',pt:'Era uma vez um deus que morava no céu. Ele tinha uma filha chamada Orihime.'},
+{speaker:'N',ja:'おりひめはとてもまじめで、{毎日|まいにち}、{朝早|あさはや}く{起|お}きてはたを{織|お}っていました。',pt:'Orihime era muito dedicada e acordava cedo todos os dias para tecer.'},
+{speaker:'N',ja:'ある{日|ひ}、{神|かみ}さまは{思|おも}いました。',pt:'Um dia, o deus pensou:'},
+{speaker:'N',ja:'「おりひめはもう{大人|おとな}だ。{結婚|けっこん}したほうがいい。」',pt:'“Orihime já é adulta. É melhor que se case.”'},
+{speaker:'N',ja:'{神|かみ}さまはまじめな{男|おとこ}の{人|ひと}を{見|み}つけました。',pt:'O deus encontrou um homem dedicado.'},
+{speaker:'N',ja:'{天|あま}の{川|がわ}の{向|む}こうに{住|す}んでいる{人|ひと}で、{名前|なまえ}はひこぼしでした。',pt:'Ele morava do outro lado da Via Láctea e se chamava Hikoboshi.'},
+{speaker:'N',ja:'ひこぼしは{牛|うし}を{使|つか}って、{畑|はたけ}で{働|はたら}いていました。',pt:'Hikoboshi usava um boi para trabalhar no campo.'},
+{speaker:'N',ja:'おりひめとひこぼしは{結婚|けっこん}しました。{二人|ふたり}はとても{好|す}きになりました。いつもいっしょにいて、ぜんぜん{働|はたら}きませんでした。',pt:'Orihime e Hikoboshi se casaram. Apaixonaram-se e ficavam sempre juntos, sem trabalhar.'},
+{speaker:'N',ja:'{神|かみ}さまは{怒|おこ}りました。でも{二人|ふたり}は{仕事|しごと}をしませんでした。',pt:'O deus ficou bravo. Mesmo assim, os dois não trabalharam.'},
+{speaker:'N',ja:'{神|かみ}さまはとても{怒|おこ}って、おりひめを{家|いえ}に{連|つ}れて{帰|かえ}りました。{二人|ふたり}は{別|わか}れなければいけませんでした。',pt:'Muito zangado, o deus levou Orihime de volta para casa. Os dois tiveram de se separar.'},
+{speaker:'N',ja:'おりひめはひこぼしに{会|あ}いたくて、{毎日|まいにち}{泣|な}いていました。',pt:'Orihime queria ver Hikoboshi e chorava todos os dias.'},
+{speaker:'N',ja:'{神|かみ}さまは{二人|ふたり}がかわいそうだと{思|おも}って、{言|い}いました。',pt:'O deus sentiu pena dos dois e disse:'},
+{speaker:'N',ja:'「おりひめ、ひこぼし、あなたたちは{一年|いちねん}に{一度|いちど}だけ{会|あ}ってもいい。それは{七月七日|しちがつなのか}の{夜|よる}だ。',pt:'“Orihime, Hikoboshi, vocês podem se encontrar uma vez por ano. Será na noite de sete de julho.'},
+{speaker:'N',ja:'おりひめ、あなたはその{日|ひ}、{天|あま}の{川|がわ}の{向|む}こうに{行|い}ってもいい。でも、{朝|あさ}までに{帰|かえ}らなければいけない。」',pt:'Orihime, nesse dia você pode ir ao outro lado da Via Láctea. Mas precisa voltar antes da manhã.”'},
+{speaker:'N',ja:'{一年|いちねん}に{一度|いちど}、{七夕|たなばた}の{夜|よる}におりひめとひこぼしは{会|あ}います。{二人|ふたり}の{願|ねが}いはかなうのです。',pt:'Uma vez por ano, na noite de Tanabata, Orihime e Hikoboshi se encontram. O desejo dos dois se realiza.'},
+{speaker:'N',ja:'この{日|ひ}、{私|わたし}たちは{赤|あか}や{青|あお}などいろいろな{色|いろ}のたんざくに{願|ねが}いを{書|か}きます。',pt:'Nesse dia, escrevemos desejos em tiras de papel de várias cores, como vermelho e azul.'},
+{speaker:'N',ja:'{七夕|たなばた}の{日|ひ}の{願|ねが}いはかなうと{人々|ひとびと}は{言|い}います。',pt:'Dizem que os desejos feitos no dia de Tanabata se realizam.'},
+{speaker:'N',ja:'ある{子供|こども}は「いい{成績|せいせき}を{取|と}りたい」と{書|か}きます。ある{人|ひと}は「すてきな{人|ひと}に{会|あ}いたい」と{書|か}きます。',pt:'Uma criança escreve “quero tirar boas notas”. Outra pessoa escreve “quero conhecer alguém especial”.'},
+{speaker:'N',ja:'あなたは{七夕|たなばた}の{日|ひ}にどんな{願|ねが}いを{書|か}きますか。',pt:'Que desejo você escreveria no dia de Tanabata?'},
+]}],
+}
+const fs=[...Array.from({length:14},(_,i)=>`K12_${String(i+1).padStart(2,'0')}`),'Y12','W12_A','W12_B','W12_C'],audios:AudioTrack[]=fs.map(f=>{
+const script=scripts[f]??[]
+return {id:`genki-1-l12-audio-${f.toLowerCase()}`,title:f==='K12_01'?'Diálogo I — Mary passa mal':f==='K12_03'?'Diálogo II — no hospital':f==='Y12'?'Leitura — Tanabata':f.startsWith('W12')?`Workbook — ${f.slice(-1)}`:`Textbook — ${f}`,descriptionPt:f==='Y12'?'Leitura integral do conto.':f.startsWith('W12')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${B}/${f}.mp3`,script,transcript:script.length?{kind:'full' as const,source:'source-aligned' as const,reviewed:true,items:script}:undefined}
+})
 export const genki1Lesson12:Section={id:'lesson-12',level:'genki-1',titleJa:'第12課　病気',titlePt:'Lição 12 — Doença',summaryPt:'Explicações, excesso, conselhos, razões, obrigação, probabilidade, kanji, Tanabata e compreensão oral.',studyNotes,groups:[g('dialogue','会話','compreensão dos diálogos',dialogue),g('grammar','文法 1〜6','explicações, conselhos e obrigação',grammar),g('kanji-reading','読み書き','kanji e leitura',kanjiReading),g('listening','聞く練習','compreensão oral do workbook',listening)],audios}

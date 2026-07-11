@@ -138,11 +138,80 @@ const listening = [
 ]
 
 const scripts: Record<string, ScriptItem[]> = {
-  K04_01:[{label:'会話 I',lines:[{speaker:'M',ja:'すみません。マクドナルドは どこですか。',pt:'Com licença. Onde fica o McDonald’s?'},{speaker:'H',ja:'あそこに ホテルが ありますね。マクドナルドは あのホテルの 前ですよ。',pt:'Há um hotel ali. O McDonald’s fica em frente àquele hotel.'},{speaker:'M',ja:'ありがとうございます。',pt:'Muito obrigada.'}]}],
-  K04_03:[{label:'会話 II',lines:[{speaker:'M',ja:'ただいま。',pt:'Cheguei.'},{speaker:'F',ja:'おかえりなさい。映画は どうでしたか。',pt:'Bem-vinda. Como foi o filme?'},{speaker:'M',ja:'見ませんでした。たけしさんは 来ませんでした。',pt:'Não vi. Takeshi não veio.'},{speaker:'M',ja:'一人で 本屋と お寺に 行きました。お寺で 写真を たくさん 撮りました。',pt:'Fui sozinha a uma livraria e a um templo. Tirei muitas fotos no templo.'}]}],
-  K04_05:[{label:'会話 III',lines:[{speaker:'T',ja:'もしもし、メアリーさん。',pt:'Alô, Mary.'},{speaker:'M',ja:'あっ、たけしさん。今日 来ませんでしたね。',pt:'Ah, Takeshi. Você não veio hoje, não é?'},{speaker:'T',ja:'行きましたよ。モスバーガーの 前で 一時間 待ちました。',pt:'Fui sim. Esperei uma hora em frente ao Mos Burger.'},{speaker:'M',ja:'モスバーガーじゃないですよ。マクドナルドですよ。',pt:'Não era Mos Burger. Era McDonald’s.'},{speaker:'T',ja:'マクドナルド……ごめんなさい！',pt:'McDonald’s... desculpe!'}]}],
+  K04_01: [{
+    label: '{会話|かいわ} I',
+    setupJa: '{第4課|だいよんか} {初|はじ}めてのデート。{会話|かいわ} I。',
+    setupPt: 'Lição 4 — O primeiro encontro. Diálogo I.',
+    lines: [
+      { speaker: 'M', ja: 'すみません。マクドナルドは どこですか。', pt: 'Com licença. Onde fica o McDonald’s?' },
+      { speaker: 'H', ja: 'あそこに ホテルが ありますね。', pt: 'Há um hotel ali.' },
+      { speaker: 'H', ja: 'マクドナルドは あのホテルの {前|まえ}ですよ。', pt: 'O McDonald’s fica em frente àquele hotel.' },
+      { speaker: 'M', ja: 'ありがとうございます。', pt: 'Muito obrigada.' },
+    ],
+  }],
+  K04_03: [{
+    label: '{会話|かいわ} II',
+    setupJa: '{二|に}。',
+    setupPt: 'Diálogo II.',
+    lines: [
+      { speaker: 'M', ja: 'ただいま。', pt: 'Cheguei.' },
+      { speaker: 'F', ja: 'おかえりなさい。{映画|えいが}は どうでしたか。', pt: 'Bem-vinda de volta. Como foi o filme?' },
+      { speaker: 'M', ja: '{見|み}ませんでした。たけしさんは {来|き}ませんでした。', pt: 'Não o vi. Takeshi não veio.' },
+      { speaker: 'F', ja: 'えっ、どうしてですか。', pt: 'Hã? Por quê?' },
+      { speaker: 'M', ja: 'わかりません。だから、{一人|ひとり}で {本屋|ほんや}と お{寺|てら}に {行|い}きました。', pt: 'Não sei. Por isso, fui sozinha a uma livraria e a um templo.' },
+      { speaker: 'F', ja: '{人|ひと}が たくさん いましたか。', pt: 'Havia muita gente?' },
+      { speaker: 'M', ja: 'はい。お{寺|てら}で {写真|しゃしん}を たくさん {撮|と}りました。', pt: 'Sim. Tirei muitas fotos no templo.' },
+      { speaker: 'M', ja: '{公園|こうえん}にも {行|い}きました。', pt: 'Também fui a um parque.' },
+      { speaker: 'F', ja: 'そうですか。', pt: 'Entendo.' },
+    ],
+  }],
+  K04_05: [{
+    label: '{会話|かいわ} III',
+    setupJa: '{三|さん}。',
+    setupPt: 'Diálogo III.',
+    lines: [
+      { speaker: 'T', ja: 'もしもし、メアリーさん。', pt: 'Alô, Mary.' },
+      { speaker: 'M', ja: 'あっ、たけしさん。{今日|きょう} {来|き}ませんでしたね。', pt: 'Ah, Takeshi. Você não veio hoje, não é?' },
+      { speaker: 'T', ja: '{行|い}きましたよ。モスバーガーの {前|まえ}で {一時間|いちじかん} {待|ま}ちました。', pt: 'Fui sim. Esperei uma hora em frente ao Mos Burger.' },
+      { speaker: 'M', ja: 'モスバーガーじゃないですよ。マクドナルドですよ。', pt: 'Não era Mos Burger. Era McDonald’s.' },
+      { speaker: 'T', ja: 'マクドナルド……ごめんなさい！', pt: 'McDonald’s... desculpe!' },
+    ],
+  }],
+  Y04: [{
+    label: 'III　メアリーさんのしゅうまつ',
+    setupJa: '{読|よ}み{書|か}き{編|へん} {第4課|だいよんか} III　メアリーさんのしゅうまつ。',
+    setupPt: 'Seção de leitura e escrita, Lição 4, III — O fim de semana de Mary.',
+    lines: [
+      { speaker: 'N', ja: '{金曜日|きんようび}に {日本人|にほんじん}の ともだちと こうえんに いきました。', pt: 'Na sexta-feira, fui ao parque com amigos japoneses.' },
+      { speaker: 'N', ja: 'こうえんで ともだちと はなしました。', pt: 'Conversei com meus amigos no parque.' },
+      { speaker: 'N', ja: 'それから、レストランへ いきました。', pt: 'Depois disso, fui a um restaurante.' },
+      { speaker: 'N', ja: 'たくさん たべました。', pt: 'Comi bastante.' },
+      { speaker: 'N', ja: '{土曜日|どようび}は {一人|ひとり}で おてらへ いきました。', pt: 'No sábado, fui sozinha a um templo.' },
+      { speaker: 'N', ja: 'たくさん みせが ありました。', pt: 'Havia muitas lojas.' },
+      { speaker: 'N', ja: 'みせで おまんじゅうを かいました。', pt: 'Comprei manju em uma loja.' },
+      { speaker: 'N', ja: '{日曜日|にちようび}は おそく おきました。', pt: 'No domingo, acordei tarde.' },
+      { speaker: 'N', ja: 'おかあさんも おそく おきました。', pt: 'Minha mãe anfitriã também acordou tarde.' },
+      { speaker: 'N', ja: 'わたしは あさ、ざっしを よみました。', pt: 'De manhã, li uma revista.' },
+      { speaker: 'N', ja: 'それから、おかあさんと ひるごはんを たべました。', pt: 'Depois, almocei com minha mãe anfitriã.' },
+      { speaker: 'N', ja: 'ごごは {日本語|にほんご}を べんきょうしました。', pt: 'À tarde, estudei japonês.' },
+      { speaker: 'N', ja: 'レポートも かきました。', pt: 'Também escrevi um relatório.' },
+    ],
+  }],
+}
+
+type FullAudioTranscript = NonNullable<AudioTrack['transcript']>
+
+function fullTranscript(items: ScriptItem[]): FullAudioTranscript {
+  return { kind: 'full', source: 'source-aligned', reviewed: true, items }
+}
+
+const fullTranscripts: Partial<Record<string, FullAudioTranscript>> = {
+  K04_01: fullTranscript(scripts.K04_01),
+  K04_03: fullTranscript(scripts.K04_03),
+  K04_05: fullTranscript(scripts.K04_05),
+  Y04: fullTranscript(scripts.Y04),
 }
 const files=[...Array.from({length:19},(_,i)=>`K04_${String(i+1).padStart(2,'0')}`),'Y04','W04_A','W04_B','W04_C']
-const audios: AudioTrack[]=files.map(file=>({id:`genki-1-l4-audio-${file.toLowerCase()}`,title:file==='K04_01'?'Diálogo I - localização':file==='K04_03'?'Diálogo II - o dia de Mary':file==='K04_05'?'Diálogo III - o desencontro':file==='Y04'?'Leitura - O fim de semana de Mary':file.startsWith('W04')?`Workbook - ${file.slice(-1)}`:`Textbook - ${file}`,descriptionPt:file==='Y04'?'Leitura integral do texto da Lição 4.':file.startsWith('W04')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${BASE}/${file}.mp3`,script:scripts[file]??[]}))
+const audios: AudioTrack[]=files.map(file=>{const transcript=fullTranscripts[file];return{id:`genki-1-l4-audio-${file.toLowerCase()}`,title:file==='K04_01'?'Diálogo I - localização':file==='K04_03'?'Diálogo II - o dia de Mary':file==='K04_05'?'Diálogo III - o desencontro':file==='Y04'?'Leitura - O fim de semana de Mary':file.startsWith('W04')?`Workbook - ${file.slice(-1)}`:`Textbook - ${file}`,descriptionPt:file==='Y04'?'Leitura integral do texto da Lição 4.':file.startsWith('W04')?'Compreensão oral do workbook.':'Áudio do diálogo, vocabulário ou prática correspondente.',src:`${BASE}/${file}.mp3`,script:transcript?.items??[],transcript}})
 
 export const genki1Lesson4: Section={id:'lesson-4',level:'genki-1',titleJa:'第4課　初めてのデート',titlePt:'Lição 4 - O primeiro encontro',summaryPt:'Existência, localização, passado, duração, quantidade, companhia, kanji de dias e leitura do fim de semana.',studyNotes,groups:[group('dialogue','会話','compreensão dos diálogos',dialogue),group('existence-location','文法 1・2','existência e localização',existenceLocation),group('past','文法 3・4','formas do passado',past),group('quantity-companion','文法 5〜8','duração, quantidade e companhia',quantityCompanion),group('kanji-reading','読み書き','kanji e leitura',kanjiReading),group('listening','聞く練習','compreensão oral do workbook',listening)],audios}

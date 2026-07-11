@@ -174,6 +174,19 @@ docs/
 - Irodori source material is maintained separately under local docs and translated/adapted into structured app data.
 - Genki is implemented incrementally by lesson with pt-BR explanations, interactive exercises, source audio, practical help blocks, and FSRS review cards.
 
+### Audio Authoring
+
+Machine transcripts are editorial support, never a substitute for source review. The app labels
+them as unreviewed until a lesson author checks the audio and source material.
+
+```powershell
+py -m venv .venv-audio
+.\.venv-audio\Scripts\pip.exe install -r scripts\requirements-audio-authoring.txt
+.\.venv-audio\Scripts\python.exe scripts\transcribe_genki_audio.py `
+  "<textbook-audio-directory>" "<workbook-audio-directory>" `
+  --output "src\data\<volume>-machine-transcripts.json"
+```
+
 <a id="local-development"></a>
 
 ## Local Development

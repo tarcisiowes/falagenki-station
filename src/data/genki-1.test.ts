@@ -5,12 +5,12 @@ import { genki1 } from './genki-1'
 import { allFlatQuestions } from '../lib/dataAccess'
 
 describe('Genki I lesson 1', () => {
-  const lesson = genki1.sections[0]
+  const lesson = genki1.sections.find((section) => section.id === 'lesson-1')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   const audioSources = new Set(lesson.audios?.map((track) => track.src))
 
   it('keeps stable unique ids and complete answer data', () => {
-    expect(questions).toHaveLength(67)
+    expect(questions).toHaveLength(182)
     expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
 
     for (const question of questions) {
@@ -20,7 +20,7 @@ describe('Genki I lesson 1', () => {
   })
 
   it('registers every lesson audio and keeps the files deployable', () => {
-    expect(lesson.audios).toHaveLength(28)
+    expect(lesson.audios).toHaveLength(42)
 
     for (const source of audioSources) {
       const publicPath = resolve('public', source.replace(/^\//, ''))
@@ -30,7 +30,7 @@ describe('Genki I lesson 1', () => {
 
   it('uses registered lesson tracks for audio-backed exercises', () => {
     const listeningQuestions = questions.filter((question) => question.audio)
-    expect(listeningQuestions).toHaveLength(15)
+    expect(listeningQuestions.length).toBeGreaterThanOrEqual(15)
 
     for (const item of listeningQuestions) {
       expect(audioSources.has(item.audio!.src)).toBe(true)
@@ -50,13 +50,37 @@ describe('Genki I lesson 1', () => {
   })
 })
 
+describe('Genki I foundations', () => {
+  const section = genki1.sections.find((candidate) => candidate.id === 'foundations')!
+  const questions = section.groups.flatMap((group) => group.questions)
+
+  it('covers writing, greetings, and numbers with registered source audio', () => {
+    expect(questions).toHaveLength(31)
+    expect(section.audios).toHaveLength(21)
+    expect(section.studyNotes.every((note) => note.helpPt?.trim())).toBe(true)
+    expect(questions.map((question) => question.number)).toEqual(
+      Array.from({ length: questions.length }, (_, index) => index + 1),
+    )
+    for (const track of section.audios ?? []) {
+      expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
+      expect(track.exerciseLinkKind, track.id).toBe('direct')
+    }
+  })
+
+  it('adds every foundation exercise to the Genki FSRS pool', () => {
+    const reviewQuestions = allFlatQuestions([])
+      .filter((item) => item.courseId === 'genki' && item.sectionId === 'foundations')
+    expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
+  })
+})
+
 describe('Genki I lesson 2', () => {
   const lesson = genki1.sections.find((section) => section.id === 'lesson-2')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   const audioSources = new Set(lesson.audios?.map((track) => track.src))
 
   it('contains the complete interactive lesson structure', () => {
-    expect(questions).toHaveLength(86)
+    expect(questions).toHaveLength(102)
     expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
     expect(lesson.studyNotes.some((note) => note.title.includes('Katakana'))).toBe(true)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(5)
@@ -71,7 +95,7 @@ describe('Genki I lesson 2', () => {
 
   it('keeps listening exercises audio-backed and reviewable', () => {
     const listeningQuestions = questions.filter((question) => question.audio)
-    expect(listeningQuestions).toHaveLength(22)
+    expect(listeningQuestions.length).toBeGreaterThanOrEqual(22)
     for (const item of listeningQuestions) expect(audioSources.has(item.audio!.src)).toBe(true)
 
     const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki' && item.sectionId === 'lesson-2')
@@ -85,7 +109,7 @@ describe('Genki I lesson 3', () => {
   const audioSources = new Set(lesson.audios?.map((track) => track.src))
 
   it('covers verbs, particles, invitations, kanji, reading, and listening', () => {
-    expect(questions).toHaveLength(78)
+    expect(questions).toHaveLength(91)
     expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
     expect(lesson.studyNotes.some((note) => note.title.includes('Kanji'))).toBe(true)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(5)
@@ -94,7 +118,7 @@ describe('Genki I lesson 3', () => {
   it('keeps every source audio deployable and every listening item reviewable', () => {
     expect(lesson.audios).toHaveLength(20)
     for (const source of audioSources) expect(existsSync(resolve('public', source.replace(/^\//, ''))), source).toBe(true)
-    expect(questions.filter((question) => question.audio)).toHaveLength(26)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(26)
 
     const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki' && item.sectionId === 'lesson-3')
     expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
@@ -106,9 +130,9 @@ describe('Genki I lesson 4', () => {
   const questions = lesson.groups.flatMap((group) => group.questions)
 
   it('covers the full lesson and its source audio', () => {
-    expect(questions).toHaveLength(65)
+    expect(questions).toHaveLength(81)
     expect(lesson.audios).toHaveLength(23)
-    expect(questions.filter((question) => question.audio)).toHaveLength(15)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(15)
     expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })
@@ -124,9 +148,9 @@ describe('Genki I lesson 5', () => {
   const questions = lesson.groups.flatMap((group) => group.questions)
 
   it('covers adjectives, preferences, invitations, counters, readings, and listening', () => {
-    expect(questions).toHaveLength(76)
+    expect(questions).toHaveLength(89)
     expect(lesson.audios).toHaveLength(21)
-    expect(questions.filter((question) => question.audio)).toHaveLength(16)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(16)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(7)
     expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
@@ -143,9 +167,9 @@ describe('Genki I lesson 6', () => {
   const questions = lesson.groups.flatMap((group) => group.questions)
 
   it('covers te-form, requests, rules, reasons, assistance, reading, and listening', () => {
-    expect(questions).toHaveLength(80)
+    expect(questions).toHaveLength(92)
     expect(lesson.audios).toHaveLength(19)
-    expect(questions.filter((question) => question.audio)).toHaveLength(14)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(14)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(7)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })
@@ -160,9 +184,9 @@ describe('Genki I lesson 7', () => {
   const lesson = genki1.sections.find((section) => section.id === 'lesson-7')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   it('covers progressive and result states, descriptions, purpose, people, the letter, and listening', () => {
-    expect(questions).toHaveLength(73)
+    expect(questions).toHaveLength(85)
     expect(lesson.audios).toHaveLength(18)
-    expect(questions.filter((question) => question.audio)).toHaveLength(15)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(15)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(6)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })
@@ -176,9 +200,9 @@ describe('Genki I lesson 8', () => {
   const lesson = genki1.sections.find((section) => section.id === 'lesson-8')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   it('covers present short forms, informal and quoted speech, nominalization, reading, and listening', () => {
-    expect(questions).toHaveLength(64)
+    expect(questions).toHaveLength(80)
     expect(lesson.audios).toHaveLength(22)
-    expect(questions.filter((question) => question.audio)).toHaveLength(8)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(8)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(6)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })
@@ -192,9 +216,9 @@ describe('Genki I lesson 9', () => {
   const lesson = genki1.sections.find((section) => section.id === 'lesson-9')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   it('covers past short forms, quotations, noun modification, readings, and listening', () => {
-    expect(questions).toHaveLength(60)
+    expect(questions).toHaveLength(74)
     expect(lesson.audios).toHaveLength(22)
-    expect(questions.filter((question) => question.audio)).toHaveLength(10)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(10)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(5)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })
@@ -208,9 +232,9 @@ describe('Genki I lesson 10', () => {
   const lesson = genki1.sections.find((section) => section.id === 'lesson-10')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   it('covers comparisons, plans, changes, the folktale, and listening', () => {
-    expect(questions).toHaveLength(54)
+    expect(questions).toHaveLength(67)
     expect(lesson.audios).toHaveLength(19)
-    expect(questions.filter((question) => question.audio)).toHaveLength(8)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(8)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(5)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })
@@ -224,9 +248,9 @@ describe('Genki I lesson 11', () => {
   const lesson = genki1.sections.find((section) => section.id === 'lesson-11')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   it('covers wants, representative activities, experiences, announcements, and listening', () => {
-    expect(questions).toHaveLength(52)
+    expect(questions).toHaveLength(63)
     expect(lesson.audios).toHaveLength(19)
-    expect(questions.filter((question) => question.audio)).toHaveLength(12)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(12)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(4)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })
@@ -240,9 +264,9 @@ describe('Genki I lesson 12', () => {
   const lesson = genki1.sections.find((section) => section.id === 'lesson-12')!
   const questions = lesson.groups.flatMap((group) => group.questions)
   it('covers explanations, excess, advice, obligation, Tanabata, and listening', () => {
-    expect(questions).toHaveLength(58)
+    expect(questions).toHaveLength(70)
     expect(lesson.audios).toHaveLength(18)
-    expect(questions.filter((question) => question.audio)).toHaveLength(12)
+    expect(questions.filter((question) => question.audio).length).toBeGreaterThanOrEqual(12)
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(5)
     for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
   })

@@ -32,6 +32,8 @@ export interface Question {
   imageAlt?: string
   /** áudio necessário para responder à questão, quando aplicável */
   audio?: {
+    /** Stable id of the track registered in this section. */
+    trackId?: string
     src: string
     title: string
   }
@@ -44,6 +46,8 @@ export interface Question {
   explanationPt: string
   /** pista ou explicação alternativa, exibida sob demanda */
   helpPt?: string
+  /** self-check records production practice instead of pretending it is an objective test. */
+  assessment?: 'objective' | 'self-check'
 }
 
 export interface ExampleQuestion {
@@ -96,13 +100,55 @@ export interface ScriptItem {
   answer?: number
 }
 
+export type AudioTrackKind =
+  | 'dialogue'
+  | 'dialogue-support'
+  | 'reading'
+  | 'vocabulary'
+  | 'drill'
+  | 'workbook'
+  | 'reference'
+
+export interface AudioTranscript {
+  /** full = complete; excerpt = faithful subset; summary = supporting paraphrase. */
+  kind: 'full' | 'excerpt' | 'summary'
+  /** Editorial origin of the displayed text. */
+  source: 'official' | 'source-aligned' | 'manual' | 'machine'
+  /** Whether the text was checked against the audio and source material. */
+  reviewed: boolean
+  items: ScriptItem[]
+}
+
 export interface AudioTrack {
   id: string
+  /** Displayable source track code, such as K01_01 or W03_B. */
+  code?: string
+  kind?: AudioTrackKind
+  language?: 'ja' | 'en' | 'mixed'
   /** ex.: 'もんだい1 — Compreensão de tarefa' */
   title: string
   descriptionPt: string
+  /** Intended learning outcome for the track. */
+  purposePt?: string
+  /** Short action sequence that turns listening into active practice. */
+  instructionsPt?: string[]
+  /** Human-readable reference to the source textbook, workbook, or section. */
+  sourceRefPt?: string
+  /** Source activity name translated for the learner. */
+  sourceActivityPt?: string
+  /** Printed source page, when identified from the official track metadata. */
+  sourcePage?: number
+  /** Concrete action the learner should perform while using this track. */
+  practiceTaskPt?: string
+  /** Exercise groups and questions that continue the track as reviewable practice. */
+  exerciseGroupIds?: string[]
+  exerciseIds?: string[]
+  /** direct = based on this track; group = related practice for the same skill. */
+  exerciseLinkKind?: 'direct' | 'group'
   src: string
   script: ScriptItem[]
+  /** Explicit metadata; `script` remains for backward compatibility with legacy content. */
+  transcript?: AudioTranscript
 }
 
 export interface Section {
