@@ -78,3 +78,25 @@ describe('Genki I lesson 2', () => {
     expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
   })
 })
+
+describe('Genki I lesson 3', () => {
+  const lesson = genki1.sections.find((section) => section.id === 'lesson-3')!
+  const questions = lesson.groups.flatMap((group) => group.questions)
+  const audioSources = new Set(lesson.audios?.map((track) => track.src))
+
+  it('covers verbs, particles, invitations, kanji, reading, and listening', () => {
+    expect(questions).toHaveLength(78)
+    expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
+    expect(lesson.studyNotes.some((note) => note.title.includes('Kanji'))).toBe(true)
+    expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(5)
+  })
+
+  it('keeps every source audio deployable and every listening item reviewable', () => {
+    expect(lesson.audios).toHaveLength(20)
+    for (const source of audioSources) expect(existsSync(resolve('public', source.replace(/^\//, ''))), source).toBe(true)
+    expect(questions.filter((question) => question.audio)).toHaveLength(26)
+
+    const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki' && item.sectionId === 'lesson-3')
+    expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
+  })
+})
