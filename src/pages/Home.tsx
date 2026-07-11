@@ -20,6 +20,9 @@ const LEVEL_BG: Record<string, string> = {
 }
 const LEVEL_SHORT: Record<string, string> = { N5: 'N5', N4: 'N4', N4G: '文法', starter: '入門', 'genki-1': '元気 I' }
 
+LEVEL_BG['genki-2'] = '#e9f3ff'
+LEVEL_SHORT['genki-2'] = '\u5143\u6c17 II'
+
 function levelTitleForCard(lv: Level) {
   if (lv.courseId === 'irodori') {
     return lv.titlePt.replace(/^Irodori\s*[—-]\s*/, '')

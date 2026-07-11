@@ -1,0 +1,3017 @@
+{
+  "K13_01": {
+    "duration": 49.21,
+    "language": "ja",
+    "languageProbability": 0.9915,
+    "segments": [
+      {
+        "end": 5.11,
+        "start": 0.11,
+        "text": "第13課 アルバイト探し"
+      },
+      {
+        "end": 8.11,
+        "start": 5.11,
+        "text": "会話 1"
+      },
+      {
+        "end": 13.42,
+        "start": 8.11,
+        "text": "はい リトルアジアです"
+      },
+      {
+        "end": 20.42,
+        "start": 13.42,
+        "text": "私ジョンワンと申します アルバイト募集の広告を見たんですが"
+      },
+      {
+        "end": 26.42,
+        "start": 20.42,
+        "text": "そうですか じゃああって話しましょうか"
+      },
+      {
+        "end": 29.42,
+        "start": 26.42,
+        "text": "今日店に来られますか"
+      },
+      {
+        "end": 35.42,
+        "start": 29.42,
+        "text": "今日はちょっと行けないんですが 明日なら行けると思います"
+      },
+      {
+        "end": 40.42,
+        "start": 35.42,
+        "text": "そうですか 今日はダメですか"
+      },
+      {
+        "end": 44.42,
+        "start": 40.42,
+        "text": "じゃあ明日の1時ごろはどうですか"
+      },
+      {
+        "end": 49.42,
+        "start": 44.42,
+        "text": "1時ですね わかりました"
+      }
+    ]
+  },
+  "K13_02": {
+    "duration": 77.56,
+    "language": "ja",
+    "languageProbability": 0.8587,
+    "segments": [
+      {
+        "end": 4.28,
+        "start": 0.11,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 10.58,
+        "start": 4.28,
+        "text": "はい。リトルアジアです。"
+      },
+      {
+        "end": 17.72,
+        "start": 10.58,
+        "text": "私、ジョンワンと申します。"
+      },
+      {
+        "end": 24.66,
+        "start": 17.72,
+        "text": "アルバイト募集の広告を見たんですが。"
+      },
+      {
+        "end": 28.24,
+        "start": 24.66,
+        "text": "そうですか。"
+      },
+      {
+        "end": 35.16,
+        "start": 28.24,
+        "text": "じゃあ、あって話しましょうか。"
+      },
+      {
+        "end": 40.54,
+        "start": 35.16,
+        "text": "今日、店に来られますか?"
+      },
+      {
+        "end": 43.6,
+        "start": 40.54,
+        "text": "今日はちょっといけないんですが、"
+      },
+      {
+        "end": 52.28,
+        "start": 43.6,
+        "text": "明日なら行けると思います。"
+      },
+      {
+        "end": 55.87,
+        "start": 52.28,
+        "text": "そうですか。"
+      },
+      {
+        "end": 60.46,
+        "start": 55.87,
+        "text": "今日はダメですか。"
+      },
+      {
+        "end": 68.78,
+        "start": 60.46,
+        "text": "じゃあ、明日の1時ごろはどうですか?"
+      },
+      {
+        "end": 72.59,
+        "start": 68.78,
+        "text": "1時ですね。"
+      },
+      {
+        "end": 74.09,
+        "start": 72.59,
+        "text": "わかりました。"
+      }
+    ]
+  },
+  "K13_03": {
+    "duration": 34.3,
+    "language": "ja",
+    "languageProbability": 0.9825,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "に"
+      },
+      {
+        "end": 7.61,
+        "start": 2.41,
+        "text": "ワンさんはどうしてこのアルバイトに興味があるんですか?"
+      },
+      {
+        "end": 10.11,
+        "start": 7.61,
+        "text": "面白そうですから"
+      },
+      {
+        "end": 15.11,
+        "start": 10.11,
+        "text": "いろいろな人に会えるし、日本語も使えるし"
+      },
+      {
+        "end": 18.61,
+        "start": 15.11,
+        "text": "日本で働いたことがありますか?"
+      },
+      {
+        "end": 20.11,
+        "start": 18.61,
+        "text": "はい"
+      },
+      {
+        "end": 24.11,
+        "start": 20.11,
+        "text": "コンビニのアルバイトならしたことがあります"
+      },
+      {
+        "end": 27.11,
+        "start": 24.11,
+        "text": "明日から始められますか?"
+      },
+      {
+        "end": 28.61,
+        "start": 27.11,
+        "text": "はい"
+      },
+      {
+        "end": 31.11,
+        "start": 28.61,
+        "text": "よろしくお願いします"
+      },
+      {
+        "end": 34.11,
+        "start": 31.11,
+        "text": "頑張ってください"
+      }
+    ]
+  },
+  "K13_04": {
+    "duration": 61.7,
+    "language": "ja",
+    "languageProbability": 0.7774,
+    "segments": [
+      {
+        "end": 4.24,
+        "start": 0.11,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 13.96,
+        "start": 4.24,
+        "text": "ワンさんは、どうしてこのアルバイトに興味があるんですか?"
+      },
+      {
+        "end": 18.41,
+        "start": 13.96,
+        "text": "面白そうですから。"
+      },
+      {
+        "end": 27.5,
+        "start": 18.41,
+        "text": "いろいろな人に会えるし、日本語も使えるし。"
+      },
+      {
+        "end": 33.93,
+        "start": 27.5,
+        "text": "日本で働いたことがありますか?"
+      },
+      {
+        "end": 43.69,
+        "start": 33.93,
+        "text": "はい。コンビニのアルバイトならしたことがあります。"
+      },
+      {
+        "end": 46.09,
+        "start": 43.69,
+        "text": "明日から始められますか?"
+      },
+      {
+        "end": 56.17,
+        "start": 46.09,
+        "text": "はい。よろしくお願いします。"
+      },
+      {
+        "end": 57.73,
+        "start": 56.17,
+        "text": "頑張ってください。"
+      }
+    ]
+  },
+  "K13_05": {
+    "duration": 32.65,
+    "language": "ja",
+    "languageProbability": 0.9754,
+    "segments": [
+      {
+        "end": 2.21,
+        "start": 0.21,
+        "text": "さん"
+      },
+      {
+        "end": 4.53,
+        "start": 2.53,
+        "text": "いらっしゃいませ"
+      },
+      {
+        "end": 7.53,
+        "start": 4.53,
+        "text": "あ、山下先生"
+      },
+      {
+        "end": 9.29,
+        "start": 7.53,
+        "text": "ジョンさん"
+      },
+      {
+        "end": 12.49,
+        "start": 9.29,
+        "text": "ここでアルバイトをしているんですか?"
+      },
+      {
+        "end": 13.81,
+        "start": 12.49,
+        "text": "ええ"
+      },
+      {
+        "end": 17.13,
+        "start": 13.81,
+        "text": "1週間に3日働いています"
+      },
+      {
+        "end": 19.25,
+        "start": 17.13,
+        "text": "そうですか"
+      },
+      {
+        "end": 22.25,
+        "start": 19.25,
+        "text": "どれが美味しいですか?"
+      },
+      {
+        "end": 26.53,
+        "start": 22.25,
+        "text": "このカレーが一番人気がありますよ"
+      },
+      {
+        "end": 28.93,
+        "start": 26.53,
+        "text": "美味しそうですね"
+      },
+      {
+        "end": 32.05,
+        "start": 28.93,
+        "text": "じゃあ、食べてみます"
+      }
+    ]
+  },
+  "K13_06": {
+    "duration": 61.36,
+    "language": "ja",
+    "languageProbability": 0.7211,
+    "segments": [
+      {
+        "end": 4.12,
+        "start": 0.14,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 7.8,
+        "start": 4.12,
+        "text": "いらっしゃいませ。"
+      },
+      {
+        "end": 13.8,
+        "start": 7.8,
+        "text": "あ、山下先生。"
+      },
+      {
+        "end": 23.78,
+        "start": 13.8,
+        "text": "ジョンさん、ここでアルバイトしているんですか?"
+      },
+      {
+        "end": 33.1,
+        "start": 23.78,
+        "text": "ええ、1週間に3日働いています。"
+      },
+      {
+        "end": 42.32,
+        "start": 33.1,
+        "text": "そうですか。どれがおいしいですか?"
+      },
+      {
+        "end": 50.05,
+        "start": 42.32,
+        "text": "このカレーが一番人気がありますよ。"
+      },
+      {
+        "end": 56.72,
+        "start": 50.05,
+        "text": "おいしそうですね。じゃあ、食べてみます。"
+      }
+    ]
+  },
+  "K13_07": {
+    "duration": 331.96,
+    "language": "ja",
+    "languageProbability": 0.6049,
+    "segments": [
+      {
+        "end": 5.21,
+        "start": 0.21,
+        "text": "第13課 単語"
+      },
+      {
+        "end": 7.71,
+        "start": 5.21,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.21,
+        "start": 7.71,
+        "text": "大人"
+      },
+      {
+        "end": 12.21,
+        "start": 10.21,
+        "text": "Adult"
+      },
+      {
+        "end": 15.21,
+        "start": 12.21,
+        "text": "弁護士"
+      },
+      {
+        "end": 17.21,
+        "start": 15.21,
+        "text": "Lawyer"
+      },
+      {
+        "end": 19.71,
+        "start": 17.21,
+        "text": "わたくし"
+      },
+      {
+        "end": 22.21,
+        "start": 19.71,
+        "text": "Eye"
+      },
+      {
+        "end": 24.21,
+        "start": 22.21,
+        "text": "カレー"
+      },
+      {
+        "end": 26.71,
+        "start": 24.21,
+        "text": "Curry"
+      },
+      {
+        "end": 29.21,
+        "start": 26.71,
+        "text": "紅茶"
+      },
+      {
+        "end": 31.71,
+        "start": 29.21,
+        "text": "Black tea"
+      },
+      {
+        "end": 34.21,
+        "start": 31.71,
+        "text": "着物"
+      },
+      {
+        "end": 36.21,
+        "start": 34.21,
+        "text": "着物"
+      },
+      {
+        "end": 39.71,
+        "start": 36.21,
+        "text": "Japanese traditional dress"
+      },
+      {
+        "end": 42.21,
+        "start": 39.71,
+        "text": "セーター"
+      },
+      {
+        "end": 44.71,
+        "start": 42.21,
+        "text": "Sweater"
+      },
+      {
+        "end": 47.21,
+        "start": 44.71,
+        "text": "楽器"
+      },
+      {
+        "end": 50.21,
+        "start": 47.21,
+        "text": "Musical instrument"
+      },
+      {
+        "end": 52.71,
+        "start": 50.21,
+        "text": "カラテ"
+      },
+      {
+        "end": 55.01,
+        "start": 52.71,
+        "text": "Karate"
+      },
+      {
+        "end": 57.51,
+        "start": 55.01,
+        "text": "Golf"
+      },
+      {
+        "end": 60.01,
+        "start": 57.51,
+        "text": "Golf"
+      },
+      {
+        "end": 62.01,
+        "start": 60.01,
+        "text": "バイク"
+      },
+      {
+        "end": 65.01,
+        "start": 62.01,
+        "text": "Motorcycle"
+      },
+      {
+        "end": 67.01,
+        "start": 65.01,
+        "text": "ゾウ"
+      },
+      {
+        "end": 69.51,
+        "start": 67.01,
+        "text": "Elephant"
+      },
+      {
+        "end": 72.01,
+        "start": 69.51,
+        "text": "カラーだ"
+      },
+      {
+        "end": 74.01,
+        "start": 72.01,
+        "text": "Body"
+      },
+      {
+        "end": 77.01,
+        "start": 74.01,
+        "text": "外国語"
+      },
+      {
+        "end": 80.01,
+        "start": 77.01,
+        "text": "Foreign language"
+      },
+      {
+        "end": 82.01,
+        "start": 80.01,
+        "text": "言葉"
+      },
+      {
+        "end": 85.01,
+        "start": 82.01,
+        "text": "Language"
+      },
+      {
+        "end": 87.01,
+        "start": 85.01,
+        "text": "文法"
+      },
+      {
+        "end": 89.51,
+        "start": 87.01,
+        "text": "Grammar"
+      },
+      {
+        "end": 91.51,
+        "start": 89.51,
+        "text": "Apply"
+      },
+      {
+        "end": 94.51,
+        "start": 91.51,
+        "text": "Application"
+      },
+      {
+        "end": 97.01,
+        "start": 94.51,
+        "text": "Apartment"
+      },
+      {
+        "end": 99.01,
+        "start": 97.01,
+        "text": "Apartment"
+      },
+      {
+        "end": 102.51,
+        "start": 99.01,
+        "text": "Smaller apartment building"
+      },
+      {
+        "end": 105.01,
+        "start": 102.51,
+        "text": "Mansion"
+      },
+      {
+        "end": 108.01,
+        "start": 105.01,
+        "text": "Larger apartment building"
+      },
+      {
+        "end": 110.51,
+        "start": 108.01,
+        "text": "Condominium"
+      },
+      {
+        "end": 113.01,
+        "start": 110.51,
+        "text": "Kuukou"
+      },
+      {
+        "end": 115.51,
+        "start": 113.01,
+        "text": "Airport"
+      },
+      {
+        "end": 118.01,
+        "start": 115.51,
+        "text": "店"
+      },
+      {
+        "end": 119.01,
+        "start": 118.01,
+        "text": "Shop"
+      },
+      {
+        "end": 121.51,
+        "start": 119.01,
+        "text": "Store"
+      },
+      {
+        "end": 124.01,
+        "start": 121.51,
+        "text": "物価"
+      },
+      {
+        "end": 127.01,
+        "start": 124.01,
+        "text": "Consumer prices"
+      },
+      {
+        "end": 129.51,
+        "start": 127.01,
+        "text": "広告"
+      },
+      {
+        "end": 132.51,
+        "start": 129.51,
+        "text": "Advertisement"
+      },
+      {
+        "end": 135.01,
+        "start": 132.51,
+        "text": "募集"
+      },
+      {
+        "end": 137.51,
+        "start": 135.01,
+        "text": "Recruitment"
+      },
+      {
+        "end": 140.01,
+        "start": 137.51,
+        "text": "約束"
+      },
+      {
+        "end": 141.51,
+        "start": 140.01,
+        "text": "Promise"
+      },
+      {
+        "end": 144.01,
+        "start": 141.51,
+        "text": "Appointment"
+      },
+      {
+        "end": 147.51,
+        "start": 144.51,
+        "text": "Ejectives"
+      },
+      {
+        "end": 149.51,
+        "start": 147.51,
+        "text": "嬉しい"
+      },
+      {
+        "end": 151.51,
+        "start": 149.51,
+        "text": "Glad"
+      },
+      {
+        "end": 154.51,
+        "start": 151.51,
+        "text": "悲しい"
+      },
+      {
+        "end": 156.51,
+        "start": 154.51,
+        "text": "Sad"
+      },
+      {
+        "end": 159.51,
+        "start": 156.51,
+        "text": "厳しい"
+      },
+      {
+        "end": 161.51,
+        "start": 159.51,
+        "text": "Strict"
+      },
+      {
+        "end": 164.51,
+        "start": 161.51,
+        "text": "気分が悪い"
+      },
+      {
+        "end": 167.51,
+        "start": 164.51,
+        "text": "To feel sick"
+      },
+      {
+        "end": 169.51,
+        "start": 167.51,
+        "text": "辛い"
+      },
+      {
+        "end": 171.51,
+        "start": 169.51,
+        "text": "Hot and spicy"
+      },
+      {
+        "end": 173.51,
+        "start": 171.51,
+        "text": "Sulty"
+      },
+      {
+        "end": 176.01,
+        "start": 174.01,
+        "text": "凄い"
+      },
+      {
+        "end": 178.01,
+        "start": 176.01,
+        "text": "Incredible"
+      },
+      {
+        "end": 180.01,
+        "start": 178.01,
+        "text": "Awesome"
+      },
+      {
+        "end": 182.01,
+        "start": 180.01,
+        "text": "近い"
+      },
+      {
+        "end": 184.01,
+        "start": 182.01,
+        "text": "Close"
+      },
+      {
+        "end": 186.01,
+        "start": 184.01,
+        "text": "Near"
+      },
+      {
+        "end": 189.01,
+        "start": 186.01,
+        "text": "Not adjectives"
+      },
+      {
+        "end": 191.01,
+        "start": 189.01,
+        "text": "色々な"
+      },
+      {
+        "end": 193.01,
+        "start": 191.01,
+        "text": "Various"
+      },
+      {
+        "end": 196.01,
+        "start": 193.01,
+        "text": "Different kinds of"
+      },
+      {
+        "end": 199.01,
+        "start": 196.01,
+        "text": "幸せな"
+      },
+      {
+        "end": 201.01,
+        "start": 199.01,
+        "text": "Happy"
+      },
+      {
+        "end": 203.01,
+        "start": 201.01,
+        "text": "ダメな"
+      },
+      {
+        "end": 205.51,
+        "start": 203.51,
+        "text": "No good"
+      },
+      {
+        "end": 208.51,
+        "start": 205.51,
+        "text": "Uverbs"
+      },
+      {
+        "end": 210.51,
+        "start": 208.51,
+        "text": "Am"
+      },
+      {
+        "end": 212.51,
+        "start": 210.51,
+        "text": "To knit"
+      },
+      {
+        "end": 215.51,
+        "start": 212.51,
+        "text": "頑張る"
+      },
+      {
+        "end": 217.51,
+        "start": 215.51,
+        "text": "To do one's best"
+      },
+      {
+        "end": 219.51,
+        "start": 217.51,
+        "text": "To try hard"
+      },
+      {
+        "end": 221.51,
+        "start": 219.51,
+        "text": "泣く"
+      },
+      {
+        "end": 224.51,
+        "start": 221.51,
+        "text": "To cry"
+      },
+      {
+        "end": 226.51,
+        "start": 224.51,
+        "text": "磨く"
+      },
+      {
+        "end": 228.51,
+        "start": 226.51,
+        "text": "To brush"
+      },
+      {
+        "end": 230.51,
+        "start": 228.51,
+        "text": "To polish"
+      },
+      {
+        "end": 234.01,
+        "start": 231.01,
+        "text": "約束を守る"
+      },
+      {
+        "end": 237.01,
+        "start": 234.01,
+        "text": "To keep a promise"
+      },
+      {
+        "end": 240.01,
+        "start": 237.01,
+        "text": "Irregular verb"
+      },
+      {
+        "end": 242.01,
+        "start": 240.01,
+        "text": "感動する"
+      },
+      {
+        "end": 244.01,
+        "start": 242.01,
+        "text": "To be moved"
+      },
+      {
+        "end": 247.01,
+        "start": 244.01,
+        "text": "To be touched"
+      },
+      {
+        "end": 251.01,
+        "start": 247.01,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 253.01,
+        "start": 251.01,
+        "text": "回"
+      },
+      {
+        "end": 255.01,
+        "start": 253.01,
+        "text": "Times"
+      },
+      {
+        "end": 257.01,
+        "start": 255.01,
+        "text": "記路"
+      },
+      {
+        "end": 260.01,
+        "start": 257.01,
+        "text": "Killometers"
+      },
+      {
+        "end": 263.51,
+        "start": 260.51,
+        "text": "全部"
+      },
+      {
+        "end": 266.51,
+        "start": 263.51,
+        "text": "All"
+      },
+      {
+        "end": 269.51,
+        "start": 266.51,
+        "text": "と申します"
+      },
+      {
+        "end": 272.51,
+        "start": 269.51,
+        "text": "My name is"
+      },
+      {
+        "end": 274.51,
+        "start": 272.51,
+        "text": "特に"
+      },
+      {
+        "end": 277.51,
+        "start": 274.51,
+        "text": "Especially"
+      },
+      {
+        "end": 280.51,
+        "start": 277.51,
+        "text": "Numbers"
+      },
+      {
+        "end": 282.51,
+        "start": 280.51,
+        "text": "一日"
+      },
+      {
+        "end": 285.51,
+        "start": 282.51,
+        "text": "One day"
+      },
+      {
+        "end": 287.51,
+        "start": 285.51,
+        "text": "二日"
+      },
+      {
+        "end": 289.51,
+        "start": 287.51,
+        "text": "Two days"
+      },
+      {
+        "end": 292.01,
+        "start": 290.01,
+        "text": "三日"
+      },
+      {
+        "end": 295.01,
+        "start": 292.01,
+        "text": "Three days"
+      },
+      {
+        "end": 297.01,
+        "start": 295.01,
+        "text": "四日"
+      },
+      {
+        "end": 300.01,
+        "start": 297.01,
+        "text": "Four days"
+      },
+      {
+        "end": 302.01,
+        "start": 300.01,
+        "text": "五日"
+      },
+      {
+        "end": 305.01,
+        "start": 302.01,
+        "text": "Five days"
+      },
+      {
+        "end": 308.01,
+        "start": 305.01,
+        "text": "六日"
+      },
+      {
+        "end": 311.01,
+        "start": 308.01,
+        "text": "Six days"
+      },
+      {
+        "end": 313.01,
+        "start": 311.01,
+        "text": "七日"
+      },
+      {
+        "end": 316.01,
+        "start": 313.01,
+        "text": "Seven days"
+      },
+      {
+        "end": 318.01,
+        "start": 316.01,
+        "text": "四日"
+      },
+      {
+        "end": 321.51,
+        "start": 318.51,
+        "text": "Eight days"
+      },
+      {
+        "end": 323.51,
+        "start": 321.51,
+        "text": "九日"
+      },
+      {
+        "end": 326.51,
+        "start": 323.51,
+        "text": "Nine days"
+      },
+      {
+        "end": 328.51,
+        "start": 326.51,
+        "text": "十日"
+      },
+      {
+        "end": 331.51,
+        "start": 328.51,
+        "text": "Ten days"
+      }
+    ]
+  },
+  "K13_08": {
+    "duration": 331.83,
+    "language": "en",
+    "languageProbability": 0.5077,
+    "segments": [
+      {
+        "end": 5.11,
+        "start": 0.11,
+        "text": "大重参加 単語"
+      },
+      {
+        "end": 8.11,
+        "start": 5.11,
+        "text": "nouns"
+      },
+      {
+        "end": 10.11,
+        "start": 8.11,
+        "text": "adult"
+      },
+      {
+        "end": 12.11,
+        "start": 10.11,
+        "text": "大人"
+      },
+      {
+        "end": 15.11,
+        "start": 12.11,
+        "text": "lawyer"
+      },
+      {
+        "end": 17.11,
+        "start": 15.11,
+        "text": "弁護士"
+      },
+      {
+        "end": 19.11,
+        "start": 17.11,
+        "text": "I"
+      },
+      {
+        "end": 22.11,
+        "start": 19.11,
+        "text": "私"
+      },
+      {
+        "end": 24.11,
+        "start": 22.11,
+        "text": "Curry"
+      },
+      {
+        "end": 26.11,
+        "start": 24.11,
+        "text": "咖喱"
+      },
+      {
+        "end": 29.11,
+        "start": 26.11,
+        "text": "Black tea"
+      },
+      {
+        "end": 31.11,
+        "start": 29.11,
+        "text": "black tea"
+      },
+      {
+        "end": 33.11,
+        "start": 31.11,
+        "text": "kimono"
+      },
+      {
+        "end": 37.11,
+        "start": 33.11,
+        "text": "Japanese traditional dress"
+      },
+      {
+        "end": 39.11,
+        "start": 37.11,
+        "text": "kimono"
+      },
+      {
+        "end": 41.11,
+        "start": 39.11,
+        "text": "sweater"
+      },
+      {
+        "end": 44.11,
+        "start": 41.11,
+        "text": "seita"
+      },
+      {
+        "end": 47.11,
+        "start": 44.11,
+        "text": "musical instrument"
+      },
+      {
+        "end": 50.11,
+        "start": 47.11,
+        "text": "gaki"
+      },
+      {
+        "end": 52.11,
+        "start": 50.11,
+        "text": "karate"
+      },
+      {
+        "end": 54.11,
+        "start": 52.11,
+        "text": "karate"
+      },
+      {
+        "end": 57.11,
+        "start": 54.11,
+        "text": "golf"
+      },
+      {
+        "end": 59.11,
+        "start": 57.11,
+        "text": "golf"
+      },
+      {
+        "end": 62.11,
+        "start": 59.11,
+        "text": "motorcycle"
+      },
+      {
+        "end": 64.11,
+        "start": 62.11,
+        "text": "bike"
+      },
+      {
+        "end": 67.11,
+        "start": 64.11,
+        "text": "elephant"
+      },
+      {
+        "end": 69.11,
+        "start": 67.11,
+        "text": "zoo"
+      },
+      {
+        "end": 71.11,
+        "start": 69.11,
+        "text": "body"
+      },
+      {
+        "end": 74.11,
+        "start": 71.11,
+        "text": "karada"
+      },
+      {
+        "end": 77.11,
+        "start": 74.11,
+        "text": "foreign language"
+      },
+      {
+        "end": 79.11,
+        "start": 77.11,
+        "text": "gai-kokugo"
+      },
+      {
+        "end": 82.11,
+        "start": 79.11,
+        "text": "language"
+      },
+      {
+        "end": 84.11,
+        "start": 82.11,
+        "text": "kotoba"
+      },
+      {
+        "end": 86.11,
+        "start": 84.11,
+        "text": "grammar"
+      },
+      {
+        "end": 89.11,
+        "start": 86.11,
+        "text": "grammar"
+      },
+      {
+        "end": 92.11,
+        "start": 89.11,
+        "text": "application"
+      },
+      {
+        "end": 94.11,
+        "start": 92.11,
+        "text": "appuri"
+      },
+      {
+        "end": 96.11,
+        "start": 94.11,
+        "text": "apartment"
+      },
+      {
+        "end": 100.11,
+        "start": 96.11,
+        "text": "smaller apartment building"
+      },
+      {
+        "end": 102.11,
+        "start": 100.11,
+        "text": "apartment"
+      },
+      {
+        "end": 105.11,
+        "start": 102.11,
+        "text": "larger apartment building"
+      },
+      {
+        "end": 108.11,
+        "start": 105.11,
+        "text": "condominium"
+      },
+      {
+        "end": 110.11,
+        "start": 108.11,
+        "text": "mansion"
+      },
+      {
+        "end": 113.11,
+        "start": 110.11,
+        "text": "airport"
+      },
+      {
+        "end": 115.11,
+        "start": 113.11,
+        "text": "airport"
+      },
+      {
+        "end": 117.11,
+        "start": 115.11,
+        "text": "shop"
+      },
+      {
+        "end": 119.11,
+        "start": 117.11,
+        "text": "store"
+      },
+      {
+        "end": 121.11,
+        "start": 119.11,
+        "text": "shop"
+      },
+      {
+        "end": 124.11,
+        "start": 121.11,
+        "text": "consumer prices"
+      },
+      {
+        "end": 126.11,
+        "start": 124.11,
+        "text": "store"
+      },
+      {
+        "end": 129.11,
+        "start": 126.11,
+        "text": "advertisement"
+      },
+      {
+        "end": 132.11,
+        "start": 129.11,
+        "text": "advertisement"
+      },
+      {
+        "end": 135.11,
+        "start": 132.11,
+        "text": "recruitment"
+      },
+      {
+        "end": 137.11,
+        "start": 135.11,
+        "text": "recruitment"
+      },
+      {
+        "end": 139.11,
+        "start": 137.11,
+        "text": "promise"
+      },
+      {
+        "end": 141.11,
+        "start": 139.11,
+        "text": "appointment"
+      },
+      {
+        "end": 143.11,
+        "start": 141.11,
+        "text": "promise"
+      },
+      {
+        "end": 146.11,
+        "start": 143.11,
+        "text": "e-adjectives"
+      },
+      {
+        "end": 149.11,
+        "start": 146.11,
+        "text": "glad"
+      },
+      {
+        "end": 151.11,
+        "start": 149.11,
+        "text": "ureshii"
+      },
+      {
+        "end": 154.11,
+        "start": 151.11,
+        "text": "sad"
+      },
+      {
+        "end": 156.11,
+        "start": 154.11,
+        "text": "kanashii"
+      },
+      {
+        "end": 159.11,
+        "start": 156.11,
+        "text": "strict"
+      },
+      {
+        "end": 161.11,
+        "start": 159.11,
+        "text": "kibishii"
+      },
+      {
+        "end": 164.11,
+        "start": 161.11,
+        "text": "to feel sick"
+      },
+      {
+        "end": 167.11,
+        "start": 164.11,
+        "text": "kibun ga warui"
+      },
+      {
+        "end": 169.11,
+        "start": 167.11,
+        "text": "hot and spicy"
+      },
+      {
+        "end": 171.11,
+        "start": 169.11,
+        "text": "salty"
+      },
+      {
+        "end": 173.11,
+        "start": 171.11,
+        "text": "karai"
+      },
+      {
+        "end": 175.11,
+        "start": 173.11,
+        "text": "incredible"
+      },
+      {
+        "end": 177.11,
+        "start": 175.11,
+        "text": "awesome"
+      },
+      {
+        "end": 179.11,
+        "start": 177.11,
+        "text": "sugoi"
+      },
+      {
+        "end": 181.11,
+        "start": 179.11,
+        "text": "close"
+      },
+      {
+        "end": 183.11,
+        "start": 181.11,
+        "text": "near"
+      },
+      {
+        "end": 185.11,
+        "start": 183.11,
+        "text": "chikai"
+      },
+      {
+        "end": 188.11,
+        "start": 185.11,
+        "text": "na adjectives"
+      },
+      {
+        "end": 190.11,
+        "start": 188.11,
+        "text": "various"
+      },
+      {
+        "end": 193.11,
+        "start": 190.11,
+        "text": "different kinds of"
+      },
+      {
+        "end": 196.11,
+        "start": 193.11,
+        "text": "iroiro na"
+      },
+      {
+        "end": 198.11,
+        "start": 196.11,
+        "text": "happy"
+      },
+      {
+        "end": 201.11,
+        "start": 198.11,
+        "text": "shiawasei na"
+      },
+      {
+        "end": 203.11,
+        "start": 201.11,
+        "text": "no good"
+      },
+      {
+        "end": 206.11,
+        "start": 203.11,
+        "text": "dame na"
+      },
+      {
+        "end": 208.11,
+        "start": 206.11,
+        "text": "uverbs"
+      },
+      {
+        "end": 211.11,
+        "start": 208.11,
+        "text": "to knit"
+      },
+      {
+        "end": 213.11,
+        "start": 211.11,
+        "text": "amu"
+      },
+      {
+        "end": 217.11,
+        "start": 213.11,
+        "text": "to do one's best to try hard"
+      },
+      {
+        "end": 220.11,
+        "start": 217.11,
+        "text": "ganbaru"
+      },
+      {
+        "end": 222.11,
+        "start": 220.11,
+        "text": "to cry"
+      },
+      {
+        "end": 224.11,
+        "start": 222.11,
+        "text": "naku"
+      },
+      {
+        "end": 226.11,
+        "start": 224.11,
+        "text": "to brush"
+      },
+      {
+        "end": 229.11,
+        "start": 226.11,
+        "text": "to polish"
+      },
+      {
+        "end": 231.11,
+        "start": 229.11,
+        "text": "migaku"
+      },
+      {
+        "end": 234.11,
+        "start": 231.11,
+        "text": "to keep a promise"
+      },
+      {
+        "end": 237.11,
+        "start": 234.11,
+        "text": "yakusoku o mamoru"
+      },
+      {
+        "end": 240.11,
+        "start": 237.11,
+        "text": "irregular verb"
+      },
+      {
+        "end": 244.11,
+        "start": 240.11,
+        "text": "to be moved, to be touched"
+      },
+      {
+        "end": 247.11,
+        "start": 244.11,
+        "text": "kandousuru"
+      },
+      {
+        "end": 251.11,
+        "start": 247.11,
+        "text": "adverbs and other expressions"
+      },
+      {
+        "end": 253.11,
+        "start": 251.11,
+        "text": "times"
+      },
+      {
+        "end": 255.11,
+        "start": 253.11,
+        "text": "kai"
+      },
+      {
+        "end": 257.11,
+        "start": 255.11,
+        "text": "kilometers"
+      },
+      {
+        "end": 260.11,
+        "start": 257.11,
+        "text": "kilograms"
+      },
+      {
+        "end": 262.11,
+        "start": 260.11,
+        "text": "kiro"
+      },
+      {
+        "end": 264.11,
+        "start": 262.11,
+        "text": "all"
+      },
+      {
+        "end": 267.11,
+        "start": 264.11,
+        "text": "zenbu"
+      },
+      {
+        "end": 270.11,
+        "start": 267.11,
+        "text": "my name is"
+      },
+      {
+        "end": 273.11,
+        "start": 270.11,
+        "text": "tomo shimasu"
+      },
+      {
+        "end": 275.11,
+        "start": 273.11,
+        "text": "especially"
+      },
+      {
+        "end": 277.11,
+        "start": 275.11,
+        "text": "toku ni"
+      },
+      {
+        "end": 280.11,
+        "start": 277.11,
+        "text": "numbers"
+      },
+      {
+        "end": 282.11,
+        "start": 280.11,
+        "text": "one day"
+      },
+      {
+        "end": 285.11,
+        "start": 282.11,
+        "text": "ichinichi"
+      },
+      {
+        "end": 288.11,
+        "start": 285.11,
+        "text": "two days"
+      },
+      {
+        "end": 290.11,
+        "start": 288.11,
+        "text": "futuka"
+      },
+      {
+        "end": 293.11,
+        "start": 290.11,
+        "text": "three days"
+      },
+      {
+        "end": 295.11,
+        "start": 293.11,
+        "text": "mikka"
+      },
+      {
+        "end": 298.11,
+        "start": 295.11,
+        "text": "four days"
+      },
+      {
+        "end": 300.11,
+        "start": 298.11,
+        "text": "yokka"
+      },
+      {
+        "end": 303.11,
+        "start": 300.11,
+        "text": "five days"
+      },
+      {
+        "end": 306.11,
+        "start": 303.11,
+        "text": "itsuka"
+      },
+      {
+        "end": 309.11,
+        "start": 306.11,
+        "text": "six days"
+      },
+      {
+        "end": 312.11,
+        "start": 309.11,
+        "text": "seven days"
+      },
+      {
+        "end": 315.11,
+        "start": 312.11,
+        "text": "nanoka"
+      },
+      {
+        "end": 318.11,
+        "start": 315.11,
+        "text": "eight days"
+      },
+      {
+        "end": 321.11,
+        "start": 318.11,
+        "text": "yoka"
+      },
+      {
+        "end": 324.11,
+        "start": 321.11,
+        "text": "nine days"
+      },
+      {
+        "end": 326.11,
+        "start": 324.11,
+        "text": "kokonoka"
+      },
+      {
+        "end": 329.11,
+        "start": 326.11,
+        "text": "ten days"
+      },
+      {
+        "end": 331.11,
+        "start": 329.11,
+        "text": "touka"
+      }
+    ]
+  },
+  "K13_09": {
+    "duration": 133.49,
+    "language": "ja",
+    "languageProbability": 0.9741,
+    "segments": [
+      {
+        "end": 5.05,
+        "start": 0.05,
+        "text": "第13課 練習"
+      },
+      {
+        "end": 7.05,
+        "start": 5.05,
+        "text": "1"
+      },
+      {
+        "end": 11.46,
+        "start": 7.05,
+        "text": "1キロを泳げます"
+      },
+      {
+        "end": 18.21,
+        "start": 14.74,
+        "text": "食べる"
+      },
+      {
+        "end": 20.21,
+        "start": 18.21,
+        "text": "食べられる"
+      },
+      {
+        "end": 23.84,
+        "start": 20.21,
+        "text": "1"
+      },
+      {
+        "end": 28.08,
+        "start": 23.84,
+        "text": "話す"
+      },
+      {
+        "end": 29.08,
+        "start": 28.08,
+        "text": "話せる"
+      },
+      {
+        "end": 32.49,
+        "start": 29.08,
+        "text": "2"
+      },
+      {
+        "end": 33.49,
+        "start": 32.49,
+        "text": "する"
+      },
+      {
+        "end": 39.17,
+        "start": 33.49,
+        "text": "できる"
+      },
+      {
+        "end": 41.17,
+        "start": 39.17,
+        "text": "3"
+      },
+      {
+        "end": 44.34,
+        "start": 41.17,
+        "text": "行く"
+      },
+      {
+        "end": 45.34,
+        "start": 44.34,
+        "text": "行ける"
+      },
+      {
+        "end": 48.75,
+        "start": 45.34,
+        "text": "4"
+      },
+      {
+        "end": 49.75,
+        "start": 48.75,
+        "text": "寝る"
+      },
+      {
+        "end": 53.99,
+        "start": 49.75,
+        "text": "寝られる"
+      },
+      {
+        "end": 57.37,
+        "start": 53.99,
+        "text": "5"
+      },
+      {
+        "end": 58.37,
+        "start": 57.37,
+        "text": "来る"
+      },
+      {
+        "end": 63.95,
+        "start": 58.37,
+        "text": "来られる"
+      },
+      {
+        "end": 65.95,
+        "start": 63.95,
+        "text": "6"
+      },
+      {
+        "end": 66.95,
+        "start": 65.95,
+        "text": "見る"
+      },
+      {
+        "end": 72.54,
+        "start": 66.95,
+        "text": "見られる"
+      },
+      {
+        "end": 74.54,
+        "start": 72.54,
+        "text": "7"
+      },
+      {
+        "end": 75.54,
+        "start": 74.54,
+        "text": "やめる"
+      },
+      {
+        "end": 79.71,
+        "start": 75.54,
+        "text": "やめられる"
+      },
+      {
+        "end": 83.18,
+        "start": 79.71,
+        "text": "8"
+      },
+      {
+        "end": 84.18,
+        "start": 83.18,
+        "text": "借りる"
+      },
+      {
+        "end": 88.46,
+        "start": 84.18,
+        "text": "借りられる"
+      },
+      {
+        "end": 91.93,
+        "start": 88.46,
+        "text": "9"
+      },
+      {
+        "end": 92.93,
+        "start": 91.93,
+        "text": "飲む"
+      },
+      {
+        "end": 96.1,
+        "start": 92.93,
+        "text": "飲める"
+      },
+      {
+        "end": 99.42,
+        "start": 96.1,
+        "text": "10"
+      },
+      {
+        "end": 101.42,
+        "start": 99.42,
+        "text": "待つ"
+      },
+      {
+        "end": 106.97,
+        "start": 101.42,
+        "text": "待てる"
+      },
+      {
+        "end": 108.97,
+        "start": 106.97,
+        "text": "11"
+      },
+      {
+        "end": 109.97,
+        "start": 108.97,
+        "text": "泳ぐ"
+      },
+      {
+        "end": 114.18,
+        "start": 109.97,
+        "text": "泳げる"
+      },
+      {
+        "end": 117.62,
+        "start": 114.18,
+        "text": "12"
+      },
+      {
+        "end": 121.86,
+        "start": 117.62,
+        "text": "働く"
+      },
+      {
+        "end": 125.26,
+        "start": 121.86,
+        "text": "働ける"
+      },
+      {
+        "end": 127.26,
+        "start": 125.26,
+        "text": "13"
+      },
+      {
+        "end": 128.26,
+        "start": 127.26,
+        "text": "あむ"
+      },
+      {
+        "end": 132.57,
+        "start": 128.26,
+        "text": "あめる"
+      }
+    ]
+  },
+  "K13_10": {
+    "duration": 112.46,
+    "language": "ja",
+    "languageProbability": 0.9542,
+    "segments": [
+      {
+        "end": 5.44,
+        "start": 0,
+        "text": "B エクゼンプル"
+      },
+      {
+        "end": 10.04,
+        "start": 5.44,
+        "text": "メアリーさんは1キロをよげます"
+      },
+      {
+        "end": 19.59,
+        "start": 10.04,
+        "text": "1 メアリーさんは日本語の歌が歌えます"
+      },
+      {
+        "end": 27.2,
+        "start": 19.59,
+        "text": "2 メアリーさんはバイオリンが弾けます"
+      },
+      {
+        "end": 37.75,
+        "start": 27.2,
+        "text": "3 メアリーさんはカラテができます"
+      },
+      {
+        "end": 46.97,
+        "start": 37.75,
+        "text": "4 メアリーさんは寿司が食べられます"
+      },
+      {
+        "end": 56.25,
+        "start": 47.17,
+        "text": "5 メアリーさんはピザが作れます"
+      },
+      {
+        "end": 65.2,
+        "start": 56.25,
+        "text": "6 メアリーさんはバイクに乗れます"
+      },
+      {
+        "end": 74.62,
+        "start": 65.2,
+        "text": "7 メアリーさんは車が運転できます"
+      },
+      {
+        "end": 83.79,
+        "start": 74.62,
+        "text": "8 メアリーさんはセーターがあめます"
+      },
+      {
+        "end": 93.24,
+        "start": 83.79,
+        "text": "9 メアリーさんは漢字がたくさんかけます"
+      },
+      {
+        "end": 102.89,
+        "start": 93.24,
+        "text": "10 メアリーさんは朝早く起きられます"
+      },
+      {
+        "end": 112.23,
+        "start": 102.89,
+        "text": "11 メアリーさんは暑いお風呂に入れます"
+      }
+    ]
+  },
+  "K13_11": {
+    "duration": 90.36,
+    "language": "ja",
+    "languageProbability": 0.95,
+    "segments": [
+      {
+        "end": 6.34,
+        "start": 0.18,
+        "text": "エフ エクゼンプル"
+      },
+      {
+        "end": 8.34,
+        "start": 6.34,
+        "text": "着物を買いましたか"
+      },
+      {
+        "end": 14.98,
+        "start": 8.34,
+        "text": "いいえ 高すぎて買えませんでした"
+      },
+      {
+        "end": 22.12,
+        "start": 14.98,
+        "text": "いち スリランカのカレーを食べましたか"
+      },
+      {
+        "end": 26.12,
+        "start": 22.12,
+        "text": "いいえ 辛すぎて食べられませんでした"
+      },
+      {
+        "end": 31.56,
+        "start": 26.12,
+        "text": "に 宿題をしましたか"
+      },
+      {
+        "end": 40.21,
+        "start": 31.56,
+        "text": "いいえ 難しすぎてできませんでした"
+      },
+      {
+        "end": 46.38,
+        "start": 40.21,
+        "text": "3 温泉に入りましたか"
+      },
+      {
+        "end": 52.79,
+        "start": 46.38,
+        "text": "いいえ 暑すぎて入れませんでした"
+      },
+      {
+        "end": 59,
+        "start": 52.79,
+        "text": "4 昨日出かけましたか"
+      },
+      {
+        "end": 65.47,
+        "start": 59,
+        "text": "いいえ 忙しすぎて出かけられませんでした"
+      },
+      {
+        "end": 72.65,
+        "start": 65.47,
+        "text": "5 漢字を全部覚えましたか"
+      },
+      {
+        "end": 76.65,
+        "start": 72.65,
+        "text": "いいえ 多すぎて覚えられませんでした"
+      },
+      {
+        "end": 82.09,
+        "start": 76.65,
+        "text": "6 海で泳ぎましたか"
+      },
+      {
+        "end": 90.2,
+        "start": 82.09,
+        "text": "いいえ 寒すぎて泳げませんでした"
+      }
+    ]
+  },
+  "K13_12": {
+    "duration": 137.82,
+    "language": "ja",
+    "languageProbability": 0.9755,
+    "segments": [
+      {
+        "end": 6.11,
+        "start": 0.11,
+        "text": "2 物価が高いし人がたくさんいるし"
+      },
+      {
+        "end": 11.7,
+        "start": 6.11,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 16.14,
+        "start": 11.7,
+        "text": "日本に住みたいですか"
+      },
+      {
+        "end": 23.74,
+        "start": 16.14,
+        "text": "物価が高いし人がたくさんいるし住みたくないです"
+      },
+      {
+        "end": 27.74,
+        "start": 23.74,
+        "text": "1 今週は忙しいですか"
+      },
+      {
+        "end": 36.02,
+        "start": 27.74,
+        "text": "試験があるし宿題がたくさんあるし忙しいです"
+      },
+      {
+        "end": 44.6,
+        "start": 37.39,
+        "text": "2 新しいアパートはいいですか"
+      },
+      {
+        "end": 48.6,
+        "start": 44.6,
+        "text": "空港に近いし便利だしいいです"
+      },
+      {
+        "end": 57.41,
+        "start": 48.6,
+        "text": "3 経済の授業をとりますか"
+      },
+      {
+        "end": 65.78,
+        "start": 57.41,
+        "text": "先生は厳しいし長いレポートを書かなきゃいけないし取りません"
+      },
+      {
+        "end": 69.78,
+        "start": 65.78,
+        "text": "4 旅行は楽しかったですか"
+      },
+      {
+        "end": 79.02,
+        "start": 69.78,
+        "text": "食べ物がおいしくなかったし言葉がわからなかったし楽しくなかったです"
+      },
+      {
+        "end": 85.46,
+        "start": 79.02,
+        "text": "5 今晩パーティーに行きますか"
+      },
+      {
+        "end": 96.11,
+        "start": 85.46,
+        "text": "ちょっと気分が悪いし昨日もパーティーに行ったし行きません"
+      },
+      {
+        "end": 100.11,
+        "start": 96.11,
+        "text": "6 日本語の新聞が読めますか"
+      },
+      {
+        "end": 108.35,
+        "start": 100.11,
+        "text": "漢字が読めないし文法がわからないし読めません"
+      },
+      {
+        "end": 114.76,
+        "start": 108.35,
+        "text": "7 1人で旅行ができますか"
+      },
+      {
+        "end": 121.97,
+        "start": 114.76,
+        "text": "日本語が話せるしもう大人だしできます"
+      },
+      {
+        "end": 130.58,
+        "start": 121.97,
+        "text": "8 田中さんが好きですか"
+      },
+      {
+        "end": 137.58,
+        "start": 130.58,
+        "text": "嘘をつくし約束を守らないし好きじゃないです"
+      }
+    ]
+  },
+  "K13_13": {
+    "duration": 148.82,
+    "language": "ja",
+    "languageProbability": 0.9743,
+    "segments": [
+      {
+        "end": 5.74,
+        "start": 0.18,
+        "text": "3 美味しそうです"
+      },
+      {
+        "end": 11.39,
+        "start": 5.74,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 17.62,
+        "start": 11.39,
+        "text": "寿司 この寿司は美味しそうです"
+      },
+      {
+        "end": 27.33,
+        "start": 17.62,
+        "text": "1 カレー このカレーは辛そうです"
+      },
+      {
+        "end": 36.92,
+        "start": 27.33,
+        "text": "2 ケーキ このケーキは甘そうです"
+      },
+      {
+        "end": 46.06,
+        "start": 36.92,
+        "text": "3 家 この家はふるそうです"
+      },
+      {
+        "end": 56.14,
+        "start": 46.06,
+        "text": "4 アパート このアパートは新しそうです"
+      },
+      {
+        "end": 65.96,
+        "start": 56.14,
+        "text": "5 マンション このマンションは便利そうです"
+      },
+      {
+        "end": 76.27,
+        "start": 65.96,
+        "text": "6 先生 この先生は厳しそうです"
+      },
+      {
+        "end": 86.22,
+        "start": 76.27,
+        "text": "7 学生 この学生は眠そうです"
+      },
+      {
+        "end": 96.66,
+        "start": 86.22,
+        "text": "8 おじいさん このおじいさんは元気そうです"
+      },
+      {
+        "end": 106.85,
+        "start": 96.66,
+        "text": "9 オバーさん このオバーさんは意地悪そうです"
+      },
+      {
+        "end": 116.66,
+        "start": 106.85,
+        "text": "10 子供 この子供は悲しそうです"
+      },
+      {
+        "end": 127.91,
+        "start": 116.66,
+        "text": "11 男の人 この男の人は寂しそうです"
+      },
+      {
+        "end": 138.94,
+        "start": 127.91,
+        "text": "12 弁護士 この弁護士は頭が良さそうです"
+      },
+      {
+        "end": 148.68,
+        "start": 138.94,
+        "text": "13 薬座 この薬座は怖そうです"
+      }
+    ]
+  },
+  "K13_14": {
+    "duration": 134.22,
+    "language": "ja",
+    "languageProbability": 0.8518,
+    "segments": [
+      {
+        "end": 9.55,
+        "start": 0.02,
+        "text": "B. スシ 美味しそうなスシです"
+      },
+      {
+        "end": 18.42,
+        "start": 9.55,
+        "text": "1. カレー 辛そうなカレーです"
+      },
+      {
+        "end": 29.58,
+        "start": 18.42,
+        "text": "2. ケーキ 甘そうなケーキです"
+      },
+      {
+        "end": 38.22,
+        "start": 29.58,
+        "text": "3. 家 古そうな家です"
+      },
+      {
+        "end": 47.87,
+        "start": 38.22,
+        "text": "4. アパート 新しそうなアパートです"
+      },
+      {
+        "end": 55.14,
+        "start": 47.87,
+        "text": "5. マンション 便利そうなマンションです"
+      },
+      {
+        "end": 64.86,
+        "start": 55.14,
+        "text": "6. 先生 厳しそうな先生です"
+      },
+      {
+        "end": 75.98,
+        "start": 64.86,
+        "text": "7. 学生 眠そうな学生です"
+      },
+      {
+        "end": 85.69,
+        "start": 75.98,
+        "text": "8. おじいさん 元気そうなおじいさんです"
+      },
+      {
+        "end": 93.86,
+        "start": 85.69,
+        "text": "9. おばあさん 意地悪そうなおばあさんです"
+      },
+      {
+        "end": 102.48,
+        "start": 93.86,
+        "text": "10. 子ども 悲しそうな子どもです"
+      },
+      {
+        "end": 114.92,
+        "start": 102.48,
+        "text": "11. 男の人 寂しそうな男の人です"
+      },
+      {
+        "end": 123.06,
+        "start": 114.92,
+        "text": "12. 弁護士 頭が良さそうな弁護士です"
+      },
+      {
+        "end": 133.74,
+        "start": 123.06,
+        "text": "13. 薬座 怖そうな薬座です"
+      }
+    ]
+  },
+  "K13_15": {
+    "duration": 98.04,
+    "language": "ja",
+    "languageProbability": 0.9804,
+    "segments": [
+      {
+        "end": 3.71,
+        "start": 0.11,
+        "text": "4 きてみます"
+      },
+      {
+        "end": 9.36,
+        "start": 3.71,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 13.26,
+        "start": 10.16,
+        "text": "この服は素敵ですよ"
+      },
+      {
+        "end": 15.86,
+        "start": 13.26,
+        "text": "じゃあ きてみます"
+      },
+      {
+        "end": 26.07,
+        "start": 15.86,
+        "text": "1 経済の授業は面白かったですよ"
+      },
+      {
+        "end": 30.04,
+        "start": 26.07,
+        "text": "じゃあ とってみます"
+      },
+      {
+        "end": 34.84,
+        "start": 30.04,
+        "text": "2 あの映画を見て泣きました"
+      },
+      {
+        "end": 39.52,
+        "start": 34.84,
+        "text": "じゃあ みてみます"
+      },
+      {
+        "end": 48.76,
+        "start": 41.25,
+        "text": "3 この本は感動しました"
+      },
+      {
+        "end": 52.84,
+        "start": 48.76,
+        "text": "じゃあ 4 でみます"
+      },
+      {
+        "end": 60.04,
+        "start": 52.84,
+        "text": "4 豆腐は体にいいですよ"
+      },
+      {
+        "end": 64.15,
+        "start": 60.04,
+        "text": "じゃあ 食べてみます"
+      },
+      {
+        "end": 71.69,
+        "start": 64.15,
+        "text": "5 東京は面白かったですよ"
+      },
+      {
+        "end": 75.8,
+        "start": 71.69,
+        "text": "じゃあ いってみます"
+      },
+      {
+        "end": 83,
+        "start": 75.8,
+        "text": "6 あの歌手の歌はいいですよ"
+      },
+      {
+        "end": 87.01,
+        "start": 83,
+        "text": "じゃあ きてみます"
+      },
+      {
+        "end": 94.02,
+        "start": 87.01,
+        "text": "7 このアプリは便利ですよ"
+      },
+      {
+        "end": 97.92,
+        "start": 94.02,
+        "text": "じゃあ つかってみます"
+      }
+    ]
+  },
+  "K13_16": {
+    "duration": 108.96,
+    "language": "ja",
+    "languageProbability": 0.9831,
+    "segments": [
+      {
+        "end": 6.02,
+        "start": 0.02,
+        "text": "5 紅茶なら飲みました"
+      },
+      {
+        "end": 11.71,
+        "start": 6.02,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 16.71,
+        "start": 11.71,
+        "text": "ドバートさんはけさ、コーヒーを飲みましたか?"
+      },
+      {
+        "end": 22.78,
+        "start": 16.71,
+        "text": "紅茶なら飲みましたが、コーヒーは飲みませんでした"
+      },
+      {
+        "end": 28.28,
+        "start": 22.78,
+        "text": "1 ドバートさんはバイクに乗れますか?"
+      },
+      {
+        "end": 36.05,
+        "start": 28.28,
+        "text": "自転車なら乗れますが、バイクは乗れません"
+      },
+      {
+        "end": 42.55,
+        "start": 36.05,
+        "text": "2 ドバートさんはニュージーランドに行ったことがありますか?"
+      },
+      {
+        "end": 51.32,
+        "start": 42.55,
+        "text": "オーストラリアなら行ったことがありますが、ニュージーランドは行ったことがありません"
+      },
+      {
+        "end": 57.89,
+        "start": 51.32,
+        "text": "3 ドバートさんはゴルフをしますか?"
+      },
+      {
+        "end": 65.73,
+        "start": 57.89,
+        "text": "サッカーならしますが、ゴルフはしません"
+      },
+      {
+        "end": 72.23,
+        "start": 65.73,
+        "text": "4 カルロスさんは日本の経済に興味がありますか?"
+      },
+      {
+        "end": 81.44,
+        "start": 75,
+        "text": "歴史なら興味がありますが、経済は興味がありません"
+      },
+      {
+        "end": 86.44,
+        "start": 81.44,
+        "text": "5 カルロスさんは彼女がいますか?"
+      },
+      {
+        "end": 94.09,
+        "start": 86.44,
+        "text": "友達ならいますが、彼女はいません"
+      },
+      {
+        "end": 100.09,
+        "start": 94.09,
+        "text": "6 カルロスさんは土曜日に出かけられますか?"
+      },
+      {
+        "end": 108.36,
+        "start": 100.09,
+        "text": "日曜日なら出かけられますが、土曜日は出かけられません"
+      }
+    ]
+  },
+  "K13_17": {
+    "duration": 97.83,
+    "language": "ja",
+    "languageProbability": 0.9736,
+    "segments": [
+      {
+        "end": 6.68,
+        "start": 0.05,
+        "text": "6.1日に2回食べます。"
+      },
+      {
+        "end": 16.9,
+        "start": 6.68,
+        "text": "ex. 1日に2回食べます。"
+      },
+      {
+        "end": 24.88,
+        "start": 16.9,
+        "text": "1.1日に3回歯を磨きます。"
+      },
+      {
+        "end": 35.86,
+        "start": 24.88,
+        "text": "2.1日に7時間寝ます。"
+      },
+      {
+        "end": 43.87,
+        "start": 35.86,
+        "text": "3.1日に3時間勉強します。"
+      },
+      {
+        "end": 54.35,
+        "start": 43.87,
+        "text": "4.1週間に1回部屋を掃除します。"
+      },
+      {
+        "end": 66.18,
+        "start": 54.35,
+        "text": "5.1週間に2回選択します。"
+      },
+      {
+        "end": 76.56,
+        "start": 66.18,
+        "text": "6.1週間に3日アルバイトをします。"
+      },
+      {
+        "end": 87.04,
+        "start": 76.56,
+        "text": "7.1週間に5日学校に行きます。"
+      },
+      {
+        "end": 97.02,
+        "start": 87.04,
+        "text": "8.1ヶ月に1回映画を見に行きます。"
+      }
+    ]
+  },
+  "W13_A": {
+    "duration": 104.78,
+    "language": "ja",
+    "languageProbability": 0.9928,
+    "segments": [
+      {
+        "end": 6.04,
+        "start": 0.24,
+        "text": "第13課 きくうれんしゅう"
+      },
+      {
+        "end": 8.48,
+        "start": 6.04,
+        "text": "えい"
+      },
+      {
+        "end": 10.98,
+        "start": 8.48,
+        "text": "いち"
+      },
+      {
+        "end": 13.84,
+        "start": 10.98,
+        "text": "お名前をおねがいします"
+      },
+      {
+        "end": 15.94,
+        "start": 13.84,
+        "text": "中山かなです"
+      },
+      {
+        "end": 19.24,
+        "start": 15.94,
+        "text": "中山さんは英語が話せますか?"
+      },
+      {
+        "end": 20.34,
+        "start": 19.24,
+        "text": "はい"
+      },
+      {
+        "end": 23.84,
+        "start": 20.34,
+        "text": "1年アメリカで勉強していましたから"
+      },
+      {
+        "end": 25.54,
+        "start": 23.84,
+        "text": "そうですか"
+      },
+      {
+        "end": 28.14,
+        "start": 25.54,
+        "text": "車の運転ができますか?"
+      },
+      {
+        "end": 31.74,
+        "start": 28.34,
+        "text": "いいえ バイクなら乗れますが"
+      },
+      {
+        "end": 34.04,
+        "start": 31.74,
+        "text": "車は運転できません"
+      },
+      {
+        "end": 35.74,
+        "start": 34.04,
+        "text": "そうですか"
+      },
+      {
+        "end": 38.54,
+        "start": 35.74,
+        "text": "運転できないんですね"
+      },
+      {
+        "end": 41.64,
+        "start": 38.54,
+        "text": "1週間に何日来られますか?"
+      },
+      {
+        "end": 43.14,
+        "start": 41.64,
+        "text": "3日です"
+      },
+      {
+        "end": 45.04,
+        "start": 43.14,
+        "text": "何曜日ですか?"
+      },
+      {
+        "end": 49.34,
+        "start": 45.04,
+        "text": "月曜日と水曜日と土曜日は大丈夫です"
+      },
+      {
+        "end": 52.24,
+        "start": 49.34,
+        "text": "はい わかりました"
+      },
+      {
+        "end": 55.68,
+        "start": 52.24,
+        "text": "ありがとうございました"
+      },
+      {
+        "end": 57.78,
+        "start": 55.68,
+        "text": "2"
+      },
+      {
+        "end": 60.48,
+        "start": 57.78,
+        "text": "村の大気さんですね"
+      },
+      {
+        "end": 62.58,
+        "start": 60.48,
+        "text": "はい そうです"
+      },
+      {
+        "end": 65.58,
+        "start": 62.58,
+        "text": "外国語は何かできますか?"
+      },
+      {
+        "end": 71.08,
+        "start": 65.58,
+        "text": "はい 大学で中国語を勉強したので少し"
+      },
+      {
+        "end": 74.48,
+        "start": 71.08,
+        "text": "じゃあ中国語で電話できますか?"
+      },
+      {
+        "end": 77.68,
+        "start": 74.48,
+        "text": "いいえ 中国語は読めるんですが"
+      },
+      {
+        "end": 80.08,
+        "start": 77.68,
+        "text": "あまり話せないんです"
+      },
+      {
+        "end": 84.18,
+        "start": 80.08,
+        "text": "まあ 日本人なら漢字が読めますからね"
+      },
+      {
+        "end": 87.61,
+        "start": 84.28,
+        "text": "はははは"
+      },
+      {
+        "end": 90.51,
+        "start": 87.61,
+        "text": "車の運転はどうですか?"
+      },
+      {
+        "end": 93.21,
+        "start": 90.51,
+        "text": "はい 大丈夫です"
+      },
+      {
+        "end": 95.81,
+        "start": 93.21,
+        "text": "何曜日に来られますか?"
+      },
+      {
+        "end": 98.81,
+        "start": 95.81,
+        "text": "土曜日と日曜日なら来られます"
+      }
+    ]
+  },
+  "W13_B": {
+    "duration": 89.81,
+    "language": "ja",
+    "languageProbability": 0.9745,
+    "segments": [
+      {
+        "end": 2.58,
+        "start": 0.08,
+        "text": "B"
+      },
+      {
+        "end": 6.08,
+        "start": 2.58,
+        "text": "ねえ、ゆいさん、明日暇?"
+      },
+      {
+        "end": 10.08,
+        "start": 6.08,
+        "text": "うん、暇だけど。どうして?"
+      },
+      {
+        "end": 13.08,
+        "start": 10.08,
+        "text": "明日、アルバイトがあるんだ。"
+      },
+      {
+        "end": 18.08,
+        "start": 13.08,
+        "text": "でも妹が来るから、うちにいなきゃいけないんだ。"
+      },
+      {
+        "end": 23.58,
+        "start": 18.08,
+        "text": "僕いけないから、アルバイトに行って、一日だけ。"
+      },
+      {
+        "end": 27.08,
+        "start": 23.58,
+        "text": "ええ、どんなアルバイト?"
+      },
+      {
+        "end": 29.58,
+        "start": 27.08,
+        "text": "英語の先生。"
+      },
+      {
+        "end": 34.08,
+        "start": 29.58,
+        "text": "私、英語を教えたことがないし、できない。"
+      },
+      {
+        "end": 41.08,
+        "start": 34.08,
+        "text": "大丈夫だよ。僕より英語が上手だし、ゆいさんならできるよ。"
+      },
+      {
+        "end": 46.28,
+        "start": 41.08,
+        "text": "ごめん、ロバートさんに聞いてみて。"
+      },
+      {
+        "end": 49.78,
+        "start": 46.28,
+        "text": "ロバート、お願いがあるんだ。"
+      },
+      {
+        "end": 51.28,
+        "start": 49.78,
+        "text": "何?"
+      },
+      {
+        "end": 54.28,
+        "start": 51.28,
+        "text": "明日、アルバイトがあるんだ。"
+      },
+      {
+        "end": 57.28,
+        "start": 54.28,
+        "text": "でも妹が来るから、いけないんだ。"
+      },
+      {
+        "end": 60.28,
+        "start": 57.28,
+        "text": "だから、明日のアルバイト…"
+      },
+      {
+        "end": 62.28,
+        "start": 60.28,
+        "text": "明日?"
+      },
+      {
+        "end": 68.28,
+        "start": 62.28,
+        "text": "明日はレポートを書かなきゃいけないし、友達と約束があるし…"
+      },
+      {
+        "end": 70.28,
+        "start": 68.28,
+        "text": "一回だけ。"
+      },
+      {
+        "end": 73.78,
+        "start": 70.28,
+        "text": "ごめん、僕はできないよ。"
+      },
+      {
+        "end": 77.28,
+        "start": 73.78,
+        "text": "でも、友達の直見ならできると思う。"
+      },
+      {
+        "end": 82.78,
+        "start": 77.28,
+        "text": "英語が教えてみたいと言っていたから、電話してみるよ。"
+      },
+      {
+        "end": 84.78,
+        "start": 82.78,
+        "text": "ありがとう。"
+      }
+    ]
+  },
+  "W13_C": {
+    "duration": 91.79,
+    "language": "ja",
+    "languageProbability": 0.9703,
+    "segments": [
+      {
+        "end": 2.43,
+        "start": 0.11,
+        "text": "C"
+      },
+      {
+        "end": 5.04,
+        "start": 2.43,
+        "text": "1"
+      },
+      {
+        "end": 8.58,
+        "start": 5.04,
+        "text": "この時計、綺麗ですね"
+      },
+      {
+        "end": 11.22,
+        "start": 8.58,
+        "text": "スイスの時計ですよ"
+      },
+      {
+        "end": 13.46,
+        "start": 11.22,
+        "text": "本当ですね"
+      },
+      {
+        "end": 16.7,
+        "start": 13.46,
+        "text": "でも、高そうですね"
+      },
+      {
+        "end": 18.78,
+        "start": 16.7,
+        "text": "いくらですか?"
+      },
+      {
+        "end": 23.42,
+        "start": 18.78,
+        "text": "えー、ちょっと待ってください"
+      },
+      {
+        "end": 26.02,
+        "start": 23.42,
+        "text": "258000円です"
+      },
+      {
+        "end": 33.32,
+        "start": 26.02,
+        "text": "高すぎて買えませんよ"
+      },
+      {
+        "end": 35.6,
+        "start": 33.52,
+        "text": "2"
+      },
+      {
+        "end": 39.04,
+        "start": 35.6,
+        "text": "これは、暖かそうなセーターですね"
+      },
+      {
+        "end": 43.92,
+        "start": 39.04,
+        "text": "ええ、あまり高くないし、色も綺麗ですね"
+      },
+      {
+        "end": 45.96,
+        "start": 43.92,
+        "text": "そうですね"
+      },
+      {
+        "end": 51.52,
+        "start": 45.96,
+        "text": "もうすぐ父の誕生日だから、父に買いたいと思うんですが"
+      },
+      {
+        "end": 53.52,
+        "start": 51.52,
+        "text": "いいですね"
+      },
+      {
+        "end": 59.3,
+        "start": 53.52,
+        "text": "じゃあ、父のプレゼントはこれに決めました"
+      },
+      {
+        "end": 61.58,
+        "start": 59.3,
+        "text": "3"
+      },
+      {
+        "end": 64.78,
+        "start": 61.58,
+        "text": "このフィットネスマシンはどうですか?"
+      },
+      {
+        "end": 66.9,
+        "start": 64.78,
+        "text": "便利そうですね"
+      },
+      {
+        "end": 72.02,
+        "start": 66.9,
+        "text": "ええ、このマシンなら、内で運動できますよ"
+      },
+      {
+        "end": 76.94,
+        "start": 72.02,
+        "text": "この頃運動していないから、太ったんですよ"
+      },
+      {
+        "end": 79.18,
+        "start": 76.94,
+        "text": "28000円です"
+      },
+      {
+        "end": 81.98,
+        "start": 79.18,
+        "text": "スポーツクラブより安いですよ"
+      },
+      {
+        "end": 83.58,
+        "start": 81.98,
+        "text": "そうですね"
+      },
+      {
+        "end": 87.58,
+        "start": 83.58,
+        "text": "じゃあ、これ買います"
+      }
+    ]
+  }
+}

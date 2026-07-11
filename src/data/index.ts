@@ -12,21 +12,52 @@ import { irodoriElementary2 } from './irodori-elementary2'
 import { irodoriPreIntermediate } from './irodori-pre-intermediate'
 import { irodoriTips } from './irodori-tips'
 import { genki1 } from './genki-1'
+import { genki2 } from './genki-2'
 
-export const levels: Level[] = [n5, n4, n5_2012, n4_2012, n5_mock, n4_mock, n4GrammarDrill, irodoriStarter, irodoriElementary1, irodoriElementary2, irodoriPreIntermediate, irodoriTips, genki1]
+export const levels: Level[] = [
+  n5,
+  n4,
+  n5_2012,
+  n4_2012,
+  n5_mock,
+  n4_mock,
+  n4GrammarDrill,
+  irodoriStarter,
+  irodoriElementary1,
+  irodoriElementary2,
+  irodoriPreIntermediate,
+  irodoriTips,
+  genki1,
+  genki2,
+]
 
 export const courses: Course[] = [
-  { id: 'jlpt', titlePt: 'JLPT', taglinePt: 'Exame de proficiência (N5/N4)', levels: [n5, n4, n5_2012, n4_2012, n5_mock, n4_mock, n4GrammarDrill] },
-  { id: 'irodori', titlePt: 'Irodori', taglinePt: 'Japonês para a vida no Japão (A1-B1)', levels: [irodoriStarter, irodoriElementary1, irodoriElementary2, irodoriPreIntermediate, irodoriTips] },
-  { id: 'genki', titlePt: 'Genki', taglinePt: 'Curso integrado de japonês (3ª edição)', levels: [genki1] },
+  {
+    id: 'jlpt',
+    titlePt: 'JLPT',
+    taglinePt: 'Exame de profici\u00eancia (N5/N4)',
+    levels: [n5, n4, n5_2012, n4_2012, n5_mock, n4_mock, n4GrammarDrill],
+  },
+  {
+    id: 'irodori',
+    titlePt: 'Irodori',
+    taglinePt: 'Japon\u00eas para a vida no Jap\u00e3o (A1-B1)',
+    levels: [irodoriStarter, irodoriElementary1, irodoriElementary2, irodoriPreIntermediate, irodoriTips],
+  },
+  {
+    id: 'genki',
+    titlePt: 'Genki',
+    taglinePt: 'Curso integrado de japon\u00eas (3\u00aa edi\u00e7\u00e3o)',
+    levels: [genki1, genki2],
+  },
 ]
 
 export function getCourse(id: string | undefined): Course | undefined {
-  return courses.find((c) => c.id === id)
+  return courses.find((course) => course.id === id)
 }
 
 export function getLevel(id: string | undefined): Level | undefined {
-  return levels.find((l) => l.id === id)
+  return levels.find((level) => level.id === id)
 }
 
 export function getSection(
@@ -35,7 +66,7 @@ export function getSection(
 ): { level: Level; section: Section } | undefined {
   const level = getLevel(levelId)
   if (!level) return undefined
-  const section = level.sections.find((s) => s.id === sectionId)
+  const section = level.sections.find((candidate) => candidate.id === sectionId)
   if (!section) return undefined
   return { level, section }
 }

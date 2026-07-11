@@ -8,22 +8,25 @@ import type {
   Section,
 } from './types'
 import { genki1AudioSourceByCode, type Genki1AudioSourceMetadata } from './genki-1-audio-source'
+import { genki2AudioSourceByCode } from './genki-2-audio-source'
 import genki1MachineTranscriptData from './genki-1-machine-transcripts.json'
 
-interface MachineTranscriptSegment {
+export interface MachineTranscriptSegment {
   start: number
   end: number
   text: string
 }
 
-interface MachineTranscriptRecord {
+export interface MachineTranscriptRecord {
   language: string
   languageProbability: number
   duration: number
   segments: MachineTranscriptSegment[]
 }
 
-const genki1MachineTranscripts = genki1MachineTranscriptData as Record<string, MachineTranscriptRecord>
+export type MachineTranscriptCollection = Record<string, MachineTranscriptRecord>
+
+const genki1MachineTranscripts = genki1MachineTranscriptData as MachineTranscriptCollection
 
 interface TrackSlice {
   code: string
@@ -215,9 +218,14 @@ function formatTimestamp(seconds: number): string {
   return `${minutes}:${remaining.toString().padStart(2, '0')}`
 }
 
-function machineTranscript(level: Level, code: string): AudioTranscript | undefined {
-  if (level.id !== 'genki-1') return undefined
-  const data = genki1MachineTranscripts[code]
+function machineTranscript(
+  level: Level,
+  code: string,
+  additionalTranscripts: MachineTranscriptCollection,
+): AudioTranscript | undefined {
+  const data = level.id === 'genki-1'
+    ? genki1MachineTranscripts[code]
+    : additionalTranscripts[code]
   if (!data?.segments.length) return undefined
   const items: AudioTranscript['items'] = []
   for (const segment of data.segments) {
@@ -371,12 +379,20 @@ function selfCheckChoices(track: AudioTrack): Pick<Question, 'choices' | 'answer
   }
 }
 
-function enrichSection(level: Level, section: Section): Section {
+function enrichSection(
+  level: Level,
+  section: Section,
+  machineTranscripts: MachineTranscriptCollection,
+): Section {
   const originalTracks = section.audios ?? []
   const tracks = originalTracks.map((track) => {
     const code = trackCode(track)
     const kind = inferKind(track, originalTracks)
-    const source = level.id === 'genki-1' ? genki1AudioSourceByCode[code] : undefined
+    const source = level.id === 'genki-1'
+      ? genki1AudioSourceByCode[code]
+      : level.id === 'genki-2'
+        ? genki2AudioSourceByCode[code]
+        : undefined
     return {
       ...track,
       title: source && isGenericTrackTitle(track.title, code) ? source.sourceActivityPt : track.title,
@@ -394,7 +410,7 @@ function enrichSection(level: Level, section: Section): Section {
       practiceTaskPt: track.practiceTaskPt ?? practiceTask(kind, source),
       transcript: track.transcript ?? (hasScript(track)
         ? { kind: 'excerpt' as const, source: 'manual' as const, reviewed: false, items: track.script }
-        : machineTranscript(level, code)),
+        : machineTranscript(level, code, machineTranscripts)),
     }
   })
   const tracksByCode = new Map(tracks.map((track) => [track.code!.toUpperCase(), track]))
@@ -491,9 +507,12 @@ function enrichSection(level: Level, section: Section): Section {
 }
 
 /** Adds explicit audio-study metadata and stable review cards for otherwise unlinked tracks. */
-export function enrichGenkiLevel(level: Level): Level {
+export function enrichGenkiLevel(
+  level: Level,
+  machineTranscripts: MachineTranscriptCollection = {},
+): Level {
   return {
     ...level,
-    sections: level.sections.map((section) => enrichSection(level, section)),
+    sections: level.sections.map((section) => enrichSection(level, section, machineTranscripts)),
   }
 }
