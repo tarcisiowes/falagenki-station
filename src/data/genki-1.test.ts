@@ -100,3 +100,30 @@ describe('Genki I lesson 3', () => {
     expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
   })
 })
+
+describe('Genki I lesson 4', () => {
+  const lesson = genki1.sections.find((section) => section.id === 'lesson-4')!
+  const questions = lesson.groups.flatMap((group) => group.questions)
+
+  it('covers the full lesson and its source audio', () => {
+    expect(questions).toHaveLength(65)
+    expect(lesson.audios).toHaveLength(23)
+    expect(questions.filter((question) => question.audio)).toHaveLength(15)
+    expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
+    for (const track of lesson.audios ?? []) expect(existsSync(resolve('public', track.src.replace(/^\//, ''))), track.src).toBe(true)
+  })
+
+  it('adds every exercise to the FSRS pool', () => {
+    const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki' && item.sectionId === 'lesson-4')
+    expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
+  })
+})
+
+describe('all implemented Genki I modules', () => {
+  it('keeps section and question ids globally unique with valid answers', () => {
+    expect(new Set(genki1.sections.map((section) => section.id)).size).toBe(genki1.sections.length)
+    const questions = genki1.sections.flatMap((section) => section.groups.flatMap((group) => group.questions))
+    expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
+    for (const question of questions) expect(question.choices.some((choice) => choice.n === question.answer)).toBe(true)
+  })
+})
