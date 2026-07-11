@@ -38,7 +38,7 @@ describe('Genki I lesson 1', () => {
   })
 
   it('adds every exercise to the Genki FSRS question pool', () => {
-    const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki')
+    const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki' && item.sectionId === 'lesson-1')
     expect(reviewQuestions).toHaveLength(questions.length)
     expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
   })
@@ -47,5 +47,34 @@ describe('Genki I lesson 1', () => {
     expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(4)
     expect(questions.filter((question) => question.helpPt).length).toBeGreaterThanOrEqual(6)
     expect(lesson.groups.some((group) => group.example?.helpPt)).toBe(true)
+  })
+})
+
+describe('Genki I lesson 2', () => {
+  const lesson = genki1.sections.find((section) => section.id === 'lesson-2')!
+  const questions = lesson.groups.flatMap((group) => group.questions)
+  const audioSources = new Set(lesson.audios?.map((track) => track.src))
+
+  it('contains the complete interactive lesson structure', () => {
+    expect(questions).toHaveLength(86)
+    expect(new Set(questions.map((question) => question.id)).size).toBe(questions.length)
+    expect(lesson.studyNotes.some((note) => note.title.includes('Katakana'))).toBe(true)
+    expect(lesson.studyNotes.filter((note) => note.helpPt).length).toBeGreaterThanOrEqual(5)
+  })
+
+  it('registers textbook, workbook, and reading/writing audio', () => {
+    expect(lesson.audios).toHaveLength(22)
+    for (const source of audioSources) {
+      expect(existsSync(resolve('public', source.replace(/^\//, ''))), source).toBe(true)
+    }
+  })
+
+  it('keeps listening exercises audio-backed and reviewable', () => {
+    const listeningQuestions = questions.filter((question) => question.audio)
+    expect(listeningQuestions).toHaveLength(22)
+    for (const item of listeningQuestions) expect(audioSources.has(item.audio!.src)).toBe(true)
+
+    const reviewQuestions = allFlatQuestions([]).filter((item) => item.courseId === 'genki' && item.sectionId === 'lesson-2')
+    expect(reviewQuestions.map((item) => item.q.id)).toEqual(questions.map((question) => question.id))
   })
 })
