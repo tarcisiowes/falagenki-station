@@ -1,0 +1,2902 @@
+{
+  "K20_01": {
+    "duration": 71.94,
+    "language": "ja",
+    "languageProbability": 0.9855,
+    "segments": [
+      {
+        "end": 6.88,
+        "start": 0.05,
+        "text": "第20日 メアリーさんの買い物"
+      },
+      {
+        "end": 11.24,
+        "start": 6.88,
+        "text": "買いは 1"
+      },
+      {
+        "end": 16.44,
+        "start": 11.24,
+        "text": "すみません この間このヘッドホンを買ったんですが"
+      },
+      {
+        "end": 19.36,
+        "start": 16.44,
+        "text": "音が聞こえないんです"
+      },
+      {
+        "end": 27.1,
+        "start": 19.36,
+        "text": "少々お待ちください 今かかりのものを呼んでまいります"
+      },
+      {
+        "end": 31.46,
+        "start": 27.1,
+        "text": "お待たせいたしました 田中と申します"
+      },
+      {
+        "end": 38.56,
+        "start": 31.58,
+        "text": "ヘッドホンを見せていただけますか 壊れているみたいですね"
+      },
+      {
+        "end": 43.96,
+        "start": 38.56,
+        "text": "失礼いたしました よろしかったら交換いたしますが"
+      },
+      {
+        "end": 50.71,
+        "start": 43.96,
+        "text": "じゃあお願いします 申し訳ございません"
+      },
+      {
+        "end": 56.79,
+        "start": 50.71,
+        "text": "今同じものがございませんので 2 3週間待っていただけませんか"
+      },
+      {
+        "end": 64.91,
+        "start": 56.79,
+        "text": "それはちょっと もうすぐ国に帰るのでできれば返品したいんですが"
+      },
+      {
+        "end": 71.95,
+        "start": 64.91,
+        "text": "かしこまりました まことに申し訳ございませんでした"
+      }
+    ]
+  },
+  "K20_02": {
+    "duration": 112.59,
+    "language": "ja",
+    "languageProbability": 0.8969,
+    "segments": [
+      {
+        "end": 4.52,
+        "start": 0.14,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 13.18,
+        "start": 4.52,
+        "text": "すみません。この間、このヘッドホンを買ったんですが、音が聞こえないんです。"
+      },
+      {
+        "end": 32.05,
+        "start": 13.18,
+        "text": "少々お待ちください。今、かかりのものを呼んでまいります。"
+      },
+      {
+        "end": 51.97,
+        "start": 32.05,
+        "text": "お待たせいたしました。田中と申します。ヘッドホンを見せていただけますか?壊れているみたいですね。失礼いたしました。"
+      },
+      {
+        "end": 57.27,
+        "start": 51.97,
+        "text": "よろしかったら交換いたしますが。"
+      },
+      {
+        "end": 63.5,
+        "start": 57.27,
+        "text": "じゃあ、お願いします。"
+      },
+      {
+        "end": 77.2,
+        "start": 63.5,
+        "text": "申し訳ございません。今、同じものがございませんので、2、3週間待っていただけませんか?"
+      },
+      {
+        "end": 94.06,
+        "start": 77.2,
+        "text": "それは、ちょっと、もうすぐ国に帰るので、できれば返品したいんですが。"
+      },
+      {
+        "end": 106.8,
+        "start": 94.06,
+        "text": "かしこまりました。誠に申し訳ございませんでした。"
+      }
+    ]
+  },
+  "K20_03": {
+    "duration": 58.51,
+    "language": "ja",
+    "languageProbability": 0.9827,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "2."
+      },
+      {
+        "end": 10.11,
+        "start": 2.11,
+        "text": "すみません。西企業という店がどこにあるか教えていただけませんか?"
+      },
+      {
+        "end": 15.11,
+        "start": 10.11,
+        "text": "地図を見ているんですが、分かりにくいんです。"
+      },
+      {
+        "end": 24.11,
+        "start": 15.11,
+        "text": "センスの店ですね。次の角を左に曲がったら見えますよ。センスを買いに行くんですか?"
+      },
+      {
+        "end": 29.11,
+        "start": 24.11,
+        "text": "ええ。お土産にセンスを買おうと思っているんです。"
+      },
+      {
+        "end": 38.11,
+        "start": 29.11,
+        "text": "いいお土産になりますよ。あ、雨ですね。傘を持っていますか?"
+      },
+      {
+        "end": 44.11,
+        "start": 38.11,
+        "text": "いいえ。急いでいたから傘を持たないで来ちゃったんです。"
+      },
+      {
+        "end": 48.11,
+        "start": 44.11,
+        "text": "じゃあ一緒に店まで行きましょう。"
+      },
+      {
+        "end": 55.11,
+        "start": 48.11,
+        "text": "どうもすみません。荷物が重そうですね。お持ちします。"
+      },
+      {
+        "end": 58.11,
+        "start": 55.11,
+        "text": "ありがとう。"
+      }
+    ]
+  },
+  "K20_04": {
+    "duration": 111.23,
+    "language": "ja",
+    "languageProbability": 0.6587,
+    "segments": [
+      {
+        "end": 3.05,
+        "start": 0.05,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 18.92,
+        "start": 4.05,
+        "text": "すみません。西企業という店がどこにあるか教えていただけませんか?"
+      },
+      {
+        "end": 22.92,
+        "start": 18.92,
+        "text": "地図を見ているんですが、分かりにくいんです。"
+      },
+      {
+        "end": 36.79,
+        "start": 22.92,
+        "text": "センスの店ですね。次の角を左に曲がったら見えますよ。"
+      },
+      {
+        "end": 46.58,
+        "start": 36.79,
+        "text": "センスを買いに行くんですか?"
+      },
+      {
+        "end": 53.21,
+        "start": 46.58,
+        "text": "ええ。お土産にセンスを買おうと思っているんです。"
+      },
+      {
+        "end": 70.61,
+        "start": 53.21,
+        "text": "いいお土産になりますよ。あ、雨ですね。傘を持っていますか?"
+      },
+      {
+        "end": 80.96,
+        "start": 70.61,
+        "text": "いいえ。急いでいたから傘を持たないで来ちゃったんです。"
+      },
+      {
+        "end": 88.92,
+        "start": 80.96,
+        "text": "じゃあ一緒に店まで行きましょう。"
+      },
+      {
+        "end": 103.62,
+        "start": 88.92,
+        "text": "どうもすみません。荷物が重そうですね。お持ちします。"
+      },
+      {
+        "end": 107.67,
+        "start": 103.62,
+        "text": "ありがとう。"
+      }
+    ]
+  },
+  "K20_05": {
+    "duration": 322.4,
+    "language": "ja",
+    "languageProbability": 0.9304,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第20課"
+      },
+      {
+        "end": 4.08,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 8.96,
+        "start": 4.08,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.96,
+        "start": 8.96,
+        "text": "アニメ"
+      },
+      {
+        "end": 12.96,
+        "start": 10.96,
+        "text": "Animation"
+      },
+      {
+        "end": 15.96,
+        "start": 12.96,
+        "text": "小説"
+      },
+      {
+        "end": 17.96,
+        "start": 15.96,
+        "text": "Novel"
+      },
+      {
+        "end": 19.96,
+        "start": 17.96,
+        "text": "趣味"
+      },
+      {
+        "end": 21.96,
+        "start": 19.96,
+        "text": "Hobby"
+      },
+      {
+        "end": 23.96,
+        "start": 21.96,
+        "text": "Pastime"
+      },
+      {
+        "end": 25.96,
+        "start": 23.96,
+        "text": "月"
+      },
+      {
+        "end": 27.96,
+        "start": 25.96,
+        "text": "Moon"
+      },
+      {
+        "end": 30.96,
+        "start": 27.96,
+        "text": "宇宙人"
+      },
+      {
+        "end": 33.96,
+        "start": 30.96,
+        "text": "Space Alien"
+      },
+      {
+        "end": 35.96,
+        "start": 33.96,
+        "text": "センス"
+      },
+      {
+        "end": 38.96,
+        "start": 35.96,
+        "text": "Fan"
+      },
+      {
+        "end": 40.96,
+        "start": 38.96,
+        "text": "スニーカー"
+      },
+      {
+        "end": 43.96,
+        "start": 40.96,
+        "text": "Sneakers"
+      },
+      {
+        "end": 46.96,
+        "start": 43.96,
+        "text": "Headphone"
+      },
+      {
+        "end": 48.96,
+        "start": 46.96,
+        "text": "Headphones"
+      },
+      {
+        "end": 51.96,
+        "start": 48.96,
+        "text": "おにぎり"
+      },
+      {
+        "end": 53.96,
+        "start": 51.96,
+        "text": "Rice Ball"
+      },
+      {
+        "end": 56.96,
+        "start": 53.96,
+        "text": "動物"
+      },
+      {
+        "end": 58.96,
+        "start": 56.96,
+        "text": "Animal"
+      },
+      {
+        "end": 60.96,
+        "start": 58.96,
+        "text": "あちら"
+      },
+      {
+        "end": 62.96,
+        "start": 60.96,
+        "text": "That way"
+      },
+      {
+        "end": 65.96,
+        "start": 62.96,
+        "text": "かかりのもの"
+      },
+      {
+        "end": 68.96,
+        "start": 65.96,
+        "text": "Our person in charge"
+      },
+      {
+        "end": 71.96,
+        "start": 68.96,
+        "text": "お宅"
+      },
+      {
+        "end": 72.96,
+        "start": 71.96,
+        "text": "Home"
+      },
+      {
+        "end": 74.96,
+        "start": 72.96,
+        "text": "House"
+      },
+      {
+        "end": 76.96,
+        "start": 74.96,
+        "text": "や"
+      },
+      {
+        "end": 77.96,
+        "start": 76.96,
+        "text": "Shop"
+      },
+      {
+        "end": 81.21,
+        "start": 77.96,
+        "text": "視点"
+      },
+      {
+        "end": 84.21,
+        "start": 81.21,
+        "text": "Branch office"
+      },
+      {
+        "end": 86.21,
+        "start": 84.21,
+        "text": "ドイツ"
+      },
+      {
+        "end": 89.21,
+        "start": 86.21,
+        "text": "Germany"
+      },
+      {
+        "end": 91.21,
+        "start": 89.21,
+        "text": "信号"
+      },
+      {
+        "end": 94.21,
+        "start": 91.21,
+        "text": "Traffic Light"
+      },
+      {
+        "end": 96.21,
+        "start": 94.21,
+        "text": "角"
+      },
+      {
+        "end": 98.21,
+        "start": 96.21,
+        "text": "Corner"
+      },
+      {
+        "end": 100.21,
+        "start": 98.21,
+        "text": "字"
+      },
+      {
+        "end": 102.21,
+        "start": 100.21,
+        "text": "Letter"
+      },
+      {
+        "end": 104.21,
+        "start": 102.21,
+        "text": "Character"
+      },
+      {
+        "end": 106.21,
+        "start": 104.21,
+        "text": "音"
+      },
+      {
+        "end": 108.21,
+        "start": 106.21,
+        "text": "Sound"
+      },
+      {
+        "end": 111.21,
+        "start": 108.21,
+        "text": "E-Adjectives"
+      },
+      {
+        "end": 113.21,
+        "start": 111.21,
+        "text": "重い"
+      },
+      {
+        "end": 115.21,
+        "start": 113.21,
+        "text": "Heavy"
+      },
+      {
+        "end": 117.21,
+        "start": 115.21,
+        "text": "Serious"
+      },
+      {
+        "end": 119.21,
+        "start": 117.21,
+        "text": "軽い"
+      },
+      {
+        "end": 121.21,
+        "start": 119.21,
+        "text": "Light"
+      },
+      {
+        "end": 124.21,
+        "start": 121.21,
+        "text": "Na-Adjective"
+      },
+      {
+        "end": 127.21,
+        "start": 124.21,
+        "text": "不思議な"
+      },
+      {
+        "end": 130.21,
+        "start": 127.21,
+        "text": "Mysterious"
+      },
+      {
+        "end": 132.21,
+        "start": 130.21,
+        "text": "Uverbs"
+      },
+      {
+        "end": 134.21,
+        "start": 132.21,
+        "text": "オル"
+      },
+      {
+        "end": 139.21,
+        "start": 134.21,
+        "text": "Extra Modest Expression for いる"
+      },
+      {
+        "end": 141.21,
+        "start": 139.21,
+        "text": "マイル"
+      },
+      {
+        "end": 146.21,
+        "start": 141.21,
+        "text": "Extra Modest Expression for 行く and くる"
+      },
+      {
+        "end": 149.21,
+        "start": 146.21,
+        "text": "モース"
+      },
+      {
+        "end": 153.21,
+        "start": 149.21,
+        "text": "Extra Modest Expression for いる"
+      },
+      {
+        "end": 155.21,
+        "start": 153.21,
+        "text": "いたす"
+      },
+      {
+        "end": 159.21,
+        "start": 155.21,
+        "text": "Extra Modest Expression for する"
+      },
+      {
+        "end": 162.21,
+        "start": 159.21,
+        "text": "いただく"
+      },
+      {
+        "end": 167.21,
+        "start": 162.21,
+        "text": "Extra Modest Expression for 食べる and のむ"
+      },
+      {
+        "end": 169.21,
+        "start": 167.21,
+        "text": "ござる"
+      },
+      {
+        "end": 173.21,
+        "start": 169.21,
+        "text": "Extra Modest Expression for ある"
+      },
+      {
+        "end": 175.21,
+        "start": 173.21,
+        "text": "ておる"
+      },
+      {
+        "end": 179.21,
+        "start": 175.21,
+        "text": "Extra Modest Expression for ている"
+      },
+      {
+        "end": 182.21,
+        "start": 179.21,
+        "text": "でござる"
+      },
+      {
+        "end": 186.21,
+        "start": 182.21,
+        "text": "Extra Modest Expression for です"
+      },
+      {
+        "end": 189.21,
+        "start": 186.21,
+        "text": "いただく"
+      },
+      {
+        "end": 193.21,
+        "start": 189.21,
+        "text": "Humble Expression for もらう"
+      },
+      {
+        "end": 195.21,
+        "start": 193.21,
+        "text": "うかがう"
+      },
+      {
+        "end": 198.21,
+        "start": 195.21,
+        "text": "To humbly visit"
+      },
+      {
+        "end": 201.21,
+        "start": 198.21,
+        "text": "To humbly ask"
+      },
+      {
+        "end": 203.21,
+        "start": 201.21,
+        "text": "まがる"
+      },
+      {
+        "end": 205.21,
+        "start": 203.21,
+        "text": "To turn"
+      },
+      {
+        "end": 207.21,
+        "start": 205.21,
+        "text": "もどる"
+      },
+      {
+        "end": 209.21,
+        "start": 207.21,
+        "text": "To return"
+      },
+      {
+        "end": 211.21,
+        "start": 209.21,
+        "text": "To come back"
+      },
+      {
+        "end": 214.21,
+        "start": 211.21,
+        "text": "Roo verbs"
+      },
+      {
+        "end": 217.21,
+        "start": 214.21,
+        "text": "さしあげる"
+      },
+      {
+        "end": 221.21,
+        "start": 217.21,
+        "text": "Humble Expression for あげる"
+      },
+      {
+        "end": 223.21,
+        "start": 221.21,
+        "text": "きこえる"
+      },
+      {
+        "end": 226.21,
+        "start": 223.21,
+        "text": "To be audible"
+      },
+      {
+        "end": 228.21,
+        "start": 226.21,
+        "text": "つたえる"
+      },
+      {
+        "end": 231.21,
+        "start": 228.21,
+        "text": "To convey message"
+      },
+      {
+        "end": 234.21,
+        "start": 231.21,
+        "text": "またせる"
+      },
+      {
+        "end": 237.21,
+        "start": 234.21,
+        "text": "To keep waiting"
+      },
+      {
+        "end": 239.21,
+        "start": 237.21,
+        "text": "つづける"
+      },
+      {
+        "end": 242.21,
+        "start": 239.21,
+        "text": "To continue"
+      },
+      {
+        "end": 245.21,
+        "start": 242.21,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 248.21,
+        "start": 245.21,
+        "text": "こうかんする"
+      },
+      {
+        "end": 251.21,
+        "start": 248.21,
+        "text": "To exchange"
+      },
+      {
+        "end": 253.21,
+        "start": 251.21,
+        "text": "へんぴんする"
+      },
+      {
+        "end": 256.21,
+        "start": 253.21,
+        "text": "To return"
+      },
+      {
+        "end": 259.21,
+        "start": 256.21,
+        "text": "せいかつする"
+      },
+      {
+        "end": 262.21,
+        "start": 259.21,
+        "text": "To lead a life"
+      },
+      {
+        "end": 265.21,
+        "start": 262.21,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 268.62,
+        "start": 265.21,
+        "text": "かい"
+      },
+      {
+        "end": 270.62,
+        "start": 268.62,
+        "text": "Floor"
+      },
+      {
+        "end": 272.62,
+        "start": 270.62,
+        "text": "いっかい"
+      },
+      {
+        "end": 275.62,
+        "start": 272.62,
+        "text": "First floor"
+      },
+      {
+        "end": 278.62,
+        "start": 275.62,
+        "text": "みたいな"
+      },
+      {
+        "end": 280.62,
+        "start": 278.62,
+        "text": "Like"
+      },
+      {
+        "end": 282.62,
+        "start": 280.62,
+        "text": "また"
+      },
+      {
+        "end": 284.62,
+        "start": 282.62,
+        "text": "Again"
+      },
+      {
+        "end": 286.62,
+        "start": 284.62,
+        "text": "では"
+      },
+      {
+        "end": 289.62,
+        "start": 286.62,
+        "text": "Well then"
+      },
+      {
+        "end": 291.62,
+        "start": 289.62,
+        "text": "できれば"
+      },
+      {
+        "end": 293.62,
+        "start": 291.62,
+        "text": "If possible"
+      },
+      {
+        "end": 296.62,
+        "start": 293.62,
+        "text": "まことに"
+      },
+      {
+        "end": 298.62,
+        "start": 296.62,
+        "text": "Really"
+      },
+      {
+        "end": 301.62,
+        "start": 298.62,
+        "text": "よろしかったら"
+      },
+      {
+        "end": 304.62,
+        "start": 301.62,
+        "text": "If it is OK"
+      },
+      {
+        "end": 307.62,
+        "start": 304.62,
+        "text": "かしこまりました"
+      },
+      {
+        "end": 309.62,
+        "start": 307.62,
+        "text": "Certainly"
+      },
+      {
+        "end": 312.62,
+        "start": 309.62,
+        "text": "失礼しました"
+      },
+      {
+        "end": 315.62,
+        "start": 312.62,
+        "text": "I'm very sorry"
+      },
+      {
+        "end": 318.62,
+        "start": 315.62,
+        "text": "もうしわけありません"
+      },
+      {
+        "end": 321.62,
+        "start": 318.62,
+        "text": "You have my apologies"
+      }
+    ]
+  },
+  "K20_06": {
+    "duration": 321.67,
+    "language": "ja",
+    "languageProbability": 0.9048,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第20課"
+      },
+      {
+        "end": 5.08,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 8.39,
+        "start": 5.08,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.39,
+        "start": 8.39,
+        "text": "Animation"
+      },
+      {
+        "end": 12.39,
+        "start": 10.39,
+        "text": "Anime"
+      },
+      {
+        "end": 15.39,
+        "start": 12.39,
+        "text": "Novel"
+      },
+      {
+        "end": 17.39,
+        "start": 15.39,
+        "text": "小説"
+      },
+      {
+        "end": 19.39,
+        "start": 17.39,
+        "text": "Hobby"
+      },
+      {
+        "end": 21.39,
+        "start": 19.39,
+        "text": "Pastime"
+      },
+      {
+        "end": 23.39,
+        "start": 21.39,
+        "text": "趣味"
+      },
+      {
+        "end": 25.39,
+        "start": 23.39,
+        "text": "Moon"
+      },
+      {
+        "end": 27.39,
+        "start": 25.39,
+        "text": "月"
+      },
+      {
+        "end": 30.39,
+        "start": 27.39,
+        "text": "Space Alien"
+      },
+      {
+        "end": 33.39,
+        "start": 30.39,
+        "text": "宇宙人"
+      },
+      {
+        "end": 35.39,
+        "start": 33.39,
+        "text": "Fan"
+      },
+      {
+        "end": 38.39,
+        "start": 35.39,
+        "text": "Sense"
+      },
+      {
+        "end": 40.39,
+        "start": 38.39,
+        "text": "Sneakers"
+      },
+      {
+        "end": 43.39,
+        "start": 40.39,
+        "text": "Sneaker"
+      },
+      {
+        "end": 46.39,
+        "start": 43.39,
+        "text": "Headphones"
+      },
+      {
+        "end": 48.39,
+        "start": 46.39,
+        "text": "Headphone"
+      },
+      {
+        "end": 51.39,
+        "start": 48.39,
+        "text": "Riceball"
+      },
+      {
+        "end": 53.39,
+        "start": 51.39,
+        "text": "Onigiri"
+      },
+      {
+        "end": 56.39,
+        "start": 53.39,
+        "text": "Animal"
+      },
+      {
+        "end": 60.39,
+        "start": 57.39,
+        "text": "That way"
+      },
+      {
+        "end": 62.39,
+        "start": 60.39,
+        "text": "あちら"
+      },
+      {
+        "end": 65.39,
+        "start": 62.39,
+        "text": "Our person in charge"
+      },
+      {
+        "end": 68.39,
+        "start": 65.39,
+        "text": "かかりのもの"
+      },
+      {
+        "end": 70.39,
+        "start": 68.39,
+        "text": "Home"
+      },
+      {
+        "end": 72.39,
+        "start": 70.39,
+        "text": "House"
+      },
+      {
+        "end": 74.39,
+        "start": 72.39,
+        "text": "オタク"
+      },
+      {
+        "end": 76.39,
+        "start": 74.39,
+        "text": "Shop"
+      },
+      {
+        "end": 78.39,
+        "start": 76.39,
+        "text": "Yah"
+      },
+      {
+        "end": 81.39,
+        "start": 78.39,
+        "text": "branch office"
+      },
+      {
+        "end": 83.39,
+        "start": 81.39,
+        "text": "視点"
+      },
+      {
+        "end": 85.39,
+        "start": 83.39,
+        "text": "Germany"
+      },
+      {
+        "end": 87.39,
+        "start": 85.39,
+        "text": "ドイツ"
+      },
+      {
+        "end": 90.39,
+        "start": 87.39,
+        "text": "Traffic light"
+      },
+      {
+        "end": 93.39,
+        "start": 90.39,
+        "text": "信号"
+      },
+      {
+        "end": 95.39,
+        "start": 93.39,
+        "text": "Corner"
+      },
+      {
+        "end": 97.39,
+        "start": 95.39,
+        "text": "角"
+      },
+      {
+        "end": 99.39,
+        "start": 97.39,
+        "text": "Letter"
+      },
+      {
+        "end": 101.39,
+        "start": 99.39,
+        "text": "Character"
+      },
+      {
+        "end": 103.39,
+        "start": 101.39,
+        "text": "字"
+      },
+      {
+        "end": 105.39,
+        "start": 103.39,
+        "text": "Sound"
+      },
+      {
+        "end": 107.39,
+        "start": 105.39,
+        "text": "音"
+      },
+      {
+        "end": 110.39,
+        "start": 107.39,
+        "text": "E-Adjectives"
+      },
+      {
+        "end": 114.39,
+        "start": 110.39,
+        "text": "Heavy, Serious"
+      },
+      {
+        "end": 116.39,
+        "start": 114.39,
+        "text": "重い"
+      },
+      {
+        "end": 119.39,
+        "start": 116.39,
+        "text": "Light"
+      },
+      {
+        "end": 121.39,
+        "start": 119.39,
+        "text": "軽い"
+      },
+      {
+        "end": 124.39,
+        "start": 121.39,
+        "text": "Na-Adjective"
+      },
+      {
+        "end": 127.39,
+        "start": 124.39,
+        "text": "Mysterious"
+      },
+      {
+        "end": 129.39,
+        "start": 127.39,
+        "text": "不思議な"
+      },
+      {
+        "end": 132.39,
+        "start": 129.39,
+        "text": "U-Verbs"
+      },
+      {
+        "end": 136.39,
+        "start": 132.39,
+        "text": "Extra-Modest Expression for いる"
+      },
+      {
+        "end": 138.39,
+        "start": 136.39,
+        "text": "おる"
+      },
+      {
+        "end": 143.39,
+        "start": 138.39,
+        "text": "Extra-Modest Expression for 行く and くる"
+      },
+      {
+        "end": 145.39,
+        "start": 143.39,
+        "text": "まいる"
+      },
+      {
+        "end": 149.39,
+        "start": 145.39,
+        "text": "Extra-Modest Expression for いる"
+      },
+      {
+        "end": 151.39,
+        "start": 149.39,
+        "text": "もうす"
+      },
+      {
+        "end": 155.39,
+        "start": 151.39,
+        "text": "Extra-Modest Expression for する"
+      },
+      {
+        "end": 158.39,
+        "start": 155.39,
+        "text": "いたす"
+      },
+      {
+        "end": 163.39,
+        "start": 158.39,
+        "text": "Extra-Modest Expression for 食べる and のむ"
+      },
+      {
+        "end": 165.39,
+        "start": 163.39,
+        "text": "いただく"
+      },
+      {
+        "end": 169.39,
+        "start": 165.39,
+        "text": "Extra-Modest Expression for ある"
+      },
+      {
+        "end": 171.39,
+        "start": 169.39,
+        "text": "ござる"
+      },
+      {
+        "end": 176.39,
+        "start": 172.39,
+        "text": "Extra-Modest Expression for ている"
+      },
+      {
+        "end": 179.39,
+        "start": 176.39,
+        "text": "ておる"
+      },
+      {
+        "end": 183.39,
+        "start": 179.39,
+        "text": "Extra-Modest Expression for です"
+      },
+      {
+        "end": 186.39,
+        "start": 183.39,
+        "text": "でござる"
+      },
+      {
+        "end": 190.39,
+        "start": 186.39,
+        "text": "Humble Expression for もらう"
+      },
+      {
+        "end": 192.39,
+        "start": 190.39,
+        "text": "いただく"
+      },
+      {
+        "end": 195.39,
+        "start": 192.39,
+        "text": "To humbly visit"
+      },
+      {
+        "end": 198.39,
+        "start": 195.39,
+        "text": "To humbly ask"
+      },
+      {
+        "end": 200.39,
+        "start": 198.39,
+        "text": "うかがう"
+      },
+      {
+        "end": 202.39,
+        "start": 200.39,
+        "text": "To turn"
+      },
+      {
+        "end": 204.39,
+        "start": 202.39,
+        "text": "曲がる"
+      },
+      {
+        "end": 206.39,
+        "start": 204.39,
+        "text": "To return"
+      },
+      {
+        "end": 208.39,
+        "start": 206.39,
+        "text": "To come back"
+      },
+      {
+        "end": 210.39,
+        "start": 208.39,
+        "text": "戻る"
+      },
+      {
+        "end": 213.39,
+        "start": 210.39,
+        "text": "Ru-Verbs"
+      },
+      {
+        "end": 217.39,
+        "start": 213.39,
+        "text": "Humble Expression for あげる"
+      },
+      {
+        "end": 220.39,
+        "start": 217.39,
+        "text": "さしあげる"
+      },
+      {
+        "end": 223.39,
+        "start": 220.39,
+        "text": "To be audible"
+      },
+      {
+        "end": 225.39,
+        "start": 223.39,
+        "text": "聞こえる"
+      },
+      {
+        "end": 228.39,
+        "start": 225.39,
+        "text": "To convey message"
+      },
+      {
+        "end": 230.39,
+        "start": 228.39,
+        "text": "伝える"
+      },
+      {
+        "end": 233.39,
+        "start": 230.39,
+        "text": "To keep waiting"
+      },
+      {
+        "end": 236.39,
+        "start": 233.39,
+        "text": "待たせる"
+      },
+      {
+        "end": 239.39,
+        "start": 236.39,
+        "text": "To continue"
+      },
+      {
+        "end": 241.39,
+        "start": 239.39,
+        "text": "続ける"
+      },
+      {
+        "end": 244.39,
+        "start": 241.39,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 247.39,
+        "start": 244.39,
+        "text": "To exchange"
+      },
+      {
+        "end": 249.39,
+        "start": 247.39,
+        "text": "交換する"
+      },
+      {
+        "end": 252.39,
+        "start": 249.39,
+        "text": "To return"
+      },
+      {
+        "end": 255.39,
+        "start": 252.39,
+        "text": "返品する"
+      },
+      {
+        "end": 257.39,
+        "start": 255.39,
+        "text": "To lead a life"
+      },
+      {
+        "end": 260.39,
+        "start": 257.39,
+        "text": "生活する"
+      },
+      {
+        "end": 263.39,
+        "start": 260.39,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 266.9,
+        "start": 263.39,
+        "text": "Floor"
+      },
+      {
+        "end": 268.9,
+        "start": 266.9,
+        "text": "かい"
+      },
+      {
+        "end": 271.9,
+        "start": 268.9,
+        "text": "First floor"
+      },
+      {
+        "end": 274.9,
+        "start": 271.9,
+        "text": "いっかい"
+      },
+      {
+        "end": 276.9,
+        "start": 274.9,
+        "text": "Like"
+      },
+      {
+        "end": 278.9,
+        "start": 276.9,
+        "text": "みたいな"
+      },
+      {
+        "end": 281.9,
+        "start": 278.9,
+        "text": "Again"
+      },
+      {
+        "end": 283.9,
+        "start": 281.9,
+        "text": "また"
+      },
+      {
+        "end": 285.9,
+        "start": 283.9,
+        "text": "Well then"
+      },
+      {
+        "end": 287.9,
+        "start": 285.9,
+        "text": "では"
+      },
+      {
+        "end": 290.9,
+        "start": 287.9,
+        "text": "If possible"
+      },
+      {
+        "end": 292.9,
+        "start": 290.9,
+        "text": "できれば"
+      },
+      {
+        "end": 295.9,
+        "start": 292.9,
+        "text": "Really"
+      },
+      {
+        "end": 297.9,
+        "start": 295.9,
+        "text": "まことに"
+      },
+      {
+        "end": 300.9,
+        "start": 297.9,
+        "text": "If it is OK"
+      },
+      {
+        "end": 303.9,
+        "start": 300.9,
+        "text": "よろしかったら"
+      },
+      {
+        "end": 305.9,
+        "start": 303.9,
+        "text": "Certainly"
+      },
+      {
+        "end": 308.9,
+        "start": 305.9,
+        "text": "かしこまりました"
+      },
+      {
+        "end": 311.9,
+        "start": 308.9,
+        "text": "I'm very sorry"
+      },
+      {
+        "end": 314.9,
+        "start": 311.9,
+        "text": "失礼しました"
+      },
+      {
+        "end": 317.9,
+        "start": 314.9,
+        "text": "You have my apologies"
+      },
+      {
+        "end": 320.9,
+        "start": 317.9,
+        "text": "申し訳ありません"
+      }
+    ]
+  },
+  "K20_07": {
+    "duration": 86.6,
+    "language": "ja",
+    "languageProbability": 0.9647,
+    "segments": [
+      {
+        "end": 4.36,
+        "start": 0.02,
+        "text": "第20課 練習"
+      },
+      {
+        "end": 8.36,
+        "start": 4.36,
+        "text": "1 田中と申します"
+      },
+      {
+        "end": 14.84,
+        "start": 8.36,
+        "text": "A エクセンプル"
+      },
+      {
+        "end": 19.18,
+        "start": 14.84,
+        "text": "行く 参ります"
+      },
+      {
+        "end": 27.83,
+        "start": 19.18,
+        "text": "1 食べる いただきます"
+      },
+      {
+        "end": 34.37,
+        "start": 27.83,
+        "text": "2 言う 申します"
+      },
+      {
+        "end": 44.34,
+        "start": 36.13,
+        "text": "3 来る 参ります"
+      },
+      {
+        "end": 52.76,
+        "start": 44.34,
+        "text": "4 する いたします"
+      },
+      {
+        "end": 60.71,
+        "start": 52.76,
+        "text": "5 いる 降ります"
+      },
+      {
+        "end": 69.13,
+        "start": 60.71,
+        "text": "6 ある ございます"
+      },
+      {
+        "end": 77.65,
+        "start": 69.13,
+        "text": "7 飲む いただきます"
+      },
+      {
+        "end": 83.29,
+        "start": 77.65,
+        "text": "8 アチラダ"
+      },
+      {
+        "end": 86.55,
+        "start": 83.29,
+        "text": "アチラでございます"
+      }
+    ]
+  },
+  "K20_08": {
+    "duration": 53.24,
+    "language": "ja",
+    "languageProbability": 0.9826,
+    "segments": [
+      {
+        "end": 3.49,
+        "start": 0.05,
+        "text": "B"
+      },
+      {
+        "end": 12.74,
+        "start": 3.49,
+        "text": "1 田中と申します。よろしくお願いいたします。"
+      },
+      {
+        "end": 19.94,
+        "start": 12.74,
+        "text": "2 電車が参ります。"
+      },
+      {
+        "end": 27.19,
+        "start": 19.94,
+        "text": "3 いただきます。"
+      },
+      {
+        "end": 36.45,
+        "start": 27.19,
+        "text": "4 アチラが東京スカイツリーでございます。"
+      },
+      {
+        "end": 44.83,
+        "start": 36.45,
+        "text": "5 オテアライは2階にございます。"
+      },
+      {
+        "end": 53,
+        "start": 44.83,
+        "text": "6 父は今出かけております。"
+      }
+    ]
+  },
+  "K20_09": {
+    "duration": 201.85,
+    "language": "ja",
+    "languageProbability": 0.9627,
+    "segments": [
+      {
+        "end": 2.3,
+        "start": 0.3,
+        "text": "C"
+      },
+      {
+        "end": 5.3,
+        "start": 2.3,
+        "text": "example"
+      },
+      {
+        "end": 7.3,
+        "start": 5.3,
+        "text": "お名前は何と言いますか?"
+      },
+      {
+        "end": 11.62,
+        "start": 7.3,
+        "text": "お名前は何とおっしゃいますか?"
+      },
+      {
+        "end": 15.02,
+        "start": 11.62,
+        "text": "となかと言います"
+      },
+      {
+        "end": 18.34,
+        "start": 15.02,
+        "text": "となかと申します"
+      },
+      {
+        "end": 21.78,
+        "start": 18.34,
+        "text": "1"
+      },
+      {
+        "end": 23.78,
+        "start": 21.78,
+        "text": "いつ日本に来ましたか?"
+      },
+      {
+        "end": 28.95,
+        "start": 23.78,
+        "text": "いつ日本にいらっしゃいましたか?"
+      },
+      {
+        "end": 32.36,
+        "start": 28.95,
+        "text": "先月来ました"
+      },
+      {
+        "end": 36.54,
+        "start": 32.36,
+        "text": "先月参りました"
+      },
+      {
+        "end": 39.94,
+        "start": 36.54,
+        "text": "2"
+      },
+      {
+        "end": 41.94,
+        "start": 39.94,
+        "text": "どちらに住んでいますか?"
+      },
+      {
+        "end": 47.12,
+        "start": 41.94,
+        "text": "どちらに住んでいらっしゃいますか?"
+      },
+      {
+        "end": 50.53,
+        "start": 47.12,
+        "text": "名古屋に住んでいます"
+      },
+      {
+        "end": 54.77,
+        "start": 50.53,
+        "text": "名古屋に住んでおります"
+      },
+      {
+        "end": 58.3,
+        "start": 54.77,
+        "text": "3"
+      },
+      {
+        "end": 60.3,
+        "start": 58.3,
+        "text": "お酒をよく飲みますか?"
+      },
+      {
+        "end": 65.48,
+        "start": 60.3,
+        "text": "お酒をよく飯やがりますか?"
+      },
+      {
+        "end": 69.08,
+        "start": 65.48,
+        "text": "少し飲みます"
+      },
+      {
+        "end": 73.48,
+        "start": 69.08,
+        "text": "少しいただきます"
+      },
+      {
+        "end": 76.89,
+        "start": 73.48,
+        "text": "4"
+      },
+      {
+        "end": 78.89,
+        "start": 76.89,
+        "text": "ご兄弟がいますか?"
+      },
+      {
+        "end": 85.57,
+        "start": 78.89,
+        "text": "ご兄弟がいらっしゃいますか?"
+      },
+      {
+        "end": 89.87,
+        "start": 85.57,
+        "text": "兄が一人います"
+      },
+      {
+        "end": 91.87,
+        "start": 89.87,
+        "text": "兄が一人おります"
+      },
+      {
+        "end": 95.31,
+        "start": 91.87,
+        "text": "5"
+      },
+      {
+        "end": 97.31,
+        "start": 95.31,
+        "text": "何かスポーツをしますか?"
+      },
+      {
+        "end": 102.49,
+        "start": 97.31,
+        "text": "何かスポーツをなさいますか?"
+      },
+      {
+        "end": 104.93,
+        "start": 102.49,
+        "text": "はい"
+      },
+      {
+        "end": 106.93,
+        "start": 104.93,
+        "text": "サッカーをします"
+      },
+      {
+        "end": 110.3,
+        "start": 106.93,
+        "text": "はい"
+      },
+      {
+        "end": 112.3,
+        "start": 110.3,
+        "text": "サッカーをいたします"
+      },
+      {
+        "end": 115.67,
+        "start": 112.3,
+        "text": "6"
+      },
+      {
+        "end": 119.67,
+        "start": 115.67,
+        "text": "毎日何時間日本語を勉強しますか?"
+      },
+      {
+        "end": 128.22,
+        "start": 119.67,
+        "text": "毎日何時間日本語を勉強なさいますか?"
+      },
+      {
+        "end": 130.22,
+        "start": 128.22,
+        "text": "2時間ぐらい勉強します"
+      },
+      {
+        "end": 135.4,
+        "start": 130.22,
+        "text": "2時間ぐらい勉強いたします"
+      },
+      {
+        "end": 138.84,
+        "start": 135.4,
+        "text": "7"
+      },
+      {
+        "end": 142.84,
+        "start": 138.84,
+        "text": "毎日何時頃晩御飯を食べますか?"
+      },
+      {
+        "end": 148.98,
+        "start": 142.84,
+        "text": "毎日何時頃晩御飯をめしあがりますか?"
+      },
+      {
+        "end": 152.49,
+        "start": 148.98,
+        "text": "7時頃食べます"
+      },
+      {
+        "end": 156.98,
+        "start": 152.49,
+        "text": "7時頃いただきます"
+      },
+      {
+        "end": 160.42,
+        "start": 156.98,
+        "text": "8"
+      },
+      {
+        "end": 163.42,
+        "start": 160.42,
+        "text": "週末はどこかへ行きましたか?"
+      },
+      {
+        "end": 168.6,
+        "start": 163.42,
+        "text": "週末はどこかへいらっしゃいましたか?"
+      },
+      {
+        "end": 171.98,
+        "start": 168.6,
+        "text": "はい"
+      },
+      {
+        "end": 173.98,
+        "start": 171.98,
+        "text": "美術館へ行きました"
+      },
+      {
+        "end": 177.22,
+        "start": 173.98,
+        "text": "はい"
+      },
+      {
+        "end": 179.22,
+        "start": 177.22,
+        "text": "美術館へ参りました"
+      },
+      {
+        "end": 182.62,
+        "start": 179.22,
+        "text": "9"
+      },
+      {
+        "end": 185.62,
+        "start": 182.62,
+        "text": "日本文学に興味がありますか?"
+      },
+      {
+        "end": 191.77,
+        "start": 185.62,
+        "text": "日本文学に興味が終わりになりますか?"
+      },
+      {
+        "end": 194.3,
+        "start": 191.77,
+        "text": "はい"
+      },
+      {
+        "end": 195.3,
+        "start": 194.3,
+        "text": "あります"
+      },
+      {
+        "end": 198.58,
+        "start": 195.3,
+        "text": "はい"
+      },
+      {
+        "end": 200.58,
+        "start": 198.58,
+        "text": "ございます"
+      }
+    ]
+  },
+  "K20_10": {
+    "duration": 31.03,
+    "language": "ja",
+    "languageProbability": 0.9834,
+    "segments": [
+      {
+        "end": 1.02,
+        "start": 0.02,
+        "text": "D"
+      },
+      {
+        "end": 4.52,
+        "start": 2.52,
+        "text": "ビルテイラーと言います"
+      },
+      {
+        "end": 7.52,
+        "start": 5.52,
+        "text": "トマス銀行から来ました"
+      },
+      {
+        "end": 11.02,
+        "start": 8.52,
+        "text": "横浜視点で働いています"
+      },
+      {
+        "end": 14.02,
+        "start": 12.02,
+        "text": "どうぞよろしくお願いします"
+      },
+      {
+        "end": 18.79,
+        "start": 16.79,
+        "text": "ビルテイラーと申します"
+      },
+      {
+        "end": 21.79,
+        "start": 19.79,
+        "text": "トマス銀行から参りました"
+      },
+      {
+        "end": 25.79,
+        "start": 23.29,
+        "text": "横浜視点で働いております"
+      },
+      {
+        "end": 29.29,
+        "start": 27.29,
+        "text": "どうぞよろしくお願いいたします"
+      }
+    ]
+  },
+  "K20_11": {
+    "duration": 33.57,
+    "language": "ja",
+    "languageProbability": 0.996,
+    "segments": [
+      {
+        "end": 7.44,
+        "start": 0.08,
+        "text": "いい。 はい、ジャパンタイムズ出版でございます。"
+      },
+      {
+        "end": 12.54,
+        "start": 7.44,
+        "text": "スミスと申しますが、セキドさんはいらっしゃいますか?"
+      },
+      {
+        "end": 18.14,
+        "start": 12.54,
+        "text": "申し訳ありません。 セキドは今日休んでおりますが。"
+      },
+      {
+        "end": 25.74,
+        "start": 18.14,
+        "text": "そうですか。 では、スミスから電話があったと伝えていただけませんか?"
+      },
+      {
+        "end": 30.34,
+        "start": 25.74,
+        "text": "スミスさんですね。 確かまりました。"
+      },
+      {
+        "end": 33.54,
+        "start": 30.34,
+        "text": "失礼いたします。"
+      }
+    ]
+  },
+  "K20_12": {
+    "duration": 118.23,
+    "language": "ja",
+    "languageProbability": 0.9595,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "2. おもちします。"
+      },
+      {
+        "end": 5.28,
+        "start": 4.28,
+        "text": "A."
+      },
+      {
+        "end": 8.08,
+        "start": 6.78,
+        "text": "Example"
+      },
+      {
+        "end": 10.56,
+        "start": 8.28,
+        "text": "会う"
+      },
+      {
+        "end": 13.06,
+        "start": 11.56,
+        "text": "おあいする"
+      },
+      {
+        "end": 15.86,
+        "start": 14.76,
+        "text": "いち"
+      },
+      {
+        "end": 17.86,
+        "start": 16.66,
+        "text": "かりる"
+      },
+      {
+        "end": 21.71,
+        "start": 20.21,
+        "text": "おかりする"
+      },
+      {
+        "end": 24.08,
+        "start": 23.28,
+        "text": "に"
+      },
+      {
+        "end": 26.08,
+        "start": 24.98,
+        "text": "かえす"
+      },
+      {
+        "end": 30.03,
+        "start": 28.53,
+        "text": "おかえしする"
+      },
+      {
+        "end": 32.67,
+        "start": 30.33,
+        "text": "さん"
+      },
+      {
+        "end": 34.67,
+        "start": 33.57,
+        "text": "おくる"
+      },
+      {
+        "end": 38.81,
+        "start": 37.11,
+        "text": "おおくりする"
+      },
+      {
+        "end": 41.16,
+        "start": 40.36,
+        "text": "よん"
+      },
+      {
+        "end": 43.16,
+        "start": 42.16,
+        "text": "もつ"
+      },
+      {
+        "end": 48.61,
+        "start": 45.8,
+        "text": "おもちする"
+      },
+      {
+        "end": 49.61,
+        "start": 48.81,
+        "text": "ご"
+      },
+      {
+        "end": 53.76,
+        "start": 50.61,
+        "text": "とる"
+      },
+      {
+        "end": 55.26,
+        "start": 53.96,
+        "text": "おとりする"
+      },
+      {
+        "end": 57.9,
+        "start": 56.9,
+        "text": "ろく"
+      },
+      {
+        "end": 60.1,
+        "start": 58.9,
+        "text": "はなす"
+      },
+      {
+        "end": 65.68,
+        "start": 62.64,
+        "text": "おはなしする"
+      },
+      {
+        "end": 66.88,
+        "start": 65.88,
+        "text": "なな"
+      },
+      {
+        "end": 68.68,
+        "start": 67.68,
+        "text": "よむ"
+      },
+      {
+        "end": 72.43,
+        "start": 71.13,
+        "text": "およみする"
+      },
+      {
+        "end": 75.24,
+        "start": 74.24,
+        "text": "はち"
+      },
+      {
+        "end": 79.38,
+        "start": 76.24,
+        "text": "かす"
+      },
+      {
+        "end": 80.88,
+        "start": 79.58,
+        "text": "おかしする"
+      },
+      {
+        "end": 83.69,
+        "start": 82.69,
+        "text": "きゅう"
+      },
+      {
+        "end": 85.49,
+        "start": 84.49,
+        "text": "もらう"
+      },
+      {
+        "end": 89,
+        "start": 88,
+        "text": "いただく"
+      },
+      {
+        "end": 91.88,
+        "start": 90.88,
+        "text": "じゅう"
+      },
+      {
+        "end": 93.78,
+        "start": 92.78,
+        "text": "あげる"
+      },
+      {
+        "end": 97.68,
+        "start": 96.18,
+        "text": "さしあげる"
+      },
+      {
+        "end": 100.59,
+        "start": 99.39,
+        "text": "じゅういち"
+      },
+      {
+        "end": 103.09,
+        "start": 101.59,
+        "text": "しょうかいする"
+      },
+      {
+        "end": 107.27,
+        "start": 105.57,
+        "text": "ごしょうかいする"
+      },
+      {
+        "end": 110.18,
+        "start": 108.88,
+        "text": "じゅうに"
+      },
+      {
+        "end": 112.68,
+        "start": 110.98,
+        "text": "あんないする"
+      },
+      {
+        "end": 116.85,
+        "start": 115.05,
+        "text": "ごあんないする"
+      }
+    ]
+  },
+  "K20_13": {
+    "duration": 61.28,
+    "language": "ja",
+    "languageProbability": 0.9751,
+    "segments": [
+      {
+        "end": 5.11,
+        "start": 0.11,
+        "text": "b エクセンプル"
+      },
+      {
+        "end": 29.17,
+        "start": 5.11,
+        "text": "お持ちしましょうか。1 お取りしましょうか。2 お手伝いしましょうか。3 おおくりしましょうか。"
+      },
+      {
+        "end": 59.38,
+        "start": 29.17,
+        "text": "4 おかきしましょうか。5 お取りしましょうか。6 おかししましょうか。7 おしらべしましょうか。"
+      },
+      {
+        "end": 69.38,
+        "start": 59.38,
+        "text": "3 おかきしましょうか。8 おおくりしましょうか。7 おおくりしましょうか。"
+      }
+    ]
+  },
+  "K20_14": {
+    "duration": 134.74,
+    "language": "ja",
+    "languageProbability": 0.9715,
+    "segments": [
+      {
+        "end": 7.01,
+        "start": 0.21,
+        "text": "3 ひげをそらないで会社に行きました"
+      },
+      {
+        "end": 11.97,
+        "start": 7.01,
+        "text": "えい エクセンプル"
+      },
+      {
+        "end": 16.21,
+        "start": 11.97,
+        "text": "たけしさんは会社に行きました"
+      },
+      {
+        "end": 22.9,
+        "start": 16.21,
+        "text": "たけしさんはひげをそらないで会社に行きました"
+      },
+      {
+        "end": 29.57,
+        "start": 22.9,
+        "text": "1 たけしさんは会社に行きました"
+      },
+      {
+        "end": 40.5,
+        "start": 29.65,
+        "text": "えい たけしさんは朝ごはんを食べないで会社に行きました"
+      },
+      {
+        "end": 51.44,
+        "start": 40.5,
+        "text": "B たけしさんは顔をあらわないで会社に行きました"
+      },
+      {
+        "end": 62.16,
+        "start": 51.44,
+        "text": "C たけしさんは歯を磨かないで会社に行きました"
+      },
+      {
+        "end": 67.68,
+        "start": 62.16,
+        "text": "2 メアリーさんは寝ました"
+      },
+      {
+        "end": 77.94,
+        "start": 67.68,
+        "text": "A メアリーさんは晩ごはんを食べないで寝ました"
+      },
+      {
+        "end": 88.21,
+        "start": 77.94,
+        "text": "B メアリーさんは宿題をしないで寝ました"
+      },
+      {
+        "end": 98.42,
+        "start": 88.21,
+        "text": "C メアリーさんはお風呂に入らないで寝ました"
+      },
+      {
+        "end": 104.26,
+        "start": 98.42,
+        "text": "3 ジョンさんは出かけました"
+      },
+      {
+        "end": 114.59,
+        "start": 104.26,
+        "text": "A ジョンさんは天気予報を見ないで出かけました"
+      },
+      {
+        "end": 125.02,
+        "start": 114.59,
+        "text": "B ジョンさんは財布を持たないで出かけました"
+      },
+      {
+        "end": 134.67,
+        "start": 125.02,
+        "text": "C ジョンさんは鍵をかけないで出かけました"
+      }
+    ]
+  },
+  "K20_15": {
+    "duration": 157.02,
+    "language": "ja",
+    "languageProbability": 0.9407,
+    "segments": [
+      {
+        "end": 4.69,
+        "start": 0.05,
+        "text": "4 アメリカ人かどうか分かりません"
+      },
+      {
+        "end": 9.98,
+        "start": 4.69,
+        "text": "A エクセンプル"
+      },
+      {
+        "end": 13.46,
+        "start": 10.98,
+        "text": "名前は何ですか?"
+      },
+      {
+        "end": 17.74,
+        "start": 13.46,
+        "text": "さあ 何か分かりません"
+      },
+      {
+        "end": 20.38,
+        "start": 17.74,
+        "text": "あなたはアメリカ人ですか?"
+      },
+      {
+        "end": 26.14,
+        "start": 20.38,
+        "text": "さあ アメリカ人かどうか分かりません"
+      },
+      {
+        "end": 30.34,
+        "start": 26.14,
+        "text": "1 あなたは日本人ですか?"
+      },
+      {
+        "end": 38.3,
+        "start": 32.81,
+        "text": "さあ 日本人かどうか分かりません"
+      },
+      {
+        "end": 44.1,
+        "start": 38.3,
+        "text": "2 学生ですか?"
+      },
+      {
+        "end": 49.48,
+        "start": 44.1,
+        "text": "さあ 学生かどうか分かりません"
+      },
+      {
+        "end": 55.67,
+        "start": 49.48,
+        "text": "3 結婚していますか?"
+      },
+      {
+        "end": 61.57,
+        "start": 55.67,
+        "text": "さあ 結婚しているかどうか分かりません"
+      },
+      {
+        "end": 67.51,
+        "start": 61.57,
+        "text": "4 子供がいますか?"
+      },
+      {
+        "end": 73.35,
+        "start": 67.51,
+        "text": "さあ 子供がいるかどうか分かりません"
+      },
+      {
+        "end": 79.3,
+        "start": 73.43,
+        "text": "5 子供がかけますか?"
+      },
+      {
+        "end": 85,
+        "start": 79.3,
+        "text": "さあ 子供がかけるかどうか分かりません"
+      },
+      {
+        "end": 90.91,
+        "start": 85,
+        "text": "6 何歳ですか?"
+      },
+      {
+        "end": 95.9,
+        "start": 90.91,
+        "text": "さあ 何歳か分かりません"
+      },
+      {
+        "end": 102.61,
+        "start": 95.9,
+        "text": "7 仕事は何をしていますか?"
+      },
+      {
+        "end": 108.45,
+        "start": 102.61,
+        "text": "さあ 仕事は何をしているか分かりません"
+      },
+      {
+        "end": 114.76,
+        "start": 108.45,
+        "text": "8 どこに住んでいますか?"
+      },
+      {
+        "end": 120.2,
+        "start": 114.76,
+        "text": "さあ どこに住んでいるか分かりません"
+      },
+      {
+        "end": 126.79,
+        "start": 120.2,
+        "text": "9 今日何を食べましたか?"
+      },
+      {
+        "end": 132.47,
+        "start": 126.79,
+        "text": "さあ 今日何を食べたか分かりません"
+      },
+      {
+        "end": 138.94,
+        "start": 132.47,
+        "text": "10 昨日何をしましたか?"
+      },
+      {
+        "end": 144.58,
+        "start": 138.94,
+        "text": "さあ 昨日何をしたか分かりません"
+      },
+      {
+        "end": 151.53,
+        "start": 144.58,
+        "text": "11 どうやってここに来ましたか?"
+      },
+      {
+        "end": 156.97,
+        "start": 151.53,
+        "text": "さあ どうやってここに来たか分かりません"
+      }
+    ]
+  },
+  "K20_16": {
+    "duration": 78.08,
+    "language": "ja",
+    "languageProbability": 0.921,
+    "segments": [
+      {
+        "end": 4.25,
+        "start": 0.05,
+        "text": "5.ローソンというコンビニ"
+      },
+      {
+        "end": 9.91,
+        "start": 4.25,
+        "text": "A. エクセンプル"
+      },
+      {
+        "end": 13.71,
+        "start": 10.91,
+        "text": "ローソンというコンビニ"
+      },
+      {
+        "end": 23.01,
+        "start": 14.96,
+        "text": "1.丸いという会社"
+      },
+      {
+        "end": 29.21,
+        "start": 23.01,
+        "text": "2.カーサというレストラン"
+      },
+      {
+        "end": 38.4,
+        "start": 29.21,
+        "text": "3.アカシという町"
+      },
+      {
+        "end": 45.98,
+        "start": 38.4,
+        "text": "4.ポチという犬"
+      },
+      {
+        "end": 52.62,
+        "start": 45.98,
+        "text": "5.キッチンという小説"
+      },
+      {
+        "end": 61.92,
+        "start": 54.1,
+        "text": "6.ラムネという飲み物"
+      },
+      {
+        "end": 68.43,
+        "start": 61.92,
+        "text": "7.ポッキーというお菓子"
+      },
+      {
+        "end": 77.75,
+        "start": 68.43,
+        "text": "8.生け物という動物"
+      }
+    ]
+  },
+  "K20_17": {
+    "duration": 103.39,
+    "language": "ja",
+    "languageProbability": 0.9537,
+    "segments": [
+      {
+        "end": 4.02,
+        "start": 0.02,
+        "text": "6.覚えやすいです。"
+      },
+      {
+        "end": 7.36,
+        "start": 4.02,
+        "text": "A."
+      },
+      {
+        "end": 9.36,
+        "start": 7.36,
+        "text": "example"
+      },
+      {
+        "end": 17.64,
+        "start": 9.36,
+        "text": "川という漢字は覚えやすいですが、神という漢字は覚えにくいです。"
+      },
+      {
+        "end": 28.15,
+        "start": 17.64,
+        "text": "1.ハンバーガーは食べやすいですが、魚は食べにくいです。"
+      },
+      {
+        "end": 39.6,
+        "start": 28.15,
+        "text": "2.ゲタは歩きにくいですが、スニーカーは歩きやすいです。"
+      },
+      {
+        "end": 54.46,
+        "start": 39.6,
+        "text": "3.メアリーさんのカバンは持ちやすいですが、タケシさんのカバンは持ちにくいです。"
+      },
+      {
+        "end": 66.9,
+        "start": 54.46,
+        "text": "4.ソラさんの話はわかりやすいですが、ケンさんの話はわかりにくいです。"
+      },
+      {
+        "end": 76.98,
+        "start": 66.9,
+        "text": "5.神の辞書は使いにくいですが、スマホの辞書は使いやすいです。"
+      },
+      {
+        "end": 86.39,
+        "start": 76.98,
+        "text": "6.狭い道は運転しにくいですが、"
+      },
+      {
+        "end": 102.84,
+        "start": 86.39,
+        "text": "広い道は運転しやすいです。7.ソラさんの辞は読みやすいですが、ロバートさんの辞は読みにくいです。"
+      }
+    ]
+  },
+  "W20_A": {
+    "duration": 94.46,
+    "language": "ja",
+    "languageProbability": 0.983,
+    "segments": [
+      {
+        "end": 6.26,
+        "start": 0.11,
+        "text": "第20日 きくれんしゅう"
+      },
+      {
+        "end": 8.83,
+        "start": 6.26,
+        "text": "えい"
+      },
+      {
+        "end": 11.11,
+        "start": 8.83,
+        "text": "おはようございます"
+      },
+      {
+        "end": 15.63,
+        "start": 11.11,
+        "text": "わたくし ガイドのタムラと申します"
+      },
+      {
+        "end": 20.43,
+        "start": 15.63,
+        "text": "今日は京都のお寺をご案内いたします"
+      },
+      {
+        "end": 24.67,
+        "start": 20.43,
+        "text": "まず 清水寺に参ります"
+      },
+      {
+        "end": 27.67,
+        "start": 24.67,
+        "text": "ガイドさん すみません"
+      },
+      {
+        "end": 31.55,
+        "start": 27.67,
+        "text": "あの トイレに行きたいんですが"
+      },
+      {
+        "end": 33.75,
+        "start": 31.71,
+        "text": "お手洗いですか?"
+      },
+      {
+        "end": 38.31,
+        "start": 33.75,
+        "text": "このバスにはございませんので 申し訳ありませんが"
+      },
+      {
+        "end": 41.47,
+        "start": 38.31,
+        "text": "少し待っていただけますか?"
+      },
+      {
+        "end": 45.47,
+        "start": 41.47,
+        "text": "5分ぐらいで清水寺につきますので"
+      },
+      {
+        "end": 47.11,
+        "start": 45.47,
+        "text": "はい"
+      },
+      {
+        "end": 50.83,
+        "start": 47.11,
+        "text": "その後 南禅寺に参ります"
+      },
+      {
+        "end": 53.47,
+        "start": 50.83,
+        "text": "南禅寺をご覧になったあと"
+      },
+      {
+        "end": 58.15,
+        "start": 53.47,
+        "text": "宮美というレストランで 昼ごはんにいたします"
+      },
+      {
+        "end": 63.19,
+        "start": 58.15,
+        "text": "ガイドさん 昼ごはんは何を食べるんですか?"
+      },
+      {
+        "end": 65.83,
+        "start": 63.19,
+        "text": "魚料理でございます"
+      },
+      {
+        "end": 69.67,
+        "start": 65.83,
+        "text": "その後 金角寺に参ります"
+      },
+      {
+        "end": 75.67,
+        "start": 69.67,
+        "text": "金角寺で写真をお取りして 後で皆さんに差し上げます"
+      },
+      {
+        "end": 77.79,
+        "start": 75.67,
+        "text": "あの すみません"
+      },
+      {
+        "end": 80.99,
+        "start": 77.79,
+        "text": "南禅寺を京都駅に戻るんでしょうか"
+      },
+      {
+        "end": 85.63,
+        "start": 81.03,
+        "text": "はい 金角寺のあと両安寺に行って"
+      },
+      {
+        "end": 89.83,
+        "start": 85.63,
+        "text": "4時頃を戻る予定でございます"
+      }
+    ]
+  },
+  "W20_B": {
+    "duration": 88.24,
+    "language": "ja",
+    "languageProbability": 0.9722,
+    "segments": [
+      {
+        "end": 2.08,
+        "start": 0.08,
+        "text": "B"
+      },
+      {
+        "end": 6.08,
+        "start": 2.08,
+        "text": "皆さんおはようございます"
+      },
+      {
+        "end": 10.08,
+        "start": 6.08,
+        "text": "先生遅くなってすみません"
+      },
+      {
+        "end": 13.08,
+        "start": 10.08,
+        "text": "ジョンさんどうしたんですか"
+      },
+      {
+        "end": 17.08,
+        "start": 13.08,
+        "text": "携帯を持たないで家を出てしまったんです"
+      },
+      {
+        "end": 22.08,
+        "start": 17.08,
+        "text": "だからまた家に帰らなきゃいけなかったんです"
+      },
+      {
+        "end": 25.08,
+        "start": 22.08,
+        "text": "それは大変でしたね"
+      },
+      {
+        "end": 29.08,
+        "start": 25.08,
+        "text": "あれ?ロバートさんがいませんね"
+      },
+      {
+        "end": 31.08,
+        "start": 29.08,
+        "text": "どうしたんでしょう"
+      },
+      {
+        "end": 36.08,
+        "start": 31.08,
+        "text": "ロバートさん今レポートを書いていると思います"
+      },
+      {
+        "end": 41.08,
+        "start": 36.08,
+        "text": "昨日レポートを書かないで寝てしまったと言っていましたから"
+      },
+      {
+        "end": 44.08,
+        "start": 41.08,
+        "text": "今日が締め切りなんです"
+      },
+      {
+        "end": 46.08,
+        "start": 44.08,
+        "text": "そうですか"
+      },
+      {
+        "end": 50.08,
+        "start": 46.08,
+        "text": "もっと早くやればよかったですね"
+      },
+      {
+        "end": 55.08,
+        "start": 50.08,
+        "text": "あれ?ソラさん?元気がありませんね"
+      },
+      {
+        "end": 57.08,
+        "start": 55.08,
+        "text": "どうしたんですか"
+      },
+      {
+        "end": 60.08,
+        "start": 57.08,
+        "text": "実は自転車がないんです"
+      },
+      {
+        "end": 63.08,
+        "start": 60.08,
+        "text": "鍵をかけなかったんです"
+      },
+      {
+        "end": 65.08,
+        "start": 63.08,
+        "text": "そうですか"
+      },
+      {
+        "end": 69.36,
+        "start": 65.08,
+        "text": "それは困りましたね"
+      },
+      {
+        "end": 73.36,
+        "start": 69.36,
+        "text": "じゃあ授業を始めましょうか"
+      },
+      {
+        "end": 75.36,
+        "start": 73.36,
+        "text": "あれ?"
+      },
+      {
+        "end": 78.36,
+        "start": 75.36,
+        "text": "皆さんちょっと待ってください"
+      },
+      {
+        "end": 82.36,
+        "start": 78.36,
+        "text": "教科書を持たないで来てしまいました"
+      }
+    ]
+  },
+  "W20_C": {
+    "duration": 66.25,
+    "language": "ja",
+    "languageProbability": 0.9738,
+    "segments": [
+      {
+        "end": 7.46,
+        "start": 0.11,
+        "text": "ねえねえ、ノムラさんという人と同じサークルだよね。"
+      },
+      {
+        "end": 11.46,
+        "start": 7.46,
+        "text": "うん。テニスサークルで一緒だよ。"
+      },
+      {
+        "end": 13.46,
+        "start": 11.46,
+        "text": "どんな人?"
+      },
+      {
+        "end": 16.46,
+        "start": 13.46,
+        "text": "話しやすいし、性格もいいよ。"
+      },
+      {
+        "end": 20.46,
+        "start": 16.46,
+        "text": "そう。どこに住んでいるの?"
+      },
+      {
+        "end": 26.46,
+        "start": 20.46,
+        "text": "どこに住んでいるか知らないけど、大学の近くだと思うよ。"
+      },
+      {
+        "end": 30.46,
+        "start": 26.46,
+        "text": "自転車で大学に来ているみたいだから。"
+      },
+      {
+        "end": 33.46,
+        "start": 30.46,
+        "text": "彼女はいる?"
+      },
+      {
+        "end": 41.46,
+        "start": 33.46,
+        "text": "さあ、彼女がいるかどうか知らないけど、性格もよくてかっこいいから持てるよ。"
+      },
+      {
+        "end": 44.46,
+        "start": 41.46,
+        "text": "やっぱり。"
+      },
+      {
+        "end": 47.46,
+        "start": 44.46,
+        "text": "どうしてノムラについて聞くの?"
+      },
+      {
+        "end": 53.46,
+        "start": 47.46,
+        "text": "いや、私の友達がノムラさんに興味があるんだって。"
+      },
+      {
+        "end": 55.46,
+        "start": 53.46,
+        "text": "そうなんだ。"
+      },
+      {
+        "end": 58.46,
+        "start": 55.46,
+        "text": "じゃあ、今度みんなで飲みに行かない?"
+      },
+      {
+        "end": 62.86,
+        "start": 58.46,
+        "text": "うん。いいよ。"
+      }
+    ]
+  }
+}
