@@ -1,0 +1,2396 @@
+{
+  "K17_01": {
+    "duration": 68.44,
+    "language": "ja",
+    "languageProbability": 0.9965,
+    "segments": [
+      {
+        "end": 8.89,
+        "start": 0.08,
+        "text": "第17日 口と噂話 会話"
+      },
+      {
+        "end": 11.29,
+        "start": 8.89,
+        "text": "1"
+      },
+      {
+        "end": 15.09,
+        "start": 11.29,
+        "text": "たけしさん、久しぶりですね"
+      },
+      {
+        "end": 18.49,
+        "start": 15.09,
+        "text": "旅行会社に就職したそうですね"
+      },
+      {
+        "end": 20.79,
+        "start": 18.49,
+        "text": "おめでとうございます"
+      },
+      {
+        "end": 23.19,
+        "start": 20.79,
+        "text": "ありがとうございます"
+      },
+      {
+        "end": 25.99,
+        "start": 23.19,
+        "text": "もう仕事になれましたか?"
+      },
+      {
+        "end": 27.69,
+        "start": 26.29,
+        "text": "ええ"
+      },
+      {
+        "end": 33.59,
+        "start": 27.69,
+        "text": "でも学生の時に比べてすごく忙しくなりました"
+      },
+      {
+        "end": 37.29,
+        "start": 33.59,
+        "text": "自分の時間が全然ないんです"
+      },
+      {
+        "end": 39.99,
+        "start": 37.29,
+        "text": "大変ですね"
+      },
+      {
+        "end": 46.69,
+        "start": 39.99,
+        "text": "私の友達の会社は休みが多くて残業しなくてもいいそうですよ"
+      },
+      {
+        "end": 49.29,
+        "start": 46.69,
+        "text": "うらやましいな"
+      },
+      {
+        "end": 56.89,
+        "start": 49.29,
+        "text": "僕の会社は休みも少ないし、給料も安いし最悪です"
+      },
+      {
+        "end": 62.09,
+        "start": 56.89,
+        "text": "会社に入る前にどうしてもっと調べなかったんですか?"
+      },
+      {
+        "end": 68.39,
+        "start": 62.09,
+        "text": "旅行会社に入ったら旅行ができると思ったんです"
+      }
+    ]
+  },
+  "K17_02": {
+    "duration": 110.08,
+    "language": "ja",
+    "languageProbability": 0.946,
+    "segments": [
+      {
+        "end": 4.55,
+        "start": 0.05,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 11.17,
+        "start": 4.55,
+        "text": "たけしさん、久しぶりですね"
+      },
+      {
+        "end": 14.17,
+        "start": 11.17,
+        "text": "旅行会社に就職したそうですね"
+      },
+      {
+        "end": 19.75,
+        "start": 14.17,
+        "text": "おめでとうございます"
+      },
+      {
+        "end": 24.09,
+        "start": 19.75,
+        "text": "ありがとうございます"
+      },
+      {
+        "end": 32.5,
+        "start": 24.09,
+        "text": "もう仕事になれましたか?"
+      },
+      {
+        "end": 37.9,
+        "start": 32.5,
+        "text": "ええ、でも学生の時に比べて"
+      },
+      {
+        "end": 39.9,
+        "start": 37.9,
+        "text": "すごく忙しくなりました"
+      },
+      {
+        "end": 48.66,
+        "start": 39.9,
+        "text": "自分の時間が全然ないんです"
+      },
+      {
+        "end": 57.71,
+        "start": 48.66,
+        "text": "大変ですね"
+      },
+      {
+        "end": 60.71,
+        "start": 57.71,
+        "text": "私の友達の会社は休みが多くて"
+      },
+      {
+        "end": 70.27,
+        "start": 60.71,
+        "text": "残業をしなくてもいいそうですよ"
+      },
+      {
+        "end": 74.74,
+        "start": 70.27,
+        "text": "うらやましいな"
+      },
+      {
+        "end": 77.74,
+        "start": 74.74,
+        "text": "僕の会社は休みも少ないし"
+      },
+      {
+        "end": 80.74,
+        "start": 77.74,
+        "text": "給料も安いし最悪です"
+      },
+      {
+        "end": 97.86,
+        "start": 80.74,
+        "text": "会社に入る前にどうしてもっと調べなかったんですか?"
+      },
+      {
+        "end": 102.86,
+        "start": 97.86,
+        "text": "旅行会社に入ったら旅行ができると思ったんです"
+      }
+    ]
+  },
+  "K17_03": {
+    "duration": 39.26,
+    "language": "ja",
+    "languageProbability": 0.9902,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "に"
+      },
+      {
+        "end": 6.11,
+        "start": 2.11,
+        "text": "けさ、駅で竹市さんに会ったよ"
+      },
+      {
+        "end": 12.11,
+        "start": 6.11,
+        "text": "竹市さんが卒業してから全然会ってないけど、元気だった?"
+      },
+      {
+        "end": 15.11,
+        "start": 12.11,
+        "text": "ずいぶん疲れているみたい"
+      },
+      {
+        "end": 19.11,
+        "start": 15.11,
+        "text": "毎晩4、5時間しか寝ていないそうだよ"
+      },
+      {
+        "end": 22.11,
+        "start": 19.11,
+        "text": "やっぱりサラリーマンは大変だよね"
+      },
+      {
+        "end": 28.11,
+        "start": 22.11,
+        "text": "それに忙しすぎてメアリーとデートする時間もないって"
+      },
+      {
+        "end": 35.11,
+        "start": 28.11,
+        "text": "そうか、僕だったら仕事より彼女を選ぶけど"
+      },
+      {
+        "end": 38.11,
+        "start": 35.11,
+        "text": "あの二人大丈夫かな"
+      }
+    ]
+  },
+  "K17_04": {
+    "duration": 73.12,
+    "language": "ja",
+    "languageProbability": 0.905,
+    "segments": [
+      {
+        "end": 2.65,
+        "start": 0.11,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 68,
+        "start": 57.86,
+        "text": "仕事より彼女を選ぶけど、あの二人大丈夫かな?"
+      }
+    ]
+  },
+  "K17_05": {
+    "duration": 338.89,
+    "language": "ja",
+    "languageProbability": 0.6084,
+    "segments": [
+      {
+        "end": 5.32,
+        "start": 0.08,
+        "text": "第17日 単語"
+      },
+      {
+        "end": 7.76,
+        "start": 5.32,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.28,
+        "start": 7.76,
+        "text": "赤ちゃん"
+      },
+      {
+        "end": 12.52,
+        "start": 10.28,
+        "text": "Baby"
+      },
+      {
+        "end": 15.16,
+        "start": 12.52,
+        "text": "お客さん"
+      },
+      {
+        "end": 21.32,
+        "start": 15.16,
+        "text": "Gist, visitor, client, customer"
+      },
+      {
+        "end": 23.92,
+        "start": 21.32,
+        "text": "主張"
+      },
+      {
+        "end": 26.56,
+        "start": 23.92,
+        "text": "Prime Minister"
+      },
+      {
+        "end": 29.32,
+        "start": 26.56,
+        "text": "サラリーマン"
+      },
+      {
+        "end": 31.32,
+        "start": 29.6,
+        "text": "Sallery man"
+      },
+      {
+        "end": 33.96,
+        "start": 31.32,
+        "text": "Office worker"
+      },
+      {
+        "end": 36.44,
+        "start": 33.96,
+        "text": "給料"
+      },
+      {
+        "end": 38.88,
+        "start": 36.44,
+        "text": "Sallery"
+      },
+      {
+        "end": 41.44,
+        "start": 38.88,
+        "text": "残業"
+      },
+      {
+        "end": 44.32,
+        "start": 41.44,
+        "text": "Overtime work"
+      },
+      {
+        "end": 46.64,
+        "start": 44.32,
+        "text": "Panda"
+      },
+      {
+        "end": 48.96,
+        "start": 46.64,
+        "text": "Panda"
+      },
+      {
+        "end": 51.96,
+        "start": 48.96,
+        "text": "Contact lenses"
+      },
+      {
+        "end": 54.96,
+        "start": 51.96,
+        "text": "Contact lenses"
+      },
+      {
+        "end": 57.28,
+        "start": 54.96,
+        "text": "ひげ"
+      },
+      {
+        "end": 59.28,
+        "start": 57.28,
+        "text": "Beard"
+      },
+      {
+        "end": 61.84,
+        "start": 59.44,
+        "text": "Boots"
+      },
+      {
+        "end": 64.16,
+        "start": 61.84,
+        "text": "Boots"
+      },
+      {
+        "end": 66.36,
+        "start": 64.16,
+        "text": "Kagi"
+      },
+      {
+        "end": 67.56,
+        "start": 66.36,
+        "text": "Lock"
+      },
+      {
+        "end": 69.76,
+        "start": 67.56,
+        "text": "Kee"
+      },
+      {
+        "end": 72.36,
+        "start": 69.76,
+        "text": "Takarakuji"
+      },
+      {
+        "end": 74.8,
+        "start": 72.36,
+        "text": "Lottery"
+      },
+      {
+        "end": 77,
+        "start": 74.8,
+        "text": "Kami"
+      },
+      {
+        "end": 79.2,
+        "start": 77,
+        "text": "Paper"
+      },
+      {
+        "end": 81.72,
+        "start": 79.2,
+        "text": "Spoon"
+      },
+      {
+        "end": 84.12,
+        "start": 81.72,
+        "text": "Spoon"
+      },
+      {
+        "end": 86.32,
+        "start": 84.12,
+        "text": "Oyu"
+      },
+      {
+        "end": 88.8,
+        "start": 86.32,
+        "text": "Hot water"
+      },
+      {
+        "end": 91.68,
+        "start": 88.96,
+        "text": "電子レンジ"
+      },
+      {
+        "end": 94.6,
+        "start": 91.68,
+        "text": "Microwave oven"
+      },
+      {
+        "end": 97.08,
+        "start": 94.6,
+        "text": "Heater"
+      },
+      {
+        "end": 99.24,
+        "start": 97.08,
+        "text": "Heater"
+      },
+      {
+        "end": 101.68,
+        "start": 99.24,
+        "text": "News"
+      },
+      {
+        "end": 104.08,
+        "start": 101.68,
+        "text": "News"
+      },
+      {
+        "end": 106.2,
+        "start": 104.08,
+        "text": "Kaji"
+      },
+      {
+        "end": 108.48,
+        "start": 106.2,
+        "text": "Fire"
+      },
+      {
+        "end": 111.32,
+        "start": 108.48,
+        "text": "旅行会社"
+      },
+      {
+        "end": 114.16,
+        "start": 111.32,
+        "text": "Travel agency"
+      },
+      {
+        "end": 117.16,
+        "start": 114.16,
+        "text": "Shopping mall"
+      },
+      {
+        "end": 119.76,
+        "start": 117.16,
+        "text": "Shopping mall"
+      },
+      {
+        "end": 122,
+        "start": 119.76,
+        "text": "料"
+      },
+      {
+        "end": 124.64,
+        "start": 122,
+        "text": "Dormitory"
+      },
+      {
+        "end": 127,
+        "start": 124.64,
+        "text": "違い"
+      },
+      {
+        "end": 129.48,
+        "start": 127,
+        "text": "Difference"
+      },
+      {
+        "end": 131.92,
+        "start": 129.48,
+        "text": "秘密"
+      },
+      {
+        "end": 134.36,
+        "start": 131.92,
+        "text": "Secret"
+      },
+      {
+        "end": 136.76,
+        "start": 134.36,
+        "text": "準備"
+      },
+      {
+        "end": 139.44,
+        "start": 136.76,
+        "text": "Preparation"
+      },
+      {
+        "end": 141.8,
+        "start": 139.44,
+        "text": "自分"
+      },
+      {
+        "end": 144.44,
+        "start": 141.8,
+        "text": "One self"
+      },
+      {
+        "end": 147.28,
+        "start": 144.44,
+        "text": "Ejectives"
+      },
+      {
+        "end": 149.72,
+        "start": 147.28,
+        "text": "危ない"
+      },
+      {
+        "end": 152.28,
+        "start": 149.72,
+        "text": "Dangerous"
+      },
+      {
+        "end": 155.04,
+        "start": 152.28,
+        "text": "うらやましい"
+      },
+      {
+        "end": 157.56,
+        "start": 155.04,
+        "text": "Envious"
+      },
+      {
+        "end": 160.04,
+        "start": 157.56,
+        "text": "少ない"
+      },
+      {
+        "end": 163.36,
+        "start": 160.04,
+        "text": "A little, a few"
+      },
+      {
+        "end": 166.28,
+        "start": 163.36,
+        "text": "都合が悪い"
+      },
+      {
+        "end": 168.12,
+        "start": 166.28,
+        "text": "Inconvenient"
+      },
+      {
+        "end": 171.8,
+        "start": 168.12,
+        "text": "To have a scheduling conflict"
+      },
+      {
+        "end": 174.04,
+        "start": 171.8,
+        "text": "強い"
+      },
+      {
+        "end": 176.48,
+        "start": 174.04,
+        "text": "Strong"
+      },
+      {
+        "end": 179.36,
+        "start": 176.48,
+        "text": "Nah adjective"
+      },
+      {
+        "end": 182.08,
+        "start": 179.36,
+        "text": "最悪な"
+      },
+      {
+        "end": 184.56,
+        "start": 182.08,
+        "text": "The worst"
+      },
+      {
+        "end": 187.08,
+        "start": 184.56,
+        "text": "Uverbs"
+      },
+      {
+        "end": 189.4,
+        "start": 187.08,
+        "text": "選ぶ"
+      },
+      {
+        "end": 190.76,
+        "start": 189.4,
+        "text": "To choose"
+      },
+      {
+        "end": 193.28,
+        "start": 190.76,
+        "text": "To select"
+      },
+      {
+        "end": 196.2,
+        "start": 193.28,
+        "text": "お湯を沸かす"
+      },
+      {
+        "end": 199.08,
+        "start": 196.2,
+        "text": "To boil water"
+      },
+      {
+        "end": 201.92,
+        "start": 199.08,
+        "text": "髪を溶かす"
+      },
+      {
+        "end": 204,
+        "start": 201.92,
+        "text": "To comb one's hair"
+      },
+      {
+        "end": 207.52,
+        "start": 204.76,
+        "text": "ひげをそる"
+      },
+      {
+        "end": 210.6,
+        "start": 207.52,
+        "text": "To shave one's beard"
+      },
+      {
+        "end": 212.8,
+        "start": 210.6,
+        "text": "ぬぐ"
+      },
+      {
+        "end": 215.4,
+        "start": 212.8,
+        "text": "To take off"
+      },
+      {
+        "end": 217.52,
+        "start": 215.4,
+        "text": "こむ"
+      },
+      {
+        "end": 220.2,
+        "start": 217.52,
+        "text": "To get crowded"
+      },
+      {
+        "end": 223.48,
+        "start": 220.2,
+        "text": "宝くじにあたる"
+      },
+      {
+        "end": 226.32,
+        "start": 223.48,
+        "text": "To win a lottery"
+      },
+      {
+        "end": 228.88,
+        "start": 226.32,
+        "text": "Roo verbs"
+      },
+      {
+        "end": 231.2,
+        "start": 228.88,
+        "text": "入れる"
+      },
+      {
+        "end": 235.52,
+        "start": 231.2,
+        "text": "To make tea, coffee, etc."
+      },
+      {
+        "end": 238,
+        "start": 235.52,
+        "text": "生まれる"
+      },
+      {
+        "end": 240.56,
+        "start": 238,
+        "text": "To be born"
+      },
+      {
+        "end": 243.36,
+        "start": 240.56,
+        "text": "鍵をかける"
+      },
+      {
+        "end": 245.72,
+        "start": 243.36,
+        "text": "To lock"
+      },
+      {
+        "end": 248.04,
+        "start": 245.72,
+        "text": "足りる"
+      },
+      {
+        "end": 249.76,
+        "start": 248.04,
+        "text": "To be sufficient"
+      },
+      {
+        "end": 252.28,
+        "start": 249.76,
+        "text": "To be enough"
+      },
+      {
+        "end": 254.6,
+        "start": 252.28,
+        "text": "慣れる"
+      },
+      {
+        "end": 257.28,
+        "start": 254.6,
+        "text": "To get used to"
+      },
+      {
+        "end": 260.2,
+        "start": 257.28,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 263.16,
+        "start": 260.36,
+        "text": "お祈りする"
+      },
+      {
+        "end": 265.6,
+        "start": 263.16,
+        "text": "To pray"
+      },
+      {
+        "end": 268.24,
+        "start": 265.6,
+        "text": "化粧する"
+      },
+      {
+        "end": 271.24,
+        "start": 268.24,
+        "text": "To put makeup on"
+      },
+      {
+        "end": 274.08,
+        "start": 271.24,
+        "text": "就職する"
+      },
+      {
+        "end": 277.28,
+        "start": 274.08,
+        "text": "To get a full-time job"
+      },
+      {
+        "end": 280,
+        "start": 277.28,
+        "text": "理根する"
+      },
+      {
+        "end": 282.84,
+        "start": 280,
+        "text": "To get a divorce"
+      },
+      {
+        "end": 285.16,
+        "start": 282.84,
+        "text": "する"
+      },
+      {
+        "end": 288.52,
+        "start": 285.16,
+        "text": "To wear small items"
+      },
+      {
+        "end": 292.44,
+        "start": 288.52,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 294.96,
+        "start": 292.44,
+        "text": "ずいぶん"
+      },
+      {
+        "end": 297.24,
+        "start": 294.96,
+        "text": "Very"
+      },
+      {
+        "end": 299.8,
+        "start": 297.24,
+        "text": "たとえば"
+      },
+      {
+        "end": 302.56,
+        "start": 299.8,
+        "text": "For example"
+      },
+      {
+        "end": 305.4,
+        "start": 302.56,
+        "text": "にくらべて"
+      },
+      {
+        "end": 308.08,
+        "start": 305.4,
+        "text": "Compared with"
+      },
+      {
+        "end": 310.72,
+        "start": 308.08,
+        "text": "によると"
+      },
+      {
+        "end": 313.32,
+        "start": 310.72,
+        "text": "According to"
+      },
+      {
+        "end": 315.52,
+        "start": 313.32,
+        "text": "まえ"
+      },
+      {
+        "end": 317.88,
+        "start": 315.52,
+        "text": "Before"
+      },
+      {
+        "end": 320.4,
+        "start": 317.92,
+        "text": "やっぱり"
+      },
+      {
+        "end": 322.88,
+        "start": 320.4,
+        "text": "After all"
+      },
+      {
+        "end": 325.4,
+        "start": 322.88,
+        "text": "かなあ"
+      },
+      {
+        "end": 327.88,
+        "start": 325.4,
+        "text": "I wonder"
+      },
+      {
+        "end": 330.28,
+        "start": 327.88,
+        "text": "そうか"
+      },
+      {
+        "end": 332.56,
+        "start": 330.28,
+        "text": "I see"
+      },
+      {
+        "end": 335.76,
+        "start": 332.56,
+        "text": "おめでとうございます"
+      },
+      {
+        "end": 338.88,
+        "start": 335.76,
+        "text": "Congratulations"
+      }
+    ]
+  },
+  "K17_06": {
+    "duration": 339.25,
+    "language": "ja",
+    "languageProbability": 0.6904,
+    "segments": [
+      {
+        "end": 5.36,
+        "start": 0.08,
+        "text": "第17課 単語"
+      },
+      {
+        "end": 8.08,
+        "start": 5.36,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.32,
+        "start": 8.08,
+        "text": "Baby"
+      },
+      {
+        "end": 12.88,
+        "start": 10.32,
+        "text": "赤ちゃん"
+      },
+      {
+        "end": 19.04,
+        "start": 12.88,
+        "text": "Gist, visitor, client, customer"
+      },
+      {
+        "end": 21.76,
+        "start": 19.04,
+        "text": "お客さん"
+      },
+      {
+        "end": 24.48,
+        "start": 21.76,
+        "text": "Prime Minister"
+      },
+      {
+        "end": 26.96,
+        "start": 24.48,
+        "text": "首相"
+      },
+      {
+        "end": 28.88,
+        "start": 27.12,
+        "text": "Sallery man"
+      },
+      {
+        "end": 31.44,
+        "start": 28.88,
+        "text": "Office worker"
+      },
+      {
+        "end": 34.32,
+        "start": 31.44,
+        "text": "Sallery man"
+      },
+      {
+        "end": 36.72,
+        "start": 34.32,
+        "text": "Sallery"
+      },
+      {
+        "end": 39.2,
+        "start": 36.72,
+        "text": "給料"
+      },
+      {
+        "end": 42.08,
+        "start": 39.2,
+        "text": "Overtime work"
+      },
+      {
+        "end": 44.64,
+        "start": 42.08,
+        "text": "残業"
+      },
+      {
+        "end": 46.96,
+        "start": 44.64,
+        "text": "Panda"
+      },
+      {
+        "end": 49.36,
+        "start": 46.96,
+        "text": "Panda"
+      },
+      {
+        "end": 52.32,
+        "start": 49.36,
+        "text": "Contact lenses"
+      },
+      {
+        "end": 55.36,
+        "start": 52.32,
+        "text": "Contact lens"
+      },
+      {
+        "end": 57.6,
+        "start": 55.44,
+        "text": "Beard"
+      },
+      {
+        "end": 59.92,
+        "start": 57.6,
+        "text": "ひげ"
+      },
+      {
+        "end": 62.24,
+        "start": 59.92,
+        "text": "Boots"
+      },
+      {
+        "end": 64.64,
+        "start": 62.24,
+        "text": "Boots"
+      },
+      {
+        "end": 65.84,
+        "start": 64.64,
+        "text": "Lock"
+      },
+      {
+        "end": 68,
+        "start": 65.84,
+        "text": "Key"
+      },
+      {
+        "end": 70.24,
+        "start": 68,
+        "text": "Kagi"
+      },
+      {
+        "end": 72.56,
+        "start": 70.24,
+        "text": "Lottery"
+      },
+      {
+        "end": 75.28,
+        "start": 72.56,
+        "text": "Takarakuji"
+      },
+      {
+        "end": 77.52,
+        "start": 75.28,
+        "text": "Paper"
+      },
+      {
+        "end": 79.68,
+        "start": 77.52,
+        "text": "Kami"
+      },
+      {
+        "end": 82.16,
+        "start": 79.68,
+        "text": "Spoon"
+      },
+      {
+        "end": 84.64,
+        "start": 82.16,
+        "text": "Spoon"
+      },
+      {
+        "end": 86.96,
+        "start": 84.64,
+        "text": "Hot water"
+      },
+      {
+        "end": 89.12,
+        "start": 86.96,
+        "text": "お湯"
+      },
+      {
+        "end": 92.08,
+        "start": 89.12,
+        "text": "Microwave oven"
+      },
+      {
+        "end": 94.8,
+        "start": 92.08,
+        "text": "電子レンジ"
+      },
+      {
+        "end": 96.96,
+        "start": 94.8,
+        "text": "Heater"
+      },
+      {
+        "end": 99.52,
+        "start": 96.96,
+        "text": "Heater"
+      },
+      {
+        "end": 101.84,
+        "start": 99.52,
+        "text": "News"
+      },
+      {
+        "end": 104.4,
+        "start": 101.84,
+        "text": "News"
+      },
+      {
+        "end": 106.56,
+        "start": 104.4,
+        "text": "Fire"
+      },
+      {
+        "end": 108.72,
+        "start": 106.56,
+        "text": "Kaji"
+      },
+      {
+        "end": 111.52,
+        "start": 108.72,
+        "text": "Travel agency"
+      },
+      {
+        "end": 114.4,
+        "start": 111.52,
+        "text": "旅行会社"
+      },
+      {
+        "end": 116.96,
+        "start": 114.48,
+        "text": "Shopping mall"
+      },
+      {
+        "end": 120,
+        "start": 116.96,
+        "text": "Shopping mall"
+      },
+      {
+        "end": 122.64,
+        "start": 120,
+        "text": "Dormitory"
+      },
+      {
+        "end": 124.8,
+        "start": 122.64,
+        "text": "料"
+      },
+      {
+        "end": 127.28,
+        "start": 124.8,
+        "text": "Difference"
+      },
+      {
+        "end": 129.76,
+        "start": 127.28,
+        "text": "ちがい"
+      },
+      {
+        "end": 132.16,
+        "start": 129.76,
+        "text": "Secret"
+      },
+      {
+        "end": 134.56,
+        "start": 132.16,
+        "text": "秘密"
+      },
+      {
+        "end": 137.28,
+        "start": 134.56,
+        "text": "Preparation"
+      },
+      {
+        "end": 139.68,
+        "start": 137.28,
+        "text": "準備"
+      },
+      {
+        "end": 142.16,
+        "start": 139.68,
+        "text": "One self"
+      },
+      {
+        "end": 144.56,
+        "start": 142.24,
+        "text": "自分"
+      },
+      {
+        "end": 147.52,
+        "start": 144.56,
+        "text": "E-adjectives"
+      },
+      {
+        "end": 150,
+        "start": 147.52,
+        "text": "Dangerous"
+      },
+      {
+        "end": 152.48,
+        "start": 150,
+        "text": "危ない"
+      },
+      {
+        "end": 154.96,
+        "start": 152.48,
+        "text": "Envious"
+      },
+      {
+        "end": 157.76,
+        "start": 154.96,
+        "text": "うらやなし"
+      },
+      {
+        "end": 161.04,
+        "start": 157.76,
+        "text": "A little, a few"
+      },
+      {
+        "end": 163.52,
+        "start": 161.04,
+        "text": "すくない"
+      },
+      {
+        "end": 165.36,
+        "start": 163.52,
+        "text": "Inconvenient"
+      },
+      {
+        "end": 169.04,
+        "start": 165.36,
+        "text": "To have a scheduling conflict"
+      },
+      {
+        "end": 171.92,
+        "start": 169.04,
+        "text": "つごうが悪い"
+      },
+      {
+        "end": 174.4,
+        "start": 172,
+        "text": "Strong"
+      },
+      {
+        "end": 176.64,
+        "start": 174.4,
+        "text": "強い"
+      },
+      {
+        "end": 179.6,
+        "start": 176.64,
+        "text": "Nah adjective"
+      },
+      {
+        "end": 182.08,
+        "start": 179.6,
+        "text": "The worst"
+      },
+      {
+        "end": 184.72,
+        "start": 182.08,
+        "text": "最悪な"
+      },
+      {
+        "end": 187.28,
+        "start": 184.72,
+        "text": "Uverbs"
+      },
+      {
+        "end": 188.72,
+        "start": 187.28,
+        "text": "To choose"
+      },
+      {
+        "end": 191.2,
+        "start": 188.72,
+        "text": "To select"
+      },
+      {
+        "end": 193.52,
+        "start": 191.2,
+        "text": "選ぶ"
+      },
+      {
+        "end": 196.32,
+        "start": 193.52,
+        "text": "To boil water"
+      },
+      {
+        "end": 199.2,
+        "start": 196.32,
+        "text": "お湯を沸かす"
+      },
+      {
+        "end": 201.84,
+        "start": 199.2,
+        "text": "To comb one's hair"
+      },
+      {
+        "end": 205.12,
+        "start": 202.24,
+        "text": "髪を溶かす"
+      },
+      {
+        "end": 208.24,
+        "start": 205.12,
+        "text": "To shave one's beard"
+      },
+      {
+        "end": 210.96,
+        "start": 208.24,
+        "text": "ひげをそる"
+      },
+      {
+        "end": 213.6,
+        "start": 210.96,
+        "text": "To take off"
+      },
+      {
+        "end": 215.76,
+        "start": 213.6,
+        "text": "ぬぐ"
+      },
+      {
+        "end": 218.4,
+        "start": 215.76,
+        "text": "To get crowded"
+      },
+      {
+        "end": 220.56,
+        "start": 218.4,
+        "text": "こむ"
+      },
+      {
+        "end": 223.36,
+        "start": 220.56,
+        "text": "To win a lottery"
+      },
+      {
+        "end": 226.64,
+        "start": 223.36,
+        "text": "宝くじにあたる"
+      },
+      {
+        "end": 229.28,
+        "start": 226.64,
+        "text": "Roo verbs"
+      },
+      {
+        "end": 231.76,
+        "start": 229.28,
+        "text": "To make tea, coffee, etc."
+      },
+      {
+        "end": 236,
+        "start": 231.76,
+        "text": "入れる"
+      },
+      {
+        "end": 238.56,
+        "start": 236,
+        "text": "To be born"
+      },
+      {
+        "end": 240.96,
+        "start": 238.56,
+        "text": "生まれる"
+      },
+      {
+        "end": 243.36,
+        "start": 240.96,
+        "text": "To lock"
+      },
+      {
+        "end": 246.16,
+        "start": 243.36,
+        "text": "鍵をかける"
+      },
+      {
+        "end": 247.84,
+        "start": 246.16,
+        "text": "To be sufficient"
+      },
+      {
+        "end": 250.4,
+        "start": 247.84,
+        "text": "To be enough"
+      },
+      {
+        "end": 252.72,
+        "start": 250.4,
+        "text": "足りる"
+      },
+      {
+        "end": 255.36,
+        "start": 252.72,
+        "text": "To get used to"
+      },
+      {
+        "end": 257.68,
+        "start": 255.36,
+        "text": "なれる"
+      },
+      {
+        "end": 260.64,
+        "start": 257.68,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 262.96,
+        "start": 260.64,
+        "text": "To pray"
+      },
+      {
+        "end": 265.84,
+        "start": 262.96,
+        "text": "お祈りする"
+      },
+      {
+        "end": 268.8,
+        "start": 265.84,
+        "text": "To put makeup on"
+      },
+      {
+        "end": 271.52,
+        "start": 268.8,
+        "text": "化粧する"
+      },
+      {
+        "end": 274.72,
+        "start": 271.52,
+        "text": "To get a full-time job"
+      },
+      {
+        "end": 277.52,
+        "start": 274.72,
+        "text": "就職する"
+      },
+      {
+        "end": 280.4,
+        "start": 277.52,
+        "text": "To get a divorce"
+      },
+      {
+        "end": 283.12,
+        "start": 280.4,
+        "text": "リコンする"
+      },
+      {
+        "end": 286.48,
+        "start": 283.12,
+        "text": "To wear small items"
+      },
+      {
+        "end": 288.72,
+        "start": 286.48,
+        "text": "する"
+      },
+      {
+        "end": 292.88,
+        "start": 288.8,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 295.04,
+        "start": 292.88,
+        "text": "Very"
+      },
+      {
+        "end": 297.68,
+        "start": 295.04,
+        "text": "ずいぶん"
+      },
+      {
+        "end": 300.32,
+        "start": 297.68,
+        "text": "For example"
+      },
+      {
+        "end": 302.88,
+        "start": 300.32,
+        "text": "たとえば"
+      },
+      {
+        "end": 305.44,
+        "start": 302.88,
+        "text": "Compared with"
+      },
+      {
+        "end": 308.32,
+        "start": 305.44,
+        "text": "にくらべて"
+      },
+      {
+        "end": 310.96,
+        "start": 308.32,
+        "text": "According to"
+      },
+      {
+        "end": 313.6,
+        "start": 310.96,
+        "text": "によると"
+      },
+      {
+        "end": 316,
+        "start": 313.6,
+        "text": "Before"
+      },
+      {
+        "end": 318.16,
+        "start": 316,
+        "text": "まえ"
+      },
+      {
+        "end": 320.48,
+        "start": 318.16,
+        "text": "After all"
+      },
+      {
+        "end": 323.04,
+        "start": 320.48,
+        "text": "やっぱり"
+      },
+      {
+        "end": 325.52,
+        "start": 323.04,
+        "text": "I wonder"
+      },
+      {
+        "end": 328.08,
+        "start": 325.52,
+        "text": "かなあ"
+      },
+      {
+        "end": 330.4,
+        "start": 328.08,
+        "text": "I see"
+      },
+      {
+        "end": 332.8,
+        "start": 330.4,
+        "text": "そうか"
+      },
+      {
+        "end": 335.68,
+        "start": 332.8,
+        "text": "Congratulations"
+      },
+      {
+        "end": 339.12,
+        "start": 335.68,
+        "text": "おめでとうございます"
+      }
+    ]
+  },
+  "K17_07": {
+    "duration": 122.67,
+    "language": "ja",
+    "languageProbability": 0.9933,
+    "segments": [
+      {
+        "end": 7.08,
+        "start": 0.08,
+        "text": "第17課 練習 1"
+      },
+      {
+        "end": 9.38,
+        "start": 7.08,
+        "text": "就職したそうです"
+      },
+      {
+        "end": 16.29,
+        "start": 9.38,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 19.29,
+        "start": 16.29,
+        "text": "就職しました"
+      },
+      {
+        "end": 22.99,
+        "start": 19.29,
+        "text": "たけしさんは就職したそうです"
+      },
+      {
+        "end": 31.37,
+        "start": 24.53,
+        "text": "1 今サラリーマンです"
+      },
+      {
+        "end": 34.67,
+        "start": 31.37,
+        "text": "今サラリーマンだそうです"
+      },
+      {
+        "end": 43.02,
+        "start": 36.28,
+        "text": "2 仕事はすごく大変です"
+      },
+      {
+        "end": 47.62,
+        "start": 43.02,
+        "text": "仕事はすごく大変だそうです"
+      },
+      {
+        "end": 54,
+        "start": 47.62,
+        "text": "3 寝る時間がありません"
+      },
+      {
+        "end": 57.94,
+        "start": 54,
+        "text": "寝る時間がないそうです"
+      },
+      {
+        "end": 64.02,
+        "start": 57.94,
+        "text": "4 彼女に会えません"
+      },
+      {
+        "end": 68.06,
+        "start": 64.02,
+        "text": "彼女に会えないそうです"
+      },
+      {
+        "end": 74.34,
+        "start": 68.06,
+        "text": "5 横浜に行きました"
+      },
+      {
+        "end": 79.61,
+        "start": 74.34,
+        "text": "なおみさんは横浜に行ったそうです"
+      },
+      {
+        "end": 86.45,
+        "start": 79.61,
+        "text": "6 中華街は混んでいました"
+      },
+      {
+        "end": 90.63,
+        "start": 86.45,
+        "text": "中華街は混んでいたそうです"
+      },
+      {
+        "end": 97.07,
+        "start": 90.63,
+        "text": "7 ラーメンを食べました"
+      },
+      {
+        "end": 100.91,
+        "start": 97.07,
+        "text": "ラーメンを食べたそうです"
+      },
+      {
+        "end": 107.72,
+        "start": 100.91,
+        "text": "8 ラーメンは美味しかったです"
+      },
+      {
+        "end": 111.93,
+        "start": 107.72,
+        "text": "ラーメンは美味しかったそうです"
+      },
+      {
+        "end": 118.57,
+        "start": 111.93,
+        "text": "9 お土産は買いませんでした"
+      },
+      {
+        "end": 122.47,
+        "start": 118.57,
+        "text": "お土産は買わなかったそうです"
+      }
+    ]
+  },
+  "K17_08": {
+    "duration": 102.16,
+    "language": "ja",
+    "languageProbability": 0.9899,
+    "segments": [
+      {
+        "end": 4.81,
+        "start": 0.11,
+        "text": "2.土曜日は都合が悪いって"
+      },
+      {
+        "end": 10.49,
+        "start": 4.81,
+        "text": "A. エクゼンプル"
+      },
+      {
+        "end": 15.24,
+        "start": 10.49,
+        "text": "メアリーさんはなんて言ってた?"
+      },
+      {
+        "end": 20.17,
+        "start": 15.24,
+        "text": "土曜日は都合が悪いって"
+      },
+      {
+        "end": 25.07,
+        "start": 20.17,
+        "text": "1.メアリーさんはなんて言ってた?"
+      },
+      {
+        "end": 31.46,
+        "start": 25.07,
+        "text": "発表しなきゃいけないって"
+      },
+      {
+        "end": 38.53,
+        "start": 31.46,
+        "text": "2.メアリーさんはなんて言ってた?"
+      },
+      {
+        "end": 43.8,
+        "start": 38.73,
+        "text": "トムさんとマイさんは付き合っているって"
+      },
+      {
+        "end": 50.94,
+        "start": 43.8,
+        "text": "3.メアリーさんはなんて言ってた?"
+      },
+      {
+        "end": 56.49,
+        "start": 50.94,
+        "text": "昨日の夜3時間しか寝なかったって"
+      },
+      {
+        "end": 63.5,
+        "start": 56.49,
+        "text": "4.ロバートさんはなんて言ってた?"
+      },
+      {
+        "end": 67.84,
+        "start": 63.5,
+        "text": "田中さんは離婚したって"
+      },
+      {
+        "end": 74.85,
+        "start": 67.84,
+        "text": "5.ロバートさんはなんて言ってた?"
+      },
+      {
+        "end": 78.72,
+        "start": 74.85,
+        "text": "アルバイトをやめたって"
+      },
+      {
+        "end": 85.77,
+        "start": 78.72,
+        "text": "6.ロバートさんはなんて言ってた?"
+      },
+      {
+        "end": 91.28,
+        "start": 85.77,
+        "text": "6月にイギリスに帰らなきゃいけないって"
+      },
+      {
+        "end": 98.32,
+        "start": 91.28,
+        "text": "7.ロバートさんはなんて言ってた?"
+      },
+      {
+        "end": 102.12,
+        "start": 98.32,
+        "text": "日本は危なくないって"
+      }
+    ]
+  },
+  "K17_09": {
+    "duration": 128.57,
+    "language": "ja",
+    "languageProbability": 0.9707,
+    "segments": [
+      {
+        "end": 6.14,
+        "start": 0.14,
+        "text": "3 お金がたくさんあったら嬉しいです"
+      },
+      {
+        "end": 12.06,
+        "start": 6.14,
+        "text": "えい エクゼンプル"
+      },
+      {
+        "end": 15.06,
+        "start": 13.06,
+        "text": "お金がたくさんある"
+      },
+      {
+        "end": 19.06,
+        "start": 16.06,
+        "text": "お金がたくさんあったら嬉しいです"
+      },
+      {
+        "end": 27.64,
+        "start": 19.06,
+        "text": "1 友達がたくさんできる"
+      },
+      {
+        "end": 30.64,
+        "start": 27.64,
+        "text": "友達がたくさんできたら嬉しいです"
+      },
+      {
+        "end": 35.98,
+        "start": 30.64,
+        "text": "2 成績がいい"
+      },
+      {
+        "end": 41.16,
+        "start": 35.98,
+        "text": "成績が良かったら嬉しいです"
+      },
+      {
+        "end": 46.6,
+        "start": 41.16,
+        "text": "3 日本に行ける"
+      },
+      {
+        "end": 51.74,
+        "start": 46.6,
+        "text": "日本に行けたら嬉しいです"
+      },
+      {
+        "end": 57.12,
+        "start": 51.74,
+        "text": "4 学校が休みだ"
+      },
+      {
+        "end": 62.3,
+        "start": 57.12,
+        "text": "学校が休みだったら嬉しいです"
+      },
+      {
+        "end": 67.67,
+        "start": 62.3,
+        "text": "5 宿題がない"
+      },
+      {
+        "end": 73.01,
+        "start": 67.67,
+        "text": "宿題がなかったら嬉しいです"
+      },
+      {
+        "end": 78.38,
+        "start": 73.01,
+        "text": "6 プレゼントをもらう"
+      },
+      {
+        "end": 83.56,
+        "start": 78.38,
+        "text": "プレゼントをもらったら嬉しいです"
+      },
+      {
+        "end": 88.9,
+        "start": 83.56,
+        "text": "7 物価が安い"
+      },
+      {
+        "end": 94.11,
+        "start": 88.9,
+        "text": "物価が安かったら嬉しいです"
+      },
+      {
+        "end": 99.55,
+        "start": 94.11,
+        "text": "8 雨が降らない"
+      },
+      {
+        "end": 104.76,
+        "start": 99.55,
+        "text": "雨が降らなかったら嬉しいです"
+      },
+      {
+        "end": 110.14,
+        "start": 104.76,
+        "text": "9 弁護士になれる"
+      },
+      {
+        "end": 115.31,
+        "start": 110.14,
+        "text": "弁護士になれたら嬉しいです"
+      },
+      {
+        "end": 120.72,
+        "start": 115.31,
+        "text": "10 先生が優しい"
+      },
+      {
+        "end": 126.96,
+        "start": 120.72,
+        "text": "先生が優しかったら嬉しいです"
+      }
+    ]
+  },
+  "K17_10": {
+    "duration": 109.24,
+    "language": "ja",
+    "languageProbability": 0.9573,
+    "segments": [
+      {
+        "end": 5.28,
+        "start": 0,
+        "text": "B. エグゼンプル"
+      },
+      {
+        "end": 7.28,
+        "start": 5.28,
+        "text": "卒業する"
+      },
+      {
+        "end": 13.28,
+        "start": 7.28,
+        "text": "卒業したら旅行会社に就職するつもりです"
+      },
+      {
+        "end": 19.55,
+        "start": 13.28,
+        "text": "1. 太る"
+      },
+      {
+        "end": 24.93,
+        "start": 19.55,
+        "text": "太ったらダイエットをしなきゃいけません"
+      },
+      {
+        "end": 31.1,
+        "start": 24.93,
+        "text": "2. 動物園に行く"
+      },
+      {
+        "end": 36.61,
+        "start": 31.1,
+        "text": "動物園に行ったらパンダが見られます"
+      },
+      {
+        "end": 40.61,
+        "start": 36.61,
+        "text": "3. 宿題が終わらない"
+      },
+      {
+        "end": 46.98,
+        "start": 40.61,
+        "text": "宿題が終わらなかったらどこにも行けません"
+      },
+      {
+        "end": 54.56,
+        "start": 46.98,
+        "text": "4. 寒い"
+      },
+      {
+        "end": 58.56,
+        "start": 54.56,
+        "text": "寒かったらヒーターをつけた方がいいですよ"
+      },
+      {
+        "end": 63.94,
+        "start": 58.56,
+        "text": "5. 安い電子レンジがある"
+      },
+      {
+        "end": 70.05,
+        "start": 63.94,
+        "text": "安い電子レンジがあったら買おうと思っています"
+      },
+      {
+        "end": 75.42,
+        "start": 70.05,
+        "text": "6. 友達が病気だ"
+      },
+      {
+        "end": 81.6,
+        "start": 75.42,
+        "text": "友達が病気だったら"
+      },
+      {
+        "end": 87.04,
+        "start": 81.6,
+        "text": "薬を買いに行ってあげます"
+      },
+      {
+        "end": 93.22,
+        "start": 87.04,
+        "text": "7. 部屋がきれいじゃない"
+      },
+      {
+        "end": 98.59,
+        "start": 93.22,
+        "text": "部屋がきれいじゃなかったら掃除します"
+      },
+      {
+        "end": 104.74,
+        "start": 98.59,
+        "text": "8. お客さんが来る"
+      },
+      {
+        "end": 108.74,
+        "start": 104.74,
+        "text": "お客さんが来たらお茶を入れてください"
+      }
+    ]
+  },
+  "K17_11": {
+    "duration": 115.36,
+    "language": "ja",
+    "languageProbability": 0.9672,
+    "segments": [
+      {
+        "end": 6.23,
+        "start": 0.02,
+        "text": "4 勉強しなくてもいいです"
+      },
+      {
+        "end": 11.38,
+        "start": 6.23,
+        "text": "a エグゼンプル"
+      },
+      {
+        "end": 26.92,
+        "start": 11.5,
+        "text": "カルロスさんは勉強しなくてもいいです 1 カルロスさんは単語を覚えなくてもいいです"
+      },
+      {
+        "end": 46.86,
+        "start": 26.92,
+        "text": "2 カルロスさんは漢字を練習しなくてもいいです 3 カルロスさんは日本語を話さなくてもいいです"
+      },
+      {
+        "end": 66.65,
+        "start": 46.86,
+        "text": "4 カルロスさんは朝早く起きなくてもいいです 5 カルロスさんは学校に行かなくてもいいです"
+      },
+      {
+        "end": 85.98,
+        "start": 66.65,
+        "text": "6 カルロスさんはお皿を洗わなくてもいいです 7 カルロスさんは選択しなくてもいいです"
+      },
+      {
+        "end": 105.88,
+        "start": 85.98,
+        "text": "8 カルロスさんは料理しなくてもいいです 9 カルロスさんは自分の部屋を掃除しなくてもいいです"
+      },
+      {
+        "end": 115.28,
+        "start": 105.88,
+        "text": "10 カルロスさんは早く帰らなくてもいいです"
+      }
+    ]
+  },
+  "K17_12": {
+    "duration": 69.02,
+    "language": "ja",
+    "languageProbability": 0.9661,
+    "segments": [
+      {
+        "end": 6.35,
+        "start": 0.18,
+        "text": "5 スーパーマンみたいですね"
+      },
+      {
+        "end": 11.9,
+        "start": 6.35,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 15.71,
+        "start": 11.9,
+        "text": "スーパーマンみたいですね"
+      },
+      {
+        "end": 23.25,
+        "start": 15.71,
+        "text": "1 髪みたいですね"
+      },
+      {
+        "end": 31.01,
+        "start": 23.25,
+        "text": "2 スプーンみたいですね"
+      },
+      {
+        "end": 38.61,
+        "start": 31.01,
+        "text": "3 ブーツみたいですね"
+      },
+      {
+        "end": 46.42,
+        "start": 38.61,
+        "text": "4 ぬいぐるみみたいですね"
+      },
+      {
+        "end": 53.82,
+        "start": 46.42,
+        "text": "5 猫みたいですね"
+      },
+      {
+        "end": 61.7,
+        "start": 53.82,
+        "text": "6 バットマンみたいですね"
+      },
+      {
+        "end": 68.94,
+        "start": 61.7,
+        "text": "7 マリオみたいですね"
+      }
+    ]
+  },
+  "K17_13": {
+    "duration": 83.07,
+    "language": "ja",
+    "languageProbability": 0.9754,
+    "segments": [
+      {
+        "end": 6.05,
+        "start": 0.05,
+        "text": "6. 電話してから友達の家に行きます。"
+      },
+      {
+        "end": 17.02,
+        "start": 13.02,
+        "text": "電話してから友達の家に行きます。"
+      },
+      {
+        "end": 28.23,
+        "start": 17.02,
+        "text": "1. 靴を抜いてから部屋に入ります。"
+      },
+      {
+        "end": 35.59,
+        "start": 28.23,
+        "text": "2. 歯を磨いてから髪を溶かします。"
+      },
+      {
+        "end": 45.07,
+        "start": 35.59,
+        "text": "3. 髭を沿ってから顔を洗います。"
+      },
+      {
+        "end": 54.46,
+        "start": 45.07,
+        "text": "4. コンタクトを入れてから化粧します。"
+      },
+      {
+        "end": 62.9,
+        "start": 54.46,
+        "text": "5. 鍵をかけてから出かけます。"
+      },
+      {
+        "end": 72.22,
+        "start": 62.9,
+        "text": "6. お湯を沸かしてからお茶を入れます。"
+      },
+      {
+        "end": 81.54,
+        "start": 72.22,
+        "text": "7. お祈りしてから寝ます。"
+      }
+    ]
+  },
+  "K17_14": {
+    "duration": 73.8,
+    "language": "ja",
+    "languageProbability": 0.9806,
+    "segments": [
+      {
+        "end": 4.3,
+        "start": 0.02,
+        "text": "B. エクゼンプル"
+      },
+      {
+        "end": 10.64,
+        "start": 5.3,
+        "text": "友達の家に行く前に電話します"
+      },
+      {
+        "end": 19.96,
+        "start": 10.64,
+        "text": "1. 部屋に入る前に靴を脱ぎます"
+      },
+      {
+        "end": 26.97,
+        "start": 19.96,
+        "text": "2. 髪を溶かす前に歯を磨きます"
+      },
+      {
+        "end": 36.42,
+        "start": 26.97,
+        "text": "3. 顔を洗う前に髭をそります"
+      },
+      {
+        "end": 45.8,
+        "start": 36.42,
+        "text": "4. 化粧する前にコンタクトを入れます"
+      },
+      {
+        "end": 54.15,
+        "start": 45.8,
+        "text": "5. 出かける前に鍵をかけます"
+      },
+      {
+        "end": 63.44,
+        "start": 54.15,
+        "text": "6. お茶を入れる前にお湯を沸かします"
+      },
+      {
+        "end": 72.76,
+        "start": 63.44,
+        "text": "7. 寝る前にお祈りします"
+      }
+    ]
+  },
+  "W17_A": {
+    "duration": 64.81,
+    "language": "ja",
+    "languageProbability": 0.9912,
+    "segments": [
+      {
+        "end": 9.06,
+        "start": 0.11,
+        "text": "第十七課、聞く練習、えい"
+      },
+      {
+        "end": 13.06,
+        "start": 9.06,
+        "text": "山本さん、会社をやめるそうですよ"
+      },
+      {
+        "end": 17.06,
+        "start": 13.06,
+        "text": "え、本当ですか?"
+      },
+      {
+        "end": 21.06,
+        "start": 17.06,
+        "text": "最近、ずいぶん疲れているみたいですからね"
+      },
+      {
+        "end": 27.06,
+        "start": 21.06,
+        "text": "ええ、毎日、夜遅くまで残業していたみたいですよ"
+      },
+      {
+        "end": 32.06,
+        "start": 27.06,
+        "text": "この会社は給料はいいけど、残業が多すぎますよ"
+      },
+      {
+        "end": 36.06,
+        "start": 32.06,
+        "text": "山本さん、これからどうするんですか?"
+      },
+      {
+        "end": 41.06,
+        "start": 36.06,
+        "text": "今、新しい仕事を探しているみたいですよ"
+      },
+      {
+        "end": 45.06,
+        "start": 41.06,
+        "text": "奥さんとも離婚するそうですよ"
+      },
+      {
+        "end": 52.06,
+        "start": 45.06,
+        "text": "やっぱり、忙しすぎて家にあまりいられないんでしょうね"
+      },
+      {
+        "end": 59.06,
+        "start": 52.06,
+        "text": "私たちも結婚する前に新しい仕事を探した方がいいかもしれませんね"
+      }
+    ]
+  },
+  "W17_B": {
+    "duration": 40.36,
+    "language": "ja",
+    "languageProbability": 0.9955,
+    "segments": [
+      {
+        "end": 4.89,
+        "start": 0.08,
+        "text": "ビー、急ぎましょうか。"
+      },
+      {
+        "end": 9.89,
+        "start": 4.89,
+        "text": "急がなくてもいいですよ。1時間ありますから。"
+      },
+      {
+        "end": 14.89,
+        "start": 9.89,
+        "text": "出かける前に、田中さんに電話しておかなきゃいけませんね。"
+      },
+      {
+        "end": 17.39,
+        "start": 14.89,
+        "text": "そうですね。"
+      },
+      {
+        "end": 19.89,
+        "start": 17.39,
+        "text": "傘を持っていきますか?"
+      },
+      {
+        "end": 22.39,
+        "start": 19.89,
+        "text": "持っていかなくてもいいと思います。"
+      },
+      {
+        "end": 25.89,
+        "start": 22.39,
+        "text": "今日は雨が降らないそうです。"
+      },
+      {
+        "end": 29.39,
+        "start": 25.89,
+        "text": "何か買っていったほうがいいですね。"
+      },
+      {
+        "end": 34.39,
+        "start": 29.39,
+        "text": "じゃあ、バスを降りてからケーキと花を買いましょう。"
+      }
+    ]
+  },
+  "W17_C": {
+    "duration": 65.59,
+    "language": "ja",
+    "languageProbability": 0.988,
+    "segments": [
+      {
+        "end": 2.67,
+        "start": 0.27,
+        "text": "シー"
+      },
+      {
+        "end": 6.43,
+        "start": 2.67,
+        "text": "メアリー ソラさんに電話した?"
+      },
+      {
+        "end": 14.43,
+        "start": 6.43,
+        "text": "うん。ソラさん、土曜日は約束があるからダメだけど、日曜日なら大丈夫だって"
+      },
+      {
+        "end": 20.59,
+        "start": 14.43,
+        "text": "よかった。じゃあ、日曜日にみんなで神戸に行けるね"
+      },
+      {
+        "end": 24.19,
+        "start": 20.59,
+        "text": "メアリーは神戸で何がしたい?"
+      },
+      {
+        "end": 28.67,
+        "start": 24.19,
+        "text": "私、おいしいものが食べたい"
+      },
+      {
+        "end": 37.07,
+        "start": 28.75,
+        "text": "神戸には色々な国のレストランがあるし、ソラさんは買い物がしたいって"
+      },
+      {
+        "end": 40.59,
+        "start": 37.07,
+        "text": "タケシ君は何がしたい?"
+      },
+      {
+        "end": 47.63,
+        "start": 40.59,
+        "text": "僕はロッコウさんに行きたい。ロッコウさんからきれいな海が見えるそうだよ"
+      },
+      {
+        "end": 52.67,
+        "start": 47.63,
+        "text": "じゃあ、いい天気だったらロッコウさんに登ろうよ"
+      },
+      {
+        "end": 54.11,
+        "start": 52.67,
+        "text": "うん"
+      },
+      {
+        "end": 61.23,
+        "start": 54.11,
+        "text": "雨が降ったら、街で買い物をしたり、おいしいものを食べたりしよう"
+      }
+    ]
+  }
+}
