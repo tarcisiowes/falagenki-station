@@ -1,0 +1,2609 @@
+{
+  "K22_01": {
+    "duration": 56.06,
+    "language": "ja",
+    "languageProbability": 0.9949,
+    "segments": [
+      {
+        "end": 3.11,
+        "start": 0.11,
+        "text": "第22課"
+      },
+      {
+        "end": 6.61,
+        "start": 3.11,
+        "text": "日本の教育"
+      },
+      {
+        "end": 8.61,
+        "start": 6.61,
+        "text": "会話"
+      },
+      {
+        "end": 10.61,
+        "start": 8.61,
+        "text": "1"
+      },
+      {
+        "end": 14.11,
+        "start": 10.61,
+        "text": "マナ、勉強しなさい。"
+      },
+      {
+        "end": 20.11,
+        "start": 14.11,
+        "text": "来週は期末試験があるのに、全然勉強していないでしょう。"
+      },
+      {
+        "end": 26.61,
+        "start": 20.11,
+        "text": "お母さん、私、もう17なんだから、少し掘っておいてよ。"
+      },
+      {
+        "end": 33.11,
+        "start": 26.61,
+        "text": "今頑張っておけば、いい大学に入れて、後で楽になるんだから。"
+      },
+      {
+        "end": 37.61,
+        "start": 33.11,
+        "text": "私、別にいい大学に行けなくてもいい。"
+      },
+      {
+        "end": 43.61,
+        "start": 37.61,
+        "text": "お父さんとお母さんは、あなたをいい大学に行かせてあげたいの。"
+      },
+      {
+        "end": 49.61,
+        "start": 43.61,
+        "text": "お母さんのうちは貧乏だったから、大学に行かせてくれなかったのよ。"
+      },
+      {
+        "end": 55.61,
+        "start": 49.61,
+        "text": "わかった、わかった。その話、もう何度も聞いた。"
+      }
+    ]
+  },
+  "K22_02": {
+    "duration": 89.86,
+    "language": "ja",
+    "languageProbability": 0.8435,
+    "segments": [
+      {
+        "end": 3.05,
+        "start": 0.05,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 10.28,
+        "start": 4.05,
+        "text": "まだ勉強しなさい"
+      },
+      {
+        "end": 15.28,
+        "start": 10.28,
+        "text": "来週は決末試験があるのに全然勉強していないでしょう"
+      },
+      {
+        "end": 27.17,
+        "start": 15.28,
+        "text": "お母さん私もう17なんだから少し掘っておいてよ"
+      },
+      {
+        "end": 39.34,
+        "start": 27.17,
+        "text": "今頑張っておけばいい大学に入れて後で楽になるんだから"
+      },
+      {
+        "end": 49.81,
+        "start": 39.34,
+        "text": "私別にいい大学に行けなくてもいい"
+      },
+      {
+        "end": 59.13,
+        "start": 49.81,
+        "text": "お父さんとお母さんはあなたをいい大学に行かせてあげたいの"
+      },
+      {
+        "end": 70.98,
+        "start": 59.13,
+        "text": "お母さんのうちは貧乏だったから大学に行かせてくれなかったのよ"
+      },
+      {
+        "end": 78.81,
+        "start": 70.98,
+        "text": "わかったわかった"
+      },
+      {
+        "end": 84.27,
+        "start": 78.81,
+        "text": "その話もう何度も聞いた"
+      }
+    ]
+  },
+  "K22_03": {
+    "duration": 28.66,
+    "language": "ja",
+    "languageProbability": 0.9905,
+    "segments": [
+      {
+        "end": 2.41,
+        "start": 0.11,
+        "text": "2"
+      },
+      {
+        "end": 15.19,
+        "start": 2.41,
+        "text": "メアリーも高校の時こんな風だった? そうね。やっぱり親はうるさかったけど、もう少し自由があったかな。"
+      },
+      {
+        "end": 28.51,
+        "start": 15.19,
+        "text": "うちの親ちょっと変だと思うでしょ? そんなことないよ。ちょっと厳しいかもしれないけど、マナちゃんのことを心配しているんだよ。"
+      }
+    ]
+  },
+  "K22_04": {
+    "duration": 55.2,
+    "language": "ja",
+    "languageProbability": 0.8498,
+    "segments": [
+      {
+        "end": 3.7,
+        "start": 0.14,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 12.17,
+        "start": 3.7,
+        "text": "メアリーも高校の時こんな風だった?"
+      },
+      {
+        "end": 17.05,
+        "start": 12.17,
+        "text": "そうね。やっぱり親はうるさかったけど"
+      },
+      {
+        "end": 36.28,
+        "start": 17.05,
+        "text": "もう少し自由があったかな。うちの親ちょっと変だと思うでしょ?"
+      },
+      {
+        "end": 43.87,
+        "start": 36.28,
+        "text": "そんなことないよ。ちょっと厳しいかもしれないけど"
+      },
+      {
+        "end": 48.43,
+        "start": 43.87,
+        "text": "マナちゃんのことを心配しているんだよ"
+      }
+    ]
+  },
+  "K22_05": {
+    "duration": 39.5,
+    "language": "ja",
+    "languageProbability": 0.9884,
+    "segments": [
+      {
+        "end": 2.45,
+        "start": 0.21,
+        "text": "さん"
+      },
+      {
+        "end": 9.55,
+        "start": 2.45,
+        "text": "うちのマナちゃん高校生なのに忙しくて全然遊ぶ時間がないみたい"
+      },
+      {
+        "end": 14.05,
+        "start": 9.55,
+        "text": "子供も大変だけど親も大変だと思うよ"
+      },
+      {
+        "end": 20.55,
+        "start": 14.05,
+        "text": "熟に行かせたり英会話を習わせたりお金がかかるだろうな"
+      },
+      {
+        "end": 26.05,
+        "start": 20.55,
+        "text": "たけしくんも子供の時マナちゃんのように熟に行ってた?"
+      },
+      {
+        "end": 33.05,
+        "start": 26.21,
+        "text": "僕はずっと遊んでた自分の子供にも自由に遊ばせてあげたいな"
+      },
+      {
+        "end": 39.33,
+        "start": 33.05,
+        "text": "でも日本で子供を育てるのは大変そうだね"
+      }
+    ]
+  },
+  "K22_06": {
+    "duration": 76.38,
+    "language": "ja",
+    "languageProbability": 0.8442,
+    "segments": [
+      {
+        "end": 3.64,
+        "start": 0.14,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 10.34,
+        "start": 3.64,
+        "text": "うちのマナちゃん高校生なのに忙しくて 全然遊ぶ時間がないみたい"
+      },
+      {
+        "end": 26.68,
+        "start": 10.34,
+        "text": "子供も大変だけど 親も大変だと思うよ"
+      },
+      {
+        "end": 32.38,
+        "start": 26.68,
+        "text": "熟に行かせたり 英会話を習わせたり お金がかかるだろうな"
+      },
+      {
+        "end": 44.34,
+        "start": 32.38,
+        "text": "タケシ君も子供の時 マナちゃんのように熟に行ってた?"
+      },
+      {
+        "end": 55.22,
+        "start": 50.1,
+        "text": "僕はずっと遊んでた"
+      },
+      {
+        "end": 64.06,
+        "start": 55.22,
+        "text": "自分の子供にも 自由に遊ばせてあげたいな"
+      },
+      {
+        "end": 69.06,
+        "start": 64.06,
+        "text": "でも 日本で子供を育てるのは 大変そうだね"
+      }
+    ]
+  },
+  "K22_07": {
+    "duration": 324.96,
+    "language": "ja",
+    "languageProbability": 0.8997,
+    "segments": [
+      {
+        "end": 3.05,
+        "start": 0.05,
+        "text": "第22か"
+      },
+      {
+        "end": 5.05,
+        "start": 3.05,
+        "text": "単語"
+      },
+      {
+        "end": 8.05,
+        "start": 5.05,
+        "text": "nawns"
+      },
+      {
+        "end": 10.05,
+        "start": 8.05,
+        "text": "かぜ"
+      },
+      {
+        "end": 12.05,
+        "start": 10.05,
+        "text": "wind"
+      },
+      {
+        "end": 14.05,
+        "start": 12.05,
+        "text": "き"
+      },
+      {
+        "end": 16.05,
+        "start": 14.05,
+        "text": "tree"
+      },
+      {
+        "end": 19.05,
+        "start": 16.05,
+        "text": "bōrū"
+      },
+      {
+        "end": 21.05,
+        "start": 19.05,
+        "text": "bōl"
+      },
+      {
+        "end": 23.05,
+        "start": 21.05,
+        "text": "saru"
+      },
+      {
+        "end": 26.05,
+        "start": 23.05,
+        "text": "manki"
+      },
+      {
+        "end": 28.05,
+        "start": 26.05,
+        "text": "menkyō"
+      },
+      {
+        "end": 30.05,
+        "start": 28.05,
+        "text": "license"
+      },
+      {
+        "end": 33.05,
+        "start": 30.05,
+        "text": "yōshū"
+      },
+      {
+        "end": 36.05,
+        "start": 33.05,
+        "text": "preparation of a lesson"
+      },
+      {
+        "end": 39.05,
+        "start": 36.05,
+        "text": "fukushū"
+      },
+      {
+        "end": 42.05,
+        "start": 39.05,
+        "text": "review of a lesson"
+      },
+      {
+        "end": 44.05,
+        "start": 42.05,
+        "text": "juku"
+      },
+      {
+        "end": 47.05,
+        "start": 44.05,
+        "text": "cram school"
+      },
+      {
+        "end": 49.05,
+        "start": 47.05,
+        "text": "eikai wa"
+      },
+      {
+        "end": 53.05,
+        "start": 49.05,
+        "text": "english conversation"
+      },
+      {
+        "end": 55.05,
+        "start": 53.05,
+        "text": "aite"
+      },
+      {
+        "end": 57.05,
+        "start": 55.05,
+        "text": "partner"
+      },
+      {
+        "end": 61.05,
+        "start": 58.05,
+        "text": "お嬢さん"
+      },
+      {
+        "end": 63.05,
+        "start": 61.05,
+        "text": "daughter"
+      },
+      {
+        "end": 66.05,
+        "start": 63.05,
+        "text": "kami-sama"
+      },
+      {
+        "end": 68.05,
+        "start": 66.05,
+        "text": "god"
+      },
+      {
+        "end": 71.05,
+        "start": 68.05,
+        "text": "senpai"
+      },
+      {
+        "end": 74.05,
+        "start": 71.05,
+        "text": "senior member of a group"
+      },
+      {
+        "end": 77.05,
+        "start": 74.05,
+        "text": "kōhai"
+      },
+      {
+        "end": 80.05,
+        "start": 77.05,
+        "text": "junior member of a group"
+      },
+      {
+        "end": 82.05,
+        "start": 80.05,
+        "text": "buka"
+      },
+      {
+        "end": 85.05,
+        "start": 82.05,
+        "text": "subordinate"
+      },
+      {
+        "end": 89.05,
+        "start": 86.05,
+        "text": "reception desk"
+      },
+      {
+        "end": 92.05,
+        "start": 89.05,
+        "text": "shōrui"
+      },
+      {
+        "end": 94.05,
+        "start": 92.05,
+        "text": "document"
+      },
+      {
+        "end": 97.05,
+        "start": 94.05,
+        "text": "project"
+      },
+      {
+        "end": 99.05,
+        "start": 97.05,
+        "text": "project"
+      },
+      {
+        "end": 101.05,
+        "start": 99.05,
+        "text": "kaji"
+      },
+      {
+        "end": 104.05,
+        "start": 101.05,
+        "text": "housework"
+      },
+      {
+        "end": 107.05,
+        "start": 104.05,
+        "text": "yōuroppa"
+      },
+      {
+        "end": 109.05,
+        "start": 107.05,
+        "text": "Europe"
+      },
+      {
+        "end": 112.05,
+        "start": 109.05,
+        "text": "hitoringurashi"
+      },
+      {
+        "end": 114.05,
+        "start": 112.05,
+        "text": "living alone"
+      },
+      {
+        "end": 117.05,
+        "start": 114.05,
+        "text": "自由"
+      },
+      {
+        "end": 119.05,
+        "start": 117.05,
+        "text": "freedom"
+      },
+      {
+        "end": 122.05,
+        "start": 119.05,
+        "text": "mudazukai"
+      },
+      {
+        "end": 124.05,
+        "start": 122.05,
+        "text": "waste"
+      },
+      {
+        "end": 127.05,
+        "start": 124.05,
+        "text": "e-adjective"
+      },
+      {
+        "end": 129.05,
+        "start": 127.05,
+        "text": "urusai"
+      },
+      {
+        "end": 131.05,
+        "start": 129.05,
+        "text": "noisy"
+      },
+      {
+        "end": 133.05,
+        "start": 131.05,
+        "text": "annoying"
+      },
+      {
+        "end": 136.05,
+        "start": 133.05,
+        "text": "na-adjectives"
+      },
+      {
+        "end": 139.05,
+        "start": 136.05,
+        "text": "shinpai-na"
+      },
+      {
+        "end": 142.05,
+        "start": 139.05,
+        "text": "worried about"
+      },
+      {
+        "end": 146.05,
+        "start": 143.05,
+        "text": "poor"
+      },
+      {
+        "end": 149.05,
+        "start": 146.05,
+        "text": "peraperana"
+      },
+      {
+        "end": 151.05,
+        "start": 149.05,
+        "text": "fluent"
+      },
+      {
+        "end": 154.05,
+        "start": 151.05,
+        "text": "lakuna"
+      },
+      {
+        "end": 157.05,
+        "start": 154.05,
+        "text": "easy, comfortable"
+      },
+      {
+        "end": 160.05,
+        "start": 157.05,
+        "text": "u-verbs"
+      },
+      {
+        "end": 163.05,
+        "start": 160.05,
+        "text": "kaze ga fuku"
+      },
+      {
+        "end": 166.05,
+        "start": 163.05,
+        "text": "the wind blows"
+      },
+      {
+        "end": 169.05,
+        "start": 166.05,
+        "text": "copy o toru"
+      },
+      {
+        "end": 171.05,
+        "start": 169.05,
+        "text": "to make a photocopy"
+      },
+      {
+        "end": 173.05,
+        "start": 171.05,
+        "text": "運ぶ"
+      },
+      {
+        "end": 176.05,
+        "start": 173.05,
+        "text": "to carry"
+      },
+      {
+        "end": 178.05,
+        "start": 176.05,
+        "text": "拾う"
+      },
+      {
+        "end": 181.05,
+        "start": 178.05,
+        "text": "to pick up"
+      },
+      {
+        "end": 184.05,
+        "start": 181.05,
+        "text": "放っておく"
+      },
+      {
+        "end": 186.05,
+        "start": 184.05,
+        "text": "to leave alone"
+      },
+      {
+        "end": 189.05,
+        "start": 186.05,
+        "text": "to neglect"
+      },
+      {
+        "end": 191.05,
+        "start": 189.05,
+        "text": "間に合う"
+      },
+      {
+        "end": 194.05,
+        "start": 191.05,
+        "text": "to be in time"
+      },
+      {
+        "end": 196.05,
+        "start": 194.05,
+        "text": "かつ"
+      },
+      {
+        "end": 199.05,
+        "start": 196.05,
+        "text": "to win"
+      },
+      {
+        "end": 202.05,
+        "start": 199.05,
+        "text": "to take"
+      },
+      {
+        "end": 205.05,
+        "start": 202.05,
+        "text": "計画を立てる"
+      },
+      {
+        "end": 208.05,
+        "start": 205.05,
+        "text": "to make a plan"
+      },
+      {
+        "end": 211.05,
+        "start": 208.05,
+        "text": "そだてる"
+      },
+      {
+        "end": 213.05,
+        "start": 211.05,
+        "text": "to raise"
+      },
+      {
+        "end": 216.05,
+        "start": 213.05,
+        "text": "to bring up"
+      },
+      {
+        "end": 218.05,
+        "start": 216.05,
+        "text": "助ける"
+      },
+      {
+        "end": 221.05,
+        "start": 218.05,
+        "text": "to help"
+      },
+      {
+        "end": 224.05,
+        "start": 221.05,
+        "text": "to rescue"
+      },
+      {
+        "end": 227.05,
+        "start": 224.05,
+        "text": "負ける"
+      },
+      {
+        "end": 231.05,
+        "start": 228.05,
+        "text": "irregular verbs"
+      },
+      {
+        "end": 234.05,
+        "start": 231.05,
+        "text": "お願いする"
+      },
+      {
+        "end": 237.05,
+        "start": 234.05,
+        "text": "to request help"
+      },
+      {
+        "end": 239.05,
+        "start": 237.05,
+        "text": "賛成する"
+      },
+      {
+        "end": 242.05,
+        "start": 239.05,
+        "text": "to agree"
+      },
+      {
+        "end": 245.05,
+        "start": 242.05,
+        "text": "反対する"
+      },
+      {
+        "end": 247.05,
+        "start": 245.05,
+        "text": "to oppose"
+      },
+      {
+        "end": 249.05,
+        "start": 247.05,
+        "text": "to object to"
+      },
+      {
+        "end": 252.05,
+        "start": 249.05,
+        "text": "失敗する"
+      },
+      {
+        "end": 254.05,
+        "start": 252.05,
+        "text": "to fail"
+      },
+      {
+        "end": 256.05,
+        "start": 254.05,
+        "text": "to be unsuccessful"
+      },
+      {
+        "end": 259.05,
+        "start": 256.05,
+        "text": "徹夜する"
+      },
+      {
+        "end": 262.05,
+        "start": 259.05,
+        "text": "to stay up all night"
+      },
+      {
+        "end": 265.05,
+        "start": 262.05,
+        "text": "翻訳する"
+      },
+      {
+        "end": 267.05,
+        "start": 265.05,
+        "text": "to translate"
+      },
+      {
+        "end": 271.05,
+        "start": 267.05,
+        "text": "adverbs and other expressions"
+      },
+      {
+        "end": 274.05,
+        "start": 271.05,
+        "text": "こんなふう"
+      },
+      {
+        "end": 277.05,
+        "start": 274.05,
+        "text": "like this"
+      },
+      {
+        "end": 279.05,
+        "start": 277.05,
+        "text": "自由に"
+      },
+      {
+        "end": 282.05,
+        "start": 279.05,
+        "text": "freely"
+      },
+      {
+        "end": 284.05,
+        "start": 282.05,
+        "text": "ずっと"
+      },
+      {
+        "end": 286.05,
+        "start": 284.05,
+        "text": "for a long time"
+      },
+      {
+        "end": 288.05,
+        "start": 286.05,
+        "text": "all the time"
+      },
+      {
+        "end": 291.05,
+        "start": 288.05,
+        "text": "絶対に"
+      },
+      {
+        "end": 293.05,
+        "start": 291.05,
+        "text": "definitely"
+      },
+      {
+        "end": 296.05,
+        "start": 293.05,
+        "text": "何度も"
+      },
+      {
+        "end": 299.05,
+        "start": 296.05,
+        "text": "many times"
+      },
+      {
+        "end": 301.05,
+        "start": 299.05,
+        "text": "もう少し"
+      },
+      {
+        "end": 304.05,
+        "start": 301.05,
+        "text": "a little more"
+      },
+      {
+        "end": 306.05,
+        "start": 304.05,
+        "text": "とか"
+      },
+      {
+        "end": 309.05,
+        "start": 306.05,
+        "text": "for example"
+      },
+      {
+        "end": 312.05,
+        "start": 309.05,
+        "text": "そんなことはない"
+      },
+      {
+        "end": 316.05,
+        "start": 312.05,
+        "text": "don't think so"
+      },
+      {
+        "end": 320.05,
+        "start": 316.05,
+        "text": "suffix for names of children"
+      },
+      {
+        "end": 322.05,
+        "start": 320.05,
+        "text": "多くの"
+      },
+      {
+        "end": 325.05,
+        "start": 322.05,
+        "text": "many"
+      }
+    ]
+  },
+  "K22_08": {
+    "duration": 325.8,
+    "language": "ja",
+    "languageProbability": 0.7459,
+    "segments": [
+      {
+        "end": 3.05,
+        "start": 0.05,
+        "text": "第22課"
+      },
+      {
+        "end": 5.05,
+        "start": 3.05,
+        "text": "単語"
+      },
+      {
+        "end": 8.39,
+        "start": 5.05,
+        "text": "nawns"
+      },
+      {
+        "end": 10.39,
+        "start": 8.39,
+        "text": "wind"
+      },
+      {
+        "end": 12.39,
+        "start": 10.39,
+        "text": "kaze"
+      },
+      {
+        "end": 14.39,
+        "start": 12.39,
+        "text": "tree"
+      },
+      {
+        "end": 16.39,
+        "start": 14.39,
+        "text": "ki"
+      },
+      {
+        "end": 19.39,
+        "start": 16.39,
+        "text": "bol"
+      },
+      {
+        "end": 21.39,
+        "start": 19.39,
+        "text": "bouru"
+      },
+      {
+        "end": 23.39,
+        "start": 21.39,
+        "text": "manki"
+      },
+      {
+        "end": 25.39,
+        "start": 23.39,
+        "text": "saru"
+      },
+      {
+        "end": 28.39,
+        "start": 25.39,
+        "text": "license"
+      },
+      {
+        "end": 30.39,
+        "start": 28.39,
+        "text": "menkyo"
+      },
+      {
+        "end": 34.39,
+        "start": 30.39,
+        "text": "preparation of a lesson"
+      },
+      {
+        "end": 37.39,
+        "start": 34.39,
+        "text": "予習"
+      },
+      {
+        "end": 40.39,
+        "start": 37.39,
+        "text": "review of a lesson"
+      },
+      {
+        "end": 42.39,
+        "start": 40.39,
+        "text": "復習"
+      },
+      {
+        "end": 45.39,
+        "start": 42.39,
+        "text": "cram school"
+      },
+      {
+        "end": 47.39,
+        "start": 45.39,
+        "text": "塾"
+      },
+      {
+        "end": 50.39,
+        "start": 47.39,
+        "text": "English conversation"
+      },
+      {
+        "end": 53.39,
+        "start": 50.39,
+        "text": "英会話"
+      },
+      {
+        "end": 55.39,
+        "start": 53.39,
+        "text": "partner"
+      },
+      {
+        "end": 57.39,
+        "start": 55.39,
+        "text": "the other person"
+      },
+      {
+        "end": 59.39,
+        "start": 57.39,
+        "text": "相手"
+      },
+      {
+        "end": 62.39,
+        "start": 59.39,
+        "text": "daughter"
+      },
+      {
+        "end": 64.39,
+        "start": 62.39,
+        "text": "お嬢さん"
+      },
+      {
+        "end": 67.39,
+        "start": 64.39,
+        "text": "god"
+      },
+      {
+        "end": 69.39,
+        "start": 67.39,
+        "text": "神様"
+      },
+      {
+        "end": 72.39,
+        "start": 69.39,
+        "text": "senior member of a group"
+      },
+      {
+        "end": 75.39,
+        "start": 72.39,
+        "text": "先輩"
+      },
+      {
+        "end": 78.39,
+        "start": 75.39,
+        "text": "junior member of a group"
+      },
+      {
+        "end": 80.39,
+        "start": 78.39,
+        "text": "後輩"
+      },
+      {
+        "end": 83.39,
+        "start": 80.39,
+        "text": "subordinate"
+      },
+      {
+        "end": 85.39,
+        "start": 83.39,
+        "text": "部下"
+      },
+      {
+        "end": 88.39,
+        "start": 85.39,
+        "text": "reception desk"
+      },
+      {
+        "end": 91.39,
+        "start": 88.39,
+        "text": "受付"
+      },
+      {
+        "end": 93.39,
+        "start": 91.39,
+        "text": "document"
+      },
+      {
+        "end": 95.39,
+        "start": 93.39,
+        "text": "書類"
+      },
+      {
+        "end": 98.39,
+        "start": 95.39,
+        "text": "project"
+      },
+      {
+        "end": 100.39,
+        "start": 98.39,
+        "text": "project"
+      },
+      {
+        "end": 103.39,
+        "start": 100.39,
+        "text": "housework"
+      },
+      {
+        "end": 105.39,
+        "start": 103.39,
+        "text": "家事"
+      },
+      {
+        "end": 107.39,
+        "start": 105.39,
+        "text": "Europe"
+      },
+      {
+        "end": 110.39,
+        "start": 107.39,
+        "text": "ヨーロッパ"
+      },
+      {
+        "end": 113.39,
+        "start": 110.39,
+        "text": "living alone"
+      },
+      {
+        "end": 115.39,
+        "start": 113.39,
+        "text": "一人暮らし"
+      },
+      {
+        "end": 117.39,
+        "start": 115.39,
+        "text": "freedom"
+      },
+      {
+        "end": 119.39,
+        "start": 117.39,
+        "text": "自由"
+      },
+      {
+        "end": 122.39,
+        "start": 119.39,
+        "text": "waste"
+      },
+      {
+        "end": 124.39,
+        "start": 122.39,
+        "text": "無駄遣い"
+      },
+      {
+        "end": 127.39,
+        "start": 124.39,
+        "text": "e-adjective"
+      },
+      {
+        "end": 129.39,
+        "start": 127.39,
+        "text": "noisy"
+      },
+      {
+        "end": 131.39,
+        "start": 129.39,
+        "text": "annoying"
+      },
+      {
+        "end": 133.39,
+        "start": 131.39,
+        "text": "うるさい"
+      },
+      {
+        "end": 136.39,
+        "start": 133.39,
+        "text": "na-adjectives"
+      },
+      {
+        "end": 139.39,
+        "start": 136.39,
+        "text": "worried about"
+      },
+      {
+        "end": 142.39,
+        "start": 139.39,
+        "text": "心配な"
+      },
+      {
+        "end": 144.39,
+        "start": 142.39,
+        "text": "poor"
+      },
+      {
+        "end": 147.39,
+        "start": 144.39,
+        "text": "貧乏な"
+      },
+      {
+        "end": 149.39,
+        "start": 147.39,
+        "text": "fluent"
+      },
+      {
+        "end": 152.39,
+        "start": 149.39,
+        "text": "ペラペラな"
+      },
+      {
+        "end": 155.39,
+        "start": 152.39,
+        "text": "easy, comfortable"
+      },
+      {
+        "end": 158.39,
+        "start": 155.39,
+        "text": "楽な"
+      },
+      {
+        "end": 160.39,
+        "start": 158.39,
+        "text": "u-verbs"
+      },
+      {
+        "end": 163.39,
+        "start": 160.39,
+        "text": "the wind blows"
+      },
+      {
+        "end": 166.39,
+        "start": 163.39,
+        "text": "風が吹く"
+      },
+      {
+        "end": 169.39,
+        "start": 166.39,
+        "text": "to make a photocopy"
+      },
+      {
+        "end": 172.39,
+        "start": 169.39,
+        "text": "copyをとる"
+      },
+      {
+        "end": 174.39,
+        "start": 172.39,
+        "text": "to carry"
+      },
+      {
+        "end": 176.39,
+        "start": 174.39,
+        "text": "運ぶ"
+      },
+      {
+        "end": 179.39,
+        "start": 176.39,
+        "text": "to pick up"
+      },
+      {
+        "end": 181.39,
+        "start": 179.39,
+        "text": "拾う"
+      },
+      {
+        "end": 184.39,
+        "start": 181.39,
+        "text": "to leave alone"
+      },
+      {
+        "end": 186.39,
+        "start": 184.39,
+        "text": "to neglect"
+      },
+      {
+        "end": 189.39,
+        "start": 186.39,
+        "text": "放っておく"
+      },
+      {
+        "end": 192.39,
+        "start": 189.39,
+        "text": "to be in time"
+      },
+      {
+        "end": 194.39,
+        "start": 192.39,
+        "text": "間に合う"
+      },
+      {
+        "end": 197.39,
+        "start": 194.39,
+        "text": "to win"
+      },
+      {
+        "end": 199.39,
+        "start": 197.39,
+        "text": "katsu"
+      },
+      {
+        "end": 201.39,
+        "start": 199.39,
+        "text": "ru-verbs"
+      },
+      {
+        "end": 204.39,
+        "start": 201.39,
+        "text": "to take"
+      },
+      {
+        "end": 206.39,
+        "start": 204.39,
+        "text": "受ける"
+      },
+      {
+        "end": 209.39,
+        "start": 206.39,
+        "text": "to make a plan"
+      },
+      {
+        "end": 212.39,
+        "start": 209.39,
+        "text": "計画を立てる"
+      },
+      {
+        "end": 214.39,
+        "start": 212.39,
+        "text": "to raise"
+      },
+      {
+        "end": 216.39,
+        "start": 214.39,
+        "text": "to bring up"
+      },
+      {
+        "end": 218.39,
+        "start": 216.39,
+        "text": "育てる"
+      },
+      {
+        "end": 220.39,
+        "start": 218.39,
+        "text": "to help"
+      },
+      {
+        "end": 222.39,
+        "start": 220.39,
+        "text": "to rescue"
+      },
+      {
+        "end": 224.39,
+        "start": 222.39,
+        "text": "助ける"
+      },
+      {
+        "end": 227.39,
+        "start": 224.39,
+        "text": "to lose"
+      },
+      {
+        "end": 229.39,
+        "start": 227.39,
+        "text": "負ける"
+      },
+      {
+        "end": 232.39,
+        "start": 229.39,
+        "text": "irregular verbs"
+      },
+      {
+        "end": 235.39,
+        "start": 232.39,
+        "text": "to request help"
+      },
+      {
+        "end": 237.39,
+        "start": 235.39,
+        "text": "お願いする"
+      },
+      {
+        "end": 240.39,
+        "start": 237.39,
+        "text": "to agree"
+      },
+      {
+        "end": 243.39,
+        "start": 240.39,
+        "text": "賛成する"
+      },
+      {
+        "end": 245.39,
+        "start": 243.39,
+        "text": "to oppose"
+      },
+      {
+        "end": 247.39,
+        "start": 245.39,
+        "text": "to object to"
+      },
+      {
+        "end": 250.39,
+        "start": 247.39,
+        "text": "反対する"
+      },
+      {
+        "end": 252.39,
+        "start": 250.39,
+        "text": "to fail"
+      },
+      {
+        "end": 255.39,
+        "start": 252.39,
+        "text": "to be unsuccessful"
+      },
+      {
+        "end": 257.39,
+        "start": 255.39,
+        "text": "失敗する"
+      },
+      {
+        "end": 260.39,
+        "start": 257.39,
+        "text": "to stay up all night"
+      },
+      {
+        "end": 263.39,
+        "start": 260.39,
+        "text": "徹夜する"
+      },
+      {
+        "end": 265.39,
+        "start": 263.39,
+        "text": "to translate"
+      },
+      {
+        "end": 268.39,
+        "start": 265.39,
+        "text": "翻訳する"
+      },
+      {
+        "end": 272.39,
+        "start": 268.39,
+        "text": "adverbs and other expressions"
+      },
+      {
+        "end": 275.39,
+        "start": 272.39,
+        "text": "like this"
+      },
+      {
+        "end": 277.39,
+        "start": 275.39,
+        "text": "こんな風"
+      },
+      {
+        "end": 280.39,
+        "start": 277.39,
+        "text": "freely"
+      },
+      {
+        "end": 282.39,
+        "start": 280.39,
+        "text": "自由に"
+      },
+      {
+        "end": 286.39,
+        "start": 282.39,
+        "text": "for a long time, all the time"
+      },
+      {
+        "end": 289.39,
+        "start": 286.39,
+        "text": "ずっと"
+      },
+      {
+        "end": 291.39,
+        "start": 289.39,
+        "text": "definitely"
+      },
+      {
+        "end": 294.39,
+        "start": 291.39,
+        "text": "絶対に"
+      },
+      {
+        "end": 297.39,
+        "start": 294.39,
+        "text": "many times"
+      },
+      {
+        "end": 299.39,
+        "start": 297.39,
+        "text": "何度も"
+      },
+      {
+        "end": 302.39,
+        "start": 299.39,
+        "text": "a little more"
+      },
+      {
+        "end": 304.39,
+        "start": 302.39,
+        "text": "もう少し"
+      },
+      {
+        "end": 307.39,
+        "start": 304.39,
+        "text": "for example"
+      },
+      {
+        "end": 309.39,
+        "start": 307.39,
+        "text": "とか"
+      },
+      {
+        "end": 312.39,
+        "start": 309.39,
+        "text": "I don't think so"
+      },
+      {
+        "end": 315.39,
+        "start": 312.39,
+        "text": "そんなことはない"
+      },
+      {
+        "end": 318.39,
+        "start": 315.39,
+        "text": "suffix for names of children"
+      },
+      {
+        "end": 320.39,
+        "start": 318.39,
+        "text": "ちゃん"
+      },
+      {
+        "end": 323.39,
+        "start": 320.39,
+        "text": "many"
+      },
+      {
+        "end": 325.39,
+        "start": 323.39,
+        "text": "多くの"
+      }
+    ]
+  },
+  "K22_09": {
+    "duration": 139.49,
+    "language": "ja",
+    "languageProbability": 0.9669,
+    "segments": [
+      {
+        "end": 11.02,
+        "start": 0.18,
+        "text": "第22課 練習 1 服を表せます"
+      },
+      {
+        "end": 15.27,
+        "start": 11.02,
+        "text": "えい エクゼンプル"
+      },
+      {
+        "end": 22.65,
+        "start": 16.27,
+        "text": "食べる 食べさせる 1"
+      },
+      {
+        "end": 31.2,
+        "start": 22.65,
+        "text": "やめる やめさせる 2"
+      },
+      {
+        "end": 39.88,
+        "start": 31.2,
+        "text": "働く 働かせる 3"
+      },
+      {
+        "end": 47.46,
+        "start": 39.88,
+        "text": "飲む 飲ませる 4"
+      },
+      {
+        "end": 55.21,
+        "start": 47.46,
+        "text": "持つ 持たせる 5"
+      },
+      {
+        "end": 64.76,
+        "start": 55.21,
+        "text": "諦める 諦めさせる 6"
+      },
+      {
+        "end": 72.31,
+        "start": 64.76,
+        "text": "来る こさせる 7"
+      },
+      {
+        "end": 80.96,
+        "start": 72.31,
+        "text": "考える 考えさせる 8"
+      },
+      {
+        "end": 89.64,
+        "start": 80.96,
+        "text": "習う 習わせる 9"
+      },
+      {
+        "end": 97.35,
+        "start": 89.64,
+        "text": "とる とらせる 10"
+      },
+      {
+        "end": 106,
+        "start": 97.35,
+        "text": "拾う 拾わせる 11"
+      },
+      {
+        "end": 114.68,
+        "start": 106,
+        "text": "帰る 帰らせる 12"
+      },
+      {
+        "end": 123.3,
+        "start": 114.68,
+        "text": "運ぶ 運ばせる 13"
+      },
+      {
+        "end": 131.88,
+        "start": 123.3,
+        "text": "持っていく 持っていかせる 14"
+      },
+      {
+        "end": 139.18,
+        "start": 131.88,
+        "text": "練習する 練習させる"
+      }
+    ]
+  },
+  "K22_10": {
+    "duration": 78.13,
+    "language": "ja",
+    "languageProbability": 0.9875,
+    "segments": [
+      {
+        "end": 6.38,
+        "start": 0,
+        "text": "B エイ エクゼンプル"
+      },
+      {
+        "end": 14.82,
+        "start": 6.38,
+        "text": "服を洗う 後輩に服を洗わせます"
+      },
+      {
+        "end": 26.22,
+        "start": 14.82,
+        "text": "1 お弁当を買いに行く 後輩にお弁当を買いに行かせます"
+      },
+      {
+        "end": 36.58,
+        "start": 26.22,
+        "text": "2 荷物を運ぶ 後輩に荷物を運ばせます"
+      },
+      {
+        "end": 47.26,
+        "start": 36.7,
+        "text": "3 部屋を片付ける 後輩に部屋を片付けさせます"
+      },
+      {
+        "end": 58.02,
+        "start": 47.26,
+        "text": "4 車を運転する 後輩に車を運転させます"
+      },
+      {
+        "end": 68.27,
+        "start": 58.02,
+        "text": "5 ボールを拾う 後輩にボールを拾わせます"
+      },
+      {
+        "end": 78.05,
+        "start": 68.27,
+        "text": "6 宿題をする 後輩に宿題をさせます"
+      }
+    ]
+  },
+  "K22_11": {
+    "duration": 76.43,
+    "language": "ja",
+    "languageProbability": 0.9598,
+    "segments": [
+      {
+        "end": 2.02,
+        "start": 0.02,
+        "text": "ビー"
+      },
+      {
+        "end": 5.39,
+        "start": 2.02,
+        "text": "example"
+      },
+      {
+        "end": 7.39,
+        "start": 5.39,
+        "text": "書類を翻訳する"
+      },
+      {
+        "end": 12.77,
+        "start": 7.39,
+        "text": "部下に書類を翻訳させます"
+      },
+      {
+        "end": 14.77,
+        "start": 12.77,
+        "text": "1"
+      },
+      {
+        "end": 18.98,
+        "start": 14.77,
+        "text": "コピーをとる"
+      },
+      {
+        "end": 20.98,
+        "start": 18.98,
+        "text": "部下にコピーをとらせます"
+      },
+      {
+        "end": 24.38,
+        "start": 20.98,
+        "text": "2"
+      },
+      {
+        "end": 28.69,
+        "start": 24.38,
+        "text": "お茶を入れる"
+      },
+      {
+        "end": 30.69,
+        "start": 28.69,
+        "text": "部下にお茶を入れさせます"
+      },
+      {
+        "end": 34.26,
+        "start": 30.69,
+        "text": "3"
+      },
+      {
+        "end": 38.5,
+        "start": 34.26,
+        "text": "残業する"
+      },
+      {
+        "end": 40.5,
+        "start": 38.5,
+        "text": "部下に残業させます"
+      },
+      {
+        "end": 43.94,
+        "start": 40.5,
+        "text": "4"
+      },
+      {
+        "end": 45.94,
+        "start": 43.94,
+        "text": "空港に迎えに来る"
+      },
+      {
+        "end": 53.62,
+        "start": 45.94,
+        "text": "部下に空港に迎えに来させます"
+      },
+      {
+        "end": 55.62,
+        "start": 53.62,
+        "text": "5"
+      },
+      {
+        "end": 57.62,
+        "start": 55.62,
+        "text": "お客さんを案内する"
+      },
+      {
+        "end": 65.2,
+        "start": 57.62,
+        "text": "部下にお客さんを案内させます"
+      },
+      {
+        "end": 67.2,
+        "start": 65.2,
+        "text": "6"
+      },
+      {
+        "end": 69.2,
+        "start": 67.2,
+        "text": "安いホテルを探す"
+      },
+      {
+        "end": 75.44,
+        "start": 69.2,
+        "text": "部下に安いホテルを探させます"
+      }
+    ]
+  },
+  "K22_12": {
+    "duration": 157.47,
+    "language": "ja",
+    "languageProbability": 0.9684,
+    "segments": [
+      {
+        "end": 6.68,
+        "start": 0.05,
+        "text": "2.一人暮らしをさせてくれませんでした。"
+      },
+      {
+        "end": 16.21,
+        "start": 12.21,
+        "text": "高校の時、一人暮らしをする。"
+      },
+      {
+        "end": 24.21,
+        "start": 19.21,
+        "text": "高校の時、両親は一人暮らしをさせてくれませんでした。"
+      },
+      {
+        "end": 32.9,
+        "start": 24.21,
+        "text": "1.子供の時、夜遅くテレビを見る。"
+      },
+      {
+        "end": 44.49,
+        "start": 32.9,
+        "text": "いいえ。子供の時、両親は夜遅くテレビを見させてくれませんでした。"
+      },
+      {
+        "end": 50.49,
+        "start": 44.49,
+        "text": "2.子供の時、友達の家に泊まる。"
+      },
+      {
+        "end": 61.1,
+        "start": 50.49,
+        "text": "はい。子供の時、両親は友達の家に泊まらせてくれました。"
+      },
+      {
+        "end": 66.1,
+        "start": 61.1,
+        "text": "3.子供の時、ゲームをする。"
+      },
+      {
+        "end": 75.66,
+        "start": 66.1,
+        "text": "はい。子供の時、両親はゲームをさせてくれました。"
+      },
+      {
+        "end": 81.66,
+        "start": 75.66,
+        "text": "4.子供の時、お菓子をたくさん食べる。"
+      },
+      {
+        "end": 93.21,
+        "start": 81.66,
+        "text": "いいえ。子供の時、両親はお菓子をたくさん食べさせてくれませんでした。"
+      },
+      {
+        "end": 98.21,
+        "start": 93.21,
+        "text": "5.子供の時、学校を休む。"
+      },
+      {
+        "end": 107.38,
+        "start": 98.21,
+        "text": "いいえ。子供の時、両親は学校を休ませてくれませんでした。"
+      },
+      {
+        "end": 114.7,
+        "start": 107.38,
+        "text": "6.高校の時、車の免許をとる。"
+      },
+      {
+        "end": 125.22,
+        "start": 114.7,
+        "text": "はい。高校の時、両親は車の免許をとらせてくれました。"
+      },
+      {
+        "end": 131.22,
+        "start": 125.22,
+        "text": "7.高校の時、友達と旅行する。"
+      },
+      {
+        "end": 140.42,
+        "start": 131.22,
+        "text": "いいえ。高校の時、両親は友達と旅行させてくれませんでした。"
+      },
+      {
+        "end": 147.83,
+        "start": 140.42,
+        "text": "8.高校の時、アルバイトをする。"
+      },
+      {
+        "end": 157.04,
+        "start": 147.83,
+        "text": "はい。高校の時、両親はアルバイトをさせてくれました。"
+      }
+    ]
+  },
+  "K22_13": {
+    "duration": 82.76,
+    "language": "ja",
+    "languageProbability": 0.8772,
+    "segments": [
+      {
+        "end": 4.7,
+        "start": 0.02,
+        "text": "d エクゼンプル"
+      },
+      {
+        "end": 11.46,
+        "start": 4.7,
+        "text": "コピーをとる 私にコピーをとらせてください。"
+      },
+      {
+        "end": 22.5,
+        "start": 11.46,
+        "text": "1 出張に行く 私に出張に行かせてください。"
+      },
+      {
+        "end": 32.87,
+        "start": 22.5,
+        "text": "2 お客さんを案内する 私にお客さんを案内させてください。"
+      },
+      {
+        "end": 46.15,
+        "start": 34.51,
+        "text": "3 書類を翻訳する 私に書類を翻訳させてください。"
+      },
+      {
+        "end": 57.55,
+        "start": 46.15,
+        "text": "4 その仕事をやる 私にその仕事をやらせてください。"
+      },
+      {
+        "end": 71.03,
+        "start": 57.55,
+        "text": "5 次のプロジェクトの計画を立てる 私に次のプロジェクトの計画を立てさせてください。"
+      },
+      {
+        "end": 82.7,
+        "start": 71.03,
+        "text": "6 お嬢さんと結婚する 私にお嬢さんと結婚させてください。"
+      }
+    ]
+  },
+  "K22_14": {
+    "duration": 69.54,
+    "language": "ja",
+    "languageProbability": 0.9834,
+    "segments": [
+      {
+        "end": 10.9,
+        "start": 0.14,
+        "text": "3. 掃除しなさい エイ エクゼンプル"
+      },
+      {
+        "end": 59.68,
+        "start": 10.9,
+        "text": "部屋を掃除しなさい 1. 野菜を食べなさい 2. 勉強しなさい 3. 早く寝なさい 4. ピアノを練習しなさい 5. お風呂に入りなさい 6. 外で遊びなさい"
+      },
+      {
+        "end": 69.43,
+        "start": 59.68,
+        "text": "7. 早くうちに帰りなさい"
+      }
+    ]
+  },
+  "K22_15": {
+    "duration": 86.73,
+    "language": "ja",
+    "languageProbability": 0.9757,
+    "segments": [
+      {
+        "end": 7.51,
+        "start": 0.11,
+        "text": "4 薬を飲めば元気になります"
+      },
+      {
+        "end": 15.08,
+        "start": 7.51,
+        "text": "example 薬を飲む"
+      },
+      {
+        "end": 21.86,
+        "start": 15.08,
+        "text": "薬を飲めば元気になります 1"
+      },
+      {
+        "end": 32.15,
+        "start": 21.86,
+        "text": "風が吹く 風が吹けば涼しくなります 2"
+      },
+      {
+        "end": 43.18,
+        "start": 32.15,
+        "text": "試験がない 試験がなければ遊びに行けます 3"
+      },
+      {
+        "end": 53.26,
+        "start": 43.34,
+        "text": "走る 走れば授業に間に合います 4"
+      },
+      {
+        "end": 64.66,
+        "start": 53.26,
+        "text": "予習をする 予習をすれば授業がよくわかります 5"
+      },
+      {
+        "end": 76.93,
+        "start": 64.66,
+        "text": "友達に電話する 友達に電話すれば迎えに来てくれます 6"
+      },
+      {
+        "end": 86.7,
+        "start": 76.93,
+        "text": "無駄遣いしない 無駄遣いしなければ欲しいものが変えます"
+      }
+    ]
+  },
+  "K22_16": {
+    "duration": 95.66,
+    "language": "ja",
+    "languageProbability": 0.982,
+    "segments": [
+      {
+        "end": 5.02,
+        "start": 0.02,
+        "text": "B エクゼンプル"
+      },
+      {
+        "end": 8.02,
+        "start": 5.02,
+        "text": "試験が心配なんです"
+      },
+      {
+        "end": 12.02,
+        "start": 8.02,
+        "text": "復習すれば大丈夫ですよ"
+      },
+      {
+        "end": 18.02,
+        "start": 12.02,
+        "text": "1 外国に行くけど言葉がわからないんです"
+      },
+      {
+        "end": 25.63,
+        "start": 18.02,
+        "text": "ジェスチャーを使えば大丈夫ですよ"
+      },
+      {
+        "end": 32.84,
+        "start": 25.63,
+        "text": "2 レポートの締め切りに間に合わないんです"
+      },
+      {
+        "end": 37.31,
+        "start": 32.84,
+        "text": "先生に頼めば大丈夫ですよ"
+      },
+      {
+        "end": 43.55,
+        "start": 37.31,
+        "text": "3 服を汚したんです"
+      },
+      {
+        "end": 47.93,
+        "start": 43.55,
+        "text": "早く洗えば大丈夫ですよ"
+      },
+      {
+        "end": 51.93,
+        "start": 47.93,
+        "text": "4 歌手になりたいんです"
+      },
+      {
+        "end": 59.64,
+        "start": 51.93,
+        "text": "夢を諦めなければ大丈夫ですよ"
+      },
+      {
+        "end": 63.64,
+        "start": 59.64,
+        "text": "5 仕事で失敗したんです"
+      },
+      {
+        "end": 68.85,
+        "start": 63.64,
+        "text": "今度頑張れば大丈夫ですよ"
+      },
+      {
+        "end": 75.26,
+        "start": 68.85,
+        "text": "6 授業に間に合わないかもしれません"
+      },
+      {
+        "end": 82.87,
+        "start": 75.26,
+        "text": "朝ごはんを食べなければ大丈夫ですよ"
+      },
+      {
+        "end": 87.87,
+        "start": 82.87,
+        "text": "7 絶対に桜大学に入りたいんです"
+      },
+      {
+        "end": 95.11,
+        "start": 87.87,
+        "text": "神様にお願いすれば大丈夫ですよ"
+      }
+    ]
+  },
+  "K22_17": {
+    "duration": 113.79,
+    "language": "ja",
+    "languageProbability": 0.9772,
+    "segments": [
+      {
+        "end": 13.53,
+        "start": 0.02,
+        "text": "5 留学したことがないのに、日本語がペラペラです。"
+      },
+      {
+        "end": 17.83,
+        "start": 13.53,
+        "text": "日本に留学したことがありません。"
+      },
+      {
+        "end": 23.13,
+        "start": 17.83,
+        "text": "日本に留学したことがないのに、日本語がペラペラです。"
+      },
+      {
+        "end": 28.94,
+        "start": 23.13,
+        "text": "1 鍵がかけてありました。"
+      },
+      {
+        "end": 35.68,
+        "start": 28.94,
+        "text": "鍵がかけてあったのに、泥棒に入られました。"
+      },
+      {
+        "end": 43.2,
+        "start": 37.39,
+        "text": "2 いい天気です。"
+      },
+      {
+        "end": 48.97,
+        "start": 43.2,
+        "text": "いい天気なのに、家でゴロゴロしています。"
+      },
+      {
+        "end": 56.18,
+        "start": 48.97,
+        "text": "3 昨日の夜早く寝ました。"
+      },
+      {
+        "end": 62.82,
+        "start": 56.18,
+        "text": "昨日の夜早く寝たのに、朝寝坊してしまいました。"
+      },
+      {
+        "end": 69.86,
+        "start": 62.82,
+        "text": "4 この会社の仕事は楽です。"
+      },
+      {
+        "end": 76.41,
+        "start": 69.86,
+        "text": "この会社の仕事は楽なのに、やめる人が多いです。"
+      },
+      {
+        "end": 83.25,
+        "start": 76.41,
+        "text": "5 全然練習しませんでした。"
+      },
+      {
+        "end": 89.36,
+        "start": 83.25,
+        "text": "全然練習しなかったのに、試合に勝ちました。"
+      },
+      {
+        "end": 96.8,
+        "start": 89.36,
+        "text": "6 あの二人は仲が良かったです。"
+      },
+      {
+        "end": 103.05,
+        "start": 96.8,
+        "text": "あの二人は仲が良かったのに、別れたそうです。"
+      },
+      {
+        "end": 109.09,
+        "start": 103.05,
+        "text": "7 鉄屋しました。"
+      },
+      {
+        "end": 113.69,
+        "start": 109.09,
+        "text": "鉄屋したのに、眠くないです。"
+      }
+    ]
+  },
+  "K22_18": {
+    "duration": 98.3,
+    "language": "ja",
+    "languageProbability": 0.991,
+    "segments": [
+      {
+        "end": 6.65,
+        "start": 0.08,
+        "text": "6. 魚のように泳げます"
+      },
+      {
+        "end": 10.9,
+        "start": 6.65,
+        "text": "a. エクゼンプル"
+      },
+      {
+        "end": 14.9,
+        "start": 11.9,
+        "text": "泳げる 魚"
+      },
+      {
+        "end": 20.53,
+        "start": 14.9,
+        "text": "私は 魚のように泳げます"
+      },
+      {
+        "end": 24.53,
+        "start": 20.53,
+        "text": "1. 早く走れる"
+      },
+      {
+        "end": 32.7,
+        "start": 24.53,
+        "text": "新幹線 私は 新幹線のように早く走れます"
+      },
+      {
+        "end": 38.08,
+        "start": 32.7,
+        "text": "2. 歌が上手"
+      },
+      {
+        "end": 46.26,
+        "start": 38.08,
+        "text": "オペラ歌手 私は オペラ歌手のように歌が上手です"
+      },
+      {
+        "end": 52.79,
+        "start": 46.26,
+        "text": "3. 可愛い ぬいぐるみ"
+      },
+      {
+        "end": 58.97,
+        "start": 52.79,
+        "text": "私は ぬいぐるみのように可愛いです"
+      },
+      {
+        "end": 67.55,
+        "start": 58.97,
+        "text": "4. 飛べる 鳥"
+      },
+      {
+        "end": 70.55,
+        "start": 67.55,
+        "text": "私は 鳥のように飛べます"
+      },
+      {
+        "end": 76.09,
+        "start": 70.55,
+        "text": "5. 木に登れる"
+      },
+      {
+        "end": 83.23,
+        "start": 76.09,
+        "text": "猿 私は猿のように木に登れます"
+      },
+      {
+        "end": 88.67,
+        "start": 83.23,
+        "text": "6. 真面目"
+      },
+      {
+        "end": 97.85,
+        "start": 88.67,
+        "text": "山下先生 私は山下先生のように真面目です"
+      }
+    ]
+  },
+  "W22_A": {
+    "duration": 76.09,
+    "language": "ja",
+    "languageProbability": 0.9638,
+    "segments": [
+      {
+        "end": 3.11,
+        "start": 0.11,
+        "text": "第22課"
+      },
+      {
+        "end": 5.11,
+        "start": 3.11,
+        "text": "聞く練習"
+      },
+      {
+        "end": 7.62,
+        "start": 5.11,
+        "text": "えい"
+      },
+      {
+        "end": 11.28,
+        "start": 7.62,
+        "text": "ねぇ"
+      },
+      {
+        "end": 13.28,
+        "start": 11.28,
+        "text": "この子が5歳になったら"
+      },
+      {
+        "end": 16.28,
+        "start": 13.28,
+        "text": "英語を習わせてあげたい"
+      },
+      {
+        "end": 18.28,
+        "start": 16.28,
+        "text": "いいよ"
+      },
+      {
+        "end": 22.28,
+        "start": 18.28,
+        "text": "それから何かスポーツもさせてあげたい"
+      },
+      {
+        "end": 24.28,
+        "start": 22.28,
+        "text": "そうね"
+      },
+      {
+        "end": 26.28,
+        "start": 24.28,
+        "text": "空手がいいな"
+      },
+      {
+        "end": 28.28,
+        "start": 26.28,
+        "text": "空手か"
+      },
+      {
+        "end": 30.28,
+        "start": 28.28,
+        "text": "テニスの方がいいんじゃない"
+      },
+      {
+        "end": 32.28,
+        "start": 30.28,
+        "text": "ダメ"
+      },
+      {
+        "end": 34.28,
+        "start": 32.28,
+        "text": "空手の方がかっこいい"
+      },
+      {
+        "end": 36.28,
+        "start": 34.28,
+        "text": "それから"
+      },
+      {
+        "end": 38.28,
+        "start": 36.28,
+        "text": "バイオリンを習わせたいの"
+      },
+      {
+        "end": 42.28,
+        "start": 38.28,
+        "text": "僕はピアノの方がいいと思うけど"
+      },
+      {
+        "end": 44.28,
+        "start": 42.28,
+        "text": "ピアノはみんな弾けるから"
+      },
+      {
+        "end": 47.28,
+        "start": 44.28,
+        "text": "バイオリンがいいの"
+      },
+      {
+        "end": 49.28,
+        "start": 47.28,
+        "text": "お金がかかるな"
+      },
+      {
+        "end": 51.28,
+        "start": 49.28,
+        "text": "そうそう"
+      },
+      {
+        "end": 55.28,
+        "start": 51.28,
+        "text": "それから外国に留学させたい"
+      },
+      {
+        "end": 57.28,
+        "start": 55.28,
+        "text": "留学か"
+      },
+      {
+        "end": 59.28,
+        "start": 57.28,
+        "text": "いいよ"
+      },
+      {
+        "end": 61.28,
+        "start": 59.28,
+        "text": "それから"
+      },
+      {
+        "end": 64.28,
+        "start": 61.28,
+        "text": "お金持ちと結婚させて"
+      },
+      {
+        "end": 66.28,
+        "start": 64.28,
+        "text": "ちょっと待ちなさい"
+      },
+      {
+        "end": 68.28,
+        "start": 66.28,
+        "text": "結婚はダメ"
+      },
+      {
+        "end": 70.28,
+        "start": 68.28,
+        "text": "誰ともさせない"
+      }
+    ]
+  },
+  "W22_B": {
+    "duration": 89,
+    "language": "ja",
+    "languageProbability": 0.9849,
+    "segments": [
+      {
+        "end": 6.69,
+        "start": 0.11,
+        "text": "B. ケイ、今度の旅行いける?"
+      },
+      {
+        "end": 10.69,
+        "start": 6.69,
+        "text": "お父さんに聞いてみたんだけど、ダメみたい。"
+      },
+      {
+        "end": 13.89,
+        "start": 10.69,
+        "text": "ええ、どうして?"
+      },
+      {
+        "end": 19.89,
+        "start": 13.89,
+        "text": "友達と旅行させてくれないの。うちの親厳しいんだ。"
+      },
+      {
+        "end": 24.59,
+        "start": 19.89,
+        "text": "もう高校生なのに、アルバイトもさせてくれないんだよ。"
+      },
+      {
+        "end": 32.59,
+        "start": 24.59,
+        "text": "本当?私のお父さんは、若い時はいろいろな経験をしなさいって言うよ。"
+      },
+      {
+        "end": 43.09,
+        "start": 32.59,
+        "text": "ええ、恵みがうらやましい。私のお父さんも恵みのお父さんのように優しかったらいいな。"
+      },
+      {
+        "end": 49.59,
+        "start": 43.09,
+        "text": "でも、大学に行って一人暮らししたら好きなことができるでしょ?"
+      },
+      {
+        "end": 55.19,
+        "start": 49.59,
+        "text": "うーん。一人暮らしさせてくれないと思う。"
+      },
+      {
+        "end": 61.19,
+        "start": 55.19,
+        "text": "お母さんは、お金がかかるから家から大学に行きなさいって。"
+      },
+      {
+        "end": 65.79,
+        "start": 61.19,
+        "text": "そうか、大変だね。"
+      },
+      {
+        "end": 72.09,
+        "start": 65.79,
+        "text": "でも、大学生になったらアルバイトしてもいいってお父さんが言ってたから。"
+      },
+      {
+        "end": 75.79,
+        "start": 72.09,
+        "text": "旅行も行かせてくれるといいね。"
+      },
+      {
+        "end": 79.79,
+        "start": 75.99,
+        "text": "たぶん、行かせてくれると思う。"
+      },
+      {
+        "end": 84.29,
+        "start": 79.79,
+        "text": "大学生になったら一緒に行こうね。"
+      }
+    ]
+  },
+  "W22_C": {
+    "duration": 84.95,
+    "language": "ja",
+    "languageProbability": 0.9731,
+    "segments": [
+      {
+        "end": 20.11,
+        "start": 0.11,
+        "text": "みなさん、お疲れさまでした。今日はもう何も予定がございませんから、みなさん好きなところにいらっしゃってください。私はこのホテルにおりますから、わからないことがあればお聞きください。"
+      },
+      {
+        "end": 25.11,
+        "start": 20.11,
+        "text": "渡辺さん、美術館に行きたいんですが。"
+      },
+      {
+        "end": 28.11,
+        "start": 25.11,
+        "text": "3番のバスに乗れば行けますよ。"
+      },
+      {
+        "end": 32.11,
+        "start": 29.11,
+        "text": "ここから何分ぐらいかかりますか?"
+      },
+      {
+        "end": 35.11,
+        "start": 32.11,
+        "text": "バスで10分ぐらいです。"
+      },
+      {
+        "end": 39.11,
+        "start": 35.11,
+        "text": "バス停は銀行の前にあります。"
+      },
+      {
+        "end": 43.11,
+        "start": 39.11,
+        "text": "ちょっと寒いからセーターを買いたいんです。"
+      },
+      {
+        "end": 46.11,
+        "start": 43.11,
+        "text": "どこに行けば買えますか?"
+      },
+      {
+        "end": 48.11,
+        "start": 46.11,
+        "text": "セーターですか?"
+      },
+      {
+        "end": 54.11,
+        "start": 48.11,
+        "text": "ホテルの隣の店に行けばたくさんあると思います。"
+      },
+      {
+        "end": 60.11,
+        "start": 54.11,
+        "text": "あの、私日本語しか話せないんですけど、大丈夫でしょうか?"
+      },
+      {
+        "end": 65.11,
+        "start": 60.11,
+        "text": "大丈夫、大丈夫。頑張ってくださいね。"
+      },
+      {
+        "end": 69.11,
+        "start": 65.11,
+        "text": "渡辺さん、財布を盗まれました。"
+      },
+      {
+        "end": 73.11,
+        "start": 69.11,
+        "text": "え、どこで?どんな人に?"
+      },
+      {
+        "end": 77.11,
+        "start": 73.11,
+        "text": "それが、あまり覚えていないんです。"
+      },
+      {
+        "end": 81.58,
+        "start": 77.11,
+        "text": "一緒に警察に行きましょう。"
+      }
+    ]
+  }
+}
