@@ -1,0 +1,2160 @@
+{
+  "K15_01": {
+    "duration": 46.13,
+    "language": "ja",
+    "languageProbability": 0.9942,
+    "segments": [
+      {
+        "end": 9.96,
+        "start": 0.05,
+        "text": "第15日 長野旅行 会話 1"
+      },
+      {
+        "end": 14.62,
+        "start": 9.96,
+        "text": "タケシ君 今度の休み 予定ある?"
+      },
+      {
+        "end": 18.76,
+        "start": 14.62,
+        "text": "うーん 別に どうして?"
+      },
+      {
+        "end": 25.08,
+        "start": 18.76,
+        "text": "ゆいさんの長野のうちに行こうと思ってるんだけど 一緒に行かない?"
+      },
+      {
+        "end": 26.52,
+        "start": 25.08,
+        "text": "いいの?"
+      },
+      {
+        "end": 33.48,
+        "start": 26.68,
+        "text": "うん ゆいさんがタケシ君も誘ってと言ってたから"
+      },
+      {
+        "end": 39.28,
+        "start": 33.48,
+        "text": "じゃあ行く 電車の時間調べておくよ"
+      },
+      {
+        "end": 46.04,
+        "start": 39.28,
+        "text": "ありがとう じゃあ私 ゆいさんに電話しておく"
+      }
+    ]
+  },
+  "K15_02": {
+    "duration": 74.27,
+    "language": "ja",
+    "languageProbability": 0.9094,
+    "segments": [
+      {
+        "end": 2.6,
+        "start": 0.14,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 13.1,
+        "start": 2.6,
+        "text": "たけしくん、今度の休み予定ある?"
+      },
+      {
+        "end": 22.2,
+        "start": 13.1,
+        "text": "うん。別に。どうして?"
+      },
+      {
+        "end": 34.79,
+        "start": 22.2,
+        "text": "ゆいさんの長野のうちに行こうと思ってるんだけど、一緒に行かない?"
+      },
+      {
+        "end": 37.8,
+        "start": 34.79,
+        "text": "いいの?"
+      },
+      {
+        "end": 50.86,
+        "start": 37.8,
+        "text": "うん。ゆいさんが、たけしくんも誘って、と言ってたから。"
+      },
+      {
+        "end": 61.46,
+        "start": 50.86,
+        "text": "じゃあ、行く。電車の時間、調べておくよ。"
+      },
+      {
+        "end": 68.41,
+        "start": 61.46,
+        "text": "ありがとう。じゃあ、私、ゆいさんに電話しておく。"
+      }
+    ]
+  },
+  "K15_03": {
+    "duration": 23.46,
+    "language": "ja",
+    "languageProbability": 0.9777,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "に"
+      },
+      {
+        "end": 5.61,
+        "start": 2.11,
+        "text": "早く着いたからちょっと観光しない?"
+      },
+      {
+        "end": 8.61,
+        "start": 5.61,
+        "text": "うん。どこに行く?"
+      },
+      {
+        "end": 12.61,
+        "start": 8.61,
+        "text": "前光寺はどう?有名なお寺だよ。"
+      },
+      {
+        "end": 17.61,
+        "start": 12.61,
+        "text": "いいね。昼ごはんは何にする?"
+      },
+      {
+        "end": 22.61,
+        "start": 17.61,
+        "text": "長野はそばがおいしいからそばを食べようよ。"
+      }
+    ]
+  },
+  "K15_04": {
+    "duration": 45.3,
+    "language": "ja",
+    "languageProbability": 0.7539,
+    "segments": [
+      {
+        "end": 3.14,
+        "start": 0.14,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 7.14,
+        "start": 3.14,
+        "text": "早く着いたからちょっと観光しない。"
+      },
+      {
+        "end": 14.83,
+        "start": 7.14,
+        "text": "どこに行く?"
+      },
+      {
+        "end": 23.15,
+        "start": 14.83,
+        "text": "前行時はどう?有名なお寺だよ。"
+      },
+      {
+        "end": 34.54,
+        "start": 23.15,
+        "text": "いいね。昼ごはんは何にする?"
+      },
+      {
+        "end": 38.54,
+        "start": 34.54,
+        "text": "長野はそばがおいしいからそばを食べようよ。"
+      }
+    ]
+  },
+  "K15_05": {
+    "duration": 36.47,
+    "language": "ja",
+    "languageProbability": 0.9911,
+    "segments": [
+      {
+        "end": 8.25,
+        "start": 0.21,
+        "text": "すみません 全校時に行くバスはどれですか"
+      },
+      {
+        "end": 14.77,
+        "start": 8.25,
+        "text": "全校時なら11番のバスですよ ありがとうございます"
+      },
+      {
+        "end": 20.37,
+        "start": 14.77,
+        "text": "この地図もらってもいいですか えーどうぞ"
+      },
+      {
+        "end": 27.01,
+        "start": 20.37,
+        "text": "それからこれ美術館の割引券ですがよかったらどうぞ"
+      },
+      {
+        "end": 33.81,
+        "start": 27.13,
+        "text": "この美術館明日行く予定なんです どうもありがとうございます"
+      },
+      {
+        "end": 36.61,
+        "start": 33.81,
+        "text": "気をつけて"
+      }
+    ]
+  },
+  "K15_06": {
+    "duration": 66.9,
+    "language": "ja",
+    "languageProbability": 0.849,
+    "segments": [
+      {
+        "end": 3.14,
+        "start": 0.14,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 14.58,
+        "start": 4.14,
+        "text": "すみません 前工時に行くバスはどれですか"
+      },
+      {
+        "end": 17.58,
+        "start": 14.58,
+        "text": "前工時なら11番のバスですよ"
+      },
+      {
+        "end": 28.98,
+        "start": 17.58,
+        "text": "ありがとうございます この地図もらってもいいですか"
+      },
+      {
+        "end": 40.62,
+        "start": 28.98,
+        "text": "ええどうぞ それからこれ美術館の割引券ですが"
+      },
+      {
+        "end": 57.24,
+        "start": 40.62,
+        "text": "よかったらどうぞ この美術館明日行く予定なんです"
+      },
+      {
+        "end": 62.96,
+        "start": 57.24,
+        "text": "どうもありがとうございます 気をつけて"
+      }
+    ]
+  },
+  "K15_07": {
+    "duration": 306.1,
+    "language": "ja",
+    "languageProbability": 0.6211,
+    "segments": [
+      {
+        "end": 3.05,
+        "start": 0.05,
+        "text": "第15課"
+      },
+      {
+        "end": 5.05,
+        "start": 3.05,
+        "text": "単語"
+      },
+      {
+        "end": 7.05,
+        "start": 5.05,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.05,
+        "start": 7.05,
+        "text": "外国人"
+      },
+      {
+        "end": 13.05,
+        "start": 10.05,
+        "text": "Foreigner"
+      },
+      {
+        "end": 15.05,
+        "start": 13.05,
+        "text": "そば"
+      },
+      {
+        "end": 20.05,
+        "start": 15.05,
+        "text": "そば Japanese buckwheat noodles"
+      },
+      {
+        "end": 22.05,
+        "start": 20.05,
+        "text": "え"
+      },
+      {
+        "end": 26.05,
+        "start": 22.05,
+        "text": "Painting, picture, drawing"
+      },
+      {
+        "end": 29.05,
+        "start": 26.05,
+        "text": "地図"
+      },
+      {
+        "end": 31.05,
+        "start": 29.05,
+        "text": "Map"
+      },
+      {
+        "end": 33.05,
+        "start": 31.05,
+        "text": "辞書"
+      },
+      {
+        "end": 36.05,
+        "start": 33.05,
+        "text": "Dictionary"
+      },
+      {
+        "end": 38.05,
+        "start": 36.05,
+        "text": "Kang"
+      },
+      {
+        "end": 40.05,
+        "start": 38.05,
+        "text": "Furniture"
+      },
+      {
+        "end": 43.05,
+        "start": 40.05,
+        "text": "電池"
+      },
+      {
+        "end": 45.05,
+        "start": 43.05,
+        "text": "Battery"
+      },
+      {
+        "end": 48.05,
+        "start": 45.05,
+        "text": "Jacket"
+      },
+      {
+        "end": 50.05,
+        "start": 48.05,
+        "text": "Jacket"
+      },
+      {
+        "end": 52.05,
+        "start": 50.05,
+        "text": "Pet"
+      },
+      {
+        "end": 55.05,
+        "start": 52.05,
+        "text": "Pet"
+      },
+      {
+        "end": 58.05,
+        "start": 55.05,
+        "text": "割り引き剣"
+      },
+      {
+        "end": 60.05,
+        "start": 58.05,
+        "text": "Count coupon"
+      },
+      {
+        "end": 63.05,
+        "start": 60.05,
+        "text": "インターネット"
+      },
+      {
+        "end": 66.05,
+        "start": 63.05,
+        "text": "Internet"
+      },
+      {
+        "end": 68.05,
+        "start": 66.05,
+        "text": "地震"
+      },
+      {
+        "end": 71.05,
+        "start": 68.05,
+        "text": "Earthquake"
+      },
+      {
+        "end": 73.05,
+        "start": 71.05,
+        "text": "保険"
+      },
+      {
+        "end": 76.05,
+        "start": 73.05,
+        "text": "Insurance"
+      },
+      {
+        "end": 78.05,
+        "start": 76.05,
+        "text": "税金"
+      },
+      {
+        "end": 81.05,
+        "start": 78.05,
+        "text": "Tax"
+      },
+      {
+        "end": 84.05,
+        "start": 81.05,
+        "text": "教室"
+      },
+      {
+        "end": 86.05,
+        "start": 84.05,
+        "text": "Classroom"
+      },
+      {
+        "end": 88.05,
+        "start": 86.05,
+        "text": "建物"
+      },
+      {
+        "end": 91.05,
+        "start": 88.05,
+        "text": "Building"
+      },
+      {
+        "end": 93.05,
+        "start": 91.05,
+        "text": "Pool"
+      },
+      {
+        "end": 96.05,
+        "start": 93.05,
+        "text": "Swimming pool"
+      },
+      {
+        "end": 98.05,
+        "start": 96.05,
+        "text": "映画館"
+      },
+      {
+        "end": 101.05,
+        "start": 98.05,
+        "text": "Movie theater"
+      },
+      {
+        "end": 104.05,
+        "start": 101.05,
+        "text": "旅館"
+      },
+      {
+        "end": 107.05,
+        "start": 104.05,
+        "text": "Japanese inn"
+      },
+      {
+        "end": 109.05,
+        "start": 107.05,
+        "text": "庭"
+      },
+      {
+        "end": 111.05,
+        "start": 109.05,
+        "text": "Garden"
+      },
+      {
+        "end": 114.05,
+        "start": 111.05,
+        "text": "Volunteer"
+      },
+      {
+        "end": 118.05,
+        "start": 115.05,
+        "text": "活動"
+      },
+      {
+        "end": 121.05,
+        "start": 118.05,
+        "text": "Activity"
+      },
+      {
+        "end": 123.05,
+        "start": 121.05,
+        "text": "経験"
+      },
+      {
+        "end": 126.05,
+        "start": 123.05,
+        "text": "Experience"
+      },
+      {
+        "end": 129.05,
+        "start": 126.05,
+        "text": "習慣"
+      },
+      {
+        "end": 132.05,
+        "start": 129.05,
+        "text": "Custom"
+      },
+      {
+        "end": 134.05,
+        "start": 132.05,
+        "text": "締め切り"
+      },
+      {
+        "end": 137.05,
+        "start": 134.05,
+        "text": "Deadline"
+      },
+      {
+        "end": 139.05,
+        "start": 137.05,
+        "text": "予定"
+      },
+      {
+        "end": 143.05,
+        "start": 139.05,
+        "text": "Schedule, Plan"
+      },
+      {
+        "end": 146.05,
+        "start": 143.05,
+        "text": "卒業式"
+      },
+      {
+        "end": 149.05,
+        "start": 146.05,
+        "text": "Graduation ceremony"
+      },
+      {
+        "end": 152.05,
+        "start": 149.05,
+        "text": "結婚式"
+      },
+      {
+        "end": 154.05,
+        "start": 152.05,
+        "text": "Wedding"
+      },
+      {
+        "end": 157.05,
+        "start": 154.05,
+        "text": "Uverbs"
+      },
+      {
+        "end": 159.05,
+        "start": 157.05,
+        "text": "Uru"
+      },
+      {
+        "end": 162.05,
+        "start": 159.05,
+        "text": "To sell"
+      },
+      {
+        "end": 164.05,
+        "start": 162.05,
+        "text": "Orosu"
+      },
+      {
+        "end": 167.05,
+        "start": 164.05,
+        "text": "To withdraw"
+      },
+      {
+        "end": 169.05,
+        "start": 167.05,
+        "text": "Kaku"
+      },
+      {
+        "end": 172.05,
+        "start": 169.05,
+        "text": "To draw, to paint"
+      },
+      {
+        "end": 174.05,
+        "start": 172.05,
+        "text": "探す"
+      },
+      {
+        "end": 177.05,
+        "start": 174.05,
+        "text": "To look for"
+      },
+      {
+        "end": 179.05,
+        "start": 177.05,
+        "text": "誘う"
+      },
+      {
+        "end": 182.05,
+        "start": 179.05,
+        "text": "To invite"
+      },
+      {
+        "end": 184.05,
+        "start": 182.05,
+        "text": "喋る"
+      },
+      {
+        "end": 187.05,
+        "start": 184.05,
+        "text": "To chat"
+      },
+      {
+        "end": 189.05,
+        "start": 187.05,
+        "text": "付き合う"
+      },
+      {
+        "end": 191.05,
+        "start": 189.05,
+        "text": "To date"
+      },
+      {
+        "end": 194.05,
+        "start": 191.05,
+        "text": "To keep company"
+      },
+      {
+        "end": 196.05,
+        "start": 194.05,
+        "text": "付く"
+      },
+      {
+        "end": 199.05,
+        "start": 196.05,
+        "text": "To arrive"
+      },
+      {
+        "end": 202.05,
+        "start": 199.05,
+        "text": "保険に入る"
+      },
+      {
+        "end": 205.05,
+        "start": 202.05,
+        "text": "To buy insurance"
+      },
+      {
+        "end": 208.05,
+        "start": 205.05,
+        "text": "Ru verbs"
+      },
+      {
+        "end": 210.05,
+        "start": 208.05,
+        "text": "気をつける"
+      },
+      {
+        "end": 212.05,
+        "start": 210.05,
+        "text": "To be cautious"
+      },
+      {
+        "end": 215.05,
+        "start": 212.05,
+        "text": "To be careful"
+      },
+      {
+        "end": 217.05,
+        "start": 215.05,
+        "text": "調べる"
+      },
+      {
+        "end": 220.05,
+        "start": 217.05,
+        "text": "To look into"
+      },
+      {
+        "end": 222.05,
+        "start": 220.05,
+        "text": "見える"
+      },
+      {
+        "end": 225.05,
+        "start": 222.05,
+        "text": "To be visible"
+      },
+      {
+        "end": 228.05,
+        "start": 225.05,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 230.05,
+        "start": 228.05,
+        "text": "する"
+      },
+      {
+        "end": 233.05,
+        "start": 230.05,
+        "text": "To decide on"
+      },
+      {
+        "end": 236.05,
+        "start": 233.05,
+        "text": "観光する"
+      },
+      {
+        "end": 239.05,
+        "start": 236.05,
+        "text": "To do sightseeing"
+      },
+      {
+        "end": 241.05,
+        "start": 239.05,
+        "text": "予約する"
+      },
+      {
+        "end": 244.05,
+        "start": 241.05,
+        "text": "To reserve"
+      },
+      {
+        "end": 247.05,
+        "start": 244.05,
+        "text": "参加する"
+      },
+      {
+        "end": 250.05,
+        "start": 247.05,
+        "text": "To participate"
+      },
+      {
+        "end": 253.05,
+        "start": 250.05,
+        "text": "卒業する"
+      },
+      {
+        "end": 256.05,
+        "start": 253.05,
+        "text": "To graduate"
+      },
+      {
+        "end": 260.05,
+        "start": 257.05,
+        "text": "To make a presentation"
+      },
+      {
+        "end": 262.05,
+        "start": 260.05,
+        "text": "To make public"
+      },
+      {
+        "end": 266.05,
+        "start": 262.05,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 269.05,
+        "start": 266.05,
+        "text": "けど"
+      },
+      {
+        "end": 272.05,
+        "start": 269.05,
+        "text": "But, so"
+      },
+      {
+        "end": 278.83,
+        "start": 272.05,
+        "text": "目, 1日目"
+      },
+      {
+        "end": 281.83,
+        "start": 278.83,
+        "text": "First day"
+      },
+      {
+        "end": 284.83,
+        "start": 281.83,
+        "text": "1日中"
+      },
+      {
+        "end": 287.83,
+        "start": 284.83,
+        "text": "All day long"
+      },
+      {
+        "end": 290.83,
+        "start": 287.83,
+        "text": "最近"
+      },
+      {
+        "end": 293.83,
+        "start": 290.83,
+        "text": "Recently"
+      },
+      {
+        "end": 295.83,
+        "start": 293.83,
+        "text": "もう一度"
+      },
+      {
+        "end": 298.83,
+        "start": 295.83,
+        "text": "One more time"
+      },
+      {
+        "end": 301.83,
+        "start": 298.83,
+        "text": "楽しみです"
+      },
+      {
+        "end": 303.83,
+        "start": 301.83,
+        "text": "Cannot wait"
+      },
+      {
+        "end": 306.83,
+        "start": 303.83,
+        "text": "To look forward to it"
+      }
+    ]
+  },
+  "K15_08": {
+    "duration": 306.13,
+    "language": "ja",
+    "languageProbability": 0.7692,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第15課"
+      },
+      {
+        "end": 5.08,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 8.08,
+        "start": 5.08,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.08,
+        "start": 8.08,
+        "text": "Foreigner"
+      },
+      {
+        "end": 13.08,
+        "start": 10.08,
+        "text": "外国人"
+      },
+      {
+        "end": 18.08,
+        "start": 13.08,
+        "text": "そば Japanese buckwheat noodles"
+      },
+      {
+        "end": 20.08,
+        "start": 18.08,
+        "text": "そば"
+      },
+      {
+        "end": 25.08,
+        "start": 20.08,
+        "text": "Painting, Picture, Drawing"
+      },
+      {
+        "end": 27.08,
+        "start": 25.08,
+        "text": "A"
+      },
+      {
+        "end": 29.08,
+        "start": 27.08,
+        "text": "Map"
+      },
+      {
+        "end": 31.08,
+        "start": 29.08,
+        "text": "地図"
+      },
+      {
+        "end": 34.08,
+        "start": 31.08,
+        "text": "Dictionary"
+      },
+      {
+        "end": 36.08,
+        "start": 34.08,
+        "text": "辞書"
+      },
+      {
+        "end": 38.08,
+        "start": 36.08,
+        "text": "Furniture"
+      },
+      {
+        "end": 40.08,
+        "start": 38.08,
+        "text": "かぐ"
+      },
+      {
+        "end": 43.08,
+        "start": 40.08,
+        "text": "Battery"
+      },
+      {
+        "end": 45.08,
+        "start": 43.08,
+        "text": "電池"
+      },
+      {
+        "end": 48.08,
+        "start": 45.08,
+        "text": "Jacket"
+      },
+      {
+        "end": 50.08,
+        "start": 48.08,
+        "text": "ジャケット"
+      },
+      {
+        "end": 52.08,
+        "start": 50.08,
+        "text": "Pit"
+      },
+      {
+        "end": 55.08,
+        "start": 52.08,
+        "text": "Pet"
+      },
+      {
+        "end": 60.08,
+        "start": 55.08,
+        "text": "Walibikiken"
+      },
+      {
+        "end": 63.08,
+        "start": 60.08,
+        "text": "Internet"
+      },
+      {
+        "end": 66.08,
+        "start": 63.08,
+        "text": "Internet"
+      },
+      {
+        "end": 68.08,
+        "start": 66.08,
+        "text": "Earthquake"
+      },
+      {
+        "end": 71.08,
+        "start": 68.08,
+        "text": "地震"
+      },
+      {
+        "end": 74.08,
+        "start": 71.08,
+        "text": "Insurance"
+      },
+      {
+        "end": 76.08,
+        "start": 74.08,
+        "text": "保険"
+      },
+      {
+        "end": 79.08,
+        "start": 76.08,
+        "text": "Tax"
+      },
+      {
+        "end": 81.08,
+        "start": 79.08,
+        "text": "税金"
+      },
+      {
+        "end": 84.08,
+        "start": 81.08,
+        "text": "Classroom"
+      },
+      {
+        "end": 88.08,
+        "start": 85.08,
+        "text": "Building"
+      },
+      {
+        "end": 90.08,
+        "start": 88.08,
+        "text": "建物"
+      },
+      {
+        "end": 93.08,
+        "start": 90.08,
+        "text": "Swimming pool"
+      },
+      {
+        "end": 95.08,
+        "start": 93.08,
+        "text": "Pool"
+      },
+      {
+        "end": 98.08,
+        "start": 95.08,
+        "text": "Movie Theater"
+      },
+      {
+        "end": 101.08,
+        "start": 98.08,
+        "text": "映画館"
+      },
+      {
+        "end": 104.08,
+        "start": 101.08,
+        "text": "Japanese Inn"
+      },
+      {
+        "end": 106.08,
+        "start": 104.08,
+        "text": "旅館"
+      },
+      {
+        "end": 109.08,
+        "start": 106.08,
+        "text": "Garden"
+      },
+      {
+        "end": 111.08,
+        "start": 109.08,
+        "text": "庭"
+      },
+      {
+        "end": 113.08,
+        "start": 111.08,
+        "text": "Volunteer"
+      },
+      {
+        "end": 116.08,
+        "start": 113.08,
+        "text": "Volunteer"
+      },
+      {
+        "end": 118.08,
+        "start": 116.08,
+        "text": "Activity"
+      },
+      {
+        "end": 121.08,
+        "start": 118.08,
+        "text": "活動"
+      },
+      {
+        "end": 124.08,
+        "start": 121.08,
+        "text": "Experience"
+      },
+      {
+        "end": 127.08,
+        "start": 124.08,
+        "text": "経験"
+      },
+      {
+        "end": 129.08,
+        "start": 127.08,
+        "text": "Custom"
+      },
+      {
+        "end": 132.08,
+        "start": 129.08,
+        "text": "週刊"
+      },
+      {
+        "end": 134.08,
+        "start": 132.08,
+        "text": "Deadline"
+      },
+      {
+        "end": 137.08,
+        "start": 134.08,
+        "text": "締め切り"
+      },
+      {
+        "end": 141.08,
+        "start": 137.08,
+        "text": "Schedule, Plan"
+      },
+      {
+        "end": 146.08,
+        "start": 142.08,
+        "text": "Graduation Ceremony"
+      },
+      {
+        "end": 149.08,
+        "start": 146.08,
+        "text": "卒業式"
+      },
+      {
+        "end": 151.08,
+        "start": 149.08,
+        "text": "Wedding"
+      },
+      {
+        "end": 154.08,
+        "start": 151.08,
+        "text": "結婚式"
+      },
+      {
+        "end": 157.08,
+        "start": 154.08,
+        "text": "Uverbs"
+      },
+      {
+        "end": 159.08,
+        "start": 157.08,
+        "text": "To sell"
+      },
+      {
+        "end": 161.08,
+        "start": 159.08,
+        "text": "うるう"
+      },
+      {
+        "end": 164.08,
+        "start": 161.08,
+        "text": "To withdraw"
+      },
+      {
+        "end": 166.08,
+        "start": 164.08,
+        "text": "おろす"
+      },
+      {
+        "end": 170.08,
+        "start": 166.08,
+        "text": "To draw, to paint"
+      },
+      {
+        "end": 172.08,
+        "start": 170.08,
+        "text": "書く"
+      },
+      {
+        "end": 175.08,
+        "start": 172.08,
+        "text": "To look for"
+      },
+      {
+        "end": 177.08,
+        "start": 175.08,
+        "text": "探す"
+      },
+      {
+        "end": 180.08,
+        "start": 177.08,
+        "text": "To invite"
+      },
+      {
+        "end": 182.08,
+        "start": 180.08,
+        "text": "誘う"
+      },
+      {
+        "end": 185.08,
+        "start": 182.08,
+        "text": "To chat"
+      },
+      {
+        "end": 187.08,
+        "start": 185.08,
+        "text": "喋る"
+      },
+      {
+        "end": 189.08,
+        "start": 187.08,
+        "text": "To date"
+      },
+      {
+        "end": 192.08,
+        "start": 189.08,
+        "text": "To keep company"
+      },
+      {
+        "end": 194.08,
+        "start": 192.08,
+        "text": "付き合う"
+      },
+      {
+        "end": 197.08,
+        "start": 194.08,
+        "text": "To arrive"
+      },
+      {
+        "end": 199.08,
+        "start": 197.08,
+        "text": "つく"
+      },
+      {
+        "end": 202.08,
+        "start": 199.08,
+        "text": "To buy insurance"
+      },
+      {
+        "end": 205.08,
+        "start": 202.08,
+        "text": "保険に入る"
+      },
+      {
+        "end": 207.08,
+        "start": 205.08,
+        "text": "Roo verbs"
+      },
+      {
+        "end": 209.08,
+        "start": 207.08,
+        "text": "To be cautious"
+      },
+      {
+        "end": 212.08,
+        "start": 209.08,
+        "text": "To be careful"
+      },
+      {
+        "end": 215.08,
+        "start": 212.08,
+        "text": "気をつける"
+      },
+      {
+        "end": 218.08,
+        "start": 215.08,
+        "text": "To look into"
+      },
+      {
+        "end": 220.08,
+        "start": 218.08,
+        "text": "調べる"
+      },
+      {
+        "end": 223.08,
+        "start": 220.08,
+        "text": "To be visible"
+      },
+      {
+        "end": 225.08,
+        "start": 223.08,
+        "text": "見える"
+      },
+      {
+        "end": 228.08,
+        "start": 225.08,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 231.08,
+        "start": 228.08,
+        "text": "To decide on"
+      },
+      {
+        "end": 233.08,
+        "start": 231.08,
+        "text": "する"
+      },
+      {
+        "end": 236.08,
+        "start": 233.08,
+        "text": "To do sightseeing"
+      },
+      {
+        "end": 239.08,
+        "start": 236.08,
+        "text": "観光する"
+      },
+      {
+        "end": 242.08,
+        "start": 239.08,
+        "text": "To reserve"
+      },
+      {
+        "end": 244.08,
+        "start": 242.08,
+        "text": "予約する"
+      },
+      {
+        "end": 247.08,
+        "start": 244.08,
+        "text": "To participate"
+      },
+      {
+        "end": 250.08,
+        "start": 247.08,
+        "text": "参加する"
+      },
+      {
+        "end": 253.08,
+        "start": 250.08,
+        "text": "To graduate"
+      },
+      {
+        "end": 256.08,
+        "start": 253.08,
+        "text": "発表する"
+      },
+      {
+        "end": 258.08,
+        "start": 256.08,
+        "text": "To make a presentation"
+      },
+      {
+        "end": 261.08,
+        "start": 258.08,
+        "text": "To make public"
+      },
+      {
+        "end": 264.08,
+        "start": 261.08,
+        "text": "発表する"
+      },
+      {
+        "end": 268.08,
+        "start": 264.08,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 271.08,
+        "start": 268.08,
+        "text": "But, so"
+      },
+      {
+        "end": 276.93,
+        "start": 271.08,
+        "text": "けど、目"
+      },
+      {
+        "end": 279.93,
+        "start": 276.93,
+        "text": "First day"
+      },
+      {
+        "end": 282.93,
+        "start": 279.93,
+        "text": "一日目"
+      },
+      {
+        "end": 286.93,
+        "start": 283.93,
+        "text": "一日中"
+      },
+      {
+        "end": 291.93,
+        "start": 288.93,
+        "text": "最近"
+      },
+      {
+        "end": 297.93,
+        "start": 294.93,
+        "text": "もう一度"
+      },
+      {
+        "end": 305.93,
+        "start": 302.93,
+        "text": "楽しみです"
+      }
+    ]
+  },
+  "K15_09": {
+    "duration": 119.9,
+    "language": "ja",
+    "languageProbability": 0.9801,
+    "segments": [
+      {
+        "end": 5.11,
+        "start": 0.11,
+        "text": "第15日 練習"
+      },
+      {
+        "end": 9.11,
+        "start": 5.11,
+        "text": "1. コーヒーを飲もうか"
+      },
+      {
+        "end": 18.83,
+        "start": 15.83,
+        "text": "行く 行こう"
+      },
+      {
+        "end": 23.43,
+        "start": 18.83,
+        "text": "1. 食べる"
+      },
+      {
+        "end": 30.08,
+        "start": 23.43,
+        "text": "食べよう 2"
+      },
+      {
+        "end": 35.35,
+        "start": 30.08,
+        "text": "誘う 誘う"
+      },
+      {
+        "end": 39.89,
+        "start": 35.35,
+        "text": "3. 借りる"
+      },
+      {
+        "end": 46.47,
+        "start": 39.89,
+        "text": "借りよう 4"
+      },
+      {
+        "end": 51.68,
+        "start": 46.47,
+        "text": "読む 誘う"
+      },
+      {
+        "end": 56.12,
+        "start": 51.68,
+        "text": "5. 来る"
+      },
+      {
+        "end": 62.74,
+        "start": 56.12,
+        "text": "雇用 6"
+      },
+      {
+        "end": 67.88,
+        "start": 62.74,
+        "text": "待つ 待とう"
+      },
+      {
+        "end": 72.29,
+        "start": 67.88,
+        "text": "7. 入る"
+      },
+      {
+        "end": 79.03,
+        "start": 72.29,
+        "text": "入ろう 8"
+      },
+      {
+        "end": 84.21,
+        "start": 79.03,
+        "text": "急ぐ 急ごう"
+      },
+      {
+        "end": 88.65,
+        "start": 84.21,
+        "text": "9. 話す"
+      },
+      {
+        "end": 95.3,
+        "start": 88.65,
+        "text": "話そう 10"
+      },
+      {
+        "end": 100.47,
+        "start": 95.3,
+        "text": "見る 見よう"
+      },
+      {
+        "end": 104.94,
+        "start": 100.47,
+        "text": "11. 書く"
+      },
+      {
+        "end": 111.59,
+        "start": 104.94,
+        "text": "書こう 12"
+      },
+      {
+        "end": 117.74,
+        "start": 111.59,
+        "text": "予約する 予約しよう"
+      }
+    ]
+  },
+  "K15_10": {
+    "duration": 80.48,
+    "language": "ja",
+    "languageProbability": 0.9514,
+    "segments": [
+      {
+        "end": 2.02,
+        "start": 0.02,
+        "text": "B"
+      },
+      {
+        "end": 4.02,
+        "start": 2.02,
+        "text": "example"
+      },
+      {
+        "end": 8.02,
+        "start": 4.02,
+        "text": "カフェでコーヒーを飲もうか"
+      },
+      {
+        "end": 11.02,
+        "start": 8.02,
+        "text": "うん そうしよう"
+      },
+      {
+        "end": 15.36,
+        "start": 11.02,
+        "text": "うーん ちょっと"
+      },
+      {
+        "end": 21.43,
+        "start": 15.36,
+        "text": "1 サッカーをしようか"
+      },
+      {
+        "end": 31.38,
+        "start": 21.43,
+        "text": "2 町で映画を見ようか"
+      },
+      {
+        "end": 37.55,
+        "start": 31.38,
+        "text": "3 学校で写真を撮ろうか"
+      },
+      {
+        "end": 45.22,
+        "start": 37.55,
+        "text": "4 プールで泳ごうか"
+      },
+      {
+        "end": 53.7,
+        "start": 45.22,
+        "text": "5 マクドナルドでハンバーガーを買おうか"
+      },
+      {
+        "end": 62.18,
+        "start": 53.7,
+        "text": "6 教室でお弁当を食べようか"
+      },
+      {
+        "end": 69.7,
+        "start": 62.18,
+        "text": "7 山に登ろうか"
+      },
+      {
+        "end": 79.05,
+        "start": 69.7,
+        "text": "8 公園でバーベキューをしようか"
+      }
+    ]
+  },
+  "K15_11": {
+    "duration": 20.72,
+    "language": "ja",
+    "languageProbability": 0.8609,
+    "segments": [
+      {
+        "end": 2.02,
+        "start": 0.02,
+        "text": "T"
+      },
+      {
+        "end": 6.02,
+        "start": 2.02,
+        "text": "幸せなら手をたったコン"
+      },
+      {
+        "end": 10.02,
+        "start": 6.02,
+        "text": "幸せなら手をたったコン"
+      },
+      {
+        "end": 15.02,
+        "start": 10.02,
+        "text": "幸せなら態度で締めそうよ"
+      },
+      {
+        "end": 18.02,
+        "start": 15.02,
+        "text": "ほらみんなで手をたったコン"
+      }
+    ]
+  },
+  "K15_12": {
+    "duration": 107.99,
+    "language": "ja",
+    "languageProbability": 0.9648,
+    "segments": [
+      {
+        "end": 11.68,
+        "start": 0.05,
+        "text": "2. 運動しようと思っています エイ エクゼンプル"
+      },
+      {
+        "end": 19.21,
+        "start": 11.68,
+        "text": "メアリーさんは日本でいろいろな経験をしようと思っています"
+      },
+      {
+        "end": 29.09,
+        "start": 19.21,
+        "text": "1. なおみさんは運動しようと思っています"
+      },
+      {
+        "end": 39.54,
+        "start": 29.09,
+        "text": "2. 山下先生はダイエットをしようと思っています"
+      },
+      {
+        "end": 50.05,
+        "start": 39.58,
+        "text": "3. カルロスさんはタバコをやめようと思っています"
+      },
+      {
+        "end": 62.52,
+        "start": 50.05,
+        "text": "4. ヤスミンさんは日本人の友達をたくさん作ろうと思っています"
+      },
+      {
+        "end": 74.7,
+        "start": 62.52,
+        "text": "5. ロバートさんは1日中日本語を練習しようと思っています"
+      },
+      {
+        "end": 85.86,
+        "start": 74.7,
+        "text": "6. ソラさんは日本の習慣を調べようと思っています"
+      },
+      {
+        "end": 96.92,
+        "start": 85.86,
+        "text": "7. ウデイさんは日本で仕事を探そうと思っています"
+      },
+      {
+        "end": 107.88,
+        "start": 96.92,
+        "text": "8. ジョンさんはボランティア活動に参加しようと思っています"
+      }
+    ]
+  },
+  "K15_13": {
+    "duration": 112.48,
+    "language": "ja",
+    "languageProbability": 0.9684,
+    "segments": [
+      {
+        "end": 4.18,
+        "start": 0.18,
+        "text": "3.お金を借りておきます"
+      },
+      {
+        "end": 11.27,
+        "start": 4.18,
+        "text": "A. エクゼンプル"
+      },
+      {
+        "end": 12.27,
+        "start": 11.27,
+        "text": "ゆい"
+      },
+      {
+        "end": 15.27,
+        "start": 12.27,
+        "text": "電池を買う"
+      },
+      {
+        "end": 20.55,
+        "start": 15.27,
+        "text": "ゆいさんは電池を買っておきます"
+      },
+      {
+        "end": 23.55,
+        "start": 20.55,
+        "text": "1.メアリー"
+      },
+      {
+        "end": 28.66,
+        "start": 23.55,
+        "text": "水と食べ物を買う"
+      },
+      {
+        "end": 32.66,
+        "start": 28.66,
+        "text": "メアリーさんは水と食べ物を買っておきます"
+      },
+      {
+        "end": 37.07,
+        "start": 32.66,
+        "text": "2.やすみ"
+      },
+      {
+        "end": 42.28,
+        "start": 38.07,
+        "text": "お金をおろす"
+      },
+      {
+        "end": 45.28,
+        "start": 42.28,
+        "text": "やすみさんはお金をおろしておきます"
+      },
+      {
+        "end": 50.88,
+        "start": 45.28,
+        "text": "3.ロバート"
+      },
+      {
+        "end": 52.88,
+        "start": 50.88,
+        "text": "お金を借りる"
+      },
+      {
+        "end": 60.46,
+        "start": 55.09,
+        "text": "ロバートさんはお金を借りておきます"
+      },
+      {
+        "end": 64.46,
+        "start": 60.46,
+        "text": "4.山下先生"
+      },
+      {
+        "end": 68.58,
+        "start": 64.46,
+        "text": "うちをうる"
+      },
+      {
+        "end": 73.95,
+        "start": 68.58,
+        "text": "山下先生はうちをうっておきます"
+      },
+      {
+        "end": 76.95,
+        "start": 73.95,
+        "text": "5.空"
+      },
+      {
+        "end": 81.19,
+        "start": 76.95,
+        "text": "保険に入る"
+      },
+      {
+        "end": 84.19,
+        "start": 81.19,
+        "text": "空さんは保険に入っておきます"
+      },
+      {
+        "end": 89.6,
+        "start": 84.19,
+        "text": "6.県"
+      },
+      {
+        "end": 91.6,
+        "start": 89.6,
+        "text": "大きい家具を捨てる"
+      },
+      {
+        "end": 97.81,
+        "start": 91.6,
+        "text": "県さんは大きい家具を捨てておきます"
+      },
+      {
+        "end": 103.12,
+        "start": 97.81,
+        "text": "7.たけし"
+      },
+      {
+        "end": 105.12,
+        "start": 103.12,
+        "text": "たくさん食べる"
+      },
+      {
+        "end": 111.36,
+        "start": 105.12,
+        "text": "たけしさんはたくさん食べておきます"
+      }
+    ]
+  },
+  "K15_14": {
+    "duration": 80.95,
+    "language": "ja",
+    "languageProbability": 0.9297,
+    "segments": [
+      {
+        "end": 5.05,
+        "start": 0.05,
+        "text": "4 韓国に住んでいる友達"
+      },
+      {
+        "end": 10.74,
+        "start": 5.05,
+        "text": "a エクゼンプル"
+      },
+      {
+        "end": 16.49,
+        "start": 10.74,
+        "text": "韓国に住んでいる友達"
+      },
+      {
+        "end": 25.1,
+        "start": 16.49,
+        "text": "1 スペイン語が話せる友達"
+      },
+      {
+        "end": 31.14,
+        "start": 25.1,
+        "text": "2 彼女にもらった時計"
+      },
+      {
+        "end": 39.71,
+        "start": 31.14,
+        "text": "3 去年中国に行った友達"
+      },
+      {
+        "end": 49.47,
+        "start": 39.71,
+        "text": "4 毎日使うカバン"
+      },
+      {
+        "end": 55.48,
+        "start": 49.47,
+        "text": "5 時々行くカフェ"
+      },
+      {
+        "end": 62.99,
+        "start": 55.48,
+        "text": "6 先週見たお寺"
+      },
+      {
+        "end": 71.41,
+        "start": 62.99,
+        "text": "7 ハワイで買ったTシャツ"
+      },
+      {
+        "end": 79.79,
+        "start": 71.41,
+        "text": "8 今住んでいる家"
+      }
+    ]
+  },
+  "K15_15": {
+    "duration": 83.3,
+    "language": "ja",
+    "languageProbability": 0.9679,
+    "segments": [
+      {
+        "end": 2.02,
+        "start": 0.02,
+        "text": "B"
+      },
+      {
+        "end": 5.39,
+        "start": 2.02,
+        "text": "example"
+      },
+      {
+        "end": 10.39,
+        "start": 5.39,
+        "text": "これはブルースリーが使ったヌンチャクです"
+      },
+      {
+        "end": 18.68,
+        "start": 10.39,
+        "text": "1.これはピカソが書いた絵です"
+      },
+      {
+        "end": 28.29,
+        "start": 18.68,
+        "text": "2.これはベイトーベンが弾いたピアノです"
+      },
+      {
+        "end": 37.86,
+        "start": 28.29,
+        "text": "3.これはエルビスプレスリーが着ていたジャケットです"
+      },
+      {
+        "end": 44.97,
+        "start": 37.86,
+        "text": "4.これはバットマンが乗った車です"
+      },
+      {
+        "end": 55.89,
+        "start": 44.97,
+        "text": "5.これはガンジーが書いた手紙です"
+      },
+      {
+        "end": 62.96,
+        "start": 55.89,
+        "text": "6.これはクロサワが作った映画です"
+      },
+      {
+        "end": 72.44,
+        "start": 62.96,
+        "text": "7.これはナポレオンが使った辞書です"
+      },
+      {
+        "end": 82.89,
+        "start": 72.44,
+        "text": "8.これはチャップリンがかぶっていた帽子です"
+      }
+    ]
+  },
+  "K15_16": {
+    "duration": 101.04,
+    "language": "ja",
+    "languageProbability": 0.9043,
+    "segments": [
+      {
+        "end": 2.02,
+        "start": 0.02,
+        "text": "T"
+      },
+      {
+        "end": 5.02,
+        "start": 2.02,
+        "text": "example"
+      },
+      {
+        "end": 10.39,
+        "start": 5.02,
+        "text": "田中さんにもらったコーヒーを飲んでみました。"
+      },
+      {
+        "end": 20.87,
+        "start": 10.39,
+        "text": "1.妹が作った料理はおいしくないです。"
+      },
+      {
+        "end": 31.45,
+        "start": 20.87,
+        "text": "2.料理ができない人と結婚したくないです。"
+      },
+      {
+        "end": 41.46,
+        "start": 31.45,
+        "text": "3.日本の週刊についてよく知っている外国人を探しています。"
+      },
+      {
+        "end": 51.97,
+        "start": 41.46,
+        "text": "4.去年の夏に会った人にもう一度会いたいです。"
+      },
+      {
+        "end": 62.35,
+        "start": 51.97,
+        "text": "5.よく喋る人とルームメートになりたくないです。"
+      },
+      {
+        "end": 73.7,
+        "start": 62.35,
+        "text": "6.おじさんが働いている会社はこの建物の中にあります。"
+      },
+      {
+        "end": 85.18,
+        "start": 73.7,
+        "text": "7.冬休みに温泉がある旅館に止まろうと思っています。"
+      },
+      {
+        "end": 98.63,
+        "start": 85.18,
+        "text": "8.留学に興味があるんですが、アメリカに留学したことがある学生を知っていますか?"
+      }
+    ]
+  },
+  "W15_A": {
+    "duration": 59.85,
+    "language": "ja",
+    "languageProbability": 0.9864,
+    "segments": [
+      {
+        "end": 6.33,
+        "start": 0.18,
+        "text": "第15日 きくれんしゅう"
+      },
+      {
+        "end": 8.83,
+        "start": 6.33,
+        "text": "えい"
+      },
+      {
+        "end": 13.23,
+        "start": 8.83,
+        "text": "これはおじいさんが若い時 使っていたラジオ"
+      },
+      {
+        "end": 19.21,
+        "start": 13.23,
+        "text": "古いけど使えるよ 妹があんだマフラ"
+      },
+      {
+        "end": 25.43,
+        "start": 19.21,
+        "text": "僕の妹はいろいろ作るのが好きだから よくくれるんだ"
+      },
+      {
+        "end": 30.07,
+        "start": 25.43,
+        "text": "これは僕の彼女と京都で撮った写真"
+      },
+      {
+        "end": 37.75,
+        "start": 30.07,
+        "text": "その時にお寺で買った着物があそこにある すごく安かったんだ"
+      },
+      {
+        "end": 45.77,
+        "start": 37.75,
+        "text": "これは両親がくれたぬいぐるみ 子供の時よく遊んだ"
+      },
+      {
+        "end": 51.69,
+        "start": 45.77,
+        "text": "えっと これは先生に借りた歴史の本"
+      },
+      {
+        "end": 55.21,
+        "start": 51.69,
+        "text": "明日返さなきゃいけない"
+      }
+    ]
+  },
+  "W15_B": {
+    "duration": 66.9,
+    "language": "ja",
+    "languageProbability": 0.9832,
+    "segments": [
+      {
+        "end": 2.08,
+        "start": 0.08,
+        "text": "B"
+      },
+      {
+        "end": 8.08,
+        "start": 2.08,
+        "text": "ねえ、そらさん、今度の休みに何をするの?"
+      },
+      {
+        "end": 10.08,
+        "start": 8.08,
+        "text": "まだわからない"
+      },
+      {
+        "end": 18.08,
+        "start": 10.08,
+        "text": "もうすぐ試験があるし、宿題もしなきゃいけないし、うちで勉強しようと思っているんだ"
+      },
+      {
+        "end": 24.08,
+        "start": 18.08,
+        "text": "ええ、だめだよ、1週間も休みがあるんだよ"
+      },
+      {
+        "end": 26.08,
+        "start": 24.08,
+        "text": "うーん"
+      },
+      {
+        "end": 28.08,
+        "start": 26.08,
+        "text": "広島に行ったことがある?"
+      },
+      {
+        "end": 32.08,
+        "start": 28.08,
+        "text": "うーん、まだ行ったことがない"
+      },
+      {
+        "end": 36.08,
+        "start": 32.08,
+        "text": "今度の休みに広島に行こうよ"
+      },
+      {
+        "end": 42.08,
+        "start": 36.08,
+        "text": "広島は食べ物もおいしいし、平和公園にも行きたいし"
+      },
+      {
+        "end": 44.08,
+        "start": 42.08,
+        "text": "そうだね、行こうか"
+      },
+      {
+        "end": 50.08,
+        "start": 44.08,
+        "text": "じゃあ私、本で広島について調べておく"
+      },
+      {
+        "end": 56.08,
+        "start": 50.08,
+        "text": "それからお父さんが安い旅館を知っていると言ってたから"
+      },
+      {
+        "end": 58.08,
+        "start": 56.08,
+        "text": "お父さんに聞いておく"
+      },
+      {
+        "end": 62.08,
+        "start": 58.08,
+        "text": "私は宿題をしておかなきゃ"
+      }
+    ]
+  },
+  "W15_C": {
+    "duration": 69.07,
+    "language": "ja",
+    "languageProbability": 0.9899,
+    "segments": [
+      {
+        "end": 7.84,
+        "start": 0.3,
+        "text": "みなさん 桜大学を知っていますか"
+      },
+      {
+        "end": 13.46,
+        "start": 7.84,
+        "text": "桜大学は大きくてとても綺麗な大学です"
+      },
+      {
+        "end": 22.67,
+        "start": 13.46,
+        "text": "大学には夜10時まで泳げるプールや1日中勉強できる図書館があります"
+      },
+      {
+        "end": 28.77,
+        "start": 22.67,
+        "text": "大学の近くにショッピングモールがあるのでとても便利です"
+      },
+      {
+        "end": 34.13,
+        "start": 28.77,
+        "text": "ショッピングモールには色々な国の料理が食べられるレストランや"
+      },
+      {
+        "end": 42.64,
+        "start": 34.13,
+        "text": "24時間買い物ができるスーパーや美味しいコーヒーが飲めるカフェがあります"
+      },
+      {
+        "end": 47.8,
+        "start": 42.64,
+        "text": "この大学の日本語のクラスはとても有名です"
+      },
+      {
+        "end": 53.24,
+        "start": 47.8,
+        "text": "日本語を勉強している留学生がたくさんいます"
+      },
+      {
+        "end": 55.04,
+        "start": 53.24,
+        "text": "どうですか"
+      },
+      {
+        "end": 59.48,
+        "start": 55.04,
+        "text": "みなさんも一緒にここで勉強しませんか"
+      },
+      {
+        "end": 64.6,
+        "start": 59.48,
+        "text": "じゃあみなさん 桜大学で会いましょう"
+      }
+    ]
+  }
+}
