@@ -1,0 +1,2276 @@
+{
+  "K21_01": {
+    "duration": 30.33,
+    "language": "ja",
+    "languageProbability": 0.9911,
+    "segments": [
+      {
+        "end": 10.42,
+        "start": 0.05,
+        "text": "第21日 泥棒 会話 1"
+      },
+      {
+        "end": 15.42,
+        "start": 10.42,
+        "text": "おやさん 大変です 泥棒に入られました"
+      },
+      {
+        "end": 19.42,
+        "start": 15.42,
+        "text": "え? 何か取られたんですか?"
+      },
+      {
+        "end": 24.42,
+        "start": 19.42,
+        "text": "パサコンとスマホと バイトで溜めたお金もないです"
+      },
+      {
+        "end": 30.42,
+        "start": 24.42,
+        "text": "とにかく 警察に連絡したほうがいいですよ"
+      }
+    ]
+  },
+  "K21_02": {
+    "duration": 44.75,
+    "language": "ja",
+    "languageProbability": 0.8611,
+    "segments": [
+      {
+        "end": 4.39,
+        "start": 0.11,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 10.56,
+        "start": 4.39,
+        "text": "大屋さん大変です"
+      },
+      {
+        "end": 15.25,
+        "start": 10.56,
+        "text": "泥棒に入られました"
+      },
+      {
+        "end": 22.89,
+        "start": 15.25,
+        "text": "え?何か取られたんですか?"
+      },
+      {
+        "end": 25.89,
+        "start": 22.89,
+        "text": "パサコンとスマホと"
+      },
+      {
+        "end": 35.03,
+        "start": 25.89,
+        "text": "バイトで溜めたお金もないです"
+      },
+      {
+        "end": 39.03,
+        "start": 35.03,
+        "text": "とにかく警察に連絡した方がいいですよ"
+      }
+    ]
+  },
+  "K21_03": {
+    "duration": 45.17,
+    "language": "ja",
+    "languageProbability": 0.9818,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "に"
+      },
+      {
+        "end": 4.11,
+        "start": 2.11,
+        "text": "鍵はかけてあったんですか?"
+      },
+      {
+        "end": 6.11,
+        "start": 4.11,
+        "text": "さあ"
+      },
+      {
+        "end": 10.11,
+        "start": 6.11,
+        "text": "昨日の夜は飲んで帰ってきたから"
+      },
+      {
+        "end": 12.11,
+        "start": 10.11,
+        "text": "鍵をかけたかどうか"
+      },
+      {
+        "end": 15.11,
+        "start": 12.11,
+        "text": "よく覚えていないんです"
+      },
+      {
+        "end": 18.11,
+        "start": 15.11,
+        "text": "じゃあ何時ごろ帰ってきたか"
+      },
+      {
+        "end": 20.11,
+        "start": 18.11,
+        "text": "覚えていますか?"
+      },
+      {
+        "end": 22.11,
+        "start": 20.11,
+        "text": "終電だったから"
+      },
+      {
+        "end": 26.11,
+        "start": 22.11,
+        "text": "多分1時半ごろです"
+      },
+      {
+        "end": 29.11,
+        "start": 26.11,
+        "text": "泥棒はその後入ったんですね"
+      },
+      {
+        "end": 31.11,
+        "start": 29.11,
+        "text": "ええ"
+      },
+      {
+        "end": 36.11,
+        "start": 31.11,
+        "text": "朝部屋がめちゃくちゃだったのでびっくりしたんです"
+      },
+      {
+        "end": 42.11,
+        "start": 36.11,
+        "text": "寝ている間に泥棒に入られて気がつかなかったんですか?"
+      },
+      {
+        "end": 44.11,
+        "start": 42.11,
+        "text": "はい"
+      }
+    ]
+  },
+  "K21_04": {
+    "duration": 86.88,
+    "language": "ja",
+    "languageProbability": 0.7884,
+    "segments": [
+      {
+        "end": 2.63,
+        "start": 0.11,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 6.36,
+        "start": 2.63,
+        "text": "鍵はかけてあったんですか?"
+      },
+      {
+        "end": 14.66,
+        "start": 6.36,
+        "text": "さあ、昨日の夜は飲んで帰ってきたから"
+      },
+      {
+        "end": 30.03,
+        "start": 14.66,
+        "text": "鍵をかけたかどうかよく覚えていないんです。"
+      },
+      {
+        "end": 34.23,
+        "start": 30.03,
+        "text": "じゃあ何時ごろ帰ってきたか覚えていますか?"
+      },
+      {
+        "end": 45.03,
+        "start": 34.23,
+        "text": "終電だったから多分1時半ごろです。"
+      },
+      {
+        "end": 58.59,
+        "start": 45.03,
+        "text": "泥棒はその後入ったんですね。"
+      },
+      {
+        "end": 71.94,
+        "start": 58.75,
+        "text": "ええ、朝部屋がめちゃくちゃだったのでびっくりしたんです。"
+      },
+      {
+        "end": 82.66,
+        "start": 71.94,
+        "text": "寝ている間に泥棒に入られて気がつかなかったんですか?"
+      },
+      {
+        "end": 83.66,
+        "start": 82.66,
+        "text": "はい。"
+      }
+    ]
+  },
+  "K21_05": {
+    "duration": 43.49,
+    "language": "ja",
+    "languageProbability": 0.9946,
+    "segments": [
+      {
+        "end": 9.05,
+        "start": 0.24,
+        "text": "さん、ジョンさん、ルスの間に警察から電話がありましたよ。"
+      },
+      {
+        "end": 13.89,
+        "start": 9.05,
+        "text": "犯人が捕まったので、警察に来てほしいそうです。"
+      },
+      {
+        "end": 17.99,
+        "start": 13.89,
+        "text": "ありがとうございます。よかった。"
+      },
+      {
+        "end": 22.71,
+        "start": 17.99,
+        "text": "それから、カギンを新しくしましたからどうぞ。"
+      },
+      {
+        "end": 25.51,
+        "start": 22.71,
+        "text": "本当に大変でしたね。"
+      },
+      {
+        "end": 32.17,
+        "start": 25.63,
+        "text": "ええ。でも、そのおかげでいいこともありました。"
+      },
+      {
+        "end": 37.73,
+        "start": 32.17,
+        "text": "みんないろいろなものをくれたり、おごってくれたりしたんです。"
+      },
+      {
+        "end": 43.37,
+        "start": 37.73,
+        "text": "ジョンさんはいい友達がたくさんいて、幸せですね。"
+      }
+    ]
+  },
+  "K21_06": {
+    "duration": 79.83,
+    "language": "ja",
+    "languageProbability": 0.9287,
+    "segments": [
+      {
+        "end": 4.28,
+        "start": 0.11,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 15.92,
+        "start": 4.28,
+        "text": "ジョンさん、ルスの間に警察から電話がありましたよ"
+      },
+      {
+        "end": 24.85,
+        "start": 15.92,
+        "text": "犯人が捕まったので警察に来てほしいそうです"
+      },
+      {
+        "end": 33.1,
+        "start": 24.85,
+        "text": "ありがとうございます、よかった"
+      },
+      {
+        "end": 41.74,
+        "start": 33.1,
+        "text": "それからカギンを新しくしましたからどうぞ"
+      },
+      {
+        "end": 46.8,
+        "start": 41.74,
+        "text": "本当に大変でしたね"
+      },
+      {
+        "end": 58.59,
+        "start": 46.8,
+        "text": "ええ、でもそのおかげでいいこともありました"
+      },
+      {
+        "end": 68.9,
+        "start": 58.59,
+        "text": "みんないろいろなものをくれたり、おごってくれたりしたんです"
+      },
+      {
+        "end": 74.42,
+        "start": 68.9,
+        "text": "ジョンさんはいい友達がたくさんいて幸せですね"
+      }
+    ]
+  },
+  "K21_07": {
+    "duration": 334.73,
+    "language": "ja",
+    "languageProbability": 0.6154,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第21課"
+      },
+      {
+        "end": 5.58,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 8.08,
+        "start": 5.58,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.58,
+        "start": 8.08,
+        "text": "時間"
+      },
+      {
+        "end": 14.08,
+        "start": 10.58,
+        "text": "Groper, pervert"
+      },
+      {
+        "end": 16.58,
+        "start": 14.08,
+        "text": "泥棒"
+      },
+      {
+        "end": 20.08,
+        "start": 16.58,
+        "text": "Feef, burglar"
+      },
+      {
+        "end": 22.58,
+        "start": 20.08,
+        "text": "犯人"
+      },
+      {
+        "end": 25.08,
+        "start": 22.58,
+        "text": "Criminal"
+      },
+      {
+        "end": 27.58,
+        "start": 25.08,
+        "text": "道領"
+      },
+      {
+        "end": 30.08,
+        "start": 27.58,
+        "text": "colleague"
+      },
+      {
+        "end": 32.08,
+        "start": 30.08,
+        "text": "会議"
+      },
+      {
+        "end": 34.08,
+        "start": 32.08,
+        "text": "business meeting"
+      },
+      {
+        "end": 36.58,
+        "start": 34.08,
+        "text": "conference"
+      },
+      {
+        "end": 39.08,
+        "start": 36.58,
+        "text": "speech"
+      },
+      {
+        "end": 41.58,
+        "start": 39.08,
+        "text": "speech"
+      },
+      {
+        "end": 43.58,
+        "start": 41.58,
+        "text": "ka"
+      },
+      {
+        "end": 46.08,
+        "start": 43.58,
+        "text": "mosquito"
+      },
+      {
+        "end": 48.58,
+        "start": 46.08,
+        "text": "gasoline"
+      },
+      {
+        "end": 51.08,
+        "start": 48.58,
+        "text": "gasoline"
+      },
+      {
+        "end": 53.58,
+        "start": 51.08,
+        "text": "poster"
+      },
+      {
+        "end": 56.08,
+        "start": 53.58,
+        "text": "poster"
+      },
+      {
+        "end": 58.58,
+        "start": 56.08,
+        "text": "onk"
+      },
+      {
+        "end": 61.08,
+        "start": 58.58,
+        "text": "complaint"
+      },
+      {
+        "end": 63.08,
+        "start": 61.08,
+        "text": "lis"
+      },
+      {
+        "end": 67.08,
+        "start": 63.08,
+        "text": "absence, not at home"
+      },
+      {
+        "end": 69.58,
+        "start": 67.08,
+        "text": "警察"
+      },
+      {
+        "end": 74.08,
+        "start": 69.58,
+        "text": "police, police station"
+      },
+      {
+        "end": 76.58,
+        "start": 74.08,
+        "text": "政府"
+      },
+      {
+        "end": 79.08,
+        "start": 76.58,
+        "text": "government"
+      },
+      {
+        "end": 81.58,
+        "start": 79.08,
+        "text": "授業料"
+      },
+      {
+        "end": 84.08,
+        "start": 81.58,
+        "text": "tuition"
+      },
+      {
+        "end": 86.58,
+        "start": 84.08,
+        "text": "工場"
+      },
+      {
+        "end": 89.08,
+        "start": 86.58,
+        "text": "factory"
+      },
+      {
+        "end": 91.58,
+        "start": 89.08,
+        "text": "環境"
+      },
+      {
+        "end": 94.08,
+        "start": 91.58,
+        "text": "environment"
+      },
+      {
+        "end": 97.08,
+        "start": 94.08,
+        "text": "修電"
+      },
+      {
+        "end": 99.58,
+        "start": 97.08,
+        "text": "last train"
+      },
+      {
+        "end": 102.08,
+        "start": 99.58,
+        "text": "こと"
+      },
+      {
+        "end": 105.58,
+        "start": 102.08,
+        "text": "things, matters"
+      },
+      {
+        "end": 108.08,
+        "start": 105.58,
+        "text": "昔"
+      },
+      {
+        "end": 112.08,
+        "start": 108.08,
+        "text": "old days, past"
+      },
+      {
+        "end": 114.58,
+        "start": 112.08,
+        "text": "adjectives"
+      },
+      {
+        "end": 117.08,
+        "start": 114.58,
+        "text": "遠い"
+      },
+      {
+        "end": 119.58,
+        "start": 117.08,
+        "text": "far"
+      },
+      {
+        "end": 121.58,
+        "start": 119.58,
+        "text": "酷い"
+      },
+      {
+        "end": 124.08,
+        "start": 121.58,
+        "text": "awful"
+      },
+      {
+        "end": 127.08,
+        "start": 124.08,
+        "text": "not adjectives"
+      },
+      {
+        "end": 129.58,
+        "start": 127.08,
+        "text": "安全な"
+      },
+      {
+        "end": 132.08,
+        "start": 129.58,
+        "text": "safe"
+      },
+      {
+        "end": 135.08,
+        "start": 132.08,
+        "text": "めちゃくちゃな"
+      },
+      {
+        "end": 138.58,
+        "start": 135.08,
+        "text": "messy, disorganized"
+      },
+      {
+        "end": 141.08,
+        "start": 138.58,
+        "text": "変な"
+      },
+      {
+        "end": 144.58,
+        "start": 141.08,
+        "text": "strange, unusual"
+      },
+      {
+        "end": 147.58,
+        "start": 144.58,
+        "text": "u-verbs"
+      },
+      {
+        "end": 149.58,
+        "start": 147.58,
+        "text": "おく"
+      },
+      {
+        "end": 154.58,
+        "start": 149.58,
+        "text": "to put, to lay, to place"
+      },
+      {
+        "end": 156.58,
+        "start": 154.58,
+        "text": "つつむ"
+      },
+      {
+        "end": 160.58,
+        "start": 156.58,
+        "text": "to wrap, to cover"
+      },
+      {
+        "end": 162.58,
+        "start": 160.58,
+        "text": "はる"
+      },
+      {
+        "end": 166.58,
+        "start": 162.58,
+        "text": "to post, to stick"
+      },
+      {
+        "end": 168.58,
+        "start": 166.58,
+        "text": "焼く"
+      },
+      {
+        "end": 173.08,
+        "start": 168.58,
+        "text": "to bake, to burn, to grill"
+      },
+      {
+        "end": 175.08,
+        "start": 173.08,
+        "text": "やる"
+      },
+      {
+        "end": 178.08,
+        "start": 175.08,
+        "text": "to give"
+      },
+      {
+        "end": 180.08,
+        "start": 178.08,
+        "text": "ける"
+      },
+      {
+        "end": 182.08,
+        "start": 180.08,
+        "text": "to kick"
+      },
+      {
+        "end": 184.08,
+        "start": 182.08,
+        "text": "殴る"
+      },
+      {
+        "end": 189.08,
+        "start": 184.08,
+        "text": "to strike, to hit, to punch"
+      },
+      {
+        "end": 192.08,
+        "start": 189.08,
+        "text": "ふむ"
+      },
+      {
+        "end": 194.08,
+        "start": 192.08,
+        "text": "to step on"
+      },
+      {
+        "end": 197.08,
+        "start": 194.08,
+        "text": "さす"
+      },
+      {
+        "end": 200.58,
+        "start": 197.58,
+        "text": "ぬすむ"
+      },
+      {
+        "end": 204.58,
+        "start": 200.58,
+        "text": "to steal, to rob"
+      },
+      {
+        "end": 206.58,
+        "start": 204.58,
+        "text": "さわる"
+      },
+      {
+        "end": 209.58,
+        "start": 206.58,
+        "text": "to touch"
+      },
+      {
+        "end": 211.58,
+        "start": 209.58,
+        "text": "つかまる"
+      },
+      {
+        "end": 215.58,
+        "start": 211.58,
+        "text": "to be arrested, to be caught"
+      },
+      {
+        "end": 218.58,
+        "start": 215.58,
+        "text": "きがつく"
+      },
+      {
+        "end": 221.58,
+        "start": 218.58,
+        "text": "to notice"
+      },
+      {
+        "end": 223.58,
+        "start": 221.58,
+        "text": "ふる"
+      },
+      {
+        "end": 230.08,
+        "start": 224.08,
+        "text": "to turn down, to reject, to jilt"
+      },
+      {
+        "end": 233.08,
+        "start": 230.08,
+        "text": "文句を言う"
+      },
+      {
+        "end": 235.08,
+        "start": 233.08,
+        "text": "to complain"
+      },
+      {
+        "end": 238.08,
+        "start": 235.08,
+        "text": "ru-verbs"
+      },
+      {
+        "end": 240.08,
+        "start": 238.08,
+        "text": "いじめる"
+      },
+      {
+        "end": 243.08,
+        "start": 240.08,
+        "text": "to bully"
+      },
+      {
+        "end": 245.08,
+        "start": 243.08,
+        "text": "褒める"
+      },
+      {
+        "end": 250.08,
+        "start": 245.08,
+        "text": "to praise, to say nice things"
+      },
+      {
+        "end": 252.08,
+        "start": 250.08,
+        "text": "きがえる"
+      },
+      {
+        "end": 255.58,
+        "start": 252.58,
+        "text": "to change clothes"
+      },
+      {
+        "end": 257.58,
+        "start": 255.58,
+        "text": "しんじる"
+      },
+      {
+        "end": 260.58,
+        "start": 257.58,
+        "text": "to believe"
+      },
+      {
+        "end": 262.58,
+        "start": 260.58,
+        "text": "ためる"
+      },
+      {
+        "end": 265.58,
+        "start": 262.58,
+        "text": "to save money"
+      },
+      {
+        "end": 268.58,
+        "start": 265.58,
+        "text": "まちがえる"
+      },
+      {
+        "end": 271.58,
+        "start": 268.58,
+        "text": "to make a mistake"
+      },
+      {
+        "end": 273.58,
+        "start": 271.58,
+        "text": "みつける"
+      },
+      {
+        "end": 276.58,
+        "start": 273.58,
+        "text": "to find"
+      },
+      {
+        "end": 278.58,
+        "start": 276.58,
+        "text": "くらべる"
+      },
+      {
+        "end": 281.58,
+        "start": 278.58,
+        "text": "to compare"
+      },
+      {
+        "end": 285.08,
+        "start": 282.08,
+        "text": "バカにする"
+      },
+      {
+        "end": 290.08,
+        "start": 285.08,
+        "text": "to insult, to make a fool of"
+      },
+      {
+        "end": 293.08,
+        "start": 290.08,
+        "text": "びっくりする"
+      },
+      {
+        "end": 296.08,
+        "start": 293.08,
+        "text": "to be surprised"
+      },
+      {
+        "end": 299.08,
+        "start": 296.08,
+        "text": "ひるねをする"
+      },
+      {
+        "end": 301.08,
+        "start": 299.08,
+        "text": "to take a nap"
+      },
+      {
+        "end": 304.08,
+        "start": 301.08,
+        "text": "連絡する"
+      },
+      {
+        "end": 307.08,
+        "start": 304.08,
+        "text": "to contact"
+      },
+      {
+        "end": 311.58,
+        "start": 308.08,
+        "text": "adverbs and other expressions"
+      },
+      {
+        "end": 314.58,
+        "start": 311.58,
+        "text": "午前中"
+      },
+      {
+        "end": 317.58,
+        "start": 314.58,
+        "text": "in the morning"
+      },
+      {
+        "end": 319.58,
+        "start": 317.58,
+        "text": "頃"
+      },
+      {
+        "end": 321.58,
+        "start": 319.58,
+        "text": "time of"
+      },
+      {
+        "end": 323.58,
+        "start": 321.58,
+        "text": "when"
+      },
+      {
+        "end": 325.58,
+        "start": 323.58,
+        "text": "少し"
+      },
+      {
+        "end": 327.58,
+        "start": 325.58,
+        "text": "a little"
+      },
+      {
+        "end": 330.58,
+        "start": 327.58,
+        "text": "とにかく"
+      },
+      {
+        "end": 334.58,
+        "start": 330.58,
+        "text": "anyhow, anyway"
+      }
+    ]
+  },
+  "K21_08": {
+    "duration": 335.02,
+    "language": "ja",
+    "languageProbability": 0.5501,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第21課"
+      },
+      {
+        "end": 5.58,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 7.08,
+        "start": 5.58,
+        "text": "Nouns"
+      },
+      {
+        "end": 9.89,
+        "start": 7.08,
+        "text": "Groper"
+      },
+      {
+        "end": 12.39,
+        "start": 9.89,
+        "text": "Pervert"
+      },
+      {
+        "end": 14.39,
+        "start": 12.39,
+        "text": "ちかん"
+      },
+      {
+        "end": 15.89,
+        "start": 14.39,
+        "text": "Feef"
+      },
+      {
+        "end": 17.89,
+        "start": 15.89,
+        "text": "Burgler"
+      },
+      {
+        "end": 20.89,
+        "start": 17.89,
+        "text": "ドロボ"
+      },
+      {
+        "end": 22.89,
+        "start": 20.89,
+        "text": "Criminal"
+      },
+      {
+        "end": 25.39,
+        "start": 22.89,
+        "text": "犯人"
+      },
+      {
+        "end": 27.89,
+        "start": 25.39,
+        "text": "Colleague"
+      },
+      {
+        "end": 30.39,
+        "start": 27.89,
+        "text": "道領"
+      },
+      {
+        "end": 32.39,
+        "start": 30.39,
+        "text": "Business meeting"
+      },
+      {
+        "end": 34.89,
+        "start": 32.39,
+        "text": "Conference"
+      },
+      {
+        "end": 36.89,
+        "start": 34.89,
+        "text": "かいに"
+      },
+      {
+        "end": 39.39,
+        "start": 36.89,
+        "text": "Speech"
+      },
+      {
+        "end": 41.89,
+        "start": 39.39,
+        "text": "スピーチ"
+      },
+      {
+        "end": 44.39,
+        "start": 41.89,
+        "text": "Mosquito"
+      },
+      {
+        "end": 46.39,
+        "start": 44.39,
+        "text": "か"
+      },
+      {
+        "end": 48.89,
+        "start": 46.39,
+        "text": "Gasoline"
+      },
+      {
+        "end": 51.39,
+        "start": 48.89,
+        "text": "ガソリン"
+      },
+      {
+        "end": 53.89,
+        "start": 51.39,
+        "text": "Poster"
+      },
+      {
+        "end": 56.39,
+        "start": 53.89,
+        "text": "Poster"
+      },
+      {
+        "end": 58.89,
+        "start": 56.39,
+        "text": "Complaint"
+      },
+      {
+        "end": 61.39,
+        "start": 58.89,
+        "text": "Monk"
+      },
+      {
+        "end": 62.89,
+        "start": 61.39,
+        "text": "Absence"
+      },
+      {
+        "end": 65.39,
+        "start": 62.89,
+        "text": "Not at home"
+      },
+      {
+        "end": 67.89,
+        "start": 65.39,
+        "text": "List"
+      },
+      {
+        "end": 69.39,
+        "start": 67.89,
+        "text": "Police"
+      },
+      {
+        "end": 71.89,
+        "start": 69.39,
+        "text": "Police Station"
+      },
+      {
+        "end": 74.39,
+        "start": 71.89,
+        "text": "警察"
+      },
+      {
+        "end": 76.89,
+        "start": 74.39,
+        "text": "Government"
+      },
+      {
+        "end": 79.39,
+        "start": 76.89,
+        "text": "政府"
+      },
+      {
+        "end": 81.89,
+        "start": 79.39,
+        "text": "Tuition"
+      },
+      {
+        "end": 84.39,
+        "start": 81.89,
+        "text": "授業料"
+      },
+      {
+        "end": 86.89,
+        "start": 84.39,
+        "text": "Factory"
+      },
+      {
+        "end": 89.39,
+        "start": 86.89,
+        "text": "工場"
+      },
+      {
+        "end": 91.89,
+        "start": 89.39,
+        "text": "Environment"
+      },
+      {
+        "end": 94.39,
+        "start": 91.89,
+        "text": "環境"
+      },
+      {
+        "end": 96.89,
+        "start": 94.39,
+        "text": "Last train"
+      },
+      {
+        "end": 99.89,
+        "start": 96.89,
+        "text": "集電"
+      },
+      {
+        "end": 103.39,
+        "start": 99.89,
+        "text": "Things, Matters"
+      },
+      {
+        "end": 105.89,
+        "start": 103.39,
+        "text": "こと"
+      },
+      {
+        "end": 109.89,
+        "start": 105.89,
+        "text": "Old days, Past"
+      },
+      {
+        "end": 112.39,
+        "start": 109.89,
+        "text": "昔"
+      },
+      {
+        "end": 115.39,
+        "start": 112.39,
+        "text": "E-adjectives"
+      },
+      {
+        "end": 118.89,
+        "start": 116.39,
+        "text": "遠い"
+      },
+      {
+        "end": 120.89,
+        "start": 118.89,
+        "text": "Awful"
+      },
+      {
+        "end": 123.89,
+        "start": 120.89,
+        "text": "ひどい"
+      },
+      {
+        "end": 126.89,
+        "start": 123.89,
+        "text": "Not adjectives"
+      },
+      {
+        "end": 128.89,
+        "start": 126.89,
+        "text": "Safe"
+      },
+      {
+        "end": 131.89,
+        "start": 128.89,
+        "text": "安全な"
+      },
+      {
+        "end": 135.89,
+        "start": 131.89,
+        "text": "Messy, Disorganized"
+      },
+      {
+        "end": 138.89,
+        "start": 135.89,
+        "text": "めちゃくちゃな"
+      },
+      {
+        "end": 141.89,
+        "start": 138.89,
+        "text": "Strange, Unusual"
+      },
+      {
+        "end": 144.89,
+        "start": 141.89,
+        "text": "変な"
+      },
+      {
+        "end": 147.39,
+        "start": 144.89,
+        "text": "Uverbs"
+      },
+      {
+        "end": 152.39,
+        "start": 147.39,
+        "text": "To put, To lay, To place"
+      },
+      {
+        "end": 154.39,
+        "start": 152.39,
+        "text": "置く"
+      },
+      {
+        "end": 158.39,
+        "start": 154.39,
+        "text": "To wrap, To cover"
+      },
+      {
+        "end": 160.39,
+        "start": 158.39,
+        "text": "包む"
+      },
+      {
+        "end": 164.39,
+        "start": 160.39,
+        "text": "To post, To stick"
+      },
+      {
+        "end": 166.39,
+        "start": 164.39,
+        "text": "春"
+      },
+      {
+        "end": 171.39,
+        "start": 166.39,
+        "text": "To bake, To burn, To grill"
+      },
+      {
+        "end": 173.39,
+        "start": 171.39,
+        "text": "役"
+      },
+      {
+        "end": 175.89,
+        "start": 173.39,
+        "text": "To give"
+      },
+      {
+        "end": 177.89,
+        "start": 175.89,
+        "text": "やる"
+      },
+      {
+        "end": 179.89,
+        "start": 177.89,
+        "text": "To kick"
+      },
+      {
+        "end": 181.89,
+        "start": 179.89,
+        "text": "蹴る"
+      },
+      {
+        "end": 186.89,
+        "start": 181.89,
+        "text": "To strike, To hit, To punch"
+      },
+      {
+        "end": 188.89,
+        "start": 186.89,
+        "text": "殴る"
+      },
+      {
+        "end": 191.89,
+        "start": 188.89,
+        "text": "To step on"
+      },
+      {
+        "end": 193.89,
+        "start": 191.89,
+        "text": "踏む"
+      },
+      {
+        "end": 196.89,
+        "start": 193.89,
+        "text": "To bite"
+      },
+      {
+        "end": 198.89,
+        "start": 196.89,
+        "text": "さす"
+      },
+      {
+        "end": 202.89,
+        "start": 198.89,
+        "text": "To steal, To rob"
+      },
+      {
+        "end": 205.39,
+        "start": 203.39,
+        "text": "盗む"
+      },
+      {
+        "end": 207.39,
+        "start": 205.39,
+        "text": "To touch"
+      },
+      {
+        "end": 210.39,
+        "start": 207.39,
+        "text": "触る"
+      },
+      {
+        "end": 214.39,
+        "start": 210.39,
+        "text": "To be arrested, To be caught"
+      },
+      {
+        "end": 217.39,
+        "start": 214.39,
+        "text": "捕まる"
+      },
+      {
+        "end": 219.39,
+        "start": 217.39,
+        "text": "To notice"
+      },
+      {
+        "end": 222.39,
+        "start": 219.39,
+        "text": "気がつく"
+      },
+      {
+        "end": 225.39,
+        "start": 222.39,
+        "text": "To turn down, To reject"
+      },
+      {
+        "end": 228.39,
+        "start": 225.39,
+        "text": "To jilt"
+      },
+      {
+        "end": 230.39,
+        "start": 228.39,
+        "text": "ふる"
+      },
+      {
+        "end": 232.39,
+        "start": 230.39,
+        "text": "To complain"
+      },
+      {
+        "end": 235.89,
+        "start": 232.89,
+        "text": "文句を言う"
+      },
+      {
+        "end": 237.89,
+        "start": 235.89,
+        "text": "Roo verbs"
+      },
+      {
+        "end": 240.89,
+        "start": 237.89,
+        "text": "To bully"
+      },
+      {
+        "end": 242.89,
+        "start": 240.89,
+        "text": "いじめる"
+      },
+      {
+        "end": 247.89,
+        "start": 242.89,
+        "text": "To praise, To say nice things"
+      },
+      {
+        "end": 249.89,
+        "start": 247.89,
+        "text": "褒める"
+      },
+      {
+        "end": 252.89,
+        "start": 249.89,
+        "text": "To change clothes"
+      },
+      {
+        "end": 255.89,
+        "start": 252.89,
+        "text": "きがえる"
+      },
+      {
+        "end": 257.89,
+        "start": 255.89,
+        "text": "To believe"
+      },
+      {
+        "end": 260.89,
+        "start": 257.89,
+        "text": "しんじる"
+      },
+      {
+        "end": 263.39,
+        "start": 260.89,
+        "text": "To save money"
+      },
+      {
+        "end": 265.39,
+        "start": 263.39,
+        "text": "ためる"
+      },
+      {
+        "end": 268.39,
+        "start": 265.39,
+        "text": "To make a mistake"
+      },
+      {
+        "end": 271.39,
+        "start": 268.39,
+        "text": "間違える"
+      },
+      {
+        "end": 273.39,
+        "start": 271.39,
+        "text": "To find"
+      },
+      {
+        "end": 276.39,
+        "start": 273.39,
+        "text": "見つける"
+      },
+      {
+        "end": 278.39,
+        "start": 276.39,
+        "text": "To compare"
+      },
+      {
+        "end": 281.39,
+        "start": 278.39,
+        "text": "比べる"
+      },
+      {
+        "end": 284.39,
+        "start": 281.39,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 289.39,
+        "start": 284.39,
+        "text": "To insult, To make a fool of"
+      },
+      {
+        "end": 291.89,
+        "start": 289.39,
+        "text": "バカにする"
+      },
+      {
+        "end": 294.89,
+        "start": 291.89,
+        "text": "To be surprised"
+      },
+      {
+        "end": 297.89,
+        "start": 294.89,
+        "text": "びっくりする"
+      },
+      {
+        "end": 299.89,
+        "start": 297.89,
+        "text": "To take a nap"
+      },
+      {
+        "end": 302.89,
+        "start": 299.89,
+        "text": "昼寝をする"
+      },
+      {
+        "end": 305.89,
+        "start": 302.89,
+        "text": "To contact"
+      },
+      {
+        "end": 308.89,
+        "start": 305.89,
+        "text": "連絡する"
+      },
+      {
+        "end": 312.89,
+        "start": 308.89,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 314.89,
+        "start": 312.89,
+        "text": "In the morning"
+      },
+      {
+        "end": 317.89,
+        "start": 314.89,
+        "text": "午前中"
+      },
+      {
+        "end": 321.89,
+        "start": 317.89,
+        "text": "Time of when"
+      },
+      {
+        "end": 323.89,
+        "start": 321.89,
+        "text": "頃"
+      },
+      {
+        "end": 325.89,
+        "start": 323.89,
+        "text": "A little"
+      },
+      {
+        "end": 328.39,
+        "start": 325.89,
+        "text": "少し"
+      },
+      {
+        "end": 332.39,
+        "start": 328.39,
+        "text": "Anyhow, Anyway"
+      },
+      {
+        "end": 334.39,
+        "start": 332.39,
+        "text": "とにかく"
+      }
+    ]
+  },
+  "K21_09": {
+    "duration": 163.87,
+    "language": "ja",
+    "languageProbability": 0.9747,
+    "segments": [
+      {
+        "end": 5.55,
+        "start": 0.05,
+        "text": "第21課 練習"
+      },
+      {
+        "end": 10.39,
+        "start": 5.55,
+        "text": "1 泥棒にカバンを取られました。"
+      },
+      {
+        "end": 17.3,
+        "start": 10.39,
+        "text": "A エクセンプル"
+      },
+      {
+        "end": 22.27,
+        "start": 17.3,
+        "text": "飲む 飲まれる"
+      },
+      {
+        "end": 29.45,
+        "start": 22.27,
+        "text": "1 食べる 食べられる"
+      },
+      {
+        "end": 37.9,
+        "start": 29.45,
+        "text": "2 やめる やめられる"
+      },
+      {
+        "end": 46.49,
+        "start": 37.9,
+        "text": "3 泣くす 泣くされる"
+      },
+      {
+        "end": 55.01,
+        "start": 46.49,
+        "text": "4 する される"
+      },
+      {
+        "end": 65.1,
+        "start": 55.01,
+        "text": "5 捨てる 捨てられる"
+      },
+      {
+        "end": 72.27,
+        "start": 65.1,
+        "text": "6 壊す 壊される"
+      },
+      {
+        "end": 82.1,
+        "start": 72.27,
+        "text": "7 見る 見られる"
+      },
+      {
+        "end": 89.25,
+        "start": 82.1,
+        "text": "8 笑う 笑われる"
+      },
+      {
+        "end": 96.74,
+        "start": 89.25,
+        "text": "9 嘘をつく"
+      },
+      {
+        "end": 98.74,
+        "start": 96.74,
+        "text": "嘘をつかれる"
+      },
+      {
+        "end": 106.22,
+        "start": 98.74,
+        "text": "10 連れて行く"
+      },
+      {
+        "end": 109.57,
+        "start": 106.22,
+        "text": "連れて行かれる"
+      },
+      {
+        "end": 115.71,
+        "start": 109.57,
+        "text": "11 馬鹿にする"
+      },
+      {
+        "end": 119.02,
+        "start": 115.71,
+        "text": "馬鹿にされる"
+      },
+      {
+        "end": 123.02,
+        "start": 119.02,
+        "text": "12 タバコを吸う"
+      },
+      {
+        "end": 130.54,
+        "start": 123.02,
+        "text": "13 タバコを吸われる"
+      },
+      {
+        "end": 138,
+        "start": 130.54,
+        "text": "13 立つ 立たれる"
+      },
+      {
+        "end": 146.49,
+        "start": 138,
+        "text": "14 来る 来られる"
+      },
+      {
+        "end": 154.94,
+        "start": 146.49,
+        "text": "15 怒る 怒られる"
+      },
+      {
+        "end": 163.09,
+        "start": 154.94,
+        "text": "16 盗む 盗まれる"
+      }
+    ]
+  },
+  "K21_10": {
+    "duration": 138.63,
+    "language": "ja",
+    "languageProbability": 0.9638,
+    "segments": [
+      {
+        "end": 5.28,
+        "start": 0.02,
+        "text": "b エクセンプル"
+      },
+      {
+        "end": 14.1,
+        "start": 5.28,
+        "text": "鞄をとる 鞄さんは泥棒に鞄をとられました"
+      },
+      {
+        "end": 25.59,
+        "start": 14.1,
+        "text": "1 笑う 鞄さんはメアリーさんに笑われました"
+      },
+      {
+        "end": 37.4,
+        "start": 25.59,
+        "text": "2 足を踏む 鞄さんは友達に足を踏まれました"
+      },
+      {
+        "end": 49.98,
+        "start": 37.4,
+        "text": "3 財布を盗む 鞄さんは泥棒に財布を盗まれました"
+      },
+      {
+        "end": 61.16,
+        "start": 49.98,
+        "text": "4 殴る 鞄さんは友達に殴られました"
+      },
+      {
+        "end": 71.86,
+        "start": 61.16,
+        "text": "5 泣く 鞄さんは赤ちゃんに泣かれました"
+      },
+      {
+        "end": 82.12,
+        "start": 71.86,
+        "text": "6 降る 鞄さんは雨に降られました"
+      },
+      {
+        "end": 92.53,
+        "start": 82.12,
+        "text": "7 サス 鞄さんは飼にさされました"
+      },
+      {
+        "end": 103.49,
+        "start": 92.53,
+        "text": "8 降る 鞄さんはあやかさんに降られました"
+      },
+      {
+        "end": 114.24,
+        "start": 103.49,
+        "text": "9 触る 鞄さんは地間に触られました"
+      },
+      {
+        "end": 126.51,
+        "start": 114.24,
+        "text": "10 いじめる 鞄さんは子供の時友達にいじめられました"
+      },
+      {
+        "end": 138.57,
+        "start": 126.51,
+        "text": "11 怒る 鞄さんは子供の時おじさんに怒られました"
+      }
+    ]
+  },
+  "K21_11": {
+    "duration": 71.52,
+    "language": "ja",
+    "languageProbability": 0.9848,
+    "segments": [
+      {
+        "end": 4.52,
+        "start": 0.02,
+        "text": "2. 写真が置いてあります"
+      },
+      {
+        "end": 9.81,
+        "start": 4.52,
+        "text": "A. エクセンプル"
+      },
+      {
+        "end": 15.78,
+        "start": 11.31,
+        "text": "家族の写真が置いてあります"
+      },
+      {
+        "end": 23.63,
+        "start": 15.78,
+        "text": "1. 電気が消してあります"
+      },
+      {
+        "end": 30.11,
+        "start": 23.63,
+        "text": "2. エアコンが付けてあります"
+      },
+      {
+        "end": 38.12,
+        "start": 30.11,
+        "text": "3. カーテンが開けてあります"
+      },
+      {
+        "end": 45.91,
+        "start": 38.12,
+        "text": "4. 名前が書いてあります"
+      },
+      {
+        "end": 55.2,
+        "start": 47.85,
+        "text": "5. 窓が閉めてあります"
+      },
+      {
+        "end": 63.58,
+        "start": 55.2,
+        "text": "6. プレゼントが包んであります"
+      },
+      {
+        "end": 70.56,
+        "start": 63.58,
+        "text": "7. ポスターが貼ってあります"
+      }
+    ]
+  },
+  "K21_12": {
+    "duration": 82.91,
+    "language": "ja",
+    "languageProbability": 0.981,
+    "segments": [
+      {
+        "end": 7.44,
+        "start": 0.11,
+        "text": "3 社長が寝ている間に置きます"
+      },
+      {
+        "end": 16.99,
+        "start": 7.44,
+        "text": "A 社長が寝ている間に置きます"
+      },
+      {
+        "end": 27.64,
+        "start": 16.99,
+        "text": "1 社長が着替えている間に車にガソリンを入れます"
+      },
+      {
+        "end": 39.45,
+        "start": 27.64,
+        "text": "2 社長がカフェで朝ごはんを食べている間にコンビニでお弁当を買います"
+      },
+      {
+        "end": 50.3,
+        "start": 39.45,
+        "text": "3 社長が新聞を読んでいる間にお弁当を食べます"
+      },
+      {
+        "end": 60.2,
+        "start": 50.3,
+        "text": "4 社長が会議に出ている間に昼寝をします"
+      },
+      {
+        "end": 71.65,
+        "start": 60.2,
+        "text": "5 社長が工場を見に行っている間に電話で友達と話します"
+      },
+      {
+        "end": 82.82,
+        "start": 71.65,
+        "text": "6 社長がパーティーで飲んでいる間に車の中でコーヒーを飲みます"
+      }
+    ]
+  },
+  "K21_13": {
+    "duration": 80.59,
+    "language": "ja",
+    "languageProbability": 0.9523,
+    "segments": [
+      {
+        "end": 4.14,
+        "start": 0.14,
+        "text": "4 公園を多くします"
+      },
+      {
+        "end": 7.81,
+        "start": 4.14,
+        "text": "A"
+      },
+      {
+        "end": 10.81,
+        "start": 7.81,
+        "text": "example"
+      },
+      {
+        "end": 12.81,
+        "start": 10.81,
+        "text": "公園を多くします"
+      },
+      {
+        "end": 21.19,
+        "start": 12.81,
+        "text": "1 町をきれいにします"
+      },
+      {
+        "end": 29.67,
+        "start": 21.19,
+        "text": "2 病院を新しくします"
+      },
+      {
+        "end": 39.66,
+        "start": 29.67,
+        "text": "3 町を安全にします"
+      },
+      {
+        "end": 45.7,
+        "start": 39.66,
+        "text": "4 環境をよくします"
+      },
+      {
+        "end": 55.55,
+        "start": 45.7,
+        "text": "5 税金を安くします"
+      },
+      {
+        "end": 62.53,
+        "start": 55.55,
+        "text": "6 学校の休みを長くします"
+      },
+      {
+        "end": 70.88,
+        "start": 62.53,
+        "text": "7 道を広くします"
+      },
+      {
+        "end": 80.26,
+        "start": 70.88,
+        "text": "8 町を有名にします"
+      }
+    ]
+  },
+  "K21_14": {
+    "duration": 138.53,
+    "language": "ja",
+    "languageProbability": 0.9679,
+    "segments": [
+      {
+        "end": 7.32,
+        "start": 0.02,
+        "text": "5 若い頃の話をしてほしいです"
+      },
+      {
+        "end": 12.22,
+        "start": 7.32,
+        "text": "A エクセンプル"
+      },
+      {
+        "end": 18.04,
+        "start": 12.22,
+        "text": "おばあさん 若い頃の話をする"
+      },
+      {
+        "end": 22.72,
+        "start": 18.04,
+        "text": "おばあさんに若い頃の話をしてほしいです"
+      },
+      {
+        "end": 30.77,
+        "start": 22.72,
+        "text": "1 両親 私と兄を比べない"
+      },
+      {
+        "end": 39.35,
+        "start": 33.24,
+        "text": "両親に私と兄を比べないでほしいです"
+      },
+      {
+        "end": 48.07,
+        "start": 39.35,
+        "text": "2 友達 日本語の勉強を続ける"
+      },
+      {
+        "end": 54.55,
+        "start": 48.07,
+        "text": "友達に日本語の勉強を続けてほしいです"
+      },
+      {
+        "end": 62.89,
+        "start": 54.55,
+        "text": "3 友達 遠いところに行かない"
+      },
+      {
+        "end": 68.78,
+        "start": 62.89,
+        "text": "友達に遠いところに行かないでほしいです"
+      },
+      {
+        "end": 76.88,
+        "start": 68.78,
+        "text": "4 同僚 夢を諦めない"
+      },
+      {
+        "end": 82.68,
+        "start": 76.88,
+        "text": "同僚に夢を諦めないでほしいです"
+      },
+      {
+        "end": 91.16,
+        "start": 82.68,
+        "text": "5 先生 もっと学生を褒める"
+      },
+      {
+        "end": 97.06,
+        "start": 91.16,
+        "text": "先生にもっと学生を褒めてほしいです"
+      },
+      {
+        "end": 105.44,
+        "start": 97.06,
+        "text": "6 昔の彼氏 私を忘れる"
+      },
+      {
+        "end": 111.42,
+        "start": 105.44,
+        "text": "昔の彼氏に私を忘れてほしいです"
+      },
+      {
+        "end": 119.68,
+        "start": 111.42,
+        "text": "7 昔の彼女 幸せになる"
+      },
+      {
+        "end": 125.49,
+        "start": 119.68,
+        "text": "昔の彼女に幸せになってほしいです"
+      },
+      {
+        "end": 133.04,
+        "start": 125.49,
+        "text": "8 親 私を信じる"
+      },
+      {
+        "end": 138.28,
+        "start": 133.04,
+        "text": "親に 私を信じてほしいです"
+      }
+    ]
+  },
+  "W21_A": {
+    "duration": 77.22,
+    "language": "ja",
+    "languageProbability": 0.9861,
+    "segments": [
+      {
+        "end": 3,
+        "start": 0,
+        "text": "第21課"
+      },
+      {
+        "end": 5,
+        "start": 3,
+        "text": "聞く練習"
+      },
+      {
+        "end": 7.28,
+        "start": 5,
+        "text": "えい"
+      },
+      {
+        "end": 11.87,
+        "start": 7.28,
+        "text": "いち"
+      },
+      {
+        "end": 13.87,
+        "start": 11.87,
+        "text": "あああ"
+      },
+      {
+        "end": 15.87,
+        "start": 13.87,
+        "text": "眠い"
+      },
+      {
+        "end": 18.87,
+        "start": 15.87,
+        "text": "また遅くまでゲームしてたんでしょう"
+      },
+      {
+        "end": 20.87,
+        "start": 18.87,
+        "text": "してないよ"
+      },
+      {
+        "end": 25.87,
+        "start": 20.87,
+        "text": "今朝早く隣の人のアラームで起こされちゃったんだ"
+      },
+      {
+        "end": 28.87,
+        "start": 25.87,
+        "text": "その人すぐ起きないから"
+      },
+      {
+        "end": 31.87,
+        "start": 28.87,
+        "text": "うるさくて僕が落ちちゃうんだ"
+      },
+      {
+        "end": 34.87,
+        "start": 31.87,
+        "text": "これでもう3回目だよ"
+      },
+      {
+        "end": 38.87,
+        "start": 34.87,
+        "text": "静かにしてくださいって言ったほうがいいよ"
+      },
+      {
+        "end": 39.87,
+        "start": 38.87,
+        "text": "うーん"
+      },
+      {
+        "end": 43.24,
+        "start": 39.87,
+        "text": "2"
+      },
+      {
+        "end": 46.74,
+        "start": 43.24,
+        "text": "どうしたの?"
+      },
+      {
+        "end": 49.74,
+        "start": 46.74,
+        "text": "昨日と同じ服着て"
+      },
+      {
+        "end": 54.74,
+        "start": 49.74,
+        "text": "実は昨日の夜みんなで飲んで3時ごろ帰ったら"
+      },
+      {
+        "end": 58.74,
+        "start": 54.74,
+        "text": "奥さんに鍵をかけられちゃって"
+      },
+      {
+        "end": 61.74,
+        "start": 58.74,
+        "text": "家に入れてくれなかったの?"
+      },
+      {
+        "end": 62.74,
+        "start": 61.74,
+        "text": "うん"
+      },
+      {
+        "end": 65.74,
+        "start": 62.74,
+        "text": "だから昨日と同じ服"
+      },
+      {
+        "end": 70.74,
+        "start": 65.74,
+        "text": "今日は奥さんに何かプレゼント買って帰ったほうがいいよ"
+      }
+    ]
+  },
+  "W21_B": {
+    "duration": 73.53,
+    "language": "ja",
+    "languageProbability": 0.9837,
+    "segments": [
+      {
+        "end": 1.41,
+        "start": 0.11,
+        "text": "B"
+      },
+      {
+        "end": 7.06,
+        "start": 1.41,
+        "text": "元気ないな、ケント。どうしたんだ?"
+      },
+      {
+        "end": 10.26,
+        "start": 7.06,
+        "text": "今日は最悪な一日だったや。"
+      },
+      {
+        "end": 12.46,
+        "start": 10.26,
+        "text": "何があったんだよ?"
+      },
+      {
+        "end": 15.66,
+        "start": 12.46,
+        "text": "朝起きたら牛乳がなかった。"
+      },
+      {
+        "end": 21.66,
+        "start": 15.66,
+        "text": "冷蔵庫に入れてあったんだけど、ルームメートの林に全部飲まれたんだ。"
+      },
+      {
+        "end": 24.56,
+        "start": 21.66,
+        "text": "牛乳飲まれて怒っているのか?"
+      },
+      {
+        "end": 26.66,
+        "start": 24.56,
+        "text": "牛乳はいいよ。"
+      },
+      {
+        "end": 32.46,
+        "start": 26.96,
+        "text": "昨日の夜、パソコンで歴史のレポート書いていたんだよ。"
+      },
+      {
+        "end": 35.86,
+        "start": 32.46,
+        "text": "消さみたらファイルがないんだ。"
+      },
+      {
+        "end": 38.86,
+        "start": 35.86,
+        "text": "林にファイルを消されたんだ。"
+      },
+      {
+        "end": 42.36,
+        "start": 38.86,
+        "text": "え、それは大変だ。"
+      },
+      {
+        "end": 48.06,
+        "start": 42.36,
+        "text": "夜、僕のパソコンを使っている間に消しちゃったんだって。"
+      },
+      {
+        "end": 52.36,
+        "start": 48.06,
+        "text": "じゃあ、歴史のレポートは出さなかったのか?"
+      },
+      {
+        "end": 54.86,
+        "start": 52.36,
+        "text": "今日、締め切りだっただろう?"
+      },
+      {
+        "end": 56.16,
+        "start": 54.86,
+        "text": "うん。"
+      },
+      {
+        "end": 61.36,
+        "start": 56.16,
+        "text": "だから、経済のクラスで歴史のレポート書いていたんだ。"
+      },
+      {
+        "end": 65.36,
+        "start": 61.36,
+        "text": "それを先生に見られて怒られたんだよ。"
+      },
+      {
+        "end": 68.36,
+        "start": 65.36,
+        "text": "それはひどい一日だ。"
+      }
+    ]
+  },
+  "W21_C": {
+    "duration": 54.94,
+    "language": "ja",
+    "languageProbability": 0.9756,
+    "segments": [
+      {
+        "end": 14.62,
+        "start": 0.3,
+        "text": "すいすみません警察を呼んでほしいんですが どうなさったんですか"
+      },
+      {
+        "end": 22.62,
+        "start": 14.62,
+        "text": "温泉に行っている間に泥棒に入られたみたいなんです 財布が見つからないんです"
+      },
+      {
+        "end": 31.14,
+        "start": 22.62,
+        "text": "財布がどちらにあったか覚えていらっしゃいますか テーブルの上に置いてあったと思うんですが"
+      },
+      {
+        "end": 39.54,
+        "start": 31.14,
+        "text": "お部屋の鍵はおかけになりましたか 実はかけたかどうかよく覚えていないんです"
+      },
+      {
+        "end": 52.14,
+        "start": 39.54,
+        "text": "部屋に戻った時にドアが開いていたのでびっくりして では警察をお呼びしますのでお部屋でお待ちください"
+      }
+    ]
+  }
+}
