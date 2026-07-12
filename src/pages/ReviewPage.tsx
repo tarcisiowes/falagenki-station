@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { CheckCircle2, PartyPopper, Repeat, RotateCcw, XCircle } from 'lucide-react'
-import { JaText } from '../lib/JaText'
+import { StudyText } from '../lib/StudyText'
 import { getCourse } from '../data'
 import { allFlatQuestions, type FlatQuestion } from '../lib/dataAccess'
 import { customStore } from '../lib/customStore'
@@ -140,10 +140,10 @@ export function ReviewPage() {
           </div>
 
           {current.q.context && (
-            <div className="context ja"><JaText text={current.q.context} furigana={furigana} /></div>
+            <div className="context ja"><StudyText text={current.q.context} furigana={furigana} /></div>
           )}
           <div className="stem ja" style={{ fontSize: 18, margin: '6px 0 12px' }}>
-            <JaText text={current.q.prompt} furigana={furigana} />
+            <StudyText text={current.q.prompt} furigana={furigana} />
           </div>
 
           {current.q.audio && (
@@ -152,7 +152,7 @@ export function ReviewPage() {
             </div>
           )}
 
-          {current.q.helpPt && <StudyHelp><JaText text={current.q.helpPt} furigana={furigana} /></StudyHelp>}
+          {current.q.helpPt && <StudyHelp><StudyText text={current.q.helpPt} furigana={furigana} /></StudyHelp>}
 
           <div className="choices">
             {order.map((c, i) => {
@@ -163,7 +163,7 @@ export function ReviewPage() {
               return (
                 <button key={c.n} className={cls} disabled={revealed} onClick={() => setSelected(c.n)} type="button">
                   <span className="num">{i + 1}</span>
-                  <JaText text={c.text} furigana={furigana} />
+                  <StudyText text={c.text} furigana={furigana} />
                 </button>
               )
             })}
@@ -188,7 +188,7 @@ export function ReviewPage() {
                     : (correct ? 'Você acertou' : `Errou — correta: ${answerDisplay}`)}
                 </div>
                 {current.q.translationPt && <div className="tr">“{current.q.translationPt}”</div>}
-                <div>{current.q.explanationPt}</div>
+                <div><StudyText text={current.q.explanationPt} furigana={furigana} /></div>
               </div>
 
               <div className="grade-row">

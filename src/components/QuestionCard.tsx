@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { CheckCircle2, NotebookPen, RotateCcw, XCircle } from 'lucide-react'
 import type { Question } from '../data/types'
-import { JaText } from '../lib/JaText'
+import { StudyText } from '../lib/StudyText'
 import { setAnswer, useAnswer } from '../lib/storage'
 import { gradeCard } from '../lib/reviewStore'
 import { useShuffledChoices } from '../lib/choiceOrder'
@@ -45,11 +45,11 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
         <div style={{ flex: 1 }}>
           {q.context && (
             <div className="context ja">
-              <JaText text={q.context} furigana={furigana} />
+              <StudyText text={q.context} furigana={furigana} />
             </div>
           )}
           <div className="stem ja">
-            <JaText text={q.prompt} furigana={furigana} />
+            <StudyText text={q.prompt} furigana={furigana} />
           </div>
 
           {q.audio && (
@@ -58,7 +58,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
             </div>
           )}
 
-          {q.helpPt && <StudyHelp><JaText text={q.helpPt} furigana={furigana} /></StudyHelp>}
+          {q.helpPt && <StudyHelp><StudyText text={q.helpPt} furigana={furigana} /></StudyHelp>}
 
           {q.image && (
             <img
@@ -85,7 +85,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
               return (
                 <button key={c.n} className={cls} disabled={checked} onClick={() => choose(c.n)} type="button">
                   <span className="num">{i + 1}</span>
-                  <JaText text={c.text} furigana={furigana} />
+                  <StudyText text={c.text} furigana={furigana} />
                 </button>
               )
             })}
@@ -127,7 +127,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
                   : (isCorrect ? 'Correto!' : `Resposta correta: ${answerDisplay}`)}
               </div>
               {q.translationPt && <div className="tr">“{q.translationPt}”</div>}
-              <div>{q.explanationPt}</div>
+              <div><StudyText text={q.explanationPt} furigana={furigana} /></div>
               <div
                 style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 8, fontSize: 12, opacity: 0.85 }}
               >

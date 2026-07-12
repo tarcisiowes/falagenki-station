@@ -45,7 +45,7 @@ export function getAudioStudyCapabilities(track: AudioTrack): AudioStudyCapabili
 
 const KIND_LABELS: Record<AudioTrackKind, string> = {
   dialogue: 'Diálogo em japonês',
-  'dialogue-support': 'Apoio de sentido',
+  'dialogue-support': 'Repeti\u00e7\u00e3o guiada',
   reading: 'Leitura em voz alta',
   vocabulary: 'Treino de vocabulário',
   drill: 'Prática guiada',

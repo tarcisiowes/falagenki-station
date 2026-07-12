@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest'
 import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { genki1 } from './genki-1'
+import { genki2 } from './genki-2'
 import { allFlatQuestions } from '../lib/dataAccess'
+import { audioKindLabelPt } from '../lib/audioStudy'
 
 describe('Genki I audio study contract', () => {
   const tracks = genki1.sections.flatMap((section) => section.audios ?? [])
@@ -170,6 +172,44 @@ describe('Genki I audio study contract', () => {
     for (const track of machineTracks) {
       expect(track.transcript?.kind, track.id).toBe('excerpt')
       expect(track.transcript?.reviewed, track.id).toBe(false)
+    }
+  })
+
+  it('treats official dialogue repeats as guided mixed-language practice', () => {
+    const expectedCounts = new Map([
+      ['genki-1', 29],
+      ['genki-2', 31],
+    ])
+
+    for (const level of [genki1, genki2]) {
+      const levelTracks = level.sections.flatMap((section) => section.audios ?? [])
+      const repeats = levelTracks.filter((track) => track.sourceActivityPt?.includes('(repeti\u00e7\u00e3o)'))
+      expect(repeats, level.id).toHaveLength(expectedCounts.get(level.id) ?? 0)
+
+      for (const track of repeats) {
+        expect(track.kind, track.id).toBe('dialogue-support')
+        expect(track.language, track.id).toBe('mixed')
+        expect(track.title, track.id).toBe(track.sourceActivityPt)
+        expect(track.title, track.id).not.toMatch(/apoio em ingl\u00eas/iu)
+        expect(track.purposePt, track.id).toContain('Repeti\u00e7\u00e3o guiada')
+        expect(track.instructionsPt?.join(' '), track.id).toContain('repita em voz alta')
+        expect(track.practiceTaskPt, track.id).toContain('produza novamente sem ler')
+        expect(audioKindLabelPt(track.kind), track.id).toBe('Repeti\u00e7\u00e3o guiada')
+      }
+    }
+  })
+
+  it('uses a neutral speaker label for unreviewed machine transcripts', () => {
+    for (const level of [genki1, genki2]) {
+      const machineTracks = level.sections
+        .flatMap((section) => section.audios ?? [])
+        .filter((track) => track.transcript?.source === 'machine')
+
+      for (const track of machineTracks) {
+        for (const item of track.transcript?.items ?? []) {
+          for (const line of item.lines) expect(line.speaker, track.id).toBe('\u00c1udio')
+        }
+      }
     }
   })
 })

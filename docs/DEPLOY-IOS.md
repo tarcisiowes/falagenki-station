@@ -86,9 +86,13 @@ AirDrop/e-mail → importa no iPhone.
 ## Notas
 
 - Offline/PWA = `manifest.webmanifest` + `sw.js` gerados no build. O service
-  worker faz precache do app-shell, imagens e todos os audios publicados.
-- Primeiro carregamento offline baixa ~1.16 GiB. No iOS, o cache pode falhar se
-  o aparelho/navegador negar espaco suficiente.
+  worker faz precache somente do app shell; imagens e arquivos de audio ficam
+  fora do precache para evitar um download inicial muito grande.
+- Audio e imagens entram no cache sob demanda, conforme o estudante abre cada
+  recurso. O cache de audio guarda ate 120 faixas por ate 90 dias, remove as
+  mais antigas quando necessario e preserva suporte a pedidos de byte range.
+- No iOS, o navegador ainda pode remover dados armazenados quando houver pouca
+  capacidade livre; portanto, cache offline nao substitui o backup do progresso.
 - Deploys futuros: só repetir Passo 3.
 
 ## Melhorias opcionais

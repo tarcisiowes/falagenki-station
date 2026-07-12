@@ -172,7 +172,7 @@ docs/
 - Learner-facing explanations are in Brazilian Portuguese.
 - Japanese source text is preserved with the local furigana convention.
 - Irodori source material is maintained separately under local docs and translated/adapted into structured app data.
-- Genki is implemented incrementally by lesson with pt-BR explanations, interactive exercises, source audio, practical help blocks, and FSRS review cards.
+- Genki I and Genki II are complete through Lesson 23, with pt-BR explanations, interactive exercises, official source audio, practical help blocks, and FSRS review cards. Every published audio track has a transcript or clearly disclosed machine-generated support text and links to direct, reviewable practice.
 
 ### Audio Authoring
 

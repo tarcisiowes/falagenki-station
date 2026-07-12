@@ -108,6 +108,11 @@ const reading: ScriptItem[] = [{
   ],
 }]
 
+dialogueOne[0].label = '{\u4f1a\u8a71|\u304b\u3044\u308f} I'
+dialogueTwo[0].label = '{\u4f1a\u8a71|\u304b\u3044\u308f} II'
+dialogueThree[0].label = '{\u4f1a\u8a71|\u304b\u3044\u308f} III'
+reading[0].label = '{\u6a4b\u672c|\u306f\u3057\u3082\u3068}\u304f\u3093\u306e{\u5927\u5b66\u751f\u6d3b|\u3060\u3044\u304c\u304f\u305b\u3044\u304b\u3064}'
+
 for (const item of [...dialogueOne, ...dialogueTwo]) {
   for (const line of item.lines) {
     line.ja = line.ja

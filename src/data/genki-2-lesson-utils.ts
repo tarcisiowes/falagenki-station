@@ -22,7 +22,7 @@ interface AudioBuildOptions {
 
 const purposeByKind: Record<AudioTrackKind, string> = {
   dialogue: 'Compreender a situação, a intenção dos falantes e as estruturas centrais em fala natural.',
-  'dialogue-support': 'Confirmar o sentido do diálogo somente depois de tentar compreender a versão japonesa.',
+  'dialogue-support': 'Repeti\u00e7\u00e3o guiada para automatizar ritmo, pron\u00fancia e entona\u00e7\u00e3o do di\u00e1logo.',
   reading: 'Acompanhar uma leitura contínua, localizar informações e praticar ritmo e entonação.',
   vocabulary: 'Reconhecer e produzir o vocabulário da lição antes de usá-lo nas atividades.',
   drill: 'Pausar antes do modelo, produzir a estrutura-alvo e comparar forma e pronúncia.',
@@ -37,9 +37,9 @@ const instructionsByKind: Record<AudioTrackKind, string[]> = {
     'Confira a transcrição e repita em voz alta os trechos difíceis.',
   ],
   'dialogue-support': [
-    'Ouça primeiro a versão japonesa.',
-    'Explique com suas palavras o que entendeu e use esta faixa apenas para conferir.',
-    'Volte ao japonês e repita o trecho que não reconheceu.',
+    'Ou\u00e7a a instru\u00e7\u00e3o curta e prepare a fala antes do modelo.',
+    'Pause em cada bloco, repita em voz alta e imite ritmo e entona\u00e7\u00e3o.',
+    'Repita sem ler e registre honestamente se conseguiu acompanhar.',
   ],
   reading: [
     'Ouça sem ler e anote o tema e duas informações reconhecidas.',
@@ -131,13 +131,17 @@ function inferKind(code: string, options: AudioBuildOptions): AudioTrackKind {
   return 'drill'
 }
 
+function guidedRepeatTask(activity: string, page: number): string {
+  return `Fa\u00e7a ${activity} (p. ${page}): ou\u00e7a cada bloco, pause, repita em voz alta e depois produza novamente sem ler, comparando ritmo e pron\u00fancia com o modelo.`
+}
+
 function practiceTask(kind: AudioTrackKind, activity: string, page: number): string {
   const source = `${activity} (p. ${page})`
   if (kind === 'dialogue') {
     return `Ouça ${source} sem roteiro, identifique situação e intenção e responda aos cartões antes de conferir a transcrição.`
   }
   if (kind === 'dialogue-support') {
-    return `Tente primeiro o diálogo japonês de ${source}; formule o sentido, confira com esta faixa e volte à gravação original.`
+    return guidedRepeatTask(activity, page)
   }
   if (kind === 'reading') {
     return `Use ${source}: ouça sem ler, localize o tema e detalhes e depois acompanhe e repita um trecho no ritmo da gravação.`
@@ -167,7 +171,7 @@ export function buildGenki2Audios(options: AudioBuildOptions): AudioTrack[] {
         id: genki2TrackId(options.lesson, code),
         code,
         kind,
-        language: kind === 'dialogue-support' ? 'en' : kind === 'dialogue' || kind === 'reading' ? 'ja' : 'mixed',
+        language: kind === 'dialogue-support' ? 'mixed' : kind === 'dialogue' || kind === 'reading' ? 'ja' : 'mixed',
         title: source.sourceActivityPt,
         descriptionPt: `Faixa oficial da atividade “${source.sourceActivityPt}”, na página ${source.sourcePage} do ${source.material === 'workbook' ? 'workbook' : 'textbook'}.`,
         purposePt: purposeByKind[kind],

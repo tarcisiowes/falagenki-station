@@ -68,7 +68,7 @@ const READING_ASSIGNMENTS: Record<string, ReadingAssignment> = {
 
 const PURPOSES: Record<AudioTrackKind, string> = {
   dialogue: 'Compreender a situação e reconhecer as estruturas centrais da lição em fala natural.',
-  'dialogue-support': 'Confirmar o sentido do diálogo depois de tentar compreendê-lo em japonês.',
+  'dialogue-support': 'Repeti\u00e7\u00e3o guiada para automatizar ritmo, pron\u00fancia e entona\u00e7\u00e3o sem perder o sentido do di\u00e1logo.',
   reading: 'Acompanhar uma leitura contínua, perceber ritmo e entonação e conferir a compreensão de detalhes.',
   vocabulary: 'Treinar reconhecimento e produção oral do vocabulário antes de usá-lo nas atividades.',
   drill: 'Ouvir o modelo do textbook, pausar e produzir uma resposta própria antes da gravação.',
@@ -83,9 +83,9 @@ const INSTRUCTIONS: Record<AudioTrackKind, string[]> = {
     'Abra o roteiro, confira os trechos difíceis e repita em voz alta acompanhando o ritmo.',
   ],
   'dialogue-support': [
-    'Tente primeiro a versão japonesa do diálogo.',
-    'Use esta faixa somente para confirmar o sentido geral que você entendeu.',
-    'Volte ao japonês e repita as partes que não reconheceu na primeira escuta.',
+    'Ou\u00e7a a instru\u00e7\u00e3o curta e prepare a fala antes do modelo.',
+    'Pause em cada bloco, repita em voz alta e imite ritmo e entona\u00e7\u00e3o.',
+    'Fa\u00e7a outra passagem sem ler e registre honestamente se conseguiu acompanhar.',
   ],
   reading: [
     'Ouça uma vez sem ler e anote o tema e duas informações que reconheceu.',
@@ -150,7 +150,7 @@ function inferKind(track: AudioTrack, allTracks: AudioTrack[]): AudioTrackKind {
 }
 
 function inferLanguage(kind: AudioTrackKind): AudioTrack['language'] {
-  if (kind === 'dialogue-support') return 'en'
+  if (kind === 'dialogue-support') return 'mixed'
   if (kind === 'vocabulary' || kind === 'drill' || kind === 'workbook') return 'mixed'
   return 'ja'
 }
@@ -188,11 +188,19 @@ function sourceDescription(source: Genki1AudioSourceMetadata): string {
   return `Faixa oficial da atividade “${source.sourceActivityPt}”, na página ${source.sourcePage} do ${material}.`
 }
 
+function isDialogueRepeat(source?: { sourceTitleEn: string }): boolean {
+  return source?.sourceTitleEn.toLocaleLowerCase('en').includes('(repeat)') ?? false
+}
+
+function guidedRepeatPracticeTask(source: Genki1AudioSourceMetadata): string {
+  return `Fa\u00e7a a atividade ${source.sourceActivityPt} (p. ${source.sourcePage}): ou\u00e7a cada bloco, pause, repita em voz alta e depois produza novamente sem ler, comparando ritmo e pron\u00fancia com o modelo.`
+}
+
 function practiceTask(kind: AudioTrackKind, source?: Genki1AudioSourceMetadata): string | undefined {
   if (!source) return undefined
   const activity = `${source.sourceActivityPt} (p. ${source.sourcePage})`
   if (kind === 'dialogue-support') {
-    return `Ouça primeiro o diálogo em japonês e formule o sentido com suas palavras. Só então use a atividade ${activity} para conferir e volte à faixa japonesa.`
+    return guidedRepeatPracticeTask(source)
   }
   if (kind === 'vocabulary') {
     return `Faça a atividade ${activity}: pause antes de cada equivalente, recupere a palavra em voz alta e compare sua pronúncia com o modelo.`
@@ -234,7 +242,7 @@ function machineTranscript(
       || current.lines.length >= 12
       || segment.start - (current.time ?? segment.start) >= 45
     const line = {
-      speaker: data.language === 'en' ? 'EN' : 'Áudio',
+      speaker: '\u00c1udio',
       ja: segment.text,
       pt: '',
     }
@@ -324,7 +332,7 @@ function audioQuestionHelp(track: AudioTrack): string {
 function selfCheckPrompt(track: AudioTrack): string {
   if (track.practiceTaskPt) return track.practiceTaskPt
   if (track.kind === 'dialogue-support') {
-    return 'Use o apoio somente depois da versão japonesa e volte ao diálogo original para confirmar o que reconheceu.'
+    return 'Pause em cada bloco, repita em voz alta e depois produza novamente sem depender da leitura.'
   }
   if (track.kind === 'vocabulary') {
     return 'Pause antes da resposta gravada e produza cada palavra em voz alta.'
@@ -342,11 +350,11 @@ function selfCheckChoices(track: AudioTrack): Pick<Question, 'choices' | 'answer
   if (track.kind === 'dialogue-support') {
     return {
       choices: [
-        { n: 1, text: 'Consultei o apoio cedo demais ou ainda não consegui confirmar o sentido do diálogo japonês.' },
-        { n: 2, text: 'Ouvi o japonês primeiro, formulei minha interpretação e usei o apoio só para conferir.' },
+        { n: 1, text: 'Ainda n\u00e3o consegui repetir os blocos no ritmo do modelo; preciso praticar de novo.' },
+        { n: 2, text: 'Repeti os blocos em voz alta e consegui refazer o trecho sem depender da leitura.' },
       ],
       answer: 2,
-      explanationPt: 'Esta é uma autoavaliação de estratégia. Marque a primeira opção se o apoio substituiu sua escuta; marque a segunda somente se você tentou compreender o japonês antes, conferiu o sentido e voltou à faixa original.',
+      explanationPt: 'Esta \u00e9 uma autoavalia\u00e7\u00e3o de repeti\u00e7\u00e3o guiada. Marque a segunda op\u00e7\u00e3o somente depois de imitar o modelo e produzir o trecho novamente sem ler.',
     }
   }
   if (track.kind === 'vocabulary') {
@@ -387,12 +395,14 @@ function enrichSection(
   const originalTracks = section.audios ?? []
   const tracks = originalTracks.map((track) => {
     const code = trackCode(track)
-    const kind = inferKind(track, originalTracks)
+    const inferredKind = inferKind(track, originalTracks)
     const source = level.id === 'genki-1'
       ? genki1AudioSourceByCode[code]
       : level.id === 'genki-2'
         ? genki2AudioSourceByCode[code]
         : undefined
+    const repeat = isDialogueRepeat(source)
+    const kind: AudioTrackKind = repeat ? 'dialogue-support' : inferredKind
     return {
       ...track,
       title: source && isGenericTrackTitle(track.title, code) ? source.sourceActivityPt : track.title,
@@ -408,6 +418,16 @@ function enrichSection(
       sourceActivityPt: track.sourceActivityPt ?? source?.sourceActivityPt,
       sourcePage: track.sourcePage ?? source?.sourcePage,
       practiceTaskPt: track.practiceTaskPt ?? practiceTask(kind, source),
+      ...(repeat && source
+        ? {
+            title: source.sourceActivityPt,
+            descriptionPt: sourceDescription(source),
+            language: 'mixed' as const,
+            purposePt: `${PURPOSES['dialogue-support']} Atividade-fonte: ${source.sourceActivityPt}, p. ${source.sourcePage}.`,
+            instructionsPt: INSTRUCTIONS['dialogue-support'],
+            practiceTaskPt: guidedRepeatPracticeTask(source),
+          }
+        : {}),
       transcript: track.transcript ?? (hasScript(track)
         ? { kind: 'excerpt' as const, source: 'manual' as const, reviewed: false, items: track.script }
         : machineTranscript(level, code, machineTranscripts)),
