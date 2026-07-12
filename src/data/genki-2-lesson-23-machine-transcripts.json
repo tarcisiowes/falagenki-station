@@ -1,0 +1,2717 @@
+{
+  "K23_01": {
+    "duration": 47.65,
+    "language": "ja",
+    "languageProbability": 0.9941,
+    "segments": [
+      {
+        "end": 3.05,
+        "start": 0.05,
+        "text": "第23課"
+      },
+      {
+        "end": 7.52,
+        "start": 3.05,
+        "text": "別れ 会話"
+      },
+      {
+        "end": 10.52,
+        "start": 7.52,
+        "text": "1"
+      },
+      {
+        "end": 14.52,
+        "start": 10.52,
+        "text": "メアリーがいなくなると寂しくなるねー"
+      },
+      {
+        "end": 21.52,
+        "start": 14.52,
+        "text": "でも、来年大学を卒業したらまた日本に戻ってきますから"
+      },
+      {
+        "end": 26.52,
+        "start": 21.52,
+        "text": "お父さん、お母さん、本当にお世話になりました"
+      },
+      {
+        "end": 30.52,
+        "start": 26.52,
+        "text": "私たちもメアリーがいてとても楽しかったよ"
+      },
+      {
+        "end": 35.52,
+        "start": 30.52,
+        "text": "国に帰っても私たちのことを忘れないでね"
+      },
+      {
+        "end": 40.52,
+        "start": 35.52,
+        "text": "もちろん、アメリカにも遊びに来てください"
+      },
+      {
+        "end": 44.52,
+        "start": 40.52,
+        "text": "じゃあ、この夏はアメリカに行くことにしよう"
+      },
+      {
+        "end": 46.52,
+        "start": 44.52,
+        "text": "そうね"
+      }
+    ]
+  },
+  "K23_02": {
+    "duration": 76.8,
+    "language": "ja",
+    "languageProbability": 0.8392,
+    "segments": [
+      {
+        "end": 4.42,
+        "start": 0.14,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 7.42,
+        "start": 4.42,
+        "text": "メアリーがいなくなると寂しくなるね"
+      },
+      {
+        "end": 25.4,
+        "start": 7.42,
+        "text": "でも来年大学を卒業したらまた日本に戻ってきますから"
+      },
+      {
+        "end": 35.9,
+        "start": 25.4,
+        "text": "お父さんお母さん本当にお世話になりました"
+      },
+      {
+        "end": 44.32,
+        "start": 35.9,
+        "text": "私たちもメアリーがいてとても楽しかったよ"
+      },
+      {
+        "end": 48.32,
+        "start": 44.32,
+        "text": "国に帰っても私たちのことを忘れないでね"
+      },
+      {
+        "end": 59.1,
+        "start": 48.32,
+        "text": "もちろんアメリカにも遊びに来てください"
+      },
+      {
+        "end": 66.59,
+        "start": 59.1,
+        "text": "じゃあこの夏はアメリカに行くことにしよう"
+      },
+      {
+        "end": 73.23,
+        "start": 66.59,
+        "text": "そうね"
+      }
+    ]
+  },
+  "K23_03": {
+    "duration": 43.91,
+    "language": "ja",
+    "languageProbability": 0.9852,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "二"
+      },
+      {
+        "end": 6.11,
+        "start": 2.11,
+        "text": "この一年、いろいろなことがあったね"
+      },
+      {
+        "end": 11.11,
+        "start": 6.11,
+        "text": "そうそう、デートの時、よく待たされた"
+      },
+      {
+        "end": 18.11,
+        "start": 11.11,
+        "text": "僕が約束の場所を間違えて、後でものすごく怒られたり"
+      },
+      {
+        "end": 24.11,
+        "start": 18.11,
+        "text": "たけしくんが作った料理を食べさせられて、お腹を壊したり"
+      },
+      {
+        "end": 30.11,
+        "start": 24.11,
+        "text": "初めて一緒に踊った時、ぼん踊りみたいだって笑われた"
+      },
+      {
+        "end": 35.11,
+        "start": 30.11,
+        "text": "あの時は、足を踏まれて痛かった"
+      },
+      {
+        "end": 40.11,
+        "start": 35.11,
+        "text": "考え方が違うから、喧嘩もよくしたね"
+      },
+      {
+        "end": 44.11,
+        "start": 40.11,
+        "text": "でもみんないい思い出だね"
+      }
+    ]
+  },
+  "K23_04": {
+    "duration": 82.16,
+    "language": "ja",
+    "languageProbability": 0.9011,
+    "segments": [
+      {
+        "end": 4.52,
+        "start": 0.11,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 7.52,
+        "start": 4.52,
+        "text": "この1年いろいろなことがあったね"
+      },
+      {
+        "end": 18.6,
+        "start": 7.52,
+        "text": "そうそう デートの時よく待たされた"
+      },
+      {
+        "end": 25.44,
+        "start": 18.6,
+        "text": "僕が約束の場所を間違えて"
+      },
+      {
+        "end": 34.62,
+        "start": 25.44,
+        "text": "後でものすごく怒られたり"
+      },
+      {
+        "end": 37.62,
+        "start": 34.62,
+        "text": "たけし君が作った料理を食べさせられて"
+      },
+      {
+        "end": 39.62,
+        "start": 37.62,
+        "text": "お腹を壊したり"
+      },
+      {
+        "end": 48.66,
+        "start": 39.62,
+        "text": "初めて一緒に踊った時"
+      },
+      {
+        "end": 57.39,
+        "start": 48.66,
+        "text": "ボン踊りみたいだって笑われた"
+      },
+      {
+        "end": 61.39,
+        "start": 57.39,
+        "text": "あの時は足を踏まれていたかった"
+      },
+      {
+        "end": 70.38,
+        "start": 61.39,
+        "text": "考え方が違うから喧嘩もよくしたね"
+      },
+      {
+        "end": 77.83,
+        "start": 70.38,
+        "text": "でもみんないい思い出だね"
+      }
+    ]
+  },
+  "K23_05": {
+    "duration": 28.45,
+    "language": "ja",
+    "languageProbability": 0.9917,
+    "segments": [
+      {
+        "end": 2.21,
+        "start": 0.21,
+        "text": "さん"
+      },
+      {
+        "end": 5.21,
+        "start": 2.21,
+        "text": "じゃあ元気でね"
+      },
+      {
+        "end": 8.21,
+        "start": 5.21,
+        "text": "うん、たけし君も"
+      },
+      {
+        "end": 12.21,
+        "start": 8.21,
+        "text": "たけし君に会えて本当によかった"
+      },
+      {
+        "end": 15.21,
+        "start": 12.21,
+        "text": "そんな悲しそうな顔しないで"
+      },
+      {
+        "end": 17.21,
+        "start": 15.21,
+        "text": "わかってる"
+      },
+      {
+        "end": 21.21,
+        "start": 17.21,
+        "text": "じゃあそろそろ行かなきゃ"
+      },
+      {
+        "end": 27.21,
+        "start": 21.21,
+        "text": "メアリーが卒業して日本に戻ってくるまで待っているから"
+      }
+    ]
+  },
+  "K23_06": {
+    "duration": 51.88,
+    "language": "ja",
+    "languageProbability": 0.8704,
+    "segments": [
+      {
+        "end": 3.11,
+        "start": 0.11,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 6.11,
+        "start": 4.11,
+        "text": "じゃあ元気でね"
+      },
+      {
+        "end": 22.57,
+        "start": 6.11,
+        "text": "タケシ君もタケシ君に会えて本当に良かった"
+      },
+      {
+        "end": 28.83,
+        "start": 22.57,
+        "text": "そんな悲しそうな顔しないで"
+      },
+      {
+        "end": 29.83,
+        "start": 28.83,
+        "text": "わかってる"
+      },
+      {
+        "end": 39.37,
+        "start": 29.83,
+        "text": "じゃあそろそろ行かなきゃ"
+      },
+      {
+        "end": 44.37,
+        "start": 39.37,
+        "text": "メアリーが卒業して日本に戻ってくるまで待っているから"
+      }
+    ]
+  },
+  "K23_07": {
+    "duration": 296.72,
+    "language": "ja",
+    "languageProbability": 0.7007,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第23課"
+      },
+      {
+        "end": 5.58,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 8.08,
+        "start": 5.58,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.58,
+        "start": 8.08,
+        "text": "靴下"
+      },
+      {
+        "end": 13.08,
+        "start": 10.58,
+        "text": "Socks"
+      },
+      {
+        "end": 15.58,
+        "start": 13.08,
+        "text": "袋"
+      },
+      {
+        "end": 17.08,
+        "start": 15.58,
+        "text": "Sack"
+      },
+      {
+        "end": 18.58,
+        "start": 17.08,
+        "text": "Plastic bag"
+      },
+      {
+        "end": 21.08,
+        "start": 18.58,
+        "text": "Paper bag"
+      },
+      {
+        "end": 23.08,
+        "start": 21.08,
+        "text": "ただ"
+      },
+      {
+        "end": 26.08,
+        "start": 23.08,
+        "text": "Free of charge"
+      },
+      {
+        "end": 28.58,
+        "start": 26.08,
+        "text": "夕食"
+      },
+      {
+        "end": 30.58,
+        "start": 28.58,
+        "text": "Dinner"
+      },
+      {
+        "end": 33.08,
+        "start": 30.58,
+        "text": "場所"
+      },
+      {
+        "end": 35.08,
+        "start": 33.08,
+        "text": "Place"
+      },
+      {
+        "end": 37.58,
+        "start": 35.08,
+        "text": "階段"
+      },
+      {
+        "end": 40.08,
+        "start": 37.58,
+        "text": "Stairs"
+      },
+      {
+        "end": 43.08,
+        "start": 40.08,
+        "text": "小学校"
+      },
+      {
+        "end": 46.08,
+        "start": 43.08,
+        "text": "Elementary school"
+      },
+      {
+        "end": 48.58,
+        "start": 46.08,
+        "text": "面接"
+      },
+      {
+        "end": 51.08,
+        "start": 48.58,
+        "text": "Interview"
+      },
+      {
+        "end": 53.58,
+        "start": 51.08,
+        "text": "健康"
+      },
+      {
+        "end": 56.08,
+        "start": 53.58,
+        "text": "Health"
+      },
+      {
+        "end": 58.58,
+        "start": 56.08,
+        "text": "理想"
+      },
+      {
+        "end": 61.08,
+        "start": 58.58,
+        "text": "Ideal"
+      },
+      {
+        "end": 63.58,
+        "start": 61.08,
+        "text": "ルスバン"
+      },
+      {
+        "end": 68.58,
+        "start": 63.58,
+        "text": "Looking after a house during someone's absence."
+      },
+      {
+        "end": 71.08,
+        "start": 68.58,
+        "text": "メッセージ"
+      },
+      {
+        "end": 72.58,
+        "start": 71.08,
+        "text": "Message"
+      },
+      {
+        "end": 74.58,
+        "start": 72.58,
+        "text": "Text"
+      },
+      {
+        "end": 77.08,
+        "start": 74.58,
+        "text": "休校"
+      },
+      {
+        "end": 80.58,
+        "start": 77.08,
+        "text": "Class cancellation"
+      },
+      {
+        "end": 83.58,
+        "start": 80.58,
+        "text": "海外旅行"
+      },
+      {
+        "end": 87.08,
+        "start": 83.58,
+        "text": "Trip to a foreign country"
+      },
+      {
+        "end": 89.58,
+        "start": 87.08,
+        "text": "ボン踊り"
+      },
+      {
+        "end": 92.58,
+        "start": 89.58,
+        "text": "Bond dance"
+      },
+      {
+        "end": 95.08,
+        "start": 92.58,
+        "text": "思い出"
+      },
+      {
+        "end": 97.08,
+        "start": 95.08,
+        "text": "Memory"
+      },
+      {
+        "end": 99.58,
+        "start": 97.08,
+        "text": "社会"
+      },
+      {
+        "end": 102.08,
+        "start": 99.58,
+        "text": "Society"
+      },
+      {
+        "end": 104.58,
+        "start": 102.08,
+        "text": "結果"
+      },
+      {
+        "end": 107.08,
+        "start": 104.58,
+        "text": "Result"
+      },
+      {
+        "end": 109.58,
+        "start": 107.08,
+        "text": "調査"
+      },
+      {
+        "end": 112.08,
+        "start": 109.58,
+        "text": "Survey"
+      },
+      {
+        "end": 114.58,
+        "start": 112.08,
+        "text": "Adjective"
+      },
+      {
+        "end": 116.58,
+        "start": 114.58,
+        "text": "まずい"
+      },
+      {
+        "end": 119.08,
+        "start": 116.58,
+        "text": "Terrible"
+      },
+      {
+        "end": 122.08,
+        "start": 119.08,
+        "text": "Nah adjective"
+      },
+      {
+        "end": 125.08,
+        "start": 122.08,
+        "text": "かわいそうな"
+      },
+      {
+        "end": 126.58,
+        "start": 125.08,
+        "text": "Pitiful"
+      },
+      {
+        "end": 128.08,
+        "start": 126.58,
+        "text": "Feel sorry for"
+      },
+      {
+        "end": 130.58,
+        "start": 128.08,
+        "text": "Poor thing"
+      },
+      {
+        "end": 133.08,
+        "start": 130.58,
+        "text": "Uverbs"
+      },
+      {
+        "end": 136.08,
+        "start": 133.08,
+        "text": "雨が止む"
+      },
+      {
+        "end": 139.08,
+        "start": 136.08,
+        "text": "The rain stops"
+      },
+      {
+        "end": 141.58,
+        "start": 139.08,
+        "text": "違う"
+      },
+      {
+        "end": 143.08,
+        "start": 141.58,
+        "text": "To be different"
+      },
+      {
+        "end": 146.08,
+        "start": 143.08,
+        "text": "To be wrong"
+      },
+      {
+        "end": 148.58,
+        "start": 146.08,
+        "text": "亡くなる"
+      },
+      {
+        "end": 150.08,
+        "start": 148.58,
+        "text": "To be lost"
+      },
+      {
+        "end": 152.58,
+        "start": 150.08,
+        "text": "To disappear"
+      },
+      {
+        "end": 155.08,
+        "start": 152.58,
+        "text": "いなくなる"
+      },
+      {
+        "end": 156.58,
+        "start": 155.08,
+        "text": "Is gone"
+      },
+      {
+        "end": 159.08,
+        "start": 156.58,
+        "text": "To disappear"
+      },
+      {
+        "end": 162.08,
+        "start": 159.08,
+        "text": "お世話になる"
+      },
+      {
+        "end": 165.08,
+        "start": 162.08,
+        "text": "To be in someone's care"
+      },
+      {
+        "end": 168.08,
+        "start": 165.08,
+        "text": "お腹を壊す"
+      },
+      {
+        "end": 171.08,
+        "start": 168.08,
+        "text": "To have a stomachache"
+      },
+      {
+        "end": 174.58,
+        "start": 171.58,
+        "text": "気に入る"
+      },
+      {
+        "end": 177.58,
+        "start": 174.58,
+        "text": "To find something agreeable"
+      },
+      {
+        "end": 180.58,
+        "start": 177.58,
+        "text": "悪口を言う"
+      },
+      {
+        "end": 184.58,
+        "start": 180.58,
+        "text": "To talk behind someone's back"
+      },
+      {
+        "end": 187.58,
+        "start": 184.58,
+        "text": "Roo verbs"
+      },
+      {
+        "end": 189.58,
+        "start": 187.58,
+        "text": "答える"
+      },
+      {
+        "end": 192.58,
+        "start": 189.58,
+        "text": "To answer"
+      },
+      {
+        "end": 194.58,
+        "start": 192.58,
+        "text": "離れる"
+      },
+      {
+        "end": 196.58,
+        "start": 194.58,
+        "text": "Separates"
+      },
+      {
+        "end": 199.58,
+        "start": 196.58,
+        "text": "Parts from"
+      },
+      {
+        "end": 202.08,
+        "start": 199.58,
+        "text": "Verbs"
+      },
+      {
+        "end": 204.08,
+        "start": 202.08,
+        "text": "がっかりする"
+      },
+      {
+        "end": 207.08,
+        "start": 204.08,
+        "text": "To be disappointed"
+      },
+      {
+        "end": 210.08,
+        "start": 207.08,
+        "text": "画面する"
+      },
+      {
+        "end": 212.08,
+        "start": 210.08,
+        "text": "To be tolerant"
+      },
+      {
+        "end": 214.08,
+        "start": 212.08,
+        "text": "To be patient"
+      },
+      {
+        "end": 217.08,
+        "start": 214.08,
+        "text": "道場する"
+      },
+      {
+        "end": 220.08,
+        "start": 217.08,
+        "text": "To sympathize"
+      },
+      {
+        "end": 223.08,
+        "start": 220.08,
+        "text": "顔をする"
+      },
+      {
+        "end": 225.08,
+        "start": 223.08,
+        "text": "To look"
+      },
+      {
+        "end": 228.08,
+        "start": 225.08,
+        "text": "カンニングする"
+      },
+      {
+        "end": 230.58,
+        "start": 228.08,
+        "text": "To cheat in an exam"
+      },
+      {
+        "end": 233.58,
+        "start": 230.58,
+        "text": "チェックする"
+      },
+      {
+        "end": 235.58,
+        "start": 233.58,
+        "text": "To check"
+      },
+      {
+        "end": 238.58,
+        "start": 235.58,
+        "text": "世話をする"
+      },
+      {
+        "end": 241.58,
+        "start": 238.58,
+        "text": "To take care of"
+      },
+      {
+        "end": 244.58,
+        "start": 241.58,
+        "text": "優勝する"
+      },
+      {
+        "end": 247.58,
+        "start": 244.58,
+        "text": "To win a championship"
+      },
+      {
+        "end": 250.58,
+        "start": 247.58,
+        "text": "戻ってくる"
+      },
+      {
+        "end": 252.58,
+        "start": 250.58,
+        "text": "Come back"
+      },
+      {
+        "end": 256.58,
+        "start": 252.58,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 259.08,
+        "start": 257.08,
+        "text": "そんな"
+      },
+      {
+        "end": 263.08,
+        "start": 259.08,
+        "text": "Such that kind of"
+      },
+      {
+        "end": 265.08,
+        "start": 263.08,
+        "text": "ために"
+      },
+      {
+        "end": 269.08,
+        "start": 265.08,
+        "text": "For the sake of"
+      },
+      {
+        "end": 272.08,
+        "start": 269.08,
+        "text": "ものすごく"
+      },
+      {
+        "end": 275.08,
+        "start": 272.08,
+        "text": "Extremely"
+      },
+      {
+        "end": 277.08,
+        "start": 275.08,
+        "text": "そろそろ"
+      },
+      {
+        "end": 280.08,
+        "start": 277.08,
+        "text": "It is about time to"
+      },
+      {
+        "end": 283.08,
+        "start": 280.08,
+        "text": "最後に"
+      },
+      {
+        "end": 285.08,
+        "start": 283.08,
+        "text": "Finally"
+      },
+      {
+        "end": 287.58,
+        "start": 285.58,
+        "text": "元気でね"
+      },
+      {
+        "end": 290.58,
+        "start": 287.58,
+        "text": "Take care of yourself"
+      },
+      {
+        "end": 293.58,
+        "start": 290.58,
+        "text": "そろそろ"
+      },
+      {
+        "end": 295.58,
+        "start": 293.58,
+        "text": "You are right"
+      }
+    ]
+  },
+  "K23_08": {
+    "duration": 296.96,
+    "language": "ja",
+    "languageProbability": 0.8433,
+    "segments": [
+      {
+        "end": 3.14,
+        "start": 0.14,
+        "text": "第23課"
+      },
+      {
+        "end": 5.64,
+        "start": 3.14,
+        "text": "単語"
+      },
+      {
+        "end": 8.14,
+        "start": 5.64,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.64,
+        "start": 8.14,
+        "text": "Socks"
+      },
+      {
+        "end": 13.14,
+        "start": 10.64,
+        "text": "靴下"
+      },
+      {
+        "end": 14.64,
+        "start": 13.14,
+        "text": "Sack"
+      },
+      {
+        "end": 16.14,
+        "start": 14.64,
+        "text": "Plastic bag"
+      },
+      {
+        "end": 18.64,
+        "start": 16.14,
+        "text": "Paper bag"
+      },
+      {
+        "end": 21.14,
+        "start": 18.64,
+        "text": "袋"
+      },
+      {
+        "end": 24.14,
+        "start": 21.14,
+        "text": "Free of charge"
+      },
+      {
+        "end": 26.14,
+        "start": 24.14,
+        "text": "ただ"
+      },
+      {
+        "end": 28.14,
+        "start": 26.14,
+        "text": "Dinner"
+      },
+      {
+        "end": 30.64,
+        "start": 28.14,
+        "text": "夕食"
+      },
+      {
+        "end": 33.14,
+        "start": 30.64,
+        "text": "Place"
+      },
+      {
+        "end": 35.14,
+        "start": 33.14,
+        "text": "場所"
+      },
+      {
+        "end": 37.64,
+        "start": 35.14,
+        "text": "Stairs"
+      },
+      {
+        "end": 40.14,
+        "start": 37.64,
+        "text": "階段"
+      },
+      {
+        "end": 43.14,
+        "start": 40.14,
+        "text": "Elementary school"
+      },
+      {
+        "end": 46.14,
+        "start": 43.14,
+        "text": "小学校"
+      },
+      {
+        "end": 48.64,
+        "start": 46.14,
+        "text": "Interview"
+      },
+      {
+        "end": 51.14,
+        "start": 48.64,
+        "text": "面接"
+      },
+      {
+        "end": 53.64,
+        "start": 51.14,
+        "text": "Health"
+      },
+      {
+        "end": 56.14,
+        "start": 53.64,
+        "text": "健康"
+      },
+      {
+        "end": 58.64,
+        "start": 56.14,
+        "text": "Ideal"
+      },
+      {
+        "end": 61.14,
+        "start": 58.64,
+        "text": "理想"
+      },
+      {
+        "end": 66.14,
+        "start": 61.14,
+        "text": "Looking after a house during someone's absence."
+      },
+      {
+        "end": 68.64,
+        "start": 66.14,
+        "text": "律盤"
+      },
+      {
+        "end": 69.64,
+        "start": 68.64,
+        "text": "Message"
+      },
+      {
+        "end": 72.14,
+        "start": 69.64,
+        "text": "Text"
+      },
+      {
+        "end": 74.64,
+        "start": 72.14,
+        "text": "Message"
+      },
+      {
+        "end": 78.14,
+        "start": 74.64,
+        "text": "Class cancellation"
+      },
+      {
+        "end": 80.64,
+        "start": 78.14,
+        "text": "休校"
+      },
+      {
+        "end": 84.14,
+        "start": 80.64,
+        "text": "Trip to a foreign country"
+      },
+      {
+        "end": 87.14,
+        "start": 84.14,
+        "text": "海外旅行"
+      },
+      {
+        "end": 89.64,
+        "start": 87.14,
+        "text": "Bon dance"
+      },
+      {
+        "end": 92.64,
+        "start": 89.64,
+        "text": "Bon踊り"
+      },
+      {
+        "end": 94.64,
+        "start": 92.64,
+        "text": "Memory"
+      },
+      {
+        "end": 97.14,
+        "start": 94.64,
+        "text": "思い出"
+      },
+      {
+        "end": 100.14,
+        "start": 97.14,
+        "text": "Society"
+      },
+      {
+        "end": 102.64,
+        "start": 100.14,
+        "text": "社会"
+      },
+      {
+        "end": 104.64,
+        "start": 102.64,
+        "text": "Result"
+      },
+      {
+        "end": 107.14,
+        "start": 104.64,
+        "text": "結果"
+      },
+      {
+        "end": 109.64,
+        "start": 107.14,
+        "text": "Survey"
+      },
+      {
+        "end": 112.14,
+        "start": 109.64,
+        "text": "調査"
+      },
+      {
+        "end": 114.64,
+        "start": 112.14,
+        "text": "Adjective"
+      },
+      {
+        "end": 117.14,
+        "start": 114.64,
+        "text": "Terrible"
+      },
+      {
+        "end": 119.14,
+        "start": 117.14,
+        "text": "まずい"
+      },
+      {
+        "end": 122.14,
+        "start": 119.14,
+        "text": "Nah-adjective"
+      },
+      {
+        "end": 123.64,
+        "start": 122.14,
+        "text": "Pitiful"
+      },
+      {
+        "end": 125.64,
+        "start": 123.64,
+        "text": "Feel sorry for"
+      },
+      {
+        "end": 128.14,
+        "start": 125.64,
+        "text": "Poor thing"
+      },
+      {
+        "end": 131.14,
+        "start": 128.14,
+        "text": "かわいそうな"
+      },
+      {
+        "end": 133.64,
+        "start": 131.14,
+        "text": "Uverbs"
+      },
+      {
+        "end": 136.64,
+        "start": 133.64,
+        "text": "The rain stops"
+      },
+      {
+        "end": 139.14,
+        "start": 136.64,
+        "text": "雨が止む"
+      },
+      {
+        "end": 141.14,
+        "start": 139.14,
+        "text": "To be different"
+      },
+      {
+        "end": 144.14,
+        "start": 141.14,
+        "text": "To be wrong"
+      },
+      {
+        "end": 146.64,
+        "start": 144.14,
+        "text": "違う"
+      },
+      {
+        "end": 148.14,
+        "start": 146.64,
+        "text": "To be lost"
+      },
+      {
+        "end": 150.64,
+        "start": 148.14,
+        "text": "To disappear"
+      },
+      {
+        "end": 153.14,
+        "start": 150.64,
+        "text": "無くなる"
+      },
+      {
+        "end": 154.64,
+        "start": 153.14,
+        "text": "Is gone"
+      },
+      {
+        "end": 157.14,
+        "start": 154.64,
+        "text": "To disappear"
+      },
+      {
+        "end": 159.64,
+        "start": 157.14,
+        "text": "いなくなる"
+      },
+      {
+        "end": 163.14,
+        "start": 159.64,
+        "text": "To be in someone's care"
+      },
+      {
+        "end": 165.64,
+        "start": 163.14,
+        "text": "お世話になる"
+      },
+      {
+        "end": 168.64,
+        "start": 165.64,
+        "text": "To have a stomachache"
+      },
+      {
+        "end": 171.64,
+        "start": 168.64,
+        "text": "お腹を壊す"
+      },
+      {
+        "end": 175.14,
+        "start": 171.64,
+        "text": "To find something agreeable"
+      },
+      {
+        "end": 177.64,
+        "start": 175.14,
+        "text": "気に入る"
+      },
+      {
+        "end": 181.14,
+        "start": 177.64,
+        "text": "To talk behind someone's back"
+      },
+      {
+        "end": 184.14,
+        "start": 181.14,
+        "text": "悪口を言う"
+      },
+      {
+        "end": 186.64,
+        "start": 184.14,
+        "text": "Roo verbs"
+      },
+      {
+        "end": 189.14,
+        "start": 186.64,
+        "text": "To answer"
+      },
+      {
+        "end": 191.64,
+        "start": 189.14,
+        "text": "答える"
+      },
+      {
+        "end": 194.14,
+        "start": 191.64,
+        "text": "Separates"
+      },
+      {
+        "end": 196.64,
+        "start": 194.14,
+        "text": "Parts from"
+      },
+      {
+        "end": 199.14,
+        "start": 196.64,
+        "text": "離れる"
+      },
+      {
+        "end": 202.14,
+        "start": 199.14,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 205.14,
+        "start": 202.14,
+        "text": "To be disappointed"
+      },
+      {
+        "end": 207.64,
+        "start": 205.14,
+        "text": "がっかりする"
+      },
+      {
+        "end": 209.64,
+        "start": 207.64,
+        "text": "To be tolerant"
+      },
+      {
+        "end": 212.14,
+        "start": 209.64,
+        "text": "To be patient"
+      },
+      {
+        "end": 214.64,
+        "start": 212.14,
+        "text": "我慢する"
+      },
+      {
+        "end": 217.64,
+        "start": 214.64,
+        "text": "To sympathize"
+      },
+      {
+        "end": 220.64,
+        "start": 217.64,
+        "text": "道場する"
+      },
+      {
+        "end": 222.64,
+        "start": 220.64,
+        "text": "To look"
+      },
+      {
+        "end": 225.64,
+        "start": 222.64,
+        "text": "顔をする"
+      },
+      {
+        "end": 228.64,
+        "start": 225.64,
+        "text": "To cheat in an exam"
+      },
+      {
+        "end": 231.64,
+        "start": 228.64,
+        "text": "カンニングする"
+      },
+      {
+        "end": 233.64,
+        "start": 231.64,
+        "text": "To check"
+      },
+      {
+        "end": 236.64,
+        "start": 233.64,
+        "text": "チェックする"
+      },
+      {
+        "end": 239.14,
+        "start": 236.64,
+        "text": "To take care of"
+      },
+      {
+        "end": 242.14,
+        "start": 239.14,
+        "text": "世話をする"
+      },
+      {
+        "end": 245.14,
+        "start": 242.14,
+        "text": "To win a championship"
+      },
+      {
+        "end": 248.14,
+        "start": 245.14,
+        "text": "優勝する"
+      },
+      {
+        "end": 250.64,
+        "start": 248.14,
+        "text": "Come back"
+      },
+      {
+        "end": 253.14,
+        "start": 250.64,
+        "text": "戻ってくる"
+      },
+      {
+        "end": 257.14,
+        "start": 253.14,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 260.64,
+        "start": 257.14,
+        "text": "Such, that kind of"
+      },
+      {
+        "end": 263.14,
+        "start": 260.64,
+        "text": "そんな"
+      },
+      {
+        "end": 267.64,
+        "start": 263.14,
+        "text": "For, for the sake of"
+      },
+      {
+        "end": 269.64,
+        "start": 267.64,
+        "text": "ために"
+      },
+      {
+        "end": 272.64,
+        "start": 269.64,
+        "text": "Extremely"
+      },
+      {
+        "end": 275.14,
+        "start": 272.64,
+        "text": "ものすごく"
+      },
+      {
+        "end": 278.14,
+        "start": 275.14,
+        "text": "It is about time to"
+      },
+      {
+        "end": 280.64,
+        "start": 278.14,
+        "text": "そろそろ"
+      },
+      {
+        "end": 283.14,
+        "start": 280.64,
+        "text": "Finally"
+      },
+      {
+        "end": 285.64,
+        "start": 283.14,
+        "text": "最後に"
+      },
+      {
+        "end": 288.64,
+        "start": 285.64,
+        "text": "Take care of yourself"
+      },
+      {
+        "end": 291.14,
+        "start": 288.64,
+        "text": "元気でね"
+      },
+      {
+        "end": 293.64,
+        "start": 291.14,
+        "text": "You are right"
+      },
+      {
+        "end": 296.64,
+        "start": 293.64,
+        "text": "そうそう"
+      }
+    ]
+  },
+  "K23_09": {
+    "duration": 129.46,
+    "language": "ja",
+    "languageProbability": 0.9796,
+    "segments": [
+      {
+        "end": 7.02,
+        "start": 0.02,
+        "text": "第23課 練習 1"
+      },
+      {
+        "end": 11.78,
+        "start": 7.02,
+        "text": "荷物を持たされます"
+      },
+      {
+        "end": 16.15,
+        "start": 11.78,
+        "text": "example"
+      },
+      {
+        "end": 23.78,
+        "start": 16.15,
+        "text": "寝る 寝させられる 1"
+      },
+      {
+        "end": 32.34,
+        "start": 23.78,
+        "text": "食べる 食べさせられる 2"
+      },
+      {
+        "end": 40.98,
+        "start": 32.34,
+        "text": "やめる やめさせられる 3"
+      },
+      {
+        "end": 49.5,
+        "start": 40.98,
+        "text": "受ける 受けさせられる 4"
+      },
+      {
+        "end": 58.02,
+        "start": 49.5,
+        "text": "取る 取らされる 5"
+      },
+      {
+        "end": 66.64,
+        "start": 58.02,
+        "text": "作る 作らされる 6"
+      },
+      {
+        "end": 75.1,
+        "start": 66.64,
+        "text": "待つ 待たされる 7"
+      },
+      {
+        "end": 83.68,
+        "start": 75.1,
+        "text": "習う 習わされる 8"
+      },
+      {
+        "end": 93.26,
+        "start": 84.68,
+        "text": "歌う 歌わされる 9"
+      },
+      {
+        "end": 101.78,
+        "start": 93.26,
+        "text": "話す 話させられる 10"
+      },
+      {
+        "end": 112.27,
+        "start": 101.78,
+        "text": "迎えに行く 迎えに活かされる 11"
+      },
+      {
+        "end": 121.86,
+        "start": 112.27,
+        "text": "世話をする 世話をさせられる 12"
+      },
+      {
+        "end": 129.47,
+        "start": 121.86,
+        "text": "戻ってくる 戻ってこさせられる"
+      }
+    ]
+  },
+  "K23_10": {
+    "duration": 140.2,
+    "language": "ja",
+    "languageProbability": 0.9489,
+    "segments": [
+      {
+        "end": 2,
+        "start": 0,
+        "text": "ビー"
+      },
+      {
+        "end": 5.44,
+        "start": 2,
+        "text": "example"
+      },
+      {
+        "end": 8.44,
+        "start": 5.44,
+        "text": "荷物を持つ"
+      },
+      {
+        "end": 12.44,
+        "start": 8.44,
+        "text": "ケンタさんはゆいさんに荷物を持たされます。"
+      },
+      {
+        "end": 18.1,
+        "start": 12.44,
+        "text": "1. 買い物に付き合う"
+      },
+      {
+        "end": 25.28,
+        "start": 18.1,
+        "text": "ケンタさんはゆいさんに買い物に付き合わされます。"
+      },
+      {
+        "end": 30.66,
+        "start": 25.28,
+        "text": "2. 駅に迎えに行く"
+      },
+      {
+        "end": 37.83,
+        "start": 30.66,
+        "text": "ケンタさんはゆいさんに駅に迎えに行かされます。"
+      },
+      {
+        "end": 43.3,
+        "start": 37.83,
+        "text": "3. 高い服を買う"
+      },
+      {
+        "end": 50.48,
+        "start": 43.3,
+        "text": "ケンタさんはゆいさんに高い服を買わされます。"
+      },
+      {
+        "end": 58,
+        "start": 51.82,
+        "text": "4. 犬の世話をする"
+      },
+      {
+        "end": 64.54,
+        "start": 58,
+        "text": "ケンタさんはゆいさんに犬の世話をさせられます。"
+      },
+      {
+        "end": 70.71,
+        "start": 64.54,
+        "text": "5. お弁当を作る"
+      },
+      {
+        "end": 77.12,
+        "start": 70.71,
+        "text": "ケンタさんはゆいさんにお弁当を作らされます。"
+      },
+      {
+        "end": 83.26,
+        "start": 77.12,
+        "text": "6. 夕食をおごる"
+      },
+      {
+        "end": 89.64,
+        "start": 83.26,
+        "text": "ゆいさんはケンタさんに夕食をおごらされます。"
+      },
+      {
+        "end": 95.82,
+        "start": 89.64,
+        "text": "7. アイロンをかける"
+      },
+      {
+        "end": 102.22,
+        "start": 95.82,
+        "text": "ゆいさんはケンタさんにアイロンをかけさせられます。"
+      },
+      {
+        "end": 108.37,
+        "start": 102.22,
+        "text": "8. 部屋を掃除する"
+      },
+      {
+        "end": 114.78,
+        "start": 108.37,
+        "text": "ゆいさんはケンタさんに部屋を掃除させられます。"
+      },
+      {
+        "end": 118.78,
+        "start": 115.78,
+        "text": "10. 毎晩会社の文句を聞く"
+      },
+      {
+        "end": 125.92,
+        "start": 118.78,
+        "text": "ゆいさんはケンタさんに毎晩会社の文句を聞かされます。"
+      },
+      {
+        "end": 131.33,
+        "start": 125.92,
+        "text": "10. 靴を磨く"
+      },
+      {
+        "end": 138.47,
+        "start": 131.33,
+        "text": "ゆいさんはケンタさんに靴を磨かされます。"
+      }
+    ]
+  },
+  "K23_11": {
+    "duration": 193.33,
+    "language": "ja",
+    "languageProbability": 0.958,
+    "segments": [
+      {
+        "end": 2.75,
+        "start": 0.11,
+        "text": "C"
+      },
+      {
+        "end": 5.73,
+        "start": 2.75,
+        "text": "example"
+      },
+      {
+        "end": 8.27,
+        "start": 5.73,
+        "text": "買い物に行く"
+      },
+      {
+        "end": 12.87,
+        "start": 8.27,
+        "text": "子供の時、買い物に生かされましたか?"
+      },
+      {
+        "end": 16.11,
+        "start": 12.87,
+        "text": "はい、生かされました"
+      },
+      {
+        "end": 20.89,
+        "start": 16.11,
+        "text": "いいえ、生かされませんでした"
+      },
+      {
+        "end": 22.81,
+        "start": 20.89,
+        "text": "1"
+      },
+      {
+        "end": 27.03,
+        "start": 22.81,
+        "text": "お皿を洗う"
+      },
+      {
+        "end": 32.71,
+        "start": 27.03,
+        "text": "子供の時、お皿を表されましたか?"
+      },
+      {
+        "end": 36.43,
+        "start": 32.71,
+        "text": "はい、表されました"
+      },
+      {
+        "end": 41.78,
+        "start": 36.71,
+        "text": "いいえ、表されませんでした"
+      },
+      {
+        "end": 43.58,
+        "start": 41.78,
+        "text": "2"
+      },
+      {
+        "end": 48.64,
+        "start": 43.58,
+        "text": "自分の部屋を掃除する"
+      },
+      {
+        "end": 55.14,
+        "start": 48.64,
+        "text": "子供の時、自分の部屋を掃除させられましたか?"
+      },
+      {
+        "end": 59.34,
+        "start": 55.14,
+        "text": "はい、掃除させられました"
+      },
+      {
+        "end": 64.5,
+        "start": 59.34,
+        "text": "いいえ、掃除させられませんでした"
+      },
+      {
+        "end": 66.38,
+        "start": 64.5,
+        "text": "3"
+      },
+      {
+        "end": 70.63,
+        "start": 66.38,
+        "text": "ピアノを習う"
+      },
+      {
+        "end": 76.36,
+        "start": 70.63,
+        "text": "子供の時、ピアノを習わされましたか?"
+      },
+      {
+        "end": 80.2,
+        "start": 76.36,
+        "text": "はい、習わされました"
+      },
+      {
+        "end": 85.34,
+        "start": 80.2,
+        "text": "いいえ、習わされませんでした"
+      },
+      {
+        "end": 87.18,
+        "start": 85.34,
+        "text": "4"
+      },
+      {
+        "end": 91.92,
+        "start": 87.18,
+        "text": "毎日勉強する"
+      },
+      {
+        "end": 98,
+        "start": 91.92,
+        "text": "子供の時、毎日勉強させられましたか?"
+      },
+      {
+        "end": 102.24,
+        "start": 98,
+        "text": "はい、勉強させられました"
+      },
+      {
+        "end": 107.34,
+        "start": 102.24,
+        "text": "いいえ、勉強させられませんでした"
+      },
+      {
+        "end": 109.06,
+        "start": 107.34,
+        "text": "5"
+      },
+      {
+        "end": 115.08,
+        "start": 109.06,
+        "text": "妹、弟の世話をする"
+      },
+      {
+        "end": 122.3,
+        "start": 115.08,
+        "text": "子供の時、妹、弟の世話をさせられましたか?"
+      },
+      {
+        "end": 126.06,
+        "start": 122.3,
+        "text": "はい、させられました"
+      },
+      {
+        "end": 130.68,
+        "start": 126.06,
+        "text": "いいえ、させられませんでした"
+      },
+      {
+        "end": 132.64,
+        "start": 130.68,
+        "text": "6"
+      },
+      {
+        "end": 137.22,
+        "start": 132.64,
+        "text": "嫌いなものを食べる"
+      },
+      {
+        "end": 143.26,
+        "start": 137.22,
+        "text": "子供の時、嫌いなものを食べさせられましたか?"
+      },
+      {
+        "end": 147.42,
+        "start": 143.34,
+        "text": "はい、食べさせられました"
+      },
+      {
+        "end": 152.41,
+        "start": 147.42,
+        "text": "いいえ、食べさせられませんでした"
+      },
+      {
+        "end": 154.37,
+        "start": 152.41,
+        "text": "7"
+      },
+      {
+        "end": 158.74,
+        "start": 154.37,
+        "text": "料理を手伝う"
+      },
+      {
+        "end": 164.47,
+        "start": 158.74,
+        "text": "子供の時、料理を手伝わされましたか?"
+      },
+      {
+        "end": 168.59,
+        "start": 164.47,
+        "text": "はい、手伝わされました"
+      },
+      {
+        "end": 173.61,
+        "start": 168.59,
+        "text": "いいえ、手伝わされませんでした"
+      },
+      {
+        "end": 175.57,
+        "start": 173.61,
+        "text": "8"
+      },
+      {
+        "end": 179.55,
+        "start": 175.57,
+        "text": "熟に行く"
+      },
+      {
+        "end": 185.08,
+        "start": 179.55,
+        "text": "子供の時、熟に生かされましたか?"
+      },
+      {
+        "end": 188.84,
+        "start": 185.08,
+        "text": "はい、生かされました"
+      },
+      {
+        "end": 193.24,
+        "start": 188.84,
+        "text": "いいえ、生かされませんでした"
+      }
+    ]
+  },
+  "K23_12": {
+    "duration": 176.54,
+    "language": "ja",
+    "languageProbability": 0.9896,
+    "segments": [
+      {
+        "end": 7.29,
+        "start": 0.11,
+        "text": "2. 学生がうるさくても、おこりません。"
+      },
+      {
+        "end": 15.33,
+        "start": 12.63,
+        "text": "学生がうるさい。"
+      },
+      {
+        "end": 21.3,
+        "start": 15.33,
+        "text": "学生がうるさくても、絶対におこりません。"
+      },
+      {
+        "end": 28.38,
+        "start": 21.3,
+        "text": "1. 学生が授業中に寝ている。"
+      },
+      {
+        "end": 34.95,
+        "start": 28.38,
+        "text": "学生が授業中に寝ていても、絶対におこりません。"
+      },
+      {
+        "end": 42.23,
+        "start": 35.15,
+        "text": "2. 学生が質問に答えられない。"
+      },
+      {
+        "end": 49.07,
+        "start": 42.23,
+        "text": "学生が質問に答えられなくても、絶対におこりません。"
+      },
+      {
+        "end": 55.84,
+        "start": 49.07,
+        "text": "3. 学生に文句を言われる。"
+      },
+      {
+        "end": 62.02,
+        "start": 55.84,
+        "text": "学生に文句を言われても、絶対におこりません。"
+      },
+      {
+        "end": 68.66,
+        "start": 62.02,
+        "text": "4. 学生が管認する。"
+      },
+      {
+        "end": 74.57,
+        "start": 68.66,
+        "text": "学生が管認しても、絶対におこりません。"
+      },
+      {
+        "end": 81.58,
+        "start": 74.67,
+        "text": "5. サークルの練習が厳しい。"
+      },
+      {
+        "end": 87.79,
+        "start": 81.58,
+        "text": "サークルの練習が厳しくても、絶対に我慢します。"
+      },
+      {
+        "end": 94.1,
+        "start": 87.79,
+        "text": "6. 先輩がいじわるだ。"
+      },
+      {
+        "end": 99.67,
+        "start": 94.1,
+        "text": "先輩がいじわるでも、絶対に我慢します。"
+      },
+      {
+        "end": 106.78,
+        "start": 99.67,
+        "text": "7. 先輩に荷物を持たされる。"
+      },
+      {
+        "end": 112.96,
+        "start": 106.78,
+        "text": "先輩に荷物を持たされても、絶対に我慢します。"
+      },
+      {
+        "end": 119.73,
+        "start": 112.96,
+        "text": "8. 友達と遊ぶ時間がない。"
+      },
+      {
+        "end": 125.94,
+        "start": 119.73,
+        "text": "友達と遊ぶ時間がなくても、絶対に我慢します。"
+      },
+      {
+        "end": 131.88,
+        "start": 125.94,
+        "text": "9. 十年待つ。"
+      },
+      {
+        "end": 137.86,
+        "start": 131.88,
+        "text": "十年待っても、絶対にメアリーと結婚します。"
+      },
+      {
+        "end": 144.2,
+        "start": 137.86,
+        "text": "10. 親に反対される。"
+      },
+      {
+        "end": 150.65,
+        "start": 144.2,
+        "text": "親に反対されても、絶対にメアリーと結婚します。"
+      },
+      {
+        "end": 157.09,
+        "start": 150.65,
+        "text": "11. 今は離れている。"
+      },
+      {
+        "end": 163.57,
+        "start": 157.09,
+        "text": "今は離れていても、絶対にメアリーと結婚します。"
+      },
+      {
+        "end": 170.18,
+        "start": 163.57,
+        "text": "12. 言葉や文化が違う。"
+      },
+      {
+        "end": 176.48,
+        "start": 170.18,
+        "text": "言葉や文化が違っても、絶対にメアリーと結婚します。"
+      }
+    ]
+  },
+  "K23_13": {
+    "duration": 165.56,
+    "language": "ja",
+    "languageProbability": 0.9624,
+    "segments": [
+      {
+        "end": 5.25,
+        "start": 0,
+        "text": "B イクゼンプル"
+      },
+      {
+        "end": 9.25,
+        "start": 5.25,
+        "text": "いじめられたら、学校を休みますか?"
+      },
+      {
+        "end": 15.85,
+        "start": 9.25,
+        "text": "いえ、いじめられても学校を休みません。"
+      },
+      {
+        "end": 24.99,
+        "start": 15.85,
+        "text": "1 授業がつまらなかったら、先生に文句を言いますか?"
+      },
+      {
+        "end": 32.37,
+        "start": 24.99,
+        "text": "いえ、授業がつまらなくても、先生に文句を言いません。"
+      },
+      {
+        "end": 39.54,
+        "start": 32.37,
+        "text": "2 先生に怒られたら、泣きますか?"
+      },
+      {
+        "end": 43.54,
+        "start": 39.54,
+        "text": "いえ、先生に怒られても泣きません。"
+      },
+      {
+        "end": 51.02,
+        "start": 43.54,
+        "text": "3 試験の結果が悪かったら、落ち込みますか?"
+      },
+      {
+        "end": 58.16,
+        "start": 51.02,
+        "text": "いえ、試験の結果が悪くても落ち込みません。"
+      },
+      {
+        "end": 65.5,
+        "start": 58.16,
+        "text": "4 友達と喧嘩したら、自分から誤りますか?"
+      },
+      {
+        "end": 73.74,
+        "start": 65.5,
+        "text": "いえ、友達と喧嘩しても自分から誤りません。"
+      },
+      {
+        "end": 81.15,
+        "start": 73.74,
+        "text": "5 宝くじに当たったら、みんなにおごってあげますか?"
+      },
+      {
+        "end": 89.3,
+        "start": 81.15,
+        "text": "いえ、宝くじに当たってもみんなにおごってあげません。"
+      },
+      {
+        "end": 96.67,
+        "start": 89.3,
+        "text": "6 スーパーで袋がただだったら、もらいますか?"
+      },
+      {
+        "end": 103.78,
+        "start": 96.67,
+        "text": "いえ、スーパーで袋がただでも、もらいません。"
+      },
+      {
+        "end": 113.3,
+        "start": 103.78,
+        "text": "7 道に迷ったら、誰かに聞きますか?"
+      },
+      {
+        "end": 117.3,
+        "start": 113.3,
+        "text": "いえ、道に迷っても誰にも聞きません。"
+      },
+      {
+        "end": 125.71,
+        "start": 117.3,
+        "text": "8 レストランで子供がうるさかったら、注意しますか?"
+      },
+      {
+        "end": 132.82,
+        "start": 125.71,
+        "text": "いえ、レストランで子供がうるさくても注意しません。"
+      },
+      {
+        "end": 140.26,
+        "start": 132.82,
+        "text": "9 自分が作った料理がまずかったら、捨てますか?"
+      },
+      {
+        "end": 147.44,
+        "start": 140.26,
+        "text": "いえ、自分が作った料理がまずくても捨てません。"
+      },
+      {
+        "end": 155.88,
+        "start": 147.44,
+        "text": "10 誕生日のプレゼントが靴下だったら、がっかりしますか?"
+      },
+      {
+        "end": 165.02,
+        "start": 155.88,
+        "text": "いえ、誕生日のプレゼントが靴下でもがっかりしません。"
+      }
+    ]
+  },
+  "K23_14": {
+    "duration": 113.37,
+    "language": "ja",
+    "languageProbability": 0.9665,
+    "segments": [
+      {
+        "end": 6.98,
+        "start": 0.14,
+        "text": "3 日本語の勉強を続けることにしました"
+      },
+      {
+        "end": 9.26,
+        "start": 6.98,
+        "text": "A"
+      },
+      {
+        "end": 11.9,
+        "start": 9.26,
+        "text": "example"
+      },
+      {
+        "end": 20.3,
+        "start": 11.9,
+        "text": "メアリーさんは国に帰って 日本語の勉強を続けることにしました"
+      },
+      {
+        "end": 32.38,
+        "start": 20.3,
+        "text": "1 ヤスミンさんは日本の社会について研究することにしました"
+      },
+      {
+        "end": 44.06,
+        "start": 32.38,
+        "text": "2 カルロスさんは日本の会社で面接を受けることにしました"
+      },
+      {
+        "end": 56.12,
+        "start": 44.06,
+        "text": "3 タケシさんは会社を辞めて新しい仕事を探すことにしました"
+      },
+      {
+        "end": 65.51,
+        "start": 56.12,
+        "text": "4 ゆいさんは留学することにしました"
+      },
+      {
+        "end": 76.92,
+        "start": 65.51,
+        "text": "5 山下先生は中国で日本語を教えることにしました"
+      },
+      {
+        "end": 89.91,
+        "start": 77,
+        "text": "6 メアリーさんのホストファミリーはアメリカにメアリーさんに会いに行くことにしました"
+      },
+      {
+        "end": 100.41,
+        "start": 89.91,
+        "text": "7 ケンさんは小学校の先生になることにしました"
+      },
+      {
+        "end": 113.26,
+        "start": 100.41,
+        "text": "8 ジョンさんは日本で空手を習うからオーストラリアに帰らないことにしました"
+      }
+    ]
+  },
+  "K23_15": {
+    "duration": 105.22,
+    "language": "ja",
+    "languageProbability": 0.9822,
+    "segments": [
+      {
+        "end": 5.11,
+        "start": 0.11,
+        "text": "4 メッセージをチェックすることにしています"
+      },
+      {
+        "end": 18.02,
+        "start": 12.02,
+        "text": "メアリーさんは起きたら メッセージをチェックすることにしています"
+      },
+      {
+        "end": 27.03,
+        "start": 18.02,
+        "text": "1 タケシさんは悪口を言わないことにしています"
+      },
+      {
+        "end": 40.02,
+        "start": 27.03,
+        "text": "2 メアリーさんは週末に図書館で勉強することにしています"
+      },
+      {
+        "end": 50.06,
+        "start": 40.02,
+        "text": "3 メアリーさんは1日に2回 犬と散歩することにしています"
+      },
+      {
+        "end": 60.47,
+        "start": 50.06,
+        "text": "4 メアリーさんはテレビを見ながら勉強しないことにしています"
+      },
+      {
+        "end": 70.98,
+        "start": 60.47,
+        "text": "5 メアリーさんはわからない時 人に聞くことにしています"
+      },
+      {
+        "end": 81.37,
+        "start": 70.98,
+        "text": "6 タケシさんは悲しくても泣かないことにしています"
+      },
+      {
+        "end": 92.75,
+        "start": 81.37,
+        "text": "7 メアリーさんは母の日に花を買ったり料理をしたりすることにしています"
+      },
+      {
+        "end": 104.17,
+        "start": 92.75,
+        "text": "8 タケシさんは寝る前にコーヒーを飲まないことにしています"
+      }
+    ]
+  },
+  "K23_16": {
+    "duration": 110.42,
+    "language": "ja",
+    "languageProbability": 0.9816,
+    "segments": [
+      {
+        "end": 6.05,
+        "start": 0.05,
+        "text": "5.大学を卒業するまで日本にいるつもりです。"
+      },
+      {
+        "end": 12.93,
+        "start": 6.05,
+        "text": "A. Ex."
+      },
+      {
+        "end": 20.5,
+        "start": 12.93,
+        "text": "ジョンさんは大学を卒業するまで日本にいるつもりです。"
+      },
+      {
+        "end": 22.87,
+        "start": 20.5,
+        "text": "A."
+      },
+      {
+        "end": 33.81,
+        "start": 22.87,
+        "text": "1.メアリーさんは今学期が終わるまで日本にいるつもりです。"
+      },
+      {
+        "end": 43.56,
+        "start": 33.81,
+        "text": "2.ソロさんは日本語がぺらぺらになるまで日本にいるつもりです。"
+      },
+      {
+        "end": 54.66,
+        "start": 43.56,
+        "text": "3.ロバートさんはお金がなくなるまで日本にいるつもりです。"
+      },
+      {
+        "end": 64.75,
+        "start": 54.66,
+        "text": "4.カルロスさんは死ぬまで日本にいるつもりです。"
+      },
+      {
+        "end": 68.1,
+        "start": 66.1,
+        "text": "B."
+      },
+      {
+        "end": 79.13,
+        "start": 68.1,
+        "text": "5.ジョンさんは理想の相手を見つけるまで結婚しません。"
+      },
+      {
+        "end": 90.16,
+        "start": 79.13,
+        "text": "6.ケンさんは好きなチームが優勝するまで結婚しません。"
+      },
+      {
+        "end": 100.22,
+        "start": 90.16,
+        "text": "7.なおみさんは100万円溜めるまで結婚しません。"
+      },
+      {
+        "end": 109.88,
+        "start": 100.22,
+        "text": "8.うでいさんは30歳になるまで結婚しません。"
+      }
+    ]
+  },
+  "K23_17": {
+    "duration": 126.96,
+    "language": "ja",
+    "languageProbability": 0.972,
+    "segments": [
+      {
+        "end": 7.02,
+        "start": 0.05,
+        "text": "6 アプリの使い方を教えてくれませんか"
+      },
+      {
+        "end": 10.97,
+        "start": 7.02,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 19.02,
+        "start": 10.97,
+        "text": "すみませんが このアプリの使い方を教えてくれませんか"
+      },
+      {
+        "end": 30.2,
+        "start": 19.02,
+        "text": "1 すみませんが おいしいコーヒーの入れ方を教えてくれませんか"
+      },
+      {
+        "end": 39.38,
+        "start": 30.2,
+        "text": "2 すみませんが アイロンのかけ方を教えてくれませんか"
+      },
+      {
+        "end": 51.89,
+        "start": 41.11,
+        "text": "3 すみませんが 自転車の乗り方を教えてくれませんか"
+      },
+      {
+        "end": 62.27,
+        "start": 51.89,
+        "text": "4 すみませんが 運転の仕方を教えてくれませんか"
+      },
+      {
+        "end": 72.85,
+        "start": 62.27,
+        "text": "5 すみませんが ギターの弾き方を教えてくれませんか"
+      },
+      {
+        "end": 83.3,
+        "start": 72.85,
+        "text": "6 すみませんが 調査の仕方を教えてくれませんか"
+      },
+      {
+        "end": 94.01,
+        "start": 83.3,
+        "text": "7 すみませんが 寿司の作り方を教えてくれませんか"
+      },
+      {
+        "end": 105.56,
+        "start": 94.01,
+        "text": "8 すみませんが 新幹線の予約の仕方を教えてくれませんか"
+      },
+      {
+        "end": 116.4,
+        "start": 105.56,
+        "text": "9 すみませんが ケーキの焼き方を教えてくれませんか"
+      },
+      {
+        "end": 126.47,
+        "start": 116.4,
+        "text": "10 すみませんが 着物の着方を教えてくれませんか"
+      }
+    ]
+  },
+  "W23_A": {
+    "duration": 97.28,
+    "language": "ja",
+    "languageProbability": 0.9882,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第23課"
+      },
+      {
+        "end": 5.08,
+        "start": 3.08,
+        "text": "聞く練習"
+      },
+      {
+        "end": 7.52,
+        "start": 5.08,
+        "text": "えい"
+      },
+      {
+        "end": 12.21,
+        "start": 7.52,
+        "text": "1"
+      },
+      {
+        "end": 15.21,
+        "start": 12.21,
+        "text": "山田さん、もう帰るんですか?"
+      },
+      {
+        "end": 17.21,
+        "start": 15.21,
+        "text": "まだ10時ですよ?"
+      },
+      {
+        "end": 21.21,
+        "start": 17.21,
+        "text": "明日、朝早く起きなきゃいけないんですよ"
+      },
+      {
+        "end": 23.21,
+        "start": 21.21,
+        "text": "休みなのに?"
+      },
+      {
+        "end": 24.21,
+        "start": 23.21,
+        "text": "ええ"
+      },
+      {
+        "end": 29.21,
+        "start": 24.21,
+        "text": "休みの日は、うちの奥さんに6時半に起こされて"
+      },
+      {
+        "end": 32.21,
+        "start": 29.21,
+        "text": "一緒にジョディングさせられるんですよ"
+      },
+      {
+        "end": 35.21,
+        "start": 32.21,
+        "text": "ああ、6時半ですか"
+      },
+      {
+        "end": 39.21,
+        "start": 35.21,
+        "text": "その後は奥さんが買い物に行くことにしているから"
+      },
+      {
+        "end": 42.21,
+        "start": 39.21,
+        "text": "車で店まで送らされて"
+      },
+      {
+        "end": 46.21,
+        "start": 42.21,
+        "text": "買い物が終わるまで待たされるんですよ"
+      },
+      {
+        "end": 49.65,
+        "start": 46.21,
+        "text": "大変ですね"
+      },
+      {
+        "end": 52.25,
+        "start": 49.65,
+        "text": "2"
+      },
+      {
+        "end": 56.25,
+        "start": 52.25,
+        "text": "かずき、新しい部長はどう?"
+      },
+      {
+        "end": 58.25,
+        "start": 56.25,
+        "text": "最悪"
+      },
+      {
+        "end": 63.25,
+        "start": 58.25,
+        "text": "毎日コーヒーを入れさせられるし、コピーも取らされるし"
+      },
+      {
+        "end": 68.25,
+        "start": 63.25,
+        "text": "部長が出張の時は空港まで送ったり、迎えに行ったりさせられるし"
+      },
+      {
+        "end": 71.25,
+        "start": 68.25,
+        "text": "休みの日にだよ"
+      },
+      {
+        "end": 74.25,
+        "start": 71.25,
+        "text": "ええ、ひどいね"
+      },
+      {
+        "end": 77.25,
+        "start": 74.25,
+        "text": "会社では全然仕事をしないで"
+      },
+      {
+        "end": 80.25,
+        "start": 77.25,
+        "text": "いつもスマホを見たりしているんだ"
+      },
+      {
+        "end": 82.25,
+        "start": 80.25,
+        "text": "この間も"
+      },
+      {
+        "end": 88.25,
+        "start": 82.25,
+        "text": "お腹が空いたからコンビニにお菓子買いに行ってくれないって"
+      },
+      {
+        "end": 91.25,
+        "start": 88.25,
+        "text": "ええ、信じられない"
+      }
+    ]
+  },
+  "W23_B": {
+    "duration": 100.21,
+    "language": "ja",
+    "languageProbability": 0.9806,
+    "segments": [
+      {
+        "end": 12.34,
+        "start": 0.08,
+        "text": "B 1タロウさん私イギリスに留学することにしたの"
+      },
+      {
+        "end": 16.82,
+        "start": 12.34,
+        "text": "えっ どうしてそんなことを言うんだ"
+      },
+      {
+        "end": 21.74,
+        "start": 16.82,
+        "text": "ずっと考えていたんだけど言えなかったの"
+      },
+      {
+        "end": 28.78,
+        "start": 21.74,
+        "text": "ごめんなさい 私たち分かれた方がいいと思う"
+      },
+      {
+        "end": 36.66,
+        "start": 28.9,
+        "text": "分かれたくない でも離れていたら二人の気持ちも離れると思う"
+      },
+      {
+        "end": 43.54,
+        "start": 36.66,
+        "text": "悲しいけど いや離れていてもいつも一緒だ"
+      },
+      {
+        "end": 52.66,
+        "start": 43.54,
+        "text": "僕は花子さんがイギリスから戻ってくるまで待っている 2"
+      },
+      {
+        "end": 56.74,
+        "start": 52.66,
+        "text": "僕来月会社を辞めることにしたんです"
+      },
+      {
+        "end": 64.98,
+        "start": 56.74,
+        "text": "えっ どうしてですか この会社にいても自分のしたいことができないんです"
+      },
+      {
+        "end": 71.02,
+        "start": 64.98,
+        "text": "会社を辞めてどうするんですか 声優になりたいんです"
+      },
+      {
+        "end": 79.14,
+        "start": 71.02,
+        "text": "声優の学校に入るつもりです 声優になれるまでバイトしながら勉強をします"
+      },
+      {
+        "end": 85.14,
+        "start": 79.14,
+        "text": "そうですか 大変だと思うけど頑張ってくださいね"
+      },
+      {
+        "end": 89.7,
+        "start": 85.14,
+        "text": "ええ 今までいろいろありがとうございました"
+      },
+      {
+        "end": 95.62,
+        "start": 89.7,
+        "text": "有名になっても私たちを忘れないでくださいよ"
+      }
+    ]
+  },
+  "W23_C": {
+    "duration": 65.25,
+    "language": "ja",
+    "languageProbability": 0.9844,
+    "segments": [
+      {
+        "end": 13.38,
+        "start": 0.27,
+        "text": "1 漢字が覚えられなくて困っているんですが 漢字の覚え方を教えてくれませんか"
+      },
+      {
+        "end": 22.86,
+        "start": 13.38,
+        "text": "私は子供の時読み方はカードを作って 書き方はノートにたくさん書いて覚えましたよ"
+      },
+      {
+        "end": 29.14,
+        "start": 22.86,
+        "text": "一度やってみたらどうですか わかりましたやってみます"
+      },
+      {
+        "end": 35.46,
+        "start": 29.14,
+        "text": "ありがとうございました 2"
+      },
+      {
+        "end": 43.86,
+        "start": 35.46,
+        "text": "アメリカから友達が来るから迎えに行きたいんですけど 空港の行き方を教えてくれませんか"
+      },
+      {
+        "end": 55.46,
+        "start": 43.86,
+        "text": "空港までは駅からバスで行けますよ 電車より時間がかかるけど分かりやすいからバスを使った方がいいですよ"
+      },
+      {
+        "end": 60.34,
+        "start": 55.46,
+        "text": "じゃあそうします どうもありがとう"
+      }
+    ]
+  }
+}
