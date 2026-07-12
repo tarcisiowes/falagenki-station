@@ -1,0 +1,2657 @@
+{
+  "K16_01": {
+    "duration": 53.05,
+    "language": "ja",
+    "languageProbability": 0.9879,
+    "segments": [
+      {
+        "end": 7.36,
+        "start": 0.08,
+        "text": "第16日 忘れ物 会話"
+      },
+      {
+        "end": 8.36,
+        "start": 7.36,
+        "text": "1"
+      },
+      {
+        "end": 13.7,
+        "start": 8.36,
+        "text": "失礼します 先生"
+      },
+      {
+        "end": 17.7,
+        "start": 13.7,
+        "text": "今日授業に来られなくて済みませんでした"
+      },
+      {
+        "end": 20.7,
+        "start": 17.7,
+        "text": "どうしたんですか"
+      },
+      {
+        "end": 25.7,
+        "start": 20.7,
+        "text": "実は朝寝坊をして電車に乗り遅れたんです"
+      },
+      {
+        "end": 27.7,
+        "start": 25.7,
+        "text": "済みません"
+      },
+      {
+        "end": 33.7,
+        "start": 27.7,
+        "text": "もう3回目ですよ もっと早く寝たらどうですか"
+      },
+      {
+        "end": 35.7,
+        "start": 33.7,
+        "text": "はい"
+      },
+      {
+        "end": 42.7,
+        "start": 35.7,
+        "text": "あのー先生 宿題を明日まで待っていただけませんか"
+      },
+      {
+        "end": 46.7,
+        "start": 42.7,
+        "text": "宿題を入れたファイルがないんです"
+      },
+      {
+        "end": 52.7,
+        "start": 46.7,
+        "text": "困りましたね 見つかるといいですね"
+      }
+    ]
+  },
+  "K16_02": {
+    "duration": 82.49,
+    "language": "ja",
+    "languageProbability": 0.8222,
+    "segments": [
+      {
+        "end": 2.61,
+        "start": 0.11,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 20.1,
+        "start": 2.61,
+        "text": "失礼します。先生、今日授業に来られなくてすみませんでした。"
+      },
+      {
+        "end": 24.14,
+        "start": 20.1,
+        "text": "どうしたんですか?"
+      },
+      {
+        "end": 38.3,
+        "start": 24.14,
+        "text": "実は、朝寝坊をして電車に乗り遅れたんです。すみません。"
+      },
+      {
+        "end": 49.12,
+        "start": 38.3,
+        "text": "もう3回目ですよ。もっと早く寝たらどうですか?"
+      },
+      {
+        "end": 71.59,
+        "start": 49.12,
+        "text": "はい。あの、先生、宿題を明日まで待っていただけませんか?宿題を入れたファイルがないんです。"
+      },
+      {
+        "end": 78.08,
+        "start": 71.59,
+        "text": "困りましたね。見つかるといいですね。"
+      }
+    ]
+  },
+  "K16_03": {
+    "duration": 25.36,
+    "language": "ja",
+    "languageProbability": 0.991,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "2"
+      },
+      {
+        "end": 4.11,
+        "start": 2.11,
+        "text": "すみません"
+      },
+      {
+        "end": 7.11,
+        "start": 4.11,
+        "text": "ファイルをなくしたんですが"
+      },
+      {
+        "end": 10.11,
+        "start": 7.11,
+        "text": "どんなファイルですか?"
+      },
+      {
+        "end": 14.11,
+        "start": 10.11,
+        "text": "青くてこのぐらいの大きさです"
+      },
+      {
+        "end": 18.11,
+        "start": 14.11,
+        "text": "電車を降りる時忘れたと思うんですが"
+      },
+      {
+        "end": 20.11,
+        "start": 18.11,
+        "text": "えーと"
+      },
+      {
+        "end": 22.11,
+        "start": 20.11,
+        "text": "ちょっと待ってください"
+      },
+      {
+        "end": 25.11,
+        "start": 22.11,
+        "text": "電話して聞いてみます"
+      }
+    ]
+  },
+  "K16_04": {
+    "duration": 47.28,
+    "language": "ja",
+    "languageProbability": 0.8948,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 13.14,
+        "start": 4.08,
+        "text": "すみません。ファイルをなくしたんですが。"
+      },
+      {
+        "end": 17.44,
+        "start": 13.14,
+        "text": "どんなファイルですか?"
+      },
+      {
+        "end": 20.44,
+        "start": 17.44,
+        "text": "青くて、このぐらいの大きさです。"
+      },
+      {
+        "end": 28.34,
+        "start": 20.44,
+        "text": "電車を降りる時、忘れたと思うんですが。"
+      },
+      {
+        "end": 34.66,
+        "start": 28.34,
+        "text": "えーと…"
+      },
+      {
+        "end": 42.79,
+        "start": 34.66,
+        "text": "ちょっと待ってください。電話して聞いてみます。"
+      }
+    ]
+  },
+  "K16_05": {
+    "duration": 28.97,
+    "language": "ja",
+    "languageProbability": 0.9811,
+    "segments": [
+      {
+        "end": 2.21,
+        "start": 0.21,
+        "text": "さん"
+      },
+      {
+        "end": 6.21,
+        "start": 2.21,
+        "text": "ジョンさん、ファイルはありましたか?"
+      },
+      {
+        "end": 10.21,
+        "start": 6.21,
+        "text": "はい、駅員さんが探してくれたんです"
+      },
+      {
+        "end": 13.21,
+        "start": 10.21,
+        "text": "よかったですね"
+      },
+      {
+        "end": 15.21,
+        "start": 13.21,
+        "text": "これ宿題です"
+      },
+      {
+        "end": 18.21,
+        "start": 15.21,
+        "text": "遅くなって済みませんでした"
+      },
+      {
+        "end": 22.21,
+        "start": 18.21,
+        "text": "いいえ、よくできていますね"
+      },
+      {
+        "end": 28.21,
+        "start": 22.21,
+        "text": "ええ、駅員さんに宿題を手伝ってもらいましたから"
+      }
+    ]
+  },
+  "K16_06": {
+    "duration": 54.65,
+    "language": "ja",
+    "languageProbability": 0.8524,
+    "segments": [
+      {
+        "end": 3.11,
+        "start": 0.11,
+        "text": "Please repeat each phrase."
+      },
+      {
+        "end": 7.11,
+        "start": 3.11,
+        "text": "ジョンさん、ファイルはありましたか?"
+      },
+      {
+        "end": 15.37,
+        "start": 7.11,
+        "text": "はい。駅員さんが探してくれたんです。"
+      },
+      {
+        "end": 21.94,
+        "start": 15.37,
+        "text": "よかったですね。"
+      },
+      {
+        "end": 31.84,
+        "start": 21.94,
+        "text": "これ宿題です。遅くなって済みませんでした。"
+      },
+      {
+        "end": 39.35,
+        "start": 31.84,
+        "text": "いいえ、よくできていますね。"
+      },
+      {
+        "end": 47.78,
+        "start": 39.35,
+        "text": "ええ、駅員さんに宿題を手伝ってもらいましたから。"
+      }
+    ]
+  },
+  "K16_07": {
+    "duration": 304.59,
+    "language": "ja",
+    "languageProbability": 0.7149,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第16課"
+      },
+      {
+        "end": 4.08,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 8.36,
+        "start": 4.08,
+        "text": "Nouns"
+      },
+      {
+        "end": 11.36,
+        "start": 8.36,
+        "text": "駅員さん"
+      },
+      {
+        "end": 14.36,
+        "start": 11.36,
+        "text": "Station attendant"
+      },
+      {
+        "end": 16.36,
+        "start": 14.36,
+        "text": "親"
+      },
+      {
+        "end": 18.36,
+        "start": 16.36,
+        "text": "Parent"
+      },
+      {
+        "end": 21.36,
+        "start": 18.36,
+        "text": "親戚"
+      },
+      {
+        "end": 23.36,
+        "start": 21.36,
+        "text": "Relatives"
+      },
+      {
+        "end": 25.36,
+        "start": 23.36,
+        "text": "ゴミ"
+      },
+      {
+        "end": 28.36,
+        "start": 25.36,
+        "text": "Garbage"
+      },
+      {
+        "end": 30.36,
+        "start": 28.36,
+        "text": "砂糖"
+      },
+      {
+        "end": 32.36,
+        "start": 30.36,
+        "text": "Sugar"
+      },
+      {
+        "end": 34.36,
+        "start": 32.36,
+        "text": "File"
+      },
+      {
+        "end": 36.36,
+        "start": 34.36,
+        "text": "Folder"
+      },
+      {
+        "end": 38.36,
+        "start": 36.36,
+        "text": "Portfolio"
+      },
+      {
+        "end": 40.36,
+        "start": 38.36,
+        "text": "File"
+      },
+      {
+        "end": 42.36,
+        "start": 40.36,
+        "text": "大きさ"
+      },
+      {
+        "end": 44.36,
+        "start": 42.36,
+        "text": "Size"
+      },
+      {
+        "end": 47.36,
+        "start": 44.36,
+        "text": "道"
+      },
+      {
+        "end": 48.36,
+        "start": 47.36,
+        "text": "Way"
+      },
+      {
+        "end": 49.36,
+        "start": 48.36,
+        "text": "Road"
+      },
+      {
+        "end": 51.36,
+        "start": 49.36,
+        "text": "Directions"
+      },
+      {
+        "end": 54.36,
+        "start": 51.36,
+        "text": "気末試験"
+      },
+      {
+        "end": 57.36,
+        "start": 54.36,
+        "text": "Final examination"
+      },
+      {
+        "end": 60.36,
+        "start": 57.36,
+        "text": "研究"
+      },
+      {
+        "end": 62.36,
+        "start": 60.36,
+        "text": "Research"
+      },
+      {
+        "end": 65.36,
+        "start": 62.36,
+        "text": "大学院"
+      },
+      {
+        "end": 68.36,
+        "start": 65.36,
+        "text": "Graduate school"
+      },
+      {
+        "end": 71.36,
+        "start": 68.36,
+        "text": "小学金"
+      },
+      {
+        "end": 73.36,
+        "start": 71.36,
+        "text": "Scholarship"
+      },
+      {
+        "end": 76.36,
+        "start": 73.36,
+        "text": "水泉城"
+      },
+      {
+        "end": 79.36,
+        "start": 76.36,
+        "text": "Letter of recommendation"
+      },
+      {
+        "end": 82.36,
+        "start": 79.36,
+        "text": "台風"
+      },
+      {
+        "end": 85.36,
+        "start": 82.36,
+        "text": "Typhoon"
+      },
+      {
+        "end": 89.36,
+        "start": 86.36,
+        "text": "Culture"
+      },
+      {
+        "end": 91.36,
+        "start": 89.36,
+        "text": "返事"
+      },
+      {
+        "end": 93.36,
+        "start": 91.36,
+        "text": "Reply"
+      },
+      {
+        "end": 95.36,
+        "start": 93.36,
+        "text": "日"
+      },
+      {
+        "end": 98.36,
+        "start": 95.36,
+        "text": "Day"
+      },
+      {
+        "end": 101.36,
+        "start": 98.36,
+        "text": "E-adjective"
+      },
+      {
+        "end": 103.36,
+        "start": 101.36,
+        "text": "汚い"
+      },
+      {
+        "end": 105.36,
+        "start": 103.36,
+        "text": "Dirty"
+      },
+      {
+        "end": 108.36,
+        "start": 105.36,
+        "text": "U-verbs"
+      },
+      {
+        "end": 110.36,
+        "start": 108.36,
+        "text": "起こす"
+      },
+      {
+        "end": 113.36,
+        "start": 110.36,
+        "text": "To wake up"
+      },
+      {
+        "end": 115.36,
+        "start": 113.36,
+        "text": "オゴル"
+      },
+      {
+        "end": 118.36,
+        "start": 115.36,
+        "text": "To treat to a meal"
+      },
+      {
+        "end": 121.36,
+        "start": 118.36,
+        "text": "笑う"
+      },
+      {
+        "end": 123.36,
+        "start": 121.36,
+        "text": "To laugh"
+      },
+      {
+        "end": 126.36,
+        "start": 123.36,
+        "text": "落ち込む"
+      },
+      {
+        "end": 129.36,
+        "start": 126.36,
+        "text": "To get depressed"
+      },
+      {
+        "end": 131.36,
+        "start": 129.36,
+        "text": "困る"
+      },
+      {
+        "end": 134.36,
+        "start": 131.36,
+        "text": "To have difficulty"
+      },
+      {
+        "end": 136.36,
+        "start": 134.36,
+        "text": "出す"
+      },
+      {
+        "end": 138.36,
+        "start": 136.36,
+        "text": "To take out"
+      },
+      {
+        "end": 141.36,
+        "start": 138.36,
+        "text": "To hand in"
+      },
+      {
+        "end": 144.36,
+        "start": 142.36,
+        "text": "To correct"
+      },
+      {
+        "end": 146.36,
+        "start": 144.36,
+        "text": "To fix"
+      },
+      {
+        "end": 149.36,
+        "start": 146.36,
+        "text": "見つかる"
+      },
+      {
+        "end": 152.36,
+        "start": 149.36,
+        "text": "To be found"
+      },
+      {
+        "end": 154.36,
+        "start": 152.36,
+        "text": "薬す"
+      },
+      {
+        "end": 157.36,
+        "start": 154.36,
+        "text": "To translate"
+      },
+      {
+        "end": 159.36,
+        "start": 157.36,
+        "text": "カス"
+      },
+      {
+        "end": 161.36,
+        "start": 159.36,
+        "text": "To lend"
+      },
+      {
+        "end": 164.36,
+        "start": 161.36,
+        "text": "連れていく"
+      },
+      {
+        "end": 167.36,
+        "start": 164.36,
+        "text": "To take to"
+      },
+      {
+        "end": 170.36,
+        "start": 167.36,
+        "text": "道に迷う"
+      },
+      {
+        "end": 173.36,
+        "start": 170.36,
+        "text": "To become lost"
+      },
+      {
+        "end": 176.36,
+        "start": 173.36,
+        "text": "To lose one's way"
+      },
+      {
+        "end": 179.36,
+        "start": 176.36,
+        "text": "迎えに行く"
+      },
+      {
+        "end": 182.36,
+        "start": 179.36,
+        "text": "To go to pick up"
+      },
+      {
+        "end": 185.36,
+        "start": 182.36,
+        "text": "Ru-verbs"
+      },
+      {
+        "end": 188.36,
+        "start": 185.36,
+        "text": "集める"
+      },
+      {
+        "end": 191.36,
+        "start": 188.36,
+        "text": "To collect"
+      },
+      {
+        "end": 193.36,
+        "start": 191.36,
+        "text": "入れる"
+      },
+      {
+        "end": 196.36,
+        "start": 193.36,
+        "text": "To put in"
+      },
+      {
+        "end": 199.36,
+        "start": 196.36,
+        "text": "見せる"
+      },
+      {
+        "end": 202.36,
+        "start": 200.36,
+        "text": "To miss"
+      },
+      {
+        "end": 205.36,
+        "start": 202.36,
+        "text": "アイロンを欠ける"
+      },
+      {
+        "end": 208.36,
+        "start": 205.36,
+        "text": "To iron"
+      },
+      {
+        "end": 211.36,
+        "start": 208.36,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 214.36,
+        "start": 211.36,
+        "text": "朝寝坊をする"
+      },
+      {
+        "end": 217.36,
+        "start": 214.36,
+        "text": "To oversleep"
+      },
+      {
+        "end": 219.36,
+        "start": 217.36,
+        "text": "案内する"
+      },
+      {
+        "end": 222.36,
+        "start": 219.36,
+        "text": "To show around"
+      },
+      {
+        "end": 225.36,
+        "start": 222.36,
+        "text": "説明する"
+      },
+      {
+        "end": 228.36,
+        "start": 225.36,
+        "text": "To explain"
+      },
+      {
+        "end": 232.36,
+        "start": 229.36,
+        "text": "To come to pick up"
+      },
+      {
+        "end": 236.36,
+        "start": 232.36,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 239.36,
+        "start": 236.36,
+        "text": "教授に"
+      },
+      {
+        "end": 242.36,
+        "start": 239.36,
+        "text": "By the end of today"
+      },
+      {
+        "end": 245.36,
+        "start": 242.36,
+        "text": "授業中に"
+      },
+      {
+        "end": 249.36,
+        "start": 245.36,
+        "text": "In class during the class"
+      },
+      {
+        "end": 252.36,
+        "start": 249.36,
+        "text": "この間"
+      },
+      {
+        "end": 255.36,
+        "start": 252.36,
+        "text": "The other day"
+      },
+      {
+        "end": 258.36,
+        "start": 255.36,
+        "text": "これから"
+      },
+      {
+        "end": 261.36,
+        "start": 258.36,
+        "text": "From now on"
+      },
+      {
+        "end": 263.36,
+        "start": 261.36,
+        "text": "このぐらい"
+      },
+      {
+        "end": 266.36,
+        "start": 263.36,
+        "text": "About this much"
+      },
+      {
+        "end": 268.36,
+        "start": 266.36,
+        "text": "自分で"
+      },
+      {
+        "end": 271.36,
+        "start": 268.36,
+        "text": "By oneself"
+      },
+      {
+        "end": 273.36,
+        "start": 271.36,
+        "text": "他の"
+      },
+      {
+        "end": 276.36,
+        "start": 273.36,
+        "text": "Other"
+      },
+      {
+        "end": 278.36,
+        "start": 276.36,
+        "text": "えーと"
+      },
+      {
+        "end": 282.36,
+        "start": 278.36,
+        "text": "Well, let me see"
+      },
+      {
+        "end": 284.36,
+        "start": 282.36,
+        "text": "実は"
+      },
+      {
+        "end": 287.36,
+        "start": 284.36,
+        "text": "Actually, in fact"
+      },
+      {
+        "end": 289.36,
+        "start": 287.36,
+        "text": "意外"
+      },
+      {
+        "end": 292.36,
+        "start": 289.36,
+        "text": "Other than"
+      },
+      {
+        "end": 294.36,
+        "start": 292.36,
+        "text": "ごめん"
+      },
+      {
+        "end": 297.36,
+        "start": 294.36,
+        "text": "I'm sorry"
+      },
+      {
+        "end": 300.36,
+        "start": 297.36,
+        "text": "失礼します"
+      },
+      {
+        "end": 304.36,
+        "start": 300.36,
+        "text": "Excuse me, sorry to interrupt you."
+      }
+    ]
+  },
+  "K16_08": {
+    "duration": 304.69,
+    "language": "ja",
+    "languageProbability": 0.8202,
+    "segments": [
+      {
+        "end": 3.08,
+        "start": 0.08,
+        "text": "第16課"
+      },
+      {
+        "end": 6.46,
+        "start": 3.08,
+        "text": "単語"
+      },
+      {
+        "end": 11.96,
+        "start": 6.46,
+        "text": "Nouns Station Attendant"
+      },
+      {
+        "end": 14.96,
+        "start": 11.96,
+        "text": "駅員さん"
+      },
+      {
+        "end": 16.96,
+        "start": 14.96,
+        "text": "Parent"
+      },
+      {
+        "end": 18.96,
+        "start": 16.96,
+        "text": "親"
+      },
+      {
+        "end": 21.96,
+        "start": 18.96,
+        "text": "Relatives"
+      },
+      {
+        "end": 23.96,
+        "start": 21.96,
+        "text": "親戚"
+      },
+      {
+        "end": 25.96,
+        "start": 23.96,
+        "text": "Garbage"
+      },
+      {
+        "end": 28.96,
+        "start": 25.96,
+        "text": "ゴミ"
+      },
+      {
+        "end": 30.96,
+        "start": 28.96,
+        "text": "Sugar"
+      },
+      {
+        "end": 32.96,
+        "start": 30.96,
+        "text": "Sugar"
+      },
+      {
+        "end": 34.96,
+        "start": 32.96,
+        "text": "Folder"
+      },
+      {
+        "end": 35.96,
+        "start": 34.96,
+        "text": "Portfolio"
+      },
+      {
+        "end": 37.96,
+        "start": 35.96,
+        "text": "File"
+      },
+      {
+        "end": 39.96,
+        "start": 37.96,
+        "text": "File"
+      },
+      {
+        "end": 42.96,
+        "start": 39.96,
+        "text": "Size"
+      },
+      {
+        "end": 44.96,
+        "start": 42.96,
+        "text": "大きさ"
+      },
+      {
+        "end": 46.96,
+        "start": 44.96,
+        "text": "Way"
+      },
+      {
+        "end": 49.96,
+        "start": 46.96,
+        "text": "Road Directions"
+      },
+      {
+        "end": 51.96,
+        "start": 49.96,
+        "text": "道"
+      },
+      {
+        "end": 54.96,
+        "start": 51.96,
+        "text": "Final Examination"
+      },
+      {
+        "end": 57.96,
+        "start": 54.96,
+        "text": "気末試験"
+      },
+      {
+        "end": 59.96,
+        "start": 57.96,
+        "text": "Research"
+      },
+      {
+        "end": 61.96,
+        "start": 59.96,
+        "text": "研究"
+      },
+      {
+        "end": 64.96,
+        "start": 61.96,
+        "text": "Graduate School"
+      },
+      {
+        "end": 67.96,
+        "start": 64.96,
+        "text": "大学院"
+      },
+      {
+        "end": 70.96,
+        "start": 67.96,
+        "text": "Scholarship"
+      },
+      {
+        "end": 72.96,
+        "start": 70.96,
+        "text": "小学金"
+      },
+      {
+        "end": 76.96,
+        "start": 72.96,
+        "text": "Letter of Recommendation"
+      },
+      {
+        "end": 79.96,
+        "start": 76.96,
+        "text": "水泉城"
+      },
+      {
+        "end": 81.96,
+        "start": 79.96,
+        "text": "Typhoon"
+      },
+      {
+        "end": 84.96,
+        "start": 81.96,
+        "text": "Typhoo"
+      },
+      {
+        "end": 86.96,
+        "start": 84.96,
+        "text": "Culture"
+      },
+      {
+        "end": 88.96,
+        "start": 86.96,
+        "text": "文化"
+      },
+      {
+        "end": 91.96,
+        "start": 88.96,
+        "text": "Reply"
+      },
+      {
+        "end": 93.96,
+        "start": 91.96,
+        "text": "返事"
+      },
+      {
+        "end": 95.96,
+        "start": 93.96,
+        "text": "Day"
+      },
+      {
+        "end": 97.96,
+        "start": 95.96,
+        "text": "日"
+      },
+      {
+        "end": 100.96,
+        "start": 97.96,
+        "text": "E-Adjective"
+      },
+      {
+        "end": 102.96,
+        "start": 100.96,
+        "text": "Dirty"
+      },
+      {
+        "end": 104.96,
+        "start": 102.96,
+        "text": "汚い"
+      },
+      {
+        "end": 107.96,
+        "start": 104.96,
+        "text": "U-Verbs"
+      },
+      {
+        "end": 110.96,
+        "start": 107.96,
+        "text": "To wake up"
+      },
+      {
+        "end": 112.96,
+        "start": 110.96,
+        "text": "起こす"
+      },
+      {
+        "end": 116.96,
+        "start": 112.96,
+        "text": "To treat to a meal"
+      },
+      {
+        "end": 118.96,
+        "start": 116.96,
+        "text": "おごる"
+      },
+      {
+        "end": 120.96,
+        "start": 118.96,
+        "text": "To laugh"
+      },
+      {
+        "end": 123.96,
+        "start": 120.96,
+        "text": "笑う"
+      },
+      {
+        "end": 126.96,
+        "start": 123.96,
+        "text": "To get depressed"
+      },
+      {
+        "end": 128.96,
+        "start": 126.96,
+        "text": "落ち込む"
+      },
+      {
+        "end": 131.96,
+        "start": 128.96,
+        "text": "To have difficulty"
+      },
+      {
+        "end": 133.96,
+        "start": 131.96,
+        "text": "困る"
+      },
+      {
+        "end": 135.96,
+        "start": 133.96,
+        "text": "To take out"
+      },
+      {
+        "end": 138.96,
+        "start": 135.96,
+        "text": "To hand in"
+      },
+      {
+        "end": 140.96,
+        "start": 138.96,
+        "text": "出す"
+      },
+      {
+        "end": 142.96,
+        "start": 140.96,
+        "text": "To correct"
+      },
+      {
+        "end": 144.96,
+        "start": 142.96,
+        "text": "To fix"
+      },
+      {
+        "end": 148.96,
+        "start": 145.96,
+        "text": "To be found"
+      },
+      {
+        "end": 151.96,
+        "start": 148.96,
+        "text": "見つかる"
+      },
+      {
+        "end": 154.96,
+        "start": 151.96,
+        "text": "To translate"
+      },
+      {
+        "end": 156.96,
+        "start": 154.96,
+        "text": "役す"
+      },
+      {
+        "end": 158.96,
+        "start": 156.96,
+        "text": "To lend"
+      },
+      {
+        "end": 161.96,
+        "start": 158.96,
+        "text": "かす"
+      },
+      {
+        "end": 164.96,
+        "start": 161.96,
+        "text": "To take to"
+      },
+      {
+        "end": 167.96,
+        "start": 164.96,
+        "text": "連れていく"
+      },
+      {
+        "end": 169.96,
+        "start": 167.96,
+        "text": "To become lost"
+      },
+      {
+        "end": 172.96,
+        "start": 169.96,
+        "text": "To lose one's way"
+      },
+      {
+        "end": 177.96,
+        "start": 173.96,
+        "text": "To go to pick up"
+      },
+      {
+        "end": 180.96,
+        "start": 177.96,
+        "text": "迎えに行く"
+      },
+      {
+        "end": 182.96,
+        "start": 180.96,
+        "text": "Ru-Verbs"
+      },
+      {
+        "end": 185.96,
+        "start": 182.96,
+        "text": "To collect"
+      },
+      {
+        "end": 187.96,
+        "start": 185.96,
+        "text": "集める"
+      },
+      {
+        "end": 190.96,
+        "start": 187.96,
+        "text": "To put in"
+      },
+      {
+        "end": 192.96,
+        "start": 190.96,
+        "text": "入れる"
+      },
+      {
+        "end": 195.96,
+        "start": 192.96,
+        "text": "To show"
+      },
+      {
+        "end": 197.96,
+        "start": 195.96,
+        "text": "見せる"
+      },
+      {
+        "end": 200.96,
+        "start": 197.96,
+        "text": "To miss"
+      },
+      {
+        "end": 204.96,
+        "start": 201.96,
+        "text": "To iron"
+      },
+      {
+        "end": 207.96,
+        "start": 204.96,
+        "text": "Ironをかける"
+      },
+      {
+        "end": 210.96,
+        "start": 207.96,
+        "text": "Irregular verbs"
+      },
+      {
+        "end": 213.96,
+        "start": 210.96,
+        "text": "To oversleep"
+      },
+      {
+        "end": 216.96,
+        "start": 213.96,
+        "text": "朝寝坊をする"
+      },
+      {
+        "end": 219.96,
+        "start": 216.96,
+        "text": "To show around"
+      },
+      {
+        "end": 221.96,
+        "start": 219.96,
+        "text": "案内する"
+      },
+      {
+        "end": 224.96,
+        "start": 221.96,
+        "text": "To explain"
+      },
+      {
+        "end": 227.96,
+        "start": 224.96,
+        "text": "説明する"
+      },
+      {
+        "end": 230.96,
+        "start": 227.96,
+        "text": "To come to pick up"
+      },
+      {
+        "end": 233.96,
+        "start": 230.96,
+        "text": "迎えに来る"
+      },
+      {
+        "end": 237.96,
+        "start": 233.96,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 240.96,
+        "start": 237.96,
+        "text": "By the end of today"
+      },
+      {
+        "end": 242.96,
+        "start": 240.96,
+        "text": "教授に"
+      },
+      {
+        "end": 247.96,
+        "start": 242.96,
+        "text": "In class, during the class"
+      },
+      {
+        "end": 249.96,
+        "start": 247.96,
+        "text": "授業中に"
+      },
+      {
+        "end": 252.96,
+        "start": 249.96,
+        "text": "The other day"
+      },
+      {
+        "end": 255.96,
+        "start": 252.96,
+        "text": "この間"
+      },
+      {
+        "end": 258.96,
+        "start": 255.96,
+        "text": "Now on"
+      },
+      {
+        "end": 260.96,
+        "start": 258.96,
+        "text": "これから"
+      },
+      {
+        "end": 263.96,
+        "start": 260.96,
+        "text": "About this much"
+      },
+      {
+        "end": 265.96,
+        "start": 263.96,
+        "text": "このぐらい"
+      },
+      {
+        "end": 268.96,
+        "start": 265.96,
+        "text": "By oneself"
+      },
+      {
+        "end": 270.96,
+        "start": 268.96,
+        "text": "自分で"
+      },
+      {
+        "end": 273.96,
+        "start": 270.96,
+        "text": "Other"
+      },
+      {
+        "end": 275.96,
+        "start": 273.96,
+        "text": "他の"
+      },
+      {
+        "end": 279.96,
+        "start": 275.96,
+        "text": "Well, let me see"
+      },
+      {
+        "end": 281.96,
+        "start": 279.96,
+        "text": "えーと"
+      },
+      {
+        "end": 284.96,
+        "start": 281.96,
+        "text": "Actually, in fact"
+      },
+      {
+        "end": 286.96,
+        "start": 284.96,
+        "text": "実は"
+      },
+      {
+        "end": 289.96,
+        "start": 286.96,
+        "text": "Other than"
+      },
+      {
+        "end": 291.96,
+        "start": 289.96,
+        "text": "意外"
+      },
+      {
+        "end": 294.96,
+        "start": 291.96,
+        "text": "I'm sorry"
+      },
+      {
+        "end": 296.96,
+        "start": 294.96,
+        "text": "ごめん"
+      },
+      {
+        "end": 300.96,
+        "start": 296.96,
+        "text": "Excuse me, sorry to interrupt you"
+      },
+      {
+        "end": 303.96,
+        "start": 300.96,
+        "text": "失礼します"
+      }
+    ]
+  },
+  "K16_09": {
+    "duration": 103.84,
+    "language": "ja",
+    "languageProbability": 0.9844,
+    "segments": [
+      {
+        "end": 5.01,
+        "start": 0.21,
+        "text": "第16課 練習"
+      },
+      {
+        "end": 11.49,
+        "start": 5.01,
+        "text": "1. 晩御飯を作ってあげました。"
+      },
+      {
+        "end": 16.61,
+        "start": 11.49,
+        "text": "えい エクゼンプル"
+      },
+      {
+        "end": 21.1,
+        "start": 16.61,
+        "text": "晩御飯を作ってあげました。"
+      },
+      {
+        "end": 27.68,
+        "start": 21.1,
+        "text": "1. 一緒にいてあげました。"
+      },
+      {
+        "end": 35.97,
+        "start": 27.68,
+        "text": "2. 宿題を手伝ってあげました。"
+      },
+      {
+        "end": 44.43,
+        "start": 35.97,
+        "text": "3. レポートを直してあげました。"
+      },
+      {
+        "end": 54.1,
+        "start": 46.08,
+        "text": "4. 花を買ってあげました。"
+      },
+      {
+        "end": 62.62,
+        "start": 54.1,
+        "text": "5. 病院に連れて行ってあげました。"
+      },
+      {
+        "end": 70.62,
+        "start": 62.62,
+        "text": "6. 洗濯してあげました。"
+      },
+      {
+        "end": 78.91,
+        "start": 70.62,
+        "text": "7. 部屋を掃除してあげました。"
+      },
+      {
+        "end": 87.07,
+        "start": 78.91,
+        "text": "8. ノートを貸してあげました。"
+      },
+      {
+        "end": 95.92,
+        "start": 87.07,
+        "text": "9. 先生にメールを送ってあげました。"
+      },
+      {
+        "end": 102.64,
+        "start": 95.92,
+        "text": "10. お皿を洗ってあげました。"
+      }
+    ]
+  },
+  "K16_10": {
+    "duration": 153.34,
+    "language": "ja",
+    "languageProbability": 0.9088,
+    "segments": [
+      {
+        "end": 10.23,
+        "start": 0.11,
+        "text": "c. first use te kureru.example"
+      },
+      {
+        "end": 12.85,
+        "start": 10.23,
+        "text": "ご飯を作る"
+      },
+      {
+        "end": 18.43,
+        "start": 12.85,
+        "text": "ホストファミリーがご飯を作ってくれました。"
+      },
+      {
+        "end": 24.36,
+        "start": 18.43,
+        "text": "1.部屋を掃除する"
+      },
+      {
+        "end": 29.61,
+        "start": 24.36,
+        "text": "ホストファミリーが部屋を掃除してくれました。"
+      },
+      {
+        "end": 35.3,
+        "start": 29.61,
+        "text": "2.選択する"
+      },
+      {
+        "end": 40.28,
+        "start": 35.3,
+        "text": "ホストファミリーが選択してくれました。"
+      },
+      {
+        "end": 46.41,
+        "start": 40.44,
+        "text": "3.アイロンを掛ける"
+      },
+      {
+        "end": 51.54,
+        "start": 46.41,
+        "text": "ホストファミリーがアイロンを掛けてくれました。"
+      },
+      {
+        "end": 57.3,
+        "start": 51.54,
+        "text": "4.迎えに来る"
+      },
+      {
+        "end": 62.22,
+        "start": 57.3,
+        "text": "ホストファミリーが迎えに来てくれました。"
+      },
+      {
+        "end": 68.22,
+        "start": 62.22,
+        "text": "5.コーヒーをおごる"
+      },
+      {
+        "end": 73.22,
+        "start": 68.22,
+        "text": "友達がコーヒーをおごってくれました。"
+      },
+      {
+        "end": 79.4,
+        "start": 73.22,
+        "text": "6.京都に連れていく"
+      },
+      {
+        "end": 84.73,
+        "start": 79.4,
+        "text": "友達が京都に連れて行ってくれました。"
+      },
+      {
+        "end": 90.69,
+        "start": 84.73,
+        "text": "7.セーターを編む"
+      },
+      {
+        "end": 95.88,
+        "start": 90.69,
+        "text": "友達がセーターを編んでくれました。"
+      },
+      {
+        "end": 102.33,
+        "start": 95.88,
+        "text": "8.家族の写真を見せる"
+      },
+      {
+        "end": 108.05,
+        "start": 102.33,
+        "text": "友達が家族の写真を見せてくれました。"
+      },
+      {
+        "end": 113.78,
+        "start": 108.05,
+        "text": "9.案内する"
+      },
+      {
+        "end": 118.9,
+        "start": 113.78,
+        "text": "知らない人が案内してくれました。"
+      },
+      {
+        "end": 125.22,
+        "start": 118.9,
+        "text": "10.道を教える"
+      },
+      {
+        "end": 130.5,
+        "start": 125.22,
+        "text": "知らない人が道を教えてくれました。"
+      },
+      {
+        "end": 136.92,
+        "start": 130.5,
+        "text": "11.荷物を持つ"
+      },
+      {
+        "end": 142.34,
+        "start": 136.92,
+        "text": "知らない人が荷物を持ってくれました。"
+      },
+      {
+        "end": 148.6,
+        "start": 142.34,
+        "text": "12.千円貸す"
+      },
+      {
+        "end": 153.24,
+        "start": 148.6,
+        "text": "知らない人が千円貸してくれました。"
+      }
+    ]
+  },
+  "K16_11": {
+    "duration": 151.3,
+    "language": "ja",
+    "languageProbability": 0.852,
+    "segments": [
+      {
+        "end": 7.32,
+        "start": 0.02,
+        "text": "now use te morau エクゼンプル"
+      },
+      {
+        "end": 15.15,
+        "start": 7.32,
+        "text": "ご飯を作る ホストファミリーにご飯を作ってもらいました"
+      },
+      {
+        "end": 26.8,
+        "start": 15.15,
+        "text": "1 部屋を掃除する ホストファミリーに部屋を掃除してもらいました"
+      },
+      {
+        "end": 36.21,
+        "start": 26.8,
+        "text": "2 選択する ホストファミリーに選択してもらいました"
+      },
+      {
+        "end": 49.09,
+        "start": 37.93,
+        "text": "3 アイロンを掛ける ホストファミリーにアイロンを掛けてもらいました"
+      },
+      {
+        "end": 60.01,
+        "start": 49.09,
+        "text": "4 迎えに来る ホストファミリーに迎えに来てもらいました"
+      },
+      {
+        "end": 71.11,
+        "start": 60.01,
+        "text": "5 コーヒーをおごる 友達にコーヒーをおごってもらいました"
+      },
+      {
+        "end": 82.86,
+        "start": 71.11,
+        "text": "6 京都に連れて行く 友達に京都に連れて行ってもらいました"
+      },
+      {
+        "end": 93.9,
+        "start": 82.86,
+        "text": "7 セーターを編む 友達にセーターを編んでもらいました"
+      },
+      {
+        "end": 106.42,
+        "start": 93.9,
+        "text": "8 家族の写真を見せる 友達に家族の写真を見せてもらいました"
+      },
+      {
+        "end": 117.02,
+        "start": 106.42,
+        "text": "9 案内する 知らない人に案内してもらいました"
+      },
+      {
+        "end": 128.42,
+        "start": 117.02,
+        "text": "10 道を教える 知らない人に道を教えてもらいました"
+      },
+      {
+        "end": 140.08,
+        "start": 128.42,
+        "text": "11 荷物を持つ 知らない人に荷物を持ってもらいました"
+      },
+      {
+        "end": 151.26,
+        "start": 140.08,
+        "text": "12 千円貸す 知らない人に千円貸してもらいました"
+      }
+    ]
+  },
+  "K16_12": {
+    "duration": 86.13,
+    "language": "ja",
+    "languageProbability": 0.9188,
+    "segments": [
+      {
+        "end": 10.36,
+        "start": 0.08,
+        "text": "1.お母さんが晩ご飯を作ってくれました。"
+      },
+      {
+        "end": 16.49,
+        "start": 10.36,
+        "text": "お母さんに晩ご飯を作ってもらいました。"
+      },
+      {
+        "end": 25.47,
+        "start": 16.49,
+        "text": "1.お父さんが美術館に連れていってくれました。"
+      },
+      {
+        "end": 31.88,
+        "start": 25.47,
+        "text": "お父さんに美術館に連れていってもらいました。"
+      },
+      {
+        "end": 43.86,
+        "start": 33.94,
+        "text": "2.お父さんがアイスクリームを買ってくれました。"
+      },
+      {
+        "end": 50.31,
+        "start": 43.86,
+        "text": "お父さんにアイスクリームを買ってもらいました。"
+      },
+      {
+        "end": 61.29,
+        "start": 50.31,
+        "text": "3.ホストファミリーに家族の写真を見せてあげました。"
+      },
+      {
+        "end": 70.74,
+        "start": 61.29,
+        "text": "4.お母さんが傘を貸してくれました。"
+      },
+      {
+        "end": 74.74,
+        "start": 70.74,
+        "text": "お母さんに傘を貸してもらいました。"
+      },
+      {
+        "end": 85.67,
+        "start": 74.74,
+        "text": "5.ひなさんに英語を教えてあげました。"
+      }
+    ]
+  },
+  "K16_13": {
+    "duration": 153.36,
+    "language": "ja",
+    "languageProbability": 0.972,
+    "segments": [
+      {
+        "end": 6.11,
+        "start": 0.11,
+        "text": "2.ゆっくり話していただけませんか?"
+      },
+      {
+        "end": 11.39,
+        "start": 6.11,
+        "text": "a.example"
+      },
+      {
+        "end": 14.39,
+        "start": 11.39,
+        "text": "ゆっくり話す"
+      },
+      {
+        "end": 17.39,
+        "start": 14.39,
+        "text": "ゆっくり話してくれない?"
+      },
+      {
+        "end": 21.39,
+        "start": 17.39,
+        "text": "ゆっくり話してくれませんか?"
+      },
+      {
+        "end": 27.06,
+        "start": 21.39,
+        "text": "ゆっくり話していただけませんか?"
+      },
+      {
+        "end": 33.3,
+        "start": 27.06,
+        "text": "1.自転車を貸す"
+      },
+      {
+        "end": 35.3,
+        "start": 33.3,
+        "text": "自転車を貸してくれない?"
+      },
+      {
+        "end": 42.94,
+        "start": 35.3,
+        "text": "2.本を返す"
+      },
+      {
+        "end": 44.94,
+        "start": 42.94,
+        "text": "本を返してくれない?"
+      },
+      {
+        "end": 50.45,
+        "start": 44.94,
+        "text": "3.友達を紹介する"
+      },
+      {
+        "end": 57.22,
+        "start": 50.45,
+        "text": "友達を紹介してくれない?"
+      },
+      {
+        "end": 63.43,
+        "start": 57.22,
+        "text": "4.ノートを見せる"
+      },
+      {
+        "end": 66.84,
+        "start": 63.43,
+        "text": "ノートを見せてくれない?"
+      },
+      {
+        "end": 72.98,
+        "start": 66.84,
+        "text": "5.6時に起こす"
+      },
+      {
+        "end": 77.39,
+        "start": 72.98,
+        "text": "6時に起こしてくれませんか?"
+      },
+      {
+        "end": 83.57,
+        "start": 77.39,
+        "text": "6.駅に迎えに来る"
+      },
+      {
+        "end": 88.07,
+        "start": 83.57,
+        "text": "駅に迎えに来てくれませんか?"
+      },
+      {
+        "end": 94.25,
+        "start": 88.07,
+        "text": "7.お弁当を作る"
+      },
+      {
+        "end": 98.69,
+        "start": 94.25,
+        "text": "お弁当を作ってくれませんか?"
+      },
+      {
+        "end": 105.02,
+        "start": 98.69,
+        "text": "8.宿題を手伝う"
+      },
+      {
+        "end": 109.5,
+        "start": 105.02,
+        "text": "宿題を手伝ってくれませんか?"
+      },
+      {
+        "end": 115.74,
+        "start": 109.5,
+        "text": "9.文法を説明する"
+      },
+      {
+        "end": 118.74,
+        "start": 115.74,
+        "text": "文法を説明していただけませんか?"
+      },
+      {
+        "end": 124.14,
+        "start": 118.74,
+        "text": "10.水線上を書く"
+      },
+      {
+        "end": 129.42,
+        "start": 124.14,
+        "text": "水線上を書いていただけませんか?"
+      },
+      {
+        "end": 138.03,
+        "start": 129.42,
+        "text": "11.英語に訳す"
+      },
+      {
+        "end": 142.47,
+        "start": 138.03,
+        "text": "英語に訳していただけませんか?"
+      },
+      {
+        "end": 146.47,
+        "start": 142.47,
+        "text": "12.作文を直す"
+      },
+      {
+        "end": 152.74,
+        "start": 146.47,
+        "text": "作文を直していただけませんか?"
+      }
+    ]
+  },
+  "K16_14": {
+    "duration": 112.46,
+    "language": "ja",
+    "languageProbability": 0.9764,
+    "segments": [
+      {
+        "end": 6.07,
+        "start": 0.18,
+        "text": "3 良くなるといいですね"
+      },
+      {
+        "end": 10.25,
+        "start": 6.07,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 13.53,
+        "start": 11.25,
+        "text": "風をひいたんです"
+      },
+      {
+        "end": 17.9,
+        "start": 13.53,
+        "text": "早く良くなるといいですね"
+      },
+      {
+        "end": 22.15,
+        "start": 17.9,
+        "text": "明日から旅行に行くんです"
+      },
+      {
+        "end": 30.5,
+        "start": 22.15,
+        "text": "1 いい天気だといいですね"
+      },
+      {
+        "end": 38.79,
+        "start": 30.5,
+        "text": "2 寒くないといいですね"
+      },
+      {
+        "end": 46.88,
+        "start": 38.79,
+        "text": "3 楽しいといいですね"
+      },
+      {
+        "end": 53.29,
+        "start": 47.04,
+        "text": "大学院で日本の文化について研究したいんです"
+      },
+      {
+        "end": 62.23,
+        "start": 53.29,
+        "text": "4 大学院に入れるといいですね"
+      },
+      {
+        "end": 70.97,
+        "start": 62.23,
+        "text": "5 省額金がもらえるといいですね"
+      },
+      {
+        "end": 79.86,
+        "start": 70.97,
+        "text": "6 良い研究ができるといいですね"
+      },
+      {
+        "end": 83.44,
+        "start": 79.86,
+        "text": "宿題を忘れたんです"
+      },
+      {
+        "end": 93.13,
+        "start": 83.44,
+        "text": "7 先生が宿題を集めないといいですね"
+      },
+      {
+        "end": 102.42,
+        "start": 93.13,
+        "text": "8 先生が授業に来ないといいですね"
+      },
+      {
+        "end": 112.32,
+        "start": 102.42,
+        "text": "9 台風が来て今日授業がないといいですね"
+      }
+    ]
+  },
+  "K16_15": {
+    "duration": 119.77,
+    "language": "ja",
+    "languageProbability": 0.9889,
+    "segments": [
+      {
+        "end": 7.44,
+        "start": 0.08,
+        "text": "4 風を引いたとき病院に行きます"
+      },
+      {
+        "end": 12.72,
+        "start": 7.44,
+        "text": "a エグゼンプル"
+      },
+      {
+        "end": 20.1,
+        "start": 12.72,
+        "text": "食べすぎました 食べすぎたとき薬を飲みます"
+      },
+      {
+        "end": 28.43,
+        "start": 20.1,
+        "text": "コーヒーを飲みます コーヒーを飲むとき砂糖を入れます"
+      },
+      {
+        "end": 38.82,
+        "start": 28.43,
+        "text": "1 眠いです 眠いときコーヒーを飲みます"
+      },
+      {
+        "end": 44.48,
+        "start": 38.9,
+        "text": "2 わかりません"
+      },
+      {
+        "end": 51.06,
+        "start": 44.48,
+        "text": "わからないとき人に行きます 3"
+      },
+      {
+        "end": 62.45,
+        "start": 51.06,
+        "text": "日本語で手紙を書きました 日本語で手紙を書いたとき先生に見てもらいます"
+      },
+      {
+        "end": 68.27,
+        "start": 62.45,
+        "text": "4 ホームシックです"
+      },
+      {
+        "end": 75.47,
+        "start": 68.27,
+        "text": "ホームシックのとき両親に電話します 5"
+      },
+      {
+        "end": 85.62,
+        "start": 75.47,
+        "text": "友達の家に行きます 友達の家に行くときケーキを買います"
+      },
+      {
+        "end": 91.22,
+        "start": 85.62,
+        "text": "6 暇です"
+      },
+      {
+        "end": 97.63,
+        "start": 91.22,
+        "text": "暇なときゲームをします 7"
+      },
+      {
+        "end": 108.69,
+        "start": 97.63,
+        "text": "美味しいピザが食べたいです 美味しいピザが食べたいときレストランに行きます"
+      },
+      {
+        "end": 114.78,
+        "start": 108.77,
+        "text": "8 朝寝坊をしました"
+      },
+      {
+        "end": 119.74,
+        "start": 114.78,
+        "text": "朝寝坊をしたときタクシーに乗ります"
+      }
+    ]
+  },
+  "K16_16": {
+    "duration": 132.02,
+    "language": "ja",
+    "languageProbability": 0.9397,
+    "segments": [
+      {
+        "end": 5.3,
+        "start": 0.02,
+        "text": "B. エクゼンプル"
+      },
+      {
+        "end": 8.3,
+        "start": 5.3,
+        "text": "道に迷う"
+      },
+      {
+        "end": 12.3,
+        "start": 8.3,
+        "text": "親切そうな人に道を聞く"
+      },
+      {
+        "end": 17.3,
+        "start": 12.3,
+        "text": "道に迷った時 親切そうな人に道を聞きます"
+      },
+      {
+        "end": 22.64,
+        "start": 17.3,
+        "text": "1. 友達が来る"
+      },
+      {
+        "end": 25.64,
+        "start": 22.64,
+        "text": "私の町を案内する"
+      },
+      {
+        "end": 32.82,
+        "start": 25.64,
+        "text": "友達が来た時 私の町を案内します"
+      },
+      {
+        "end": 38.26,
+        "start": 32.82,
+        "text": "2. 寂しい"
+      },
+      {
+        "end": 40.26,
+        "start": 38.26,
+        "text": "友達に電話する"
+      },
+      {
+        "end": 46.46,
+        "start": 40.26,
+        "text": "寂しい時 友達に電話します"
+      },
+      {
+        "end": 52,
+        "start": 46.46,
+        "text": "3. 電車に乗る"
+      },
+      {
+        "end": 54,
+        "start": 52,
+        "text": "キップを買う"
+      },
+      {
+        "end": 61.55,
+        "start": 54,
+        "text": "電車に乗る時 キップを買います"
+      },
+      {
+        "end": 65.55,
+        "start": 61.55,
+        "text": "4. 写真を撮る"
+      },
+      {
+        "end": 67.55,
+        "start": 65.55,
+        "text": "チーズという"
+      },
+      {
+        "end": 73.79,
+        "start": 67.55,
+        "text": "写真を撮る時 チーズと言います"
+      },
+      {
+        "end": 78.23,
+        "start": 73.79,
+        "text": "5. 暇だ"
+      },
+      {
+        "end": 80.23,
+        "start": 78.23,
+        "text": "料理をする"
+      },
+      {
+        "end": 85.38,
+        "start": 80.23,
+        "text": "暇な時 料理をします"
+      },
+      {
+        "end": 91.82,
+        "start": 85.38,
+        "text": "6. リズニーランドに行く"
+      },
+      {
+        "end": 94.82,
+        "start": 91.82,
+        "text": "ミッキーのぬいぐるみを買った"
+      },
+      {
+        "end": 98.99,
+        "start": 94.82,
+        "text": "リズニーランドに行った時"
+      },
+      {
+        "end": 101.99,
+        "start": 98.99,
+        "text": "ミッキーのぬいぐるみを買いました"
+      },
+      {
+        "end": 107.37,
+        "start": 101.99,
+        "text": "7. 友達が病気だ"
+      },
+      {
+        "end": 110.37,
+        "start": 108.37,
+        "text": "一緒にいてあげる"
+      },
+      {
+        "end": 116.51,
+        "start": 110.37,
+        "text": "友達が病気の時 一緒にいてあげます"
+      },
+      {
+        "end": 121.95,
+        "start": 116.51,
+        "text": "8. 風を引く"
+      },
+      {
+        "end": 123.95,
+        "start": 121.95,
+        "text": "病院に行く"
+      },
+      {
+        "end": 130.16,
+        "start": 123.95,
+        "text": "風を引いた時 病院に行きます"
+      }
+    ]
+  },
+  "K16_17": {
+    "duration": 110,
+    "language": "ja",
+    "languageProbability": 0.9736,
+    "segments": [
+      {
+        "end": 5.08,
+        "start": 0.08,
+        "text": "ご 来られなくて済みませんでした"
+      },
+      {
+        "end": 10.77,
+        "start": 5.08,
+        "text": "えい エクゼンプル"
+      },
+      {
+        "end": 14.77,
+        "start": 11.77,
+        "text": "授業に来られない"
+      },
+      {
+        "end": 17.77,
+        "start": 14.77,
+        "text": "授業に来られなくて済みませんでした"
+      },
+      {
+        "end": 23.27,
+        "start": 17.77,
+        "text": "夜遅く電話する"
+      },
+      {
+        "end": 25.27,
+        "start": 23.27,
+        "text": "夜遅く電話してごめん"
+      },
+      {
+        "end": 30.87,
+        "start": 25.27,
+        "text": "一 授業中に話す"
+      },
+      {
+        "end": 38.42,
+        "start": 30.87,
+        "text": "授業中に話して済みませんでした"
+      },
+      {
+        "end": 44.63,
+        "start": 38.42,
+        "text": "二 授業中に寝る"
+      },
+      {
+        "end": 49.07,
+        "start": 44.63,
+        "text": "授業中に寝て済みませんでした"
+      },
+      {
+        "end": 52.07,
+        "start": 49.07,
+        "text": "三 遅刻する"
+      },
+      {
+        "end": 58.75,
+        "start": 52.07,
+        "text": "遅刻して済みませんでした"
+      },
+      {
+        "end": 64.93,
+        "start": 58.75,
+        "text": "四 教科書を持ってこない"
+      },
+      {
+        "end": 67.93,
+        "start": 64.93,
+        "text": "教科書を持ってこなくて済みませんでした"
+      },
+      {
+        "end": 73.27,
+        "start": 67.93,
+        "text": "五 返事が遅くなる"
+      },
+      {
+        "end": 79.79,
+        "start": 73.27,
+        "text": "返事が遅くなってごめん"
+      },
+      {
+        "end": 85.94,
+        "start": 79.79,
+        "text": "六 約束を守らない"
+      },
+      {
+        "end": 90.31,
+        "start": 85.94,
+        "text": "約束を守らなくてごめん"
+      },
+      {
+        "end": 96.46,
+        "start": 90.31,
+        "text": "七 パーティーに行かない"
+      },
+      {
+        "end": 98.46,
+        "start": 96.46,
+        "text": "パーティーに行かなくてごめん"
+      },
+      {
+        "end": 103.86,
+        "start": 98.46,
+        "text": "八 迎えに行けない"
+      },
+      {
+        "end": 110.01,
+        "start": 103.86,
+        "text": "迎えに行けなくてごめん"
+      }
+    ]
+  },
+  "W16_A": {
+    "duration": 93.1,
+    "language": "ja",
+    "languageProbability": 0.9866,
+    "segments": [
+      {
+        "end": 4.58,
+        "start": 0.08,
+        "text": "第16日 きくれんしゅう"
+      },
+      {
+        "end": 8.66,
+        "start": 4.58,
+        "text": "えい"
+      },
+      {
+        "end": 12.36,
+        "start": 8.66,
+        "text": "はなこさん 好きだよ"
+      },
+      {
+        "end": 19.36,
+        "start": 12.36,
+        "text": "うれしい たろうさん 私も たろうさんが好きよ"
+      },
+      {
+        "end": 22.86,
+        "start": 19.36,
+        "text": "はやくはなこさんと結婚したい"
+      },
+      {
+        "end": 28.16,
+        "start": 22.86,
+        "text": "僕が毎日 おいしい朝ごはんをつくってあげるよ"
+      },
+      {
+        "end": 33.46,
+        "start": 28.36,
+        "text": "朝起きたとき ベッドでコーヒーが飲みたい"
+      },
+      {
+        "end": 39.06,
+        "start": 33.46,
+        "text": "じゃあ毎朝コーヒーで はなこさんをおこしてあげるよ"
+      },
+      {
+        "end": 42.86,
+        "start": 39.06,
+        "text": "ありがとう あのー"
+      },
+      {
+        "end": 46.86,
+        "start": 42.86,
+        "text": "たろうさん どうしたの"
+      },
+      {
+        "end": 52.86,
+        "start": 46.86,
+        "text": "私 掃除があまり好きじゃないの"
+      },
+      {
+        "end": 57.06,
+        "start": 52.86,
+        "text": "心配しないで 僕がしてあげるから"
+      },
+      {
+        "end": 62.36,
+        "start": 57.06,
+        "text": "本当? じゃあ私買い物する"
+      },
+      {
+        "end": 68.06,
+        "start": 62.36,
+        "text": "時々買いすぎるけど 買い物ならできると思う"
+      },
+      {
+        "end": 70.96,
+        "start": 68.06,
+        "text": "あの はなこさん"
+      },
+      {
+        "end": 74.96,
+        "start": 70.96,
+        "text": "僕のシャツにアイロンをかけてくれる?"
+      },
+      {
+        "end": 80.56,
+        "start": 74.96,
+        "text": "会社で はなこさんがアイロンをかけてくれたシャツを着たいんだ"
+      },
+      {
+        "end": 83.56,
+        "start": 80.66,
+        "text": "ええ いいけど"
+      },
+      {
+        "end": 86.16,
+        "start": 83.56,
+        "text": "選択はしてね"
+      },
+      {
+        "end": 88.16,
+        "start": 86.16,
+        "text": "うん"
+      }
+    ]
+  },
+  "W16_B": {
+    "duration": 113.95,
+    "language": "ja",
+    "languageProbability": 0.9835,
+    "segments": [
+      {
+        "end": 9.31,
+        "start": 0.08,
+        "text": "B 桜大学のみなさんこんにちは ゆかです"
+      },
+      {
+        "end": 18.06,
+        "start": 9.31,
+        "text": "部屋が汚くてすみません 私の後ろあまり見ないでください"
+      },
+      {
+        "end": 24.62,
+        "start": 18.06,
+        "text": "私は今南オハイオ大学に留学しています"
+      },
+      {
+        "end": 31.1,
+        "start": 24.62,
+        "text": "アメリカに来た時は英語がわからなかったから大変でした"
+      },
+      {
+        "end": 36.62,
+        "start": 31.26,
+        "text": "でも今は毎日とても楽しいです"
+      },
+      {
+        "end": 43.1,
+        "start": 36.62,
+        "text": "ホストファミリーのお父さんとお母さんはとても親切です"
+      },
+      {
+        "end": 50.75,
+        "start": 43.1,
+        "text": "私は英語が下手なのでいつもゆっくり話してくれます"
+      },
+      {
+        "end": 59.79,
+        "start": 50.75,
+        "text": "ホストファミリーには子供が二人います 名前はジョンとサラです"
+      },
+      {
+        "end": 68.83,
+        "start": 59.87,
+        "text": "ジョンはよく私をパーティーに連れて行ってくれたり 友達を紹介してくれたりします"
+      },
+      {
+        "end": 78.19,
+        "start": 68.83,
+        "text": "ジョンは大学で日本語を勉強しているので私はよく宿題を手伝ってあげます"
+      },
+      {
+        "end": 84.03,
+        "start": 78.19,
+        "text": "サラはよく私に服を貸してくれます"
+      },
+      {
+        "end": 90.16,
+        "start": 84.11,
+        "text": "私は日本の歌を教えてあげます"
+      },
+      {
+        "end": 96.16,
+        "start": 90.16,
+        "text": "ジョンとサラが日本の大学生と話してみたいと言っているので"
+      },
+      {
+        "end": 102.32,
+        "start": 96.16,
+        "text": "興味がある人はビデオチャットに参加してくれませんか"
+      },
+      {
+        "end": 106.56,
+        "start": 102.32,
+        "text": "よろしくお願いします じゃあ"
+      },
+      {
+        "end": 109.28,
+        "start": 106.56,
+        "text": "お元気で"
+      }
+    ]
+  },
+  "W16_C": {
+    "duration": 76.67,
+    "language": "ja",
+    "languageProbability": 0.976,
+    "segments": [
+      {
+        "end": 7.16,
+        "start": 0.11,
+        "text": "すぃ リエさんお誕生日おめでとうございます"
+      },
+      {
+        "end": 13.42,
+        "start": 7.16,
+        "text": "はたちになって何をしてみたいですか そうですねー"
+      },
+      {
+        "end": 23.04,
+        "start": 13.42,
+        "text": "今年は中国でコンサートができるといいですね 中国でもリエさんの歌はとても人気があるんですよね"
+      },
+      {
+        "end": 28.98,
+        "start": 23.04,
+        "text": "ありがとうございます でも忙しくて大変ですね"
+      },
+      {
+        "end": 33.82,
+        "start": 28.98,
+        "text": "ええ もっと休みが取れるといいんですが"
+      },
+      {
+        "end": 41.06,
+        "start": 33.82,
+        "text": "実は先月は休みが3日しかなかったんです そうですか"
+      },
+      {
+        "end": 47.42,
+        "start": 41.06,
+        "text": "あのー リエさんは歌手の最上さんと付き合っていますが"
+      },
+      {
+        "end": 54.34,
+        "start": 47.42,
+        "text": "結婚する予定は 最上さんとは今はいい友達です"
+      },
+      {
+        "end": 61.9,
+        "start": 54.46,
+        "text": "私も彼も若いし今はもっと仕事をしたいし そうですか"
+      },
+      {
+        "end": 68.9,
+        "start": 61.9,
+        "text": "それは私たちにはいいニュースですね これからも頑張ってください"
+      },
+      {
+        "end": 72.34,
+        "start": 68.9,
+        "text": "どうもありがとうございます"
+      }
+    ]
+  }
+}
