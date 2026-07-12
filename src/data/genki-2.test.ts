@@ -6,7 +6,7 @@ import { genki2 } from './genki-2'
 import { genki2AudioSourceByCode } from './genki-2-audio-source'
 
 describe('Genki II course contract', () => {
-  const expectedSectionIds = ['lesson-13']
+  const expectedSectionIds = ['lesson-13', 'lesson-14']
   const sections = genki2.sections
   const questions = sections.flatMap((section) => section.groups.flatMap((group) => group.questions))
   const tracks = sections.flatMap((section) => section.audios ?? [])

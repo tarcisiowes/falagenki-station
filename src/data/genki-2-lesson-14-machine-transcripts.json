@@ -1,0 +1,2492 @@
+{
+  "K14_01": {
+    "duration": 29.96,
+    "language": "ja",
+    "languageProbability": 0.9937,
+    "segments": [
+      {
+        "end": 4.68,
+        "start": 0.18,
+        "text": "第14課 バレンタインデー"
+      },
+      {
+        "end": 10.7,
+        "start": 4.68,
+        "text": "会話 1"
+      },
+      {
+        "end": 16.2,
+        "start": 10.7,
+        "text": "バレンタインデーのプレゼントは何がいいと思いますか?"
+      },
+      {
+        "end": 19,
+        "start": 16.2,
+        "text": "そうですね"
+      },
+      {
+        "end": 25.7,
+        "start": 19,
+        "text": "たけしさんはいつも同じセーターを着ているから セーターをあげたらどうですか?"
+      },
+      {
+        "end": 29.8,
+        "start": 25.7,
+        "text": "それはいいかもしれませんね"
+      }
+    ]
+  },
+  "K14_02": {
+    "duration": 38.79,
+    "language": "ja",
+    "languageProbability": 0.6763,
+    "segments": [
+      {
+        "end": 3.11,
+        "start": 0.11,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 8.11,
+        "start": 4.11,
+        "text": "バレンタインデーのプレゼントは何がいいと思いますか?"
+      },
+      {
+        "end": 15.33,
+        "start": 8.11,
+        "text": "そうですねー"
+      },
+      {
+        "end": 21.82,
+        "start": 15.33,
+        "text": "タケシさんはいつも同じセーターを着ているから"
+      },
+      {
+        "end": 23.82,
+        "start": 21.82,
+        "text": "セーターをあげたらどうですか?"
+      },
+      {
+        "end": 33.48,
+        "start": 23.82,
+        "text": "それはいいかもしれませんね"
+      }
+    ]
+  },
+  "K14_03": {
+    "duration": 36.05,
+    "language": "ja",
+    "languageProbability": 0.9931,
+    "segments": [
+      {
+        "end": 2.11,
+        "start": 0.11,
+        "text": "二"
+      },
+      {
+        "end": 4.11,
+        "start": 2.11,
+        "text": "タケシ君"
+      },
+      {
+        "end": 6.11,
+        "start": 4.11,
+        "text": "はい、これ"
+      },
+      {
+        "end": 9.11,
+        "start": 6.11,
+        "text": "え、僕に?"
+      },
+      {
+        "end": 12.11,
+        "start": 9.11,
+        "text": "どうもありがとう"
+      },
+      {
+        "end": 14.11,
+        "start": 12.11,
+        "text": "開けてもいい?"
+      },
+      {
+        "end": 16.11,
+        "start": 14.11,
+        "text": "うん"
+      },
+      {
+        "end": 20.11,
+        "start": 16.11,
+        "text": "わあ、いいね、このセーター"
+      },
+      {
+        "end": 23.11,
+        "start": 20.11,
+        "text": "こんなのが欲しかったんだ"
+      },
+      {
+        "end": 25.11,
+        "start": 23.11,
+        "text": "メアリーがあんだの?"
+      },
+      {
+        "end": 27.11,
+        "start": 25.11,
+        "text": "うん"
+      },
+      {
+        "end": 31.11,
+        "start": 27.11,
+        "text": "小さいかもしれないから来てみて"
+      },
+      {
+        "end": 33.11,
+        "start": 31.11,
+        "text": "ちょうどいいよ"
+      },
+      {
+        "end": 35.11,
+        "start": 33.11,
+        "text": "ありがとう"
+      }
+    ]
+  },
+  "K14_04": {
+    "duration": 63.9,
+    "language": "ja",
+    "languageProbability": 0.7726,
+    "segments": [
+      {
+        "end": 2.65,
+        "start": 0.11,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 11.43,
+        "start": 2.65,
+        "text": "たけしくん!はい!これ!"
+      },
+      {
+        "end": 21.12,
+        "start": 11.43,
+        "text": "え?ぼくに?どうもありがとう"
+      },
+      {
+        "end": 24.8,
+        "start": 21.12,
+        "text": "開けてもいい?"
+      },
+      {
+        "end": 27.44,
+        "start": 24.8,
+        "text": "うん"
+      },
+      {
+        "end": 35.49,
+        "start": 27.44,
+        "text": "わあ!いいね!このセーター"
+      },
+      {
+        "end": 40.45,
+        "start": 35.49,
+        "text": "こんなのが欲しかったんだ"
+      },
+      {
+        "end": 46.22,
+        "start": 40.45,
+        "text": "メアリーがあんだの?"
+      },
+      {
+        "end": 49.72,
+        "start": 46.22,
+        "text": "小さいかもしれないから来てみて"
+      },
+      {
+        "end": 60.33,
+        "start": 49.72,
+        "text": "ちょうどいいよ!ありがとう"
+      }
+    ]
+  },
+  "K14_05": {
+    "duration": 49.16,
+    "language": "ja",
+    "languageProbability": 0.9878,
+    "segments": [
+      {
+        "end": 2.52,
+        "start": 0.24,
+        "text": "さん"
+      },
+      {
+        "end": 5.72,
+        "start": 2.52,
+        "text": "温かそうなセーターですね"
+      },
+      {
+        "end": 9.16,
+        "start": 5.72,
+        "text": "これ、メアリーがくれたんです"
+      },
+      {
+        "end": 11.92,
+        "start": 9.16,
+        "text": "よく似合っていますよ"
+      },
+      {
+        "end": 15.56,
+        "start": 11.92,
+        "text": "僕も彼女が欲しいな"
+      },
+      {
+        "end": 20,
+        "start": 15.56,
+        "text": "ロバートさんはチョコレートを10個ももらったんですよ"
+      },
+      {
+        "end": 23.68,
+        "start": 20,
+        "text": "へえ、すごいですね"
+      },
+      {
+        "end": 25.6,
+        "start": 23.68,
+        "text": "ジョンさんは?"
+      },
+      {
+        "end": 28.96,
+        "start": 25.6,
+        "text": "僕は1個しかもらえませんでした"
+      },
+      {
+        "end": 31.16,
+        "start": 29.12,
+        "text": "王爺さんから"
+      },
+      {
+        "end": 33.56,
+        "start": 31.16,
+        "text": "寂しいな"
+      },
+      {
+        "end": 38.72,
+        "start": 33.56,
+        "text": "でも、ロバートさんはホワイトデーが大変ですよ"
+      },
+      {
+        "end": 40.64,
+        "start": 38.72,
+        "text": "ホワイトデー?"
+      },
+      {
+        "end": 42.04,
+        "start": 40.64,
+        "text": "ええ"
+      },
+      {
+        "end": 49.16,
+        "start": 42.04,
+        "text": "男の人は3月14日にお返しをしなきゃいけないんですよ"
+      }
+    ]
+  },
+  "K14_06": {
+    "duration": 89.36,
+    "language": "ja",
+    "languageProbability": 0.8445,
+    "segments": [
+      {
+        "end": 3.11,
+        "start": 0.11,
+        "text": "Please repeat each phrase"
+      },
+      {
+        "end": 63.62,
+        "start": 59.62,
+        "text": "でも、ロバートさんはホワイトデーが大変ですよ。"
+      },
+      {
+        "end": 72.59,
+        "start": 63.62,
+        "text": "ホワイトデー?"
+      },
+      {
+        "end": 79.59,
+        "start": 72.59,
+        "text": "ええ。男の人は3月14日にお返しをしなきゃいけないんですよ。"
+      }
+    ]
+  },
+  "K14_07": {
+    "duration": 308.24,
+    "language": "ja",
+    "languageProbability": 0.8573,
+    "segments": [
+      {
+        "end": 5.08,
+        "start": 0.08,
+        "text": "第14課 単語"
+      },
+      {
+        "end": 7.58,
+        "start": 5.08,
+        "text": "Nouns"
+      },
+      {
+        "end": 10.08,
+        "start": 7.58,
+        "text": "奥さん"
+      },
+      {
+        "end": 12.08,
+        "start": 10.08,
+        "text": "Wife"
+      },
+      {
+        "end": 14.58,
+        "start": 12.08,
+        "text": "ご主人"
+      },
+      {
+        "end": 17.08,
+        "start": 14.58,
+        "text": "Husband"
+      },
+      {
+        "end": 19.58,
+        "start": 17.08,
+        "text": "Partner"
+      },
+      {
+        "end": 22.08,
+        "start": 19.58,
+        "text": "Partner"
+      },
+      {
+        "end": 24.08,
+        "start": 22.08,
+        "text": "おじいさん"
+      },
+      {
+        "end": 28.58,
+        "start": 24.08,
+        "text": "Uncle, Middle-aged man"
+      },
+      {
+        "end": 31.08,
+        "start": 28.58,
+        "text": "おばさん"
+      },
+      {
+        "end": 35.58,
+        "start": 31.08,
+        "text": "Aunt, Middle-aged woman"
+      },
+      {
+        "end": 38.08,
+        "start": 35.58,
+        "text": "両親"
+      },
+      {
+        "end": 40.58,
+        "start": 38.08,
+        "text": "Parents"
+      },
+      {
+        "end": 43.08,
+        "start": 40.58,
+        "text": "おおやさん"
+      },
+      {
+        "end": 47.08,
+        "start": 43.08,
+        "text": "Landlord, Landlady"
+      },
+      {
+        "end": 49.58,
+        "start": 47.08,
+        "text": "みなさん"
+      },
+      {
+        "end": 53.58,
+        "start": 49.58,
+        "text": "Everyone, All of you"
+      },
+      {
+        "end": 56.08,
+        "start": 53.58,
+        "text": "チョコレート"
+      },
+      {
+        "end": 58.48,
+        "start": 56.08,
+        "text": "Chocolate"
+      },
+      {
+        "end": 60.48,
+        "start": 58.48,
+        "text": "みかん"
+      },
+      {
+        "end": 63.48,
+        "start": 60.48,
+        "text": "Mandarin orange"
+      },
+      {
+        "end": 66.48,
+        "start": 63.48,
+        "text": "トレーナー"
+      },
+      {
+        "end": 68.98,
+        "start": 66.48,
+        "text": "Switch shirt"
+      },
+      {
+        "end": 70.98,
+        "start": 68.98,
+        "text": "シャツ"
+      },
+      {
+        "end": 73.48,
+        "start": 70.98,
+        "text": "Shirt"
+      },
+      {
+        "end": 75.98,
+        "start": 73.48,
+        "text": "ネクタイ"
+      },
+      {
+        "end": 77.98,
+        "start": 75.98,
+        "text": "ネクタイ"
+      },
+      {
+        "end": 80.48,
+        "start": 77.98,
+        "text": "マフラー"
+      },
+      {
+        "end": 83.48,
+        "start": 80.48,
+        "text": "Winter scarf"
+      },
+      {
+        "end": 85.98,
+        "start": 83.48,
+        "text": "指輪"
+      },
+      {
+        "end": 87.98,
+        "start": 85.98,
+        "text": "Ring"
+      },
+      {
+        "end": 90.48,
+        "start": 87.98,
+        "text": "鉛筆"
+      },
+      {
+        "end": 92.98,
+        "start": 90.48,
+        "text": "Pencil"
+      },
+      {
+        "end": 95.48,
+        "start": 92.98,
+        "text": "ぬいぐるみ"
+      },
+      {
+        "end": 98.48,
+        "start": 95.48,
+        "text": "Stuffed animal"
+      },
+      {
+        "end": 100.48,
+        "start": 98.48,
+        "text": "漫画"
+      },
+      {
+        "end": 102.98,
+        "start": 100.48,
+        "text": "Comic book"
+      },
+      {
+        "end": 105.48,
+        "start": 102.98,
+        "text": "化粧品"
+      },
+      {
+        "end": 108.48,
+        "start": 105.48,
+        "text": "Cosmetics"
+      },
+      {
+        "end": 110.48,
+        "start": 108.48,
+        "text": "ラジオ"
+      },
+      {
+        "end": 112.98,
+        "start": 110.48,
+        "text": "Radio"
+      },
+      {
+        "end": 115.48,
+        "start": 112.98,
+        "text": "お皿"
+      },
+      {
+        "end": 118.48,
+        "start": 115.48,
+        "text": "Dish"
+      },
+      {
+        "end": 120.98,
+        "start": 118.48,
+        "text": "おかえし"
+      },
+      {
+        "end": 123.48,
+        "start": 120.98,
+        "text": "Return"
+      },
+      {
+        "end": 125.98,
+        "start": 123.48,
+        "text": "リレキショ"
+      },
+      {
+        "end": 128.48,
+        "start": 125.98,
+        "text": "Resume"
+      },
+      {
+        "end": 130.98,
+        "start": 128.48,
+        "text": "クリスマス"
+      },
+      {
+        "end": 133.48,
+        "start": 130.98,
+        "text": "Christmas"
+      },
+      {
+        "end": 136.48,
+        "start": 133.48,
+        "text": "バレンタインで"
+      },
+      {
+        "end": 139.48,
+        "start": 136.48,
+        "text": "Valentines day"
+      },
+      {
+        "end": 141.98,
+        "start": 139.48,
+        "text": "ホワイトで"
+      },
+      {
+        "end": 144.48,
+        "start": 141.98,
+        "text": "White day"
+      },
+      {
+        "end": 147.48,
+        "start": 144.48,
+        "text": "E-adjective"
+      },
+      {
+        "end": 149.48,
+        "start": 147.48,
+        "text": "欲しい"
+      },
+      {
+        "end": 151.98,
+        "start": 149.48,
+        "text": "To want"
+      },
+      {
+        "end": 154.98,
+        "start": 151.98,
+        "text": "Na-adjectives"
+      },
+      {
+        "end": 157.48,
+        "start": 154.98,
+        "text": "オシャレな"
+      },
+      {
+        "end": 161.48,
+        "start": 157.48,
+        "text": "Fashionable, Stylish"
+      },
+      {
+        "end": 163.98,
+        "start": 161.48,
+        "text": "ケチナ"
+      },
+      {
+        "end": 167.48,
+        "start": 163.98,
+        "text": "Stingy, Cheap"
+      },
+      {
+        "end": 169.98,
+        "start": 167.48,
+        "text": "Uverbs"
+      },
+      {
+        "end": 171.98,
+        "start": 169.98,
+        "text": "送る"
+      },
+      {
+        "end": 174.48,
+        "start": 171.98,
+        "text": "To send"
+      },
+      {
+        "end": 176.48,
+        "start": 174.48,
+        "text": "似合う"
+      },
+      {
+        "end": 179.48,
+        "start": 176.48,
+        "text": "To look good"
+      },
+      {
+        "end": 181.98,
+        "start": 179.48,
+        "text": "Rooverbs"
+      },
+      {
+        "end": 184.48,
+        "start": 181.98,
+        "text": "あきらめる"
+      },
+      {
+        "end": 187.23,
+        "start": 184.48,
+        "text": "To give up"
+      },
+      {
+        "end": 189.23,
+        "start": 187.23,
+        "text": "あげる"
+      },
+      {
+        "end": 192.23,
+        "start": 189.23,
+        "text": "To give to others"
+      },
+      {
+        "end": 194.23,
+        "start": 192.23,
+        "text": "くれる"
+      },
+      {
+        "end": 196.73,
+        "start": 194.23,
+        "text": "To give me"
+      },
+      {
+        "end": 199.23,
+        "start": 196.73,
+        "text": "できる"
+      },
+      {
+        "end": 201.73,
+        "start": 199.23,
+        "text": "To come into existence"
+      },
+      {
+        "end": 204.23,
+        "start": 201.73,
+        "text": "To be made"
+      },
+      {
+        "end": 207.23,
+        "start": 204.23,
+        "text": "Iregular verbs"
+      },
+      {
+        "end": 209.73,
+        "start": 207.23,
+        "text": "相談する"
+      },
+      {
+        "end": 212.23,
+        "start": 209.73,
+        "text": "To consult"
+      },
+      {
+        "end": 214.73,
+        "start": 212.23,
+        "text": "注意する"
+      },
+      {
+        "end": 217.23,
+        "start": 214.73,
+        "text": "To give warning"
+      },
+      {
+        "end": 219.73,
+        "start": 217.23,
+        "text": "To watch out"
+      },
+      {
+        "end": 222.73,
+        "start": 219.73,
+        "text": "プロポーズする"
+      },
+      {
+        "end": 225.73,
+        "start": 222.73,
+        "text": "To propose marriage"
+      },
+      {
+        "end": 229.73,
+        "start": 225.73,
+        "text": "Adverbs and other expressions"
+      },
+      {
+        "end": 231.73,
+        "start": 229.73,
+        "text": "くん"
+      },
+      {
+        "end": 235.23,
+        "start": 231.73,
+        "text": "Mr. Ms."
+      },
+      {
+        "end": 237.23,
+        "start": 235.23,
+        "text": "たち"
+      },
+      {
+        "end": 240.73,
+        "start": 237.23,
+        "text": "Makes a noun plural"
+      },
+      {
+        "end": 243.23,
+        "start": 240.73,
+        "text": "わたしたち"
+      },
+      {
+        "end": 245.73,
+        "start": 243.23,
+        "text": "We"
+      },
+      {
+        "end": 247.73,
+        "start": 245.73,
+        "text": "こんな"
+      },
+      {
+        "end": 252.23,
+        "start": 247.73,
+        "text": "Like this, this kind of"
+      },
+      {
+        "end": 254.23,
+        "start": 252.23,
+        "text": "きゅうに"
+      },
+      {
+        "end": 256.73,
+        "start": 254.23,
+        "text": "Suddenly"
+      },
+      {
+        "end": 259.23,
+        "start": 256.73,
+        "text": "ちょうど"
+      },
+      {
+        "end": 261.73,
+        "start": 259.23,
+        "text": "Exactly"
+      },
+      {
+        "end": 263.73,
+        "start": 261.73,
+        "text": "よく"
+      },
+      {
+        "end": 265.73,
+        "start": 263.73,
+        "text": "Well"
+      },
+      {
+        "end": 268.23,
+        "start": 265.73,
+        "text": "さあ"
+      },
+      {
+        "end": 270.73,
+        "start": 268.23,
+        "text": "I'm not sure"
+      },
+      {
+        "end": 273.73,
+        "start": 270.73,
+        "text": "どうしたらいい"
+      },
+      {
+        "end": 276.73,
+        "start": 273.73,
+        "text": "What should one do?"
+      },
+      {
+        "end": 279.23,
+        "start": 276.73,
+        "text": "Counters"
+      },
+      {
+        "end": 281.23,
+        "start": 279.23,
+        "text": "こ"
+      },
+      {
+        "end": 285.23,
+        "start": 281.23,
+        "text": "Generic counter for smaller items"
+      },
+      {
+        "end": 287.73,
+        "start": 285.23,
+        "text": "さつ"
+      },
+      {
+        "end": 291.23,
+        "start": 287.73,
+        "text": "Counter for bound volumes"
+      },
+      {
+        "end": 293.23,
+        "start": 291.23,
+        "text": "だい"
+      },
+      {
+        "end": 296.73,
+        "start": 293.23,
+        "text": "Counter for equipment"
+      },
+      {
+        "end": 298.73,
+        "start": 296.73,
+        "text": "しき"
+      },
+      {
+        "end": 302.23,
+        "start": 298.73,
+        "text": "Counter for smaller animals"
+      },
+      {
+        "end": 304.23,
+        "start": 302.23,
+        "text": "ほん"
+      },
+      {
+        "end": 308.23,
+        "start": 304.23,
+        "text": "Counter for long objects"
+      }
+    ]
+  },
+  "K14_08": {
+    "duration": 308.92,
+    "language": "ja",
+    "languageProbability": 0.6204,
+    "segments": [
+      {
+        "end": 4.2,
+        "start": 0.08,
+        "text": "第14課 単語"
+      },
+      {
+        "end": 10.9,
+        "start": 4.2,
+        "text": "nouns, wife"
+      },
+      {
+        "end": 13.18,
+        "start": 10.9,
+        "text": "奥さん"
+      },
+      {
+        "end": 15.62,
+        "start": 13.18,
+        "text": "husband"
+      },
+      {
+        "end": 17.9,
+        "start": 15.62,
+        "text": "ご主人"
+      },
+      {
+        "end": 20.42,
+        "start": 17.9,
+        "text": "partner"
+      },
+      {
+        "end": 22.78,
+        "start": 20.42,
+        "text": "partner"
+      },
+      {
+        "end": 26.98,
+        "start": 22.78,
+        "text": "uncle, middle-aged man"
+      },
+      {
+        "end": 29.38,
+        "start": 26.98,
+        "text": "おじいさん"
+      },
+      {
+        "end": 33.94,
+        "start": 29.54,
+        "text": "ant, middle-aged woman"
+      },
+      {
+        "end": 36.34,
+        "start": 33.94,
+        "text": "おばさん"
+      },
+      {
+        "end": 38.78,
+        "start": 36.34,
+        "text": "parents"
+      },
+      {
+        "end": 41.14,
+        "start": 38.78,
+        "text": "両親"
+      },
+      {
+        "end": 45.26,
+        "start": 41.14,
+        "text": "landlord, landlady"
+      },
+      {
+        "end": 47.7,
+        "start": 45.26,
+        "text": "おーやさん"
+      },
+      {
+        "end": 51.78,
+        "start": 47.7,
+        "text": "everyone, all of you"
+      },
+      {
+        "end": 54.1,
+        "start": 51.78,
+        "text": "皆さん"
+      },
+      {
+        "end": 56.54,
+        "start": 54.1,
+        "text": "chocolate"
+      },
+      {
+        "end": 58.98,
+        "start": 56.54,
+        "text": "チョコレート"
+      },
+      {
+        "end": 62.22,
+        "start": 59.1,
+        "text": "mander and orange"
+      },
+      {
+        "end": 64.42,
+        "start": 62.22,
+        "text": "みかん"
+      },
+      {
+        "end": 67.06,
+        "start": 64.42,
+        "text": "sweat shirt"
+      },
+      {
+        "end": 69.58,
+        "start": 67.06,
+        "text": "トレーナー"
+      },
+      {
+        "end": 71.82,
+        "start": 69.58,
+        "text": "shirt"
+      },
+      {
+        "end": 74.06,
+        "start": 71.82,
+        "text": "シャツ"
+      },
+      {
+        "end": 76.54,
+        "start": 74.06,
+        "text": "ネクタイ"
+      },
+      {
+        "end": 78.9,
+        "start": 76.54,
+        "text": "ネクタイ"
+      },
+      {
+        "end": 81.78,
+        "start": 78.9,
+        "text": "winter scarf"
+      },
+      {
+        "end": 84.18,
+        "start": 81.78,
+        "text": "マフラー"
+      },
+      {
+        "end": 86.42,
+        "start": 84.18,
+        "text": "ring"
+      },
+      {
+        "end": 88.7,
+        "start": 86.42,
+        "text": "指輪"
+      },
+      {
+        "end": 91.1,
+        "start": 88.7,
+        "text": "ペンソル"
+      },
+      {
+        "end": 93.54,
+        "start": 91.1,
+        "text": "鉛筆"
+      },
+      {
+        "end": 96.42,
+        "start": 93.54,
+        "text": "stuffed animal"
+      },
+      {
+        "end": 98.94,
+        "start": 96.42,
+        "text": "ぬいぐるみ"
+      },
+      {
+        "end": 101.46,
+        "start": 98.94,
+        "text": "comic book"
+      },
+      {
+        "end": 103.74,
+        "start": 101.46,
+        "text": "漫画"
+      },
+      {
+        "end": 106.42,
+        "start": 103.74,
+        "text": "cosmetics"
+      },
+      {
+        "end": 108.98,
+        "start": 106.42,
+        "text": "化粧品"
+      },
+      {
+        "end": 111.34,
+        "start": 108.98,
+        "text": "radio"
+      },
+      {
+        "end": 113.58,
+        "start": 111.34,
+        "text": "ラジオ"
+      },
+      {
+        "end": 116.98,
+        "start": 113.58,
+        "text": "plate, dish"
+      },
+      {
+        "end": 119.3,
+        "start": 117.06,
+        "text": "お皿"
+      },
+      {
+        "end": 121.7,
+        "start": 119.3,
+        "text": "return"
+      },
+      {
+        "end": 124.14,
+        "start": 121.7,
+        "text": "おかえし"
+      },
+      {
+        "end": 126.58,
+        "start": 124.14,
+        "text": "resume"
+      },
+      {
+        "end": 129.02,
+        "start": 126.58,
+        "text": "リレキショ"
+      },
+      {
+        "end": 131.5,
+        "start": 129.02,
+        "text": "Christmas"
+      },
+      {
+        "end": 134.02,
+        "start": 131.5,
+        "text": "クリスマス"
+      },
+      {
+        "end": 137.06,
+        "start": 134.02,
+        "text": "Valentine's Day"
+      },
+      {
+        "end": 140.02,
+        "start": 137.06,
+        "text": "バレンタインデー"
+      },
+      {
+        "end": 142.5,
+        "start": 140.02,
+        "text": "white day"
+      },
+      {
+        "end": 145.14,
+        "start": 142.5,
+        "text": "ホワイトデー"
+      },
+      {
+        "end": 147.94,
+        "start": 145.14,
+        "text": "e-adjective"
+      },
+      {
+        "end": 150.46,
+        "start": 147.94,
+        "text": "to want"
+      },
+      {
+        "end": 152.7,
+        "start": 150.46,
+        "text": "ほしい"
+      },
+      {
+        "end": 155.74,
+        "start": 152.7,
+        "text": "na-adjectives"
+      },
+      {
+        "end": 159.74,
+        "start": 155.74,
+        "text": "fashionable, stylish"
+      },
+      {
+        "end": 162.1,
+        "start": 159.74,
+        "text": "おしゃれな"
+      },
+      {
+        "end": 165.66,
+        "start": 162.1,
+        "text": "stingy, cheap"
+      },
+      {
+        "end": 167.94,
+        "start": 165.66,
+        "text": "ケチナ"
+      },
+      {
+        "end": 170.5,
+        "start": 167.94,
+        "text": "u-verbs"
+      },
+      {
+        "end": 172.98,
+        "start": 170.5,
+        "text": "to send"
+      },
+      {
+        "end": 175.22,
+        "start": 172.98,
+        "text": "送る"
+      },
+      {
+        "end": 177.82,
+        "start": 175.22,
+        "text": "to look good"
+      },
+      {
+        "end": 180.02,
+        "start": 177.82,
+        "text": "似合う"
+      },
+      {
+        "end": 182.66,
+        "start": 180.02,
+        "text": "ru-verbs"
+      },
+      {
+        "end": 185.34,
+        "start": 182.66,
+        "text": "to give up"
+      },
+      {
+        "end": 187.82,
+        "start": 185.34,
+        "text": "あきらめる"
+      },
+      {
+        "end": 190.78,
+        "start": 187.82,
+        "text": "to give to others"
+      },
+      {
+        "end": 192.94,
+        "start": 190.78,
+        "text": "あげる"
+      },
+      {
+        "end": 195.62,
+        "start": 192.94,
+        "text": "to give me"
+      },
+      {
+        "end": 197.82,
+        "start": 195.62,
+        "text": "くれる"
+      },
+      {
+        "end": 200.38,
+        "start": 197.82,
+        "text": "to come into existence"
+      },
+      {
+        "end": 202.86,
+        "start": 200.38,
+        "text": "to be made"
+      },
+      {
+        "end": 205.02,
+        "start": 202.86,
+        "text": "できる"
+      },
+      {
+        "end": 208.02,
+        "start": 205.02,
+        "text": "irregular verbs"
+      },
+      {
+        "end": 210.66,
+        "start": 208.02,
+        "text": "to consult"
+      },
+      {
+        "end": 213.3,
+        "start": 210.66,
+        "text": "相談する"
+      },
+      {
+        "end": 215.62,
+        "start": 213.3,
+        "text": "to give warning"
+      },
+      {
+        "end": 218.34,
+        "start": 215.62,
+        "text": "to watch out"
+      },
+      {
+        "end": 220.86,
+        "start": 218.34,
+        "text": "注意する"
+      },
+      {
+        "end": 224.02,
+        "start": 220.86,
+        "text": "to propose marriage"
+      },
+      {
+        "end": 226.78,
+        "start": 224.02,
+        "text": "プロポーズする"
+      },
+      {
+        "end": 230.78,
+        "start": 226.78,
+        "text": "adverbs and other expressions"
+      },
+      {
+        "end": 234.38,
+        "start": 230.78,
+        "text": "mister, miss"
+      },
+      {
+        "end": 236.42,
+        "start": 234.38,
+        "text": "君"
+      },
+      {
+        "end": 239.78,
+        "start": 236.42,
+        "text": "makes a noun plural"
+      },
+      {
+        "end": 241.94,
+        "start": 239.78,
+        "text": "たち"
+      },
+      {
+        "end": 244.14,
+        "start": 241.94,
+        "text": "we"
+      },
+      {
+        "end": 246.7,
+        "start": 244.14,
+        "text": "わたしたち"
+      },
+      {
+        "end": 251.06,
+        "start": 246.7,
+        "text": "like this, this kind of"
+      },
+      {
+        "end": 253.3,
+        "start": 251.06,
+        "text": "こんな"
+      },
+      {
+        "end": 255.7,
+        "start": 253.3,
+        "text": "suddenly"
+      },
+      {
+        "end": 257.94,
+        "start": 255.7,
+        "text": "急に"
+      },
+      {
+        "end": 260.46,
+        "start": 257.94,
+        "text": "exactly"
+      },
+      {
+        "end": 262.7,
+        "start": 260.46,
+        "text": "ちょうど"
+      },
+      {
+        "end": 264.94,
+        "start": 262.7,
+        "text": "well"
+      },
+      {
+        "end": 267.06,
+        "start": 264.94,
+        "text": "よく"
+      },
+      {
+        "end": 269.82,
+        "start": 267.06,
+        "text": "I am not sure"
+      },
+      {
+        "end": 272.02,
+        "start": 269.82,
+        "text": "さあ"
+      },
+      {
+        "end": 274.86,
+        "start": 272.02,
+        "text": "what should one do?"
+      },
+      {
+        "end": 277.58,
+        "start": 274.86,
+        "text": "どうしたらいい"
+      },
+      {
+        "end": 280.06,
+        "start": 277.58,
+        "text": "counters"
+      },
+      {
+        "end": 284.3,
+        "start": 280.06,
+        "text": "generic counter for smaller items"
+      },
+      {
+        "end": 286.22,
+        "start": 284.3,
+        "text": "こ"
+      },
+      {
+        "end": 289.9,
+        "start": 286.22,
+        "text": "counter for bound volumes"
+      },
+      {
+        "end": 292.14,
+        "start": 289.9,
+        "text": "さつ"
+      },
+      {
+        "end": 295.38,
+        "start": 292.14,
+        "text": "counter for equipment"
+      },
+      {
+        "end": 297.42,
+        "start": 295.38,
+        "text": "台"
+      },
+      {
+        "end": 301.06,
+        "start": 297.42,
+        "text": "counter for smaller animals"
+      },
+      {
+        "end": 303.18,
+        "start": 301.06,
+        "text": "引き"
+      },
+      {
+        "end": 306.74,
+        "start": 303.18,
+        "text": "counter for long objects"
+      },
+      {
+        "end": 308.98,
+        "start": 306.74,
+        "text": "本"
+      }
+    ]
+  },
+  "K14_09": {
+    "duration": 81.19,
+    "language": "ja",
+    "languageProbability": 0.9913,
+    "segments": [
+      {
+        "end": 4.88,
+        "start": 0.08,
+        "text": "第14課 練習"
+      },
+      {
+        "end": 9.08,
+        "start": 4.88,
+        "text": "1 チョコレートが欲しいです"
+      },
+      {
+        "end": 14.86,
+        "start": 9.08,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 19.2,
+        "start": 14.86,
+        "text": "チョコレートが欲しいです"
+      },
+      {
+        "end": 21.8,
+        "start": 19.2,
+        "text": "チョコレートが欲しくないです"
+      },
+      {
+        "end": 29.55,
+        "start": 21.8,
+        "text": "1 マフラーが欲しいです"
+      },
+      {
+        "end": 34.87,
+        "start": 29.55,
+        "text": "マフラーが欲しくないです"
+      },
+      {
+        "end": 41.15,
+        "start": 34.87,
+        "text": "2 化粧品が欲しいです"
+      },
+      {
+        "end": 45.16,
+        "start": 41.15,
+        "text": "化粧品が欲しくないです"
+      },
+      {
+        "end": 54.49,
+        "start": 46.86,
+        "text": "3 パソコンが欲しいです"
+      },
+      {
+        "end": 58.5,
+        "start": 54.49,
+        "text": "パソコンが欲しくないです"
+      },
+      {
+        "end": 65.98,
+        "start": 58.5,
+        "text": "4 お皿が欲しいです"
+      },
+      {
+        "end": 69.75,
+        "start": 65.98,
+        "text": "お皿が欲しくないです"
+      },
+      {
+        "end": 77.38,
+        "start": 69.75,
+        "text": "5 自転車が欲しいです"
+      },
+      {
+        "end": 81.18,
+        "start": 77.38,
+        "text": "自転車が欲しくないです"
+      }
+    ]
+  },
+  "K14_10": {
+    "duration": 89.47,
+    "language": "ja",
+    "languageProbability": 0.9354,
+    "segments": [
+      {
+        "end": 9.33,
+        "start": 0.02,
+        "text": "B. 子供のとき漫画が欲しかったです"
+      },
+      {
+        "end": 13.33,
+        "start": 9.33,
+        "text": "子供のとき漫画が欲しくなかったです"
+      },
+      {
+        "end": 28.34,
+        "start": 14.86,
+        "text": "1. 子供のときおもちゃが欲しかったです"
+      },
+      {
+        "end": 39.23,
+        "start": 28.34,
+        "text": "2. 子供のとき指輪が欲しかったです"
+      },
+      {
+        "end": 44.77,
+        "start": 39.23,
+        "text": "子供のとき指輪が欲しくなかったです"
+      },
+      {
+        "end": 58.22,
+        "start": 44.77,
+        "text": "3. 子供のときぬいぐるみが欲しかったです"
+      },
+      {
+        "end": 74.58,
+        "start": 58.22,
+        "text": "4. 子供のとき花が欲しかったです"
+      },
+      {
+        "end": 89.22,
+        "start": 74.58,
+        "text": "5. 子供のときトレーナーが欲しかったです"
+      }
+    ]
+  },
+  "K14_11": {
+    "duration": 132.39,
+    "language": "ja",
+    "languageProbability": 0.9564,
+    "segments": [
+      {
+        "end": 5.8,
+        "start": 0.05,
+        "text": "2 ギターが弾けるかもしれません"
+      },
+      {
+        "end": 10.04,
+        "start": 5.8,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 15.04,
+        "start": 11.04,
+        "text": "たけしさんはギターが弾けますか?"
+      },
+      {
+        "end": 18.54,
+        "start": 15.04,
+        "text": "さあ 弾けるかもしれません"
+      },
+      {
+        "end": 22.98,
+        "start": 18.54,
+        "text": "でも 弾けないかもしれません"
+      },
+      {
+        "end": 29.85,
+        "start": 22.98,
+        "text": "1 明日忙しいですか?"
+      },
+      {
+        "end": 33.35,
+        "start": 29.85,
+        "text": "さあ 忙しいかもしれません"
+      },
+      {
+        "end": 38.32,
+        "start": 33.35,
+        "text": "でも 忙しくないかもしれません"
+      },
+      {
+        "end": 44.69,
+        "start": 38.32,
+        "text": "2 料理が上手ですか?"
+      },
+      {
+        "end": 48.69,
+        "start": 44.69,
+        "text": "さあ 上手かもしれません"
+      },
+      {
+        "end": 53.76,
+        "start": 48.69,
+        "text": "でも 上手じゃないかもしれません"
+      },
+      {
+        "end": 59.63,
+        "start": 53.76,
+        "text": "3 ケチですか?"
+      },
+      {
+        "end": 63.63,
+        "start": 59.63,
+        "text": "さあ ケチかもしれません"
+      },
+      {
+        "end": 67.13,
+        "start": 63.63,
+        "text": "でも ケチじゃないかもしれません"
+      },
+      {
+        "end": 73.14,
+        "start": 67.13,
+        "text": "4 政治に興味がありますか?"
+      },
+      {
+        "end": 85.34,
+        "start": 73.14,
+        "text": "さあ、興味があるかもしれません。でも、興味がないかもしれません。"
+      },
+      {
+        "end": 89.14,
+        "start": 85.34,
+        "text": "5 からてができますか?"
+      },
+      {
+        "end": 100.52,
+        "start": 89.14,
+        "text": "さあ、できるかもしれません。でも、できないかもしれません。"
+      },
+      {
+        "end": 104.52,
+        "start": 100.52,
+        "text": "6 英語が話せますか?"
+      },
+      {
+        "end": 116.13,
+        "start": 104.52,
+        "text": "さあ、話せるかもしれません。でも、話せないかもしれません。"
+      },
+      {
+        "end": 123.43,
+        "start": 116.13,
+        "text": "7 目ありさんに指輪をあげましたか?"
+      },
+      {
+        "end": 132.43,
+        "start": 123.43,
+        "text": "さあ、あげたかもしれません。でも、あげなかったかもしれません。"
+      }
+    ]
+  },
+  "K14_12": {
+    "duration": 58.8,
+    "language": "ja",
+    "languageProbability": 0.9851,
+    "segments": [
+      {
+        "end": 6.65,
+        "start": 0.14,
+        "text": "3.友達にチョコレートをあげました。"
+      },
+      {
+        "end": 12.24,
+        "start": 6.65,
+        "text": "A. エクセンプル。"
+      },
+      {
+        "end": 14.24,
+        "start": 12.24,
+        "text": "父にお酒をあげます。"
+      },
+      {
+        "end": 24.64,
+        "start": 14.24,
+        "text": "1.母に化粧品をあげます。"
+      },
+      {
+        "end": 31.65,
+        "start": 24.64,
+        "text": "2.友達にチョコレートをあげます。"
+      },
+      {
+        "end": 40.22,
+        "start": 31.65,
+        "text": "3.ルームメートにTシャツをあげます。"
+      },
+      {
+        "end": 48.61,
+        "start": 40.22,
+        "text": "4.弟に帽子をあげます。"
+      },
+      {
+        "end": 57.02,
+        "start": 48.61,
+        "text": "5.先生に紅茶をあげます。"
+      }
+    ]
+  },
+  "K14_13": {
+    "duration": 125.65,
+    "language": "ja",
+    "languageProbability": 0.943,
+    "segments": [
+      {
+        "end": 11.58,
+        "start": 0.27,
+        "text": "① カノジョがマフラーをくれました。"
+      },
+      {
+        "end": 20.03,
+        "start": 11.58,
+        "text": "① 両親がお金をくれました。"
+      },
+      {
+        "end": 28.54,
+        "start": 20.03,
+        "text": "② おじいさんがラジオをくれました。"
+      },
+      {
+        "end": 38.56,
+        "start": 28.54,
+        "text": "③ おばあさんが手袋をくれました。"
+      },
+      {
+        "end": 44.7,
+        "start": 38.56,
+        "text": "④ 友達がバイクをくれました。"
+      },
+      {
+        "end": 53.27,
+        "start": 44.7,
+        "text": "④ おじさんが時計をくれました。"
+      },
+      {
+        "end": 63.26,
+        "start": 53.27,
+        "text": "③ 兄がシャツをくれました。"
+      },
+      {
+        "end": 66.26,
+        "start": 63.26,
+        "text": "③ アニがシャツをくれました。"
+      },
+      {
+        "end": 72.7,
+        "start": 67.7,
+        "text": "③ カノジョにマフラーをもらいました。"
+      },
+      {
+        "end": 81.3,
+        "start": 72.7,
+        "text": "① 両親にお金をもらいました。"
+      },
+      {
+        "end": 89.78,
+        "start": 81.3,
+        "text": "② おじいさんにラジオをもらいました。"
+      },
+      {
+        "end": 98.49,
+        "start": 89.78,
+        "text": "③ おばあさんに手袋をもらいました。"
+      },
+      {
+        "end": 107.16,
+        "start": 98.49,
+        "text": "④ 友達にバイクをもらいました。"
+      },
+      {
+        "end": 115.67,
+        "start": 107.16,
+        "text": "④ おじさんに時計をもらいました。"
+      },
+      {
+        "end": 125.15,
+        "start": 115.67,
+        "text": "④ 兄にシャツをもらいました。"
+      }
+    ]
+  },
+  "K14_14": {
+    "duration": 178.55,
+    "language": "ja",
+    "languageProbability": 0.7876,
+    "segments": [
+      {
+        "end": 5.02,
+        "start": 0.02,
+        "text": "ディ エクゼンプル"
+      },
+      {
+        "end": 11.02,
+        "start": 5.02,
+        "text": "ヤスミンさんはカルロスさんにトレーナーをあげました。"
+      },
+      {
+        "end": 18.65,
+        "start": 11.02,
+        "text": "カルロスさんはヤスミンさんにトレーナーをもらいました。"
+      },
+      {
+        "end": 27.66,
+        "start": 18.65,
+        "text": "1 私はカルロスさんにチョコレートをあげました。"
+      },
+      {
+        "end": 39.04,
+        "start": 27.66,
+        "text": "2 ヤスミンさんは私にぬいぐるみをくれました。"
+      },
+      {
+        "end": 45.04,
+        "start": 39.04,
+        "text": "私はヤスミンさんにぬいぐるみをもらいました。"
+      },
+      {
+        "end": 56.58,
+        "start": 45.04,
+        "text": "3 メアリーさんは私に手袋をくれました。"
+      },
+      {
+        "end": 63.99,
+        "start": 56.58,
+        "text": "私はメアリーさんに手袋をもらいました。"
+      },
+      {
+        "end": 74.06,
+        "start": 63.99,
+        "text": "4 タケシさんはメアリーさんに花をあげました。"
+      },
+      {
+        "end": 81.5,
+        "start": 74.06,
+        "text": "メアリーさんはタケシさんに花をもらいました。"
+      },
+      {
+        "end": 91.51,
+        "start": 81.5,
+        "text": "5 メアリーさんはタケシさんに靴をあげました。"
+      },
+      {
+        "end": 97.51,
+        "start": 91.51,
+        "text": "タケシさんはメアリーさんに靴をもらいました。"
+      },
+      {
+        "end": 110.02,
+        "start": 97.51,
+        "text": "6. 私はたけしさんにまんがをあげました。"
+      },
+      {
+        "end": 120.35,
+        "start": 110.02,
+        "text": "7. ロバートさんはそらさんにほんをあげました。"
+      },
+      {
+        "end": 127.05,
+        "start": 120.35,
+        "text": "そらさんはロバートさんにほんをもらいました。"
+      },
+      {
+        "end": 137.56,
+        "start": 127.05,
+        "text": "8. ロバートさんはわたしにせえたをくれました。"
+      },
+      {
+        "end": 144.64,
+        "start": 137.72,
+        "text": "わたしはロバートさんにせえたをもらいました。"
+      },
+      {
+        "end": 155.23,
+        "start": 144.64,
+        "text": "9. なおみさんはけんさんにねくたいをあげました。"
+      },
+      {
+        "end": 161.91,
+        "start": 155.23,
+        "text": "けんさんはなおみさんにねくたいをもらいました。"
+      },
+      {
+        "end": 172.05,
+        "start": 161.91,
+        "text": "10. けんさんはわたしにみかんをくれました。"
+      },
+      {
+        "end": 178.41,
+        "start": 172.05,
+        "text": "わたしはけんさんにみかんをもらいました。"
+      }
+    ]
+  },
+  "K14_15": {
+    "duration": 82.73,
+    "language": "ja",
+    "languageProbability": 0.961,
+    "segments": [
+      {
+        "end": 6.01,
+        "start": 0.02,
+        "text": "4 新聞を見たらどうですか"
+      },
+      {
+        "end": 10.06,
+        "start": 6.01,
+        "text": "A エクゼンプル"
+      },
+      {
+        "end": 15.79,
+        "start": 10.06,
+        "text": "新聞を見たらどうですか"
+      },
+      {
+        "end": 24.46,
+        "start": 15.79,
+        "text": "1 先生に相談したらどうですか"
+      },
+      {
+        "end": 33.28,
+        "start": 24.46,
+        "text": "2 会社に履歴書を送ったらどうですか"
+      },
+      {
+        "end": 41.38,
+        "start": 33.28,
+        "text": "3 パーティーに行ったらどうですか"
+      },
+      {
+        "end": 49.58,
+        "start": 41.38,
+        "text": "4 サークルに入ったらどうですか"
+      },
+      {
+        "end": 57.14,
+        "start": 49.58,
+        "text": "5 諦めたらどうですか"
+      },
+      {
+        "end": 65.31,
+        "start": 57.3,
+        "text": "6 プロポーズしたらどうですか"
+      },
+      {
+        "end": 73.97,
+        "start": 65.31,
+        "text": "7 彼女に指輪を上げたらどうですか"
+      },
+      {
+        "end": 82.64,
+        "start": 73.97,
+        "text": "8 彼女の両親に会ったらどうですか"
+      }
+    ]
+  },
+  "K14_16": {
+    "duration": 95.16,
+    "language": "ja",
+    "languageProbability": 0.9928,
+    "segments": [
+      {
+        "end": 4.4,
+        "start": 0.08,
+        "text": "5. 四時間も勉強しました"
+      },
+      {
+        "end": 10.17,
+        "start": 4.4,
+        "text": "A. エクゼンプル"
+      },
+      {
+        "end": 14.83,
+        "start": 11.17,
+        "text": "魚が五匹います"
+      },
+      {
+        "end": 22.62,
+        "start": 14.83,
+        "text": "1. 猫が二匹います"
+      },
+      {
+        "end": 29.06,
+        "start": 22.62,
+        "text": "2. 花が七本あります"
+      },
+      {
+        "end": 37.3,
+        "start": 29.06,
+        "text": "3. 猫体が二本あります"
+      },
+      {
+        "end": 46.72,
+        "start": 37.3,
+        "text": "4. 本が六冊あります"
+      },
+      {
+        "end": 54.7,
+        "start": 46.72,
+        "text": "5. ラジオが一台あります"
+      },
+      {
+        "end": 62.94,
+        "start": 54.9,
+        "text": "6. シャツが一枚あります"
+      },
+      {
+        "end": 71.15,
+        "start": 62.94,
+        "text": "7. 雑誌が三冊あります"
+      },
+      {
+        "end": 79.4,
+        "start": 71.15,
+        "text": "8. 鉛筆が三本あります"
+      },
+      {
+        "end": 87.3,
+        "start": 79.4,
+        "text": "9. 未鑑が二個あります"
+      },
+      {
+        "end": 95.11,
+        "start": 87.3,
+        "text": "10. お皿が三枚あります"
+      }
+    ]
+  },
+  "K14_17": {
+    "duration": 113.82,
+    "language": "ja",
+    "languageProbability": 0.9799,
+    "segments": [
+      {
+        "end": 5.46,
+        "start": 0.02,
+        "text": "B エクゼンプル"
+      },
+      {
+        "end": 8.26,
+        "start": 5.46,
+        "text": "勉強しました"
+      },
+      {
+        "end": 12.62,
+        "start": 8.26,
+        "text": "メアリーさんは4時間も勉強しました"
+      },
+      {
+        "end": 18.86,
+        "start": 12.62,
+        "text": "ジョンさんは30分しか勉強しませんでした"
+      },
+      {
+        "end": 24.52,
+        "start": 18.86,
+        "text": "1 食べました"
+      },
+      {
+        "end": 33.05,
+        "start": 24.52,
+        "text": "メアリーさんはハンバーガーを1個しか食べませんでした"
+      },
+      {
+        "end": 38.78,
+        "start": 33.05,
+        "text": "ジョンさんはハンバーガーを4個も食べました"
+      },
+      {
+        "end": 44.4,
+        "start": 38.94,
+        "text": "2 読みました"
+      },
+      {
+        "end": 52.5,
+        "start": 44.4,
+        "text": "メアリーさんは本を1冊しか読みませんでした"
+      },
+      {
+        "end": 57.97,
+        "start": 52.5,
+        "text": "ジョンさんは本を6冊も読みました"
+      },
+      {
+        "end": 63.66,
+        "start": 57.97,
+        "text": "3 持っています"
+      },
+      {
+        "end": 71.72,
+        "start": 63.66,
+        "text": "メアリーさんはTシャツを30枚も持っています"
+      },
+      {
+        "end": 77.7,
+        "start": 71.72,
+        "text": "ジョンさんはTシャツを2枚しか持っていません"
+      },
+      {
+        "end": 83.36,
+        "start": 77.7,
+        "text": "4 読みました"
+      },
+      {
+        "end": 90.77,
+        "start": 83.36,
+        "text": "メアリーさんはジュースを3本も飲みました"
+      },
+      {
+        "end": 96.89,
+        "start": 90.77,
+        "text": "ジョンさんはジュースを1本しか飲みませんでした"
+      },
+      {
+        "end": 102.24,
+        "start": 96.89,
+        "text": "5 寝ます"
+      },
+      {
+        "end": 109.25,
+        "start": 102.24,
+        "text": "メアリーさんは11時間も寝ます"
+      },
+      {
+        "end": 113.69,
+        "start": 109.25,
+        "text": "ジョンさんは5時間しか寝ません"
+      }
+    ]
+  },
+  "W14_A": {
+    "duration": 65.62,
+    "language": "ja",
+    "languageProbability": 0.9859,
+    "segments": [
+      {
+        "end": 6.46,
+        "start": 0.08,
+        "text": "第14課 聞く練習"
+      },
+      {
+        "end": 7.46,
+        "start": 6.46,
+        "text": "えい"
+      },
+      {
+        "end": 13.86,
+        "start": 7.46,
+        "text": "鈴木さん 今晩コンサートに行くんですか"
+      },
+      {
+        "end": 20.86,
+        "start": 13.86,
+        "text": "いえ 森さんは風を引いていけないから私にチケットをくれたんです"
+      },
+      {
+        "end": 28.86,
+        "start": 20.86,
+        "text": "でも私も忙しくて時間がないかもしれないから友達にあげました"
+      },
+      {
+        "end": 31.86,
+        "start": 28.86,
+        "text": "吉田さん コンサートに行くんですか"
+      },
+      {
+        "end": 40.86,
+        "start": 32.86,
+        "text": "いえ 鈴木さんがチケットをくれたんですが私は今晩早く帰らなきゃいけないから"
+      },
+      {
+        "end": 45.86,
+        "start": 40.86,
+        "text": "田中さんどうですか もらってください"
+      },
+      {
+        "end": 52.86,
+        "start": 45.86,
+        "text": "ありがとう 今日早く仕事が終わったからいけると思います"
+      },
+      {
+        "end": 60.86,
+        "start": 52.86,
+        "text": "でも そのチケット 実は私が昨日森さんにあげたんですよ"
+      }
+    ]
+  },
+  "W14_B": {
+    "duration": 140.56,
+    "language": "ja",
+    "languageProbability": 0.9851,
+    "segments": [
+      {
+        "end": 5.23,
+        "start": 0.11,
+        "text": "B 1"
+      },
+      {
+        "end": 10.39,
+        "start": 5.23,
+        "text": "ゆきさん髪を切ったんですか? 似合いますよ"
+      },
+      {
+        "end": 14.99,
+        "start": 10.39,
+        "text": "ありがとう 私も髪を切りたいんですが"
+      },
+      {
+        "end": 20.83,
+        "start": 14.99,
+        "text": "いいところを知っていますか? 大学の近くにありますよ"
+      },
+      {
+        "end": 26.51,
+        "start": 20.83,
+        "text": "そこには英語が話せる人がいますか? いないと思います"
+      },
+      {
+        "end": 33.63,
+        "start": 26.51,
+        "text": "じゃあだめですね バステイの前の美容院に行ったらどうですか?"
+      },
+      {
+        "end": 39.11,
+        "start": 33.63,
+        "text": "英語がわかる人がいますから じゃあそこに行ってみます"
+      },
+      {
+        "end": 44.49,
+        "start": 39.11,
+        "text": "どうもありがとう 2"
+      },
+      {
+        "end": 51.81,
+        "start": 44.49,
+        "text": "日本語をもっと話したいんです いつも留学生の友達と英語を話しているから"
+      },
+      {
+        "end": 58.49,
+        "start": 51.81,
+        "text": "全然上手にならないんです ホームステイをしたらどうですか?"
+      },
+      {
+        "end": 65.57,
+        "start": 58.49,
+        "text": "でも僕は肉や魚を食べないから ちょっと難しいと思うんです"
+      },
+      {
+        "end": 72.45,
+        "start": 65.57,
+        "text": "そうですか じゃあ何かサークルに入ったらどうですか?"
+      },
+      {
+        "end": 76.93,
+        "start": 72.45,
+        "text": "サークルねえ いいかもしれませんね"
+      },
+      {
+        "end": 83.39,
+        "start": 76.93,
+        "text": "もっと運動したいと思っていたんです どうもありがとう"
+      },
+      {
+        "end": 85.83,
+        "start": 83.39,
+        "text": "さん"
+      },
+      {
+        "end": 89.23,
+        "start": 85.83,
+        "text": "もうすぐクリスマスですね"
+      },
+      {
+        "end": 95.11,
+        "start": 89.23,
+        "text": "ええ ホストファミリーの子供たちに何かあげたいんですが"
+      },
+      {
+        "end": 101.07,
+        "start": 95.11,
+        "text": "何がいいと思いますか? 子供たちは何歳ですか?"
+      },
+      {
+        "end": 105.63,
+        "start": 101.07,
+        "text": "えっと 5歳から11歳です"
+      },
+      {
+        "end": 111.27,
+        "start": 105.63,
+        "text": "全部で7人です えー7人もいるんですか?"
+      },
+      {
+        "end": 117.75,
+        "start": 111.27,
+        "text": "ええ あまりお金がないんですが何かあげたいんです"
+      },
+      {
+        "end": 122.31,
+        "start": 117.75,
+        "text": "うーん 難しいですね"
+      },
+      {
+        "end": 127.11,
+        "start": 122.31,
+        "text": "あ 一緒にケーキを作ったらどうですか?"
+      },
+      {
+        "end": 132.07,
+        "start": 127.11,
+        "text": "一緒に作るのは楽しいし みんなで食べられるし"
+      },
+      {
+        "end": 135.75,
+        "start": 132.07,
+        "text": "それはいいですね"
+      }
+    ]
+  },
+  "W14_C": {
+    "duration": 53.03,
+    "language": "ja",
+    "languageProbability": 0.9767,
+    "segments": [
+      {
+        "end": 2.67,
+        "start": 0.27,
+        "text": "シー"
+      },
+      {
+        "end": 6.67,
+        "start": 2.67,
+        "text": "一郎、誕生日に何が欲しい?"
+      },
+      {
+        "end": 9.07,
+        "start": 6.67,
+        "text": "自転車が欲しいな"
+      },
+      {
+        "end": 11.07,
+        "start": 9.07,
+        "text": "自転車?"
+      },
+      {
+        "end": 13.77,
+        "start": 11.07,
+        "text": "自転車は高すぎるよ"
+      },
+      {
+        "end": 16.57,
+        "start": 13.77,
+        "text": "じゃあ、時計"
+      },
+      {
+        "end": 19.27,
+        "start": 16.57,
+        "text": "時計なら持っているでしょ?"
+      },
+      {
+        "end": 21.77,
+        "start": 19.27,
+        "text": "一個しか持っていないよ"
+      },
+      {
+        "end": 24.47,
+        "start": 21.77,
+        "text": "もっといい時計が欲しいんだ"
+      },
+      {
+        "end": 26.37,
+        "start": 24.47,
+        "text": "うーん"
+      },
+      {
+        "end": 27.97,
+        "start": 26.37,
+        "text": "Tシャツは?"
+      },
+      {
+        "end": 29.67,
+        "start": 27.97,
+        "text": "欲しくない"
+      },
+      {
+        "end": 31.77,
+        "start": 29.67,
+        "text": "服には興味ないよ"
+      },
+      {
+        "end": 33.17,
+        "start": 31.77,
+        "text": "本は?"
+      },
+      {
+        "end": 35.57,
+        "start": 33.17,
+        "text": "本も欲しくないよ"
+      },
+      {
+        "end": 39.07,
+        "start": 35.57,
+        "text": "でも、漫画なら欲しいな"
+      },
+      {
+        "end": 42.77,
+        "start": 39.07,
+        "text": "じゃあ、漫画を一冊あげるね"
+      },
+      {
+        "end": 45.47,
+        "start": 42.77,
+        "text": "一冊しかくれないの?"
+      },
+      {
+        "end": 47.07,
+        "start": 45.47,
+        "text": "ケチだな"
+      }
+    ]
+  }
+}
