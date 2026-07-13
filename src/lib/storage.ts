@@ -15,6 +15,11 @@ export interface AnswerRecord {
   selected?: number
   /** resposta/anotação escrita no campo de texto */
   note?: string
+  /**
+   * When the correction was revealed. `null` means the learner changed the
+   * answer and still needs to verify it. Undefined records predate this field.
+   */
+  completedAt?: number | null
   updatedAt: number
 }
 
@@ -80,7 +85,9 @@ export function setAnswer(id: string, patch: Partial<Omit<AnswerRecord, 'updated
   const merged: AnswerRecord = { ...prev, ...patch, updatedAt: Date.now() }
   // remove o registro se ficou vazio
   const isEmpty =
-    merged.selected === undefined && (!merged.note || merged.note.trim() === '')
+    merged.selected === undefined &&
+    (!merged.note || merged.note.trim() === '') &&
+    merged.completedAt == null
   const next = { ...state }
   if (isEmpty) {
     delete next[id]

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { GraduationCap, Headphones, NotebookPen, SquarePen } from 'lucide-react'
+import { ArrowUp, GraduationCap, Headphones, History, NotebookPen, SquarePen } from 'lucide-react'
 import { SectionIcon } from '../components/icons'
 import { getSection } from '../data'
 import { useAnswers } from '../lib/storage'
@@ -12,8 +12,42 @@ import { BackupBar } from '../components/BackupBar'
 import { useCustom } from '../lib/customStore'
 import { mergedGroups } from '../lib/dataAccess'
 import { getAudioStudyCapabilities } from '../lib/audioStudy'
+import {
+  findExerciseLocation,
+  findLatestExerciseId,
+  getAdjacentExerciseId,
+  getExerciseFallbackId,
+} from '../lib/exerciseSession'
 
 type Tab = 'estudo' | 'exercicios' | 'audios'
+
+interface StoredExerciseSession {
+  tab?: Tab
+  questionId?: string
+}
+
+const EXERCISE_SESSION_PREFIX = 'nihongo-br:exercise-session:v1'
+
+function exerciseSessionKey(levelId: string | undefined, sectionId: string | undefined): string {
+  return `${EXERCISE_SESSION_PREFIX}:${levelId ?? ''}:${sectionId ?? ''}`
+}
+
+function readExerciseSession(key: string): StoredExerciseSession {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(key) ?? '{}')
+    return parsed && typeof parsed === 'object' ? parsed as StoredExerciseSession : {}
+  } catch {
+    return {}
+  }
+}
+
+function updateExerciseSession(key: string, patch: Partial<StoredExerciseSession>) {
+  try {
+    localStorage.setItem(key, JSON.stringify({ ...readExerciseSession(key), ...patch }))
+  } catch {
+    // The session remains usable in memory when storage is unavailable.
+  }
+}
 
 export function SectionPage() {
   const { levelId, sectionId } = useParams()
@@ -22,6 +56,11 @@ export function SectionPage() {
   const custom = useCustom()
   const [furigana, setFurigana] = useState(true)
   const [pendingExercise, setPendingExercise] = useState<string>()
+  const [activeQuestionId, setActiveQuestionId] = useState<string>()
+  const [expandedGroupId, setExpandedGroupId] = useState<string>()
+  const [scrollTargetId, setScrollTargetId] = useState<string>()
+  const [showTopAction, setShowTopAction] = useState(false)
+  const sessionKey = exerciseSessionKey(levelId, sectionId)
 
   const groups = useMemo(
     () => (found ? mergedGroups(found.section, custom) : []),
@@ -50,18 +89,70 @@ export function SectionPage() {
 
   const [tab, setTab] = useState<Tab>('estudo')
 
+  const latestExerciseId = useMemo(
+    () => findLatestExerciseId(groups, answers),
+    [groups, answers],
+  )
+  const previousExerciseId = useMemo(
+    () => activeQuestionId ? getAdjacentExerciseId(groups, activeQuestionId, -1) : undefined,
+    [groups, activeQuestionId],
+  )
+  const nextExerciseId = useMemo(
+    () => activeQuestionId ? getAdjacentExerciseId(groups, activeQuestionId, 1) : undefined,
+    [groups, activeQuestionId],
+  )
+
+  useEffect(() => {
+    const stored = readExerciseSession(sessionKey)
+    const storedLocation = findExerciseLocation(groups, stored.questionId)
+    const questionId = storedLocation?.question.id ?? getExerciseFallbackId(groups, answers)
+    const location = findExerciseLocation(groups, questionId)
+
+    setTab(stored.tab ?? 'estudo')
+    setActiveQuestionId(questionId)
+    setExpandedGroupId(location?.groupId)
+  }, [sessionKey])
+
+  useEffect(() => {
+    const onScroll = () => setShowTopAction(window.scrollY > 520)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  function selectTab(nextTab: Tab) {
+    setTab(nextTab)
+    updateExerciseSession(sessionKey, { tab: nextTab })
+  }
+
+  function openQuestion(questionId: string, scroll = true) {
+    const location = findExerciseLocation(groups, questionId)
+    if (!location) return
+    setActiveQuestionId(questionId)
+    setExpandedGroupId(location.groupId)
+    selectTab('exercicios')
+    updateExerciseSession(sessionKey, { questionId })
+    if (scroll) setScrollTargetId(questionId)
+  }
+
   useEffect(() => {
     if (tab !== 'exercicios' || !pendingExercise) return
+    openQuestion(pendingExercise)
+    setPendingExercise(undefined)
+  }, [pendingExercise, tab])
+
+  useEffect(() => {
+    if (tab !== 'exercicios' || !scrollTargetId) return
     const timeout = window.setTimeout(() => {
-      const target = document.getElementById(pendingExercise)
+      const target = document.getElementById(scrollTargetId)
       if (!target) return
       const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
       target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' })
       target.focus({ preventScroll: true })
-      setPendingExercise(undefined)
-    }, 0)
+      setScrollTargetId(undefined)
+    }, 40)
     return () => window.clearTimeout(timeout)
-  }, [pendingExercise, tab])
+  }, [scrollTargetId, tab])
 
   if (!found) {
     return (
@@ -115,7 +206,7 @@ export function SectionPage() {
             type="button"
             role="tab"
             aria-selected={activeTab === t}
-            onClick={() => setTab(t)}
+            onClick={() => selectTab(t)}
           >
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>{TAB_ICON[t]} {TAB_LABEL[t]}</span>
           </button>
@@ -141,9 +232,75 @@ export function SectionPage() {
               </Link>
             )}
           </div>
-          {groups.map((g) => (
-            <ExerciseGroupView key={g.id} group={g} furigana={furigana} />
-          ))}
+          <div className="exercise-session" id="exercise-session">
+            {groups.map((group) => {
+              const isExpanded = expandedGroupId === group.id
+              const groupActiveQuestionId = isExpanded ? activeQuestionId : undefined
+
+              return (
+                <ExerciseGroupView
+                  key={group.id}
+                  group={group}
+                  furigana={furigana}
+                  answers={answers}
+                  expanded={isExpanded}
+                  activeQuestionId={groupActiveQuestionId}
+                  hasPrevious={Boolean(previousExerciseId)}
+                  hasNext={Boolean(nextExerciseId)}
+                  onToggle={() => {
+                    if (isExpanded) {
+                      setExpandedGroupId(undefined)
+                      setActiveQuestionId(undefined)
+                      return
+                    }
+                    const questionId = getExerciseFallbackId([group], answers)
+                    if (questionId) openQuestion(questionId, false)
+                  }}
+                  onQuestionChange={(questionId) => openQuestion(questionId)}
+                  onPrevious={() => previousExerciseId && openQuestion(previousExerciseId)}
+                  onNext={() => nextExerciseId && openQuestion(nextExerciseId)}
+                  onFinish={() => {
+                    if (nextExerciseId) {
+                      openQuestion(nextExerciseId)
+                    } else {
+                      setActiveQuestionId(undefined)
+                    }
+                  }}
+                />
+              )
+            })}
+          </div>
+
+          <div className="exercise-floating-actions" aria-label="Atalhos da página">
+            <button
+              className="exercise-floating-button"
+              type="button"
+              onClick={() => {
+                const storedId = readExerciseSession(sessionKey).questionId
+                const resumeId = findExerciseLocation(groups, storedId)?.question.id
+                  ?? latestExerciseId
+                  ?? getExerciseFallbackId(groups, answers)
+                if (resumeId) openQuestion(resumeId)
+              }}
+              title="Ir ao último exercício"
+            >
+              <History size={19} /> <span>Retomar</span>
+            </button>
+            {showTopAction && (
+              <button
+                className="exercise-floating-button icon-only"
+                type="button"
+                onClick={() => {
+                  const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+                  window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' })
+                }}
+                aria-label="Voltar ao topo"
+                title="Voltar ao topo"
+              >
+                <ArrowUp size={20} />
+              </button>
+            )}
+          </div>
         </div>
       )}
 
@@ -179,7 +336,7 @@ export function SectionPage() {
                   defaultExpanded={index === 0}
                   onPractice={(exerciseId) => {
                     setPendingExercise(exerciseId)
-                    setTab('exercicios')
+                    selectTab('exercicios')
                   }}
                 />
               </div>

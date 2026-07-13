@@ -1,5 +1,6 @@
 import type { AnswerMap } from './storage'
 import type { Level, Section } from '../data/types'
+import { isExerciseCompleted } from './exerciseSession'
 
 export interface Progress {
   total: number
@@ -11,7 +12,7 @@ function tally(ids: string[], answers: AnswerMap): Progress {
   const total = ids.length
   let answered = 0
   for (const id of ids) {
-    if (answers[id]?.selected !== undefined) answered++
+    if (isExerciseCompleted(answers[id])) answered++
   }
   return { total, answered, pct: total ? Math.round((answered / total) * 100) : 0 }
 }

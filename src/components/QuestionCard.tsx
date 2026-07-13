@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { CheckCircle2, NotebookPen, RotateCcw, XCircle } from 'lucide-react'
+import { ArrowRight, CheckCircle2, NotebookPen, RotateCcw, XCircle } from 'lucide-react'
 import type { Question } from '../data/types'
 import { StudyText } from '../lib/StudyText'
 import { setAnswer, useAnswer } from '../lib/storage'
@@ -7,11 +7,19 @@ import { gradeCard } from '../lib/reviewStore'
 import { useShuffledChoices } from '../lib/choiceOrder'
 import { AudioPlayer } from './AudioPlayer'
 import { StudyHelp } from './StudyHelp'
+import { isExerciseCompleted } from '../lib/exerciseSession'
 
-export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }) {
+interface QuestionCardProps {
+  q: Question
+  furigana: boolean
+  onFinish?: () => void
+  finishLabel?: string
+}
+
+export function QuestionCard({ q, furigana, onFinish, finishLabel = 'Próximo exercício' }: QuestionCardProps) {
   const rec = useAnswer(q.id)
-  const [checked, setChecked] = useState(false)
-  const gradedFor = useRef<number | undefined>(undefined)
+  const [checked, setChecked] = useState(() => isExerciseCompleted(rec))
+  const gradedFor = useRef<number | undefined>(isExerciseCompleted(rec) ? rec?.selected : undefined)
   const selected = rec?.selected
   const isSelfCheck = q.assessment === 'self-check'
 
@@ -19,7 +27,7 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
 
   function choose(n: number) {
     if (checked) return
-    setAnswer(q.id, { selected: n })
+    setAnswer(q.id, { selected: n, completedAt: null })
   }
 
   // When revealing the correction, send the question to SRS:
@@ -29,9 +37,12 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
   // so toggling the correction does not reschedule the card unnecessarily.
   function toggleCheck() {
     const revealing = !checked
-    if (revealing && selected !== undefined && gradedFor.current !== selected) {
-      gradeCard(q.id, selected === q.answer ? 'good' : 'again')
-      gradedFor.current = selected
+    if (revealing && selected !== undefined) {
+      if (gradedFor.current !== selected) {
+        gradeCard(q.id, selected === q.answer ? 'good' : 'again')
+        gradedFor.current = selected
+      }
+      setAnswer(q.id, { completedAt: Date.now() })
     }
     setChecked((v) => !v)
   }
@@ -138,6 +149,11 @@ export function QuestionCard({ q, furigana }: { q: Question; furigana: boolean }
                     ? 'Esta faixa volta hoje para uma nova tentativa.'
                     : 'Enviado à revisão de hoje (conteúdo a reforçar).'}
               </div>
+              {onFinish && (
+                <button className="btn primary small exercise-finish" type="button" onClick={onFinish}>
+                  {finishLabel} <ArrowRight size={15} />
+                </button>
+              )}
             </div>
           )}
         </div>
