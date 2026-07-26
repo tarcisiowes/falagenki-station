@@ -1,5 +1,11 @@
 import { createPersistentStore } from './createStore'
-import { schedule, type CardState, type Grade } from './srs'
+import {
+  markKnown,
+  schedule,
+  suspendReview,
+  type CardState,
+  type Grade,
+} from './srs'
 
 // Estado de repetição espaçada por questão (id da questão -> estado da carta).
 export type SrsMap = Record<string, CardState>
@@ -16,6 +22,14 @@ export function getCard(id: string): CardState | undefined {
 
 export function gradeCard(id: string, grade: Grade) {
   srsStore.update((s) => ({ ...s, [id]: schedule(s[id], grade) }))
+}
+
+export function markCardKnown(id: string) {
+  srsStore.update((state) => ({ ...state, [id]: markKnown(state[id]) }))
+}
+
+export function suspendCardReview(id: string) {
+  srsStore.update((state) => ({ ...state, [id]: suspendReview(state[id]) }))
 }
 
 export function resetCard(id: string) {

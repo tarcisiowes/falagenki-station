@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest'
-import { isDue, previewInterval, schedule, type CardState } from './srs'
+import {
+  MAX_REVIEW_DATE,
+  MAX_REVIEW_INTERVAL_DAYS,
+  isDue,
+  markKnown,
+  previewInterval,
+  schedule,
+  suspendReview,
+  type CardState,
+} from './srs'
 
 const NOW = new Date('2026-06-21T12:00:00.000Z')
 
@@ -39,5 +48,29 @@ describe('FSRS scheduling', () => {
     expect(next.stability).toBeGreaterThan(0)
     expect(next.difficulty).toBeGreaterThan(0)
     expect(next.reps).toBe(3)
+  })
+
+  it('keeps mastered cards at the maximum review date', () => {
+    const known = markKnown(undefined, NOW)
+
+    expect(known.status).toBe('known')
+    expect(known.due).toBe(MAX_REVIEW_DATE)
+    expect(known.interval).toBe(MAX_REVIEW_INTERVAL_DAYS)
+    expect(isDue(known, new Date('2099-01-01T00:00:00.000Z'))).toBe(false)
+  })
+
+  it('keeps suspended cards out of the automatic queue', () => {
+    const suspended = suspendReview(undefined, NOW)
+
+    expect(suspended.status).toBe('suspended')
+    expect(isDue(suspended, new Date('9999-12-31T23:59:59.999Z'))).toBe(false)
+  })
+
+  it('returns a mastered card to normal scheduling when it is reviewed explicitly', () => {
+    const reviewed = schedule(markKnown(undefined, NOW), 'good', NOW)
+
+    expect(reviewed.status).toBeUndefined()
+    expect(reviewed.interval).toBeLessThan(MAX_REVIEW_INTERVAL_DAYS)
+    expect(reviewed.due).not.toBe(MAX_REVIEW_DATE)
   })
 })

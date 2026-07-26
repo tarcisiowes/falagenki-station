@@ -151,7 +151,7 @@ export function ExerciseGroupView({
                 q={activeQuestion}
                 furigana={furigana}
                 onFinish={onFinish}
-                finishLabel={hasNext ? 'Concluir e ir ao próximo' : 'Concluir e fechar'}
+                finishLabel={hasNext ? 'Próxima' : 'Fechar'}
               />
             </>
           ) : (

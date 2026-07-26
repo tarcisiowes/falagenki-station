@@ -1,11 +1,17 @@
 import { useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { CheckCircle2, PartyPopper, Repeat, RotateCcw, XCircle } from 'lucide-react'
+import { ArchiveX, Brain, CheckCircle2, PartyPopper, Repeat, RotateCcw, XCircle } from 'lucide-react'
 import { StudyText } from '../lib/StudyText'
 import { getCourse } from '../data'
 import { allFlatQuestions, type FlatQuestion } from '../lib/dataAccess'
 import { customStore } from '../lib/customStore'
-import { srsStore, gradeCard, useSrs } from '../lib/reviewStore'
+import {
+  gradeCard,
+  markCardKnown,
+  srsStore,
+  suspendCardReview,
+  useSrs,
+} from '../lib/reviewStore'
 import { isDue, previewInterval, type Grade } from '../lib/srs'
 import { useCustom } from '../lib/customStore'
 import { useShuffledChoices } from '../lib/choiceOrder'
@@ -81,6 +87,16 @@ export function ReviewPage() {
     setRevealed(false)
   }
 
+  function removeCurrentFromQueue(mode: 'known' | 'suspended') {
+    if (!current) return
+    if (mode === 'known') markCardKnown(current.q.id)
+    else suspendCardReview(current.q.id)
+    setQueue((items) => items.slice(1))
+    setDone((value) => value + 1)
+    setSelected(undefined)
+    setRevealed(false)
+  }
+
   const correct = current && selected === current.q.answer
   const isSelfCheck = current?.q.assessment === 'self-check'
 
@@ -139,11 +155,38 @@ export function ReviewPage() {
             <span className="muted">restantes na sessão: {queue.length}</span>
           </div>
 
+          <div className="review-quick-actions" aria-label="Ações rápidas da revisão">
+            <button
+              className="btn small"
+              type="button"
+              onClick={() => removeCurrentFromQueue('known')}
+              title="Marca como dominado e agenda para a data máxima."
+            >
+              <Brain size={15} /> Já sei
+            </button>
+            <button
+              className="btn small ghost"
+              type="button"
+              onClick={() => removeCurrentFromQueue('suspended')}
+              title="Suspende esta carta. O exercício continua disponível no curso."
+            >
+              <ArchiveX size={15} /> Remover
+            </button>
+          </div>
+          <p className="review-quick-help">
+            “Já sei” usa o intervalo máximo; “Remover” suspende apenas esta revisão.
+          </p>
+
           {current.q.context && (
             <div className="context ja"><StudyText text={current.q.context} furigana={furigana} /></div>
           )}
           <div className="stem ja" style={{ fontSize: 18, margin: '6px 0 12px' }}>
             <StudyText text={current.q.prompt} furigana={furigana} />
+            {current.q.helpPt && (
+              <StudyHelp variant="popover">
+                <StudyText text={current.q.helpPt} furigana={furigana} />
+              </StudyHelp>
+            )}
           </div>
 
           {current.q.audio && (
@@ -151,8 +194,6 @@ export function ReviewPage() {
               <AudioPlayer src={current.q.audio.src} title={current.q.audio.title} compact />
             </div>
           )}
-
-          {current.q.helpPt && <StudyHelp><StudyText text={current.q.helpPt} furigana={furigana} /></StudyHelp>}
 
           <div className="choices">
             {order.map((c, i) => {

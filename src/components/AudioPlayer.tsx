@@ -1,5 +1,10 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from 'react'
 import { Check, FastForward, Pause, Play, Rewind } from 'lucide-react'
+import {
+  forgetAudioPosition,
+  getAudioResumeTime,
+  rememberAudioPosition,
+} from '../lib/audioPlaybackMemory'
 
 export interface AudioPlayerHandle {
   seekTo: (seconds: number) => void
@@ -68,6 +73,7 @@ export const AudioPlayer = forwardRef<AudioPlayerHandle, Props>(function AudioPl
     const a = audioRef.current
     if (!a) return
     setCurrent(a.currentTime)
+    if (!a.paused && !a.ended) rememberAudioPosition(src, a.currentTime)
     if (loopAB && pointA !== null && pointB !== null && pointA < pointB && a.currentTime >= pointB) {
       a.currentTime = pointA
     }
@@ -169,15 +175,26 @@ export const AudioPlayer = forwardRef<AudioPlayerHandle, Props>(function AudioPl
         crossOrigin="anonymous"
         preload="metadata"
         onLoadedMetadata={(e) => {
-          setDuration(e.currentTarget.duration)
+          const audio = e.currentTarget
+          const resumeAt = getAudioResumeTime(src, audio.duration)
+          if (resumeAt > 0) audio.currentTime = resumeAt
+          setCurrent(resumeAt)
+          setDuration(audio.duration)
           setLoadError(false)
         }}
         onCanPlay={() => setLoadError(false)}
         onError={() => setLoadError(true)}
         onTimeUpdate={onTime}
         onPlay={() => setPlaying(true)}
-        onPause={() => setPlaying(false)}
-        onEnded={() => setPlaying(false)}
+        onPause={(event) => {
+          setPlaying(false)
+          if (!event.currentTarget.ended) rememberAudioPosition(src, event.currentTarget.currentTime)
+        }}
+        onEnded={() => {
+          setPlaying(false)
+          setCurrent(0)
+          forgetAudioPosition(src)
+        }}
       />
       <div className="top">
         <button className="pp" type="button" onClick={toggle} aria-label={playing ? 'Pausar' : 'Tocar'}>
@@ -196,6 +213,7 @@ export const AudioPlayer = forwardRef<AudioPlayerHandle, Props>(function AudioPl
               const v = Number(e.target.value)
               if (audioRef.current) audioRef.current.currentTime = v
               setCurrent(v)
+              rememberAudioPosition(src, v)
             }}
           />
         </div>

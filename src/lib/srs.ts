@@ -2,6 +2,10 @@ import { createEmptyCard, fsrs, Rating, State, type Card, type Grade as FsrsGrad
 
 // Spaced repetition scheduler. Uses FSRS, the modern Anki scheduler model.
 export type Grade = 'again' | 'hard' | 'good' | 'easy'
+export type ReviewStatus = 'known' | 'suspended'
+
+export const MAX_REVIEW_DATE = '9999-12-31T23:59:59.999Z'
+export const MAX_REVIEW_INTERVAL_DAYS = 2_900_000
 
 export interface CardState {
   /** ISO date/time when the card becomes due again. Older data may be yyyy-mm-dd. */
@@ -27,6 +31,8 @@ export interface CardState {
   lapses: number
   /** Last review date/time (ISO). */
   last: string
+  /** Cards marked as known or suspended stay outside the automatic queue. */
+  status?: ReviewStatus
 }
 
 const DAY_MS = 86_400_000
@@ -123,6 +129,7 @@ function fromFsrsCard(card: Card, now: Date): CardState {
 /** An undefined card is new. Otherwise it is due when its date/time has arrived. */
 export function isDue(c: CardState | undefined, now = new Date()): boolean {
   if (!c) return true
+  if (c.status === 'known' || c.status === 'suspended') return false
   return toDate(c.due, now).getTime() <= now.getTime()
 }
 
@@ -132,9 +139,39 @@ export function isNew(c: CardState | undefined): boolean {
 
 /** Calculate the next card state from the user's grade. */
 export function schedule(prev: CardState | undefined, grade: Grade, now = new Date()): CardState {
-  const card = toFsrsCard(prev, now)
+  const card = toFsrsCard(prev?.status ? undefined : prev, now)
   const result = scheduler.next(card, now, ratingByGrade[grade])
   return fromFsrsCard(result.card, now)
+}
+
+function withReviewStatus(
+  prev: CardState | undefined,
+  status: ReviewStatus,
+  now = new Date(),
+): CardState {
+  const base = prev ?? schedule(undefined, 'easy', now)
+  return {
+    ...base,
+    due: MAX_REVIEW_DATE,
+    interval: MAX_REVIEW_INTERVAL_DAYS,
+    stability: Math.max(base.stability ?? 0, MAX_REVIEW_INTERVAL_DAYS),
+    difficulty: status === 'known' ? 1 : base.difficulty,
+    fsrsState: State.Review,
+    learningSteps: 0,
+    elapsedDays: 0,
+    last: now.toISOString(),
+    status,
+  }
+}
+
+/** Keep a mastered card at the maximum practical review date. */
+export function markKnown(prev: CardState | undefined, now = new Date()): CardState {
+  return withReviewStatus(prev, 'known', now)
+}
+
+/** Remove a card from automatic review without deleting its study content. */
+export function suspendReview(prev: CardState | undefined, now = new Date()): CardState {
+  return withReviewStatus(prev, 'suspended', now)
 }
 
 function formatDelay(now: Date, due: Date, scheduledDays: number): string {
@@ -156,7 +193,7 @@ export function previewInterval(prev: CardState | undefined, grade: Grade, now =
 }
 
 export function retrievability(c: CardState | undefined, now = new Date()): number | undefined {
-  if (!c || c.scheduler !== 'fsrs') return undefined
+  if (!c || c.scheduler !== 'fsrs' || c.status) return undefined
   const card = toFsrsCard(c, now)
   return scheduler.get_retrievability(card, now, false)
 }
