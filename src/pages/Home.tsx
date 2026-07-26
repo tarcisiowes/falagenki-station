@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BarChart3, FileText, Headphones, NotebookPen, Repeat, Save, SquarePen, Timer } from 'lucide-react'
+import { BarChart3, Cloud, FileText, Headphones, NotebookPen, Repeat, SquarePen, Timer } from 'lucide-react'
 import { courses } from '../data'
 import type { Level } from '../data/types'
 import { useAnswers } from '../lib/storage'
@@ -84,14 +84,14 @@ export function Home() {
         <h1>Estude japonês — explicado em português</h1>
         <p>
           Três trilhas: <b>JLPT</b> (N5/N4), <b>Irodori</b> para a vida no Japão e <b>Genki</b> como
-          curso integrado. Exercícios com correção, áudios com
-          controles e transcrição, revisão estilo Anki e análise — tudo salvo no seu navegador.
+          curso integrado. Exercícios com correção, áudios com controles e transcrição, revisão
+          estilo Anki e análise — tudo salvo primeiro no dispositivo e sincronizado quando você entra.
         </p>
         <div className="feature-list">
           <div className="item"><span className="ic"><NotebookPen size={18} /></span><span>Exercícios com campo de resposta e anotação salvos automaticamente.</span></div>
           <div className="item"><span className="ic"><Headphones size={18} /></span><span>Player de áudio com velocidade, avanço/retrocesso e repetição A–B.</span></div>
           <div className="item"><span className="ic"><FileText size={18} /></span><span>Transcrições e módulos de JLPT, Irodori e Genki, com explicações em pt-BR.</span></div>
-          <div className="item"><span className="ic"><Save size={18} /></span><span>Backup das respostas, revisão e simulados em arquivo.</span></div>
+          <div className="item"><span className="ic"><Cloud size={18} /></span><span>Progresso local e login sem senha para sincronização automática.</span></div>
         </div>
       </section>
 

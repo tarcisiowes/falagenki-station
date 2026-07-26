@@ -39,7 +39,7 @@ Although it started as a personal tool, the project is intentionally practical. 
 - Adds an Anki-style review queue using local spaced repetition data.
 - Includes timed mock exams, attempt history, per-question timing analysis, and review handoff for wrong answers.
 - Lets the user create custom JLPT exercises locally and include them in study, review, backup, and mock exam flows.
-- Works as a static SPA with no backend requirement. Progress is stored in `localStorage` and can be exported/imported as JSON.
+- Works as a local-first static SPA. Progress stays available offline in `localStorage` and can optionally sync to a passwordless Supabase account or be exported/imported as JSON.
 
 ### Current Status
 
@@ -77,7 +77,7 @@ Although it started as a personal tool, the project is intentionally practical. 
 - Anki 形式に近い復習キューと、ローカルの間隔反復データ。
 - 模擬試験、履歴、問題ごとの時間分析、間違えた問題の復習への送信。
 - 自分で JLPT 問題を作成し、学習、復習、バックアップ、模擬試験に統合。
-- バックエンド不要の静的SPA。進捗は `localStorage` に保存し、JSONでエクスポート、インポート可能。
+- ローカルファーストの静的SPA。進捗はオフライン用に `localStorage` に保存され、メールのワンタイムコードでSupabaseアカウントに同期でき、JSONでのエクスポート・インポートにも対応。
 
 ### 現在の状態
 
@@ -115,7 +115,7 @@ Mesmo sendo pessoal, o projeto foi tratado como uma aplicação de verdade. Ele 
 - Inclui revisão estilo Anki com dados de repetição espaçada salvos localmente.
 - Inclui simulados cronometrados, histórico, análise de tempo por questão e envio das erradas para revisão.
 - Permite criar exercícios próprios de JLPT e integrá-los ao estudo, revisão, backup e simulados.
-- Funciona como SPA estático, sem backend obrigatório. O progresso fica no `localStorage` e pode ser exportado/importado em JSON.
+- Funciona como SPA estático e local-first. O progresso continua disponível offline no `localStorage`, pode ser sincronizado com uma conta Supabase sem senha e também exportado/importado em JSON.
 
 ### Situação Atual
 
@@ -148,7 +148,25 @@ Mesmo sendo pessoal, o projeto foi tratado como uma aplicação de verdade. Ele 
 - TypeScript
 - React Router
 - Lucide React
+- Supabase Auth and Postgres for optional passwordless progress sync
 - Cloudflare Pages for static hosting
+
+### Passwordless Progress Sync
+
+The browser build uses a Supabase publishable key; authorization is enforced by Row Level
+Security. Never place a service-role key in the frontend. The production project is configured as
+the safe default for direct deployments, and another Supabase project can be selected at build
+time:
+
+```bash
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_your_key
+```
+
+Apply the migration in `supabase/migrations/20260726010910_create_user_progress.sql` to a new
+project before enabling the UI there. The OTP email template must include Supabase's
+`{{ .Token }}` variable so the learner receives the six-digit access code. Node.js 22 or newer is
+required by the installed Supabase client.
 
 ### Project Structure
 

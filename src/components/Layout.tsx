@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import { courses } from '../data'
 import { SectionIcon } from './icons'
+import { AccountMenu } from './AccountMenu'
 
 function levelTitleForMenu(title: string, levelId: string, courseId: string) {
   const withoutCourse = title.replace(/^(JLPT|Irodori)\s*[—-]\s*/, '').replace(/^JLPT\s*/, '')
@@ -108,6 +109,7 @@ export function Layout() {
             <NavLink to="/revisao-geral"><Repeat size={15} /> Revisão Geral</NavLink>
             <NavLink to="/analise-geral"><BarChart3 size={15} /> Análise Geral</NavLink>
           </nav>
+          <AccountMenu />
         </div>
       </header>
       <main>
@@ -115,8 +117,8 @@ export function Layout() {
       </main>
       <footer className="app-footer">
         falaGENKIの駅 · Material de estudo baseado em JLPT (N5/N4), Irodori e Genki. Conteúdo com
-        explicações em português do Brasil. Suas
-        respostas ficam salvas apenas no seu navegador.
+        explicações em português do Brasil. O progresso funciona offline e pode ser sincronizado
+        com uma conta por e-mail.
       </footer>
     </>
   )

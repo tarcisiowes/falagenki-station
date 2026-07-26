@@ -10,12 +10,14 @@ import {
 import { useCustom } from '../lib/customStore'
 import { useSrs } from '../lib/reviewStore'
 import { useExams } from '../lib/examStore'
+import { useProgressSync } from '../auth/ProgressSyncProvider'
 
 export function BackupBar() {
   const answers = useAnswers()
   const custom = useCustom()
   const srs = useSrs()
   const exams = useExams()
+  const { user, syncStatus } = useProgressSync()
   const fileRef = useRef<HTMLInputElement>(null)
   const [toast, setToast] = useState<string | null>(null)
 
@@ -43,15 +45,24 @@ export function BackupBar() {
 
   const anything =
     count > 0 || custom.length > 0 || Object.keys(srs).length > 0 || exams.length > 0
+  const cloudMessage = user
+    ? syncStatus === 'synced'
+      ? ` e está sincronizado com ${user.email}.`
+      : syncStatus === 'offline'
+        ? `; a nuvem será atualizada quando ${user.email} voltar a ficar online.`
+        : syncStatus === 'error'
+          ? `; houve uma falha ao sincronizar com ${user.email}, mas nada foi perdido localmente.`
+          : ` e está sendo sincronizado com ${user.email}.`
+    : '. Entre pelo topo para sincronizar entre dispositivos.'
 
   return (
     <div className="card backup-bar">
       <div className="info">
         <Save size={15} /> <b>{count}</b> resposta(s) · <b>{custom.length}</b> exercício(s) seu(s) ·{' '}
         <b>{Object.keys(srs).length}</b> carta(s) de revisão · <b>{exams.length}</b> simulado(s).
-        <div className="muted" style={{ fontSize: 12 }}>
-          Tudo fica salvo localmente (offline). O backup inclui respostas, revisão, exercícios
-          criados e histórico de simulados.
+        <div className="muted" style={{ fontSize: 12 }} role="status" aria-live="polite">
+          Tudo fica salvo localmente para funcionar offline{cloudMessage}{' '}
+          O backup inclui respostas, revisão, exercícios criados e histórico de simulados.
         </div>
       </div>
       <div className="spacer" />
@@ -81,7 +92,7 @@ export function BackupBar() {
         <Trash2 size={15} /> Limpar respostas
       </button>
 
-      {toast && <div className="toast">{toast}</div>}
+      {toast && <div className="toast" role="status" aria-live="polite">{toast}</div>}
     </div>
   )
 }

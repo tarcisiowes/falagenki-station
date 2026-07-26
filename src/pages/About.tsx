@@ -20,12 +20,12 @@ export function About() {
         <div className="note">
           <h3>Como o progresso é salvo</h3>
           <p>
-            Não há login. Tudo o que você responde (alternativa marcada e suas anotações) é salvo
-            automaticamente no <strong>armazenamento local do navegador</strong>. Para não perder
-            nada ao trocar de computador ou limpar o navegador, use o botão <strong>Baixar
-            backup</strong>: ele gera um arquivo <code className="inline-code">.json</code> com as
-            respostas já preenchidas, que pode ser recarregado depois em <strong>Carregar
-            backup</strong>.
+            Tudo o que você responde é salvo primeiro no <strong>armazenamento local do
+            navegador</strong>, por isso o estudo continua funcionando offline. Ao entrar com seu
+            e-mail e o código recebido, respostas, revisões, exercícios criados, simulados e o ponto
+            de retomada também são sincronizados automaticamente com sua conta. O backup em arquivo
+            <code className="inline-code">.json</code> continua disponível como uma cópia adicional
+            que pode ser baixada e restaurada manualmente.
           </p>
         </div>
         <div className="note">

@@ -5,6 +5,11 @@ import { useSyncExternalStore } from 'react'
 import { srsStore, type SrsMap } from './reviewStore'
 import { customStore, type CustomQuestion } from './customStore'
 import { examStore, type ExamAttempt } from './examStore'
+import {
+  markProgressCollectionReset,
+  markProgressDeletion,
+  markProgressUpsert,
+} from './progressMetadata'
 
 const STORAGE_KEY = 'nihongo-br:answers:v1'
 const BACKUP_APP = 'nihongo-br'
@@ -65,7 +70,7 @@ function commit(next: AnswerMap) {
   listeners.forEach((l) => l())
 }
 
-function subscribe(listener: () => void) {
+export function subscribeAnswers(listener: () => void) {
   listeners.add(listener)
   return () => listeners.delete(listener)
 }
@@ -95,6 +100,13 @@ export function setAnswer(id: string, patch: Partial<Omit<AnswerRecord, 'updated
     next[id] = merged
   }
   commit(next)
+  if (isEmpty) {
+    if (state[id] || prev.updatedAt > 0) {
+      markProgressDeletion('answers', id, new Date(merged.updatedAt).toISOString())
+    }
+  } else {
+    markProgressUpsert('answers', id, new Date(merged.updatedAt).toISOString())
+  }
 }
 
 export function clearAnswer(id: string) {
@@ -102,26 +114,62 @@ export function clearAnswer(id: string) {
   const next = { ...state }
   delete next[id]
   commit(next)
+  markProgressDeletion('answers', id)
 }
 
 export function clearAll() {
+  const ids = Object.keys(state)
+  const changedAt = new Date().toISOString()
   commit({})
+  ids.forEach((id) => markProgressDeletion('answers', id, changedAt))
 }
 
 export function importAnswers(answers: AnswerMap, mode: 'merge' | 'replace' = 'merge') {
+  const changedAt = new Date()
+  const changedAtIso = changedAt.toISOString()
+  const changedAtMs = changedAt.getTime()
+  const previousIds = new Set(Object.keys(state))
+
   if (mode === 'replace') {
-    commit({ ...answers })
+    const next = Object.fromEntries(
+      Object.entries(answers).map(([id, record]) => [
+        id,
+        { ...record, updatedAt: changedAtMs },
+      ]),
+    )
+    commit(next)
+    previousIds.forEach((id) => {
+      if (!next[id]) markProgressDeletion('answers', id, changedAtIso)
+    })
+    Object.keys(next).forEach((id) => {
+      markProgressUpsert('answers', id, changedAtIso)
+    })
+    markProgressCollectionReset('answers', changedAtIso)
     return
   }
+
   const next = { ...state }
+  const importedIds: string[] = []
   for (const [id, rec] of Object.entries(answers)) {
     const cur = next[id]
     // mantém o registro mais recente em caso de conflito
     if (!cur || (rec.updatedAt ?? 0) >= (cur.updatedAt ?? 0)) {
-      next[id] = rec
+      next[id] = { ...rec, updatedAt: changedAtMs }
+      importedIds.push(id)
     }
   }
   commit(next)
+  importedIds.forEach((id) => {
+    markProgressUpsert('answers', id, changedAtIso)
+  })
+}
+
+export function getAnswers(): AnswerMap {
+  return state
+}
+
+export function replaceAnswers(answers: AnswerMap) {
+  commit({ ...answers })
 }
 
 export function buildBackup(): BackupFile {
@@ -142,23 +190,71 @@ export function importBackup(backup: BackupFile, mode: 'merge' | 'replace' = 'me
   importAnswers(backup.answers ?? {}, mode)
 
   if (backup.srs) {
-    srsStore.update((cur) => (mode === 'replace' ? { ...backup.srs } : { ...cur, ...backup.srs }))
+    const changedAt = new Date().toISOString()
+    const current = srsStore.get()
+    const imported = Object.fromEntries(
+      Object.entries(backup.srs).map(([id, card]) => [
+        id,
+        { ...card, syncUpdatedAt: changedAt },
+      ]),
+    )
+    const next = mode === 'replace' ? imported : { ...current, ...imported }
+    srsStore.set(next)
+    if (mode === 'replace') {
+      Object.keys(current).forEach((id) => {
+        if (!next[id]) markProgressDeletion('srs', id, changedAt)
+      })
+    }
+    Object.keys(imported).forEach((id) => {
+      markProgressUpsert('srs', id, changedAt)
+    })
+    if (mode === 'replace') markProgressCollectionReset('srs', changedAt)
   }
 
   if (backup.custom) {
-    customStore.update((cur) => {
-      if (mode === 'replace') return [...backup.custom!]
-      const ids = new Set(cur.map((c) => c.id))
-      return [...cur, ...backup.custom!.filter((c) => !ids.has(c.id))]
+    const changedAt = new Date().toISOString()
+    const current = customStore.get()
+    const currentIds = new Set(current.map((question) => question.id))
+    const imported = backup.custom
+      .filter((question) => mode === 'replace' || !currentIds.has(question.id))
+      .map((question) => ({ ...question, updatedAt: changedAt }))
+    const next = mode === 'replace' ? imported : [...current, ...imported]
+    customStore.set(next)
+    if (mode === 'replace') {
+      const nextIds = new Set(next.map((question) => question.id))
+      current.forEach((question) => {
+        if (!nextIds.has(question.id)) {
+          markProgressDeletion('custom', question.id, changedAt)
+        }
+      })
+    }
+    imported.forEach((question) => {
+      markProgressUpsert('custom', question.id, changedAt)
     })
+    if (mode === 'replace') markProgressCollectionReset('custom', changedAt)
   }
 
   if (backup.exams) {
-    examStore.update((cur) => {
-      if (mode === 'replace') return [...backup.exams!]
-      const ids = new Set(cur.map((e) => e.id))
-      return [...cur, ...backup.exams!.filter((e) => !ids.has(e.id))]
+    const changedAt = new Date().toISOString()
+    const current = examStore.get()
+    const currentIds = new Set(current.map((attempt) => attempt.id))
+    const imported = backup.exams
+      .filter((attempt) => mode === 'replace' || !currentIds.has(attempt.id))
+      .map((attempt) => ({ ...attempt, syncUpdatedAt: changedAt }))
+    const next = mode === 'replace' ? imported : [...current, ...imported]
+    examStore.set(next)
+    if (mode === 'replace') {
+      const nextIds = new Set(next.map((attempt) => attempt.id))
+      current.forEach((attempt) => {
+        if (!nextIds.has(attempt.id)) {
+          markProgressDeletion('exams', attempt.id, changedAt)
+        }
+      })
+    }
+    imported.forEach((attempt) => {
+      markProgressUpsert('exams', attempt.id, changedAt)
     })
+    if (mode === 'replace') markProgressCollectionReset('exams', changedAt)
   }
 }
 
@@ -190,7 +286,7 @@ export async function readBackupFile(file: File): Promise<BackupFile> {
 // ---- hooks React -----------------------------------------------------------
 
 export function useAnswers(): AnswerMap {
-  return useSyncExternalStore(subscribe, getSnapshot, getSnapshot)
+  return useSyncExternalStore(subscribeAnswers, getSnapshot, getSnapshot)
 }
 
 export function useAnswer(id: string): AnswerRecord | undefined {

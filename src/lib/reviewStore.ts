@@ -6,6 +6,7 @@ import {
   type CardState,
   type Grade,
 } from './srs'
+import { markProgressDeletion, markProgressUpsert } from './progressMetadata'
 
 // Estado de repetição espaçada por questão (id da questão -> estado da carta).
 export type SrsMap = Record<string, CardState>
@@ -21,22 +22,41 @@ export function getCard(id: string): CardState | undefined {
 }
 
 export function gradeCard(id: string, grade: Grade) {
-  srsStore.update((s) => ({ ...s, [id]: schedule(s[id], grade) }))
+  let changedAt = new Date().toISOString()
+  srsStore.update((s) => {
+    const next = schedule(s[id], grade)
+    changedAt = next.last
+    return { ...s, [id]: { ...next, syncUpdatedAt: changedAt } }
+  })
+  markProgressUpsert('srs', id, changedAt)
 }
 
 export function markCardKnown(id: string) {
-  srsStore.update((state) => ({ ...state, [id]: markKnown(state[id]) }))
+  let changedAt = new Date().toISOString()
+  srsStore.update((state) => {
+    const next = markKnown(state[id])
+    changedAt = next.last
+    return { ...state, [id]: { ...next, syncUpdatedAt: changedAt } }
+  })
+  markProgressUpsert('srs', id, changedAt)
 }
 
 export function suspendCardReview(id: string) {
-  srsStore.update((state) => ({ ...state, [id]: suspendReview(state[id]) }))
+  let changedAt = new Date().toISOString()
+  srsStore.update((state) => {
+    const next = suspendReview(state[id])
+    changedAt = next.last
+    return { ...state, [id]: { ...next, syncUpdatedAt: changedAt } }
+  })
+  markProgressUpsert('srs', id, changedAt)
 }
 
 export function resetCard(id: string) {
+  if (!srsStore.get()[id]) return
   srsStore.update((s) => {
-    if (!s[id]) return s
     const next = { ...s }
     delete next[id]
     return next
   })
+  markProgressDeletion('srs', id)
 }

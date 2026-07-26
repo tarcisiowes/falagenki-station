@@ -31,6 +31,8 @@ export interface CardState {
   lapses: number
   /** Last review date/time (ISO). */
   last: string
+  /** Last persistence change, separate from the scheduler's review timestamp. */
+  syncUpdatedAt?: string
   /** Cards marked as known or suspended stay outside the automatic queue. */
   status?: ReviewStatus
 }

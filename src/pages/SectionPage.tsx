@@ -18,18 +18,19 @@ import {
   getAdjacentExerciseId,
   getExerciseFallbackId,
 } from '../lib/exerciseSession'
+import { markProgressUpsert } from '../lib/progressMetadata'
+import { EXERCISE_SESSION_PREFIX } from '../lib/progressSnapshot'
 
 type Tab = 'estudo' | 'exercicios' | 'audios'
 
 interface StoredExerciseSession {
   tab?: Tab
   questionId?: string
+  updatedAt?: string
 }
 
-const EXERCISE_SESSION_PREFIX = 'nihongo-br:exercise-session:v1'
-
 function exerciseSessionKey(levelId: string | undefined, sectionId: string | undefined): string {
-  return `${EXERCISE_SESSION_PREFIX}:${levelId ?? ''}:${sectionId ?? ''}`
+  return `${EXERCISE_SESSION_PREFIX}${levelId ?? ''}:${sectionId ?? ''}`
 }
 
 function readExerciseSession(key: string): StoredExerciseSession {
@@ -42,11 +43,17 @@ function readExerciseSession(key: string): StoredExerciseSession {
 }
 
 function updateExerciseSession(key: string, patch: Partial<StoredExerciseSession>) {
+  const updatedAt = new Date().toISOString()
   try {
-    localStorage.setItem(key, JSON.stringify({ ...readExerciseSession(key), ...patch }))
+    localStorage.setItem(key, JSON.stringify({
+      ...readExerciseSession(key),
+      ...patch,
+      updatedAt,
+    }))
   } catch {
     // The session remains usable in memory when storage is unavailable.
   }
+  markProgressUpsert('exerciseSessions', key, updatedAt)
 }
 
 export function SectionPage() {
